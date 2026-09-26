@@ -1,0 +1,45 @@
+import type { EngineInfo } from "@/domain/document";
+import type { Refinement } from "@/domain/refinement";
+import type { StyleProfile } from "@/domain/style";
+import type { Finding } from "@/domain/verification";
+import type { Observation } from "@/domain/voiceprint";
+import type { TextAnalysis } from "../analysis/analyze";
+import type { Candidate, DiscourseAnalysis } from "./schemas";
+
+/**
+ * The only surface the rest of the app sees. Implementations live server-side
+ * and can be swapped without touching the pipeline or the UI.
+ */
+export interface ReconstructInput {
+  source: string;
+  /** Present for refinements: the text being revised. */
+  current?: string;
+  profile: StyleProfile;
+  plan: string[];
+  analysis: TextAnalysis;
+  /** Claims identified in the source that the rewrite must keep. */
+  claims?: string[];
+  refinement?: Refinement;
+  retryFeedback?: string[];
+}
+
+export interface AIProvider {
+  readonly info: EngineInfo;
+  /** Model-assisted discourse analysis. May return null when unsupported. */
+  analyzeText(text: string, analysis: TextAnalysis): Promise<DiscourseAnalysis | null>;
+  reconstructText(input: ReconstructInput): Promise<Candidate>;
+  /** Model-assisted meaning comparison. null means "this provider cannot check meaning". */
+  verifyMeaning(source: string, candidate: string): Promise<Finding[] | null>;
+  /** Model-assisted Voiceprint observations. Empty when unsupported. */
+  analyzeVoiceprint(samples: string[]): Promise<Observation[]>;
+}
+
+export class ProviderError extends Error {
+  constructor(
+    message: string,
+    readonly code: "unavailable" | "invalid_output" | "rate_limited" | "upstream",
+  ) {
+    super(message);
+    this.name = "ProviderError";
+  }
+}

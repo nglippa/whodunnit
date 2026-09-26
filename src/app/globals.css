@@ -1,0 +1,149 @@
+@import "tailwindcss";
+
+/*
+ * Whodunnit design tokens. Paper and ink, one accent (oxblood), hairline rules.
+ * Hierarchy comes from type and spacing, not containers.
+ */
+:root {
+  --paper: #f4f1ea;
+  --paper-raised: #fbf9f4;
+  --ink: #1a1916;
+  --ink-soft: #56524a;
+  --ink-faint: #8a8478;
+  --rule: #dcd6c9;
+  --rule-strong: #c9c1b0;
+  --accent: #8a2d1c;
+  --accent-ink: #fbf9f4;
+  --accent-wash: rgb(138 45 28 / 0.09);
+  --insert: rgb(138 45 28 / 0.11);
+  --focus: #8a2d1c;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #13120f;
+    --paper-raised: #1a1915;
+    --ink: #ece7dc;
+    --ink-soft: #b1aa9c;
+    --ink-faint: #7b7568;
+    --rule: #2c2a25;
+    --rule-strong: #3b3830;
+    --accent: #d27a5f;
+    --accent-ink: #13120f;
+    --accent-wash: rgb(210 122 95 / 0.12);
+    --insert: rgb(210 122 95 / 0.16);
+    --focus: #d27a5f;
+    color-scheme: dark;
+  }
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-wash: var(--accent-wash);
+  --color-insert: var(--insert);
+  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
+  --font-sans: var(--font-instrument), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, "SFMono-Regular", monospace;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-feature-settings: "kern", "liga";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-wash);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* The writing surfaces: no chrome, the text is the interface. */
+.prose-field {
+  font-family: var(--font-serif);
+  font-size: 1.1875rem;
+  line-height: 1.68;
+  font-optical-sizing: auto;
+  letter-spacing: -0.003em;
+  color: var(--ink);
+  background: transparent;
+  caret-color: var(--accent);
+  resize: none;
+  outline: none;
+  width: 100%;
+}
+.prose-field::placeholder {
+  color: var(--ink-faint);
+  font-style: italic;
+}
+.prose-field:focus-visible {
+  outline: none;
+}
+@media (max-width: 640px) {
+  .prose-field {
+    font-size: 1.0625rem;
+    line-height: 1.62;
+  }
+}
+
+.smallcaps {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* Changes view: insertions get an ink wash; deletions stay legible but quiet. */
+.diff-ins {
+  background: var(--insert);
+  text-decoration: none;
+  border-radius: 1px;
+  box-shadow: 0 1px 0 0 var(--accent);
+}
+/* A replacement reads as "old → new", so keep a visible gap between them. */
+.diff-del + .diff-ins {
+  margin-left: 0.28em;
+}
+.diff-del {
+  color: var(--ink-faint);
+  text-decoration: line-through;
+  text-decoration-color: color-mix(in oklab, var(--accent) 55%, transparent);
+  text-decoration-thickness: 1px;
+}
+
+@keyframes ink-line {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+.progress-ink {
+  transform-origin: left;
+  animation: ink-line 1.6s cubic-bezier(0.4, 0, 0.2, 1) infinite alternate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .progress-ink {
+    animation: none;
+    transform: scaleX(0.6);
+  }
+}
