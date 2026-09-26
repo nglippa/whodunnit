@@ -4,12 +4,14 @@ import { useDeferredValue, useEffect, useMemo, useRef } from "react";
 import { Button, Kbd } from "@/components/ui/Button";
 import type { EngineInfo } from "@/domain/document";
 import { MAX_SOURCE_CHARS } from "@/domain/document";
-import { analyzeText } from "@/lib/analysis/analyze";
+import { analyzeWriting } from "@/lib/rules/engine";
+import { rulesForProfile } from "@/lib/rules/packs";
+import { buildConstraints } from "@/lib/reconstruction/rewrite-plan";
 import { verifyDeterministic } from "@/lib/verification/verify";
 import { Marginalia } from "@/features/reconstruction/Marginalia";
 import { RefineBar } from "@/features/reconstruction/RefineBar";
 import { ResultPane } from "@/features/reconstruction/ResultPane";
-import { useWorkspace } from "@/features/reconstruction/useWorkspace";
+import { resolveProfile, useWorkspace } from "@/features/reconstruction/useWorkspace";
 import { useVoiceprints } from "@/features/voiceprints/useVoiceprints";
 import { EXAMPLE_TEXT } from "./example";
 import { ProseField } from "./ProseField";
@@ -25,8 +27,13 @@ export function Workspace({ engine }: { engine: EngineInfo }) {
   const running = state.status.kind === "running" ? state.status.run : null;
   const deferredSource = useDeferredValue(state.source);
   const deferredResult = useDeferredValue(state.resultText);
-  const sourceAnalysis = useMemo(() => (deferredSource.trim() ? analyzeText(deferredSource) : null), [deferredSource]);
-  const resultAnalysis = useMemo(() => (deferredResult.trim() ? analyzeText(deferredResult) : null), [deferredResult]);
+  // The same deterministic rule engine the server uses, run locally so notes update as you type.
+  const profile = useMemo(() => state.activeProfile ?? resolveProfile(state.target, voiceprints), [state.activeProfile, state.target, voiceprints]);
+  const voiceprint = state.target.kind === "voiceprint" ? voiceprints.find((v) => v.id === (state.target as { voiceprintId: string }).voiceprintId) : undefined;
+  const rules = useMemo(() => (profile ? rulesForProfile(profile) : []), [profile]);
+  const constraints = useMemo(() => (profile ? buildConstraints({ profile, voiceprint }) : []), [profile, voiceprint]);
+  const sourceAnalysis = useMemo(() => (deferredSource.trim() ? analyzeWriting(deferredSource, rules, { constraints }) : null), [deferredSource, rules, constraints]);
+  const resultAnalysis = useMemo(() => (deferredResult.trim() ? analyzeWriting(deferredResult, rules, { constraints }) : null), [deferredResult, rules, constraints]);
 
   // When the author edits the result, re-run the deterministic meaning checks against the original.
   const currentRevision = state.revisions.find((r) => r.id === state.currentRevisionId) ?? null;
@@ -56,7 +63,7 @@ export function Workspace({ engine }: { engine: EngineInfo }) {
     return () => window.removeEventListener("keydown", onKey);
   }, [canRun, run, running, cancel]);
 
-  const words = sourceAnalysis?.counts.words ?? 0;
+  const words = sourceAnalysis?.metrics.words ?? 0;
 
   return (
     <div className="mx-auto max-w-[88rem] px-4 pb-16 sm:px-8">

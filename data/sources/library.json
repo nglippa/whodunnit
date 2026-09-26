@@ -1,0 +1,37 @@
+[
+  {
+    "id": "no-ai-slop-skill",
+    "type": "webpage",
+    "title": "No AI slop",
+    "url": "https://raw.githubusercontent.com/petergyang/no-ai-slop/main/skills/no-ai-slop/SKILL.md",
+    "author": "Peter Yang",
+    "license": "MIT",
+    "usage": "adapt-with-attribution",
+    "retrievedAt": "2026-09-26T01:26:54+00:00",
+    "contentHash": "e867f88502d350b24bb52cabae32c2a10925fb7f00174a2381ff8ec925195961",
+    "status": "reviewed"
+  },
+  {
+    "id": "rossmann-ai-writing-detection",
+    "type": "markdown",
+    "title": "no_ai_slop_writing_rules: ai-writing-detection.md",
+    "url": "https://github.com/realrossmanngroup/no_ai_slop_writing_rules",
+    "author": "Rossmann Group",
+    "license": "none (all rights reserved)",
+    "usage": "reference-only",
+    "retrievedAt": "2026-09-26T01:29:43.711Z",
+    "contentHash": "caf8ecca7c7c490e68299539295817abea5140a12ac80319d1107fe0fe399dbc",
+    "status": "extracted"
+  },
+  {
+    "id": "wikipedia-signs-of-ai-writing",
+    "type": "webpage",
+    "title": "Wikipedia:Signs of AI writing - Wikipedia",
+    "url": "https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing",
+    "license": "CC BY-SA 4.0",
+    "usage": "derived-rules-only",
+    "retrievedAt": "2026-09-26T01:28:24+00:00",
+    "contentHash": "c5e0147dc9e24b6e901b9a238ece83b18ea6ffab7c725851c5a3a110bd73ad29",
+    "status": "compiled"
+  }
+]

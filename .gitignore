@@ -44,3 +44,8 @@ next-env.d.ts
 # local tooling
 .playwright-mcp/
 supabase/.temp/
+
+# rule development: extracted source text may be copyrighted; keep it local
+data/sources/cache/
+data/sources/normalized/
+data/rules/candidates/

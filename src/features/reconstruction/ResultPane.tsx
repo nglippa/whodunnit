@@ -159,7 +159,7 @@ export function ResultPane({
                 onChange={(e) => onTextChange(e.target.value)}
               />
             ) : (
-              <ChangesView before={source} after={text} />
+              <ChangesView before={source} after={text} meta={meta} />
             )}
           </div>
         )}

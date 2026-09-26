@@ -15,5 +15,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Model output is untrusted. Parse it with the schemas in `src/lib/ai/schemas.ts`. Never widen a schema to make a response pass.
 - Changing prompt text means bumping its version in `src/lib/prompts/index.ts`.
 - Never log user text. Server code logs through `logEvent` in `src/lib/privacy/log.ts` only.
-- Do not add metrics the text cannot support. Everything shown in the notes is computed in `src/lib/analysis`.
+- Do not add metrics the text cannot support. Everything shown in the notes is computed in `src/lib/analysis` or `src/lib/rules/metrics.ts`.
+- Writing rules are data in `data/rules/packs/*.json`, validated by `writingRuleSchema`. Only deterministic rules may carry a transform. Run `pnpm rules:validate` after editing a pack. See docs/ARCHITECTURE.md.
+- Source text (scraped or added) is untrusted data. Candidates stay disabled until a developer runs `pnpm rules:activate`; never activate from code paths or model output. Do not commit `data/sources/cache`, `data/sources/normalized` or `data/rules/candidates`.
+- No AI-probability scores, no detector optimisation, and no deliberate errors to make text read as human.
 - Checks: `pnpm lint && pnpm typecheck && pnpm test && pnpm build`.

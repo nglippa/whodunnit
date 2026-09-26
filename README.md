@@ -18,7 +18,8 @@ Whodunnit improves naturalness and authorship consistency. It makes no promises 
 - **Meaning checks.** Every candidate goes through deterministic checks: figures (with `3` = `three`), dates, names, quotations, links, negation count, length, and key-word coverage. With a model configured, a claim-by-claim meaning comparison runs as well. Candidates that fail a blocking check are retried with the findings as feedback. If every attempt fails, you still see the best one, with its problems listed rather than hidden.
 - **Your own edits are checked too.** Change a figure by hand and the notes immediately say so. Hand edits are kept as their own revision.
 - **Voiceprints.** Add samples of your own writing. Whodunnit measures sentence rhythm, contractions, punctuation, hedging, first-person use and phrases you repeat across samples. Each measurement carries a confidence. Past 300 words, the voiceprint appears as a style target.
-- **Honest notes.** The margin shows only numbers computed from the text (sentence length, rhythm, stock phrases, stock openers, contractions) before and after. There are no scores.
+- **Writing patterns.** A deterministic rule engine finds catalogued patterns (announcements, stacked connectives, puffery, uniform rhythm and so on), each with its excerpt, evidence, guidance and source. After a reconstruction, the notes show counts before → after: resolved, remaining and introduced. Habits your Voiceprint shows you really have are kept and labelled.
+- **Honest notes.** The margin shows only numbers computed from the text (sentence length, rhythm, stock openers, contractions) before and after. There are no scores and no "AI probability".
 
 ## Running it
 
@@ -27,7 +28,7 @@ pnpm install
 pnpm dev              # http://localhost:3000
 ```
 
-With no environment variables the app runs in **demo mode**: reconstruction uses a small set of meaning-preserving rules (stock-phrase removal, contractions, plain-word substitutions). The UI says so. Add `ANTHROPIC_API_KEY` for full reconstruction.
+With no environment variables the app runs in **demo mode**: reconstruction applies only the deterministic rule transforms (announcement and stock-opener removal, wordy-phrase mapping, connective-chain collapsing) plus register edits gated on what the analysis found. The UI says so. Add `ANTHROPIC_API_KEY` for full reconstruction.
 
 ```bash
 cp .env.example .env.local   # then fill in what you need
@@ -40,30 +41,39 @@ cp .env.example .env.local   # then fill in what you need
 | `WHODUNNIT_AI_PROVIDER` | `auto` (default), `anthropic`, or `demo`. |
 | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Reserved for accounts; not used by the V1 UI. |
 
-Scripts: `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`.
+Scripts: `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`. The rule tooling is described below.
 
 ## Architecture
 
 ```
-INPUT → ANALYSIS → STYLE TARGET → PLAN → CANDIDATE → MEANING CHECK → (retry) → OUTPUT
+INPUT → RULE ANALYSIS → CONSTRAINTS (style, Voiceprint, request) → REWRITE PLAN → CANDIDATE
+      → MEANING CHECK + PATTERN POST-CHECK → (retry on blocking findings only) → OUTPUT
 ```
 
 ```
 src/
   app/                    routes; api/ handlers are thin (validate → pipeline → respond)
   domain/                 types + Zod schemas: StyleProfile, Refinement, Document, Revision,
-                          Voiceprint, WritingSample, ReconstructionRequest, VerificationResult
+                          Voiceprint, WritingSample, ReconstructionRequest, VerificationResult,
+                          WritingRule, RulePack, RuleMatch, SourceDocument, RuleCandidate
   lib/
     analysis/             deterministic text measurement and the formulaic-pattern catalogue
     verification/         protected-span extraction and meaning checks
     voiceprints/          sample aggregation, confidence model, Voiceprint → StyleProfile
-    reconstruction/       planner and pipeline (the only orchestration code)
+    rules/                rule registry, detectors, metrics, constraints/precedence, transforms
+    sources/              source library, normalisation, candidate compilers, validation, activation
+    reconstruction/       RewritePlan, pattern post-check, pipeline (the only orchestration code)
     ai/                   AIProvider interface, Anthropic and demo providers, output schemas
     prompts/              versioned prompts (the version is stored on every revision)
     persistence/          repository interfaces; browser, memory and Supabase implementations
     privacy/              the metadata-only server logger
   features/               editor, reconstruction, comparison, voiceprints (client UI)
   components/             brand mark, header, small primitives
+data/rules/packs/         rule data (JSON, schema-validated): core, anti-slop, styles, semantic-safety, imported
+data/sources/library.json source metadata (licence, usage, hash, status); extracted text is gitignored
+data/fixtures/prose/      fixture corpus: one formulaic text and five clean texts in different registers
+tools/rules/cli.ts        developer CLI (pnpm rules:* / source:*)
+tools/source-ingestion/   isolated Python (uv) project: Scrapling fetch + normalisation
 supabase/migrations/      schema with row-level security, ready for accounts
 ```
 
@@ -107,6 +117,49 @@ Confidence is volume (it rises with total words, never reaching 1) multiplied by
 
 Model observations are optional and explicit: they are requested only when you press the button, and are labelled as model-derived.
 
+## Writing knowledge engine
+
+The full design is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md). In short:
+
+- **Rules are data.** A `WritingRule` is typed and versioned. It records where it came from (source, author, licence, relation) and how certain it is: `deterministic`, `heuristic`, `model-assisted` or `advisory`. Rules can be disabled. They live in `data/rules/packs/*.json` and load through `WritingRuleRegistry`, which rejects duplicates and unsafe regexes.
+- **The catalogue** has 59 rules across 8 packs: 27 deterministic, 28 heuristic, 2 model-assisted and 2 advisory. That includes 8 semantic-safety comparisons. Only deterministic rules can carry an automatic fix, and each fix is narrow and meaning-preserving.
+- **Precedence**, highest first: semantic safety, then your request, then a confident Voiceprint, then the style preset, then general rules. A general rule never overrides a habit your Voiceprint measured with confidence. Weak Voiceprint evidence (confidence below 0.6) ranks below the general rules, and below 0.35 it is ignored.
+- **The model gets a contract, not the rulebook.** The contract lists facts to preserve, target ranges, patterns found (with excerpts and guidance) and patterns not to introduce. The output is analysed again: a new deterministic pattern or a blocking meaning finding triggers one retry with feedback. Patterns that remain do not trigger a retry.
+
+### What it does not do
+
+- It does not estimate whether a text was written by AI, and it does not show an AI-probability score.
+- It does not call or optimise against third-party detectors.
+- It does not make text "human" by adding typos, errors, random fragments, slang or vagueness.
+- A detected pattern is evidence you can check, not a verdict. Some patterns are fine in context, and several rules document their known false positives.
+
+### Rule tooling
+
+```bash
+pnpm rules:list                     # the catalogue, by pack and determinism
+pnpm rules:validate                 # schema, regex safety, registry load, false positives on the clean corpus
+pnpm rules:analyze <file>           # metrics and findings for a text file
+```
+
+**Adding knowledge from a source.** Scraping needs [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync --project tools/source-ingestion        # one-time: isolated venv with scrapling[fetchers]==0.4.15
+pnpm source:scrape <url> --license "MIT" --usage adapt-with-attribution [--author "Name"] [--refresh]
+pnpm source:add notes.md --title "..." --license "..." --usage derived-rules-only
+pnpm source:list
+pnpm source:compile <sourceId> [--model]        # candidates, always disabled
+pnpm rules:review <sourceId>                    # each candidate with its anchor and clean-corpus matches
+pnpm rules:activate <candidateId> --name "..." --description "..." --guidance "..."
+pnpm rules:reject <candidateId>
+```
+
+The scraper checks robots.txt and fetches one URL per run with an identifying User-Agent. It uses plain HTTP, with no stealth mode. Scraped HTML is parsed and never executed.
+
+Source text is treated as untrusted data. It can suggest a candidate. It cannot change code or configuration, reach secrets, run commands, or activate a rule. A rule becomes active only when a developer runs `rules:activate`, which re-validates the rule and proves the registry still loads. `reference-only` sources, such as unlicensed ones, cannot be compiled at all.
+
+Cached and normalised extractions and candidates are gitignored. The repository stores source metadata and the rules written from it, not the articles. Attribution for adapted material is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+
 ## Privacy
 
 - Drafts, revisions and voiceprints live in your browser's local storage. There are no accounts and no server database in V1.
@@ -129,6 +182,10 @@ Unit tests cover:
 - model-response schema validation
 - repositories, including corrupted local data
 - the pipeline's retry, refinement-anchoring and "not checked" behaviour, with scripted providers
+- the rule schema, registry, regex safety, detectors and metric arithmetic
+- the fixture corpus: the formulaic fixture fires, the five clean fixtures do not (dashes and fragments in the stylised fixture are suppressed by a matching Voiceprint), and demo transforms leave each clean voice intact
+- constraints and precedence, the RewritePlan contract, the pattern post-check and the retry policy
+- source normalisation, the library, candidate compilation, model-output validation and activation
 
 ## Deployment
 
@@ -138,7 +195,9 @@ Engine configuration is read per request, so the interface always reflects the m
 
 ## Current limitations
 
-- The demo engine only makes rule-based edits; it cannot vary rhythm or rewrite sentences. Real reconstruction needs a model.
+- The demo engine only makes rule-based edits; it cannot vary rhythm or rewrite sentences. Real reconstruction needs a model. Patterns such as puffery are detected but left for the model.
+- Rule thresholds were tuned on a small fixture corpus. Heuristic rules will have false positives on some real prose, and some lexical rules need two occurrences before they fire, so a single "leverage" passes.
+- Model-assisted candidate compilation and the live reconstruction contract have unit tests with scripted models, but have not been exercised against a live model in this repository.
 - Deterministic checks catch concrete changes (figures, names, quotes, negations) but not every shift in meaning. The model check covers more, and it is still a check, not a proof. Read the result before you use it.
 - Name detection is heuristic. Lowercase names and names that only appear at the start of a sentence are weaker evidence and produce warnings rather than blocks.
 - Analysis is tuned for English.

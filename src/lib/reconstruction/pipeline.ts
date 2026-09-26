@@ -1,4 +1,4 @@
-import type { ReconstructionRequest, ReconstructionResult } from "@/domain/document";
+import type { Preserved, ReconstructionRequest, ReconstructionResult, PatternComparison } from "@/domain/document";
 import { applyRefinement } from "@/domain/refinement";
 import type { StyleProfile } from "@/domain/style";
 import type { VerificationResult } from "@/domain/verification";
@@ -6,16 +6,20 @@ import { analyzeText } from "../analysis/analyze";
 import type { AIProvider } from "../ai/provider";
 import { ProviderError } from "../ai/provider";
 import { PROMPT_VERSIONS } from "../prompts";
+import { rulesForProfile } from "../rules/packs";
 import { mergeVerification, verifyDeterministic } from "../verification/verify";
-import { planReconstruction } from "./plan";
+import { comparePatterns } from "./postcheck";
+import { buildRewritePlan, summarizePlan } from "./rewrite-plan";
 
 /**
- * INPUT → ANALYSIS → STYLE TARGET → PLAN → CANDIDATE → SEMANTIC CHECK → (retry) → OUTPUT
+ * SOURCE → RULE ANALYSIS → REWRITE PLAN → CANDIDATE → MEANING CHECKS → RULE POST-CHECK → (retry) → RESULT
  *
  * Every candidate, including refinements, is verified against the original
- * source, so repeated refinement cannot compound drift. Candidates that fail a
- * blocking check are retried with the findings as feedback; if all attempts
- * fail, the best candidate is returned with its findings visible, never hidden.
+ * source, so repeated refinement cannot compound drift. Retries happen for
+ * two reasons only: a blocking meaning finding, or a newly introduced
+ * deterministic pattern. Remaining patterns never trigger a retry: rules can
+ * conflict, and natural writing is not rule perfection. If every attempt
+ * fails, the best candidate is returned with its findings visible.
  */
 
 export interface PipelineOptions {
@@ -27,29 +31,48 @@ export interface PipelineResult extends ReconstructionResult {
   profile: StyleProfile;
 }
 
-const blockingCount = (v: VerificationResult) => v.findings.filter((f) => f.severity === "blocking").length;
-
-function better(a: { verification: VerificationResult }, b: { verification: VerificationResult }) {
-  const d = blockingCount(a.verification) - blockingCount(b.verification);
-  return d !== 0 ? d < 0 : a.verification.findings.length <= b.verification.findings.length;
+interface Attempt {
+  text: string;
+  verification: VerificationResult;
+  patterns: PatternComparison;
+  changes: string[];
 }
 
-export async function runReconstruction(
-  request: ReconstructionRequest,
-  provider: AIProvider,
-  options: PipelineOptions = {},
-): Promise<PipelineResult> {
+const blockingCount = (v: VerificationResult) => v.findings.filter((f) => f.severity === "blocking").length;
+const introducedDeterministic = (p: PatternComparison) => p.introduced.filter((x) => x.deterministic);
+
+/** Meaning first; then fewer newly introduced patterns; then fewer findings overall. */
+function better(a: Attempt, b: Attempt) {
+  const d = blockingCount(a.verification) - blockingCount(b.verification);
+  if (d !== 0) return d < 0;
+  const i = introducedDeterministic(a.patterns).length - introducedDeterministic(b.patterns).length;
+  if (i !== 0) return i < 0;
+  return a.verification.findings.length <= b.verification.findings.length;
+}
+
+function preservedCounts(v: VerificationResult, plan: ReturnType<typeof buildRewritePlan>): Preserved {
+  const lost = (kind: string) => v.findings.filter((f) => f.kind === kind && f.source).length;
+  return {
+    numbers: Math.max(0, plan.preserve.numbers.length - lost("altered_number")),
+    dates: Math.max(0, plan.preserve.dates.length - lost("altered_date")),
+    names: Math.max(0, plan.preserve.names.length - lost("altered_name")),
+    quotations: Math.max(0, plan.preserve.quotations.length - lost("altered_quotation")),
+    links: Math.max(0, plan.preserve.links.length - lost("altered_link")),
+  };
+}
+
+export async function runReconstruction(request: ReconstructionRequest, provider: AIProvider, options: PipelineOptions = {}): Promise<PipelineResult> {
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;
-  const analysis = analyzeText(source);
-  const plan = planReconstruction(analysis, profile, refinement?.change);
+  const plan = buildRewritePlan({ source, profile, refinement: refinement?.change, voiceprint: request.voiceprint });
+  const rules = rulesForProfile(profile);
   const maxAttempts = options.maxAttempts ?? (provider.info.mode === "live" ? 3 : 1);
   // Model-assisted discourse analysis: an explicit list of claims that must survive.
-  // Skipped for short texts, where the deterministic checks already cover the ground.
-  const discourse = analysis.counts.words >= 60 ? await provider.analyzeText(source, analysis).catch(() => null) : null;
+  const legacy = analyzeText(source);
+  const discourse = legacy.counts.words >= 60 ? await provider.analyzeText(source, legacy).catch(() => null) : null;
 
-  let best: { text: string; verification: VerificationResult; changes: string[] } | null = null;
+  let best: Attempt | null = null;
   let feedback: string[] | undefined;
   let attempts = 0;
 
@@ -60,7 +83,6 @@ export async function runReconstruction(
       current: refinement?.current,
       profile,
       plan,
-      analysis,
       claims: discourse?.claims,
       refinement: refinement?.change,
       retryFeedback: feedback,
@@ -74,11 +96,16 @@ export async function runReconstruction(
       // A failed model check is reported as "not run", never as "passed".
       verification = mergeVerification(verification, await provider.verifyMeaning(source, text).catch(() => null));
     }
+    const patterns = comparePatterns(plan, text, rules);
 
-    const current = { text, verification, changes: candidate.changes };
+    const current: Attempt = { text, verification, patterns, changes: candidate.changes };
     if (!best || better(current, best)) best = current;
-    if (verification.status !== "rejected") break;
-    feedback = verification.findings.filter((f) => f.severity === "blocking").map((f) => f.message);
+    const introduced = introducedDeterministic(patterns);
+    if (verification.status !== "rejected" && introduced.length === 0) break;
+    feedback = [
+      ...verification.findings.filter((f) => f.severity === "blocking").map((f) => f.message),
+      ...introduced.map((x) => `You introduced a pattern that was not in the source: ${x.name}.`),
+    ];
   }
 
   if (!best) throw new ProviderError("No rewrite was produced.", "invalid_output");
@@ -88,8 +115,10 @@ export async function runReconstruction(
     attempts,
     engine: provider.info,
     promptVersion: PROMPT_VERSIONS.reconstruct,
-    plan,
+    plan: summarizePlan(plan),
     changes: best.changes.map((c) => c.slice(0, 200)).slice(0, 8),
+    patterns: best.patterns,
+    preserved: preservedCounts(best.verification, plan),
     profile,
   };
 }

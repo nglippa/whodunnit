@@ -1,0 +1,1184 @@
+{
+  "id": "anti-slop",
+  "name": "Anti-Slop",
+  "description": "Named stock constructions that make prose read as templated, adapted from Peter Yang's no-ai-slop editing rules (MIT). Detecting a pattern is evidence a reader can check; it is not a guess about who wrote the text.",
+  "version": 1,
+  "layer": "general",
+  "source": {
+    "type": "imported-rule-system",
+    "title": "no-ai-slop (skills/no-ai-slop/SKILL.md)",
+    "url": "https://github.com/petergyang/no-ai-slop",
+    "author": "Peter Yang",
+    "license": "MIT",
+    "importedAt": "2026-09-25",
+    "relation": "adapted"
+  },
+  "rules": [
+    {
+      "id": "slop.inflated-vocabulary",
+      "version": 1,
+      "name": "Inflated vocabulary",
+      "description": "Grand words standing in for specific ones (tapestry, paradigm shift, game changer, cutting-edge). “Delve into” is handled by the wordy-phrases rule, which can fix it.",
+      "category": "lexical",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "tapestry",
+          "paradigm shift",
+          "game changer",
+          "game-changer",
+          "cutting-edge",
+          "supercharge",
+          "supercharges",
+          "ever-evolving",
+          "embark on",
+          "embarks on",
+          "this changes everything",
+          "this is huge",
+          "unlock the power",
+          "unlock the potential",
+          "unleash the power"
+        ]
+      },
+      "remediation": {
+        "guidance": "Say the specific thing: what changed, by how much, for whom."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Words to cut",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Literal uses (a medieval tapestry) are rare but possible.",
+      "examples": {
+        "problematic": [
+          "This cutting-edge paradigm shift is a game changer."
+        ],
+        "preferred": [
+          "Here is what changed in the March release."
+        ]
+      },
+      "tags": [
+        "lexical",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.corporate-verbs",
+      "version": 1,
+      "name": "Corporate verbs",
+      "description": "Verbs like leverage, facilitate, empower and streamline, repeated where a plain verb would do.",
+      "category": "lexical",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "leverage",
+          "leverages",
+          "leveraging",
+          "facilitate",
+          "facilitates",
+          "empower",
+          "empowers",
+          "streamline",
+          "streamlines",
+          "harness",
+          "harnesses",
+          "elevate",
+          "elevates",
+          "foster",
+          "fosters"
+        ],
+        "minOccurrences": 2
+      },
+      "remediation": {
+        "guidance": "Use the plain verb (use, help, simplify) or name the actual action."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Words to cut",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Each word has literal uses (financial leverage, foster care), so it needs two occurrences before firing.",
+      "examples": {
+        "problematic": [
+          "We leverage data to empower teams."
+        ],
+        "preferred": [
+          "We use the data to help teams decide."
+        ]
+      },
+      "tags": [
+        "lexical",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.announcements",
+      "version": 1,
+      "name": "Announcing a point",
+      "description": "Phrases that announce a point instead of making it (It is worth noting that, It's important to note that).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "it is worth noting that",
+          "it's worth noting that",
+          "it is important to note that",
+          "it's important to note that",
+          "it should be noted that",
+          "it is worth mentioning that",
+          "it's worth mentioning that",
+          "it bears mentioning that",
+          "it is important to remember that"
+        ]
+      },
+      "remediation": {
+        "guidance": "Delete the announcement and state the point.",
+        "transform": {
+          "kind": "delete-match"
+        }
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Often-empty phrases",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "It is worth noting that the release shipped on time."
+        ],
+        "preferred": [
+          "The release shipped on time."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.scene-setter",
+      "version": 1,
+      "name": "Generic scene-setter",
+      "description": "An opener that could start any text (In today's fast-paced world, In the digital age).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\bin (?:today['’]s (?:fast-paced |ever-changing |rapidly evolving |digital |modern )?(?:world|landscape|environment|age|society)|the (?:digital|modern) age|an ever-changing world),\\s*",
+        "flags": "i"
+      },
+      "remediation": {
+        "guidance": "Start with the actual subject.",
+        "transform": {
+          "kind": "delete-match"
+        }
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Often-empty phrases",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "In today's fast-paced world, teams need clear goals."
+        ],
+        "preferred": [
+          "Teams need clear goals."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.empty-phrases",
+      "version": 1,
+      "name": "Empty filler phrases",
+      "description": "Stock phrases that delay the point (at the end of the day, the reality is, going forward, when it comes to).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "at the end of the day",
+          "the reality is",
+          "the truth is",
+          "at its core",
+          "let's dive in",
+          "let's dive into",
+          "in this article",
+          "in the age of",
+          "without further ado",
+          "needless to say",
+          "going forward",
+          "when it comes to",
+          "in the world of"
+        ]
+      },
+      "remediation": {
+        "guidance": "Cut the phrase if the sentence still stands; it usually does."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Often-empty phrases",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "At the end of the day, the reality is we shipped late."
+        ],
+        "preferred": [
+          "We shipped late."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.not-x-its-y",
+      "version": 1,
+      "name": "“It's not X. It's Y.”",
+      "description": "A manufactured contrast that denies something nobody claimed, then states the real point.",
+      "category": "sentence",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\b(?:it|this|that)(?:['’]s| is| was)(?:n['’]t| not) (?:just |only |about |really )?[^.;:!?\\n]{1,60}[.;,—–]\\s*(?:it|this|that)(?:['’]s| is| was)\\b|\\bthe (?:question|point|problem|issue|goal) (?:isn['’]t|is not) [^.;:!?\\n]{1,60}[.;,—–]\\s*(?:it['’]s|it is|the (?:question|point|problem|issue|goal) is)\\b",
+        "flags": "i"
+      },
+      "remediation": {
+        "guidance": "State Y directly. The eval matters more than the model, not 'The question isn't the model. It's the eval.'"
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Binary contrasts",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Genuine corrections of a stated misunderstanding use this shape legitimately.",
+      "examples": {
+        "problematic": [
+          "This isn't a price increase. It's a betrayal of trust.",
+          "The question isn't the model, it's the eval."
+        ],
+        "preferred": [
+          "Prices went up 20%, and customers feel misled."
+        ]
+      },
+      "tags": [
+        "contrast",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.not-just-but",
+      "version": 1,
+      "name": "Repeated “not just X, but Y”",
+      "description": "The softer contrast frame used more than once.",
+      "category": "sentence",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\bnot (?:just|only|merely) [^.;:!?\\n]{1,60}?,? but(?: also)?\\b",
+        "flags": "i",
+        "minOccurrences": 2
+      },
+      "remediation": {
+        "guidance": "Keep one if it earns it; state the rest plainly."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Binary contrasts",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "One use is ordinary English; needs two.",
+      "examples": {
+        "problematic": [
+          "It's not just fast, but reliable. It's not only cheap but also simple."
+        ],
+        "preferred": [
+          "It's fast and reliable."
+        ]
+      },
+      "tags": [
+        "contrast",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.throat-clearing",
+      "version": 1,
+      "name": "Throat-clearing opener",
+      "description": "A sentence that opens by announcing candour or a reveal (Here's the thing, Let me be clear).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "here's the thing",
+          "here is the thing",
+          "here's what i mean",
+          "let me be clear",
+          "let me be honest",
+          "i'll be honest",
+          "let's be honest",
+          "the uncomfortable truth is",
+          "make no mistake"
+        ],
+        "sentenceStart": true
+      },
+      "remediation": {
+        "guidance": "Cut the opener and make the point."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Throat-clearing openers",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "Here's the thing: nobody reads the docs."
+        ],
+        "preferred": [
+          "Nobody reads the docs."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.faux-insight",
+      "version": 1,
+      "name": "Faux-insight setup",
+      "description": "Framing that casts the writer as the lone expert (what most people get wrong, what nobody tells you).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "what most people get wrong",
+          "most people get this wrong",
+          "what nobody tells you",
+          "here's what nobody tells you",
+          "the part everyone misses",
+          "the part most people skip",
+          "what most people don't realize",
+          "few people realize",
+          "nobody talks about"
+        ]
+      },
+      "remediation": {
+        "guidance": "Drop the setup and let the claim stand on its own."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Faux-insight setups",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "Here's what nobody tells you about hiring."
+        ],
+        "preferred": [
+          "Hiring takes longer than you plan for."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.colon-reveal",
+      "version": 1,
+      "name": "Colon reveals",
+      "description": "A noun phrase, a colon, then a lowercase dramatic reveal (The best part: it learns.), used repeatedly.",
+      "category": "punctuation",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "^(?:the|here['’]s|what)\\b[^:.!?\\n]{2,40}:\\s+[a-z]",
+        "flags": "i",
+        "scope": "sentence",
+        "minOccurrences": 2
+      },
+      "remediation": {
+        "guidance": "Write it as a plain sentence. Keep colons for lists, labels and quotations."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Colon reveals",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Case-insensitive start, so needs two occurrences.",
+      "examples": {
+        "problematic": [
+          "The best part: it learns. The catch: it's slow."
+        ],
+        "preferred": [
+          "It learns, though slowly."
+        ]
+      },
+      "tags": [
+        "punctuation",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.superficial-analysis",
+      "version": 1,
+      "name": "Trailing “-ing” significance",
+      "description": "A clause like “, highlighting the team's commitment” that asserts meaning instead of showing it.",
+      "category": "specificity",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": ",\\s(?:highlighting|underscoring|showcasing|reflecting|emphasizing|emphasising|signaling|signalling|symbolizing|symbolising)\\s(?:the|its|their|his|her|a|an|how|our)\\b",
+        "flags": "i"
+      },
+      "remediation": {
+        "guidance": "Replace with the concrete consequence, or cut it."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Superficial analysis",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "The launch adds file search, highlighting the team's commitment to users."
+        ],
+        "preferred": [
+          "The launch adds file search, so users can find old drafts."
+        ]
+      },
+      "tags": [
+        "specificity",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.importance-puffery",
+      "version": 1,
+      "name": "Importance puffery",
+      "description": "Stock claims of significance (plays a crucial role, stands as a testament, marks a pivotal moment, a beacon of).",
+      "category": "specificity",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "stands as a testament",
+          "a testament to",
+          "marks a pivotal moment",
+          "plays a vital role",
+          "plays a crucial role",
+          "plays a key role",
+          "plays a pivotal role",
+          "play a crucial role",
+          "play a vital role",
+          "solidifies its position",
+          "underscores its significance",
+          "serves as a reminder",
+          "a beacon of",
+          "a tapestry of",
+          "rich tapestry",
+          "navigate the complexities",
+          "in the realm of"
+        ]
+      },
+      "remediation": {
+        "guidance": "State the fact and let the reader judge whether it matters."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Importance puffery",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Only figurative constructions are listed (a beacon of, a tapestry of), not the bare nouns.",
+      "examples": {
+        "problematic": [
+          "The launch stands as a testament to our vision and plays a crucial role in growth."
+        ],
+        "preferred": [
+          "The launch is the company's first paid product."
+        ]
+      },
+      "tags": [
+        "specificity",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.metadiscourse",
+      "version": 1,
+      "name": "Telling the reader what to notice",
+      "description": "Commentary on the text itself (as you can see, that last part matters, let that sink in).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "as you can see",
+          "that last part matters",
+          "this distinction matters",
+          "let that sink in",
+          "read that again",
+          "the key point is",
+          "the key takeaway is",
+          "it bears repeating"
+        ]
+      },
+      "remediation": {
+        "guidance": "Delete the aside; if the point is not clear without it, add the support that makes it clear."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Interpretive metadiscourse",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "Costs fell 12%. Let that sink in."
+        ],
+        "preferred": [
+          "Costs fell 12%, the first drop in five years."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.weasel-attribution",
+      "version": 1,
+      "name": "Unnamed authorities",
+      "description": "Claims attributed to unnamed crowds (experts agree, studies show, many argue).",
+      "category": "specificity",
+      "severity": "info",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "experts agree",
+          "many experts",
+          "studies show",
+          "research shows",
+          "many argue",
+          "some argue",
+          "industry reports suggest",
+          "it is widely regarded",
+          "widely regarded as",
+          "it is widely acknowledged",
+          "many believe",
+          "some say"
+        ]
+      },
+      "remediation": {
+        "guidance": "Name the source, or remove the claim. Never invent one."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Weasel attribution",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Legitimate when a citation follows; the detector cannot see citations, so it only informs.",
+      "examples": {
+        "problematic": [
+          "Experts agree the market will grow."
+        ],
+        "preferred": [
+          "Gartner's 2025 forecast puts growth at 8%."
+        ]
+      },
+      "tags": [
+        "specificity",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.negative-listing",
+      "version": 1,
+      "name": "“Not a X. Not a Y.” listing",
+      "description": "A run of short negations before the actual point.",
+      "category": "sentence",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "negative-listing"
+      },
+      "remediation": {
+        "guidance": "Say what it is."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Negative listing",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "Not a tool. Not a toy. A partner."
+        ],
+        "preferred": [
+          "It works like a partner."
+        ]
+      },
+      "tags": [
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.dramatic-fragments",
+      "version": 1,
+      "name": "Dramatic fragmentation",
+      "description": "Runs of clipped sentences used for effect (And that's it. That's the whole thing.).",
+      "category": "rhythm",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "voice.fragments",
+      "detection": {
+        "kind": "builtin",
+        "detector": "dramatic-fragments",
+        "params": {
+          "maxWords": 5,
+          "run": 3
+        }
+      },
+      "remediation": {
+        "guidance": "Use complete sentences; keep a fragment only where the rhythm is genuinely yours."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Dramatic fragmentation",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Stylised or conversational writing uses fragments deliberately; a strong Voiceprint for fragments suppresses this rule.",
+      "tags": [
+        "rhythm",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.rhetorical-setup",
+      "version": 1,
+      "name": "Rhetorical setup",
+      "description": "Stock set-ups for a reveal (What if I told you, Plot twist:, Here's the kicker).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "what if i told you",
+          "think about it:",
+          "plot twist:",
+          "here's the kicker",
+          "the kicker?",
+          "spoiler alert",
+          "but here's the catch",
+          "here's the catch"
+        ]
+      },
+      "remediation": {
+        "guidance": "Drop the setup and make the point."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Rhetorical setups",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "Plot twist: the old version was faster."
+        ],
+        "preferred": [
+          "The old version was faster."
+        ]
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.self-answered-questions",
+      "version": 1,
+      "name": "Self-answered questions",
+      "description": "Repeated “The result? Chaos.” question-and-answer pairs.",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "voice.questions",
+      "detection": {
+        "kind": "builtin",
+        "detector": "self-answered-questions",
+        "params": {
+          "min": 2
+        }
+      },
+      "remediation": {
+        "guidance": "State the answer as a sentence."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Rhetorical setups",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "One is a normal device; needs two.",
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.fake-profound-ending",
+      "version": 1,
+      "name": "Fake-profound kicker",
+      "description": "The text ends on a short aphorism (That's the real lesson. And that makes all the difference.).",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "fake-profound-ending",
+        "params": {
+          "minSentences": 3,
+          "maxWords": 12
+        }
+      },
+      "remediation": {
+        "guidance": "Delete it and end on the last concrete sentence."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Fake-profound kickers",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.recap-ending",
+      "version": 1,
+      "name": "Summary-recap ending",
+      "description": "The final paragraph opens with a summarising word (Overall, Ultimately, All in all). “In conclusion” is handled by the summary-opener rule.",
+      "category": "discourse",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "recap-ending",
+        "params": {
+          "minParagraphs": 2
+        }
+      },
+      "remediation": {
+        "guidance": "End on the last concrete point or next action; the reader was just there."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Summary-recap endings",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "discourse",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.summary-openers",
+      "version": 1,
+      "name": "Stock summary opener",
+      "description": "“In conclusion,” / “In summary,” opening a sentence.",
+      "category": "transition",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "(?:^|(?<=[.!?][\"'”’)]?\\s))(?:in conclusion|in summary|to sum up|to summarize|to summarise),\\s+",
+        "flags": "im"
+      },
+      "remediation": {
+        "guidance": "Drop the opener.",
+        "transform": {
+          "kind": "delete-match"
+        }
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Summary-recap endings",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "In conclusion, the plan works."
+        ],
+        "preferred": [
+          "The plan works."
+        ]
+      },
+      "tags": [
+        "transitions",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.ordinal-enumeration",
+      "version": 1,
+      "name": "Firstly / Secondly scaffolding",
+      "description": "Ordinal connectives scaffolding a paragraph.",
+      "category": "transition",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "firstly",
+          "secondly",
+          "thirdly",
+          "lastly"
+        ],
+        "sentenceStart": true,
+        "minOccurrences": 2
+      },
+      "remediation": {
+        "guidance": "Let the points follow each other, or use a real list."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Robotic rhythm",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "examples": {
+        "problematic": [
+          "Firstly, it is fast. Secondly, it is cheap."
+        ],
+        "preferred": [
+          "It is fast and cheap."
+        ]
+      },
+      "tags": [
+        "transitions",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.dash-density",
+      "version": 1,
+      "name": "Dash-heavy",
+      "description": "Dashes used as a default rhythm rather than for deliberate emphasis.",
+      "category": "punctuation",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "punctuation.dashes",
+      "detection": {
+        "kind": "regex",
+        "pattern": "—|–|\\s-{1,2}\\s",
+        "flags": "",
+        "minOccurrences": 3,
+        "minPer100Words": 1
+      },
+      "remediation": {
+        "guidance": "Most dashes read fine as commas, full stops or parentheses; keep one or two that clearly beat the alternatives."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Em dashes",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Some writers genuinely love dashes; a strong Voiceprint for dash use suppresses this rule.",
+      "tags": [
+        "punctuation",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.synonym-cycling",
+      "version": 1,
+      "name": "Synonym cycling",
+      "description": "The subject rotates between near-synonyms (the tool, the platform, the solution) for variety alone.",
+      "category": "repetition",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "synonym-cycling"
+      },
+      "remediation": {
+        "guidance": "If the clear word is right, repeat it."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Synonym cycling",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "falsePositiveNotes": "Only checks a few synonym clusters used as sentence subjects within one paragraph.",
+      "tags": [
+        "repetition",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.dramatic-headings",
+      "version": 1,
+      "name": "Teaser headings",
+      "description": "Headings that tease instead of describe (emoji, exclamations, “The Hidden Trap”).",
+      "category": "formatting",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "dramatic-headings"
+      },
+      "remediation": {
+        "guidance": "Make the heading describe what the section contains."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Formatting slop",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "formatting",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.emphasis-sprinkling",
+      "version": 1,
+      "name": "Scattered bold",
+      "description": "Bold emphasis sprinkled through sentences.",
+      "category": "formatting",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "emphasis-sprinkling",
+        "params": {
+          "min": 3
+        }
+      },
+      "remediation": {
+        "guidance": "Let sentence structure carry emphasis; keep formatting for real structure."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Formatting slop",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "formatting",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.fake-strong-verbs",
+      "version": 1,
+      "name": "Fake-strong verbs",
+      "description": "Grand verbs where “is” or “has” is clearer (serves as a centralized hub for).",
+      "category": "lexical",
+      "severity": "info",
+      "determinism": "advisory",
+      "detection": {
+        "kind": "none"
+      },
+      "remediation": {
+        "guidance": "Prefer is and has when they are clearer; name what the thing does."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Fake-strong verbs",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "rationale": "“serves as” is sometimes exactly right; judging it needs the sentence's meaning, so it is guidance, not a detector.",
+      "tags": [
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.preserve-voice",
+      "version": 1,
+      "name": "Preserve the writer's voice",
+      "description": "Keep the writer's vocabulary, cadence, bluntness, humour and genuine uncertainty; do not polish distinctive lines for consistency.",
+      "category": "voice",
+      "severity": "info",
+      "determinism": "advisory",
+      "detection": {
+        "kind": "none"
+      },
+      "remediation": {
+        "guidance": "Make the minimum effective edit. Leave strong human sentences alone."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Editing principles",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "voice",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.portability-test",
+      "version": 1,
+      "name": "Portability test",
+      "description": "A sentence that could move unchanged to another person, company or product is probably filler.",
+      "category": "specificity",
+      "severity": "info",
+      "determinism": "model-assisted",
+      "detection": {
+        "kind": "none"
+      },
+      "remediation": {
+        "guidance": "Replace it with a fact, example, mechanism or consequence specific to this subject, but only one the source supports."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Editing principles",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "specificity",
+        "anti-slop"
+      ]
+    },
+    {
+      "id": "slop.show-dont-tell",
+      "version": 1,
+      "name": "Show, don't label",
+      "description": "Commentary that labels a point important, surprising or subtle instead of demonstrating it.",
+      "category": "specificity",
+      "severity": "info",
+      "determinism": "model-assisted",
+      "detection": {
+        "kind": "none"
+      },
+      "remediation": {
+        "guidance": "Let facts, actions and consequences carry the emphasis."
+      },
+      "source": {
+        "type": "imported-rule-system",
+        "title": "no-ai-slop: Editing principles",
+        "url": "https://github.com/petergyang/no-ai-slop",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "relation": "adapted"
+      },
+      "tags": [
+        "specificity",
+        "anti-slop"
+      ]
+    }
+  ]
+}

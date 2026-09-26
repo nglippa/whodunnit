@@ -1,0 +1,101 @@
+[
+  {
+    "id": "style-concise",
+    "name": "Concise",
+    "description": "Rules that apply when the target is Concise.",
+    "version": 1,
+    "layer": "style",
+    "source": { "type": "builtin", "title": "Whodunnit style rules", "relation": "original" },
+    "rules": [
+      {
+        "id": "concise.filler-adverbs",
+        "version": 1,
+        "name": "Filler adverbs",
+        "description": "Adverbs that rarely change meaning (basically, essentially, actually, really, very).",
+        "category": "lexical",
+        "severity": "suggestion",
+        "determinism": "deterministic",
+        "dimension": "lexical.intensifiers",
+        "detection": { "kind": "phrase", "phrases": ["basically", "essentially", "actually", "really", "very", "quite", "truly"] },
+        "remediation": { "guidance": "Cut them unless they carry contrast or uncertainty.", "transform": { "kind": "delete-match" } },
+        "source": { "type": "builtin", "relation": "original" },
+        "falsePositiveNotes": "“not very good” means something else than “not good”; the transform skips words after a negation.",
+        "examples": { "problematic": ["It was basically a very small change."], "preferred": ["It was a small change."] },
+        "tags": ["concise"]
+      }
+    ]
+  },
+  {
+    "id": "style-academic",
+    "name": "Academic",
+    "description": "Rules that apply when the target is Academic.",
+    "version": 1,
+    "layer": "style",
+    "source": { "type": "builtin", "title": "Whodunnit style rules", "relation": "original" },
+    "rules": [
+      {
+        "id": "academic.contractions",
+        "version": 1,
+        "name": "Contractions in formal prose",
+        "description": "Contractions in a formal register.",
+        "category": "voice",
+        "severity": "suggestion",
+        "determinism": "deterministic",
+        "dimension": "voice.contractions",
+        "detection": { "kind": "regex", "pattern": "\\b(?:[a-z]+n['’]t|(?:i|you|we|they|he|she|it|that|there)['’](?:m|re|ve|ll|d|s))\\b", "flags": "i", "minOccurrences": 1 },
+        "remediation": { "guidance": "Write contractions out in full." },
+        "source": { "type": "builtin", "relation": "original" },
+        "examples": { "problematic": ["The data don't support it."], "preferred": ["The data do not support it."] },
+        "tags": ["academic"]
+      }
+    ]
+  },
+  {
+    "id": "style-professional",
+    "name": "Professional",
+    "description": "Rules that apply when the target is Professional.",
+    "version": 1,
+    "layer": "style",
+    "source": { "type": "builtin", "title": "Whodunnit style rules", "relation": "original" },
+    "rules": [
+      {
+        "id": "professional.exclamations",
+        "version": 1,
+        "name": "Exclamation marks",
+        "description": "More than one exclamation mark in work writing.",
+        "category": "punctuation",
+        "severity": "suggestion",
+        "determinism": "deterministic",
+        "detection": { "kind": "regex", "pattern": "!", "flags": "", "minOccurrences": 2 },
+        "remediation": { "guidance": "Let the facts carry the excitement." },
+        "source": { "type": "builtin", "relation": "original" },
+        "examples": { "problematic": ["Great news! We shipped!"], "preferred": ["We shipped on Friday."] },
+        "tags": ["professional"]
+      }
+    ]
+  },
+  {
+    "id": "style-casual",
+    "name": "Casual",
+    "description": "Rules that apply when the target is Casual or Personal.",
+    "version": 1,
+    "layer": "style",
+    "source": { "type": "builtin", "title": "Whodunnit style rules", "relation": "original" },
+    "rules": [
+      {
+        "id": "casual.stiff-connectives",
+        "version": 1,
+        "name": "Stiff connectives",
+        "description": "Formal connectives (Thus, Hence, Consequently) in conversational writing.",
+        "category": "transition",
+        "severity": "suggestion",
+        "determinism": "deterministic",
+        "detection": { "kind": "phrase", "phrases": ["thus", "hence", "consequently", "therefore", "moreover", "furthermore"], "sentenceStart": true },
+        "remediation": { "guidance": "Use so, but, and, or nothing." },
+        "source": { "type": "builtin", "relation": "original" },
+        "examples": { "problematic": ["Thus, we left early."], "preferred": ["So we left early."] },
+        "tags": ["casual"]
+      }
+    ]
+  }
+]

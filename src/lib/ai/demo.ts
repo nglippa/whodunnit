@@ -17,7 +17,7 @@ export class DemoProvider implements AIProvider {
 
   async reconstructText(input: ReconstructInput) {
     const base = input.current ?? input.source;
-    const { text, applied } = applyDemoRules(base, input.profile, input.refinement);
+    const { text, applied } = applyDemoRules(base, input.profile, input.refinement, input.plan.constraints);
     return {
       text,
       changes: applied.length ? applied : ["No rule-based edits applied. A connected writing model is needed for a full reconstruction."],

@@ -1,0 +1,63 @@
+{
+  "id": "imported",
+  "name": "Reviewed imports",
+  "description": "Rules compiled from external sources and approved by a person with `pnpm rules:activate`. Each rule carries its own source metadata.",
+  "version": 1,
+  "layer": "general",
+  "source": {
+    "type": "builtin",
+    "title": "Reviewed rule imports",
+    "relation": "original"
+  },
+  "rules": [
+    {
+      "id": "import.no-ai-slop-skill.often-empty-adverbs",
+      "version": 1,
+      "name": "Dense filler adverbs",
+      "description": "Adverbs like just, literally, honestly and simply used densely enough that most add rhythm but no meaning.",
+      "category": "rhythm",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "density",
+        "lexicon": [
+          "just",
+          "literally",
+          "honestly",
+          "simply",
+          "actually",
+          "truly",
+          "fundamentally",
+          "importantly",
+          "crucially",
+          "inherently",
+          "inevitably"
+        ],
+        "per100Words": 2,
+        "minOccurrences": 3,
+        "minWords": 80
+      },
+      "remediation": {
+        "guidance": "Cut the ones that carry nothing; keep those that mark real emphasis, contrast or the writer's spoken rhythm."
+      },
+      "source": {
+        "type": "webpage",
+        "title": "No AI slop: Words to cut",
+        "url": "https://raw.githubusercontent.com/petergyang/no-ai-slop/main/skills/no-ai-slop/SKILL.md",
+        "author": "Peter Yang",
+        "license": "MIT",
+        "sourceDocumentId": "no-ai-slop-skill",
+        "importedAt": "2026-09-26T01:30:06.678Z",
+        "relation": "derived"
+      },
+      "examples": {
+        "problematic": [],
+        "preferred": []
+      },
+      "tags": [
+        "imported"
+      ],
+      "enabled": true
+    }
+  ]
+}

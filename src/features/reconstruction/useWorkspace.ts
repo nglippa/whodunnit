@@ -1,7 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useReducer, useRef } from "react";
-import type { Revision, StyleTarget, WhodunnitDocument } from "@/domain/document";
+import type { PatternComparison, Preserved, Revision, StyleTarget, WhodunnitDocument } from "@/domain/document";
 import type { Refinement } from "@/domain/refinement";
 import { PRESETS, isPresetId, type StyleProfile } from "@/domain/style";
 import type { Voiceprint } from "@/domain/voiceprint";
@@ -69,6 +69,8 @@ export interface ResultMeta {
   changes: string[];
   attempts: number | null;
   fromHistory: boolean;
+  patterns?: PatternComparison;
+  preserved?: Preserved;
   /** true while the author's hand edits are being checked in place of the engine's text. */
   editedByHand?: boolean;
 }
@@ -81,6 +83,8 @@ const metaFromResponse = (r: ReconstructResponse): ResultMeta => ({
   changes: r.changes,
   attempts: r.attempts,
   fromHistory: false,
+  patterns: r.patterns,
+  preserved: r.preserved,
 });
 
 const metaFromRevision = (r: Revision): ResultMeta => ({
@@ -91,6 +95,8 @@ const metaFromRevision = (r: Revision): ResultMeta => ({
   changes: [],
   attempts: null,
   fromHistory: true,
+  patterns: r.patterns,
+  preserved: r.preserved,
 });
 
 export function reducer(state: WorkspaceState, action: Action): WorkspaceState {
@@ -233,6 +239,8 @@ export function useWorkspace(voiceprints: Voiceprint[]) {
           text: s.resultText,
           refinement: null,
           verification: verifyDeterministic(s.source, s.resultText, current.profile),
+          patterns: undefined,
+          preserved: undefined,
           editedByAuthor: true,
           createdAt: new Date().toISOString(),
         };
@@ -250,6 +258,8 @@ export function useWorkspace(voiceprints: Voiceprint[]) {
           {
             source: s.source,
             profile: baseProfile,
+            // Voiceprint targets send measured statistics only; samples stay in this browser.
+            voiceprint: s.target.kind === "voiceprint" ? voiceprints.find((v) => v.id === (s.target as { voiceprintId: string }).voiceprintId) : undefined,
             refinement: kind === "refine" && change ? { current: s.resultText, change } : undefined,
           },
           controller.signal,
@@ -266,6 +276,8 @@ export function useWorkspace(voiceprints: Voiceprint[]) {
           verification: result.verification,
           engine: result.engine,
           promptVersion: result.promptVersion,
+          patterns: result.patterns,
+          preserved: result.preserved,
           editedByAuthor: false,
           createdAt: new Date().toISOString(),
         };

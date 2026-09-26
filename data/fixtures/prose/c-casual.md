@@ -1,0 +1,1 @@
+hey, running late, sorry! the train sat outside Clapham for twenty minutes and nobody said why. should be there by 7:15 but don't wait for me to order. get the dumplings if they still have them. I'll owe you one.

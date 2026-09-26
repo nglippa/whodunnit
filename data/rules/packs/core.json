@@ -1,0 +1,560 @@
+{
+  "id": "core",
+  "name": "Core Whodunnit",
+  "description": "Structural and rhythm patterns measured directly from the text: uniform sentences and paragraphs, stacked connectives, repeated openers, and dense qualifiers or intensifiers.",
+  "version": 1,
+  "layer": "general",
+  "source": {
+    "type": "builtin",
+    "title": "Whodunnit core rules",
+    "relation": "original"
+  },
+  "rules": [
+    {
+      "id": "core.uniform-sentence-length",
+      "version": 1,
+      "name": "Uniform sentence rhythm",
+      "description": "Sentence lengths barely vary, so the prose reads at one monotonous pace.",
+      "category": "rhythm",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "rhythm.sentence-variation",
+      "detection": {
+        "kind": "metric",
+        "metric": "sentenceLengthCV",
+        "op": "lt",
+        "threshold": 0.25,
+        "minSentences": 8
+      },
+      "remediation": {
+        "guidance": "Let some sentences be short and plain and others run longer, where the thought calls for it. Do not add or drop content to create variety."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "rationale": "Spoken and written human prose usually shows a coefficient of variation of roughly 0.4–0.7 in sentence length.",
+      "falsePositiveNotes": "Technical instructions and lists of steps can be legitimately even. Needs at least 8 sentences.",
+      "tags": [
+        "rhythm",
+        "structure"
+      ]
+    },
+    {
+      "id": "core.no-sentence-extremes",
+      "version": 1,
+      "name": "No short or long sentences",
+      "description": "A long passage with no sentence under 8 words and none over 30.",
+      "category": "rhythm",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "rhythm.sentence-variation",
+      "detection": {
+        "kind": "builtin",
+        "detector": "no-sentence-extremes",
+        "params": {
+          "minSentences": 12,
+          "minWords": 200,
+          "short": 8,
+          "long": 30
+        }
+      },
+      "remediation": {
+        "guidance": "Where a point lands, let it land in a short sentence; where an idea has parts, let it take a longer one."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "falsePositiveNotes": "Only fires on 200+ words and 12+ sentences.",
+      "tags": [
+        "rhythm"
+      ]
+    },
+    {
+      "id": "core.uniform-paragraph-length",
+      "version": 1,
+      "name": "Uniform paragraph blocks",
+      "description": "Paragraphs are nearly identical in length, which reads as assembled rather than written.",
+      "category": "paragraph",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "rhythm.paragraph-variation",
+      "detection": {
+        "kind": "metric",
+        "metric": "paragraphLengthCV",
+        "op": "lt",
+        "threshold": 0.15,
+        "minSentences": 8,
+        "minParagraphs": 4
+      },
+      "remediation": {
+        "guidance": "Let paragraph length follow the weight of each point: a short one for a single observation, a longer one for an argument."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "falsePositiveNotes": "Lists, tables and templates are excluded. Needs 4+ prose paragraphs.",
+      "tags": [
+        "structure"
+      ]
+    },
+    {
+      "id": "core.symmetrical-paragraphs",
+      "version": 1,
+      "name": "Symmetrical paragraphs",
+      "description": "Every paragraph has exactly the same number of sentences.",
+      "category": "paragraph",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "symmetrical-paragraphs",
+        "params": {
+          "minParagraphs": 4
+        }
+      },
+      "remediation": {
+        "guidance": "Merge or split paragraphs where the ideas actually divide, not to a template."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "tags": [
+        "structure"
+      ]
+    },
+    {
+      "id": "core.transition-density",
+      "version": 1,
+      "name": "Connective-heavy sentences",
+      "description": "A large share of sentences open with a stock connective (However, Moreover, Additionally, Therefore).",
+      "category": "transition",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "transition.openers",
+      "detection": {
+        "kind": "metric",
+        "metric": "transitionOpenerShare",
+        "op": "gt",
+        "threshold": 0.3,
+        "minSentences": 6
+      },
+      "remediation": {
+        "guidance": "Most connectives can go: the order of the sentences already shows the relationship. Keep the ones that carry real logic (because, but)."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "tags": [
+        "transitions"
+      ]
+    },
+    {
+      "id": "core.repeated-transitions",
+      "version": 1,
+      "name": "Stacked connectives",
+      "description": "The same connective opens several sentences, or additive connectives (Furthermore, Moreover, Additionally) are chained.",
+      "category": "transition",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "repeated-transitions",
+        "params": {
+          "sameWord": 3,
+          "additiveChain": 2
+        }
+      },
+      "remediation": {
+        "guidance": "Keep at most one additive connective; drop the rest and let the sentences follow each other.",
+        "transform": {
+          "kind": "collapse-additive-openers"
+        }
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "examples": {
+        "problematic": [
+          "It works. Furthermore, it scales. Moreover, it is cheap."
+        ],
+        "preferred": [
+          "It works, it scales, and it is cheap."
+        ]
+      },
+      "tags": [
+        "transitions"
+      ]
+    },
+    {
+      "id": "core.repeated-sentence-openers",
+      "version": 1,
+      "name": "Repeated sentence openings",
+      "description": "Consecutive sentences start with the same word, or one two-word opening recurs throughout.",
+      "category": "repetition",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "repeated-sentence-openers",
+        "params": {
+          "run": 3,
+          "runCommon": 4,
+          "twoWord": 3,
+          "minSentences": 8
+        }
+      },
+      "remediation": {
+        "guidance": "Vary how sentences begin by leading with what matters in each one, not by swapping synonyms."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "falsePositiveNotes": "Common openers (The, I, We, It, This) need a run of four; deliberate anaphora in stylised prose can trip this.",
+      "examples": {
+        "problematic": [
+          "Honestly, it works. Honestly, it is fast. Honestly, it is cheap."
+        ],
+        "preferred": [
+          "It works, it is fast, and it is cheap."
+        ]
+      },
+      "tags": [
+        "repetition"
+      ]
+    },
+    {
+      "id": "core.repeated-paragraph-openers",
+      "version": 1,
+      "name": "Repeated paragraph openings",
+      "description": "Three or more consecutive paragraphs open with the same word.",
+      "category": "repetition",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "repeated-paragraph-openers",
+        "params": {
+          "run": 3
+        }
+      },
+      "remediation": {
+        "guidance": "Open each paragraph with its own point."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "tags": [
+        "repetition",
+        "structure"
+      ]
+    },
+    {
+      "id": "core.triad-overuse",
+      "version": 1,
+      "name": "Lists of three by default",
+      "description": "Several three-item lists in a short span, a rhythm that makes prose sound templated.",
+      "category": "sentence",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "builtin",
+        "detector": "triad-overuse",
+        "params": {
+          "min": 3,
+          "per150": 1
+        }
+      },
+      "remediation": {
+        "guidance": "Keep the items that are real. If there are two, say two; if there are four, say four."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "falsePositiveNotes": "One or two triads are ordinary; needs three or more and about one per 150 words.",
+      "tags": [
+        "rhythm"
+      ]
+    },
+    {
+      "id": "core.intensifier-density",
+      "version": 1,
+      "name": "Dense intensifiers",
+      "description": "Many intensifiers (very, really, truly, incredibly) relative to length.",
+      "category": "lexical",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "dimension": "lexical.intensifiers",
+      "detection": {
+        "kind": "density",
+        "lexicon": [
+          "very",
+          "really",
+          "extremely",
+          "incredibly",
+          "truly",
+          "absolutely",
+          "deeply",
+          "highly",
+          "remarkably",
+          "profoundly",
+          "exceptionally",
+          "tremendously",
+          "immensely",
+          "utterly",
+          "genuinely",
+          "undeniably"
+        ],
+        "per100Words": 2,
+        "minOccurrences": 4,
+        "minWords": 100
+      },
+      "remediation": {
+        "guidance": "Cut intensifiers that add length but not meaning, or replace them with the specific fact that makes the thing notable."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "tags": [
+        "lexical"
+      ]
+    },
+    {
+      "id": "core.hedge-density",
+      "version": 1,
+      "name": "Dense hedging",
+      "description": "Qualifiers (may, might, perhaps, arguably, seems) are unusually dense across the text.",
+      "category": "voice",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "voice.hedging",
+      "detection": {
+        "kind": "density",
+        "lexicon": [
+          "perhaps",
+          "maybe",
+          "possibly",
+          "probably",
+          "likely",
+          "arguably",
+          "somewhat",
+          "seems",
+          "seem",
+          "appears",
+          "appear",
+          "might",
+          "may",
+          "could",
+          "potentially",
+          "to some extent",
+          "it is possible that"
+        ],
+        "per100Words": 4.5,
+        "minOccurrences": 6,
+        "minWords": 120
+      },
+      "remediation": {
+        "guidance": "Keep a qualifier only where the source is genuinely uncertain; state established facts plainly."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "falsePositiveNotes": "Writing about genuinely open questions hedges legitimately; the threshold is set high.",
+      "tags": [
+        "voice"
+      ]
+    },
+    {
+      "id": "core.hedge-cluster",
+      "version": 1,
+      "name": "Hedge cluster",
+      "description": "One paragraph carries four or more qualifiers.",
+      "category": "voice",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "voice.hedging",
+      "detection": {
+        "kind": "builtin",
+        "detector": "paragraph-hedge-cluster",
+        "params": {
+          "max": 3,
+          "per100": 5,
+          "minWords": 40
+        }
+      },
+      "remediation": {
+        "guidance": "Decide what the paragraph actually claims and qualify it once, where the uncertainty is."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "tags": [
+        "voice"
+      ]
+    },
+    {
+      "id": "core.semicolon-density",
+      "version": 1,
+      "name": "Semicolon-heavy",
+      "description": "Semicolons are used unusually often.",
+      "category": "punctuation",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "dimension": "punctuation.semicolons",
+      "detection": {
+        "kind": "regex",
+        "pattern": ";",
+        "flags": "",
+        "minOccurrences": 4,
+        "minPer100Words": 1
+      },
+      "remediation": {
+        "guidance": "Most semicolons can become full stops, or commas with a conjunction."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "tags": [
+        "punctuation"
+      ]
+    },
+    {
+      "id": "core.passive-share",
+      "version": 1,
+      "name": "Mostly passive voice",
+      "description": "Nearly half the sentences look passive, which can hide who did what.",
+      "category": "voice",
+      "severity": "info",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "metric",
+        "metric": "likelyPassiveShare",
+        "op": "gt",
+        "threshold": 0.45,
+        "minSentences": 6
+      },
+      "remediation": {
+        "guidance": "Where the actor is known and matters, name them."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "falsePositiveNotes": "The passive detector is a pattern heuristic (be-verb + participle); scientific methods sections use passive on purpose.",
+      "tags": [
+        "voice"
+      ]
+    },
+    {
+      "id": "core.wordy-phrases",
+      "version": 1,
+      "name": "Wordy stock phrases",
+      "description": "Long stock phrases with a plain equivalent (in order to → to, due to the fact that → because).",
+      "category": "lexical",
+      "severity": "suggestion",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "in order to",
+          "due to the fact that",
+          "at this point in time",
+          "a large number of",
+          "a significant number of",
+          "in the event that",
+          "prior to",
+          "utilize",
+          "utilizes",
+          "utilized",
+          "utilizing",
+          "delve into",
+          "delves into",
+          "delving into"
+        ]
+      },
+      "remediation": {
+        "guidance": "Use the plain equivalent.",
+        "transform": {
+          "kind": "replace-map",
+          "map": {
+            "in order to": "to",
+            "due to the fact that": "because",
+            "at this point in time": "now",
+            "a large number of": "many",
+            "a significant number of": "many",
+            "in the event that": "if",
+            "prior to": "before",
+            "utilize": "use",
+            "utilizes": "uses",
+            "utilized": "used",
+            "utilizing": "using",
+            "delve into": "look at",
+            "delves into": "looks at",
+            "delving into": "looking at"
+          }
+        }
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "examples": {
+        "problematic": [
+          "We met in order to utilize the budget."
+        ],
+        "preferred": [
+          "We met to use the budget."
+        ]
+      },
+      "tags": [
+        "lexical",
+        "concise"
+      ]
+    },
+    {
+      "id": "core.tool-markup",
+      "version": 1,
+      "name": "Leftover tool markup",
+      "description": "Citation or reference placeholders left behind by a chat tool (e.g. oaicite, contentReference, turn0search0).",
+      "category": "formatting",
+      "severity": "warning",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\b(?:oaicite(?::\\d+)?|contentReference|turn\\d+search\\d+|grok_card|attributableIndex)\\b",
+        "flags": "i"
+      },
+      "remediation": {
+        "guidance": "Delete the placeholder and add a real citation if one is needed."
+      },
+      "source": {
+        "type": "builtin",
+        "relation": "original"
+      },
+      "rationale": "These strings are not prose. The rule reports leftover markup; it says nothing about who wrote the text.",
+      "examples": {
+        "problematic": [
+          "Revenue rose 4% :contentReference[oaicite:2]{index=2} last year."
+        ],
+        "preferred": [
+          "Revenue rose 4% last year (annual report, p. 12)."
+        ]
+      },
+      "tags": [
+        "formatting"
+      ]
+    }
+  ]
+}

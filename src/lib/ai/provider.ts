@@ -5,6 +5,7 @@ import type { Finding } from "@/domain/verification";
 import type { Observation } from "@/domain/voiceprint";
 import type { TextAnalysis } from "../analysis/analyze";
 import type { Candidate, DiscourseAnalysis } from "./schemas";
+import type { RewritePlan } from "../reconstruction/rewrite-plan";
 
 /**
  * The only surface the rest of the app sees. Implementations live server-side
@@ -15,8 +16,8 @@ export interface ReconstructInput {
   /** Present for refinements: the text being revised. */
   current?: string;
   profile: StyleProfile;
-  plan: string[];
-  analysis: TextAnalysis;
+  /** The compiled reconstruction contract (preserve, targets, patterns, prohibitions). */
+  plan: RewritePlan;
   /** Claims identified in the source that the rewrite must keep. */
   claims?: string[];
   refinement?: Refinement;

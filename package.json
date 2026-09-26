@@ -9,7 +9,18 @@
     "lint": "eslint",
     "test": "vitest run",
     "test:watch": "vitest",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "rules:list": "tsx tools/rules/cli.ts rules:list",
+    "rules:validate": "tsx tools/rules/cli.ts rules:validate",
+    "rules:analyze": "tsx tools/rules/cli.ts rules:analyze",
+    "rules:review": "tsx tools/rules/cli.ts rules:review",
+    "rules:activate": "tsx tools/rules/cli.ts rules:activate",
+    "rules:reject": "tsx tools/rules/cli.ts rules:reject",
+    "source:scrape": "tsx tools/rules/cli.ts source:scrape",
+    "source:add": "tsx tools/rules/cli.ts source:add",
+    "source:list": "tsx tools/rules/cli.ts source:list",
+    "source:show": "tsx tools/rules/cli.ts source:show",
+    "source:compile": "tsx tools/rules/cli.ts source:compile"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",
@@ -29,6 +40,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.3.6",
     "tailwindcss": "^4",
+    "tsx": "4.23.15",
     "typescript": "^5",
     "vitest": "^5.0.1"
   },

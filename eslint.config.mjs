@@ -12,6 +12,9 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Python tooling environment (bundles third-party JS) and rule/source data.
+    "tools/source-ingestion/.venv/**",
+    "data/**",
   ]),
 ]);
 

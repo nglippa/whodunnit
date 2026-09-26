@@ -14,6 +14,12 @@ export const HEDGES = [
   "i think", "i suspect", "i guess", "sort of", "kind of", "in a way", "to some extent", "generally", "typically", "often", "tends to",
 ];
 
+/** Intensifiers that usually add emphasis without information. Counted by density, never singly. */
+export const INTENSIFIERS = [
+  "very", "really", "extremely", "incredibly", "truly", "absolutely", "deeply", "highly", "remarkably", "profoundly",
+  "exceptionally", "tremendously", "immensely", "utterly", "totally", "literally", "genuinely", "undeniably",
+];
+
 /** Stock connectives that open a sentence. Counted only in sentence-initial position. */
 export const TRANSITION_OPENERS = [
   "additionally", "furthermore", "moreover", "however", "therefore", "consequently", "thus", "hence", "nevertheless", "nonetheless",
