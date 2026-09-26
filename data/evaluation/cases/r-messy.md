@@ -1,0 +1,1 @@
+ok so the van thing — its fine now?? turns out the noise was the heat shield not the exhaust lol. mechanic said 40 quid which honestly is fair. gonna drive it to sams on saturday and see if it rattles again, if it does im just selling it tbh

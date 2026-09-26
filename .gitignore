@@ -49,3 +49,6 @@ supabase/.temp/
 data/sources/cache/
 data/sources/normalized/
 data/rules/candidates/
+
+# evaluation results: fixture outputs, model responses and reports; local by default
+.evaluations/

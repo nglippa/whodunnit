@@ -160,6 +160,45 @@ Source text is treated as untrusted data. It can suggest a candidate. It cannot 
 
 Cached and normalised extractions and candidates are gitignored. The repository stores source metadata and the rules written from it, not the articles. Attribution for adapted material is in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
+## Evaluating reconstruction
+
+Rewrite behaviour is versioned as a `RewriteStrategy` (prompt, contract policy, retries, post-checks). Changes to it are measured with the evaluation harness, not judged by eye.
+
+```bash
+pnpm eval:help                               # command guide
+pnpm eval:run --smoke                        # 5 cases against the real model (needs ANTHROPIC_API_KEY)
+pnpm eval:run --all --demo                   # the demo engine, explicitly; never a silent fallback
+pnpm eval:baseline latest --name current
+pnpm eval:compare --baseline current --run latest
+```
+
+The corpus has 22 synthetic cases in `data/evaluation`. They cover formulaic, ordinary, casual, professional, academic, stylised, terse and long-form prose, plus several adversarial cases:
+
+- dense facts
+- legitimate repetition
+- a strong Voiceprint
+- already-good text
+- appropriate formality
+- intentional dashes
+- literal lists of three
+- negations
+- nuance under shortening
+- messy casual voice
+
+Two of the cases are refinement chains, and two test constraint load.
+
+Each record keeps its dimensions separate:
+
+- the semantic hard gate (deterministic, then model)
+- rules resolved and introduced
+- raw metric deltas
+- wording retention
+- the voice comparison
+- retries, latency and tokens
+- optional human review
+
+There is no composite score and no detector score. Details: [docs/EVALUATION.md](docs/EVALUATION.md).
+
 ## Privacy
 
 - Drafts, revisions and voiceprints live in your browser's local storage. There are no accounts and no server database in V1.
@@ -186,6 +225,8 @@ Unit tests cover:
 - the fixture corpus: the formulaic fixture fires, the five clean fixtures do not (dashes and fragments in the stylised fixture are suppressed by a matching Voiceprint), and demo transforms leave each clean voice intact
 - constraints and precedence, the RewritePlan contract, the pattern post-check and the retry policy
 - source normalisation, the library, candidate compilation, model-output validation and activation
+- rewrite strategies and prompt identity (pinned fingerprints), contract prioritisation and intensity, attempt logging
+- evaluation: retention and delta maths, voice comparison, the semantic hard gate, refinement anchoring, batch failure isolation, storage, reviews, baselines, comparison reports, and the no-fallback rule for real-model runs
 
 ## Deployment
 
@@ -197,7 +238,8 @@ Engine configuration is read per request, so the interface always reflects the m
 
 - The demo engine only makes rule-based edits; it cannot vary rhythm or rewrite sentences. Real reconstruction needs a model. Patterns such as puffery are detected but left for the model.
 - Rule thresholds were tuned on a small fixture corpus. Heuristic rules will have false positives on some real prose, and some lexical rules need two occurrences before they fire, so a single "leverage" passes.
-- Model-assisted candidate compilation and the live reconstruction contract have unit tests with scripted models, but have not been exercised against a live model in this repository.
+- Model-assisted candidate compilation and the live reconstruction contract have unit tests with scripted models, but have not been exercised against a live model in this repository. The evaluation harness is ready for that (`pnpm eval:run --smoke`); no real-model run has been recorded yet.
+- `reconstruction-v2` (prioritised contract, minimal-change intensity) is experimental and not the production default until a real-model comparison supports it.
 - Deterministic checks catch concrete changes (figures, names, quotes, negations) but not every shift in meaning. The model check covers more, and it is still a check, not a proof. Read the result before you use it.
 - Name detection is heuristic. Lowercase names and names that only appear at the start of a sentence are weaker evidence and produce warnings rather than blocks.
 - Analysis is tuned for English.

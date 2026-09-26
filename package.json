@@ -20,7 +20,16 @@
     "source:add": "tsx tools/rules/cli.ts source:add",
     "source:list": "tsx tools/rules/cli.ts source:list",
     "source:show": "tsx tools/rules/cli.ts source:show",
-    "source:compile": "tsx tools/rules/cli.ts source:compile"
+    "source:compile": "tsx tools/rules/cli.ts source:compile",
+    "eval:help": "tsx tools/eval/cli.ts help",
+    "eval:list": "tsx tools/eval/cli.ts list",
+    "eval:run": "tsx tools/eval/cli.ts run",
+    "eval:runs": "tsx tools/eval/cli.ts runs",
+    "eval:show": "tsx tools/eval/cli.ts show",
+    "eval:contract": "tsx tools/eval/cli.ts contract",
+    "eval:compare": "tsx tools/eval/cli.ts compare",
+    "eval:baseline": "tsx tools/eval/cli.ts baseline",
+    "eval:review": "tsx tools/eval/cli.ts review"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

@@ -14,7 +14,8 @@ source text
   → detectors × active rules           src/lib/rules/detectors.ts, builtins.ts
   → applyPrecedence (constraints)      src/lib/rules/constraints.ts
   → WritingAnalysis { metrics, findings, summary }
-  → RewritePlan (preserve, target ranges, patterns found, prohibited, advisory)
+  → RewritePlan (preserve, target ranges, patterns found, prohibited, advisory, intensity)
+      compiled under a versioned RewriteStrategy
   → model or demo engine
   → meaning checks + comparePatterns (resolved / remaining / introduced)
   → retry only on blocking meaning findings or newly introduced deterministic patterns
@@ -153,3 +154,20 @@ pnpm source:scrape https://example.com/page --license "CC BY 4.0" --usage derive
 - **Fetching:** plain HTTP through Scrapling's `Fetcher`, with no stealth headers, no browser impersonation and an identifying User-Agent. It fetches one URL per run and checks robots.txt first.
 - **Extraction:** finds the content root by selector, drops boilerplate, and converts to Markdown sections.
 - **Cache:** raw and normalised extractions are cached in `data/sources/cache/` and `data/sources/normalized/`, keyed by URL hash, and both are gitignored. A re-scrape reports `hit`, `refreshed` or `unchanged`.
+
+## Rewrite strategies and evaluation
+
+A `RewriteStrategy` (`src/domain/strategy.ts`) owns every policy that shapes a rewrite:
+
+- the prompt version;
+- full or prioritised contract;
+- how intensity is handled;
+- constraint budgets;
+- the retry policy;
+- the post-check policy.
+
+Strategies are immutable and versioned. Production uses `reconstruction-v1` (the original behaviour, prompt `reconstruct.v2`). `reconstruction-v2` (prioritised contract, minimal-change intensity, prompt `reconstruct.v3`) is experimental until an evaluation shows it is better. The route handler only chooses the default strategy.
+
+`runReconstructionDetailed` exposes the plan and a per-attempt log. The log holds trigger, retry reasons, failure kinds, output hash, latency, tokens and request id, and never any text.
+
+The evaluation harness (`src/lib/evaluation`, `tools/eval/cli.ts`, `data/evaluation`) runs a versioned corpus through a strategy and provider. It records semantic gates, rule diffs, metric deltas, wording retention and voice comparison per case, and stores them in the gitignored `.evaluations/`. It compares runs by dimension and flags regressions against baselines. See [EVALUATION.md](EVALUATION.md).

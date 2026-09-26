@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "golds": [
+    {
+      "corpusCaseId": "formulaic",
+      "author": "Claude (AI), unreviewed",
+      "provenance": "Illustrative reference written by Claude (an AI assistant) while building the harness. Not written or reviewed by a human editor and not expert-labelled; one plausible edit among many.",
+      "text": "Collaboration depends on the right tools and on clear communication. Teams with good tools can use what every member brings, and clear communication builds trust between departments and lets people own their work.\n\nThe tool is fast, flexible and secure. It also makes onboarding easier, reduces friction and improves morale, though adopting it takes commitment. Organisations that take this approach report measurable improvements.",
+      "notes": "Removes the scene-setter, announcement, stacked connectives, throat-clearing, binary contrast, negative listing, rhetorical Q&A and the recap/kicker. Keeps every claim, including the unsourced one, because the editor must not delete claims; flagging it to the author is a separate step.",
+      "goals": [
+        "remove catalogued patterns",
+        "keep all claims",
+        "do not add facts"
+      ]
+    },
+    {
+      "corpusCaseId": "anchors",
+      "author": "Claude (AI), unreviewed",
+      "provenance": "Illustrative reference written by Claude (an AI assistant) while building the harness. Not written or reviewed by a human editor and not expert-labelled; one plausible edit among many.",
+      "text": "On 12 March 2026, Dana Whitfield told the council that the Elm Street bridge repair would cost $1.4 million, up from the October estimate of $1.1 million. \"We found corrosion in two of the four bearings,\" she said, \"and we are not willing to reopen the bridge until both are replaced.\"\n\nWork runs from 18 May to 30 June. The detour via Mill Road adds about 7 minutes for most drivers. The engineering report is at https://example.org/elm-street/report-2026.pdf, and questions go to Councillor Omar Haddad before 1 April.",
+      "notes": "Already plain; small reorderings only. Every figure, date, name, the quotation and the URL are unchanged.",
+      "goals": [
+        "change very little",
+        "preserve every anchor"
+      ]
+    },
+    {
+      "corpusCaseId": "already-good",
+      "author": "Claude (AI), unreviewed",
+      "provenance": "Illustrative reference written by Claude (an AI assistant) while building the harness. Not written or reviewed by a human editor and not expert-labelled; one plausible edit among many.",
+      "text": "We moved the tomatoes to the south bed this year, and the difference was obvious by July. The plants in last year's spot, against the fence, never got more than five hours of sun; the new bed gets closer to nine. We picked the first ripe fruit on 2 July, almost three weeks earlier than before.\n\nThe one thing we would change is spacing. We planted them 40 centimetres apart to fit twelve plants, and by August the middle of the row was a damp tangle where blight took hold. Next year we will plant eight, 60 centimetres apart, and prune to two stems.",
+      "notes": "The reference edit is no edit: the text has no catalogued patterns and reads well.",
+      "goals": [
+        "minimal change"
+      ]
+    }
+  ]
+}

@@ -13,7 +13,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Architecture and principles are in README.md. Keep the layers separate: `src/domain` (types + Zod), `src/lib/*` (analysis, verification, voiceprints, reconstruction, ai, prompts, persistence: no React), `src/features/*` (UI).
 - Route handlers stay thin: validate with a domain schema, call `runReconstruction` or a provider, respond. No business logic in `src/app/api`.
 - Model output is untrusted. Parse it with the schemas in `src/lib/ai/schemas.ts`. Never widen a schema to make a response pass.
-- Changing prompt text means bumping its version in `src/lib/prompts/index.ts`.
+- Changing prompt text means adding a new version to `PROMPTS` in `src/lib/prompts/index.ts` (fingerprints are pinned in `strategy.test.ts`).
+- Rewrite behaviour lives in a versioned `RewriteStrategy` (`src/lib/reconstruction/strategies.ts`); never edit a published one, add a version. Measure changes with `pnpm eval:*` (docs/EVALUATION.md) before promoting a strategy.
+- Evaluation output goes to `.evaluations/` (gitignored). The evaluation CLI must never fall back to the demo engine silently, and must only run corpus cases, never user documents.
 - Never log user text. Server code logs through `logEvent` in `src/lib/privacy/log.ts` only.
 - Do not add metrics the text cannot support. Everything shown in the notes is computed in `src/lib/analysis` or `src/lib/rules/metrics.ts`.
 - Writing rules are data in `data/rules/packs/*.json`, validated by `writingRuleSchema`. Only deterministic rules may carry a transform. Run `pnpm rules:validate` after editing a pack. See docs/ARCHITECTURE.md.

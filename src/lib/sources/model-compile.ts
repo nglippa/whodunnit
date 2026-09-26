@@ -2,6 +2,7 @@ import { z } from "zod";
 import type { NormalizedSource, RuleCandidate, SourceDocument, SourceSection } from "@/domain/sources";
 import { ruleCandidateSchema } from "@/domain/sources";
 import { DETERMINISM_LEVELS, RULE_CATEGORIES, type DeterminismLevel, type WritingRuleInput } from "@/domain/writing-rules";
+import { promptKey, type PromptRef } from "@/domain/strategy";
 import { checkPattern } from "../rules/regex-safety";
 import { slugify } from "./normalize";
 
@@ -52,7 +53,8 @@ export interface CandidateExtractor {
   extract(input: { sourceTitle: string; section: SourceSection }): Promise<unknown>;
 }
 
-export const COMPILE_PROMPT_VERSION = "compile.v1";
+export const COMPILE_PROMPT: PromptRef = { id: "compile", version: 1 };
+export const COMPILE_PROMPT_VERSION = promptKey(COMPILE_PROMPT);
 
 export const COMPILE_SYSTEM = `You help build a library of writing-style rules. Read one section of a style guide and propose rule candidates.
 

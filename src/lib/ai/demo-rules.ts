@@ -20,6 +20,7 @@ export function applyDemoRules(
   profile: StyleProfile,
   refinement?: Refinement,
   constraints: TargetConstraint[] = [],
+  options: { minimal?: boolean } = {},
 ): { text: string; applied: string[]; transforms: AppliedTransform[] } {
   const keepWording = profile.wordingRetention === "high" || Boolean(refinement?.directives.includes("keep_wording"));
   const rules = rulesForProfile(profile);
@@ -27,7 +28,8 @@ export function applyDemoRules(
   const byId = new Map(rules.map((r) => [r.id, r]));
   const ruleStep = applyRuleTransforms(text, analysis.findings, byId, { keepWording });
   const fired = new Set(analysis.findings.filter((f) => !f.suppressedBy).map((f) => f.rule.id));
-  const styleStep = applyStyleTransforms(ruleStep.text, profile, keepWording, fired);
+  // Minimal intervention: fix what the rules found, but no register edits on text that needs none.
+  const styleStep = options.minimal ? { text: ruleStep.text, applied: [] } : applyStyleTransforms(ruleStep.text, profile, keepWording, fired);
   const applied = [
     ...ruleStep.applied.map((a) => `${a.ruleName}: fixed ${a.count}`),
     ...styleStep.applied,

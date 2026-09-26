@@ -1,0 +1,422 @@
+{
+  "version": 1,
+  "description": "Whodunnit reconstruction evaluation corpus. Every text is synthetic and written for this repository; none is copied from published writing.",
+  "cases": [
+    {
+      "id": "formulaic",
+      "version": 1,
+      "category": "formulaic",
+      "title": "Templated collaboration blurb",
+      "textFile": "data/fixtures/prose/a-formulaic.md",
+      "style": "natural",
+      "purpose": "Dense catalogued patterns; the rewrite should resolve many without adding claims.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "smoke": true,
+      "expectations": {
+        "anchors": [],
+        "keep": []
+      }
+    },
+    {
+      "id": "ordinary",
+      "version": 1,
+      "category": "ordinary",
+      "title": "Bike brake repair",
+      "textFile": "data/fixtures/prose/b-ordinary.md",
+      "style": "natural",
+      "purpose": "Competent human prose; should change little.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "expectations": {
+        "minTokenRetention": 0.8,
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "casual",
+      "version": 1,
+      "category": "casual",
+      "title": "Casual note",
+      "textFile": "data/fixtures/prose/c-casual.md",
+      "style": "casual",
+      "purpose": "Conversational voice under a casual target.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "expectations": {
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "professional",
+      "version": 1,
+      "category": "professional",
+      "title": "Work update",
+      "textFile": "data/fixtures/prose/e-professional.md",
+      "style": "professional",
+      "purpose": "Business prose that is already direct.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "expectations": {
+        "minTokenRetention": 0.75,
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "academic",
+      "version": 1,
+      "category": "academic",
+      "title": "Academic paragraph",
+      "textFile": "data/fixtures/prose/d-academic.md",
+      "style": "academic",
+      "purpose": "Careful hedged prose; hedges are part of the meaning.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "expectations": {
+        "minTokenRetention": 0.75,
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "stylized",
+      "version": 1,
+      "category": "stylized",
+      "title": "Stylised narrative",
+      "textFile": "data/fixtures/prose/f-stylized.md",
+      "style": "natural",
+      "purpose": "Deliberate dashes and fragments without a Voiceprint to excuse them.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "expectations": {
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "terse",
+      "version": 1,
+      "category": "terse",
+      "title": "Incident note",
+      "textFile": "data/evaluation/cases/g-terse.md",
+      "style": "professional",
+      "purpose": "Very short sentences carrying times and dates; expansion would be wrong.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "lengthRatio": {
+          "min": 0.7,
+          "max": 1.3
+        },
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "long-form",
+      "version": 1,
+      "category": "long-form",
+      "title": "How a heat pump works",
+      "textFile": "data/evaluation/cases/h-long-form.md",
+      "style": "natural",
+      "purpose": "310-word explanation; tests whether structure and technical detail survive.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "keep": [
+          "coefficient of performance",
+          "expansion valve"
+        ],
+        "anchors": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "anchors",
+      "version": 1,
+      "category": "anchors",
+      "title": "Bridge repair report",
+      "textFile": "data/evaluation/cases/i-anchors.md",
+      "style": "professional",
+      "purpose": "Figures, dates, a two-part quotation, names and a URL.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "smoke": true,
+      "expectations": {
+        "anchors": [
+          "Mill Road",
+          "Elm Street"
+        ],
+        "keep": []
+      }
+    },
+    {
+      "id": "repetition",
+      "version": 1,
+      "category": "repetition",
+      "title": "Sample labelling rules",
+      "textFile": "data/evaluation/cases/j-repetition.md",
+      "style": "natural",
+      "purpose": "Repeating 'sample ID' is precise, not sloppy; synonyms would introduce ambiguity.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "anchors": [
+          "before you draw blood|before drawing blood|before the blood is drawn",
+          "not relabel|don't relabel|never relabel|not be relabelled"
+        ],
+        "keep": [
+          "sample ID"
+        ]
+      },
+      "smoke": false
+    },
+    {
+      "id": "voiceprint",
+      "version": 1,
+      "category": "voiceprint",
+      "title": "Walnut tabletop (author's voice)",
+      "textFile": "data/evaluation/cases/k-voiceprint.md",
+      "style": "natural",
+      "purpose": "Written in the Mara voice with two stock connectives and a recap added; the rewrite should remove those and keep the voice.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "voiceprint": "mara",
+      "smoke": true,
+      "expectations": {
+        "keep": [
+          "Almost."
+        ],
+        "anchors": []
+      }
+    },
+    {
+      "id": "already-good",
+      "version": 1,
+      "category": "already-good",
+      "title": "Tomato bed notes",
+      "textFile": "data/evaluation/cases/l-already-good.md",
+      "style": "natural",
+      "purpose": "Good prose. The right edit is little or none.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "smoke": true,
+      "expectations": {
+        "minTokenRetention": 0.85,
+        "anchors": [],
+        "keep": []
+      }
+    },
+    {
+      "id": "formal-appropriate",
+      "version": 1,
+      "category": "formal-appropriate",
+      "title": "Data retention policy",
+      "textFile": "data/evaluation/cases/m-formal-appropriate.md",
+      "style": "professional",
+      "purpose": "Formal register is correct here; passives and 'may' carry legal meaning.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "minTokenRetention": 0.8,
+        "anchors": [
+          "except where|unless",
+          "twelve months|12 months",
+          "one month|1 month"
+        ],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "dashes",
+      "version": 1,
+      "category": "dashes",
+      "title": "The biscuit tin",
+      "textFile": "data/evaluation/cases/n-dashes.md",
+      "style": "natural",
+      "purpose": "Em dashes are the author's device, not a tic.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "keep": [
+          "two pages later",
+          "Whitby"
+        ],
+        "anchors": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "triads",
+      "version": 1,
+      "category": "triads",
+      "title": "Installer test report",
+      "textFile": "data/evaluation/cases/o-triads.md",
+      "style": "professional",
+      "purpose": "Both lists of three are literal inventories, not rhetorical triads.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "keep": [
+          "second runner",
+          "signing key",
+          "review time",
+          "Raspberry Pi 5",
+          "build server"
+        ],
+        "anchors": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "negations",
+      "version": 1,
+      "category": "negations",
+      "title": "Update notice",
+      "textFile": "data/evaluation/cases/p-negations.md",
+      "style": "professional",
+      "purpose": "Six negations; any flip changes the instructions.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "anchors": [
+          "does not delete|doesn't delete|will not delete|won't delete",
+          "cannot undo|can't undo|can not undo",
+          "will not damage|won't damage|does not damage|doesn't damage"
+        ],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "nuance",
+      "version": 1,
+      "category": "nuance",
+      "title": "Migraine trial summary",
+      "textFile": "data/evaluation/cases/q-nuance.md",
+      "style": "concise",
+      "purpose": "Shortening must not drop the qualifications that make the summary true.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "anchors": [
+          "not statistically significant|not significant",
+          "does not show|doesn't show|not show|does not prove|doesn't prove",
+          "not as evidence|not evidence|isn't evidence|is not evidence|rather than evidence"
+        ],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "messy",
+      "version": 1,
+      "category": "messy",
+      "title": "Van noise text",
+      "textFile": "data/evaluation/cases/r-messy.md",
+      "style": "casual",
+      "purpose": "Lowercase, missing apostrophes and slang are the voice; tidying it into standard prose would destroy it.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "keep": [
+          "lol",
+          "tbh",
+          "40 quid"
+        ],
+        "anchors": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "chain-status",
+      "version": 1,
+      "category": "refinement-chain",
+      "title": "Status update, refined three times",
+      "textFile": "data/evaluation/cases/s-status-update.md",
+      "style": "natural",
+      "purpose": "Natural → less polished → shorter → keep more wording. Does repeated refinement drift toward generic prose?",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "smoke": true,
+      "refinementChain": [
+        {
+          "directives": [
+            "less_polished"
+          ]
+        },
+        {
+          "directives": [
+            "shorter"
+          ]
+        },
+        {
+          "directives": [
+            "keep_wording"
+          ]
+        }
+      ],
+      "expectations": {
+        "anchors": [
+          "Priya"
+        ],
+        "keep": []
+      }
+    },
+    {
+      "id": "chain-dashes",
+      "version": 1,
+      "category": "refinement-chain",
+      "title": "Biscuit tin, refined three times",
+      "textFile": "data/evaluation/cases/n-dashes.md",
+      "style": "natural",
+      "purpose": "A distinctive voice through the same chain; compare its drift with chain-status.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "refinementChain": [
+        {
+          "directives": [
+            "less_polished"
+          ]
+        },
+        {
+          "directives": [
+            "shorter"
+          ]
+        },
+        {
+          "directives": [
+            "keep_wording"
+          ]
+        }
+      ],
+      "expectations": {
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "load-heavy",
+      "version": 1,
+      "category": "constraint-load",
+      "title": "Formulaic text against a Voiceprint",
+      "textFile": "data/fixtures/prose/a-formulaic.md",
+      "style": "natural",
+      "purpose": "Many legitimate constraints at once: 17 patterns, Voiceprint ranges, prohibitions.",
+      "provenance": "Synthetic fixture from data/fixtures/prose (written for Whodunnit)",
+      "voiceprint": "mara",
+      "expectations": {
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    },
+    {
+      "id": "load-light",
+      "version": 1,
+      "category": "constraint-load",
+      "title": "Printer note",
+      "textFile": "data/evaluation/cases/t-short-note.md",
+      "style": "professional",
+      "purpose": "Few constraints: a short clean note.",
+      "provenance": "Synthetic, written for the Whodunnit evaluation corpus",
+      "expectations": {
+        "minTokenRetention": 0.8,
+        "anchors": [],
+        "keep": []
+      },
+      "smoke": false
+    }
+  ]
+}

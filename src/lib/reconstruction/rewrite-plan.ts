@@ -2,7 +2,8 @@ import type { Refinement } from "@/domain/refinement";
 import { REFINEMENT_LABELS } from "@/domain/refinement";
 import type { StyleProfile } from "@/domain/style";
 import type { Voiceprint } from "@/domain/voiceprint";
-import type { Dimension, RuleLayer, Severity } from "@/domain/writing-rules";
+import type { RewriteIntensity, RewriteStrategy } from "@/domain/strategy";
+import type { DeterminismLevel, Dimension, RuleCategory, RuleLayer, Severity } from "@/domain/writing-rules";
 import { words } from "../analysis/tokenize";
 import {
   DIMENSION_LABELS,
@@ -16,6 +17,7 @@ import {
 import { analyzeWriting, type WritingAnalysis } from "../rules/engine";
 import { getRegistry, rulesForProfile } from "../rules/packs";
 import { round } from "../rules/metrics";
+import { RECONSTRUCTION_V1 } from "./strategies";
 import { countNegations, extractDateWords, extractLinks, extractNames, extractNumbers, extractQuotations } from "../verification/protected";
 
 /**
@@ -42,6 +44,7 @@ export interface PatternToRework {
   ruleId: string;
   name: string;
   severity: Severity;
+  determinism: DeterminismLevel;
   occurrences: number;
   examples: string[];
   guidance: string;
@@ -58,13 +61,32 @@ export interface RewritePlan {
   avoid: PatternToRework[];
   /** Rules that fired but are deliberately permitted (e.g. by a strong Voiceprint). */
   permitted: { ruleId: string; name: string; reason: string }[];
-  prohibitedPatterns: { ruleId: string; name: string }[];
+  prohibitedPatterns: {
+    ruleId: string;
+    name: string;
+    determinism: DeterminismLevel;
+    category: RuleCategory;
+    severity: Severity;
+    /** true for rules that measure text shape (rates, rhythm, repetition) rather than a construction. */
+    measure: boolean;
+  }[];
   preferredPatterns: string[];
   advisoryGuidance: string[];
   refinement?: { asks: string[] };
+  /** How much the text needs changing, from the measurements (see chooseIntensity). */
+  intensity: RewriteIntensity;
+  intensityReasons: string[];
+  /** Which strategy compiled this plan, and what a prioritised budget left out (with reasons). */
+  budget: { strategy: string; mode: RewriteStrategy["planning"]["mode"]; omitted: OmittedItem[] };
   /** The analysis the plan was built from (for post-checks). */
   analysis: WritingAnalysis;
   constraints: TargetConstraint[];
+}
+
+export interface OmittedItem {
+  section: "patterns" | "targets" | "prohibited" | "advisory";
+  name: string;
+  reason: string;
 }
 
 export interface PlanInput {
@@ -85,7 +107,124 @@ export function buildConstraints(input: Omit<PlanInput, "source">): TargetConstr
   ];
 }
 
-export function buildRewritePlan(input: PlanInput): RewritePlan {
+/**
+ * Minimal-change principle: text with no catalogued patterns should come back
+ * nearly as it went in, even though a model is available. A refinement or an
+ * off-target confident Voiceprint is an explicit request for change.
+ */
+export function chooseIntensity(avoid: PatternToRework[], targetRanges: TargetRange[], refinement?: Refinement): { intensity: RewriteIntensity; reasons: string[] } {
+  const reasons: string[] = [];
+  const asks = refinement ? refinement.directives.filter((d) => d !== "keep_wording") : [];
+  const userMoves = targetRanges.filter((t) => t.layer === "user-instruction" && t.action !== "keep");
+  const voiceMoves = targetRanges.filter((t) => t.layer === "voiceprint" && t.strength >= 0.6 && t.action !== "keep");
+  const occurrences = avoid.reduce((n, a) => n + a.occurrences, 0);
+  const warnings = avoid.filter((a) => a.severity === "warning").length;
+
+  if (avoid.length >= 6 || occurrences >= 10 || warnings >= 3) {
+    reasons.push(`${avoid.length} catalogued patterns (${occurrences} occurrences, ${warnings} warnings)`);
+    return { intensity: "substantial", reasons };
+  }
+  if (avoid.length > 0) reasons.push(`${avoid.length} catalogued pattern${avoid.length > 1 ? "s" : ""}`);
+  if (asks.length > 0 || refinement?.note) reasons.push("the author asked for a change");
+  if (userMoves.length) reasons.push(`requested range${userMoves.length > 1 ? "s" : ""} not met: ${userMoves.map((t) => t.label).join(", ")}`);
+  if (voiceMoves.length) reasons.push(`off the author's Voiceprint: ${voiceMoves.map((t) => t.label).join(", ")}`);
+  if (reasons.length) return { intensity: "normal", reasons };
+  return { intensity: "minimal", reasons: ["no catalogued patterns and nothing the author asked for is out of range"] };
+}
+
+/** Constructions a rewrite tends to introduce, most likely first. */
+const PROHIBIT_PRIORITY: RuleCategory[] = ["discourse", "specificity", "sentence", "lexical", "transition", "punctuation", "formatting", "voice", "paragraph", "repetition", "rhythm", "other", "semantic-safety"];
+const SHAPE_CATEGORIES: RuleCategory[] = ["rhythm", "paragraph", "repetition"];
+const DETERMINISM_PRIORITY: DeterminismLevel[] = ["deterministic", "heuristic", "model-assisted", "advisory"];
+
+/**
+ * Budget a plan by priority and relevance, never by truncating text:
+ * semantic anchors and permitted habits are always kept; detected patterns are
+ * ranked by severity, determinism and frequency; prohibitions favour the
+ * phrase- and sentence-level constructions a rewrite most often introduces
+ * (measures of text shape are already covered by target ranges); satisfied style ranges are not
+ * restated; advisory guidance is dropped when the text needs little work.
+ * Everything left out is recorded with a reason.
+ */
+export function prioritizePlan(plan: RewritePlan, strategy: RewriteStrategy): RewritePlan {
+  if (strategy.planning.mode !== "prioritized") return plan;
+  const policy = strategy.constraintPolicy;
+  const omitted: OmittedItem[] = [];
+  const cap = <T,>(items: T[], max: number | null, section: OmittedItem["section"], name: (t: T) => string, reason: string) => {
+    if (max === null || items.length <= max) return items;
+    for (const t of items.slice(max)) omitted.push({ section, name: name(t), reason });
+    return items.slice(0, max);
+  };
+
+  const avoid = cap(
+    [...plan.avoid].sort(
+      (a, b) =>
+        SEVERITY_ORDER[a.severity] - SEVERITY_ORDER[b.severity] ||
+        DETERMINISM_PRIORITY.indexOf(a.determinism) - DETERMINISM_PRIORITY.indexOf(b.determinism) ||
+        b.occurrences - a.occurrences,
+    ),
+    policy.maxPatterns,
+    "patterns",
+    (a) => a.name,
+    "lower priority than the patterns listed (severity, determinism, frequency)",
+  );
+
+  const minimal = strategy.planning.intensity === "enforce" && plan.intensity === "minimal";
+  const targetRanges = plan.targetRanges.filter((t) => {
+    if (t.layer !== "style") return true;
+    if (t.action === "keep" && !policy.restateSatisfiedStyleRanges) {
+      omitted.push({ section: "targets", name: t.label, reason: "already within the style range" });
+      return false;
+    }
+    if (t.action !== "keep" && minimal) {
+      omitted.push({ section: "targets", name: t.label, reason: "minimal intervention: a style-only range is not worth rewriting good text for" });
+      return false;
+    }
+    return true;
+  });
+
+  const ranked = plan.prohibitedPatterns
+    .filter((p) => {
+      if (!p.measure) return true;
+      omitted.push({ section: "prohibited", name: p.name, reason: "a measure of text shape, covered by target ranges and the post-check" });
+      return false;
+    })
+    .sort(
+      (a, b) =>
+        PROHIBIT_PRIORITY.indexOf(a.category) - PROHIBIT_PRIORITY.indexOf(b.category) ||
+        DETERMINISM_PRIORITY.indexOf(a.determinism) - DETERMINISM_PRIORITY.indexOf(b.determinism) ||
+        SEVERITY_ORDER[a.severity] - SEVERITY_ORDER[b.severity],
+    );
+  const prohibitedPatterns = cap(ranked, policy.maxProhibited, "prohibited", (p) => p.name, "lower priority prohibition; still enforced by the post-check");
+
+  let advisoryGuidance = plan.advisoryGuidance;
+  if (policy.advisory === "never" || (policy.advisory === "unless-minimal" && minimal)) {
+    for (const g of advisoryGuidance) omitted.push({ section: "advisory", name: g.split(":")[0], reason: minimal ? "minimal intervention" : "strategy omits advisory guidance" });
+    advisoryGuidance = [];
+  } else {
+    advisoryGuidance = cap(advisoryGuidance, policy.maxAdvisory, "advisory", (g) => g.split(":")[0], "advisory budget");
+  }
+
+  return { ...plan, avoid, targetRanges, prohibitedPatterns, advisoryGuidance, budget: { ...plan.budget, omitted } };
+}
+
+/** How many items the contract carries, per section. Descriptive, for evaluation. */
+export function planSize(plan: RewritePlan) {
+  const p = plan.preserve;
+  const anchors = p.numbers.length + p.dates.length + p.names.length + p.quotations.length + p.links.length;
+  const size = {
+    anchors,
+    targets: plan.targetRanges.length,
+    patterns: plan.avoid.length,
+    permitted: plan.permitted.length,
+    prohibited: plan.prohibitedPatterns.length,
+    advisory: plan.advisoryGuidance.length,
+    preferred: plan.preferredPatterns.length,
+  };
+  return { ...size, total: Object.values(size).reduce((a, b) => a + b, 0), omitted: plan.budget.omitted.length };
+}
+
+export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = RECONSTRUCTION_V1): RewritePlan {
   const { source, profile, refinement } = input;
   const registry = getRegistry();
   const rules = rulesForProfile(profile, registry);
@@ -116,6 +255,7 @@ export function buildRewritePlan(input: PlanInput): RewritePlan {
       ruleId: f.rule.id,
       name: f.rule.name,
       severity: f.rule.severity,
+      determinism: f.rule.determinism,
       occurrences: f.matches.length,
       examples: [...new Set(f.matches.map((m) => shorten(m.excerpt)))].slice(0, 2),
       guidance: f.rule.guidance,
@@ -129,7 +269,14 @@ export function buildRewritePlan(input: PlanInput): RewritePlan {
   const fired = new Set(analysis.findings.map((f) => f.rule.id));
   const prohibitedPatterns = rules
     .filter((r) => (r.determinism === "deterministic" || r.determinism === "heuristic") && r.severity !== "info" && !fired.has(r.id))
-    .map((r) => ({ ruleId: r.id, name: r.name }));
+    .map((r) => ({
+      ruleId: r.id,
+      name: r.name,
+      determinism: r.determinism,
+      category: r.category,
+      severity: r.severity,
+      measure: Boolean(r.dimension) || r.detection.kind === "metric" || r.detection.kind === "density" || SHAPE_CATEGORIES.includes(r.category),
+    }));
 
   const advisoryGuidance = registry
     .query({ packIds: ["anti-slop", "core", "imported"], enabledOnly: true })
@@ -141,7 +288,8 @@ export function buildRewritePlan(input: PlanInput): RewritePlan {
 
   const srcWords = words(source).length;
   const safety = registry.query({ packIds: ["semantic-safety"], enabledOnly: true });
-  return {
+  const { intensity, reasons: intensityReasons } = chooseIntensity(avoid, targetRanges, refinement);
+  const plan: RewritePlan = {
     style: { label: profile.label, description: profile.description, register: profile.register, wordingRetention: profile.wordingRetention },
     preserve: {
       numbers: [...extractNumbers(source).keys()],
@@ -161,9 +309,13 @@ export function buildRewritePlan(input: PlanInput): RewritePlan {
     preferredPatterns,
     advisoryGuidance,
     refinement: refinement ? { asks: [...refinement.directives.map((d) => REFINEMENT_LABELS[d]), ...(refinement.note ? [`Author's note: ${refinement.note}`] : [])] } : undefined,
+    intensity,
+    intensityReasons,
+    budget: { strategy: `${strategy.id}-v${strategy.version}`, mode: strategy.planning.mode, omitted: [] },
     analysis,
     constraints,
   };
+  return prioritizePlan(plan, strategy);
 }
 
 /** Short human-readable lines for the UI and the stored revision. */

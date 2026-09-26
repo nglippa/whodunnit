@@ -1,0 +1,1 @@
+Build failed at 14:02. Cause: expired signing certificate. Renewed it, reran the pipeline, green at 14:31. No customer impact. The new certificate expires on 1 September 2027; a reminder is set for August. Nothing else to do.

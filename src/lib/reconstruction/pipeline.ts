@@ -1,15 +1,17 @@
 import type { Preserved, ReconstructionRequest, ReconstructionResult, PatternComparison } from "@/domain/document";
 import { applyRefinement } from "@/domain/refinement";
 import type { StyleProfile } from "@/domain/style";
+import { promptKey, type RewriteStrategy } from "@/domain/strategy";
 import type { VerificationResult } from "@/domain/verification";
 import { analyzeText } from "../analysis/analyze";
-import type { AIProvider } from "../ai/provider";
+import type { AIProvider, CallMeta } from "../ai/provider";
 import { ProviderError } from "../ai/provider";
-import { PROMPT_VERSIONS } from "../prompts";
+import { words } from "../analysis/tokenize";
 import { rulesForProfile } from "../rules/packs";
 import { mergeVerification, verifyDeterministic } from "../verification/verify";
 import { comparePatterns } from "./postcheck";
-import { buildRewritePlan, summarizePlan } from "./rewrite-plan";
+import { buildRewritePlan, summarizePlan, type RewritePlan } from "./rewrite-plan";
+import { DEFAULT_STRATEGY } from "./strategies";
 
 /**
  * SOURCE → RULE ANALYSIS → REWRITE PLAN → CANDIDATE → MEANING CHECKS → RULE POST-CHECK → (retry) → RESULT
@@ -24,6 +26,53 @@ import { buildRewritePlan, summarizePlan } from "./rewrite-plan";
 
 export interface PipelineOptions {
   maxAttempts?: number;
+  /** Defaults to the production strategy (reconstruction-v1). */
+  strategy?: RewriteStrategy;
+  /**
+   * Receives one record per attempt as it happens, so a caller keeps the log
+   * even when a later attempt throws. Records carry hashes and counts, never text.
+   */
+  onAttempt?: (record: AttemptRecord) => void;
+}
+
+/** One provider attempt, for observability. No text: hashes, counts, reasons and transport metadata only. */
+export interface AttemptRecord {
+  attempt: number;
+  /** Why this attempt ran: "initial", or the reasons the previous candidate was retried. */
+  trigger: "initial" | "retry";
+  retryBecause: string[];
+  outcome: "candidate" | "provider-error" | "empty-output";
+  errorCode?: string;
+  verificationStatus?: VerificationResult["status"];
+  semanticFailures: { kind: string; severity: "blocking" | "warning"; origin: "deterministic" | "model" }[];
+  introducedDeterministic: string[];
+  modelMeaning: "ran" | "skipped-by-policy" | "skipped-after-rejection" | "unavailable";
+  outputHash?: string;
+  outputWords?: number;
+  /** Wall-clock for the whole attempt (rewrite + checks). */
+  latencyMs: number;
+  provider: CallMeta | null;
+}
+
+/** cyrb53: a fast, stable, non-cryptographic hash for identifying outputs in logs without storing them. */
+export function textHash(str: string): string {
+  let h1 = 0xdeadbeef;
+  let h2 = 0x41c6ce57;
+  for (let i = 0; i < str.length; i++) {
+    const ch = str.charCodeAt(i);
+    h1 = Math.imul(h1 ^ ch, 2654435761);
+    h2 = Math.imul(h2 ^ ch, 1597334677);
+  }
+  h1 = Math.imul(h1 ^ (h1 >>> 16), 2246822507) ^ Math.imul(h2 ^ (h2 >>> 13), 3266489909);
+  h2 = Math.imul(h2 ^ (h2 >>> 16), 2246822507) ^ Math.imul(h1 ^ (h1 >>> 13), 3266489909);
+  return (4294967296 * (2097151 & h2) + (h1 >>> 0)).toString(16).padStart(14, "0");
+}
+
+export interface DetailedPipelineResult {
+  result: PipelineResult;
+  plan: RewritePlan;
+  strategy: RewriteStrategy;
+  attempts: AttemptRecord[];
 }
 
 export interface PipelineResult extends ReconstructionResult {
@@ -62,63 +111,115 @@ function preservedCounts(v: VerificationResult, plan: ReturnType<typeof buildRew
 }
 
 export async function runReconstruction(request: ReconstructionRequest, provider: AIProvider, options: PipelineOptions = {}): Promise<PipelineResult> {
+  return (await runReconstructionDetailed(request, provider, options)).result;
+}
+
+/** The pipeline with its plan, strategy and per-attempt log exposed (for evaluation). */
+export async function runReconstructionDetailed(request: ReconstructionRequest, provider: AIProvider, options: PipelineOptions = {}): Promise<DetailedPipelineResult> {
+  const strategy = options.strategy ?? DEFAULT_STRATEGY;
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;
-  const plan = buildRewritePlan({ source, profile, refinement: refinement?.change, voiceprint: request.voiceprint });
+  const plan = buildRewritePlan({ source, profile, refinement: refinement?.change, voiceprint: request.voiceprint }, strategy);
   const rules = rulesForProfile(profile);
-  const maxAttempts = options.maxAttempts ?? (provider.info.mode === "live" ? 3 : 1);
+  const retry = strategy.retryPolicy;
+  const maxAttempts = options.maxAttempts ?? (provider.info.mode === "live" ? retry.maxAttemptsLive : retry.maxAttemptsDemo);
   // Model-assisted discourse analysis: an explicit list of claims that must survive.
   const legacy = analyzeText(source);
-  const discourse = legacy.counts.words >= 60 ? await provider.analyzeText(source, legacy).catch(() => null) : null;
+  const minWords = strategy.postCheckPolicy.claimsExtractionMinWords;
+  const discourse = minWords !== null && legacy.counts.words >= minWords ? await provider.analyzeText(source, legacy).catch(() => null) : null;
 
+  const log: AttemptRecord[] = [];
+  const record = (r: AttemptRecord) => {
+    log.push(r);
+    options.onAttempt?.(r);
+  };
   let best: Attempt | null = null;
   let feedback: string[] | undefined;
+  let retryBecause: string[] = [];
   let attempts = 0;
 
   while (attempts < maxAttempts) {
     attempts++;
-    const candidate = await provider.reconstructText({
-      source,
-      current: refinement?.current,
-      profile,
-      plan,
-      claims: discourse?.claims,
-      refinement: refinement?.change,
-      retryFeedback: feedback,
-    });
+    const started = Date.now();
+    const base = { attempt: attempts, trigger: attempts === 1 ? ("initial" as const) : ("retry" as const), retryBecause };
+    let candidate: Awaited<ReturnType<AIProvider["reconstructText"]>>;
+    try {
+      candidate = await provider.reconstructText({
+        source,
+        current: refinement?.current,
+        profile,
+        plan,
+        claims: discourse?.claims,
+        refinement: refinement?.change,
+        retryFeedback: feedback,
+        strategy,
+      });
+    } catch (err) {
+      record({ ...base, outcome: "provider-error", errorCode: err instanceof ProviderError ? err.code : "unknown", semanticFailures: [], introducedDeterministic: [], modelMeaning: "unavailable", latencyMs: Date.now() - started, provider: err instanceof ProviderError ? (err.meta ?? null) : null });
+      throw err;
+    }
     const text = candidate.text.trim();
-    if (!text) throw new ProviderError("The writing model returned an empty rewrite.", "invalid_output");
+    if (!text) {
+      record({ ...base, outcome: "empty-output", semanticFailures: [], introducedDeterministic: [], modelMeaning: "unavailable", latencyMs: Date.now() - started, provider: candidate.meta ?? null });
+      throw new ProviderError("The writing model returned an empty rewrite.", "invalid_output");
+    }
 
     let verification = verifyDeterministic(source, text, profile);
+    let modelMeaning: AttemptRecord["modelMeaning"] = "skipped-by-policy";
     // Only spend a model call on meaning when the cheap checks passed.
-    if (verification.status !== "rejected") {
-      // A failed model check is reported as "not run", never as "passed".
-      verification = mergeVerification(verification, await provider.verifyMeaning(source, text).catch(() => null));
+    if (strategy.postCheckPolicy.modelMeaning === "when-deterministic-passes") {
+      if (verification.status === "rejected") modelMeaning = "skipped-after-rejection";
+      else {
+        // A failed model check is reported as "not run", never as "passed".
+        const findings = await provider.verifyMeaning(source, text).catch(() => null);
+        modelMeaning = findings ? "ran" : "unavailable";
+        verification = mergeVerification(verification, findings);
+      }
     }
     const patterns = comparePatterns(plan, text, rules);
 
     const current: Attempt = { text, verification, patterns, changes: candidate.changes };
     if (!best || better(current, best)) best = current;
     const introduced = introducedDeterministic(patterns);
-    if (verification.status !== "rejected" && introduced.length === 0) break;
+    const blocking = verification.findings.filter((f) => f.severity === "blocking");
+    record({
+      ...base,
+      outcome: "candidate",
+      verificationStatus: verification.status,
+      semanticFailures: verification.findings.map((f) => ({ kind: f.kind, severity: f.severity, origin: f.origin })),
+      introducedDeterministic: introduced.map((x) => x.ruleId),
+      modelMeaning,
+      outputHash: textHash(text),
+      outputWords: words(text).length,
+      latencyMs: Date.now() - started,
+      provider: candidate.meta ?? null,
+    });
+
+    const reasons = [
+      ...(retry.retryOn.includes("blocking-meaning") ? blocking.map((f) => `blocking:${f.kind}`) : []),
+      ...(retry.retryOn.includes("introduced-deterministic-pattern") ? introduced.map((x) => `introduced:${x.ruleId}`) : []),
+    ];
+    if (reasons.length === 0) break;
+    retryBecause = reasons;
     feedback = [
-      ...verification.findings.filter((f) => f.severity === "blocking").map((f) => f.message),
-      ...introduced.map((x) => `You introduced a pattern that was not in the source: ${x.name}.`),
+      ...(retry.retryOn.includes("blocking-meaning") ? blocking.map((f) => f.message) : []),
+      ...(retry.retryOn.includes("introduced-deterministic-pattern") ? introduced.map((x) => `You introduced a pattern that was not in the source: ${x.name}.`) : []),
     ];
   }
 
   if (!best) throw new ProviderError("No rewrite was produced.", "invalid_output");
-  return {
+  const result: PipelineResult = {
     text: best.text,
     verification: best.verification,
     attempts,
     engine: provider.info,
-    promptVersion: PROMPT_VERSIONS.reconstruct,
+    promptVersion: promptKey(strategy.prompt),
     plan: summarizePlan(plan),
     changes: best.changes.map((c) => c.slice(0, 200)).slice(0, 8),
     patterns: best.patterns,
     preserved: preservedCounts(best.verification, plan),
     profile,
   };
+  return { result, plan, strategy, attempts: log };
 }
