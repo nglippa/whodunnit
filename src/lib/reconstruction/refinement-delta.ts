@@ -35,6 +35,11 @@ export interface Restoration {
   current: string | null;
   /** Share of the original sentence's words still present in its current counterpart. */
   retained: number;
+  /**
+   * true when the original sentence contained a catalogued pattern: only the
+   * wording around it is offered back (the pattern itself is cut, marked "…").
+   */
+  partial?: boolean;
 }
 
 export interface ClaimTriage {
@@ -88,26 +93,76 @@ export function triageClaims(source: string, findings: RuleFinding[]): ClaimTria
 }
 
 const lowerWords = (s: string) => words(s).map((w) => w.toLowerCase());
+const squash = (s: string) => s.replace(/\s+/g, " ").trim().toLowerCase();
 
-/** Original sentences the current revision reworded without a pattern to justify it. */
+const CONTENT_MIN = 3;
+
+/**
+ * The restorable part of a source sentence: the sentence minus every
+ * catalogued pattern span inside it. Returns null when nothing substantive is
+ * left (the whole sentence was the pattern). Pieces are joined with "…" so the
+ * model cannot mistake the remainder for a sentence it should quote whole.
+ */
+export function restorableRemainder(text: string, offset: number, patterned: [number, number][]): string | null {
+  const cuts = patterned
+    .map(([a, b]) => [Math.max(a, offset) - offset, Math.min(b, offset + text.length) - offset] as [number, number])
+    .filter(([a, b]) => b > a)
+    .sort((x, y) => x[0] - y[0]);
+  const pieces: string[] = [];
+  let at = 0;
+  for (const [a, b] of cuts) {
+    if (a > at) pieces.push(text.slice(at, a));
+    at = Math.max(at, b);
+  }
+  pieces.push(text.slice(at));
+  const kept = pieces
+    .map((p) => p.replace(/^[\s,;:—–-]+|[\s,;:—–-]+$/g, ""))
+    .filter((p) => words(p).length > 0);
+  if (!kept.length) return null;
+  const joined = kept.join(" … ");
+  const content = extractClaims(joined).flatMap((c) => c.content);
+  return content.length >= CONTENT_MIN ? joined : null;
+}
+
+/**
+ * Original wording the current revision changed without a pattern to justify
+ * it. Sentences free of catalogued patterns are offered back whole; a sentence
+ * that contained one is offered back WITHOUT it (the surrounding wording
+ * only). A catalogued pattern is never offered back.
+ */
 export function restorationsFor(source: string, current: string, findings: RuleFinding[], max = 8): Restoration[] {
   const patterned = findings.filter((f) => !f.suppressedBy && f.rule.severity !== "info").flatMap((f) => f.matches.map((m) => [m.start, m.end] as [number, number]));
   const cur = extractClaims(current);
+  const src = extractClaims(source);
+  // One-to-one alignment: a current sentence identical to an original sentence belongs to that sentence.
+  const original = new Set(src.map((s) => squash(s.text)));
+  const keptVerbatim = new Set(cur.map((c) => squash(c.text)).filter((t) => original.has(t)));
   const out: Restoration[] = [];
-  for (const s of extractClaims(source)) {
+  for (const s of src) {
     if (!s.content.length) continue;
-    if (patterned.some(([a, b]) => a < s.span.end && b > s.span.start)) continue; // never restore a pattern
-    const sw = lowerWords(s.text);
-    let best: { c: (typeof cur)[number]; score: number } | null = null;
+    const hit = patterned.some(([a, b]) => a < s.span.end && b > s.span.start);
+    const text = hit ? restorableRemainder(s.text, s.span.start, patterned) : s.text;
+    if (!text) continue;
+    // Wording still present verbatim needs no restoring (every piece, for a partial).
+    const flat = squash(current);
+    if (text.split(" … ").every((piece) => flat.includes(squash(piece)))) continue;
+    const content = hit ? extractClaims(text).flatMap((c) => c.content) : s.content;
+    const sw = lowerWords(text).filter((w) => w !== "…");
+    // Align by shared content words, then by how much of the sentence's wording the candidate holds,
+    // so a short sentence is not matched to a long one that merely contains its words.
+    let best: { c: (typeof cur)[number]; score: number; fit: number } | null = null;
     for (const c of cur) {
+      if (keptVerbatim.has(squash(c.text))) continue; // already the counterpart of another original sentence
       const cs = new Set(c.content);
-      const score = s.content.filter((x) => cs.has(x)).length / s.content.length;
-      if (!best || score > best.score) best = { c, score };
+      const score = content.filter((x) => cs.has(x)).length / (content.length || 1);
+      const cw = lowerWords(c.text);
+      const fit = cw.length ? sw.filter((w) => cw.includes(w)).length / Math.max(sw.length, cw.length) : 0;
+      if (!best || score > best.score || (score === best.score && fit > best.fit)) best = { c, score, fit };
     }
     const target = best && best.score >= 0.3 ? best.c.text : null;
     const tw = new Set(lowerWords(target ?? ""));
     const retained = sw.length ? sw.filter((w) => tw.has(w)).length / sw.length : 1;
-    if (retained < 0.85) out.push({ source: clip(s.text), current: target ? clip(target) : null, retained: Math.round(retained * 100) / 100 });
+    if (retained < 0.85) out.push({ source: clip(text), current: target ? clip(target) : null, retained: Math.round(retained * 100) / 100, ...(hit ? { partial: true } : {}) });
   }
   return out.sort((a, b) => a.retained - b.retained).slice(0, max);
 }

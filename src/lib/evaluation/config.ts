@@ -5,7 +5,7 @@ import { DemoProvider } from "../ai/demo";
 import { DEFAULT_GEMINI_MODEL, GeminiProvider } from "../ai/gemini-provider";
 import { DEFAULT_OPENAI_COMPATIBLE_BASE_URL, OpenAICompatibleProvider } from "../ai/openai-compatible-provider";
 import type { AIProvider, StructuredCaller } from "../ai/provider";
-import { ModelSemanticJudge, type SemanticJudge } from "./judge";
+import { ModelSemanticJudge, type JudgeCache, type SemanticJudge } from "./judge";
 import { anthropicKey, geminiKey, groqKey } from "../ai/select";
 import { createGroqProvider } from "../ai/groq";
 import { DEFAULT_STRATEGY, getStrategy } from "../reconstruction/strategies";
@@ -35,7 +35,9 @@ export interface ConfigFlags {
   strategy?: string;
   baseUrl?: string;
   generation?: GenerationSettingsConfig;
-  judge?: { provider?: string; model?: string; baseUrl?: string; reasoningEffort?: string };
+  judge?: { provider?: string; model?: string; baseUrl?: string; reasoningEffort?: string; promptVersion?: string };
+  /** Diagnostic only: disable the planner's minimal-change bypass. */
+  forceModel?: boolean;
 }
 
 /**
@@ -73,14 +75,21 @@ export function resolveConfig(flags: ConfigFlags, env: Record<string, string | u
     if (jp === "groq" && !flags.judge.model?.trim()) throw new EvaluationConfigError("--judge-provider groq needs --judge-model (check the current catalogue: GET https://api.groq.com/openai/v1/models).");
     const effort = flags.judge.reasoningEffort?.trim();
     if (effort && effort !== "low" && effort !== "medium" && effort !== "high") throw new EvaluationConfigError("--judge-reasoning-effort is low, medium or high.");
+    const pv = flags.judge.promptVersion?.trim();
+    if (pv && pv !== "1" && pv !== "2") throw new EvaluationConfigError("--judge-prompt is 1 or 2.");
     judge = {
       provider: jp,
       model: flags.judge.model?.trim() || DEFAULT_MODELS[jp as keyof typeof DEFAULT_MODELS],
       ...(jp === "openai-compatible" ? { baseUrl: flags.judge.baseUrl?.trim() || DEFAULT_OPENAI_COMPATIBLE_BASE_URL } : {}),
       ...(effort ? { reasoningEffort: effort as "low" | "medium" | "high" } : {}),
+      ...(pv ? { promptVersion: Number(pv) as 1 | 2 } : {}),
     };
-  } else if (flags.judge?.model || flags.judge?.baseUrl || flags.judge?.reasoningEffort) throw new EvaluationConfigError("--judge-model, --judge-base-url and --judge-reasoning-effort need --judge-provider.");
-  const parsed = evaluationConfigSchema.safeParse({ provider, model, strategy, ...(baseUrl ? { baseUrl } : {}), ...(generation ? { generation } : {}), ...(judge ? { judge } : {}) });
+  } else if (flags.judge?.model || flags.judge?.baseUrl || flags.judge?.reasoningEffort || flags.judge?.promptVersion)
+    throw new EvaluationConfigError("--judge-model, --judge-base-url, --judge-reasoning-effort and --judge-prompt need --judge-provider.");
+  // A forced run must actually differ from a normal one; on a strategy that never bypasses the model it would be mislabelled.
+  if (flags.forceModel && getStrategy(strategy).minimalChange !== "unchanged")
+    throw new EvaluationConfigError(`--force-model has no effect on ${strategy}: that strategy always calls the model. Use it with a strategy whose minimal-change policy can return text unchanged (e.g. reconstruction-v3).`);
+  const parsed = evaluationConfigSchema.safeParse({ provider, model, strategy, ...(baseUrl ? { baseUrl } : {}), ...(generation ? { generation } : {}), ...(judge ? { judge } : {}), ...(flags.forceModel ? { forceModel: true } : {}) });
   if (!parsed.success) throw new EvaluationConfigError(`Invalid configuration: ${parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
   return parsed.data;
 }
@@ -116,8 +125,12 @@ export function createEvaluationProvider(config: EvaluationConfig, env: Record<s
 }
 
 /** The independent judge, or null when none is configured. Missing credentials are an error, never a silent skip. */
-export function createJudge(config: EvaluationConfig, env: Record<string, string | undefined>): SemanticJudge | null {
+export function createJudge(config: EvaluationConfig, env: Record<string, string | undefined>, options: { cache?: JudgeCache | null } = {}): SemanticJudge | null {
   if (!config.judge) return null;
   const caller = modelCaller(config.judge, env, config.judge.reasoningEffort ? { reasoningEffort: config.judge.reasoningEffort } : undefined);
-  return new ModelSemanticJudge(caller, { provider: config.provider === "openai-compatible" ? `openai-compatible@${new URL(config.baseUrl!).host}` : config.provider, model: config.model });
+  return new ModelSemanticJudge(
+    caller,
+    { provider: config.provider === "openai-compatible" ? `openai-compatible@${new URL(config.baseUrl!).host}` : config.provider, model: config.model },
+    { promptVersion: config.judge.promptVersion, cache: options.cache ?? null },
+  );
 }

@@ -4,6 +4,7 @@ import { stem } from "../analysis/stem";
 import { paragraphSpans, sentenceSpans, words } from "../analysis/tokenize";
 import { blankDates, extractDates } from "./dates";
 import {
+  CAUSAL_CONSTRUCTIONS,
   CAUSAL_MARKERS,
   COMPARATIVE_MARKERS,
   CONDITIONAL_MARKERS,
@@ -74,9 +75,17 @@ export function modalityOf(text: string): { level: ModalityLevel; markers: strin
 
 export function scaleMarkers(text: string): ScaleMarker[] {
   const out: ScaleMarker[] = [];
+  // Causal constructions first; their spans are blanked so a word inside one is not counted again.
+  let rest = text;
+  for (const [rank, re, label] of CAUSAL_CONSTRUCTIONS) {
+    rest = rest.replace(new RegExp(re.source, re.flags), (m) => {
+      out.push({ scale: "causation", rank, marker: `${label}: ${m.toLowerCase().replace(/\s+/g, " ")}` });
+      return " ".repeat(m.length);
+    });
+  }
   for (const [scale, ranks] of Object.entries(SCALES) as [ScaleMarker["scale"], [number, string[]][]][]) {
     const all = ranks.flatMap(([rank, list]) => list.map((m) => ({ rank, m })));
-    for (const f of findMarkers(text, all.map((x) => x.m))) {
+    for (const f of findMarkers(rest, all.map((x) => x.m))) {
       const rank = all.find((x) => x.m === f.marker)!.rank;
       out.push({ scale, rank, marker: f.marker });
     }

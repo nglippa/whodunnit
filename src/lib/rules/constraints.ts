@@ -3,6 +3,7 @@ import type { StyleProfile } from "@/domain/style";
 import type { Measured, Voiceprint } from "@/domain/voiceprint";
 import { RULE_LAYERS, type Dimension, type RuleFinding, type RuleLayer } from "@/domain/writing-rules";
 import { round, type WritingMetrics } from "./metrics";
+import { STRONG_SOURCE_VOICE, type SourceVoiceProfile } from "../semantics/voice-devices";
 
 /**
  * Target ranges on measurable dimensions, and the precedence model that
@@ -40,8 +41,11 @@ export const MIN_VOICEPRINT = 0.35;
 
 const layerRank = (c: Pick<TargetConstraint, "layer" | "strength">) => {
   const base = RULE_LAYERS.indexOf(c.layer);
-  // Weak Voiceprint evidence ranks below the general rules: little or no pressure.
+  // Weak evidence of the author's habits (saved Voiceprint or the source itself) ranks below the general rules.
   if (c.layer === "voiceprint" && c.strength < STRONG_VOICEPRINT) return RULE_LAYERS.indexOf("general") + 0.5;
+  // Source-local evidence is strong at the same confidence the voice check treats erasing the habit as major damage,
+  // so the plan never asks the model to remove what the evaluation would then call damage.
+  if (c.layer === "source-voice" && c.strength < STRONG_SOURCE_VOICE) return RULE_LAYERS.indexOf("general") + 0.5;
   return base;
 };
 
@@ -151,6 +155,25 @@ export function constraintsFromVoiceprint(vp: Voiceprint): TargetConstraint[] {
   range("punctuation.dashes", s.punctuation.dashesPer100, 0.35, 0.3);
   range("punctuation.semicolons", s.punctuation.semicolonsPer100, 0.35, 0.2);
   range("transition.openers", s.structure.transitionOpenerRate, 0.35, 0.03);
+  return out;
+}
+
+/**
+ * The source text's own deliberate habits as ranges around its measured
+ * values, so a generic rule does not tell the model to remove what the author
+ * evidently does on purpose. Only devices judged deliberate (repeated, and not
+ * inside slop-heavy text) produce a constraint; strength is the evidence
+ * confidence, so short texts exert little or no pressure.
+ */
+export function constraintsFromSourceVoice(profile: SourceVoiceProfile, m: WritingMetrics): TargetConstraint[] {
+  const origin = "Your own text";
+  const out: TargetConstraint[] = [];
+  const s = profile.confidence;
+  if (s < MIN_VOICEPRINT) return out;
+  const around = (d: Dimension, v: number, floor: number) => out.push(make(d, v - Math.max(floor, v * 0.4), v + Math.max(floor, v * 0.6), "source-voice", s, origin));
+  if (profile.deliberate.dashes) around("punctuation.dashes", m.per100.dashes, 0.3);
+  if (profile.deliberate.fragments) around("voice.fragments", m.shares.fragments, 0.05);
+  if (profile.deliberate.semicolons) around("punctuation.semicolons", m.per100.semicolons, 0.2);
   return out;
 }
 

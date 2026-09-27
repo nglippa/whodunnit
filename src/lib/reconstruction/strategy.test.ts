@@ -57,6 +57,7 @@ const PINNED: Record<string, string> = {
   "voiceprint.v1": "f42802ee70bf6603",
   "compile.v1": "d97560f1ff82a5d9",
   "judge.v1": "befe7f6c6521c4da",
+  "judge.v2": "8c030e10cd17ae61",
 };
 const fp = (s: string) => createHash("sha256").update(s, "utf8").digest("hex").slice(0, 16);
 

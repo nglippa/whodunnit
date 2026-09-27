@@ -21,7 +21,7 @@ import { checkQuotations, type QuoteReport } from "./quotes";
  * semantic judge, and says which checks ran.
  */
 
-export const SEMANTIC_ANALYSIS_VERSION = "semantics.v1";
+export const SEMANTIC_ANALYSIS_VERSION = "semantics.v2";
 
 export interface IntegrityContext extends CompareContext {
   protectedPhrases?: ProtectedPhrase[];

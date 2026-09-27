@@ -37,6 +37,12 @@ export const rewriteStrategySchema = z
         mode: z.enum(["full-contract", "prioritized"]),
         /** record-only: intensity is computed and stored, not sent. enforce: the contract tells the model how much to change. */
         intensity: z.enum(["record-only", "enforce"]),
+        /**
+         * Let habits the SOURCE demonstrates (deliberate dashes, fragments,
+         * semicolons) outrank the style preset, without a saved Voiceprint.
+         * Absent = off: strategies published before it keep their plans.
+         */
+        sourceVoice: z.boolean().optional(),
       })
       .strict(),
     constraintPolicy: z

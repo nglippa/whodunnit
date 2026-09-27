@@ -18,6 +18,9 @@ import { SEMANTIC_ANALYSIS_VERSION, allChanges } from "../semantics/integrity";
 import type { SemanticJudge } from "./judge";
 import { voiceprintToProfile } from "../voiceprints/to-profile";
 import type { Corpus, LoadedCase } from "./corpus";
+import { familyOf } from "../rules/families";
+import { compareVoiceDevices } from "../semantics/voice-devices";
+import { refinementEffect } from "./refinement-effect";
 import { anchorPresent, compareVoice, metricDeltas, ruleDiff, semanticGate, sha256, wordingRetention } from "./measures";
 
 /**
@@ -69,6 +72,22 @@ export function baseProfile(c: LoadedCase, vp: Voiceprint | undefined): StylePro
 const stageLabel = (r: Refinement | undefined, profile: StyleProfile) =>
   r ? [...r.directives.map((d) => REFINEMENT_LABELS[d]), ...(r.note ? [`note: ${r.note}`] : [])].join(" + ") : profile.label;
 
+/** Source spans the plan classified as removable patterns, named, for the judge (candidates, not safe deletions). */
+export function intendedRemovals(plan: RewritePlan, source: string): { pattern: string; text: string }[] {
+  const seen = new Set<string>();
+  const out: { pattern: string; text: string }[] = [];
+  for (const f of plan.analysis.findings) {
+    if (f.suppressedBy || !familyOf(f.rule.id)?.removable) continue;
+    for (const m of f.matches) {
+      const text = source.slice(m.start, m.end).trim();
+      if (!text || seen.has(text)) continue;
+      seen.add(text);
+      out.push({ pattern: f.rule.name, text });
+    }
+  }
+  return out;
+}
+
 function goldComparison(gold: GoldRewrite, c: LoadedCase, before: WritingAnalysis, output: WritingAnalysis, profile: StyleProfile, rules: ReturnType<typeof rulesForProfile>): NonNullable<StageRecord["gold"]> {
   const goldAnalysis = analyzeWriting(gold.text, rules, { constraints: [] });
   const byGold = ruleDiff(before, goldAnalysis);
@@ -98,6 +117,7 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
   let originalPlan: RewritePlan | null = null;
   let previous: { text: string; profile: StyleProfile } | null = null;
   const stages: StageRecord[] = [];
+  const judgePrompt = ctx.judge?.prompt ?? "judge.v1";
 
   for (let i = 0; i < steps.length; i++) {
     const refinement = steps[i];
@@ -110,7 +130,7 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
     };
     let detailed;
     try {
-      detailed = await runReconstructionDetailed(request, ctx.provider, { strategy, onAttempt: (a) => attempts.push(a) });
+      detailed = await runReconstructionDetailed(request, ctx.provider, { strategy, onAttempt: (a) => attempts.push(a), forceModel: ctx.config.forceModel === true });
     } catch (err) {
       const code = err instanceof ProviderError ? err.code : "error";
       throw new EvaluationCaseError(err instanceof Error ? err.message.slice(0, 400) : "Unknown failure", c.id, i, code, attempts);
@@ -127,7 +147,7 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
     // Identical text cannot have changed meaning: the judge is not asked (and the stage is marked skipped, never passed).
     const identical = result.text === c.text;
     const judge = ctx.judge && identical
-      ? { provider: ctx.judge.info.provider, model: ctx.judge.info.model, prompt: "judge.v1", selfJudged: false, status: "skipped" as const, error: null, verdict: "NOT_RUN" as const, findings: [], latencyMs: null, tokens: null }
+      ? { provider: ctx.judge.info.provider, model: ctx.judge.info.model, prompt: judgePrompt, selfJudged: false, status: "skipped" as const, error: null, verdict: "NOT_RUN" as const, findings: [], latencyMs: null, tokens: null }
       : ctx.judge
       ? await ctx.judge.judge({
           source: c.text,
@@ -135,8 +155,17 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
           sourceClaims: extractClaims(c.text),
           outputClaims: extractClaims(result.text),
           deterministic: [...allChanges(integrity), ...result.verification.findings.filter((f) => f.origin === "deterministic" && f.severity === "blocking")],
+          intendedRemovals: intendedRemovals(plan, c.text),
+          runId: ctx.runId,
         })
       : undefined;
+    // VOICE, measured apart from meaning: habits the source shows, and whether the output kept them.
+    const devices = compareVoiceDevices(c.text, result.text, plan.sourceVoice.slopDensity);
+    // INSTRUCTION FOLLOWING, measured apart from meaning: did the requested refinement visibly happen?
+    const effect =
+      refinement && previous
+        ? refinementEffect({ refinement, original: c.text, current: previous.text, output: result.text, currentMetrics: analyzeWriting(previous.text, rules, { constraints: [] }).metrics, outputMetrics: after.metrics })
+        : null;
     const semantic = semanticGate(result.verification, result.text, c.expectations.anchors, { integrity, ...(ctx.judge ? { judge } : {}) });
     const retention = wordingRetention(c.text, result.text);
     const expectations: StageRecord["expectations"] = [];
@@ -179,6 +208,18 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       gold,
       originalWordingRetention: retention.tokenRetention,
       unchangedByPolicy: detailed.attempts.length === 0,
+      plannerWouldBypass: detailed.plannerWouldBypass,
+      voiceDevices: {
+        verdict: devices.verdict,
+        confidence: devices.confidence,
+        slopDensity: plan.sourceVoice.slopDensity,
+        deliberate: devices.deliberate,
+        notes: plan.sourceVoice.notes,
+        deviations: devices.deviations,
+        source: devices.source as unknown as Record<string, unknown>,
+        output: devices.output as unknown as Record<string, unknown>,
+      },
+      refinementEffect: effect,
       refinementDelta: plan.refinementDelta
         ? {
             objectives: plan.refinementDelta.objectives.map((o) => ({ id: o.id, reference: o.reference })),
@@ -217,11 +258,12 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
             provider: ctx.judge.info.provider,
             model: ctx.judge.info.model,
             selfJudged: ctx.judge.info.provider === engine.provider && ctx.judge.info.model === engine.model,
-            prompt: "judge.v1",
+            prompt: judgePrompt,
             ...(ctx.judge.settings ? { settings: { applied: ctx.judge.settings.applied, unsupported: ctx.judge.settings.unsupported } } : {}),
           }
         : null,
       analysisVersion: SEMANTIC_ANALYSIS_VERSION,
+      ...(ctx.config.forceModel ? { forcedModel: true } : {}),
     },
     source: { text: c.text, words: original!.metrics.words },
     before: {

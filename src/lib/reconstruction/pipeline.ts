@@ -33,6 +33,13 @@ export interface PipelineOptions {
    * even when a later attempt throws. Records carry hashes and counts, never text.
    */
   onAttempt?: (record: AttemptRecord) => void;
+  /**
+   * EVALUATION ONLY (`pnpm eval:run --force-model`): call the model even when
+   * the strategy would return the source unchanged, to measure what the model
+   * does with text the planner considers finished. Production callers never
+   * set it; the web route has no way to.
+   */
+  forceModel?: boolean;
 }
 
 /** One provider attempt, for observability. No text: hashes, counts, reasons and transport metadata only. */
@@ -73,6 +80,8 @@ export interface DetailedPipelineResult {
   plan: RewritePlan;
   strategy: RewriteStrategy;
   attempts: AttemptRecord[];
+  /** The strategy's minimal-change policy would have returned the source without a model call. */
+  plannerWouldBypass: boolean;
 }
 
 export interface PipelineResult extends ReconstructionResult {
@@ -128,7 +137,8 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
   const verifyContext = { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases };
 
   // Minimal change as an invariant: good text that needs nothing comes back as it is.
-  if (strategy.minimalChange === "unchanged" && plan.minimalChange.unchangedPreferred) {
+  const plannerWouldBypass = strategy.minimalChange === "unchanged" && plan.minimalChange.unchangedPreferred;
+  if (plannerWouldBypass && !options.forceModel) {
     const verification = verifyDeterministic(source, source, profile, verifyContext);
     const result: PipelineResult = {
       text: source,
@@ -142,7 +152,7 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
       preserved: preservedCounts(verification, plan),
       profile,
     };
-    return { result, plan, strategy, attempts: [] };
+    return { result, plan, strategy, attempts: [], plannerWouldBypass };
   }
   const rules = rulesForProfile(profile);
   const retry = strategy.retryPolicy;
@@ -244,5 +254,5 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
     preserved: preservedCounts(best.verification, plan),
     profile,
   };
-  return { result, plan, strategy, attempts: log };
+  return { result, plan, strategy, attempts: log, plannerWouldBypass };
 }

@@ -70,6 +70,20 @@ export const judgeResultSchema = z
     findings: z.array(judgeFindingSchema),
     latencyMs: z.number().min(0).nullable(),
     tokens: z.object({ input: z.number(), output: z.number() }).strict().nullable(),
+    /**
+     * live: this run called the judge. cached: an earlier call with the EXACT
+     * same judge input (provider, model, settings, prompt version, system and
+     * user message) was reused; latency and tokens are the original call's.
+     */
+    provenance: z
+      .object({
+        source: z.enum(["live", "cached"]),
+        key: z.string(),
+        originalRunId: z.string().nullable(),
+        cachedAt: z.string().nullable(),
+      })
+      .strict()
+      .optional(),
   })
   .strict();
 export type JudgeResult = z.infer<typeof judgeResultSchema>;
@@ -81,6 +95,8 @@ export const judgeConfigSchema = z
     baseUrl: z.string().url().optional(),
     /** Fixed judge reasoning setting (where the judge model supports one); identical for every run it judges. */
     reasoningEffort: z.enum(["low", "medium", "high"]).optional(),
+    /** Judge prompt version (default 2: with intended-removal context). Runs judged by different versions are not equivalent. */
+    promptVersion: z.union([z.literal(1), z.literal(2)]).optional(),
   })
   .strict();
 export type JudgeConfig = z.infer<typeof judgeConfigSchema>;

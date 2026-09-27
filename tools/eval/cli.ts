@@ -16,8 +16,11 @@ import { GEMINI_KEY_NAMES } from "@/lib/ai/select";
 import { runBatch } from "@/lib/evaluation/batch";
 import { EvaluationConfigError, createEvaluationProvider, createJudge, resolveConfig } from "@/lib/evaluation/config";
 import { runSemanticFixtures } from "@/lib/evaluation/semantic-fixtures";
+import { runVoiceFixtures } from "@/lib/evaluation/voice-fixtures";
 import { loadCorpus, selectCases } from "@/lib/evaluation/corpus";
+import { FileJudgeCache } from "@/lib/evaluation/judge-cache";
 import { renderComparison, renderRunReport } from "@/lib/evaluation/report";
+import { renderSeries } from "@/lib/evaluation/series";
 import { baseProfile, evaluateCase } from "@/lib/evaluation/runner";
 import { EvaluationStore } from "@/lib/evaluation/store";
 
@@ -49,7 +52,7 @@ function flag(name: string): string | undefined {
   return i >= 0 && rest[i + 1] && !rest[i + 1].startsWith("--") ? rest[i + 1] : undefined;
 }
 const has = (name: string) => rest.includes(`--${name}`);
-const BOOL = new Set(["--all", "--demo", "--dry-run", "--smoke", "--baseline-compare"]);
+const BOOL = new Set(["--all", "--demo", "--dry-run", "--smoke", "--baseline-compare", "--force-model", "--no-judge-cache"]);
 const positional = () => rest.filter((a, i) => !a.startsWith("--") && !(i > 0 && rest[i - 1].startsWith("--") && !rest[i - 1].includes("=") && !BOOL.has(rest[i - 1])));
 const list = (v: string | undefined) => (v ? v.split(",").map((s) => s.trim()).filter(Boolean) : undefined);
 const num = (name: string) => {
@@ -119,10 +122,27 @@ INDEPENDENT SEMANTIC JUDGE (evaluation only)
   A different model checks meaning with the deterministic analysis in hand and must quote
   evidence. It supplements the deterministic checks; a deterministic FAIL always stands.
   Records say when the judge is the same model as the one under test (self-judged).
+  --judge-prompt 1|2                            judge prompt version (default 2: shows the engine's intended
+                                                removals as candidates, not guaranteed-safe deletions)
+  Judge results are cached in .evaluations/judge-cache by the EXACT judge input (provider, model,
+  settings, prompt version, full messages). Reuse is recorded per stage (provenance: cached, with
+  the original run id). --no-judge-cache always calls the judge live.
+
+FORCED-MODEL DIAGNOSTIC (evaluation only; never the product's behaviour)
+  --force-model                                 call the model even where the strategy's planner would
+                                                return the text unchanged. Records say forcedModel: true,
+                                                the run id ends in -forced, and comparisons flag forced
+                                                vs normal runs as not equivalent.
+
+SERIES (the same configuration over several seeds)
+  pnpm eval:series <run> <run> [<run>…]         per-case variability across runs of ONE configuration:
+                                                failures on every seed vs intermittent, retention and
+                                                latency median/range, refinement effect, voice damage
 
 SEMANTIC REGRESSION FIXTURES
   pnpm eval:semantic                            run data/evaluation/semantic-fixtures.json against the
-                                                deterministic meaning checks (no model)
+                                                deterministic meaning checks, and voice-fixtures.json
+                                                against the voice-device checks (no model)
 
 INSPECT
   pnpm eval:list                                cases, categories, gold references
@@ -220,7 +240,8 @@ async function main() {
               reasoningParam: flag("reasoning-param"),
               reasoningEffort: flag("reasoning-effort"),
             },
-            judge: { provider: flag("judge-provider"), model: flag("judge-model"), baseUrl: flag("judge-base-url"), reasoningEffort: flag("judge-reasoning-effort") },
+            judge: { provider: flag("judge-provider"), model: flag("judge-model"), baseUrl: flag("judge-base-url"), reasoningEffort: flag("judge-reasoning-effort"), promptVersion: flag("judge-prompt") },
+            forceModel: has("force-model"),
           },
           process.env,
         );
@@ -245,9 +266,11 @@ async function main() {
 
       let provider;
       let judge;
+      let judgeCache: FileJudgeCache | null = null;
       try {
         provider = createEvaluationProvider(config, process.env);
-        judge = createJudge(config, process.env);
+        judgeCache = config.judge && !has("no-judge-cache") ? new FileJudgeCache(ROOT) : null;
+        judge = createJudge(config, process.env, { cache: judgeCache });
       } catch (e) {
         return fail((e as Error).message);
       }
@@ -255,7 +278,10 @@ async function main() {
       const concurrency = Math.min(2, Math.max(1, Number(flag("concurrency") ?? 1) || 1));
       const label = flag("label")?.replace(/[^a-z0-9-]/gi, "").slice(0, 30);
       const rb = config.generation?.reasoningBudget !== undefined ? `-rb${config.generation.reasoningBudget}` : "";
-      const runId = `${stamp()}-${config.strategy}-${config.provider}${rb}${label ? `-${label}` : ""}-${randomBytes(2).toString("hex")}`;
+      const seed = config.generation?.seed !== undefined ? `-s${config.generation.seed}` : "";
+      // Forced runs are marked in the id as well as in every record, so they cannot pass for normal runs.
+      const forced = config.forceModel ? "-forced" : "";
+      const runId = `${stamp()}-${config.strategy}-${config.provider}${rb}${seed}${forced}${label ? `-${label}` : ""}-${randomBytes(2).toString("hex")}`;
       const manifest: RunManifest = {
         schemaVersion: 2,
         runId,
@@ -276,7 +302,8 @@ async function main() {
       if (envFiles.length) console.log(`Environment from ${envFiles.join(", ")} (values not shown)`);
       if (generation && (generation.applied.length || generation.unsupported.length || generation.declared.length))
         console.log(`Generation: sent ${generation.applied.join(", ") || "nothing"}${generation.declared.length ? `; declared ${generation.declared.join(", ")}` : ""}${generation.unsupported.length ? `; UNSUPPORTED (not sent) ${generation.unsupported.join(", ")}` : ""}`);
-      if (judge) console.log(`Judge: ${judge.info.provider}/${judge.info.model}${judge.settings?.applied.length ? ` (${judge.settings.applied.join(", ")})` : ""}`);
+      if (judge) console.log(`Judge: ${judge.info.provider}/${judge.info.model} ${judge.prompt ?? ""}${judge.settings?.applied.length ? ` (${judge.settings.applied.join(", ")})` : ""}${judgeCache ? " · cache on" : " · cache off"}`);
+      if (config.forceModel) console.log("FORCED-MODEL DIAGNOSTIC: the planner's minimal-change bypass is disabled. This measures the model, not the product.");
       console.log(`Run ${runId}\n${manifest.realModel ? `REAL MODEL: ${config.provider}/${config.model}` : "DEMO ENGINE (not a model test)"} · ${config.strategy} · ${cases.length} case(s) · concurrency ${concurrency}\n`);
 
       const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId, judge, generation }), {
@@ -293,15 +320,38 @@ async function main() {
       store.saveManifest(done);
       const reportPath = store.saveReport(runId, renderRunReport({ manifest: done, records, failures }));
       console.log(`\n${records.length} completed, ${failures.length} failed. Report: ${reportPath.replace(ROOT + "/", "")}`);
+      if (judgeCache) console.log(`Judge cache: ${judgeCache.hits} reused (exact same input), ${judgeCache.misses} live.`);
       if (failures.length && !records.length) process.exitCode = 1;
+      return;
+    }
+
+    case "series": {
+      const refs = positional();
+      if (refs.length < 2) fail("Usage: eval:series <run> <run> [<run>…] (runs of one configuration, e.g. three seeds)");
+      const runs = refs.map((r) => store.loadRun(r));
+      let md;
+      try {
+        md = renderSeries(runs);
+      } catch (e) {
+        return fail((e as Error).message);
+      }
+      const dir = join(store.dir, "series");
+      mkdirSync(dir, { recursive: true });
+      const path = join(dir, `${runs.map((r) => r.manifest.runId.slice(-4)).join("_")}.md`);
+      writeFileSync(path, md);
+      console.log(md);
+      console.log(`Saved: ${path.replace(ROOT + "/", "")}`);
       return;
     }
 
     case "semantic": {
       const res = runSemanticFixtures(ROOT);
       for (const r of res.results) console.log(`${r.passed ? "✓" : "✗"} ${r.id.padEnd(34)} ${r.class.padEnd(26)} expected ${r.expected.padEnd(28)} got ${r.got}`);
-      console.log(`\n${res.passed}/${res.results.length} fixtures behave as specified.`);
-      if (res.passed !== res.results.length) process.exitCode = 1;
+      console.log(`\n${res.passed}/${res.results.length} meaning fixtures behave as specified.\n`);
+      const voice = runVoiceFixtures(ROOT);
+      for (const r of voice.results) console.log(`${r.passed ? "✓" : "✗"} ${r.id.padEnd(34)} ${r.class.padEnd(40)} expected ${r.expected.padEnd(34)} got ${r.got}`);
+      console.log(`\n${voice.passed}/${voice.results.length} voice fixtures behave as specified.`);
+      if (res.passed !== res.results.length || voice.passed !== voice.results.length) process.exitCode = 1;
       return;
     }
 

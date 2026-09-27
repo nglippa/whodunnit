@@ -26,10 +26,17 @@ export const SCALES: Record<Exclude<Scale, "modality">, [number, string[]][]> = 
     [3, ["prove", "proves", "proved", "proven", "proving", "confirm", "confirms", "confirmed", "establish", "establishes", "established", "verify", "verifies", "verified", "settle", "settles"]],
   ],
   // How strongly one thing is said to bring about another.
+  // How strongly one thing is said to bring about another. Five concepts on four ranks:
+  //   1 association / contribution / importance   "linked to", "helps", "plays a crucial role"
+  //   2 enablement / necessity                    "enables", "lets", "is essential to", "the key to"
+  //   3 causation                                 "causes", "leads to", "drives growth", "makes X stick"
+  //   4 determination                             "determines", "ensures", "is what makes X succeed"
+  // Ambiguous verbs ("makes", "drives") only count inside CAUSAL_CONSTRUCTIONS, never as bare words.
   causation: [
-    [1, ["help", "helps", "helped", "helping", "contribute", "contributes", "contributed", "contributing", "plays a role", "play a role", "plays a part", "plays a crucial role", "plays a vital role", "plays a key role", "plays an important role", "influences", "can improve", "can help"]],
-    [2, ["cause", "causes", "caused", "lead to", "leads to", "led to", "produces", "result in", "results in", "resulted in"]],
-    [3, ["determine", "determines", "determined", "is what determines", "ensure", "ensures", "ensured", "guarantee", "guarantees", "guaranteed", "decide", "decides", "dictate", "dictates"]],
+    [1, ["associated with", "linked to", "correlated with", "correlates with", "coincided with", "went along with", "help", "helps", "helped", "helping", "contribute", "contributes", "contributed", "contributing", "plays a role", "play a role", "plays a part", "plays a crucial role", "plays a vital role", "plays a key role", "plays an important role", "plays a major role", "plays a central role", "influences", "influenced", "can improve", "can help"]],
+    [2, ["enable", "enables", "enabled", "enabling", "allows", "allowed", "makes it possible", "made it possible", "the key to", "key to"]],
+    [3, ["cause", "causes", "caused", "lead to", "leads to", "led to", "produces", "result in", "results in", "resulted in", "brings about", "brought about", "triggers", "triggered", "driven by", "responsible for"]],
+    [4, ["determine", "determines", "determined", "ensure", "ensures", "ensured", "guarantee", "guarantees", "guaranteed", "decide", "decides", "dictate", "dictates"]],
   ],
   // How much of a set a claim covers.
   quantifier: [
@@ -57,6 +64,23 @@ export const IMPLICIT_NEGATORS = [
   "prevent", "prevents", "prevented", "forbid", "forbids", "prohibit", "prohibits", "withhold", "withholds", "cancel", "cancels", "cancelled",
   "canceled", "reject", "rejects", "rejected", "deny", "denies", "denied", "exclude", "excludes", "excluded", "insufficient", "unable", "unwilling",
   "instead of", "rather than",
+];
+
+/**
+ * Causal and determinative constructions built on verbs that are ambiguous on
+ * their own ("makes", "drives", "is ... to"). Each is anchored to a frame that
+ * only reads causally: "is what makes", "drives [the] growth", "makes X stick",
+ * "is essential to". [rank, pattern, label]
+ */
+export const CAUSAL_CONSTRUCTIONS: [number, RegExp, string][] = [
+  [4, /\b(?:is|are|was|were)\s+what\s+(?:makes?|made|drives?|drove|determines?|keeps?|gets?|creates?|causes?|decides?)\b/gi, "is what makes/drives"],
+  [4, /\b(?:is|are|was|were)\s+the\s+(?:sole|only|single|real|true)\s+(?:reason|cause|driver)\b/gi, "is the sole reason"],
+  [3, /\b(?:is|are|was|were)\s+the\s+(?:main\s+|primary\s+|biggest\s+)?(?:reason|cause|driver)\s+(?:for|of|behind|why)\b/gi, "is the reason for"],
+  [3, /\bmakes?\s+(?:[\p{L}'’-]+\s+){0,3}?(?:stick|last|work|happen|succeed|pay\s+off)\b/giu, "makes X stick/work/succeed"],
+  [3, /\b(?:drives?|drove|driving)\s+(?:the\s+|our\s+|their\s+|its\s+|an?\s+)?(?:[\p{L}-]+\s+)?(?:success|growth|results?|improvements?|adoption|performance|outcomes?|change|engagement|sales|revenue|progress|gains?|rise|fall|drop|increase|decrease|decline|shift|recovery|turnaround)\b/giu, "drives success/growth"],
+  [2, /\b(?:is|are|was|were)\s+(?:essential|necessary|required|critical|vital|indispensable)\s+(?:to|for)\b/gi, "is essential to"],
+  [2, /\blets?\s+(?:[\p{L}'’-]+\s+){1,3}?(?:own|do|make|work|ship|focus|reach|achieve|get)\b/giu, "lets X do"],
+  [1, /\b(?:is|are|was|were)\s+(?:important|crucial|useful|helpful|valuable|beneficial)\s+(?:to|for|in)\b/gi, "is important to"],
 ];
 
 /** Unambiguous causal markers ("since" and "as" are temporal too often to count). */

@@ -121,7 +121,9 @@ export function compareClaims(sourceText: string, outputText: string, src: Extra
   }
   const alignedSrc = new Set(edges.map(([s]) => s.id));
 
-  const totalSrcCausal = src.reduce((n, c) => n + c.causal.length, 0);
+  // A claim states causation with a causal connective ("because") or a causal verb ("causes", "leads to").
+  const causalCount = (c: ExtractedClaim) => c.causal.length + c.strength.filter((m) => m.scale === "causation" && m.rank >= 3).length;
+  const totalSrcCausal = src.reduce((n, c) => n + causalCount(c), 0);
   const totalOutCausal = out.reduce((n, c) => n + c.causal.length, 0);
 
   for (const { src: gs, out: go } of groups.values()) {
@@ -169,6 +171,8 @@ export function compareClaims(sourceText: string, outputText: string, src: Extra
     // Ordered scales: evidence, causation, quantifier, frequency.
     for (const scale of ["evidence", "causation", "quantifier", "frequency"] as ScaleMarker["scale"][]) {
       const sm = S.flatMap((c) => c.strength.filter((x) => x.scale === scale));
+      // A causal connective ("because", "due to") states causation: rank 3 on the causal scale.
+      if (scale === "causation") for (const c of S) for (const k of c.causal) sm.push({ scale, rank: 3, marker: k });
       const om = go.flatMap((c) => c.strength.filter((x) => x.scale === scale));
       const sMax = sm.length ? Math.max(...sm.map((x) => x.rank)) : null;
       const oMax = om.length ? Math.max(...om.map((x) => x.rank)) : null;
@@ -176,8 +180,15 @@ export function compareClaims(sourceText: string, outputText: string, src: Extra
       const oWord = om.find((x) => x.rank === oMax)?.marker;
       if (sMax !== null && oMax !== null && sMax !== oMax) {
         const up = oMax > sMax;
-        const l = licensed(oneToOne ? "blocking" : "major", up ? lic.strengthen : lic.weaken);
+        // On the causal scale adjacent concepts overlap ("helps" vs "enables"): a one-step move is reviewed, not failed.
+        const step = Math.abs(oMax - sMax);
+        const sev: IntegritySeverity = scale === "causation" && step === 1 ? "major" : oneToOne ? "blocking" : "major";
+        const l = licensed(sev, up ? lic.strengthen : lic.weaken);
         changes.push(change({ ...base, relation: up ? "strengthened" : "weakened", aspect: scale, ...l, detail: `“${sWord}” became “${oWord}” (${scale} ${up ? "strengthened" : "weakened"}).` }));
+      } else if (scale === "causation" && sMax === null && oMax !== null && oMax >= 3 && !gs.some((c) => c.causal.length)) {
+        // An invented mechanism: the source states no cause or determination for this content.
+        const l = licensed("blocking", lic.strengthen);
+        changes.push(change({ ...base, relation: "added", aspect: "causal-relation", ...l, detail: `The rewrite asserts a causal mechanism (“${oWord}”) the source does not state.` }));
       } else if (sMax === null && oMax !== null && oMax >= 3 && !sourceUsesMarker(sourceText, go.map((c) => c.text).join(" "), oWord!)) {
         const l = licensed("major", lic.strengthen);
         changes.push(change({ ...base, relation: "strengthened", aspect: scale, ...l, detail: `The rewrite adds “${oWord}”, a stronger ${scale} claim than the source makes.` }));
@@ -189,11 +200,22 @@ export function compareClaims(sourceText: string, outputText: string, src: Extra
 
   }
 
+  // ---- causal mechanisms in output sentences that align with nothing in the source
+  const srcHasCausation = src.some((c) => causalCount(c) > 0);
+  if (!srcHasCausation) {
+    for (const o of out) {
+      if (groups.has(uf.find(`o:${o.id}`))) continue;
+      const m = o.strength.find((x) => x.scale === "causation" && x.rank >= 3);
+      if (m)
+        changes.push(change({ relation: "added", aspect: "causal-relation", severity: lic.strengthen ? "minor" : "blocking", licensedBy: lic.strengthen ?? null, sourceClaimId: null, outputClaimId: o.id, source: null, output: excerpt(o.text), detail: `The rewrite asserts a causal mechanism (“${m.marker}”) the source does not state.` }));
+    }
+  }
+
   // ---- causal relations the source never states (aligned or not)
   if (totalOutCausal > totalSrcCausal) {
     for (const o of out.filter((c) => c.causal.length)) {
       const g = groups.get(uf.find(`o:${o.id}`));
-      if (g?.src.some((c) => c.causal.length)) continue;
+      if (g?.src.some((c) => causalCount(c) > 0)) continue;
       changes.push(change({ relation: "added", aspect: "causal-relation", severity: "blocking", sourceClaimId: g ? g.src.map((c) => c.id).join(",") : null, outputClaimId: o.id, source: g ? excerpt(g.src.map((c) => c.text).join(" ")) : null, output: excerpt(o.text), detail: `The rewrite asserts a cause (“${o.causal[0]}”) the source does not state.` }));
     }
   }

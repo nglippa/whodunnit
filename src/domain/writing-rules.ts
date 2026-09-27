@@ -44,7 +44,12 @@ export type Severity = (typeof SEVERITIES)[number];
  * Precedence layers, highest first. When two pressures pull on the same
  * dimension, the higher layer wins. Semantic safety is never overridden.
  */
-export const RULE_LAYERS = ["semantic-safety", "user-instruction", "voiceprint", "style", "general", "advisory"] as const;
+/**
+ * Precedence, highest first. "source-voice" is the source text's own
+ * demonstrated habits (see semantics/voice-devices.ts): weaker than a
+ * confident saved Voiceprint, stronger than a style preset.
+ */
+export const RULE_LAYERS = ["semantic-safety", "user-instruction", "voiceprint", "source-voice", "style", "general", "advisory"] as const;
 export type RuleLayer = (typeof RULE_LAYERS)[number];
 
 /** Measurable axes that rules and constraints push on. Used to resolve conflicts. */

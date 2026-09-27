@@ -143,6 +143,12 @@ export const evaluationConfigSchema = z
     generation: generationSettingsSchema.optional(),
     /** An independent semantic judge (evaluation only). */
     judge: judgeConfigSchema.optional(),
+    /**
+     * DIAGNOSTIC ONLY: call the model even when the planner would return the
+     * source unchanged. Forced runs measure the model, not the product; they
+     * are never compared with normal runs as if equivalent.
+     */
+    forceModel: z.boolean().optional(),
   })
   .strict()
   .refine((c) => (c.provider === "demo") === (c.model === null), { error: "The demo engine has no model; a model provider needs one" });
@@ -333,6 +339,59 @@ export const goldComparisonSchema = z
   })
   .strict();
 
+const deviceMeasuresSchema = z.record(z.string(), z.unknown());
+
+export const voiceDeviceSummarySchema = z
+  .object({
+    verdict: z.enum(["PRESERVED", "DEVIATION", "DAMAGED"]),
+    /** 0–1: how much source text the habits were judged from. */
+    confidence: z.number(),
+    /** Catalogued patterns per 100 words in the source (devices inside slop are not habits). */
+    slopDensity: z.number(),
+    deliberate: z.record(z.string(), z.boolean()),
+    notes: z.array(z.string()),
+    deviations: z.array(
+      z
+        .object({
+          device: z.string(),
+          change: z.enum(["erased", "reduced", "introduced", "normalized", "restyled"]),
+          severity: z.enum(["minor", "major"]),
+          source: z.number(),
+          output: z.number(),
+          detail: z.string(),
+        })
+        .strict(),
+    ),
+    source: deviceMeasuresSchema,
+    output: deviceMeasuresSchema,
+  })
+  .strict();
+export type VoiceDeviceSummary = z.infer<typeof voiceDeviceSummarySchema>;
+
+export const REFINEMENT_EFFECTS = ["APPLIED", "PARTIAL", "NOT_APPLIED", "ALREADY_SATISFIED", "NOT_MEASURABLE"] as const;
+export const refinementEffectSchema = z
+  .object({
+    /** Worst status across the requested directives (NOT_MEASURABLE ranks below the rest). */
+    status: z.enum(REFINEMENT_EFFECTS),
+    /** The stage output is byte-identical to the text it was asked to revise. */
+    identicalToCurrent: z.boolean(),
+    directives: z.array(
+      z
+        .object({
+          id: z.string(),
+          status: z.enum(REFINEMENT_EFFECTS),
+          reference: z.enum(["original", "current"]),
+          measure: z.string(),
+          before: z.number().nullable(),
+          after: z.number().nullable(),
+          detail: z.string(),
+        })
+        .strict(),
+    ),
+  })
+  .strict();
+export type RefinementEffect = z.infer<typeof refinementEffectSchema>;
+
 export const stageRecordSchema = z
   .object({
     index: z.number().int().min(0),
@@ -373,12 +432,18 @@ export const stageRecordSchema = z
       .object({
         objectives: z.array(z.object({ id: z.string(), reference: z.enum(["original", "current"]) }).strict()),
         licenses: z.array(z.string()),
-        restorations: z.array(z.object({ source: z.string(), current: z.string().nullable(), retained: z.number() }).strict()),
+        restorations: z.array(z.object({ source: z.string(), current: z.string().nullable(), retained: z.number(), partial: z.boolean().optional() }).strict()),
         triage: z.object({ mustKeep: z.number().int(), mayCompress: z.number().int(), mayRemove: z.number().int() }).strict().nullable(),
       })
       .strict()
       .nullable()
       .optional(),
+    /** The strategy's minimal-change policy would have returned the source without calling the model. */
+    plannerWouldBypass: z.boolean().optional(),
+    /** VOICE: authorship devices (dashes, fragments, capitalisation, quote style…) measured against the source. Independent of the semantic verdict. */
+    voiceDevices: voiceDeviceSummarySchema.optional(),
+    /** INSTRUCTION FOLLOWING: did the requested refinement visibly happen? Independent of the semantic verdict. */
+    refinementEffect: refinementEffectSchema.nullable().optional(),
   })
   .strict();
 export type StageRecord = z.infer<typeof stageRecordSchema>;
@@ -428,6 +493,8 @@ export const evaluationRecordSchema = z
           .optional(),
         /** Schema v2: version of the deterministic meaning analysis. */
         analysisVersion: z.string().optional(),
+        /** Diagnostic forced-model run: the planner's minimal-change bypass was disabled. Absent/false = normal product behaviour. */
+        forcedModel: z.boolean().optional(),
       })
       .strict(),
     source: z.object({ text: z.string(), words: z.number().int() }).strict(),

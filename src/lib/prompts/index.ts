@@ -245,7 +245,22 @@ DETERMINISTIC FINDINGS were produced by software. Confirm what they show, add wh
 If the meaning is preserved, return an empty findings list. Do not report removed filler (stock openers, recaps, empty emphasis) as a dropped claim.
 ${DATA_RULE}`;
 
-export function judgeUserPrompt(input: { source: string; output: string; sourceClaims: string[]; outputClaims: string[]; deterministic: string[] }): string {
+/**
+ * judge.v2: judge.v1 plus INTENDED REMOVALS. The engine tells the judge which
+ * source spans it classified as removable patterns (stock openers, empty
+ * emphasis, recap kickers), so dropping them is not mistaken for a dropped
+ * claim. They are CANDIDATES from software, not guaranteed-safe deletions:
+ * the judge must still report a span that carried a real claim.
+ */
+export const JUDGE_SYSTEM_V2 = `${JUDGE_SYSTEM}
+
+INTENDED REMOVALS lists source spans the software classified as removable writing patterns. They are candidates, not guaranteed-safe deletions: the classification can be wrong. If a listed span only carried filler (emphasis, a stock opener, a recap), its absence is not a finding. If it also carried a real claim (a fact, number, cause, condition, qualification or attribution), report that claim as dropped exactly as you would anywhere else.`;
+
+/** The judge's user message. `version` follows the judge prompt: v2 adds INTENDED REMOVALS; v1 renders exactly as it always did. */
+export function judgeUserPrompt(
+  input: { source: string; output: string; sourceClaims: string[]; outputClaims: string[]; deterministic: string[]; intendedRemovals?: string[] },
+  version = 1,
+): string {
   return [
     "SOURCE CLAIMS (software-extracted):",
     ...input.sourceClaims.map((c) => `- ${c}`),
@@ -256,6 +271,9 @@ export function judgeUserPrompt(input: { source: string; output: string; sourceC
     "DETERMINISTIC FINDINGS:",
     ...(input.deterministic.length ? input.deterministic.map((d) => `- ${d}`) : ["- none"]),
     "",
+    ...(version >= 2
+      ? ["INTENDED REMOVALS (software-classified candidates, not guaranteed safe):", ...(input.intendedRemovals?.length ? input.intendedRemovals.map((d) => `- ${d}`) : ["- none"]), ""]
+      : []),
     `<source>\n${input.source}\n</source>`,
     "",
     `<candidate>\n${input.output}\n</candidate>`,
@@ -288,6 +306,7 @@ export const PROMPTS: readonly PromptDefinition[] = [
   def("verify", 1, "Model-assisted meaning comparison", VERIFY_SYSTEM),
   def("voiceprint", 1, "Optional Voiceprint observations", VOICEPRINT_SYSTEM),
   def("judge", 1, "Independent semantic judge (evaluation only)", JUDGE_SYSTEM),
+  def("judge", 2, "Independent semantic judge with intended-removal context (evaluation only)", JUDGE_SYSTEM_V2),
 ];
 
 export function getPrompt(ref: PromptRef): PromptDefinition {

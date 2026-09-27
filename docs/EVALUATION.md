@@ -290,7 +290,7 @@ pnpm eval:run --smoke --provider local --model qwen3:14b-q8_0 --base-url http://
   --judge-provider gemini --judge-model gemini-3.8-flash
 ```
 
-The judge (prompt `judge.v1`) receives four things: the source, the output, both claim lists, and the deterministic findings. It is asked for specific kinds of change, not "is this basically the same?":
+The judge receives the source, the output, both claim lists and the deterministic findings. judge.v2 (the default) also receives the engine's INTENDED REMOVALS (see "judge.v2 and the judge cache"); `--judge-prompt 1` selects judge.v1 for comparison with older runs. It is asked for specific kinds of change, not "is this basically the same?":
 
 - added or dropped claims
 - strengthened or weakened claims
@@ -336,7 +336,7 @@ done
 `reconstruction-v3` (experimental, prompt `reconstruct.v4`) treats a refinement as a requested change, anchored to the original.
 
 - **Roles:** the prompt gives ORIGINAL SOURCE (the authority on meaning and authorship) and CURRENT REVISION (the text being edited) distinct roles. Each directive is an objective with an explicit reference: the original or the current revision.
-- **Keep more of my wording** moves toward the ORIGINAL. The plan lists original sentences that the current revision reworded without a catalogued pattern to justify it (RESTORE), and never lists a pattern for restoration. The demo engine restarts from the original.
+- **Keep more of my wording** moves toward the ORIGINAL. The plan lists original sentences that the current revision reworded without a catalogued pattern to justify it (RESTORE), and never lists a pattern for restoration. When a sentence contains a pattern, only the wording around it is offered back (the pattern cut out, pieces joined with "…", marked `partial`), so a revision whose every sentence held a pattern still gets a restoration list. The demo engine applies the RESTORE list to the current revision; it never restarts from the whole original, because that would bring back patterns the revision had dropped.
 - **Shorter** carries a claim triage:
   - MUST KEEP: claims with numbers, negations, names, hedges, causes or dates.
   - MAY COMPRESS: other content claims.
@@ -347,13 +347,133 @@ done
 
 v1 remains the production default; v2 and v3 are experimental until a real-model comparison supports promoting one.
 
+## Three independent questions: semantics, voice, instruction following
+
+Every stage answers three questions separately. They are never merged into one verdict or score:
+
+1. **SEMANTICS:** did the meaning survive? The semantic gate (deterministic claims, self-check, judge): PASS, NEEDS_REVIEW or FAIL.
+2. **VOICE:** did the author's habits survive? `stage.voiceDevices`: PRESERVED, DEVIATION or DAMAGED. This is separate from the Voiceprint/source metric ranges in `stage.voice`.
+3. **INSTRUCTION FOLLOWING:** did the requested refinement visibly happen? `stage.refinementEffect`: APPLIED, PARTIAL, NOT_APPLIED, ALREADY_SATISFIED or NOT_MEASURABLE (refinement stages only).
+
+A stage can PASS semantics while its voice is DAMAGED (dashes erased) or its refinement NOT_APPLIED ("Shorter" returned the same text). Reports show the three side by side, and comparisons count each separately.
+
+### Causal and assertion strength
+
+Causal wording is ranked, not string-matched:
+
+| rank | family | examples |
+| --- | --- | --- |
+| 1 | contribution / association / importance | helps, contributes to, is associated with, is linked to, plays a role, is important for |
+| 2 | enablement | enables, allows, makes it possible, is essential for, lets the team do X |
+| 3 | causation | causes, leads to, results in, drives growth, makes X stick, is the reason for |
+| 4 | determination | determines, ensures, guarantees, is what makes X, is the only reason |
+
+Constructions ("is what makes", "drives … success", "makes improvements stick") are matched before single words. How a move between ranks is graded:
+
+- **A one-step move** (e.g. enables → causes) is NEEDS_REVIEW, because it is ambiguous.
+- **A larger move** (e.g. contributes → determines, is associated with → caused) is FAIL.
+- **A causal mechanism the source never stated** (rank ≥3 with no causal wording in the source, whether the claim is aligned or not) is FAIL.
+- **Negative controls**, such as "makes sense", "helps" → "contributes to", and "because" kept as "drives", must PASS.
+
+### Voice devices
+
+`src/lib/semantics/voice-devices.ts` measures the following:
+
+- em/en dashes, how many and whether they are spaced;
+- fragments (≤4 words);
+- lowercase sentence starts and lowercase "i";
+- quote style (straight vs curly, double vs single);
+- parentheses, semicolons and ellipses;
+- repeated punctuation (?? !!);
+- contractions.
+
+A **source voice profile** decides which devices are deliberate habits. A device counts only when three things hold:
+
+- it recurs;
+- the text shows other signs of a personal style;
+- the text is not slop-heavy (catalogued patterns per 100 words below 1.5, not counting the device rules themselves).
+
+Dashes inside "In today's world — where speed matters —" are a pattern, not a habit.
+
+**Deviations** are graded by confidence (how much source text there is: `1 − e^(−words/90)`) and by frequency. The main grades:
+
+- **Major:** erasing a deliberate habit with confidence ≥0.5 (about 62 words); capitalising a deliberately lowercase text; lowercasing a normally capitalised one.
+- **Minor:** a quote-style change, and dash spacing.
+
+A quote-style change is a VOICE deviation, never a semantic failure. Quoted words are still checked by the meaning analysis.
+
+**Planner priority.** The same profile feeds the planner as a `source-voice` constraint layer. The order is user instruction > Voiceprint (≥0.6 confidence) > source voice (≥0.5) > style preset > general rules. A deliberate dash habit therefore permits `slop.dash-density` even without a saved Voiceprint, while dash spam in slop keeps the rule active. The 0.5 threshold is shared with the voice check, so the plan never asks the model to remove what the evaluation would call damage.
+
+Fixtures are in `data/evaluation/voice-fixtures.json`, with positive cases and negative controls, and run with `pnpm eval:semantic`.
+
+### Refinement effect
+
+The measures are coarse, text-supported signals. None is a quality score.
+
+| directive | measure | APPLIED when |
+| --- | --- | --- |
+| Shorter | words vs the current revision | ≤92% of the words (PARTIAL ≤98%) |
+| Keep more of my wording | token/bigram retention of the ORIGINAL, before → after | +0.02 or more; ALREADY_SATISFIED when the current revision already keeps ≥95% |
+| More casual | contractions/100, mean sentence length | contractions +0.5/100, or sentences ≥10% shorter |
+| More formal | contractions/100 | −0.5/100 (NOT_MEASURABLE if there were none) |
+| Less polished | transition openers + colons + semicolons; sentence-length CV | polish markers −0.5, or CV +0.05 |
+| note | none | NOT_MEASURABLE (NOT_APPLIED if nothing changed) |
+
+Output byte-identical to the revision it was asked to change is NOT_APPLIED. The only exception is keep-wording when the revision was already saturated, which is ALREADY_SATISFIED.
+
+## Forced-model diagnostic (`--force-model`)
+
+Under v3, text the planner considers finished is returned without a model call. That is product behaviour, and normal runs measure it (**PRODUCT QUALITY**).
+
+`--force-model` disables that bypass so the model is called anyway. This measures **BACKEND SAFETY**: what the model does with text that needed nothing. The rules:
+
+- **Evaluation only.** It lives in `PipelineOptions.forceModel`. The web route cannot set it, and a test asserts that.
+- **Refused where it cannot matter.** Strategies that never bypass the model (v1, v2) reject it.
+- **Labelled everywhere.**
+  - The run id ends in `-forced`.
+  - Every record says `config.forcedModel: true`, and every stage records `plannerWouldBypass`.
+  - The run report opens with a FORCED-MODEL DIAGNOSTIC banner.
+- **Never mixed with normal runs.**
+  - `eval:compare` marks a forced/normal pair as NOT EQUIVALENT and does not compute regressions between them.
+  - `eval:series` refuses to mix them.
+- **Normal behaviour is unchanged.** Without the flag, v3 bypasses exactly as before.
+
+## judge.v2 and the judge cache
+
+**judge.v2** adds an INTENDED REMOVALS section: source spans the engine classified as removable patterns, with the pattern's name.
+
+- The prompt calls them "candidates, not guaranteed-safe deletions". If a listed span also carried a real claim (a fact, number, cause, condition, qualification or attribution), the judge must report it as dropped.
+- The judge is never told to trust the rule engine.
+- judge.v1 is unchanged and still pinned. Runs judged by different prompt versions are flagged as not like for like.
+
+**The judge cache** lives in `.evaluations/judge-cache/<sha256>.json`, and is gitignored.
+
+- **What is hashed:** the judge provider, model, generation settings, prompt version, and the full system and user messages. The user message already contains the source, the output, both claim lists, the deterministic findings and the intended removals.
+- **What hits:** only an exactly equivalent judge input. The same output text with any other difference is a miss.
+- **What is cached:** completed judgements only. Failures are retried, and corrupt entries are misses.
+- **Provenance:** every judge result records `provenance.source` (`live` or `cached`), the key, the original run id and when it was cached. Reports count live vs reused calls.
+- **Opting out:** `--no-judge-cache` always calls live.
+
+## Series: variability across seeds
+
+`pnpm eval:series <run> <run> <run>` takes runs of ONE configuration that differ only in `--seed`. It refuses mixed models, strategies, prompts, judges (or judge prompts), reasoning budgets, corpus versions, and forced vs normal.
+
+Per case, it reports:
+
+- the semantic verdict for each seed;
+- whether semantic FAIL, voice DAMAGED and refinement NOT_APPLIED happen on every seed (systematic) or intermittently;
+- median and range of retention and latency.
+
+Per seed, it reports totals. Nothing is averaged into one number. See docs/BENCHMARK-PLAN.md for the planned three-seed tracks.
+
 ## Record schema version 2
 
 New records are `schemaVersion: 2`:
 
 - **Semantic gate:** `integrity`, `judge` and `disagreements`, plus the NEEDS_REVIEW verdict.
-- **Stage:** `refinementDelta`, `originalWordingRetention` and `unchangedByPolicy`.
+- **Stage:** `refinementDelta`, `originalWordingRetention`, `unchangedByPolicy`, `plannerWouldBypass`, `voiceDevices` and `refinementEffect`.
 - **Rule diff:** `rules.families`, which shows a family that persisted through rewording.
-- **Config:** `generation`, `judge` and `analysisVersion`.
+- **Config:** `generation`, `judge`, `analysisVersion` and `forcedModel`.
+- **Judge result:** `provenance` (live or cached).
 
 Version 1 records and manifests still load; the new fields are optional.

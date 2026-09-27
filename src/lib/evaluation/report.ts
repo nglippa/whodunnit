@@ -19,6 +19,13 @@ const median = (xs: number[]) => {
 const row = (cells: (string | number)[]) => `| ${cells.join(" | ")} |`;
 const table = (head: string[], rows: (string | number)[][]) => [row(head), row(head.map(() => "---")), ...rows.map(row)].join("\n");
 const introducedDet = (s: StageRecord) => s.rules.introducedDeterministic.length;
+const forced = (run: StoredRun) => Boolean(run.manifest.config.forceModel || run.records[0]?.config.forcedModel);
+const voiceVerdict = (s: StageRecord) => s.voiceDevices?.verdict ?? "–";
+const effectStatus = (s: StageRecord) => (s.refinementEffect ? s.refinementEffect.status : "–");
+const judgeReuse = (records: EvaluationRecord[]) => {
+  const js = records.flatMap((r) => r.stages.map((s) => s.semantic.judge).filter((j) => j?.status === "ran"));
+  return { live: js.filter((j) => j?.provenance?.source !== "cached").length, cached: js.filter((j) => j?.provenance?.source === "cached").length };
+};
 const expectationFailures = (r: EvaluationRecord) => r.stages.flatMap((s) => s.expectations.filter((e) => !e.passed).map((e) => ({ stage: s.index, ...e })));
 
 export function renderRunReport(run: StoredRun): string {
@@ -26,6 +33,11 @@ export function renderRunReport(run: StoredRun): string {
   const L: string[] = [];
   L.push(`# Evaluation run ${m.runId}`, "");
   if (!m.realModel) L.push("> **Demo engine.** These outputs come from the deterministic rule-based engine, not a model. Nothing here measures real-model reconstruction.", "");
+  if (forced(run))
+    L.push(
+      "> **FORCED-MODEL DIAGNOSTIC.** The planner's minimal-change bypass was disabled: the model was called even on text the product would return unchanged. This run measures BACKEND SAFETY (what the model does when asked), not PRODUCT QUALITY (what a user gets). Never compare it with a normal run as if equivalent.",
+      "",
+    );
   L.push(
     `- Created ${m.createdAt}${m.finishedAt ? `, finished ${m.finishedAt}` : " (unfinished)"}`,
     `- Cases: ${m.caseIds.length} selected, ${m.completed.length} completed, ${m.failed.length} failed`,
@@ -43,7 +55,12 @@ export function renderRunReport(run: StoredRun): string {
     const g = c0.generation;
     L.push(`- Generation: ${g.applied.length ? `sent ${g.applied.join(", ")}` : "provider defaults"}${g.declared.length ? `; declared ${g.declared.join(", ")}` : ""}${g.unsupported.length ? `; unsupported (not sent) ${g.unsupported.join(", ")}` : ""}`);
   }
-  L.push(`- Independent judge: ${c0?.judge ? `${c0.judge.provider}/${c0.judge.model}${c0.judge.selfJudged ? " (SELF-JUDGED: same model as the rewrite)" : ""}` : "none"}`);
+  L.push(`- Independent judge: ${c0?.judge ? `${c0.judge.provider}/${c0.judge.model} ${c0.judge.prompt ?? ""}${c0.judge.selfJudged ? " (SELF-JUDGED: same model as the rewrite)" : ""}` : "none"}`);
+  if (c0?.judge) {
+    const j = judgeReuse(records);
+    L.push(`- Judge calls: ${j.live} live, ${j.cached} reused from the cache (exact same judge input; the reused verdict is the original call's)`);
+  }
+  L.push(`- Planner bypass: ${forced(run) ? "DISABLED (forced model)" : "normal (text the planner considers finished is returned without a model call)"}`);
   L.push(`- Concurrency: ${m.concurrency}`, "");
 
   L.push("## Corpus results", "");
@@ -73,6 +90,38 @@ export function renderRunReport(run: StoredRun): string {
     "",
   );
 
+  L.push("## Semantics, voice and instruction following", "");
+  L.push("Three independent questions, never merged: did the meaning survive (SEMANTICS), did the author's habits survive (VOICE: dashes, fragments, capitalisation, quote style…), and did the requested refinement visibly happen (INSTRUCTION FOLLOWING).", "");
+  L.push(
+    table(
+      ["case", "stage", "semantics", "voice devices", "instruction following", "model called", "planner would bypass"],
+      records.flatMap((r) =>
+        r.stages.map((s) => [
+          r.case.id,
+          `${s.index}. ${s.label}`,
+          s.semantic.verdict,
+          `${voiceVerdict(s)}${s.voiceDevices?.deviations.length ? ` (${s.voiceDevices.deviations.map((d) => `${d.device} ${d.change}`).join("; ")})` : ""}`,
+          s.refinementEffect ? `${s.refinementEffect.status}${s.refinementEffect.directives.map((d) => ` · ${d.id} ${d.status}`).join("")}` : "–",
+          s.unchangedByPolicy ? "no" : "yes",
+          s.plannerWouldBypass === undefined ? "–" : s.plannerWouldBypass ? "yes" : "no",
+        ]),
+      ),
+    ),
+    "",
+  );
+  const deviations = records.flatMap((r) => r.stages.flatMap((s) => (s.voiceDevices?.deviations ?? []).map((d) => ({ r, s, d }))));
+  if (deviations.length) {
+    L.push("Voice deviations (graded by how strongly the source shows the habit and how much text there is):", "");
+    for (const { r, s, d } of deviations) L.push(`- ${r.case.id} stage ${s.index}: ${d.severity} ${d.device} ${d.change}: ${d.detail}`);
+    L.push("");
+  }
+  const notApplied = records.flatMap((r) => r.stages.filter((s) => s.refinementEffect && (s.refinementEffect.status === "NOT_APPLIED" || s.refinementEffect.status === "PARTIAL")).map((s) => ({ r, s })));
+  if (notApplied.length) {
+    L.push("Refinements not (fully) applied:", "");
+    for (const { r, s } of notApplied) L.push(`- ${r.case.id} stage ${s.index} (${s.label}): ${s.refinementEffect!.status}${s.refinementEffect!.identicalToCurrent ? " — output identical to the revision it was asked to change" : ""}; ${s.refinementEffect!.directives.map((d) => `${d.id}: ${d.detail}`).join("; ")}`);
+    L.push("");
+  }
+
   L.push("## Semantic failures and reviews", "");
   const semFails = records.flatMap((r) => r.stages.filter((s) => s.semantic.verdict !== "PASS").map((s) => ({ r, s })));
   if (!semFails.length) L.push("None detected. (The checks catch the change classes they know; they are not proof of equivalence.)");
@@ -84,6 +133,7 @@ export function renderRunReport(run: StoredRun): string {
     for (const f of s.semantic.model.failures) L.push(`  - self-check ${f.kind}: ${f.message}`);
     for (const f of (s.semantic.judge?.findings ?? []).filter((f) => f.effectiveSeverity !== "minor")) L.push(`  - judge ${f.effectiveSeverity} ${f.kind}: ${f.explanation}${f.outputEvidence ? ` (“${f.outputEvidence}”)` : ""}`);
     for (const d of s.semantic.disagreements ?? []) L.push(`  - disagreement ${d.between.join(" vs ")}: ${d.note}`);
+    if (s.semantic.judge?.provenance?.source === "cached") L.push(`  - judge verdict reused from the cache (original run ${s.semantic.judge.provenance.originalRunId ?? "unknown"})`);
   }
   const modelRan = records.some((r) => r.stages.some((s) => s.semantic.model.status !== "not-run"));
   L.push("", `Model meaning check: ${modelRan ? "ran where the deterministic checks passed" : "not run in this batch"}.`, "");
@@ -219,6 +269,11 @@ const agg = (run: StoredRun) => {
     latency: median(recs.map((r) => r.stages.reduce((b, s) => b + s.latencyMs, 0))),
     expectationFails: recs.reduce((a, r) => a + expectationFailures(r).length, 0),
     reviewed: recs.filter((r) => r.review).length,
+    voiceDamaged: recs.reduce((a, r) => a + r.stages.filter((s) => s.voiceDevices?.verdict === "DAMAGED").length, 0),
+    voiceDeviation: recs.reduce((a, r) => a + r.stages.filter((s) => s.voiceDevices?.verdict === "DEVIATION").length, 0),
+    refinementNotApplied: recs.reduce((a, r) => a + r.stages.filter((s) => s.refinementEffect?.status === "NOT_APPLIED").length, 0),
+    refinementStages: recs.reduce((a, r) => a + r.stages.filter((s) => s.refinementEffect).length, 0),
+    modelCalls: recs.reduce((a, r) => a + r.stages.filter((s) => !s.unchangedByPolicy).length, 0),
   };
 };
 
@@ -238,6 +293,8 @@ export function findRegressions(base: StoredRun, run: StoredRun): Regression[] {
   if (rate(b) > rate(a)) flag("run", "retries per case increased", fmt(rate(a)), fmt(rate(b)));
   if (a.latency && b.latency && b.latency > a.latency * 1.25 && b.latency - a.latency >= 500) flag("run", "median latency increased >25% (and ≥500 ms)", a.latency, b.latency);
   if (b.expectationFails > a.expectationFails) flag("run", "case expectations not met increased", a.expectationFails, b.expectationFails);
+  if (b.voiceDamaged > a.voiceDamaged) flag("run", "stages with voice devices DAMAGED increased", a.voiceDamaged, b.voiceDamaged);
+  if (b.refinementNotApplied > a.refinementNotApplied) flag("run", "refinements NOT_APPLIED increased", a.refinementNotApplied, b.refinementNotApplied);
 
   const byId = new Map(base.records.map((r) => [r.case.id, r]));
   for (const r of run.records) {
@@ -249,6 +306,7 @@ export function findRegressions(base: StoredRun, run: StoredRun): Regression[] {
     const newDet = y.rules.introducedDeterministic.filter((id) => !x.rules.introducedDeterministic.includes(id));
     if (newDet.length) flag(r.case.id, "new introduced deterministic patterns", x.rules.introducedDeterministic.join(", ") || "none", newDet.join(", "));
     if (y.voice.movedOut.length > x.voice.movedOut.length) flag(r.case.id, "voice dimensions moved out", x.voice.movedOut.join(", ") || "none", y.voice.movedOut.join(", "));
+    if (x.voiceDevices && y.voiceDevices && x.voiceDevices.verdict !== "DAMAGED" && y.voiceDevices.verdict === "DAMAGED") flag(r.case.id, "voice devices → DAMAGED", x.voiceDevices.verdict, y.voiceDevices.verdict);
   }
   return out;
 }
@@ -257,6 +315,8 @@ export function findRegressions(base: StoredRun, run: StoredRun): Regression[] {
 export function comparabilityNotes(a: StoredRun, b: StoredRun): string[] {
   const notes: string[] = [];
   const [ca, cb] = [a.records[0]?.config, b.records[0]?.config];
+  if (forced(a) !== forced(b))
+    notes.push(`NOT EQUIVALENT: ${forced(a) ? "A" : "B"} is a forced-model diagnostic (planner bypass disabled) and ${forced(a) ? "B" : "A"} is a normal run. Forced runs measure the model on text the product would leave alone; they are not the product's results.`);
   if (a.manifest.realModel !== b.manifest.realModel) notes.push(`One run used a real model and the other the demo engine (${a.manifest.mode} vs ${b.manifest.mode}).`);
   if (!a.manifest.realModel && !b.manifest.realModel)
     notes.push("Both runs used the demo engine, which applies deterministic rules and does not read the contract: strategy and prompt differences show up only with a real model.");
@@ -275,6 +335,8 @@ export function comparabilityNotes(a: StoredRun, b: StoredRun): string[] {
     else if (gen(ca) !== gen(cb)) notes.push(`Generation settings differ: ${gen(ca)} vs ${gen(cb)}.`);
     const jd = (c: typeof ca) => (c.judge ? `${c.judge.provider}/${c.judge.model}` : "none");
     if (jd(ca) !== jd(cb)) notes.push(`Independent judge differs (${jd(ca)} vs ${jd(cb)}).`);
+    else if (ca.judge && cb.judge && (ca.judge.prompt ?? "judge.v1") !== (cb.judge.prompt ?? "judge.v1"))
+      notes.push(`Judge prompt differs (${ca.judge.prompt ?? "judge.v1"} vs ${cb.judge.prompt ?? "judge.v1"}): judge verdicts are not like for like.`);
   }
   const hashes = new Map(a.records.map((r) => [r.case.id, r.case.textHash]));
   const changed = b.records.filter((r) => hashes.has(r.case.id) && hashes.get(r.case.id) !== r.case.textHash).map((r) => r.case.id);
@@ -311,6 +373,10 @@ export function renderComparison(a: StoredRun, b: StoredRun, options: { baseline
         ["median latency ms", fmt(x.latency, 0), fmt(y.latency, 0)],
         ["case expectations not met", x.expectationFails, y.expectationFails],
         ["human-reviewed", x.reviewed, y.reviewed],
+        ["forced model (planner bypass disabled)", forced(a) ? "YES" : "no", forced(b) ? "YES" : "no"],
+        ["stages that called the model", x.modelCalls, y.modelCalls],
+        ["VOICE: stages DAMAGED / DEVIATION", `${x.voiceDamaged} / ${x.voiceDeviation}`, `${y.voiceDamaged} / ${y.voiceDeviation}`],
+        ["INSTRUCTION FOLLOWING: refinements NOT_APPLIED", `${x.refinementNotApplied} of ${x.refinementStages}`, `${y.refinementNotApplied} of ${y.refinementStages}`],
       ],
     ),
     "",
@@ -319,7 +385,7 @@ export function renderComparison(a: StoredRun, b: StoredRun, options: { baseline
   const byId = new Map(b.records.map((r) => [r.case.id, r]));
   L.push(
     table(
-      ["case", "semantic A/B", "anchors lost A/B", "patterns A/B", "resolved A/B", "introduced A/B", "retention A/B", "voice out A/B", "retries A/B", "latency A/B", "review A/B"],
+      ["case", "semantic A/B", "voice devices A/B", "instruction A/B", "anchors lost A/B", "patterns A/B", "resolved A/B", "introduced A/B", "retention A/B", "voice out A/B", "retries A/B", "latency A/B", "review A/B"],
       a.records.flatMap((r) => {
         const o = byId.get(r.case.id);
         if (!o) return [];
@@ -331,6 +397,8 @@ export function renderComparison(a: StoredRun, b: StoredRun, options: { baseline
           [
             r.case.id,
             `${p.semantic.verdict}/${q.semantic.verdict}`,
+            `${voiceVerdict(p)}/${voiceVerdict(q)}`,
+            `${effectStatus(p)}/${effectStatus(q)}`,
             `${anchorsLost(p)}/${anchorsLost(q)}`,
             `${p.rules.after.length}/${q.rules.after.length}`,
             `${p.rules.resolved.length}/${q.rules.resolved.length}`,
@@ -346,8 +414,13 @@ export function renderComparison(a: StoredRun, b: StoredRun, options: { baseline
     ),
     "",
   );
-  const regs = findRegressions(a, b);
   L.push(options.baseline ? "## Regressions against the baseline" : "## Possible regressions (A → B)", "");
+  if (forced(a) !== forced(b)) {
+    // A forced run is a different experiment; its differences are not regressions of the product.
+    L.push("Not computed: one run is a forced-model diagnostic and the other is a normal run.", "");
+    return L.join("\n");
+  }
+  const regs = findRegressions(a, b);
   L.push(regs.length ? table(["scope", "change", "A", "B"], regs.map((r) => [r.scope, r.dimension, r.before, r.after])) : "None flagged.", "");
   return L.join("\n");
 }

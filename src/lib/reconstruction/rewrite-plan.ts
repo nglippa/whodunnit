@@ -5,8 +5,10 @@ import type { Voiceprint } from "@/domain/voiceprint";
 import type { RewriteIntensity, RewriteStrategy } from "@/domain/strategy";
 import type { DeterminismLevel, Dimension, RuleCategory, RuleLayer, Severity } from "@/domain/writing-rules";
 import { words } from "../analysis/tokenize";
+import { sourceVoiceProfile, type SourceVoiceProfile } from "../semantics/voice-devices";
 import {
   DIMENSION_LABELS,
+  constraintsFromSourceVoice,
   constraintsFromProfile,
   constraintsFromRefinement,
   constraintsFromVoiceprint,
@@ -92,6 +94,8 @@ export interface RewritePlan {
   removableSpans: [number, number][];
   /** The requested delta, for refinements. */
   refinementDelta: RefinementDelta | null;
+  /** The source's own demonstrated habits (independent of a saved Voiceprint). */
+  sourceVoice: Pick<SourceVoiceProfile, "confidence" | "deliberate" | "notes"> & { slopDensity: number };
   /** How much the text needs changing, from the measurements (see chooseIntensity). */
   intensity: RewriteIntensity;
   intensityReasons: string[];
@@ -118,6 +122,9 @@ export interface PlanInput {
   /** Phrases the author asked to keep word for word. */
   protectedPhrases?: string[];
 }
+
+/** Rules that measure a punctuation or rhythm device: they never count toward "is this text templated?". */
+const DEVICE_RULES = new Set(["slop.dash-density", "slop.dramatic-fragments", "core.semicolon-density", "core.uniform-sentence-length", "core.no-sentence-extremes"]);
 
 /** Register dimensions: a mismatch here means the text does not fit the target yet. Rhythm is not one of them. */
 const REGISTER_DIMENSIONS = new Set<Dimension>(["voice.contractions", "voice.first-person"]);
@@ -265,7 +272,13 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
   const { source, profile, refinement } = input;
   const registry = getRegistry();
   const rules = rulesForProfile(profile, registry);
-  const constraints = buildConstraints(input);
+  // Two passes: measure how templated the source is, then decide which devices are the author's habits.
+  const baseConstraints = buildConstraints(input);
+  const pre = analyzeWriting(source, rules, { constraints: baseConstraints });
+  const slopDensity = round((pre.findings.filter((f) => !f.suppressedBy && f.rule.severity !== "info" && !DEVICE_RULES.has(f.rule.id)).length / Math.max(1, pre.metrics.words)) * 100, 2);
+  const voice = sourceVoiceProfile(source, slopDensity);
+  // The profile is always measured (evaluation reads it); only strategies that opt in let it shape the plan.
+  const constraints = strategy.planning.sourceVoice ? [...baseConstraints, ...constraintsFromSourceVoice(voice, pre.metrics)] : baseConstraints;
   const analysis = analyzeWriting(source, rules, { constraints });
   const { active, overridden } = resolveConstraints(constraints);
 
@@ -354,6 +367,7 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
     protectedPhrases: protectedPhrasesFor(source, { user: input.protectedPhrases, voiceprintPhrases: input.voiceprint?.stats?.recurringPhrases }),
     families,
     removableSpans: removableSpans(analysis.findings),
+    sourceVoice: { confidence: voice.confidence, deliberate: voice.deliberate, notes: voice.notes, slopDensity },
     refinementDelta: refinement ? buildRefinementDelta({ source, current: input.current, refinement, findings: analysis.findings }) : null,
     intensity,
     intensityReasons,

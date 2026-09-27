@@ -1,0 +1,126 @@
+{
+  "version": 1,
+  "description": "Voice-device fixtures: authorship habits a rewrite can erase or impose without changing a fact. Positive cases must be reported; negative controls must not. Deterministic; no model. Run with pnpm eval:semantic.",
+  "fixtures": [
+    {
+      "id": "deliberate-dashes-kept",
+      "class": "deliberate dashes preserved (control)",
+      "source": "I didn't plan to keep the shop open past six — it just happened. The regulars kept coming in, and I'd rather sell another loaf than throw one out. Most nights it's quiet — two or three people, a dog, sometimes a kid with coins — and I don't mind. The till closes at nine now. I'm not sure it pays, but it's the part of the day I like best.",
+      "output": "I didn't plan to keep the shop open past six — it just happened. The regulars kept coming in, and I'd rather sell another loaf than throw one away. Most nights it's quiet — two or three people, a dog, sometimes a kid with coins — and I don't mind. The till closes at nine now. I'm not sure it pays, but it's the part of the day I like best.",
+      "expect": {
+        "verdict": "PRESERVED",
+        "dashRule": "permitted"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "deliberate-dashes-erased",
+      "class": "deliberate dashes erased",
+      "source": "I didn't plan to keep the shop open past six — it just happened. The regulars kept coming in, and I'd rather sell another loaf than throw one out. Most nights it's quiet — two or three people, a dog, sometimes a kid with coins — and I don't mind. The till closes at nine now. I'm not sure it pays, but it's the part of the day I like best.",
+      "output": "I didn't plan to keep the shop open past six. It just happened. The regulars kept coming in, and I'd rather sell another loaf than throw one out. Most nights it's quiet, with two or three people, a dog, and sometimes a kid with coins, and I don't mind. The till closes at nine now. I'm not sure it pays, but it's the part of the day I like best.",
+      "expect": {
+        "verdict": "DAMAGED",
+        "deviation": "dashes:erased",
+        "dashRule": "permitted"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "ai-dash-spam-removed",
+      "class": "AI dash spam still flagged (control)",
+      "source": "In today's world — where speed matters — teams must adapt. It's not just about tools — it's about mindset. Furthermore, collaboration plays a crucial role — highlighting the importance of culture. The result? Better outcomes — every time. Experts agree — this changes everything. In conclusion, innovation — at its core — is a journey.",
+      "output": "Teams must adapt quickly. Tools matter, and so does how people work together. Culture affects the outcome.",
+      "expect": {
+        "verdict": "PRESERVED",
+        "dashRule": "avoid"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "dashes-introduced",
+      "class": "dashes imposed on dash-free prose",
+      "source": "The quarterly review is scheduled for 14 March. Finance will circulate the draft figures on 10 March, and each team lead should send corrections by the end of the following day. We will not reopen the budget lines agreed in January. Please bring the hiring plan for the second half, including any roles you expect to backfill. The meeting will run for ninety minutes in the main conference room.",
+      "output": "The quarterly review is scheduled for 14 March — finance will circulate the draft figures on 10 March — and each team lead should send corrections by the end of the following day. We will not reopen the budget lines agreed in January — full stop. Please bring the hiring plan for the second half — including any roles you expect to backfill. The meeting will run for ninety minutes — in the main conference room.",
+      "expect": {
+        "verdict": "DAMAGED",
+        "deviation": "dashes:introduced"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "fragments-kept",
+      "class": "deliberate fragments preserved (control)",
+      "source": "We tried the new route on Monday. Bad idea. The bridge was shut, the detour added forty minutes, and the van ran low on fuel near Hexham. Never again. On Tuesday we went the old way and made every drop by noon. Same van. Same driver. I've told the office we're sticking with the old route until the bridge reopens in March, and they've agreed.",
+      "output": "We tried the new route on Monday. Bad idea. The bridge was shut, the detour added forty minutes, and the van ran low on fuel near Hexham. Never again. On Tuesday we took the old way and made every drop by noon. Same van. Same driver. I've told the office we're sticking with the old route until the bridge reopens in March, and they've agreed.",
+      "expect": {
+        "verdict": "PRESERVED"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "fragments-erased",
+      "class": "deliberate fragments merged away",
+      "source": "We tried the new route on Monday. Bad idea. The bridge was shut, the detour added forty minutes, and the van ran low on fuel near Hexham. Never again. On Tuesday we went the old way and made every drop by noon. Same van. Same driver. I've told the office we're sticking with the old route until the bridge reopens in March, and they've agreed.",
+      "output": "We tried the new route on Monday, and it was a bad idea: the bridge was shut, the detour added forty minutes, and the van ran low on fuel near Hexham, so we will not do that again. On Tuesday we went the old way with the same van and the same driver and made every drop by noon. I've told the office we're sticking with the old route until the bridge reopens in March, and they've agreed.",
+      "expect": {
+        "verdict": "DAMAGED",
+        "deviation": "fragments:erased"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "lowercase-kept",
+      "class": "lowercase source preserved (control)",
+      "source": "went to the market early today. the stall with the good pears was gone, which was annoying. i bought apples instead and they're fine. talked to the fish guy for a while about the weather. he thinks the rain won't stop till friday. i'll go back saturday and see if the pear lady shows up again, she usually does when it's dry.",
+      "output": "went to the market early today. the stall with the good pears was gone, which was annoying. i bought apples instead and they're fine. talked to the fish guy for a bit about the weather. he thinks the rain won't stop till friday. i'll go back saturday and see if the pear lady shows up again, she usually does when it's dry.",
+      "expect": {
+        "verdict": "PRESERVED"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "lowercase-normalized",
+      "class": "lowercase source capitalised",
+      "source": "went to the market early today. the stall with the good pears was gone, which was annoying. i bought apples instead and they're fine. talked to the fish guy for a while about the weather. he thinks the rain won't stop till friday. i'll go back saturday and see if the pear lady shows up again, she usually does when it's dry.",
+      "output": "Went to the market early today. The stall with the good pears was gone, which was annoying. I bought apples instead and they're fine. Talked to the fish guy for a while about the weather. He thinks the rain won't stop till Friday. I'll go back Saturday and see if the pear lady shows up again, she usually does when it's dry.",
+      "expect": {
+        "verdict": "DAMAGED",
+        "deviation": "capitalization:normalized"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "whole-output-lowercased",
+      "class": "whole output lowercased",
+      "source": "The quarterly review is scheduled for 14 March. Finance will circulate the draft figures on 10 March, and each team lead should send corrections by the end of the following day. We will not reopen the budget lines agreed in January. Please bring the hiring plan for the second half, including any roles you expect to backfill. The meeting will run for ninety minutes in the main conference room.",
+      "output": "the quarterly review is scheduled for 14 march. finance will circulate the draft figures on 10 march, and each team lead should send corrections by the end of the following day. we will not reopen the budget lines agreed in january. please bring the hiring plan for the second half, including any roles you expect to backfill. the meeting will run for ninety minutes in the main conference room.",
+      "expect": {
+        "verdict": "DAMAGED",
+        "deviation": "capitalization:introduced"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "quote-style-restyled",
+      "class": "quote style changed (style, not meaning)",
+      "source": "When I asked about the delay, Priya said \"we ship on Friday, not before\" and went back to her desk. Later Tom told me \"the tests are green\" but he did not say which ones. I wrote both answers down in the release notes so nobody has to remember who said what, and I added the date of each conversation next to the quote.",
+      "output": "When I asked about the delay, Priya said “we ship on Friday, not before” and went back to her desk. Later Tom told me “the tests are green” but he did not say which ones. I wrote both answers down in the release notes so nobody has to remember who said what, and I added the date of each conversation next to the quote.",
+      "expect": {
+        "verdict": "DEVIATION",
+        "deviation": "quote-style:restyled",
+        "semantic": "PASS"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "ordinary-prose-untouched",
+      "class": "ordinary prose, light edit (control)",
+      "source": "The quarterly review is scheduled for 14 March. Finance will circulate the draft figures on 10 March, and each team lead should send corrections by the end of the following day. We will not reopen the budget lines agreed in January. Please bring the hiring plan for the second half, including any roles you expect to backfill. The meeting will run for ninety minutes in the main conference room.",
+      "output": "The quarterly review is set for 14 March. Finance will circulate the draft figures on 10 March, and each team lead should send corrections by the end of the following day. We will not reopen the budget lines agreed in January. Please bring the hiring plan for the second half, including any roles you expect to backfill. The meeting will run for ninety minutes in the main conference room.",
+      "expect": {
+        "verdict": "PRESERVED"
+      },
+      "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    }
+  ]
+}

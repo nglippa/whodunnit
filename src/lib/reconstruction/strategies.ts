@@ -50,10 +50,10 @@ export const RECONSTRUCTION_V3 = define({
   version: 3,
   name: "Reconstruction v3 (anchored refinement, minimal change)",
   description:
-    "v2's prioritised contract plus: protected phrases and pattern-family guidance in the contract; refinements as explicit deltas anchored to the original (Keep more of my wording restores original phrasing; Shorter carries a MUST KEEP / MAY COMPRESS / MAY REMOVE triage); and text that needs nothing is returned unchanged without a model call.",
+    "v2's prioritised contract plus: protected phrases and pattern-family guidance in the contract; refinements as explicit deltas anchored to the original (Keep more of my wording restores original phrasing; Shorter carries a MUST KEEP / MAY COMPRESS / MAY REMOVE triage); and text that needs nothing is returned unchanged without a model call. Habits the source demonstrates (deliberate dashes, fragments, semicolons) outrank the style preset without a saved Voiceprint.",
   status: "experimental",
   prompt: { id: "reconstruct", version: 4 },
-  planning: { mode: "prioritized", intensity: "enforce" },
+  planning: { mode: "prioritized", intensity: "enforce", sourceVoice: true },
   constraintPolicy: { maxPatterns: 8, maxProhibited: 12, maxAdvisory: 2, advisory: "unless-minimal", restateSatisfiedStyleRanges: false },
   retryPolicy: { maxAttemptsLive: 3, maxAttemptsDemo: 1, retryOn: ["blocking-meaning", "introduced-deterministic-pattern"] },
   minimalChange: "unchanged",

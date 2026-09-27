@@ -406,6 +406,130 @@
         "verdict": "PASS"
       },
       "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "contributes-to-determines",
+      "class": "causal strength",
+      "source": "Regular code review contributes to fewer production incidents.",
+      "output": "Regular code review determines whether production incidents happen.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causation",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "helps-to-drives-success",
+      "class": "causal strength",
+      "source": "Mentoring helps new nurses settle into the ward.",
+      "output": "Mentoring drives the success of new nurses on the ward.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causation",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "associated-to-caused",
+      "class": "correlation → causation",
+      "source": "Shorter shifts were associated with fewer medication errors.",
+      "output": "Shorter shifts caused fewer medication errors.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causation",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "important-to-what-makes",
+      "class": "causal strength",
+      "source": "A quiet workspace is important for deep work.",
+      "output": "A quiet workspace is what makes deep work possible.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causation",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "invented-mechanism-culture",
+      "class": "invented causal mechanism",
+      "source": "Good documentation is useful. The team shipped the migration early.",
+      "output": "Good documentation is what makes early migrations stick. The team shipped the migration early.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causal-relation",
+        "relation": "added"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "invented-mechanism-events",
+      "class": "invented causal mechanism",
+      "source": "The new manager started in March. Staff turnover fell over the summer.",
+      "output": "The new manager started in March, and this drove the fall in staff turnover over the summer.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causal-relation",
+        "relation": "added"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "enables-to-causes",
+      "class": "causal strength (adjacent)",
+      "source": "The new scheduler enables faster releases.",
+      "output": "The new scheduler causes faster releases.",
+      "expect": {
+        "verdict": "NEEDS_REVIEW",
+        "aspect": "causation",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic; failure class observed in the September 2026 Bonsai/Qwen benchmark, generalised to unrelated wording."
+    },
+    {
+      "id": "helps-to-contributes",
+      "class": "causal strength",
+      "source": "Clear tickets help the team estimate work.",
+      "output": "Clear tickets contribute to how well the team estimates work.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite that must not be flagged."
+    },
+    {
+      "id": "causes-to-leads-to",
+      "class": "causal strength",
+      "source": "Dehydration causes headaches in some patients.",
+      "output": "Dehydration leads to headaches in some patients.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite that must not be flagged."
+    },
+    {
+      "id": "makes-sense-not-causal",
+      "class": "causal strength",
+      "source": "It makes sense to start the audit early.",
+      "output": "Starting the audit early makes sense.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite that must not be flagged."
+    },
+    {
+      "id": "because-kept-as-drives",
+      "class": "invented causal mechanism",
+      "source": "Sales rose because the new pricing page launched.",
+      "output": "The new pricing page launch drove the rise in sales.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite that must not be flagged."
     }
   ]
 }
