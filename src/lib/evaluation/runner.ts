@@ -124,7 +124,11 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
     const after = analyzeWriting(result.text, rules, { constraints: plan.constraints });
     // The same meaning context the pipeline verified with: filler it may drop, what the author licensed, what is protected.
     const integrity = integrityReport(c.text, result.text, result.profile, { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases });
-    const judge = ctx.judge
+    // Identical text cannot have changed meaning: the judge is not asked (and the stage is marked skipped, never passed).
+    const identical = result.text === c.text;
+    const judge = ctx.judge && identical
+      ? { provider: ctx.judge.info.provider, model: ctx.judge.info.model, prompt: "judge.v1", selfJudged: false, status: "skipped" as const, error: null, verdict: "NOT_RUN" as const, findings: [], latencyMs: null, tokens: null }
+      : ctx.judge
       ? await ctx.judge.judge({
           source: c.text,
           output: result.text,
@@ -208,7 +212,15 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       voiceprint: vp ? { id: vp.id, name: vp.name, hash: voiceprintHash(vp), confidence: vp.confidence } : null,
       style: vp ? `voiceprint:${vp.id}` : c.style,
       generation: { requested: ctx.config.generation ?? {}, applied: ctx.generation?.applied ?? [], unsupported: ctx.generation?.unsupported ?? [], declared: ctx.generation?.declared ?? [] },
-      judge: ctx.judge ? { provider: ctx.judge.info.provider, model: ctx.judge.info.model, selfJudged: ctx.judge.info.provider === engine.provider && ctx.judge.info.model === engine.model } : null,
+      judge: ctx.judge
+        ? {
+            provider: ctx.judge.info.provider,
+            model: ctx.judge.info.model,
+            selfJudged: ctx.judge.info.provider === engine.provider && ctx.judge.info.model === engine.model,
+            prompt: "judge.v1",
+            ...(ctx.judge.settings ? { settings: { applied: ctx.judge.settings.applied, unsupported: ctx.judge.settings.unsupported } } : {}),
+          }
+        : null,
       analysisVersion: SEMANTIC_ANALYSIS_VERSION,
     },
     source: { text: c.text, words: original!.metrics.words },

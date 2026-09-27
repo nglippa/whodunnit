@@ -112,7 +112,10 @@ GENERATION SETTINGS (recorded in every record; absent = provider/server default)
   Unsupported settings are listed in the record as unsupported, never silently dropped.
 
 INDEPENDENT SEMANTIC JUDGE (evaluation only)
-  --judge-provider anthropic|gemini|local --judge-model <id> [--judge-base-url <url>]
+  --judge-provider anthropic|gemini|groq|local --judge-model <id> [--judge-base-url <url>]
+      [--judge-reasoning-effort low|medium|high]   fixed for the whole run; recorded
+  groq: GroqCloud (GROQ_API_KEY), an OpenAI-compatible hosted API, used only as a judge.
+        --judge-model is required (the catalogue changes: GET https://api.groq.com/openai/v1/models).
   A different model checks meaning with the deterministic analysis in hand and must quote
   evidence. It supplements the deterministic checks; a deterministic FAIL always stands.
   Records say when the judge is the same model as the one under test (self-judged).
@@ -217,7 +220,7 @@ async function main() {
               reasoningParam: flag("reasoning-param"),
               reasoningEffort: flag("reasoning-effort"),
             },
-            judge: { provider: flag("judge-provider"), model: flag("judge-model"), baseUrl: flag("judge-base-url") },
+            judge: { provider: flag("judge-provider"), model: flag("judge-model"), baseUrl: flag("judge-base-url"), reasoningEffort: flag("judge-reasoning-effort") },
           },
           process.env,
         );
@@ -228,7 +231,7 @@ async function main() {
 
       if (has("dry-run")) {
         console.log(envFiles.length ? `Environment from ${envFiles.join(", ")} (values not shown)` : "No project env files found; using the shell environment only.");
-        const keys = ["ANTHROPIC_API_KEY", ...GEMINI_KEY_NAMES].filter((k) => process.env[k]?.trim());
+        const keys = ["ANTHROPIC_API_KEY", ...GEMINI_KEY_NAMES, "GROQ_API_KEY"].filter((k) => process.env[k]?.trim());
         console.log(`Model keys set: ${keys.length ? keys.join(", ") : "none (expected ANTHROPIC_API_KEY or GEMINI_API_KEY)"}`);
         console.log(`Dry run: ${cases.length} case(s), ${config.strategy}, ${config.provider}${config.model ? `/${config.model}` : ""}. No provider is called and nothing is saved.\n`);
         for (const c of cases) {
@@ -273,7 +276,7 @@ async function main() {
       if (envFiles.length) console.log(`Environment from ${envFiles.join(", ")} (values not shown)`);
       if (generation && (generation.applied.length || generation.unsupported.length || generation.declared.length))
         console.log(`Generation: sent ${generation.applied.join(", ") || "nothing"}${generation.declared.length ? `; declared ${generation.declared.join(", ")}` : ""}${generation.unsupported.length ? `; UNSUPPORTED (not sent) ${generation.unsupported.join(", ")}` : ""}`);
-      if (judge) console.log(`Judge: ${judge.info.provider}/${judge.info.model}`);
+      if (judge) console.log(`Judge: ${judge.info.provider}/${judge.info.model}${judge.settings?.applied.length ? ` (${judge.settings.applied.join(", ")})` : ""}`);
       console.log(`Run ${runId}\n${manifest.realModel ? `REAL MODEL: ${config.provider}/${config.model}` : "DEMO ENGINE (not a model test)"} · ${config.strategy} · ${cases.length} case(s) · concurrency ${concurrency}\n`);
 
       const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId, judge, generation }), {

@@ -414,7 +414,18 @@ export const evaluationRecordSchema = z
           .strict()
           .optional(),
         /** Schema v2: the independent judge, if any. */
-        judge: z.object({ provider: z.string(), model: z.string().nullable(), selfJudged: z.boolean() }).strict().nullable().optional(),
+        judge: z
+          .object({
+            provider: z.string(),
+            model: z.string().nullable(),
+            selfJudged: z.boolean(),
+            prompt: z.string().optional(),
+            /** The judge's generation settings as sent (e.g. reasoningEffort=medium), and any it could not honour. */
+            settings: z.object({ applied: z.array(z.string()), unsupported: z.array(z.string()) }).strict().optional(),
+          })
+          .strict()
+          .nullable()
+          .optional(),
         /** Schema v2: version of the deterministic meaning analysis. */
         analysisVersion: z.string().optional(),
       })

@@ -34,6 +34,32 @@ export interface OpenAICompatibleOptions {
   maxRetries?: number;
   retryDelayMs?: number;
   generation?: GenerationSettings;
+  /** Name recorded as the provider (default "openai-compatible@<host>"). */
+  name?: string;
+  /** Stream responses (default true). Hosted APIs that forbid streaming with structured output set false. */
+  stream?: boolean;
+  /**
+   * "full" (default): send the whole JSON Schema. "strict-subset": drop keywords
+   * strict-mode APIs reject (length/size/pattern limits). The response is still
+   * validated against the full Zod schema, so nothing is loosened.
+   */
+  schemaMode?: "full" | "strict-subset";
+  /** Extra request fields specific to a hosted API (e.g. include_reasoning). */
+  extraBody?: Record<string, unknown>;
+}
+
+const UNSUPPORTED_STRICT_KEYWORDS = ["maxLength", "minLength", "maxItems", "minItems", "pattern", "format", "minimum", "maximum", "exclusiveMinimum", "exclusiveMaximum"];
+
+/** Remove schema keywords that strict-mode structured output APIs reject. */
+export function strictSubset(schema: unknown): unknown {
+  if (Array.isArray(schema)) return schema.map(strictSubset);
+  if (!schema || typeof schema !== "object") return schema;
+  const out: Record<string, unknown> = {};
+  for (const [k, v] of Object.entries(schema as Record<string, unknown>)) {
+    if (UNSUPPORTED_STRICT_KEYWORDS.includes(k)) continue;
+    out[k] = strictSubset(v);
+  }
+  return out;
 }
 
 /** JSON Schema for a Zod schema, in the shape response_format expects. */
@@ -93,7 +119,7 @@ export async function readCompletion(res: Response): Promise<{ id?: string; cont
 export class OpenAICompatibleProvider implements AIProvider, StructuredCaller {
   readonly info;
   private readonly baseUrl: string;
-  private readonly o: Required<Omit<OpenAICompatibleOptions, "apiKey" | "baseUrl" | "generation">> & { apiKey?: string };
+  private readonly o: Required<Omit<OpenAICompatibleOptions, "apiKey" | "baseUrl" | "generation" | "name" | "extraBody">> & { apiKey?: string; extraBody: Record<string, unknown> };
   private readonly g: GenerationSettings;
 
   constructor(
@@ -108,7 +134,7 @@ export class OpenAICompatibleProvider implements AIProvider, StructuredCaller {
         throw new ProviderError(`Invalid base URL "${this.baseUrl}".`, "unavailable");
       }
     })();
-    this.info = { mode: "live" as const, provider: `openai-compatible@${host}`, model };
+    this.info = { mode: "live" as const, provider: options.name ?? `openai-compatible@${host}`, model };
     this.o = {
       apiKey: options.apiKey,
       fetch: options.fetch ?? fetch,
@@ -116,6 +142,9 @@ export class OpenAICompatibleProvider implements AIProvider, StructuredCaller {
       maxTokens: options.generation?.maxTokens ?? options.maxTokens ?? 16_384,
       maxRetries: options.maxRetries ?? 2,
       retryDelayMs: options.retryDelayMs ?? 2000,
+      stream: options.stream ?? true,
+      schemaMode: options.schemaMode ?? "full",
+      extraBody: options.extraBody ?? {},
     };
     this.g = options.generation ?? {};
   }
@@ -147,13 +176,13 @@ export class OpenAICompatibleProvider implements AIProvider, StructuredCaller {
       model: this.model,
       max_tokens: this.o.maxTokens,
       ...this.generationFields(),
+      ...this.o.extraBody,
       messages: [
         { role: "system", content: system },
         { role: "user", content: user },
       ],
-      response_format: { type: "json_schema", json_schema: { name, strict: true, schema: jsonSchemaFor(zod) } },
-      stream: true,
-      stream_options: { include_usage: true },
+      response_format: { type: "json_schema", json_schema: { name, strict: true, schema: this.o.schemaMode === "strict-subset" ? strictSubset(jsonSchemaFor(zod)) : jsonSchemaFor(zod) } },
+      ...(this.o.stream ? { stream: true, stream_options: { include_usage: true } } : { stream: false }),
     });
     const signal = AbortSignal.timeout(this.o.timeoutMs);
     const timedOut = () => new ProviderError(`The model did not finish within ${Math.round(this.o.timeoutMs / 60_000)} minutes.`, "upstream", { latencyMs: Date.now() - started, httpStatus: null });

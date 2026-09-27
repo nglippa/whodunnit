@@ -1,7 +1,7 @@
 import { judgeOutputSchema, type JudgeFinding, type JudgeResult } from "@/domain/judge";
 import type { ClaimChange } from "@/domain/semantics";
 import type { Finding } from "@/domain/verification";
-import type { StructuredCaller } from "../ai/provider";
+import type { GenerationReport, StructuredCaller } from "../ai/provider";
 import { JUDGE_SYSTEM, getPrompt, judgeUserPrompt } from "../prompts";
 import type { ExtractedClaim } from "../semantics/claims";
 
@@ -22,6 +22,8 @@ export interface JudgeInput {
 
 export interface SemanticJudge {
   readonly info: { provider: string; model: string | null };
+  /** The judge's own generation settings: what was sent, what the provider could not honour. */
+  readonly settings?: GenerationReport;
   judge(input: JudgeInput): Promise<JudgeResult>;
 }
 
@@ -81,11 +83,13 @@ const describeFinding = (f: ClaimChange | Finding) =>
 
 export class ModelSemanticJudge implements SemanticJudge {
   readonly info;
+  readonly settings: GenerationReport;
   constructor(
     private readonly caller: StructuredCaller,
     private readonly selfOf?: { provider: string; model: string | null },
   ) {
     this.info = { provider: caller.info.provider, model: caller.info.model };
+    this.settings = caller.generationReport();
   }
 
   async judge(input: JudgeInput): Promise<JudgeResult> {

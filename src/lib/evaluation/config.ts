@@ -6,7 +6,8 @@ import { DEFAULT_GEMINI_MODEL, GeminiProvider } from "../ai/gemini-provider";
 import { DEFAULT_OPENAI_COMPATIBLE_BASE_URL, OpenAICompatibleProvider } from "../ai/openai-compatible-provider";
 import type { AIProvider, StructuredCaller } from "../ai/provider";
 import { ModelSemanticJudge, type SemanticJudge } from "./judge";
-import { anthropicKey, geminiKey } from "../ai/select";
+import { anthropicKey, geminiKey, groqKey } from "../ai/select";
+import { createGroqProvider } from "../ai/groq";
 import { DEFAULT_STRATEGY, getStrategy } from "../reconstruction/strategies";
 import { strategyKey } from "@/domain/strategy";
 
@@ -34,7 +35,7 @@ export interface ConfigFlags {
   strategy?: string;
   baseUrl?: string;
   generation?: GenerationSettingsConfig;
-  judge?: { provider?: string; model?: string; baseUrl?: string };
+  judge?: { provider?: string; model?: string; baseUrl?: string; reasoningEffort?: string };
 }
 
 /**
@@ -67,19 +68,30 @@ export function resolveConfig(flags: ConfigFlags, env: Record<string, string | u
   let judge: JudgeConfig | undefined;
   if (flags.judge?.provider) {
     const jp = alias(flags.judge.provider);
-    if (jp !== "anthropic" && jp !== "gemini" && jp !== "openai-compatible") throw new EvaluationConfigError(`Unknown judge provider "${flags.judge.provider}". Use anthropic, gemini or local.`);
+    if (jp !== "anthropic" && jp !== "gemini" && jp !== "openai-compatible" && jp !== "groq") throw new EvaluationConfigError(`Unknown judge provider "${flags.judge.provider}". Use anthropic, gemini, groq or local.`);
+    // Groq's catalogue changes: its model id is always explicit.
+    if (jp === "groq" && !flags.judge.model?.trim()) throw new EvaluationConfigError("--judge-provider groq needs --judge-model (check the current catalogue: GET https://api.groq.com/openai/v1/models).");
+    const effort = flags.judge.reasoningEffort?.trim();
+    if (effort && effort !== "low" && effort !== "medium" && effort !== "high") throw new EvaluationConfigError("--judge-reasoning-effort is low, medium or high.");
     judge = {
       provider: jp,
-      model: flags.judge.model?.trim() || DEFAULT_MODELS[jp],
+      model: flags.judge.model?.trim() || DEFAULT_MODELS[jp as keyof typeof DEFAULT_MODELS],
       ...(jp === "openai-compatible" ? { baseUrl: flags.judge.baseUrl?.trim() || DEFAULT_OPENAI_COMPATIBLE_BASE_URL } : {}),
+      ...(effort ? { reasoningEffort: effort as "low" | "medium" | "high" } : {}),
     };
-  } else if (flags.judge?.model || flags.judge?.baseUrl) throw new EvaluationConfigError("--judge-model and --judge-base-url need --judge-provider.");
+  } else if (flags.judge?.model || flags.judge?.baseUrl || flags.judge?.reasoningEffort) throw new EvaluationConfigError("--judge-model, --judge-base-url and --judge-reasoning-effort need --judge-provider.");
   const parsed = evaluationConfigSchema.safeParse({ provider, model, strategy, ...(baseUrl ? { baseUrl } : {}), ...(generation ? { generation } : {}), ...(judge ? { judge } : {}) });
   if (!parsed.success) throw new EvaluationConfigError(`Invalid configuration: ${parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
   return parsed.data;
 }
 
 function modelCaller(p: { provider: EvaluationConfig["provider"] | JudgeConfig["provider"]; model: string; baseUrl?: string }, env: Record<string, string | undefined>, generation?: GenerationSettingsConfig): AIProvider & StructuredCaller {
+  if (p.provider === "groq") {
+    const key = groqKey(env);
+    if (!key)
+      throw new EvaluationConfigError("GROQ_API_KEY is not set, so the Groq judge cannot run. Nothing was executed. Set it in your shell or .env.local; the run will not fall back to another judge.");
+    return createGroqProvider(key, p.model, generation);
+  }
   const noKey = (name: string) =>
     new EvaluationConfigError(
       `${name} is not set, so a real-model evaluation cannot run. Nothing was executed. Set it in your shell or .env.local, or pass --demo to evaluate the deterministic demo engine (records will say mode: demo, realModel: false).`,
@@ -106,6 +118,6 @@ export function createEvaluationProvider(config: EvaluationConfig, env: Record<s
 /** The independent judge, or null when none is configured. Missing credentials are an error, never a silent skip. */
 export function createJudge(config: EvaluationConfig, env: Record<string, string | undefined>): SemanticJudge | null {
   if (!config.judge) return null;
-  const caller = modelCaller(config.judge, env);
+  const caller = modelCaller(config.judge, env, config.judge.reasoningEffort ? { reasoningEffort: config.judge.reasoningEffort } : undefined);
   return new ModelSemanticJudge(caller, { provider: config.provider === "openai-compatible" ? `openai-compatible@${new URL(config.baseUrl!).host}` : config.provider, model: config.model });
 }

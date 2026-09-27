@@ -305,6 +305,15 @@ Its output is Zod-validated. Every finding must quote exact evidence from the so
 - **Failures and self-judging:** a judge that fails to run is recorded as NOT_RUN, never as a pass. The record also says when the judge is the same model as the rewrite (`selfJudged`).
 - **Production:** the web app does not use a judge.
 
+### Groq as the judge
+
+GroqCloud (`--judge-provider groq`, key `GROQ_API_KEY`) runs the judge on a hosted model from a different family than the local writers. It reuses the OpenAI-compatible provider with Groq's strict structured-output rules: no streaming, a JSON Schema subset (the full Zod schema still validates), `include_reasoning: false`, a fixed `--judge-reasoning-effort`, and `max_tokens` 4096.
+
+- **Model ID:** always explicit, because the catalogue changes. Check `GET https://api.groq.com/openai/v1/models`.
+- **Tested:** `openai/gpt-oss-120b` (131K context, strict `json_schema`, `reasoning_effort` low/medium/high).
+- **Free tier:** 30 requests per minute, 1K per day, 8K tokens per minute and 200K tokens per day. A judge call costs about 3–4K tokens at medium effort, so the daily token limit, not the request limit, bounds a run.
+- **Unchanged output:** when a stage's output is byte-identical to the source (for example when v3 leaves good text alone), the judge is not called. The stage is recorded as `skipped`: identical text cannot have changed meaning. A skipped judge never counts as a pass.
+
 ## Reproducible generation settings
 
 `--temperature`, `--top-p`, `--top-k`, `--seed`, `--max-tokens`, `--reasoning-budget` and `--reasoning-effort` are recorded in every record, together with what the provider actually sent, what it could not send, and what was declared as configured on the server.

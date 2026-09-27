@@ -63,7 +63,8 @@ export const judgeResultSchema = z
     prompt: z.string(),
     /** true when the judge is the same provider and model as the rewrite under test. */
     selfJudged: z.boolean(),
-    status: z.enum(["ran", "failed"]),
+    /** skipped: the output is byte-identical to the source, so there is no meaning change to judge. */
+    status: z.enum(["ran", "failed", "skipped"]),
     error: z.string().max(400).nullable(),
     verdict: z.enum(["PASS", "NEEDS_REVIEW", "FAIL", "NOT_RUN"]),
     findings: z.array(judgeFindingSchema),
@@ -75,9 +76,11 @@ export type JudgeResult = z.infer<typeof judgeResultSchema>;
 
 export const judgeConfigSchema = z
   .object({
-    provider: z.enum(["anthropic", "gemini", "openai-compatible"]),
+    provider: z.enum(["anthropic", "gemini", "openai-compatible", "groq"]),
     model: z.string().min(1),
     baseUrl: z.string().url().optional(),
+    /** Fixed judge reasoning setting (where the judge model supports one); identical for every run it judges. */
+    reasoningEffort: z.enum(["low", "medium", "high"]).optional(),
   })
   .strict();
 export type JudgeConfig = z.infer<typeof judgeConfigSchema>;

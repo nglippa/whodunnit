@@ -21,6 +21,7 @@ export type ProviderChoice =
 type Env = Record<string, string | undefined>;
 
 export const anthropicKey = (env: Env) => env.ANTHROPIC_API_KEY?.trim() || undefined;
+export const groqKey = (env: Env) => env.GROQ_API_KEY?.trim() || undefined;
 export const GEMINI_KEY_NAMES = ["GEMINI_API_KEY", "GOOGLE_API_KEY", "GOOGLE_GENERATIVE_AI_API_KEY"] as const;
 export const geminiKey = (env: Env) => GEMINI_KEY_NAMES.map((k) => env[k]?.trim()).find(Boolean) || undefined;
 
