@@ -171,3 +171,29 @@ Strategies are immutable and versioned. Production uses `reconstruction-v1` (the
 `runReconstructionDetailed` exposes the plan and a per-attempt log. The log holds trigger, retry reasons, failure kinds, output hash, latency, tokens and request id, and never any text.
 
 The evaluation harness (`src/lib/evaluation`, `tools/eval/cli.ts`, `data/evaluation`) runs a versioned corpus through a strategy and provider. It records semantic gates, rule diffs, metric deltas, wording retention and voice comparison per case, and stores them in the gitignored `.evaluations/`. It compares runs by dimension and flags regressions against baselines. See [EVALUATION.md](EVALUATION.md).
+
+## Semantic integrity and refinement deltas
+
+`src/lib/semantics` is the claim-level meaning layer. It is deterministic and browser-safe, and it runs inside `verifyDeterministic`, so the web app's hand-edit checks use it too.
+
+| Module | What it does |
+|---|---|
+| `claims.ts` | SemanticClaim extraction |
+| `quantities.ts` | values, units and bounds |
+| `dates.ts` | date normalisation |
+| `compare.ts` | claim alignment and change detection |
+| `quotes.ts` | quotation integrity |
+| `phrases.ts` | protected phrases and contrast substitution |
+| `mechanics.ts` | mechanical damage |
+| `integrity.ts` | runs the modules and maps findings: blocking → blocking, major → warning |
+
+Rule families (`data/rules/families.json` and `src/lib/rules/families.ts`) group rules that make the same move in different words, and mark which families are filler a rewrite may delete. The `families` pack adds a few high-value variants: comparative contrast, paired negations, unsourced authority, importance signalling and optimisation clichés. Determinism stays per rule.
+
+`src/lib/reconstruction/refinement-delta.ts` models each refinement as a delta:
+
+- objectives, each with a reference (original or current)
+- licences taken from the author's own words
+- restorations toward the original
+- claim triage for shortening
+
+The plan carries the delta, protected phrases, active families, removable spans and a minimal-change decision. The pipeline verifies with that same context. The evaluation-only `SemanticJudge` (`src/lib/evaluation/judge.ts`) runs any provider that implements `StructuredCaller`, and never overrides a deterministic failure. See [EVALUATION.md](EVALUATION.md).

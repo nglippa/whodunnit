@@ -3,8 +3,8 @@ import type { Finding } from "@/domain/verification";
 import type { Observation } from "@/domain/voiceprint";
 import type { TextAnalysis } from "../analysis/analyze";
 import { ANALYZE_SYSTEM, DEFAULT_RECONSTRUCT_PROMPT, VERIFY_SYSTEM, VOICEPRINT_SYSTEM, getPrompt, reconstructUserPrompt, verifyUserPrompt } from "../prompts";
-import type { AIProvider, CallMeta, ReconstructInput } from "./provider";
-import { ProviderError } from "./provider";
+import type { AIProvider, CallMeta, GenerationSettings, ReconstructInput, StructuredCaller } from "./provider";
+import { ProviderError, reportGeneration } from "./provider";
 import { candidateSchema, discourseAnalysisSchema, meaningCheckSchema, parseModelJson, voiceprintObservationsSchema } from "./schemas";
 
 /**
@@ -33,6 +33,7 @@ export interface OpenAICompatibleOptions {
   maxTokens?: number;
   maxRetries?: number;
   retryDelayMs?: number;
+  generation?: GenerationSettings;
 }
 
 /** JSON Schema for a Zod schema, in the shape response_format expects. */
@@ -89,10 +90,11 @@ export async function readCompletion(res: Response): Promise<{ id?: string; cont
   return out;
 }
 
-export class OpenAICompatibleProvider implements AIProvider {
+export class OpenAICompatibleProvider implements AIProvider, StructuredCaller {
   readonly info;
   private readonly baseUrl: string;
-  private readonly o: Required<Omit<OpenAICompatibleOptions, "apiKey" | "baseUrl">> & { apiKey?: string };
+  private readonly o: Required<Omit<OpenAICompatibleOptions, "apiKey" | "baseUrl" | "generation">> & { apiKey?: string };
+  private readonly g: GenerationSettings;
 
   constructor(
     private readonly model: string,
@@ -111,10 +113,32 @@ export class OpenAICompatibleProvider implements AIProvider {
       apiKey: options.apiKey,
       fetch: options.fetch ?? fetch,
       timeoutMs: options.timeoutMs ?? 1_200_000,
-      maxTokens: options.maxTokens ?? 16_384,
+      maxTokens: options.generation?.maxTokens ?? options.maxTokens ?? 16_384,
       maxRetries: options.maxRetries ?? 2,
       retryDelayMs: options.retryDelayMs ?? 2000,
     };
+    this.g = options.generation ?? {};
+  }
+
+  generationReport() {
+    return reportGeneration(this.g, ["temperature", "topP", "topK", "seed", "maxTokens", "reasoningBudget", "reasoningEffort"]);
+  }
+
+  /** Sampling and reasoning fields for the request body: only what was configured. */
+  private generationFields(): Record<string, unknown> {
+    const g = this.g;
+    const f: Record<string, unknown> = {};
+    if (g.temperature !== undefined) f.temperature = g.temperature;
+    if (g.topP !== undefined) f.top_p = g.topP;
+    if (g.topK !== undefined) f.top_k = g.topK;
+    if (g.seed !== undefined) f.seed = g.seed;
+    if (g.reasoningBudget !== undefined && g.reasoningControl !== "server-declared") f[g.reasoningParam ?? "thinking_budget_tokens"] = g.reasoningBudget;
+    if (g.reasoningEffort !== undefined) f.reasoning_effort = g.reasoningEffort;
+    return f;
+  }
+
+  callStructured<T>(schema: z.ZodType<T>, name: string, system: string, user: string) {
+    return this.structured(schema, name, system, user);
   }
 
   private async structured<T>(zod: z.ZodType<T>, name: string, system: string, user: string): Promise<{ data: T; meta: CallMeta }> {
@@ -122,6 +146,7 @@ export class OpenAICompatibleProvider implements AIProvider {
     const body = JSON.stringify({
       model: this.model,
       max_tokens: this.o.maxTokens,
+      ...this.generationFields(),
       messages: [
         { role: "system", content: system },
         { role: "user", content: user },

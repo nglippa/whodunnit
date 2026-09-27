@@ -223,3 +223,128 @@ A tendency toward generic prose would show up as falling retention against the o
 - **Voice measures:** the Voiceprint statistics (`lib/analysis`) and the rule metrics (`lib/rules/metrics`) define a few measures slightly differently. The comparison uses the same ranges the rewrite was given, applied to rule metrics, which is what the product does.
 - **Corpus:** it is small and synthetic by design. Treat it as a regression harness, not a benchmark of writing quality in general.
 - **Gold references:** the current ones are AI-written illustrations, not expert-labelled data.
+
+## Semantic integrity (claim level)
+
+The meaning checks answer one question: did the rewrite preserve what the author actually said? Comparing numbers and names alone is not enough. `src/lib/semantics` extracts one `SemanticClaim` per sentence and compares claims deterministically. It is shallow by design: it reads markers, not a parse tree.
+
+### What each claim records
+
+| Aspect | Example |
+|---|---|
+| Polarity | explicit ("not", "won't") or implicit ("postpone", "instead of"); "not only" does not count |
+| Modality | possible < probable < asserted < emphatic |
+| Ordered strength scales | evidence (suggests < shows < proves), causation (helps < causes < determines), quantifier (some < many < most < all), frequency (sometimes < usually < always) |
+| Quantity bound | "almost three weeks" is *below* 3 weeks; "an hour. Maybe more." is *at least* 1 hour; "closer to nine" is *approximate*; "never got more than five" is *at most* 5 |
+| Markers | causal, temporal, conditional and comparative |
+
+### How claims are aligned and compared
+
+Claims are aligned by shared content, so a split or merged sentence still lines up, and then compared. Bounds are compared as sets around the value: disjoint sets are a contradiction ("almost three weeks" → "three weeks", "maybe more" → "most of"); a subset or superset is a strengthening or weakening; a partial overlap ("closer to" → "up to") is flagged for review.
+
+| Detected change | Severity |
+|---|---|
+| Polarity flip (1:1 claim) | blocking |
+| Quantity bound contradicted, unit changed | blocking |
+| Change on an ordered scale with both markers explicit ("helps" → "determines", "agree" → "confirm", "some" → "most") | blocking |
+| Invented cause ("due to", "because", …) the source never states | blocking |
+| Dropped claim carrying a number, negation, name, hedge, cause or date | blocking |
+| Unbalanced quotation marks; a quote attributed to someone else | blocking |
+| Contrast substitution in the same frame ("across the grain" → "against the grain", "rose" → "fell") | blocking |
+| Author-protected phrase missing | blocking |
+| Hedge dropped or added; stronger quantifier/evidence added; qualifier dropped | major |
+| Quantity approximate ↔ exact, or partial bound change | major |
+| Invented question; added temporal/conditional clause with new content; clause with mostly new content | major |
+| New interpretation framed around a quotation | major |
+| Dropped plain claim (low word overlap; could be a paraphrase) | major |
+| Mechanical damage (capital after a dash, duplicated punctuation, spacing) | minor |
+
+The verdict is FAIL if anything is blocking, NEEDS_REVIEW if anything is major, and PASS otherwise.
+
+### Principled false-positive handling
+
+- **Dates** are compared as dates: "12 March 2026" = "March 12, 2026" = "2026-03-12". A less specific date is a warning.
+- **Figures** are compared as sets: repeating a source figure is not an added figure.
+- **Negation** is judged per claim, so "will not be taking on" → "will pause" passes.
+- **Name detection:** a sentence-initial word shaped like an ordinary word ("Better", "Five", "Securing") is not taken as a name.
+- **Removable filler:** a sentence made only of a pattern from a *removable* rule family (negative listing, throat-clearing, fake-profound endings) may be deleted without counting as a dropped claim.
+- **Licences:** a refinement note can license a change: "sound more confident" licenses strengthening, "tone it down" weakening, "cut the intro" removal. Licensed changes are recorded as minor, with the words that licensed them.
+
+### What still needs judgement
+
+The deterministic layer cannot see these. The independent judge is for them, and a person should still review:
+
+- paraphrases that change meaning without changing markers;
+- claims implied rather than stated;
+- domain terms outside the contrast groups;
+- sarcasm, and scope ("every team except one").
+
+`pnpm eval:semantic` runs `data/evaluation/semantic-fixtures.json`: 37 synthetic fixtures, one positive case and one negative control for each failure class found in the September 2026 bake-off.
+
+## Independent semantic judge
+
+A model under test grading its own rewrite is weak evidence, so reconstruction and judging are separate:
+
+```bash
+pnpm eval:run --smoke --provider local --model qwen3:14b-q8_0 --base-url http://127.0.0.1:11434/v1 \
+  --judge-provider gemini --judge-model gemini-3.8-flash
+```
+
+The judge (prompt `judge.v1`) receives four things: the source, the output, both claim lists, and the deterministic findings. It is asked for specific kinds of change, not "is this basically the same?":
+
+- added or dropped claims
+- strengthened or weakened claims
+- contradictions
+- causal, temporal, comparative or modality changes
+- domain-term substitutions
+- quotation changes
+
+Its output is Zod-validated. Every finding must quote exact evidence from the source and/or the output, and evidence that cannot be found in the texts caps the finding at minor.
+
+- **How verdicts combine:** the record keeps the deterministic verdict, the self-check (the provider's own meaning check) and the judge side by side. The stricter verdict applies, a deterministic FAIL is never overridden, and every disagreement is recorded.
+- **Failures and self-judging:** a judge that fails to run is recorded as NOT_RUN, never as a pass. The record also says when the judge is the same model as the rewrite (`selfJudged`).
+- **Production:** the web app does not use a judge.
+
+## Reproducible generation settings
+
+`--temperature`, `--top-p`, `--top-k`, `--seed`, `--max-tokens`, `--reasoning-budget` and `--reasoning-effort` are recorded in every record, together with what the provider actually sent, what it could not send, and what was declared as configured on the server.
+
+- **Local servers:** a reasoning budget is sent per request as `thinking_budget_tokens` (llama-server), or under `--reasoning-param` (e.g. `thinking_budget` for the MLX server).
+- **Server-side budgets:** `--reasoning-control server-declared` records a budget set on the server (e.g. `--reasoning-budget 4096` on llama-server) without sending it.
+- **Run IDs and comparisons:** the budget is added to the run ID. Comparisons flag runs whose reasoning budget, generation settings, meaning-analysis version or judge differ as not like for like.
+- **Unsupported settings:** Anthropic and Gemini thinking budgets and Anthropic's seed are not wired, and are reported as unsupported.
+
+A Bonsai budget sweep looks like this:
+
+```bash
+for b in 512 1024 2048 4096; do
+  pnpm eval:run --smoke --provider local --model bonsai-2-27b --strategy reconstruction-v3 --reasoning-budget $b
+done
+```
+
+## Refinement as a delta (strategy reconstruction-v3)
+
+`reconstruction-v3` (experimental, prompt `reconstruct.v4`) treats a refinement as a requested change, anchored to the original.
+
+- **Roles:** the prompt gives ORIGINAL SOURCE (the authority on meaning and authorship) and CURRENT REVISION (the text being edited) distinct roles. Each directive is an objective with an explicit reference: the original or the current revision.
+- **Keep more of my wording** moves toward the ORIGINAL. The plan lists original sentences that the current revision reworded without a catalogued pattern to justify it (RESTORE), and never lists a pattern for restoration. The demo engine restarts from the original.
+- **Shorter** carries a claim triage:
+  - MUST KEEP: claims with numbers, negations, names, hedges, causes or dates.
+  - MAY COMPRESS: other content claims.
+  - MAY REMOVE: sentences made only of removable filler patterns.
+
+  A shorter output that drops a MUST KEEP claim fails verification and is retried.
+- **Minimal change is an invariant under v3.** When nothing catalogued is wrong, nothing was asked for, and the register already fits, the source comes back byte for byte without a model call. The record marks this `unchangedByPolicy`.
+
+v1 remains the production default; v2 and v3 are experimental until a real-model comparison supports promoting one.
+
+## Record schema version 2
+
+New records are `schemaVersion: 2`:
+
+- **Semantic gate:** `integrity`, `judge` and `disagreements`, plus the NEEDS_REVIEW verdict.
+- **Stage:** `refinementDelta`, `originalWordingRetention` and `unchangedByPolicy`.
+- **Rule diff:** `rules.families`, which shows a family that persisted through rewording.
+- **Config:** `generation`, `judge` and `analysisVersion`.
+
+Version 1 records and manifests still load; the new fields are optional.

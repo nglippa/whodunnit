@@ -1,5 +1,7 @@
 import { z } from "zod";
+import { judgeConfigSchema, judgeResultSchema } from "./judge";
 import { refinementSchema } from "./refinement";
+import { claimChangeSchema } from "./semantics";
 import { PRESET_IDS } from "./style";
 import { DIMENSIONS } from "./writing-rules";
 
@@ -109,6 +111,27 @@ export const voiceprintFixtureSchema = z
   .strict();
 export type VoiceprintFixture = z.infer<typeof voiceprintFixtureSchema>;
 
+/**
+ * Generation settings recorded for reproducibility. Absent fields mean the
+ * provider's or server's default. A reasoning budget can be sent per request
+ * or declared as configured on the server; either way runs with different
+ * budgets are never treated as the same configuration.
+ */
+export const generationSettingsSchema = z
+  .object({
+    temperature: z.number().min(0).max(2).optional(),
+    topP: z.number().min(0).max(1).optional(),
+    topK: z.number().int().min(1).optional(),
+    seed: z.number().int().optional(),
+    maxTokens: z.number().int().min(1).optional(),
+    reasoningBudget: z.number().int().min(0).optional(),
+    reasoningControl: z.enum(["request", "server-declared"]).optional(),
+    reasoningParam: z.string().regex(/^[a-z_]+$/).optional(),
+    reasoningEffort: z.string().max(20).optional(),
+  })
+  .strict();
+export type GenerationSettingsConfig = z.infer<typeof generationSettingsSchema>;
+
 /** What is being evaluated. Only parameters the provider architecture actually supports. */
 export const evaluationConfigSchema = z
   .object({
@@ -117,6 +140,9 @@ export const evaluationConfigSchema = z
     strategy: z.string().min(1),
     /** openai-compatible only: the server's base URL (no credentials). */
     baseUrl: z.string().url().optional(),
+    generation: generationSettingsSchema.optional(),
+    /** An independent semantic judge (evaluation only). */
+    judge: judgeConfigSchema.optional(),
   })
   .strict()
   .refine((c) => (c.provider === "demo") === (c.model === null), { error: "The demo engine has no model; a model provider needs one" });
@@ -168,15 +194,50 @@ export const attemptRecordSchema = z
 
 const findingLite = z.object({ kind: z.string(), message: z.string() }).strict();
 
+const VERDICTS = z.enum(["PASS", "NEEDS_REVIEW", "FAIL"]);
+
+export const integritySummarySchema = z
+  .object({
+    version: z.string(),
+    verdict: VERDICTS,
+    sourceClaims: z.number().int(),
+    outputClaims: z.number().int(),
+    aligned: z.number().int(),
+    /** Source claims inside removable filler patterns (a rewrite may drop them). */
+    removableClaims: z.array(z.string()),
+    quotesBalanced: z.object({ source: z.boolean(), output: z.boolean() }).strict(),
+    changes: z.array(claimChangeSchema),
+  })
+  .strict();
+export type IntegritySummary = z.infer<typeof integritySummarySchema>;
+
+export const disagreementSchema = z
+  .object({
+    between: z.tuple([z.enum(["deterministic", "self-check", "judge"]), z.enum(["deterministic", "self-check", "judge"])]),
+    verdicts: z.tuple([z.string(), z.string()]),
+    note: z.string().max(400),
+  })
+  .strict();
+
 export const semanticGateSchema = z
   .object({
-    /** FAIL if any blocking finding exists, deterministic or model. Deterministic failures are never overridden. */
-    verdict: z.enum(["PASS", "FAIL"]),
-    deterministic: z.object({ verdict: z.enum(["PASS", "FAIL"]), failures: z.array(findingLite), warnings: z.array(findingLite) }).strict(),
+    /**
+     * FAIL if any blocking finding exists (deterministic, self-check, or a judge
+     * finding with verified evidence). NEEDS_REVIEW if only major findings.
+     * A deterministic FAIL is never overridden by a model's PASS.
+     */
+    verdict: VERDICTS,
+    deterministic: z.object({ verdict: VERDICTS, failures: z.array(findingLite), warnings: z.array(findingLite) }).strict(),
     model: z.object({ status: z.enum(["pass", "fail", "not-run"]), failures: z.array(findingLite), warnings: z.array(findingLite) }).strict(),
     lexicalCoverage: z.number().nullable(),
     /** Case-specific literal anchors (expectations.anchors) that did not survive. */
     caseAnchorsLost: z.array(z.string()),
+    /** Claim-level integrity (schema v2). */
+    integrity: integritySummarySchema.optional(),
+    /** Independent judge (schema v2; absent when no judge was configured). */
+    judge: judgeResultSchema.nullable().optional(),
+    /** Where the deterministic checks, the model's self-check and the judge disagree. */
+    disagreements: z.array(disagreementSchema).optional(),
   })
   .strict();
 export type SemanticGate = z.infer<typeof semanticGateSchema>;
@@ -241,6 +302,15 @@ export const ruleDiffSchema = z
     remaining: z.array(z.string()),
     introduced: z.array(z.string()),
     introducedDeterministic: z.array(z.string()),
+    /** Pattern families (schema v2): a family that persisted may have been reworded, not removed. */
+    families: z
+      .object({
+        resolved: z.array(z.string()),
+        persisted: z.array(z.object({ family: z.string(), before: z.array(z.string()), after: z.array(z.string()) }).strict()),
+        introduced: z.array(z.string()),
+      })
+      .strict()
+      .optional(),
   })
   .strict();
 export type RuleDiff = z.infer<typeof ruleDiffSchema>;
@@ -259,7 +329,7 @@ export const goldComparisonSchema = z
     /** Direction of sentence-length variation change (CV): source → gold vs source → output. */
     sentenceCv: z.object({ source: z.number(), gold: z.number(), output: z.number() }).strict(),
     paragraphs: z.object({ source: z.number(), gold: z.number(), output: z.number() }).strict(),
-    goldSemanticVerdict: z.enum(["PASS", "FAIL"]),
+    goldSemanticVerdict: z.enum(["PASS", "NEEDS_REVIEW", "FAIL"]),
   })
   .strict();
 
@@ -294,13 +364,31 @@ export const stageRecordSchema = z
     voice: voiceComparisonSchema,
     expectations: z.array(expectationResultSchema),
     gold: goldComparisonSchema.nullable(),
+    /** Schema v2: token retention against the ORIGINAL source (same as retention.tokenRetention, named for clarity). */
+    originalWordingRetention: z.number().optional(),
+    /** Schema v2: the strategy returned the source unchanged without a model call. */
+    unchangedByPolicy: z.boolean().optional(),
+    /** Schema v2: the requested refinement delta for this stage. */
+    refinementDelta: z
+      .object({
+        objectives: z.array(z.object({ id: z.string(), reference: z.enum(["original", "current"]) }).strict()),
+        licenses: z.array(z.string()),
+        restorations: z.array(z.object({ source: z.string(), current: z.string().nullable(), retained: z.number() }).strict()),
+        triage: z.object({ mustKeep: z.number().int(), mayCompress: z.number().int(), mayRemove: z.number().int() }).strict().nullable(),
+      })
+      .strict()
+      .nullable()
+      .optional(),
   })
   .strict();
 export type StageRecord = z.infer<typeof stageRecordSchema>;
 
+/** Records written by this version. Version 1 files (before claim-level integrity) still load. */
+export const EVALUATION_RECORD_VERSION = 2;
+
 export const evaluationRecordSchema = z
   .object({
-    schemaVersion: z.literal(1),
+    schemaVersion: z.union([z.literal(1), z.literal(2)]),
     id: z.string().min(1),
     runId: z.string().min(1),
     createdAt: z.string(),
@@ -320,6 +408,15 @@ export const evaluationRecordSchema = z
         rulePacks: z.array(z.object({ id: z.string(), version: z.number().int() }).strict()),
         voiceprint: z.object({ id: z.string(), name: z.string(), hash: z.string(), confidence: z.number() }).strict().nullable(),
         style: z.string(),
+        /** Schema v2: requested generation settings, and what the provider actually sent. */
+        generation: z
+          .object({ requested: generationSettingsSchema, applied: z.array(z.string()), unsupported: z.array(z.string()), declared: z.array(z.string()) })
+          .strict()
+          .optional(),
+        /** Schema v2: the independent judge, if any. */
+        judge: z.object({ provider: z.string(), model: z.string().nullable(), selfJudged: z.boolean() }).strict().nullable().optional(),
+        /** Schema v2: version of the deterministic meaning analysis. */
+        analysisVersion: z.string().optional(),
       })
       .strict(),
     source: z.object({ text: z.string(), words: z.number().int() }).strict(),
@@ -352,7 +449,7 @@ export type EvaluationFailure = z.infer<typeof evaluationFailureSchema>;
 
 export const runManifestSchema = z
   .object({
-    schemaVersion: z.literal(1),
+    schemaVersion: z.union([z.literal(1), z.literal(2)]),
     runId: z.string().min(1),
     label: z.string().max(80).nullable(),
     createdAt: z.string(),

@@ -1,0 +1,411 @@
+{
+  "version": 1,
+  "description": "Semantic-integrity regression fixtures: each failure class from the local-model bake-off, with a positive case that must be flagged and a negative control that must pass. Synthetic; not model outputs.",
+  "fixtures": [
+    {
+      "id": "approx-to-exact",
+      "class": "approximate → exact",
+      "source": "We picked the first ripe fruit on 2 July, almost three weeks earlier than before.",
+      "output": "We harvested the first ripe tomatoes on 2 July, three weeks earlier than the previous year.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "quantity",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "approx-kept",
+      "class": "approximate → exact",
+      "source": "We picked the first ripe fruit on 2 July, almost three weeks earlier than before.",
+      "output": "We picked our first ripe fruit on 2 July, nearly three weeks earlier than before.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "possible-more-to-less",
+      "class": "possible-more → less-than",
+      "source": "I planed the cup out by hand. It took an hour. Maybe more.",
+      "output": "I planed the cup out by hand. Took most of an hour.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "quantity",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "possible-more-kept",
+      "class": "possible-more → less-than",
+      "source": "I planed the cup out by hand. It took an hour. Maybe more.",
+      "output": "I planed the cup out by hand. It took an hour or longer.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "closer-to-up-to",
+      "class": "approximate → bound",
+      "source": "The old spot got about five hours of sun; the new bed gets closer to nine.",
+      "output": "The old spot got about five hours of sun, while the new bed gets up to nine.",
+      "expect": {
+        "verdict": "NEEDS_REVIEW",
+        "aspect": "quantity"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "closer-to-around",
+      "class": "approximate → bound",
+      "source": "The old spot got about five hours of sun; the new bed gets closer to nine.",
+      "output": "The old spot got about five hours of sun, and the new bed gets around nine.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "may-to-does",
+      "class": "uncertain → certain",
+      "source": "The new rota may reduce overtime for the night shift.",
+      "output": "The new rota reduces overtime for the night shift.",
+      "expect": {
+        "verdict": "NEEDS_REVIEW",
+        "aspect": "modality",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "may-to-might",
+      "class": "uncertain → certain",
+      "source": "The new rota may reduce overtime for the night shift.",
+      "output": "The new rota might reduce overtime for the night shift.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "helps-to-determines",
+      "class": "helps → determines",
+      "source": "Clear communication helps teams ship on time.",
+      "output": "Clear communication determines whether teams ship on time.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causation",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "contributes-to-helps",
+      "class": "helps → determines",
+      "source": "Clear communication contributes to shipping on time.",
+      "output": "Clear communication helps with shipping on time.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "suggests-to-proves",
+      "class": "suggestion → proof",
+      "source": "The trial suggests the drug reduces migraine frequency.",
+      "output": "The trial proves the drug reduces migraine frequency.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "evidence",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "suggests-to-indicates",
+      "class": "suggestion → proof",
+      "source": "The trial suggests the drug reduces migraine frequency.",
+      "output": "The trial indicates the drug reduces migraine frequency.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "agree-to-confirm",
+      "class": "suggestion → proof",
+      "source": "Experts agree that the approach improves retention.",
+      "output": "Experts confirm that the approach improves retention.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "evidence",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "some-to-most",
+      "class": "quantifier strengthened",
+      "source": "Some teams saw fewer defects after the change.",
+      "output": "Most teams saw fewer defects after the change.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "quantifier",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "hedge-dropped",
+      "class": "uncertain → certain",
+      "source": "Error rates probably fell after the migration.",
+      "output": "Error rates fell after the migration.",
+      "expect": {
+        "verdict": "NEEDS_REVIEW",
+        "aspect": "modality",
+        "relation": "strengthened"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "added-cause",
+      "class": "added causal explanation",
+      "source": "The repair will cost $1.4 million, up from the $1.1 million estimate. The engineers found corrosion in two bearings.",
+      "output": "The repair will cost $1.4 million, up from the $1.1 million estimate. This rise is due to corrosion found in two bearings.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "causal-relation",
+        "relation": "added"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "cause-kept",
+      "class": "added causal explanation",
+      "source": "The launch slipped because the supplier shipped late.",
+      "output": "The launch slipped due to the supplier shipping late.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "invented-question",
+      "class": "invented rhetorical question",
+      "source": "There's one line near the end where the grain doesn't quite match, and I'll probably see it every time I eat breakfast.",
+      "output": "There's one line near the end where the grain doesn't quite match. Do you ever really get used to tiny flaws? I'll probably see it every time I eat breakfast.",
+      "expect": {
+        "verdict": "NEEDS_REVIEW",
+        "aspect": "question",
+        "relation": "added"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "question-kept",
+      "class": "invented rhetorical question",
+      "source": "How do I know it's sharp? I pare end grain on a scrap of pine.",
+      "output": "How do I know when it's sharp? I pare some end grain on a scrap of pine.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "invented-temporal",
+      "class": "invented temporal clause",
+      "source": "Six cauls, waxed and clamped across the top, kept everything flat.",
+      "output": "Six waxed cauls kept everything flat while the glue dried.",
+      "expect": {
+        "verdict": "NEEDS_REVIEW",
+        "aspect": "temporal-clause",
+        "relation": "added"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "temporal-kept",
+      "class": "invented temporal clause",
+      "source": "When I pulled the clamps on Sunday the joints were almost invisible.",
+      "output": "On Sunday, when I pulled the clamps, the joints were almost invisible.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "grain-substitution",
+      "class": "domain phrase substitution",
+      "source": "The trick is to work across the grain first, then clean up with the grain.",
+      "output": "The trick is to work against the grain first, then clean up with the grain.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "phrase",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "grain-synonym",
+      "class": "domain phrase substitution",
+      "source": "Finish by planing with the grain until the surface shines.",
+      "output": "Finish by planing along the grain until the surface shines.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "rise-to-fall",
+      "class": "domain phrase substitution",
+      "source": "Error rates rose 18% after the change.",
+      "output": "Error rates fell 18% after the change.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "phrase",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "quote-unbalanced",
+      "class": "quotation damage",
+      "source": "\"We found corrosion,\" she said, \"and we are not willing to reopen the bridge until both are replaced.\"\n\nThe work starts in May.",
+      "output": "\"We found corrosion,\" she said, \"and we are not willing to reopen the bridge until both are replaced.\n\nThe work starts in May.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "quotation",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "quote-curly",
+      "class": "quotation damage",
+      "source": "As Priya put it, \"the boring parts finally got boring.\" The team's next step is January.",
+      "output": "As Priya put it, “the boring parts finally got boring.” The team’s next step is January.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "quote-attribution",
+      "class": "quotation damage",
+      "source": "As Priya put it, \"the boring parts finally got boring.\"",
+      "output": "As Omar put it, \"the boring parts finally got boring.\"",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "quotation",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "shorter-loses-nuance",
+      "class": "shortening with nuance",
+      "source": "The trial suggests, but does not show, that the drug reduces migraines in adults under 50. In older participants the effect was smaller and not statistically significant.",
+      "output": "The drug reduces migraines in adults under 50.",
+      "expect": {
+        "verdict": "FAIL"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off.",
+      "style": "concise"
+    },
+    {
+      "id": "shorter-keeps-nuance",
+      "class": "shortening with nuance",
+      "source": "The trial suggests, but does not show, that the drug reduces migraines in adults under 50. In older participants the effect was smaller and not statistically significant.",
+      "output": "The trial suggests, but does not show, that the drug reduces migraines in adults under 50; in older participants the effect was smaller and not statistically significant.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged.",
+      "style": "concise"
+    },
+    {
+      "id": "already-good-unchanged",
+      "class": "already-good unchanged",
+      "source": "We moved the tomatoes to the south bed this year, and the difference was obvious by July.",
+      "output": "We moved the tomatoes to the south bed this year, and the difference was obvious by July.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "false-name-better",
+      "class": "false name detection",
+      "source": "The result? Better outcomes for every team.",
+      "output": "The result was better outcomes for every team.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "date-reformatted",
+      "class": "date normalisation",
+      "source": "On 12 March 2026, Dana Whitfield told the council.",
+      "output": "On March 12, 2026, Dana Whitfield told the council.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "date-changed",
+      "class": "date normalisation",
+      "source": "On 12 March 2026, Dana Whitfield told the council.",
+      "output": "On 13 March 2026, Dana Whitfield told the council.",
+      "expect": {
+        "verdict": "FAIL"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "negation-paraphrase",
+      "class": "legitimate negation paraphrase",
+      "source": "The team will not be taking on new infrastructure work until January.",
+      "output": "The team will pause new infrastructure work until January.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "negation-flip",
+      "class": "legitimate negation paraphrase",
+      "source": "The update does not delete your files.",
+      "output": "The update deletes your files.",
+      "expect": {
+        "verdict": "FAIL",
+        "aspect": "polarity",
+        "relation": "contradicted"
+      },
+      "provenance": "Synthetic, written for Whodunnit; the failure class was observed in the September 2026 local-model bake-off."
+    },
+    {
+      "id": "filler-removed",
+      "class": "removable filler",
+      "source": "It works in production. Not a trend. Not a fad. A movement.",
+      "output": "It works in production. It is a movement.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    },
+    {
+      "id": "repeated-number",
+      "class": "set semantics for figures",
+      "source": "\"We found corrosion in two of the four bearings,\" she said.",
+      "output": "Corrosion was in two of the four bearings. \"We found corrosion in two of the four bearings,\" she said.",
+      "expect": {
+        "verdict": "PASS"
+      },
+      "provenance": "Synthetic negative control: a legitimate rewrite of the same kind that must not be flagged."
+    }
+  ]
+}

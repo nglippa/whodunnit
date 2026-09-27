@@ -202,6 +202,18 @@ Each record keeps its dimensions separate:
 
 There is no composite score and no detector score. Details: [docs/EVALUATION.md](docs/EVALUATION.md).
 
+Meaning checks work claim by claim. They catch:
+
+- flipped negations;
+- a changed quantity bound ("almost three weeks" → "three weeks");
+- a stronger assertion ("helps" → "determines", "agree" → "confirm");
+- invented causes, questions and clauses;
+- dropped claims;
+- damaged quotations;
+- contrast substitutions ("across the grain" → "against the grain").
+
+An optional independent judge model can check a rewrite in evaluation; it never overrides a deterministic failure. `pnpm eval:semantic` runs the regression fixtures for these checks.
+
 ## Privacy
 
 - Drafts, revisions and voiceprints live in your browser's local storage. There are no accounts and no server database in V1.

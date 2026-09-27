@@ -29,7 +29,8 @@
     "eval:contract": "tsx tools/eval/cli.ts contract",
     "eval:compare": "tsx tools/eval/cli.ts compare",
     "eval:baseline": "tsx tools/eval/cli.ts baseline",
-    "eval:review": "tsx tools/eval/cli.ts review"
+    "eval:review": "tsx tools/eval/cli.ts review",
+    "eval:semantic": "tsx tools/eval/cli.ts semantic"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

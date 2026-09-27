@@ -22,6 +22,7 @@ import { basename, extname, resolve } from "node:path";
 import { PRESETS, isPresetId } from "@/domain/style";
 import type { SourceDocument } from "@/domain/sources";
 import { analyzeWriting } from "@/lib/rules/engine";
+import { RULE_FAMILIES } from "@/lib/rules/families";
 import { BUILTIN_PACKS, createRegistry, rulesForProfile } from "@/lib/rules/packs";
 import { activateCandidate, rejectCandidate } from "@/lib/sources/activate";
 import { compileHeuristic } from "@/lib/sources/compile";
@@ -216,6 +217,13 @@ async function main() {
           for (const w of v.warnings) console.log(`! ${rule.id}: ${w}`);
         }
       }
+      for (const fam of RULE_FAMILIES)
+        for (const m of fam.members)
+          if (!registry!.get(m)) {
+            failed = true;
+            console.log(`✗ family ${fam.id}: member ${m} is not a registered rule`);
+          }
+      console.log(`Rule families: ${RULE_FAMILIES.length} (${RULE_FAMILIES.filter((f) => f.removable).map((f) => f.id).join(", ")} removable)`);
       const formulaic = existsSync(resolve(ROOT, "data/fixtures/prose/a-formulaic.md")) ? readFileSync(resolve(ROOT, "data/fixtures/prose/a-formulaic.md"), "utf8") : "";
       if (formulaic) {
         const a = analyzeWriting(formulaic, rulesForProfile(PRESETS.natural, registry));

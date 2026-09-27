@@ -1,0 +1,203 @@
+{
+  "id": "families",
+  "name": "Rule-family variants",
+  "description": "Lexical variants that complete the rule families in data/rules/families.json: reworded versions of patterns other packs catch literally. Few and high-value by design; the family guidance, not a list of strings, is what tells a rewrite that paraphrasing a pattern does not remove it.",
+  "version": 1,
+  "layer": "general",
+  "source": {
+    "type": "builtin",
+    "title": "Whodunnit rule families",
+    "relation": "original"
+  },
+  "rules": [
+    {
+      "id": "family.comparative-contrast",
+      "version": 1,
+      "name": "Comparative contrast framing",
+      "description": "A contrast between two comparatives set up to sound decisive (smarter, not harder).",
+      "category": "sentence",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\b[a-z]+er,?\\s+(?:and\\s+)?(?:not|rather than|instead of)\\s+[a-z]+er\\b",
+        "flags": "i",
+        "scope": "text"
+      },
+      "remediation": {
+        "guidance": "Say what to do and why, without the contrast."
+      },
+      "source": {
+        "type": "builtin",
+        "title": "Whodunnit rule families",
+        "relation": "original"
+      },
+      "tags": [
+        "family"
+      ],
+      "falsePositiveNotes": "Literal comparisons of two measured things ('faster, not slower, than last year') are rare but possible.",
+      "examples": {
+        "problematic": [
+          "Work smarter, not harder."
+        ],
+        "preferred": [
+          "Automate the weekly report."
+        ]
+      }
+    },
+    {
+      "id": "family.negative-pairs",
+      "version": 1,
+      "name": "Paired negations",
+      "description": "Two negated labels set against a positive one (not a trend and not a fad).",
+      "category": "sentence",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\bnot\\s+(?:just\\s+)?(?:a|an|the)?\\s*[a-z-]+(?:\\s+[a-z-]+)?,?\\s+(?:and|or|nor)?\\s*(?:not|nor)\\s+(?:a|an|the)?\\s*[a-z-]+",
+        "flags": "i",
+        "scope": "sentence"
+      },
+      "remediation": {
+        "guidance": "Say what it is. Denying labels nobody applied is filler."
+      },
+      "source": {
+        "type": "builtin",
+        "title": "Whodunnit rule families",
+        "relation": "original"
+      },
+      "tags": [
+        "family"
+      ],
+      "falsePositiveNotes": "Genuine exclusions ('not red and not blue') match too; they are uncommon in prose.",
+      "examples": {
+        "problematic": [
+          "This is a movement, not a trend and not a fad."
+        ],
+        "preferred": [
+          "This is a movement."
+        ]
+      }
+    },
+    {
+      "id": "family.unsourced-authority",
+      "version": 1,
+      "name": "Unsourced authority (variants)",
+      "description": "Authority invoked without a source, in forms the weasel-attribution list does not name (experts confirm, studies prove).",
+      "category": "specificity",
+      "severity": "info",
+      "determinism": "deterministic",
+      "detection": {
+        "kind": "phrase",
+        "phrases": [
+          "experts confirm",
+          "experts say",
+          "experts believe",
+          "experts note",
+          "experts warn",
+          "experts recommend",
+          "studies prove",
+          "studies confirm",
+          "studies suggest",
+          "research confirms",
+          "research proves",
+          "research suggests",
+          "science shows",
+          "it is widely believed",
+          "it is widely accepted",
+          "it is well known",
+          "it is generally accepted"
+        ]
+      },
+      "remediation": {
+        "guidance": "Name the source, or state the claim on its own evidence."
+      },
+      "source": {
+        "type": "builtin",
+        "title": "Whodunnit rule families",
+        "relation": "original"
+      },
+      "tags": [
+        "family"
+      ],
+      "falsePositiveNotes": "Fine when a named source follows; this rule cannot see citations.",
+      "examples": {
+        "problematic": [
+          "Experts confirm the approach works."
+        ],
+        "preferred": [
+          "A 2024 Forrester survey of 300 teams found the approach cut review time."
+        ]
+      }
+    },
+    {
+      "id": "family.importance-variants",
+      "version": 1,
+      "name": "Importance signalling (variants)",
+      "description": "Phrases that assert importance or decisiveness instead of showing it (proving the value of, is what determines).",
+      "category": "specificity",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\b(?:highlight(?:s|ing)?|underscor(?:e|es|ing)|emphasi[sz](?:e|es|ing)|reinforc(?:e|es|ing)|prov(?:e|es|ing)|demonstrat(?:e|es|ing))\\s+the\\s+(?:importance|value|significance|power|need)\\s+of\\b|\\bis\\s+what\\s+(?:determines|drives|defines|makes)\\b|\\bcannot\\s+be\\s+overstated\\b",
+        "flags": "i",
+        "scope": "text"
+      },
+      "remediation": {
+        "guidance": "State the fact that shows the importance, or cut the sentence."
+      },
+      "source": {
+        "type": "builtin",
+        "title": "Whodunnit rule families",
+        "relation": "original"
+      },
+      "tags": [
+        "family"
+      ],
+      "examples": {
+        "problematic": [
+          "The results prove the value of a strong culture."
+        ],
+        "preferred": [
+          "Teams with weekly retros shipped 20% fewer regressions."
+        ]
+      }
+    },
+    {
+      "id": "family.optimization-cliches",
+      "version": 1,
+      "name": "Generic optimization clich\u00e9s",
+      "description": "Stock productivity phrases that could describe anything (work smarter, unlock potential, move the needle).",
+      "category": "lexical",
+      "severity": "suggestion",
+      "determinism": "heuristic",
+      "detection": {
+        "kind": "regex",
+        "pattern": "\\bwork(?:s|ing)?\\s+smarter\\b|\\bunlock(?:s|ing|ed)?\\s+(?:the|their|your|its|our|each|every)?\\s*(?:[\\w'’]+\\s+)?potential\\b|\\bto\\s+the\\s+next\\s+level\\b|\\bmove\\s+the\\s+needle\\b|\\blow-hanging\\s+fruit\\b|\\bthink\\s+outside\\s+the\\s+box\\b|\\bwin-win\\b",
+        "flags": "i",
+        "scope": "text"
+      },
+      "remediation": {
+        "guidance": "Replace with the specific change and its effect."
+      },
+      "source": {
+        "type": "builtin",
+        "title": "Whodunnit rule families",
+        "relation": "original"
+      },
+      "tags": [
+        "family"
+      ],
+      "examples": {
+        "problematic": [
+          "The platform unlocks every member's potential."
+        ],
+        "preferred": [
+          "The platform lets anyone on the team deploy."
+        ]
+      }
+    }
+  ]
+}

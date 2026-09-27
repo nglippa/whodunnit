@@ -16,7 +16,9 @@ export class DemoProvider implements AIProvider {
   }
 
   async reconstructText(input: ReconstructInput) {
-    const base = input.current ?? input.source;
+    // Delta refinements anchor to the original: "Keep more of my wording" starts again from the author's text.
+    const restoreOriginal = input.strategy?.refinement === "delta" && Boolean(input.refinement?.directives.includes("keep_wording"));
+    const base = restoreOriginal ? input.source : (input.current ?? input.source);
     const minimal = input.strategy?.planning.intensity === "enforce" && input.plan.intensity === "minimal";
     const { text, applied } = applyDemoRules(base, input.profile, input.refinement, input.plan.constraints, { minimal });
     return {

@@ -71,6 +71,16 @@ export function extractLinks(text: string): string[] {
 
 const NON_NAME_CAPS = new Set(["I", "I'm", "I've", "I'll", "I'd", "OK", "TV", "AI"]);
 
+/**
+ * Shapes of ordinary words: number words and common derivational or
+ * comparative endings ("Better", "Clearly", "Securing", "Management"). A lone
+ * capitalised word like this at the start of a sentence is not treated as a
+ * name. Names with these shapes are still found when they appear
+ * mid-sentence or as part of a multi-word name.
+ */
+const ORDINARY_SHAPE = /(?:er|est|ly|ing|ed|ness|ment|tion|sion|able|ible|ful|ous|ive|ity|less|ance|ence|ism|ist|ize|ise)$/i;
+const NUMBER_WORD = new Set(Object.keys(NUMBER_WORDS).concat(["one", "first", "second", "third", "fourth", "fifth", "half"]));
+
 /** Common words that start sentences but are not names. */
 const COMMON_STARTERS = new Set(
   (
@@ -118,7 +128,7 @@ export function extractNameSpans(text: string): NameSpan[] {
         const w = parts[0];
         const initial = runStart === 0 && parts === run;
         if (!initial) put(w, "strong");
-        else if (!isCommon(w) && !new RegExp(`(^|[^\\p{L}])${escapeRe(w.toLowerCase())}(?![\\p{L}])`, "u").test(text)) put(w, "weak");
+        else if (!isCommon(w) && !ORDINARY_SHAPE.test(w) && !NUMBER_WORD.has(w.toLowerCase()) && !new RegExp(`(^|[^\\p{L}])${escapeRe(w.toLowerCase())}(?![\\p{L}])`, "u").test(text)) put(w, "weak");
       }
       run = [];
     };

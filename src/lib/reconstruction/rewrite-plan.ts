@@ -17,7 +17,12 @@ import {
 import { analyzeWriting, type WritingAnalysis } from "../rules/engine";
 import { getRegistry, rulesForProfile } from "../rules/packs";
 import { round } from "../rules/metrics";
+import type { ProtectedPhrase } from "@/domain/semantics";
 import { RECONSTRUCTION_V1 } from "./strategies";
+import { buildRefinementDelta, type RefinementDelta } from "./refinement-delta";
+import { RULE_FAMILIES, activeFamilies, removableSpans } from "../rules/families";
+import { blankDates, extractDates } from "../semantics/dates";
+import { protectedPhrasesFor } from "../semantics/phrases";
 import { countNegations, extractDateWords, extractLinks, extractNames, extractNumbers, extractQuotations } from "../verification/protected";
 
 /**
@@ -73,6 +78,20 @@ export interface RewritePlan {
   preferredPatterns: string[];
   advisoryGuidance: string[];
   refinement?: { asks: string[] };
+  /**
+   * Minimal-change decision: when nothing catalogued is wrong, nothing was
+   * asked for, and the register already fits, the best rewrite is no rewrite.
+   * Strategies with minimalChange "unchanged" return the source as it is.
+   */
+  minimalChange: { unchangedPreferred: boolean; reasons: string[] };
+  /** Phrases to keep exactly or closely (author's list, quoted terms, recurring domain phrases). */
+  protectedPhrases: ProtectedPhrase[];
+  /** Rule families active in the source, with their guidance (paraphrasing a member is not a fix). */
+  families: { id: string; name: string; guidance: string; rules: string[] }[];
+  /** Source spans matched by removable families: filler a rewrite may delete outright. */
+  removableSpans: [number, number][];
+  /** The requested delta, for refinements. */
+  refinementDelta: RefinementDelta | null;
   /** How much the text needs changing, from the measurements (see chooseIntensity). */
   intensity: RewriteIntensity;
   intensityReasons: string[];
@@ -94,6 +113,24 @@ export interface PlanInput {
   profile: StyleProfile;
   refinement?: Refinement;
   voiceprint?: Voiceprint;
+  /** The revision being refined (refinements only). */
+  current?: string;
+  /** Phrases the author asked to keep word for word. */
+  protectedPhrases?: string[];
+}
+
+/** Register dimensions: a mismatch here means the text does not fit the target yet. Rhythm is not one of them. */
+const REGISTER_DIMENSIONS = new Set<Dimension>(["voice.contractions", "voice.first-person"]);
+
+export function minimalChangeDecision(intensity: RewriteIntensity, targetRanges: TargetRange[], refinement?: Refinement): RewritePlan["minimalChange"] {
+  const reasons: string[] = [];
+  if (intensity !== "minimal") reasons.push(`intensity is ${intensity}`);
+  if (refinement) reasons.push("the author asked for a refinement");
+  const misfit = targetRanges.filter(
+    (t) => t.action !== "keep" && (t.layer === "user-instruction" || (t.layer === "voiceprint" && t.strength >= 0.6) || (t.layer === "style" && REGISTER_DIMENSIONS.has(t.dimension))),
+  );
+  if (misfit.length) reasons.push(`register does not fit yet: ${misfit.map((t) => `${t.label} ${t.current} vs ${t.min}–${t.max}`).join("; ")}`);
+  return reasons.length ? { unchangedPreferred: false, reasons } : { unchangedPreferred: true, reasons: ["no catalogued patterns, nothing requested, and the register already fits: leave the text as it is"] };
 }
 
 const SEVERITY_ORDER: Record<Severity, number> = { warning: 0, suggestion: 1, info: 2 };
@@ -289,11 +326,15 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
   const srcWords = words(source).length;
   const safety = registry.query({ packIds: ["semantic-safety"], enabledOnly: true });
   const { intensity, reasons: intensityReasons } = chooseIntensity(avoid, targetRanges, refinement);
+  const famActive = activeFamilies(analysis.findings);
+  const families = RULE_FAMILIES.filter((f) => famActive.has(f.id)).map((f) => ({ id: f.id, name: f.name, guidance: f.guidance, rules: famActive.get(f.id)! }));
+  const sourceDates = extractDates(source);
+  const rest = blankDates(source, sourceDates);
   const plan: RewritePlan = {
     style: { label: profile.label, description: profile.description, register: profile.register, wordingRetention: profile.wordingRetention },
     preserve: {
-      numbers: [...extractNumbers(source).keys()],
-      dates: [...extractDateWords(source).keys()],
+      numbers: [...extractNumbers(rest).keys()],
+      dates: [...sourceDates.map((d) => d.text), ...extractDateWords(rest).keys()],
       names: extractNames(source),
       quotations: extractQuotations(source).map((q) => shorten(q, 200)),
       links: extractLinks(source),
@@ -309,6 +350,11 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
     preferredPatterns,
     advisoryGuidance,
     refinement: refinement ? { asks: [...refinement.directives.map((d) => REFINEMENT_LABELS[d]), ...(refinement.note ? [`Author's note: ${refinement.note}`] : [])] } : undefined,
+    minimalChange: minimalChangeDecision(intensity, targetRanges, refinement),
+    protectedPhrases: protectedPhrasesFor(source, { user: input.protectedPhrases, voiceprintPhrases: input.voiceprint?.stats?.recurringPhrases }),
+    families,
+    removableSpans: removableSpans(analysis.findings),
+    refinementDelta: refinement ? buildRefinementDelta({ source, current: input.current, refinement, findings: analysis.findings }) : null,
     intensity,
     intensityReasons,
     budget: { strategy: `${strategy.id}-v${strategy.version}`, mode: strategy.planning.mode, omitted: [] },

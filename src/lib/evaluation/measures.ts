@@ -1,5 +1,8 @@
 import { createHash } from "node:crypto";
 import type { MetricDelta, Retention, RuleDiff, SemanticGate, VoiceComparison } from "@/domain/evaluation";
+import type { JudgeResult } from "@/domain/judge";
+import { allChanges, type IntegrityReport } from "../semantics/integrity";
+import { familyDiff } from "../rules/families";
 import type { VerificationResult } from "@/domain/verification";
 import type { Voiceprint } from "@/domain/voiceprint";
 import type { Dimension } from "@/domain/writing-rules";
@@ -174,28 +177,70 @@ export function anchorPresent(text: string, anchor: string): boolean {
   return anchor.split("|").some((alt) => t.includes(norm(alt.trim())));
 }
 
+export interface GateInputs {
+  /** Claim-level integrity for this output (deterministic). */
+  integrity?: IntegrityReport;
+  /** The independent judge's result, if one was configured. */
+  judge?: JudgeResult | null;
+}
+
+type Verdict = SemanticGate["verdict"];
+
 /**
- * Meaning is a hard gate. Deterministic and model findings are reported
- * separately, and a deterministic failure fails the gate whatever the model
- * says: a model's "looks equivalent" never hides a changed figure.
+ * Meaning is a hard gate, combining three sources that are reported
+ * separately and never merged into one opinion:
+ *
+ *   deterministic  protected spans, case anchors and claim-level integrity
+ *   self-check     the model under test grading its own rewrite (weak evidence)
+ *   judge          an independent model, with evidence it must quote
+ *
+ * FAIL if any source finds a blocking change (a judge finding counts only
+ * with verified evidence); NEEDS_REVIEW if only major changes; PASS otherwise.
+ * A deterministic FAIL is never overridden by a model PASS, and every
+ * disagreement is recorded.
  */
-export function semanticGate(v: VerificationResult, output: string, caseAnchors: string[] = []): SemanticGate {
+export function semanticGate(v: VerificationResult, output: string, caseAnchors: string[] = [], inputs: GateInputs = {}): SemanticGate {
   const lite = (f: { kind: string; message: string }) => ({ kind: f.kind, message: f.message });
   const det = v.findings.filter((f) => f.origin === "deterministic");
   const mod = v.findings.filter((f) => f.origin === "model");
-  // A changed negation count is a warning in the product (it has false alarms, e.g. "not unlike");
-  // in evaluation it fails the gate, because a missed flip costs far more than a reviewed false alarm.
-  const detFail = det.filter((f) => f.severity === "blocking" || f.kind === "negation_changed");
+  const detFail = det.filter((f) => f.severity === "blocking");
   const modFail = mod.filter((f) => f.severity === "blocking");
   const ranModel = v.checks.includes("model_meaning");
   const caseAnchorsLost = caseAnchors.filter((a) => !anchorPresent(output, a));
-  const failed = detFail.length > 0 || modFail.length > 0 || caseAnchorsLost.length > 0;
+  const integrity = inputs.integrity;
+
+  const detVerdict: Verdict = detFail.length || caseAnchorsLost.length ? "FAIL" : integrity?.verdict === "NEEDS_REVIEW" ? "NEEDS_REVIEW" : "PASS";
+  const selfVerdict: Verdict | null = !ranModel ? null : modFail.length ? "FAIL" : mod.length ? "NEEDS_REVIEW" : "PASS";
+  const judge = inputs.judge ?? null;
+  const judgeVerdict: Verdict | null = judge && judge.status === "ran" && judge.verdict !== "NOT_RUN" ? judge.verdict : null;
+
+  const all = [detVerdict, selfVerdict, judgeVerdict].filter((x): x is Verdict => x !== null);
+  const verdict: Verdict = all.includes("FAIL") ? "FAIL" : all.includes("NEEDS_REVIEW") ? "NEEDS_REVIEW" : "PASS";
+
+  const disagreements: NonNullable<SemanticGate["disagreements"]> = [];
+  const pairs: [NonNullable<SemanticGate["disagreements"]>[number]["between"][number], Verdict | null][] = [
+    ["deterministic", detVerdict],
+    ["self-check", selfVerdict],
+    ["judge", judgeVerdict],
+  ];
+  for (let i = 0; i < pairs.length; i++)
+    for (let j = i + 1; j < pairs.length; j++) {
+      const [a, va] = pairs[i];
+      const [b, vb] = pairs[j];
+      if (!va || !vb || va === vb) continue;
+      const note =
+        a === "deterministic" && va === "FAIL"
+          ? `The deterministic checks failed this output; ${b} said ${vb}. The deterministic failure stands.`
+          : `${a} said ${va}; ${b} said ${vb}. The stricter verdict applies.`;
+      disagreements.push({ between: [a, b], verdicts: [va, vb], note });
+    }
+
   return {
-    verdict: failed ? "FAIL" : "PASS",
+    verdict,
     deterministic: {
-      verdict: detFail.length > 0 || caseAnchorsLost.length > 0 ? "FAIL" : "PASS",
+      verdict: detVerdict,
       failures: detFail.map(lite),
-      warnings: det.filter((f) => f.severity === "warning" && f.kind !== "negation_changed").map(lite),
+      warnings: det.filter((f) => f.severity === "warning").map(lite),
     },
     model: {
       status: !ranModel ? "not-run" : modFail.length ? "fail" : "pass",
@@ -204,6 +249,22 @@ export function semanticGate(v: VerificationResult, output: string, caseAnchors:
     },
     lexicalCoverage: v.lexicalCoverage ?? null,
     caseAnchorsLost,
+    ...(integrity
+      ? {
+          integrity: {
+            version: integrity.version,
+            verdict: integrity.verdict,
+            sourceClaims: integrity.comparison.sourceClaims,
+            outputClaims: integrity.comparison.outputClaims,
+            aligned: integrity.comparison.aligned,
+            removableClaims: integrity.removableClaims,
+            quotesBalanced: { source: integrity.quotes.sourceBalanced, output: integrity.quotes.outputBalanced },
+            changes: allChanges(integrity),
+          },
+        }
+      : {}),
+    ...("judge" in inputs ? { judge } : {}),
+    disagreements,
   };
 }
 
@@ -227,5 +288,6 @@ export function ruleDiff(before: WritingAnalysis, after: WritingAnalysis): RuleD
     remaining: b.filter((x) => aIds.has(x.ruleId)).map((x) => x.ruleId),
     introduced: introduced.map((x) => x.ruleId),
     introducedDeterministic: introduced.filter((x) => x.determinism === "deterministic").map((x) => x.ruleId),
+    families: familyDiff(before.findings, after.findings),
   };
 }

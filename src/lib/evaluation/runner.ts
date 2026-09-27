@@ -1,4 +1,4 @@
-import type { EvaluationConfig, EvaluationRecord, GoldRewrite, StageRecord } from "@/domain/evaluation";
+import { EVALUATION_RECORD_VERSION, type EvaluationConfig, type EvaluationRecord, type GoldRewrite, type StageRecord } from "@/domain/evaluation";
 import { REFINEMENT_LABELS, type Refinement } from "@/domain/refinement";
 import { PRESETS, type StyleProfile } from "@/domain/style";
 import { promptKey, strategyKey, type RewriteStrategy } from "@/domain/strategy";
@@ -11,7 +11,11 @@ import { planSize, type RewritePlan } from "../reconstruction/rewrite-plan";
 import { getStrategy } from "../reconstruction/strategies";
 import { analyzeWriting, type WritingAnalysis } from "../rules/engine";
 import { getRegistry, rulesForProfile } from "../rules/packs";
-import { verifyDeterministic } from "../verification/verify";
+import { integrityReport, verifyDeterministic } from "../verification/verify";
+import type { GenerationReport } from "../ai/provider";
+import { extractClaims } from "../semantics/claims";
+import { SEMANTIC_ANALYSIS_VERSION, allChanges } from "../semantics/integrity";
+import type { SemanticJudge } from "./judge";
 import { voiceprintToProfile } from "../voiceprints/to-profile";
 import type { Corpus, LoadedCase } from "./corpus";
 import { anchorPresent, compareVoice, metricDeltas, ruleDiff, semanticGate, sha256, wordingRetention } from "./measures";
@@ -46,6 +50,10 @@ export interface RunContext {
   provider: AIProvider;
   runId: string;
   now?: () => string;
+  /** Independent semantic judge (optional). */
+  judge?: SemanticJudge | null;
+  /** What the provider actually sent of the requested generation settings. */
+  generation?: GenerationReport;
 }
 
 export const promptFingerprint = (s: RewriteStrategy) => sha256(getPrompt(s.prompt).system).slice(0, 16);
@@ -114,7 +122,18 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       originalPlan = plan;
     }
     const after = analyzeWriting(result.text, rules, { constraints: plan.constraints });
-    const semantic = semanticGate(result.verification, result.text, c.expectations.anchors);
+    // The same meaning context the pipeline verified with: filler it may drop, what the author licensed, what is protected.
+    const integrity = integrityReport(c.text, result.text, result.profile, { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases });
+    const judge = ctx.judge
+      ? await ctx.judge.judge({
+          source: c.text,
+          output: result.text,
+          sourceClaims: extractClaims(c.text),
+          outputClaims: extractClaims(result.text),
+          deterministic: [...allChanges(integrity), ...result.verification.findings.filter((f) => f.origin === "deterministic" && f.severity === "blocking")],
+        })
+      : undefined;
+    const semantic = semanticGate(result.verification, result.text, c.expectations.anchors, { integrity, ...(ctx.judge ? { judge } : {}) });
     const retention = wordingRetention(c.text, result.text);
     const expectations: StageRecord["expectations"] = [];
     for (const k of c.expectations.keep) {
@@ -154,6 +173,16 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       voice: compareVoice(original.metrics, after.metrics, vp),
       expectations,
       gold,
+      originalWordingRetention: retention.tokenRetention,
+      unchangedByPolicy: detailed.attempts.length === 0,
+      refinementDelta: plan.refinementDelta
+        ? {
+            objectives: plan.refinementDelta.objectives.map((o) => ({ id: o.id, reference: o.reference })),
+            licenses: Object.entries(plan.refinementDelta.licenses).filter(([, v]) => v).map(([k]) => k),
+            restorations: plan.refinementDelta.restorations,
+            triage: plan.refinementDelta.triage ? { mustKeep: plan.refinementDelta.triage.mustKeep.length, mayCompress: plan.refinementDelta.triage.mayCompress.length, mayRemove: plan.refinementDelta.triage.mayRemove.length } : null,
+          }
+        : null,
     });
     previous = { text: result.text, profile: result.profile };
   }
@@ -162,7 +191,7 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
   const usedPacks = new Set(rulesForProfile(profile0).map((r) => r.packId));
   const engine = ctx.provider.info;
   return {
-    schemaVersion: 1,
+    schemaVersion: EVALUATION_RECORD_VERSION as 2,
     id: `${ctx.runId}:${c.id}`,
     runId: ctx.runId,
     createdAt: now(),
@@ -178,6 +207,9 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       rulePacks: registry.listPacks().filter((p) => usedPacks.has(p.id)).map((p) => ({ id: p.id, version: p.version })),
       voiceprint: vp ? { id: vp.id, name: vp.name, hash: voiceprintHash(vp), confidence: vp.confidence } : null,
       style: vp ? `voiceprint:${vp.id}` : c.style,
+      generation: { requested: ctx.config.generation ?? {}, applied: ctx.generation?.applied ?? [], unsupported: ctx.generation?.unsupported ?? [], declared: ctx.generation?.declared ?? [] },
+      judge: ctx.judge ? { provider: ctx.judge.info.provider, model: ctx.judge.info.model, selfJudged: ctx.judge.info.provider === engine.provider && ctx.judge.info.model === engine.model } : null,
+      analysisVersion: SEMANTIC_ANALYSIS_VERSION,
     },
     source: { text: c.text, words: original!.metrics.words },
     before: {

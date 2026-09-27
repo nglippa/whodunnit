@@ -1,10 +1,10 @@
-import type { z } from "zod";
+import { z } from "zod";
 import { FINDING_KINDS, type Finding } from "@/domain/verification";
 import type { Observation } from "@/domain/voiceprint";
 import type { TextAnalysis } from "../analysis/analyze";
 import { ANALYZE_SYSTEM, DEFAULT_RECONSTRUCT_PROMPT, VERIFY_SYSTEM, VOICEPRINT_SYSTEM, getPrompt, reconstructUserPrompt, verifyUserPrompt } from "../prompts";
-import type { AIProvider, CallMeta, ReconstructInput } from "./provider";
-import { ProviderError } from "./provider";
+import type { AIProvider, CallMeta, GenerationSettings, ReconstructInput, StructuredCaller } from "./provider";
+import { ProviderError, reportGeneration } from "./provider";
 import { candidateSchema, discourseAnalysisSchema, meaningCheckSchema, parseModelJson, voiceprintObservationsSchema } from "./schemas";
 
 /**
@@ -25,6 +25,8 @@ const ENDPOINT = "https://generativelanguage.googleapis.com/v1beta/models";
 type GSchema =
   | { type: "STRING"; enum?: readonly string[] }
   | { type: "NUMBER" }
+  | { type: "INTEGER" }
+  | { type: "BOOLEAN" }
   | { type: "ARRAY"; items: GSchema; maxItems?: string }
   | { type: "OBJECT"; properties: Record<string, GSchema>; required: string[]; propertyOrdering?: string[] };
 
@@ -45,6 +47,21 @@ export const GEMINI_SCHEMAS = {
   }),
   observations: obj({ observations: arr(obj({ text: str, confidence: { type: "NUMBER" } }), 8) }),
 } satisfies Record<string, GSchema>;
+
+/** Convert a (Zod-generated) JSON Schema to Gemini's OpenAPI-style subset. */
+export function toGeminiSchema(js: Record<string, unknown>): GSchema {
+  const t = js.type as string | undefined;
+  if (t === "object") {
+    const props = (js.properties ?? {}) as Record<string, Record<string, unknown>>;
+    const required = (js.required ?? []) as string[];
+    return { type: "OBJECT", properties: Object.fromEntries(Object.entries(props).map(([k, v]) => [k, toGeminiSchema(v)])), required, propertyOrdering: Object.keys(props) };
+  }
+  if (t === "array") return { type: "ARRAY", items: toGeminiSchema((js.items ?? { type: "string" }) as Record<string, unknown>), ...(typeof js.maxItems === "number" ? { maxItems: String(js.maxItems) } : {}) };
+  if (t === "number") return { type: "NUMBER" };
+  if (t === "integer") return { type: "INTEGER" };
+  if (t === "boolean") return { type: "BOOLEAN" };
+  return { type: "STRING", ...(Array.isArray(js.enum) ? { enum: js.enum as string[] } : {}) };
+}
 
 interface GeminiResponse {
   candidates?: { content?: { parts?: { text?: string; thought?: boolean }[] }; finishReason?: string }[];
@@ -74,14 +91,16 @@ export interface GeminiOptions {
   /** Retries on 429 and 5xx, with exponential backoff from retryDelayMs. */
   maxRetries?: number;
   retryDelayMs?: number;
+  generation?: GenerationSettings;
 }
 
-export class GeminiProvider implements AIProvider {
+export class GeminiProvider implements AIProvider, StructuredCaller {
   readonly info;
   private readonly fetchImpl: typeof fetch;
   private readonly timeoutMs: number;
   private readonly maxRetries: number;
   private readonly retryDelayMs: number;
+  private readonly generation: GenerationSettings;
 
   constructor(
     private readonly apiKey: string,
@@ -93,14 +112,34 @@ export class GeminiProvider implements AIProvider {
     this.timeoutMs = options.timeoutMs ?? 120_000;
     this.maxRetries = options.maxRetries ?? 2;
     this.retryDelayMs = options.retryDelayMs ?? 1000;
+    this.generation = options.generation ?? {};
+  }
+
+  generationReport() {
+    // Thinking budgets differ by model generation (budget vs level) and are not wired here.
+    return reportGeneration(this.generation, ["temperature", "topP", "topK", "seed", "maxTokens"]);
+  }
+
+  callStructured<T>(schema: z.ZodType<T>, _name: string, system: string, user: string) {
+    const js = z.toJSONSchema(schema, { target: "draft-7" }) as Record<string, unknown>;
+    return this.structured(schema, toGeminiSchema(js), system, user);
   }
 
   private async structured<T>(zod: z.ZodType<T>, schema: GSchema, system: string, user: string): Promise<{ data: T; meta: CallMeta }> {
     const started = Date.now();
+    const g = this.generation;
     const body = JSON.stringify({
       systemInstruction: { parts: [{ text: system }] },
       contents: [{ role: "user", parts: [{ text: user }] }],
-      generationConfig: { responseMimeType: "application/json", responseSchema: schema },
+      generationConfig: {
+        responseMimeType: "application/json",
+        responseSchema: schema,
+        ...(g.temperature !== undefined ? { temperature: g.temperature } : {}),
+        ...(g.topP !== undefined ? { topP: g.topP } : {}),
+        ...(g.topK !== undefined ? { topK: g.topK } : {}),
+        ...(g.seed !== undefined ? { seed: g.seed } : {}),
+        ...(g.maxTokens !== undefined ? { maxOutputTokens: g.maxTokens } : {}),
+      },
     });
     let res: Response | null = null;
     for (let attempt = 0; ; attempt++) {

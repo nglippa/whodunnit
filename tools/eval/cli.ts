@@ -14,7 +14,8 @@ import { buildRewritePlan, planSize } from "@/lib/reconstruction/rewrite-plan";
 import { STRATEGIES, getStrategy } from "@/lib/reconstruction/strategies";
 import { GEMINI_KEY_NAMES } from "@/lib/ai/select";
 import { runBatch } from "@/lib/evaluation/batch";
-import { EvaluationConfigError, createEvaluationProvider, resolveConfig } from "@/lib/evaluation/config";
+import { EvaluationConfigError, createEvaluationProvider, createJudge, resolveConfig } from "@/lib/evaluation/config";
+import { runSemanticFixtures } from "@/lib/evaluation/semantic-fixtures";
 import { loadCorpus, selectCases } from "@/lib/evaluation/corpus";
 import { renderComparison, renderRunReport } from "@/lib/evaluation/report";
 import { baseProfile, evaluateCase } from "@/lib/evaluation/runner";
@@ -51,6 +52,13 @@ const has = (name: string) => rest.includes(`--${name}`);
 const BOOL = new Set(["--all", "--demo", "--dry-run", "--smoke", "--baseline-compare"]);
 const positional = () => rest.filter((a, i) => !a.startsWith("--") && !(i > 0 && rest[i - 1].startsWith("--") && !rest[i - 1].includes("=") && !BOOL.has(rest[i - 1])));
 const list = (v: string | undefined) => (v ? v.split(",").map((s) => s.trim()).filter(Boolean) : undefined);
+const num = (name: string) => {
+  const v = flag(name);
+  if (v === undefined) return undefined;
+  const n = Number(v);
+  if (!Number.isFinite(n)) fail(`--${name} must be a number`);
+  return n;
+};
 const fail = (msg: string): never => {
   console.error(`✗ ${msg}`);
   process.exit(1);
@@ -91,6 +99,27 @@ CHOOSE WHAT IS TESTED
   like Next.js does; values are never printed): ANTHROPIC_API_KEY, GEMINI_API_KEY.
   Without the key a real-model run stops with an error. It never falls back to
   the demo engine.
+
+GENERATION SETTINGS (recorded in every record; absent = provider/server default)
+  --temperature n  --top-p n  --top-k n  --seed n  --max-tokens n
+  --reasoning-budget n [--reasoning-control request|server-declared] [--reasoning-param thinking_budget_tokens]
+                                                request (default): sent per request as the param (llama-server:
+                                                thinking_budget_tokens, MLX server: thinking_budget).
+                                                server-declared: you set it on the server; it is recorded, not sent.
+                                                The budget is added to the run id; runs with different budgets
+                                                are flagged as not comparable.
+  --reasoning-effort low|medium|high            sent as reasoning_effort where supported
+  Unsupported settings are listed in the record as unsupported, never silently dropped.
+
+INDEPENDENT SEMANTIC JUDGE (evaluation only)
+  --judge-provider anthropic|gemini|local --judge-model <id> [--judge-base-url <url>]
+  A different model checks meaning with the deterministic analysis in hand and must quote
+  evidence. It supplements the deterministic checks; a deterministic FAIL always stands.
+  Records say when the judge is the same model as the one under test (self-judged).
+
+SEMANTIC REGRESSION FIXTURES
+  pnpm eval:semantic                            run data/evaluation/semantic-fixtures.json against the
+                                                deterministic meaning checks (no model)
 
 INSPECT
   pnpm eval:list                                cases, categories, gold references
@@ -168,7 +197,30 @@ async function main() {
       if (!cases.length) fail("Select cases with --case, --category, --smoke or --all. See pnpm eval:help.");
       let config;
       try {
-        config = resolveConfig({ provider: flag("provider"), demo: has("demo"), model: flag("model"), strategy: flag("strategy"), baseUrl: flag("base-url") }, process.env);
+        const control = flag("reasoning-control");
+        if (control && control !== "request" && control !== "server-declared") fail("--reasoning-control is request or server-declared");
+        config = resolveConfig(
+          {
+            provider: flag("provider"),
+            demo: has("demo"),
+            model: flag("model"),
+            strategy: flag("strategy"),
+            baseUrl: flag("base-url"),
+            generation: {
+              temperature: num("temperature"),
+              topP: num("top-p"),
+              topK: num("top-k"),
+              seed: num("seed"),
+              maxTokens: num("max-tokens"),
+              reasoningBudget: num("reasoning-budget"),
+              reasoningControl: control as "request" | "server-declared" | undefined,
+              reasoningParam: flag("reasoning-param"),
+              reasoningEffort: flag("reasoning-effort"),
+            },
+            judge: { provider: flag("judge-provider"), model: flag("judge-model"), baseUrl: flag("judge-base-url") },
+          },
+          process.env,
+        );
       } catch (e) {
         return fail((e as Error).message);
       }
@@ -189,16 +241,20 @@ async function main() {
       }
 
       let provider;
+      let judge;
       try {
         provider = createEvaluationProvider(config, process.env);
+        judge = createJudge(config, process.env);
       } catch (e) {
         return fail((e as Error).message);
       }
+      const generation = provider.generationReport?.();
       const concurrency = Math.min(2, Math.max(1, Number(flag("concurrency") ?? 1) || 1));
       const label = flag("label")?.replace(/[^a-z0-9-]/gi, "").slice(0, 30);
-      const runId = `${stamp()}-${config.strategy}-${config.provider}${label ? `-${label}` : ""}-${randomBytes(2).toString("hex")}`;
+      const rb = config.generation?.reasoningBudget !== undefined ? `-rb${config.generation.reasoningBudget}` : "";
+      const runId = `${stamp()}-${config.strategy}-${config.provider}${rb}${label ? `-${label}` : ""}-${randomBytes(2).toString("hex")}`;
       const manifest: RunManifest = {
-        schemaVersion: 1,
+        schemaVersion: 2,
         runId,
         label: label ?? null,
         createdAt: new Date().toISOString(),
@@ -215,9 +271,12 @@ async function main() {
       };
       store.saveManifest(manifest);
       if (envFiles.length) console.log(`Environment from ${envFiles.join(", ")} (values not shown)`);
+      if (generation && (generation.applied.length || generation.unsupported.length || generation.declared.length))
+        console.log(`Generation: sent ${generation.applied.join(", ") || "nothing"}${generation.declared.length ? `; declared ${generation.declared.join(", ")}` : ""}${generation.unsupported.length ? `; UNSUPPORTED (not sent) ${generation.unsupported.join(", ")}` : ""}`);
+      if (judge) console.log(`Judge: ${judge.info.provider}/${judge.info.model}`);
       console.log(`Run ${runId}\n${manifest.realModel ? `REAL MODEL: ${config.provider}/${config.model}` : "DEMO ENGINE (not a model test)"} · ${config.strategy} · ${cases.length} case(s) · concurrency ${concurrency}\n`);
 
-      const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId }), {
+      const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId, judge, generation }), {
         concurrency,
         paceMs: Math.max(0, Number(flag("pace") ?? 0) || 0) * 1000,
         onRecord: (r) => store.saveRecord(r),
@@ -232,6 +291,14 @@ async function main() {
       const reportPath = store.saveReport(runId, renderRunReport({ manifest: done, records, failures }));
       console.log(`\n${records.length} completed, ${failures.length} failed. Report: ${reportPath.replace(ROOT + "/", "")}`);
       if (failures.length && !records.length) process.exitCode = 1;
+      return;
+    }
+
+    case "semantic": {
+      const res = runSemanticFixtures(ROOT);
+      for (const r of res.results) console.log(`${r.passed ? "✓" : "✗"} ${r.id.padEnd(34)} ${r.class.padEnd(26)} expected ${r.expected.padEnd(28)} got ${r.got}`);
+      console.log(`\n${res.passed}/${res.results.length} fixtures behave as specified.`);
+      if (res.passed !== res.results.length) process.exitCode = 1;
       return;
     }
 

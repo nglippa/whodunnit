@@ -5,6 +5,7 @@ import antiSlop from "../../../data/rules/packs/anti-slop.json";
 import semanticSafety from "../../../data/rules/packs/semantic-safety.json";
 import styles from "../../../data/rules/packs/styles.json";
 import imported from "../../../data/rules/packs/imported.json";
+import families from "../../../data/rules/packs/families.json";
 import { WritingRuleRegistry, type RegisteredRule } from "./registry";
 
 /**
@@ -17,6 +18,7 @@ export const BUILTIN_PACKS: RulePackInput[] = [
   semanticSafety as RulePackInput,
   core as RulePackInput,
   antiSlop as RulePackInput,
+  families as RulePackInput,
   ...(styles as RulePackInput[]),
   imported as RulePackInput,
 ];
@@ -44,7 +46,7 @@ const STYLE_PACK: Partial<Record<string, string>> = {
 
 /** Pack composition for a style: shared packs plus the target's own style pack. */
 export function packsForProfile(profile: StyleProfile): string[] {
-  const packs = ["core", "anti-slop", "imported"];
+  const packs = ["core", "anti-slop", "families", "imported"];
   const stylePack = profile.kind === "preset" ? STYLE_PACK[profile.id] : undefined;
   if (stylePack) packs.push(stylePack);
   // A tight length budget (Concise, or a "Shorter" refinement) brings in the concise rules.
@@ -59,5 +61,5 @@ export function rulesForProfile(profile: StyleProfile, registry = getRegistry())
 
 /** Everything that runs on a single text regardless of style (for neutral analysis). */
 export function defaultRules(registry = getRegistry()): RegisteredRule[] {
-  return registry.compose(["core", "anti-slop", "imported"]);
+  return registry.compose(["core", "anti-slop", "families", "imported"]);
 }

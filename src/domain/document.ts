@@ -33,6 +33,8 @@ export const reconstructionRequestSchema = z
      * observations only. Writing samples never leave the browser.
      */
     voiceprint: voiceprintSchema.optional(),
+    /** Phrases the author wants kept word for word (domain terms, names of things). */
+    protectedPhrases: z.array(z.string().trim().min(1).max(120)).max(20).optional(),
     /** Present when refining: the current result is transformed, the source stays the anchor. */
     refinement: z
       .object({ current: z.string().min(1).max(MAX_SOURCE_CHARS * 2), change: refinementSchema })
@@ -92,7 +94,8 @@ export const reconstructionResultSchema = z
   .object({
     text: z.string(),
     verification: verificationResultSchema,
-    attempts: z.number().int().min(1),
+    /** 0 when the strategy returned the text unchanged without a model call. */
+    attempts: z.number().int().min(0),
     engine: engineInfoSchema,
     promptVersion: z.string(),
     /** Planner intentions derived from measurements (never the source text). */

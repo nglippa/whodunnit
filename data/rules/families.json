@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "description": "Rule families group rules that express the same move in different words. A rewrite that swaps one member for another has not removed the pattern. Each family states how its members are detected (determinism is per rule), whether a sentence made only of the pattern may be deleted outright, and advisory guidance for the rewriting model and the semantic judge.",
+  "families": [
+    {
+      "id": "contrast-framing",
+      "name": "Contrast framing",
+      "description": "A claim set against a straw alternative: \"It's not X, it's Y\", \"X, not Y\", \"not just X but Y\".",
+      "members": [
+        "slop.not-x-its-y",
+        "slop.not-just-but",
+        "family.comparative-contrast"
+      ],
+      "removable": false,
+      "guidance": "State the positive claim directly. \"This isn't X. It's Y.\", \"Y, not X\" and \"Y rather than X\" are the same pattern."
+    },
+    {
+      "id": "negative-parallelism",
+      "name": "Negative parallelism",
+      "description": "Denying labels nobody applied before naming the real one: \"Not a trend. Not a fad. A movement.\"",
+      "members": [
+        "slop.negative-listing",
+        "family.negative-pairs"
+      ],
+      "removable": true,
+      "guidance": "Name the thing. Rewording the denials (\"not a trend and not a fad\") keeps the pattern."
+    },
+    {
+      "id": "authority-without-evidence",
+      "name": "Authority without evidence",
+      "description": "Experts, studies or \"many\" invoked with no source.",
+      "members": [
+        "slop.weasel-attribution",
+        "family.unsourced-authority"
+      ],
+      "removable": false,
+      "guidance": "Keep the claim at the strength the source gives it. \"Experts agree\" \u2192 \"Experts confirm\" is both the same pattern and a stronger claim."
+    },
+    {
+      "id": "importance-signalling",
+      "name": "Importance signalling",
+      "description": "Saying something matters instead of showing why: puffery, trailing -ing significance, \"proving the value of\".",
+      "members": [
+        "slop.importance-puffery",
+        "slop.superficial-analysis",
+        "slop.metadiscourse",
+        "family.importance-variants"
+      ],
+      "removable": false,
+      "guidance": "Show the fact that makes it matter. \"Plays a crucial role\" \u2192 \"is what determines\" is the same pattern and a stronger causal claim."
+    },
+    {
+      "id": "fake-profound-conclusion",
+      "name": "Fake-profound conclusions",
+      "description": "Closing aphorisms and recaps that restate or inflate: \"That makes all the difference.\", \"In conclusion\".",
+      "members": [
+        "slop.fake-profound-ending",
+        "slop.recap-ending",
+        "slop.summary-openers"
+      ],
+      "removable": true,
+      "guidance": "End on the last concrete point. Do not replace a kicker with a different kicker."
+    },
+    {
+      "id": "generic-optimization-cliche",
+      "name": "Generic optimization clich\u00e9s",
+      "description": "Productivity stock phrases and corporate verbs that fit any subject.",
+      "members": [
+        "family.optimization-cliches",
+        "slop.corporate-verbs",
+        "slop.inflated-vocabulary"
+      ],
+      "removable": false,
+      "guidance": "Say what actually changed and for whom."
+    },
+    {
+      "id": "throat-clearing",
+      "name": "Throat-clearing",
+      "description": "Openers and setups that delay the point.",
+      "members": [
+        "slop.throat-clearing",
+        "slop.announcements",
+        "slop.faux-insight",
+        "slop.rhetorical-setup",
+        "slop.scene-setter",
+        "slop.empty-phrases",
+        "slop.self-answered-questions"
+      ],
+      "removable": true,
+      "guidance": "Start with the point. A reworded opener (\"Most people misunderstand this:\") is still an opener."
+    }
+  ]
+}

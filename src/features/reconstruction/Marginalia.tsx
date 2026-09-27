@@ -21,6 +21,10 @@ function rhythm(cv: number) {
 const CHECK_LABELS: Record<string, string> = {
   protected_spans: "figures, dates, names, quotations, links",
   negation: "negation",
+  claims: "claim strength and qualifiers",
+  quotations: "quotation marks and speakers",
+  phrases: "protected phrases",
+  mechanics: "punctuation damage",
   length: "length",
   lexical_coverage: "key words",
   model_meaning: "claim-by-claim meaning (model)",
@@ -111,7 +115,7 @@ export function Marginalia({ source, result, meta }: { source: WritingAnalysis |
           {meta?.editedByHand && <p className="text-ink-faint">Rechecked against your original after your edits.</p>}
           <p className="text-ink-faint">
             Checked {v.checks.map((c) => CHECK_LABELS[c] ?? c).join(", ")}.
-            {!v.checks.includes("model_meaning") && " Claim-level meaning was not model-checked."}
+            {!v.checks.includes("model_meaning") && " Meaning was not checked by a model."}
           </p>
         </Note>
       )}

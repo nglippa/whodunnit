@@ -20,8 +20,9 @@ describe("RewritePlan", () => {
   const plan = buildRewritePlan({ source, profile: PRESETS.casual });
 
   it("lists semantic anchors extracted from the source", () => {
-    expect(plan.preserve.numbers).toEqual(expect.arrayContaining(["3", "12%"]));
-    expect(plan.preserve.dates).toContain("march");
+    // "March 3" is a date, preserved as a date, not as the number 3.
+    expect(plan.preserve.numbers).toEqual(["12%"]);
+    expect(plan.preserve.dates).toContain("March 3");
     expect(plan.preserve.names).toContain("Priya Raman");
     expect(plan.preserve.quotations).toEqual(["the boring parts got boring."]);
     expect(plan.preserve.negations).toBe(1);

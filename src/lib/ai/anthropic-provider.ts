@@ -12,8 +12,8 @@ import {
   reconstructUserPrompt,
   verifyUserPrompt,
 } from "../prompts";
-import type { AIProvider, CallMeta, ReconstructInput } from "./provider";
-import { ProviderError } from "./provider";
+import type { AIProvider, CallMeta, GenerationSettings, ReconstructInput, StructuredCaller } from "./provider";
+import { ProviderError, reportGeneration } from "./provider";
 import { candidateSchema, discourseAnalysisSchema, meaningCheckSchema, parseModelJson, voiceprintObservationsSchema } from "./schemas";
 import type { TextAnalysis } from "../analysis/analyze";
 
@@ -25,24 +25,38 @@ import type { TextAnalysis } from "../analysis/analyze";
  * use it; the web app imports it through ./anthropic, which adds the guard.
  * Sampling parameters are left at the model's defaults.
  */
-export class AnthropicProvider implements AIProvider {
+export class AnthropicProvider implements AIProvider, StructuredCaller {
   readonly info;
   private readonly client: Anthropic;
 
   constructor(
     apiKey: string,
     private readonly model: string,
+    private readonly generation: GenerationSettings = {},
   ) {
     this.client = new Anthropic({ apiKey, maxRetries: 2, timeout: 90_000 });
     this.info = { mode: "live" as const, provider: "anthropic", model };
   }
 
+  generationReport() {
+    // Thinking budgets change the response shape and are not wired here; seed is not an API parameter.
+    return reportGeneration(this.generation, ["temperature", "topP", "topK", "maxTokens"]);
+  }
+
+  callStructured<T>(schema: z.ZodType<T>, _name: string, system: string, user: string) {
+    return this.structured(schema, system, user, this.generation.maxTokens ?? 4000);
+  }
+
   private async structured<T>(schema: z.ZodType<T>, system: string, user: string, maxTokens: number): Promise<{ data: T; meta: CallMeta }> {
     const started = Date.now();
+    const g = this.generation;
     try {
       const message = await this.client.messages.parse({
         model: this.model,
-        max_tokens: maxTokens,
+        max_tokens: g.maxTokens ?? maxTokens,
+        ...(g.temperature !== undefined ? { temperature: g.temperature } : {}),
+        ...(g.topP !== undefined ? { top_p: g.topP } : {}),
+        ...(g.topK !== undefined ? { top_k: g.topK } : {}),
         system,
         messages: [{ role: "user", content: user }],
         output_config: { format: zodOutputFormat(schema as z.ZodType<T> & z.ZodObject) },

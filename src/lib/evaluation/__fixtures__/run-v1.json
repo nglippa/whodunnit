@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "runId": "20260926-060236-reconstruction-v1-demo-smoke",
+  "label": "smoke",
+  "createdAt": "2026-09-26T06:02:36.273Z",
+  "finishedAt": "2026-09-26T06:02:36.454Z",
+  "config": {
+    "provider": "demo",
+    "model": null,
+    "strategy": "reconstruction-v1"
+  },
+  "mode": "demo",
+  "realModel": false,
+  "corpusVersion": 1,
+  "caseIds": [
+    "formulaic",
+    "anchors",
+    "voiceprint",
+    "already-good",
+    "chain-status"
+  ],
+  "completed": [
+    "formulaic",
+    "anchors",
+    "voiceprint",
+    "already-good",
+    "chain-status"
+  ],
+  "failed": [],
+  "concurrency": 1,
+  "git": {
+    "commit": "62969704f659f9faa0fe78d28cdd47282cc61a4c",
+    "dirty": true
+  }
+}

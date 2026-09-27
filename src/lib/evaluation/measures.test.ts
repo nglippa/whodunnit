@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { PRESETS } from "@/domain/style";
 import type { VerificationResult } from "@/domain/verification";
 import { analyzeWriting } from "../rules/engine";
+import { integrityReport, verifyDeterministic } from "../verification/verify";
 import { rulesForProfile } from "../rules/packs";
 import { anchorPresent, compareVoice, metricDeltas, ruleDiff, semanticGate, wordEditDistance, wordingRetention } from "./measures";
 
@@ -93,10 +94,13 @@ describe("semantic hard gate", () => {
     expect(semanticGate(base, "t").model.status).toBe("not-run");
   });
 
-  it("treats a changed negation count as a failure in evaluation", () => {
-    const g = semanticGate({ ...base, status: "review", findings: [{ kind: "negation_changed", severity: "warning", origin: "deterministic", message: "2 vs 1" }] }, "t");
-    expect(g.verdict).toBe("FAIL");
-    expect(g.deterministic.failures.map((f) => f.kind)).toEqual(["negation_changed"]);
+  it("judges negation per claim: a flip fails, a paraphrase with an implicit negative passes", () => {
+    const rules = PRESETS.professional;
+    const flip = integrityReport("The update does not delete your files.", "The update deletes your files.", rules);
+    expect(semanticGate(verifyDeterministic("The update does not delete your files.", "The update deletes your files.", rules), "x", [], { integrity: flip }).verdict).toBe("FAIL");
+    const src = "The team will not be taking on new infrastructure work until January.";
+    const out = "The team will pause new infrastructure work until January.";
+    expect(semanticGate(verifyDeterministic(src, out, rules), out, [], { integrity: integrityReport(src, out, rules) }).verdict).toBe("PASS");
   });
 
   it("checks case anchors, accepting listed alternatives", () => {

@@ -284,3 +284,23 @@ export interface RuleFinding {
   /** Set when a higher-precedence pressure (e.g. a strong Voiceprint) overrides this rule. */
   suppressedBy?: { layer: RuleLayer; reason: string };
 }
+
+/**
+ * A rule family groups rules that make the same rhetorical move in different
+ * words ("Experts agree" / "Experts confirm"). Determinism stays per rule; the
+ * family adds guidance that paraphrasing a member does not remove the
+ * pattern, and says whether a sentence consisting only of the pattern may be
+ * deleted outright (which the meaning checks then accept).
+ */
+export const ruleFamilySchema = z
+  .object({
+    id: z.string().regex(/^[a-z][a-z0-9-]*$/),
+    name: z.string().min(1).max(80),
+    description: z.string().min(1).max(400),
+    members: z.array(z.string().min(1)).min(1),
+    removable: z.boolean(),
+    guidance: z.string().min(1).max(400),
+  })
+  .strict();
+export type RuleFamily = z.infer<typeof ruleFamilySchema>;
+export const ruleFamiliesFileSchema = z.object({ version: z.number().int().min(1), description: z.string(), families: z.array(ruleFamilySchema) }).strict();

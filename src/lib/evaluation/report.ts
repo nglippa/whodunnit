@@ -38,6 +38,12 @@ export function renderRunReport(run: StoredRun): string {
   L.push(`- Provider: ${m.config.provider} (${m.mode}); model: ${m.config.model ?? "none"}; sampling: provider defaults`);
   L.push(`- Strategy: ${m.config.strategy}${c0 ? ` — ${c0.strategy.name} [${c0.strategy.status}]` : ""}`);
   if (c0) L.push(`- Prompt: ${c0.prompt.key} (fingerprint ${c0.prompt.fingerprint})`, `- Rule packs: ${c0.rulePacks.map((p) => `${p.id}@${p.version}`).join(", ")}`);
+  if (c0?.analysisVersion) L.push(`- Meaning analysis: ${c0.analysisVersion}`);
+  if (c0?.generation) {
+    const g = c0.generation;
+    L.push(`- Generation: ${g.applied.length ? `sent ${g.applied.join(", ")}` : "provider defaults"}${g.declared.length ? `; declared ${g.declared.join(", ")}` : ""}${g.unsupported.length ? `; unsupported (not sent) ${g.unsupported.join(", ")}` : ""}`);
+  }
+  L.push(`- Independent judge: ${c0?.judge ? `${c0.judge.provider}/${c0.judge.model}${c0.judge.selfJudged ? " (SELF-JUDGED: same model as the rewrite)" : ""}` : "none"}`);
   L.push(`- Concurrency: ${m.concurrency}`, "");
 
   L.push("## Corpus results", "");
@@ -67,14 +73,17 @@ export function renderRunReport(run: StoredRun): string {
     "",
   );
 
-  L.push("## Semantic failures", "");
-  const semFails = records.flatMap((r) => r.stages.filter((s) => s.semantic.verdict === "FAIL").map((s) => ({ r, s })));
-  if (!semFails.length) L.push("None detected. (Deterministic checks catch concrete changes; they are not proof of equivalence.)");
+  L.push("## Semantic failures and reviews", "");
+  const semFails = records.flatMap((r) => r.stages.filter((s) => s.semantic.verdict !== "PASS").map((s) => ({ r, s })));
+  if (!semFails.length) L.push("None detected. (The checks catch the change classes they know; they are not proof of equivalence.)");
   for (const { r, s } of semFails) {
-    L.push(`- **${r.case.id}** stage ${s.index} (${s.label}):`);
+    L.push(`- **${r.case.id}** stage ${s.index} (${s.label}): **${s.semantic.verdict}**`);
     for (const f of s.semantic.deterministic.failures) L.push(`  - deterministic ${f.kind}: ${f.message}`);
+    for (const c of (s.semantic.integrity?.changes ?? []).filter((c) => c.severity === "major")) L.push(`  - review ${c.relation}/${c.aspect}: ${c.detail}`);
     for (const a of s.semantic.caseAnchorsLost) L.push(`  - case anchor lost: “${a}”`);
-    for (const f of s.semantic.model.failures) L.push(`  - model ${f.kind}: ${f.message}`);
+    for (const f of s.semantic.model.failures) L.push(`  - self-check ${f.kind}: ${f.message}`);
+    for (const f of (s.semantic.judge?.findings ?? []).filter((f) => f.effectiveSeverity !== "minor")) L.push(`  - judge ${f.effectiveSeverity} ${f.kind}: ${f.explanation}${f.outputEvidence ? ` (“${f.outputEvidence}”)` : ""}`);
+    for (const d of s.semantic.disagreements ?? []) L.push(`  - disagreement ${d.between.join(" vs ")}: ${d.note}`);
   }
   const modelRan = records.some((r) => r.stages.some((s) => s.semantic.model.status !== "not-run"));
   L.push("", `Model meaning check: ${modelRan ? "ran where the deterministic checks passed" : "not run in this batch"}.`, "");
@@ -111,7 +120,7 @@ export function renderRunReport(run: StoredRun): string {
         minimal.map((r) => {
           const s = first(r);
           const exp = s.expectations.find((e) => e.id === "minimal-change");
-          return [r.case.id, s.plan.intensity, s.output.text.replace(/\s+/g, " ").trim() === r.source.text.replace(/\s+/g, " ").trim() ? "yes" : "no", fmt(s.retention.tokenRetention), fmt(s.retention.trigramRetention), fmt(s.retention.wordEditDistance), exp ? (exp.passed ? "met" : `**not met** (${exp.description})`) : "–"];
+          return [r.case.id, s.plan.intensity, s.unchangedByPolicy ? "yes (policy)" : s.output.text.replace(/\s+/g, " ").trim() === r.source.text.replace(/\s+/g, " ").trim() ? "yes" : "no", fmt(s.retention.tokenRetention), fmt(s.retention.trigramRetention), fmt(s.retention.wordEditDistance), exp ? (exp.passed ? "met" : `**not met** (${exp.description})`) : "–"];
         }),
       ),
     );
@@ -124,7 +133,7 @@ export function renderRunReport(run: StoredRun): string {
     L.push(`**${r.case.id}** (every stage verified against the original):`, "");
     L.push(
       table(
-        ["stage", "semantic", "retention vs original", "vs previous", "mean sentence", "sentence CV", "contractions/100", "introduced", "voice moved out"],
+        ["stage", "semantic", "retention vs original", "vs previous", "restorations", "mean sentence", "sentence CV", "contractions/100", "introduced", "voice moved out"],
         r.stages.map((s) => {
           const d = (k: string) => s.metricDeltas.find((x) => x.metric === k)!;
           return [
@@ -132,6 +141,7 @@ export function renderRunReport(run: StoredRun): string {
             s.semantic.verdict,
             fmt(s.retention.tokenRetention),
             fmt(s.retentionVsPrevious?.tokenRetention),
+            s.refinementDelta?.restorations.length ?? "–",
             `${fmt(d("sentence.mean").before)}→${fmt(d("sentence.mean").after)}`,
             `${fmt(d("sentence.cv").before)}→${fmt(d("sentence.cv").after)}`,
             `${fmt(d("contractions.per100").before)}→${fmt(d("contractions.per100").after)}`,
@@ -197,6 +207,8 @@ const agg = (run: StoredRun) => {
     cases: recs.length,
     failures: run.failures.length,
     semanticFails: recs.filter((r) => r.stages.some((s) => s.semantic.verdict === "FAIL")).length,
+    needsReview: recs.filter((r) => r.stages.some((s) => s.semantic.verdict === "NEEDS_REVIEW")).length,
+    disagreements: recs.reduce((a, r) => a + r.stages.reduce((b, s) => b + (s.semantic.disagreements?.length ?? 0), 0), 0),
     introduced: recs.reduce((a, r) => a + final(r).rules.introduced.length, 0),
     introducedDet: recs.reduce((a, r) => a + introducedDet(final(r)), 0),
     patternsAfter: recs.reduce((a, r) => a + final(r).rules.after.length, 0),
@@ -218,6 +230,7 @@ export function findRegressions(base: StoredRun, run: StoredRun): Regression[] {
   const flag = (scope: string, dimension: string, before: unknown, after: unknown) => out.push({ scope, dimension, before: String(before), after: String(after) });
   if (b.semanticFails > a.semanticFails) flag("run", "cases with a semantic failure increased", a.semanticFails, b.semanticFails);
   if (b.failures > a.failures) flag("run", "provider/case failures increased", a.failures, b.failures);
+  if (b.needsReview > a.needsReview) flag("run", "cases needing meaning review increased", a.needsReview, b.needsReview);
   if (a.retention !== null && b.retention !== null && b.retention < a.retention - 0.05) flag("run", "median source-token retention dropped", fmt(a.retention), fmt(b.retention));
   if (b.introduced > a.introduced) flag("run", "introduced-rule count increased", a.introduced, b.introduced);
   if (b.voiceOut > a.voiceOut) flag("run", "voice dimensions moved out of range increased", a.voiceOut, b.voiceOut);
@@ -254,6 +267,14 @@ export function comparabilityNotes(a: StoredRun, b: StoredRun): string[] {
     if (ca.prompt.fingerprint !== cb.prompt.fingerprint) notes.push(`Prompt: ${ca.prompt.key}#${ca.prompt.fingerprint} vs ${cb.prompt.key}#${cb.prompt.fingerprint}.`);
     const packs = (c: typeof ca) => c.rulePacks.map((p) => `${p.id}@${p.version}`).join(",");
     if (packs(ca) !== packs(cb)) notes.push(`Rule packs differ: ${packs(ca)} vs ${packs(cb)}.`);
+    if ((ca.analysisVersion ?? "pre-semantics") !== (cb.analysisVersion ?? "pre-semantics"))
+      notes.push(`Meaning analysis differs (${ca.analysisVersion ?? "pre-semantics"} vs ${cb.analysisVersion ?? "pre-semantics"}): semantic verdicts are not like for like.`);
+    const gen = (c: typeof ca) => JSON.stringify(c.generation?.requested ?? {});
+    const rb = (c: typeof ca) => c.generation?.requested.reasoningBudget;
+    if (rb(ca) !== rb(cb)) notes.push(`Reasoning budget differs (${rb(ca) ?? "default"} vs ${rb(cb) ?? "default"}): these are different configurations, not repeats.`);
+    else if (gen(ca) !== gen(cb)) notes.push(`Generation settings differ: ${gen(ca)} vs ${gen(cb)}.`);
+    const jd = (c: typeof ca) => (c.judge ? `${c.judge.provider}/${c.judge.model}` : "none");
+    if (jd(ca) !== jd(cb)) notes.push(`Independent judge differs (${jd(ca)} vs ${jd(cb)}).`);
   }
   const hashes = new Map(a.records.map((r) => [r.case.id, r.case.textHash]));
   const changed = b.records.filter((r) => hashes.has(r.case.id) && hashes.get(r.case.id) !== r.case.textHash).map((r) => r.case.id);
@@ -279,6 +300,8 @@ export function renderComparison(a: StoredRun, b: StoredRun, options: { baseline
         ["strategy", a.manifest.config.strategy, b.manifest.config.strategy],
         ["cases completed / failed", `${x.cases} / ${x.failures}`, `${y.cases} / ${y.failures}`],
         ["cases with a semantic failure", x.semanticFails, y.semanticFails],
+        ["cases needing meaning review", x.needsReview, y.needsReview],
+        ["checker disagreements (deterministic / self-check / judge)", x.disagreements, y.disagreements],
         ["patterns remaining (sum)", x.patternsAfter, y.patternsAfter],
         ["introduced rules (of which deterministic)", `${x.introduced} (${x.introducedDet})`, `${y.introduced} (${y.introducedDet})`],
         ["median token retention", fmt(x.retention), fmt(y.retention)],

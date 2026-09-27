@@ -1,0 +1,613 @@
+{
+  "schemaVersion": 1,
+  "id": "20260926-060236-reconstruction-v1-demo-smoke:already-good",
+  "runId": "20260926-060236-reconstruction-v1-demo-smoke",
+  "createdAt": "2026-09-26T06:02:36.438Z",
+  "case": {
+    "id": "already-good",
+    "version": 1,
+    "category": "already-good",
+    "title": "Tomato bed notes",
+    "corpusVersion": 1,
+    "textHash": "f7909973384de7f77162987ae09a6023e9a50ed8310d37dac3dcb0963591e4a5"
+  },
+  "config": {
+    "provider": "demo",
+    "mode": "demo",
+    "realModel": false,
+    "model": null,
+    "sampling": "provider-default",
+    "strategy": {
+      "key": "reconstruction-v1",
+      "name": "Reconstruction v1 (full contract)",
+      "status": "production"
+    },
+    "prompt": {
+      "key": "reconstruct.v2",
+      "fingerprint": "24326144663e6a8f"
+    },
+    "rulePacks": [
+      {
+        "id": "core",
+        "version": 1
+      },
+      {
+        "id": "anti-slop",
+        "version": 1
+      },
+      {
+        "id": "imported",
+        "version": 1
+      }
+    ],
+    "voiceprint": null,
+    "style": "natural"
+  },
+  "source": {
+    "text": "We moved the tomatoes to the south bed this year, and the difference was obvious by July. The plants in last year's spot, against the fence, never got more than five hours of sun; the new bed gets closer to nine. We picked the first ripe fruit on 2 July, almost three weeks earlier than before.\n\nThe one thing we would change is spacing. We planted them 40 centimetres apart to fit twelve plants, and by August the middle of the row was a damp tangle where blight took hold. Next year we will plant eight, 60 centimetres apart, and prune to two stems.",
+    "words": 104
+  },
+  "before": {
+    "metrics": {
+      "words": 104,
+      "sentences": 6,
+      "paragraphs": 2,
+      "sentenceLength": {
+        "mean": 17.3,
+        "median": 16,
+        "stdDev": 6.7,
+        "cv": 0.39,
+        "min": 8,
+        "max": 26
+      },
+      "paragraphLength": {
+        "mean": 52,
+        "stdDev": 5.7,
+        "cv": 0.11
+      },
+      "per100": {
+        "contractions": 0,
+        "firstPerson": 4.81,
+        "hedges": 0,
+        "intensifiers": 0,
+        "commas": 6.73,
+        "dashes": 0,
+        "semicolons": 0.96,
+        "colons": 0,
+        "parentheses": 0,
+        "exclamations": 0,
+        "questions": 0
+      },
+      "shares": {
+        "questions": 0,
+        "fragments": 0,
+        "transitionOpeners": 0,
+        "likelyPassive": 0
+      },
+      "transitions": {},
+      "repeatedOpeners": [
+        {
+          "word": "we",
+          "count": 3
+        }
+      ],
+      "repeatedWords": [],
+      "lexicalVariety": 0.87
+    },
+    "triggered": [],
+    "anchors": {
+      "numbers": [
+        "2",
+        "40",
+        "60",
+        "5",
+        "9",
+        "3",
+        "12",
+        "8"
+      ],
+      "dates": [
+        "july",
+        "august"
+      ],
+      "names": [],
+      "quotations": [],
+      "links": [],
+      "negations": 1
+    }
+  },
+  "stages": [
+    {
+      "index": 0,
+      "label": "Natural",
+      "profileLabel": "Natural",
+      "plan": {
+        "intensity": "minimal",
+        "intensityReasons": [
+          "no catalogued patterns and nothing the author asked for is out of range"
+        ],
+        "size": {
+          "anchors": 10,
+          "targets": 2,
+          "patterns": 0,
+          "permitted": 0,
+          "prohibited": 41,
+          "advisory": 4,
+          "preferred": 0,
+          "total": 57,
+          "omitted": 0
+        },
+        "omitted": [],
+        "contractChars": 1920
+      },
+      "output": {
+        "text": "We moved the tomatoes to the south bed this year, and the difference was obvious by July. The plants in last year's spot, against the fence, never got more than five hours of sun; the new bed gets closer to nine. We picked the first ripe fruit on 2 July, almost three weeks earlier than before.\n\nThe one thing we would change is spacing. We planted them 40 centimetres apart to fit twelve plants, and by August the middle of the row was a damp tangle where blight took hold. Next year we will plant eight, 60 centimetres apart, and prune to two stems.",
+        "hash": "f7909973384de7f7",
+        "words": 104,
+        "changesReported": [
+          "No rule-based edits applied. A connected writing model is needed for a full reconstruction."
+        ]
+      },
+      "attempts": [
+        {
+          "attempt": 1,
+          "trigger": "initial",
+          "retryBecause": [],
+          "outcome": "candidate",
+          "verificationStatus": "preserved",
+          "semanticFailures": [],
+          "introducedDeterministic": [],
+          "modelMeaning": "unavailable",
+          "outputHash": "04ffd6d4003eb1",
+          "outputWords": 104,
+          "latencyMs": 2,
+          "provider": null
+        }
+      ],
+      "retries": 0,
+      "latencyMs": 2,
+      "tokens": null,
+      "semantic": {
+        "verdict": "PASS",
+        "deterministic": {
+          "verdict": "PASS",
+          "failures": [],
+          "warnings": []
+        },
+        "model": {
+          "status": "not-run",
+          "failures": [],
+          "warnings": []
+        },
+        "lexicalCoverage": 1,
+        "caseAnchorsLost": []
+      },
+      "rules": {
+        "before": [],
+        "after": [],
+        "resolved": [],
+        "remaining": [],
+        "introduced": [],
+        "introducedDeterministic": []
+      },
+      "metricsAfter": {
+        "words": 104,
+        "sentences": 6,
+        "paragraphs": 2,
+        "sentenceLength": {
+          "mean": 17.3,
+          "median": 16,
+          "stdDev": 6.7,
+          "cv": 0.39,
+          "min": 8,
+          "max": 26
+        },
+        "paragraphLength": {
+          "mean": 52,
+          "stdDev": 5.7,
+          "cv": 0.11
+        },
+        "per100": {
+          "contractions": 0,
+          "firstPerson": 4.81,
+          "hedges": 0,
+          "intensifiers": 0,
+          "commas": 6.73,
+          "dashes": 0,
+          "semicolons": 0.96,
+          "colons": 0,
+          "parentheses": 0,
+          "exclamations": 0,
+          "questions": 0
+        },
+        "shares": {
+          "questions": 0,
+          "fragments": 0,
+          "transitionOpeners": 0,
+          "likelyPassive": 0
+        },
+        "transitions": {},
+        "repeatedOpeners": [
+          {
+            "word": "we",
+            "count": 3
+          }
+        ],
+        "repeatedWords": [],
+        "lexicalVariety": 0.87
+      },
+      "metricDeltas": [
+        {
+          "metric": "words",
+          "label": "words",
+          "unit": "count",
+          "before": 104,
+          "after": 104,
+          "delta": 0
+        },
+        {
+          "metric": "sentences",
+          "label": "sentences",
+          "unit": "count",
+          "before": 6,
+          "after": 6,
+          "delta": 0
+        },
+        {
+          "metric": "paragraphs",
+          "label": "paragraphs",
+          "unit": "count",
+          "before": 2,
+          "after": 2,
+          "delta": 0
+        },
+        {
+          "metric": "sentence.mean",
+          "label": "mean sentence length",
+          "unit": "words",
+          "before": 17.3,
+          "after": 17.3,
+          "delta": 0
+        },
+        {
+          "metric": "sentence.median",
+          "label": "median sentence length",
+          "unit": "words",
+          "before": 16,
+          "after": 16,
+          "delta": 0
+        },
+        {
+          "metric": "sentence.cv",
+          "label": "sentence-length CV",
+          "unit": "cv",
+          "before": 0.39,
+          "after": 0.39,
+          "delta": 0
+        },
+        {
+          "metric": "paragraph.cv",
+          "label": "paragraph-length CV",
+          "unit": "cv",
+          "before": 0.11,
+          "after": 0.11,
+          "delta": 0
+        },
+        {
+          "metric": "transitions.per100",
+          "label": "stock transitions",
+          "unit": "per 100 words",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "openers.stock",
+          "label": "stock-connective openers",
+          "unit": "share of sentences",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "openers.repeated",
+          "label": "sentences with a repeated opener",
+          "unit": "count",
+          "before": 3,
+          "after": 3,
+          "delta": 0
+        },
+        {
+          "metric": "hedges.per100",
+          "label": "hedges",
+          "unit": "per 100 words",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "intensifiers.per100",
+          "label": "intensifiers",
+          "unit": "per 100 words",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "contractions.per100",
+          "label": "contractions",
+          "unit": "per 100 words",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "firstPerson.per100",
+          "label": "first-person words",
+          "unit": "per 100 words",
+          "before": 4.81,
+          "after": 4.81,
+          "delta": 0
+        },
+        {
+          "metric": "dashes.per100",
+          "label": "dashes",
+          "unit": "per 100 words",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "semicolons.per100",
+          "label": "semicolons",
+          "unit": "per 100 words",
+          "before": 0.96,
+          "after": 0.96,
+          "delta": 0
+        },
+        {
+          "metric": "questions.share",
+          "label": "questions",
+          "unit": "share of sentences",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "fragments.share",
+          "label": "short fragments",
+          "unit": "share of sentences",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "passive.share",
+          "label": "likely passives",
+          "unit": "share of sentences",
+          "before": 0,
+          "after": 0,
+          "delta": 0
+        },
+        {
+          "metric": "lexicalVariety",
+          "label": "lexical variety (MATTR)",
+          "unit": "ratio",
+          "before": 0.87,
+          "after": 0.87,
+          "delta": 0
+        }
+      ],
+      "retention": {
+        "sourceWords": 104,
+        "outputWords": 104,
+        "lengthRatio": 1,
+        "tokenRetention": 1,
+        "bigramRetention": 1,
+        "trigramRetention": 1,
+        "wordEditDistance": 0,
+        "novelTokenShare": 0
+      },
+      "retentionVsPrevious": null,
+      "voice": {
+        "reference": "source",
+        "referenceName": "the source text",
+        "dimensions": [
+          {
+            "dimension": "rhythm.sentence-length",
+            "label": "average sentence length",
+            "unit": "words",
+            "expected": {
+              "min": 10.761,
+              "max": 23.839
+            },
+            "source": 17.3,
+            "actual": 17.3,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "rhythm.sentence-variation",
+            "label": "sentence-length variation (CV)",
+            "unit": "cv",
+            "expected": {
+              "min": 0.206,
+              "max": 0.574
+            },
+            "source": 0.39,
+            "actual": 0.39,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "rhythm.paragraph-variation",
+            "label": "paragraph-length variation (CV)",
+            "unit": "cv",
+            "expected": {
+              "min": 0,
+              "max": 0.299
+            },
+            "source": 0.11,
+            "actual": 0.11,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "voice.contractions",
+            "label": "contractions",
+            "unit": "per 100 words",
+            "expected": {
+              "min": 0,
+              "max": 0.945
+            },
+            "source": 0,
+            "actual": 0,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "voice.first-person",
+            "label": "first-person words",
+            "unit": "per 100 words",
+            "expected": {
+              "min": 1.628,
+              "max": 7.992
+            },
+            "source": 4.81,
+            "actual": 4.81,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "voice.hedging",
+            "label": "hedges",
+            "unit": "per 100 words",
+            "expected": {
+              "min": 0,
+              "max": 0.945
+            },
+            "source": 0,
+            "actual": 0,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "voice.questions",
+            "label": "questions",
+            "unit": "share of sentences",
+            "expected": {
+              "min": 0,
+              "max": 0.057
+            },
+            "source": 0,
+            "actual": 0,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "voice.fragments",
+            "label": "short fragments",
+            "unit": "share of sentences",
+            "expected": {
+              "min": 0,
+              "max": 0.057
+            },
+            "source": 0,
+            "actual": 0,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "punctuation.dashes",
+            "label": "dashes",
+            "unit": "per 100 words",
+            "expected": {
+              "min": 0,
+              "max": 0.567
+            },
+            "source": 0,
+            "actual": 0,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "punctuation.semicolons",
+            "label": "semicolons",
+            "unit": "per 100 words",
+            "expected": {
+              "min": 0.325,
+              "max": 1.595
+            },
+            "source": 0.96,
+            "actual": 0.96,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          },
+          {
+            "dimension": "transition.openers",
+            "label": "sentences opening with a stock connective",
+            "unit": "share of sentences",
+            "expected": {
+              "min": 0,
+              "max": 0.057
+            },
+            "source": 0,
+            "actual": 0,
+            "confidence": 0.11,
+            "withinRange": true,
+            "sourceWithinRange": true
+          }
+        ],
+        "movedOut": [],
+        "movedIn": []
+      },
+      "expectations": [
+        {
+          "id": "minimal-change",
+          "description": "keeps ≥ 0.85 of source tokens",
+          "passed": true,
+          "detail": "token retention 1"
+        }
+      ],
+      "gold": {
+        "author": "Claude (AI), unreviewed",
+        "provenance": "Illustrative reference written by Claude (an AI assistant) while building the harness. Not written or reviewed by a human editor and not expert-labelled; one plausible edit among many.",
+        "goldRetention": {
+          "sourceWords": 104,
+          "outputWords": 104,
+          "lengthRatio": 1,
+          "tokenRetention": 1,
+          "bigramRetention": 1,
+          "trigramRetention": 1,
+          "wordEditDistance": 0,
+          "novelTokenShare": 0
+        },
+        "removedByGold": [],
+        "removedByOutput": [],
+        "removedByBoth": [],
+        "sentenceCv": {
+          "source": 0.39,
+          "gold": 0.39,
+          "output": 0.39
+        },
+        "paragraphs": {
+          "source": 2,
+          "gold": 2,
+          "output": 2
+        },
+        "goldSemanticVerdict": "PASS"
+      }
+    }
+  ],
+  "review": null
+}

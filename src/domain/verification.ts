@@ -18,6 +18,12 @@ export const FINDING_KINDS = [
   "changed_assertion",
   "meaning_drift",
   "length_out_of_range",
+  "assertion_strength_changed",
+  "quantity_changed",
+  "added_question",
+  "phrase_changed",
+  "quotation_damaged",
+  "mechanical_damage",
 ] as const;
 export type FindingKind = (typeof FINDING_KINDS)[number];
 
@@ -41,7 +47,7 @@ export const verificationResultSchema = z
     status: z.enum(["preserved", "review", "rejected"]),
     findings: z.array(findingSchema),
     /** Which checks actually ran, so the UI never implies a check that didn't happen. */
-    checks: z.array(z.enum(["protected_spans", "negation", "length", "lexical_coverage", "model_meaning"])),
+    checks: z.array(z.enum(["protected_spans", "negation", "length", "lexical_coverage", "claims", "quotations", "phrases", "mechanics", "model_meaning"])),
     /** Share of the source's content words still present (0–1). Deterministic. */
     lexicalCoverage: z.number().min(0).max(1).optional(),
   })

@@ -15,6 +15,8 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Model output is untrusted. Parse it with the schemas in `src/lib/ai/schemas.ts`. Never widen a schema to make a response pass.
 - Changing prompt text means adding a new version to `PROMPTS` in `src/lib/prompts/index.ts` (fingerprints are pinned in `strategy.test.ts`).
 - Rewrite behaviour lives in a versioned `RewriteStrategy` (`src/lib/reconstruction/strategies.ts`); never edit a published one, add a version. Measure changes with `pnpm eval:*` (docs/EVALUATION.md) before promoting a strategy.
+- Meaning checks are claim-level (`src/lib/semantics`); keep them deterministic and browser-safe. A new check needs a positive fixture and a negative control in `data/evaluation/semantic-fixtures.json` (`pnpm eval:semantic`). Never special-case a model or a single observed string.
+- The semantic judge is evaluation-only and supplements deterministic checks; it must never turn a deterministic FAIL into a pass.
 - Evaluation output goes to `.evaluations/` (gitignored). The evaluation CLI must never fall back to the demo engine silently, and must only run corpus cases, never user documents.
 - Never log user text. Server code logs through `logEvent` in `src/lib/privacy/log.ts` only.
 - Do not add metrics the text cannot support. Everything shown in the notes is computed in `src/lib/analysis` or `src/lib/rules/metrics.ts`.

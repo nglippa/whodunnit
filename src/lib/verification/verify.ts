@@ -3,7 +3,15 @@ import { statusFromFindings } from "@/domain/verification";
 import type { StyleProfile } from "@/domain/style";
 import { words } from "../analysis/tokenize";
 import { STOPWORDS } from "../analysis/lexicon";
-import { countNegations, extractDateWords, extractLinks, extractNameSpans, extractNames, extractNumbers, extractQuotations } from "./protected";
+import { stem } from "../analysis/stem";
+import { countNegations, extractDateWords, extractLinks, extractNameSpans, extractNames, extractNumbers, extractQuotations, MONTHS } from "./protected";
+import type { ProtectedPhrase } from "@/domain/semantics";
+import { blankDates, datesCompatible, extractDates } from "../semantics/dates";
+import { analyzeIntegrity, integrityFindings, type IntegrityReport } from "../semantics/integrity";
+import type { Licenses } from "../semantics/compare";
+import { analyzeWriting } from "../rules/engine";
+import { removableSpans } from "../rules/families";
+import { rulesForProfile } from "../rules/packs";
 
 /**
  * Deterministic meaning checks. They cannot prove two texts mean the same
@@ -13,24 +21,48 @@ import { countNegations, extractDateWords, extractLinks, extractNameSpans, extra
 
 const excerpt = (s: string, n = 80) => (s.length > n ? `${s.slice(0, n - 1)}…` : s);
 
-function diffMultiset(source: Map<string, number>, candidate: Map<string, number>) {
-  const missing: string[] = [];
-  const added: string[] = [];
-  for (const [k, n] of source) if ((candidate.get(k) ?? 0) < n) missing.push(k);
-  for (const [k, n] of candidate) if ((source.get(k) ?? 0) < n) added.push(k);
+/**
+ * Set difference: a value is missing when the rewrite never mentions it, and
+ * added when the source never does. Mentioning a source figure twice is not a
+ * new fact, and dropping a repeated mention is not a lost one.
+ */
+function diffSets(source: Map<string, number>, candidate: Map<string, number>) {
+  const missing = [...source.keys()].filter((k) => !candidate.has(k));
+  const added = [...candidate.keys()].filter((k) => !source.has(k));
   return { missing, added };
 }
+
+const MONTH_BY_NUMBER = (mm: string) => MONTHS[Number(mm) - 1];
 
 const normalizeSpace = (s: string) => s.replace(/[\s ]+/g, " ").replace(/[“”]/g, '"').replace(/[‘’]/g, "'");
 
 export function checkProtectedSpans(source: string, candidate: string): Finding[] {
   const findings: Finding[] = [];
 
-  const nums = diffMultiset(extractNumbers(source), extractNumbers(candidate));
+  // Dates are compared as dates, so "12 March 2026" → "March 12, 2026" is not a changed number.
+  const sDates = extractDates(source);
+  const cDates = extractDates(candidate);
+  const sRest = blankDates(source, sDates);
+  const cRest = blankDates(candidate, cDates);
+  for (const d of sDates) {
+    if (cDates.some((c) => c.canonical === d.canonical)) continue;
+    if (cDates.some((c) => datesCompatible(d.canonical, c.canonical)))
+      findings.push({ kind: "altered_date", severity: "warning", origin: "deterministic", message: `The date “${d.text}” is less specific in the rewrite.`, source: d.text });
+    else findings.push({ kind: "altered_date", severity: "blocking", origin: "deterministic", message: `The date “${d.text}” is missing or changed.`, source: d.text });
+  }
+  for (const c of cDates) {
+    if (!sDates.some((d) => datesCompatible(d.canonical, c.canonical)))
+      findings.push({ kind: "altered_date", severity: "blocking", origin: "deterministic", message: `The rewrite adds the date “${c.text}”.`, candidate: c.text });
+  }
+  const monthsIn = (ds: typeof sDates) => new Set(ds.map((d) => MONTH_BY_NUMBER(d.canonical.split("-")[1])));
+
+  const nums = diffSets(extractNumbers(sRest), extractNumbers(cRest));
   for (const n of nums.missing) findings.push({ kind: "altered_number", severity: "blocking", origin: "deterministic", message: `The figure ${n} from your text is missing or changed.`, source: n });
   for (const n of nums.added) findings.push({ kind: "altered_number", severity: "blocking", origin: "deterministic", message: `The rewrite introduces ${n}, which is not in your text.`, candidate: n });
 
-  const dates = diffMultiset(extractDateWords(source), extractDateWords(candidate));
+  const dates = diffSets(extractDateWords(sRest), extractDateWords(cRest));
+  dates.missing = dates.missing.filter((d) => !monthsIn(cDates).has(d));
+  dates.added = dates.added.filter((d) => !monthsIn(sDates).has(d));
   for (const d of dates.missing) findings.push({ kind: "altered_date", severity: "blocking", origin: "deterministic", message: `The date reference “${d}” is missing or changed.`, source: d });
   for (const d of dates.added) findings.push({ kind: "altered_date", severity: "blocking", origin: "deterministic", message: `The rewrite adds a date reference “${d}”.`, candidate: d });
 
@@ -98,12 +130,6 @@ export function checkLength(source: string, candidate: string, profile: StylePro
   return [];
 }
 
-const stem = (w: string) =>
-  w
-    .toLowerCase()
-    .replace(/['’]s$/, "")
-    .replace(/(?:ing|edly|ed|ies|es|s|ly)$/, "")
-    .slice(0, 7);
 
 /** Share of the source's distinct content-word stems that survive in the candidate. */
 export function lexicalCoverage(source: string, candidate: string): number {
@@ -118,9 +144,25 @@ export function lexicalCoverage(source: string, candidate: string): number {
 
 const COVERAGE_FLOOR: Record<StyleProfile["wordingRetention"], number> = { low: 0.3, medium: 0.42, high: 0.6 };
 
-export function verifyDeterministic(source: string, candidate: string, profile: StyleProfile): VerificationResult {
+export interface VerifyContext {
+  /** Source spans a rewrite may delete (filler patterns). Computed from the rules when omitted. */
+  removableSpans?: [number, number][];
+  /** Changes the author explicitly asked for (e.g. "more confident", "cut the intro"). */
+  licenses?: Licenses;
+  protectedPhrases?: ProtectedPhrase[];
+}
+
+/** Claim-level integrity with the rule context the pipeline would use. */
+export function integrityReport(source: string, candidate: string, profile: StyleProfile, ctx: VerifyContext = {}): IntegrityReport {
+  const spans = ctx.removableSpans ?? removableSpans(analyzeWriting(source, rulesForProfile(profile)).findings);
+  return analyzeIntegrity(source, candidate, { removableSpans: spans, licenses: ctx.licenses, protectedPhrases: ctx.protectedPhrases });
+}
+
+export function verifyDeterministic(source: string, candidate: string, profile: StyleProfile, ctx: VerifyContext = {}): VerificationResult {
   const coverage = lexicalCoverage(source, candidate);
-  const findings = [...checkProtectedSpans(source, candidate), ...checkNegation(source, candidate), ...checkLength(source, candidate, profile)];
+  // Negation is judged claim by claim (with implicit negatives such as "postpone"), not by counting "not".
+  const integrity = integrityReport(source, candidate, profile, ctx);
+  const findings = [...checkProtectedSpans(source, candidate), ...integrityFindings(integrity), ...checkLength(source, candidate, profile)];
   if (words(source).length >= 20 && coverage < COVERAGE_FLOOR[profile.wordingRetention]) {
     findings.push({
       kind: "meaning_drift",
@@ -132,7 +174,7 @@ export function verifyDeterministic(source: string, candidate: string, profile: 
   return {
     status: statusFromFindings(findings),
     findings,
-    checks: ["protected_spans", "negation", "length", "lexical_coverage"],
+    checks: ["protected_spans", "negation", "claims", "quotations", "phrases", "mechanics", "length", "lexical_coverage"],
     lexicalCoverage: Math.round(coverage * 100) / 100,
   };
 }

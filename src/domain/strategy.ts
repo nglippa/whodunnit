@@ -10,7 +10,7 @@ import { z } from "zod";
  * Strategies are immutable: changing any field means a new version.
  */
 
-export const PROMPT_IDS = ["reconstruct", "verify", "analyze", "voiceprint", "compile"] as const;
+export const PROMPT_IDS = ["reconstruct", "verify", "analyze", "voiceprint", "compile", "judge"] as const;
 export type PromptId = (typeof PROMPT_IDS)[number];
 
 export const promptRefSchema = z.object({ id: z.enum(PROMPT_IDS), version: z.number().int().min(1) }).strict();
@@ -57,6 +57,19 @@ export const rewriteStrategySchema = z
         retryOn: z.array(z.enum(RETRY_TRIGGERS)),
       })
       .strict(),
+    /**
+     * Minimal change. "prompt-only" (absent = v1/v2): the contract may ask for
+     * restraint. "unchanged": when the plan's minimal-change decision holds,
+     * the source is returned as it is, without a model call.
+     */
+    minimalChange: z.enum(["prompt-only", "unchanged"]).optional(),
+    /**
+     * Refinement. "legacy" (absent = v1/v2): the model revises the current
+     * text with the source attached. "delta": the contract carries an explicit
+     * refinement delta (objectives, restorations toward the original, claim
+     * triage for shortening, licences from the author's own words).
+     */
+    refinement: z.enum(["legacy", "delta"]).optional(),
     postCheckPolicy: z
       .object({
         /** Model meaning check: skipped when deterministic checks already rejected the candidate. */

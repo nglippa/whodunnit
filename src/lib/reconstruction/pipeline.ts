@@ -120,7 +120,30 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;
-  const plan = buildRewritePlan({ source, profile, refinement: refinement?.change, voiceprint: request.voiceprint }, strategy);
+  const plan = buildRewritePlan(
+    { source, profile, refinement: refinement?.change, voiceprint: request.voiceprint, current: refinement?.current, protectedPhrases: request.protectedPhrases },
+    strategy,
+  );
+  // Meaning checks get the same context the plan used: filler the rewrite may drop, what the author licensed, what is protected.
+  const verifyContext = { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases };
+
+  // Minimal change as an invariant: good text that needs nothing comes back as it is.
+  if (strategy.minimalChange === "unchanged" && plan.minimalChange.unchangedPreferred) {
+    const verification = verifyDeterministic(source, source, profile, verifyContext);
+    const result: PipelineResult = {
+      text: source,
+      verification,
+      attempts: 0,
+      engine: provider.info,
+      promptVersion: promptKey(strategy.prompt),
+      plan: summarizePlan(plan),
+      changes: ["Left unchanged: no catalogued patterns, nothing requested, and the register already fits."],
+      patterns: comparePatterns(plan, source, rulesForProfile(profile)),
+      preserved: preservedCounts(verification, plan),
+      profile,
+    };
+    return { result, plan, strategy, attempts: [] };
+  }
   const rules = rulesForProfile(profile);
   const retry = strategy.retryPolicy;
   const maxAttempts = options.maxAttempts ?? (provider.info.mode === "live" ? retry.maxAttemptsLive : retry.maxAttemptsDemo);
@@ -165,7 +188,7 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
       throw new ProviderError("The writing model returned an empty rewrite.", "invalid_output");
     }
 
-    let verification = verifyDeterministic(source, text, profile);
+    let verification = verifyDeterministic(source, text, profile, verifyContext);
     let modelMeaning: AttemptRecord["modelMeaning"] = "skipped-by-policy";
     // Only spend a model call on meaning when the cheap checks passed.
     if (strategy.postCheckPolicy.modelMeaning === "when-deterministic-passes") {
