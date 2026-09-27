@@ -112,9 +112,11 @@ export type VoiceprintFixture = z.infer<typeof voiceprintFixtureSchema>;
 /** What is being evaluated. Only parameters the provider architecture actually supports. */
 export const evaluationConfigSchema = z
   .object({
-    provider: z.enum(["anthropic", "demo"]),
+    provider: z.enum(["anthropic", "gemini", "openai-compatible", "demo"]),
     model: z.string().min(1).nullable(),
     strategy: z.string().min(1),
+    /** openai-compatible only: the server's base URL (no credentials). */
+    baseUrl: z.string().url().optional(),
   })
   .strict()
   .refine((c) => (c.provider === "demo") === (c.model === null), { error: "The demo engine has no model; a model provider needs one" });

@@ -36,9 +36,11 @@ cp .env.example .env.local   # then fill in what you need
 
 | Variable | Purpose |
 |---|---|
-| `ANTHROPIC_API_KEY` | Enables the model-backed provider. Server-side only. |
-| `WHODUNNIT_MODEL` | Model id (default `claude-sonnet-5`). |
-| `WHODUNNIT_AI_PROVIDER` | `auto` (default), `anthropic`, or `demo`. |
+| `ANTHROPIC_API_KEY` | Enables the Anthropic provider. Server-side only. |
+| `GEMINI_API_KEY` | Enables the Google Gemini provider (`GOOGLE_API_KEY` also works). Server-side only. |
+| `WHODUNNIT_MODEL` | Model id (default `claude-sonnet-5`, or `gemini-3.8-flash` for Gemini). |
+| `WHODUNNIT_AI_PROVIDER` | `auto` (default: Anthropic if its key is set, else Gemini, else demo), `anthropic`, `gemini`, `local`, or `demo`. |
+| `WHODUNNIT_OPENAI_BASE_URL`, `WHODUNNIT_OPENAI_API_KEY` | For `local`: any OpenAI-format server (a local llama.cpp/Bonsai server, Ollama, Groq). Default `http://127.0.0.1:8080/v1`; the token is optional. |
 | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Reserved for accounts; not used by the V1 UI. |
 
 Scripts: `pnpm lint`, `pnpm typecheck`, `pnpm test`, `pnpm build`. The rule tooling is described below.
@@ -166,7 +168,8 @@ Rewrite behaviour is versioned as a `RewriteStrategy` (prompt, contract policy, 
 
 ```bash
 pnpm eval:help                               # command guide
-pnpm eval:run --smoke                        # 5 cases against the real model (needs ANTHROPIC_API_KEY)
+pnpm eval:run --smoke                        # 5 cases against the real model (Anthropic or Gemini key)
+pnpm eval:run --smoke --provider local --model bonsai-2-27b   # a local model: free, no quota
 pnpm eval:run --all --demo                   # the demo engine, explicitly; never a silent fallback
 pnpm eval:baseline latest --name current
 pnpm eval:compare --baseline current --run latest

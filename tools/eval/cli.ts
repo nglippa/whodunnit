@@ -4,13 +4,15 @@
  */
 import { spawnSync } from "node:child_process";
 import { randomBytes } from "node:crypto";
-import { mkdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { parseEnv } from "node:util";
 import { join, resolve } from "node:path";
 import { CORPUS_CATEGORIES, humanReviewSchema, type EvaluationRecord, type RunManifest } from "@/domain/evaluation";
 import { strategyKey } from "@/domain/strategy";
 import { renderContract } from "@/lib/prompts";
 import { buildRewritePlan, planSize } from "@/lib/reconstruction/rewrite-plan";
 import { STRATEGIES, getStrategy } from "@/lib/reconstruction/strategies";
+import { GEMINI_KEY_NAMES } from "@/lib/ai/select";
 import { runBatch } from "@/lib/evaluation/batch";
 import { EvaluationConfigError, createEvaluationProvider, resolveConfig } from "@/lib/evaluation/config";
 import { loadCorpus, selectCases } from "@/lib/evaluation/corpus";
@@ -19,6 +21,24 @@ import { baseProfile, evaluateCase } from "@/lib/evaluation/runner";
 import { EvaluationStore } from "@/lib/evaluation/store";
 
 const ROOT = resolve(process.cwd());
+
+/**
+ * Load the project's env files the way Next.js does for development
+ * (.env.development.local, .env.local, .env.development, .env), without
+ * overriding variables already set in the shell. Values are never printed.
+ */
+function loadProjectEnv(): string[] {
+  const loaded: string[] = [];
+  for (const name of [".env.development.local", ".env.local", ".env.development", ".env"]) {
+    const path = join(ROOT, name);
+    if (!existsSync(path)) continue;
+    const vars = parseEnv(readFileSync(path, "utf8"));
+    for (const [k, v] of Object.entries(vars)) if (process.env[k] === undefined && v !== "") process.env[k] = v;
+    loaded.push(name);
+  }
+  return loaded;
+}
+const envFiles = loadProjectEnv();
 const [command = "help", ...rest] = process.argv.slice(2);
 
 function flag(name: string): string | undefined {
@@ -44,7 +64,7 @@ WHAT IT DOES
   retention and Voiceprint behaviour per case. No composite score, no detectors.
 
 RUN ONE CASE, A CATEGORY, THE SMOKE SET OR EVERYTHING
-  pnpm eval:run --case anchors                  real model (needs ANTHROPIC_API_KEY)
+  pnpm eval:run --case anchors                  real model (needs a model API key)
   pnpm eval:run --case anchors,negations
   pnpm eval:run --category refinement-chain
   pnpm eval:run --smoke                         5 cases: formulaic, anchors, voiceprint, already-good, chain
@@ -52,16 +72,25 @@ RUN ONE CASE, A CATEGORY, THE SMOKE SET OR EVERYTHING
 
 CHOOSE WHAT IS TESTED
   --strategy reconstruction-v1 | reconstruction-v2   (default: production, ${strategyKey(STRATEGIES[0])})
-  --provider anthropic --model claude-sonnet-5       (default provider anthropic; model from
-                                                     --model, then WHODUNNIT_MODEL, then claude-sonnet-5)
+  --provider anthropic|gemini --model <id>           default provider: WHODUNNIT_AI_PROVIDER, else
+                                                     whichever key is set (Anthropic first); model from
+                                                     --model, then WHODUNNIT_MODEL, then claude-sonnet-5
+                                                     or gemini-3.8-flash
+  --provider local [--base-url http://127.0.0.1:8080/v1] --model bonsai-2-27b
+                                                     any OpenAI-format server: a local llama.cpp/Bonsai
+                                                     server, Ollama (:11434/v1), Groq... Free and
+                                                     unlimited when local. --model names it in records.
   --demo                                             the deterministic demo engine, by request only.
                                                      Records say mode: demo, realModel: false.
   --label short-name                                 appended to the run id
+  --pace <seconds>                                   pause between cases (for provider rate limits)
   --dry-run                                          build plans and contracts only; no provider call,
                                                      nothing saved
 
-  Without ANTHROPIC_API_KEY a real-model run stops with an error. It never falls
-  back to the demo engine.
+  Keys come from the shell or the project's env files (.env.local etc., loaded
+  like Next.js does; values are never printed): ANTHROPIC_API_KEY, GEMINI_API_KEY.
+  Without the key a real-model run stops with an error. It never falls back to
+  the demo engine.
 
 INSPECT
   pnpm eval:list                                cases, categories, gold references
@@ -139,13 +168,16 @@ async function main() {
       if (!cases.length) fail("Select cases with --case, --category, --smoke or --all. See pnpm eval:help.");
       let config;
       try {
-        config = resolveConfig({ provider: flag("provider"), demo: has("demo"), model: flag("model"), strategy: flag("strategy") }, process.env);
+        config = resolveConfig({ provider: flag("provider"), demo: has("demo"), model: flag("model"), strategy: flag("strategy"), baseUrl: flag("base-url") }, process.env);
       } catch (e) {
         return fail((e as Error).message);
       }
       const strategy = getStrategy(config.strategy);
 
       if (has("dry-run")) {
+        console.log(envFiles.length ? `Environment from ${envFiles.join(", ")} (values not shown)` : "No project env files found; using the shell environment only.");
+        const keys = ["ANTHROPIC_API_KEY", ...GEMINI_KEY_NAMES].filter((k) => process.env[k]?.trim());
+        console.log(`Model keys set: ${keys.length ? keys.join(", ") : "none (expected ANTHROPIC_API_KEY or GEMINI_API_KEY)"}`);
         console.log(`Dry run: ${cases.length} case(s), ${config.strategy}, ${config.provider}${config.model ? `/${config.model}` : ""}. No provider is called and nothing is saved.\n`);
         for (const c of cases) {
           const vp = c.voiceprint ? corpus.voiceprints.get(c.voiceprint) : undefined;
@@ -182,10 +214,12 @@ async function main() {
         git: gitInfo(),
       };
       store.saveManifest(manifest);
+      if (envFiles.length) console.log(`Environment from ${envFiles.join(", ")} (values not shown)`);
       console.log(`Run ${runId}\n${manifest.realModel ? `REAL MODEL: ${config.provider}/${config.model}` : "DEMO ENGINE (not a model test)"} · ${config.strategy} · ${cases.length} case(s) · concurrency ${concurrency}\n`);
 
       const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId }), {
         concurrency,
+        paceMs: Math.max(0, Number(flag("pace") ?? 0) || 0) * 1000,
         onRecord: (r) => store.saveRecord(r),
         onProgress: (e) => {
           if (e.type === "done") console.log(`✓ ${e.caseId.padEnd(20)} ${oneLine(e.record)}`);

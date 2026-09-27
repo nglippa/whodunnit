@@ -148,13 +148,17 @@ The three current references were written by Claude during development and are l
 ```bash
 pnpm eval:help                                   # the full command guide
 pnpm eval:list                                   # cases, categories, gold, strategies
-pnpm eval:run --smoke                            # real model: needs ANTHROPIC_API_KEY in the environment
+pnpm eval:run --smoke                            # real model: Anthropic or Gemini, whichever key is set
+pnpm eval:run --smoke --provider gemini --model gemini-3.8-flash
+pnpm eval:run --smoke --provider local --model bonsai-2-27b --concurrency 2   # local server, no quota
 pnpm eval:run --all --strategy reconstruction-v2 --model claude-sonnet-5 --concurrency 2
 pnpm eval:run --all --demo                       # deterministic demo engine, by request only
 pnpm eval:run --case anchors --dry-run           # plans and contracts only
 ```
 
-A real-model run without `ANTHROPIC_API_KEY` stops with an error. It never falls back to the demo engine. Demo runs are recorded as `mode: demo, realModel: false` and their reports carry a banner. The key is read from the environment and never printed or stored.
+Providers are `anthropic` (Messages API with structured outputs), `gemini` (REST `generateContent` with a response schema) and `local` / `openai-compatible` (any OpenAI chat-completions server with `response_format: json_schema`: a local llama.cpp server such as Bonsai 2 27B, Ollama, LM Studio, Groq; `--base-url`, default `http://127.0.0.1:8080/v1`).
+
+Free tiers are small: Gemini's free tier allowed 20 requests per day per model in testing, and one smoke run needs about 24 requests (three per stage: claim extraction, rewrite, meaning check). A local model has no quota, only time: Bonsai 2 27B on an M4 Pro took about 3–4 minutes per reasoning-heavy call. Its results say how the harness and prompts behave with that model; they are not a stand-in for a frontier model's quality. Both re-validate every response with the same Zod schemas and record tokens, stop reason and request id. The CLI reads keys from the shell or from the project's env files (`.env.development.local`, `.env.local`, `.env.development`, `.env`, loaded the way Next.js loads them, never overriding the shell). A real-model run without the provider's key stops with an error. It never falls back to the demo engine. Demo runs are recorded as `mode: demo, realModel: false` and their reports carry a banner. The key is read from the environment and never printed or stored.
 
 - **Concurrency:** 1 by default, capped at 2.
 - **Failures:** a failed case is recorded in `failures.json` with the attempts made so far, and the batch continues.

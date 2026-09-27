@@ -16,6 +16,8 @@ export type ProgressEvent =
 export interface BatchOptions {
   concurrency?: number;
   onProgress?: (e: ProgressEvent) => void;
+  /** Pause between cases (per worker), to stay under provider rate limits. */
+  paceMs?: number;
   /** Called as each result lands, so partial runs are persisted. */
   onRecord?: (r: EvaluationRecord) => void;
   now?: () => string;
@@ -35,6 +37,7 @@ export async function runBatch(
   const worker = async () => {
     while (next < cases.length) {
       const index = next++;
+      if (options.paceMs && index >= concurrency) await new Promise((r) => setTimeout(r, options.paceMs));
       const c = cases[index];
       options.onProgress?.({ type: "start", caseId: c.id, index, total: cases.length });
       try {

@@ -107,11 +107,11 @@ export function renderRunReport(run: StoredRun): string {
   else
     L.push(
       table(
-        ["case", "intensity", "unchanged", "token retention", "trigram retention", "edit dist.", "expected"],
+        ["case", "intensity", "same words", "token retention", "trigram retention", "edit dist.", "expected"],
         minimal.map((r) => {
           const s = first(r);
           const exp = s.expectations.find((e) => e.id === "minimal-change");
-          return [r.case.id, s.plan.intensity, s.output.text.trim() === r.source.text.trim() ? "yes" : "no", fmt(s.retention.tokenRetention), fmt(s.retention.trigramRetention), fmt(s.retention.wordEditDistance), exp ? (exp.passed ? "met" : `**not met** (${exp.description})`) : "–"];
+          return [r.case.id, s.plan.intensity, s.output.text.replace(/\s+/g, " ").trim() === r.source.text.replace(/\s+/g, " ").trim() ? "yes" : "no", fmt(s.retention.tokenRetention), fmt(s.retention.trigramRetention), fmt(s.retention.wordEditDistance), exp ? (exp.passed ? "met" : `**not met** (${exp.description})`) : "–"];
         }),
       ),
     );
