@@ -108,6 +108,11 @@ ${DATA_RULE}
 
 Return JSON with "text" (the rewrite only) and "changes" (up to 6 short notes on what you changed in expression; an empty list if you changed nothing).`;
 
+/** Experimental discourse contract. Published prompt versions remain byte-for-byte fixed. */
+export const RECONSTRUCT_SYSTEM_V5 = `${RECONSTRUCT_SYSTEM_V4}
+
+When DISTRIBUTED EDITING REASONS are present, make only the changes supported by those reasons. Keep factual sentences, quotes, genre structure, and the author's deliberate repetitions. A document-level observation does not license adding details, deleting claims, or smoothing the whole document.`;
+
 /** Kept for existing imports: the system prompt of the production strategy. */
 export const RECONSTRUCT_SYSTEM = RECONSTRUCT_SYSTEM_V2;
 
@@ -138,6 +143,12 @@ export function renderContract(plan: RewritePlan, prompt: PromptRef = DEFAULT_RE
   if (plan.avoid.length) {
     lines.push("", "PATTERNS FOUND in the source (rework these):");
     for (const a of plan.avoid) lines.push(`- ${a.name} ×${a.occurrences}${a.examples.length ? ` e.g. ${a.examples.map((e) => `“${e}”`).join("; ")}` : ""}. ${a.guidance}`);
+  }
+  if (prompt.version >= 5 && plan.discourse?.findings.some((f) => f.action !== "ADVISORY")) {
+    lines.push("", "DISTRIBUTED EDITING REASONS (keep all factual content):");
+    for (const finding of plan.discourse.findings.filter((f) => f.action !== "ADVISORY")) {
+      lines.push(`- ${finding.phenomenon.toLowerCase().replaceAll("_", " ")}: ${finding.supporting.map((s) => s.explanation).join("; ")}. Scope: paragraphs ${finding.paragraphIndices.map((i) => i + 1).join(", ")}.`);
+    }
   }
   if (prompt.version >= 4 && plan.families.length) {
     lines.push("", "PATTERN FAMILIES present (a reworded member of the same family is not a fix):");
@@ -302,6 +313,7 @@ export const PROMPTS: readonly PromptDefinition[] = [
   def("reconstruct", 2, "Reconstruction contract, full (strategy reconstruction-v1)", RECONSTRUCT_SYSTEM_V2),
   def("reconstruct", 3, "Reconstruction contract, prioritised with intensity (strategy reconstruction-v2)", RECONSTRUCT_SYSTEM_V3),
   def("reconstruct", 4, "Reconstruction contract with claim-level meaning rules, protected phrases, families and refinement deltas (strategy reconstruction-v3)", RECONSTRUCT_SYSTEM_V4),
+  def("reconstruct", 5, "Experimental discourse evidence with minimal change and claim-level meaning rules (strategy reconstruction-v5)", RECONSTRUCT_SYSTEM_V5),
   def("analyze", 1, "Claim extraction before reconstruction", ANALYZE_SYSTEM),
   def("verify", 1, "Model-assisted meaning comparison", VERIFY_SYSTEM),
   def("voiceprint", 1, "Optional Voiceprint observations", VOICEPRINT_SYSTEM),

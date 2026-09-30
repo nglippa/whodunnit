@@ -4,6 +4,7 @@ import { computeMetrics, type WritingMetrics } from "./metrics";
 import type { RegisteredRule } from "./registry";
 import { indexText } from "./text-index";
 import { applyPrecedence, type TargetConstraint } from "./constraints";
+import { classifyDocumentStructure, type DocumentType, type StructuralScope } from "../discourse/structure";
 
 /**
  * analyzeWriting(text, rules) → metrics + findings. Deterministic and pure:
@@ -30,6 +31,22 @@ export interface PatternPermission {
   reason: string;
   /** Scope permission to the exact author's recurring opening. */
   opening?: string;
+  /** Rechecked against each analyzed text, including candidate post-checks. */
+  scope?: StructuralScope;
+  documentType?: DocumentType;
+}
+
+function structuralMatch(text: string, start: number, end: number, scope: StructuralScope): boolean {
+  const lineStart = text.lastIndexOf("\n", start - 1) + 1;
+  const prefix = text.slice(lineStart, start).trim();
+  const line = text.slice(lineStart).split(/\r?\n/, 1)[0].trim();
+  if (scope === "speaker-prefix") return !prefix && /^(?:[A-Z][a-z]+(?: [A-Z][a-z]+)?|[A-Z])(?:\s+\d{1,2}:\d{2})?:\s/.test(line);
+  if (scope === "dialogue-question") return /^(?:[A-Z][a-z]+(?: [A-Z][a-z]+)?|[A-Z]):\s/.test(line) && text.slice(start, end).includes("?");
+  if (scope === "mail-header") return !prefix && /^(?:From|To|Subject|Cc|Date):\s/i.test(line);
+  if (scope === "transcript-marker") return !prefix && /^\[(?:Recording|Transcript)\s+(?:starts|ends)\]/i.test(line);
+  const paragraphStart = text.slice(0, start).split(/\r?\n\s*\r?\n/).at(-1)?.trim() ?? "";
+  if (scope === "faq-question") return !paragraphStart && line.includes("?");
+  return (!paragraphStart || /^(?:[-*+]\s*|\d+[.)]\s*)$/.test(paragraphStart)) && /^(?:[-*+]\s|\d+[.)]\s)/.test(line);
 }
 
 export function toFinding(rule: RegisteredRule, matches: RuleFinding["matches"]): RuleFinding {
@@ -63,9 +80,16 @@ export function analyzeWriting(text: string, rules: RegisteredRule[], options: {
   }
   if (options.constraints?.length) findings = applyPrecedence(findings, options.constraints, metrics);
   if (options.permissions?.length) {
+    const candidateStructure = options.permissions.some((p) => p.documentType) ? classifyDocumentStructure(text) : null;
+    const needsDashCheck = options.permissions.some((p) => p.scope === "list-dash-dominance");
+    const bullets = needsDashCheck ? (text.match(/^\s*[-*+]\s/gm) ?? []).length : 0;
+    const listDashesDominate = bullets >= 2 && bullets >= (text.match(/—|–/g) ?? []).length * 2;
     findings = findings.map((f) => {
       if (f.suppressedBy || f.rule.layer === "semantic-safety") return f;
-      const permission = options.permissions?.find((p) => p.ruleId === f.rule.id && (!p.opening || f.matches.every((m) => text.slice(m.start, m.start + p.opening!.length).toLowerCase() === p.opening!.toLowerCase())));
+      const permission = options.permissions?.find((p) => p.ruleId === f.rule.id &&
+        (!p.documentType || (candidateStructure?.type === p.documentType && candidateStructure.confidence >= 0.8)) &&
+        (!p.opening || f.matches.every((m) => text.slice(m.start, m.start + p.opening!.length).toLowerCase() === p.opening!.toLowerCase())) &&
+        (!p.scope || (p.scope === "list-dash-dominance" ? listDashesDominate : f.matches.every((m) => structuralMatch(text, m.start, m.end, p.scope!)))));
       return permission ? { ...f, suppressedBy: { layer: permission.layer, reason: permission.reason } } : f;
     });
   }

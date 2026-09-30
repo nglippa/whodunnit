@@ -69,7 +69,17 @@ export const RECONSTRUCTION_V4 = define({
   description: "v3 planning with a frontier-owned decision, optional bounded wording assistance, independent verification, and one localized repair. Requires the experimental orchestrator runner.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4];
+/** Experimental deterministic discourse evidence. Production v1 is unchanged. */
+export const RECONSTRUCTION_V5 = define({
+  ...RECONSTRUCTION_V3,
+  version: 5,
+  name: "Reconstruction v5 (discourse evidence experiment)",
+  description: "v3 with conservative document-structure permissions and distributed discourse editing reasons. No model-assisted discourse analysis.",
+  prompt: { id: "reconstruct", version: 5 },
+  planning: { ...RECONSTRUCTION_V3.planning, discourse: true },
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

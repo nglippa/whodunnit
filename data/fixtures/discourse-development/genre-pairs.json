@@ -1,0 +1,557 @@
+[
+  {
+    "id": "G001",
+    "pairId": "G01",
+    "variant": "A",
+    "genre": "INTERVIEW",
+    "text": "Interviewer: When did the garden reopen?\nMara: Saturday morning. We had planned for Friday, but the rain left the path too soft for the wheelbarrows.\nInterviewer: Did the delay change the planting day?\nMara: Only a little. The volunteers put the seedlings in on Saturday afternoon. I was worried we'd lose people, but most of them came back after lunch.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The speaker answers concrete questions in her own conversational cadence.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G002",
+    "pairId": "G01",
+    "variant": "B",
+    "genre": "INTERVIEW",
+    "text": "Interviewer: When did the garden reopen?\nMara: The garden reopened on Saturday morning, which was a meaningful milestone for the garden. The garden had been scheduled to reopen Friday, but rain made the path too soft for wheelbarrows. This weather-related challenge created a delay.\nInterviewer: Did the delay change the planting day?\nMara: The delay changed the planting day only a little. Volunteers planted seedlings Saturday afternoon. Despite my concern about losing volunteers, most volunteers returned after lunch, demonstrating their commitment.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The answers preserve the facts but append generic interpretation and repeat the question wording.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G003",
+    "pairId": "G02",
+    "variant": "A",
+    "genre": "TRANSCRIPT",
+    "text": "[Recording starts]\nChair: Can everyone hear me? Jo, can you hear me?\nJo: I can now. The microphone was off.\nChair: Good. The roof inspection is Thursday, and we need the west stair clear by eight.\nJo: Thursday at eight, west stair. I will move the carts Wednesday evening.\nChair: Thanks. That gives the inspector a clear route.\n[Recording ends]",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The repeated hearing check and Jo’s restatement serve audible coordination in a transcript.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G004",
+    "pairId": "G02",
+    "variant": "B",
+    "genre": "TRANSCRIPT",
+    "text": "[Recording starts]\nChair: The roof inspection is Thursday. The west stair needs to be clear by eight on Thursday. It is important that the west stair be clear for the roof inspection.\nJo: I will move the carts Wednesday evening. Moving the carts Wednesday evening will clear the west stair by eight Thursday.\nChair: The inspector will then have a clear route, which is important for the inspection.\n[Recording ends]",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The second transcript repeats settled logistics without adding interaction or clarification.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G005",
+    "pairId": "G03",
+    "variant": "A",
+    "genre": "FAQ",
+    "text": "Can I borrow the projector overnight?\nYes, if your reservation covers the following morning. Pick it up before the desk closes at 6 p.m.\n\nWhat if the cable is missing?\nTell the desk before you leave. Staff can usually replace it from the drawer behind the counter.\n\nDo I need to erase my files?\nThe projector does not store files, but please sign out of any streaming account you used.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The answers give direct actions at the point where readers need them.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G006",
+    "pairId": "G03",
+    "variant": "B",
+    "genre": "FAQ",
+    "text": "Can I borrow the projector overnight?\nProjector borrowing is an available option for eligible reservations. Reservations must cover the following morning, and pickup must occur before the desk closes at 6 p.m.\n\nWhat if the cable is missing?\nA missing cable is a situation that should be communicated to the desk prior to departure. Staff can usually provide a replacement from the drawer behind the counter.\n\nDo I need to erase my files?\nFile erasure is not required because the projector does not store files. However, signing out of streaming accounts is recommended.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REGISTER_CLUSTER",
+      "GENERICNESS"
+    ],
+    "rationale": "The answers keep the policies but replace plain directions with abstract administrative phrasing.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G007",
+    "pairId": "G04",
+    "variant": "A",
+    "genre": "CHAT",
+    "text": "Nina 9:14: Are the prints ready for the lobby?\nEli 9:15: Almost. The blue in the first batch came out gray, so I am rerunning three sheets.\nNina 9:15: Oof. Need help trimming?\nEli 9:16: Yes, if you have ten minutes at 10.\nNina 9:16: I'll be there. Three sheets only?\nEli 9:17: Three. The rest are fine.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The short turns and confirmation match a practical chat exchange.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G008",
+    "pairId": "G04",
+    "variant": "B",
+    "genre": "CHAT",
+    "text": "Nina 9:14: Are the prints ready for the lobby?\nEli 9:15: The prints are almost ready for the lobby. The blue in the first batch came out gray, so I am rerunning three sheets to ensure the prints meet expectations.\nNina 9:15: I understand the issue with the blue. Would assistance with trimming be helpful?\nEli 9:16: Assistance with trimming would be helpful if you have ten minutes at 10.\nNina 9:16: I will provide assistance at 10. Please confirm the number of sheets.\nEli 9:17: The number is three; the rest are fine.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REGISTER_CLUSTER",
+      "REDUNDANCY"
+    ],
+    "rationale": "The rewritten turns sound like formal summaries and echo information already understood.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G009",
+    "pairId": "G05",
+    "variant": "A",
+    "genre": "NOTES",
+    "text": "Facilities meeting, 12 May\nPresent: Inez, Paul, Ren\n- Leak over the archive shelves: Paul will photograph the ceiling before the roofer visits Friday.\n- Temporary storage: Ren can lend two dry cabinets until the repair is signed off.\n- Friday closure: Inez will put a notice on the archive door by Wednesday.\nOpen question: Can the cabinets fit through the east doorway? Ren will measure it this afternoon.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The headings and bullets preserve decisions, owners, and one unresolved question.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G010",
+    "pairId": "G05",
+    "variant": "B",
+    "genre": "NOTES",
+    "text": "Facilities meeting, 12 May\nPresent: Inez, Paul, Ren\n- Leak: The leak over the archive shelves was discussed. Paul will photograph the ceiling before the roofer visits Friday.\n- Storage: Temporary storage was discussed. Ren can lend two dry cabinets until the repair is signed off.\n- Closure: The Friday closure was discussed. Inez will put a notice on the archive door by Wednesday.\n- Question: A question was raised about whether the cabinets fit through the east doorway. Ren will measure it this afternoon.\nThese discussions established next steps for the group.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "Each bullet announces its own topic before repeating it, and the closing sentence adds nothing.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G011",
+    "pairId": "G06",
+    "variant": "A",
+    "genre": "PROCEDURE",
+    "text": "To return a borrowed field meter, switch it off and wipe the probe with the cloth in its case. Put the meter and both leads in the foam cutouts; loose leads can bend the probe during transit. At the desk, tell the attendant if the display flickered or the battery warning appeared. The attendant will mark the return in the log. If the desk is closed, use the padded drop box beside the lab door.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The sequence is clear and its one explanation prevents damage.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G012",
+    "pairId": "G06",
+    "variant": "B",
+    "genre": "PROCEDURE",
+    "text": "Returning a borrowed field meter is a process with several steps. First, switch off the meter. Next, wipe the probe with the cloth in its case. Then, put the meter and both leads in the foam cutouts. This placement is important because loose leads can bend the probe during transit. After that, tell the desk attendant about any display flicker or battery warning, and the attendant will mark the return in the log. Finally, if the desk is closed, use the padded drop box beside the lab door. Following these steps supports an effective return process.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "MECHANICAL_STRUCTURE",
+      "GENERICNESS"
+    ],
+    "rationale": "The numbered cadence and empty opening and closing obscure a simple procedure.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G013",
+    "pairId": "G07",
+    "variant": "A",
+    "genre": "POLICY",
+    "text": "Staff may take one paid day to vote in a public election when their scheduled shift prevents them from voting outside work. Tell your manager at least two days ahead when possible so coverage can be arranged. The day does not reduce annual leave. If an election is called with less notice, tell your manager as soon as you know your polling date.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The policy states eligibility, notice, and leave treatment without ceremonial language.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G014",
+    "pairId": "G07",
+    "variant": "B",
+    "genre": "POLICY",
+    "text": "The organization is committed to supporting civic participation through its voting leave policy. Staff may take one paid day to vote in a public election when their scheduled shift prevents them from voting outside work. In order to support operational continuity, staff should tell their manager at least two days ahead when possible so coverage can be arranged. Voting leave does not reduce annual leave. In circumstances where an election is called with less notice, staff should communicate their polling date to their manager as soon as they know it. This policy reflects our commitment to civic participation.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The second version adds a repeated commitment statement and formal padding around the same rules.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G015",
+    "pairId": "G08",
+    "variant": "A",
+    "genre": "PROCEDURE",
+    "text": "Resetting the room sensor\n1. Hold the side button until the screen goes blank, about five seconds.\n2. Wait for the room number to reappear. If it does not appear within a minute, check that the wall adapter is seated.\n3. Read the temperature aloud to a colleague and compare it with the wall gauge. If the readings differ by more than two degrees, leave the sensor offline and file a maintenance ticket. Otherwise, return it to service.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The numbered steps carry distinct actions and a safety decision.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G016",
+    "pairId": "G08",
+    "variant": "B",
+    "genre": "PROCEDURE",
+    "text": "Resetting the room sensor\n1. Hold the side button until the screen goes blank, about five seconds. This is the first reset step.\n2. Wait for the room number to reappear. This is the next reset step. If it does not appear within a minute, check that the wall adapter is seated.\n3. Read the temperature aloud to a colleague and compare it with the wall gauge. This comparison is an important verification step. If the readings differ by more than two degrees, leave the sensor offline and file a maintenance ticket. Otherwise, return it to service.\nThese steps make the reset process clear and reliable.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The variant narrates the list structure and adds reassurance without changing the decision rule.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G017",
+    "pairId": "G09",
+    "variant": "A",
+    "genre": "MIXED",
+    "text": "From: Lea\nTo: Tomas\nSubject: Studio key\n\nCould you leave the studio key with reception tonight? I need the room at seven tomorrow to photograph the repaired frames. The sign-in sheet is still in the top drawer.\n\nFrom: Tomas\nTo: Lea\nSubject: Re: Studio key\n\nSure. I will drop it off after the last class at six. Please put it back by noon; the framing group has the room then.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The two messages convey handoff and timing in believable colleague voices.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G018",
+    "pairId": "G09",
+    "variant": "B",
+    "genre": "MIXED",
+    "text": "From: Lea\nTo: Tomas\nSubject: Studio key\n\nI am writing to request that you leave the studio key with reception tonight. I need the room at seven tomorrow to photograph the repaired frames. Please note that the sign-in sheet remains in the top drawer.\n\nFrom: Tomas\nTo: Lea\nSubject: Re: Studio key\n\nThank you for your message regarding the studio key. I can confirm that I will drop it off after the last class at six. I kindly request that you return it by noon, as the framing group has the room at that time. Thank you for your cooperation.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REGISTER_CLUSTER",
+      "GENERICNESS"
+    ],
+    "rationale": "Both messages adopt the same stiff correspondence register for a routine key exchange.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G019",
+    "pairId": "G10",
+    "variant": "A",
+    "genre": "LIST",
+    "text": "For the Saturday seed swap, bring:\n- Seeds in labeled envelopes. Include the plant name and harvest year.\n- A small tray for loose packets; the tables are slatted.\n- A pen. We will have labels, but the shared pens tend to wander.\n\nPlease leave opened commercial seed packets at home. We cannot tell how old they are once the date flap is gone.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The three items have distinct reasons and the final exception is useful.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G020",
+    "pairId": "G10",
+    "variant": "B",
+    "genre": "LIST",
+    "text": "For the Saturday seed swap, bring:\n- Seeds in labeled envelopes. Label the envelopes with the plant name and harvest year so the seeds are labeled.\n- A small tray for loose packets. The tables are slatted, and a tray helps with loose packets on slatted tables.\n- A pen. Pens are helpful because shared pens tend to wander.\n\nDo not bring opened commercial seed packets. Opened commercial packets may have lost their date flap, and without the date flap we cannot tell how old they are.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The list retains useful constraints but repeats each item or explanation within its bullet.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G021",
+    "pairId": "G11",
+    "variant": "A",
+    "genre": "CHAT",
+    "text": "Arun 14:02: The gate code changed today. It's 4821.\nBea 14:03: 4821? Just checking before I send the courier.\nArun 14:03: Yes, 4821. The old code stopped working at noon.\nBea 14:04: Got it. Courier arrives around three.\nArun 14:04: I'll be by the loading door then.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The repeated code is a live confirmation before a courier is sent.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G022",
+    "pairId": "G11",
+    "variant": "B",
+    "genre": "CHAT",
+    "text": "Arun 14:02: The gate code changed today. It is 4821. The gate code is now 4821 because the old code stopped working at noon.\nBea 14:03: I will send the courier, who arrives around three.\nArun 14:04: I will be by the loading door at three when the courier arrives. The gate code remains 4821.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY"
+    ],
+    "rationale": "The repeated code has no confirming turn or new purpose in the shorter exchange.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G023",
+    "pairId": "G12",
+    "variant": "A",
+    "genre": "PROSE",
+    "text": "The little ferry stopped running at dusk. Anyone who missed it had to take the bridge six miles upstream, so Lila kept one eye on the clock while she packed the library returns. At five forty, the last reader came in with a damp atlas. She took it, stamped the slip, and ran down the hill with enough time to see the ferryman untie the rope.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The details and timing make the short scene intelligible without explanation.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G024",
+    "pairId": "G12",
+    "variant": "B",
+    "genre": "PROSE",
+    "text": "The ferry was an important means of transport for local residents. It stopped running at dusk. People who missed the ferry needed to use a bridge six miles upstream. Lila was aware of this timing as she packed the library returns. At five forty, a reader brought in a damp atlas. Lila processed the return by stamping the slip. She then went down the hill and arrived as the ferryman untied the rope. This sequence illustrates the importance of timing.",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "phenomena": [
+      "GENERICNESS",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The scene is converted into abstract exposition that drains its narrative movement.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G025",
+    "pairId": "G13",
+    "variant": "A",
+    "genre": "MIXED",
+    "text": "Subject: Saturday repair clinic\n\nThe bike clinic starts at ten behind the market. We have enough stands for six bikes at once, so please ask walk-ins to leave a name if the line reaches the gate.\n\nDesk note for volunteers:\n- Mira has the spare tubes and patch kits.\n- Check brakes before anyone rides away.\n- The pump nearest the door sticks; use the blue one.\n\nI will arrive at nine thirty to set out the signs. — Dev",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The email and desk note serve different readers while sharing one event.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G026",
+    "pairId": "G13",
+    "variant": "B",
+    "genre": "MIXED",
+    "text": "Subject: Saturday repair clinic\n\nThe bike clinic starts at ten behind the market. We have enough stands for six bikes at once. This means six bikes can be accommodated at one time, which is a useful capacity guideline. Ask walk-ins to leave a name if the line reaches the gate.\n\nDesk note for volunteers:\n- Spare tubes and patch kits are available from Mira.\n- Brake checking is an important step before anyone rides away.\n- The pump nearest the door sticks, so using the blue pump is recommended.\n\nI will arrive at nine thirty to set out the signs. These points should help us run an effective clinic. — Dev",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "rationale": "The variant dilutes actionable instructions with repeated capacity and generic reassurance.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G027",
+    "pairId": "G14",
+    "variant": "A",
+    "genre": "FAQ",
+    "text": "Why is the rehearsal room locked on Mondays?\nThe piano tuner works there on Monday mornings. The room opens at one unless the tuner leaves a sign on the door.\n\nCan I leave a music stand inside?\nYes, on the rack by the window. Please take scores and personal instruments home.\n\nWho handles a stuck lock?\nCall the front desk. The staff member on duty has the spare key; please do not force the handle.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The FAQ repeats question form only as a navigation aid and gives specific answers.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G028",
+    "pairId": "G14",
+    "variant": "B",
+    "genre": "FAQ",
+    "text": "Why is the rehearsal room locked on Mondays?\nThe piano tuner works there on Monday mornings. The room opens at one unless the tuner leaves a sign on the door. This schedule is in place to accommodate the piano tuner.\n\nCan I leave a music stand inside?\nYes, on the rack by the window. Scores and personal instruments should be taken home. The rack is the designated location for music stands.\n\nWho handles a stuck lock?\nCall the front desk. The staff member on duty has the spare key. Do not force the handle, as the lock may be stuck.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The variant adds tautological justifications to answers that were already clear.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G029",
+    "pairId": "G15",
+    "variant": "A",
+    "genre": "INTERVIEW",
+    "text": "Interviewer: You wrote that the night shift was quiet. Was it?\nRafi: Until the last hour. The freezer alarm sounded at four, but the temperature was still in range. I called maintenance anyway.\nInterviewer: Why?\nRafi: Because it had done the same thing on Tuesday. Once can be a loose contact; twice is a pattern.\nInterviewer: Did maintenance find anything?\nRafi: A pinched wire behind the panel. They replaced it before breakfast.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The follow-up question allows the speaker’s practical inference to emerge naturally.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G030",
+    "pairId": "G15",
+    "variant": "B",
+    "genre": "INTERVIEW",
+    "text": "Interviewer: You wrote that the night shift was quiet. Was it?\nRafi: The night shift was quiet until the last hour. At four, the freezer alarm sounded, although the temperature remained in range. I called maintenance because the alarm had also sounded on Tuesday. A repeated alarm can indicate a pattern rather than a one-time loose contact.\nInterviewer: Did maintenance find anything?\nRafi: Maintenance found a pinched wire behind the panel and replaced it before breakfast. The issue was resolved before breakfast.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "REDUNDANCY",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The compressed answer keeps the facts but turns the exchange into a repetitive report.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G031",
+    "pairId": "G16",
+    "variant": "A",
+    "genre": "NOTES",
+    "text": "Quarterly handover, 3 September\nAttending: Sal, Mette, Oren\n\nDecisions\n- Keep the west entrance open during the painting; contractors will use the service lift.\n- Move the visitor desk to the window alcove from Monday through Wednesday.\n\nActions\n- Mette: borrow two folding tables from events by Friday.\n- Oren: update the floor map before doors open Monday.\n- Sal: confirm the paint delivery tomorrow.\n\nStill open: The alcove has only one outlet. Sal will ask facilities whether a second extension is permitted.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The triad of decisions, actions, and open issues makes the handover easy to use.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G032",
+    "pairId": "G16",
+    "variant": "B",
+    "genre": "NOTES",
+    "text": "Quarterly handover, 3 September\nAttending: Sal, Mette, Oren\n\nDecisions\n- The decision was made to keep the west entrance open during the painting. Contractors will use the service lift.\n- The decision was made to move the visitor desk to the window alcove Monday through Wednesday.\n\nActions\n- Mette has an action to borrow two folding tables from events by Friday.\n- Oren has an action to update the floor map before doors open Monday.\n- Sal has an action to confirm the paint delivery tomorrow.\n\nStill open: An open issue remains concerning the alcove's single outlet. Sal will ask facilities whether a second extension is permitted. This issue remains open pending that answer.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "MECHANICAL_STRUCTURE",
+      "REDUNDANCY"
+    ],
+    "rationale": "The variant recites the section labels in every item and restates the unresolved status.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G033",
+    "pairId": "G17",
+    "variant": "A",
+    "genre": "PROCEDURE",
+    "text": "Preparing the community hall after a flood warning\n\nThe hall coordinator checks the river notice at six each morning during a warning. If the gauge is below the marked line and the council has not issued a closure, the hall stays open. The coordinator records the gauge reading and time on the clipboard by the office door. A second volunteer confirms the reading before chairs or equipment are moved. This check matters because last spring's readings changed sharply between dawn and the first class.\n\nWhen the gauge reaches the marked line, cancel activities for the day and call the people listed on the booking sheet. Start with the groups due before noon; they are most likely to already be travelling. The booking sheet gives a lead contact for each group. Leave a message if a contact does not answer, then send a text using the number beside the name. Do not post a general reopening time, since the council may keep the riverside path closed after the hall itself is dry.\n\nTwo volunteers move the boxes of paper records from the lower cupboard to the shelves in the office. They do not move the piano or the locked medicine cabinet. The piano needs a mover, and the cabinet belongs to the clinic. Roll the entrance mats and store them on the high rack so they can dry. Before leaving, check the kitchen window latches and switch off the kettle and the portable heaters. The main lights stay on for the caretaker.\n\nThe coordinator tells the caretaker which rooms were cleared and which calls were unanswered. The caretaker, not the volunteers, decides when the building can be reopened. The next morning, the coordinator checks the council notice and calls the caretaker before inviting any group back. If the hall was closed only as a precaution and no water entered, volunteers can return the records and mats after the caretaker gives clearance. If water entered, wait for the cleaning contractor's inspection.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE"
+    ],
+    "rationale": "The procedure distinguishes checks, closure actions, and reopening authority with concrete reasons.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G034",
+    "pairId": "G17",
+    "variant": "B",
+    "genre": "PROCEDURE",
+    "text": "Preparing the community hall after a flood warning\n\nThe hall coordinator should carry out a morning check at six during a flood warning. The morning check involves checking the river notice. If the gauge is below the marked line and the council has not issued a closure, the hall can stay open. The coordinator records the gauge reading and time on the clipboard by the office door, and a second volunteer confirms the reading before chairs or equipment are moved. This confirmation is part of the checking process. Last spring, readings changed sharply between dawn and the first class, which shows why checking matters.\n\nIf the gauge reaches the marked line, the coordinator should cancel activities for the day and contact people on the booking sheet. Contact the groups due before noon first, since they may already be travelling. The booking sheet contains a lead contact for each group. If the lead contact does not answer, leave a message and send a text to the number beside the name. Communication is important during the cancellation process. Do not announce a general reopening time because the council may keep the riverside path closed after the hall is dry.\n\nThe next step involves moving property. Two volunteers move boxes of paper records from the lower cupboard to the office shelves. The piano should not be moved because it needs a mover. The locked medicine cabinet should not be moved because it belongs to the clinic. The entrance mats should be rolled and put on the high rack so they can dry. Before leaving, volunteers check the kitchen window latches and turn off the kettle and portable heaters. The main lights stay on for the caretaker. These tasks help prepare the hall.\n\nThe coordinator informs the caretaker which rooms were cleared and which calls were unanswered. The caretaker decides when the building can reopen. The following morning, the coordinator checks the council notice and calls the caretaker before inviting groups back. If no water entered and the hall was closed as a precaution, volunteers may return the records and mats after caretaker clearance. If water entered, they must wait for the cleaning contractor's inspection. Following the correct reopening process helps the hall resume activities appropriately.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "MECHANICAL_STRUCTURE",
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "rationale": "The variant retains all steps but adds process commentary that obscures the critical conditions.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G035",
+    "pairId": "G18",
+    "variant": "A",
+    "genre": "POLICY",
+    "text": "Archive access for visiting researchers\n\nVisiting researchers may consult boxed collections in the reading room after registering at the front desk. Registration requires a name, institutional or personal contact address, and the collection requested. An institutional affiliation is not required. Staff use the register to locate requested boxes and to contact a visitor if an item is found out of order after their session.\n\nA researcher may request up to three boxes at a time. Staff bring one box to the table and hold the others behind the desk. This limit keeps folder order manageable and leaves enough space for other readers. Researchers may photograph documents without flash unless a folder carries a restriction slip. The slip states whether permission is needed from the donor or whether copying is barred altogether. Staff can explain a restriction, but they cannot waive it at the desk.\n\nFood, ink pens, and bags stay in the lockers by the entrance. Pencils, laptops, and a phone used as a camera are allowed at the table. If a researcher needs an assistive device that will not fit on the table, staff will arrange a larger workspace where possible. Researchers should ask before moving furniture; the reading room has two narrow routes that must stay clear for evacuation.\n\nAt closing time, staff record the last folder consulted and return all boxes to storage. A researcher who plans to return the next day may ask staff to hold the same boxes overnight, subject to space. The request does not reserve a table. If a box appears damaged or a document is missing, the researcher should stop using it and tell staff immediately. Staff will record the issue and decide whether the rest of the box can be consulted.\n\nThe reading room is open Tuesday through Saturday, ten to five. Box requests stop at four thirty so staff have time to retrieve and return collections before closing. Visitors who arrive later may still use the catalog and ask staff about a future appointment.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The formal register is appropriate to a policy whose exceptions and authority need precision.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G036",
+    "pairId": "G18",
+    "variant": "B",
+    "genre": "POLICY",
+    "text": "Archive access for visiting researchers\n\nThe archive is committed to supporting access to boxed collections for visiting researchers. Visiting researchers may consult boxed collections in the reading room after registering at the front desk. Registration includes a name, institutional or personal contact address, and the requested collection. Institutional affiliation is not required. The register serves several important purposes: helping staff locate boxes and allowing staff to contact a visitor if an item is found out of order after a session. These purposes support responsible access.\n\nResearchers may request up to three boxes at one time. One box is brought to the table while other requested boxes remain behind the desk. This three-box policy helps staff manage folder order and keeps space available for other readers. Photography without flash is allowed unless a folder has a restriction slip. The restriction slip explains whether donor permission is needed or copying is barred altogether. Staff may explain the restriction, but they cannot waive it at the desk. Following the restriction slip is important.\n\nFood, ink pens, and bags must stay in the entrance lockers. Pencils, laptops, and a phone used as a camera may be used at the table. Staff will arrange a larger workspace where possible for researchers with an assistive device that does not fit on the table. Researchers should ask before moving furniture. This is because two narrow routes in the reading room must remain clear for evacuation. Keeping routes clear supports safe use of the room.\n\nAt closing time, staff record the last folder consulted and return all boxes to storage. Researchers planning to return the next day may request an overnight hold, depending on available space. An overnight hold does not reserve a table. If a box appears damaged or a document is missing, the researcher should stop using it and inform staff immediately. Staff will record the issue and decide whether the remainder of the box may be consulted. This reporting process supports care of the collection.\n\nThe reading room operates Tuesday through Saturday, from ten to five. Requests for boxes stop at four thirty, allowing time for staff to retrieve and return collections before closing. Visitors arriving after that time can use the catalog and inquire about a future appointment. These hours help staff manage collection access.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The variant repeatedly announces institutional aims and restates rules without adding policy content.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G037",
+    "pairId": "G19",
+    "variant": "A",
+    "genre": "PROSE",
+    "text": "The survey covered three blocks of the old harbor district during the first week of June. Twenty-eight ground-floor shopkeepers returned the questionnaire, and twelve agreed to a short follow-up conversation. The questionnaire asked when deliveries arrived, where drivers stopped, and whether a loading bay was available. Interviewers also walked each block twice, once before nine in the morning and once after lunch. These observations were recorded separately from respondents' accounts so that a report of an obstruction was not counted as a witnessed obstruction.\n\nMost shops received deliveries before ten, but their access varied by street. On Canal Street, five shops shared a marked loading bay and drivers usually stopped there. On Mill Lane, no loading bay existed; six respondents said drivers often stopped beside the bus shelter. The afternoon walk found two vans at that spot, though a single visit cannot establish how often it is used. The third block, Wharf Road, had a loading bay but its curb was partly blocked by a temporary fence during the survey week.\n\nThe data suggest that moving the fence on Wharf Road may resolve one immediate constraint. Mill Lane presents a different question: adding a loading space might reduce stops beside the shelter, but the survey did not measure bus delays or pedestrian exposure. Nor did it cover weekend deliveries. The report therefore recommends a two-week count of stopping locations and bus arrivals on Mill Lane before a layout change is proposed. Shopkeepers should be shown the count results, including periods when no obstruction occurred, before the council selects a design. The responses are useful for identifying where to look; they do not by themselves show that one intervention will work.\n\nThe questionnaire went only to fixed ground-floor shops. Street vendors and upper-floor businesses were outside its scope, even though their deliveries may use the same curb. The follow-up count should record all vehicles stopping at the shelter, regardless of which business they serve.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE",
+      "REGISTER_CLUSTER"
+    ],
+    "rationale": "The formal report distinguishes observed evidence, respondent accounts, and limits of inference.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G038",
+    "pairId": "G19",
+    "variant": "B",
+    "genre": "PROSE",
+    "text": "The survey of the old harbor district provides important insights into delivery access. It covered three blocks during the first week of June, with twenty-eight ground-floor shopkeepers returning a questionnaire and twelve joining follow-up conversations. Questions addressed delivery times, stopping places, and loading bay availability. Interviewers also walked each block before nine and after lunch. These observations were kept separate from respondents' accounts. This separation is important because a reported obstruction is not the same as a witnessed obstruction.\n\nThe findings show that most shops received deliveries before ten, while access conditions differed by street. On Canal Street, five shops shared a marked loading bay that drivers usually used. On Mill Lane, no loading bay existed, and six respondents said drivers often stopped beside the bus shelter. Two vans were seen there on the afternoon walk. However, this single observation does not establish frequency. On Wharf Road, a temporary fence partly blocked the loading bay during the survey week. These findings highlight the varied nature of delivery access.\n\nThe report identifies several important considerations. Moving the Wharf Road fence could address an immediate constraint. Mill Lane may require a loading space to reduce stops by the shelter, but the survey did not measure bus delays or pedestrian exposure. The survey did not cover weekend deliveries either. For these reasons, a two-week count of stopping locations and bus arrivals is recommended before proposing a Mill Lane layout change. Shopkeepers should see the results, including periods without an obstruction, before the council selects a design. In conclusion, the survey provides a useful foundation for further consideration, while additional information is needed to determine which intervention will work.\n\nThe questionnaire was distributed only to fixed ground-floor shops. Street vendors and upper-floor businesses were outside the survey scope, although their deliveries may also use the curb. The proposed follow-up count should include all vehicles stopping at the shelter, regardless of the business they serve. This broader count would improve the evidence base.",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "phenomena": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "REDUNDANCY"
+    ],
+    "rationale": "The variant keeps the evidence but wraps each section in generic importance claims and a stock conclusion.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G039",
+    "pairId": "G20",
+    "variant": "A",
+    "genre": "MIXED",
+    "text": "From: Jo, venue coordinator\nTo: Exhibition team\nSubject: Opening night handoff\n\nDoors open at 6:30 on Friday. The east gallery remains closed while the floor finish cures, so guests should enter through the courtyard and follow the signs to the west gallery. The ticket scanner will be at the courtyard desk. Please do not send guests to the main entrance even if they have used it for previous openings; the alarm on that door will still be armed.\n\nI walked the route with Ada this morning. The slope through the courtyard is usable, but the loose mat near the side gate has to go. Ada will remove it before Thursday's sound check. We also need a chair beside the ticket desk for anyone who cannot stand in the line. I will bring one from the office; if the line reaches the gate, volunteers can take names and invite people to wait inside the covered passage.\n\nVolunteer handoff, Friday 5:45:\n- Set the arrow signs at the street corner, courtyard gate, and west gallery door.\n- Test the scanner with the sample ticket; do not use a guest ticket for the test.\n- Keep the passage clear of crates and coat racks.\n- At 6:15, tell the door lead whether the mat is gone and the chair is in place.\n\nIf the scanner loses its connection, the door lead has a printed guest list in a sealed envelope. Use it only while the connection is down, then return it to the envelope. The list goes back to me after the event. Ada will check the east gallery lock once the sound crew leaves, and I will do the final walk at six. Reply here if any part of the route is blocked during setup; that needs attention before guests arrive.\n\nThe courtyard is exposed to rain, so the spare signs should stay under the desk until needed. If a downpour starts, the door lead can move the waiting line into the covered passage without changing the entrance route.",
+    "disposition": "LEAVE_ALONE",
+    "phenomena": [
+      "LEGITIMATE_STRUCTURE",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The email and checklist combine naturally because each serves a different handoff need.",
+    "provenance": "synthetic-newly-authored"
+  },
+  {
+    "id": "G040",
+    "pairId": "G20",
+    "variant": "B",
+    "genre": "MIXED",
+    "text": "From: Jo, venue coordinator\nTo: Exhibition team\nSubject: Opening night handoff\n\nThe following information outlines the opening night arrangements. Doors open at 6:30 on Friday. The east gallery is closed while the floor finish cures. Guests must enter through the courtyard and follow signs to the west gallery. The ticket scanner will be at the courtyard desk. The main entrance should not be used, even by returning guests, because its alarm remains armed. Using the correct entrance is an important part of the opening night arrangements.\n\nThe route was reviewed with Ada this morning as part of route preparation. The courtyard slope is usable. Ada will remove the loose mat near the side gate before Thursday's sound check. A chair is also needed beside the ticket desk for anyone unable to stand in line. Providing the chair is another important preparation step. I will bring one from the office. If the line reaches the gate, volunteers can take names and invite people to wait in the covered passage.\n\nVolunteer handoff, Friday 5:45:\n- Put arrow signs at the street corner, courtyard gate, and west gallery door.\n- Test the scanner with the sample ticket, not a guest ticket.\n- Keep crates and coat racks out of the passage.\n- At 6:15, report whether the mat is gone and the chair is in place.\n\nIf the scanner loses connection, the door lead has a printed guest list in a sealed envelope. Use it only during the outage, then return it to the envelope. The list goes back to me after the event. Ada will check the east gallery lock after the sound crew leaves. I will do the final walk at six. If any part of the route is blocked during setup, reply here before guests arrive. Timely reporting of blocked areas will help the team address opening night issues.\n\nThe courtyard is exposed to rain. Keep spare signs under the desk until needed. If heavy rain starts, the door lead may move the waiting line into the covered passage; guests should still enter through the courtyard. This weather arrangement provides a plan for rain while maintaining the established entrance route.",
+    "disposition": "LIGHT_EDIT",
+    "phenomena": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The email retains the handoff facts but repeats its purpose and replaces direct instructions with process commentary.",
+    "provenance": "synthetic-newly-authored"
+  }
+]

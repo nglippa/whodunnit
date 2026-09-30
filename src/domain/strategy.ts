@@ -43,6 +43,8 @@ export const rewriteStrategySchema = z
          * Absent = off: strategies published before it keep their plans.
          */
         sourceVoice: z.boolean().optional(),
+        /** Experimental document structure and discourse evidence; absent for published strategies. */
+        discourse: z.boolean().optional(),
       })
       .strict(),
     constraintPolicy: z

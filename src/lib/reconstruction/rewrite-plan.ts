@@ -26,6 +26,8 @@ import { RULE_FAMILIES, activeFamilies, removableSpans } from "../rules/families
 import { blankDates, extractDates } from "../semantics/dates";
 import { protectedPhrasesFor } from "../semantics/phrases";
 import { countNegations, extractDateWords, extractLinks, extractNames, extractNumbers, extractQuotations } from "../verification/protected";
+import { analyzeDiscourse, type DiscourseAnalysis } from "../discourse/analyze";
+import { classifyDocumentStructure, structurePermission } from "../discourse/structure";
 
 /**
  * The rewrite plan is compiled before any model call. It is the contract the
@@ -99,6 +101,9 @@ export interface RewritePlan {
   /** How much the text needs changing, from the measurements (see chooseIntensity). */
   intensity: RewriteIntensity;
   intensityReasons: string[];
+  /** Experimental v5 editing scope. Advisory observations never force change. */
+  changeScope?: "UNCHANGED" | "LOCAL_EDIT" | "DISTRIBUTED_LIGHT_EDIT" | "SUBSTANTIVE_RECONSTRUCTION";
+  discourse?: DiscourseAnalysis;
   /** Which strategy compiled this plan, and what a prioritised budget left out (with reasons). */
   budget: { strategy: string; mode: RewriteStrategy["planning"]["mode"]; omitted: OmittedItem[] };
   /** The analysis the plan was built from (for post-checks). */
@@ -274,10 +279,26 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
   const { source, profile, refinement } = input;
   const registry = getRegistry();
   const rules = rulesForProfile(profile, registry);
+  const structure = strategy.planning.discourse ? classifyDocumentStructure(source) : undefined;
+  const structurePermissions: PatternPermission[] = structure
+    ? rules.flatMap((rule) => {
+        const permission = structurePermission(structure, rule.id, source);
+        return permission ? [{ ruleId: rule.id, layer: "source-voice" as const, ...permission }] : [];
+      })
+    : [];
   // Two passes: measure how templated the source is, then decide which devices are the author's habits.
   const baseConstraints = buildConstraints(input);
-  const pre = analyzeWriting(source, rules, { constraints: baseConstraints });
-  const slopDensity = round((pre.findings.filter((f) => !f.suppressedBy && f.rule.severity !== "info" && !DEVICE_RULES.has(f.rule.id)).length / Math.max(1, pre.metrics.words)) * 100, 2);
+  const pre = analyzeWriting(source, rules, { constraints: baseConstraints, permissions: structurePermissions });
+  const commonOpenerPermissions: PatternPermission[] = strategy.planning.discourse
+    ? pre.findings.filter((finding) => ["core.repeated-sentence-openers", "core.repeated-paragraph-openers"].includes(finding.rule.id) && finding.matches.length > 0 && finding.matches.every((m) => /^(?:the|a|an)$/i.test(m.excerpt.trim())))
+      .map((finding) => ({ ruleId: finding.rule.id, layer: "source-voice" as const, reason: "a repeated article alone does not establish a mechanical opening" }))
+    : [];
+  const headerPermissions: PatternPermission[] = strategy.planning.discourse && structure && ["EMAIL", "MIXED"].includes(structure.type) && structure.confidence >= 0.8
+    ? pre.findings.filter((finding) => finding.rule.id === "slop.dramatic-fragments" && finding.matches.length > 0 && finding.matches.every((m) => /^(?:From|To|Subject|Cc|Date):/i.test(m.excerpt.trim())))
+      .map((finding) => ({ ruleId: finding.rule.id, layer: "source-voice" as const, reason: "mail headers are document structure, not dramatic fragments", scope: "mail-header" as const, documentType: structure.type }))
+    : [];
+  const contextual = new Set([...commonOpenerPermissions, ...headerPermissions].map((p) => p.ruleId));
+  const slopDensity = round((pre.findings.filter((f) => !f.suppressedBy && !contextual.has(f.rule.id) && f.rule.severity !== "info" && !DEVICE_RULES.has(f.rule.id)).length / Math.max(1, pre.metrics.words)) * 100, 2);
   const voice = sourceVoiceProfile(source, slopDensity);
   const openerFinding = pre.findings.find((f) => f.rule.id === "core.repeated-sentence-openers");
   const supportsOpening = (opening: string) => {
@@ -289,11 +310,12 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
   const vpOpening = input.voiceprint?.stats && input.voiceprint.confidence >= 0.6
     ? input.voiceprint.stats.recurringOpeners.find(supportsOpening)
     : undefined;
-  const permissions: PatternPermission[] = vpOpening
+  const voicePermissions: PatternPermission[] = vpOpening
     ? [{ ruleId: "core.repeated-sentence-openers", layer: "voiceprint", opening: vpOpening, reason: `Voiceprint “${input.voiceprint!.name}” accepts the recurring opening “${vpOpening}”.` }]
     : voiceOpening && supportsOpening(voiceOpening)
       ? [{ ruleId: "core.repeated-sentence-openers", layer: "source-voice", opening: voiceOpening, reason: `Source voice accepts the repeated opening “${voiceOpening}”.` }]
       : [];
+  const permissions: PatternPermission[] = [...voicePermissions, ...structurePermissions, ...commonOpenerPermissions, ...headerPermissions];
   // The profile is always measured (evaluation reads it); only strategies that opt in let it shape the plan.
   const constraints = strategy.planning.sourceVoice ? [...baseConstraints, ...constraintsFromSourceVoice(voice, pre.metrics)] : baseConstraints;
   const analysis = analyzeWriting(source, rules, { constraints, permissions });
@@ -357,7 +379,14 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
 
   const srcWords = words(source).length;
   const safety = registry.query({ packIds: ["semantic-safety"], enabledOnly: true });
-  const { intensity, reasons: intensityReasons } = chooseIntensity(avoid, targetRanges, refinement);
+  const discourse = strategy.planning.discourse ? analyzeDiscourse(source, { profile, voiceprint: input.voiceprint, sourceVoice: voice, structure }) : undefined;
+  const baseIntensity = chooseIntensity(avoid, targetRanges, refinement);
+  const discourseAction = discourse?.findings.some((f) => f.action === "SUBSTANTIVE_RECONSTRUCTION")
+    ? "SUBSTANTIVE_RECONSTRUCTION"
+    : discourse?.findings.some((f) => f.action === "DISTRIBUTED_LIGHT_EDIT") ? "DISTRIBUTED_LIGHT_EDIT" : null;
+  const intensity: RewriteIntensity = discourseAction === "SUBSTANTIVE_RECONSTRUCTION" ? "substantial"
+    : discourseAction && baseIntensity.intensity === "minimal" ? "normal" : baseIntensity.intensity;
+  const intensityReasons = discourseAction ? [...(baseIntensity.intensity === "minimal" ? [] : baseIntensity.reasons), `distributed ${discourse!.findings.filter((f) => f.action !== "ADVISORY").map((f) => f.phenomenon.toLowerCase().replaceAll("_", " ")).join(", ")} evidence`] : baseIntensity.reasons;
   const famActive = activeFamilies(analysis.findings, true);
   const families = RULE_FAMILIES.filter((f) => famActive.has(f.id)).map((f) => ({ id: f.id, name: f.name, guidance: f.guidance, rules: famActive.get(f.id)! }));
   const sourceDates = extractDates(source);
@@ -390,6 +419,7 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
     refinementDelta: refinement ? buildRefinementDelta({ source, current: input.current, refinement, findings: analysis.findings }) : null,
     intensity,
     intensityReasons,
+    ...(discourse ? { discourse, changeScope: intensity === "substantial" ? "SUBSTANTIVE_RECONSTRUCTION" : discourseAction ?? (intensity === "minimal" ? "UNCHANGED" : "LOCAL_EDIT") } : {}),
     budget: { strategy: `${strategy.id}-v${strategy.version}`, mode: strategy.planning.mode, omitted: [] },
     analysis,
     constraints,
@@ -403,6 +433,9 @@ export function summarizePlan(plan: RewritePlan): string[] {
   const lines: string[] = [];
   if (plan.refinement) lines.push(`Refine: ${plan.refinement.asks.join(", ")}; your original stays the reference for meaning`);
   for (const a of plan.avoid.slice(0, 4)) lines.push(`Rework: ${a.name}${a.occurrences > 1 ? ` (${a.occurrences}×)` : ""}`);
+  for (const finding of plan.discourse?.findings.filter((f) => f.action !== "ADVISORY") ?? []) {
+    if (finding.phenomenon === "GENERIC_REGISTER") lines.push(`Rework: broad framing across ${finding.paragraphIndices.length} paragraphs; keep the specific facts`);
+  }
   for (const t of plan.targetRanges.filter((t) => t.action !== "keep").slice(0, 3)) {
     lines.push(`${t.action === "raise" ? "Raise" : "Lower"} ${t.label}: ${t.current} → ${t.min}–${t.max} (${t.origin})`);
   }

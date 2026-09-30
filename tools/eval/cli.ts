@@ -82,7 +82,7 @@ RUN ONE CASE, A CATEGORY, THE SMOKE SET OR EVERYTHING
   pnpm eval:run --all --concurrency 2           concurrency is capped at 2
 
 CHOOSE WHAT IS TESTED
-  --strategy reconstruction-v1 | reconstruction-v2 | reconstruction-v3 | reconstruction-v4
+  --strategy reconstruction-v1 | reconstruction-v2 | reconstruction-v3 | reconstruction-v4 | reconstruction-v5
                                                      (default: production, ${strategyKey(STRATEGIES[0])})
   --worker-model <id> [--worker-provider anthropic|gemini|groq|local] [--worker-tier cheap|fast|strong]
                                                      v4 only; omitted = single frontier, supplied = bounded delegation

@@ -32,7 +32,8 @@
     "eval:review": "tsx tools/eval/cli.ts review",
     "eval:semantic": "tsx tools/eval/cli.ts semantic",
     "eval:holdout": "node --import tsx tools/eval/holdout.ts",
-    "eval:series": "tsx tools/eval/cli.ts series"
+    "eval:series": "tsx tools/eval/cli.ts series",
+    "eval:discourse-development": "node --import tsx tools/eval/discourse-development.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

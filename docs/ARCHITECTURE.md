@@ -170,6 +170,10 @@ A `RewriteStrategy` (`src/domain/strategy.ts`) owns every policy that shapes a r
 
 Strategies are immutable and versioned. Production uses `reconstruction-v1` (the original behaviour, prompt `reconstruct.v2`). `reconstruction-v2` (prioritised contract, minimal-change intensity, prompt `reconstruct.v3`) is experimental until an evaluation shows it is better. The route handler only chooses the default strategy.
 
+### Experimental reconstruction-v5 discourse evidence
+
+`reconstruction-v5` extends v3's deterministic plan with a conservative document-structure classifier and discourse observations. It can permit a narrow local rule when high-confidence document form explains it, or give the planner a distributed light-edit reason when repeated abstract framing appears across prose paragraphs. Structure, formal style, source-local voice, and a saved Voiceprint provide counterevidence. Short text remains uncertain. Surface overlap and regular paragraph counts are advisory; neither authorizes deleting content or substantial reconstruction. The v5 prompt and plan are versioned; v1–v4 behavior and the production route are unchanged. [DISCOURSE-DEVELOPMENT.md](DISCOURSE-DEVELOPMENT.md) records the development corpus, observed limits, and future holdout protocol.
+
 ### Experimental reconstruction-v4 orchestration
 
 `reconstruction-v4` is an experimental strategy that reuses v3's planning and `reconstruct.v4` contract. Its separate entry point is `runOrchestratedReconstruction` (`src/lib/reconstruction/orchestrator.ts`), with a provider-neutral `StructuredFrontierAgent` adapter in `cloud-agent.ts`. The production route still selects v1. Evaluation can wire explicit cloud models through `--strategy reconstruction-v4` and optional `--worker-model`; no model is chosen for production.
