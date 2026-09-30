@@ -168,6 +168,39 @@ A `RewriteStrategy` (`src/domain/strategy.ts`) owns every policy that shapes a r
 
 Strategies are immutable and versioned. Production uses `reconstruction-v1` (the original behaviour, prompt `reconstruct.v2`). `reconstruction-v2` (prioritised contract, minimal-change intensity, prompt `reconstruct.v3`) is experimental until an evaluation shows it is better. The route handler only chooses the default strategy.
 
+### Experimental reconstruction-v4 orchestration
+
+`reconstruction-v4` is an experimental strategy that reuses v3's planning and `reconstruct.v4` contract. Its separate entry point is `runOrchestratedReconstruction` (`src/lib/reconstruction/orchestrator.ts`), with a provider-neutral `StructuredFrontierAgent` adapter in `cloud-agent.ts`. The production route still selects v1. Evaluation can wire explicit cloud models through `--strategy reconstruction-v4` and optional `--worker-model`; no model is chosen for production.
+
+```mermaid
+flowchart TD
+    A[Original source and optional current revision] --> B[v3-style RewritePlan]
+    B --> C{Planner says unchanged?}
+    C -- yes --> U[Original source, deterministic verification]
+    C -- no --> D[Frontier decision: unchanged or one local task]
+    D --> W[Optional bounded local-alternative workers]
+    W --> G[Validate and verify each suggestion]
+    G --> F[Frontier draft with optional suggestions]
+    D -- eligible unchanged choice --> U
+    D -- draft needed --> F
+    F --> V[Deterministic meaning checks and pattern post-check]
+    V --> M[Optional model semantic review after deterministic pass]
+    M --> R{Unique blocking span and repair enabled?}
+    R -- yes --> P[One frontier span replacement, then re-verify]
+    R -- no --> X{Final verification rejected?}
+    P --> X
+    X -- yes --> S[Original source fallback]
+    X -- no --> O[Verified result]
+    U --> O
+    S --> O
+```
+
+The frontier makes the decision, drafts the document, and may repair one exact offending span. The decision schema permits one `local-alternative` task. It carries an exact source or current-revision span of at most 300 characters and less than 45% of that text, plus a fixed purpose enum (`plain-language`, `flow`, `brevity`). A worker receives only that span and enum. Routing considers live, eligible routes with a positive timeout and either unknown or at least 0.9 configured reliability; it prefers cheap, then fast, strong and frontier tiers, breaking ties by timeout. A failed first worker can try at most one stronger eligible route. A span must occur exactly once in the relevant text. Worker output is schema-validated, checked against the span for deterministic meaning failures and claim/assertion changes, then passed to the frontier as an untrusted, optional wording suggestion. Missing routes and rejected suggestions do not block drafting.
+
+The pipeline verifies the draft against the **original** source using the plan's removable spans, refinement licences and protected phrases. It runs at most one pipeline attempt. An optional semantic reviewer runs only after deterministic verification does not reject the draft; its findings can add failures, never erase deterministic ones. If a configured semantic reviewer is unavailable, the result falls back to the original. A repair is considered only for a blocking finding with a unique candidate span in the draft. The replacement must reduce the blocking count locally and after the full pipeline check; if a semantic reviewer is configured, the follow-up model review must also run before acceptance. A final rejected result becomes the original source with fresh deterministic verification and pattern comparison. Decision or draft failure also yields source text. The normal minimal-change planner can return the original before any frontier call.
+
+The orchestrator's trace contains route IDs, tiers, outcomes, use flags, token counts when reported, latency, delegation and repair counts, verification status and final decision; it contains no source or candidate text. Estimated USD cost is computed only when every call has token counts and configured input/output prices, otherwise it is `null`. Bounds are per-call timeouts, one delegated task, one stronger worker retry, one draft attempt and at most one localized repair; there is no aggregate dollar or wall-clock budget enforced here. The frontier sees the full source and plan, and optional semantic review sees source plus candidate. Evaluation records, unlike the metadata trace, contain synthetic fixture text and outputs in gitignored `.evaluations/`; user documents are outside that corpus. See [EVALUATION.md](EVALUATION.md) for evaluation configuration and [BENCHMARK-PLAN.md](BENCHMARK-PLAN.md) for the deferred comparison.
+
 `runReconstructionDetailed` exposes the plan and a per-attempt log. The log holds trigger, retry reasons, failure kinds, output hash, latency, tokens and request id, and never any text.
 
 The evaluation harness (`src/lib/evaluation`, `tools/eval/cli.ts`, `data/evaluation`) runs a versioned corpus through a strategy and provider. It records semantic gates, rule diffs, metric deltas, wording retention and voice comparison per case, and stores them in the gitignored `.evaluations/`. It compares runs by dimension and flags regressions against baselines. See [EVALUATION.md](EVALUATION.md).

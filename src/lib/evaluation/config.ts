@@ -10,6 +10,8 @@ import { anthropicKey, geminiKey, groqKey } from "../ai/select";
 import { createGroqProvider } from "../ai/groq";
 import { DEFAULT_STRATEGY, getStrategy } from "../reconstruction/strategies";
 import { strategyKey } from "@/domain/strategy";
+import { StructuredFrontierAgent } from "../reconstruction/cloud-agent";
+import type { OrchestrationConfig } from "../reconstruction/orchestrator";
 
 /**
  * Evaluation provider selection. Unlike the web app, there is no silent
@@ -38,6 +40,8 @@ export interface ConfigFlags {
   judge?: { provider?: string; model?: string; baseUrl?: string; reasoningEffort?: string; promptVersion?: string };
   /** Diagnostic only: disable the planner's minimal-change bypass. */
   forceModel?: boolean;
+  worker?: { provider?: string; model?: string; tier?: string; baseUrl?: string };
+  pricing?: { frontierInput?: number; frontierOutput?: number; workerInput?: number; workerOutput?: number };
 }
 
 /**
@@ -62,6 +66,21 @@ export function resolveConfig(flags: ConfigFlags, env: Record<string, string | u
     throw new EvaluationConfigError((e as Error).message);
   }
   const model = provider === "demo" ? null : flags.model?.trim() || env.WHODUNNIT_MODEL?.trim() || DEFAULT_MODELS[provider];
+  if (strategy === "reconstruction-v4" && provider === "demo") throw new EvaluationConfigError("The orchestrated strategy requires a live frontier provider; demo mode remains on existing strategies.");
+  if (flags.worker?.model && strategy !== "reconstruction-v4") throw new EvaluationConfigError("A worker route requires --strategy reconstruction-v4.");
+  if (flags.worker?.provider && !flags.worker.model) throw new EvaluationConfigError("--worker-provider requires --worker-model.");
+  const workerProvider = alias(flags.worker?.provider) ?? provider;
+  if (flags.worker?.model && !["anthropic", "gemini", "openai-compatible", "groq"].includes(workerProvider)) throw new EvaluationConfigError("Unknown worker provider.");
+  if (flags.worker?.tier && !["strong", "fast", "cheap"].includes(flags.worker.tier)) throw new EvaluationConfigError("--worker-tier must be strong, fast or cheap.");
+  const worker = flags.worker?.model ? { provider: workerProvider, model: flags.worker.model, tier: flags.worker.tier ?? "fast", ...(flags.worker.baseUrl ? { baseUrl: flags.worker.baseUrl } : {}) } : undefined;
+  const p = flags.pricing;
+  if (p && ((p.frontierInput === undefined) !== (p.frontierOutput === undefined) || (p.workerInput === undefined) !== (p.workerOutput === undefined)))
+    throw new EvaluationConfigError("Pricing requires both input and output USD per million tokens for each configured role.");
+  if (p?.workerInput !== undefined && !worker) throw new EvaluationConfigError("Worker pricing requires --worker-model.");
+  if (p?.workerInput !== undefined && p.frontierInput === undefined) throw new EvaluationConfigError("Worker pricing also requires frontier pricing.");
+  const pricing = p?.frontierInput !== undefined && p.frontierOutput !== undefined
+    ? { frontier: { input: p.frontierInput, output: p.frontierOutput }, ...(p.workerInput !== undefined && p.workerOutput !== undefined ? { worker: { input: p.workerInput, output: p.workerOutput } } : {}) }
+    : undefined;
   const baseUrl = provider === "openai-compatible" ? (flags.baseUrl?.trim() || env.WHODUNNIT_OPENAI_BASE_URL?.trim() || DEFAULT_OPENAI_COMPATIBLE_BASE_URL) : undefined;
   if (flags.baseUrl && provider !== "openai-compatible") throw new EvaluationConfigError("--base-url applies only to --provider local / openai-compatible.");
   const generation = flags.generation && Object.values(flags.generation).some((v) => v !== undefined) ? flags.generation : undefined;
@@ -89,7 +108,7 @@ export function resolveConfig(flags: ConfigFlags, env: Record<string, string | u
   // A forced run must actually differ from a normal one; on a strategy that never bypasses the model it would be mislabelled.
   if (flags.forceModel && getStrategy(strategy).minimalChange !== "unchanged")
     throw new EvaluationConfigError(`--force-model has no effect on ${strategy}: that strategy always calls the model. Use it with a strategy whose minimal-change policy can return text unchanged (e.g. reconstruction-v3).`);
-  const parsed = evaluationConfigSchema.safeParse({ provider, model, strategy, ...(baseUrl ? { baseUrl } : {}), ...(generation ? { generation } : {}), ...(judge ? { judge } : {}), ...(flags.forceModel ? { forceModel: true } : {}) });
+  const parsed = evaluationConfigSchema.safeParse({ provider, model, strategy, ...(worker ? { worker } : {}), ...(pricing ? { pricing } : {}), ...(baseUrl ? { baseUrl } : {}), ...(generation ? { generation } : {}), ...(judge ? { judge } : {}), ...(flags.forceModel ? { forceModel: true } : {}) });
   if (!parsed.success) throw new EvaluationConfigError(`Invalid configuration: ${parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ")}`);
   return parsed.data;
 }
@@ -122,6 +141,21 @@ function modelCaller(p: { provider: EvaluationConfig["provider"] | JudgeConfig["
 export function createEvaluationProvider(config: EvaluationConfig, env: Record<string, string | undefined>): AIProvider & Partial<StructuredCaller> {
   if (config.provider === "demo") return new DemoProvider();
   return modelCaller({ provider: config.provider, model: config.model!, baseUrl: config.baseUrl }, env, config.generation);
+}
+
+/** Explicit v4 evaluation wiring. Model ids and tiers come from run configuration. */
+export function createEvaluationOrchestration(config: EvaluationConfig, provider: AIProvider & Partial<StructuredCaller>, env: Record<string, string | undefined>): { agent: StructuredFrontierAgent; config: OrchestrationConfig } {
+  if (config.strategy !== "reconstruction-v4" || provider.info.mode !== "live" || !provider.callStructured) throw new EvaluationConfigError("Orchestration requires a live structured frontier provider and reconstruction-v4.");
+  const workers: OrchestrationConfig["workers"] = [];
+  if (config.worker) {
+    const caller = modelCaller(config.worker, env);
+    workers.push({ id: `${config.worker.provider}/${config.worker.model}`, tier: config.worker.tier, capability: "local-alternative", timeoutMs: 30_000, caller, price: config.pricing?.worker });
+  }
+  return { agent: new StructuredFrontierAgent(provider as StructuredCaller), config: {
+    frontier: { id: `${config.provider}/${config.model}`, tier: "frontier", capability: "orchestration", timeoutMs: 90_000, price: config.pricing?.frontier },
+    workers,
+    maxRepairs: 1,
+  } };
 }
 
 /** The independent judge, or null when none is configured. Missing credentials are an error, never a silent skip. */

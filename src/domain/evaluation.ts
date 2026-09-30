@@ -138,6 +138,12 @@ export const evaluationConfigSchema = z
     provider: z.enum(["anthropic", "gemini", "openai-compatible", "demo"]),
     model: z.string().min(1).nullable(),
     strategy: z.string().min(1),
+    /** Experimental v4 delegation route; omitted for a single-frontier run. */
+    worker: z.object({ provider: z.enum(["anthropic", "gemini", "openai-compatible", "groq"]), model: z.string().min(1), tier: z.enum(["strong", "fast", "cheap"]), baseUrl: z.string().url().optional() }).strict().optional(),
+    pricing: z.object({
+      frontier: z.object({ input: z.number().finite().nonnegative(), output: z.number().finite().nonnegative() }).strict(),
+      worker: z.object({ input: z.number().finite().nonnegative(), output: z.number().finite().nonnegative() }).strict().optional(),
+    }).strict().optional(),
     /** openai-compatible only: the server's base URL (no credentials). */
     baseUrl: z.string().url().optional(),
     generation: generationSettingsSchema.optional(),
@@ -444,6 +450,19 @@ export const stageRecordSchema = z
     voiceDevices: voiceDeviceSummarySchema.optional(),
     /** INSTRUCTION FOLLOWING: did the requested refinement visibly happen? Independent of the semantic verdict. */
     refinementEffect: refinementEffectSchema.nullable().optional(),
+    /** Experimental cloud orchestration metadata. No user text or worker content. */
+    orchestration: z.object({
+      delegationCount: z.number().int().nonnegative(),
+      taskTypes: z.array(z.literal("local-alternative")),
+      workerRoutes: z.array(z.object({ id: z.string(), tier: z.enum(["frontier", "strong", "fast", "cheap"]), outcome: z.enum(["accepted", "rejected", "timeout", "error"]), used: z.boolean() }).strict()),
+      acceptedWorkerOutputs: z.number().int().nonnegative(),
+      rejectedWorkerOutputs: z.number().int().nonnegative(),
+      repairCount: z.number().int().nonnegative(),
+      totalTokens: z.object({ input: z.number(), output: z.number() }).strict(),
+      totalLatencyMs: z.number().nonnegative(),
+      estimatedCostUsd: z.number().nonnegative().nullable(),
+      finalDecision: z.enum(["unchanged", "candidate", "repaired", "source-fallback"]),
+    }).strict().optional(),
   })
   .strict();
 export type StageRecord = z.infer<typeof stageRecordSchema>;

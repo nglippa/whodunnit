@@ -33,6 +33,8 @@ export interface PipelineOptions {
    * even when a later attempt throws. Records carry hashes and counts, never text.
    */
   onAttempt?: (record: AttemptRecord) => void;
+  /** Experimental timing hook; metadata only. */
+  onPlanReady?: (analysisMs: number) => void;
   /**
    * EVALUATION ONLY (`pnpm eval:run --force-model`): call the model even when
    * the strategy would return the source unchanged, to measure what the model
@@ -125,7 +127,10 @@ export async function runReconstruction(request: ReconstructionRequest, provider
 
 /** The pipeline with its plan, strategy and per-attempt log exposed (for evaluation). */
 export async function runReconstructionDetailed(request: ReconstructionRequest, provider: AIProvider, options: PipelineOptions = {}): Promise<DetailedPipelineResult> {
+  const analysisStarted = Date.now();
   const strategy = options.strategy ?? DEFAULT_STRATEGY;
+  if (strategy.id === "reconstruction" && strategy.version === 4 && provider.info.provider !== "orchestrated")
+    throw new Error("reconstruction-v4 requires the experimental orchestrator runner");
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;
@@ -133,6 +138,7 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
     { source, profile, refinement: refinement?.change, voiceprint: request.voiceprint, current: refinement?.current, protectedPhrases: request.protectedPhrases },
     strategy,
   );
+  options.onPlanReady?.(Date.now() - analysisStarted);
   // Meaning checks get the same context the plan used: filler the rewrite may drop, what the author licensed, what is protected.
   const verifyContext = { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases };
 

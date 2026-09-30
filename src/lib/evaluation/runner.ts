@@ -7,6 +7,7 @@ import type { AIProvider } from "../ai/provider";
 import { ProviderError } from "../ai/provider";
 import { getPrompt, renderContract } from "../prompts";
 import { runReconstructionDetailed, type AttemptRecord } from "../reconstruction/pipeline";
+import { runOrchestratedReconstruction, type FrontierAgent, type OrchestrationConfig } from "../reconstruction/orchestrator";
 import { planSize, type RewritePlan } from "../reconstruction/rewrite-plan";
 import { getStrategy } from "../reconstruction/strategies";
 import { analyzeWriting, type WritingAnalysis } from "../rules/engine";
@@ -57,6 +58,8 @@ export interface RunContext {
   judge?: SemanticJudge | null;
   /** What the provider actually sent of the requested generation settings. */
   generation?: GenerationReport;
+  /** Explicit experimental injection; production route never supplies this. */
+  orchestration?: { agent: FrontierAgent; config: OrchestrationConfig };
 }
 
 export const promptFingerprint = (s: RewriteStrategy) => sha256(getPrompt(s.prompt).system).slice(0, 16);
@@ -129,8 +132,17 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       refinement: refinement && previous ? { current: previous.text, change: refinement } : undefined,
     };
     let detailed;
+    let orchestration: Awaited<ReturnType<typeof runOrchestratedReconstruction>>["trace"] | undefined;
     try {
-      detailed = await runReconstructionDetailed(request, ctx.provider, { strategy, onAttempt: (a) => attempts.push(a), forceModel: ctx.config.forceModel === true });
+      if (strategy.version === 4) {
+        if (!ctx.orchestration) throw new Error("The orchestrated strategy requires an explicit cloud orchestration configuration.");
+        const run = await runOrchestratedReconstruction(request, ctx.orchestration.agent, ctx.orchestration.config);
+        detailed = run.detailed;
+        orchestration = run.trace;
+        attempts.push(...detailed.attempts);
+      } else {
+        detailed = await runReconstructionDetailed(request, ctx.provider, { strategy, onAttempt: (a) => attempts.push(a), forceModel: ctx.config.forceModel === true });
+      }
     } catch (err) {
       const code = err instanceof ProviderError ? err.code : "error";
       throw new EvaluationCaseError(err instanceof Error ? err.message.slice(0, 400) : "Unknown failure", c.id, i, code, attempts);
@@ -195,8 +207,8 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
       output: { text: result.text, hash: sha256(result.text).slice(0, 16), words: after.metrics.words, changesReported: result.changes },
       attempts,
       retries: Math.max(0, attempts.length - 1),
-      latencyMs: attempts.reduce((a, x) => a + x.latencyMs, 0),
-      tokens,
+      latencyMs: orchestration?.latencyMs.total ?? attempts.reduce((a, x) => a + x.latencyMs, 0),
+      tokens: orchestration ? orchestration.tokens : tokens,
       semantic,
       rules: ruleDiff(original, after),
       metricsAfter: after.metrics as unknown as Record<string, unknown>,
@@ -220,6 +232,18 @@ export async function evaluateCase(c: LoadedCase, ctx: RunContext): Promise<Eval
         output: devices.output as unknown as Record<string, unknown>,
       },
       refinementEffect: effect,
+      ...(orchestration ? { orchestration: {
+        delegationCount: orchestration.delegationCount,
+        taskTypes: Array.from({ length: orchestration.delegationCount }, () => "local-alternative"),
+        workerRoutes: orchestration.calls.filter((x) => x.role === "worker").map((x) => ({ id: x.route, tier: x.tier, outcome: x.outcome, used: x.used })),
+        acceptedWorkerOutputs: orchestration.acceptedWorkerOutputs,
+        rejectedWorkerOutputs: orchestration.rejectedWorkerOutputs,
+        repairCount: orchestration.repairCount,
+        totalTokens: orchestration.tokens,
+        totalLatencyMs: orchestration.latencyMs.total,
+        estimatedCostUsd: orchestration.estimatedCostUsd,
+        finalDecision: orchestration.finalDecision,
+      } } : {}),
       refinementDelta: plan.refinementDelta
         ? {
             objectives: plan.refinementDelta.objectives.map((o) => ({ id: o.id, reference: o.reference })),

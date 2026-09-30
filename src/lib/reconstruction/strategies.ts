@@ -61,7 +61,15 @@ export const RECONSTRUCTION_V3 = define({
   postCheckPolicy: { modelMeaning: "when-deterministic-passes", claimsExtractionMinWords: 60 },
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3];
+/** Experimental cloud orchestration. Uses v3's published planning and prompt contract. */
+export const RECONSTRUCTION_V4 = define({
+  ...RECONSTRUCTION_V3,
+  version: 4,
+  name: "Reconstruction v4 (orchestrated cloud experiment)",
+  description: "v3 planning with a frontier-owned decision, optional bounded wording assistance, independent verification, and one localized repair. Requires the experimental orchestrator runner.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

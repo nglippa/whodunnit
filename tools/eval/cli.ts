@@ -14,7 +14,7 @@ import { buildRewritePlan, planSize } from "@/lib/reconstruction/rewrite-plan";
 import { STRATEGIES, getStrategy } from "@/lib/reconstruction/strategies";
 import { GEMINI_KEY_NAMES } from "@/lib/ai/select";
 import { runBatch } from "@/lib/evaluation/batch";
-import { EvaluationConfigError, createEvaluationProvider, createJudge, resolveConfig } from "@/lib/evaluation/config";
+import { EvaluationConfigError, createEvaluationOrchestration, createEvaluationProvider, createJudge, resolveConfig } from "@/lib/evaluation/config";
 import { runSemanticFixtures } from "@/lib/evaluation/semantic-fixtures";
 import { runVoiceFixtures } from "@/lib/evaluation/voice-fixtures";
 import { loadCorpus, selectCases } from "@/lib/evaluation/corpus";
@@ -82,15 +82,22 @@ RUN ONE CASE, A CATEGORY, THE SMOKE SET OR EVERYTHING
   pnpm eval:run --all --concurrency 2           concurrency is capped at 2
 
 CHOOSE WHAT IS TESTED
-  --strategy reconstruction-v1 | reconstruction-v2   (default: production, ${strategyKey(STRATEGIES[0])})
+  --strategy reconstruction-v1 | reconstruction-v2 | reconstruction-v3 | reconstruction-v4
+                                                     (default: production, ${strategyKey(STRATEGIES[0])})
+  --worker-model <id> [--worker-provider anthropic|gemini|groq|local] [--worker-tier cheap|fast|strong]
+                                                     v4 only; omitted = single frontier, supplied = bounded delegation
+  --frontier-input-usd-per-mtok <n> --frontier-output-usd-per-mtok <n>
+  --worker-input-usd-per-mtok <n> --worker-output-usd-per-mtok <n>
+                                                     optional pricing for estimated run cost; both directions required
   --provider anthropic|gemini --model <id>           default provider: WHODUNNIT_AI_PROVIDER, else
                                                      whichever key is set (Anthropic first); model from
                                                      --model, then WHODUNNIT_MODEL, then claude-sonnet-5
                                                      or gemini-3.8-flash
   --provider local [--base-url http://127.0.0.1:8080/v1] --model bonsai-2-27b
                                                      any OpenAI-format server: a local llama.cpp/Bonsai
-                                                     server, Ollama (:11434/v1), Groq... Free and
-                                                     unlimited when local. --model names it in records.
+                                                     server, Ollama (:11434/v1), Groq... --model names it
+                                                     in records. Local benchmarking is PAUSED UNTIL
+                                                     64 GB M5 PRO ENVIRONMENT.
   --demo                                             the deterministic demo engine, by request only.
                                                      Records say mode: demo, realModel: false.
   --label short-name                                 appended to the run id
@@ -242,6 +249,8 @@ async function main() {
             },
             judge: { provider: flag("judge-provider"), model: flag("judge-model"), baseUrl: flag("judge-base-url"), reasoningEffort: flag("judge-reasoning-effort"), promptVersion: flag("judge-prompt") },
             forceModel: has("force-model"),
+            worker: { provider: flag("worker-provider"), model: flag("worker-model"), tier: flag("worker-tier"), baseUrl: flag("worker-base-url") },
+            pricing: { frontierInput: num("frontier-input-usd-per-mtok"), frontierOutput: num("frontier-output-usd-per-mtok"), workerInput: num("worker-input-usd-per-mtok"), workerOutput: num("worker-output-usd-per-mtok") },
           },
           process.env,
         );
@@ -266,9 +275,11 @@ async function main() {
 
       let provider;
       let judge;
+      let orchestration;
       let judgeCache: FileJudgeCache | null = null;
       try {
         provider = createEvaluationProvider(config, process.env);
+        orchestration = config.strategy === "reconstruction-v4" ? createEvaluationOrchestration(config, provider, process.env) : undefined;
         judgeCache = config.judge && !has("no-judge-cache") ? new FileJudgeCache(ROOT) : null;
         judge = createJudge(config, process.env, { cache: judgeCache });
       } catch (e) {
@@ -306,7 +317,7 @@ async function main() {
       if (config.forceModel) console.log("FORCED-MODEL DIAGNOSTIC: the planner's minimal-change bypass is disabled. This measures the model, not the product.");
       console.log(`Run ${runId}\n${manifest.realModel ? `REAL MODEL: ${config.provider}/${config.model}` : "DEMO ENGINE (not a model test)"} · ${config.strategy} · ${cases.length} case(s) · concurrency ${concurrency}\n`);
 
-      const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId, judge, generation }), {
+      const { records, failures } = await runBatch(cases, (c) => evaluateCase(c, { corpus, config, provider, runId, judge, generation, orchestration }), {
         concurrency,
         paceMs: Math.max(0, Number(flag("pace") ?? 0) || 0) * 1000,
         onRecord: (r) => store.saveRecord(r),

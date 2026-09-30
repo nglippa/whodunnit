@@ -1,5 +1,17 @@
 # Benchmark plan: reconstruction-v3 on local models (prepared, not yet run)
 
+**LOCAL BENCHMARKING: PAUSED UNTIL 64 GB M5 PRO ENVIRONMENT.** The commands below are a prepared protocol, not a report of completed runs. Do not run the local model tracks on the current machine or treat the historical timing estimates below as measurements of this plan.
+
+## Next experiment: single frontier, then reconstruction-v4
+
+The next cloud comparison asks whether bounded orchestration improves a rewrite enough to justify its extra calls. The order is fixed:
+
+1. Establish a **single-frontier baseline** with `reconstruction-v4` and no `--worker-model`, using the same corpus and independent judge. The frontier handles the decision and draft alone under v3 planning and the `reconstruct.v4` contract. Keep normal planner bypass enabled.
+2. After explicit cost and latency limits have been set, run `reconstruction-v4` again with the same frontier model, corpus, prompt contract, generation settings, semantic analysis and judge, adding only `--worker-model` and its capability tier. Use only the optional `local-alternative` worker class in `src/lib/reconstruction/orchestrator.ts`; record whether it was routed, accepted or rejected. Do not assume a worker must be used on every case.
+3. Compare matched cases and seeds by semantic FAIL/NEEDS_REVIEW, voice damage, refinement effect, retention, introduced deterministic patterns, source fallbacks, accepted suggestions, repairs, tokens, estimated USD cost and elapsed time. Report each dimension separately. Keep a forced-model diagnostic, if used, separate from normal product behaviour.
+
+This is a protocol, **not a cloud benchmark result**. `StructuredFrontierAgent` is provider-neutral; the production route still uses `reconstruction-v1`. The evaluation CLI can run v4 with an explicitly selected frontier provider and optional `--worker-model`; no such run is authorized by this plan. The local v3 tracks below remain paused until the specified hardware is available. A single-frontier baseline should be measured before interpreting any v4 run; do not infer a win from fewer calls or a better draft alone.
+
 This plan re-measures `reconstruction-v3` after the hardening pass. That pass added:
 
 - the causal-strength scale;

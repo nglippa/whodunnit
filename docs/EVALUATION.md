@@ -39,16 +39,27 @@ Strategies are deep-frozen: to change one, add a version.
 |---|---|---|---|
 | `reconstruction-v1` | production | `reconstruct.v2` | Exactly the pre-strategy behaviour: full contract; retries on blocking meaning findings or newly introduced deterministic patterns; model meaning check when the deterministic checks pass. |
 | `reconstruction-v2` | experimental | `reconstruct.v3` | Same pipeline with a prioritised contract and explicit rewrite intensity (see below). Not promoted: it has not yet been measured against a real model. |
+| `reconstruction-v3` | experimental | `reconstruct.v4` | Anchored refinements, source voice and an unchanged-text planner bypass. |
+| `reconstruction-v4` | experimental | `reconstruct.v4` | v3 planning with a separately injected frontier decision, optional local wording tasks, draft and one localized repair. |
 
 Prompts have explicit identities, `{ id, version }`, registered in `src/lib/prompts/index.ts`:
 
-- `reconstruct.v2` and `reconstruct.v3`
+- `reconstruct.v2`, `reconstruct.v3` and `reconstruct.v4`
 - `analyze.v1`, `verify.v1`, `voiceprint.v1`
+- `orchestrate.v1`, `local-alternative.v1` and `repair.v1` for the experimental v4 adapter
 - `compile.v1`, in the source compiler
 
 A test pins a fingerprint of each prompt's text, so an edit without a version bump fails. `reconstruct.v2`'s fingerprint matches the prompt that shipped before strategies existed.
 
 Every record stores the strategy key, the prompt key and fingerprint, the provider and model, the rule-pack versions, and the Voiceprint hash.
+
+### v4 evaluation injection and provenance
+
+`evaluateCase` accepts optional `RunContext.orchestration: { agent, config }`. For strategy `reconstruction-v4`, it requires this explicit injection and calls `runOrchestratedReconstruction` for each corpus stage. A missing injection fails the case; it does not silently use the ordinary provider or demo engine. Other strategies still use `runReconstructionDetailed`. The CLI constructs the v4 frontier adapter from the explicitly selected live provider. `--worker-model` enables one bounded worker route; omit it for a single-frontier v4 run. `--worker-provider`, `--worker-tier` and `--worker-base-url` configure that route. `--frontier-input-usd-per-mtok`, `--frontier-output-usd-per-mtok` and the matching worker price flags supply optional cost estimates; no model price is hardcoded. The web route does not supply orchestration and remains on v1.
+
+The v4 stage record adds delegation count, task types, worker route IDs and tiers with outcomes/use flags, accepted and rejected worker output counts, repair count, total reported tokens, total elapsed time, estimated USD cost and final decision (`unchanged`, `candidate`, `repaired` or `source-fallback`). The underlying `OrchestrationTrace` also separates frontier decision/draft/repair, worker and optional semantic-review calls, with per-call token, latency and cost metadata. A missing price or token count makes the aggregate cost `null`; a zero token total does not prove a free call. Route IDs record which configured worker was called; the reliability threshold is a routing input, not a measured outcome. The stage still records deterministic semantic findings, rule diffs, voice devices and refinement effect separately. Evaluation artifacts contain only repository corpus fixtures and outputs under gitignored `.evaluations/`; the trace itself carries no text.
+
+The next comparison is **one frontier model alone versus the same frontier with v4 orchestration**, using the same corpus, model, prompt contract, generation settings and independent judge. First establish the single-frontier baseline; run v4 only after explicit provider wiring and predeclared cost/latency limits exist. Compare semantic FAIL and NEEDS_REVIEW, voice damage, refinement effect, retention, delegation acceptance, repairs, source fallbacks, token cost and latency per stage. Keep normal and forced-model tracks separate. No v4 cloud result or advantage is claimed here. Local model benchmarking is **PAUSED UNTIL 64 GB M5 PRO ENVIRONMENT**; see [BENCHMARK-PLAN.md](BENCHMARK-PLAN.md).
 
 ## Minimal change and contract budgeting
 
