@@ -16,7 +16,7 @@ import {
   resolveConstraints,
   type TargetConstraint,
 } from "../rules/constraints";
-import { analyzeWriting, type WritingAnalysis } from "../rules/engine";
+import { analyzeWriting, type PatternPermission, type WritingAnalysis } from "../rules/engine";
 import { getRegistry, rulesForProfile } from "../rules/packs";
 import { round } from "../rules/metrics";
 import type { ProtectedPhrase } from "@/domain/semantics";
@@ -95,7 +95,7 @@ export interface RewritePlan {
   /** The requested delta, for refinements. */
   refinementDelta: RefinementDelta | null;
   /** The source's own demonstrated habits (independent of a saved Voiceprint). */
-  sourceVoice: Pick<SourceVoiceProfile, "confidence" | "deliberate" | "notes"> & { slopDensity: number };
+  sourceVoice: Pick<SourceVoiceProfile, "confidence" | "deliberate" | "repeatedOpening" | "notes"> & { slopDensity: number };
   /** How much the text needs changing, from the measurements (see chooseIntensity). */
   intensity: RewriteIntensity;
   intensityReasons: string[];
@@ -104,6 +104,8 @@ export interface RewritePlan {
   /** The analysis the plan was built from (for post-checks). */
   analysis: WritingAnalysis;
   constraints: TargetConstraint[];
+  /** Narrow, evidence-backed permissions applied in analysis and post-checks. */
+  permissions: PatternPermission[];
 }
 
 export interface OmittedItem {
@@ -124,7 +126,7 @@ export interface PlanInput {
 }
 
 /** Rules that measure a punctuation or rhythm device: they never count toward "is this text templated?". */
-const DEVICE_RULES = new Set(["slop.dash-density", "slop.dramatic-fragments", "core.semicolon-density", "core.uniform-sentence-length", "core.no-sentence-extremes"]);
+const DEVICE_RULES = new Set(["slop.dash-density", "slop.dramatic-fragments", "core.semicolon-density", "core.uniform-sentence-length", "core.no-sentence-extremes", "core.repeated-sentence-openers"]);
 
 /** Register dimensions: a mismatch here means the text does not fit the target yet. Rhythm is not one of them. */
 const REGISTER_DIMENSIONS = new Set<Dimension>(["voice.contractions", "voice.first-person"]);
@@ -277,9 +279,24 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
   const pre = analyzeWriting(source, rules, { constraints: baseConstraints });
   const slopDensity = round((pre.findings.filter((f) => !f.suppressedBy && f.rule.severity !== "info" && !DEVICE_RULES.has(f.rule.id)).length / Math.max(1, pre.metrics.words)) * 100, 2);
   const voice = sourceVoiceProfile(source, slopDensity);
+  const openerFinding = pre.findings.find((f) => f.rule.id === "core.repeated-sentence-openers");
+  const supportsOpening = (opening: string) => {
+    const normalized = opening.trim().toLowerCase();
+    return normalized.split(/\s+/).length >= 2 && Boolean(openerFinding?.matches.length) &&
+      openerFinding!.matches.every((m) => source.slice(m.start, m.start + normalized.length).toLowerCase() === normalized);
+  };
+  const voiceOpening = strategy.planning.sourceVoice ? voice.repeatedOpening : null;
+  const vpOpening = input.voiceprint?.stats && input.voiceprint.confidence >= 0.6
+    ? input.voiceprint.stats.recurringOpeners.find(supportsOpening)
+    : undefined;
+  const permissions: PatternPermission[] = vpOpening
+    ? [{ ruleId: "core.repeated-sentence-openers", layer: "voiceprint", opening: vpOpening, reason: `Voiceprint “${input.voiceprint!.name}” accepts the recurring opening “${vpOpening}”.` }]
+    : voiceOpening && supportsOpening(voiceOpening)
+      ? [{ ruleId: "core.repeated-sentence-openers", layer: "source-voice", opening: voiceOpening, reason: `Source voice accepts the repeated opening “${voiceOpening}”.` }]
+      : [];
   // The profile is always measured (evaluation reads it); only strategies that opt in let it shape the plan.
   const constraints = strategy.planning.sourceVoice ? [...baseConstraints, ...constraintsFromSourceVoice(voice, pre.metrics)] : baseConstraints;
-  const analysis = analyzeWriting(source, rules, { constraints });
+  const analysis = analyzeWriting(source, rules, { constraints, permissions });
   const { active, overridden } = resolveConstraints(constraints);
 
   const targetRanges: TargetRange[] = active.map((c) => {
@@ -335,11 +352,13 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
 
   const vp = input.voiceprint?.stats;
   const preferredPatterns = vp ? [...vp.recurringPhrases.slice(0, 4).map((p) => `“${p}”`), ...vp.recurringOpeners.slice(0, 3).map((o) => `sentences opening with “${o}”`)] : [];
+  if (strategy.planning.sourceVoice && voice.repeatedOpening && !preferredPatterns.some((p) => p.includes(`“${voice.repeatedOpening}”`)))
+    preferredPatterns.push(`sentences opening with “${voice.repeatedOpening}”`);
 
   const srcWords = words(source).length;
   const safety = registry.query({ packIds: ["semantic-safety"], enabledOnly: true });
   const { intensity, reasons: intensityReasons } = chooseIntensity(avoid, targetRanges, refinement);
-  const famActive = activeFamilies(analysis.findings);
+  const famActive = activeFamilies(analysis.findings, true);
   const families = RULE_FAMILIES.filter((f) => famActive.has(f.id)).map((f) => ({ id: f.id, name: f.name, guidance: f.guidance, rules: famActive.get(f.id)! }));
   const sourceDates = extractDates(source);
   const rest = blankDates(source, sourceDates);
@@ -367,13 +386,14 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
     protectedPhrases: protectedPhrasesFor(source, { user: input.protectedPhrases, voiceprintPhrases: input.voiceprint?.stats?.recurringPhrases }),
     families,
     removableSpans: removableSpans(analysis.findings),
-    sourceVoice: { confidence: voice.confidence, deliberate: voice.deliberate, notes: voice.notes, slopDensity },
+    sourceVoice: { confidence: voice.confidence, deliberate: voice.deliberate, repeatedOpening: voice.repeatedOpening, notes: voice.notes, slopDensity },
     refinementDelta: refinement ? buildRefinementDelta({ source, current: input.current, refinement, findings: analysis.findings }) : null,
     intensity,
     intensityReasons,
     budget: { strategy: `${strategy.id}-v${strategy.version}`, mode: strategy.planning.mode, omitted: [] },
     analysis,
     constraints,
+    permissions,
   };
   return prioritizePlan(plan, strategy);
 }

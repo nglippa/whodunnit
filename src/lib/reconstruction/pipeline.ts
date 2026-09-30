@@ -12,6 +12,7 @@ import { mergeVerification, verifyDeterministic } from "../verification/verify";
 import { comparePatterns } from "./postcheck";
 import { buildRewritePlan, summarizePlan, type RewritePlan } from "./rewrite-plan";
 import { DEFAULT_STRATEGY } from "./strategies";
+import { auditWording, type WordingAudit } from "./wording-audit";
 
 /**
  * SOURCE → RULE ANALYSIS → REWRITE PLAN → CANDIDATE → MEANING CHECKS → RULE POST-CHECK → (retry) → RESULT
@@ -58,6 +59,8 @@ export interface AttemptRecord {
   modelMeaning: "ran" | "skipped-by-policy" | "skipped-after-rejection" | "unavailable";
   outputHash?: string;
   outputWords?: number;
+  /** Advisory counts only; no raw wording and no retry authority. */
+  wordingAudit?: WordingAudit;
   /** Wall-clock for the whole attempt (rewrite + checks). */
   latencyMs: number;
   provider: CallMeta | null;
@@ -231,6 +234,7 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
       modelMeaning,
       outputHash: textHash(text),
       outputWords: words(text).length,
+      wordingAudit: auditWording(source, text, plan),
       latencyMs: Date.now() - started,
       provider: candidate.meta ?? null,
     });

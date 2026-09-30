@@ -31,6 +31,8 @@ export interface DeviceMeasures {
   ellipses: number;
   repeatedPunctuation: number;
   contractionsPer100: number;
+  /** Exact two-word sentence openings repeated at least three times. */
+  repeatedOpenings: { opening: string; count: number }[];
 }
 
 /**
@@ -61,6 +63,11 @@ export function measureDevices(text: string): DeviceMeasures {
   const dashes = count(text, /—|–|\s--\s/g);
   const fragments = sentences.filter((s) => words(s).length > 0 && words(s).length <= 4).length;
   const lowercaseStarts = sentences.filter((s) => /^["'“‘(]?\p{Ll}/u.test(s.trim())).length;
+  const openings = new Map<string, number>();
+  for (const sentence of sentences) {
+    const first = words(sentence).slice(0, 2).join(" ").toLowerCase();
+    if (first.split(" ").length === 2) openings.set(first, (openings.get(first) ?? 0) + 1);
+  }
   return {
     words: words(text).length,
     sentences: sentences.length,
@@ -84,6 +91,7 @@ export function measureDevices(text: string): DeviceMeasures {
     ellipses: count(text, /\.\.\.|…/g),
     repeatedPunctuation: count(text, /[!?]{2,}/g),
     contractionsPer100: (count(text, CONTRACTION_RE) / w) * 100,
+    repeatedOpenings: [...openings].filter(([, n]) => n >= 3).map(([opening, n]) => ({ opening, count: n })),
   };
 }
 
@@ -92,7 +100,8 @@ export interface SourceVoiceProfile {
   /** 0–1: how much text there is to judge a habit from. */
   confidence: number;
   /** Habits the source demonstrates deliberately (repeated, and not in slop-heavy text). */
-  deliberate: { dashes: boolean; fragments: boolean; lowercase: boolean; semicolons: boolean; parentheses: boolean };
+  deliberate: { dashes: boolean; fragments: boolean; lowercase: boolean; semicolons: boolean; parentheses: boolean; repetition: boolean };
+  repeatedOpening: string | null;
   /** Why each deliberate flag was set or not (for the record). */
   notes: string[];
 }
@@ -114,13 +123,19 @@ export function sourceVoiceProfile(text: string, slopDensity: number): SourceVoi
   const lowercase = d.sentences >= 3 && d.lowercaseShare >= 0.6;
   const semicolons = d.semicolons >= 2 && clean;
   const parentheses = d.parentheses >= 2 && clean;
+  // A repeated, substantive two-word opening can be anaphora. Generic
+  // scaffolds ("it is", "there are") are too ambiguous to protect.
+  const generic = /^(?:it|this|that|there|the|a|an)\s/;
+  const repeatedOpening = clean && d.words >= 60 && d.sentences >= 5
+    ? d.repeatedOpenings.filter((x) => !generic.test(x.opening) && x.count / d.sentences >= 0.35).sort((a, b) => b.count - a.count)[0]?.opening ?? null
+    : null;
   if (d.dashes >= 2 && !dashes) notes.push(clean ? "dashes present but without other signs of a personal style" : "dashes appear in slop-heavy text: treated as a pattern, not a habit");
   if (d.fragments >= 2 && !fragments) notes.push(clean ? "fragments too rare to be a habit" : "fragments appear in slop-heavy text");
-  return { devices: d, confidence, deliberate: { dashes, fragments, lowercase, semicolons, parentheses }, notes };
+  return { devices: d, confidence, deliberate: { dashes, fragments, lowercase, semicolons, parentheses, repetition: Boolean(repeatedOpening) }, repeatedOpening, notes };
 }
 
 export interface VoiceDeviation {
-  device: "dashes" | "dash-spacing" | "fragments" | "capitalization" | "quote-style" | "parentheses" | "semicolons" | "ellipses" | "repeated-punctuation";
+  device: "dashes" | "dash-spacing" | "fragments" | "capitalization" | "quote-style" | "parentheses" | "semicolons" | "ellipses" | "repeated-punctuation" | "repeated-opening";
   change: "erased" | "reduced" | "introduced" | "normalized" | "restyled";
   severity: "minor" | "major";
   source: number;
@@ -183,6 +198,12 @@ export function compareVoiceDevices(source: string, output: string, slopDensity:
   erased("ellipses", s.ellipses, o.ellipses, "ellipses");
   erased("repeated-punctuation", s.repeatedPunctuation, o.repeatedPunctuation, "repeated punctuation (?? / !!)");
   if (s.semicolons === 0 && o.semicolons >= 3) dev.push({ device: "semicolons", change: "introduced", severity: "minor", source: 0, output: o.semicolons, detail: `The rewrite adds ${o.semicolons} semicolons.` });
+  const opening = profile.repeatedOpening;
+  if (opening) {
+    const before = s.repeatedOpenings.find((x) => x.opening === opening)?.count ?? 0;
+    const after = deviceSentences(output).filter((sentence) => words(sentence).slice(0, 2).join(" ").toLowerCase() === opening).length;
+    if (after < before * 0.5) dev.push({ device: "repeated-opening", change: after === 0 ? "erased" : "reduced", severity: grade(true), source: before, output: after, detail: `The source repeats “${opening}” to open ${before} sentences; the rewrite keeps ${after}.` });
+  }
 
   return {
     source: s,

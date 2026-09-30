@@ -121,6 +121,22 @@
         "verdict": "PRESERVED"
       },
       "provenance": "Synthetic, written for Whodunnit (hardening pass, September 2026)."
+    },
+    {
+      "id": "repeated-opening-kept",
+      "class": "intentional repeated opening retained (control)",
+      "source": "I remember the red bike leaning against the garden wall after the storm. I remember how the chain caught on the loose stone when we tried to move it. I remember my father finding the old wrench in the shed and handing it to me without a word. We worked until the light had gone from the yard. The bike stayed there until morning because neither of us wanted to scratch the fresh paint. After breakfast we carried it inside together.",
+      "output": "I remember the red bike leaning against the garden wall after the storm. I remember how the chain caught on the loose stone when we tried to move it. I remember my father finding the old wrench in the shed and handing it to me without a word. We worked until the light had gone from the yard. The bike stayed there until morning because neither of us wanted to scratch the new paint. After breakfast we carried it inside together.",
+      "expect": { "verdict": "PRESERVED" },
+      "provenance": "Independent synthetic voice fixture, September 2026."
+    },
+    {
+      "id": "repeated-opening-erased",
+      "class": "intentional repeated opening flattened",
+      "source": "I remember the red bike leaning against the garden wall after the storm. I remember how the chain caught on the loose stone when we tried to move it. I remember my father finding the old wrench in the shed and handing it to me without a word. We worked until the light had gone from the yard. The bike stayed there until morning because neither of us wanted to scratch the fresh paint. After breakfast we carried it inside together.",
+      "output": "The red bike leaned against the garden wall after the storm. The chain caught on the loose stone when we tried to move it. My father found the old wrench in the shed and handed it to me without a word. We worked until the light had gone from the yard. The bike stayed there until morning because neither of us wanted to scratch the fresh paint. After breakfast we carried it inside together.",
+      "expect": { "verdict": "DAMAGED", "deviation": "repeated-opening:erased" },
+      "provenance": "Independent synthetic voice fixture, September 2026."
     }
   ]
 }

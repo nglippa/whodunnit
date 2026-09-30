@@ -2,7 +2,7 @@
   "id": "anti-slop",
   "name": "Anti-Slop",
   "description": "Named stock constructions that make prose read as templated, adapted from Peter Yang's no-ai-slop editing rules (MIT). Detecting a pattern is evidence a reader can check; it is not a guess about who wrote the text.",
-  "version": 1,
+  "version": 2,
   "layer": "general",
   "source": {
     "type": "imported-rule-system",
@@ -69,11 +69,11 @@
     },
     {
       "id": "slop.corporate-verbs",
-      "version": 1,
+      "version": 2,
       "name": "Corporate verbs",
       "description": "Verbs like leverage, facilitate, empower and streamline, repeated where a plain verb would do.",
       "category": "lexical",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "deterministic",
       "detection": {
         "kind": "phrase",
@@ -97,7 +97,7 @@
         "minOccurrences": 2
       },
       "remediation": {
-        "guidance": "Use the plain verb (use, help, simplify) or name the actual action."
+        "guidance": "Check whether the verbs name a real business action or merely inflate plain wording. Keep domain-specific uses and the requested register."
       },
       "source": {
         "type": "imported-rule-system",
@@ -695,7 +695,7 @@
     },
     {
       "id": "slop.dramatic-fragments",
-      "version": 1,
+      "version": 2,
       "name": "Dramatic fragmentation",
       "description": "Runs of clipped sentences used for effect (And that's it. That's the whole thing.).",
       "category": "rhythm",
@@ -711,7 +711,7 @@
         }
       },
       "remediation": {
-        "guidance": "Use complete sentences; keep a fragment only where the rhythm is genuinely yours."
+        "guidance": "Keep intentional fragments. Rework a clipped run only when it feels like a stock dramatic effect rather than the writer's cadence."
       },
       "source": {
         "type": "imported-rule-system",
@@ -870,22 +870,19 @@
     },
     {
       "id": "slop.summary-openers",
-      "version": 1,
+      "version": 2,
       "name": "Stock summary opener",
       "description": "“In conclusion,” / “In summary,” opening a sentence.",
       "category": "transition",
-      "severity": "suggestion",
-      "determinism": "deterministic",
+      "severity": "info",
+      "determinism": "heuristic",
       "detection": {
         "kind": "regex",
         "pattern": "(?:^|(?<=[.!?][\"'”’)]?\\s))(?:in conclusion|in summary|to sum up|to summarize|to summarise),\\s+",
         "flags": "im"
       },
       "remediation": {
-        "guidance": "Drop the opener.",
-        "transform": {
-          "kind": "delete-match"
-        }
+        "guidance": "Check whether the conclusion adds a real synthesis. Keep an opener when it helps readers navigate a formal document."
       },
       "source": {
         "type": "imported-rule-system",
@@ -953,7 +950,7 @@
     },
     {
       "id": "slop.dash-density",
-      "version": 1,
+      "version": 2,
       "name": "Dash-heavy",
       "description": "Dashes used as a default rhythm rather than for deliberate emphasis.",
       "category": "punctuation",
@@ -968,7 +965,7 @@
         "minPer100Words": 1
       },
       "remediation": {
-        "guidance": "Most dashes read fine as commas, full stops or parentheses; keep one or two that clearly beat the alternatives."
+        "guidance": "Keep a consistent dash habit when it belongs to the writer. Rework only dashes used as interchangeable stock emphasis."
       },
       "source": {
         "type": "imported-rule-system",

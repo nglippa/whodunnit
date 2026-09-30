@@ -1,5 +1,7 @@
 # Writing knowledge engine
 
+See [Writing intelligence: evidence and decision policy](WRITING-INTELLIGENCE.md) for the current taxonomy, clean negatives, voice safeguards and research classifications.
+
 Whodunnit splits writing work into two halves.
 
 - **Deterministic analysis** measures the text and finds catalogued patterns. It is typed, versioned and testable, and it gives the same answer every time.
@@ -51,7 +53,7 @@ The schema rejects inconsistent rules, for example a `none` detector marked dete
 - **Masking:** quotations, inline and fenced code, and URLs are replaced with spaces before matching. Offsets therefore still point into the original text, but quoted speech is never "fixed".
 - **Structure:** headings and list items are indexed but kept out of sentence statistics.
 - **Phrase matching:** word-bounded, case-insensitive, and tolerant of curly apostrophes. It can be restricted to sentence starts.
-- **Density and metric rules:** these need a minimum word count before they fire (for example, sentence-uniformity needs 120 words). Their confidence rises with distance from the threshold and is capped at 0.9.
+- **Density and metric rules:** these can require minimum words, sentences and paragraphs before they fire (sentence-uniformity now needs 180 words and 12 prose sentences). Their confidence rises with distance from the threshold and is capped at 0.9.
 - **Matches:** every `RuleMatch` carries `start`, `end`, `excerpt`, `confidence` and a human-readable `evidence` string ("CV 0.12 across 9 sentences; threshold 0.25").
 
 ## Metrics

@@ -73,7 +73,7 @@ describe("evaluation records", () => {
     expect(r.config.voiceprint).toMatchObject({ id: "mara", hash: expect.stringMatching(/^[a-f0-9]{16}$/) });
     expect(r.config.rulePacks.map((p) => p.id)).toContain("anti-slop");
     const s = r.stages[0];
-    expect(s.rules.resolved).toEqual(expect.arrayContaining(["slop.announcements", "slop.summary-openers"]));
+    expect(s.rules.resolved).toContain("slop.announcements");
     expect(s.voice.reference).toBe("voiceprint");
     expect(s.tokens).toEqual({ input: 200, output: 80 });
     expect(s.attempts).toHaveLength(1);

@@ -18,15 +18,15 @@ export function familyOf(ruleId: string): RuleFamily | undefined {
 /** Source spans matched by rules whose family allows deleting the sentence (filler the rewrite may drop). */
 export function removableSpans(findings: RuleFinding[]): [number, number][] {
   return findings
-    .filter((f) => !f.suppressedBy && familyOf(f.rule.id)?.removable)
+    .filter((f) => !f.suppressedBy && f.rule.severity !== "info" && familyOf(f.rule.id)?.removable)
     .flatMap((f) => f.matches.map((m) => [m.start, m.end] as [number, number]));
 }
 
-/** Families with at least one active finding (including info-level members). */
-export function activeFamilies(findings: RuleFinding[]): Map<string, string[]> {
+/** Families present in the text. Planning omits informational observations; descriptive comparison may retain them. */
+export function activeFamilies(findings: RuleFinding[], actionableOnly = false): Map<string, string[]> {
   const out = new Map<string, string[]>();
   for (const f of findings) {
-    if (f.suppressedBy) continue;
+    if (f.suppressedBy || (actionableOnly && f.rule.severity === "info")) continue;
     const fam = familyOf(f.rule.id);
     if (!fam) continue;
     out.set(fam.id, [...(out.get(fam.id) ?? []), f.rule.id]);

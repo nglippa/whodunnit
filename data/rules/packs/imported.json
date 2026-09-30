@@ -2,7 +2,7 @@
   "id": "imported",
   "name": "Reviewed imports",
   "description": "Rules compiled from external sources and approved by a person with `pnpm rules:activate`. Each rule carries its own source metadata.",
-  "version": 1,
+  "version": 2,
   "layer": "general",
   "source": {
     "type": "builtin",
@@ -12,11 +12,11 @@
   "rules": [
     {
       "id": "import.no-ai-slop-skill.often-empty-adverbs",
-      "version": 1,
+      "version": 2,
       "name": "Dense filler adverbs",
       "description": "Adverbs like just, literally, honestly and simply used densely enough that most add rhythm but no meaning.",
       "category": "rhythm",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "detection": {
         "kind": "density",

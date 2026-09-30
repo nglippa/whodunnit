@@ -122,13 +122,14 @@ describe("phrase detection", () => {
 });
 
 describe("metric and density detectors", () => {
-  const even = Array.from({ length: 10 }, (_, i) => `Sentence number ${i} has exactly seven words.`).join(" ");
+  const even = Array.from({ length: 16 }, (_, i) => `Sentence number ${i} carries the same measured cadence across this longer passage today.`).join(" ");
   const varied =
     "Short one. This sentence runs a fair bit longer than the one before it, with a clause or two. Then another. We tested the patch on three machines, and two of them reproduced the crash within an hour of starting. Fine. It shipped. The logs showed nothing unusual until the second restart, when memory climbed steadily. Odd. We rolled back.";
 
   it("flags uniform sentence length with enough sentences, not varied prose", () => {
     expect(fired("core.uniform-sentence-length", even).length).toBe(1);
     expect(fired("core.uniform-sentence-length", varied)).toEqual([]);
+    expect(fired("core.uniform-sentence-length", even.split(". ").slice(0, 10).join(". "))).toEqual([]);
     expect(fired("core.uniform-sentence-length", "One two three. Four five six.")).toEqual([]);
   });
 

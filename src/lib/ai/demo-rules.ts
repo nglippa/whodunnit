@@ -26,8 +26,9 @@ export function applyDemoRules(
   const rules = rulesForProfile(profile);
   const analysis = analyzeWriting(text, rules, { constraints });
   const byId = new Map(rules.map((r) => [r.id, r]));
-  const ruleStep = applyRuleTransforms(text, analysis.findings, byId, { keepWording });
-  const fired = new Set(analysis.findings.filter((f) => !f.suppressedBy).map((f) => f.rule.id));
+  const actionable = analysis.findings.filter((f) => !f.suppressedBy && f.rule.severity !== "info");
+  const ruleStep = applyRuleTransforms(text, actionable, byId, { keepWording });
+  const fired = new Set(actionable.map((f) => f.rule.id));
   // Minimal intervention: fix what the rules found, but no register edits on text that needs none.
   const styleStep = options.minimal ? { text: ruleStep.text, applied: [] } : applyStyleTransforms(ruleStep.text, profile, keepWording, fired);
   const applied = [

@@ -189,6 +189,12 @@ export const attemptRecordSchema = z
     modelMeaning: z.enum(["ran", "skipped-by-policy", "skipped-after-rejection", "unavailable"]),
     outputHash: z.string().optional(),
     outputWords: z.number().int().optional(),
+    wordingAudit: z.object({
+      untargetedChangedSentences: z.number().int().nonnegative(),
+      unretainedDomainPhrases: z.number().int().nonnegative(),
+      plainToCorporate: z.number().int().nonnegative(),
+      verbToNoun: z.number().int().nonnegative(),
+    }).strict().optional(),
     latencyMs: z.number().min(0),
     provider: z
       .object({

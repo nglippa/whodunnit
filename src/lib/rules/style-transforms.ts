@@ -40,13 +40,13 @@ interface StyleTransform {
 }
 
 const connectiveOveruse = (fired: Set<string>) =>
-  fired.has("core.transition-density") || fired.has("core.repeated-transitions") || fired.has("casual.stiff-connectives");
+  fired.has("core.repeated-transitions") || fired.has("casual.stiff-connectives");
 
 export const STYLE_TRANSFORMS: StyleTransform[] = [
   {
     id: "plain-additives",
     note: "Replaced a stock additive connective with “Also”",
-    applies: (p, keep) => p.register !== "formal" && !keep,
+    applies: (p, keep, fired) => p.register !== "formal" && !keep && (p.register === "casual" || connectiveOveruse(fired)),
     apply: (t) => t.replace(new RegExp(`${SENTENCE_START}(?:Furthermore|Moreover|Additionally),\\s+`, "g"), "$1Also, "),
   },
   {

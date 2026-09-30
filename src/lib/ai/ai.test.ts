@@ -35,7 +35,8 @@ describe("demo engine rules", () => {
 
   it("removes stock phrasing and records what it did", () => {
     const { text, applied } = applyDemoRules(sterile, PRESETS.casual);
-    expect(text).not.toMatch(/fast-paced|worth noting|In conclusion|Furthermore/);
+    expect(text).not.toMatch(/fast-paced|worth noting|Furthermore/);
+    expect(text).toContain("In conclusion, the plan is working."); // ambiguous structure stays in deterministic demo
     expect(text).toMatch(/don't expect delays/);
     expect(applied.length).toBeGreaterThan(2);
   });
@@ -46,6 +47,13 @@ describe("demo engine rules", () => {
       const v = verifyDeterministic(sterile, text, preset);
       expect(v.findings.filter((f) => f.severity === "blocking"), preset.id).toEqual([]);
     }
+  });
+
+  it("keeps a single logical transition during an unrelated demo edit", () => {
+    const source = "It is worth noting that the valve is closed. However, the second valve is open.";
+    const { text } = applyDemoRules(source, PRESETS.natural);
+    expect(text).toContain("However, the second valve is open.");
+    expect(text).not.toContain("worth noting");
   });
 
   it("does not turn a chain of additive openers into a chain of “Also” (regression)", () => {
@@ -60,7 +68,7 @@ describe("demo engine rules", () => {
   it("keeps more wording when asked", () => {
     const loose = applyDemoRules("Moreover, we utilize the tool.", PRESETS.natural).text;
     const kept = applyDemoRules("Moreover, we utilize the tool.", PRESETS.natural, { directives: ["keep_wording"] }).text;
-    expect(loose).toBe("Also, we use the tool.");
+    expect(loose).toBe("Moreover, we use the tool.");
     expect(kept).toBe("Moreover, we utilize the tool.");
   });
 });

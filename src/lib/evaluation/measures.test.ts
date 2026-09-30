@@ -118,7 +118,7 @@ describe("before/after rule diff", () => {
     const after = analyzeWriting("Here's the thing: costs fell 12%. In conclusion, we saved money.", rules);
     const d = ruleDiff(before, after);
     expect(d.resolved).toContain("slop.announcements");
-    expect(d.remaining).toContain("slop.summary-openers");
+    expect(d.remaining).not.toContain("slop.summary-openers"); // informative, not a rewrite target
     expect(d.introduced).toContain("slop.throat-clearing");
     expect(d.introducedDeterministic).toContain("slop.throat-clearing");
   });

@@ -169,11 +169,17 @@ export function constraintsFromSourceVoice(profile: SourceVoiceProfile, m: Writi
   const origin = "Your own text";
   const out: TargetConstraint[] = [];
   const s = profile.confidence;
-  if (s < MIN_VOICEPRINT) return out;
-  const around = (d: Dimension, v: number, floor: number) => out.push(make(d, v - Math.max(floor, v * 0.4), v + Math.max(floor, v * 0.6), "source-voice", s, origin));
-  if (profile.deliberate.dashes) around("punctuation.dashes", m.per100.dashes, 0.3);
-  if (profile.deliberate.fragments) around("voice.fragments", m.shares.fragments, 0.05);
-  if (profile.deliberate.semicolons) around("punctuation.semicolons", m.per100.semicolons, 0.2);
+  // A short passage can still establish a device through repetition. Keep
+  // strong local evidence while retaining the wider sample requirement for
+  // weaker habits.
+  const strongFragments = profile.devices.fragments >= 3 && profile.devices.fragmentShare >= 0.7 ||
+    profile.devices.fragments >= 2 && profile.devices.sentences >= 5 && profile.devices.fragmentShare >= 0.3;
+  const strongDashes = profile.devices.dashes >= 4 && profile.devices.pairedDashes >= 2;
+  if (s < MIN_VOICEPRINT && !strongFragments && !strongDashes) return out;
+  const around = (d: Dimension, v: number, floor: number, repeatedEvidence = false) => out.push(make(d, v - Math.max(floor, v * 0.4), v + Math.max(floor, v * 0.6), "source-voice", repeatedEvidence ? Math.max(s, STRONG_SOURCE_VOICE) : s, origin));
+  if (profile.deliberate.dashes && (s >= MIN_VOICEPRINT || strongDashes)) around("punctuation.dashes", m.per100.dashes, 0.3, strongDashes);
+  if (profile.deliberate.fragments && (s >= MIN_VOICEPRINT || strongFragments)) around("voice.fragments", m.shares.fragments, 0.05, strongFragments);
+  if (profile.deliberate.semicolons && s >= MIN_VOICEPRINT) around("punctuation.semicolons", m.per100.semicolons, 0.2);
   return out;
 }
 

@@ -1,4 +1,4 @@
-import type { RuleCategory, RuleFinding, Severity } from "@/domain/writing-rules";
+import type { RuleCategory, RuleFinding, RuleLayer, Severity } from "@/domain/writing-rules";
 import { detect } from "./detectors";
 import { computeMetrics, type WritingMetrics } from "./metrics";
 import type { RegisteredRule } from "./registry";
@@ -24,6 +24,14 @@ export interface WritingAnalysis {
   };
 }
 
+export interface PatternPermission {
+  ruleId: string;
+  layer: RuleLayer;
+  reason: string;
+  /** Scope permission to the exact author's recurring opening. */
+  opening?: string;
+}
+
 export function toFinding(rule: RegisteredRule, matches: RuleFinding["matches"]): RuleFinding {
   return {
     rule: {
@@ -43,7 +51,7 @@ export function toFinding(rule: RegisteredRule, matches: RuleFinding["matches"])
   };
 }
 
-export function analyzeWriting(text: string, rules: RegisteredRule[], options: { constraints?: TargetConstraint[] } = {}): WritingAnalysis {
+export function analyzeWriting(text: string, rules: RegisteredRule[], options: { constraints?: TargetConstraint[]; permissions?: PatternPermission[] } = {}): WritingAnalysis {
   const ix = indexText(text);
   const metrics = computeMetrics(ix);
   const ctx = { ix, metrics };
@@ -54,6 +62,13 @@ export function analyzeWriting(text: string, rules: RegisteredRule[], options: {
     if (matches.length) findings.push(toFinding(rule, matches));
   }
   if (options.constraints?.length) findings = applyPrecedence(findings, options.constraints, metrics);
+  if (options.permissions?.length) {
+    findings = findings.map((f) => {
+      if (f.suppressedBy || f.rule.layer === "semantic-safety") return f;
+      const permission = options.permissions?.find((p) => p.ruleId === f.rule.id && (!p.opening || f.matches.every((m) => text.slice(m.start, m.start + p.opening!.length).toLowerCase() === p.opening!.toLowerCase())));
+      return permission ? { ...f, suppressedBy: { layer: permission.layer, reason: permission.reason } } : f;
+    });
+  }
 
   const active = findings.filter((f) => !f.suppressedBy);
   const bySeverity: Record<Severity, number> = { info: 0, suggestion: 0, warning: 0 };

@@ -8,7 +8,8 @@ import { renderContract, reconstructUserPrompt } from "../prompts";
 import { rulesForProfile } from "../rules/packs";
 import { applyRuleTransforms, collapseAdditiveOpeners } from "../rules/transforms";
 import { analyzeWriting } from "../rules/engine";
-import { runReconstruction } from "./pipeline";
+import { runReconstruction, runReconstructionDetailed } from "./pipeline";
+import { attemptRecordSchema } from "@/domain/evaluation";
 import { comparePatterns } from "./postcheck";
 import { buildRewritePlan, summarizePlan } from "./rewrite-plan";
 
@@ -104,6 +105,17 @@ describe("pipeline with rule post-checks", () => {
     const r = await runReconstruction({ source: A, profile: PRESETS.natural }, provider);
     expect(r.attempts).toBe(1);
     expect(r.patterns.remaining.length).toBeGreaterThan(0);
+  });
+
+  it("records wording drift as counts without raw text in attempt telemetry", async () => {
+    const source = "Here's the thing: the schedule changed. We use the signed checklist on Tuesday.";
+    const candidate = "The schedule changed. We leverage the signed checklist on Tuesday.";
+    const { provider } = scripted([candidate]);
+    const detailed = await runReconstructionDetailed({ source, profile: PRESETS.natural }, provider, { maxAttempts: 1 });
+    const record = attemptRecordSchema.parse(detailed.attempts[0]);
+    expect(record.wordingAudit).toMatchObject({ plainToCorporate: 1, untargetedChangedSentences: 1 });
+    expect(JSON.stringify(record)).not.toContain(source);
+    expect(JSON.stringify(record)).not.toContain(candidate);
   });
 
   it("demo mode reduces patterns on formulaic prose without touching facts", async () => {

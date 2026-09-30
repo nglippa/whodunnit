@@ -98,7 +98,7 @@ function detectDensity(rule: WritingRule, d: Extract<Detection, { kind: "density
 }
 
 function detectMetric(rule: WritingRule, d: Extract<Detection, { kind: "metric" }>, ctx: DetectionContext): RuleMatch[] {
-  if (ctx.metrics.sentences < d.minSentences || ctx.metrics.paragraphs < d.minParagraphs) return [];
+  if (ctx.metrics.sentences < d.minSentences || ctx.metrics.paragraphs < d.minParagraphs || ctx.ix.wordCount < d.minWords) return [];
   const value = metricValue(ctx.metrics, d.metric);
   const fires = d.op === "lt" ? value < d.threshold : value > d.threshold;
   if (!fires) return [];

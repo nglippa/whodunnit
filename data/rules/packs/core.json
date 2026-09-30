@@ -2,7 +2,7 @@
   "id": "core",
   "name": "Core Whodunnit",
   "description": "Structural and rhythm patterns measured directly from the text: uniform sentences and paragraphs, stacked connectives, repeated openers, and dense qualifiers or intensifiers.",
-  "version": 1,
+  "version": 2,
   "layer": "general",
   "source": {
     "type": "builtin",
@@ -12,7 +12,7 @@
   "rules": [
     {
       "id": "core.uniform-sentence-length",
-      "version": 1,
+      "version": 2,
       "name": "Uniform sentence rhythm",
       "description": "Sentence lengths barely vary, so the prose reads at one monotonous pace.",
       "category": "rhythm",
@@ -24,7 +24,8 @@
         "metric": "sentenceLengthCV",
         "op": "lt",
         "threshold": 0.25,
-        "minSentences": 8
+        "minSentences": 12,
+        "minWords": 180
       },
       "remediation": {
         "guidance": "Let some sentences be short and plain and others run longer, where the thought calls for it. Do not add or drop content to create variety."
@@ -33,8 +34,8 @@
         "type": "builtin",
         "relation": "original"
       },
-      "rationale": "Spoken and written human prose usually shows a coefficient of variation of roughly 0.4–0.7 in sentence length.",
-      "falsePositiveNotes": "Technical instructions and lists of steps can be legitimately even. Needs at least 8 sentences.",
+      "rationale": "Very even sentence lengths across a sustained prose passage can signal mechanical cadence, but the statistic says nothing about authorship or quality on its own.",
+      "falsePositiveNotes": "Technical instructions and intentionally measured prose can be even. Needs at least 12 prose sentences and 180 words; treat the finding as a suggestion, not a target to game.",
       "tags": [
         "rhythm",
         "structure"
@@ -42,11 +43,11 @@
     },
     {
       "id": "core.no-sentence-extremes",
-      "version": 1,
+      "version": 2,
       "name": "No short or long sentences",
       "description": "A long passage with no sentence under 8 words and none over 30.",
       "category": "rhythm",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "dimension": "rhythm.sentence-variation",
       "detection": {
@@ -73,11 +74,11 @@
     },
     {
       "id": "core.uniform-paragraph-length",
-      "version": 1,
+      "version": 2,
       "name": "Uniform paragraph blocks",
       "description": "Paragraphs are nearly identical in length, which reads as assembled rather than written.",
       "category": "paragraph",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "dimension": "rhythm.paragraph-variation",
       "detection": {
@@ -89,7 +90,7 @@
         "minParagraphs": 4
       },
       "remediation": {
-        "guidance": "Let paragraph length follow the weight of each point: a short one for a single observation, a longer one for an argument."
+        "guidance": "Observe the paragraph shape in context. A consistent format can serve a procedural or formal document."
       },
       "source": {
         "type": "builtin",
@@ -102,11 +103,11 @@
     },
     {
       "id": "core.symmetrical-paragraphs",
-      "version": 1,
+      "version": 2,
       "name": "Symmetrical paragraphs",
       "description": "Every paragraph has exactly the same number of sentences.",
       "category": "paragraph",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "detection": {
         "kind": "builtin",
@@ -116,7 +117,7 @@
         }
       },
       "remediation": {
-        "guidance": "Merge or split paragraphs where the ideas actually divide, not to a template."
+        "guidance": "Check whether a repeated structure serves the document before proposing any paragraph changes."
       },
       "source": {
         "type": "builtin",
@@ -128,11 +129,11 @@
     },
     {
       "id": "core.transition-density",
-      "version": 1,
+      "version": 2,
       "name": "Connective-heavy sentences",
       "description": "A large share of sentences open with a stock connective (However, Moreover, Additionally, Therefore).",
       "category": "transition",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "dimension": "transition.openers",
       "detection": {
@@ -143,7 +144,7 @@
         "minSentences": 6
       },
       "remediation": {
-        "guidance": "Most connectives can go: the order of the sentences already shows the relationship. Keep the ones that carry real logic (because, but)."
+        "guidance": "Check whether each transition states a real relationship. Formal signposting can be useful; frequency alone is not a reason to remove it."
       },
       "source": {
         "type": "builtin",
@@ -258,11 +259,11 @@
     },
     {
       "id": "core.triad-overuse",
-      "version": 1,
+      "version": 2,
       "name": "Lists of three by default",
       "description": "Several three-item lists in a short span, a rhythm that makes prose sound templated.",
       "category": "sentence",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "detection": {
         "kind": "builtin",
@@ -273,7 +274,7 @@
         }
       },
       "remediation": {
-        "guidance": "Keep the items that are real. If there are two, say two; if there are four, say four."
+        "guidance": "Check whether the three-item lists are complete and useful. Keep every real item, especially in procedures and technical inventories."
       },
       "source": {
         "type": "builtin",
@@ -330,11 +331,11 @@
     },
     {
       "id": "core.hedge-density",
-      "version": 1,
+      "version": 2,
       "name": "Dense hedging",
       "description": "Qualifiers (may, might, perhaps, arguably, seems) are unusually dense across the text.",
       "category": "voice",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "dimension": "voice.hedging",
       "detection": {
@@ -363,7 +364,7 @@
         "minWords": 120
       },
       "remediation": {
-        "guidance": "Keep a qualifier only where the source is genuinely uncertain; state established facts plainly."
+        "guidance": "Check whether repeated qualifiers carry distinct uncertainty. Keep every hedge that limits a claim or belongs to the author's register."
       },
       "source": {
         "type": "builtin",
@@ -376,11 +377,11 @@
     },
     {
       "id": "core.hedge-cluster",
-      "version": 1,
+      "version": 2,
       "name": "Hedge cluster",
       "description": "One paragraph carries four or more qualifiers.",
       "category": "voice",
-      "severity": "suggestion",
+      "severity": "info",
       "determinism": "heuristic",
       "dimension": "voice.hedging",
       "detection": {
@@ -393,7 +394,7 @@
         }
       },
       "remediation": {
-        "guidance": "Decide what the paragraph actually claims and qualify it once, where the uncertainty is."
+        "guidance": "Check each qualifier against the claim it limits. Repetition alone does not make a hedge expendable."
       },
       "source": {
         "type": "builtin",
@@ -459,7 +460,7 @@
     },
     {
       "id": "core.wordy-phrases",
-      "version": 1,
+      "version": 2,
       "name": "Wordy stock phrases",
       "description": "Long stock phrases with a plain equivalent (in order to → to, due to the fact that → because).",
       "category": "lexical",
@@ -472,9 +473,7 @@
           "due to the fact that",
           "at this point in time",
           "a large number of",
-          "a significant number of",
           "in the event that",
-          "prior to",
           "utilize",
           "utilizes",
           "utilized",
@@ -493,9 +492,7 @@
             "due to the fact that": "because",
             "at this point in time": "now",
             "a large number of": "many",
-            "a significant number of": "many",
             "in the event that": "if",
-            "prior to": "before",
             "utilize": "use",
             "utilizes": "uses",
             "utilized": "used",

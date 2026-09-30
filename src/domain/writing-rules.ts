@@ -151,6 +151,7 @@ export const detectionSchema = z.discriminatedUnion("kind", [
       /** Guards against firing on tiny texts where the statistic is meaningless. */
       minSentences: z.number().int().min(0).max(200).default(6),
       minParagraphs: z.number().int().min(0).max(100).default(0),
+      minWords: z.number().int().min(0).max(5000).default(0),
     })
     .strict(),
   z.object({ kind: z.literal("builtin"), detector: z.enum(BUILTIN_DETECTORS), params: z.record(z.string(), z.number()).default({}) }).strict(),

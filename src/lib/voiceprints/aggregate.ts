@@ -2,6 +2,7 @@ import type { Measured, Observation, Voiceprint, VoiceprintStats, WritingSample 
 import { analyzeText, type TextAnalysis } from "../analysis/analyze";
 import { words } from "../analysis/tokenize";
 import { STOPWORDS } from "../analysis/lexicon";
+import { deviceSentences } from "../semantics/voice-devices";
 
 /**
  * Builds a Voiceprint's statistics from genuine samples. Each measurement's
@@ -73,6 +74,18 @@ export function computeVoiceprintStats(samples: Pick<WritingSample, "text">[]): 
 
   const openerCounts = new Map<string, number>();
   for (const a of analyses) for (const o of a.openers) openerCounts.set(o, (openerCounts.get(o) ?? 0) + 1);
+  // Cross-sample two-word openings are stronger evidence of a recurring
+  // rhetorical device than a shared article or pronoun. Count samples, not
+  // repetitions within one sample.
+  const openingSamples = new Map<string, number>();
+  for (const text of texts) {
+    const inSample = new Set(deviceSentences(text).map((s) => words(s).slice(0, 2).join(" ").toLowerCase()).filter((s) => s.split(" ").length === 2));
+    for (const opening of inSample) openingSamples.set(opening, (openingSamples.get(opening) ?? 0) + 1);
+  }
+  const repeatedTwoWord = [...openingSamples]
+    .filter(([opening, n]) => n >= 2 && !/^(?:it|this|that|there|the|a|an)\s/.test(opening))
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .map(([opening]) => opening);
 
   const stats: VoiceprintStats = {
     sentences: {
@@ -100,11 +113,10 @@ export function computeVoiceprintStats(samples: Pick<WritingSample, "text">[]): 
       meanParagraphSentences: m((a) => a.paragraphLength.meanSentences),
       transitionOpenerRate: m((a) => a.sentenceShares.transitionOpeners),
     },
-    recurringOpeners: [...openerCounts.entries()]
+    recurringOpeners: [...repeatedTwoWord, ...[...openerCounts.entries()]
       .filter(([o, c]) => c >= Math.min(2, texts.length) && !["the", "a", "an"].includes(o))
       .sort((a, b) => b[1] - a[1])
-      .slice(0, 8)
-      .map(([o]) => o),
+      .map(([o]) => o)].slice(0, 8),
     recurringPhrases: recurringPhrases(texts),
   };
   return { stats, analyses, totalWords };

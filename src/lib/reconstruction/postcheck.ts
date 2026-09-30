@@ -24,7 +24,7 @@ const activeCounts = (a: WritingAnalysis) => {
 };
 
 export function comparePatterns(plan: RewritePlan, candidate: string, rules: RegisteredRule[]): PatternComparison {
-  const after = analyzeWriting(candidate, rules, { constraints: plan.constraints });
+  const after = analyzeWriting(candidate, rules, { constraints: plan.constraints, permissions: plan.permissions });
   const b = activeCounts(plan.analysis);
   const a = activeCounts(after);
   const resolved: PatternComparison["resolved"] = [];
