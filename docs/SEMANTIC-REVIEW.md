@@ -1,5 +1,7 @@
 # Experimental bounded semantic review
 
+The subsequent scope-calibration experiment, including the v2/v3 contract comparison, v7 blocked-pending-information state, development trace, and zero-cost evaluation guard, is in [SEMANTIC-SCOPE.md](./SEMANTIC-SCOPE.md). The earlier approximately $2.73 Claude consultation spend was a process failure; this pass used no paid API route.
+
 Production remains `reconstruction-v1`. Published `reconstruction-v5` still uses its original deterministic document classifier and planner. `reconstruction-v6` adds an optional, explicitly injected editorial reviewer after v5-style analysis. It is not enabled by the web route. Local-model benchmarking remains **PAUSED UNTIL 64 GB M5 PRO ENVIRONMENT**.
 
 ```mermaid

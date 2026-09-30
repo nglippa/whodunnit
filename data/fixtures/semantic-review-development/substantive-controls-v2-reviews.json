@@ -1,0 +1,1043 @@
+[
+  {
+    "id": "P01-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 257,
+          "end": 307,
+          "text": "Pickup traffic was strongest between ten and noon."
+        },
+        {
+          "start": 717,
+          "end": 789,
+          "text": "No holds expired because of the delay, but the staffing margin was thin."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P01-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 59,
+              "end": 142,
+              "text": "The pickup window was useful because it gave patrons another time to pick up books."
+            },
+            {
+              "start": 288,
+              "end": 372,
+              "text": "Having another opportunity to collect holds was the principal benefit of the window."
+            },
+            {
+              "start": 483,
+              "end": 582,
+              "text": "Patrons could pick up their books on Saturday, which made Saturday a time when pickup was possible."
+            },
+            {
+              "start": 920,
+              "end": 993,
+              "text": "Keeping an additional pickup opportunity would preserve that opportunity."
+            }
+          ],
+          "reason": "Four later paragraphs restate the initial point that Saturday pickup was available, with little new reasoning or evidence.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 58,
+          "text": "The library tested a Saturday pickup window for six weeks."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "What use or outcomes were observed during the six-week test",
+        "Evidence or constraints supporting a decision about continuing the window"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P02-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 246,
+          "end": 313,
+          "text": "Most items were collected in the final ten minutes before the bell."
+        },
+        {
+          "start": 495,
+          "end": 631,
+          "text": "That observation is useful but informal: the school did not compare attendance records or classroom behavior before and after the trial."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P02-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 122,
+              "end": 191,
+              "text": "Helping students get breakfast was the purpose of the breakfast cart."
+            },
+            {
+              "start": 193,
+              "end": 254,
+              "text": "The breakfast cart was helpful because it provided breakfast."
+            },
+            {
+              "start": 429,
+              "end": 487,
+              "text": "Being able to obtain breakfast meant the cart was helpful."
+            },
+            {
+              "start": 822,
+              "end": 931,
+              "text": "The trial showed that a breakfast cart can provide breakfast, and this is why the breakfast cart was helpful."
+            }
+          ],
+          "reason": "The paragraphs repeatedly equate providing breakfast with being helpful, without developing trial results or a reasoned recommendation.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 71,
+          "text": "The school ran a four-week breakfast cart trial near the east entrance."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "Observed uptake or operational results of the trial",
+        "Evidence supporting whether the cart should continue"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P03-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 117,
+          "text": "Before recording an interview, the coordinator must explain its purpose and obtain the participant’s written consent."
+        },
+        {
+          "start": 450,
+          "end": 568,
+          "text": "A participant may withdraw consent for future use by contacting the coordinator within fourteen days of the interview."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ]
+    }
+  },
+  {
+    "id": "P03-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 55,
+              "end": 141,
+              "text": "The organization values consent and believes that consent should be handled with care."
+            },
+            {
+              "start": 277,
+              "end": 399,
+              "text": "Everyone involved should remember that consent matters and that its importance should be respected throughout the process."
+            },
+            {
+              "start": 460,
+              "end": 586,
+              "text": "The organization takes consent seriously because it is important to the organization and to the people involved in interviews."
+            },
+            {
+              "start": 641,
+              "end": 767,
+              "text": "Emphasizing consent helps keep the importance of consent visible, which is an important part of a responsible consent process."
+            }
+          ],
+          "reason": "Each paragraph asserts that consent matters but provides no procedure, decision criterion, or consequence that would develop the point.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 54,
+          "text": "Consent is an important part of the interview process."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "Specific consent procedures, responsibilities, or safeguards",
+        "Information about how consent is obtained, recorded, or withdrawn"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES"
+      ]
+    }
+  },
+  {
+    "id": "P04-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 85,
+          "end": 195,
+          "text": "Leave the red hot-water valve open so the maintenance team can distinguish this exercise from a full shutdown."
+        },
+        {
+          "start": 270,
+          "end": 371,
+          "text": "If water continues to flow, stop the exercise and call facilities; do not loosen the hose connection."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ]
+    }
+  },
+  {
+    "id": "P04-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 52,
+              "end": 144,
+              "text": "Staff should take care with the sink and follow a careful approach to any work involving it."
+            },
+            {
+              "start": 190,
+              "end": 264,
+              "text": "Before proceeding, staff should make sure the appropriate steps are taken."
+            },
+            {
+              "start": 368,
+              "end": 428,
+              "text": "During the work, staff should remain mindful of the process."
+            },
+            {
+              "start": 526,
+              "end": 615,
+              "text": "Once the work is finished, staff should ensure that the work has been properly completed."
+            }
+          ],
+          "reason": "The passage presents a sequence of instructions but gives no identifiable actions, checks, or stop conditions for handling the sink.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 51,
+          "text": "The demonstration sink should be handled carefully."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "The actual steps to perform before and during the demonstration",
+        "A concrete completion check and any required stop condition"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "META_COMMENTARY",
+        "RESTATES",
+        "RESTATES"
+      ]
+    }
+  },
+  {
+    "id": "P05-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 309,
+          "end": 413,
+          "text": "Drivers counted boardings by stop, and the clinic stop accounted for nearly half of rides on those days."
+        },
+        {
+          "start": 773,
+          "end": 863,
+          "text": "Maintenance found no vehicle fault; the charger had been shared with another town vehicle."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "SUMMARIZES",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P05-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 255,
+              "end": 317,
+              "text": "The evening shuttle trial should be extended for three months."
+            },
+            {
+              "start": 503,
+              "end": 648,
+              "text": "Because the trial has been short, the town should observe ridership for three more months before deciding whether to make a permanent commitment."
+            },
+            {
+              "start": 714,
+              "end": 821,
+              "text": "The clinic should have a stop sign, because the recommendation includes adding a stop sign near the clinic."
+            },
+            {
+              "start": 823,
+              "end": 921,
+              "text": "In conclusion, a three-month extension, the current route, and a clinic stop sign are recommended."
+            }
+          ],
+          "reason": "After the executive summary, the body repeats its three recommendations and short-trial caveat without evidence or distinct reasoning.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 146,
+          "text": "Executive summary. The town should extend the evening shuttle trial for three months, keep the current route, and add a stop sign near the clinic."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "Observed ridership or operational evidence for the recommendations",
+        "Reason the clinic needs a stop sign and the current route should remain"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "SUMMARIZES",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P06-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 304,
+          "end": 403,
+          "text": "A handwritten label fell off during the move, leaving two sealed bins with the same plain exterior."
+        },
+        {
+          "start": 639,
+          "end": 741,
+          "text": "The transfer sheet correctly named the folder count but did not include a bin identifier on each line."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "SUMMARIZES",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ]
+    }
+  },
+  {
+    "id": "P06-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 195,
+              "end": 275,
+              "text": "The archive handoff was delayed by one day because a storage bin was mislabeled."
+            },
+            {
+              "start": 424,
+              "end": 527,
+              "text": "A mislabeled bin can delay a handoff, and in this case the delay to the archive handoff lasted one day."
+            },
+            {
+              "start": 617,
+              "end": 723,
+              "text": "Replacing temporary labels with printed labels is the recommended way to address the mislabeled-bin issue."
+            },
+            {
+              "start": 827,
+              "end": 892,
+              "text": "These points summarize the incident and the recommended response."
+            }
+          ],
+          "reason": "The body and ending repeat the executive summary’s delay, no-loss outcome, and label recommendation without adding the incident sequence or support for the response.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 193,
+          "text": "Executive summary. A mislabeled storage bin delayed the archive handoff by one day. No materials were lost. The team should replace temporary labels with printed labels before the next handoff."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "How the mislabeling caused the delay and how the folders were located",
+        "Why printed labels would prevent a similar handoff problem"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "SUMMARIZES",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P07-A",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "evidence": [
+            {
+              "start": 568,
+              "end": 738,
+              "text": "The checklist is an important checklist for the work. It is useful because checklists can be useful, and using a checklist is a good way to make sure a checklist is used."
+            }
+          ],
+          "reason": "The paragraph circles around the word “checklist” without explaining what the checklist contains or why this use matters.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT"
+      ]
+    }
+  },
+  {
+    "id": "P07-B",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 568,
+              "end": 738,
+              "text": "The checklist is an important checklist for the work. It is useful because checklists can be useful, and using a checklist is a good way to make sure a checklist is used."
+            },
+            {
+              "start": 930,
+              "end": 1095,
+              "text": "The compost delivery arrangement is the arrangement for compost delivery. It is important to have an arrangement, and this arrangement is the one currently in place."
+            },
+            {
+              "start": 1270,
+              "end": 1434,
+              "text": "Members should communicate about garden matters. Communication is important because it helps people communicate and supports a communicative approach to the garden."
+            }
+          ],
+          "reason": "Three separate paragraphs repeat their own nouns and assertions without adding operational information. The intervening paragraphs provide concrete details, so the edit can stay focused on these passages.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "ADDS_REASONING",
+        "RESTATES",
+        "ADDS_REASONING",
+        "RESTATES"
+      ]
+    }
+  },
+  {
+    "id": "P08-A",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 147,
+              "end": 280,
+              "text": "The audio guide was used by visitors. Visitors used the guide when they used it, and its use was an aspect of how the guide was used."
+            },
+            {
+              "start": 433,
+              "end": 558,
+              "text": "A map can help with finding things. Finding things with a map is useful because maps are intended to help people find things."
+            },
+            {
+              "start": 560,
+              "end": 680,
+              "text": "Cleaning devices is part of using devices. The devices need cleaning so that cleaned devices are clean for the next use."
+            }
+          ],
+          "reason": "These three paragraphs are circular restatements. They add no distinct observation or action to the trial report and can be cut or narrowed without adding facts.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "ADDS_REASONING",
+        "RESTATES",
+        "RESTATES",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P08-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 155,
+              "text": "The museum reviewed the audio-guide trial. Reviewing a trial is useful because it allows a trial to be reviewed and gives the museum a review of the trial."
+            },
+            {
+              "start": 157,
+              "end": 290,
+              "text": "The audio guide was used by visitors. Visitors used the guide when they used it, and its use was an aspect of how the guide was used."
+            },
+            {
+              "start": 450,
+              "end": 575,
+              "text": "A map can help with finding things. Finding things with a map is useful because maps are intended to help people find things."
+            },
+            {
+              "start": 852,
+              "end": 978,
+              "text": "A return process is important for returns. Improving the return process would help the return process work in an improved way."
+            }
+          ],
+          "reason": "Circular claims dominate multiple paragraphs, leaving the report with little progression. Reconstruct the organization around the limited concrete trial actions and recommendations already present; do not supply unreported trial results.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 292,
+              "end": 448,
+              "text": "The upstairs gallery was part of the audio-guide experience. It was a gallery upstairs, and visitors experienced the guide as they went through the gallery."
+            },
+            {
+              "start": 577,
+              "end": 697,
+              "text": "Cleaning devices is part of using devices. The devices need cleaning so that cleaned devices are clean for the next use."
+            }
+          ],
+          "reason": "These passages assert significance or necessity without saying what occurred or what follows from it.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "ADDS_CONTEXT",
+        "RESTATES",
+        "SUMMARIZES"
+      ]
+    }
+  },
+  {
+    "id": "P09-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 145,
+          "end": 306,
+          "text": "The draft says the change reduced damage by 40 percent, but the source notes contain neither the number of damaged parcels before June nor the number after June."
+        },
+        {
+          "start": 597,
+          "end": 708,
+          "text": "The percentage should be verified from shipment and damage records before the report presents it as an outcome."
+        }
+      ],
+      "brakeReason": "The missing counts are a clearly identified problem in the draft being reviewed. The source critique states the evidence gap and a concrete verification step; it does not claim the reduction as established.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P09-B",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "evidence": [
+            {
+              "start": 417,
+              "end": 548,
+              "text": "In terms of the matter of how the inspection was carried out, it was carried out in a way that was easy for the shift to carry out."
+            }
+          ],
+          "reason": "This sentence repeats the previous sentence’s report that the inspection was easy to fit into the morning shift, with no added detail.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P10-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 248,
+          "end": 354,
+          "text": "It does not include either vendor’s price, the laboratory cutoff time, or Route A’s promised arrival time."
+        },
+        {
+          "start": 541,
+          "end": 700,
+          "text": "Before naming a vendor, the coordinator needs the two quotes and written delivery windows so the committee can compare price against the required arrival time."
+        }
+      ],
+      "brakeReason": "The source is a critique of an under-supported selection draft. It identifies the missing comparison data and the next step rather than making an unsupported vendor choice.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P10-B",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REGISTER_INFLATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "evidence": [
+            {
+              "start": 519,
+              "end": 653,
+              "text": "In consideration of the considerations above, it is recommended that the clinic make the selection of Route A as the selected courier."
+            }
+          ],
+          "reason": "The recommendation is buried under repeated “consideration,” “selection,” and “selected”; the following sentence already gives the substantive basis.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P11-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.99,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 353,
+          "end": 435,
+          "text": "The repetition is evidence of the problem, not a claim the notice should preserve."
+        },
+        {
+          "start": 511,
+          "end": 594,
+          "text": "That wording leaves both the responsible party and the promised steps unidentified."
+        },
+        {
+          "start": 726,
+          "end": 831,
+          "text": "Moving it beside the shutoff time would help residents who need to ask whether their address is affected."
+        }
+      ],
+      "brakeReason": "The repeated and vague phrases are quoted from the notice as examples. The source critique explains each problem and gives concrete revision guidance.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P11-B",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.99,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 169,
+              "text": "The draft notice needs revision because action is important and important action needs to be taken. It is important to recognize the importance of this important matter."
+            },
+            {
+              "start": 171,
+              "end": 319,
+              "text": "Residents should be aware of the importance of awareness. Awareness is important, and the notice should appropriately promote appropriate awareness."
+            },
+            {
+              "start": 321,
+              "end": 475,
+              "text": "Appropriate steps should be taken as appropriate. Taking appropriate steps in an appropriate way is necessary for the steps to be appropriately completed."
+            },
+            {
+              "start": 477,
+              "end": 637,
+              "text": "The notice should be improved in a way that makes improvement possible. A better notice would be better because improving it would result in an improved notice."
+            }
+          ],
+          "reason": "Every paragraph repeats an abstract assertion without identifying an action, defect, example, or revision. The whole critique needs reconstruction, which requires specifics absent from this source.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [
+        "The action residents need to take and the notice circumstances",
+        "Confirmed notice details or examples needed to support a useful critique"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "RESTATES",
+        "RESTATES",
+        "RESTATES",
+        "RESTATES"
+      ]
+    }
+  },
+  {
+    "id": "P12-A",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.99,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 289,
+          "end": 395,
+          "text": "This sentence is worth quoting because it shows how the proposed outcome is repeated in place of a method."
+        },
+        {
+          "start": 474,
+          "end": 599,
+          "text": "That passage does not identify a cost or the activity it funds; the problem is missing budget detail, not merely word choice."
+        },
+        {
+          "start": 601,
+          "end": 704,
+          "text": "The project team should define one participation measure and attach each requested cost to an activity."
+        }
+      ],
+      "brakeReason": "The circular phrases are quoted grant-draft examples. The source critique identifies what the draft lacks and specifies the facts its team should add.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING"
+      ]
+    }
+  },
+  {
+    "id": "P12-B",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "evidence": [
+            {
+              "start": 601,
+              "end": 751,
+              "text": "In terms of the matter of what the team should do, the thing the team should do is to define a measure and connect each requested cost to an activity."
+            }
+          ],
+          "reason": "The opening repeats “matter” and “team should do” before reaching the actual recommendation; the recommendation itself is concrete and can be retained.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING"
+      ]
+    }
+  }
+]

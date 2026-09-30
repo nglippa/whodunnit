@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "purpose": "synthetic semantic scope development only; never frozen holdout data",
+  "modelRoute": "Codex account-backed subordinate agents; no metered API route invoked",
+  "modelFamily": "OpenAI GPT family",
+  "exactModel": "inherited account agent; exact model identifier not exposed in artifact",
+  "settings": "agent sampling/settings not exposed",
+  "routingMode": "review all 24 controls in two disjoint batches per contract",
+  "v2Contract": "semantic-review.v2",
+  "v3Contract": "semantic-review.v3",
+  "requestGeneration": "node --import tsx tools/eval/substantive-requests.ts v2|v3",
+  "reviewerRoles": {
+    "v2A": "01a0f3c3-16d1-7da0-b041-1af9aa346f79",
+    "v2B": "01a0f3c4-8cee-7e63-a20d-2e96f04d14a0",
+    "v3A": "01a0f3c7-a092-7f73-a55e-497601a5b9b7",
+    "v3B": "01a0f3c7-a0cc-75a0-a793-2f9d703e1c3f"
+  },
+  "sha256": {
+    "substantive-controls.json": "338b31ac2d5f0cf31bf99a2b716846774256da55fb8675ced8040a0baf07ca35",
+    "substantive-controls-redteam.json": "bee92828fbdef97864f221518abb1f4263f77ce69d37a64a717cf2f83dcb22ad",
+    "substantive-v2-requests.json": "f8a3043817dfb7ef867557c14cb3700989335c98f8f055fa47ec025e050d6d4b",
+    "substantive-v3-requests.json": "d988e411df7d54826c8f4c2cf58fc45528d920b0033c362c9bb835e2265ccfab",
+    "substantive-controls-v2-reviews.json": "dd7ef1e8869e2c0912427ce3490f23f6d76b34e44a72829a124ff23850c7e455",
+    "substantive-controls-v3-reviews.json": "4ff0f43119a79ef2dc8308ea3a477c8de1a977d156c19b304a7c297a4ea77246",
+    "substantive-controls-v2-results.json": "6384627afe664160412b0b257da28c81ab89d3e83c3fabf8c928a8a9fbc11b89",
+    "substantive-controls-v3-results.json": "b32c6f58ee8be33eecfb191bb0581dfcb29fd62fb0e438c685c5fbb6adf25808",
+    "blind-substantive-reassessment.json": "55c1583b0bbd16da4049866f4b9247be9340f11b40929a54f5399ce0d667135a",
+    "substantive-scope-trace.json": "81d41d24e58ecc1f286c36ed2bc83e736f1486c6b2d85986760366ff5fa08959"
+  }
+}

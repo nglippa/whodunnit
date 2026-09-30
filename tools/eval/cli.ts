@@ -15,6 +15,7 @@ import { STRATEGIES, getStrategy } from "@/lib/reconstruction/strategies";
 import { GEMINI_KEY_NAMES } from "@/lib/ai/select";
 import { runBatch } from "@/lib/evaluation/batch";
 import { EvaluationConfigError, createEvaluationOrchestration, createEvaluationProvider, createJudge, resolveConfig } from "@/lib/evaluation/config";
+import { assertEvaluationCostPermission } from "@/lib/evaluation/cost-guard";
 import { runSemanticFixtures } from "@/lib/evaluation/semantic-fixtures";
 import { runVoiceFixtures } from "@/lib/evaluation/voice-fixtures";
 import { loadCorpus, selectCases } from "@/lib/evaluation/corpus";
@@ -52,7 +53,7 @@ function flag(name: string): string | undefined {
   return i >= 0 && rest[i + 1] && !rest[i + 1].startsWith("--") ? rest[i + 1] : undefined;
 }
 const has = (name: string) => rest.includes(`--${name}`);
-const BOOL = new Set(["--all", "--demo", "--dry-run", "--smoke", "--baseline-compare", "--force-model", "--no-judge-cache"]);
+const BOOL = new Set(["--all", "--demo", "--dry-run", "--smoke", "--baseline-compare", "--force-model", "--no-judge-cache", "--allow-paid-provider", "--confirm-free-groq"]);
 const positional = () => rest.filter((a, i) => !a.startsWith("--") && !(i > 0 && rest[i - 1].startsWith("--") && !rest[i - 1].includes("=") && !BOOL.has(rest[i - 1])));
 const list = (v: string | undefined) => (v ? v.split(",").map((s) => s.trim()).filter(Boolean) : undefined);
 const num = (name: string) => {
@@ -104,6 +105,10 @@ CHOOSE WHAT IS TESTED
   --pace <seconds>                                   pause between cases (for provider rate limits)
   --dry-run                                          build plans and contracts only; no provider call,
                                                      nothing saved
+  --allow-paid-provider                               explicitly permit potentially metered routes;
+                                                     do not use without user authorization
+  --confirm-free-groq                                 permit Groq judge/worker only after verifying
+                                                     this account has a zero-cost quota
 
   Keys come from the shell or the project's env files (.env.local etc., loaded
   like Next.js does; values are never printed): ANTHROPIC_API_KEY, GEMINI_API_KEY.
@@ -278,6 +283,7 @@ async function main() {
       let orchestration;
       let judgeCache: FileJudgeCache | null = null;
       try {
+        assertEvaluationCostPermission(config, { allowPaidProvider: has("allow-paid-provider"), confirmedFreeGroq: has("confirm-free-groq") });
         provider = createEvaluationProvider(config, process.env);
         orchestration = config.strategy === "reconstruction-v4" ? createEvaluationOrchestration(config, provider, process.env) : undefined;
         judgeCache = config.judge && !has("no-judge-cache") ? new FileJudgeCache(ROOT) : null;

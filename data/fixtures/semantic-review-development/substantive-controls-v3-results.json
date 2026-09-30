@@ -1,0 +1,780 @@
+{
+  "count": 24,
+  "rows": [
+    {
+      "id": "P01-A",
+      "pairId": "P01",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P01-B",
+      "pairId": "P01",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LOCAL_EDIT",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 2,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "SUBSTANTIVE_RECONSTRUCTION"
+      }
+    },
+    {
+      "id": "P02-A",
+      "pairId": "P02",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P02-B",
+      "pairId": "P02",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LOCAL_EDIT",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 2,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "SUBSTANTIVE_RECONSTRUCTION"
+      }
+    },
+    {
+      "id": "P03-A",
+      "pairId": "P03",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P03-B",
+      "pairId": "P03",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LOCAL_EDIT",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "PARTIAL_ONLY",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P04-A",
+      "pairId": "P04",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P04-B",
+      "pairId": "P04",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "PARTIAL_ONLY",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P05-A",
+      "pairId": "P05",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P05-B",
+      "pairId": "P05",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "SUBSTANTIVE_RECONSTRUCTION"
+      }
+    },
+    {
+      "id": "P06-A",
+      "pairId": "P06",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_NEW_FACT",
+          "ADDS_REASONING",
+          "ADDS_NEW_FACT"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P06-B",
+      "pairId": "P06",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_NEW_FACT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.96
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "SUBSTANTIVE_RECONSTRUCTION"
+      }
+    },
+    {
+      "id": "P07-A",
+      "pairId": "P07",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P07-B",
+      "pairId": "P07",
+      "expected": "DISTRIBUTED_LIGHT_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "ADDS_REASONING",
+          "RESTATES",
+          "ADDS_REASONING",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "DISTRIBUTED_LIGHT_EDIT"
+      }
+    },
+    {
+      "id": "P08-A",
+      "pairId": "P08",
+      "expected": "DISTRIBUTED_LIGHT_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "RESTATES",
+          "ADDS_REASONING",
+          "ADDS_REASONING",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 1,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "DISTRIBUTED_LIGHT_EDIT"
+      }
+    },
+    {
+      "id": "P08-B",
+      "pairId": "P08",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "ADDS_REASONING",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 1,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "v7": {
+        "diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "DISTRIBUTED_LIGHT_EDIT"
+      }
+    },
+    {
+      "id": "P09-A",
+      "pairId": "P09",
+      "expected": "INSUFFICIENT_CONTEXT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P09-B",
+      "pairId": "P09",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P10-A",
+      "pairId": "P10",
+      "expected": "INSUFFICIENT_CONTEXT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_COUNTERPOINT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P10-B",
+      "pairId": "P10",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_COUNTERPOINT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P11-A",
+      "pairId": "P11",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_REASONING",
+          "ADDS_EXAMPLE",
+          "ADDS_EXAMPLE",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P11-B",
+      "pairId": "P11",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "META_COMMENTARY",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "PARTIAL_ONLY",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P12-A",
+      "pairId": "P12",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_REASONING",
+          "ADDS_EXAMPLE",
+          "ADDS_EXAMPLE",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P12-B",
+      "pairId": "P12",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_REASONING",
+          "ADDS_EXAMPLE",
+          "ADDS_EXAMPLE",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v7": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    }
+  ]
+}

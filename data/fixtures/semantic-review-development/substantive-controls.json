@@ -1,0 +1,170 @@
+[
+  {
+    "id": "P01-A",
+    "text": "The library tested a Saturday pickup window for six weeks after patrons described weekday closing times as a barrier. Staff tracked holds collected, visits, and overtime rather than treating the number of people in the building as the only measure of use.\n\nPickup traffic was strongest between ten and noon. Most visitors collected reserved books and left quickly, while a smaller group stayed to use the printers. The pattern suggests the extra window helped people with a specific errand more than it created a new study period.\n\nThe desk schedule was manageable until two employees were absent on the same Saturday. That shift required the branch manager to cover checkouts and delayed the afternoon shelving run. No holds expired because of the delay, but the staffing margin was thin.\n\nPatrons who used the window asked for clearer signs at the side entrance. The door already had a pickup notice, but it was hard to see from the parking lot. Moving the notice would address the complaint without changing the service itself.\n\nThe pilot delivered a useful pickup option at modest demand, with staffing resilience as its main constraint. The branch can keep the window for another six weeks while it moves the sign and sets a backup desk rota; those changes should be reviewed before a permanent schedule is approved.",
+    "expected": "LEAVE_ALONE",
+    "reason": "The closing paragraph synthesizes distinct findings; each earlier paragraph advances the pilot account.",
+    "pairId": "P01"
+  },
+  {
+    "id": "P01-B",
+    "text": "The library tested a Saturday pickup window for six weeks. The pickup window was useful because it gave patrons another time to pick up books. An additional pickup time can be useful for patrons who need one.\n\nThe Saturday pickup window gave patrons another opportunity to pick up holds. Having another opportunity to collect holds was the principal benefit of the window. This was a useful benefit of the pilot.\n\nThe pilot showed that a pickup window can help patrons with pickups. Patrons could pick up their books on Saturday, which made Saturday a time when pickup was possible. That was why the window was useful.\n\nA Saturday pickup opportunity was available during the six-week test. The availability of the opportunity meant patrons had a chance to collect books on Saturday. This repeated the main benefit of the pickup window.\n\nOverall, the pilot was useful because it created an additional pickup opportunity. Keeping an additional pickup opportunity would preserve that opportunity. The report therefore concludes that the pickup window offered a useful pickup option.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "The same pickup conclusion is recycled across the whole document; most paragraphs add no evidence or progression.",
+    "pairId": "P01"
+  },
+  {
+    "id": "P02-A",
+    "text": "The school ran a four-week breakfast cart trial near the east entrance. The cart was intended for students who arrived after the cafeteria line had closed, and staff counted items taken rather than asking students to explain why they were late.\n\nMost items were collected in the final ten minutes before the bell. The cart rarely needed a second refill, which kept the trial within the kitchen team’s existing morning prep time.\n\nTeachers reported fewer requests to leave first period for food. That observation is useful but informal: the school did not compare attendance records or classroom behavior before and after the trial.\n\nThe east entrance was convenient for buses but less visible to students entering from the walking path. A small sign at the crossing would make the service easier to find without moving the cart into a crowded hallway.\n\nThe trial supports keeping the cart for one term with the sign added. The kitchen should continue item counts and review waste at the end of term before deciding whether to expand to another entrance.",
+    "expected": "LEAVE_ALONE",
+    "reason": "The recommendation is supported by distinct operational, equity, and cost information rather than repeated claims.",
+    "pairId": "P02"
+  },
+  {
+    "id": "P02-B",
+    "text": "The school ran a four-week breakfast cart trial near the east entrance. The breakfast cart helped students get breakfast. Helping students get breakfast was the purpose of the breakfast cart.\n\nThe breakfast cart was helpful because it provided breakfast. Providing breakfast was helpful to students who wanted breakfast. That helpful provision is an important result of the trial.\n\nStudents could obtain breakfast from the cart. Being able to obtain breakfast meant the cart was helpful. This shows the value of a cart that provides breakfast.\n\nThe cart continued to provide breakfast during the trial. Its continued provision of breakfast was a helpful aspect of the trial. The school benefited from this helpful breakfast provision.\n\nThe school should consider the breakfast cart because the cart helped with breakfast. The trial showed that a breakfast cart can provide breakfast, and this is why the breakfast cart was helpful.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "A document-wide loop says the cart helped students without developing observations or a decision basis.",
+    "pairId": "P02"
+  },
+  {
+    "id": "P03-A",
+    "text": "Before recording an interview, the coordinator must explain its purpose and obtain the participant’s written consent. The consent form names the questions the project will study and states that declining will not affect access to services.\n\nOnly the interviewer and the review lead may open the recording. A transcript shared with the analysis team must remove names and direct contact details, even when the participant has consented to recording.\n\nA participant may withdraw consent for future use by contacting the coordinator within fourteen days of the interview. The coordinator must then flag the recording, remove it from the analysis queue, and confirm the action in writing.\n\nThe project retains consent forms separately from recordings for one year after the report is issued. At the end of that period, the records lead deletes both files and logs the deletion date. These steps make each use of consent traceable.",
+    "expected": "LEAVE_ALONE",
+    "reason": "Repeated references to consent serve distinct policy duties: collection, access, correction, and retention.",
+    "pairId": "P03"
+  },
+  {
+    "id": "P03-B",
+    "text": "Consent is an important part of the interview process. The organization values consent and believes that consent should be handled with care. Careful attention to consent is central to the organization’s approach.\n\nThe consent process should reflect the importance of consent. Everyone involved should remember that consent matters and that its importance should be respected throughout the process.\n\nGood consent practices depend on taking consent seriously. The organization takes consent seriously because it is important to the organization and to the people involved in interviews.\n\nThe organization will continue to emphasize consent. Emphasizing consent helps keep the importance of consent visible, which is an important part of a responsible consent process.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "Institutional language repeats the importance of consent without specifying any actionable duty.",
+    "pairId": "P03"
+  },
+  {
+    "id": "P04-A",
+    "text": "To isolate the demonstration sink, close the blue supply valve under the left basin. Leave the red hot-water valve open so the maintenance team can distinguish this exercise from a full shutdown.\n\nAfter closing the blue supply valve, open the cold tap for five seconds. If water continues to flow, stop the exercise and call facilities; do not loosen the hose connection.\n\nPlace a dated tag on the blue supply valve once the tap runs dry. The tag must name the operator and state that the valve was closed for a demonstration, so the next shift does not treat it as a fault.\n\nAt the end of the session, remove the tag and reopen the blue supply valve slowly. Check the hose joint for drips for one minute, then record the restoration in the maintenance log.",
+    "expected": "LEAVE_ALONE",
+    "reason": "The repeated valve name keeps a procedure unambiguous while each step changes the operator’s required action.",
+    "pairId": "P04"
+  },
+  {
+    "id": "P04-B",
+    "text": "The demonstration sink should be handled carefully. Staff should take care with the sink and follow a careful approach to any work involving it. Care is important during the demonstration.\n\nBefore proceeding, staff should make sure the appropriate steps are taken. Taking appropriate steps helps ensure that the process is handled appropriately by everyone involved.\n\nDuring the work, staff should remain mindful of the process. A mindful process is one in which staff keep the process in mind and continue to act with care.\n\nOnce the work is finished, staff should ensure that the work has been properly completed. Proper completion is important because a properly completed process is the expected outcome.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "Procedure-shaped prose repeatedly invokes care but leaves the sequence and completion criteria undefined.",
+    "pairId": "P04"
+  },
+  {
+    "id": "P05-A",
+    "text": "Executive summary. The town should extend the evening shuttle trial for three months, keep the current route, and add a stop sign near the clinic. Ridership warrants more observation, but the trial is too short to justify a permanent service commitment.\n\nThe shuttle carried its largest loads on clinic days. Drivers counted boardings by stop, and the clinic stop accounted for nearly half of rides on those days. That concentration supports the proposed sign because first-time riders had trouble finding the curb.\n\nOn non-clinic days, the vehicle ran with open seats. A route change toward the market might attract riders, but the trial collected no origin surveys that could distinguish unmet demand from occasional trips.\n\nTwo late departures followed charging delays. Maintenance found no vehicle fault; the charger had been shared with another town vehicle. Reserving the charger for the shuttle before each evening shift should address the scheduling conflict.\n\nDuring the extension, transport staff should record boardings by stop and day, late departures, and rider questions about the clinic curb. A permanent route decision can follow that review rather than treating a promising short trial as a settled service pattern.",
+    "expected": "LEAVE_ALONE",
+    "reason": "The executive summary previews the decision and the body supplies separate evidence, limits, and implementation detail.",
+    "pairId": "P05"
+  },
+  {
+    "id": "P05-B",
+    "text": "Executive summary. The town should extend the evening shuttle trial for three months, keep the current route, and add a stop sign near the clinic. Ridership warrants more observation, but the trial is too short to justify a permanent service commitment.\n\nThe evening shuttle trial should be extended for three months. The current route should be kept, and a stop sign should be added near the clinic. These are the actions recommended for the shuttle trial.\n\nMore observation of ridership is warranted. Because the trial has been short, the town should observe ridership for three more months before deciding whether to make a permanent commitment.\n\nThe route should remain the current route during the extension. The clinic should have a stop sign, because the recommendation includes adding a stop sign near the clinic.\n\nIn conclusion, a three-month extension, the current route, and a clinic stop sign are recommended. The town should make its permanent decision after more observation rather than at the end of this short trial.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "The body restates the summary recommendation almost paragraph by paragraph instead of developing the report.",
+    "pairId": "P05"
+  },
+  {
+    "id": "P06-A",
+    "text": "Executive summary. A mislabeled storage bin delayed the archive handoff by one day. No materials were lost. The team should replace temporary labels with printed labels before the next handoff.\n\nOn Monday, the packing team placed the signed folders in bin C, then moved bin C to the locked staging room. A handwritten label fell off during the move, leaving two sealed bins with the same plain exterior.\n\nThe receiving team paused intake when the contents listed on the transfer sheet did not match the first bin opened. Staff checked both seals with the packing lead present and located the folders in the second bin on Tuesday morning.\n\nThe transfer sheet correctly named the folder count but did not include a bin identifier on each line. Printing a label for each bin and adding that identifier to the sheet would let receivers match a sealed container before opening it.\n\nThe one-day delay had no effect on the planned review date. Archive staff will test the revised label and sheet at the next transfer, then retain the signed checklist with the handoff record.",
+    "expected": "LEAVE_ALONE",
+    "reason": "The opening recap and closing decision are proportionate; the body reconstructs the incident and gives distinct corrective actions.",
+    "pairId": "P06"
+  },
+  {
+    "id": "P06-B",
+    "text": "Executive summary. A mislabeled storage bin delayed the archive handoff by one day. No materials were lost. The team should replace temporary labels with printed labels before the next handoff.\n\nThe archive handoff was delayed by one day because a storage bin was mislabeled. Although there was a delay of one day, the materials were not lost during the handoff.\n\nThe label on the storage bin was the source of the problem. A mislabeled bin can delay a handoff, and in this case the delay to the archive handoff lasted one day.\n\nThe team should use printed labels instead of temporary labels before the next handoff. Replacing temporary labels with printed labels is the recommended way to address the mislabeled-bin issue.\n\nThe handoff was delayed one day, no materials were lost, and printed labels should be used next time. These points summarize the incident and the recommended response.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "The report repeats its short summary in the incident, remedy, and closing sections without supplying a usable chronology.",
+    "pairId": "P06"
+  },
+  {
+    "id": "P07-A",
+    "text": "The garden committee reviewed eight weeks of watering logs before changing the rota. The logs showed that missed evening shifts were concentrated on days when two volunteers were assigned to the same gate.\n\nThe north beds dried more quickly than the shaded beds. Soil readings taken just before watering were lower there on six of the eight review days, so the revised rota starts with the north beds.\n\nThe committee moved the hose reel beside the tool shed. Volunteers had previously carried it across the path, where it blocked carts arriving for compost drop-off.\n\nThe checklist is an important checklist for the work. It is useful because checklists can be useful, and using a checklist is a good way to make sure a checklist is used.\n\nTwo volunteers will cover each Thursday shift for the first month. The overlap is temporary and gives newer volunteers a chance to practice the checklist with someone who knows the valves.\n\nThe compost delivery will remain on Friday mornings. Moving it was considered, but the supplier cannot offer another regular slot this season.\n\nAt the end of the month, the committee will compare missed shifts and soil readings with the eight-week baseline. It will then decide whether to keep the Thursday overlap.\n\nMembers can report a broken hose or empty barrel by text to the shift lead. That route is for equipment problems; changes to the rota still go through the weekly committee meeting.",
+    "expected": "LOCAL_EDIT",
+    "reason": "Exactly one of eight paragraphs is weak; the surrounding sequence remains specific and useful.",
+    "pairId": "P07"
+  },
+  {
+    "id": "P07-B",
+    "text": "The garden committee reviewed eight weeks of watering logs before changing the rota. The logs showed that missed evening shifts were concentrated on days when two volunteers were assigned to the same gate.\n\nThe north beds dried more quickly than the shaded beds. Soil readings taken just before watering were lower there on six of the eight review days, so the revised rota starts with the north beds.\n\nThe committee moved the hose reel beside the tool shed. Volunteers had previously carried it across the path, where it blocked carts arriving for compost drop-off.\n\nThe checklist is an important checklist for the work. It is useful because checklists can be useful, and using a checklist is a good way to make sure a checklist is used.\n\nTwo volunteers will cover each Thursday shift for the first month. The overlap is temporary and gives newer volunteers a chance to practice the checklist with someone who knows the valves.\n\nThe compost delivery arrangement is the arrangement for compost delivery. It is important to have an arrangement, and this arrangement is the one currently in place.\n\nAt the end of the month, the committee will compare missed shifts and soil readings with the eight-week baseline. It will then decide whether to keep the Thursday overlap.\n\nMembers should communicate about garden matters. Communication is important because it helps people communicate and supports a communicative approach to the garden.",
+    "expected": "DISTRIBUTED_LIGHT_EDIT",
+    "reason": "Three of eight separated paragraphs are circular, but the five sound paragraphs preserve the document’s structure and facts.",
+    "pairId": "P07"
+  },
+  {
+    "id": "P08-A",
+    "text": "The museum reviewed the audio-guide trial after six weekend openings. Staff counted loans and asked visitors where they stopped using the device.\n\nThe audio guide was used by visitors. Visitors used the guide when they used it, and its use was an aspect of how the guide was used.\n\nVisitors most often stopped the guide in the upstairs gallery. Several said the numbering on the wall did not match the order heard in the recording.\n\nA map can help with finding things. Finding things with a map is useful because maps are intended to help people find things.\n\nCleaning devices is part of using devices. The devices need cleaning so that cleaned devices are clean for the next use.\n\nThe exhibit lead will revise the upstairs stop numbers and test the updated map at two more openings. Audio files can remain as recorded for that test.\n\nThe desk lead will try a separate return tray after the family program so returned devices do not block new loans. Staff will note whether the queue clears faster.\n\nThe trial supports keeping the guide available while the numbering and returns process are adjusted. A later review should use loan counts and visitor navigation reports.",
+    "expected": "DISTRIBUTED_LIGHT_EDIT",
+    "reason": "Three of eight paragraphs are weak, while five substantive paragraphs retain the trial’s sequence and decision basis.",
+    "pairId": "P08"
+  },
+  {
+    "id": "P08-B",
+    "text": "The museum reviewed the audio-guide trial. Reviewing a trial is useful because it allows a trial to be reviewed and gives the museum a review of the trial.\n\nThe audio guide was used by visitors. Visitors used the guide when they used it, and its use was an aspect of how the guide was used.\n\nThe upstairs gallery was part of the audio-guide experience. It was a gallery upstairs, and visitors experienced the guide as they went through the gallery.\n\nA map can help with finding things. Finding things with a map is useful because maps are intended to help people find things.\n\nCleaning devices is part of using devices. The devices need cleaning so that cleaned devices are clean for the next use.\n\nThe exhibit lead will revise the upstairs stop numbers and test the updated map at two more openings. Audio files can remain as recorded for that test.\n\nA return process is important for returns. Improving the return process would help the return process work in an improved way.\n\nThe trial supports keeping the guide available while the numbering and returns process are adjusted. A later review should use loan counts and visitor navigation reports.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "Six of eight paragraphs are circular; the two remaining specific paragraphs cannot carry a coherent report without rebuilding its progression.",
+    "pairId": "P08"
+  },
+  {
+    "id": "P09-A",
+    "text": "The warehouse changed its packing checklist in June to reduce damaged parcels. The change added a second inspection before cartons were sealed.\n\nThe draft says the change reduced damage by 40 percent, but the source notes contain neither the number of damaged parcels before June nor the number after June. The review period and shipment volume are also missing.\n\nSupervisors reported that the added inspection was easy to fit into the morning shift. They did not record how many cartons were returned for repacking.\n\nManagement plans to use the claimed reduction in a supplier meeting next week. The percentage should be verified from shipment and damage records before the report presents it as an outcome.",
+    "expected": "INSUFFICIENT_CONTEXT",
+    "reason": "The only basis for the claimed reduction is absent; editing cannot supply an unknown baseline or result.",
+    "pairId": "P09"
+  },
+  {
+    "id": "P09-B",
+    "text": "The warehouse changed its packing checklist in June to reduce damaged parcels. The change added a second inspection before cartons were sealed.\n\nDamage records show 20 damaged parcels among 2,000 shipped in May and 12 among 2,000 shipped in June. That is a decline from 1 percent to 0.6 percent, a 40 percent relative reduction.\n\nSupervisors reported that the added inspection was easy to fit into the morning shift. In terms of the matter of how the inspection was carried out, it was carried out in a way that was easy for the shift to carry out.\n\nManagement will share the recorded counts with the supplier next week. The report should describe the one-month comparison and avoid implying that the reduction is certain to persist.",
+    "expected": "LOCAL_EDIT",
+    "reason": "The underlying counts and periods support the result; one padded sentence can be tightened without inventing facts.",
+    "pairId": "P09"
+  },
+  {
+    "id": "P10-A",
+    "text": "The clinic is choosing a courier for specimen pickup. Both candidates can collect from the clinic door, and both have given the coordinator a sample tracking report.\n\nThe draft recommends Route A because it is described as cheaper and fast enough. It does not include either vendor’s price, the laboratory cutoff time, or Route A’s promised arrival time.\n\nRoute B offers a later pickup that nursing staff prefer. Whether that pickup still meets the laboratory cutoff is unknown from the material supplied.\n\nThe selection memo is due Friday. Before naming a vendor, the coordinator needs the two quotes and written delivery windows so the committee can compare price against the required arrival time.",
+    "expected": "INSUFFICIENT_CONTEXT",
+    "reason": "The choice depends on a missing cost and deadline; prose editing cannot determine which vendor is feasible.",
+    "pairId": "P10"
+  },
+  {
+    "id": "P10-B",
+    "text": "The clinic is choosing a courier for specimen pickup. Both candidates can collect from the clinic door, and both have given the coordinator a sample tracking report.\n\nThe laboratory cutoff is 5 p.m. Route A quotes $42 per pickup with delivery by 4:15 p.m.; Route B quotes $51 with delivery by 4:30 p.m. Both windows meet the cutoff.\n\nRoute B offers a later clinic pickup that nursing staff prefer. The coordinator has confirmed that the later pickup still meets the laboratory cutoff under Route B’s written schedule.\n\nIn consideration of the considerations above, it is recommended that the clinic make the selection of Route A as the selected courier. Route A meets the cutoff at the lower quoted price; the committee can revisit pickup convenience after a month.",
+    "expected": "LOCAL_EDIT",
+    "reason": "The choice is supported by stated prices and delivery windows; the awkward recommendation sentence is editable.",
+    "pairId": "P10"
+  },
+  {
+    "id": "P11-A",
+    "text": "The draft notice needs revision because it tells residents that action is important without saying what action to take. A notice about water shutoff should give the affected streets, start time, and contact number before explaining the reason.\n\nOne sentence reads, “Residents should be aware of the importance of awareness about this important matter.” The repetition is evidence of the problem, not a claim the notice should preserve.\n\nA second sentence says, “Appropriate steps will be taken as appropriate.” That wording leaves both the responsible party and the promised steps unidentified. The utility team should replace it with the confirmed work sequence.\n\nThe current draft also hides the phone number in the footer. Moving it beside the shutoff time would help residents who need to ask whether their address is affected. The critique can be closed once the utility supplies the missing street list and timing.",
+    "expected": "LEAVE_ALONE",
+    "reason": "Circular prose appears only as quoted source material under criticism; the author’s analysis progresses.",
+    "pairId": "P11"
+  },
+  {
+    "id": "P11-B",
+    "text": "The draft notice needs revision because action is important and important action needs to be taken. It is important to recognize the importance of this important matter.\n\nResidents should be aware of the importance of awareness. Awareness is important, and the notice should appropriately promote appropriate awareness.\n\nAppropriate steps should be taken as appropriate. Taking appropriate steps in an appropriate way is necessary for the steps to be appropriately completed.\n\nThe notice should be improved in a way that makes improvement possible. A better notice would be better because improving it would result in an improved notice.",
+    "expected": "SUBSTANTIVE_RECONSTRUCTION",
+    "reason": "The same empty phrases are used as the author’s own reasoning throughout, leaving no usable critique.",
+    "pairId": "P11"
+  },
+  {
+    "id": "P12-A",
+    "text": "The grant draft treats participation as a goal but never defines what counts as participation. Readers cannot tell whether a visit, a completed workshop, or a follow-up call will be counted.\n\nIts summary says, “Participation will be enhanced through enhanced participation opportunities.” This sentence is worth quoting because it shows how the proposed outcome is repeated in place of a method.\n\nThe budget note adds, “Resources will support resourceful use of resources.” That passage does not identify a cost or the activity it funds; the problem is missing budget detail, not merely word choice.\n\nThe project team should define one participation measure and attach each requested cost to an activity. After those facts are added, the summary can name the method and the budget note can name what the money buys.",
+    "expected": "LEAVE_ALONE",
+    "reason": "The critique quotes two deliberately vague excerpts and explains their separate defects with a concrete revision path.",
+    "pairId": "P12"
+  },
+  {
+    "id": "P12-B",
+    "text": "The grant draft treats participation as a goal but never defines what counts as participation. Readers cannot tell whether a visit, a completed workshop, or a follow-up call will be counted.\n\nIts summary says, “Participation will be enhanced through enhanced participation opportunities.” This sentence is worth quoting because it shows how the proposed outcome is repeated in place of a method.\n\nThe budget note adds, “Resources will support resourceful use of resources.” That passage does not identify a cost or the activity it funds; the problem is missing budget detail, not merely word choice.\n\nIn terms of the matter of what the team should do, the thing the team should do is to define a measure and connect each requested cost to an activity. Those facts would let the summary name the method and the budget note name what the money buys.",
+    "expected": "LOCAL_EDIT",
+    "reason": "The quoted bad writing remains legitimate evidence; one unquoted analyst sentence is padded and can be edited locally.",
+    "pairId": "P12"
+  }
+]

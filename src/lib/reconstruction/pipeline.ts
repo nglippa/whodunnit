@@ -143,8 +143,8 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;
   const planInput = { source, profile, refinement: refinement?.change, voiceprint: request.voiceprint, current: refinement?.current, protectedPhrases: request.protectedPhrases };
-  const semanticPlan = strategy.version === 6 && strategy.id === "reconstruction"
-    ? await buildSemanticPlan(planInput, options.semanticReviewer ?? null, { mode: options.semanticReviewMode })
+  const semanticPlan = (strategy.version === 6 || strategy.version === 7) && strategy.id === "reconstruction"
+    ? await buildSemanticPlan(planInput, options.semanticReviewer ?? null, { mode: options.semanticReviewMode, strategy })
     : null;
   if (semanticPlan) options.onSemanticPlan?.(semanticPlan.telemetry);
   const plan = semanticPlan?.plan ?? buildRewritePlan(planInput, strategy);
@@ -154,7 +154,7 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
 
   // Minimal change as an invariant: good text that needs nothing comes back as it is.
   const plannerWouldBypass = strategy.minimalChange === "unchanged" && plan.minimalChange.unchangedPreferred;
-  if (plannerWouldBypass && !options.forceModel) {
+  if ((strategy.version >= 7 && semanticPlan?.assessment?.execution === "BLOCKED_PENDING_INFORMATION") || (plannerWouldBypass && !options.forceModel)) {
     const verification = verifyDeterministic(source, source, profile, verifyContext);
     const result: PipelineResult = {
       text: source,
@@ -163,7 +163,9 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
       engine: provider.info,
       promptVersion: promptKey(strategy.prompt),
       plan: summarizePlan(plan),
-      changes: ["Left unchanged: no catalogued patterns, nothing requested, and the register already fits."],
+      changes: [semanticPlan?.telemetry.executionDecision === "BLOCKED_PENDING_INFORMATION"
+        ? "Left unchanged: broader editing needs facts the source does not provide."
+        : "Left unchanged: no catalogued patterns, nothing requested, and the register already fits."],
       patterns: comparePatterns(plan, source, rulesForProfile(profile)),
       preserved: preservedCounts(verification, plan),
       profile,

@@ -1,0 +1,705 @@
+{
+  "count": 24,
+  "rows": [
+    {
+      "id": "P01-A",
+      "pairId": "P01",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": null,
+      "validation": "REJECTED"
+    },
+    {
+      "id": "P01-B",
+      "pairId": "P01",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LOCAL_EDIT",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.97
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.97
+          },
+          {
+            "from": 2,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.97
+          }
+        ]
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P02-A",
+      "pairId": "P02",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": null,
+      "validation": "REJECTED"
+    },
+    {
+      "id": "P02-B",
+      "pairId": "P02",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LOCAL_EDIT",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 2,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P03-A",
+      "pairId": "P03",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": null,
+      "validation": "REJECTED"
+    },
+    {
+      "id": "P03-B",
+      "pairId": "P03",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LOCAL_EDIT",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P04-A",
+      "pairId": "P04",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": null,
+      "validation": "REJECTED"
+    },
+    {
+      "id": "P04-B",
+      "pairId": "P04",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "META_COMMENTARY",
+          "RESTATES",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P05-A",
+      "pairId": "P05",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": null,
+      "validation": "REJECTED"
+    },
+    {
+      "id": "P05-B",
+      "pairId": "P05",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "SUMMARIZES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.97
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.97
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.97
+          }
+        ]
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P06-A",
+      "pairId": "P06",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": null,
+      "validation": "REJECTED"
+    },
+    {
+      "id": "P06-B",
+      "pairId": "P06",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 5,
+        "roles": [
+          "SUMMARIZES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P07-A",
+      "pairId": "P07",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P07-B",
+      "pairId": "P07",
+      "expected": "DISTRIBUTED_LIGHT_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "ADDS_REASONING",
+          "RESTATES",
+          "ADDS_REASONING",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 3,
+            "to": 5,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 5,
+            "to": 7,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "v6": "DISTRIBUTED_LIGHT_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "DISTRIBUTED_LIGHT_EDIT"
+      }
+    },
+    {
+      "id": "P08-A",
+      "pairId": "P08",
+      "expected": "DISTRIBUTED_LIGHT_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "ADDS_REASONING",
+          "RESTATES",
+          "RESTATES",
+          "ADDS_CONTEXT",
+          "ADDS_CONTEXT",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 1,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          },
+          {
+            "from": 3,
+            "to": 4,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.98
+          }
+        ]
+      },
+      "v6": "DISTRIBUTED_LIGHT_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "DISTRIBUTED_LIGHT_EDIT"
+      }
+    },
+    {
+      "id": "P08-B",
+      "pairId": "P08",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": true,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 8,
+        "roles": [
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "ADDS_CONTEXT",
+          "RESTATES",
+          "SUMMARIZES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.99
+          },
+          {
+            "from": 1,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.99
+          },
+          {
+            "from": 3,
+            "to": 6,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "v6": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "SUBSTANTIVE_RECONSTRUCTION"
+      }
+    },
+    {
+      "id": "P09-A",
+      "pairId": "P09",
+      "expected": "INSUFFICIENT_CONTEXT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P09-B",
+      "pairId": "P09",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_CONTEXT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P10-A",
+      "pairId": "P10",
+      "expected": "INSUFFICIENT_CONTEXT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_COUNTERPOINT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P10-B",
+      "pairId": "P10",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_CONTEXT",
+          "ADDS_REASONING",
+          "ADDS_COUNTERPOINT",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    },
+    {
+      "id": "P11-A",
+      "pairId": "P11",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_REASONING",
+          "ADDS_EXAMPLE",
+          "ADDS_EXAMPLE",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P11-B",
+      "pairId": "P11",
+      "expected": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "RESTATES",
+          "RESTATES",
+          "RESTATES",
+          "RESTATES"
+        ],
+        "complete": true,
+        "restatementEdges": [
+          {
+            "from": 0,
+            "to": 1,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.99
+          },
+          {
+            "from": 1,
+            "to": 2,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.99
+          },
+          {
+            "from": 2,
+            "to": 3,
+            "relation": "POSSIBLE_RESTATEMENT",
+            "confidence": 0.99
+          }
+        ]
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+        "feasibility": "NEEDS_INFORMATION",
+        "execution": "BLOCKED_PENDING_INFORMATION",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P12-A",
+      "pairId": "P12",
+      "expected": "LEAVE_ALONE",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LEAVE_ALONE",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_REASONING",
+          "ADDS_EXAMPLE",
+          "ADDS_EXAMPLE",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LEAVE_ALONE",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LEAVE_ALONE",
+        "feasibility": "NO_EDIT_NEEDED",
+        "execution": "UNCHANGED",
+        "finalScope": "LEAVE_ALONE"
+      }
+    },
+    {
+      "id": "P12-B",
+      "pairId": "P12",
+      "expected": "LOCAL_EDIT",
+      "deterministic": "LEAVE_ALONE",
+      "routed": false,
+      "review": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "progression": {
+        "paragraphCount": 4,
+        "roles": [
+          "ADDS_REASONING",
+          "ADDS_EXAMPLE",
+          "ADDS_EXAMPLE",
+          "ADDS_REASONING"
+        ],
+        "complete": true,
+        "restatementEdges": []
+      },
+      "v6": "LOCAL_EDIT",
+      "v7PolicyCounterfactual": {
+        "diagnosis": "LOCAL_EDIT",
+        "feasibility": "SAFE_WITH_SOURCE",
+        "execution": "EDIT",
+        "finalScope": "LOCAL_EDIT"
+      }
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+[
+  {
+    "id": "P01-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "Specific findings, limits, and next steps form a coherent pilot report."
+  },
+  {
+    "id": "P01-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.94,
+    "reason": "Every paragraph restates the pickup benefit; the report needs consolidation around its few supported facts."
+  },
+  {
+    "id": "P02-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "The trial account distinguishes observations from informal teacher reports and gives a measured recommendation."
+  },
+  {
+    "id": "P02-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.95,
+    "reason": "The same breakfast benefit is recycled throughout, leaving no distinct findings or progression."
+  },
+  {
+    "id": "P03-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.99,
+    "reason": "Repeated consent terms identify separate duties, access rules, withdrawal, and retention requirements."
+  },
+  {
+    "id": "P03-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.92,
+    "reason": "All sections repeat that consent matters; operational consent requirements are absent and cannot be supplied safely."
+  },
+  {
+    "id": "P04-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.99,
+    "reason": "The valve, safety check, tag, and restoration steps are precise and sequenced."
+  },
+  {
+    "id": "P04-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.96,
+    "reason": "Every step is circular and unspecified; safe sink instructions require facts absent from the document."
+  },
+  {
+    "id": "P05-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "The executive summary is supported by distinct ridership, route, charging, and review details."
+  },
+  {
+    "id": "P05-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.93,
+    "reason": "Body paragraphs merely restate the executive summary and conclusion; the existing recommendation can be condensed without inventing evidence."
+  },
+  {
+    "id": "P06-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "The summary is developed by a timeline, root cause, impact, and concrete corrective action."
+  },
+  {
+    "id": "P06-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.93,
+    "reason": "The entire body repeats the summary’s delay, no-loss finding, and label recommendation."
+  },
+  {
+    "id": "P07-A",
+    "disposition": "LOCAL_EDIT",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "One checklist paragraph is circular; the surrounding report is specific and coherent."
+  },
+  {
+    "id": "P07-B",
+    "disposition": "DISTRIBUTED_LIGHT_EDIT",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.95,
+    "reason": "Three separated paragraphs are circular, while the remaining sections retain a clear factual structure."
+  },
+  {
+    "id": "P08-A",
+    "disposition": "DISTRIBUTED_LIGHT_EDIT",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.96,
+    "reason": "Three separated paragraphs about use, maps, and cleaning are tautological; concrete trial findings remain intact."
+  },
+  {
+    "id": "P08-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.85,
+    "reason": "Most sections are tautological or generic, obscuring the few concrete actions; a shorter report can retain those actions without new claims."
+  },
+  {
+    "id": "P09-A",
+    "disposition": "INSUFFICIENT_CONTEXT",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.82,
+    "reason": "The damage reduction cannot be verified or stated as an outcome without shipment counts and a defined comparison period."
+  },
+  {
+    "id": "P09-B",
+    "disposition": "LOCAL_EDIT",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "The counts support the qualified comparison; one sentence about inspection ease is unnecessarily circular."
+  },
+  {
+    "id": "P10-A",
+    "disposition": "INSUFFICIENT_CONTEXT",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.86,
+    "reason": "A courier choice needs the missing quotes, arrival windows, and laboratory cutoff; wording changes cannot settle it."
+  },
+  {
+    "id": "P10-B",
+    "disposition": "LOCAL_EDIT",
+    "safeToRewriteWithoutNewFacts": true,
+    "confidence": 0.98,
+    "reason": "The comparison is supported; the recommendation sentence needs a concise rewrite."
+  },
+  {
+    "id": "P11-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.96,
+    "reason": "This is a clear critique quoting defective notice text as evidence; completing the notice needs streets, timing, and confirmed steps."
+  },
+  {
+    "id": "P11-B",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.96,
+    "reason": "All paragraphs are repetitive abstractions; an actionable notice needs missing shutoff details."
+  },
+  {
+    "id": "P12-A",
+    "disposition": "LEAVE_ALONE",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.96,
+    "reason": "The quoted circular lines are evidence in a sound critique; a completed grant summary needs a measure and cost details."
+  },
+  {
+    "id": "P12-B",
+    "disposition": "LOCAL_EDIT",
+    "safeToRewriteWithoutNewFacts": false,
+    "confidence": 0.94,
+    "reason": "Only the final paragraph adds circular wording to an otherwise sound critique; the underlying grant still needs measure and budget facts."
+  }
+]

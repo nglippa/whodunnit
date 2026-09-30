@@ -88,7 +88,15 @@ export const RECONSTRUCTION_V6 = define({
   prompt: { id: "reconstruct", version: 6 },
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6];
+/** Experimental diagnosis/execution separation; v6 remains pinned for comparison. */
+export const RECONSTRUCTION_V7 = define({
+  ...RECONSTRUCTION_V6,
+  version: 7,
+  name: "Reconstruction v7 (semantic diagnosis and execution separation)",
+  description: "v6 evidence and prompt contract, with a distinct blocked-pending-information decision when substantive editing is diagnosed but source facts are insufficient.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

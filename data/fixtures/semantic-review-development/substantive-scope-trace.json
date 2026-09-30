@@ -1,0 +1,2836 @@
+{
+  "schemaVersion": 1,
+  "corpus": "semantic-review-development",
+  "trace": [
+    {
+      "id": "sa006",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.91,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 0,
+              "end": 27,
+              "text": "Your request matters to us."
+            },
+            {
+              "start": 131,
+              "end": 208,
+              "text": "Our team is reviewing the relevant details to ensure the appropriate outcome."
+            },
+            {
+              "start": 295,
+              "end": 343,
+              "text": "We will be in touch when there is more to share."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Current workspace status",
+        "Specific reason for delay",
+        "Next action and timing"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa011",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.91,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.93,
+          "spans": [
+            {
+              "start": 0,
+              "end": 71,
+              "text": "Moving to a new town can change the way a person understands belonging."
+            },
+            {
+              "start": 119,
+              "end": 201,
+              "text": "It represented change, uncertainty, and the possibility of making peace with both."
+            },
+            {
+              "start": 685,
+              "end": 788,
+              "text": "Looking back, I see those walks as a reminder that belonging can emerge through patience and attention."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "A particular river visit or conversation",
+        "Concrete change in the narrator’s circumstances"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa014",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 181,
+              "end": 225,
+              "text": "take a moment to consider the paths involved"
+            },
+            {
+              "start": 390,
+              "end": 436,
+              "text": "the system should continue to work as expected"
+            },
+            {
+              "start": 467,
+              "end": 528,
+              "text": "review your configuration and make any necessary adjustments."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Exact stop and restart procedure",
+        "Path requirements and failure behavior",
+        "Queue relationship and validation step"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa017",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LOCAL_EDIT",
+      "routed": true,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 156,
+              "end": 242,
+              "text": "you may wish to consider which one is most suitable for the upcoming payroll activity."
+            },
+            {
+              "start": 416,
+              "end": 488,
+              "text": "Either may be downloaded from the portal during the availability period."
+            },
+            {
+              "start": 546,
+              "end": 626,
+              "text": "check the number of rows and make sure the result aligns with your expectations."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Which export payroll should use",
+        "File dates and availability",
+        "Expected row count and duplicate status"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LOCAL_EDIT",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sa020",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 63,
+              "end": 113,
+              "text": "had a productive discussion about possible causes."
+            },
+            {
+              "start": 236,
+              "end": 311,
+              "text": "the next step should address the situation in a practical and timely manner"
+            },
+            {
+              "start": 494,
+              "end": 565,
+              "text": "A follow-up check was discussed and will take place as schedules allow."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Observed defect and likely cause",
+        "Owner and inspection step",
+        "Time and contingency"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa023",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 412,
+              "end": 463,
+              "text": "There may be an opportunity to adjust the selection"
+            },
+            {
+              "start": 501,
+              "end": 547,
+              "text": "I have included some information for reference"
+            },
+            {
+              "start": 606,
+              "end": 661,
+              "text": "Please take a look when you can and share any thoughts."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Measured and proposed box sizes",
+        "Supplier change deadline and revised price",
+        "Specific approval request"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa026",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.92,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 13,
+              "end": 46,
+              "text": "another step in my ongoing effort"
+            },
+            {
+              "start": 232,
+              "end": 280,
+              "text": "progress does not always arrive in dramatic ways"
+            },
+            {
+              "start": 595,
+              "end": 634,
+              "text": "keep moving forward one step at a time."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What appointment or situation occurred",
+        "Specific action taken and observable outcome"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa033",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "DISTRIBUTED_LIGHT_EDIT",
+      "routed": false,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.94,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 45,
+              "end": 106,
+              "text": "an opportunity to learn more about coordinating across teams."
+            },
+            {
+              "start": 264,
+              "end": 315,
+              "text": "Everyone brought valuable perspectives to the table"
+            }
+          ]
+        },
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 810,
+              "end": 925,
+              "text": "The day itself included moments of strong participation and moments that highlighted opportunities for improvement."
+            },
+            {
+              "start": 1096,
+              "end": 1145,
+              "text": "When questions came up, people found ways to help"
+            }
+          ]
+        },
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 1594,
+              "end": 1648,
+              "text": "Overall, the open house was a meaningful step forward."
+            },
+            {
+              "start": 1942,
+              "end": 2030,
+              "text": "The most important thing is to keep learning, remain responsive, and support one another"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What happened at the event",
+        "Specific challenge and its effect",
+        "Concrete change for the next event"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sa034",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "DISTRIBUTED_LIGHT_EDIT",
+      "routed": false,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 418,
+              "end": 488,
+              "text": "prepare the environment and make sure the relevant services are ready."
+            },
+            {
+              "start": 599,
+              "end": 638,
+              "text": "confirm that the process looks healthy."
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 941,
+              "end": 984,
+              "text": "applications can begin using the new store."
+            },
+            {
+              "start": 1507,
+              "end": 1551,
+              "text": "in use long enough to demonstrate stability."
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "spans": [
+            {
+              "start": 1845,
+              "end": 1906,
+              "text": "The ledger and verification steps still need to be specified."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Transfer and validation criteria",
+        "Rollback conditions and procedure",
+        "Cutover timing and ownership",
+        "Ledger and reconciliation steps"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa037",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "DISTRIBUTED_LIGHT_EDIT",
+      "routed": false,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.92,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 539,
+              "end": 573,
+              "text": "could serve a wide range of needs."
+            },
+            {
+              "start": 720,
+              "end": 791,
+              "text": "Local artists could host demonstrations, students could gain experience"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 1755,
+              "end": 1850,
+              "text": "We would need to consider access, utilities, equipment, supervision, insurance, and scheduling."
+            },
+            {
+              "start": 1966,
+              "end": 2023,
+              "text": "The exact approach can be shaped as the project develops."
+            }
+          ]
+        },
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 2864,
+              "end": 2934,
+              "text": "With the right mix of funding, volunteer effort, and local partnership"
+            },
+            {
+              "start": 3305,
+              "end": 3364,
+              "text": "The committee has asked what the first year would look like"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 234,
+          "end": 311,
+          "text": "Its location near the market and bus stop makes it familiar to many residents"
+        }
+      ],
+      "missingInformation": [
+        "First-year activities and schedule",
+        "Budget, access, and supervision plan",
+        "Evidence of demand or named partners"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sa038",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "DISTRIBUTED_LIGHT_EDIT",
+      "routed": false,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 566,
+              "end": 593,
+              "text": "under active consideration."
+            },
+            {
+              "start": 2445,
+              "end": 2481,
+              "text": "we will continue to monitor the case"
+            },
+            {
+              "start": 3044,
+              "end": 3090,
+              "text": "We hope to have more information to share soon"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 2225,
+              "end": 2275,
+              "text": "your legal team needs the recording before Friday."
+            },
+            {
+              "start": 2388,
+              "end": 2443,
+              "text": "we cannot give a firm time for resolution at the moment"
+            }
+          ]
+        },
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 890,
+              "end": 932,
+              "text": "there can be several possible explanations"
+            },
+            {
+              "start": 1323,
+              "end": 1359,
+              "text": "It may be useful to refresh the page"
+            },
+            {
+              "start": 3180,
+              "end": 3230,
+              "text": "a general explanation may not answer your question"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 1087,
+          "end": 1183,
+          "text": "the meeting from 14 February appears in the export list but does not open from the archive page."
+        }
+      ],
+      "missingInformation": [
+        "Verified file state and access finding",
+        "Owner and next update time",
+        "Deadline escalation or available alternative"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sb003",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.91,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 0,
+              "end": 104,
+              "text": "Units may continue routine storage during a temperature excursion when the situation appears manageable."
+            },
+            {
+              "start": 105,
+              "end": 222,
+              "text": "A suitable person should make the necessary judgment and ensure that any affected supplies are handled appropriately."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Temperature limits and disposition criteria.",
+        "Authorized decision maker and stock isolation procedure."
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sb007",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.94,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 0,
+              "end": 94,
+              "text": "The archive migration is complete in the sense that the principal transfer activity has ended."
+            },
+            {
+              "start": 213,
+              "end": 368,
+              "text": "Teams can rely on the new archive while work continues to determine which entries were omitted and whether they include records subject to retention holds."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Which records remain in the old index.",
+        "Whether omitted records carry retention holds.",
+        "Conditions for relying on the new archive."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sb011",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 0,
+              "end": 118,
+              "text": "The transfer dashboard confirms that each item has reached the receiving desk when the routing service marks it green."
+            },
+            {
+              "start": 202,
+              "end": 359,
+              "text": "If the desk later reports an item missing, the display still establishes that the transfer was completed and the desk should resolve the discrepancy locally."
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.91,
+          "spans": [
+            {
+              "start": 119,
+              "end": 201,
+              "text": "Staff may therefore close related follow-up tasks as soon as they see that status."
+            },
+            {
+              "start": 670,
+              "end": 724,
+              "text": "avoid holding tasks open for separate acknowledgement."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Whether green means routing acceptance or verified desk receipt.",
+        "How desk acknowledgement is recorded and reconciled."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sb015",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.97,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 0,
+              "end": 126,
+              "text": "Replacement badges can be issued when the requester is known to the front desk or can provide any familiar identifying detail."
+            },
+            {
+              "start": 176,
+              "end": 233,
+              "text": "the station may proceed without them during busy periods."
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 299,
+              "end": 374,
+              "text": "issue the new badge and leave the old record for Security to resolve later."
+            },
+            {
+              "start": 511,
+              "end": 617,
+              "text": "Any resulting discrepancies can be reconciled in the next shift review, allowing the queue to keep moving."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Required identity proof and directory checks.",
+        "Old badge disablement requirements and exception authority."
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sb018",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 128,
+              "end": 263,
+              "text": "This figure comes from last year's permit mix, which demonstrates that the same holders would have remained eligible without a renewal."
+            },
+            {
+              "start": 461,
+              "end": 569,
+              "text": "The committee can describe the change as both an efficiency gain and an improvement in eligibility accuracy."
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.91,
+          "spans": [
+            {
+              "start": 264,
+              "end": 350,
+              "text": "The extension should therefore apply to all open permits, including those under appeal"
+            },
+            {
+              "start": 377,
+              "end": 405,
+              "text": "No midpoint sample is needed"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Eligibility history during extended intervals.",
+        "Appeal status constraints and monitoring basis."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sb022",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.97,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 207,
+              "end": 283,
+              "text": "Interviews with seven reviewers confirm that rotation caused the improvement"
+            },
+            {
+              "start": 328,
+              "end": 486,
+              "text": "The office changed its intake form and hired a temporary clerk in the same period, but these background adjustments do not alter the clear effect of rotation."
+            }
+          ]
+        },
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.93,
+          "spans": [
+            {
+              "start": 487,
+              "end": 551,
+              "text": "We recommend immediate adoption across municipal review offices."
+            },
+            {
+              "start": 552,
+              "end": 667,
+              "text": "The approach should also reduce interruptions, since a shared queue gives analysts a clearer view of incoming work."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Evidence separating rotation from intake and staffing changes.",
+        "Evidence from other offices or a basis for transfer."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sb025",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "LOCAL_EDIT",
+      "reviewerConfidence": 0.97,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 89,
+              "end": 248,
+              "text": "Of 18,420 closed folders, 17,906 had matching shelf locations, demonstrating that the archive is complete and prepared for disposal under the current schedule."
+            },
+            {
+              "start": 343,
+              "end": 434,
+              "text": "Division stewards can now use the count as the number of complete, retention-cleared files."
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 249,
+              "end": 342,
+              "text": "The other 514 have minor label differences that do not affect the inventory's overall result."
+            },
+            {
+              "start": 521,
+              "end": 557,
+              "text": "without changing the disposal batch."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Reconciled status of the 514 folders.",
+        "File completeness and retention-clearance checks."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "LOCAL_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "LOCAL_EDIT",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "LOCAL_EDIT",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sb030",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.98,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 0,
+              "end": 83,
+              "text": "The new referral queue booked every request transmitted during its first two weeks."
+            },
+            {
+              "start": 538,
+              "end": 632,
+              "text": "Since the requests were accepted, all nine can be treated as scheduled for reporting purposes."
+            },
+            {
+              "start": 1068,
+              "end": 1148,
+              "text": "The desk has resolved the problem by reminding staff that accepted means booked."
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.95,
+          "spans": [
+            {
+              "start": 1149,
+              "end": 1251,
+              "text": "Staff should confirm requested dates when callers ask, and scheduling can reconcile records afterward."
+            },
+            {
+              "start": 1691,
+              "end": 1780,
+              "text": "This would erase the only local record of calls made while appointment links were absent."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 667,
+          "end": 779,
+          "text": "Two went back to originating clinics because the requested exam was unavailable, and two are still under review;"
+        }
+      ],
+      "missingInformation": [
+        "Booking records for the nine unlinked referrals.",
+        "Validated meaning of accepted status.",
+        "Independent record of patient confirmations."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sb033",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.98,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 101,
+              "end": 258,
+              "text": "Students who opened the portal in the week before a visit had the sharpest improvement, demonstrating that exposure to the reminder was the active mechanism."
+            },
+            {
+              "start": 806,
+              "end": 931,
+              "text": "The portal-open subgroup is smaller, but its pattern is strong evidence that the same benefit will appear across all students"
+            },
+            {
+              "start": 1385,
+              "end": 1517,
+              "text": "The reminder should be expanded to other appointment types, and the missed-visit reduction can be used to estimate expected savings."
+            }
+          ]
+        },
+        {
+          "phenomenon": "OTHER",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 1625,
+              "end": 1705,
+              "text": "The booking office should treat the reminder as a proven attendance intervention"
+            },
+            {
+              "start": 1857,
+              "end": 1897,
+              "text": "The records provide no such equivalence."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Comparison that accounts for portal engagement and booking lead times.",
+        "Evidence for transfer to other appointment types and savings."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "PARTIAL_ONLY",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sb036",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reviewerConfidence": 0.99,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 225,
+              "end": 309,
+              "text": "staff should assure requesters that urgent records will be available within one day."
+            },
+            {
+              "start": 645,
+              "end": 734,
+              "text": "That update is sufficient to show that the file has been transferred to the new location."
+            },
+            {
+              "start": 790,
+              "end": 863,
+              "text": "staff may still use the new catalogue location when answering a requester"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 979,
+              "end": 1034,
+              "text": "Logging every request is optional if call volumes rise."
+            },
+            {
+              "start": 1228,
+              "end": 1276,
+              "text": "Move staff need not check hold lists at dispatch"
+            },
+            {
+              "start": 1582,
+              "end": 1677,
+              "text": "The public notice can then be removed, even if specific series are still difficult to retrieve."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Verified dispatch and receipt records.",
+        "Criteria for expedited access and written response.",
+        "Hold-list matching and service-restoration criteria."
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "SUBSTANTIVE_RECONSTRUCTION",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "SUBSTANTIVE_RECONSTRUCTION",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc007",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.94,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "spans": [
+            {
+              "start": 41,
+              "end": 66,
+              "text": "a series of useful stages"
+            },
+            {
+              "start": 68,
+              "end": 121,
+              "text": "Each stage matters because it supports the next stage"
+            },
+            {
+              "start": 229,
+              "end": 279,
+              "text": "Good monitoring helps people see what is happening"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 157,
+              "end": 228,
+              "text": "Reliability is important throughout, so the process should be reliable."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What are the pipeline stages?",
+        "What reliability failure or monitoring signal is at issue?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc011",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.94,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 24,
+              "end": 64,
+              "text": "a central place to manage their requests"
+            },
+            {
+              "start": 106,
+              "end": 152,
+              "text": "the important parts together in one experience"
+            },
+            {
+              "start": 243,
+              "end": 280,
+              "text": "different options for different needs"
+            },
+            {
+              "start": 516,
+              "end": 537,
+              "text": "make better decisions"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.88,
+          "spans": [
+            {
+              "start": 190,
+              "end": 231,
+              "text": "stay informed as their work moves forward"
+            },
+            {
+              "start": 545,
+              "end": 601,
+              "text": "the information they need is available when they need it"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What requests and options does the service actually support?",
+        "Which information or decisions are distinctive?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc015",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 0,
+              "end": 44,
+              "text": "The move taught me many things about change."
+            },
+            {
+              "start": 166,
+              "end": 200,
+              "text": "At first everything felt different"
+            },
+            {
+              "start": 323,
+              "end": 360,
+              "text": "I learned that change is part of life"
+            },
+            {
+              "start": 563,
+              "end": 593,
+              "text": "It was a meaningful experience"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.94,
+          "spans": [
+            {
+              "start": 45,
+              "end": 93,
+              "text": "Change can be difficult, but it can also be good"
+            },
+            {
+              "start": 370,
+              "end": 403,
+              "text": "people can grow when they face it"
+            },
+            {
+              "start": 459,
+              "end": 494,
+              "text": "being open makes it easier to adapt"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What move occurred and what concrete event changed the writer’s view?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc019",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LOCAL_EDIT",
+      "routed": true,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.97,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 66,
+              "end": 114,
+              "text": "I always believe communication is very important"
+            },
+            {
+              "start": 150,
+              "end": 226,
+              "text": "the best thing is to listen to different perspectives and find common ground"
+            },
+            {
+              "start": 293,
+              "end": 339,
+              "text": "I would make sure that every person felt heard"
+            },
+            {
+              "start": 614,
+              "end": 666,
+              "text": "a good team works together and supports shared goals"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 0,
+              "end": 62,
+              "text": "Q: Describe a time you handled a disagreement with a coworker."
+            },
+            {
+              "start": 293,
+              "end": 340,
+              "text": "I would make sure that every person felt heard."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What disagreement occurred, what did the writer do, and what happened?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LOCAL_EDIT",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sc023",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 30,
+              "end": 73,
+              "text": "keeps information up to date across systems"
+            },
+            {
+              "start": 101,
+              "end": 137,
+              "text": "makes sure the right version is used"
+            },
+            {
+              "start": 235,
+              "end": 259,
+              "text": "handles it appropriately"
+            },
+            {
+              "start": 609,
+              "end": 641,
+              "text": "managed with the available tools"
+            }
+          ]
+        },
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.91,
+          "spans": [
+            {
+              "start": 310,
+              "end": 372,
+              "text": "This is important because teams depend on reliable information"
+            },
+            {
+              "start": 687,
+              "end": 714,
+              "text": "teams can trust the results"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What synchronization rules, failures, and exception tools actually exist?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc026",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 60,
+              "end": 115,
+              "text": "Start with the ingredients and make sure they are ready"
+            },
+            {
+              "start": 139,
+              "end": 188,
+              "text": "cook them in a way that helps the flavors develop"
+            },
+            {
+              "start": 307,
+              "end": 346,
+              "text": "make adjustments based on what it needs"
+            },
+            {
+              "start": 422,
+              "end": 460,
+              "text": "Different soups need different choices"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.91,
+          "spans": [
+            {
+              "start": 42,
+              "end": 58,
+              "text": "paying attention"
+            },
+            {
+              "start": 294,
+              "end": 323,
+              "text": "taste it and make adjustments"
+            },
+            {
+              "start": 481,
+              "end": 500,
+              "text": "trust your judgment"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Which soup and ingredients?",
+        "What cooking sequence, times, and taste adjustments?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc031",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LOCAL_EDIT",
+      "routed": true,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 124,
+              "end": 153,
+              "text": "relevant information together"
+            },
+            {
+              "start": 316,
+              "end": 347,
+              "text": "supports a range of event types"
+            },
+            {
+              "start": 1264,
+              "end": 1321,
+              "text": "making it available to the right people at the right time"
+            },
+            {
+              "start": 1655,
+              "end": 1681,
+              "text": "learn from previous events"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.91,
+          "spans": [
+            {
+              "start": 78,
+              "end": 101,
+              "text": "keep everyone connected"
+            },
+            {
+              "start": 413,
+              "end": 443,
+              "text": "Participants can stay informed"
+            },
+            {
+              "start": 1079,
+              "end": 1139,
+              "text": "Communication is another important part of successful events"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "What event tasks, information, permissions, and past-event data does the tool actually support?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LOCAL_EDIT",
+      "v6All": "LOCAL_EDIT",
+      "v6Selective": "LOCAL_EDIT",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "LOCAL_EDIT"
+    },
+    {
+      "id": "sc039",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.98,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.99,
+          "spans": [
+            {
+              "start": 0,
+              "end": 70,
+              "text": "Q: Tell me about a project that failed and what you changed afterward."
+            },
+            {
+              "start": 1626,
+              "end": 1704,
+              "text": "There have been times when I have had to step back and reconsider an approach."
+            },
+            {
+              "start": 2212,
+              "end": 2256,
+              "text": "I try to carry lessons into the next project"
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "spans": [
+            {
+              "start": 584,
+              "end": 619,
+              "text": "One thing I value is communication."
+            },
+            {
+              "start": 1110,
+              "end": 1164,
+              "text": "I have also learned to think carefully about planning."
+            },
+            {
+              "start": 2720,
+              "end": 2763,
+              "text": "Another important part of this is patience."
+            },
+            {
+              "start": 3339,
+              "end": 3379,
+              "text": "I would bring that mindset to this role."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Which project failed, why, what changed, and what happened afterward?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sc040",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "INSUFFICIENT_EVIDENCE",
+      "reviewerConfidence": 0.97,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "spans": [
+            {
+              "start": 366,
+              "end": 419,
+              "text": "The exchange can support more than one kind of record"
+            },
+            {
+              "start": 751,
+              "end": 796,
+              "text": "checks that the incoming material is suitable"
+            },
+            {
+              "start": 1793,
+              "end": 1825,
+              "text": "It follows the established rules"
+            },
+            {
+              "start": 3002,
+              "end": 3050,
+              "text": "The process should make these exceptions visible"
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.93,
+          "spans": [
+            {
+              "start": 283,
+              "end": 316,
+              "text": "Each stage contributes to quality"
+            },
+            {
+              "start": 1869,
+              "end": 1925,
+              "text": "This is an important part of keeping the systems aligned"
+            },
+            {
+              "start": 3167,
+              "end": 3217,
+              "text": "Handling exceptions carefully helps maintain trust"
+            },
+            {
+              "start": 3662,
+              "end": 3705,
+              "text": "A dependable exchange is not a single event"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 544,
+          "end": 550,
+          "text": "Intake"
+        },
+        {
+          "start": 1126,
+          "end": 1132,
+          "text": "Review"
+        },
+        {
+          "start": 1694,
+          "end": 1702,
+          "text": "Transfer"
+        },
+        {
+          "start": 2243,
+          "end": 2253,
+          "text": "Monitoring"
+        },
+        {
+          "start": 2832,
+          "end": 2842,
+          "text": "Exceptions"
+        },
+        {
+          "start": 3367,
+          "end": 3384,
+          "text": "Ongoing operation"
+        }
+      ],
+      "missingInformation": [
+        "What records, validation criteria, transfer rules, failure handling, and operator actions exist?"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "INSUFFICIENT_EVIDENCE",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "INSUFFICIENT_EVIDENCE",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "INSUFFICIENT_EVIDENCE",
+      "v7Feasibility": "UNDETERMINED",
+      "v7Execution": "UNCHANGED",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd003",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LOCAL_EDIT",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.91,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 51,
+              "end": 88,
+              "text": "requires attention in a timely manner"
+            },
+            {
+              "start": 350,
+              "end": 394,
+              "text": "Facilities should be involved as appropriate"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 146,
+              "end": 186,
+              "text": "considerations that should be considered"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "SAFE_WITH_SOURCE",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "DISTRIBUTED_LIGHT_EDIT"
+    },
+    {
+      "id": "sd007",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 30,
+              "end": 68,
+              "text": "a major shift in institutional culture"
+            },
+            {
+              "start": 168,
+              "end": 210,
+              "text": "entered a new era of shared accountability"
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 236,
+              "end": 278,
+              "text": "trust must have increased across all teams"
+            },
+            {
+              "start": 405,
+              "end": 452,
+              "text": "adopt the same format across every service line"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 70,
+          "end": 110,
+          "text": "Staff mentioned shorter morning meetings"
+        }
+      ],
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "SAFE_WITH_SOURCE",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "DISTRIBUTED_LIGHT_EDIT"
+    },
+    {
+      "id": "sd021",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 268,
+              "end": 398,
+              "text": "It is evident from this pattern that the courier schedule is the cause of delays and that earlier pickup will restore timely care."
+            }
+          ]
+        },
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 567,
+              "end": 622,
+              "text": "an adjustment will be implemented to promote efficiency"
+            },
+            {
+              "start": 932,
+              "end": 1012,
+              "text": "appropriate stakeholders can assess whether the approach should become permanent"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 222,
+          "end": 266,
+          "text": "19 waiting more than 25 minutes for a result"
+        }
+      ],
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "SAFE_WITH_SOURCE",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "DISTRIBUTED_LIGHT_EDIT"
+    },
+    {
+      "id": "sd022",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.94,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 512,
+              "end": 537,
+              "text": "a time-limited adjustment"
+            },
+            {
+              "start": 594,
+              "end": 617,
+              "text": "supported by a majority"
+            },
+            {
+              "start": 798,
+              "end": 888,
+              "text": "Departments should interpret the change in the context of their own established processes."
+            }
+          ]
+        },
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 124,
+              "end": 175,
+              "text": "many dimensions of access, storage, and stewardship"
+            },
+            {
+              "start": 1141,
+              "end": 1175,
+              "text": "commitment to responsible practice"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "The adopted retention period and old period",
+        "Vote tally and scope of affected packets",
+        "Trial end point and decision owner"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd023",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 195,
+              "end": 280,
+              "text": "which proves that giving people more time enables them to take charge of their health"
+            },
+            {
+              "start": 628,
+              "end": 749,
+              "text": "Although the groups contained different proportions of first visits, that distinction does not change the central lesson."
+            }
+          ]
+        },
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 332,
+              "end": 395,
+              "text": "it signals a change in trust, access, and institutional culture"
+            },
+            {
+              "start": 1010,
+              "end": 1056,
+              "text": "provides a roadmap for sustainable improvement"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 120,
+          "end": 193,
+          "text": "Eleven appointments were missed in one group, compared with 18 in another"
+        }
+      ],
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "SAFE_WITH_SOURCE",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "DISTRIBUTED_LIGHT_EDIT"
+    },
+    {
+      "id": "sd024",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 181,
+              "end": 241,
+              "text": "considering whether it seems consistent with the return form"
+            },
+            {
+              "start": 440,
+              "end": 508,
+              "text": "The tamper seal can be checked before or after the package is opened"
+            },
+            {
+              "start": 848,
+              "end": 887,
+              "text": "with pharmacist input where appropriate"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MECHANICAL_STRUCTURE",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 509,
+              "end": 528,
+              "text": "as conditions allow"
+            },
+            {
+              "start": 593,
+              "end": 631,
+              "text": "staff may need to proceed individually"
+            },
+            {
+              "start": 712,
+              "end": 763,
+              "text": "signatures can be added once the matter is resolved"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Required identity identifiers and mismatch action",
+        "Mandatory seal and witness sequence",
+        "Authority for return to stock"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd025",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 340,
+              "end": 395,
+              "text": "exploring ways to provide more convenient opportunities"
+            },
+            {
+              "start": 485,
+              "end": 531,
+              "text": "communicate any updates at an appropriate time"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 661,
+              "end": 709,
+              "text": "present relevant information in a helpful manner"
+            },
+            {
+              "start": 766,
+              "end": 806,
+              "text": "source guides may provide useful context"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Specific school booking arrangement and dates",
+        "Which recordings are restricted to on-site listening",
+        "Committed guide scope and delivery date"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd026",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 367,
+              "end": 449,
+              "text": "the programme has the potential to prevent readmissions by improving understanding"
+            },
+            {
+              "start": 700,
+              "end": 769,
+              "text": "comparison of outcomes will help demonstrate the pilot's contribution"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 73,
+              "end": 110,
+              "text": "Staff made contact with many patients"
+            },
+            {
+              "start": 451,
+              "end": 489,
+              "text": "Some contact numbers require attention"
+            },
+            {
+              "start": 579,
+              "end": 601,
+              "text": "flexible calling hours"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Contact and failed-call counts",
+        "Planned comparison design and limits",
+        "Assigned follow-up actions and dates"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd034",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.95,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 37,
+              "end": 88,
+              "text": "important signal of how connected our services feel"
+            },
+            {
+              "start": 2003,
+              "end": 2023,
+              "text": "a coordinated effort"
+            },
+            {
+              "start": 2308,
+              "end": 2368,
+              "text": "a system that is consistent, efficient, and patient-centered"
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 1133,
+              "end": 1201,
+              "text": "Better communication at the start will naturally reduce delays later"
+            },
+            {
+              "start": 1874,
+              "end": 1947,
+              "text": "staff can help patients gather the documents needed to advance their care"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Referral counts and missing-item breakdown",
+        "Time to complete by missing-item category",
+        "Evidence on which interventions reduce returns without shifting record work to patients"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd035",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.97,
+      "evidence": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 214,
+              "end": 312,
+              "text": "This difference confirms that repeated exposure to the workshop's methods produces stronger plans."
+            },
+            {
+              "start": 879,
+              "end": 1051,
+              "text": "Some might argue that those students had more available time or more help from supervisors. Those possibilities are less important than the overall direction of the result."
+            }
+          ]
+        },
+        {
+          "phenomenon": "EMPTY_SIGNIFICANCE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 1431,
+              "end": 1458,
+              "text": "improvements in future work"
+            },
+            {
+              "start": 1794,
+              "end": 1821,
+              "text": "broader culture of research"
+            },
+            {
+              "start": 2227,
+              "end": 2306,
+              "text": "gains in clarity, confidence, and completion across a wide range of disciplines"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 135,
+          "end": 212,
+          "text": "median score of 14 on the plan rubric, while less regular attendees earned 11"
+        }
+      ],
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "DISTRIBUTED_LIGHT_EDIT",
+      "v6All": "DISTRIBUTED_LIGHT_EDIT",
+      "v6Selective": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "SAFE_WITH_SOURCE",
+      "v7Execution": "EDIT",
+      "v7FinalScope": "DISTRIBUTED_LIGHT_EDIT"
+    },
+    {
+      "id": "sd036",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "MISSING_INFORMATION",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 388,
+              "end": 431,
+              "text": "whichever internal route is most convenient"
+            },
+            {
+              "start": 868,
+              "end": 901,
+              "text": "checking the appointment schedule"
+            },
+            {
+              "start": 1132,
+              "end": 1171,
+              "text": "A second person may assist if available"
+            },
+            {
+              "start": 1627,
+              "end": 1667,
+              "text": "may be discarded under the usual process"
+            }
+          ]
+        },
+        {
+          "phenomenon": "MECHANICAL_STRUCTURE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 494,
+              "end": 535,
+              "text": "ordinary steps can be completed afterward"
+            },
+            {
+              "start": 1051,
+              "end": 1099,
+              "text": "the extent of this check will depend on workload"
+            },
+            {
+              "start": 1829,
+              "end": 1870,
+              "text": "an email trail may serve the same purpose"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "missingInformation": [
+        "Required identifier matching and mismatch escalation",
+        "Approved transfer route, import verification, and log requirements",
+        "Media retention and disposal rules"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "sd040",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": true,
+      "reviewerDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reviewerConfidence": 0.96,
+      "evidence": [
+        {
+          "phenomenon": "GENERICNESS",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 370,
+              "end": 403,
+              "text": "people deserve timely information"
+            },
+            {
+              "start": 3540,
+              "end": 3581,
+              "text": "set an expectation of early communication"
+            },
+            {
+              "start": 3510,
+              "end": 3528,
+              "text": "balanced framework"
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 2619,
+              "end": 2698,
+              "text": "Managers should be trusted to make a reasonable assessment of the circumstances"
+            },
+            {
+              "start": 2747,
+              "end": 2808,
+              "text": "Overly rigid definitions could create unintended consequences"
+            }
+          ]
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "spans": [
+            {
+              "start": 3962,
+              "end": 4043,
+              "text": "communicates clearly, adapts to circumstances, and keeps residents' needs visible"
+            },
+            {
+              "start": 4070,
+              "end": 4104,
+              "text": "shared commitment to communication"
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 1458,
+          "end": 1555,
+          "text": "Residents benefit from knowing when an interruption may occur and whom to contact with questions."
+        }
+      ],
+      "missingInformation": [
+        "Proposed minimum notice period and duration trigger",
+        "Required emergency classification criteria and record",
+        "Required channels and support route"
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "recommendedScope": "DISTRIBUTED_LIGHT_EDIT",
+      "validation": "ACCEPTED",
+      "postValidationDisposition": "DISTRIBUTED_LIGHT_EDIT",
+      "reconciliation": "LEAVE_ALONE",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE",
+      "v7Diagnosis": "DISTRIBUTED_LIGHT_EDIT",
+      "v7Feasibility": "NEEDS_INFORMATION",
+      "v7Execution": "BLOCKED_PENDING_INFORMATION",
+      "v7FinalScope": "LEAVE_ALONE"
+    },
+    {
+      "id": "se008",
+      "gold": "SUBSTANTIVE_RECONSTRUCTION",
+      "deterministicScope": "LEAVE_ALONE",
+      "routed": false,
+      "reviewerDisposition": null,
+      "validation": "NO_REVIEW",
+      "v6All": "LEAVE_ALONE",
+      "v6Selective": "LEAVE_ALONE"
+    }
+  ]
+}
