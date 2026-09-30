@@ -1,0 +1,507 @@
+[
+  {
+    "id": "sa001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The mug and screws carry the feeling without explanation; the promise to bring them is clear."
+  },
+  {
+    "id": "sa003",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.98,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The check, retry, exit condition, and separate upload action are explicit and concise."
+  },
+  {
+    "id": "sa005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The invoice condition, next action, and unaffected workspace are all clear."
+  },
+  {
+    "id": "sa007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.95,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The note identifies the defect, owner, fallback, and reopening check."
+  },
+  {
+    "id": "sa009",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The repeated question and kept pebble reveal the emotional turn through a specific scene."
+  },
+  {
+    "id": "sa011",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "MISSING_INFORMATION"
+    ],
+    "confidence": 0.92,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "A specific river visit, observation, or exchange with the mother to anchor the reflection."
+    ],
+    "rationale": "The piece states its meaning repeatedly but supplies little lived evidence or distinct voice."
+  },
+  {
+    "id": "sa013",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.91,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "Trim repeated explanations and foreground the restart sequence while retaining exit code and queue distinction."
+  },
+  {
+    "id": "sa015",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The date, row count, duplicate risk, and escalation path make the correct export unambiguous."
+  },
+  {
+    "id": "sa017",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "MISSING_INFORMATION"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Exact export dates and differences.",
+      "Which export should be used for payroll and its expected row count.",
+      "Availability deadline and discrepancy response path."
+    ],
+    "rationale": "The message withholds the distinctions a customer needs to choose and verify the payroll file."
+  },
+  {
+    "id": "sa019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.92,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The hypothesis remains tentative, and responsibilities, interim watering, and follow-up are usable."
+  },
+  {
+    "id": "sa021",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The size correction, reason, price change, approval request, and timing are precise."
+  },
+  {
+    "id": "sa023",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "MISSING_INFORMATION"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Required box dimensions and quantity.",
+      "Why the draft order fails.",
+      "Supplier change deadline and revised cost.",
+      "Exact approval or recheck request."
+    ],
+    "rationale": "Polite generalities replace the decision and specifications the recipient needs."
+  },
+  {
+    "id": "sa025",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "EMPTY_SIGNIFICANCE",
+      "VOICE"
+    ],
+    "confidence": 0.91,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The stairs and fading ink already carry the point; the explicit lesson and closing explanation weaken it."
+  },
+  {
+    "id": "sa027",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "Acknowledgment behavior, legacy uploads, log field, and unaffected functions are carefully distinguished."
+  },
+  {
+    "id": "sa029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.95,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "Each crew has concrete actions, and access and rehearsal decisions depend on fresh observations."
+  },
+  {
+    "id": "sa031",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.85,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "A modest trim can remove repeated explanations of snapshot validity without losing command behavior or recovery steps."
+  },
+  {
+    "id": "sa033",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MISSING_INFORMATION"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Specific outcomes or attendance observations.",
+      "Concrete coordination failures and their effects.",
+      "Named owners, dates, and proposed process changes."
+    ],
+    "rationale": "The retrospective repeats broad lessons without documenting what happened or what should change."
+  },
+  {
+    "id": "sa035",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "VOICE"
+    ],
+    "confidence": 0.78,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "What was said after the recital and what harm the writer acknowledges.",
+      "Whether the writer wants an apology, an explanation, or only a conversation."
+    ],
+    "rationale": "The warmth and pickup question are clear, but a stronger apology needs facts and intent absent from the letter."
+  },
+  {
+    "id": "sa037",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC_ARGUMENT",
+      "MISSING_INFORMATION"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "What support the committee is being asked to provide.",
+      "First-year activities, timeline, budget, and responsible partners.",
+      "Evidence of demand beyond informal conversations.",
+      "Building access, utilities, insurance, and supervision feasibility."
+    ],
+    "rationale": "The long proposal repeats potential benefits while leaving the committee’s requested first-year plan unanswered."
+  },
+  {
+    "id": "sa039",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The choices, crumbs, receipt, and unresolved question form a coherent essay without forcing a lesson."
+  },
+  {
+    "id": "sb001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "It records the temperature, immediate containment, ticket, review owner, and hold on reuse."
+  },
+  {
+    "id": "sb003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "OTHER"
+    ],
+    "confidence": 0.99,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Temperature limits and excursion criteria.",
+      "Who is authorized to assess affected supplies.",
+      "Quarantine, documentation, and release process."
+    ],
+    "rationale": "The instruction permits continued storage and resumption without defining the checks that make either safe."
+  },
+  {
+    "id": "sb005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.95,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The decision, dependency, owners, deadline, and unresolved export owner are explicit."
+  },
+  {
+    "id": "sb007",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "OTHER"
+    ],
+    "confidence": 0.98,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Which records remain in the old index.",
+      "Whether any omitted records have retention holds.",
+      "Criteria for relying on the new archive and reconciliation owner."
+    ],
+    "rationale": "It declares completion and invites reliance while acknowledged omissions and holds are unresolved."
+  },
+  {
+    "id": "sb009",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The note separates routing acceptance from human receipt and pauses closure pending reconciliation."
+  },
+  {
+    "id": "sb011",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "OTHER"
+    ],
+    "confidence": 0.99,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "What the green status technically acknowledges.",
+      "Independent receiving-desk confirmation process.",
+      "Extent and resolution of missing or unassigned items."
+    ],
+    "rationale": "It treats a routing status as proof of desk receipt despite reported discrepancies and directs premature task closure."
+  },
+  {
+    "id": "sb013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The procedure specifies independent field comparison, old-badge disablement, mismatch escalation, and receipt."
+  },
+  {
+    "id": "sb015",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "OTHER"
+    ],
+    "confidence": 0.99,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Required identity evidence and directory comparison.",
+      "Old-badge disablement or missing-badge process.",
+      "Mismatch escalation and issuance authorization."
+    ],
+    "rationale": "It allows replacement credentials on familiarity alone and postpones checks that should govern issuance."
+  },
+  {
+    "id": "sb017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.94,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The recommendation states the estimate’s limit, narrower option, sampling step, and exclusions."
+  },
+  {
+    "id": "sb019",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "OTHER"
+    ],
+    "confidence": 0.88,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "The referenced results table and site-level counts.",
+      "Intended scope of the discussion claim."
+    ],
+    "rationale": "The note correctly spots overreach, but the needed revision depends on the table and intended population."
+  },
+  {
+    "id": "sb021",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The time trend is kept separate from interviews and concurrent changes, with a proportionate conclusion."
+  },
+  {
+    "id": "sb023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "It distinguishes verified locations from file completeness and holds the 514 exceptions from disposal."
+  },
+  {
+    "id": "sb025",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "MISSING_INFORMATION",
+      "OTHER"
+    ],
+    "confidence": 0.99,
+    "safeToRewriteWithoutNewFacts": false,
+    "missingInformation": [
+      "Retention-date review and disposal authorization for the verified folders.",
+      "Reconciliation status and retention holds for the 514 exceptions.",
+      "Evidence of file completeness beyond shelf-location matches."
+    ],
+    "rationale": "Location matches are presented as proof of complete, retention-cleared files, and unresolved exceptions are dismissed."
+  },
+  {
+    "id": "sb027",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.95,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The pilot delay, vendor action, retest, unresolved privacy question, and next check are traceable."
+  },
+  {
+    "id": "sb029",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.88,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The workflow is careful; the final proposed caller example can be turned into a concise staff script using facts already stated."
+  },
+  {
+    "id": "sb031",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.9,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The last paragraph restates the prior caveat; trim it while preserving definitions, confounders, and the limited implication."
+  },
+  {
+    "id": "sb033",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "OTHER"
+    ],
+    "confidence": 0.99,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "Recast the result as an association, keep the booking changes visible, and remove population-wide savings claims unsupported by these records."
+  },
+  {
+    "id": "sb035",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The policy distinguishes service time from access rights, defines expedited review, and keeps preservation holds intact."
+  },
+  {
+    "id": "sb037",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.97,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "It separates matched from unmatched specimens, avoids causal certainty, and assigns monitoring and handoff controls."
+  },
+  {
+    "id": "sb039",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "confidence": 0.96,
+    "safeToRewriteWithoutNewFacts": true,
+    "missingInformation": [],
+    "rationale": "The text itself identifies the pooled causal leap, denominator shift, concurrent changes, and precise revision path."
+  }
+]

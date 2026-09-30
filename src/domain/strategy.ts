@@ -10,7 +10,7 @@ import { z } from "zod";
  * Strategies are immutable: changing any field means a new version.
  */
 
-export const PROMPT_IDS = ["reconstruct", "verify", "analyze", "voiceprint", "compile", "judge", "orchestrate", "repair", "local-alternative"] as const;
+export const PROMPT_IDS = ["reconstruct", "verify", "analyze", "voiceprint", "compile", "judge", "orchestrate", "repair", "local-alternative", "semantic-review"] as const;
 export type PromptId = (typeof PROMPT_IDS)[number];
 
 export const promptRefSchema = z.object({ id: z.enum(PROMPT_IDS), version: z.number().int().min(1) }).strict();

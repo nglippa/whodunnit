@@ -13,6 +13,7 @@ import { comparePatterns } from "./postcheck";
 import { buildRewritePlan, summarizePlan, type RewritePlan } from "./rewrite-plan";
 import { DEFAULT_STRATEGY } from "./strategies";
 import { auditWording, type WordingAudit } from "./wording-audit";
+import { buildSemanticPlan, type SemanticReviewClient, type SemanticPlanningResult } from "./semantic-review";
 
 /**
  * SOURCE → RULE ANALYSIS → REWRITE PLAN → CANDIDATE → MEANING CHECKS → RULE POST-CHECK → (retry) → RESULT
@@ -43,6 +44,10 @@ export interface PipelineOptions {
    * set it; the web route has no way to.
    */
   forceModel?: boolean;
+  /** Experimental v6 only. Absence leaves the v5 deterministic decision intact. */
+  semanticReviewer?: SemanticReviewClient;
+  semanticReviewMode?: "selective" | "all";
+  onSemanticPlan?: (record: SemanticPlanningResult["telemetry"]) => void;
 }
 
 /** One provider attempt, for observability. No text: hashes, counts, reasons and transport metadata only. */
@@ -137,10 +142,12 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;
-  const plan = buildRewritePlan(
-    { source, profile, refinement: refinement?.change, voiceprint: request.voiceprint, current: refinement?.current, protectedPhrases: request.protectedPhrases },
-    strategy,
-  );
+  const planInput = { source, profile, refinement: refinement?.change, voiceprint: request.voiceprint, current: refinement?.current, protectedPhrases: request.protectedPhrases };
+  const semanticPlan = strategy.version === 6 && strategy.id === "reconstruction"
+    ? await buildSemanticPlan(planInput, options.semanticReviewer ?? null, { mode: options.semanticReviewMode })
+    : null;
+  if (semanticPlan) options.onSemanticPlan?.(semanticPlan.telemetry);
+  const plan = semanticPlan?.plan ?? buildRewritePlan(planInput, strategy);
   options.onPlanReady?.(Date.now() - analysisStarted);
   // Meaning checks get the same context the plan used: filler the rewrite may drop, what the author licensed, what is protected.
   const verifyContext = { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases };

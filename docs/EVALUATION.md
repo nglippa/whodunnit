@@ -488,3 +488,7 @@ New records are `schemaVersion: 2`:
 - **Judge result:** `provenance` (live or cached).
 
 Version 1 records and manifests still load; the new fields are optional.
+
+## Bounded semantic-review development
+
+`pnpm eval:semantic-development` runs the newly authored synthetic development corpus through deterministic v5 and experimental v6 preliminary planning. It does not call any model and never loads frozen holdouts. An optional path to a synthetic review artifact replays structured reviews through v6 schema, source-span validation, reconciliation, and fallback, then compares all-review with selective routing on the same artifacts. See [SEMANTIC-REVIEW.md](./SEMANTIC-REVIEW.md) for the contract, limitations, and future Holdout V3 protocol. Development corpus results are not independent generalization evidence.

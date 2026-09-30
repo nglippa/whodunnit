@@ -79,7 +79,16 @@ export const RECONSTRUCTION_V5 = define({
   planning: { ...RECONSTRUCTION_V3.planning, discourse: true },
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5];
+/** Experimental scope review. The ordinary production route never opts into this strategy. */
+export const RECONSTRUCTION_V6 = define({
+  ...RECONSTRUCTION_V5,
+  version: 6,
+  name: "Reconstruction v6 (bounded semantic planning experiment)",
+  description: "v5 deterministic evidence followed by optional schema-validated semantic scope review. Requires an explicitly supplied reviewer; unavailable review preserves the deterministic plan.",
+  prompt: { id: "reconstruct", version: 6 },
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

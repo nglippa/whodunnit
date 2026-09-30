@@ -28,6 +28,7 @@ import { protectedPhrasesFor } from "../semantics/phrases";
 import { countNegations, extractDateWords, extractLinks, extractNames, extractNumbers, extractQuotations } from "../verification/protected";
 import { analyzeDiscourse, type DiscourseAnalysis } from "../discourse/analyze";
 import { classifyDocumentStructure, structurePermission } from "../discourse/structure";
+import type { SemanticReview } from "./semantic-review";
 
 /**
  * The rewrite plan is compiled before any model call. It is the contract the
@@ -104,6 +105,8 @@ export interface RewritePlan {
   /** Experimental v5 editing scope. Advisory observations never force change. */
   changeScope?: "UNCHANGED" | "LOCAL_EDIT" | "DISTRIBUTED_LIGHT_EDIT" | "SUBSTANTIVE_RECONSTRUCTION";
   discourse?: DiscourseAnalysis;
+  /** v6 only: validated editorial evidence, never a semantic-safety waiver. */
+  semanticEditing?: { scope: "LOCAL_EDIT" | "DISTRIBUTED_LIGHT_EDIT" | "SUBSTANTIVE_RECONSTRUCTION"; findings: SemanticReview["findings"]; missingInformation: string[] };
   /** Which strategy compiled this plan, and what a prioritised budget left out (with reasons). */
   budget: { strategy: string; mode: RewriteStrategy["planning"]["mode"]; omitted: OmittedItem[] };
   /** The analysis the plan was built from (for post-checks). */
@@ -279,7 +282,7 @@ export function buildRewritePlan(input: PlanInput, strategy: RewriteStrategy = R
   const { source, profile, refinement } = input;
   const registry = getRegistry();
   const rules = rulesForProfile(profile, registry);
-  const structure = strategy.planning.discourse ? classifyDocumentStructure(source) : undefined;
+  const structure = strategy.planning.discourse ? classifyDocumentStructure(source, { enhanced: strategy.version >= 6 }) : undefined;
   const structurePermissions: PatternPermission[] = structure
     ? rules.flatMap((rule) => {
         const permission = structurePermission(structure, rule.id, source);

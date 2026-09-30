@@ -11,7 +11,7 @@ import { DEFAULT_STRATEGY, RECONSTRUCTION_V1, RECONSTRUCTION_V2, STRATEGIES, get
 describe("RewriteStrategy", () => {
   it("validates every published strategy and gives each a unique, versioned key", () => {
     for (const s of STRATEGIES) expect(rewriteStrategySchema.safeParse(s).success, strategyKey(s)).toBe(true);
-    expect(STRATEGIES.map(strategyKey)).toEqual(["reconstruction-v1", "reconstruction-v2", "reconstruction-v3", "reconstruction-v4", "reconstruction-v5"]);
+    expect(STRATEGIES.map(strategyKey)).toEqual(["reconstruction-v1", "reconstruction-v2", "reconstruction-v3", "reconstruction-v4", "reconstruction-v5", "reconstruction-v6"]);
     expect(new Set(STRATEGIES.map(strategyKey)).size).toBe(STRATEGIES.length);
   });
 
@@ -53,6 +53,9 @@ const PINNED: Record<string, string> = {
   "reconstruct.v3": "349fc9a84d9c3c71",
   "reconstruct.v4": "9e59611eb3fb6f63",
   "reconstruct.v5": "1e272762b2fbe03e",
+  "reconstruct.v6": "b985ec9548f03b24",
+  "semantic-review.v1": "e065c8ecd9788d8e",
+  "semantic-review.v2": "b0e252ec982bc82a",
   "analyze.v1": "e8c46358ef4e2630",
   "verify.v1": "f028bf96cd4bd029",
   "voiceprint.v1": "f42802ee70bf6603",

@@ -25,6 +25,35 @@ describe("conservative document structure", () => {
     expect(classifyDocumentStructure("The hinge broke Tuesday.").confidence).toBeLessThan(0.8);
   });
 
+  it("recognizes unmarked operational form without using topic words", () => {
+    expect(classifyDocumentStructure("Check the seal before opening.\nRecord the serial number.\nIf the label is torn, call the supervisor.\nAttach the record to the case.", { enhanced: true })).toMatchObject({ type: "PROCEDURE", confidence: 0.84 });
+    expect(classifyDocumentStructure("This rule applies to all evening access requests.\n\nA requester must provide a contact number.\n\nStaff shall record the decision before closing the case.", { enhanced: true })).toMatchObject({ type: "POLICY", confidence: 0.82 });
+    expect(classifyDocumentStructure("Tuesday desk review\nDecision: defer the sign change\nOpen: check the measurements\nOwner: Mira\nDue: Friday", { enhanced: true })).toMatchObject({ type: "NOTES", confidence: 0.83 });
+    expect(classifyDocumentStructure("Tuesday desk review\nDecision: defer the sign change\nOpen: check the measurements\nOwner: Mira\nDue: Friday").type).toBe("TRANSCRIPT");
+    expect(classifyDocumentStructure("We must decide soon. We must check the facts. We must tell the team.").type).toBe("UNKNOWN");
+  });
+
+  it("recognizes repeated paragraph and speaker structure without literal Q/A or Step labels", () => {
+    const faq = ["When can we collect it?", "Collect it on Tuesday at noon.", "Who may sign?", "The named requester may sign.", "What if the door is locked?", "Call the desk before leaving."].join("\n\n");
+    expect(classifyDocumentStructure(faq, { enhanced: true }).type).toBe("FAQ");
+    const transcript = ["09:02 Mira: The case is sealed.", "09:03 Jo: I have the receipt.", "09:04 Mira: Please read the number.", "09:05 Jo: It is 418."].join("\n\n");
+    const chat = transcript.replaceAll("\n\n", "\n");
+    expect(classifyDocumentStructure(transcript, { enhanced: true }).type).toBe("TRANSCRIPT");
+    expect(classifyDocumentStructure(chat, { enhanced: true }).type).toBe("CHAT");
+    expect(classifyDocumentStructure(transcript).type).not.toBe("TRANSCRIPT");
+    const unmarked = ["Put the case on the tray. Check the label.", "Record the serial number before moving it.", "Rinse the cup and place it on the rack.", "Close the lid. Deliver the record to the desk."].join("\n\n");
+    expect(classifyDocumentStructure(unmarked, { enhanced: true }).type).toBe("PROCEDURE");
+  });
+
+  it("does not infer procedure or FAQ from one question or incidental imperatives", () => {
+    const prose = "When did the system fail? We found the answer in the log.\n\nThe team checked the numbers. They sent the report.\n\nThe result changed our plan.";
+    expect(classifyDocumentStructure(prose, { enhanced: true }).type).toBe("PROSE");
+    const formal = "The committee must review the record before voting.\n\nWe must also consider the cost of delay.\n\nThe evidence is incomplete unless the final measurement arrives.";
+    expect(classifyDocumentStructure(formal, { enhanced: true }).type).not.toBe("POLICY");
+    const academic = "We must inspect the sample before claiming a trend.\n\nWe must account for the smaller evening group.\n\nWe must resist generalising the result unless another site confirms it.";
+    expect(classifyDocumentStructure(academic, { enhanced: true }).type).not.toBe("POLICY");
+  });
+
   it("licenses only relevant rules when genre evidence is strong", () => {
     const interview = classifyDocumentStructure("Interviewer: When? Speaker: Tuesday.\n\nInterviewer: Why? Speaker: Rain.\n\nInterviewer: Again? Speaker: No.");
     expect(structurePermission(interview, "core.repeated-paragraph-openers")).toMatchObject({ reason: expect.stringMatching(/interview structure/), scope: "speaker-prefix" });
