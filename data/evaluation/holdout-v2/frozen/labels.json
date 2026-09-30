@@ -1,0 +1,1434 @@
+[
+  {
+    "id": "A001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A002",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A007",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A009",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A010",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A012",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A013",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A015",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.91,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A016",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.68,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "A017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A018",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A019",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A021",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.89,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A022",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.92,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "CHAT",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A024",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A025",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "REDUNDANCY",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A026",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A027",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "LOCAL_WORDING"
+    ],
+    "genre": "MIXED",
+    "confidence": 0.85,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A028",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A030",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "A031",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.84,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.92,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B006",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B008",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B009",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "CHAT",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B012",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B015",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B016",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B017",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B018",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "TRANSCRIPT",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B019",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B020",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B021",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B022",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.91,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B023",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B024",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B025",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B026",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B027",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "TRANSCRIPT",
+    "confidence": 0.82,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B030",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.92,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B031",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B032",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "B033",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C003",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.72,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "C004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": null,
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C009",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.82,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "NOTES",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C012",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.73,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "C013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C015",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.87,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C016",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C018",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.72,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "C019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C021",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": null,
+    "confidence": 0.84,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C022",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C024",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "GENERICNESS"
+    ],
+    "genre": null,
+    "confidence": 0.86,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C025",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C026",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C027",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.75,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "C028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C030",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.72,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "C031",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C032",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "C033",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.74,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "D001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D002",
+    "disposition": "AMBIGUOUS",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.82,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "D003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D006",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D008",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D009",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D011",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": null,
+    "confidence": 0.9,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D012",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D014",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D015",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D016",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D017",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.92,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D018",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D020",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D021",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D022",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D023",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D024",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D025",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "MIXED",
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D026",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.95,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D027",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D029",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D030",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D031",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D032",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": null,
+    "confidence": 0.93,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "D033",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "E001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "E002",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.84,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "E003",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.94,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "E004",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.88,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "E005",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.76,
+    "reviewerAgreement": false
+  },
+  {
+    "id": "E006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.86,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "E007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "reviewerAgreement": true
+  },
+  {
+    "id": "E008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "TRANSCRIPT",
+    "confidence": 0.96,
+    "reviewerAgreement": true
+  }
+]

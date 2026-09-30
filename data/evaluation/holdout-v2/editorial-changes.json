@@ -1,0 +1,42 @@
+{
+  "date": "2026-09-30",
+  "stage": "BEFORE_FREEZE",
+  "changes": [
+    {
+      "id": "A022",
+      "reason": "Moved the abstract interview recap to a city archivist and a disputed exhibition label, separating its person, workplace, and episode from D031.",
+      "beforeSha256": "654a607bf8d767e384d791240cfd6a213c33fc38bac0d560f9f1b966b68b6b84",
+      "afterSha256": "06dd9744cf85bad99c032426c42396097b494a8d88c6c4e0ddc9156ce29e8e1a"
+    },
+    {
+      "id": "B015",
+      "reason": "Removed the draft’s self-assessment and kept the actionable calendar announcement with a locally inflated closing paragraph.",
+      "beforeSha256": "7f28590d05879f138e79da1286516ac3a588267957417a72cd2f0b9b53b98b55",
+      "afterSha256": "56acbda95088d2021e00b010926fedd60b60fcbe11fba20e9fdf1838fe2d9cff"
+    },
+    {
+      "id": "C032",
+      "reason": "Recast the FAQ around traveling exhibition panels and reordered its questions around display, setup, handling, booking, and return.",
+      "beforeSha256": "71ab9b3d2d54b24c9bb11cb56d1c96fb59ad0707707c106bcd4fe21c3d6434d2",
+      "afterSha256": "05462a5af740f3347eb216e6e7b81269c7022de8a573bc67c46de061e869c36b"
+    },
+    {
+      "id": "D008",
+      "reason": "Replaced the reader reset with a label-printer queue and feed procedure using different controls and failure handling.",
+      "beforeSha256": "65cab734a30652ffdc7629f7ec920ac00793510a2bb4a3e64a63998dd25cf4d1",
+      "afterSha256": "b7a6f242ae8177231c781766173975be6c260c9a445ef2ec1a598232a421e972"
+    },
+    {
+      "id": "E001",
+      "reason": "Removed explicit self-labeling while preserving eligibility, review, and safety requirements.",
+      "beforeSha256": "adb5ba76b3970ceae565727ee1d94d9bdaebf871cc6c68794b8de5c4a4bb1c4e",
+      "afterSha256": "af7b6cfb0bad271884ffe833337c52232e1ade770851eb3d4b71fca31018cabf"
+    },
+    {
+      "id": "E002",
+      "reason": "Removed explicit self-labeling while preserving sequential intake and hold steps.",
+      "beforeSha256": "5426b5b3180214f484ba43ccd33f009ade32c0d90bc7beae97f2aebe5c683ace",
+      "afterSha256": "c53d1750ee57d2f7aaa249584aa507b0c9c85e7180828eabf865cdd3aa3d6a5d"
+    }
+  ]
+}

@@ -1,0 +1,6873 @@
+{
+  "kind": "blind-discourse-holdout-v2-one-shot",
+  "created": "2026-09-30T09:08:33.190Z",
+  "fingerprints": {
+    "manifest": "7745a23a0b6e839131601aaf75f483a34fccf279e1223182f482692574d8446a",
+    "documents": "3a64bfd41fa8e6b3fa0532d87ba63e878df2253edfadf6bae0b3b4adba74b0ff",
+    "labels": "949542c8a1d7b2c7754b54415ecf7fd374c224c22a099c476b7cba31b96fa670",
+    "engine": "04f54963618f553ca12396d57bed26bb3057dea4bccb99461d9ff5e6dac19336",
+    "engineRevision": "b99209a3c638411e5b0bb1481be9d43d2dde7971"
+  },
+  "methods": {
+    "productionV1ModelPressure": "v1 has no unchanged bypass; no model was called",
+    "historicalPlanner": "v3 minimal-change planner",
+    "experimentalPlanner": "v5 discourse planner",
+    "ambiguousPolicy": "exclude from hard clean/problematic rates",
+    "noCompositeScore": true
+  },
+  "agreement": {
+    "overall": {
+      "total": 138,
+      "dispositionAgreed": 128,
+      "rate": 0.927536231884058,
+      "conceptExactAgreed": 88,
+      "conceptJaccardMean": 0.8044685990338164
+    },
+    "byLength": {
+      "VERY_SHORT": {
+        "total": 16,
+        "dispositionAgreed": 14,
+        "rate": 0.875,
+        "conceptExactAgreed": 10,
+        "conceptJaccardMean": 0.7395833333333333
+      },
+      "SHORT": {
+        "total": 24,
+        "dispositionAgreed": 24,
+        "rate": 1,
+        "conceptExactAgreed": 18,
+        "conceptJaccardMean": 0.8784722222222223
+      },
+      "MEDIUM": {
+        "total": 74,
+        "dispositionAgreed": 70,
+        "rate": 0.9459459459459459,
+        "conceptExactAgreed": 48,
+        "conceptJaccardMean": 0.8099099099099099
+      },
+      "LONG": {
+        "total": 24,
+        "dispositionAgreed": 20,
+        "rate": 0.8333333333333334,
+        "conceptExactAgreed": 12,
+        "conceptJaccardMean": 0.7569444444444445
+      }
+    },
+    "byGenre": {
+      "PROSE": {
+        "total": 60,
+        "dispositionAgreed": 52,
+        "rate": 0.8666666666666667,
+        "conceptExactAgreed": 35,
+        "conceptJaccardMean": 0.7961111111111111
+      },
+      "EMAIL": {
+        "total": 20,
+        "dispositionAgreed": 19,
+        "rate": 0.95,
+        "conceptExactAgreed": 12,
+        "conceptJaccardMean": 0.7291666666666667
+      },
+      "CHAT": {
+        "total": 2,
+        "dispositionAgreed": 2,
+        "rate": 1,
+        "conceptExactAgreed": 1,
+        "conceptJaccardMean": 0.75
+      },
+      "TRANSCRIPT": {
+        "total": 3,
+        "dispositionAgreed": 3,
+        "rate": 1,
+        "conceptExactAgreed": 3,
+        "conceptJaccardMean": 1
+      },
+      "INTERVIEW": {
+        "total": 6,
+        "dispositionAgreed": 6,
+        "rate": 1,
+        "conceptExactAgreed": 4,
+        "conceptJaccardMean": 0.7916666666666666
+      },
+      "FAQ": {
+        "total": 11,
+        "dispositionAgreed": 11,
+        "rate": 1,
+        "conceptExactAgreed": 10,
+        "conceptJaccardMean": 0.9545454545454546
+      },
+      "PROCEDURE": {
+        "total": 16,
+        "dispositionAgreed": 15,
+        "rate": 0.9375,
+        "conceptExactAgreed": 10,
+        "conceptJaccardMean": 0.8072916666666667
+      },
+      "POLICY": {
+        "total": 5,
+        "dispositionAgreed": 5,
+        "rate": 1,
+        "conceptExactAgreed": 4,
+        "conceptJaccardMean": 0.9
+      },
+      "LIST": {
+        "total": 0,
+        "dispositionAgreed": 0,
+        "rate": null,
+        "conceptExactAgreed": 0,
+        "conceptJaccardMean": null
+      },
+      "NOTES": {
+        "total": 13,
+        "dispositionAgreed": 13,
+        "rate": 1,
+        "conceptExactAgreed": 8,
+        "conceptJaccardMean": 0.7692307692307693
+      },
+      "MIXED": {
+        "total": 2,
+        "dispositionAgreed": 2,
+        "rate": 1,
+        "conceptExactAgreed": 1,
+        "conceptJaccardMean": 0.75
+      },
+      "UNKNOWN": {
+        "total": 0,
+        "dispositionAgreed": 0,
+        "rate": null,
+        "conceptExactAgreed": 0,
+        "conceptJaccardMean": null
+      }
+    },
+    "genreDisagreement": [
+      "C006",
+      "C021",
+      "C024",
+      "D011",
+      "D032"
+    ],
+    "dispositionDisagreement": [
+      "A016",
+      "C003",
+      "C012",
+      "C018",
+      "C027",
+      "C030",
+      "C033",
+      "D002",
+      "E002",
+      "E005"
+    ]
+  },
+  "summary": {
+    "counts": {
+      "documents": 138,
+      "unambiguous": 128,
+      "ambiguous": 10,
+      "clean": 66,
+      "light": 32,
+      "substantive": 30
+    },
+    "v1": {
+      "modelPressureOnClean": 66,
+      "actionableOnClean": 16
+    },
+    "v3": {
+      "matrix": {
+        "LEAVE_ALONE": {
+          "UNCHANGED": 50,
+          "LIGHT_EDIT": 16,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        },
+        "LIGHT_EDIT": {
+          "UNCHANGED": 24,
+          "LIGHT_EDIT": 8,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        },
+        "SUBSTANTIVE_RECONSTRUCTION": {
+          "UNCHANGED": 23,
+          "LIGHT_EDIT": 7,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        },
+        "AMBIGUOUS": {
+          "UNCHANGED": 9,
+          "LIGHT_EDIT": 1,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        }
+      },
+      "cleanUnchanged": 50,
+      "problematicEdited": 15
+    },
+    "v5": {
+      "matrix": {
+        "LEAVE_ALONE": {
+          "UNCHANGED": 56,
+          "LIGHT_EDIT": 10,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        },
+        "LIGHT_EDIT": {
+          "UNCHANGED": 28,
+          "LIGHT_EDIT": 4,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        },
+        "SUBSTANTIVE_RECONSTRUCTION": {
+          "UNCHANGED": 21,
+          "LIGHT_EDIT": 9,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        },
+        "AMBIGUOUS": {
+          "UNCHANGED": 7,
+          "LIGHT_EDIT": 3,
+          "SUBSTANTIVE_RECONSTRUCTION": 0
+        }
+      },
+      "cleanUnchanged": 56,
+      "problematicEdited": 13,
+      "lightCorrect": 4,
+      "substantiveCorrect": 0
+    },
+    "detection": {
+      "LOCAL_ONLY": [
+        "A008",
+        "A011",
+        "A015",
+        "A017",
+        "A018",
+        "A020",
+        "A023",
+        "A031",
+        "B007",
+        "B012",
+        "B016",
+        "B022",
+        "B025",
+        "B027",
+        "C008",
+        "C017",
+        "C024",
+        "C031",
+        "C032",
+        "D012",
+        "D019",
+        "D020",
+        "D025",
+        "D026",
+        "D030",
+        "D033",
+        "E001",
+        "E004",
+        "E007"
+      ],
+      "DISCOURSE_ONLY": [
+        "A019",
+        "C015",
+        "D021",
+        "D027"
+      ],
+      "BOTH": [
+        "B031",
+        "B032"
+      ],
+      "NEITHER": [
+        "A001",
+        "A002",
+        "A003",
+        "A004",
+        "A005",
+        "A006",
+        "A007",
+        "A009",
+        "A010",
+        "A012",
+        "A013",
+        "A014",
+        "A021",
+        "A022",
+        "A024",
+        "A025",
+        "A026",
+        "A027",
+        "A028",
+        "A029",
+        "A030",
+        "B001",
+        "B002",
+        "B003",
+        "B004",
+        "B005",
+        "B006",
+        "B008",
+        "B009",
+        "B010",
+        "B011",
+        "B013",
+        "B014",
+        "B015",
+        "B017",
+        "B018",
+        "B019",
+        "B020",
+        "B021",
+        "B023",
+        "B024",
+        "B026",
+        "B028",
+        "B029",
+        "B030",
+        "B033",
+        "C001",
+        "C002",
+        "C004",
+        "C005",
+        "C006",
+        "C007",
+        "C009",
+        "C010",
+        "C011",
+        "C013",
+        "C014",
+        "C016",
+        "C019",
+        "C020",
+        "C021",
+        "C022",
+        "C023",
+        "C025",
+        "C026",
+        "C028",
+        "C029",
+        "D001",
+        "D003",
+        "D004",
+        "D005",
+        "D006",
+        "D007",
+        "D008",
+        "D009",
+        "D010",
+        "D011",
+        "D013",
+        "D014",
+        "D015",
+        "D016",
+        "D017",
+        "D018",
+        "D022",
+        "D023",
+        "D024",
+        "D028",
+        "D029",
+        "D031",
+        "D032",
+        "E003",
+        "E006",
+        "E008"
+      ]
+    },
+    "bands": {
+      "VERY_SHORT": {
+        "count": 16,
+        "clean": 10,
+        "cleanUnchanged": 10,
+        "problematic": 4,
+        "problematicEdited": 0,
+        "actionable": 0,
+        "advisory": 0,
+        "insufficient": 16,
+        "timing": {
+          "v1": {
+            "medianMs": 0.9429169999999658,
+            "p95Ms": 183.15037500000003,
+            "worstMs": 183.15037500000003
+          },
+          "v3": {
+            "medianMs": 0.7749374999999645,
+            "p95Ms": 2.6068750000000023,
+            "worstMs": 2.6068750000000023
+          },
+          "v5": {
+            "medianMs": 0.7761879999999337,
+            "p95Ms": 3.223041999999964,
+            "worstMs": 3.223041999999964
+          },
+          "total": {
+            "medianMs": 2.656041500000015,
+            "p95Ms": 188.980292,
+            "worstMs": 188.980292
+          }
+        }
+      },
+      "SHORT": {
+        "count": 24,
+        "clean": 13,
+        "cleanUnchanged": 12,
+        "problematic": 11,
+        "problematicEdited": 0,
+        "actionable": 1,
+        "advisory": 2,
+        "insufficient": 5,
+        "timing": {
+          "v1": {
+            "medianMs": 1.5551455000000374,
+            "p95Ms": 3.106708000000026,
+            "worstMs": 7.387625000000014
+          },
+          "v3": {
+            "medianMs": 1.2245420000000138,
+            "p95Ms": 1.6531249999999318,
+            "worstMs": 1.8561670000000277
+          },
+          "v5": {
+            "medianMs": 1.254124499999989,
+            "p95Ms": 1.8565000000000964,
+            "worstMs": 2.0909580000000005
+          },
+          "total": {
+            "medianMs": 4.098583500000075,
+            "p95Ms": 6.420958000000155,
+            "worstMs": 9.768708000000004
+          }
+        }
+      },
+      "MEDIUM": {
+        "count": 74,
+        "clean": 32,
+        "cleanUnchanged": 26,
+        "problematic": 38,
+        "problematicEdited": 8,
+        "actionable": 15,
+        "advisory": 17,
+        "insufficient": 1,
+        "timing": {
+          "v1": {
+            "medianMs": 2.9908545000000117,
+            "p95Ms": 5.933624999999893,
+            "worstMs": 11.897209000000032
+          },
+          "v3": {
+            "medianMs": 2.435645500000021,
+            "p95Ms": 3.4151670000001104,
+            "worstMs": 5.170916000000034
+          },
+          "v5": {
+            "medianMs": 2.599312500000053,
+            "p95Ms": 3.5198330000000624,
+            "worstMs": 5.405167000000006
+          },
+          "total": {
+            "medianMs": 8.210125000000033,
+            "p95Ms": 12.22137500000008,
+            "worstMs": 19.323334000000045
+          }
+        }
+      },
+      "LONG": {
+        "count": 24,
+        "clean": 11,
+        "cleanUnchanged": 8,
+        "problematic": 9,
+        "problematicEdited": 5,
+        "actionable": 15,
+        "advisory": 1,
+        "insufficient": 0,
+        "timing": {
+          "v1": {
+            "medianMs": 8.449812500000064,
+            "p95Ms": 10.662958000000003,
+            "worstMs": 10.747791000000007
+          },
+          "v3": {
+            "medianMs": 7.070478999999864,
+            "p95Ms": 8.94416699999988,
+            "worstMs": 9.60891700000002
+          },
+          "v5": {
+            "medianMs": 7.400416500000063,
+            "p95Ms": 9.889625000000024,
+            "worstMs": 10.26079199999981
+          },
+          "total": {
+            "medianMs": 23.590500000000077,
+            "p95Ms": 28.492459000000053,
+            "worstMs": 30.617499999999836
+          }
+        }
+      }
+    },
+    "concepts": {
+      "GENERICNESS": {
+        "annotated": 33,
+        "v3Edited": 9,
+        "v5Edited": 8,
+        "relevantDiscourseProxy": 4,
+        "proxyMeaning": "GENERIC_REGISTER"
+      },
+      "REDUNDANCY": {
+        "annotated": 22,
+        "v3Edited": 8,
+        "v5Edited": 8,
+        "relevantDiscourseProxy": 0,
+        "proxyMeaning": "POSSIBLE_RESTATEMENT"
+      },
+      "MECHANICAL_STRUCTURE": {
+        "annotated": 7,
+        "v3Edited": 1,
+        "v5Edited": 2,
+        "relevantDiscourseProxy": 0,
+        "proxyMeaning": "MECHANICAL_STRUCTURE"
+      },
+      "REGISTER_INFLATION": {
+        "annotated": 30,
+        "v3Edited": 6,
+        "v5Edited": 5,
+        "relevantDiscourseProxy": 3,
+        "proxyMeaning": "GENERIC_REGISTER"
+      },
+      "EMPTY_SIGNIFICANCE": {
+        "annotated": 22,
+        "v3Edited": 6,
+        "v5Edited": 6,
+        "relevantDiscourseProxy": null,
+        "proxyMeaning": "NO_DIRECT_DISCOURSE_PROXY"
+      },
+      "FORMULAIC_ARGUMENT": {
+        "annotated": 7,
+        "v3Edited": 1,
+        "v5Edited": 1,
+        "relevantDiscourseProxy": null,
+        "proxyMeaning": "NO_DIRECT_DISCOURSE_PROXY"
+      },
+      "LOCAL_WORDING": {
+        "annotated": 13,
+        "v3Edited": 2,
+        "v5Edited": 2,
+        "relevantDiscourseProxy": null,
+        "proxyMeaning": "NO_DIRECT_DISCOURSE_PROXY"
+      },
+      "VOICE": {
+        "annotated": 0,
+        "v3Edited": 0,
+        "v5Edited": 0,
+        "relevantDiscourseProxy": null,
+        "proxyMeaning": "NO_DIRECT_DISCOURSE_PROXY"
+      },
+      "GENRE_JUSTIFIED_STRUCTURE": {
+        "annotated": 0,
+        "v3Edited": 0,
+        "v5Edited": 0,
+        "relevantDiscourseProxy": null,
+        "proxyMeaning": "NO_DIRECT_DISCOURSE_PROXY"
+      },
+      "OTHER": {
+        "annotated": 0,
+        "v3Edited": 0,
+        "v5Edited": 0,
+        "relevantDiscourseProxy": null,
+        "proxyMeaning": "NO_DIRECT_DISCOURSE_PROXY"
+      }
+    },
+    "structure": {
+      "overall": {
+        "total": 133,
+        "correct": 74,
+        "accuracy": 0.556390977443609
+      },
+      "highConfidence": {
+        "total": 26,
+        "correct": 24,
+        "accuracy": 0.9230769230769231
+      },
+      "highConfidenceCoverage": 0.19548872180451127,
+      "byGenre": {
+        "PROSE": {
+          "total": 60,
+          "correct": 50,
+          "accuracy": 0.8333333333333334
+        },
+        "EMAIL": {
+          "total": 20,
+          "correct": 10,
+          "accuracy": 0.5
+        },
+        "CHAT": {
+          "total": 2,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "TRANSCRIPT": {
+          "total": 3,
+          "correct": 2,
+          "accuracy": 0.6666666666666666
+        },
+        "INTERVIEW": {
+          "total": 6,
+          "correct": 6,
+          "accuracy": 1
+        },
+        "FAQ": {
+          "total": 11,
+          "correct": 6,
+          "accuracy": 0.5454545454545454
+        },
+        "PROCEDURE": {
+          "total": 14,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "POLICY": {
+          "total": 4,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "LIST": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": null
+        },
+        "NOTES": {
+          "total": 11,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "MIXED": {
+          "total": 2,
+          "correct": 0,
+          "accuracy": 0
+        },
+        "UNKNOWN": {
+          "total": 0,
+          "correct": 0,
+          "accuracy": null
+        }
+      }
+    },
+    "mixed": {
+      "count": 50,
+      "unchanged": 40,
+      "substantive": 0
+    },
+    "cleanFalsePositiveIds": [
+      "A011",
+      "A017",
+      "A020",
+      "A023",
+      "C008",
+      "C031",
+      "C032",
+      "D019",
+      "D025",
+      "E007"
+    ],
+    "problematicMissIds": [
+      "A002",
+      "A003",
+      "A006",
+      "A007",
+      "A009",
+      "A010",
+      "A013",
+      "A015",
+      "A021",
+      "A022",
+      "A025",
+      "A027",
+      "A028",
+      "B003",
+      "B006",
+      "B008",
+      "B015",
+      "B016",
+      "B017",
+      "B018",
+      "B019",
+      "B020",
+      "B021",
+      "B022",
+      "B023",
+      "B024",
+      "B025",
+      "B026",
+      "B030",
+      "B033",
+      "C006",
+      "C009",
+      "C021",
+      "C024",
+      "D003",
+      "D006",
+      "D008",
+      "D009",
+      "D011",
+      "D014",
+      "D015",
+      "D017",
+      "D018",
+      "D023",
+      "D024",
+      "D029",
+      "D032",
+      "E004",
+      "E006"
+    ]
+  },
+  "outcomes": [
+    {
+      "id": "A001",
+      "words": 57,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 183.15037500000003,
+        "v3": 2.6068750000000023,
+        "v5": 3.223041999999964,
+        "total": 188.980292
+      }
+    },
+    {
+      "id": "A002",
+      "words": 56,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 48.19908299999997,
+        "v3": 1.2829169999999976,
+        "v5": 1.6590419999999995,
+        "total": 51.14104199999997
+      }
+    },
+    {
+      "id": "A003",
+      "words": 58,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.1825419999999554,
+        "v3": 1.0275420000000395,
+        "v5": 1.0049579999999878,
+        "total": 3.2150419999999826
+      }
+    },
+    {
+      "id": "A004",
+      "words": 57,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.4382909999999924,
+        "v3": 1.3965000000000032,
+        "v5": 1.4541249999999764,
+        "total": 4.288915999999972
+      }
+    },
+    {
+      "id": "A005",
+      "words": 108,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 7.387625000000014,
+        "v3": 1.21954199999999,
+        "v5": 1.1615409999999997,
+        "total": 9.768708000000004
+      }
+    },
+    {
+      "id": "A006",
+      "words": 110,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.5871249999999577,
+        "v3": 1.3641250000000014,
+        "v5": 2.0909580000000005,
+        "total": 5.04220799999996
+      }
+    },
+    {
+      "id": "A007",
+      "words": 117,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 2.0944169999999644,
+        "v3": 1.8561670000000277,
+        "v5": 1.2966659999999592,
+        "total": 5.247249999999951
+      }
+    },
+    {
+      "id": "A008",
+      "words": 113,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.self-answered-questions",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 2
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.self-answered-questions",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 2
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "slop.self-answered-questions"
+        ],
+        "structure": {
+          "type": "FAQ",
+          "confidence": 0.88
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.6970830000000205,
+        "v3": 1.267167000000029,
+        "v5": 1.4628749999999968,
+        "total": 4.427125000000046
+      }
+    },
+    {
+      "id": "A009",
+      "words": 123,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.96
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.7242499999999836,
+        "v3": 1.3031670000000304,
+        "v5": 1.4833329999999592,
+        "total": 4.510749999999973
+      }
+    },
+    {
+      "id": "A010",
+      "words": 119,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.5150409999999965,
+        "v3": 1.2949590000000057,
+        "v5": 1.144457999999986,
+        "total": 3.9544579999999883
+      }
+    },
+    {
+      "id": "A011",
+      "words": 295,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.8517079999999737,
+        "v3": 2.229167000000018,
+        "v5": 2.4750829999999837,
+        "total": 7.5559579999999755
+      }
+    },
+    {
+      "id": "A012",
+      "words": 311,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.5249580000000265,
+        "v3": 2.7831669999999917,
+        "v5": 2.7132080000000087,
+        "total": 9.021333000000027
+      }
+    },
+    {
+      "id": "A013",
+      "words": 297,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 23
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 23
+              },
+              {
+                "kind": "nominalization",
+                "count": 7,
+                "total": 297
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.0844170000000304,
+        "v3": 2.3227919999999926,
+        "v5": 3.1652500000000146,
+        "total": 8.572459000000038
+      }
+    },
+    {
+      "id": "A014",
+      "words": 309,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "INTERVIEW",
+          "confidence": 0.98
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.999083999999982,
+        "v3": 2.6045409999999833,
+        "v5": 2.6247920000000136,
+        "total": 8.228416999999979
+      }
+    },
+    {
+      "id": "A015",
+      "words": 294,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.1750410000000215,
+        "v3": 2.643459000000007,
+        "v5": 2.4412079999999605,
+        "total": 8.25970799999999
+      }
+    },
+    {
+      "id": "A016",
+      "words": 325,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.7207919999999604,
+        "v3": 2.414250000000038,
+        "v5": 2.401457999999991,
+        "total": 7.5364999999999895
+      }
+    },
+    {
+      "id": "A017",
+      "words": 320,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.dash-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 6
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.dash-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 6
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.dash-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 6
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.1895830000000274,
+        "v3": 2.6567079999999805,
+        "v5": 2.459875000000011,
+        "total": 8.306166000000019
+      }
+    },
+    {
+      "id": "A018",
+      "words": 324,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 11.897209000000032,
+        "v3": 3.247250000000008,
+        "v5": 4.178875000000005,
+        "total": 19.323334000000045
+      }
+    },
+    {
+      "id": "A019",
+      "words": 301,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 7,
+                "total": 21
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 4,
+                "total": 21
+              },
+              {
+                "kind": "nominalization",
+                "count": 12,
+                "total": 306
+              }
+            ],
+            "counterevidenceCount": 1
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.0903749999999945,
+        "v3": 2.3822920000000067,
+        "v5": 2.8189579999999523,
+        "total": 8.291624999999954
+      }
+    },
+    {
+      "id": "A020",
+      "words": 313,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.939875000000029,
+        "v3": 2.233791999999994,
+        "v5": 2.553625000000011,
+        "total": 7.727292000000034
+      }
+    },
+    {
+      "id": "A021",
+      "words": 283,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.3155830000000037,
+        "v3": 2.679625000000044,
+        "v5": 2.1257499999999823,
+        "total": 7.12095800000003
+      }
+    },
+    {
+      "id": "A022",
+      "words": 335,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.3757909999999924,
+        "v3": 3.3693339999999807,
+        "v5": 2.971958000000029,
+        "total": 9.717083000000002
+      }
+    },
+    {
+      "id": "A023",
+      "words": 306,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 2,
+        "findings": [
+          {
+            "id": "slop.dramatic-fragments",
+            "family": "rhythm",
+            "severity": "suggestion",
+            "occurrences": 1
+          },
+          {
+            "id": "slop.self-answered-questions",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 2
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.self-answered-questions",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 2
+          }
+        ],
+        "permitted": [
+          "slop.dramatic-fragments"
+        ]
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.self-answered-questions",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 2
+          }
+        ],
+        "permitted": [
+          "slop.dramatic-fragments"
+        ],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.4
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 3.6800419999999576,
+        "v3": 2.4236250000000155,
+        "v5": 2.4832079999999905,
+        "total": 8.586874999999964
+      }
+    },
+    {
+      "id": "A024",
+      "words": 324,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "FAQ",
+          "confidence": 0.88
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.2200829999999883,
+        "v3": 2.866333000000054,
+        "v5": 2.8212499999999636,
+        "total": 8.907666000000006
+      }
+    },
+    {
+      "id": "A025",
+      "words": 307,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 21
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 21
+              },
+              {
+                "kind": "nominalization",
+                "count": 9,
+                "total": 307
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.9139999999999873,
+        "v3": 2.6223340000000235,
+        "v5": 2.76887499999998,
+        "total": 8.30520899999999
+      }
+    },
+    {
+      "id": "A026",
+      "words": 308,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.8553340000000844,
+        "v3": 2.2879999999998972,
+        "v5": 2.290625000000091,
+        "total": 7.433959000000073
+      }
+    },
+    {
+      "id": "A027",
+      "words": 330,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.2788750000000846,
+        "v3": 2.5960829999999078,
+        "v5": 2.79037500000004,
+        "total": 8.665333000000032
+      }
+    },
+    {
+      "id": "A028",
+      "words": 332,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.67775000000006,
+        "v3": 2.4579579999999623,
+        "v5": 2.3241669999999885,
+        "total": 7.459875000000011
+      }
+    },
+    {
+      "id": "A029",
+      "words": 996,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 10.662958000000003,
+        "v3": 7.724375000000009,
+        "v5": 7.636417000000051,
+        "total": 26.023750000000064
+      }
+    },
+    {
+      "id": "A030",
+      "words": 747,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "INTERVIEW",
+          "confidence": 0.98
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 9.974917000000005,
+        "v3": 7.04429099999993,
+        "v5": 7.387125000000083,
+        "total": 24.406333000000018
+      }
+    },
+    {
+      "id": "A031",
+      "words": 832,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.recap-ending",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.recap-ending",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.recap-ending",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 6.9142080000000306,
+        "v3": 5.693209000000024,
+        "v5": 6.814040999999975,
+        "total": 19.42145800000003
+      }
+    },
+    {
+      "id": "B001",
+      "words": 61,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.9119160000000193,
+        "v3": 0.7972499999999627,
+        "v5": 0.949292000000014,
+        "total": 2.658457999999996
+      }
+    },
+    {
+      "id": "B002",
+      "words": 56,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.208417000000054,
+        "v3": 0.9444160000000466,
+        "v5": 0.7847089999999071,
+        "total": 2.9375420000000076
+      }
+    },
+    {
+      "id": "B003",
+      "words": 56,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.7463330000000497,
+        "v3": 0.6578339999999798,
+        "v5": 0.668166000000042,
+        "total": 2.0723330000000715
+      }
+    },
+    {
+      "id": "B004",
+      "words": 56,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 2.9055000000000746,
+        "v3": 0.7526249999999663,
+        "v5": 0.7676669999999604,
+        "total": 4.425792000000001
+      }
+    },
+    {
+      "id": "B005",
+      "words": 131,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.45474999999999,
+        "v3": 1.1439169999999876,
+        "v5": 1.4112499999999955,
+        "total": 4.009916999999973
+      }
+    },
+    {
+      "id": "B006",
+      "words": 135,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.4057080000000042,
+        "v3": 1.087083000000007,
+        "v5": 1.1136670000000777,
+        "total": 3.6064580000000888
+      }
+    },
+    {
+      "id": "B007",
+      "words": 149,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "FAQ",
+          "confidence": 0.94
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.6153749999999718,
+        "v3": 1.2295420000000377,
+        "v5": 1.3220830000000205,
+        "total": 4.16700000000003
+      }
+    },
+    {
+      "id": "B008",
+      "words": 136,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.6399170000000822,
+        "v3": 1.6531249999999318,
+        "v5": 1.2775830000000497,
+        "total": 4.570625000000064
+      }
+    },
+    {
+      "id": "B009",
+      "words": 130,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "TRANSCRIPT",
+          "confidence": 0.88
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.539666000000011,
+        "v3": 1.1384590000000117,
+        "v5": 1.0969159999999647,
+        "total": 3.7750409999999874
+      }
+    },
+    {
+      "id": "B010",
+      "words": 137,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.5285000000000082,
+        "v3": 1.2690840000000208,
+        "v5": 1.7396659999999429,
+        "total": 4.537249999999972
+      }
+    },
+    {
+      "id": "B011",
+      "words": 298,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.145917000000054,
+        "v3": 2.268957999999998,
+        "v5": 2.8999999999999773,
+        "total": 8.314875000000029
+      }
+    },
+    {
+      "id": "B012",
+      "words": 285,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "FAQ",
+          "confidence": 0.94
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.520332999999937,
+        "v3": 2.0793750000000273,
+        "v5": 2.158042000000023,
+        "total": 6.757749999999987
+      }
+    },
+    {
+      "id": "B013",
+      "words": 294,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.990792000000056,
+        "v3": 2.2199999999999136,
+        "v5": 2.1232500000000982,
+        "total": 7.334042000000068
+      }
+    },
+    {
+      "id": "B014",
+      "words": 304,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 21
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 2,
+                "total": 21
+              },
+              {
+                "kind": "nominalization",
+                "count": 1,
+                "total": 304
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.374500000000012,
+        "v3": 2.6984580000000733,
+        "v5": 2.3792499999999563,
+        "total": 7.4522080000000415
+      }
+    },
+    {
+      "id": "B015",
+      "words": 278,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.044749999999908,
+        "v3": 2.7018750000000864,
+        "v5": 2.5977080000000115,
+        "total": 8.344333000000006
+      }
+    },
+    {
+      "id": "B016",
+      "words": 297,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "FAQ",
+          "confidence": 0.94
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.878417000000013,
+        "v3": 2.1704579999999396,
+        "v5": 2.9060419999999567,
+        "total": 7.954916999999909
+      }
+    },
+    {
+      "id": "B017",
+      "words": 297,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 22
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 2,
+                "total": 22
+              },
+              {
+                "kind": "nominalization",
+                "count": 3,
+                "total": 297
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.041041999999948,
+        "v3": 3.3170000000000073,
+        "v5": 2.777290999999991,
+        "total": 11.135332999999946
+      }
+    },
+    {
+      "id": "B018",
+      "words": 291,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "TRANSCRIPT",
+          "confidence": 0.88
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 27
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 27
+              },
+              {
+                "kind": "nominalization",
+                "count": 3,
+                "total": 292
+              }
+            ],
+            "counterevidenceCount": 2
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.840249999999969,
+        "v3": 2.4452079999999796,
+        "v5": 2.2933750000000828,
+        "total": 7.5788330000000315
+      }
+    },
+    {
+      "id": "B019",
+      "words": 292,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.7789579999999887,
+        "v3": 2.054834000000028,
+        "v5": 2.3075000000000045,
+        "total": 7.141292000000021
+      }
+    },
+    {
+      "id": "B020",
+      "words": 289,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 22
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 2,
+                "total": 22
+              },
+              {
+                "kind": "nominalization",
+                "count": 3,
+                "total": 289
+              }
+            ],
+            "counterevidenceCount": 1
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.1868329999999787,
+        "v3": 2.52537499999994,
+        "v5": 2.600917000000095,
+        "total": 8.313125000000014
+      }
+    },
+    {
+      "id": "B021",
+      "words": 280,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.721707999999921,
+        "v3": 2.634208000000058,
+        "v5": 3.0341250000000173,
+        "total": 11.390040999999997
+      }
+    },
+    {
+      "id": "B022",
+      "words": 279,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.967708000000016,
+        "v3": 2.371667000000002,
+        "v5": 2.4569159999999783,
+        "total": 8.796290999999997
+      }
+    },
+    {
+      "id": "B023",
+      "words": 299,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 4,
+                "total": 20
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 4,
+                "total": 20
+              },
+              {
+                "kind": "nominalization",
+                "count": 17,
+                "total": 299
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.40666699999997,
+        "v3": 3.5255829999999833,
+        "v5": 2.895416999999952,
+        "total": 11.827666999999906
+      }
+    },
+    {
+      "id": "B024",
+      "words": 291,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 19
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 2,
+                "total": 19
+              },
+              {
+                "kind": "nominalization",
+                "count": 7,
+                "total": 291
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.8145419999999604,
+        "v3": 2.111083000000008,
+        "v5": 2.5439590000000862,
+        "total": 7.469584000000054
+      }
+    },
+    {
+      "id": "B025",
+      "words": 294,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "FAQ",
+          "confidence": 0.94
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 7,
+                "total": 21
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 4,
+                "total": 21
+              },
+              {
+                "kind": "nominalization",
+                "count": 5,
+                "total": 294
+              }
+            ],
+            "counterevidenceCount": 1
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.806459000000018,
+        "v3": 2.416749999999979,
+        "v5": 2.3409580000000005,
+        "total": 7.564166999999998
+      }
+    },
+    {
+      "id": "B026",
+      "words": 294,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 19
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 2,
+                "total": 19
+              },
+              {
+                "kind": "nominalization",
+                "count": 10,
+                "total": 294
+              }
+            ],
+            "counterevidenceCount": 0
+          },
+          {
+            "phenomenon": "MECHANICAL_STRUCTURE",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "regular-paragraph",
+                "count": 5,
+                "total": 5
+              },
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 19
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.7341659999999592,
+        "v3": 2.528709000000049,
+        "v5": 2.6371659999999792,
+        "total": 7.900040999999987
+      }
+    },
+    {
+      "id": "B027",
+      "words": 300,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.7069999999999936,
+        "v3": 2.33562500000005,
+        "v5": 2.225084000000038,
+        "total": 7.267709000000082
+      }
+    },
+    {
+      "id": "B028",
+      "words": 278,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "TRANSCRIPT",
+          "confidence": 0.88
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.549333000000047,
+        "v3": 2.4093339999999444,
+        "v5": 2.4224159999999983,
+        "total": 7.38108299999999
+      }
+    },
+    {
+      "id": "B029",
+      "words": 816,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 6.0964159999999765,
+        "v3": 6.297333999999978,
+        "v5": 6.238500000000045,
+        "total": 18.63225
+      }
+    },
+    {
+      "id": "B030",
+      "words": 570,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "INTERVIEW",
+          "confidence": 0.98
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 7.626792000000023,
+        "v3": 5.170916000000034,
+        "v5": 5.405167000000006,
+        "total": 18.202875000000063
+      }
+    },
+    {
+      "id": "B031",
+      "words": 647,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 3,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          },
+          {
+            "id": "core.wordy-phrases",
+            "family": "lexical",
+            "severity": "suggestion",
+            "occurrences": 2
+          },
+          {
+            "id": "family.negative-pairs",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 3,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          },
+          {
+            "id": "core.wordy-phrases",
+            "family": "lexical",
+            "severity": "suggestion",
+            "occurrences": 2
+          },
+          {
+            "id": "family.negative-pairs",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 3,
+        "findings": [
+          {
+            "id": "core.wordy-phrases",
+            "family": "lexical",
+            "severity": "suggestion",
+            "occurrences": 2
+          },
+          {
+            "id": "family.negative-pairs",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [
+          "core.repeated-sentence-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 5,
+                "total": 41
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 5,
+                "total": 41
+              },
+              {
+                "kind": "nominalization",
+                "count": 17,
+                "total": 648
+              }
+            ],
+            "counterevidenceCount": 1
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 8.244084000000043,
+        "v3": 5.737790999999902,
+        "v5": 6.376042000000098,
+        "total": 20.357917000000043
+      }
+    },
+    {
+      "id": "B032",
+      "words": 725,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.recap-ending",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.recap-ending",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 2,
+        "findings": [
+          {
+            "id": "slop.recap-ending",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 12,
+                "total": 49
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 9,
+                "total": 49
+              },
+              {
+                "kind": "nominalization",
+                "count": 26,
+                "total": 725
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.828125,
+        "v3": 5.612124999999992,
+        "v5": 5.45270800000003,
+        "total": 16.89295800000002
+      }
+    },
+    {
+      "id": "B033",
+      "words": 507,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 4.338292000000024,
+        "v3": 3.8794579999999996,
+        "v5": 3.7638749999999845,
+        "total": 11.981625000000008
+      }
+    },
+    {
+      "id": "C001",
+      "words": 62,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.0334169999999858,
+        "v3": 0.8998330000000578,
+        "v5": 0.72037499999999,
+        "total": 2.6536250000000337
+      }
+    },
+    {
+      "id": "C002",
+      "words": 61,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.891042000000084,
+        "v3": 0.7093750000000227,
+        "v5": 0.9888329999999996,
+        "total": 2.5892500000001064
+      }
+    },
+    {
+      "id": "C003",
+      "words": 65,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.9268339999999853,
+        "v3": 0.8640830000000506,
+        "v5": 0.8780829999999469,
+        "total": 2.6689999999999827
+      }
+    },
+    {
+      "id": "C004",
+      "words": 59,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.9589999999999463,
+        "v3": 0.70737500000007,
+        "v5": 0.6500419999999849,
+        "total": 2.3164170000000013
+      }
+    },
+    {
+      "id": "C005",
+      "words": 114,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.4095829999999978,
+        "v3": 1.0796249999999645,
+        "v5": 1.0531670000000304,
+        "total": 3.5423749999999927
+      }
+    },
+    {
+      "id": "C006",
+      "words": 98,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 1.0174590000000308,
+        "v3": 0.9087500000000546,
+        "v5": 0.8597909999999729,
+        "total": 2.786000000000058
+      }
+    },
+    {
+      "id": "C007",
+      "words": 107,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.1911659999999529,
+        "v3": 0.9567090000000462,
+        "v5": 1.2306659999999283,
+        "total": 3.3785409999999274
+      }
+    },
+    {
+      "id": "C008",
+      "words": 131,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.5706250000000637,
+        "v3": 1.3109999999999218,
+        "v5": 1.2909170000000358,
+        "total": 4.172542000000021
+      }
+    },
+    {
+      "id": "C009",
+      "words": 131,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.4070829999999432,
+        "v3": 1.1670420000000377,
+        "v5": 1.2001249999999573,
+        "total": 3.774249999999938
+      }
+    },
+    {
+      "id": "C010",
+      "words": 101,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.2719999999999345,
+        "v3": 1.0227499999999736,
+        "v5": 1.0691670000001068,
+        "total": 3.363917000000015
+      }
+    },
+    {
+      "id": "C011",
+      "words": 246,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.63149999999996,
+        "v3": 1.9583330000000387,
+        "v5": 2.4514580000000024,
+        "total": 7.041291000000001
+      }
+    },
+    {
+      "id": "C012",
+      "words": 304,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 4,
+                "total": 19
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 19
+              },
+              {
+                "kind": "nominalization",
+                "count": 8,
+                "total": 304
+              }
+            ],
+            "counterevidenceCount": 0
+          },
+          {
+            "phenomenon": "MECHANICAL_STRUCTURE",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "regular-paragraph",
+                "count": 4,
+                "total": 4
+              },
+              {
+                "kind": "abstract-framing",
+                "count": 4,
+                "total": 19
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.6803330000000187,
+        "v3": 2.1478329999999914,
+        "v5": 2.1550419999999804,
+        "total": 6.9832079999999905
+      }
+    },
+    {
+      "id": "C013",
+      "words": 329,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.5906250000000455,
+        "v3": 2.8644999999999072,
+        "v5": 2.579417000000035,
+        "total": 8.034541999999988
+      }
+    },
+    {
+      "id": "C014",
+      "words": 295,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.8711250000000064,
+        "v3": 2.2500420000000076,
+        "v5": 2.1105420000000095,
+        "total": 7.2317090000000235
+      }
+    },
+    {
+      "id": "C015",
+      "words": 326,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 6,
+                "total": 19
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 4,
+                "total": 19
+              },
+              {
+                "kind": "nominalization",
+                "count": 11,
+                "total": 326
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.188333000000057,
+        "v3": 2.4915419999999813,
+        "v5": 2.495625000000018,
+        "total": 8.175500000000056
+      }
+    },
+    {
+      "id": "C016",
+      "words": 313,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.4651250000000573,
+        "v3": 2.2323339999999234,
+        "v5": 2.4483750000000555,
+        "total": 7.145834000000036
+      }
+    },
+    {
+      "id": "C017",
+      "words": 331,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.7900840000000926,
+        "v3": 2.366374999999948,
+        "v5": 2.2834159999999883,
+        "total": 7.439875000000029
+      }
+    },
+    {
+      "id": "C018",
+      "words": 309,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 5,
+                "total": 21
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 4,
+                "total": 21
+              },
+              {
+                "kind": "nominalization",
+                "count": 10,
+                "total": 309
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.072499999999991,
+        "v3": 2.3010829999999487,
+        "v5": 3.057875000000081,
+        "total": 8.43145800000002
+      }
+    },
+    {
+      "id": "C019",
+      "words": 334,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.3159580000000233,
+        "v3": 2.6145839999999225,
+        "v5": 2.4290000000000873,
+        "total": 7.359542000000033
+      }
+    },
+    {
+      "id": "C020",
+      "words": 312,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.8926249999999527,
+        "v3": 2.795833000000016,
+        "v5": 2.990000000000009,
+        "total": 8.678457999999978
+      }
+    },
+    {
+      "id": "C021",
+      "words": 318,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.905375000000049,
+        "v3": 2.2767089999999826,
+        "v5": 2.4234159999999747,
+        "total": 7.605500000000006
+      }
+    },
+    {
+      "id": "C022",
+      "words": 328,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.9909169999999676,
+        "v3": 2.293457999999987,
+        "v5": 2.2797090000000253,
+        "total": 7.56408399999998
+      }
+    },
+    {
+      "id": "C023",
+      "words": 316,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.978666999999973,
+        "v3": 2.4260830000000624,
+        "v5": 2.8411250000000337,
+        "total": 8.24587500000007
+      }
+    },
+    {
+      "id": "C024",
+      "words": 329,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-sentence-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.102957999999944,
+        "v3": 2.3495419999999285,
+        "v5": 2.789458000000195,
+        "total": 8.241958000000068
+      }
+    },
+    {
+      "id": "C025",
+      "words": 317,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.366459000000077,
+        "v3": 2.2304160000001048,
+        "v5": 2.59695899999997,
+        "total": 7.193834000000152
+      }
+    },
+    {
+      "id": "C026",
+      "words": 338,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.045667000000094,
+        "v3": 2.377999999999929,
+        "v5": 2.6392920000000686,
+        "total": 8.062959000000092
+      }
+    },
+    {
+      "id": "C027",
+      "words": 332,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.8333330000000387,
+        "v3": 2.661875000000009,
+        "v5": 3.289792000000034,
+        "total": 8.785000000000082
+      }
+    },
+    {
+      "id": "C028",
+      "words": 324,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.325833999999986,
+        "v3": 2.207875000000058,
+        "v5": 2.751457999999957,
+        "total": 7.285167000000001
+      }
+    },
+    {
+      "id": "C029",
+      "words": 767,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 6.099917000000005,
+        "v3": 5.489458000000013,
+        "v5": 5.690333999999893,
+        "total": 17.27970899999991
+      }
+    },
+    {
+      "id": "C030",
+      "words": 984,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 7,
+                "total": 61
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 5,
+                "total": 61
+              },
+              {
+                "kind": "nominalization",
+                "count": 28,
+                "total": 984
+              }
+            ],
+            "counterevidenceCount": 1
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 7.508333000000221,
+        "v3": 7.0966669999997976,
+        "v5": 7.413708000000042,
+        "total": 22.01870800000006
+      }
+    },
+    {
+      "id": "C031",
+      "words": 941,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 2,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 8
+          },
+          {
+            "id": "core.wordy-phrases",
+            "family": "lexical",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 2,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 8
+          },
+          {
+            "id": "core.wordy-phrases",
+            "family": "lexical",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 2,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 8
+          },
+          {
+            "id": "core.wordy-phrases",
+            "family": "lexical",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 7.127499999999827,
+        "v3": 6.704750000000104,
+        "v5": 6.923915999999963,
+        "total": 20.756165999999894
+      }
+    },
+    {
+      "id": "C032",
+      "words": 834,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 9
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 9
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 9
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "MECHANICAL_STRUCTURE",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "regular-paragraph",
+                "count": 9,
+                "total": 9
+              },
+              {
+                "kind": "abstract-framing",
+                "count": 2,
+                "total": 56
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 6.133833000000095,
+        "v3": 6.113499999999931,
+        "v5": 6.32745900000009,
+        "total": 18.574792000000116
+      }
+    },
+    {
+      "id": "C033",
+      "words": 891,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "family.importance-variants",
+            "family": "specificity",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "family.importance-variants",
+            "family": "specificity",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 2,
+        "findings": [
+          {
+            "id": "family.importance-variants",
+            "family": "specificity",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 6,
+                "total": 60
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 5,
+                "total": 60
+              },
+              {
+                "kind": "nominalization",
+                "count": 13,
+                "total": 891
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 6.411624999999958,
+        "v3": 6.800167000000101,
+        "v5": 6.668957999999975,
+        "total": 19.880750000000035
+      }
+    },
+    {
+      "id": "D001",
+      "words": 58,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.9077500000000782,
+        "v3": 0.7129580000000715,
+        "v5": 0.7243750000000091,
+        "total": 2.345083000000159
+      }
+    },
+    {
+      "id": "D002",
+      "words": 42,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.718166999999994,
+        "v3": 0.6239580000001297,
+        "v5": 0.6157499999999345,
+        "total": 1.9578750000000582
+      }
+    },
+    {
+      "id": "D003",
+      "words": 48,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.8765839999998661,
+        "v3": 0.6741250000000036,
+        "v5": 0.645040999999992,
+        "total": 2.1957499999998618
+      }
+    },
+    {
+      "id": "D004",
+      "words": 51,
+      "band": "VERY_SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "UNKNOWN",
+          "confidence": 0.3
+        },
+        "discourse": [],
+        "uncertainty": "INSUFFICIENT_EVIDENCE"
+      },
+      "timingMs": {
+        "v1": 0.6478329999999914,
+        "v3": 0.7437090000000808,
+        "v5": 0.609333000000106,
+        "total": 2.0008750000001783
+      }
+    },
+    {
+      "id": "D005",
+      "words": 130,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.6828749999999673,
+        "v3": 1.1910420000001523,
+        "v5": 1.15625,
+        "total": 4.0301670000001195
+      }
+    },
+    {
+      "id": "D006",
+      "words": 126,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 4,
+                "total": 11
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 11
+              },
+              {
+                "kind": "nominalization",
+                "count": 2,
+                "total": 126
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.2729589999999007,
+        "v3": 1.134708000000046,
+        "v5": 1.150624999999991,
+        "total": 3.5582919999999376
+      }
+    },
+    {
+      "id": "D007",
+      "words": 146,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.106708000000026,
+        "v3": 1.4577500000000327,
+        "v5": 1.8565000000000964,
+        "total": 6.420958000000155
+      }
+    },
+    {
+      "id": "D008",
+      "words": 148,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.5346250000000055,
+        "v3": 1.1888750000000528,
+        "v5": 1.1945000000000618,
+        "total": 3.91800000000012
+      }
+    },
+    {
+      "id": "D009",
+      "words": 126,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.semicolon-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.semicolon-density"
+        ]
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.semicolon-density"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 5,
+                "total": 12
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 2,
+                "total": 12
+              },
+              {
+                "kind": "nominalization",
+                "count": 9,
+                "total": 126
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 1.8172500000000582,
+        "v3": 1.5315840000000662,
+        "v5": 1.375707999999804,
+        "total": 4.7245419999999285
+      }
+    },
+    {
+      "id": "D010",
+      "words": 133,
+      "band": "SHORT",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.3209170000000086,
+        "v3": 1.5705830000001697,
+        "v5": 1.3059169999999085,
+        "total": 5.197417000000087
+      }
+    },
+    {
+      "id": "D011",
+      "words": 314,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 19
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 19
+              },
+              {
+                "kind": "nominalization",
+                "count": 4,
+                "total": 314
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.9362499999999727,
+        "v3": 2.3900840000001153,
+        "v5": 2.7427909999998974,
+        "total": 8.069124999999985
+      }
+    },
+    {
+      "id": "D012",
+      "words": 283,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.uniform-sentence-length",
+            "family": "rhythm",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.uniform-sentence-length",
+            "family": "rhythm",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.uniform-sentence-length",
+            "family": "rhythm",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 20
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 20
+              },
+              {
+                "kind": "nominalization",
+                "count": 10,
+                "total": 283
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.5696250000000873,
+        "v3": 2.092875000000049,
+        "v5": 2.261833000000024,
+        "total": 6.924333000000161
+      }
+    },
+    {
+      "id": "D013",
+      "words": 319,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.933624999999893,
+        "v3": 3.4151670000001104,
+        "v5": 3.5198330000000624,
+        "total": 12.868625000000065
+      }
+    },
+    {
+      "id": "D014",
+      "words": 320,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.936083999999937,
+        "v3": 2.586958000000095,
+        "v5": 3.2431669999998576,
+        "total": 8.76620899999989
+      }
+    },
+    {
+      "id": "D015",
+      "words": 283,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "MECHANICAL_STRUCTURE",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "regular-paragraph",
+                "count": 4,
+                "total": 4
+              },
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 22
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.991375000000062,
+        "v3": 2.1563750000000255,
+        "v5": 2.1634999999998854,
+        "total": 7.311249999999973
+      }
+    },
+    {
+      "id": "D016",
+      "words": 301,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "INTERVIEW",
+          "confidence": 0.98
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.4053749999998217,
+        "v3": 2.931750000000193,
+        "v5": 2.9209159999998064,
+        "total": 8.258040999999821
+      }
+    },
+    {
+      "id": "D017",
+      "words": 330,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 4.426124999999956,
+        "v3": 3.083917000000156,
+        "v5": 3.257374999999911,
+        "total": 10.767417000000023
+      }
+    },
+    {
+      "id": "D018",
+      "words": 306,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.049208000000135,
+        "v3": 2.146874999999909,
+        "v5": 2.3341669999999795,
+        "total": 7.530250000000024
+      }
+    },
+    {
+      "id": "D019",
+      "words": 314,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.dash-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.dash-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.dash-density",
+            "family": "punctuation",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 4.551041999999825,
+        "v3": 3.1085420000001704,
+        "v5": 3.1044999999999163,
+        "total": 10.764083999999912
+      }
+    },
+    {
+      "id": "D020",
+      "words": 309,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 4.992999999999938,
+        "v3": 2.5363330000000133,
+        "v5": 2.9072920000000977,
+        "total": 10.43662500000005
+      }
+    },
+    {
+      "id": "D021",
+      "words": 315,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 6,
+                "total": 26
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 3,
+                "total": 26
+              },
+              {
+                "kind": "nominalization",
+                "count": 17,
+                "total": 315
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.4043340000000626,
+        "v3": 2.486708000000135,
+        "v5": 2.422582999999804,
+        "total": 8.313625000000002
+      }
+    },
+    {
+      "id": "D022",
+      "words": 308,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.0237079999999423,
+        "v3": 2.951041999999916,
+        "v5": 3.130792000000156,
+        "total": 9.105542000000014
+      }
+    },
+    {
+      "id": "D023",
+      "words": 326,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.1620829999999387,
+        "v3": 2.344500000000153,
+        "v5": 2.6852499999999964,
+        "total": 8.191833000000088
+      }
+    },
+    {
+      "id": "D024",
+      "words": 334,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "ADVISORY",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 3,
+                "total": 22
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 5,
+                "total": 22
+              },
+              {
+                "kind": "nominalization",
+                "count": 9,
+                "total": 334
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.748790999999983,
+        "v3": 2.2982090000000426,
+        "v5": 2.5361250000000837,
+        "total": 7.583125000000109
+      }
+    },
+    {
+      "id": "D025",
+      "words": 304,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 7
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 7
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 7
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 2.6304589999999735,
+        "v3": 2.05662499999994,
+        "v5": 2.2463330000000497,
+        "total": 6.933416999999963
+      }
+    },
+    {
+      "id": "D026",
+      "words": 313,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 5
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 4.417291000000205,
+        "v3": 2.6924589999998716,
+        "v5": 2.6694159999999556,
+        "total": 9.779166000000032
+      }
+    },
+    {
+      "id": "D027",
+      "words": 298,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "DISTRIBUTED_LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [
+          {
+            "phenomenon": "GENERIC_REGISTER",
+            "action": "DISTRIBUTED_LIGHT_EDIT",
+            "support": [
+              {
+                "kind": "abstract-framing",
+                "count": 7,
+                "total": 27
+              },
+              {
+                "kind": "weak-predicate",
+                "count": 9,
+                "total": 27
+              },
+              {
+                "kind": "nominalization",
+                "count": 17,
+                "total": 298
+              }
+            ],
+            "counterevidenceCount": 0
+          }
+        ],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 3.465541999999914,
+        "v3": 3.100208000000066,
+        "v5": 2.709333000000015,
+        "total": 9.275082999999995
+      }
+    },
+    {
+      "id": "D028",
+      "words": 326,
+      "band": "MEDIUM",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 6.006250000000136,
+        "v3": 3.186042000000043,
+        "v5": 3.0290829999999005,
+        "total": 12.22137500000008
+      }
+    },
+    {
+      "id": "D029",
+      "words": 773,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.84
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.80600000000004,
+        "v3": 5.525957999999946,
+        "v5": 5.620208000000048,
+        "total": 16.952166000000034
+      }
+    },
+    {
+      "id": "D030",
+      "words": 1013,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 8.655541000000085,
+        "v3": 7.696749999999838,
+        "v5": 8.339167000000089,
+        "total": 24.69145800000001
+      }
+    },
+    {
+      "id": "D031",
+      "words": 1085,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "INTERVIEW",
+          "confidence": 0.98
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 10.747791000000007,
+        "v3": 9.60891700000002,
+        "v5": 10.26079199999981,
+        "total": 30.617499999999836
+      }
+    },
+    {
+      "id": "D032",
+      "words": 703,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 9.049875000000156,
+        "v3": 7.032541999999921,
+        "v5": 6.692250000000058,
+        "total": 22.774667000000136
+      }
+    },
+    {
+      "id": "D033",
+      "words": 712,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.empty-phrases",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.empty-phrases",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.empty-phrases",
+            "family": "discourse",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 5.855374999999867,
+        "v3": 5.263333000000102,
+        "v5": 6.449959000000035,
+        "total": 17.568667000000005
+      }
+    },
+    {
+      "id": "E001",
+      "words": 1215,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-paragraph-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 3
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-paragraph-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 9.664708999999903,
+        "v3": 8.935083000000077,
+        "v5": 9.334916999999905,
+        "total": 27.934708999999884
+      }
+    },
+    {
+      "id": "E002",
+      "words": 1173,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 10.055540999999948,
+        "v3": 8.416541999999936,
+        "v5": 8.797416999999996,
+        "total": 27.26949999999988
+      }
+    },
+    {
+      "id": "E003",
+      "words": 1140,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "INTERVIEW",
+          "confidence": 0.98
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 8.24395800000002,
+        "v3": 8.072208000000046,
+        "v5": 8.216208999999935,
+        "total": 24.532375000000002
+      }
+    },
+    {
+      "id": "E004",
+      "words": 1146,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "core.repeated-sentence-openers",
+            "family": "repetition",
+            "severity": "suggestion",
+            "occurrences": 4
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [
+          "core.repeated-sentence-openers"
+        ],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 9.990166999999929,
+        "v3": 8.567250000000058,
+        "v5": 8.78408300000001,
+        "total": 27.341499999999996
+      }
+    },
+    {
+      "id": "E005",
+      "words": 1166,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 9.291709000000083,
+        "v3": 8.105415999999877,
+        "v5": 8.836000000000013,
+        "total": 26.233124999999973
+      }
+    },
+    {
+      "id": "E006",
+      "words": 1114,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "EMAIL",
+          "confidence": 0.96
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 8.83137499999998,
+        "v3": 8.754292000000078,
+        "v5": 8.343791999999894,
+        "total": 25.92945899999995
+      }
+    },
+    {
+      "id": "E007",
+      "words": 1170,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ]
+      },
+      "v3": {
+        "disposition": "LIGHT_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "LIGHT_EDIT",
+        "scope": "LOCAL_EDIT",
+        "actionable": 1,
+        "findings": [
+          {
+            "id": "slop.not-x-its-y",
+            "family": "sentence",
+            "severity": "suggestion",
+            "occurrences": 1
+          }
+        ],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 8.734290999999985,
+        "v3": 7.822458999999981,
+        "v5": 8.826041000000032,
+        "total": 25.382790999999997
+      }
+    },
+    {
+      "id": "E008",
+      "words": 1252,
+      "band": "LONG",
+      "v1": {
+        "wouldCallModel": true,
+        "actionable": 0,
+        "findings": []
+      },
+      "v3": {
+        "disposition": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": []
+      },
+      "v5": {
+        "disposition": "UNCHANGED",
+        "scope": "UNCHANGED",
+        "actionable": 0,
+        "findings": [],
+        "permitted": [],
+        "structure": {
+          "type": "PROSE",
+          "confidence": 0.7
+        },
+        "discourse": [],
+        "uncertainty": null
+      },
+      "timingMs": {
+        "v1": 9.65866700000015,
+        "v3": 8.94416699999988,
+        "v5": 9.889625000000024,
+        "total": 28.492459000000053
+      }
+    }
+  ]
+}

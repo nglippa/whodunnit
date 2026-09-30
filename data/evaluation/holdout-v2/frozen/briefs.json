@@ -1,0 +1,1661 @@
+[
+  {
+    "id": "A001",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "personal reflection",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "A small observed moment with controlled compression."
+  },
+  {
+    "id": "A002",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "email",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "The request is clear; a few stiff phrases could be simplified."
+  },
+  {
+    "id": "A003",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "ordinary prose",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "General claims take the place of a specific experience or point."
+  },
+  {
+    "id": "A004",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "OTHER"
+    ],
+    "requestedGenre": "notes",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Fragmentary private field notes use repetition for recall."
+  },
+  {
+    "id": "A005",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "procedure",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "The parallel steps make a physical task safe and repeatable."
+  },
+  {
+    "id": "A006",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "email",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "A specific ask is repeated in slightly different terms."
+  },
+  {
+    "id": "A007",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "MECHANICAL_STRUCTURE",
+      "GENERICNESS"
+    ],
+    "requestedGenre": "academic discussion",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "A repeated claim pattern leaves the analytical question unresolved."
+  },
+  {
+    "id": "A008",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Repetition of terms supports quick lookup in a public-facing FAQ."
+  },
+  {
+    "id": "A009",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "memo",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "An operational note has some inflated wording around concrete facts."
+  },
+  {
+    "id": "A010",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "personal reflection",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "The reflection circles broad lessons without showing the event."
+  },
+  {
+    "id": "A011",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "personal reflection",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Repetition and fragments carry a remembered family scene."
+  },
+  {
+    "id": "A012",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "healthcare operations memo",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Clear instructions have some duplicate handoff language."
+  },
+  {
+    "id": "A013",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "academic discussion",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "The discussion repeatedly announces importance without testing a claim."
+  },
+  {
+    "id": "A014",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "interview",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Repeated questions and hesitations preserve the speaker’s account."
+  },
+  {
+    "id": "A015",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "policy note",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "The proposal has a concrete mechanism wrapped in stiff language."
+  },
+  {
+    "id": "A016",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT",
+      "VOICE"
+    ],
+    "requestedGenre": "personal reflection",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Several paragraphs rephrase a general lesson instead of developing the remembered incident."
+  },
+  {
+    "id": "A017",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "healthcare operations list",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Repeated headings keep handoff actions easy to find."
+  },
+  {
+    "id": "A018",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "academic discussion",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A useful argument repeats its central distinction more than needed."
+  },
+  {
+    "id": "A019",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "healthcare operations memo",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Concrete schedule change is buried in broad claims about collaboration."
+  },
+  {
+    "id": "A020",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "ordinary prose",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Precise physical details make an apparently digressive scene cohere."
+  },
+  {
+    "id": "A021",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "VOICE"
+    ],
+    "requestedGenre": "email",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Natural message has one vague and one overworked passage."
+  },
+  {
+    "id": "A022",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "MECHANICAL_STRUCTURE",
+      "FORMULAIC_ARGUMENT",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "interview writeup",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A formulaic recap flattens a specific speaker’s answers."
+  },
+  {
+    "id": "A023",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "chat",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Terse turns and repeated clarification match real coordination."
+  },
+  {
+    "id": "A024",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Mostly usable answers contain a little repeated explanation."
+  },
+  {
+    "id": "A025",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "memo",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Operational specifics are crowded by broad institutional language."
+  },
+  {
+    "id": "A026",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "academic discussion",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Formal transitions and hedging suit a limited scholarly claim."
+  },
+  {
+    "id": "A027",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "mixed notes and email",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A specific account is weakened by a recap that repeats its request."
+  },
+  {
+    "id": "A028",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "FORMULAIC_ARGUMENT",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "ordinary prose",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A promising concrete scene repeatedly dissolves into generalized interpretation."
+  },
+  {
+    "id": "A029",
+    "creatorId": "A",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "institutional policy",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Structured repetition and formal language serve enforceable booking rules."
+  },
+  {
+    "id": "A030",
+    "creatorId": "A",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "oral history transcript",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Distinctive oral voice and detail carry the piece; a few repetitive questions could be trimmed in an edited presentation."
+  },
+  {
+    "id": "A031",
+    "creatorId": "A",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "requestedGenre": "academic discussion",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Specific observations are present, but recurring abstract conclusions repeatedly dilute the analysis."
+  },
+  {
+    "id": "B001",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "OTHER"
+    ],
+    "requestedGenre": "workplace update",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Specific operational account; passive phrasing and technical repetition serve clarity."
+  },
+  {
+    "id": "B002",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "procedure",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Concise steps and repeated device terms are needed for safe instructions."
+  },
+  {
+    "id": "B003",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "workplace update",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "No concrete decision, risk, owner, or next action despite update framing."
+  },
+  {
+    "id": "B004",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "product feedback",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Useful specific point with minor tightening possible."
+  },
+  {
+    "id": "B005",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "customer support email",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Direct support answer with numbers, steps, and appropriate repetition."
+  },
+  {
+    "id": "B006",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "release note",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Benefit claims repeat without any observable feature detail."
+  },
+  {
+    "id": "B007",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Repetition and question-answer structure efficiently answer real questions."
+  },
+  {
+    "id": "B008",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "policy announcement",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Refers to a change and guidance but names neither."
+  },
+  {
+    "id": "B009",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "chat",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Natural exchange with one clear correction and expected conversational fragments."
+  },
+  {
+    "id": "B010",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "email",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Concrete request with meaningful constraints and an economical priority."
+  },
+  {
+    "id": "B011",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "software documentation",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Repetition and procedural order serve exact behavior and recovery."
+  },
+  {
+    "id": "B012",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "FAQ repeats invitation terminology for distinct user questions."
+  },
+  {
+    "id": "B013",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "OTHER"
+    ],
+    "requestedGenre": "handoff notes",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Messy but precise operational notes with prudent uncertainty."
+  },
+  {
+    "id": "B014",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "technical explanation",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Legitimate repeated keys and orders explain distinct failure states."
+  },
+  {
+    "id": "B015",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "workplace draft",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Concrete rule is sound; ceremonial paragraph weakens it locally."
+  },
+  {
+    "id": "B016",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Accurate answers have an unnecessary generic concluding paragraph."
+  },
+  {
+    "id": "B017",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "release note",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Specific feature explanation is diluted by generic final paragraph."
+  },
+  {
+    "id": "B018",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "transcript",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "One speaker slips into abstract presentation language amid concrete dialogue."
+  },
+  {
+    "id": "B019",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "procedure",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Useful safeguards followed by abstract restatement."
+  },
+  {
+    "id": "B020",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "API documentation",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Precise API behavior ends with an unnecessary promotional summary."
+  },
+  {
+    "id": "B021",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENERICNESS"
+    ],
+    "requestedGenre": "customer support email",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Helpful diagnosis and remedy; generic closing should be trimmed."
+  },
+  {
+    "id": "B022",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "design review notes",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Substantive observations followed by broad, weak summation."
+  },
+  {
+    "id": "B023",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "technical essay",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Many plausible principles but little operational guidance or concrete example."
+  },
+  {
+    "id": "B024",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "requestedGenre": "workplace update",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Status update avoids naming any adjustment, owner, timing, or result."
+  },
+  {
+    "id": "B025",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Answers sound helpful but avoid actual permission and workflow mechanics."
+  },
+  {
+    "id": "B026",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "procedure",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Procedure substitutes broad advice for named controls and actual effects."
+  },
+  {
+    "id": "B027",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "requestedGenre": "product announcement",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Never identifies a setting, default, or changed notification behavior."
+  },
+  {
+    "id": "B028",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "VOICE"
+    ],
+    "requestedGenre": "workplace chat",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "One speaker repeatedly evades a concrete count with abstract language."
+  },
+  {
+    "id": "B029",
+    "creatorId": "B",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "technical operations guide",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Detailed handoff accurately distinguishes file, row, cutoff, and rerun behavior."
+  },
+  {
+    "id": "B030",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "VOICE"
+    ],
+    "requestedGenre": "interview",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Strong concrete interview includes one inflated answer out of character."
+  },
+  {
+    "id": "B031",
+    "creatorId": "B",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "internal process notes",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Operationally useful handoff with one abstract, promotional paragraph."
+  },
+  {
+    "id": "B032",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "product documentation draft",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Long treatment of activity lacks actual event types, controls, and behavior."
+  },
+  {
+    "id": "B033",
+    "creatorId": "B",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "internal policy draft",
+    "requestedLengthBand": "UNSET",
+    "briefRationale": "Policy-like essay omits thresholds, channels, roles, and expected timing."
+  },
+  {
+    "id": "C001",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "POLICY",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "A concise access notice; formality and responsibility language are appropriate."
+  },
+  {
+    "id": "C002",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Clear business email with one minor ambiguity around the fallback approval."
+  },
+  {
+    "id": "C003",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Abstract pilot summary lacks concrete outcomes despite sounding confident."
+  },
+  {
+    "id": "C004",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Precise repeated safety actions and passive wording are functional."
+  },
+  {
+    "id": "C005",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "POLICY",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Mostly effective policy; a small edit could clarify how damage is assessed."
+  },
+  {
+    "id": "C006",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Concrete opening gives way to stock project language that obscures the decision and risk."
+  },
+  {
+    "id": "C007",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Oral memory has specific texture and a restrained reflective close."
+  },
+  {
+    "id": "C008",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Service answers are useful and naturally repetitive; one sentence could distinguish reservation from payment settlement."
+  },
+  {
+    "id": "C009",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "REGISTER_INFLATION",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "The opening circles around consistency while the practical test appears late."
+  },
+  {
+    "id": "C010",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Incident notes use chronological, plain observations and an actionable handoff."
+  },
+  {
+    "id": "C011",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "POLICY",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Institutional update is largely precise; minor tightening can clarify timing of the new field."
+  },
+  {
+    "id": "C012",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Real decisions and dependencies are buried under a repetitive institutional frame."
+  },
+  {
+    "id": "C013",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Reflective oral history earns its chronology and quiet repetition through concrete memory."
+  },
+  {
+    "id": "C014",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Useful operational email with a repeated access point and a minor route ambiguity."
+  },
+  {
+    "id": "C015",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Specific product changes are diluted by broad experience language and predictable transitions."
+  },
+  {
+    "id": "C016",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Personal reflection has a coherent scene, specific observation, and earned conclusion."
+  },
+  {
+    "id": "C017",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Sound explanation of a product design with a few terms that may be unclear to users."
+  },
+  {
+    "id": "C018",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Meeting record substitutes broad values for unresolved allocation criteria and ownership."
+  },
+  {
+    "id": "C019",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "INTERVIEW",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A framed interview account keeps human hesitation and precise corrections."
+  },
+  {
+    "id": "C020",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Mostly strong event handoff; slight tightening of timing and ownership would help."
+  },
+  {
+    "id": "C021",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "GENERICNESS",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "POLICY",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Operational requirements are mixed with repeated claims about consistency and vague decision language."
+  },
+  {
+    "id": "C022",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Measured institutional narrative makes its tradeoffs explicit without generic claims."
+  },
+  {
+    "id": "C023",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Unmarked procedure has useful repetition; one calendar caveat could be made clearer."
+  },
+  {
+    "id": "C024",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Specific usability evidence is obscured by broad workshop language and unsupported agreement claims."
+  },
+  {
+    "id": "C025",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Reflective writing joins observation and modest inference without overstating it."
+  },
+  {
+    "id": "C026",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Clear product explanation needs only a local refinement around the status term."
+  },
+  {
+    "id": "C027",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Concrete status problem is repeatedly recast as generic integration progress."
+  },
+  {
+    "id": "C028",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Specific archival scene shows careful uncertainty and distinctive reflective voice."
+  },
+  {
+    "id": "C029",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Detailed operational communication is justified; minor edit could simplify the dual rota instruction."
+  },
+  {
+    "id": "C030",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Useful wayfinding evidence is repeatedly submerged in generic strategy language and unclear decisions."
+  },
+  {
+    "id": "C031",
+    "creatorId": "C",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Long reflective history uses multiple accounts and recurring detail with purpose."
+  },
+  {
+    "id": "C032",
+    "creatorId": "C",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Long FAQ uses justified repetition; minor local wording could clarify collection and return responsibility."
+  },
+  {
+    "id": "C033",
+    "creatorId": "C",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "FORMULAIC_ARGUMENT",
+      "REGISTER_INFLATION",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Specific reporting issues and pilot choices are wrapped in repeated significance and learning claims."
+  },
+  {
+    "id": "D001",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "OTHER"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Plain local explanation with rough but useful specificity."
+  },
+  {
+    "id": "D002",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENERICNESS"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "One soft generic sentence in an otherwise practical reply."
+  },
+  {
+    "id": "D003",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "EMPTY_SIGNIFICANCE",
+      "GENERICNESS",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Coherent but nearly fact free account of a pilot."
+  },
+  {
+    "id": "D004",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "VOICE"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "VERY_SHORT",
+    "briefRationale": "Repeated questions are useful in a compact FAQ."
+  },
+  {
+    "id": "D005",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "VOICE"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Useful support email with a little excess logistical detail."
+  },
+  {
+    "id": "D006",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "A procedure with almost no operational instruction despite its orderly form."
+  },
+  {
+    "id": "D007",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "OTHER"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Distinct reflection with fragments and uneven capitalization."
+  },
+  {
+    "id": "D008",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "One inflated instruction interrupts otherwise functional technical guidance."
+  },
+  {
+    "id": "D009",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Meeting note structure masks absent dates and concrete tasks."
+  },
+  {
+    "id": "D010",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "SHORT",
+    "briefRationale": "Concrete classroom account with repetition serving observation."
+  },
+  {
+    "id": "D011",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A single inflated passage in otherwise precise operational documentation."
+  },
+  {
+    "id": "D012",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "A plausible civic summary that withholds what participants proposed."
+  },
+  {
+    "id": "D013",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Detailed, uneven account with an unresolved operational choice."
+  },
+  {
+    "id": "D014",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Specific healthcare operations request with one inflated sentence."
+  },
+  {
+    "id": "D015",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "FORMULAIC_ARGUMENT",
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Academic-shaped argument that never studies an example or evidence."
+  },
+  {
+    "id": "D016",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "VOICE"
+    ],
+    "requestedGenre": "INTERVIEW",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Repeated interview turns are natural and the recollections carry detail."
+  },
+  {
+    "id": "D017",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Mostly concrete design note with a brief corporate register shift."
+  },
+  {
+    "id": "D018",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "VOICE",
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Personal reflection replaces its promising opening with transferable life lessons."
+  },
+  {
+    "id": "D019",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "VOICE"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Log repetition and fragments are justified by the receiving workflow."
+  },
+  {
+    "id": "D020",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Useful FAQ with one padded sentence in a return answer."
+  },
+  {
+    "id": "D021",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Incident retrospective avoids the failure, timeline, and repair."
+  },
+  {
+    "id": "D022",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "OTHER"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Quiet narrative with an exact rule and no forced moral."
+  },
+  {
+    "id": "D023",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "NOTES",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Specific meeting notes with a single oddly corporate sentence."
+  },
+  {
+    "id": "D024",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE",
+      "GENERICNESS"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Academic discussion never reports counts or findings despite claiming survey evidence."
+  },
+  {
+    "id": "D025",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "MIXED",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Chat plus incident note preserves practical repetitions and uncertainty."
+  },
+  {
+    "id": "D026",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "REGISTER_INFLATION"
+    ],
+    "requestedGenre": "FAQ",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Repeated questions are legitimate; one answer has inflated language."
+  },
+  {
+    "id": "D027",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "MECHANICAL_STRUCTURE",
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "POLICY",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Policy sections supply values but no assignment or escalation mechanism."
+  },
+  {
+    "id": "D028",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "VOICE"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "MEDIUM",
+    "briefRationale": "Three-item opening and repeated cautions are functional in field instructions."
+  },
+  {
+    "id": "D029",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "EMAIL",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Long logistical email with one corporate paragraph amid specific decisions."
+  },
+  {
+    "id": "D030",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Long, polished municipal report discusses themes without specific evidence or decisions."
+  },
+  {
+    "id": "D031",
+    "creatorId": "D",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE",
+      "VOICE",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "INTERVIEW",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Long oral-history transcript repeats questions and operational details naturally."
+  },
+  {
+    "id": "D032",
+    "creatorId": "D",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "PROCEDURE",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Detailed reconciliation documentation interrupted by one inflated instruction."
+  },
+  {
+    "id": "D033",
+    "creatorId": "D",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "VOICE",
+      "REDUNDANCY"
+    ],
+    "requestedGenre": "PROSE",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Long, smooth orientation account omits the program, activity, and feedback specifics."
+  },
+  {
+    "id": "E001",
+    "creatorId": "E",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "unmarked public room use policy",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Formal eligibility, safety, and review provisions repeat terms because the rules need to remain usable and evenhanded across cases."
+  },
+  {
+    "id": "E002",
+    "creatorId": "E",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "unmarked volunteer intake procedure",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Sequential checks and repeated distinctions between acceptance, hold, and release serve a real handoff and prevent seed lots from being confused."
+  },
+  {
+    "id": "E003",
+    "creatorId": "E",
+    "requestedDisposition": "LEAVE_ALONE",
+    "requestedConcepts": [
+      "VOICE"
+    ],
+    "requestedGenre": "oral history interview transcript",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "The speaker revisits the bridge through distinct memories and qualifications; conversational repetition and uncertain dates belong to the testimony."
+  },
+  {
+    "id": "E004",
+    "creatorId": "E",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "LOCAL_WORDING",
+      "GENERICNESS"
+    ],
+    "requestedGenre": "archive export technical documentation",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "The layout and verification instructions are useful, but a late explanatory passage shifts into broad claims about legibility and dependability without specifying further behavior."
+  },
+  {
+    "id": "E005",
+    "creatorId": "E",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "requestedGenre": "academic discussion of transit shade",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Concrete field observations support a narrower argument than the recurring map-versus-experience thesis; several sections restate its importance and end without a sharper analysis of the evidence."
+  },
+  {
+    "id": "E006",
+    "creatorId": "E",
+    "requestedDisposition": "LIGHT_EDIT",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "LOCAL_WORDING"
+    ],
+    "requestedGenre": "internal facilities work memo",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "Dates, queues, and contingency steps are actionable, while the temporary-status reminder and reflection on habits repeat or soften information already conveyed."
+  },
+  {
+    "id": "E007",
+    "creatorId": "E",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "VOICE"
+    ],
+    "requestedGenre": "first-person personal essay",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "The keys and move supply vivid material, but the middle and ending repeatedly interpret the objects as uncertainty and continuity, crowding out more specific change or discovery."
+  },
+  {
+    "id": "E008",
+    "creatorId": "E",
+    "requestedDisposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "requestedConcepts": [
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "requestedGenre": "mixed customer support thread with internal notes",
+    "requestedLengthBand": "LONG",
+    "briefRationale": "The case contains important device-specific facts, yet successive updates reiterate the same preservation and uncertainty language; a reconstruction should retain chronology while consolidating duplicated status material."
+  }
+]

@@ -1,0 +1,1478 @@
+[
+  {
+    "id": "A001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The grocery list and disappointing pear carry the grief without explanation."
+  },
+  {
+    "id": "A002",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "rationale": "A simple scheduling choice is buried under needlessly formal phrasing."
+  },
+  {
+    "id": "A003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "rationale": "Every sentence generalizes about waiting and compassion without an observed scene or developed thought."
+  },
+  {
+    "id": "A004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "rationale": "The fragments preserve actionable observations and questions for a later inspection."
+  },
+  {
+    "id": "A005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.95,
+    "rationale": "The sequence and exception handling make the handoff actionable."
+  },
+  {
+    "id": "A006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "rationale": "The noon deadline and acceptability of an estimate are each repeated in an otherwise clear request."
+  },
+  {
+    "id": "A007",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "Repeated broad claims about archives replace analysis of the one concrete ledger example."
+  },
+  {
+    "id": "A008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.97,
+    "rationale": "Each question gets a specific usable answer, including exceptions."
+  },
+  {
+    "id": "A009",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "rationale": "The pickup instructions are clear, but two administrative phrases could be made direct."
+  },
+  {
+    "id": "A010",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The account repeatedly states a lesson about growth without showing what happened in the apartment."
+  },
+  {
+    "id": "A011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The changing place of the chair develops the relationship through precise scenes."
+  },
+  {
+    "id": "A012",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "rationale": "The route, timing, exception handling, and follow-up are specific and usable."
+  },
+  {
+    "id": "A013",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "rationale": "Theme by theme abstractions about benches rarely develop an observed case or a distinct claim."
+  },
+  {
+    "id": "A014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.97,
+    "rationale": "Mara’s concrete, qualified recollections give the exchange its force."
+  },
+  {
+    "id": "A015",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.91,
+    "rationale": "The supply plan is concrete; one paragraph restates its purpose in inflated language."
+  },
+  {
+    "id": "A016",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT",
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.68,
+    "rationale": "The plant scene is specific, while the repeated lesson may feel either reflective or overexplained."
+  },
+  {
+    "id": "A017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "rationale": "The categorized handoff preserves status, ownership, and unresolved details."
+  },
+  {
+    "id": "A018",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "The access distinction is tested against separate examples and leads to a specific question."
+  },
+  {
+    "id": "A019",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "rationale": "The short schedule change is repeatedly recast as broad values and transition language."
+  },
+  {
+    "id": "A020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "rationale": "The market details and unresolved feed-order scrap give the scene its own movement."
+  },
+  {
+    "id": "A021",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LOCAL_WORDING",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.89,
+    "rationale": "One abstract phrase about the recording's narrative sits awkwardly among precise editing notes."
+  },
+  {
+    "id": "A022",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "Concrete archive incidents are repeatedly reduced to generic themes and lessons."
+  },
+  {
+    "id": "A023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "CHAT",
+    "confidence": 0.97,
+    "rationale": "The timestamped exchange tracks the alarm, inspection, and incomplete repair efficiently."
+  },
+  {
+    "id": "A024",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.96,
+    "rationale": "The questions cover booking, use, privacy, and return with practical specifics."
+  },
+  {
+    "id": "A025",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE",
+      "REDUNDANCY"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "rationale": "Routine shed instructions are padded throughout with symbolic and culture claims."
+  },
+  {
+    "id": "A026",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "rationale": "The source limits and alternative readings are precise and proportionate."
+  },
+  {
+    "id": "A027",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "LOCAL_WORDING"
+    ],
+    "genre": "MIXED",
+    "confidence": 0.85,
+    "rationale": "The field notes are useful, but the follow-up email repeats the ramp storage request."
+  },
+  {
+    "id": "A028",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "Specific cinema details are repeatedly converted into broad claims about art and community."
+  },
+  {
+    "id": "A029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.96,
+    "rationale": "The sections set concrete booking conditions, exceptions, responsibilities, and review routes."
+  },
+  {
+    "id": "A030",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.96,
+    "rationale": "The questions develop a nuanced distinction between notebooks and official records."
+  },
+  {
+    "id": "A031",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.84,
+    "rationale": "Sharp observations about names and repairs are repeatedly diluted by abstract restatements and broad conclusions."
+  },
+  {
+    "id": "B001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "rationale": "The incident update states impact, recovery, and next action without padding."
+  },
+  {
+    "id": "B002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "rationale": "The reset steps and amber-light fallback are concise and complete."
+  },
+  {
+    "id": "B003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.95,
+    "rationale": "The meeting summary names no decision, issue, or next action despite claiming progress."
+  },
+  {
+    "id": "B004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.92,
+    "rationale": "The feedback identifies one exact message and offers a bounded fix."
+  },
+  {
+    "id": "B005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "rationale": "The reply explains the exact filter, expected row count, and useful fallback."
+  },
+  {
+    "id": "B006",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The search announcement offers benefits and aspirations without explaining a feature or use."
+  },
+  {
+    "id": "B007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.97,
+    "rationale": "The repeated question format serves distinct access questions."
+  },
+  {
+    "id": "B008",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The update never specifies what changed and repeats broad promises of improvement."
+  },
+  {
+    "id": "B009",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "CHAT",
+    "confidence": 0.96,
+    "rationale": "The exchange resolves recipient and timing questions in natural short turns."
+  },
+  {
+    "id": "B010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "rationale": "The review request names the target behavior, current limits, deadline, and best test case."
+  },
+  {
+    "id": "B011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.96,
+    "rationale": "The importer instructions distinguish preparation, preview, outcomes, and retries."
+  },
+  {
+    "id": "B012",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.95,
+    "rationale": "The recurring questions have distinct, concrete answers and a sensible support route."
+  },
+  {
+    "id": "B013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.95,
+    "rationale": "The handoff preserves uncertainty, priorities, owners, and case-specific evidence."
+  },
+  {
+    "id": "B014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "The explanation separates retry behavior from a new order and a pending payment."
+  },
+  {
+    "id": "B015",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "rationale": "The closing paragraph turns a clear calendar change into vague language about coordination."
+  },
+  {
+    "id": "B016",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.94,
+    "rationale": "The paragraph after the answers repeats general advice while the FAQ itself is precise."
+  },
+  {
+    "id": "B017",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "One promotional paragraph interrupts an otherwise specific release note."
+  },
+  {
+    "id": "B018",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "TRANSCRIPT",
+    "confidence": 0.93,
+    "rationale": "One response turns an urgent reporting request into broad experience language."
+  },
+  {
+    "id": "B019",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.93,
+    "rationale": "A general values paragraph adds little between concrete closeout steps."
+  },
+  {
+    "id": "B020",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "A broad reassurance paragraph interrupts otherwise precise endpoint behavior."
+  },
+  {
+    "id": "B021",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.94,
+    "rationale": "The case explanation is strong, but the closing service pledge is generic."
+  },
+  {
+    "id": "B022",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.91,
+    "rationale": "One summary paragraph dilutes the specific chart and table findings."
+  },
+  {
+    "id": "B023",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "The documentation advice stays broad and follows a predictable clarity-maintenance-collaboration arc."
+  },
+  {
+    "id": "B024",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "Visibility, ownership, and learning sections restate general benefits without describing the queue changes."
+  },
+  {
+    "id": "B025",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.98,
+    "rationale": "Nearly every answer avoids the operational facts its question asks for."
+  },
+  {
+    "id": "B026",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "rationale": "The purported instructions never identify an actual archive control or concrete readiness criterion."
+  },
+  {
+    "id": "B027",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The notification update repeats benefits without naming settings or consequences."
+  },
+  {
+    "id": "B028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "TRANSCRIPT",
+    "confidence": 0.82,
+    "rationale": "Arun's persistent evasions and Leah's repeated request create a coherent conflict in dialogue."
+  },
+  {
+    "id": "B029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.94,
+    "rationale": "Detailed cutoff, validation, rerun, and ownership rules support the handoff."
+  },
+  {
+    "id": "B030",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE",
+      "VOICE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.92,
+    "rationale": "One answer abandons Nadia’s concrete voice for a broad product statement."
+  },
+  {
+    "id": "B031",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.93,
+    "rationale": "A single mission paragraph can be cut while retaining the careful handoff rules."
+  },
+  {
+    "id": "B032",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The long activity-page discussion repeatedly promises awareness without specifying the page's contents or behavior."
+  },
+  {
+    "id": "B033",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.96,
+    "rationale": "Each escalation stage offers broad principles but few thresholds, routes, or accountable actions."
+  },
+  {
+    "id": "C001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The closure notice gives hours, return instructions, responsibility, and an expected end."
+  },
+  {
+    "id": "C002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "rationale": "The proofing request gives a precise defect, deadline, and fallback layout."
+  },
+  {
+    "id": "C003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.88,
+    "rationale": "The pilot summary gives no decision or observable effect behind its visibility claims."
+  },
+  {
+    "id": "C004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "rationale": "The valve steps specify the expected reading and a safe exception path."
+  },
+  {
+    "id": "C005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.94,
+    "rationale": "The permit terms specify allowable use, exclusions, obligations, and approval conditions."
+  },
+  {
+    "id": "C006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.95,
+    "rationale": "The final paragraph adds vague relationship language after a concrete supply update."
+  },
+  {
+    "id": "C007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The skiff, flour, and remembered walks complicate the claim that the island was cut off."
+  },
+  {
+    "id": "C008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.96,
+    "rationale": "The answers state timing and address-change limits directly."
+  },
+  {
+    "id": "C009",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "GENERICNESS"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.86,
+    "rationale": "The opening oversells the form in abstract terms, while the testing gap and first-month measure are useful."
+  },
+  {
+    "id": "C010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "NOTES",
+    "confidence": 0.95,
+    "rationale": "The log records observed fault behavior and a clear next check."
+  },
+  {
+    "id": "C011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.93,
+    "rationale": "The grant update distinguishes eligibility, missing information, and panel decisions."
+  },
+  {
+    "id": "C012",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.73,
+    "rationale": "The opening abstractions obscure useful later facts, though focused cuts may suffice."
+  },
+  {
+    "id": "C013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The ruler and later work ground the memory without forcing a lesson."
+  },
+  {
+    "id": "C014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.96,
+    "rationale": "The temporary routes, access exception, safety rule, and update trigger are all concrete."
+  },
+  {
+    "id": "C015",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.87,
+    "rationale": "A few experience claims can be tightened while retaining the detailed receipt and address decisions."
+  },
+  {
+    "id": "C016",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "Room details and session boundaries carry the reflection naturally."
+  },
+  {
+    "id": "C017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The prototype report connects observations, limits, hazards, and the next trial."
+  },
+  {
+    "id": "C018",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.72,
+    "rationale": "Generic framing surrounds a concrete scheduling dispute; editors could trim or reshape it."
+  },
+  {
+    "id": "C019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The uncle's notebook and transcript corrections show how he remembers the works."
+  },
+  {
+    "id": "C020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.96,
+    "rationale": "The relocation message assigns tasks and addresses capacity, access, and equipment."
+  },
+  {
+    "id": "C021",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.84,
+    "rationale": "Several generalized process benefits soften otherwise concrete badge and host instructions."
+  },
+  {
+    "id": "C022",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The seed examples support the flexible return policy and its tradeoff."
+  },
+  {
+    "id": "C023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.97,
+    "rationale": "The booking steps, confirmation rule, room use, and closing checks are usable."
+  },
+  {
+    "id": "C024",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.86,
+    "rationale": "The workshop's opening and close use vague framing around specific guide and cabinet findings."
+  },
+  {
+    "id": "C025",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "Specific survey and gate observations change the narrator’s view of the path."
+  },
+  {
+    "id": "C026",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The status-copy proposal exposes concrete customer confusion and an unresolved event timing rule."
+  },
+  {
+    "id": "C027",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.75,
+    "rationale": "Two abstract framing paragraphs compete with a concrete status problem and pilot decision."
+  },
+  {
+    "id": "C028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The two parade prints make the narrator's caution about catalog certainty earned."
+  },
+  {
+    "id": "C029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.93,
+    "rationale": "The long volunteer note remains organized around actionable schedule, intake, staffing, and review details."
+  },
+  {
+    "id": "C030",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.72,
+    "rationale": "Specific arrival problems and tests are strong, but repeated strategy language slows the report."
+  },
+  {
+    "id": "C031",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.94,
+    "rationale": "The blue cup, shoes, and newspaper account develop distinct ways of remembering the flood."
+  },
+  {
+    "id": "C032",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.97,
+    "rationale": "The long question set covers different display and handover conditions without empty repetition."
+  },
+  {
+    "id": "C033",
+    "disposition": "AMBIGUOUS",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION",
+      "REDUNDANCY"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.74,
+    "rationale": "Concrete reporting findings sit among recurring abstract framing that some editors would cut broadly."
+  },
+  {
+    "id": "D001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The misplaced sign is shown through a specific missed bus and workaround."
+  },
+  {
+    "id": "D002",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.82,
+    "rationale": "The opening praise is vague, while the requested timeline clarification is precise."
+  },
+  {
+    "id": "D003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The pilot is called successful several ways without a result, example, or next step."
+  },
+  {
+    "id": "D004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.96,
+    "rationale": "The informal question sequence answers practical food and rain questions efficiently."
+  },
+  {
+    "id": "D005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "genre": "EMAIL",
+    "confidence": 0.97,
+    "rationale": "The hinge message provides measurements, product context, and a specific request."
+  },
+  {
+    "id": "D006",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.98,
+    "rationale": "The supposed three-step process withholds the checks and repeats experience claims."
+  },
+  {
+    "id": "D007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The lowercase voice and exact interview memories create a credible self-portrait."
+  },
+  {
+    "id": "D008",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.94,
+    "rationale": "One troubleshooting passage becomes needlessly abstract between otherwise direct printer steps."
+  },
+  {
+    "id": "D009",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "rationale": "The notes record alignment and a thoughtful approach but omit the migration window and concrete decisions."
+  },
+  {
+    "id": "D010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "rationale": "The observations and provisional label preserve what the children actually saw."
+  },
+  {
+    "id": "D011",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.9,
+    "rationale": "A short operational-experience preface interrupts detailed export and troubleshooting guidance."
+  },
+  {
+    "id": "D012",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The workshop account repeatedly praises dialogue without reporting any distinct proposal."
+  },
+  {
+    "id": "D013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The paper sheet and unresolved returns question make the handoff account useful."
+  },
+  {
+    "id": "D014",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.93,
+    "rationale": "The seamless-experience sentence jars with a specific, well-supported reminder proposal."
+  },
+  {
+    "id": "D015",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The shared-kitchen article cycles through possible benefits and limits without evidence or a distinct claim."
+  },
+  {
+    "id": "D016",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.96,
+    "rationale": "The producer's concrete memories and corrections make the question-led exchange vivid."
+  },
+  {
+    "id": "D017",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.92,
+    "rationale": "One submission-journey sentence is inflated; the rest specifies states, retries, and recovery."
+  },
+  {
+    "id": "D018",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.93,
+    "rationale": "After a promising self-aware opening, the move becomes repeated lessons about growth and belonging."
+  },
+  {
+    "id": "D019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.97,
+    "rationale": "The timed entries preserve counts, exceptions, evidence, and shift context."
+  },
+  {
+    "id": "D020",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.94,
+    "rationale": "A single return-experience sentence intrudes on otherwise useful equipment answers."
+  },
+  {
+    "id": "D021",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The outage retrospective names phases and values but no incident evidence or learning."
+  },
+  {
+    "id": "D022",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.96,
+    "rationale": "The ink mark and pencil cup turn a rule into a specific, restrained account."
+  },
+  {
+    "id": "D023",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "NOTES",
+    "confidence": 0.93,
+    "rationale": "One alignment sentence jars in otherwise specific count notes."
+  },
+  {
+    "id": "D024",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "FORMULAIC_ARGUMENT",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The survey discussion recycles broad themes without figures or student examples."
+  },
+  {
+    "id": "D025",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "MIXED",
+    "confidence": 0.93,
+    "rationale": "The chat and follow-up notes preserve the failure, response, and unresolved dough condition."
+  },
+  {
+    "id": "D026",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "FAQ",
+    "confidence": 0.95,
+    "rationale": "One interpreter answer uses institutional phrasing amid otherwise practical clinic guidance."
+  },
+  {
+    "id": "D027",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.97,
+    "rationale": "The draft declares ownership principles but leaves assignment, authority, disputes, and review unspecified."
+  },
+  {
+    "id": "D028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.94,
+    "rationale": "The survey directions use concrete equipment, safety, and recording details in a natural field voice."
+  },
+  {
+    "id": "D029",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "REGISTER_INFLATION"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.91,
+    "rationale": "One milestone paragraph drifts into broad claims before returning to specific delivery decisions."
+  },
+  {
+    "id": "D030",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "MECHANICAL_STRUCTURE",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The road-repair report repeatedly elaborates clarity, consistency, and connection without operational evidence."
+  },
+  {
+    "id": "D031",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.97,
+    "rationale": "Lena’s detailed answers let operational and human stakes emerge naturally."
+  },
+  {
+    "id": "D032",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REGISTER_INFLATION",
+      "LOCAL_WORDING"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.93,
+    "rationale": "One resolution-pathway sentence is needlessly formal within precise reconciliation guidance."
+  },
+  {
+    "id": "D033",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERICNESS",
+      "REDUNDANCY",
+      "EMPTY_SIGNIFICANCE",
+      "FORMULAIC_ARGUMENT"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.98,
+    "rationale": "The long orientation account repeats positive judgments while withholding activity and feedback specifics."
+  },
+  {
+    "id": "E001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "POLICY",
+    "confidence": 0.95,
+    "rationale": "The room rules cover eligibility, allocation, access, interruption, charges, appeal, and revision concretely."
+  },
+  {
+    "id": "E002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.96,
+    "rationale": "The intake sequence specifies handling, uncertainty, holds, logging, storage, and review."
+  },
+  {
+    "id": "E003",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE",
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "INTERVIEW",
+    "confidence": 0.94,
+    "rationale": "Mara's detailed memories and qualifications preserve the texture of the oral history."
+  },
+  {
+    "id": "E004",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERICNESS",
+      "EMPTY_SIGNIFICANCE"
+    ],
+    "genre": "PROCEDURE",
+    "confidence": 0.88,
+    "rationale": "One paragraph on general dependability can be tightened amid useful package specifications."
+  },
+  {
+    "id": "E005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.88,
+    "rationale": "The academic argument grounds its shade distinction in field sites, constraints, and limits."
+  },
+  {
+    "id": "E006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "REDUNDANCY",
+      "LOCAL_WORDING"
+    ],
+    "genre": "EMAIL",
+    "confidence": 0.86,
+    "rationale": "The thorough move notice has a few repeated temporary-arrangement and process observations."
+  },
+  {
+    "id": "E007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE"
+    ],
+    "genre": "PROSE",
+    "confidence": 0.97,
+    "rationale": "The key sorting and refusal of a neat lesson sustain a distinct voice."
+  },
+  {
+    "id": "E008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "GENRE_JUSTIFIED_STRUCTURE"
+    ],
+    "genre": "TRANSCRIPT",
+    "confidence": 0.96,
+    "rationale": "The repeated status updates track uncertainty, preserve evidence, and answer changing needs."
+  }
+]

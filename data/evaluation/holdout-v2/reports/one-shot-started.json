@@ -1,0 +1,13 @@
+{
+  "started": "2026-09-30T09:08:31.610Z",
+  "manifestSha256": "7745a23a0b6e839131601aaf75f483a34fccf279e1223182f482692574d8446a",
+  "documentsSha256": "3a64bfd41fa8e6b3fa0532d87ba63e878df2253edfadf6bae0b3b4adba74b0ff",
+  "engineRevision": "b99209a3c638411e5b0bb1481be9d43d2dde7971",
+  "engineSha256": "04f54963618f553ca12396d57bed26bb3057dea4bccb99461d9ff5e6dac19336",
+  "strategies": [
+    "reconstruction-v1",
+    "reconstruction-v3",
+    "reconstruction-v5"
+  ],
+  "deterministicOnly": true
+}
