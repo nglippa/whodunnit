@@ -1,0 +1,306 @@
+[
+  {
+    "id": "C002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The timed observation, small scene, and practical note have a distinct field-journal voice."
+  },
+  {
+    "id": "C004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The lowercase style and faded ticket are purposeful personal details; the closing reflection grows from them."
+  },
+  {
+    "id": "C007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "This is a concise work note with a concrete correction and next steps."
+  },
+  {
+    "id": "C010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The notice gives the closure, hold policy, and help available in appropriate institutional language."
+  },
+  {
+    "id": "C012",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The quantities, unresolved crack depth, and conditional next steps make this a specific, careful report."
+  },
+  {
+    "id": "C015",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The bells, painted fish, and inaccurate map drawing give this account its own voice and texture."
+  },
+  {
+    "id": "C018",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The observation separates what was seen from possible sources of variation and sets out a concrete repeat test."
+  },
+  {
+    "id": "C020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The support reply identifies the incompatible part, asks only for needed details, and gives a relevant caution."
+  },
+  {
+    "id": "C023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The announcement combines usable logistics with a small, fitting joke and an inclusive invitation."
+  },
+  {
+    "id": "C025",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The biscuit tin, ruined receipt, and uncertain marble support an earned reflection without smoothing away doubt."
+  },
+  {
+    "id": "C028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The museum-style explanation uses material details and acknowledged uncertainty to interpret the object. The last sentence is slightly emphatic, but the piece remains specific."
+  },
+  {
+    "id": "C031",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The methods account explains why sketches came first, how marks were interpreted, and how non-drawers were handled."
+  },
+  {
+    "id": "C033",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The grant request ties purchases to observed needs and describes outcomes with sensible limits."
+  },
+  {
+    "id": "C036",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The mending details and the neighbor's lesson carry the reflection in a personal, coherent voice."
+  },
+  {
+    "id": "C039",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The length serves a detailed operational recommendation with measurements, contingencies, responsibilities, and access needs."
+  },
+  {
+    "id": "C041",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The study account is grounded in notebook evidence and repeatedly states what the records cannot establish."
+  },
+  {
+    "id": "P002",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The message relies on alignment, priorities, and progress without naming a decision, task, or obstacle."
+  },
+  {
+    "id": "P004",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "UNSUPPORTED_STRENGTH",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "Claims about research, profound impact, and lasting change have no evidence or program detail here."
+  },
+  {
+    "id": "P006",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "UNSUPPORTED_STRENGTH",
+      "REDUNDANCY",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The passage repeats broad education benefits and invokes expert agreement without a source or a concrete proposal."
+  },
+  {
+    "id": "P008",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The introduction delays the tomato topic with universal food claims and an article-preview formula; it needs a more specific angle."
+  },
+  {
+    "id": "P011",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The plan is praised through repeated civic abstractions, but its actual provisions and tradeoffs are absent. The claim about successful cities is unsupported here."
+  },
+  {
+    "id": "P013",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The leadership maxims and calls for openness recur without an example, situation, or distinctive point of view."
+  },
+  {
+    "id": "P015",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "UNSUPPORTED_STRENGTH",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The promotional praise offers no identifiable plot, setting, character, or prose detail to support its strong claims."
+  },
+  {
+    "id": "P017",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The long strategy cycles through broad pillars and aspirations while leaving actions, owners, and measures largely unspecified."
+  },
+  {
+    "id": "M002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The incident note gives times, action taken, and a clear limit on what the missing log permits one to conclude."
+  },
+  {
+    "id": "M004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "These minutes record the vote, condition for signoff, assigned follow-up, and unresolved parking issue plainly."
+  },
+  {
+    "id": "M006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The methods, result, and caveat are concrete; the broad sentence about implications for resources and services adds little and could be sharpened or removed."
+  },
+  {
+    "id": "M008",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The policy change is specific and useful, but the sentence about efficiency and a seamless experience is stock language beside the concrete review measure."
+  },
+  {
+    "id": "M011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The lab note records positions, controls, uncertainty, and a conditional next test without overstating the result."
+  },
+  {
+    "id": "M013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The tape labels and corrected date give the grief reflection an individual voice; the familiar food phrase is explicitly questioned."
+  },
+  {
+    "id": "M015",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The retrospective names the failure, its scope, responsibility, and specific process changes; it also rejects an evasive stock phrase."
+  },
+  {
+    "id": "M017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The interview keeps the speaker's corrections, uncertainty, and concrete memories, including the resistance to a tidy life story."
+  },
+  {
+    "id": "C043",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The ferry, jam, hatchet, and plum tree carry the changing relationship through concrete scenes. The reflective moments are earned by those details, and the recurring images give the piece a distinct voice."
+  },
+  {
+    "id": "P019",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The actual intake process and missing resolution date are useful, but they are buried under repeated claims about collaboration, improvement, and resident experience. The document needs to be rebuilt around the specific workflow, decisions, and proposed trial rather than lightly trimmed."
+  },
+  {
+    "id": "M019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The personal account explains why update timing and verification matter, while the operational recommendations remain specific and appropriately qualified. Its policy structure and careful treatment of unknown information serve the subject."
+  },
+  {
+    "id": "C044",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The pocket repair, the child's questions, and the uncertainty about Bea form a compact, coherent scene. The ending leaves its implication with the reader instead of spelling out a lesson."
+  },
+  {
+    "id": "P020",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The registration and workshop figures suggest a real programming question, but the draft repeatedly substitutes broad promises of alignment, opportunity, and success for analysis of those numbers. It needs a concrete account of what the figures can and cannot show, followed by a focused scheduling and outreach test."
+  },
+  {
+    "id": "M020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The family memory gives a clear reason for caption provenance without pretending to settle the disputed location. The proposed batch release, correction record, and description guidance are specific and suitably cautious for an archive."
+  }
+]

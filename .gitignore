@@ -52,3 +52,6 @@ data/rules/candidates/
 
 # evaluation results: fixture outputs, model responses and reports; local by default
 .evaluations/
+
+# Unfrozen holdout drafts; the frozen exam is tracked.
+data/evaluation/holdout/drafts/

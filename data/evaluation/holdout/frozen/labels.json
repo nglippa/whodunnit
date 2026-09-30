@@ -1,0 +1,810 @@
+[
+  {
+    "id": "C001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The conversational aside and domestic image are specific choices that give this note its character.",
+    "ambiguous": false
+  },
+  {
+    "id": "C002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The clipped observations suit a field note and retain useful particulars.",
+    "ambiguous": false
+  },
+  {
+    "id": "C003",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The business language states a concrete change and request without padding.",
+    "ambiguous": false
+  },
+  {
+    "id": "C004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "Lowercase and the small physical detail are natural parts of the diarist’s voice.",
+    "ambiguous": false
+  },
+  {
+    "id": "C005",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "This concise troubleshooting record distinguishes observation from the next hypothesis.",
+    "ambiguous": false
+  },
+  {
+    "id": "C006",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The scene uses small actions and an unusual comparison to reveal character.",
+    "ambiguous": false
+  },
+  {
+    "id": "C007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The repetition clarifies a practical measurement error in ordinary working notes.",
+    "ambiguous": false
+  },
+  {
+    "id": "C008",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "Specific sensory details and a useful caveat make the praise personal.",
+    "ambiguous": false
+  },
+  {
+    "id": "C009",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "Line breaks and repetition carry the poem’s pacing and sense of postponement.",
+    "ambiguous": false
+  },
+  {
+    "id": "C010",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The conventional notice style supports clear dates, access, and an alternative.",
+    "ambiguous": false
+  },
+  {
+    "id": "C011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The letter moves through remembered objects and present plans in a distinct personal voice.",
+    "ambiguous": false
+  },
+  {
+    "id": "C012",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The status update gives measured quantities, uncertainty, and a conditional next step.",
+    "ambiguous": false
+  },
+  {
+    "id": "C013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The practical recipe directions and family aside belong together in this kind of headnote.",
+    "ambiguous": false
+  },
+  {
+    "id": "C014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The abstract uses discipline-appropriate framing and states the study’s limits.",
+    "ambiguous": false
+  },
+  {
+    "id": "C015",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The digression and concrete wayfinding details preserve the traveler’s perspective.",
+    "ambiguous": false
+  },
+  {
+    "id": "C016",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The procedural wording records decisions, gaps, and assignments precisely.",
+    "ambiguous": false
+  },
+  {
+    "id": "C017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The letter makes a concrete request and explains its practical basis without overclaiming.",
+    "ambiguous": false
+  },
+  {
+    "id": "C018",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [],
+    "rationale": "The note preserves observations, a possible confound, and a reproducible next step.",
+    "ambiguous": false
+  },
+  {
+    "id": "C019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The quotation and remembered details retain the speaker’s distinct account.",
+    "ambiguous": false
+  },
+  {
+    "id": "C020",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The support language is direct, specific, and appropriately apologetic.",
+    "ambiguous": false
+  },
+  {
+    "id": "C021",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The reflective pacing and specific sounds serve an emotional purpose.",
+    "ambiguous": false
+  },
+  {
+    "id": "C022",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The memo ties each recommendation to a physical observation and scheduling constraint.",
+    "ambiguous": false
+  },
+  {
+    "id": "C023",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The conventional event details coexist with a friendly, distinctive aside.",
+    "ambiguous": false
+  },
+  {
+    "id": "C024",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The note uses measured, practical reasoning with a testable alternative.",
+    "ambiguous": false
+  },
+  {
+    "id": "C025",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The piece lets ordinary objects and a restrained ending carry the family memory.",
+    "ambiguous": false
+  },
+  {
+    "id": "C026",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The report separates timestamps, observed temperatures, hypotheses, and follow-up actions.",
+    "ambiguous": false
+  },
+  {
+    "id": "C027",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The essay keeps its reflective claim grounded in the choir’s sounds and habits.",
+    "ambiguous": false
+  },
+  {
+    "id": "C028",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The interpretive form explains an object without flattening the uncertainty around it.",
+    "ambiguous": false
+  },
+  {
+    "id": "C029",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The case study uses standard structure while being candid about attribution limits.",
+    "ambiguous": false
+  },
+  {
+    "id": "C030",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The dialogue and withheld explanation let the reader infer the relationship.",
+    "ambiguous": false
+  },
+  {
+    "id": "C031",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The note explains method choices and limits in an appropriate academic register.",
+    "ambiguous": false
+  },
+  {
+    "id": "C032",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The practical observations and shifting attention sound like an individual diary.",
+    "ambiguous": false
+  },
+  {
+    "id": "C033",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The proposal uses conventional funding language to specify need, purchases, and meaningful measures.",
+    "ambiguous": false
+  },
+  {
+    "id": "C034",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The narrator’s uncertainty and route details shape a self-contained scene.",
+    "ambiguous": false
+  },
+  {
+    "id": "C035",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The comment’s formal structure supports a specific, bounded policy recommendation.",
+    "ambiguous": false
+  },
+  {
+    "id": "C036",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The essay’s repeated return to the cuff is a meaningful craft and memory device.",
+    "ambiguous": false
+  },
+  {
+    "id": "C037",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The spoken repetition and map reference suit an evidence-based public presentation.",
+    "ambiguous": false
+  },
+  {
+    "id": "C038",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The story’s repeated attention to clocks develops a local conflict through character and scene.",
+    "ambiguous": false
+  },
+  {
+    "id": "C039",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The memo uses routine operational language to connect observations, contingencies, costs, and decisions.",
+    "ambiguous": false
+  },
+  {
+    "id": "C040",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The essay’s route, overheard exchange, and recurring map detail create a particular perspective.",
+    "ambiguous": false
+  },
+  {
+    "id": "C041",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The academic discussion keeps claims proportional to the notebooks and explains uncertainty.",
+    "ambiguous": false
+  },
+  {
+    "id": "C042",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The letter’s ordinary digressions, private reference, and recurring home details make a sustained personal voice.",
+    "ambiguous": false
+  },
+  {
+    "id": "P001",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "REDUNDANCY"
+    ],
+    "rationale": "The copy repeats broad claims about history and community without naming an object, person, or experience.",
+    "ambiguous": false
+  },
+  {
+    "id": "P002",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "GENERIC_REGISTER",
+      "FORMULAIC",
+      "OTHER"
+    ],
+    "rationale": "The memo gives no phase, priority, decision, or action; its causal promise is empty.",
+    "ambiguous": false
+  },
+  {
+    "id": "P003",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The description could fit many towns and offers no identifiable detail.",
+    "ambiguous": false
+  },
+  {
+    "id": "P004",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "UNSUPPORTED_STRENGTH",
+      "FORMULAIC",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The research claim and projected effects have no supporting particulars, while the closing claim inflates a workshop program.",
+    "ambiguous": false
+  },
+  {
+    "id": "P005",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "REDUNDANCY"
+    ],
+    "rationale": "The announcement never explains what changed in scheduling.",
+    "ambiguous": false
+  },
+  {
+    "id": "P006",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "UNSUPPORTED_STRENGTH",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The speaker offers no position on the proposal or account of its effects; symmetry and an unattributed expert claim carry the argument.",
+    "ambiguous": false
+  },
+  {
+    "id": "P007",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The report claims progress but identifies no action, measure, or result.",
+    "ambiguous": false
+  },
+  {
+    "id": "P008",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "A universal preface delays any actual observation about tomatoes and repeatedly states that food connects people.",
+    "ambiguous": false
+  },
+  {
+    "id": "P009",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "UNSUPPORTED_STRENGTH",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The review praises every component but describes no performance choice or scene.",
+    "ambiguous": false
+  },
+  {
+    "id": "P010",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The appeal omits what support is provided and how donations are used.",
+    "ambiguous": false
+  },
+  {
+    "id": "P011",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH",
+      "REDUNDANCY"
+    ],
+    "rationale": "The editorial never identifies a provision of the plan or a concrete tradeoff; consensus is asserted rather than argued.",
+    "ambiguous": false
+  },
+  {
+    "id": "P012",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The piece cycles through familiar benefits and cautions without explaining a system, mechanism, or supported example.",
+    "ambiguous": false
+  },
+  {
+    "id": "P013",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "REDUNDANCY"
+    ],
+    "rationale": "The essay repeats broad leadership virtues and promises outcomes without an example or distinctive argument.",
+    "ambiguous": false
+  },
+  {
+    "id": "P014",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The campaign description withholds the actual activities, access details, and intended audience while promising broad effects.",
+    "ambiguous": false
+  },
+  {
+    "id": "P015",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The jacket offers praise and universal themes but no characters, setting, stakes, or identifiable plot.",
+    "ambiguous": false
+  },
+  {
+    "id": "P016",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "REDUNDANCY"
+    ],
+    "rationale": "The letter reports no accomplishment, result, or next commitment despite repeatedly claiming progress.",
+    "ambiguous": false
+  },
+  {
+    "id": "P017",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "UNSUPPORTED_STRENGTH",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The lengthy strategy repeats pillars and aspirations but supplies no regional facts, accountable actions, or measures.",
+    "ambiguous": false
+  },
+  {
+    "id": "P018",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE",
+      "REDUNDANCY"
+    ],
+    "rationale": "The speech has a tidy three-part structure but no field, event, or concrete experience anchoring its repeated advice.",
+    "ambiguous": false
+  },
+  {
+    "id": "M001",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The repetition and correction are deliberate features of a specific scene and voice.",
+    "ambiguous": false
+  },
+  {
+    "id": "M002",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The plain register and explicit uncertainty suit an incident record.",
+    "ambiguous": false
+  },
+  {
+    "id": "M003",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The familiar opening gains specificity and tension through the jam jars and the father's pause.",
+    "ambiguous": false
+  },
+  {
+    "id": "M004",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The recap is concise, specific, and appropriately procedural despite its plain style.",
+    "ambiguous": false
+  },
+  {
+    "id": "M005",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "VOICE_DEVICE",
+      "FORMULAIC"
+    ],
+    "rationale": "One broad appeal sentence could be sharpened, but the concrete scene, need, and self-awareness carry a distinct voice.",
+    "ambiguous": false
+  },
+  {
+    "id": "M006",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The methods and limits are clear; one broad sentence about implications adds little.",
+    "ambiguous": false
+  },
+  {
+    "id": "M007",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The review makes precise sensory judgments and acknowledges the personal basis for one comparison.",
+    "ambiguous": false
+  },
+  {
+    "id": "M008",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The memo gives a clear rule, reason, and review plan; one stock sentence adds no practical information.",
+    "ambiguous": false
+  },
+  {
+    "id": "M009",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "The label uses a quotation and uncertainty responsibly while retaining a distinctive sense of place.",
+    "ambiguous": false
+  },
+  {
+    "id": "M010",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "FORMULAIC"
+    ],
+    "rationale": "The notice is useful and candid about the detour; its final courtesy phrase is generic.",
+    "ambiguous": false
+  },
+  {
+    "id": "M011",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The methodical repetition tracks uncertainty and next steps; concrete observations justify the cautious close.",
+    "ambiguous": false
+  },
+  {
+    "id": "M012",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "UNSUPPORTED_STRENGTH"
+    ],
+    "rationale": "The report presents numbers and limits carefully; one inflated sentence contradicts that measured tone.",
+    "ambiguous": false
+  },
+  {
+    "id": "M013",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "A potentially familiar grief conclusion is earned by the scene and the precise repeated action.",
+    "ambiguous": false
+  },
+  {
+    "id": "M014",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The formal argument is specific, bounded by evidence, and appropriately tentative.",
+    "ambiguous": false
+  },
+  {
+    "id": "M015",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The note names a failure, scope, ownership, and remedy; its polished finish does not erase accountability.",
+    "ambiguous": false
+  },
+  {
+    "id": "M016",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The piece deliberately tests its own tidy lesson against specific counterexamples and observations.",
+    "ambiguous": false
+  },
+  {
+    "id": "M017",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE",
+      "LEGITIMATE_FORMALITY"
+    ],
+    "rationale": "Repetition, digression, and self-correction preserve an oral speaker's uncertainty and character.",
+    "ambiguous": false
+  },
+  {
+    "id": "M018",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "GENERIC_REGISTER"
+    ],
+    "rationale": "The rationale is concrete and candid, with one inflated slogan that the text itself recognizes as weak.",
+    "ambiguous": false
+  },
+  {
+    "id": "C043",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "A sustained, specific narrative uses recurring objects and quiet omissions to carry its meaning. The voice and pacing are intentional; length does not make it formulaic.",
+    "ambiguous": false
+  },
+  {
+    "id": "P019",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "Concrete operational facts are present, but repeated aspirational framing and stock transitions obscure decisions, owners, and tradeoffs. A reconstruction should preserve the facts and turn the proposal into a usable plan.",
+    "ambiguous": false
+  },
+  {
+    "id": "M019",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "Formal specifications and a personal episode serve the same practical argument. Repeated references to verification and uncertainty are purposeful for a public heat alert, so any edit should be minimal.",
+    "ambiguous": false
+  },
+  {
+    "id": "C044",
+    "disposition": "LEAVE_ALONE",
+    "concepts": [
+      "VOICE_DEVICE"
+    ],
+    "rationale": "Concrete scenes, an understated narrator, and the pocket motif give the piece its shape. The small uncertainties about the coat's former owner are deliberate, not gaps to smooth over.",
+    "ambiguous": false
+  },
+  {
+    "id": "P020",
+    "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+    "concepts": [
+      "FORMULAIC",
+      "REDUNDANCY",
+      "GENERIC_REGISTER",
+      "MECHANICAL_STRUCTURE"
+    ],
+    "rationale": "The memo repeats broad improvement language around a few usable facts. It needs a direct recommendation, a test plan, and clear interpretation of the attendance figures while preserving those figures and the calendar process.",
+    "ambiguous": false
+  },
+  {
+    "id": "M020",
+    "disposition": "LIGHT_EDIT",
+    "concepts": [
+      "LEGITIMATE_FORMALITY",
+      "VOICE_DEVICE"
+    ],
+    "rationale": "The technical recommendations and family memory reinforce each other. A light edit could tighten the release proposal and clarify how caption evidence will be shown without flattening the narrator's uncertainty.",
+    "ambiguous": true
+  }
+]

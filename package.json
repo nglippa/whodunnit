@@ -31,6 +31,7 @@
     "eval:baseline": "tsx tools/eval/cli.ts baseline",
     "eval:review": "tsx tools/eval/cli.ts review",
     "eval:semantic": "tsx tools/eval/cli.ts semantic",
+    "eval:holdout": "node --import tsx tools/eval/holdout.ts",
     "eval:series": "tsx tools/eval/cli.ts series"
   },
   "dependencies": {
