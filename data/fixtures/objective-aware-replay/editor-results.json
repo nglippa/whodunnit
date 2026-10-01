@@ -1,0 +1,264 @@
+[
+  {
+    "id": "oa01",
+    "data": {
+      "text": "The workshop starts at 9 a.m. on Thursday. Please arrive ten minutes early so we can begin together.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa02",
+    "data": {
+      "text": "I liked the quiet ending. It gave the characters room to make their own choices, and it left me thinking about the story afterward.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa03",
+    "data": {
+      "text": "The prototype stores preferences on the device. Closing the browser does not remove them, but clearing site data does.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa04",
+    "data": {
+      "text": "Thank you for inviting me to present. Tuesday at 2 p.m. works, and I can bring a short demonstration if that would be useful.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa05",
+    "data": {
+      "text": "We took the long way home, and somehow it was the best part of the day. The sky went all orange and Sam kept pointing out houses with tiny gardens. I want to remember that bit.",
+      "changes": [
+        "Added a comma for the opening sentence’s rhythm."
+      ]
+    }
+  },
+  {
+    "id": "oa06",
+    "data": {
+      "text": "Hey, I might be about 15 minutes late. The bus hasn't come yet, so go ahead and order if you're hungry. Sorry!",
+      "changes": [
+        "Made the timing easier to scan while keeping it uncertain and casual."
+      ]
+    }
+  },
+  {
+    "id": "oa07",
+    "data": {
+      "text": "I tried the bread again today. The crust was better, but the middle still felt a little heavy. Maybe I should give it more time to rise next time?",
+      "changes": [
+        "Smoothed the last question while keeping it tentative."
+      ]
+    }
+  },
+  {
+    "id": "oa08",
+    "data": {
+      "text": "I know I said I'd help set up Saturday, but I can only stay until noon now. I can still carry tables in the morning if that helps.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa09",
+    "data": {
+      "text": "The little balcony project is finally moving. I planted basil in two pots and left the third empty for now. I also made a list of what I might try next. It's not much, but I'm happy with it.",
+      "changes": [
+        "Smoothed the list while keeping the third pot empty."
+      ]
+    }
+  },
+  {
+    "id": "oa10",
+    "data": {
+      "text": "I thought the museum would be a quick stop, but we stayed almost three hours. The map room was my favorite. The rest of the group liked the model ships more, which is fair—they were pretty great.",
+      "changes": [
+        "Tightened the closing aside."
+      ]
+    }
+  },
+  {
+    "id": "oa11",
+    "data": {
+      "text": "Hi team, the draft agenda is attached. I put the budget review first so we can finish it before the vendor call at 3. Please let me know by Wednesday if anything important is missing.",
+      "changes": [
+        "Tightened the email and kept the agenda reason and deadline."
+      ]
+    }
+  },
+  {
+    "id": "oa12",
+    "data": {
+      "text": "Thanks for the proposal. We are interested in the pilot, but we can't commit to a full rollout yet. Could you send a revised quote for 20 seats and a separate estimate for training?",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa13",
+    "data": {
+      "text": "Hello Morgan,\n\nI reviewed the schedule you sent after our planning call. The Tuesday handoff looks workable if the copy is approved by Monday afternoon. That would give us time to put the approved text in the layout, check the links, and read the final version before sending it along. I have held Tuesday morning for those checks, but I have not asked anyone else to clear their whole day.\n\nIf approval slips, I suggest moving the handoff rather than rushing the final check. A revised date would be easier to explain than a file that needs corrections after delivery. The image list and page order look settled to me, so I do not think we need another meeting about them.\n\nI will watch the comments in the shared draft and flag anything that affects the schedule. Please let me know if the approval path has changed or if someone else should see the copy before Monday. Thanks for pulling the schedule together.",
+      "changes": [
+        "Tightened phrasing and grouped the schedule, contingency, and follow-up."
+      ]
+    }
+  },
+  {
+    "id": "oa14",
+    "data": {
+      "text": "Following up on yesterday's meeting: Priya said the sample labels will be ready on June 8. Our team can review them the next day if the files arrive by noon. Please let me know if that timing creates a conflict.",
+      "changes": [
+        "Polished the opening and clarified the noon condition."
+      ]
+    }
+  },
+  {
+    "id": "oa15",
+    "data": {
+      "text": "Hello all,\n\nWe finished the first pass on the onboarding guide this morning. The examples are in place and follow the sequence of their corresponding tasks in the guide. The screenshots still need design team approval. I left notes beside images where a label might change so reviewers can see what to check.\n\nIf the screenshots are approved, I expect to send a review copy on Friday. If approval does not come through, I will send a short update on Friday with a revised date instead.\n\nPlease flag any policy wording that the legal team should check. A comment in the draft is enough; you do not need to rewrite the passage. I will collect the comments in one document so we can resolve them together. Once the wording and screenshots are settled, I can prepare the help center version.\n\nThank you to everyone who has checked the examples and pointed out where a first-time reader might get stuck.",
+      "changes": [
+        "Condensed the status and made the conditional Friday plan explicit."
+      ]
+    }
+  },
+  {
+    "id": "oa16",
+    "data": {
+      "text": "In the classroom trial, 18 of 24 participants completed the optional second exercise. The shorter instructions may explain this observation, although we did not test that explanation separately.",
+      "changes": [
+        "Tightened the possible explanation while preserving its uncertainty."
+      ]
+    }
+  },
+  {
+    "id": "oa17",
+    "data": {
+      "text": "The parser processes one record at a time. If a row has no identifier, it skips that row, writes a warning, and continues with later rows. The warning does not mean the entire file failed to import.",
+      "changes": [
+        "Clarified what happens to the row and the rest of the file."
+      ]
+    }
+  },
+  {
+    "id": "oa18",
+    "data": {
+      "text": "In a small internal exercise, six office volunteers compared three layouts: a table, a chart, and a paragraph summary. Each saw the same invented sample figures and answered two kinds of questions: one about an exact value and one about changes across the sequence. Participants found the table easiest to scan for exact values, while the chart helped them notice broad changes. The summary prompted useful discussion, though several volunteers went back to the table to confirm a number. We took notes, not completion times, so we cannot say any layout was faster. The figures did not represent a live service, and this small office group cannot tell us what all readers would prefer. These observations can guide the next prototype. A further round could include people who do not work with these figures every day and ask how they reached their answers to see whether the apparent preference holds beyond this group.",
+      "changes": [
+        "Tightened the findings and kept the study limits and next step."
+      ]
+    }
+  },
+  {
+    "id": "oa19",
+    "data": {
+      "text": "The cache expires each entry 30 minutes after the last successful fetch. Requests made before expiry return the stored value, even if the source has changed. Returning that value does not restart the 30-minute period; only a successful fetch does. After expiry, the next request attempts a fresh fetch. If it succeeds, the service stores the new value and starts a new expiry period. If it fails, the service returns an error, not the expired value. This matters on the settings page, where an old value could suggest a recent change had already taken effect. The prototype does not retry a failed fetch in the background. A later request can try again, and a successful attempt restores the normal cached path. These rules apply to the current prototype and may change after load testing. For now, documentation and support replies should describe the error plainly and avoid promising a stale-value fallback. The cache stores one entry per requested key, so expiry or an error for one key does not by itself clear the others.",
+      "changes": [
+        "Clarified the expiry sequence and tightened repeated wording."
+      ]
+    }
+  },
+  {
+    "id": "oa20",
+    "data": {
+      "text": "It was a good event. We gave the demo, then talked with people afterward. People had fun.",
+      "changes": [
+        "Removed vague filler while keeping the stated events and reaction."
+      ]
+    }
+  },
+  {
+    "id": "oa21",
+    "data": {
+      "text": "The top of the page is confusing, and the button sits low enough that you might miss it at first. Could we try moving the button up?",
+      "changes": [
+        "Made the problem specific and kept the move as a suggestion."
+      ]
+    }
+  },
+  {
+    "id": "oa22",
+    "data": {
+      "text": "The instructions are unclear in two places. The part about saving comes after the part where you might close the tab, so I had to reread them. The example also uses a different name for the same thing.",
+      "changes": [
+        "Removed repetition and separated the two problems."
+      ]
+    }
+  },
+  {
+    "id": "oa23",
+    "data": {
+      "text": "I think we should sort out a few issues before sharing the plan. The delivery date appears in the timeline near the front, but it is blank in the action list at the end. That leaves it unclear whether the action list is unfinished or the timeline is out of date. The plan also says the review is done, though we still have two sections to check: who signs off on changes and what happens after delivery. Someone should update that status before sharing, so readers do not assume those decisions have already been made. I am less sure about the summary. It feels long when I am looking for the decision, but I have not tried cutting it, and some context may be useful. Maybe we could put the decision in the first sentence and see whether the rest still earns its place. I can mark the relevant lines in the draft for the next reviewer if that would help.",
+      "changes": [
+        "Organized the concrete issues and preserved uncertainty about the summary."
+      ]
+    }
+  },
+  {
+    "id": "oa24",
+    "data": {
+      "text": "The noodles were a little chaotic, honestly: too much lemon, not enough patience, and somehow still exactly what I wanted for dinner.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa25",
+    "data": {
+      "text": "I keep calling the first draft a map, but it was really a handful of landmarks and a hopeful arrow. By the third pass, I could finally see where the essay wanted to go.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa26",
+    "data": {
+      "text": "Dear future me: before you promise to label every box by moving day, remember the one marked 'miscellaneous.' It now contains three mugs, a cable, and one very important screw. Maybe start earlier next time.",
+      "changes": [
+        "Smoothed the sentence flow while keeping the playful details."
+      ]
+    }
+  },
+  {
+    "id": "oa27",
+    "data": {
+      "text": "Come join our tiny reading club. Our unofficial rule is that nobody has to finish the book: every page, the first chapter, or just the description on the back is enough. Last month we spent half the evening on a chapter none of us liked, then stayed another hour because the conversation got good. We forgot to pick the next book before heading home and did it in the group chat the following morning, which is fairly typical. We meet around a kitchen table, share whatever snacks people bring, and follow a better question when one comes up. Bring a strong opinion, or listen for a while; both are welcome. We read what we can, say what we noticed, and enjoy having people to talk with about it. There is always room for another chair.",
+      "changes": [
+        "Shaped the account into an invitation while keeping its informal details."
+      ]
+    }
+  },
+  {
+    "id": "oa28",
+    "data": {
+      "text": "The community print sale opens on May 14, 2027, and runs through May 16. Visitors can browse work from local artists and take home a printed catalog.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa29",
+    "data": {
+      "text": "The starter kit contains eight templates. Teams can use them to plan a small event, collect feedback, and write a short recap.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa30",
+    "data": {
+      "text": "We expect the neighborhood mural to be finished by the end of July. The final coat depends on a dry weekend, so this is still an estimate.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa31",
+    "data": {
+      "text": "The team believes the revised labels reduced setup time, based on comments from two volunteers. We have not measured setup time yet.",
+      "changes": []
+    }
+  },
+  {
+    "id": "oa32",
+    "data": {
+      "text": "The draft guide says the archive is open every Saturday and that visitors should book a slot online before arriving. It also notes that group tours are available on request.",
+      "changes": []
+    }
+  }
+]

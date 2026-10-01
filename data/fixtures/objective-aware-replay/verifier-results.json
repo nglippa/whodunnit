@@ -1,0 +1,350 @@
+[
+  {
+    "id": "oa01",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is unchanged, and the notice has no clear error.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa02",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The unchanged note already meets the request for essential corrections only.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa03",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The clear, accurate explanation is preserved as requested.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa04",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The reply needs no evident proofreading correction and remains unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa05",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The added comma tidies the sentence while preserving its details and conversational voice.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa06",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Both versions present 15 minutes as an uncertain estimate; the casual apology and bus explanation remain.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa07",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Next time conveys the same future attempt, and the question remains tentative.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa08",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The unchanged message clearly states the noon limit and offers help in a familiar, considerate tone.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa09",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The revised flow retains two planted pots, one empty pot, the tentative list, and the modest tone.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa10",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The punctuation change preserves the relaxed aside and almost three hours remains approximate.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa11",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The source says the budget review has to finish before the vendor call; the candidate softens that necessity to a possibility, changing the stated reason for putting it first.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa12",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The unchanged reply clearly separates interest in the pilot from commitment to a full rollout.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa13",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The edit keeps Monday approval as a condition of the Tuesday handoff and retains the proposed delay if approval slips.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa14",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The polished wording keeps Priya's statement attributed to her and the noon arrival condition; the flagged changes are stylistic.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa15",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate drops the source's point that the image notes let reviewers check labels without hunting through the whole document; brevity does not authorize losing that purpose.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa16",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The count remains exact, and the possible explanation remains tentative and explicitly untested.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa17",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The rewrite preserves record-by-record processing, the skipped row and warning, continuation with later rows, and the distinction from a failed whole-file import.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa19",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The timing basis, pre-expiry behavior, fetch outcomes, prototype limits, and per-key behavior remain intact. “Each entry” is supported by the source’s one-entry-per-key description.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa20",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The recap keeps the event, demo, subsequent conversation, and enjoyment without adding attendance, reactions, or outcomes.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa23",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Both plan issues and the uncertainty about shortening the summary remain. The wording about preventing an assumption expresses the same concern as the source’s possible reader assumption.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa24",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and provides none of the requested light polish.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa25",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not refine the reflection.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa26",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "“Before you promise” changes the source’s “when you say” into a stronger commitment and shifts the timing of the address.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa27",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The invitation retains the flexible reading rule, informal meetings, welcoming participation, and wry example. Omitting the source’s comment about writing an invitation fits the requested invitation form.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa28",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate leaves both dates unchanged despite the explicit update to June 4 through June 6, 2027.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa29",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate still says eight templates despite the explicit update to ten.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa30",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate retains the forecast and weather condition instead of the authorized confirmed completion on July 29, 2027.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa31",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate retains the volunteer-comment basis and unmeasured status instead of the authorized timed medians.",
+      "issue": null
+    }
+  },
+  {
+    "id": "oa32",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate retains every-Saturday opening and required booking instead of the authorized schedule and walk-in policy.",
+      "issue": null
+    }
+  }
+]

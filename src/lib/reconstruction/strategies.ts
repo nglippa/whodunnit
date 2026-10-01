@@ -123,7 +123,15 @@ export const RECONSTRUCTION_V10 = define({
   postCheckPolicy: { modelMeaning: "never", claimsExtractionMinWords: null },
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10];
+/** Experimental V10 editor with objective-aware candidate verification. */
+export const RECONSTRUCTION_V11 = define({
+  ...RECONSTRUCTION_V10,
+  version: 11,
+  name: "Reconstruction v11 (objective-aware verification)",
+  description: "V10 candidate generation with narrow objective-authorized changes, structural formatting checks, independent review, and honest repair accounting. Explicit runner only.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

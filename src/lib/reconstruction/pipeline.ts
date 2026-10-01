@@ -141,6 +141,8 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
     throw new Error("reconstruction-v4 requires the experimental orchestrator runner");
   if (strategy.id === "reconstruction" && strategy.version === 10)
     throw new Error("reconstruction-v10 requires the verified frontier runner");
+  if (strategy.id === "reconstruction" && strategy.version === 11)
+    throw new Error("reconstruction-v11 requires the objective-aware verified runner");
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;

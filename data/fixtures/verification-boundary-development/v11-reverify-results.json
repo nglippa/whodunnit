@@ -1,0 +1,158 @@
+[
+  {
+    "id": "vb01",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and makes no useful polish for the public operations brief.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb02",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not make the announcement more concise or easier to scan.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb03",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not carry out the requested rewrite.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb05",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not clarify the site notice for delivery drivers.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb06",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not turn it into a briefer, friendlier access notice.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb07",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "“Also” implies another way to access the recordings, which the source does not establish; the candidate does not simplify the notice.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb08",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and makes no useful adaptation for the community newsletter.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb10",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The summary is polished, but “to be decided” makes the funding decision more certain than the source’s “expected” wording.",
+      "issue": {
+        "span": {
+          "start": 77,
+          "end": 125
+        },
+        "constraint": "Replace this span with “with a funding decision expected after the July review” to retain the source’s uncertainty."
+      }
+    }
+  },
+  {
+    "id": "vb13",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not format the advisory for the town website.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb14",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and does not rewrite the note in more straightforward language.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb22",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The condition and both outcomes remain intact; moving “overnight” makes the instructions slightly tighter while preserving the protected phrases.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb26",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The event details and weather condition are preserved, but the candidate omits the protected phrase “after the talk.”",
+      "issue": {
+        "span": {
+          "start": 35,
+          "end": 82
+        },
+        "constraint": "Replace this span with “after the talk (the observatory’s public talk on Saturday)” to restore the protected phrase while retaining the event details."
+      }
+    }
+  }
+]

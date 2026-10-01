@@ -1,7 +1,7 @@
-import { z } from "zod";
+import { z, ZodError } from "zod";
 import { reconstructionRequestSchema, type ReconstructionRequest } from "@/domain/document";
 import type { VerificationResult } from "@/domain/verification";
-import type { CallMeta, StructuredCaller } from "@/lib/ai/provider";
+import { ProviderError, type CallMeta, type StructuredCaller } from "@/lib/ai/provider";
 import { candidateSchema } from "@/lib/ai/schemas";
 import { words } from "@/lib/analysis/tokenize";
 import { allChanges } from "@/lib/semantics/integrity";
@@ -12,7 +12,8 @@ import { applyRefinement } from "@/domain/refinement";
 import { wordingRetention } from "@/lib/evaluation/measures";
 import { buildRewritePlan } from "./rewrite-plan";
 import type { SemanticReviewV3 } from "./semantic-review";
-import { RECONSTRUCTION_V10 } from "./strategies";
+import { verifyObjectiveAware } from "./objective-aware-verification";
+import { RECONSTRUCTION_V10, RECONSTRUCTION_V11 } from "./strategies";
 
 const spanSchema = z.object({ start: z.number().int().nonnegative(), end: z.number().int().positive(), text: z.string().min(1).max(300) }).strict();
 export const candidateReviewSchemaV10 = z.object({
@@ -78,6 +79,14 @@ export interface VerifiedResultV10 {
   trace: VerifiedTraceV10;
 }
 
+export interface VerifiedTraceV11 extends Omit<VerifiedTraceV10, "strategy" | "fallbackReason"> {
+  strategy: "reconstruction-v11";
+  fallbackReason: FallbackReason | "verifier-malformed" | null;
+  authorizedChangeCount: number;
+  repairClassification: "USEFUL_REPAIR" | "SAFE_REVERSION" | "FAILED_REPAIR" | null;
+}
+export interface VerifiedResultV11 extends Omit<VerifiedResultV10, "trace"> { trace: VerifiedTraceV11 }
+
 function assertFree(caller: StructuredCaller | undefined, confirmed: boolean): void {
   if (caller?.info.mode === "live" && !(confirmed && caller.info.provider === "account-backed"))
     throw new Error("V10 denies live providers unless account-backed access is confirmed to incur no incremental API charge.");
@@ -117,8 +126,18 @@ function validReview(candidate: string, value: CandidateReviewV10): boolean {
 
 const requestsVoiceChange = (objective: string) => /\b(?:voice|tone|style|register|casual|formal|punctuation|fragments?|less polished)\b/i.test(objective);
 
-/** Isolated v10 runner. No web route selects it; model output and all repairs are rechecked against the source. */
+/** Published v10 behavior stays pinned. */
 export async function runVerifiedReconstruction(requestRaw: ReconstructionRequest, objectiveRaw: string, config: VerifiedEditorConfig): Promise<VerifiedResultV10> {
+  return runVerifiedCore(requestRaw, objectiveRaw, config, 10) as Promise<VerifiedResultV10>;
+}
+
+/** Experimental v11 branch. No production route selects it. */
+export async function runObjectiveAwareReconstruction(requestRaw: ReconstructionRequest, objectiveRaw: string, config: VerifiedEditorConfig): Promise<VerifiedResultV11> {
+  return runVerifiedCore(requestRaw, objectiveRaw, config, 11) as Promise<VerifiedResultV11>;
+}
+
+async function runVerifiedCore(requestRaw: ReconstructionRequest, objectiveRaw: string, config: VerifiedEditorConfig,
+  version: 10 | 11): Promise<VerifiedResultV10 | VerifiedResultV11> {
   const request = reconstructionRequestSchema.parse(requestRaw);
   const objective = objectiveRaw.trim();
   if (!objective || objective.length > 500) throw new Error("An explicit editing objective of at most 500 characters is required.");
@@ -128,18 +147,22 @@ export async function runVerifiedReconstruction(requestRaw: ReconstructionReques
   if (config.verifier && config.verifier === config.editor) throw new Error("V10 requires a separate verifier caller.");
   const started = Date.now();
   const source = request.source;
+  const strategy = version === 11 ? RECONSTRUCTION_V11 : RECONSTRUCTION_V10;
   const profile = request.refinement ? applyRefinement(request.profile, request.refinement.change) : request.profile;
   const plan = buildRewritePlan({ source, profile, current: request.refinement?.current, refinement: request.refinement?.change,
-    voiceprint: request.voiceprint, protectedPhrases: request.protectedPhrases }, RECONSTRUCTION_V10);
+    voiceprint: request.voiceprint, protectedPhrases: request.protectedPhrases }, strategy);
   const verifyContext = { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases };
-  const prompt = getPrompt(RECONSTRUCTION_V10.prompt).system;
+  const prompt = getPrompt(strategy.prompt).system;
+  const verify = (text: string) => version === 11
+    ? verifyObjectiveAware(source, text, objective, profile, verifyContext)
+    : { verification: verifyDeterministic(source, text, profile, verifyContext), authorized: [] };
   const timeoutMs = config.timeoutMs ?? 20_000;
   let candidate: string | null = null;
   let candidateVerification: VerificationResult | null = null;
   let review: CandidateReviewV10 | null = null;
   let editorMs = 0, verificationMs = 0, repairMs = 0;
   const metas: CallMeta[] = [];
-  const trace: VerifiedTraceV10 = { strategy: "reconstruction-v10", editor: config.editor.info.model ?? config.editor.info.provider,
+  const trace = { strategy: version === 11 ? "reconstruction-v11" : "reconstruction-v10", editor: config.editor.info.model ?? config.editor.info.provider,
     verifier: config.verifier ? config.verifier.info.model ?? config.verifier.info.provider : null,
     objectiveType: kindForObjective(objective), candidateGenerated: false, candidateUnchanged: false, deterministicVerdict: null,
     semanticVerificationRequested: false, semanticVerdict: null, repairRequested: false, repairAccepted: false,
@@ -147,10 +170,13 @@ export async function runVerifiedReconstruction(requestRaw: ReconstructionReques
     sourceWords: words(source).length, candidateWords: null, finalWords: words(source).length,
     wordEditDistance: { candidate: null, final: 0 },
     changeCount: 0, voiceVerdict: null, tokens: { input: null, output: null },
-    latencyMs: { editor: 0, verification: 0, repair: 0, total: 0 }, estimatedCostUsd: null };
+    latencyMs: { editor: 0, verification: 0, repair: 0, total: 0 }, estimatedCostUsd: null,
+    ...(version === 11 ? { authorizedChangeCount: 0, repairClassification: null } : {}) } as VerifiedTraceV10 | VerifiedTraceV11;
 
-  const finish = (text: string, outcome: Outcome, reason: FallbackReason | null): VerifiedResultV10 => {
+  const finish = (text: string, outcome: Outcome, reason: FallbackReason | "verifier-malformed" | null): VerifiedResultV10 | VerifiedResultV11 => {
     trace.outcome = outcome; trace.fallbackReason = reason; trace.finalChars = text.length; trace.finalWords = words(text).length;
+    if (trace.strategy === "reconstruction-v11" && trace.repairRequested)
+      trace.repairClassification = outcome === "repaired" ? text === source ? "SAFE_REVERSION" : "USEFUL_REPAIR" : "FAILED_REPAIR";
     trace.wordEditDistance = { candidate: candidate === null ? null : wordingRetention(source, candidate).wordEditDistance,
       final: wordingRetention(source, text).wordEditDistance };
     trace.latencyMs = { editor: editorMs, verification: verificationMs, repair: repairMs, total: Date.now() - started };
@@ -158,7 +184,7 @@ export async function runVerifiedReconstruction(requestRaw: ReconstructionReques
     const output = metas.map((meta) => meta.outputTokens);
     trace.tokens = { input: input.every((n) => n !== undefined) ? input.reduce<number>((n, x) => n + (x ?? 0), 0) : null,
       output: output.every((n) => n !== undefined) ? output.reduce<number>((n, x) => n + (x ?? 0), 0) : null };
-    return { source, candidate, text, candidateVerification, finalVerification: text === source ? verifyDeterministic(source, source, profile, verifyContext) : verifyDeterministic(source, text, profile, verifyContext), review, trace };
+    return { source, candidate, text, candidateVerification, finalVerification: verify(text).verification, review, trace } as VerifiedResultV10 | VerifiedResultV11;
   };
 
   try {
@@ -182,22 +208,25 @@ export async function runVerifiedReconstruction(requestRaw: ReconstructionReques
     trace.candidateChars = candidate.length; trace.candidateWords = words(candidate).length;
   } catch (error) { return finish(source, "source-fallback", error instanceof Error && error.message === "timeout" ? "timeout" : "editor-unavailable"); }
 
-  async function inspect(text: string): Promise<{ verification: VerificationResult; voice: ReturnType<typeof compareVoiceDevices>; semantic: CandidateReviewV10 | null; reason: FallbackReason | null }> {
+  async function inspect(text: string): Promise<{ verification: VerificationResult; voice: ReturnType<typeof compareVoiceDevices>; semantic: CandidateReviewV10 | null; reason: FallbackReason | "verifier-malformed" | null }> {
     const t = Date.now();
-    const verification = verifyDeterministic(source, text, profile, verifyContext);
+    const checked = verify(text);
+    const verification = checked.verification;
     const voice = compareVoiceDevices(source, text, plan.sourceVoice.slopDensity);
     if (text === candidate) {
       candidateVerification = verification;
       trace.deterministicVerdict = deterministicVerdict(verification);
       trace.voiceVerdict = voice.verdict;
       trace.changeCount = allChanges(integrityReport(source, text, profile, verifyContext)).length;
+      if (trace.strategy === "reconstruction-v11") trace.authorizedChangeCount = checked.authorized.length;
     }
     if (verification.status === "rejected") { verificationMs += Date.now() - t; return { verification, voice, semantic: null, reason: "hard-meaning-failure" }; }
     if (!config.verifier) { verificationMs += Date.now() - t; return { verification, voice, semantic: null, reason: "verifier-unavailable" }; }
     trace.semanticVerificationRequested = true;
     try {
-      const response = await timed(config.verifier.callStructured(candidateReviewSchemaV10, "candidate-verifier", getPrompt({ id: "verify", version: 2 }).system,
+      const response = await timed(config.verifier.callStructured(candidateReviewSchemaV10, "candidate-verifier", getPrompt({ id: "verify", version: version === 11 ? 3 : 2 }).system,
         JSON.stringify({ source, candidate: text, objective, deterministicFindings: verification.findings,
+          ...(version === 11 ? { authorizedChanges: checked.authorized } : {}),
           voiceDeviations: voice.deviations, voiceprint: request.voiceprint ? {
             observations: request.voiceprint.observations, stats: request.voiceprint.stats,
           } : undefined, protectedPhrases: plan.protectedPhrases.map((p) => p.text) })), timeoutMs);
@@ -206,12 +235,13 @@ export async function runVerifiedReconstruction(requestRaw: ReconstructionReques
       verificationMs += Date.now() - t;
       if (!parsed.success || !validReview(text, parsed.data) ||
         (voice.verdict === "DAMAGED" && parsed.data.verdict === "PASS" && !requestsVoiceChange(objective)))
-        return { verification, voice, semantic: null, reason: "invalid-verifier" };
+        return { verification, voice, semantic: null, reason: version === 11 && !parsed.success ? "verifier-malformed" : "invalid-verifier" };
       trace.semanticVerdict = parsed.data.verdict;
       return { verification, voice, semantic: parsed.data, reason: parsed.data.verdict === "REJECT" ? "verifier-rejected" : null };
     } catch (error) {
       verificationMs += Date.now() - t;
-      return { verification, voice, semantic: null, reason: error instanceof Error && error.message === "timeout" ? "timeout" : "verifier-unavailable" };
+      return { verification, voice, semantic: null, reason: error instanceof Error && error.message === "timeout" ? "timeout"
+        : version === 11 && (error instanceof ZodError || error instanceof ProviderError && error.code === "invalid_output") ? "verifier-malformed" : "verifier-unavailable" };
     }
   }
 

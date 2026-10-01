@@ -1,0 +1,341 @@
+[
+  {
+    "id": "vb01",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate changes a possible outcome into a promise.",
+      "issue": {
+        "span": {
+          "start": 11,
+          "end": 28,
+          "text": "pilot will reduce"
+        },
+        "constraint": "Keep the source’s uncertainty: the harbor pilot may reduce delays."
+      }
+    }
+  },
+  {
+    "id": "vb02",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate makes the extension unconditional.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 50,
+          "text": "The library will extend Saturday hours in January."
+        },
+        "constraint": "Keep the county-grant condition on the January extension."
+      }
+    }
+  },
+  {
+    "id": "vb03",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate drops the tenant association’s attribution.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 54,
+          "text": "The lobby doors have failed to latch twice this month."
+        },
+        "constraint": "Attribute the two reported latch failures to the tenant association."
+      }
+    }
+  },
+  {
+    "id": "vb04",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate invents a causal link from the vendor change to shorter lines and omits the museum’s uncertainty about the reason.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb06",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate omits a restriction on west-entrance access.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 60,
+          "text": "Residents may use the west entrance during the roof repairs."
+        },
+        "constraint": "Preserve the exception while the lift is carrying materials."
+      }
+    }
+  },
+  {
+    "id": "vb08",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate assigns the replacement to the wrong group.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 127,
+          "text": "The neighborhood group will replace the broken lights along the riverside path and collect feedback after the work is complete."
+        },
+        "constraint": "State that the parks department will replace the lights and the neighborhood group will collect feedback after the work."
+      }
+    }
+  },
+  {
+    "id": "vb09",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate invents a waiting-time motive, omits lift servicing as the reason, and makes the expected two-week duration definite.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb10",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "A proposal becomes a commitment.",
+      "issue": {
+        "span": {
+          "start": 18,
+          "end": 34,
+          "text": "has committed to"
+        },
+        "constraint": "Preserve the planning team’s proposed status."
+      }
+    }
+  },
+  {
+    "id": "vb14",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate wrongly credits the contractor with the finding.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 127,
+          "text": "A contractor found moisture behind the auditorium wall during an inspection and will assess the extent of the damage next week."
+        },
+        "constraint": "State that the university’s facilities team found the moisture and that a contractor will assess the damage next week."
+      }
+    }
+  },
+  {
+    "id": "vb15",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly authorizes the confirmed reduction; the November review remains.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb16",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective confirms the grant award and requests removal of that condition; the schedule notice remains.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb17",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only empty framing is removed; both changing-room details and timing remain.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb18",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The sender, recipients, subject, date, instructions, and sign-off are preserved in the archive format.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb19",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The repetition is removed while both access times remain unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb20",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The survey-based qualification and October follow-up remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb21",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Both points remain attributed to the fisheries office in one sentence.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb22",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "“Only if” and “otherwise” add an uncovered outcome at exactly freezing.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 151,
+          "text": "The grounds crew will cover the seedlings before sunrise only if the overnight temperature falls below freezing; otherwise, they will remain uncovered."
+        },
+        "constraint": "Keep the two stated cases: cover below freezing; leave uncovered above freezing. Do not assign an outcome at exactly freezing."
+      }
+    }
+  },
+  {
+    "id": "vb23",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The prose preserves every supply and the spare-paper detail.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb24",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The numbered list preserves all opening steps in order and the later key handoff.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb25",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The title identifies the Thursday room booking; all room availability details remain.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb26",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The weather condition is broader than the source’s clear-skies condition.",
+      "issue": {
+        "span": {
+          "start": 84,
+          "end": 102,
+          "text": "weather permitting"
+        },
+        "constraint": "Specify that the rooftop viewing session depends on clear skies."
+      }
+    }
+  },
+  {
+    "id": "vb27",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly changes the day and booking method; the June plan remains.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb28",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly authorizes Monday’s approval of four trees and removal of the pending vote; the location remains.",
+      "issue": null
+    }
+  }
+]
