@@ -36,7 +36,9 @@
     "eval:series": "tsx tools/eval/cli.ts series",
     "eval:discourse-development": "node --import tsx tools/eval/discourse-development.ts",
     "eval:semantic-development": "node --import tsx tools/eval/semantic-development.ts",
-    "eval:editing-jobs": "node --import tsx tools/eval/editing-job-validation.ts"
+    "eval:editing-jobs": "node --import tsx tools/eval/editing-job-validation.ts",
+    "eval:objective-feasibility": "node --import tsx tools/eval/objective-feasibility-validation.ts",
+    "eval:objective-feasibility-v4": "node --import tsx tools/eval/objective-feasibility-v4.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

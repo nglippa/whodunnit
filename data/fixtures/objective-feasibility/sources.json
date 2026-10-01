@@ -1,0 +1,398 @@
+[
+  {
+    "id": "S001",
+    "genre": "personal writing",
+    "text": "I used to think the little garden behind our apartment was too small to count as a garden. It is really a strip of soil between the recycling bins and a fence, and the sun reaches it for only a few hours. Last spring, I planted beans there anyway because my daughter wanted to see something climb. We tied string to the fence with knots that kept slipping, then checked the patch each morning before school. By July, the vines had covered the lower boards. We harvested 23 beans on the first Saturday in August. She arranged them by length on a dish towel and gave the crooked ones names. The plants went dry during a week when I was away helping my father, and I felt worse about that than I expected. We pulled the stalks in October. The soil still looks ordinary, but now when I take out the recycling I notice whether it is damp and whether anything green has appeared along the edge. I bought a packet of peas for this year. She has already asked if we can give them taller string.",
+    "creator": "A",
+    "pairWith": "S002",
+    "removedFact": "We harvested 23 beans on the first Saturday in August."
+  },
+  {
+    "id": "S002",
+    "genre": "personal writing",
+    "text": "I used to think the little garden behind our apartment was too small to count as a garden. It is really a strip of soil between the recycling bins and a fence, and the sun reaches it for only a few hours. Last spring, I planted beans there anyway because my daughter wanted to see something climb. We tied string to the fence with knots that kept slipping, then checked the patch each morning before school. By July, the vines had covered the lower boards. She arranged them by length on a dish towel and gave the crooked ones names. The plants went dry during a week when I was away helping my father, and I felt worse about that than I expected. We pulled the stalks in October. The soil still looks ordinary, but now when I take out the recycling I notice whether it is damp and whether anything green has appeared along the edge. I bought a packet of peas for this year. She has already asked if we can give them taller string.",
+    "creator": "A",
+    "pairWith": "S001",
+    "removedFact": "We harvested 23 beans on the first Saturday in August."
+  },
+  {
+    "id": "S003",
+    "genre": "email",
+    "text": "Hi Lena, I wanted to follow up on the room booking for the neighborhood repair night. I called the library this morning, and the meeting room is available on Thursday, November 12, from 6 to 8 p.m. They can set out six tables, but they asked us to bring our own extension cords and to keep soldering outside. I can bring the tool kit and the sign-in sheet. Could you check with Omar about the bike stand and let me know by Monday? If he cannot make it, we can still focus on lamps, small appliances, and clothing repairs. The flyer is mostly ready, though I would rather wait to post it until we know what we can actually offer. Last time people arrived with two bikes after the bike volunteers had left, and I do not want to repeat that confusion. If the library time works for you, reply with any changes to the flyer and I will send the final copy to the branch manager. Thanks, Mira",
+    "creator": "A"
+  },
+  {
+    "id": "S004",
+    "genre": "memo",
+    "text": "To: Facilities team From: Daniel Ortiz Subject: West entrance mat replacement The mat at the west entrance has begun curling along the left edge. Two staff members caught their shoes on it during the morning rush this week, although neither fell. The maintenance log shows that the edge was taped down twice in August. That has held for a few days at a time, but the adhesive lifts when the floor is mopped. I recommend replacing the mat with one that fits the recess rather than taping it again. Facilities can measure the recess on Tuesday and request a quote from the supplier we used for the north entrance. I will put a temporary caution sign beside the affected corner today and ask the cleaning crew to avoid wetting the tape until a replacement arrives. The reception desk should be told about the sign so they can direct visitors through the other door if the entrance becomes crowded. I have not set a replacement date because I do not yet know the supplier's lead time.",
+    "creator": "A"
+  },
+  {
+    "id": "S005",
+    "genre": "project update",
+    "text": "The archive catalog is moving again after a slow start. We finished entering the first two boxes of photographs, and the descriptions are consistent enough that volunteers can now use the same fields without asking me about every item. The remaining boxes are less orderly. Some envelopes have dates written on the outside, while others contain several unrelated events, so the pace may drop as we get further in. I am planning to meet with the local history librarian next week to settle how we should record uncertain dates. For now, the team has been leaving those fields blank and adding a note about the source of any estimate. That feels less satisfying than completing every record, but it will make the catalog more honest. We also found a few images with people's full names on the backs. I have set those aside until we agree what can be published online. If anyone has experience with permissions for community archives, please send me examples before Friday's meeting. The next update should include a revised estimate for completion.",
+    "creator": "A"
+  },
+  {
+    "id": "S006",
+    "genre": "technical explanation",
+    "text": "A spreadsheet can appear to sort correctly while quietly separating related information. This usually happens when someone selects only the column they want to order, rather than the entire table. Imagine a list with a person's name in one column and a delivery date in the next. Sorting just the date column puts the dates in order, but the names stay where they were. Each row now describes a combination that never existed. The safest check is to look at a row whose original pairing you know before and after sorting. If the spreadsheet asks whether to expand the selection, choose the option that moves the whole table. Headers should also be marked as headers so they do not get sorted into the data. I learned this after a volunteer schedule looked unusually tidy but assigned two people to shifts they had already declined. We restored the earlier file and repeated the sort with the full range selected. It took ten minutes to fix, but only because we still had the original.",
+    "creator": "A"
+  },
+  {
+    "id": "S007",
+    "genre": "email",
+    "text": "Subject: Draft agenda for Friday's review Hi team, I have put the draft agenda in the shared folder. The first item is the permit timeline, since that affects when we can schedule the contractor. The city confirmed the permit on September 18. We will then review the open questions on the drawings and decide which ones need an answer before the site visit. I have added a short section for budget changes because the revised lighting quote came in higher than expected. Please add comments to the agenda by Thursday afternoon, especially if there is a decision you need from the group. We have only forty-five minutes together, so I am trying to keep background information in the document and use the meeting for choices that cannot be made by email. Priya will take notes and send the decision list afterward. If you cannot attend, please name someone who can speak for your part of the work, or tell me which items need to wait. Thanks, Rowan",
+    "creator": "A",
+    "pairWith": "S008",
+    "removedFact": "The city confirmed the permit on September 18."
+  },
+  {
+    "id": "S008",
+    "genre": "email",
+    "text": "Subject: Draft agenda for Friday's review Hi team, I have put the draft agenda in the shared folder. The first item is the permit timeline, since that affects when we can schedule the contractor. We will then review the open questions on the drawings and decide which ones need an answer before the site visit. I have added a short section for budget changes because the revised lighting quote came in higher than expected. Please add comments to the agenda by Thursday afternoon, especially if there is a decision you need from the group. We have only forty-five minutes together, so I am trying to keep background information in the document and use the meeting for choices that cannot be made by email. Priya will take notes and send the decision list afterward. If you cannot attend, please name someone who can speak for your part of the work, or tell me which items need to wait. Thanks, Rowan",
+    "creator": "A",
+    "pairWith": "S007",
+    "removedFact": "The city confirmed the permit on September 18."
+  },
+  {
+    "id": "S009",
+    "genre": "personal writing",
+    "text": "I found my grandfather's old radio in a cupboard while clearing the house. It had a narrow wooden case and a dial that still turned with a small, rough click. When I was a child, he kept it on the kitchen table during baseball games. I remember the sound more than the games: a low hiss under the announcer, the spoon against his mug, and the screen door shutting whenever someone came in. I carried the radio home because I could not decide what else to do with it. It sat on my desk for three months. One Sunday I took it to a repair shop, where the owner said the cord was too brittle to plug in safely. She offered to replace it, but I asked her to wait. I am not sure I want the radio to work. The part I miss is sitting in that kitchen while someone else listened carefully. For now I have dusted the case and put it on a shelf near the window.",
+    "creator": "A"
+  },
+  {
+    "id": "S010",
+    "genre": "memo",
+    "text": "To: Event volunteers From: Community center office Subject: Saturday check-in The spring fair will use the east hall entrance for guests and the loading door for vendors. We expect the first vendors at 8 a.m. and doors open to the public at 10. Please arrive at the time on your shift sheet, then check in at the office before going to your station. The office has the cash boxes, maps, and spare name tags. The hall will be busy during setup, so keep the center aisle clear even if a table is still waiting for its supplies. If a vendor says their assigned space is blocked, find Helena or Marcus rather than moving another table yourself. We made several late changes to the layout, and the printed maps may not match every label on the floor. At the end of your shift, return any keys and tell the next volunteer about problems that have not been resolved. Please do not leave a cash box at an unattended station, even briefly.",
+    "creator": "A"
+  },
+  {
+    "id": "S011",
+    "genre": "project update",
+    "text": "Our school newsletter pilot has reached the point where the process matters more than the layout. Three teachers have submitted classroom notes, and the office has provided the calendar. The notes are useful, but each arrived in a different format. I spent most of yesterday checking names and finding the dates behind phrases like “next Thursday.” I have made a simple submission form for the next issue. It asks for the event date, a contact person, and one paragraph that can be printed with only light editing. I have not sent it yet because I would like one teacher to try it first and tell me which questions are confusing. We also need to decide who signs off on the final version. I can assemble it, but I cannot verify every classroom detail on my own. If we can agree on that handoff this week, the second issue should take less time and be easier to correct before it goes out.",
+    "creator": "A"
+  },
+  {
+    "id": "S012",
+    "genre": "technical explanation",
+    "text": "A room sensor that reports humidity every minute can still miss the reason the room feels damp. The reading is relative humidity, which changes when the air temperature changes even if the amount of water in the air stays much the same. In our storage room, the value often rises overnight because the heating system lowers the temperature then. We compare humidity with temperature on the same chart and look for changes that persist after the room warms up. A sudden increase during a rainstorm may point to water entering the room; a regular overnight rise may simply reflect cooler air. The sensor is mounted away from the exterior wall because that wall runs colder than the center of the room. We also check it against a handheld meter once a month. None of these steps makes the reading perfect, but together they keep us from treating a single number as a diagnosis. If a box feels wet or there is visible condensation, we inspect the room immediately regardless of the chart.",
+    "creator": "A"
+  },
+  {
+    "id": "S013",
+    "genre": "email",
+    "text": "Dear Ms. Chen, Thank you for sending the sample pages from the oral history booklet. I like the way the speakers' names are easy to find, and the larger type will help at the public reading. I noticed one detail in my section that needs correcting: my mother moved to Elm Street in 1974, not 1973. The interview recording should confirm the year, though I may have said it unclearly the first time. I also wondered whether the photograph on page six has enough contrast in print. On my screen the faces at the back of the group are hard to see. If it helps, I can bring the original print to the library on Wednesday so you can compare it with the scan. I realize the booklet is close to the printer's deadline. Please let me know whether the date correction can still be made, and whether you need anything from me for the photo. I appreciate the care you have taken with everyone's stories. Best, Ada",
+    "creator": "A"
+  },
+  {
+    "id": "S014",
+    "genre": "project update",
+    "text": "The courtyard lighting trial is complete. We installed temporary fixtures along the south walkway for two evenings and asked residents to mark the places where they still felt uncertain about their footing. The lights drew 180 watts in total during the trial. Most comments pointed to the short stretch beside the bicycle racks, where the light from the nearest fixture was partly blocked by a tree. We moved that fixture before the second evening, and the comments shifted to the entrance steps. I think we need to test one more position before choosing permanent hardware. The electrician can return next Tuesday, but we have not confirmed access to the storage room where the trial equipment is kept. Marta is checking with the building manager and will let the group know by Friday. The cost estimate we received covers fixtures and installation but not tree trimming, which may matter if we keep the current walkway position. I will circulate a revised sketch after the next test so that residents can react to the actual coverage rather than a rendering.",
+    "creator": "A",
+    "pairWith": "S015",
+    "removedFact": "The lights drew 180 watts in total during the trial."
+  },
+  {
+    "id": "S015",
+    "genre": "project update",
+    "text": "The courtyard lighting trial is complete. We installed temporary fixtures along the south walkway for two evenings and asked residents to mark the places where they still felt uncertain about their footing. Most comments pointed to the short stretch beside the bicycle racks, where the light from the nearest fixture was partly blocked by a tree. We moved that fixture before the second evening, and the comments shifted to the entrance steps. I think we need to test one more position before choosing permanent hardware. The electrician can return next Tuesday, but we have not confirmed access to the storage room where the trial equipment is kept. Marta is checking with the building manager and will let the group know by Friday. The cost estimate we received covers fixtures and installation but not tree trimming, which may matter if we keep the current walkway position. I will circulate a revised sketch after the next test so that residents can react to the actual coverage rather than a rendering.",
+    "creator": "A",
+    "pairWith": "S014",
+    "removedFact": "The lights drew 180 watts in total during the trial."
+  },
+  {
+    "id": "S016",
+    "genre": "memo",
+    "text": "To: Program directors From: Nadia Bell Subject: Translation requests for fall workshops Several workshop teams have asked for translated handouts, but the requests are arriving after materials have already been designed. That makes it harder to check the language and sometimes leaves too little space on the page. For the fall schedule, please send draft handouts to the program office two weeks before the first session. Include the language requested and the person who can answer questions about the content. We will log the request, check whether an approved translation already exists, and arrange review with a speaker familiar with the subject. A rushed translation may be more confusing than a shorter handout written clearly from the start. If a workshop is added with less than two weeks' notice, contact me directly so we can agree on what is realistic. This process applies to printed handouts and take-home sheets. Slides used only by a presenter can be handled case by case.",
+    "creator": "A"
+  },
+  {
+    "id": "S017",
+    "genre": "personal writing",
+    "text": "When I moved into this building, I learned the laundry room's habits before I learned my neighbors' names. The second dryer stopped early, the folding table wobbled, and someone always left a paperback on the windowsill. I started leaving my own books there after I finished them. For a while the shelf held only mysteries, then cookbooks appeared, followed by a bird guide with half its cover missing. Nobody posted a rule or said who started it. Last month a note asked us to keep the window clear because rain was reaching the books. I brought down a small plastic crate and put it under the table. The books fit, though the crate is ugly. A neighbor I had never spoken to thanked me in the elevator and said she had borrowed the bird guide for her son. I still do not know her name. Next time I see her, I might ask whether they found any of the birds in it.",
+    "creator": "A"
+  },
+  {
+    "id": "S018",
+    "genre": "technical explanation",
+    "text": "The shared calendar shows the time of a meeting in each viewer's local time zone. That is convenient until an invitation is created as a plain date and time without a zone attached. Then the calendar has to guess what the sender meant, and people in different places may see different starts. For a meeting with colleagues in three cities, I enter the event while the calendar is set to my current zone and include the zone in the invitation description as a second check. I also avoid writing only “9:00” in the accompanying email. The recipient should be able to tell whether that means my morning or theirs without opening an attachment. For events that move between locations, such as a touring workshop, we create a separate event for each stop instead of copying one event and changing the city in its title. The extra work is small compared with correcting invitations after people have made travel plans.",
+    "creator": "A"
+  },
+  {
+    "id": "S019",
+    "genre": "project update",
+    "text": "We have a working draft of the volunteer handbook, but the section on opening the workshop is still incomplete. The equipment list is accurate, and two new volunteers used it successfully last weekend. Their notes were especially helpful on where the spare batteries are stored. The bigger issue is the order of tasks. The current draft tells people to turn on the printers before checking whether the ventilation is running. One volunteer noticed the problem during the walk-through, so we changed the checklist on the wall. I will update the handbook text after I confirm the sequence with maintenance. We had hoped to print copies this month, but I would rather wait for that review. In the meantime, the wall checklist is the version to follow, and I have asked shift leads to point it out at the start of each session. Please send any other discrepancies you spot, with the page number if possible.",
+    "creator": "A"
+  },
+  {
+    "id": "S020",
+    "genre": "email",
+    "text": "Hi Ben, I read your notes from the shoreline survey and have one question before I use the numbers in the committee packet. You wrote that the northern path was closed for part of the afternoon. Do you know roughly when it reopened? I am trying to explain why the final hour has fewer observations, and I do not want to imply that volunteers left early if they simply could not reach that section. The counts themselves look consistent with the sheets you photographed. I have marked two species names for spelling, and I can make those corrections without changing the totals. If you still have the field notebook, a photo of the page with the closure note would be enough. The packet goes to the committee on Tuesday, so a reply by Monday morning would help. If the reopening time was never recorded, I will say that plainly and leave the comparison out. Thanks for taking such careful notes in difficult weather. Mara",
+    "creator": "A"
+  },
+  {
+    "id": "S021",
+    "genre": "healthcare operations",
+    "text": "The outpatient infusion unit has had a recurring delay at the first appointment of the day. Pharmacy receives the final treatment clearance after the patient is seated, even when the laboratory result was available the previous afternoon. Nurses then hold the chair while the medication is prepared, and later appointments begin to bunch together. The unit reviewed 24 weekday starts in August and found that nine began more than 20 minutes after the scheduled time. The review did not assess whether patients arrived late. Starting October 7, the charge nurse will confirm the next day's clearances at 3 p.m. and send a list of unresolved orders to the prescribing teams. Pharmacy will continue to prepare medication only after the order is signed. The unit manager will compare first-chair start times after four weeks and report whether the added check changes delays or merely moves the work earlier.",
+    "creator": "B",
+    "pairWith": "S022",
+    "removedFact": "The unit reviewed 24 weekday starts in August and found that nine began more than 20 minutes after the scheduled time."
+  },
+  {
+    "id": "S022",
+    "genre": "healthcare operations",
+    "text": "The outpatient infusion unit has had a recurring delay at the first appointment of the day. Pharmacy receives the final treatment clearance after the patient is seated, even when the laboratory result was available the previous afternoon. Nurses then hold the chair while the medication is prepared, and later appointments begin to bunch together. The review did not assess whether patients arrived late. Starting October 7, the charge nurse will confirm the next day's clearances at 3 p.m. and send a list of unresolved orders to the prescribing teams. Pharmacy will continue to prepare medication only after the order is signed. The unit manager will compare first-chair start times after four weeks and report whether the added check changes delays or merely moves the work earlier.",
+    "creator": "B",
+    "pairWith": "S021",
+    "removedFact": "The unit reviewed 24 weekday starts in August and found that nine began more than 20 minutes after the scheduled time."
+  },
+  {
+    "id": "S023",
+    "genre": "academic prose",
+    "text": "In a small interview study of staff who coordinate community health referrals, the boundary between a completed referral and a successful referral was less stable than the reporting form suggested. The form counted a referral as complete when a destination clinic acknowledged receipt. Coordinators, however, often continued to call patients about transport, appointment times, and eligibility documents. This distinction matters because receipt is easy to verify while access unfolds over several weeks. We conducted 18 interviews at two organizations and coded references to follow-up work, failed contacts, and informal problem solving. The interviews cannot establish how often patients ultimately attended an appointment. They do show that a single completion field can hide repeated labor after a handoff. Future evaluation should pair administrative timestamps with patient follow-up, while allowing for cases in which a patient chooses another service or declines care.",
+    "creator": "B"
+  },
+  {
+    "id": "S024",
+    "genre": "policy",
+    "text": "Departments may reserve shared conference rooms for clinical education, staff meetings, and approved community events. A reservation is confirmed only when the facilities calendar shows the requesting department and a named contact. Events involving outside attendees require a visitor plan submitted at least five business days before the event. The hosting department is responsible for checking room capacity, arranging interpretation if needed, and restoring furniture to its standard layout. Food service must use the approved vendor list unless an exception is documented by facilities. Facilities may move a reservation when emergency operations require the space, but the coordinator should give the host as much notice as practicable and help locate an alternative room. This policy does not determine whether an event is appropriate for the organization; sponsors remain responsible for securing any program approval that applies.",
+    "creator": "B"
+  },
+  {
+    "id": "S025",
+    "genre": "procedure",
+    "text": "Before releasing a deidentified encounter extract, the analyst checks that the request has an approved purpose and that the requested dates match the approval record. The analyst generates the file in the restricted workspace and compares its row count with the query result. A second analyst reviews the column list and confirms that direct identifiers are absent. The reviewer records the check in the request ticket, including the export date and file name. Only then does the first analyst place the extract in the designated transfer folder and notify the recipient through the ticket. If the column list differs from the approved request, the export is discarded and the query is corrected before another file is made. The procedure assumes the approval record is current; questions about scope go back to the data steward rather than being settled by the analyst.",
+    "creator": "B"
+  },
+  {
+    "id": "S026",
+    "genre": "meeting notes",
+    "text": "The September access meeting opened with a review of the call center's callback queue. The supervisor said staff were closing tasks after one unanswered call, although the written practice calls for two attempts on separate days. No one could say whether the difference began with the new phone system or was already common. The group agreed to pull a two-week sample before changing the task template. Patient services will identify records with one documented attempt, and the quality lead will check whether a second call was made outside the task system. A draft reminder can be prepared now, but it will not be distributed until the sample is reviewed. The next meeting is scheduled for October 12. The agenda also included weekend coverage, which was deferred because the scheduling lead was absent.",
+    "creator": "B"
+  },
+  {
+    "id": "S027",
+    "genre": "policy",
+    "text": "The university will retain survey records for seven years after the close of a funded project, unless a sponsor agreement or legal hold requires a longer period. Principal investigators are responsible for identifying the close date and notifying the records office when the retention period begins. The records office maintains the secure archive and documents any approved destruction. Working copies on personal devices should be removed after the project team confirms that the archive contains a readable copy. Researchers who need continued access for a related study must obtain the appropriate approval before using the records for that purpose. A legal hold suspends routine destruction until the office issues a written release. Questions about a sponsor's terms should be referred to the grants office; investigators should not infer an exception from an informal email.",
+    "creator": "B",
+    "pairWith": "S028",
+    "removedFact": "The records office maintains the secure archive and documents any approved destruction."
+  },
+  {
+    "id": "S028",
+    "genre": "policy",
+    "text": "The university will retain survey records for seven years after the close of a funded project, unless a sponsor agreement or legal hold requires a longer period. Principal investigators are responsible for identifying the close date and notifying the records office when the retention period begins. Working copies on personal devices should be removed after the project team confirms that the archive contains a readable copy. Researchers who need continued access for a related study must obtain the appropriate approval before using the records for that purpose. A legal hold suspends routine destruction until the office issues a written release. Questions about a sponsor's terms should be referred to the grants office; investigators should not infer an exception from an informal email.",
+    "creator": "B",
+    "pairWith": "S027",
+    "removedFact": "The records office maintains the secure archive and documents any approved destruction."
+  },
+  {
+    "id": "S029",
+    "genre": "academic prose",
+    "text": "The phrase \"implementation fidelity\" can obscure a practical distinction between delivering a program as specified and delivering the part that carries its proposed benefit. In this pilot, instructors adapted session order when students missed classes, but they retained the short reflection exercise at the end of each session. Our field notes recorded six changes to order across three classrooms. They did not capture the length or quality of every reflection, so fidelity to that component remains uncertain. We therefore report sequence changes separately from component delivery rather than assigning each class a single adherence score. This choice narrows the claim we can make about the pilot. It also gives a later study a clearer question: whether changes in sequence affect participation when the reflection exercise remains present and comparable.",
+    "creator": "B"
+  },
+  {
+    "id": "S030",
+    "genre": "healthcare operations",
+    "text": "At the discharge planning huddle, social workers reported that interpreter bookings were often requested after transport had already been arranged. This made it difficult to explain home services before the car arrived, especially when family members were not present. The team discussed adding an interpreter check to the morning discharge list. The discussion was useful, but the list is already crowded and staff were unsure who would make the booking when a need first appeared overnight. The service chief asked the unit representatives to describe their current handoffs by Friday. A decision about changing the list was deferred to the following huddle. Meanwhile, staff will continue to use the existing interpreter request process and will record delays in the discharge note when they affect patient instructions.",
+    "creator": "B"
+  },
+  {
+    "id": "S031",
+    "genre": "procedure",
+    "text": "When a laboratory instrument fails its daily quality control, the technologist stops patient testing on that instrument and marks it unavailable in the tracking system. The technologist repeats the control once with fresh material, following the manufacturer instructions. If the repeat remains outside the accepted range, the technologist alerts the shift lead and records the result, lot number, and maintenance performed. The shift lead decides whether samples can be moved to another validated instrument or must wait. Results generated since the last acceptable control are reviewed under the laboratory's incident process before release. The instrument may return to service only after acceptable control results are documented. This procedure covers the immediate response; it does not replace the separate investigation required for recurring failures.",
+    "creator": "B"
+  },
+  {
+    "id": "S032",
+    "genre": "meeting notes",
+    "text": "The facilities group reviewed complaints about the temperature in the west wing exam rooms. Several clinicians described afternoon rooms as warm, but the maintenance log contains only two entries from that wing this month. The building engineer said the control system measures corridor temperature, which may not reflect conditions inside a closed exam room. The group agreed that portable readings would help establish when and where the problem occurs. Facilities will place monitors in four rooms next week and collect hourly readings for five weekdays. Clinic staff will note whether doors were held open and whether a room was occupied when they report discomfort. No change to the thermostat schedule was approved. The group will review the readings at its October meeting and decide whether further balancing work is justified.",
+    "creator": "B"
+  },
+  {
+    "id": "S033",
+    "genre": "policy",
+    "text": "Employees who prepare public reports must use the approved data snapshot listed in the reporting calendar. Draft figures may be shared within the project team if they are labeled with the extraction date and marked preliminary. Before publication, the report owner confirms that table totals reconcile with the archived extract and that suppression rules have been applied. Corrections discovered after release are documented in an amendment note that identifies the affected tables and the date of the revised report. The policy applies to recurring dashboards and one-time summaries distributed outside the department. It does not prescribe which indicators a program should select. Program leads remain accountable for explaining the meaning and limits of each measure in language suitable for its audience.",
+    "creator": "B"
+  },
+  {
+    "id": "S034",
+    "genre": "academic prose",
+    "text": "Administrative waiting time is often treated as an attribute of a service encounter, but it is also produced by decisions about when the clock begins. In our clinic's quarterly report, time starts when a patient checks in at the front desk. It excludes time spent arranging transport and time between the referral and the offered appointment. That definition is defensible for assessing front-desk flow, yet it should not be read as a measure of the whole access experience. We compared reported wait times with interviews from 12 patients who had recently attended a first appointment. Several described scheduling and transport as the longest parts of the process. Because the interviews were recruited from people who attended, they tell us little about those who never reached the clinic. The report should therefore state its clock definition alongside its median and avoid treating a short on-site wait as evidence of timely access overall.",
+    "creator": "B"
+  },
+  {
+    "id": "S035",
+    "genre": "meeting notes",
+    "text": "The research committee reviewed the plan to share interview transcripts with a partner university. Members agreed that the existing consent language covers analysis by named collaborators, but they asked the team to clarify who would retain access after the grant ends. The project lead said the partner would store the files in an encrypted institutional workspace and would limit access to three investigators. The committee did not approve transfer at this meeting. It requested a revised access schedule and a copy of the partner's retention terms for its next review. The project lead will send both documents by November 3. Members also asked whether translated excerpts would be included in the transfer; the lead will confirm this in the revision. The minutes record the requested documents and the pending decision, but no timetable for final approval was set.",
+    "creator": "B",
+    "pairWith": "S036",
+    "removedFact": "The project lead will send both documents by November 3."
+  },
+  {
+    "id": "S036",
+    "genre": "meeting notes",
+    "text": "The research committee reviewed the plan to share interview transcripts with a partner university. Members agreed that the existing consent language covers analysis by named collaborators, but they asked the team to clarify who would retain access after the grant ends. The project lead said the partner would store the files in an encrypted institutional workspace and would limit access to three investigators. The committee did not approve transfer at this meeting. It requested a revised access schedule and a copy of the partner's retention terms for its next review. Members also asked whether translated excerpts would be included in the transfer; the lead will confirm this in the revision. The minutes record the requested documents and the pending decision, but no timetable for final approval was set.",
+    "creator": "B",
+    "pairWith": "S035",
+    "removedFact": "The project lead will send both documents by November 3."
+  },
+  {
+    "id": "S037",
+    "genre": "healthcare operations",
+    "text": "The mobile clinic's weekly inventory sheet lists vaccines by product and count, while the electronic record records doses administered by patient visit. Staff have been reconciling the two at the end of each month, when missing entries are difficult to trace. Last month the inventory count was three doses lower than the number expected from recorded administrations and documented wastage. The team has not established whether the difference reflects a counting error, a late record entry, or a dose moved between sites. The coordinator proposed a daily closeout that compares the sheet with the electronic total before supplies are locked. A nurse at each site would sign the count, and the coordinator would review exceptions the next morning. The proposal will be tested for two weeks before it becomes a standing requirement.",
+    "creator": "B"
+  },
+  {
+    "id": "S038",
+    "genre": "procedure",
+    "text": "At the start of each field visit, the coordinator confirms the appointment address and the names of staff expected to attend. The coordinator carries the printed consent form, the current interview guide, and the site contact number. If a participant has not arrived after 15 minutes, the coordinator calls once using the number in the scheduling record and documents the attempt. Staff do not enter a private residence without the participant present, even if a relative invites them inside. When an interview begins, the coordinator explains the recording choice and records verbal agreement separately from written consent to participate. If recording is declined, notes may be taken if the participant agrees. The coordinator uploads approved materials to the secure project folder by the next working day and stores paper forms in the locked cabinet.",
+    "creator": "B"
+  },
+  {
+    "id": "S039",
+    "genre": "academic prose",
+    "text": "A review of committee minutes from 2018 through 2022 suggests that the term \"community input\" referred to several different practices. Some reports used it for formal testimony at public meetings, while others used it for comments gathered through service organizations or brief surveys. The distinction is consequential because each route selects a different group of speakers. We coded the stated method for 41 agenda items and identified 13 for which the minutes gave no method at all. This is a document study, so the absence of a method in the minutes does not show that no outreach occurred. It does show that later readers cannot reconstruct how input entered those decisions from the public record alone. A modest reporting change would be to name the collection method and the number of contributors when the committee cites community input as a reason for action.",
+    "creator": "B"
+  },
+  {
+    "id": "S040",
+    "genre": "meeting notes",
+    "text": "The October curriculum meeting focused on the first-year writing sequence. Instructors reported that students were reaching the final project with uneven experience in evaluating sources. One instructor proposed moving the library workshop earlier; another noted that the current week already contains two major assignments. The group reviewed course calendars but had no attendance or assignment data that would show whether workshop timing caused the difference. It agreed to ask the librarian for two possible dates and to collect samples of the current source evaluations before revising the calendar. The department chair will bring the samples to the November meeting. The group also discussed whether the final project prompt should include a shorter model bibliography. That issue remains open because several instructors want to see the sample work first.",
+    "creator": "B"
+  },
+  {
+    "id": "S041",
+    "genre": "FAQ",
+    "text": "Why did the library change its Saturday hours?\n\nThe Saturday desk now opens at 10 a.m. and closes at 4 p.m. We made the change after counting visits at the door for eight Saturdays and reviewing when holds were collected. Fewer than six people entered during the first hour on any of those days, while the line just before closing was often long. Beginning October 12, two staff members will work the final hour instead of the first.\n\nYou can still return books at any time in the outside slot. The catalog and digital lending service are available around the clock. If you need help before 10, send a message through the website; a staff member will answer during desk hours. We will review the schedule in January, when winter usage is easier to compare with last year. The change applies only to the Oak Street branch. Other branch hours are listed on the library calendar.",
+    "creator": "C",
+    "pairWith": "S058",
+    "removedFact": "Beginning October 12, two staff members will work the final hour instead of the first."
+  },
+  {
+    "id": "S042",
+    "genre": "interview",
+    "text": "Q: When did you realize the community garden needed a different watering plan?\n\nA: Around the third hot week in July. We had a sign-up sheet, but it assumed everyone could get there after work. By then the raised beds had already gone a full afternoon in direct sun. The tomatoes looked fine one evening and wilted by the next.\n\nQ: What did you change?\n\nA: We moved the watering shift to early morning and paired each new volunteer with someone who had done it before. That sounds small, but it took away the uncertainty about how much water was enough. We also marked the beds that drain fastest with plain wooden stakes. I did not want a complicated chart that nobody would carry outside.\n\nQ: Is the new plan working?\n\nA: So far, yes. The soil is damp below the surface most mornings, and fewer plants are dropping flowers. We will see how it holds up next summer. A garden is good at reminding you that one successful week is not a system.",
+    "creator": "C"
+  },
+  {
+    "id": "S043",
+    "genre": "support communication",
+    "text": "Subject: Update on your replacement lamp shade\n\nHello Mara,\n\nI checked the replacement shade against the order number you sent on Monday. The warehouse had packed the correct size, but the carrier returned the parcel because the apartment number was missing from the label. I am sorry we did not catch that before it left.\n\nA new parcel is scheduled to leave tomorrow, October 3. I have added apartment 4B to the shipping address and asked our packing team to verify the printed label before collection. Once the carrier scans it, you will receive a tracking link by email. There is no new charge, and you do not need to return the shade from the first delivery unless it reaches you later.\n\nIf the address should read differently, reply before 3 p.m. tomorrow and I can hold the shipment. I will keep this case open until the tracking page shows delivery. Thank you for giving us a chance to sort it out.\n\nNina\nCustomer support",
+    "creator": "C"
+  },
+  {
+    "id": "S044",
+    "genre": "product writing",
+    "text": "The new reading list keeps saved articles in the order you choose. Drag an item by its handle to move it, or use the Move up and Move down options if you navigate by keyboard. Your list syncs when you are signed in and connected to the internet. Changes made offline remain on this device until it reconnects.\n\nA small label beside each article shows whether it is available for offline reading. The label does not mean the original website will remain online. If a publisher removes an article, the saved copy may also become unavailable. We wanted the list to feel like a simple place to plan what to read next, so folders and automatic sorting are not part of this release.\n\nThe first time you open an older list, its articles will appear in the order they were saved. Reordering them will not change your bookmarks elsewhere in the app. If the list looks empty after you sign in, check that you used the same account you used to save it.",
+    "creator": "C"
+  },
+  {
+    "id": "S045",
+    "genre": "reflective prose",
+    "text": "The bakery was quiet at six except for the fan over the oven and the scrape of trays on the worktable. I had agreed to help my aunt for one morning, mostly because she had asked twice and I was embarrassed to refuse again. I expected to carry boxes. Instead she handed me a pencil and told me to mark what came back unsold.\n\nBy nine, the counter looked abundant. By noon, half the sweet rolls were still there. I kept trying to explain the numbers as a strange Tuesday, but she showed me four weeks of the same marks in the same notebook. She was not angry about the waste. She seemed relieved that someone else could see it.\n\nWe baked fewer rolls the following Tuesday. A customer asked whether we had sold out early, and my aunt wrote the question beside the count. I liked that she did not treat one afternoon as a verdict. The notebook lived under the till, absorbing our certainty one pencil line at a time.",
+    "creator": "C"
+  },
+  {
+    "id": "S046",
+    "genre": "FAQ",
+    "text": "Can I bring a bicycle onto the ferry?\n\nYes, bicycles are welcome on the regular crossings when there is space on the lower deck. Please arrive at least fifteen minutes before departure and tell the crew member at the gate that you have a bicycle. They will show you where to secure it. You must walk it while boarding and remain with it until the crew says the deck is clear.\n\nThere is no separate bicycle reservation. Space is assigned as passengers board, so arriving early helps but does not guarantee a place. If the bicycle area fills, staff will direct you to the next crossing or explain the available alternatives. Folding bicycles in a closed bag may be carried as luggage, provided the bag does not block an aisle.\n\nThe same rules apply to electric bicycles, but the battery must stay attached and the bicycle must be switched off. Please do not charge a battery on board. Cargo bicycles are too wide for the marked area and cannot travel on this service.",
+    "creator": "C"
+  },
+  {
+    "id": "S047",
+    "genre": "interview",
+    "text": "Q: What was the hardest part of moving the archive?\n\nA: The labels. People picture boxes and trucks, but the boxes were easy to count. The labels came from three different filing systems. A box marked \"correspondence\" might contain letters, invoices, and a photograph someone had slipped in years ago. We had to resist guessing where it belonged.\n\nQ: Did you find anything unexpected?\n\nA: A set of handwritten menus from the old station cafe. They were modest objects, and that is why I remember them. Someone had corrected the price of tea with the same blue pencil on several dates. It made the station feel occupied again, not preserved behind glass.\n\nQ: How will people use the collection now?\n\nA: The public index is being updated box by box. Readers can request material by its temporary number while we finish the descriptions. We have left some entries broad because we have not checked every page. I would rather say that clearly than give a precise label we have no evidence for.",
+    "creator": "C"
+  },
+  {
+    "id": "S048",
+    "genre": "support communication",
+    "text": "Subject: Your workshop booking for November 6\n\nHi Daniel,\n\nYour confirmation email may have made the printmaking workshop look like two separate bookings. The system sent one message when you reserved a place and another when your payment cleared. I checked the booking record this morning: it shows one seat under your name, and only one payment was captured.\n\nYou can ignore the second confirmation number. Please bring either email to the front desk when you arrive. We will have your name on the class list. The workshop begins at 6:30 p.m.; doors open at 6:15 so participants can put away coats and choose an apron.\n\nI have flagged the duplicate message to our booking provider because it has confused other guests this week. I cannot give you a date for a fix yet. If your card statement shows two completed charges after the pending transactions settle, send us a screenshot with unrelated details covered and we will investigate it right away.\n\nBest,\nEli\nVisitor services",
+    "creator": "C",
+    "pairWith": "S059",
+    "removedFact": "I checked the booking record this morning: it shows one seat under your name, and only one payment was captured."
+  },
+  {
+    "id": "S049",
+    "genre": "product writing",
+    "text": "Make a route from the places you have saved. Open a place, choose Add to route, and repeat until you have the stops you want. The route view shows an estimated walking time between stops. It uses the streets available in the map data and may not reflect temporary closures, steep paths, or construction.\n\nYou can drag stops into a different order. The estimate updates when you do. Removing a stop from a route leaves the place in your saved list, so you can use it again later. A route stays private to your account until you choose Share and copy its link. Anyone with that link can see the stops and their order, but they cannot edit your route.\n\nIf you are planning a trip with someone else, send the link after you finish arranging the stops. We do not yet have a shared editing mode. Routes created on the web should appear on your phone once both devices are online and signed in to the same account.",
+    "creator": "C"
+  },
+  {
+    "id": "S050",
+    "genre": "reflective prose",
+    "text": "I had always thought of the bus stop as a place to leave. On the first morning after my father stopped driving, I met him there because he did not trust the timetable on his phone. The paper schedule was folded into fourths in his coat pocket. He had drawn a circle around the return trip and then drawn another circle because the first one was too faint.\n\nThe bus was late, though only by four minutes. He kept looking up the road, then down at the paper. I could have told him the live arrival time, but he already knew I had checked it. When it came, he asked the driver a question about transfers that I had answered at breakfast. The driver answered it too, without hurry.\n\nA month later he went alone. He still carried the folded schedule, now softened at the creases. I realized he had wanted a route he could explain to himself, not another person to manage the trip for him.",
+    "creator": "C"
+  },
+  {
+    "id": "S051",
+    "genre": "FAQ",
+    "text": "What happens if it rains during the outdoor film night?\n\nWe make the call at 4 p.m. on the day of the screening. Light rain may delay the start, but a forecast of steady rain or lightning will move the film to the school hall. We will post the location on the event page and put a sign at the park entrance. Tickets are valid at either venue.\n\nThe hall has fewer seats than the lawn, so entry there is first come, first served. If we cannot admit everyone who arrives, we will offer a refund at the desk or by email the next day. Bring the ticket message on your phone or a printed copy; staff can also look up your name if the message is hard to find.\n\nBlankets and low chairs are welcome in the park. In the hall, please leave chairs outside and use the provided seating. We know a late venue change makes planning harder for families. The event page is the quickest place to check before you set out.",
+    "creator": "C"
+  },
+  {
+    "id": "S052",
+    "genre": "interview",
+    "text": "Q: Why did your team stop sending the weekly neighborhood newsletter?\n\nA: We did not stop sharing news. We stopped promising a Friday email every week. For a while, that promise shaped the work: someone would be searching for a small item at five on Thursday because an empty section looked like failure. Meanwhile, longer stories sat unfinished.\n\nQ: What does the new schedule look like?\n\nA: We send an edition when we have three or four pieces that belong together. Sometimes that is a week apart, sometimes three weeks. The calendar on the website still lists events as they come in. People who need dates do not have to wait for an email.\n\nQ: Did readers object?\n\nA: A few asked whether they had been removed from the list. That told us the change had not been explained well enough. I wrote a short note in the next edition and added the same explanation to the signup page. We are watching replies for the next couple of months before deciding whether to change the schedule again.",
+    "creator": "C"
+  },
+  {
+    "id": "S053",
+    "genre": "support communication",
+    "text": "Subject: Follow-up on the audio guide at the museum\n\nHello Priya,\n\nThank you for telling us that stop 14 played the description for stop 15 during your visit. I tried the guide on two loan devices this afternoon and heard the same mismatch. The printed number beside the painting was correct; the audio file was attached to the wrong stop in our guide system.\n\nOur exhibitions coordinator will correct the attachment before the museum opens on Friday. I have asked the front desk to mention the issue to visitors using the guide tomorrow, so they can skip that stop or read the wall label instead. The rest of the route played in the right order during my check, although that check was limited to the English version.\n\nI am sorry the error interrupted your visit. If you would like, I can send the corrected description as soon as it is available. There is no need to send any information beyond this email address.\n\nRegards,\nAmir\nVisitor experience",
+    "creator": "C",
+    "pairWith": "S060",
+    "removedFact": "Our exhibitions coordinator will correct the attachment before the museum opens on Friday."
+  },
+  {
+    "id": "S054",
+    "genre": "product writing",
+    "text": "The order page now shows which items are ready to collect. Each item has its own status because a single order may be packed in more than one room. Wait for the Ready for collection message before traveling to the store. A status of Packed means staff have finished preparing the item, but it may still need to reach the collection desk.\n\nWhen everything is ready, bring your order number and the name used at checkout. If someone else is collecting for you, forward the pickup message to them. They will also need to give your name at the desk. We hold prepared orders for seven days after the final Ready message. The collection deadline appears in that message and on the order page.\n\nThe status page refreshes when you reopen it. It does not update continuously while you are looking at it. If a status seems stuck for more than two business days, contact the store listed on your receipt so staff can check the order in person.",
+    "creator": "C"
+  },
+  {
+    "id": "S055",
+    "genre": "reflective prose",
+    "text": "For three years I kept the cracked blue bowl on the top shelf because it was too useful to throw away and too awkward to use. The crack began near the rim and stopped halfway down. It never leaked, but I always turned that side toward the wall when friends came over, as if a bowl could be embarrassed.\n\nLast winter I started putting keys in it. That made sense of the shelf: the bowl was near the door, and I was always searching for my keys. Then the shelf filled with gloves, receipts, batteries, and a small screwdriver that belonged in the kitchen. The bowl had solved one problem and quietly invited several others.\n\nOn Sunday I emptied it. I found two keys I could not name and a ticket from a concert I had forgotten. I kept the ticket for an hour, then put it in the recycling. The bowl is still by the door. It holds only keys now, which may be the first job I have ever given it that it can do without my help.",
+    "creator": "C"
+  },
+  {
+    "id": "S056",
+    "genre": "FAQ",
+    "text": "How do I ask for a quieter seat at a performance?\n\nWhen you book, use the seating notes field to say that you would prefer to sit away from the speakers or the main aisle. Our box office team will look for an available seat that fits. You can also call during opening hours if you would rather talk through the options. We cannot promise that a particular part of the room will be quiet, since sound levels vary by performance and other audience members may need to move.\n\nFor the Sunday matinee, we reserve a small number of seats near the rear exit until noon on Friday. These seats are intended for people who may need to step out and return. After Friday noon, any unclaimed seats go back into general sale. Earplugs are available without charge at the entrance, and you can leave and re-enter during the performance.\n\nIf you have already booked, contact the box office with your booking number. Staff can explain the seats that are still available and move your booking if there is a suitable option.",
+    "creator": "C"
+  },
+  {
+    "id": "S057",
+    "genre": "interview",
+    "text": "Q: What do people misunderstand about restoring old bicycles?\n\nA: They imagine the exciting part is finding a rare frame. Often the real work is figuring out what has already been changed. A bike may have a new wheel, a bent rack, and three different sizes of bolt. None of that is a problem if it is safe and the owner knows what it needs.\n\nQ: How do you decide what to keep?\n\nA: I ask the rider where the bike is going. A commuter needs reliable lights and brakes more than a faithful copy of a catalog photograph. If it is a family bike with a history, I try to keep the visible marks that matter to them. I write down what I replace, partly so another mechanic can understand the choices later.\n\nQ: Is there one repair you remember?\n\nA: A woman brought in a green touring bike she had ridden to work for years. We repaired the hub and left the scratched bell in place. She rang it once outside the shop and said it sounded exactly the same. That was enough of a review for me.",
+    "creator": "C"
+  },
+  {
+    "id": "S058",
+    "genre": "FAQ",
+    "text": "Why did the library change its Saturday hours?\n\nThe Saturday desk now opens at 10 a.m. and closes at 4 p.m. We made the change after counting visits at the door for eight Saturdays and reviewing when holds were collected. Fewer than six people entered during the first hour on any of those days, while the line just before closing was often long. \n\nYou can still return books at any time in the outside slot. The catalog and digital lending service are available around the clock. If you need help before 10, send a message through the website; a staff member will answer during desk hours. We will review the schedule in January, when winter usage is easier to compare with last year. The change applies only to the Oak Street branch. Other branch hours are listed on the library calendar.",
+    "creator": "C",
+    "pairWith": "S041",
+    "removedFact": "Beginning October 12, two staff members will work the final hour instead of the first."
+  },
+  {
+    "id": "S059",
+    "genre": "support communication",
+    "text": "Subject: Your workshop booking for November 6\n\nHi Daniel,\n\nYour confirmation email may have made the printmaking workshop look like two separate bookings. The system sent one message when you reserved a place and another when your payment cleared. \n\nYou can ignore the second confirmation number. Please bring either email to the front desk when you arrive. We will have your name on the class list. The workshop begins at 6:30 p.m.; doors open at 6:15 so participants can put away coats and choose an apron.\n\nI have flagged the duplicate message to our booking provider because it has confused other guests this week. I cannot give you a date for a fix yet. If your card statement shows two completed charges after the pending transactions settle, send us a screenshot with unrelated details covered and we will investigate it right away.\n\nBest,\nEli\nVisitor services",
+    "creator": "C",
+    "pairWith": "S048",
+    "removedFact": "I checked the booking record this morning: it shows one seat under your name, and only one payment was captured."
+  },
+  {
+    "id": "S060",
+    "genre": "support communication",
+    "text": "Subject: Follow-up on the audio guide at the museum\n\nHello Priya,\n\nThank you for telling us that stop 14 played the description for stop 15 during your visit. I tried the guide on two loan devices this afternoon and heard the same mismatch. The printed number beside the painting was correct; the audio file was attached to the wrong stop in our guide system.\n\n I have asked the front desk to mention the issue to visitors using the guide tomorrow, so they can skip that stop or read the wall label instead. The rest of the route played in the right order during my check, although that check was limited to the English version.\n\nI am sorry the error interrupted your visit. If you would like, I can send the corrected description as soon as it is available. There is no need to send any information beyond this email address.\n\nRegards,\nAmir\nVisitor experience",
+    "creator": "C",
+    "pairWith": "S053",
+    "removedFact": "Our exhibitions coordinator will correct the attachment before the museum opens on Friday."
+  }
+]

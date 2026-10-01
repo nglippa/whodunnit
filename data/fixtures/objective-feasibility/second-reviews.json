@@ -1,0 +1,3426 @@
+[
+  {
+    "reviewer": "second-00",
+    "annotations": [
+      {
+        "taskId": "T084",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Lead a short status update with the pending transfer decision and requested materials.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The committee did not approve transfer at this meeting.",
+              "It requested a revised access schedule and a copy of the partner's retention terms for its next review.",
+              "The project lead will send both documents by November 3.",
+              "Members also asked whether translated excerpts would be included in the transfer; the lead will confirm this in the revision."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The decision, requested materials, and submission date are stated.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Give the date final transfer approval is expected.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "An expected date for final approval.",
+                "prohibitedInference": "Treat November 3, the document submission deadline, or the next review as an approval date."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly says no timetable for final approval was set."
+          }
+        ],
+        "rationale": "The status update is supported; the requested approval date is absent."
+      },
+      {
+        "taskId": "T026",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Shorten the newsletter update while retaining the pilot status and process problem.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Three teachers have submitted classroom notes, and the office has provided the calendar.",
+              "The notes are useful, but each arrived in a different format.",
+              "I spent most of yesterday checking names and finding the dates behind phrases like “next Thursday.”"
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "These details support a concise account of progress and why the process needs work.",
+            "missing": []
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Make the next steps for the submission form and final sign-off clear.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I have made a simple submission form for the next issue.",
+              "I have not sent it yet because I would like one teacher to try it first and tell me which questions are confusing.",
+              "We also need to decide who signs off on the final version.",
+              "If we can agree on that handoff this week, the second issue should take less time and be easier to correct before it goes out."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "A teacher trial and a decision on sign-off are explicit next steps.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Name the person who will approve the final issue.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The identity of the final issue's approver.",
+                "prohibitedInference": "Assign approval to the writer, a teacher, or the office from their other roles."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says this handoff has yet to be decided."
+          }
+        ],
+        "rationale": "The update and pending sign-off can be clarified, but the approver is unknown."
+      },
+      {
+        "taskId": "T087",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "SUMMARIZE_EXISTING",
+            "requirement": "Turn the committee minutes into a short status update that preserves the transfer status and outstanding review items.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The committee did not approve transfer at this meeting.",
+              "It requested a revised access schedule and a copy of the partner's retention terms for its next review.",
+              "Members also asked whether translated excerpts would be included in the transfer; the lead will confirm this in the revision."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The source states the pending decision and identifies the materials and clarification needed for the next review."
+          },
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Put the transfer decision and next requested materials at the beginning of the update.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The committee did not approve transfer at this meeting.",
+              "It requested a revised access schedule and a copy of the partner's retention terms for its next review."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "Both facts are explicit and can be moved ahead of the background without changing their meaning."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Give the date final approval is expected.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [
+              "The minutes record the requested documents and the pending decision, but no timetable for final approval was set."
+            ],
+            "missing": [
+              {
+                "proposition": "A date when final approval is expected.",
+                "prohibitedInference": "Do not infer an approval date from the next review, the promised revision, or the pending decision."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly says no timetable for final approval was set."
+          }
+        ],
+        "rationale": "A concise, reordered status update is supported, but the requested final approval date is unavailable and must not be invented."
+      },
+      {
+        "taskId": "T029",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Condense the explanation into a practical monitoring note.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We compare humidity with temperature on the same chart and look for changes that persist after the room warms up.",
+              "We also check it against a handheld meter once a month."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supplies the monitoring routine.",
+            "missing": []
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Distinguish routine chart interpretation from signs requiring immediate inspection.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "A sudden increase during a rainstorm may point to water entering the room; a regular overnight rise may simply reflect cooler air.",
+              "If a box feels wet or there is visible condensation, we inspect the room immediately regardless of the chart."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly separates an interpreted reading from physical signs that trigger immediate inspection.",
+            "missing": []
+          }
+        ],
+        "rationale": "All requested distinctions and actions are present."
+      },
+      {
+        "taskId": "T155",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "LOCAL",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Let the ending dwell on the crate leading to the first conversation with the neighbor, while retaining uncertainty about her name.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I brought down a small plastic crate and put it under the table.",
+              "A neighbor I had never spoken to thanked me in the elevator and said she had borrowed the bird guide for her son.",
+              "I still do not know her name."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The connection and uncertainty are explicit.",
+            "missing": []
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Identify the bird guide by title, after asking the writer for it.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The bird guide's title.",
+                "prohibitedInference": "Invent a title or infer it from the book's subject or damaged cover."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The title is not supplied; the writer explicitly asks to be asked for it."
+          }
+        ],
+        "rationale": "The ending can be revised; the title requires a reply from the writer."
+      },
+      {
+        "taskId": "T090",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Turn the daily closeout proposal into clear, role-specific instructions.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The coordinator proposed a daily closeout that compares the sheet with the electronic total before supplies are locked.",
+              "A nurse at each site would sign the count, and the coordinator would review exceptions the next morning."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The nurse and coordinator actions and their order are specified.",
+            "missing": []
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Frame the instructions as a two-week test rather than a standing requirement.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The proposal will be tested for two weeks before it becomes a standing requirement."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The trial status is explicit.",
+            "missing": []
+          }
+        ],
+        "rationale": "The proposed actions and temporary status are fully supported."
+      },
+      {
+        "taskId": "T156",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Explain how a zone-attached event and a zone written in the description let a recipient check the invitation's time.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The shared calendar shows the time of a meeting in each viewer's local time zone.",
+              "That is convenient until an invitation is created as a plain date and time without a zone attached. Then the calendar has to guess what the sender meant, and people in different places may see different starts.",
+              "For a meeting with colleagues in three cities, I enter the event while the calendar is set to my current zone and include the zone in the invitation description as a second check."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The automatic display, ambiguity risk, and written cross-check are all stated.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_EXAMPLE",
+            "requirement": "Use the actual three cities as an example, after asking which cities they were.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The names of the three cities.",
+                "prohibitedInference": "Choose plausible cities or infer them from the writer's current zone."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source mentions three cities without naming them."
+          }
+        ],
+        "rationale": "The mechanism can be clarified; the requested real-city example requires the writer's answer."
+      },
+      {
+        "taskId": "T123",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Condense the interview while retaining the reason the weekly promise became unhelpful.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We did not stop sharing news. We stopped promising a Friday email every week.",
+              "someone would be searching for a small item at five on Thursday because an empty section looked like failure. Meanwhile, longer stories sat unfinished.",
+              "We send an edition when we have three or four pieces that belong together."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source directly gives the abandoned promise, its cost, and the replacement cadence.",
+            "missing": []
+          }
+        ],
+        "rationale": "The requested reason is explicit and can survive condensation."
+      },
+      {
+        "taskId": "T044",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Lead with the opening-sequence issue and the checklist volunteers should follow now.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The current draft tells people to turn on the printers before checking whether the ventilation is running.",
+              "One volunteer noticed the problem during the walk-through, so we changed the checklist on the wall.",
+              "In the meantime, the wall checklist is the version to follow, and I have asked shift leads to point it out at the start of each session."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The sequence error and current instruction are explicit.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Give the confirmed handbook print date.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A confirmed date for printing the handbook.",
+                "prohibitedInference": "Treat the earlier hope to print this month as a confirmed date or infer a date after maintenance review."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says printing will wait for sequence confirmation and provides no confirmed date."
+          }
+        ],
+        "rationale": "The actionable opening instruction is supported; a confirmed print date is not."
+      },
+      {
+        "taskId": "T168",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Bring the agreed next steps into focus and preserve that moving the workshop earlier is only a proposal.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "One instructor proposed moving the library workshop earlier; another noted that the current week already contains two major assignments.",
+              "The group reviewed course calendars but had no attendance or assignment data that would show whether workshop timing caused the difference.",
+              "It agreed to ask the librarian for two possible dates and to collect samples of the current source evaluations before revising the calendar.",
+              "The department chair will bring the samples to the November meeting."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The text distinguishes a proposal from the steps agreed before any calendar revision.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Put the librarian's two actual workshop dates in the November follow-up, after asking for them.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The two workshop dates the librarian can offer.",
+                "prohibitedInference": "Invent candidate dates or present the November meeting as a workshop date."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The librarian has been asked for possibilities; none are given."
+          }
+        ],
+        "rationale": "The next steps are available; actual workshop dates require a reply."
+      },
+      {
+        "taskId": "T148",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Make the decisions for the forty-five-minute meeting more direct while keeping Thursday afternoon as the comment deadline.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The first item is the permit timeline, since that affects when we can schedule the contractor.",
+              "We will then review the open questions on the drawings and decide which ones need an answer before the site visit.",
+              "I have added a short section for budget changes because the revised lighting quote came in higher than expected.",
+              "Please add comments to the agenda by Thursday afternoon, especially if there is a decision you need from the group.",
+              "We have only forty-five minutes together, so I am trying to keep background information in the document and use the meeting for choices that cannot be made by email."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The decision areas, meeting limit, and deadline are stated.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Refer to the actual permit decision date in the timeline item, after asking for it.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The actual permit decision date.",
+                "prohibitedInference": "Use Friday's review meeting or Thursday's comment deadline as the permit decision date."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source gives the agenda timing but no permit decision date."
+          }
+        ],
+        "rationale": "The agenda can be tightened; the permit date requires the writer's answer."
+      },
+      {
+        "taskId": "T053",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "SUMMARIZE_EXISTING",
+            "requirement": "Briefly explain the first-chair delay and the October 7 clearance check to the infusion team.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Pharmacy receives the final treatment clearance after the patient is seated, even when the laboratory result was available the previous afternoon.",
+              "Nurses then hold the chair while the medication is prepared, and later appointments begin to bunch together.",
+              "Starting October 7, the charge nurse will confirm the next day's clearances at 3 p.m. and send a list of unresolved orders to the prescribing teams.",
+              "Pharmacy will continue to prepare medication only after the order is signed."
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The delay and planned check are explicit.",
+            "missing": []
+          },
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Include the August start-time result.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The August first-chair start-time result.",
+                "prohibitedInference": "Treat the planned four-week comparison, recurring delay, or October 7 check as an August result."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "No August measurement or result appears in the source."
+          }
+        ],
+        "rationale": "The update is feasible; the requested historical result is absent."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-01",
+    "annotations": [
+      {
+        "taskId": "T061",
+        "feasibility": "FULLY_SAFE",
+        "scope": "SUBSTANTIVE",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Condense the procedure for experienced analysts while retaining the approval check, file generation, independent column review, ticket record, and transfer order.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "checks that the request has an approved purpose and that the requested dates match the approval record",
+              "generates the file in the restricted workspace and compares its row count with the query result",
+              "A second analyst reviews the column list and confirms that direct identifiers are absent.",
+              "The reviewer records the check in the request ticket, including the export date and file name.",
+              "Only then does the first analyst place the extract in the designated transfer folder and notify the recipient through the ticket."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "All required steps and their order are stated."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Keep the rejected-export correction path and scope escalation explicit.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "If the column list differs from the approved request, the export is discarded and the query is corrected before another file is made.",
+              "questions about scope go back to the data steward rather than being settled by the analyst."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The source supplies both exceptions."
+          }
+        ],
+        "rationale": "The entire requested condensation can preserve the documented sequence and exceptions."
+      },
+      {
+        "taskId": "T015",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Lead with the concrete name-and-delivery-date example of a partial-column sort.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Sorting just the date column puts the dates in order, but the names stay where they were. Each row now describes a combination that never existed."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source already contains the concrete failure mode."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Give the reader a check before trusting the sorted sheet: compare a known row pairing before and after sorting, and keep the whole table selected.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The safest check is to look at a row whose original pairing you know before and after sorting.",
+              "If the spreadsheet asks whether to expand the selection, choose the option that moves the whole table."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both actionable checks are in the source."
+          }
+        ],
+        "rationale": "The requested example and check are already supported."
+      },
+      {
+        "taskId": "T140",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Make the reply concise and reassuring while retaining arrival guidance and the charge-check route.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Please bring either email to the front desk when you arrive. We will have your name on the class list.",
+              "If your card statement shows two completed charges after the pending transactions settle, send us a screenshot with unrelated details covered and we will investigate it right away."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The source gives practical reassurance and a conditional investigation path."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Explain that the reservation and payment-clearance events generated separate confirmation emails.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The system sent one message when you reserved a place and another when your payment cleared."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The reason for two emails is explicit."
+          },
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "State how many payments were captured.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The actual number of captured payments for Daniel’s booking.",
+                "prohibitedInference": "Infer one captured payment from two emails, a second confirmation number to ignore, or the conditional advice about two completed card charges."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source establishes an email sequence, not a verified payment count."
+          }
+        ],
+        "rationale": "The email can be shortened and explained, but the requested payment count is not established."
+      },
+      {
+        "taskId": "T063",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "SUMMARIZE_EXISTING",
+            "requirement": "Summarize the sample review, named owners, reminder gate, and October 12 follow-up.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Patient services will identify records with one documented attempt, and the quality lead will check whether a second call was made outside the task system.",
+              "A draft reminder can be prepared now, but it will not be distributed until the sample is reviewed.",
+              "The next meeting is scheduled for October 12."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "Owners, actions, and follow-up date are stated."
+          },
+          {
+            "operation": "ADD_CAUSE",
+            "requirement": "Explain what caused the one-call practice.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Whether the new phone system caused the one-call practice or it predated that system.",
+                "prohibitedInference": "Choose the new phone system or any other cause despite the group’s stated uncertainty."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The minutes explicitly say no one could identify when the difference began."
+          }
+        ],
+        "rationale": "The action summary is supported; a causal explanation is not."
+      },
+      {
+        "taskId": "T157",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.91,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Separate host responsibilities from facilities responsibilities and distinguish each role when an emergency moves a booking.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The hosting department is responsible for checking room capacity, arranging interpretation if needed, and restoring furniture to its standard layout.",
+              "Food service must use the approved vendor list unless an exception is documented by facilities.",
+              "Facilities may move a reservation when emergency operations require the space, but the coordinator should give the host as much notice as practicable and help locate an alternative room.",
+              "sponsors remain responsible for securing any program approval that applies."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The policy assigns the relevant duties and emergency response."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask the requester where hosts submit the visitor plan before adding submission instructions.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Events involving outside attendees require a visitor plan submitted at least five business days before the event."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The source states the requirement but omits its destination."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Add visitor-plan submission instructions after the location is supplied.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The destination or process for submitting the visitor plan.",
+                "prohibitedInference": "Invent a facilities inbox, calendar location, or other submission route."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source gives a lead time, not submission instructions."
+          }
+        ],
+        "rationale": "Role separation and the requested question are feasible; submission instructions depend on the answer."
+      },
+      {
+        "taskId": "T066",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Put the seven-year clock and its trigger near the top.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The university will retain survey records for seven years after the close of a funded project, unless a sponsor agreement or legal hold requires a longer period.",
+              "Principal investigators are responsible for identifying the close date and notifying the records office when the retention period begins."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The period, trigger, and start notification are explicit."
+          },
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Format the policy for scanning while preserving the investigator, records-office, archive, and hold duties.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The records office maintains the secure archive and documents any approved destruction.",
+              "Working copies on personal devices should be removed after the project team confirms that the archive contains a readable copy.",
+              "A legal hold suspends routine destruction until the office issues a written release."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supports concise role-oriented structure."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Identify the records office as the party documenting approved destruction.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The records office maintains the secure archive and documents any approved destruction."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The owner is named verbatim."
+          }
+        ],
+        "rationale": "Every requested fact is supplied by the policy."
+      },
+      {
+        "taskId": "T137",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Lead with the Oak Street branch’s new Saturday 10 a.m.–4 p.m. hours and retain the usage-based reason.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The Saturday desk now opens at 10 a.m. and closes at 4 p.m.",
+              "Fewer than six people entered during the first hour on any of those days, while the line just before closing was often long.",
+              "The change applies only to the Oak Street branch."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The schedule, branch, and reason are stated."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Explain how the final hour will be staffed.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The staffing arrangement for the final Saturday hour.",
+                "prohibitedInference": "Infer added staff, shifted staff, or unchanged staffing from the observed pre-closing line."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "A long line is described, but no staffing plan is given."
+          }
+        ],
+        "rationale": "The notice can be shortened around the known hours and rationale; staffing is missing."
+      },
+      {
+        "taskId": "T143",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Shorten the reply while foregrounding the stop-14 mismatch and interim visitor guidance.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "stop 14 played the description for stop 15",
+              "the audio file was attached to the wrong stop in our guide system.",
+              "I have asked the front desk to mention the issue to visitors using the guide tomorrow, so they can skip that stop or read the wall label instead."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The problem and interim response are explicit."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Present correction as pending, with an offer to send the corrected description when available.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "If you would like, I can send the corrected description as soon as it is available."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supports a pending correction, without a completion promise."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Include the deadline for correcting the audio guide.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A committed correction deadline.",
+                "prohibitedInference": "Treat tomorrow’s front-desk warning or “as soon as it is available” as the correction deadline."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The only dated action is visitor notification tomorrow."
+          }
+        ],
+        "rationale": "The issue and response can be clarified, but no correction deadline appears."
+      },
+      {
+        "taskId": "T167",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Clarify that absent method documentation limits reconstruction from the public record without implying that outreach did not occur.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "the absence of a method in the minutes does not show that no outreach occurred.",
+              "It does show that later readers cannot reconstruct how input entered those decisions from the public record alone."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The desired distinction is explicit."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask for an agenda item with the documentation gap before adding a concrete illustration.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We coded the stated method for 41 agenda items and identified 13 for which the minutes gave no method at all."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The count supports asking for a particular case, but does not identify one."
+          },
+          {
+            "operation": "ADD_EXAMPLE",
+            "requirement": "Add a concrete agenda-item illustration after one is supplied.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A specific agenda item whose minutes omit the collection method and its relevant details.",
+                "prohibitedInference": "Invent an agenda item or assign one of the 13 gaps to an unspecified decision."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source provides a count, not an identifiable example."
+          }
+        ],
+        "rationale": "The clarification and question are supported; the illustration awaits a specific item."
+      },
+      {
+        "taskId": "T056",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Tighten the abstract while preserving the distinction between clinic receipt and patient access.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The form counted a referral as complete when a destination clinic acknowledged receipt.",
+              "Coordinators, however, often continued to call patients about transport, appointment times, and eligibility documents.",
+              "receipt is easy to verify while access unfolds over several weeks."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The central contrast is explicit."
+          },
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "State how many patients ultimately attended an appointment.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The number of patients who ultimately attended an appointment.",
+                "prohibitedInference": "Infer attendance from 18 staff interviews, acknowledgements of receipt, or follow-up work."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source expressly says the interviews cannot establish the attendance rate."
+          }
+        ],
+        "rationale": "The abstract can be tightened, but the requested patient outcome count is unavailable."
+      },
+      {
+        "taskId": "T149",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.95,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Connect the decision to delay repair with the remembered kitchen sounds and shared listening.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "a low hiss under the announcer, the spoon against his mug, and the screen door shutting whenever someone came in.",
+              "She offered to replace it, but I asked her to wait.",
+              "The part I miss is sitting in that kitchen while someone else listened carefully."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The source gives both the sensory memory and the reason repair may not restore it."
+          },
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Mention the quoted cord-replacement price once the receipt is found.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The shop owner’s quoted price for replacing the cord.",
+                "prohibitedInference": "Invent an amount or treat the offer to replace the cord as a stated quote."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source has no price, and the objective says the receipt has not been found."
+          }
+        ],
+        "rationale": "The emotional link can be strengthened; the quoted amount is missing."
+      },
+      {
+        "taskId": "T159",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.94,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Sharpen the difference between six session-order changes and retention of the reflection exercise, while preserving uncertainty about its delivery.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "instructors adapted session order when students missed classes, but they retained the short reflection exercise at the end of each session.",
+              "Our field notes recorded six changes to order across three classrooms.",
+              "They did not capture the length or quality of every reflection, so fidelity to that component remains uncertain."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The distinction and limitation are directly stated."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask whether the field team recorded reflection duration outside the cited notes before adding a duration claim.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "They did not capture the length or quality of every reflection"
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The note-level gap motivates the requested question."
+          },
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Add a claim about reflection duration if other field records support it.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Whether other field records contain reflection-duration measurements and what those measurements show.",
+                "prohibitedInference": "Generalize the field notes’ gap to all records or assume that the exercise lasted a particular length of time."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source describes only what these field notes did not capture."
+          }
+        ],
+        "rationale": "The conceptual edit and question are supported; any duration claim needs evidence from outside these notes."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-02",
+    "annotations": [
+      {
+        "taskId": "T146",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Separate cataloging progress, uncertain-date practice, and publication question for scanning.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We finished entering the first two boxes of photographs",
+              "For now, the team has been leaving those fields blank and adding a note about the source of any estimate.",
+              "We also found a few images with people's full names on the backs. I have set those aside until we agree what can be published online."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The three requested topics are present in distinct portions of the source."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Include the archive’s actual permission policy for named people after the policy text is supplied.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The archive’s actual policy governing publication of images naming people.",
+                "prohibitedInference": "Do not convert setting images aside, requesting examples, or general permission practice into an official policy."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says the publication question is unresolved and contains no policy text."
+          }
+        ],
+        "rationale": "The structural edit is supported; the requested policy content depends on text not supplied."
+      },
+      {
+        "taskId": "T166",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Distinguish consent to participate from the separate recording choice and explain the declined-recording option.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "records verbal agreement separately from written consent to participate",
+              "If recording is declined, notes may be taken if the participant agrees."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both choices and the notes condition are explicit."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Identify the current contact for a safety concern during a visit after asking for it.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The project’s current safety escalation contact.",
+                "prohibitedInference": "Do not treat the site contact number, coordinator, or records office as the safety escalation contact."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source gives a site contact number but no safety escalation designation."
+          }
+        ],
+        "rationale": "Consent can be clarified from the source; the escalation contact must be supplied."
+      },
+      {
+        "taskId": "T065",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Place the seven-year retention period and its start at funded-project close prominently.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The university will retain survey records for seven years after the close of a funded project, unless a sponsor agreement or legal hold requires a longer period.",
+              "Principal investigators are responsible for identifying the close date and notifying the records office when the retention period begins."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The clock and responsibility are explicit."
+          },
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Make the policy easier to scan while retaining exceptions, storage, destruction, and reuse conditions.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The records office maintains the secure archive and documents any approved destruction.",
+              "Working copies on personal devices should be removed after the project team confirms that the archive contains a readable copy.",
+              "Researchers who need continued access for a related study must obtain the appropriate approval before using the records for that purpose.",
+              "A legal hold suspends routine destruction until the office issues a written release."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supplies the operative points to organize."
+          }
+        ],
+        "rationale": "All requested work is editorial and grounded in the policy text."
+      },
+      {
+        "taskId": "T035",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Condense the two-evening observations and the next-test plan for residents.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Most comments pointed to the short stretch beside the bicycle racks, where the light from the nearest fixture was partly blocked by a tree.",
+              "We moved that fixture before the second evening, and the comments shifted to the entrance steps.",
+              "I think we need to test one more position before choosing permanent hardware."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Observed concerns and proposed next action are stated."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Include the trial’s total wattage.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Total wattage of the temporary lighting trial.",
+                "prohibitedInference": "Do not derive wattage from the number of fixtures, trial duration, or cost estimate."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "No wattage, fixture rating, or fixture count sufficient to compute it appears in the full source."
+          }
+        ],
+        "rationale": "The update can be condensed, but the numerical wattage is absent."
+      },
+      {
+        "taskId": "T145",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Bring the ending back to the daughter’s naming of crooked beans and connect the peas to that shared habit.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "She arranged them by length on a dish towel and gave the crooked ones names.",
+              "I bought a packet of peas for this year. She has already asked if we can give them taller string."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both the earlier delight and the proposed new planting are explicit."
+          },
+          {
+            "operation": "ADD_CAUSE",
+            "requirement": "Explain why the narrator was away helping the father after asking what happened.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "What was happening with the father during the week away.",
+                "prohibitedInference": "Do not infer illness, emergency, or another reason from the phrase helping my father."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says only that the narrator was away helping the father."
+          }
+        ],
+        "rationale": "The thematic ending is supported; the reason for the absence is unknown."
+      },
+      {
+        "taskId": "T147",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Present the sorting advice in the requested order: full table, headers, known pairing check.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "If the spreadsheet asks whether to expand the selection, choose the option that moves the whole table.",
+              "Headers should also be marked as headers so they do not get sorted into the data.",
+              "The safest check is to look at a row whose original pairing you know before and after sorting."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Every step appears in the source."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Name the spreadsheet program after asking which one was used.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The spreadsheet program used for the volunteer schedule.",
+                "prohibitedInference": "Do not infer Excel, Google Sheets, or another program from generic spreadsheet behavior."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "No program name appears in the source."
+          }
+        ],
+        "rationale": "The sequence is supported; the software name must be supplied."
+      },
+      {
+        "taskId": "T153",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Separate first-evening bicycle-rack comments from second-evening entrance-step comments and identify the next test as proposed.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Most comments pointed to the short stretch beside the bicycle racks, where the light from the nearest fixture was partly blocked by a tree.",
+              "We moved that fixture before the second evening, and the comments shifted to the entrance steps.",
+              "I think we need to test one more position before choosing permanent hardware."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The order of observations and tentative status are explicit."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Name the planned new fixture position after asking the electrician.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Which new fixture position the electrician plans to try.",
+                "prohibitedInference": "Do not present the prior move, bicycle-rack stretch, or entrance steps as the specified next position."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The next position is not named anywhere in the source."
+          }
+        ],
+        "rationale": "The two trial evenings and tentative next step can be distinguished; the new position is unknown."
+      },
+      {
+        "taskId": "T010",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Lead with the immediate caution sign and the recommendation to replace the curling mat.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I will put a temporary caution sign beside the affected corner today",
+              "I recommend replacing the mat with one that fits the recess rather than taping it again."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both requested actions are explicit."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Put a firm replacement date up front.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A confirmed date when the replacement mat will be installed.",
+                "prohibitedInference": "Do not turn Tuesday’s measurement or today’s caution sign into the replacement date."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly says no replacement date is set because supplier lead time is unknown."
+          }
+        ],
+        "rationale": "The request can be made more direct, but a firm installation date is unavailable."
+      },
+      {
+        "taskId": "T016",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Trim background while retaining agenda logistics and response deadline.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I have put the draft agenda in the shared folder.",
+              "Please add comments to the agenda by Thursday afternoon",
+              "We have only forty-five minutes together"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The logistics are stated and can be condensed."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make meeting choices easy to find: permit timeline, drawing questions needing answers before the visit, and budget changes to review.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The first item is the permit timeline, since that affects when we can schedule the contractor.",
+              "We will then review the open questions on the drawings and decide which ones need an answer before the site visit.",
+              "I have added a short section for budget changes because the revised lighting quote came in higher than expected."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These are the listed agenda items; only the drawing question has an explicit decision instruction."
+          }
+        ],
+        "rationale": "The source supports a shorter email with a clear agenda; avoid inventing a budget or contractor decision."
+      },
+      {
+        "taskId": "T019",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Trim background while retaining the meeting agenda and forty-five-minute limit.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The first item is the permit timeline, since that affects when we can schedule the contractor.",
+              "We will then review the open questions on the drawings and decide which ones need an answer before the site visit.",
+              "I have added a short section for budget changes because the revised lighting quote came in higher than expected.",
+              "We have only forty-five minutes together"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These points support a concise agenda."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make the explicitly stated drawing decision easy to find.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "decide which ones need an answer before the site visit"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "This decision is named in the source."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Include the date the city confirmed the permit.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The date on which the city confirmed the permit.",
+                "prohibitedInference": "Do not infer a confirmation date from Friday’s meeting, Thursday’s comment deadline, or the permit timeline item."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full source names no city confirmation or date."
+          }
+        ],
+        "rationale": "The agenda edit is supported; the confirmation date is absent."
+      },
+      {
+        "taskId": "T009",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Lead with the immediate safety step and replacement recommendation.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I will put a temporary caution sign beside the affected corner today",
+              "I recommend replacing the mat with one that fits the recess rather than taping it again."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both requested points are explicit."
+          },
+          {
+            "operation": "COMPRESS",
+            "requirement": "Make the facilities request more direct while retaining the reason replacement is needed.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The mat at the west entrance has begun curling along the left edge.",
+              "Two staff members caught their shoes on it during the morning rush this week, although neither fell.",
+              "The maintenance log shows that the edge was taped down twice in August.",
+              "the adhesive lifts when the floor is mopped."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The hazard and failed temporary repair justify the request."
+          }
+        ],
+        "rationale": "All requested emphasis changes are supported by the source."
+      },
+      {
+        "taskId": "T049",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "SUMMARIZE_EXISTING",
+            "requirement": "Briefly explain the first-chair delay and its effect on later appointments.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Pharmacy receives the final treatment clearance after the patient is seated, even when the laboratory result was available the previous afternoon.",
+              "Nurses then hold the chair while the medication is prepared, and later appointments begin to bunch together."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The operational sequence is directly described."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "State the October 7 clearance check and preserve the signed-order condition.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Starting October 7, the charge nurse will confirm the next day's clearances at 3 p.m. and send a list of unresolved orders to the prescribing teams.",
+              "Pharmacy will continue to prepare medication only after the order is signed."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The planned check and medication-preparation limit are explicit."
+          }
+        ],
+        "rationale": "The requested brief team update can be written entirely from the source."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-03",
+    "annotations": [
+      {
+        "taskId": "T074",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "SUBSTANTIVE",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Convert the account into an action log that separates the Friday handoff request, the deferred list decision, and the interim process.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The service chief asked the unit representatives to describe their current handoffs by Friday.",
+              "A decision about changing the list was deferred to the following huddle.",
+              "Meanwhile, staff will continue to use the existing interpreter request process and will record delays in the discharge note when they affect patient instructions."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These actions and their timing are stated directly."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Name the people or group who owe handoff descriptions by Friday.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The service chief asked the unit representatives to describe their current handoffs by Friday."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source names unit representatives as the responsible group, though it gives no individual names."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Explain who will book interpreters when a need first appears overnight.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The role responsible for booking an interpreter when an overnight need first appears.",
+                "prohibitedInference": "Do not assign the booking to social workers, unit representatives, the service chief, or another role from their presence in the huddle."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly says staff were unsure who would make that booking."
+          }
+        ],
+        "rationale": "The action log and Friday owner are supported, but the overnight booking owner is unresolved."
+      },
+      {
+        "taskId": "T162",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make the monitoring plan and October decision point prominent.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Facilities will place monitors in four rooms next week and collect hourly readings for five weekdays.",
+              "Clinic staff will note whether doors were held open and whether a room was occupied when they report discomfort.",
+              "The group will review the readings at its October meeting and decide whether further balancing work is justified."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The schedule, observations, and decision are explicit."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "State that the thermostat schedule remains unchanged for now.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "No change to the thermostat schedule was approved."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "No schedule change was approved."
+          },
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Get the room list from facilities so staff can be told which exam rooms will have monitors.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The identities of the four exam rooms selected for monitors, as confirmed by facilities.",
+                "prohibitedInference": "Do not invent room numbers or treat 'four rooms' as identifying them."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source gives the count but no room list or facilities response."
+          }
+        ],
+        "rationale": "The plan and current thermostat status can be foregrounded; the room identities require facilities."
+      },
+      {
+        "taskId": "T161",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.91,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Present the response in sequence from stopping testing to repeat control, escalation, sample review, and documented return to service.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "the technologist stops patient testing on that instrument and marks it unavailable in the tracking system",
+              "The technologist repeats the control once with fresh material, following the manufacturer instructions.",
+              "If the repeat remains outside the accepted range, the technologist alerts the shift lead and records the result, lot number, and maintenance performed.",
+              "Results generated since the last acceptable control are reviewed under the laboratory's incident process before release.",
+              "The instrument may return to service only after acceptable control results are documented."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Every requested stage is present; the existing conditions should be preserved."
+          },
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Ask the lab for the instrument's accepted control range before including numeric values.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The instrument's accepted control range as supplied by the lab.",
+                "prohibitedInference": "Do not invent a numeric range from 'accepted range' or manufacturer instructions."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source has no numerical range or lab response; the sequence can still omit values."
+          }
+        ],
+        "rationale": "The procedural sequence is supported, while the requested lab-sourced values are unavailable."
+      },
+      {
+        "taskId": "T158",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Put the second analyst's column review and ticket record immediately before transfer and notification, making them the release gate.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "A second analyst reviews the column list and confirms that direct identifiers are absent.",
+              "The reviewer records the check in the request ticket, including the export date and file name.",
+              "Only then does the first analyst place the extract in the designated transfer folder and notify the recipient through the ticket."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The order and gate are stated directly."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "State how long discarded exports are retained, using the data steward's rule.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The retention or deletion period for discarded exports, confirmed by the data steward.",
+                "prohibitedInference": "Do not equate 'discarded' with immediate deletion or invent a retention interval."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source states when an export is discarded but gives no retention rule."
+          }
+        ],
+        "rationale": "The release gate can be made clear; the requested retention period cannot be supplied from the source."
+      },
+      {
+        "taskId": "T023",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Turn the email into a clear volunteer check-in message with entrance routes and arrival instructions prominent.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The spring fair will use the east hall entrance for guests and the loading door for vendors.",
+              "Please arrive at the time on your shift sheet, then check in at the office before going to your station.",
+              "The office has the cash boxes, maps, and spare name tags."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The routes and check-in process are explicit."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make the rule against leaving a cash box unattended prominent.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Please do not leave a cash box at an unattended station, even briefly."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The rule is stated without qualification."
+          }
+        ],
+        "rationale": "All requested information is in the source."
+      },
+      {
+        "taskId": "T069",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Make the retention policy easier to scan and foreground when the seven-year period begins.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The university will retain survey records for seven years after the close of a funded project, unless a sponsor agreement or legal hold requires a longer period.",
+              "Principal investigators are responsible for identifying the close date and notifying the records office when the retention period begins.",
+              "A legal hold suspends routine destruction until the office issues a written release."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The clock, notification responsibility, and exceptions are supplied."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Identify who documents approved destruction.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The role responsible for documenting approved destruction of survey records.",
+                "prohibitedInference": "Do not assign documentation to principal investigators or the records office merely because they handle the close date, retention notice, or legal-hold release."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source does not assign destruction documentation to anyone."
+          }
+        ],
+        "rationale": "The retention clock can be highlighted, but destruction documentation ownership is absent."
+      },
+      {
+        "taskId": "T163",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.95,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Order the reporting steps from approved snapshot and preliminary drafts through prepublication checks, publication, and later amendments.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Employees who prepare public reports must use the approved data snapshot listed in the reporting calendar.",
+              "Draft figures may be shared within the project team if they are labeled with the extraction date and marked preliminary.",
+              "Before publication, the report owner confirms that table totals reconcile with the archived extract and that suppression rules have been applied.",
+              "Corrections discovered after release are documented in an amendment note that identifies the affected tables and the date of the revised report."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These stages have clear temporal cues in the source."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Find out who signs off on a revised report before adding an approval step.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The person or role authorized to sign off on a revised report.",
+                "prohibitedInference": "Do not treat the report owner's prepublication reconciliation or program leads' accountability as revised-report approval authority."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source describes an amendment note but no revised-report sign-off."
+          }
+        ],
+        "rationale": "The timeline can be made explicit; an added approval step needs an external answer."
+      },
+      {
+        "taskId": "T132",
+        "feasibility": "FULLY_SAFE",
+        "scope": "LOCAL",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Lead with the instructions for a person who has already booked, including what the box office can do.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "If you have already booked, contact the box office with your booking number. Staff can explain the seats that are still available and move your booking if there is a suitable option."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The existing-booking instruction is already stated and can be moved to the front."
+          }
+        ],
+        "rationale": "The requested audience-specific guidance is fully present."
+      },
+      {
+        "taskId": "T036",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Separate observed trial findings from the proposed additional test and its prerequisites.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We installed temporary fixtures along the south walkway for two evenings and asked residents to mark the places where they still felt uncertain about their footing.",
+              "Most comments pointed to the short stretch beside the bicycle racks, where the light from the nearest fixture was partly blocked by a tree.",
+              "We moved that fixture before the second evening, and the comments shifted to the entrance steps.",
+              "I think we need to test one more position before choosing permanent hardware.",
+              "The electrician can return next Tuesday, but we have not confirmed access to the storage room where the trial equipment is kept.",
+              "Marta is checking with the building manager and will let the group know by Friday."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source distinguishes observations from the writer's proposed next step and unresolved access."
+          },
+          {
+            "operation": "COMPRESS",
+            "requirement": "Keep the update brief while preserving the distinction between findings and proposal.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The courtyard lighting trial is complete.",
+              "I think we need to test one more position before choosing permanent hardware."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "Concise wording can retain the central result and tentative next step."
+          }
+        ],
+        "rationale": "The source contains both confirmed observations and an explicitly tentative proposal."
+      },
+      {
+        "taskId": "T115",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Make the reply concise and reassuring while retaining the practical arrival instruction.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I checked the booking record this morning: it shows one seat under your name, and only one payment was captured.",
+              "Please bring either email to the front desk when you arrive. We will have your name on the class list."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The verified single booking and front-desk instruction support a brief reassuring reply."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Explain why two confirmation emails arrived and state the number of payments captured.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The system sent one message when you reserved a place and another when your payment cleared.",
+              "I checked the booking record this morning: it shows one seat under your name, and only one payment was captured."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both the cause of the duplicate-looking emails and the payment count are explicit."
+          }
+        ],
+        "rationale": "Every requested fact and the reassurance are supported by the booking record described."
+      },
+      {
+        "taskId": "T007",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Shorten the note while retaining the room logistics and actionable follow-up.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "the meeting room is available on Thursday, November 12, from 6 to 8 p.m.",
+              "They can set out six tables, but they asked us to bring our own extension cords and to keep soldering outside.",
+              "Could you check with Omar about the bike stand and let me know by Monday?"
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "The core logistics and follow-up are explicit and can carry a shorter note."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make Omar's bike-stand follow-up and Lena's Monday reply deadline easy to scan.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Could you check with Omar about the bike stand and let me know by Monday?"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Monday is the stated deadline for Lena to report back about Omar."
+          }
+        ],
+        "rationale": "The deadline and room details are stated; no new deadline is needed."
+      },
+      {
+        "taskId": "T013",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Shorten the archive catalog update while retaining progress, the uncertain-date approach, and the named-photo hold.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We finished entering the first two boxes of photographs",
+              "For now, the team has been leaving those fields blank and adding a note about the source of any estimate.",
+              "We also found a few images with people's full names on the backs. I have set those aside until we agree what can be published online."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The progress and current handling of uncertain dates and named photos are explicit."
+          },
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Identify who will decide whether the named photographs can go online.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The person or body with authority to decide online publication of photographs bearing people's full names.",
+                "prohibitedInference": "Do not assign that decision to the writer, the local history librarian, volunteers, or Friday's meeting without an explicit source statement."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says the photographs are set aside until agreement, but names no decision owner."
+          }
+        ],
+        "rationale": "The update can be shortened; publication decision ownership is not supplied."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-04",
+    "annotations": [
+      {
+        "taskId": "T152",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Present the Elm Street year correction and page-six print photograph check as separately answerable requests.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "my mother moved to Elm Street in 1974, not 1973",
+              "I also wondered whether the photograph on page six has enough contrast in print"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Both requests and their subjects appear in the source."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Keep the recording as a possible confirmation, with the speaker’s uncertainty intact, and keep the offer to bring the original print Wednesday.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The interview recording should confirm the year, though I may have said it unclearly the first time.",
+              "I can bring the original print to the library on Wednesday so you can compare it with the scan."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supports both qualifications."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask Ms. Chen when the printer needs the final file so Ada can assess whether bringing the print Wednesday would help.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "the booklet is close to the printer's deadline",
+              "I can bring the original print to the library on Wednesday"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The requested action is a question; it does not require knowing the deadline."
+          }
+        ],
+        "rationale": "The two existing requests can be separated and the missing deadline can be asked about without supplying one."
+      },
+      {
+        "taskId": "T072",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.95,
+        "jobs": [
+          {
+            "operation": "SIMPLIFY_REGISTER",
+            "requirement": "Revise the paragraph for a methods appendix while keeping its distinction between sequence and component delivery.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We therefore report sequence changes separately from component delivery rather than assigning each class a single adherence score."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The methodological reporting choice is explicit."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Preserve the six order changes across three classrooms and the uncertainty about reflection length and quality.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Our field notes recorded six changes to order across three classrooms.",
+              "They did not capture the length or quality of every reflection, so fidelity to that component remains uncertain."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source provides the observation and its measurement limit."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Retain the resulting limit on the pilot fidelity claim.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "This choice narrows the claim we can make about the pilot."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly limits the claim."
+          }
+        ],
+        "rationale": "A methods-focused rewrite is supported by the supplied observations and stated uncertainty."
+      },
+      {
+        "taskId": "T165",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "State the known three-dose discrepancy separately from the unconfirmed explanations.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Last month the inventory count was three doses lower than the number expected from recorded administrations and documented wastage.",
+              "The team has not established whether the difference reflects a counting error, a late record entry, or a dose moved between sites."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The count is known; causes are explicitly unresolved."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Describe the daily closeout, nurse signatures, and next-morning exception review as a proposed two-week trial.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The coordinator proposed a daily closeout that compares the sheet with the electronic total before supplies are locked.",
+              "A nurse at each site would sign the count, and the coordinator would review exceptions the next morning.",
+              "The proposal will be tested for two weeks before it becomes a standing requirement."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source distinguishes proposal and trial from standing practice."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask whether sites keep transfer logs before suggesting they be checked.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "a dose moved between sites"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The question is supported by a possible transfer; no log is presumed to exist."
+          }
+        ],
+        "rationale": "All requested changes can be made while leaving the cause and log availability open."
+      },
+      {
+        "taskId": "T160",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Make clear that adding an interpreter check was only discussed and the list decision was deferred.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The team discussed adding an interpreter check to the morning discharge list.",
+              "A decision about changing the list was deferred to the following huddle."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source establishes discussion and deferral."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Keep the current interpreter request process and discharge-note recording of relevant delays visible as interim practice.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Meanwhile, staff will continue to use the existing interpreter request process and will record delays in the discharge note when they affect patient instructions."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The interim steps are stated."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask unit representatives who currently owns overnight booking requests without assigning the handoff.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "staff were unsure who would make the booking when a need first appeared overnight",
+              "The service chief asked the unit representatives to describe their current handoffs by Friday."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "A question is supported; an owner is not established."
+          }
+        ],
+        "rationale": "The proposed change, deferral, interim process, and ownership question are all source-grounded."
+      },
+      {
+        "taskId": "T150",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Order the volunteer note by arrival and office check-in, setup issues, then end-of-shift handoff.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Please arrive at the time on your shift sheet, then check in at the office before going to your station.",
+              "If a vendor says their assigned space is blocked, find Helena or Marcus rather than moving another table yourself.",
+              "At the end of your shift, return any keys and tell the next volunteer about problems that have not been resolved."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supplies the sequence and instructions."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask where the office is inside the center for first-time volunteers.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "check in at the office before going to your station"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The location can be requested without inventing it."
+          }
+        ],
+        "rationale": "Reordering and asking for the office location require no unsupported facts."
+      },
+      {
+        "taskId": "T107",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.95,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Trim the bakery scene while retaining first-person voice, the observed pattern across four weeks, and the response the following Tuesday.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I had agreed to help my aunt for one morning",
+              "she showed me four weeks of the same marks in the same notebook",
+              "We baked fewer rolls the following Tuesday."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These details carry the scene and causal progression."
+          },
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Preserve the notebook image at the end.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The notebook lived under the till, absorbing our certainty one pencil line at a time."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The requested closing image is present."
+          }
+        ],
+        "rationale": "This is a supported compression of existing narrative."
+      },
+      {
+        "taskId": "T100",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.95,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Tighten the interview responses while retaining the practical watering changes and cautiously positive result.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "We moved the watering shift to early morning and paired each new volunteer with someone who had done it before.",
+              "We also marked the beds that drain fastest with plain wooden stakes.",
+              "So far, yes. The soil is damp below the surface most mornings, and fewer plants are dropping flowers."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The actions and qualified outcome are supplied."
+          },
+          {
+            "operation": "SIMPLIFY_REGISTER",
+            "requirement": "Keep the speaker’s practical, slightly wry voice.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "I did not want a complicated chart that nobody would carry outside.",
+              "A garden is good at reminding you that one successful week is not a system."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These lines establish the requested voice."
+          }
+        ],
+        "rationale": "The interview can be shortened from its own content without adding claims."
+      },
+      {
+        "taskId": "T098",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Lead the shorter notice with the Oak Street branch’s new Saturday hours and effective date.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The Saturday desk now opens at 10 a.m. and closes at 4 p.m.",
+              "Beginning October 12",
+              "The change applies only to the Oak Street branch."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "Hours, date, and branch scope are explicit."
+          },
+          {
+            "operation": "COMPRESS",
+            "requirement": "Keep the reason for the change in brief form.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Fewer than six people entered during the first hour on any of those days, while the line just before closing was often long."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supplies the reason."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Explain that two staff members will cover the final hour instead of the first.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "two staff members will work the final hour instead of the first"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The staffing change is stated directly."
+          }
+        ],
+        "rationale": "The new hours, rationale, and final-hour staffing are present."
+      },
+      {
+        "taskId": "T154",
+        "feasibility": "FULLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make the two-week draft-handout submission step and required request details prominent.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "please send draft handouts to the program office two weeks before the first session.",
+              "Include the language requested and the person who can answer questions about the content."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The normal submission rule is explicit."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Make direct contact for workshops added with less than two weeks’ notice prominent without promising approval.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "If a workshop is added with less than two weeks' notice, contact me directly so we can agree on what is realistic."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The exception calls for discussion, not automatic approval."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask Nadia for the list of languages with approved translations before naming any.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "check whether an approved translation already exists"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The requested action is to ask for the list; the source does not supply one."
+          }
+        ],
+        "rationale": "The steps can be highlighted and the list requested without inventing languages or approval."
+      },
+      {
+        "taskId": "T020",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Keep the remaining agenda email concise while preserving the meeting decisions, comment deadline, and attendance handoff.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The first item is the permit timeline, since that affects when we can schedule the contractor.",
+              "Please add comments to the agenda by Thursday afternoon",
+              "If you cannot attend, please name someone who can speak for your part of the work, or tell me which items need to wait."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "These details can be condensed from the source."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "State when the city confirmed the permit item.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The date or time when the city confirmed the permit item.",
+                "prohibitedInference": "Do not infer confirmation from the Friday meeting, Thursday comment deadline, or permit timeline."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full source gives no city confirmation event or date."
+          }
+        ],
+        "rationale": "The email can be shortened, but the requested confirmation timing is absent."
+      },
+      {
+        "taskId": "T164",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "SURFACE_EXISTING",
+            "requirement": "Make the front-desk check-in clock definition and its exclusions prominent beside any median discussion.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "time starts when a patient checks in at the front desk.",
+              "It excludes time spent arranging transport and time between the referral and the offered appointment.",
+              "The report should therefore state its clock definition alongside its median"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source states the measure and exclusions."
+          },
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Keep the limit that on-site waiting time does not measure the entire access journey.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "it should not be read as a measure of the whole access experience.",
+              "avoid treating a short on-site wait as evidence of timely access overall."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The limitation is explicit."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask the author how the 12 interviewees were recruited.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "interviews from 12 patients who had recently attended a first appointment"
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "A request for the method can be made without describing it."
+          },
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Describe the recruitment method for the 12 interviewees once provided.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The specific way the 12 interviewees were recruited.",
+                "prohibitedInference": "Do not infer recruitment method from the fact that they attended a first appointment or from the sample limitation."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source identifies who was interviewed but not how they were recruited."
+          }
+        ],
+        "rationale": "The clock definition and a question about recruitment are safe; a recruitment-method description needs the missing method."
+      },
+      {
+        "taskId": "T004",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "DISTRIBUTED_LIGHT",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "COMPRESS",
+            "requirement": "Tighten the garden reflection for a personal newsletter while retaining first-person voice and small observations.",
+            "scope": "DISTRIBUTED",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "the sun reaches it for only a few hours",
+              "We tied string to the fence with knots that kept slipping",
+              "now when I take out the recycling I notice whether it is damp and whether anything green has appeared along the edge."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supports a shorter first-person reflection with concrete details."
+          },
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Keep the number of beans from the first harvest.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The number of beans in the first harvest.",
+                "prohibitedInference": "Do not infer a count from the July vines, the dish-towel scene, or the reference to crooked beans."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full source contains no harvest count."
+          }
+        ],
+        "rationale": "The reflection can be tightened, but no bean count can be preserved or supplied from this source."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-05",
+    "annotations": [
+      {
+        "taskId": "T117",
+        "feasibility": "FULLY_SAFE",
+        "scope": "SUBSTANTIVE",
+        "confidence": 0.97,
+        "jobs": [
+          {
+            "operation": "REORGANIZE",
+            "requirement": "Present the existing actions in sequence: add saved places as stops, arrange their order, then share the finished route by copying its link.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "Open a place, choose Add to route, and repeat until you have the stops you want.",
+              "You can drag stops into a different order.",
+              "A route stays private to your account until you choose Share and copy its link.",
+              "If you are planning a trip with someone else, send the link after you finish arranging the stops."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source states every action and its order."
+          },
+          {
+            "operation": "COMPRESS",
+            "requirement": "Make the sequence short while retaining the walking-time estimate and the sharing limit relevant to using the route.",
+            "scope": "DOCUMENT_WIDE",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The route view shows an estimated walking time between stops.",
+              "The estimate updates when you do.",
+              "Anyone with that link can see the stops and their order, but they cannot edit your route."
+            ],
+            "missing": [],
+            "dependency": "COUPLED",
+            "rationale": "A concise sequence can summarize these existing details without inventing steps or sharing capabilities."
+          }
+        ],
+        "rationale": "All requested route-building and sharing steps are present; this is a short rewrite of the whole passage."
+      },
+      {
+        "taskId": "T151",
+        "feasibility": "PARTIALLY_SAFE",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Explain that an overnight rise in relative humidity can result from cooler air, while a change persisting after the room warms may indicate a moisture problem; make clear that the humidity chart alone cannot establish the cause and temperature context is needed.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "The reading is relative humidity, which changes when the air temperature changes even if the amount of water in the air stays much the same.",
+              "In our storage room, the value often rises overnight because the heating system lowers the temperature then.",
+              "We compare humidity with temperature on the same chart and look for changes that persist after the room warms up.",
+              "A sudden increase during a rainstorm may point to water entering the room; a regular overnight rise may simply reflect cooler air."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source supplies the temperature explanation and the persistence distinction, but does not support diagnosing moisture from humidity alone."
+          },
+          {
+            "operation": "OTHER",
+            "requirement": "Ask for the written escalation threshold before adding the actual threshold to the text.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The actual written escalation threshold, including its measure and any duration or conditions.",
+                "prohibitedInference": "Do not invent a numeric humidity limit or derive a threshold from overnight rises, persistent changes, rainstorms, or the instruction to inspect immediately when a box feels wet or condensation is visible."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The passage gives qualitative cues and an immediate visual or tactile inspection trigger, but no written escalation threshold."
+          }
+        ],
+        "rationale": "The distinction can be clarified from the source, while the requested actual threshold must come from the user."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-06",
+    "annotations": [
+      {
+        "taskId": "T135",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "State the year the woman bought her green touring bike.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "State the year the woman bought her green touring bike.",
+                "prohibitedInference": "A purchase year cannot be derived from years of commuting."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says she had ridden the bike to work for years, but gives no purchase year."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T127",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Confirm that the audio attachment for stop 14 has been corrected.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Confirm that the audio attachment for stop 14 has been corrected.",
+                "prohibitedInference": "A planned fix cannot be reported as completed."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The reply describes a planned correction before Friday, not a completed correction."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T054",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_CAUSE",
+            "requirement": "State whether late patient arrivals contributed to the first appointment delays in August.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "State whether late patient arrivals contributed to the first appointment delays in August.",
+                "prohibitedInference": "Do not infer a contribution or its absence from an unassessed cause."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The review did not assess late arrivals and gives no August-specific finding about them."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T085",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "State the date the committee expects to grant final transfer approval.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "State the date the committee expects to grant final transfer approval.",
+                "prohibitedInference": "Do not convert the document deadline into an approval date."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The minutes explicitly say no timetable for final approval was set; November 3 is only the document submission deadline."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T008",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Say whether Omar has confirmed he can bring the bike stand.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Say whether Omar has confirmed he can bring the bike stand.",
+                "prohibitedInference": "Do not treat a request to check as a confirmation or refusal."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The sender asks Lena to check with Omar and gives no response or confirmation."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T111",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "OTHER",
+            "requirement": "Add the fare charged for bringing a bicycle on a regular crossing.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Add the fare charged for bringing a bicycle on a regular crossing.",
+                "prohibitedInference": "Do not infer a fare from the absence of a separate bicycle reservation."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The ferry guidance gives bicycle rules but no bicycle fare or fare schedule."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T113",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Name the person who corrected the tea prices on the station cafe menus.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Name the person who corrected the tea prices on the station cafe menus.",
+                "prohibitedInference": "Do not attribute the marks to the interviewee or another unnamed person."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The menus show corrections in blue pencil but no person is identified as their author."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T011",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Add the supplier’s confirmed delivery date for the replacement entrance mat.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Add the supplier’s confirmed delivery date for the replacement entrance mat.",
+                "prohibitedInference": "Do not infer a confirmed delivery date from a proposed quote request or Tuesday measurement."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The memo proposes measuring the recess and requesting a quote; it says the supplier lead time is unknown."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T118",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "OTHER",
+            "requirement": "Tell readers how long a shared route link remains valid after copying it.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Tell readers how long a shared route link remains valid after copying it.",
+                "prohibitedInference": "Do not assume the link never expires or invent a duration."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The guide explains link visibility but gives no expiration period or permanence guarantee."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T144",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.98,
+        "jobs": [
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Tell Priya who will correct the audio attachment.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Tell Priya who will correct the audio attachment.",
+                "prohibitedInference": "Do not assign the correction to Amir or the front desk merely because they are mentioned."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source identifies the mismatch but names no person or team assigned to correct it."
+          },
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Tell Priya when the correction will be finished.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Tell Priya when the correction will be finished.",
+                "prohibitedInference": "Do not turn “as soon as it is available” into a completion time."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source promises to send the corrected description when available but gives no correction deadline."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T109",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "OTHER",
+            "requirement": "Add the number of sweet rolls baked the Tuesday after reviewing the notebook.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Add the number of sweet rolls baked the Tuesday after reviewing the notebook.",
+                "prohibitedInference": "Do not derive a numeric count from “fewer.”"
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says they baked fewer rolls the following Tuesday, without giving a count or previous baseline."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T048",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Add the time the northern path reopened during the shoreline survey.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Add the time the northern path reopened during the shoreline survey.",
+                "prohibitedInference": "Do not infer a reopening time from the final hour’s lower observation count."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "Mara asks Ben for the reopening time and says it may never have been recorded."
+          }
+        ],
+        "rationale": "The requested fact is absent from the full source; no meaningful requested addition is supported."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-07",
+    "annotations": [
+      {
+        "taskId": "T104",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Add the carrier's confirmed delivery date for the replacement shade.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The carrier's confirmed delivery date",
+                "prohibitedInference": "Do not treat the scheduled October 3 dispatch or a future tracking scan as a confirmed delivery date."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T099",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Add the expected number of additional visitors during the new final Saturday hour.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A numerical forecast of additional visitors during the new final hour",
+                "prohibitedInference": "Do not convert the low first-hour count or the long closing line into a projected visitor count."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T057",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Add the number of referred patients who ultimately attended an appointment.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The number of referred patients who attended an appointment",
+                "prohibitedInference": "Do not equate 18 staff interviews, clinic acknowledgment, or follow-up calls with patient attendance."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T067",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Identify the job title authorized to approve destruction of archived survey records.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A job title with authority to approve destruction",
+                "prohibitedInference": "Do not infer approval authority from the principal investigators’ notification duty or the records office’s archive and documentation duties."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T064",
+        "feasibility": "FULLY_SAFE",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "CLARIFY_EXISTING",
+            "requirement": "Explain that it is not yet known whether the one-call practice began with the new phone system.",
+            "scope": "LOCAL",
+            "feasibility": "SAFE",
+            "sourceEvidence": [
+              "No one could say whether the difference began with the new phone system or was already common."
+            ],
+            "missing": [],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source explicitly says the timing is undetermined; that answers the requested whether question without assigning a cause."
+          }
+        ],
+        "rationale": "The source directly supports an uncertainty statement, which fully addresses the requested explanation."
+      },
+      {
+        "taskId": "T138",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Add the date when 10 a.m. Saturday opening begins at Oak Street.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The effective date of the 10 a.m. Saturday opening",
+                "prohibitedInference": "Do not infer an effective date from the January review date or the stated current hours."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T129",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Add the time of day when overdue collected orders are released.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The release time of day for orders past the seven-day collection deadline",
+                "prohibitedInference": "Do not equate the deadline in a customer message with a store release time."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T133",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "State the number of rear-exit seats reserved for the Sunday matinee.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The exact number of reserved rear-exit seats",
+                "prohibitedInference": "Do not turn “a small number” or Friday noon into a seat count."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T131",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "OTHER",
+            "requirement": "Explain whom the two unidentified keys belong to.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The identity of the owner or owners of the two keys",
+                "prohibitedInference": "Do not invent ownership from the narrator finding them in the bowl."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T106",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "OTHER",
+            "requirement": "Explain precedence when the same list is reordered offline on two devices before either reconnects.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A conflict-resolution rule for two offline reorderings of the same list",
+                "prohibitedInference": "Do not infer last-write-wins or any other precedence rule from the statement that changes sync upon reconnection."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T120",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_EXAMPLE",
+            "requirement": "Add the exact transfer question the father asked the driver.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The exact wording of the father’s transfer question",
+                "prohibitedInference": "Do not fabricate dialogue from the statement that he asked about transfers."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      },
+      {
+        "taskId": "T045",
+        "feasibility": "BLOCKED",
+        "scope": "LEAVE_ALONE",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "State the opening sequence that maintenance confirmed for the workshop handbook.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Maintenance confirmation of a complete opening sequence",
+                "prohibitedInference": "Do not present the changed wall checklist or the known ventilation-before-printers correction as maintenance-confirmed handbook guidance."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The full supplied source does not establish the requested fact."
+          }
+        ],
+        "rationale": "The objective asks for a specific fact that the supplied source does not establish; no meaningful requested addition is supported."
+      }
+    ]
+  },
+  {
+    "reviewer": "second-08",
+    "annotations": [
+      {
+        "taskId": "T027",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Name the person who agreed to sign off on the final newsletter issue.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "No sign-off owner has been selected or recorded.",
+                "prohibitedInference": "Treat the narrator, a teacher, or office staff as an agreed sign-off owner."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says the team still needs to decide who signs off."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T141",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Reassure Daniel that his booking record contains one seat.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The checked booking record shows exactly one seat under Daniel's name.",
+                "prohibitedInference": "Infer the seat count from his name appearing on the class list or from two emails describing one reservation."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source gives no seat count from the booking record."
+          },
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Reassure Daniel that only one payment was captured.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Exactly one payment was captured for Daniel's booking.",
+                "prohibitedInference": "Infer a single captured payment from one payment clearing or from the conditional offer to investigate two charges."
+              }
+            ],
+            "dependency": "COUPLED",
+            "rationale": "The source mentions a payment clearing but does not establish the total number captured."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T003",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "ADD_CAUSE",
+            "requirement": "Explain what caused the bean plants to dry out during the week away.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The cause of the plants drying out is known.",
+                "prohibitedInference": "Present missed watering, heat, or the narrator's absence as a confirmed cause solely because the plants dried while the narrator was away."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source establishes timing and the narrator's absence, but no cause of the drying."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T122",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Identify the person responsible for the 4 p.m. venue decision.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A particular person is assigned to make the 4 p.m. venue decision.",
+                "prohibitedInference": "Assign the decision to an unnamed organizer, school staff member, or event-page editor."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says 'we make the call' without identifying a person."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T124",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Report how many subscribers opened the first newsletter under the new schedule.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The open count for the first edition under the new schedule is known.",
+                "prohibitedInference": "Substitute the number of pieces per edition, the number of concerned replies, or an estimated open count."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source discusses the schedule and replies, but gives no subscriber open count."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T018",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_EVIDENCE",
+            "requirement": "Include the amount by which the revised lighting quote exceeds the previous quote.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "Both quote amounts or their numeric difference are known.",
+                "prohibitedInference": "Convert 'higher than expected' into a currency amount or assume an earlier quoted figure."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source says only that the revised quote is higher than expected."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T116",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_DATE",
+            "requirement": "Tell Daniel the provider's committed fix date for duplicate confirmation emails.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The booking provider has committed to a specific fix date.",
+                "prohibitedInference": "Turn the message's lack of a fix date or the workshop date into a provider commitment."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "Eli explicitly says no fix date can be given yet."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T034",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "Report whether the building manager approved storage-room access for Tuesday's test.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The building manager approved or denied access.",
+                "prohibitedInference": "Treat Marta's planned check or the electrician's availability as the manager's decision."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "Access remains unconfirmed, and Marta is still checking."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T070",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "ADD_OWNER",
+            "requirement": "Name the office responsible for documenting each approved destruction of survey records.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "An office is assigned to document each approved destruction.",
+                "prohibitedInference": "Assign the records office this duty based solely on its role in retention notification or legal-hold release."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The records office appears in the source, but no office is assigned destruction documentation."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T088",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.99,
+        "jobs": [
+          {
+            "operation": "ADD_OUTCOME",
+            "requirement": "State whether translated excerpts will be included in the partner transfer.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "The team has decided whether translated excerpts are included.",
+                "prohibitedInference": "Treat the committee's question or the lead's promise to confirm as a yes or no decision."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The lead will confirm this in a revision; the answer is still pending."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      },
+      {
+        "taskId": "T102",
+        "feasibility": "BLOCKED",
+        "scope": "LOCAL",
+        "confidence": 0.96,
+        "jobs": [
+          {
+            "operation": "ADD_EXAMPLE",
+            "requirement": "Give a specific raised bed that recovered after the watering shift changed.",
+            "scope": "LOCAL",
+            "feasibility": "BLOCKED",
+            "sourceEvidence": [],
+            "missing": [
+              {
+                "proposition": "A particular raised bed is identified as having recovered after the shift change.",
+                "prohibitedInference": "Turn the wilted tomatoes, damp soil, or fewer dropped flowers into a documented recovery of a specific bed."
+              }
+            ],
+            "dependency": "INDEPENDENT",
+            "rationale": "The source reports broad improvement but names no recovered bed."
+          }
+        ],
+        "rationale": "The requested statement requires information the source does not establish; no meaningful part of the requested work can be stated safely."
+      }
+    ]
+  }
+]

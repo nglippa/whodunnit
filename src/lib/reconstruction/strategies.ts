@@ -96,7 +96,15 @@ export const RECONSTRUCTION_V7 = define({
   description: "v6 evidence and prompt contract, with a distinct blocked-pending-information decision when substantive editing is diagnosed but source facts are insufficient.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7];
+/** Experimental job-level planning only. No production reconstruction route selects this. */
+export const RECONSTRUCTION_V8 = define({
+  ...RECONSTRUCTION_V7,
+  version: 8,
+  name: "Reconstruction v8 (objective-conditioned job planning)",
+  description: "v7 deterministic evidence with a separate semantic-review.v4 job contract. Editing feasibility is derived per requested job; final rewriting remains outside this experiment.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

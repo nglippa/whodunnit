@@ -1,0 +1,1328 @@
+[
+  {
+    "auditorBatch": 0,
+    "taskId": "T004",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The authorized compression job omits the explicit constraints to preserve first-person voice and small observational details; its evidence and scope address only the opening."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T010",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T013",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T019",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "INVALID_EVIDENCE",
+        "detail": "The authorized decisions job cites a permit-timeline topic as though it were a stated scheduling decision, and omits the lighting-budget topic from its evidence. Only the drawing-question decision is explicit."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T020",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T026",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The approver cannot be named, but the source supports stating that final sign-off is still to be assigned this week; the job blocks the entire final-sign-off clarity requirement."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T035",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T044",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T053",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The invalid result authorizes no work, although the source supports a brief update explaining the first-chair delay and October 7 check; only the August result is absent."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T056",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The invalid result authorizes no work, although the abstract can be tightened while preserving the explicit receipt-versus-access distinction; only patient attendance is unknown."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T063",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T069",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T074",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T084",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T087",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T137",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T140",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T143",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "INVALID_EVIDENCE",
+        "detail": "The cited front-desk warning is a visitor workaround, and offering to send a corrected description does not establish a plan to repair the wrong audio attachment. A planned correction cannot be surfaced as a stated action."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T145",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The blocked cause job does not represent the explicit request to ask the author what happened before adding the reason for helping the father."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T146",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 0,
+    "taskId": "T147",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The blocked product-name job does not represent the explicit request to ask the author which spreadsheet program was used."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T148",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the user for the actual permit decision date before naming it in the timeline item. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T149",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the user for the shop owner’s cord replacement quote from the receipt. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T150",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask where the office is inside the community center. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T151",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask for the written escalation threshold before adding it. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T152",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask when the printer needs the final file. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T153",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the electrician which fixture position is planned for the next test. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T154",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask for the list of languages with approved translations. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T155",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the user for the bird guide’s title. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T156",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask which three cities were involved in the meeting. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T157",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask where hosts submit the visitor plan. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T158",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the data steward for the retention rule for discarded exports. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T159",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask whether other field-team records contain reflection duration data. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T160",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the unit representatives who currently owns an overnight interpreter booking request. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T161",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the lab for the instrument’s accepted control range. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      },
+      {
+        "kind": "OTHER",
+        "detail": "The derived audit is INVALID/BLOCKED_PENDING_REVIEW with zero jobs, so it loses the raw review’s analysis of the requested work."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T162",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask facilities which four exam rooms will have monitors. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T163",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask who signs off on a revised report and whether sign-off is required. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T164",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask the user how the 12 interviewees were recruited. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T165",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask whether the sites keep transfer logs before proposing to check them. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T166",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask for the current project safety escalation contact. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T167",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask for a specific agenda item whose minutes omit the input collection method. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      },
+      {
+        "kind": "OTHER",
+        "detail": "The derived audit is INVALID/BLOCKED_PENDING_REVIEW with zero jobs, so it loses the raw review’s analysis of the requested work."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 1,
+    "taskId": "T168",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "Ask which two workshop dates the librarian can offer. This question is safe now; the missing answer blocks only adding the fact, not asking for it. No separate authorized question job is present."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T003",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T008",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T011",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T018",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T027",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T034",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T045",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T048",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T054",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T057",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T064",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The source explicitly says no one could determine whether the practice began with the new phone system. Explaining that the timing is undetermined answers the objective safely; a definitive yes/no remains unsupported."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T067",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T070",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T085",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T088",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T099",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T102",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 2,
+    "taskId": "T104",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T106",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T109",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T111",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T113",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T116",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T118",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T120",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T122",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T124",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T127",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T129",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T131",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T133",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T135",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T138",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T141",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 3,
+    "taskId": "T144",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T041",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The authorized job only moves the plain-time problem; it does not represent clarifying the cross-city safeguards in the rest of the advice."
+      },
+      {
+        "kind": "MISSCOPED",
+        "detail": "Clarifying the advice across the meeting and touring-workshop passages is broader than LOCAL_EDIT."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T136",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T128",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "MISSCOPED",
+        "detail": "Converting three prose sections into a compact pickup FAQ requires a document-level question-and-answer restructure, broader than DISTRIBUTED_LIGHT_EDIT."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T077",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T052",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The raw review identifies safe, independent jobs for the brief update, delay explanation, and October 7 check, yet the derived result blocks all work."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T005",
+    "verdict": "AMBIGUOUS",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The ending already echoes the bean season through peas and taller string, so leaving it alone is defensible; a modest revision could still strengthen the requested connection."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T028",
+    "verdict": "AMBIGUOUS",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The overnight rise is already explained, but technical phrasing such as relative humidity leaves room for the requested volunteer-facing simplification; the no-edit decision is subjective."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T031",
+    "verdict": "AMBIGUOUS",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The original print and proposed recording check are already identified; whether the wording needs clarification is subjective, and the recording has not yet confirmed 1974."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T038",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T040",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T049",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The source supports the brief update, delay explanation, and October 7 check; the raw review marks all jobs SAFE but the derived result blocks them."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T050",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The source also gives the August result as nine of 24 weekday starts over 20 minutes late; all requested jobs are source-backed but the derived result blocks them."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T051",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T055",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The source distinguishes clinic receipt from later access and supports a tighter abstract; the raw review marks both jobs SAFE but the derived result blocks them."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T058",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The source supplies the policy conditions for an outside-attendee checklist, yet the derived result blocks the safe raw jobs."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The raw checklist jobs omit the emergency-displacement condition and coordinator assistance, an applicable condition in the source policy."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T059",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The calendar confirmation condition, five-business-day visitor-plan deadline, and emergency relocation rule are all stated in the source; the derived result blocks the safe raw jobs."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T060",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNNECESSARY_BLOCK",
+        "detail": "The source supports numbering the release sequence and clarifying the analyst handoff, but the derived result blocks both safe raw jobs."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The raw jobs omit the discard-and-correct branch for a mismatched column list and escalation of scope questions to the data steward from the numbered procedure."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T075",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The procedure job evidence omits review of results since the last acceptable control under the incident process before release."
+      },
+      {
+        "kind": "MISSCOPED",
+        "detail": "Turning the full response and failed-repeat branch into ordered steps is a document-level procedure conversion, broader than DISTRIBUTED_LIGHT_EDIT."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T086",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T091",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The checklist job evidence omits the items staff must carry and the consented note-taking option when recording is declined."
+      },
+      {
+        "kind": "MISSCOPED",
+        "detail": "Converting the whole field-visit procedure into an ordered checklist is broader than DISTRIBUTED_LIGHT_EDIT."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T093",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 4,
+    "taskId": "T095",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T001",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T002",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T006",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T007",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T009",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T012",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T014",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T015",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T016",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T017",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T021",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T022",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T023",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T024",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T025",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T029",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T030",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 5,
+    "taskId": "T032",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T033",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T036",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T037",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The jobs move the deadline and request details but omit the objective to rewrite the memo as a concise request to program directors."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T039",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The sole compression job does not preserve the explicit requirements: the ugly crate’s quiet humor and the tentative final thought."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T042",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T043",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T046",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The sole compression job omits both explicit requirements: ask when the northern path reopened and request a reply by Monday morning."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T047",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The sole compression job omits the reopening-time request, supporting notebook photo, and Monday-morning reply deadline."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T061",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "INVALID_EVIDENCE",
+        "detail": "The cited “Only then” transfer sentence does not by itself establish the required sequence: second-analyst column/identifier review and ticket record must precede transfer."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T062",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T065",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "INVALID_EVIDENCE",
+        "detail": "The seven-year evidence stops before the exception; a prominent clock rule must retain longer retention under a sponsor agreement or legal hold."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T066",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "INVALID_EVIDENCE",
+        "detail": "The seven-year evidence stops before the exception; a prominent clock rule must retain longer retention under a sponsor agreement or legal hold."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T068",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "INVALID_EVIDENCE",
+        "detail": "The seven-year evidence stops before the exception; a prominent clock rule must retain longer retention under a sponsor agreement or legal hold."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T071",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T072",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T073",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T076",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "detail": "The procedure plan omits the safety-critical review of results since the last acceptable control before release; shortening the procedure must retain that condition."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 6,
+    "taskId": "T078",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T079",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T080",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T081",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T082",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T083",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T089",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T090",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T092",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T094",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The plan brings the 13 missing method entries forward but does not preserve the document-study limit: missing methods in minutes do not establish that outreach did not occur."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T096",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T097",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The new Saturday hours apply only to the Oak Street branch; the notice plan omits this material scope qualification."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T098",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The new Saturday hours and final-hour staffing apply only to the Oak Street branch; the notice plan omits this material scope qualification."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T100",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T101",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "OTHER",
+        "detail": "The signs of improvement are preliminary: the speaker says “so far” and reserves judgment until next summer. The plan to surface them omits that limit."
+      }
+    ]
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T103",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T105",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T107",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 7,
+    "taskId": "T108",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T110",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T112",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T114",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T115",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T117",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T119",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T121",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T123",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T125",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T126",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T130",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T132",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T134",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T139",
+    "verdict": "SUPPORTED",
+    "issues": []
+  },
+  {
+    "auditorBatch": 8,
+    "taskId": "T142",
+    "verdict": "ISSUE",
+    "issues": [
+      {
+        "kind": "UNSAFE_AUTHORIZATION",
+        "detail": "The source gives an interim visitor workaround and a conditional offer to send a corrected description when available; it does not state a planned correction to the guide attachment. Job 2 treats those as evidence for the objective’s planned correction."
+      }
+    ]
+  }
+]
