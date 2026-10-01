@@ -11,7 +11,7 @@ import { DEFAULT_STRATEGY, RECONSTRUCTION_V1, RECONSTRUCTION_V2, STRATEGIES, get
 describe("RewriteStrategy", () => {
   it("validates every published strategy and gives each a unique, versioned key", () => {
     for (const s of STRATEGIES) expect(rewriteStrategySchema.safeParse(s).success, strategyKey(s)).toBe(true);
-    expect(STRATEGIES.map(strategyKey)).toEqual(["reconstruction-v1", "reconstruction-v2", "reconstruction-v3", "reconstruction-v4", "reconstruction-v5", "reconstruction-v6", "reconstruction-v7", "reconstruction-v8", "reconstruction-v9"]);
+    expect(STRATEGIES.map(strategyKey)).toEqual(["reconstruction-v1", "reconstruction-v2", "reconstruction-v3", "reconstruction-v4", "reconstruction-v5", "reconstruction-v6", "reconstruction-v7", "reconstruction-v8", "reconstruction-v9", "reconstruction-v10"]);
     expect(new Set(STRATEGIES.map(strategyKey)).size).toBe(STRATEGIES.length);
   });
 
@@ -39,7 +39,7 @@ describe("RewriteStrategy", () => {
     expect(rewriteStrategySchema.safeParse({ ...RECONSTRUCTION_V1, prompt: { id: "verify", version: 1 } }).success).toBe(false);
     expect(rewriteStrategySchema.safeParse({ ...RECONSTRUCTION_V1, version: 0 }).success).toBe(false);
     expect(rewriteStrategySchema.safeParse({ ...RECONSTRUCTION_V1, hidden: true }).success).toBe(false);
-    expect(() => getStrategy("reconstruction-v10")).toThrow(/Known: reconstruction-v1/);
+    expect(() => getStrategy("reconstruction-v11")).toThrow(/Known: reconstruction-v1/);
   });
 });
 
@@ -54,6 +54,7 @@ const PINNED: Record<string, string> = {
   "reconstruct.v4": "9e59611eb3fb6f63",
   "reconstruct.v5": "1e272762b2fbe03e",
   "reconstruct.v6": "b985ec9548f03b24",
+  "reconstruct.v7": "9e47ac3db498aaaa",
   "semantic-review.v1": "e065c8ecd9788d8e",
   "semantic-review.v2": "b0e252ec982bc82a",
   "semantic-review.v3": "bf3f9839ae66cdef",
@@ -61,12 +62,14 @@ const PINNED: Record<string, string> = {
   "semantic-review.v5": "63baf5784377bc6b",
   "analyze.v1": "e8c46358ef4e2630",
   "verify.v1": "f028bf96cd4bd029",
+  "verify.v2": "3ec57f29d5470ee2",
   "voiceprint.v1": "f42802ee70bf6603",
   "compile.v1": "d97560f1ff82a5d9",
   "judge.v1": "befe7f6c6521c4da",
   "judge.v2": "8c030e10cd17ae61",
   "orchestrate.v1": "1a4bf88115f41837",
   "repair.v1": "50739a4914f3e367",
+  "repair.v2": "fb4639ca890124ed",
   "local-alternative.v1": "6b5b102cef9c7e04",
 };
 const fp = (s: string) => createHash("sha256").update(s, "utf8").digest("hex").slice(0, 16);

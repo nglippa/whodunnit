@@ -1,0 +1,26 @@
+[
+  {
+    "id": "vrd-020",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The edit clarifies that omitting locale selects en-US while preserving the E14 rejection for an empty string and the client guidance.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vrd-032",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The paragraphs make the trial, response counts, sampling limits, proposed July test, and lack of an old-sheet comparison easier to follow without changing their claims or measured tone.",
+      "issue": null
+    }
+  }
+]

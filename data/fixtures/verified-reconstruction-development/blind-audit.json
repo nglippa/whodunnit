@@ -1,0 +1,802 @@
+[
+  {
+    "id": "vrd-001",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The original is already concise and evocative. Both versions retain it unchanged, which suits a polish-only request."
+  },
+  {
+    "id": "vrd-002",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The existing safety sequence and indicator-light caveat are clear for a new technician. Neither version changes them."
+  },
+  {
+    "id": "vrd-003",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The field note already states the count, timing, and unresolved cause precisely. Leaving it intact is appropriate for a light edit."
+  },
+  {
+    "id": "vrd-004",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Removing 'It is important to note that' makes the boarding deadline easier to scan without changing the departure time, deadline, or ticket instruction."
+  },
+  {
+    "id": "vrd-005",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The edit drops the corporate-sounding 'main takeaway' frame while retaining the observation and the dog's small contradiction."
+  },
+  {
+    "id": "vrd-006",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The irrelevant 'fast-paced world' phrase is removed, so the approval, planting date, and lease term read like a useful newsletter update."
+  },
+  {
+    "id": "vrd-007",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Concrete details about hours, desks, accessibility, and map help replace generic promotional language."
+  },
+  {
+    "id": "vrd-008",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": false
+    },
+    "betterFinal": "NO",
+    "rationale": "The candidate leads with the observed failure rate and next test, which is candid and actionable. The final restores vague process claims that obscure the actual result."
+  },
+  {
+    "id": "vrd-009",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": false
+    },
+    "betterFinal": "NO",
+    "rationale": "The candidate focuses on the crossing, requested guard, and remaining route. The final keeps two generic opening sentences that delay the practical information."
+  },
+  {
+    "id": "vrd-010",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The anecdote already flows naturally, and the conversational fragment at the end gives it character. Both versions sensibly leave it alone."
+  },
+  {
+    "id": "vrd-011",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The discrepancy, possible explanation, and payoff already form a clear progression. Neither unchanged version improves on it."
+  },
+  {
+    "id": "vrd-012",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The combined sentence is grammatical and slightly shorter, but it softens the deliberate pause before the recurring gate question. This is a stylistic tradeoff, not a clear improvement."
+  },
+  {
+    "id": "vrd-013",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The opening states the 48-versus-50 discrepancy more compactly while preserving the receiving action and unresolved status of the other two cartons."
+  },
+  {
+    "id": "vrd-014",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Putting the survey-data condition first clarifies the schedule dependency. The tentative client meeting remains explicitly contingent on design review."
+  },
+  {
+    "id": "vrd-015",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The August and September counts are easier to compare in one sentence, and the edit retains the explicit warning against inferring causation from the label change."
+  },
+  {
+    "id": "vrd-016",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The revision brings the voluntary sample limitation forward and preserves the campus scope, count, and caution against generalization in a tighter abstract style."
+  },
+  {
+    "id": "vrd-017",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Both versions leave a clear, appropriately cautious literature-review passage intact. Neither improves it, but no substantive edit is needed."
+  },
+  {
+    "id": "vrd-018",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The original already states the observation and the irrigation confound precisely. Leaving it alone is editorially sound, though it is not an improvement."
+  },
+  {
+    "id": "vrd-019",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Adding 'only' makes the checksum prerequisite for the rename explicit. The prior export and lack of automatic retry remain clear."
+  },
+  {
+    "id": "vrd-020",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "YES",
+    "rationale": "Both make the default behavior easier to scan. The final more explicitly contrasts an omitted locale with an empty string, a distinction clients need to avoid E14."
+  },
+  {
+    "id": "vrd-021",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The revision puts the 400-session test condition before the latency figures and retains the uncertainty about image-worker queueing versus storage waits."
+  },
+  {
+    "id": "vrd-022",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Email formatting makes the brief request ready to send. The simpler HDMI question remains courteous, and the Friday plan is unchanged."
+  },
+  {
+    "id": "vrd-023",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": true
+    },
+    "betterFinal": "NO",
+    "rationale": "The candidate is shorter, well formatted, and keeps the appendix condition and Tuesday deadline. The final simply repeats the less concise source."
+  },
+  {
+    "id": "vrd-024",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "Both versions preserve the friendly tone and make the email easier to display, but neither tightens the wording as requested."
+  },
+  {
+    "id": "vrd-025",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The original's repetition and conversational pause are deliberate parts of its voice. It already flows naturally, so an unchanged version is defensible."
+  },
+  {
+    "id": "vrd-026",
+    "candidate": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The repeated correction gives the passage its emphasis and cadence. It is already coherent and suitable for publication without alteration."
+  },
+  {
+    "id": "vrd-027",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": true
+    },
+    "betterFinal": "NO",
+    "rationale": "The candidate combines the start, room, and bridge activity into one readable sentence and keeps Thursday in a second. Its first sentence is somewhat long, but the final misses the requested two-sentence form altogether."
+  },
+  {
+    "id": "vrd-028",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The three bullets separate inspection, uncertain moisture source, and next inspection. Neither version attributes the leak to the vent."
+  },
+  {
+    "id": "vrd-029",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": false,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": false,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": false
+    },
+    "betterFinal": "NO",
+    "rationale": "The candidate turns the request into a usable message seeking authorized access, as the objective requires. That intentionally changes the source's covert intent. The final repeats the original request and is not a message to the property manager."
+  },
+  {
+    "id": "vrd-030",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": false,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": false,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": false,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": true,
+      "natural": false
+    },
+    "betterFinal": "NO",
+    "rationale": "The candidate is a clear request to IT for the approved recovery steps. Its change of intent is required by the objective. The final remains a request to impersonate payroll and is not an IT-desk message."
+  },
+  {
+    "id": "vrd-031",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "SAME",
+    "rationale": "The paragraph breaks make the long field note easier to follow without changing its measured observations, uncertainty, or modest first-person voice."
+  },
+  {
+    "id": "vrd-032",
+    "candidate": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "final": {
+      "improved": true,
+      "meaningPreserved": true,
+      "unsupportedInfo": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "overedited": false,
+      "underedited": false,
+      "natural": true
+    },
+    "betterFinal": "YES",
+    "rationale": "Both organize the trial and its limits well. The final's wording about the stairwell observation states more precisely that it helps locate a possible issue without establishing its frequency."
+  }
+]

@@ -139,6 +139,8 @@ export async function runReconstructionDetailed(request: ReconstructionRequest, 
   const strategy = options.strategy ?? DEFAULT_STRATEGY;
   if (strategy.id === "reconstruction" && strategy.version === 4 && provider.info.provider !== "orchestrated")
     throw new Error("reconstruction-v4 requires the experimental orchestrator runner");
+  if (strategy.id === "reconstruction" && strategy.version === 10)
+    throw new Error("reconstruction-v10 requires the verified frontier runner");
   const source = request.source;
   const refinement = request.refinement;
   const profile = refinement ? applyRefinement(request.profile, refinement.change) : request.profile;

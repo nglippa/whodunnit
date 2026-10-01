@@ -40,7 +40,8 @@
     "eval:objective-feasibility": "node --import tsx tools/eval/objective-feasibility-validation.ts",
     "eval:objective-feasibility-v4": "node --import tsx tools/eval/objective-feasibility-v4.ts",
     "eval:plan-entailment": "node --import tsx tools/eval/plan-entailment.ts",
-    "eval:plan-entailment-v5": "node --import tsx tools/eval/plan-entailment-v5.ts"
+    "eval:plan-entailment-v5": "node --import tsx tools/eval/plan-entailment-v5.ts",
+    "eval:verified-development": "node --import tsx tools/eval/verified-reconstruction-development.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.128.0",

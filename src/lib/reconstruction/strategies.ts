@@ -112,7 +112,18 @@ export const RECONSTRUCTION_V9 = define({
   description: "v8 deterministic evidence with semantic-review.v5 requirements, preservation constraints, and job-local withholding. No generation route selects it.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9];
+/** Experimental candidate-first editing loop; executed only by verified-reconstruction. */
+export const RECONSTRUCTION_V10 = define({
+  ...RECONSTRUCTION_V5,
+  version: 10,
+  name: "Reconstruction v10 (verified frontier editing)",
+  description: "Frontier editor drafts one candidate; source/candidate checks and an independent verifier accept, locally repair once, or return the source. Explicit runner only.",
+  prompt: { id: "reconstruct", version: 7 },
+  retryPolicy: { maxAttemptsLive: 1, maxAttemptsDemo: 1, retryOn: [] },
+  postCheckPolicy: { modelMeaning: "never", claimsExtractionMinWords: null },
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

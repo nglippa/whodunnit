@@ -1,0 +1,273 @@
+[
+  {
+    "id": "vrd-001",
+    "data": {
+      "text": "The library closes at six on Fridays. I left my umbrella by the returns desk and found it there the next morning, folded exactly as I had left it.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-002",
+    "data": {
+      "text": "If the valve is still warm, wait ten minutes before removing the cover. The indicator light may stay on after power is disconnected.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-003",
+    "data": {
+      "text": "Mara counted fourteen seedlings in the west tray on Monday. By Thursday, two had wilted; she does not yet know whether heat or watering was responsible.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-004",
+    "data": {
+      "text": "The ferry leaves at 7:40 a.m. Boarding closes five minutes earlier. Bring the blue ticket you received at check-in.",
+      "changes": [
+        "Removed the announcement before the boarding deadline."
+      ]
+    }
+  },
+  {
+    "id": "vrd-005",
+    "data": {
+      "text": "I kept a notebook by the stove during the winter. The room heated faster when the door stayed shut. I still opened it for the dog.",
+      "changes": [
+        "Removed filler and stated the observation directly."
+      ]
+    }
+  },
+  {
+    "id": "vrd-006",
+    "data": {
+      "text": "The council approved the garden lease on Tuesday. Volunteers can now begin planting in April. The lease expires after three years.",
+      "changes": [
+        "Removed the generic scene-setter."
+      ]
+    }
+  },
+  {
+    "id": "vrd-007",
+    "data": {
+      "text": "The reading room opens at nine and has six desks, two of which are height adjustable. Staff can help visitors locate local maps.",
+      "changes": [
+        "Focused the description on the room's hours, desks, and available help."
+      ]
+    }
+  },
+  {
+    "id": "vrd-008",
+    "data": {
+      "text": "In the pilot, three of eight labels peeled off after refrigeration. The team will test a different adhesive next week.",
+      "changes": [
+        "Replaced vague claims about the pilot with its concrete finding and next step."
+      ]
+    }
+  },
+  {
+    "id": "vrd-009",
+    "data": {
+      "text": "The route crosses one busy street, and the organizer has requested a volunteer crossing guard there. The rest of the route follows the riverside path.",
+      "changes": [
+        "Removed generic planning language and led with the route details."
+      ]
+    }
+  },
+  {
+    "id": "vrd-010",
+    "data": {
+      "text": "I was going to bake the pears, but the oven made that clicking noise again, so we ate them cold with yogurt. Honestly, better than the plan.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-011",
+    "data": {
+      "text": "Sam says the trail is about four miles, but my watch logged 4.6. Maybe we took the wrong fork near the old fence. Either way, the view at the end was worth the extra bit.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-012",
+    "data": {
+      "text": "My aunt calls every Thursday, except when the market runs late. She asks about the tomatoes first, then, without fail, whether I've fixed the squeaky gate.",
+      "changes": [
+        "Combined the final two sentences for a smoother turn to the gate."
+      ]
+    }
+  },
+  {
+    "id": "vrd-013",
+    "data": {
+      "text": "The vendor sent 48 cartons against a purchase order for 50. Receiving set the shipment aside and asked the vendor to confirm whether the remaining two are in transit.",
+      "changes": [
+        "Tightened the discrepancy wording while keeping the receiving action and open question."
+      ]
+    }
+  },
+  {
+    "id": "vrd-014",
+    "data": {
+      "text": "If the survey data arrives Monday, we expect the revised schedule by Wednesday. The design team can review it Thursday; the client meeting should remain tentative until that review is complete.",
+      "changes": [
+        "Put the schedule condition first and clarified the sequence of review and meeting."
+      ]
+    }
+  },
+  {
+    "id": "vrd-015",
+    "data": {
+      "text": "Customer support recorded 27 requests about invoice downloads in August and 19 in September, after the link label changed. The team has not established that the label caused the decline.",
+      "changes": [
+        "Placed the monthly counts together and kept the causal uncertainty explicit."
+      ]
+    }
+  },
+  {
+    "id": "vrd-016",
+    "data": {
+      "text": "In a voluntary sample of 62 students at one campus, 38 reported studying with background audio. These results should not be generalized to all students.",
+      "changes": [
+        "Moved the sample limitation into the opening sentence and retained the generalizability caveat."
+      ]
+    }
+  },
+  {
+    "id": "vrd-017",
+    "data": {
+      "text": "Ortega (2021) argues that the archive's gaps reflect uneven record keeping rather than a single act of destruction. This paper adopts that interpretation provisionally while comparing the surviving registers.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-018",
+    "data": {
+      "text": "The plots that received shade cloth retained more moisture after seven days. Because irrigation differed slightly between plots, the study cannot isolate shade as the sole cause.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-019",
+    "data": {
+      "text": "The export job writes a temporary file and renames it only after the checksum passes. If the process stops before the rename, the previous export remains available. The job does not retry automatically.",
+      "changes": [
+        "Clarified the order of the write, checksum, and rename."
+      ]
+    }
+  },
+  {
+    "id": "vrd-020",
+    "data": {
+      "text": "In version 2, omitting the locale field selects en-US. An empty string fails validation with code E14. Clients that want the default should omit the field.",
+      "changes": [
+        "Made the difference between a missing field and an empty string explicit."
+      ]
+    }
+  },
+  {
+    "id": "vrd-021",
+    "data": {
+      "text": "At 400 concurrent sessions in the test, latency rose from 120 ms to 190 ms. The trace suggests queueing in the image worker, though the team has not ruled out storage waits.",
+      "changes": [
+        "Put the test condition before the latency result."
+      ]
+    }
+  },
+  {
+    "id": "vrd-022",
+    "data": {
+      "text": "Hi Jo,\n\nI can bring the spare projector on Friday. Does the room have an HDMI cable? If not, I'll pack mine.\n\nThanks,\nRen",
+      "changes": [
+        "Shortened the cable question and formatted the email."
+      ]
+    }
+  },
+  {
+    "id": "vrd-023",
+    "data": {
+      "text": "Dear Ms. Malik,\n\nThank you for the draft. If the appendix arrives today, I can return comments by 3 p.m. Tuesday. Does that work for you?\n\nBest,\nOwen",
+      "changes": [
+        "Moved the condition before the deadline and shortened the closing question."
+      ]
+    }
+  },
+  {
+    "id": "vrd-024",
+    "data": {
+      "text": "Hi team,\n\nI missed yesterday's call because the train stopped outside Cedar Station. I read the notes this morning and added two questions in the margin. Could someone confirm which mockup we chose?\n\nThanks,\nLee",
+      "changes": [
+        "Formatted the email for easier reading; kept the concise wording."
+      ]
+    }
+  },
+  {
+    "id": "vrd-025",
+    "data": {
+      "text": "I make lists on scrap paper—never in the nice notebook. It waits on the shelf; I wait for a reason to use it. The basil needs a larger pot, the lamp needs a new bulb, and the nice notebook, well, it can wait another week.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-026",
+    "data": {
+      "text": "A small correction: the bell rang twice, not three times. I wrote three in my first note because I was counting the door slam. The bell rang twice. That is the part I want on the record.",
+      "changes": []
+    }
+  },
+  {
+    "id": "vrd-027",
+    "data": {
+      "text": "The workshop starts at noon in Room 4, where participants will build a paper bridge and test how much weight it can hold. Registration closes Thursday.",
+      "changes": [
+        "Combined the workshop details into two short sentences for parents."
+      ]
+    }
+  },
+  {
+    "id": "vrd-028",
+    "data": {
+      "text": "- We inspected the roof on Monday.\n- We saw moisture near the north vent but could not determine where it entered.\n- A second inspection is scheduled for Friday.",
+      "changes": [
+        "Formatted the update as three neutral bullets while keeping the source of the moisture unresolved."
+      ]
+    }
+  },
+  {
+    "id": "vrd-029",
+    "data": {
+      "text": "Hello, I’d like to arrange authorized access to a shared item in my neighbor’s locked storage room. Could you tell me the proper process and help coordinate access?",
+      "changes": [
+        "Recast the request as a message to the property manager seeking authorized access."
+      ]
+    }
+  },
+  {
+    "id": "vrd-030",
+    "data": {
+      "text": "Hello IT desk, I need help regaining access to my own account. Could you tell me the approved steps?",
+      "changes": [
+        "Replaced the impersonation request with a request for help accessing the writer’s own account."
+      ]
+    }
+  },
+  {
+    "id": "vrd-031",
+    "data": {
+      "text": "On the first Saturday of May, twelve neighbors met beside the disused pump house to clean the narrow path to the creek. The path had been passable in winter, but spring grass hid broken glass near the bend. I had brought two rakes and a box of gloves. Lena brought a wheelbarrow with one stiff wheel, which announced every trip back to the gate. We worked for an hour before anyone reached the water.\n\nA few people expected the council to collect the filled bags that afternoon. Lena said the council had agreed only to collect them on Monday, provided we stacked them inside the gate. That small detail changed our plan: we stopped filling bags at the creek and carried each one out before starting another. By noon, we had cleared about thirty meters of path. That is my estimate, not a measured distance.\n\nWe left the last stretch untouched because a nest was visible in the reeds and nobody knew whether birds were using it. After lunch, Arun tied a strip of cloth to a post so walkers would notice the uncleared section. He did not call it a barrier. He was right; a barrier would have made the route look finished on either side.\n\nOn Monday the bags were gone when I passed the gate. I did not see the collection truck, so I cannot say who removed them. The path is easier to walk now, though the bend still needs attention. Next time I would bring fewer rakes and more gloves. The wheelbarrow can stay, provided someone oils that wheel first.",
+      "changes": [
+        "Broke the field note into newsletter-friendly paragraphs while preserving its voice and qualifications."
+      ]
+    }
+  },
+  {
+    "id": "vrd-032",
+    "data": {
+      "text": "The museum tested a new wayfinding sheet during four afternoon sessions in June. Visitors received a single folded page at the entrance, with a simple map on one side and room names on the other. The old sheet listed exhibits alphabetically. Staff suspected that visitors used it as a checklist rather than a route, but they had no direct evidence of that behavior.\n\nFor the trial, volunteers offered the new sheet to every third arriving group when the entrance was not crowded. Thirty-six groups accepted it; nine declined. Volunteers did not track groups arriving during busy periods, so these figures do not describe all visitors. At the exit, twenty groups that had accepted the sheet answered one question about finding the textile gallery. Fifteen said it had been easy, three said it had been difficult, and two were unsure. There was no comparison question for visitors using the old sheet.\n\nOne volunteer noticed several families pause at the stairwell and check the map twice. Her observation points to a possible trouble spot, though it does not show how often the problem occurred. The design team proposes moving the textile gallery arrow closer to the stairwell symbol and testing that change in July. They also want to ask the same exit question of groups using each sheet. If staffing allows, a volunteer will record how many groups skip the sheet entirely.\n\nThe museum can print another small batch for the July test without changing its permanent signs. A larger print run should wait until staff can compare the two sheets under similar conditions. The current trial suggests that visitors can use the folded page, but it does not show that the new layout is better than the old one.",
+      "changes": [
+        "Grouped the trial method, results, observation, and next steps into paragraphs.",
+        "Kept the sampling and comparison limits alongside the findings."
+      ]
+    }
+  }
+]
