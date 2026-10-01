@@ -1,0 +1,632 @@
+[
+  {
+    "id": "A001",
+    "source": "I started the neighborhood seed shelf in March because people kept leaving spare packets on the library windowsill. The first month was quiet, but by late April volunteers had sorted about forty packets and made a simple sign. We planned to put a small weatherproof box outside. The library manager has approved the outdoor box. One volunteer offered to build it from leftover wood, though she can only work on weekends. If the box is ready before the June planting day, we can move the packets outside; otherwise the indoor shelf will stay in place. I am glad the project has a shape now, even if it is still small. I would rather make it easy to maintain than promise a larger exchange we cannot staff.",
+    "objective": "Turn this into a warm update for neighbors. Mention the packet count, explain the outdoor box plan and its timing, and keep the closing modest.",
+    "genre": "project update",
+    "creator": "A"
+  },
+  {
+    "id": "A002",
+    "source": "I started the neighborhood seed shelf in March because people kept leaving spare packets on the library windowsill. The first month was quiet, but by late April volunteers had sorted about forty packets and made a simple sign. We planned to put a small weatherproof box outside. The library manager has not yet approved the outdoor box. One volunteer offered to build it from leftover wood, though she can only work on weekends. If the box is ready before the June planting day, we can move the packets outside; otherwise the indoor shelf will stay in place. I am glad the project has a shape now, even if it is still small. I would rather make it easy to maintain than promise a larger exchange we cannot staff.",
+    "objective": "Turn this into a warm update for neighbors. Mention the packet count, explain the outdoor box plan and its timing, and keep the closing modest.",
+    "genre": "project update",
+    "creator": "A"
+  },
+  {
+    "id": "A003",
+    "source": "Thank you for writing about the invoice for the spring workshop. I checked the registration ledger and found your payment of $80 on May 3. Our system also generated a second invoice when the class date changed, which likely explains the reminder you received. We have already voided that second invoice. Your original payment remains applied to your seat, and no further payment is due. The workshop starts at 9:30 a.m. on Saturday, and doors open fifteen minutes earlier. If you need to cancel, please tell us by Thursday evening so someone on the waitlist can take the place. I am sorry the duplicate message made the arrangements look unsettled. We are reviewing the date-change workflow, but I cannot yet say whether it affected other participants.",
+    "objective": "Draft a concise, reassuring reply to the participant. Confirm the payment status, give the arrival time, and explain the cancellation deadline.",
+    "genre": "support communication",
+    "creator": "A"
+  },
+  {
+    "id": "A004",
+    "source": "Thank you for writing about the invoice for the spring workshop. I checked the registration ledger and found your payment of $80 on May 3. Our system also generated a second invoice when the class date changed, which likely explains the reminder you received. We have requested that accounting void the second invoice. Your original payment remains applied to your seat, and no further payment is due. The workshop starts at 9:30 a.m. on Saturday, and doors open fifteen minutes earlier. If you need to cancel, please tell us by Thursday evening so someone on the waitlist can take the place. I am sorry the duplicate message made the arrangements look unsettled. We are reviewing the date-change workflow, but I cannot yet say whether it affected other participants.",
+    "objective": "Draft a concise, reassuring reply to the participant. Confirm the payment status, give the arrival time, and explain the cancellation deadline.",
+    "genre": "support communication",
+    "creator": "A"
+  },
+  {
+    "id": "A005",
+    "source": "The pilot newsletter went to 320 subscribers on Tuesday morning. About 70 people opened the first issue by noon, although the tracking tool does not count readers who block images. Two partners replied with corrections to the resource list. The health clinic confirmed that its drop-in hours are changing next month. We can revise the online version today, but the emailed copy cannot be recalled. I recommend adding a dated correction at the top of the web page and mentioning it in the next issue. I would not describe the pilot as a success yet; we have only sent one issue and have not asked readers whether the format helps. The next send is tentatively set for three weeks from now, provided the partner checks are complete.",
+    "objective": "Write a short internal update that covers initial reach, the resource-list correction, and the proposed next step without overstating the pilot.",
+    "genre": "memo",
+    "creator": "A"
+  },
+  {
+    "id": "A006",
+    "source": "The pilot newsletter went to 320 subscribers on Tuesday morning. About 70 people opened the first issue by noon, although the tracking tool does not count readers who block images. Two partners replied with corrections to the resource list. The health clinic said its drop-in hours may change next month, pending a staffing decision. We can revise the online version today, but the emailed copy cannot be recalled. I recommend adding a dated correction at the top of the web page and mentioning it in the next issue. I would not describe the pilot as a success yet; we have only sent one issue and have not asked readers whether the format helps. The next send is tentatively set for three weeks from now, provided the partner checks are complete.",
+    "objective": "Write a short internal update that covers initial reach, the resource-list correction, and the proposed next step without overstating the pilot.",
+    "genre": "memo",
+    "creator": "A"
+  },
+  {
+    "id": "A007",
+    "source": "I told my sister I would visit in October, and at the time it sounded easy. Since then, the new shift schedule has made weekends less predictable. My supervisor approved my leave for October 12 through 15. Train fares are still reasonable if I book this week, but I have not bought a ticket. I want to see her and meet the puppy she adopted, yet I also need one unplanned day after the trip before going back to work. If the late train on the 15th is the only affordable return, I may move the visit to November. I do not want this note to sound like another vague promise. A clear date, or a clear reason I cannot set one yet, would be kinder.",
+    "objective": "Help me write a personal email to my sister that explains where the visit stands, gives the relevant dates, and sounds caring without promising a booking.",
+    "genre": "email",
+    "creator": "A"
+  },
+  {
+    "id": "A008",
+    "source": "I told my sister I would visit in October, and at the time it sounded easy. Since then, the new shift schedule has made weekends less predictable. My supervisor has not yet approved my leave for October 12 through 15. Train fares are still reasonable if I book this week, but I have not bought a ticket. I want to see her and meet the puppy she adopted, yet I also need one unplanned day after the trip before going back to work. If the late train on the 15th is the only affordable return, I may move the visit to November. I do not want this note to sound like another vague promise. A clear date, or a clear reason I cannot set one yet, would be kinder.",
+    "objective": "Help me write a personal email to my sister that explains where the visit stands, gives the relevant dates, and sounds caring without promising a booking.",
+    "genre": "email",
+    "creator": "A"
+  },
+  {
+    "id": "A009",
+    "source": "The service desk received fourteen calls about the new appointment page during its first two days. Nine callers could not find the reschedule link, which appears below the confirmation details on a phone screen. Three callers were trying to change appointments made at a partner clinic; those bookings are handled on the clinic's site. The remaining two reported that the page stopped responding after they tapped Save, but we have not reproduced that problem. Support can send a direct link for our own appointments while the layout team reviews placement. We should avoid telling all callers to use that link, because it will not open partner bookings. I suggest a small copy change this week and a follow-up check after another week of call logs.",
+    "objective": "Prepare a support-team note that separates the three call patterns, explains the temporary guidance, and asks for a follow-up review.",
+    "genre": "support communication",
+    "creator": "A"
+  },
+  {
+    "id": "A010",
+    "source": "I used to think my evening walks were mainly a way to get exercise. This month I noticed I was taking the same route even on days when I felt tired, because it gave me time to leave work thoughts behind. I walked on eleven evenings in August, usually for twenty to thirty minutes. Two of those walks ended early when thunderstorms arrived, and I skipped several nights while caring for my father. The habit has helped me feel calmer before bed, though I cannot tell how much of that is the walk and how much is simply being away from my phone. I want to keep the route flexible as the days get shorter instead of turning it into another target to meet.",
+    "objective": "Shape this into a reflective journal entry about what the walks have meant, using the August details and ending with a realistic intention for autumn.",
+    "genre": "personal reflection",
+    "creator": "A"
+  },
+  {
+    "id": "A011",
+    "source": "The first batch of repaired laptops is ready for pickup. We received twelve devices from the community center; eight now start reliably, two still need replacement batteries, and two have screen damage beyond our volunteer team's current tools. The eight working devices have passed a basic charging and keyboard check, but they have not been tested with every accessibility setting the center uses. We can deliver them on Friday if the center confirms that someone can sign for them. I have asked the repair lead to price the batteries before we commit to a second batch. We should thank the volunteers for their time while being precise about what is complete. Several families are waiting, so an accurate handoff date matters more than an optimistic one.",
+    "objective": "Draft a project update for the community center with the device counts, the Friday condition, and the remaining checks.",
+    "genre": "project update",
+    "creator": "A"
+  },
+  {
+    "id": "A012",
+    "source": "We have a customer asking whether the revised packaging can be used for the November market. The printer sent a proof yesterday, and the product name and ingredients are legible. However, the proof still shows the old storage instruction on the side panel. The design team has sent a correction, but the printer has not acknowledged it yet. Our current stock is sufficient through the first week of November if sales remain near the September average. I recommend holding the new print run until we receive a corrected proof, then confirming the schedule with the market coordinator. That recommendation does not settle whether the November event will use old or new packaging. We need to give the customer a useful answer without turning a likely schedule into a guarantee.",
+    "objective": "Write a clear customer email about the packaging timeline, what has been corrected, and when we can give a firm answer.",
+    "genre": "business communication",
+    "creator": "A"
+  },
+  {
+    "id": "A013",
+    "source": "The volunteer orientation is booked for Wednesday evening in the small meeting room. Eleven people registered, although past sessions usually lose one or two attendees on the day. We have printed ten handbooks and can make more at the library if everyone comes. The session should run for about an hour, followed by optional time for questions. A trainer suggested adding a short demonstration of the sign-in tablet because two volunteers struggled with it last month. I agree, provided we do not cut the section on safeguarding records. The tablet demonstration is practice, not a requirement for people who will work only on the phone line. Please leave enough time for the trainer to explain where volunteers can ask for help later.",
+    "objective": "Write an orientation reminder for registrants with the time commitment, what will be covered, and the optional question period.",
+    "genre": "email",
+    "creator": "A"
+  },
+  {
+    "id": "A014",
+    "source": "I reviewed the draft catering agreement for the staff retreat. It lists lunch for forty people and a vegetarian option, but the count may change after the final RSVP deadline on Monday. The vendor can accommodate up to forty-six without changing the menu, according to its email. It has not confirmed whether it can provide meals free of sesame, and two colleagues have requested that accommodation. I recommend sending the tentative count now and holding final approval until the vendor answers the allergy question. The deposit is due Wednesday if we want to keep the date. Finance has budgeted for the deposit but has not released payment. A brief decision note should make the deadline visible without implying that the contract is ready to sign.",
+    "objective": "Turn this into a decision memo for the retreat lead, covering the headcount, dietary question, and deposit deadline.",
+    "genre": "memo",
+    "creator": "A"
+  },
+  {
+    "id": "A015",
+    "source": "On my first day at the new studio, I put my notebooks in a drawer and kept looking for them in the old place. The room faces a busy street, so the quiet I had imagined is rare before lunch. By midafternoon the light reaches the back wall, and that has become my favorite time to sketch. I finished three small studies this week, but none feels ready to show. A friend asked whether the move has made me more productive. I do not know yet; packing and setting up took most of the month, and I am still learning what hours suit the room. What has changed is that I now have a place where I can leave a drawing unfinished and come back to it.",
+    "objective": "Make this a personal reflection on settling into the studio, keeping the uncertainty about productivity and the specific details of the space.",
+    "genre": "personal reflection",
+    "creator": "A"
+  },
+  {
+    "id": "A016",
+    "source": "The account export you requested was generated this morning. It includes your profile details and the notes you saved through August 31. Attachments uploaded before June are in a separate archive because the export tool groups older files by storage location. We are still checking whether one attachment from July appears twice; both entries, if present, point to the same file rather than two different uploads. The download link expires in seven days for security reasons. If the archive does not open, reply to this message and we can prepare a replacement link. We cannot change the export contents after generation, so any missing item needs to be investigated and included in a new export. I know this has taken longer than the original estimate, and I appreciate your patience.",
+    "objective": "Draft a customer support reply announcing the export, explaining the separate archive and possible duplicate, and giving the next step if something is missing.",
+    "genre": "support communication",
+    "creator": "A"
+  },
+  {
+    "id": "A017",
+    "source": "Our team tested the revised sign-up form with six returning members on Monday. Five completed it without help; one stopped at the emergency contact field because the form did not say whether that contact was required. The field is optional under our policy, but the interface currently marks it with the same styling as required fields. The design lead proposed adding an explicit optional label and a short explanation of why we ask. Engineering estimates that change at half a day, assuming no validation changes are needed. We have not tested the form with first-time members yet, so the six sessions cannot tell us how new visitors will fare. I suggest making the label change, then scheduling a separate first-time member check before the wider launch.",
+    "objective": "Write a concise project update describing the test result, the form issue, and the recommended sequence before launch.",
+    "genre": "project update",
+    "creator": "A"
+  },
+  {
+    "id": "A018",
+    "source": "I am following up on the shipment that was expected at your office yesterday. The carrier scan shows the boxes reached the local depot at 6:10 a.m., but there is no delivery scan. The carrier's help desk said weather may have delayed its route; it did not confirm that as the cause for this shipment. We have opened a trace request and expect a response by tomorrow afternoon. The boxes contain printed guides for the Friday training. If they have not arrived by Thursday noon, we can send a printable PDF so the trainer has copies, although the PDF lacks the binding and tabs of the printed version. I realize your staff planned around the original date and will update you as soon as we hear back.",
+    "objective": "Write a shipment-status email to the office contact. Explain the known tracking facts, the pending trace, and the backup for Friday.",
+    "genre": "business communication",
+    "creator": "A"
+  },
+  {
+    "id": "A019",
+    "source": "The garden club has offered to host our repair cafe in its hall on the first Saturday of each month. The hall is free, but we would need to bring extension leads and arrange a volunteer to unlock the building. Our current quarterly sessions average twenty-five visitors, and no one has measured demand for a monthly schedule. Two experienced repairers can attend in October; neither has committed for later dates. The club would like an answer by September 18 so it can publish its calendar. I recommend accepting one trial date in October and reviewing attendance and volunteer availability afterward. If we do that, the public announcement should call it a trial session rather than a standing monthly service. The arrangement could be useful, but it needs a manageable start.",
+    "objective": "Prepare a brief proposal to the club coordinator with the trial date approach, practical needs, and when a longer schedule could be discussed.",
+    "genre": "business communication",
+    "creator": "A"
+  },
+  {
+    "id": "A020",
+    "source": "I found the postcard in a box of receipts while clearing my desk. It was from my grandfather, written during a trip he took when I was in school. Most of it was about the train food and a stray dog outside the station, ordinary details I had forgotten. He wrote that he hoped to visit us before winter, but I cannot remember whether he made that trip. I almost put the card back without reading it because I was trying to finish the cleaning before dinner. Instead I sat on the floor and read it twice. I do not think the card tells a grand story about him. It reminded me how often our family remembered the big milestones and let these small observations disappear.",
+    "objective": "Turn this into a short personal essay about the postcard and memory, retaining the uncertainty about the later visit and the ordinary details.",
+    "genre": "personal reflection",
+    "creator": "A"
+  },
+  {
+    "id": "A021",
+    "source": "The client asked whether the draft report is ready for the board packet. The analysis section is complete, and the charts have been checked against the data table. The recommendations section still needs a legal review because one proposal refers to a contract renewal that has not been negotiated. Counsel expects to comment by Tuesday, although it may take longer if the renewal language changes. The board packet closes Thursday at 4 p.m. We could send the reviewed analysis as a briefing if the full report misses that deadline, provided the client is comfortable with a partial document. I would not call the report final until the legal comments have been addressed. Please make the status clear so the client can plan its packet without assuming every section is approved.",
+    "objective": "Draft an email to the client giving the report status, the board deadline, and the partial-briefing option.",
+    "genre": "email",
+    "creator": "A"
+  },
+  {
+    "id": "A022",
+    "source": "Several customers have asked why their appointment reminders arrive at different times. For appointments booked directly with us, the system sends a text about twenty-four hours beforehand. A partner clinic sends its own reminders for appointments made through its desk, and we cannot see or change its schedule. Last week's outage delayed thirteen of our texts by roughly two hours; the messages still went out before the appointments. We restored the queue, but the engineering team has not established what caused the pause. Support should acknowledge the variation and help customers check their appointment details in the confirmation email. We should also avoid promising that every future reminder will arrive at exactly the same hour. The booking record is the reliable place to confirm the date and time.",
+    "objective": "Create a support response for someone confused by reminder timing. Explain the two booking paths, address the recent delay, and point to a reliable confirmation source.",
+    "genre": "support communication",
+    "creator": "A"
+  },
+  {
+    "id": "A023",
+    "source": "We finished installing the new meeting-room shelves on Friday. The carpenter used the approved drawings, but one shelf sits lower than the drawing because a conduit runs behind that wall. It is still accessible from a seated position, according to our facilities coordinator, though we have not yet asked regular room users to try it. The room will reopen on Monday with the shelves in place. We will collect comments for two weeks and decide whether an adjustment is needed after that. The remaining paint touch-up can happen outside meeting hours and does not require another closure. I want the staff announcement to celebrate the reopening while making it easy for people to report a practical problem. The change was meant to help people use the room, not just finish the installation.",
+    "objective": "Write a staff update about the reopening, the shelf placement, and the two-week feedback period.",
+    "genre": "project update",
+    "creator": "A"
+  },
+  {
+    "id": "A024",
+    "source": "The supplier proposed moving our monthly order cutoff from the 20th to the 15th. That would give it more time to group deliveries, and it estimates fewer split shipments, but it has not supplied a cost comparison. Our team currently approves quantities after reviewing sales through the 18th, so an earlier cutoff could mean more forecasting. The September order is already submitted under the existing schedule. Operations can trial the earlier date in October if sales gives a provisional forecast by the 12th and the supplier agrees to one small adjustment through the 18th. I recommend asking for those terms in writing before changing the calendar. We should not present the trial as a permanent process until we see whether it reduces shipment changes without leaving us short of stock.",
+    "objective": "Turn this into an internal memo that explains the proposed cutoff, the October trial conditions, and what evidence is needed before a permanent change.",
+    "genre": "memo",
+    "creator": "A"
+  },
+  {
+    "id": "B001",
+    "source": "The university library will pilot extended evening access at its north branch during the fall examination period. From November 4 through November 22, the study rooms and ground-floor reading area will remain open until midnight on weekdays. The archives room will continue to close at 6 p.m. because its materials require staff supervision. Students with a current campus card may use the extended hours; community borrowers retain their usual closing time of 9 p.m. Facilities staff will review occupancy and incident reports after the pilot before administrators decide whether to repeat it in spring. The library expects to post any weather-related closures on its service page by 4 p.m. each affected day. A student advisory group recommended opening the entire building, but the approved pilot covers only the two named areas. No additional printing service is planned during the later hours. Staff will collect comments at the circulation desk and through an online form, then summarize them for the dean.",
+    "objective": "Draft a student-facing notice that gives the dates and eligible spaces, explains who can stay late, and distinguishes the pilot from any decision about spring hours.",
+    "genre": "policy",
+    "creator": "B"
+  },
+  {
+    "id": "B002",
+    "source": "The university library will pilot extended evening access at its north branch during the fall examination period. From November 4 through November 22, the study rooms and ground-floor reading area will remain open until midnight on weekdays. The archives room will continue to close at 6 p.m. because its materials require staff supervision. Students with a current campus card may use the extended hours; community borrowers retain their usual closing time of 9 p.m. Facilities staff will review occupancy and incident reports after the pilot before administrators decide whether to repeat it in spring. The library expects to post any weather-related closures on its service page by 4 p.m. each affected day. A student advisory group recommended opening the entire building, but the approved pilot covers only the two named areas. Additional printing service will be available during the later hours. Staff will collect comments at the circulation desk and through an online form, then summarize them for the dean.",
+    "objective": "Draft a student-facing notice that gives the dates and eligible spaces, explains who can stay late, and distinguishes the pilot from any decision about spring hours.",
+    "genre": "policy",
+    "creator": "B"
+  },
+  {
+    "id": "B003",
+    "source": "At Monday's procurement meeting, the committee reviewed bids for replacement cafeteria refrigeration. The operations lead presented three compliant bids and estimated that installation would take two weekends if electrical work proceeds on schedule. The finance representative said the capital allocation can cover any of the bids, although final purchase authority remains with the vice president. The committee recommended the lowest-priced compliant bid and asked operations to confirm that the vendor can maintain food service during the changeover. No contract was signed at the meeting. The dining director noted that a temporary cold-storage trailer would be needed if both existing units are disconnected at once; operations will seek a rental quote only if the vendor proposes that sequence. The secretary will circulate a revised comparison sheet on Thursday. Members agreed to review it by the following Tuesday, and the chair will send a recommendation memo after those comments arrive.",
+    "objective": "Turn these notes into a concise decision-and-actions record, preserving the purchase status, installation estimate, and contingency for temporary storage.",
+    "genre": "meeting notes",
+    "creator": "B"
+  },
+  {
+    "id": "B004",
+    "source": "At Monday's procurement meeting, the committee reviewed bids for replacement cafeteria refrigeration. The operations lead presented three compliant bids and estimated that installation would take two weekends if electrical work proceeds on schedule. The finance representative said the capital allocation can cover any of the bids, although final purchase authority remains with the vice president. The committee approved the lowest-priced compliant bid and asked operations to confirm that the vendor can maintain food service during the changeover. No contract was signed at the meeting. The dining director noted that a temporary cold-storage trailer would be needed if both existing units are disconnected at once; operations will seek a rental quote only if the vendor proposes that sequence. The secretary will circulate a revised comparison sheet on Thursday. Members agreed to review it by the following Tuesday, and the chair will send a recommendation memo after those comments arrive.",
+    "objective": "Turn these notes into a concise decision-and-actions record, preserving the purchase status, installation estimate, and contingency for temporary storage.",
+    "genre": "meeting notes",
+    "creator": "B"
+  },
+  {
+    "id": "B005",
+    "source": "The outpatient clinic has changed how it handles routine referral requests from primary care. Requests received before 2 p.m. on a business day enter the same-day intake queue; later requests enter the next business day's queue. Intake staff check for patient identifiers and a reason for referral before assigning a specialty. Missing insurance information does not prevent triage, though scheduling may wait until coverage is clarified. The clinic aims to contact patients within three business days after triage, but the target is not a guaranteed appointment date. Urgent referrals still follow the clinician-to-clinician phone pathway and should not be placed in the routine queue. During a six-week trial, staff found fewer duplicate requests after practices used the revised form. The trial did not measure whether patients were seen sooner. Clinic leadership will review call volume at the end of the quarter before deciding whether to change staffing.",
+    "objective": "Write a short practice bulletin explaining the intake cutoff, what can delay scheduling, and how urgent referrals should be sent.",
+    "genre": "healthcare operations",
+    "creator": "B"
+  },
+  {
+    "id": "B006",
+    "source": "The outpatient clinic has changed how it handles routine referral requests from primary care. Requests received before 2 p.m. on a business day enter the same-day intake queue; later requests enter the next business day's queue. Intake staff check for patient identifiers and a reason for referral before assigning a specialty. Missing insurance information does not prevent triage, though scheduling may wait until coverage is clarified. The clinic aims to contact patients within three business days after triage, but the target is not a guaranteed appointment date. Urgent referrals still follow the clinician-to-clinician phone pathway and should not be placed in the routine queue. During a six-week trial, staff found fewer duplicate requests after practices used the revised form. The trial measured whether patients were seen sooner and found no change. Clinic leadership will review call volume at the end of the quarter before deciding whether to change staffing.",
+    "objective": "Write a short practice bulletin explaining the intake cutoff, what can delay scheduling, and how urgent referrals should be sent.",
+    "genre": "healthcare operations",
+    "creator": "B"
+  },
+  {
+    "id": "B007",
+    "source": "The department reviewed a draft policy for recording public lectures. Under the draft, presenters would receive a consent form at least ten days before the event, and the event page would state whether a recording is planned. Audience questions would be included only when a microphone is used and the questioner has been told that recording is underway. The department chair said the language should allow a presenter to request a pause during discussion of unpublished work. The legal office has not yet reviewed the draft, so staff will continue using the current event-by-event consent process. The events coordinator will compile examples of existing consent notices by Friday. At the next meeting, the department expects to discuss how to handle recordings made by outside partners. The chair asked that staff avoid describing the draft as a university-wide rule, because other departments manage lectures under their own procedures.",
+    "objective": "Prepare an internal update on the recording policy, covering its status, proposed consent timing, and treatment of audience questions.",
+    "genre": "policy",
+    "creator": "B"
+  },
+  {
+    "id": "B008",
+    "source": "The department reviewed a draft policy for recording public lectures. Under the draft, presenters would receive a consent form at least ten days before the event, and the event page would state whether a recording is planned. Audience questions would be included only when a microphone is used and the questioner has been told that recording is underway. The department chair said the language should allow a presenter to request a pause during discussion of unpublished work. The legal office has reviewed and cleared the draft, so staff will continue using the current event-by-event consent process. The events coordinator will compile examples of existing consent notices by Friday. At the next meeting, the department expects to discuss how to handle recordings made by outside partners. The chair asked that staff avoid describing the draft as a university-wide rule, because other departments manage lectures under their own procedures.",
+    "objective": "Prepare an internal update on the recording policy, covering its status, proposed consent timing, and treatment of audience questions.",
+    "genre": "policy",
+    "creator": "B"
+  },
+  {
+    "id": "B009",
+    "source": "The municipal records office receives requests for copies through its portal, by mail, and at the front counter. Portal submissions receive an automatic receipt number, but that number confirms delivery rather than completeness. Staff review each request for a usable description of the record and an address for response. If the description is too broad, a specialist contacts the requester for clarification before searching; the office does not treat that contact as a denial. Routine requests are usually fulfilled within ten business days of a complete submission, although archived files may take longer to retrieve. Certified copies require a fee and must be mailed or collected in person because the seal cannot be delivered as an ordinary download. Staff may waive copy charges for requests under five pages when the cost of collection would exceed the fee. The office publishes weekly queue updates, but those estimates do not change any statutory deadlines.",
+    "objective": "Rewrite this as a plain-language guide for first-time requesters, including what the receipt number means, when clarification may be needed, and how certified copies are delivered.",
+    "genre": "procedure",
+    "creator": "B"
+  },
+  {
+    "id": "B010",
+    "source": "The hospital's environmental services team introduced a two-stage process for rooms vacated after isolation precautions. A trained cleaner completes the first cleaning with the product specified for the organism on the door sign. A second employee then checks high-touch surfaces and records the inspection in the turnover log before the room is released. The second check is intended to catch omissions; it is not a laboratory test for remaining organisms. If the sign is missing or conflicts with the electronic precaution order, the cleaner pauses and calls the charge nurse for clarification. During overnight hours, one employee may perform both stages only when no second trained employee is available, and the log must note the exception. The unit manager will review exception entries weekly for the first month. Bed placement staff receive a release message after the log is completed, but the message does not substitute for the recorded inspection.",
+    "objective": "Create a brief staff procedure that keeps the two stages and the overnight exception clear, with the action to take when precautions are unclear.",
+    "genre": "healthcare operations",
+    "creator": "B"
+  },
+  {
+    "id": "B011",
+    "source": "Researchers surveyed 184 graduate students at one public university about their use of shared laboratory equipment. Most respondents reported checking the online reservation calendar before arriving, while fewer than half said they routinely recorded maintenance concerns in the log. The survey was voluntary and conducted during a semester when two major instruments were out of service, which may have affected responses. Students who reported prior equipment training were more likely to report using the log, but the survey cannot show that training caused the behavior. Interview comments suggested that some students viewed the log as a place for urgent faults only. The authors propose testing a clearer log prompt next term and comparing entries before and after its introduction. They do not claim the prompt will improve equipment uptime. The study's main contribution is a description of how students say they use the current system at this site.",
+    "objective": "Condense this into an academic abstract paragraph that reports the sample, principal pattern, limitation, and proposed next step.",
+    "genre": "academic prose",
+    "creator": "B"
+  },
+  {
+    "id": "B012",
+    "source": "The admissions office will begin offering virtual document-review appointments to applicants who cannot visit campus. Appointments will run on Tuesdays and Thursdays during the autumn intake period, with slots posted two weeks in advance. Staff can explain whether a transcript appears complete, but they cannot make an admission decision during the call. Applicants must upload documents through the secure portal before the appointment; emailing files to an individual adviser is not an accepted substitute. If a required document is unavailable because a school is temporarily closed, applicants should note that in the portal, and staff will advise on the available extension process. The office expects appointment demand to be highest near the December deadline, so applicants are encouraged to book early. Walk-in desk service will continue on its current schedule. The pilot will be reviewed after the intake period using attendance and applicant feedback, without treating attendance alone as proof of improved access.",
+    "objective": "Draft a formal announcement for applicants stating when appointments are offered, what staff can review, and how documents must be submitted.",
+    "genre": "formal institutional writing",
+    "creator": "B"
+  },
+  {
+    "id": "B013",
+    "source": "At the regional transit accessibility meeting, riders described inconsistent audio announcements on two older bus routes. The fleet supervisor said replacement speakers are on order for twelve vehicles, but delivery has not been confirmed. Operations will test three vehicles that already received repairs during the next two weeks. If those tests show reliable volume at the rear seats, maintenance will use the same setup for the remaining repaired vehicles; a poor result would prompt a new equipment review. A rider representative asked for a public timetable, and the chair agreed to publish a progress note after the tests. The meeting did not approve a date for full fleet completion. Staff also noted that portable stop signs remain available during planned detours, although drivers may need to request them from dispatch. The secretary recorded the rider group's concern that an equipment fix alone may not solve missed announcements when route data is entered incorrectly.",
+    "objective": "Prepare meeting minutes that identify the immediate test, the conditional rollout, and what remains unresolved for riders.",
+    "genre": "meeting notes",
+    "creator": "B"
+  },
+  {
+    "id": "B014",
+    "source": "The county health department's mobile vaccination team is scheduling visits to community centers for the winter season. A center can request a visit if it expects at least twenty eligible participants, though the team may combine nearby sites when expected attendance is lower. The request form asks for accessibility details, an on-site contact, and the number of people likely to need language support. Submitting the form does not reserve a date; a coordinator confirms availability after reviewing staffing and supply. The team recommends sending requests four weeks ahead, especially for evening events. If a center must cancel, it should notify the coordinator as soon as possible so supplies can be redirected. The department will publish the confirmed clinic calendar weekly. Vaccine eligibility and consent requirements are determined under the current program guidance at the time of each visit, so the team asks organizers not to promise vaccination to every attendee in advance.",
+    "objective": "Write a concise organizer guide explaining the threshold, booking process, lead time, and limits on promises to attendees.",
+    "genre": "healthcare operations",
+    "creator": "B"
+  },
+  {
+    "id": "B015",
+    "source": "A university committee compared three approaches to reducing water use in teaching laboratories. Faucet aerators had the lowest estimated installation cost, while recirculating chillers offered the largest projected savings in the two buildings with high cooling demand. The estimates came from utility records covering twelve months, and the authors caution that unusually warm weather may have raised that year's cooling use. One department has already purchased chillers for its own equipment; the committee has not approved a campus-wide purchase. The report recommends installing aerators in laboratories scheduled for renovation and commissioning a more detailed chiller assessment before requesting capital funds. It also suggests adding water-use orientation to student training, but no estimate of savings from training is available. The committee expects a facilities update next spring. Any comparison of the options should retain the distinction between measured historic use and projected savings under the proposed equipment changes.",
+    "objective": "Turn this into a short executive summary with the key comparison, the committee recommendation, and the main uncertainty in the savings estimate.",
+    "genre": "academic prose",
+    "creator": "B"
+  },
+  {
+    "id": "B016",
+    "source": "The museum's collections department is updating its loan-return procedure after several lenders reported difficulty tracking packing dates. For outgoing returns, the registrar will send the proposed packing window at least fifteen business days in advance and ask the lender to confirm a receiving contact. Conservators will complete a condition report before packing, with photographs when the object's condition permits safe handling. If the lender requests a different carrier, the registrar must confirm that the carrier meets the loan agreement's insurance conditions before changing the booking. A return date is confirmed only after transport and receiving arrangements are accepted by both parties. Fragile objects may require a longer preparation window, and the registrar should explain that delay rather than treating the standard window as a promise. The department plans to review six months of returns to see whether the new notice period reduces last-minute changes. It has not changed ownership or insurance terms in existing agreements.",
+    "objective": "Rewrite the procedure as instructions for registrars, preserving when a date becomes confirmed and how carrier changes are handled.",
+    "genre": "procedure",
+    "creator": "B"
+  },
+  {
+    "id": "B017",
+    "source": "The school district reviewed attendance at its after-school reading program across six elementary sites. Average weekly attendance rose from 71 to 84 students between the first and second terms. The increase coincided with a new bus route at two sites, but coordinators did not collect enough information to attribute the change to transport. One site lost sessions for two weeks during building repairs; its term averages should therefore be interpreted cautiously. Teachers said that shorter reading groups appeared easier to staff, while families asked for more consistent pickup times. The district will keep the current program at all six sites through June and ask principals to submit staffing and transport notes each month. A proposal to add a seventh site is under review for the following year, subject to space and budget. The board has not voted on that expansion. Staff will share the attendance summary with families after verifying the site-level counts.",
+    "objective": "Draft a board briefing paragraph that reports the attendance change, avoids assigning a cause, and distinguishes continuation from proposed expansion.",
+    "genre": "formal institutional writing",
+    "creator": "B"
+  },
+  {
+    "id": "B018",
+    "source": "The laboratory safety office requires new research assistants to complete general chemical-safety training before receiving unsupervised bench access. Supervisors may provide escorted access for an orientation visit before training is complete, but the assistant must not handle chemicals during that visit. The online course includes a knowledge check; assistants who do not pass may retake it after reviewing the missed sections. Specialized laser and biological training remain separate requirements for work involving those hazards. Supervisors should submit access requests through the identity system after the general course shows as complete, and building staff usually process them within two business days. That processing target starts when a complete request arrives, not when the assistant begins training. The safety office will audit a sample of access records each term. Departments can ask for group training sessions when ten or more assistants start together, although course completion still must be recorded for each individual.",
+    "objective": "Make an onboarding checklist for supervisors that states the access rule, the limited orientation exception, and the separate hazard training requirements.",
+    "genre": "procedure",
+    "creator": "B"
+  },
+  {
+    "id": "B019",
+    "source": "During a joint planning session, the hospital discharge team and two community agencies discussed weekend referrals for home support. The agencies said they can receive electronic referrals on Saturdays, but acceptance depends on available staff and a verified service address. The discharge team proposed sending referrals by noon Friday when a weekend discharge is anticipated; clinicians noted that discharge timing often changes after that point. Participants agreed to test a revised referral form on one ward for four weeks, beginning next month. They did not agree to a hospital-wide launch. The form will include a field for an alternate contact because agencies sometimes cannot reach a patient immediately after discharge. The ward manager will collect cases in which a referral needs correction and report them at the next joint meeting. Agency representatives also requested that the hospital distinguish an estimated discharge date from a confirmed one in every transmission.",
+    "objective": "Summarize the meeting for ward staff, including the limited trial, Friday timing recommendation, and conditions on agency acceptance.",
+    "genre": "meeting notes",
+    "creator": "B"
+  },
+  {
+    "id": "B020",
+    "source": "A manuscript examines how public libraries describe digital borrowing in their annual reports. The authors coded reports from 42 library systems in three states over a five-year period. References to electronic lending grew over that period, especially in sections about remote services, but the coding captured report language rather than actual borrowing volumes. Systems that described dedicated digital-help staff also tended to include more detail about access barriers. The authors cannot determine whether staffing caused richer reporting, since larger systems may have had both more staff and more reporting capacity. The sample excludes systems without publicly available reports for all five years. The discussion argues that annual reports can reveal institutional priorities while remaining an imperfect measure of patron experience. For future work, the authors suggest pairing report analysis with circulation data and patron interviews, subject to permissions and comparable definitions across systems.",
+    "objective": "Revise this into a journal-style summary that preserves the distinction between report language and actual use, the sample limit, and the proposed follow-up.",
+    "genre": "academic prose",
+    "creator": "B"
+  },
+  {
+    "id": "B021",
+    "source": "The court administration office plans to replace paper sign-in sheets at its public information counter with a digital queue kiosk. Visitors will choose a service category and receive a printed number; the kiosk will not ask for a case narrative. Staff can assist anyone unable to use the screen, and a paper ticket option will remain available during outages. The office expects the kiosk to shorten line management time, but it has not yet measured any effect on total visit length. A two-month trial will begin in the central building, with a review of wait times and accessibility feedback before any decision about other locations. The privacy officer has asked that ticket records be deleted after thirty days unless a retention hold applies. The implementation team will confirm that setting before launch. Notices at the entrance will explain the ticket options and where visitors can request help. Court filing deadlines and service rules are unaffected by the queue system.",
+    "objective": "Draft a public notice explaining how the trial queue works, the assistance and outage options, and the scope of the trial.",
+    "genre": "formal institutional writing",
+    "creator": "B"
+  },
+  {
+    "id": "B022",
+    "source": "The pharmacy department has revised its process for checking refrigerated medicine deliveries. A receiving technician records the package temperature indicator and arrival time before moving stock into the designated refrigerator. If the indicator shows an excursion, the package is placed in a marked quarantine area and a pharmacist reviews the manufacturer's guidance before release or disposal. A missing indicator also triggers quarantine; staff should not infer that a package remained within range merely because it feels cold. The courier's delivery timestamp may differ from the department's recorded receipt time, and both should be retained when investigating a delay. Routine stock can enter inventory after the check, but quarantined items must not be made available to dispensing systems. The department will sample ten receiving records each month to check whether times and disposition decisions are documented. A pharmacist may contact the supplier for more information when the available temperature record is incomplete.",
+    "objective": "Create a receiving procedure for technicians that makes the quarantine triggers, documentation, and release authority unambiguous.",
+    "genre": "healthcare operations",
+    "creator": "B"
+  },
+  {
+    "id": "B023",
+    "source": "The graduate council discussed a proposal to let departments accept a portfolio in place of one elective examination. The proposal applies only to master's programs that already require an elective exam; it would not alter licensing examinations or doctoral milestones. Departments interested in the option would submit assessment criteria to the graduate school before offering it to students. Council members favored giving departments flexibility, but several asked for clearer guidance on how work produced with collaborators would be assessed. The council sent the draft back to its curriculum committee for revision and expects to revisit it in December. No student can elect the portfolio route under the current rules. The registrar will continue to publish existing exam dates, and departments should avoid advertising the proposed route until a policy is approved. Student representatives requested that any eventual guidance explain appeal rights in language that can be understood without consulting multiple handbooks.",
+    "objective": "Write a formal council update that states the proposal's scope, current status, and the issue sent back for revision.",
+    "genre": "meeting notes",
+    "creator": "B"
+  },
+  {
+    "id": "B024",
+    "source": "A facilities study compared room temperatures in an older residence hall before and after thermostatic valves were installed. Sensors in twenty rooms recorded hourly readings for three weeks in each period. The share of readings above the target range fell after installation, while the share below the range changed little. Outdoor temperatures were milder in the later period, and occupants could still open windows, so the observed change cannot be assigned entirely to the valves. Maintenance staff reported fewer overheating complaints, though complaint counts were not collected consistently before the work. The authors recommend a longer follow-up across winter and a second building with similar heating equipment. They also recommend keeping the new valves in service because maintenance found no operational problems during the short observation period. The study does not establish whether energy use fell; utility meters serve multiple buildings and cannot isolate the hall.",
+    "objective": "Write a restrained research summary covering the observed temperature pattern, the attribution limits, and the recommended follow-up.",
+    "genre": "academic prose",
+    "creator": "B"
+  },
+  {
+    "id": "C001",
+    "source": "The sync service sends a change record when a saved note is edited. Each record contains the note identifier, an increasing revision number, and the fields that changed. Clients keep the last revision they applied for each note, so they can ignore a duplicate delivery without losing a later edit. The service may deliver records out of order after a network interruption; a client that sees a gap asks for the missing records before it updates its local copy. This check happens per note, not across an entire workspace. The team has measured ordinary delivery at under ten seconds on its staging network, but has not set a delivery guarantee for mobile clients. Edits made while a device is offline remain on that device until its connection returns. A conflict is possible if another device edits the same field first. The current client shows both versions for review in that situation rather than choosing one silently.",
+    "objective": "Write a short developer-guide explanation of how note sync handles duplicate and out-of-order records. Include the offline behavior, conflict handling, and the status of delivery timing.",
+    "genre": "software documentation",
+    "creator": "C"
+  },
+  {
+    "id": "C002",
+    "source": "The sync service sends a change record when a saved note is edited. Each record contains the note identifier, an increasing revision number, and the fields that changed. Clients keep the last revision they applied for each note, so they can ignore a duplicate delivery without losing a later edit. The service may deliver records out of order after a network interruption; a client that sees a gap asks for the missing records before it updates its local copy. This check happens per note, not across an entire workspace. The team has committed to delivery within ten seconds for mobile clients on a working connection. Edits made while a device is offline remain on that device until its connection returns. A conflict is possible if another device edits the same field first. The current client shows both versions for review in that situation rather than choosing one silently.",
+    "objective": "Write a short developer-guide explanation of how note sync handles duplicate and out-of-order records. Include the offline behavior, conflict handling, and the status of delivery timing.",
+    "genre": "software documentation",
+    "creator": "C"
+  },
+  {
+    "id": "C003",
+    "source": "A small team is preparing an export button for its inventory app. The button creates a CSV containing the items visible under the user's current filters. It does not export archived items unless the user switches on the archive filter first. Prices appear in the currency stored on each item, and the file includes a separate currency column; the app does not convert values during export. A trial with eleven shop owners found that nine could locate the button without help, though two expected it in the settings menu. The team plans to keep the button beside the filter controls for the first release and review feedback after two weeks. The export runs in the browser for lists below 5,000 items. Larger lists trigger a server job and an email link, which can arrive later if the queue is busy. Files are deleted from the download service after seven days.",
+    "objective": "Draft a concise release note for the inventory export. Cover what gets exported, where users find it, and what happens with large lists.",
+    "genre": "product writing",
+    "creator": "C"
+  },
+  {
+    "id": "C004",
+    "source": "A small team is preparing an export button for its inventory app. The button creates a CSV containing the items visible under the user's current filters. It does not export archived items unless the user switches on the archive filter first. Prices appear in the currency stored on each item, and the file includes a separate currency column; the app does not convert values during export. A trial with eleven shop owners found that nine could locate the button without help, though two expected it in the settings menu. The team has decided to move the button into the settings menu for the first release and review feedback after two weeks. The export runs in the browser for lists below 5,000 items. Larger lists trigger a server job and an email link, which can arrive later if the queue is busy. Files are deleted from the download service after seven days.",
+    "objective": "Draft a concise release note for the inventory export. Cover what gets exported, where users find it, and what happens with large lists.",
+    "genre": "product writing",
+    "creator": "C"
+  },
+  {
+    "id": "C005",
+    "source": "The help desk has tested a new account recovery flow with staff volunteers. A person enters the email associated with the account and receives a link if that address is registered. The confirmation screen looks the same whether or not the address exists, to avoid revealing accounts. Links expire after thirty minutes and can be used once. A user who no longer controls the email address must contact support; a billing receipt alone does not establish account ownership. In the volunteer test, ten of twelve people completed recovery without assistance. Support suspects the remaining two missed the email because it entered a promotions folder, but no one checked their mail settings. The security team has recommended adding a reminder to check filtered folders; product has not approved that copy yet. The flow is being piloted with staff accounts and is not available to customers.",
+    "objective": "Write a customer-facing FAQ answer about recovering access, including link limits and what to do without the registered email. Make the availability clear.",
+    "genre": "FAQ",
+    "creator": "C"
+  },
+  {
+    "id": "C006",
+    "source": "The help desk has tested a new account recovery flow with staff volunteers. A person enters the email associated with the account and receives a link if that address is registered. The confirmation screen looks the same whether or not the address exists, to avoid revealing accounts. Links expire after thirty minutes and can be used once. A user who no longer controls the email address must contact support; a billing receipt alone does not establish account ownership. In the volunteer test, ten of twelve people completed recovery without assistance. Support suspects the remaining two missed the email because it entered a promotions folder, but no one checked their mail settings. The security team has recommended adding a reminder to check filtered folders; product has not approved that copy yet. The flow is now available to all customers and staff accounts.",
+    "objective": "Write a customer-facing FAQ answer about recovering access, including link limits and what to do without the registered email. Make the availability clear.",
+    "genre": "FAQ",
+    "creator": "C"
+  },
+  {
+    "id": "C007",
+    "source": "An engineer described the warehouse temperature project in an interview. Four battery-powered sensors report a reading every fifteen minutes, and the dashboard plots the latest reading from each location. The sensors are mounted away from loading doors, where brief drafts had made earlier readings hard to interpret. Operators can set an alert threshold for each location; a reading over the threshold sends a message after a second reading also exceeds it. An alert does not shut down refrigeration or replace the daily manual check. During a six-week trial, staff logged three alerts and found a door left ajar after one of them. The engineer says the door may explain the temperature rise, but the team did not examine the door seal. The company has approved an expansion to eight sensors next quarter, provided the existing batteries meet their expected life. Staff still need to record corrective actions in the paper log.",
+    "objective": "Turn the interview notes into a brief project update. Explain the alert rule, what staff do after an alert, and the expansion plan.",
+    "genre": "interview",
+    "creator": "C"
+  },
+  {
+    "id": "C008",
+    "source": "An engineer described the warehouse temperature project in an interview. Four battery-powered sensors report a reading every fifteen minutes, and the dashboard plots the latest reading from each location. The sensors are mounted away from loading doors, where brief drafts had made earlier readings hard to interpret. Operators can set an alert threshold for each location; a reading over the threshold sends a message after a second reading also exceeds it. An alert does not shut down refrigeration or replace the daily manual check. During a six-week trial, staff logged three alerts and found a door left ajar after one of them. The engineer says the door may explain the temperature rise, but the team did not examine the door seal. The company is considering an expansion to eight sensors next quarter, provided the existing batteries meet their expected life. Staff still need to record corrective actions in the paper log.",
+    "objective": "Turn the interview notes into a brief project update. Explain the alert rule, what staff do after an alert, and the expansion plan.",
+    "genre": "interview",
+    "creator": "C"
+  },
+  {
+    "id": "C009",
+    "source": "The analytics endpoint returns daily counts for a requested project and date range. Dates use the project's configured time zone, which can differ from the caller's local time zone. The endpoint accepts no more than ninety consecutive days in one request; longer reports require multiple calls. Counts for the current day can change as events arrive, and the service marks that day as provisional. Older days are normally finalized after forty-eight hours, though a documented backfill may revise them later. The response includes the time zone identifier and an updated_at timestamp so clients can show the context beside a chart. A missing day means no events were recorded, not a request failure. The API returns an error object for an invalid project identifier or a range above the limit. Cache responses for at most five minutes if a report includes today; historical reports may use a longer cache.",
+    "objective": "Write an API documentation section explaining date boundaries, count freshness, and request limits. Include guidance for interpreting missing days.",
+    "genre": "software documentation",
+    "creator": "C"
+  },
+  {
+    "id": "C010",
+    "source": "The portable lamp has three brightness settings controlled by one button. A short press cycles through low, medium, high, and off. Holding the button for two seconds while the lamp is on starts a thirty-minute timer; the lamp blinks twice to confirm. The timer turns the lamp off but does not change the brightness setting used next time. The lamp can run while plugged in, although charging may take longer at high brightness. Its battery indicator has four segments and estimates remaining charge rather than exact minutes. The test team observed about six hours on medium in a room at 21 degrees Celsius; cold storage and aging batteries may shorten that time. The quick-start card currently says only to charge the lamp before first use. Customer support wants the timer behavior included because callers sometimes mistake the automatic shutoff for a fault. The packaging team has space for roughly one short paragraph and a small numbered list.",
+    "objective": "Create a quick-start instruction for the lamp that covers the button, timer, charging, and what the battery indicator means.",
+    "genre": "instructional prose",
+    "creator": "C"
+  },
+  {
+    "id": "C011",
+    "source": "The school library's reservation form lets students request a book that is currently checked out. It does not reserve books that are already on the shelf; students can borrow those at the desk. Requests are processed in the order received, but a class set can be held for a scheduled lesson ahead of individual requests. When a copy returns, the first eligible student receives an email and has three school days to collect it. Weekends and holidays do not count toward that window. If the student does not collect it, the library contacts the next person. The form shows a queue position, which may change when damaged copies are removed or class holds are added. Staff cannot promise a return date because borrowers may renew a book when nobody is waiting. A student who needs a title for an imminent assignment can ask a librarian about an alternative edition or another branch.",
+    "objective": "Write a student FAQ answer explaining reservations, queue position, and pickup timing. Include when to ask a librarian for help.",
+    "genre": "FAQ",
+    "creator": "C"
+  },
+  {
+    "id": "C012",
+    "source": "A field technician is replacing the filter in a small water sampler. The instrument should be powered down and disconnected from the charging cable before the housing opens. The used filter can retain water, so the technician places an absorbent pad below the housing. The replacement filter has an arrow showing flow direction; installing it backward can reduce the sample volume. After closing the housing, the technician runs a two-minute rinse into a waste container and checks the seam for leaks. A dry seam after the rinse is a useful check, but it does not verify the accuracy of the next sample. The service manual calls for a calibration check if the device was dropped or if flow remains low after a new filter. Most routine swaps need no calibration. Used filters go into the site's designated waste stream, which varies by sampling location and local procedure. The team has asked for instructions a new hire can follow at the bench.",
+    "objective": "Write a numbered filter replacement procedure. Preserve the safety steps, post-installation check, and condition for calibration.",
+    "genre": "instructional prose",
+    "creator": "C"
+  },
+  {
+    "id": "C013",
+    "source": "The query planner builds an index scan when a filter matches a field with a usable index. It estimates the number of matching rows from stored statistics, then compares the scan cost with a full table read. Those statistics are refreshed nightly for most collections. A newly loaded collection may have stale statistics until the next refresh, so the chosen plan can be slower than expected. Developers can request a plan preview without running the query; the preview shows the chosen path and estimated row count, not the actual runtime. A plan may also change after a schema migration or a large data import. The team recommends checking a slow query with current statistics before adding another index, because each new index adds write cost. This advice applies to routine performance tuning; an incident response may require a faster temporary measure. The planner does not guarantee that an index will be used merely because the filtered field is indexed.",
+    "objective": "Explain in a developer note why an indexed query might still scan a table. Include how to inspect the plan and when to revisit statistics.",
+    "genre": "technical explanation",
+    "creator": "C"
+  },
+  {
+    "id": "C014",
+    "source": "The meal-planning app now lets households mark an ingredient as already on hand. Marked ingredients disappear from the shopping list for that plan, but they remain visible in the recipe and its quantities. The setting is per household and per plan, so marking rice for this week's plan does not carry into next week's plan. Anyone in the household can change the mark. In a small test, participants said this reduced duplicate purchases, although the team did not measure actual spending. The initial release covers ingredients added by the app's recipes. Ingredients typed as free-form shopping notes will still appear until the user removes them manually. The product team is considering a future pantry inventory feature, but no date or scope has been agreed. The release copy needs to help a household understand the immediate behavior without promising automatic stock tracking. A support article will separately explain how to undo a mark if it was made by mistake.",
+    "objective": "Write in-app announcement copy for the ingredient marking feature. Explain its scope, effect on the list, and how long the mark lasts.",
+    "genre": "product writing",
+    "creator": "C"
+  },
+  {
+    "id": "C015",
+    "source": "The training coordinator interviewed two shift supervisors about a new handoff checklist. One supervisor said the checklist made missing maintenance notes easier to spot during the morning shift. The other liked the consistent order but worried that workers might treat an empty box as proof a task was complete. The checklist has fields for equipment status, unresolved issues, and the next shift's contact. It is currently used on the packaging line during weekday handoffs; weekend crews still use their existing log. During the first month, coordinators reviewed twenty handoffs and found four with an unresolved issue recorded in the checklist. They did not compare that count with the old process. The supervisors agree that urgent equipment problems still require a direct call, even when the issue is written down. The operations manager will decide whether to extend the checklist after a second month of use and feedback from weekend staff. No extension has been approved yet.",
+    "objective": "Write a short internal interview summary covering the supervisors' views, current use, and next decision point.",
+    "genre": "interview",
+    "creator": "C"
+  },
+  {
+    "id": "C016",
+    "source": "The help center offers downloadable copies of invoices for completed orders. A buyer opens the order history page, selects an order, and chooses Download invoice. The invoice lists the items and tax charged at checkout. It may not reflect a refund issued later; refunds appear in a separate credit note attached to the same order. Draft orders do not have invoices. Business buyers can enter a company name before checkout, but support cannot add a company name to an invoice after an order is complete. For orders placed before the new checkout launched in March, some invoice downloads may be missing; support can provide the original receipt after verifying the order number and email. A customer who needs a tax correction should contact support with the order number, rather than editing the PDF. The team wants this distinction made clear because recent tickets have confused invoices and credit notes.",
+    "objective": "Write a help-center FAQ about downloading invoices. Cover refunds, missing older invoices, and company details.",
+    "genre": "FAQ",
+    "creator": "C"
+  },
+  {
+    "id": "C017",
+    "source": "A batch importer reads a UTF-8 CSV with a header row and one product per subsequent row. The required columns are sku, name, and quantity. A blank quantity is an error; zero is a valid quantity that keeps the product listed as out of stock. The importer validates all rows before making changes, then reports line numbers for any errors. If validation fails, no products are updated. For a valid file, existing products with matching SKUs are updated and new SKUs are created. The importer does not delete products absent from the file. A successful import report lists created and updated counts, but processing can take several minutes for files near the 20,000-row limit. The web page can be closed while a job runs; its status remains available in import history. Operators should review the report before sending a catalog announcement because an accepted file can still contain an unintended but syntactically valid price or description.",
+    "objective": "Draft concise importer documentation covering file format, validation behavior, updates, and how to review a completed job.",
+    "genre": "software documentation",
+    "creator": "C"
+  },
+  {
+    "id": "C018",
+    "source": "The office building uses occupancy sensors to dim lights in meeting rooms after ten minutes without detected movement. The sensor does not switch off the emergency lighting circuit. People working quietly may need to wave or tap the wall control to restore full brightness; the facilities team has received three reports of this in the north wing. The control by the door also allows a manual dim level during a meeting. At the end of a booking, the room controller returns to automatic mode. Facilities plans to adjust sensor sensitivity in two rooms next month if a short trial shows fewer unwanted dimming events without leaving lights bright in empty rooms. No building-wide change has been scheduled. Staff should report a room that stays dark after using the wall control, since that may indicate a separate electrical fault. The system's energy estimate comes from expected lamp hours and has not been verified against a meter.",
+    "objective": "Write a staff notice explaining normal dimming behavior, the manual control, and when to report a problem.",
+    "genre": "instructional prose",
+    "creator": "C"
+  },
+  {
+    "id": "C019",
+    "source": "The archive search service stores a text index of public meeting minutes. A new document enters the index after a processing job extracts its text and metadata. Scanned pages with poor contrast may produce incomplete text, so a search result is not proof that every page contains the exact displayed phrase. Users can open the original PDF to confirm wording. Documents are usually searchable within one working day of publication, but the archive team pauses indexing during occasional metadata corrections. Search filters include meeting date and committee; the date filter refers to the meeting date, not the day the PDF was uploaded. Removed or replaced minutes can leave an old search result visible until the next index refresh, which runs every six hours. The archive staff plan to add a visible processing status next season. Until then, the site shows the PDF directly as soon as it is published even if its text is not yet searchable.",
+    "objective": "Explain how archive search works for a public help page. Include indexing delay, scanned documents, and the meaning of the date filter.",
+    "genre": "technical explanation",
+    "creator": "C"
+  },
+  {
+    "id": "C020",
+    "source": "The bike-share operator is trialing a return confirmation screen at twelve stations. After a rider docks a bike, the screen shows whether the dock has registered the return. A green confirmation usually appears within five seconds when the station is online. If no confirmation appears, the rider should check that the bike is locked and use the app's trip screen or call the number on the dock. The display is informational; the trip record in the operator's system determines billing. At two trial stations with unstable connections, confirmations have appeared late even though returns were recorded on time. The operator has not found evidence that those delays changed charges, but is still reviewing logs. Riders at stations outside the trial will continue to see the older indicator light. The team will decide whether to expand the screen after collecting six weeks of rider feedback and connection data. The trial began this Monday.",
+    "objective": "Write a rider FAQ answer explaining the new return screen and what to do when confirmation is missing. State where it is available.",
+    "genre": "FAQ",
+    "creator": "C"
+  },
+  {
+    "id": "C021",
+    "source": "The design interview focused on a reading app's adjustable line spacing. The designer said early testers asked for more room between lines on long articles, especially when reading on a phone during a commute. The current control offers three spacing choices in the reader settings, and the choice stays with the account across devices. It does not change the layout of downloaded PDF files, which retain their original page design. In a test with eighteen volunteers, eleven selected the widest spacing at least once; the study did not establish which choice improved comprehension. The designer wants to add a live preview beside the control, but that idea remains a prototype. Engineering has committed to fixing a separate issue where spacing resets on older Android builds. The designer also cautioned that the widest setting can make footnotes harder to keep near their references in narrow windows. The next usability round will include people using screen magnification.",
+    "objective": "Turn these interview notes into a short product story about line spacing. Include current behavior, its limits, and the planned next steps.",
+    "genre": "interview",
+    "creator": "C"
+  },
+  {
+    "id": "C022",
+    "source": "A community garden uses a shared calendar for watering shifts. Volunteers sign up for a morning or evening slot and mark it complete after watering. If rain has soaked the beds, the volunteer may skip watering but should record Rain in the shift note so the next person understands the gap. The coordinator checks the soil each Sunday and may change the schedule during a heat wave. The posted schedule is therefore a starting plan, not an instruction to water regardless of conditions. New volunteers should use the marked watering cans because their capacity matches the posted amounts. Most raised beds take one can; seedlings in the south beds take only half a can unless the coordinator posts a different amount. Volunteers should avoid watering leaves in strong afternoon sun and report a broken hose in the calendar note. The garden asks for a concise guide that can be printed near the tool shed.",
+    "objective": "Write a brief volunteer watering guide with sign-up, completion, weather exceptions, and bed amounts.",
+    "genre": "instructional prose",
+    "creator": "C"
+  },
+  {
+    "id": "C023",
+    "source": "The mobile app caches recent transit departures so the station screen opens quickly. When a connection is available, it requests fresh times and shows the update time beneath the list. If the request fails, the app keeps the last cached list for up to fifteen minutes and labels it as older information. After fifteen minutes it replaces the times with a message directing riders to station signs. The cache is per station and route; switching routes does not make the old route's times appear as current. Live departure estimates come from the transit provider and can change without notice as vehicles move. The app team has seen occasional differences of two or three minutes between the app and platform signs, but has not isolated a single cause. Scheduled times are shown when the provider sends no live estimate, and those entries carry a schedule label. The screen does not promise a train will arrive at the displayed minute.",
+    "objective": "Write a clear explanation for riders of departure-time freshness, fallback behavior, and schedule labels.",
+    "genre": "product writing",
+    "creator": "C"
+  },
+  {
+    "id": "C024",
+    "source": "The photo desk accepts image submissions through a form with fields for the photographer, location, date, and a short caption. Staff review each submission before it appears in the community gallery. The review checks that the image is relevant and that the submitter has permission to share it; approval is not automatic. Images showing identifiable children require a guardian's written permission, even when the event was public. A submitter can ask to remove an image after publication by contacting the desk with the submission number. The desk aims to review submissions within five working days, but festival weeks can take longer. Accepted images may be cropped for the gallery thumbnail while the full image remains available on its detail page. The desk does not accept watermarked promotional graphics through this form. Staff have asked for instructions that keep the requirements visible without making the process seem more complicated than it is.",
+    "objective": "Write submission instructions for the community photo gallery. Include review timing, permission requirements, and removal requests.",
+    "genre": "instructional prose",
+    "creator": "C"
+  },
+  {
+    "id": "D001",
+    "source": "The service desk received fourteen calls about the new appointment page during its first two days. Nine callers could not find the reschedule link, which appears below the confirmation details on a phone screen. Three callers were trying to change appointments made at a partner clinic; those bookings are handled on the clinic's site. The remaining two reported that the page stopped responding after they tapped Save, but we have not reproduced that problem. Support can send a direct link for our own appointments while the layout team reviews placement. We should avoid telling all callers to use that link, because it will not open partner bookings. I suggest a small copy change this week and a follow-up check after another week of call logs.",
+    "objective": "Could you turn this into a short reply our support agents can use? Explain where the reschedule link sits and why partner-clinic bookings need a different route, then include the URL agents should send for our appointments. Please keep the Save issue as unconfirmed while we investigate it.",
+    "genre": "support communication",
+    "creator": "D"
+  },
+  {
+    "id": "D002",
+    "source": "The first batch of repaired laptops is ready for pickup. We received twelve devices from the community center; eight now start reliably, two still need replacement batteries, and two have screen damage beyond our volunteer team's current tools. The eight working devices have passed a basic charging and keyboard check, but they have not been tested with every accessibility setting the center uses. We can deliver them on Friday if the center confirms that someone can sign for them. I have asked the repair lead to price the batteries before we commit to a second batch. We should thank the volunteers for their time while being precise about what is complete. Several families are waiting, so an accurate handoff date matters more than an optimistic one.",
+    "objective": "Please make this a handoff update for the community center: separate the eight ready laptops from the four still needing work, mention the limited testing, and thank the volunteers. Add the Friday pickup time once it's confirmed, and keep delivery conditional on someone being available to sign.",
+    "genre": "project update",
+    "creator": "D"
+  },
+  {
+    "id": "D003",
+    "source": "The volunteer orientation is booked for Wednesday evening in the small meeting room. Eleven people registered, although past sessions usually lose one or two attendees on the day. We have printed ten handbooks and can make more at the library if everyone comes. The session should run for about an hour, followed by optional time for questions. A trainer suggested adding a short demonstration of the sign-in tablet because two volunteers struggled with it last month. I agree, provided we do not cut the section on safeguarding records. The tablet demonstration is practice, not a requirement for people who will work only on the phone line. Please leave enough time for the trainer to explain where volunteers can ask for help later.",
+    "objective": "Could you draft a reminder email for Wednesday's orientation that covers the hour-long session, optional questions, and a brief tablet practice without crowding out safeguarding? Include the meeting room's building address so new volunteers know where to go, and make clear the tablet is optional for phone-line volunteers.",
+    "genre": "email",
+    "creator": "D"
+  },
+  {
+    "id": "D004",
+    "source": "On my first day at the new studio, I put my notebooks in a drawer and kept looking for them in the old place. The room faces a busy street, so the quiet I had imagined is rare before lunch. By midafternoon the light reaches the back wall, and that has become my favorite time to sketch. I finished three small studies this week, but none feels ready to show. A friend asked whether the move has made me more productive. I do not know yet; packing and setting up took most of the month, and I am still learning what hours suit the room. What has changed is that I now have a place where I can leave a drawing unfinished and come back to it.",
+    "objective": "I want this reflection to say how long I've rented the new studio. Can you work that detail into the passage without making the move sound like an instant productivity boost?",
+    "genre": "personal reflection",
+    "creator": "D"
+  },
+  {
+    "id": "D005",
+    "source": "Our team tested the revised sign-up form with six returning members on Monday. Five completed it without help; one stopped at the emergency contact field because the form did not say whether that contact was required. The field is optional under our policy, but the interface currently marks it with the same styling as required fields. The design lead proposed adding an explicit optional label and a short explanation of why we ask. Engineering estimates that change at half a day, assuming no validation changes are needed. We have not tested the form with first-time members yet, so the six sessions cannot tell us how new visitors will fare. I suggest making the label change, then scheduling a separate first-time member check before the wider launch.",
+    "objective": "Please tighten this update around the optional emergency-contact label and the need to test first-time members before launch. Add the scheduled date for that follow-up check if we have one; don't present the six returning-member sessions as evidence about new visitors.",
+    "genre": "project update",
+    "creator": "D"
+  },
+  {
+    "id": "D006",
+    "source": "The garden club has offered to host our repair cafe in its hall on the first Saturday of each month. The hall is free, but we would need to bring extension leads and arrange a volunteer to unlock the building. Our current quarterly sessions average twenty-five visitors, and no one has measured demand for a monthly schedule. Two experienced repairers can attend in October; neither has committed for later dates. The club would like an answer by September 18 so it can publish its calendar. I recommend accepting one trial date in October and reviewing attendance and volunteer availability afterward. If we do that, the public announcement should call it a trial session rather than a standing monthly service. The arrangement could be useful, but it needs a manageable start.",
+    "objective": "Could you shape this into a reply to the garden club proposing the October trial, with the practical needs and the September 18 decision deadline clear? Include the October Saturday date they offered, and avoid promising a monthly program before we've checked demand and volunteer availability.",
+    "genre": "business communication",
+    "creator": "D"
+  },
+  {
+    "id": "D007",
+    "source": "The municipal records office receives requests for copies through its portal, by mail, and at the front counter. Portal submissions receive an automatic receipt number, but that number confirms delivery rather than completeness. Staff review each request for a usable description of the record and an address for response. If the description is too broad, a specialist contacts the requester for clarification before searching; the office does not treat that contact as a denial. Routine requests are usually fulfilled within ten business days of a complete submission, although archived files may take longer to retrieve. Certified copies require a fee and must be mailed or collected in person because the seal cannot be delivered as an ordinary download. Staff may waive copy charges for requests under five pages when the cost of collection would exceed the fee. The office publishes weekly queue updates, but those estimates do not change any statutory deadlines.",
+    "objective": "For the public procedure, please state the exact statutory deadline that applies to a completed records request, while keeping the distinction between that deadline and the office's usual ten-business-day turnaround.",
+    "genre": "procedure",
+    "creator": "D"
+  },
+  {
+    "id": "D008",
+    "source": "Researchers surveyed 184 graduate students at one public university about their use of shared laboratory equipment. Most respondents reported checking the online reservation calendar before arriving, while fewer than half said they routinely recorded maintenance concerns in the log. The survey was voluntary and conducted during a semester when two major instruments were out of service, which may have affected responses. Students who reported prior equipment training were more likely to report using the log, but the survey cannot show that training caused the behavior. Interview comments suggested that some students viewed the log as a place for urgent faults only. The authors propose testing a clearer log prompt next term and comparing entries before and after its introduction. They do not claim the prompt will improve equipment uptime. The study's main contribution is a description of how students say they use the current system at this site.",
+    "objective": "Could you add the survey's response rate to this methods summary so readers can judge how much of the graduate-student population took part?",
+    "genre": "academic prose",
+    "creator": "D"
+  },
+  {
+    "id": "D009",
+    "source": "At the regional transit accessibility meeting, riders described inconsistent audio announcements on two older bus routes. The fleet supervisor said replacement speakers are on order for twelve vehicles, but delivery has not been confirmed. Operations will test three vehicles that already received repairs during the next two weeks. If those tests show reliable volume at the rear seats, maintenance will use the same setup for the remaining repaired vehicles; a poor result would prompt a new equipment review. A rider representative asked for a public timetable, and the chair agreed to publish a progress note after the tests. The meeting did not approve a date for full fleet completion. Staff also noted that portable stop signs remain available during planned detours, although drivers may need to request them from dispatch. The secretary recorded the rider group's concern that an equipment fix alone may not solve missed announcements when route data is entered incorrectly.",
+    "objective": "Please turn these notes into a concise update for riders: describe the three-vehicle test, the conditional next step, and the planned progress note. Add the date the replacement speakers are due to arrive if procurement has provided one; keep the full-fleet completion date open.",
+    "genre": "meeting notes",
+    "creator": "D"
+  },
+  {
+    "id": "D010",
+    "source": "A university committee compared three approaches to reducing water use in teaching laboratories. Faucet aerators had the lowest estimated installation cost, while recirculating chillers offered the largest projected savings in the two buildings with high cooling demand. The estimates came from utility records covering twelve months, and the authors caution that unusually warm weather may have raised that year's cooling use. One department has already purchased chillers for its own equipment; the committee has not approved a campus-wide purchase. The report recommends installing aerators in laboratories scheduled for renovation and commissioning a more detailed chiller assessment before requesting capital funds. It also suggests adding water-use orientation to student training, but no estimate of savings from training is available. The committee expects a facilities update next spring. Any comparison of the options should retain the distinction between measured historic use and projected savings under the proposed equipment changes.",
+    "objective": "Please add the estimated water savings in liters for the proposed aerators to this comparison, while preserving the difference between recorded utility use and projected equipment savings.",
+    "genre": "academic prose",
+    "creator": "D"
+  },
+  {
+    "id": "D011",
+    "source": "The school district reviewed attendance at its after-school reading program across six elementary sites. Average weekly attendance rose from 71 to 84 students between the first and second terms. The increase coincided with a new bus route at two sites, but coordinators did not collect enough information to attribute the change to transport. One site lost sessions for two weeks during building repairs; its term averages should therefore be interpreted cautiously. Teachers said that shorter reading groups appeared easier to staff, while families asked for more consistent pickup times. The district will keep the current program at all six sites through June and ask principals to submit staffing and transport notes each month. A proposal to add a seventh site is under review for the following year, subject to space and budget. The board has not voted on that expansion. Staff will share the attendance summary with families after verifying the site-level counts.",
+    "objective": "Could you revise this for families so the attendance change and the plan through June are easy to follow, with the seventh site clearly still under review? Include the date when the verified site-level summary will be shared, if staff have set it, and avoid crediting the new bus route for the increase.",
+    "genre": "formal institutional writing",
+    "creator": "D"
+  },
+  {
+    "id": "D012",
+    "source": "During a joint planning session, the hospital discharge team and two community agencies discussed weekend referrals for home support. The agencies said they can receive electronic referrals on Saturdays, but acceptance depends on available staff and a verified service address. The discharge team proposed sending referrals by noon Friday when a weekend discharge is anticipated; clinicians noted that discharge timing often changes after that point. Participants agreed to test a revised referral form on one ward for four weeks, beginning next month. They did not agree to a hospital-wide launch. The form will include a field for an alternate contact because agencies sometimes cannot reach a patient immediately after discharge. The ward manager will collect cases in which a referral needs correction and report them at the next joint meeting. Agency representatives also requested that the hospital distinguish an estimated discharge date from a confirmed one in every transmission.",
+    "objective": "Please specify which ward will run the four-week referral-form trial so the agencies know where to direct questions about corrections.",
+    "genre": "meeting notes",
+    "creator": "D"
+  },
+  {
+    "id": "D013",
+    "source": "The analytics endpoint returns daily counts for a requested project and date range. Dates use the project's configured time zone, which can differ from the caller's local time zone. The endpoint accepts no more than ninety consecutive days in one request; longer reports require multiple calls. Counts for the current day can change as events arrive, and the service marks that day as provisional. Older days are normally finalized after forty-eight hours, though a documented backfill may revise them later. The response includes the time zone identifier and an updated_at timestamp so clients can show the context beside a chart. A missing day means no events were recorded, not a request failure. The API returns an error object for an invalid project identifier or a range above the limit. Cache responses for at most five minutes if a report includes today; historical reports may use a longer cache.",
+    "objective": "Could you make this API guidance easier for a client developer to scan, especially the project time zone, provisional current-day counts, and the ninety-day limit? Add the endpoint's request-rate limit if one has been set, and retain the advice about shorter caching when today is included.",
+    "genre": "software documentation",
+    "creator": "D"
+  },
+  {
+    "id": "D014",
+    "source": "The school library's reservation form lets students request a book that is currently checked out. It does not reserve books that are already on the shelf; students can borrow those at the desk. Requests are processed in the order received, but a class set can be held for a scheduled lesson ahead of individual requests. When a copy returns, the first eligible student receives an email and has three school days to collect it. Weekends and holidays do not count toward that window. If the student does not collect it, the library contacts the next person. The form shows a queue position, which may change when damaged copies are removed or class holds are added. Staff cannot promise a return date because borrowers may renew a book when nobody is waiting. A student who needs a title for an imminent assignment can ask a librarian about an alternative edition or another branch.",
+    "objective": "Please add the email address students should use to ask a librarian about another edition or branch when an assignment deadline is close.",
+    "genre": "FAQ",
+    "creator": "D"
+  },
+  {
+    "id": "D015",
+    "source": "The query planner builds an index scan when a filter matches a field with a usable index. It estimates the number of matching rows from stored statistics, then compares the scan cost with a full table read. Those statistics are refreshed nightly for most collections. A newly loaded collection may have stale statistics until the next refresh, so the chosen plan can be slower than expected. Developers can request a plan preview without running the query; the preview shows the chosen path and estimated row count, not the actual runtime. A plan may also change after a schema migration or a large data import. The team recommends checking a slow query with current statistics before adding another index, because each new index adds write cost. This advice applies to routine performance tuning; an incident response may require a faster temporary measure. The planner does not guarantee that an index will be used merely because the filtered field is indexed.",
+    "objective": "Could you include the command or API call a developer uses to request a plan preview, so this explanation leads naturally into a troubleshooting guide?",
+    "genre": "technical explanation",
+    "creator": "D"
+  },
+  {
+    "id": "D016",
+    "source": "The training coordinator interviewed two shift supervisors about a new handoff checklist. One supervisor said the checklist made missing maintenance notes easier to spot during the morning shift. The other liked the consistent order but worried that workers might treat an empty box as proof a task was complete. The checklist has fields for equipment status, unresolved issues, and the next shift's contact. It is currently used on the packaging line during weekday handoffs; weekend crews still use their existing log. During the first month, coordinators reviewed twenty handoffs and found four with an unresolved issue recorded in the checklist. They did not compare that count with the old process. The supervisors agree that urgent equipment problems still require a direct call, even when the issue is written down. The operations manager will decide whether to extend the checklist after a second month of use and feedback from weekend staff. No extension has been approved yet.",
+    "objective": "Please add the date when the operations manager will make the extension decision, while keeping the weekday-only use and the need for weekend staff feedback clear.",
+    "genre": "interview",
+    "creator": "D"
+  },
+  {
+    "id": "D017",
+    "source": "A batch importer reads a UTF-8 CSV with a header row and one product per subsequent row. The required columns are sku, name, and quantity. A blank quantity is an error; zero is a valid quantity that keeps the product listed as out of stock. The importer validates all rows before making changes, then reports line numbers for any errors. If validation fails, no products are updated. For a valid file, existing products with matching SKUs are updated and new SKUs are created. The importer does not delete products absent from the file. A successful import report lists created and updated counts, but processing can take several minutes for files near the 20,000-row limit. The web page can be closed while a job runs; its status remains available in import history. Operators should review the report before sending a catalog announcement because an accepted file can still contain an unintended but syntactically valid price or description.",
+    "objective": "Could you reorganize this import documentation into preparation, validation, and follow-up steps, making the all-or-nothing validation and zero-quantity behavior explicit? Include the maximum CSV file size in megabytes if there is a published limit, and keep the reminder to review accepted content before announcing a catalog update.",
+    "genre": "software documentation",
+    "creator": "D"
+  },
+  {
+    "id": "D018",
+    "source": "The archive search service stores a text index of public meeting minutes. A new document enters the index after a processing job extracts its text and metadata. Scanned pages with poor contrast may produce incomplete text, so a search result is not proof that every page contains the exact displayed phrase. Users can open the original PDF to confirm wording. Documents are usually searchable within one working day of publication, but the archive team pauses indexing during occasional metadata corrections. Search filters include meeting date and committee; the date filter refers to the meeting date, not the day the PDF was uploaded. Removed or replaced minutes can leave an old search result visible until the next index refresh, which runs every six hours. The archive staff plan to add a visible processing status next season. Until then, the site shows the PDF directly as soon as it is published even if its text is not yet searchable.",
+    "objective": "Please state where users can report a missing or stale search result while the visible processing status is still being developed.",
+    "genre": "technical explanation",
+    "creator": "D"
+  }
+]

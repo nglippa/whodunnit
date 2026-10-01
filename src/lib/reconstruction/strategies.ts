@@ -104,7 +104,15 @@ export const RECONSTRUCTION_V8 = define({
   description: "v7 deterministic evidence with a separate semantic-review.v4 job contract. Editing feasibility is derived per requested job; final rewriting remains outside this experiment.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8];
+/** Experimental planning only: adds explicit objective and source-preservation coverage. */
+export const RECONSTRUCTION_V9 = define({
+  ...RECONSTRUCTION_V8,
+  version: 9,
+  name: "Reconstruction v9 (source-grounded job planning)",
+  description: "v8 deterministic evidence with semantic-review.v5 requirements, preservation constraints, and job-local withholding. No generation route selects it.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

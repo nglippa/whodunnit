@@ -1,0 +1,6669 @@
+[
+  {
+    "id": "A001",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Neighbor-facing organization fits the first-person account."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Approximate packet count is explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Approval, weekend availability, and the conditional June move are preserved."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The capacity limit supports a modest close."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All required operations are supported."
+  },
+  {
+    "id": "A002",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Neighbor-facing organization fits the first-person account."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Approximate packet count is explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Pending approval, weekend availability, and conditional move are preserved."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The capacity limit supports a modest close."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All required operations are supported."
+  },
+  {
+    "id": "A003",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A concise apology and reassurance are supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Payment, voided duplicate, and no balance due are explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Saturday start and fifteen-minute early doors support the arrival guidance."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Thursday evening deadline and waitlist reason are explicit."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All required operations are supported."
+  },
+  {
+    "id": "A004",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A concise apology and reassurance are supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Payment is applied; the plan correctly leaves the void request pending."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Saturday start and fifteen-minute early doors support arrival guidance."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Thursday evening deadline and waitlist reason are explicit."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All required operations are supported."
+  },
+  {
+    "id": "A005",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A short internal summary of status and recommendation is supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Reach remains approximate and tracking limits are retained."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The clinic confirmed the change; email recall remains impossible."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The dated correction is a recommendation; pilot caution and next-send condition are preserved."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All required operations are supported."
+  },
+  {
+    "id": "A006",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A short internal summary of status and recommendation is supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Reach remains approximate and tracking limits are retained."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The clinic change remains possible and subject to staffing."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The dated correction remains a proposal; pilot caution and next-send condition are preserved."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All required operations are supported."
+  },
+  {
+    "id": "A007",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A caring email to the sister is supported."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Leave and no booking are supported, but the conditional reason for a November move is lost."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Affection and the need for a rest day are supported without a booking promise."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "The job retains a possible November move but omits the trigger: only an affordable late train on October 15 may leave no recovery day."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "See specific coverage gaps."
+  },
+  {
+    "id": "A008",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A caring email to the sister is supported."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Pending leave and no booking are supported, but the conditional reason for a November move is lost."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Affection and the need for a rest day are supported without a booking promise."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "The job retains a possible November move but omits the trigger: only an affordable late train on October 15 may leave no recovery day."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "See specific coverage gaps."
+  },
+  {
+    "id": "A009",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The three counts and unreproduced Save report are preserved."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Own-appointment-only link guidance is supported."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "A later review is supported, but the proposed copy change this week is omitted."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 2,
+        "requirementId": "R4",
+        "constraintId": null,
+        "detail": "The follow-up job keeps the review after another week but does not instruct the small copy change this week."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "See specific coverage gaps."
+  },
+  {
+    "id": "A010",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Source already meets the reflective objective; leaving it unchanged retains the details and causal uncertainty."
+  },
+  {
+    "id": "A011",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A center-facing update and conditional handoff are supported."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The three device groups are supported; completed charging and keyboard checks are omitted."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Friday delivery remains contingent on a signer."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Remaining accessibility tests and battery pricing are supported."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C2",
+        "detail": "The device-status jobs omit the completed basic charging and keyboard check; the remaining accessibility tests alone do not convey what has been checked."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "See specific coverage gaps."
+  },
+  {
+    "id": "A012",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A conditional stock horizon and unsettled November packaging choice are supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The correction was sent, but no corrected proof or printer acknowledgement exists."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "USEFUL_WORK_WITHHELD",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C4",
+        "detail": "A firm calendar date is unavailable, but the email can say a firm answer follows a corrected proof and schedule confirmation with the market coordinator."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "A dated answer is unsupported, but a condition-based answer is available."
+  },
+  {
+    "id": "A013",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Wednesday evening and the room support a registrant reminder."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "About an hour plus optional questions is supported."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Safeguarding and tablet practice are grounded, but later-help guidance and the no-cut condition are missing; practice is treated as definite."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Optional question time is explicit."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": null,
+        "detail": "What will be covered omits the explicit later-help guidance the trainer needs time to explain."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C3",
+        "detail": "The plan says to include safeguarding records but does not preserve the condition that adding tablet practice must not cut that section."
+      },
+      {
+        "kind": "CERTAINTY_STRENGTHENING",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C5",
+        "detail": "It presents the suggested tablet demonstration as definite coverage, although the source frames it as a trainer suggestion accepted only if safeguarding time is protected."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "See specific coverage gaps."
+  },
+  {
+    "id": "A014",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The tentative-count recommendation and pending decision support a memo."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Forty is tentative and the vendor-attributed capacity is forty-six."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Sesame-free status is unresolved, but the two requests and vegetarian option are omitted."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Wednesday deadline is conditional on keeping the date; payment is unreleased."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C4",
+        "detail": "The dietary job retains unresolved sesame-free availability but omits that two colleagues requested it and the existing vegetarian option."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "See specific coverage gaps."
+  },
+  {
+    "id": "A015",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Source already meets the studio-reflection objective; leaving it unchanged retains the spatial detail and uncertainty."
+  },
+  {
+    "id": "A016",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C7",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Export generation is explicit; announcing it remains supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Archive split and possible duplicate are explicit, including uncertainty."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Replacement-link and new-export paths are stated with their separate conditions."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": "C6",
+        "detail": "No job instructs the seven-day link expiry, material in a customer notice announcing an expiring download."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C2",
+        "detail": "The export announcement does not retain that saved notes are included only through August 31."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The main reply is supported, but the expiry is lost."
+  },
+  {
+    "id": "A017",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The five and one outcomes are stated, but the job omits that participants were six returning members."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The source identifies the mismatch and proposed label."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The recommendation specifies the order and a check before launch."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "The test-result job quotes only the outcomes; it does not direct the writer to say these were six returning members tested Monday."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R4",
+        "constraintId": "C6",
+        "detail": "No job explicitly carries forward that first-time members have not been tested, so the reported result can be generalized."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The sample boundary is essential to this project update."
+  },
+  {
+    "id": "A018",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The depot scan is confirmed while weather remains unconfirmed."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The trace and expected response are given."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The backup is conditional and has stated limitations."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "The tracking job identifies the depot scan and absent delivery scan but does not instruct retention of the 6:10 a.m. scan time."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C3",
+        "detail": "The trace job describes an expected response without retaining the tomorrow-afternoon target."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Known facts are supported, but two requested timing details are unprotected."
+  },
+  {
+    "id": "A019",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The proposal limits acceptance to one trial date."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The practical requirements are explicit."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Post-trial discussion is supported, but unmeasured monthly demand is not preserved."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": "C5",
+        "detail": "The coordinator response is due September 18, but no job includes that timing."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C3",
+        "detail": "The plan notes later volunteers are uncommitted but does not carry forward that monthly demand has not been measured; longer scheduling must await trial evidence."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "The trial job does not specify the offered first-Saturday schedule when proposing the October date."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Trial framing is sound; reply timing and demand limit need attention."
+  },
+  {
+    "id": "A020",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Encounter and memory reflection support an essay arc, though the modest scope is omitted."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The later visit must remain uncertain."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "These concrete memories carry the essay reflection."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C4",
+        "detail": "The essay arc omits the narrator’s explicit refusal to make the postcard a grand story, which bounds the memory reflection."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The essay can be shaped safely if its modest claim is retained."
+  },
+  {
+    "id": "A021",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Completed analysis and pending review are explicit; conditional counsel timing is omitted."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The deadline is explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The option depends on a missed deadline and client comfort with a partial document."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "The status job omits counsel’s expected Tuesday comment and the possibility of delay if renewal language changes, material to planning against Thursday’s board deadline."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "The rationale reduces the legal issue to pending recommendations; if the renewal is mentioned, it must remain unnegotiated."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The conditional briefing and board deadline are handled well."
+  },
+  {
+    "id": "A022",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C7",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The two paths have different reminder control and timing."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Delay and unknown cause are stated; the before-appointment limit is omitted."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The source names confirmation email and booking record; the record is designated reliable."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R5",
+        "constraintId": null,
+        "detail": "No job directs the response to avoid promising identical future reminder times; describing the two paths alone does not establish that prohibition."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C6",
+        "detail": "The delay job quantifies the outage but does not instruct that all delayed texts still went out before appointments."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The distinction between observed delay and future timing needs explicit protection."
+  },
+  {
+    "id": "A023",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The reopening date and completed installation are stated."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The lower placement has a stated cause; accessibility is attributed and untested with regular users."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The feedback period and subsequent decision are explicit."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The reopening, attributed shelf assessment, and feedback period are preserved; paint touch-up is outside the requested update."
+  },
+  {
+    "id": "A024",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      },
+      {
+        "id": "C7",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Cutoff shift and attributed shipment estimate are supported; current sales-review timing and lack of cost comparison are not carried into the instruction."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Both conditions are explicit and conditional."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Written terms and trial evidence precede any permanent change."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "The proposed-date job omits current approvals after reviewing sales through the 18th, the operational reason an October forecast is needed."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R5",
+        "constraintId": "C2",
+        "detail": "The rationale keeps the supplier estimate attributed but does not direct preservation of the missing cost comparison or rule out proven savings."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "The rationale says only “proposed shift”; it does not require stating the current 20th and proposed 15th cutoff dates."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The October conditions are sound; context for the cutoff and savings claim is thin."
+  },
+  {
+    "id": "B001",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source limits the extended dates, hours, and spaces."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Access differs by borrower status."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "A spring repeat awaits post-pilot review and a later decision."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C2",
+        "detail": "Eligibility is distinguished, but the job does not direct retention of the 9 p.m. closing time for community borrowers."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Eligible users are identified, but the community-borrower closing time is unprotected."
+  },
+  {
+    "id": "B002",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source limits the extended dates, hours, and spaces."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Access differs by borrower status."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "A spring repeat awaits post-pilot review and a later decision."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C2",
+        "detail": "Eligibility is distinguished, but the job does not direct retention of the 9 p.m. closing time for community borrowers."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Eligible users are identified, but the community-borrower closing time is unprotected."
+  },
+  {
+    "id": "B003",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The committee action, unsigned contract, and reserved purchase authority must all be retained."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The estimate is conditional on electrical work proceeding on schedule."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The trailer and quote depend on the vendor proposing simultaneous disconnection."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Recommendation, authority, unsigned contract, estimate, and storage conditions are preserved."
+  },
+  {
+    "id": "B004",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The committee action, unsigned contract, and reserved purchase authority must all be retained."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The estimate is conditional on electrical work proceeding on schedule."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The trailer and quote depend on the vendor proposing simultaneous disconnection."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Committee approval is distinguished from a signed purchase and final authority."
+  },
+  {
+    "id": "B005",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The cutoff changes intake queue placement, not a guaranteed appointment time."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Insurance information may delay scheduling but does not prevent triage."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Urgent referrals use the phone pathway outside the routine queue."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R3",
+        "constraintId": "C3",
+        "detail": "The bulletin must explain that identifiers and a referral reason are checked before specialty assignment; no job addresses these triage inputs."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Cutoff, insurance delay, and urgent pathway are otherwise supported."
+  },
+  {
+    "id": "B006",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The cutoff changes intake queue placement, not a guaranteed appointment time."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Insurance information may delay scheduling but does not prevent triage."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Urgent referrals use the phone pathway outside the routine queue."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R3",
+        "constraintId": "C3",
+        "detail": "The bulletin must explain that identifiers and a referral reason are checked before specialty assignment; no job addresses these triage inputs."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The trial-outcome variation does not change the missing triage requirement."
+  },
+  {
+    "id": "B007",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Draft status, pending review, and continuing current consent are explicit. The job does not instruct against presenting the departmental draft as a university-wide rule."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Draft consent timing is a minimum of ten days, with event-page notice."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The proposal requires both microphone use and notice to the questioner."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R4",
+        "constraintId": "C4",
+        "detail": "The chair explicitly prohibits calling this department draft a university-wide rule, but the status job neither states nor enforces that scope restriction."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "The status job omits the explicit departmental-scope prohibition."
+  },
+  {
+    "id": "B008",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Legal clearance and continued current consent both appear; the job keeps draft status. The job does not instruct against presenting the departmental draft as a university-wide rule."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The minimum ten-day period and event-page notice are proposed draft terms."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Both conditions for including audience questions are stated."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R4",
+        "constraintId": "C4",
+        "detail": "The chair explicitly prohibits calling this department draft a university-wide rule, but the status job neither states nor enforces that scope restriction."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "The status job omits the explicit departmental-scope prohibition."
+  },
+  {
+    "id": "B009",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source gives request routes and enough process detail for a first-time guide."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "A portal receipt confirms delivery, not completeness."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "An overly broad description triggers clarification before search; contact is not denial."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Certified copies carry a fee and are mailed or collected in person."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The requested guide is fully supported."
+  },
+  {
+    "id": "B010",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source supplies a two-stage sequence and release condition."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Trained cleaner, specified product, second inspection, log, and release order are stated."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Same-employee work is limited to overnight lack of another trained employee and must be logged."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Missing or conflicting sign requires a pause and charge-nurse clarification."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The plan retains the procedural gates."
+  },
+  {
+    "id": "B011",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C7",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "One-paragraph compression can retain the self-reported, single-site scope."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The 184-student sample at one public university is explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The source contrasts most checking calendars with fewer than half logging concerns."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Voluntary participation and two instruments being out of service are stated limits."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "The next-term prompt test and before-after entry comparison are proposals."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Training association and uptime need not be added to this short abstract."
+  },
+  {
+    "id": "B012",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The formal announcement is supported, but the job omits the stated audience: applicants unable to visit campus."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Tuesday and Thursday autumn slots are posted two weeks ahead."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Staff can assess apparent transcript completeness but cannot decide admission on the call."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Documents must be uploaded before the appointment; adviser email is excluded."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C4",
+        "detail": "The source limits virtual appointments to applicants who cannot visit campus; the announcement job says only “for applicants” and does not preserve that audience condition."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "The plan should retain who the virtual appointments serve."
+  },
+  {
+    "id": "B013",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The meeting supplies discussion, test plan, and unresolved matters for minutes."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Three repaired vehicles are to be tested in the next two weeks."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Reliable rear-seat volume gates reuse; poor results prompt review."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The unresolved facts are sourced, but the job does not preserve that the route-data issue is the rider group's concern rather than a confirmed diagnosis."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "ATTRIBUTION_LOSS",
+        "jobIndex": 3,
+        "requirementId": "R4",
+        "constraintId": "C5",
+        "detail": "The unresolved-matters job should identify the route-data issue as a rider-group concern; its evidence excerpt starts after that attribution and the rationale only says 'route-data concerns'."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The route-data concern needs speaker attribution."
+  },
+  {
+    "id": "B014",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source contains the visit rules needed for a concise organizer guide."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Twenty expected eligible participants is the threshold; nearby sites may be combined below it."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Submission does not reserve a date; coordinator confirmation follows staffing and supply review."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Four weeks is recommended, especially for evening events."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "Eligibility and consent follow guidance at the visit, so vaccination cannot be promised to all."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The guide retains the booking and eligibility limits."
+  },
+  {
+    "id": "B015",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The comparison and decision points can be condensed without new claims."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Aerators are lowest in estimated installation cost; chillers have largest projected savings in two specified buildings."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Aerators are recommended for scheduled renovations, with assessment before a chiller funding request."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Twelve-month utility records and possibly elevated cooling use qualify the projections."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The assessment-before-funding plan avoids implying campus-wide approval."
+  },
+  {
+    "id": "B016",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Registrar notice and contact actions are supported, but the planned rewrite omits the conservator report before packing and the fragile-object delay caveat."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Both parties must accept transport and receiving arrangements before the date is confirmed."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "A lender-requested carrier change requires an insurance-condition check before rebooking."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": null,
+        "detail": "A rewrite of the return procedure leaves out the conservator condition report before packing, including photographs when safe handling permits."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C4",
+        "detail": "The notice-period instruction does not retain that fragile objects can need longer preparation or that the registrar should explain the delay rather than promise the standard window."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "Two supported procedural safeguards are missing from the rewrite plan."
+  },
+  {
+    "id": "B017",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "A board paragraph can summarize the attendance and decisions."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The term averages are sourced, but the plan does not carry the two-week session-loss caveat for one site's averages."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The bus route coincided with attendance change without evidence of causation."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Six-site continuation through June differs from an unvoted, conditional seventh site."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "The attendance reporting job gives the 71-to-84 comparison without instructing caution for the site that lost two weeks of sessions during repairs."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "The attendance caveat is material to the board briefing."
+  },
+  {
+    "id": "B018",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source gives supervisor access-request steps and a processing target from complete request receipt."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "General training precedes unsupervised bench access."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Pretraining orientation requires escort and prohibits chemical handling."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Laser and biological training remain separate for work involving those hazards."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The exception and hazard-specific prerequisites stay attached."
+  },
+  {
+    "id": "B019",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The meeting summary is supported, but the plan omits the agencies' request to distinguish estimated from confirmed discharge dates in transmissions."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The agreed test is one ward for four weeks next month, without hospital-wide launch."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Noon Friday is proposed when weekend discharge is anticipated, and timing can change."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Saturday receipt is possible; acceptance depends on staff and verified address."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C5",
+        "detail": "For ward staff, the agency representatives' request to mark estimated versus confirmed discharge dates in every transmission is an actionable meeting outcome, but no job covers it."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "A relevant transmission instruction is withheld."
+  },
+  {
+    "id": "B020",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Journal-style compression is valid, but this job cites only the manuscript topic and does not instruct preservation of the 42-system, three-state, five-year sample."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "The growth concerns references in reports, not measured borrowing volume."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Systems lacking publicly available reports across all five years are excluded."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The paired-data follow-up is suggested and conditional on permissions and comparable definitions."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "The plan has no job to report the 42 library systems in three states over five years; preserving the exclusion criterion in job 2 does not supply the sample size or geography."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "The core study sample is missing from the plan."
+  },
+  {
+    "id": "B021",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C5",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The source supplies visitor-facing ticket options for a concise notice."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Visitors select a service category, get a printed number, and provide no case narrative."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Staff help is available; paper tickets are specified during outages."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The two-month trial is at the central building, with review before any other-location decision."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Unrequested benefit, retention, and filing-rule details can be omitted."
+  },
+  {
+    "id": "B022",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Procedure and receipt order follow the source; stock separation is retained."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Both quarantine triggers and the cold-feel caveat are explicit in the rationale."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Timestamp retention is scoped to delay investigations, but this job does not direct recording the indicator and receipt time before refrigeration."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "USEFUL_WORK_WITHHELD",
+        "jobIndex": 3,
+        "requirementId": "R4",
+        "constraintId": "C2",
+        "detail": "The source supports stating that pharmacist review of manufacturer guidance precedes release or disposal. The plan blocks the entire release-authority job because final approval ownership is unspecified; it could state the known review gate without assigning final authority."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "The authorized documentation job focuses on delay timestamps and monthly sampling; only the broad procedure job carries the indicator/arrival-time prerequisite."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "Pharmacist review gate can be stated without inventing final approval authority."
+  },
+  {
+    "id": "B023",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Formal update is grounded in council actions."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Master’s elective-exam scope and licensing/doctoral exclusions are explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Revision, expected December revisit, and current unavailability are explicit."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Collaborative-work assessment is correctly identified as unresolved."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "All requested status and scope distinctions are retained."
+  },
+  {
+    "id": "B024",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Summary rationale explicitly bars causal and energy claims."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Both directional temperature observations are included."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Milder weather and window use remain attribution limits."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Winter and comparable second building remain recommendations."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Sample count need not appear unless the summary reports study scale."
+  },
+  {
+    "id": "C001",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Record contents are supported."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Per-note handling is stated, but the plan does not explicitly retain interruption context or missing-record retrieval before local update."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Offline retention until reconnection is direct."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Current two-version review is supported, but the plan does not instruct preservation of the possible same-field-first conflict condition."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "Timing rationale retains staging measurement and absence of mobile guarantee."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R1",
+        "constraintId": "C2",
+        "detail": "The duplicate/out-of-order job does not explicitly preserve that disorder may follow an interruption and a detected gap is filled before local update; the quote alone does not direct those qualifiers into the guide."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 3,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "The conflict job names the current display but omits the condition that another device first edited the same field and that a conflict is only possible."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Two handling conditions are present only in source evidence."
+  },
+  {
+    "id": "C002",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Record contents are supported."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Per-note handling is stated, but interruption context and retrieval-before-update are not made plan instructions."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Offline retention until reconnection is direct."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Two-version review is supported, but the same-field-first conflict condition is not directed."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "The ten-second mobile commitment and working-connection condition are explicitly retained."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R1",
+        "constraintId": "C2",
+        "detail": "The job describes out-of-order handling without instructing preservation of the after-interruption context and missing-record retrieval before update."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 3,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "The conflict job does not preserve that a conflict is possible only in the stated same-field-first circumstance."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The mobile timing condition is preserved; conflict conditions are not."
+  },
+  {
+    "id": "C003",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Release-note scope is supported by the planned export."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Current filters, archive filter, and stored-currency/no-conversion limits are present."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Button location is explicitly a first-release plan."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Browser threshold, server/email path, and possible queue delay are retained."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "No claim about exactly 5,000 items is authorized."
+  },
+  {
+    "id": "C004",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Release-note scope is supported by the planned export."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Current filters, archive filter, and stored-currency/no-conversion limits are present."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Settings-menu location is a first-release decision."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Browser threshold, server/email path, and possible queue delay are retained."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The changed first-release location is correctly tracked."
+  },
+  {
+    "id": "C005",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "OMITTED"
+      },
+      {
+        "id": "R2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "The sole authorized job correctly states that the flow is a staff pilot unavailable to customers."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "USEFUL_WORK_WITHHELD",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": null,
+        "detail": "The source permits a customer-facing FAQ that says the new flow is unavailable to customers, then describes the pilot limits as such. Blocking the entire FAQ because a current customer recovery route is unspecified adds a requirement absent from the objective."
+      },
+      {
+        "kind": "USEFUL_WORK_WITHHELD",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "Thirty-minute, single-use limits and the support path when the registered email is lost are sourced, but both safe jobs are withheld despite being presentable with a staff-pilot caveat."
+      },
+      {
+        "kind": "GOLD_DISAGREEMENT",
+        "jobIndex": 0,
+        "requirementId": null,
+        "constraintId": null,
+        "detail": "The first label treats a full FAQ as feasible; the second adds actionable current-customer instructions. That added requirement is not in the objective and should not erase supported pilot information."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "Disputed gold does not justify withholding sourced pilot guidance."
+  },
+  {
+    "id": "C006",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The account-email condition appears only in evidence; the job does not instruct that the same confirmation appears for registered and unregistered addresses."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Thirty-minute expiry and single use are explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Support path and receipt limitation are explicit."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Customer and staff availability is explicit."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R4",
+        "constraintId": "C2",
+        "detail": "The FAQ plan omits the identical confirmation screen for registered and unregistered addresses, leaving a customer-facing account-enumeration safeguard unpreserved."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "The registered-address condition for receiving a link is quoted but not made an explicit instruction in the authorized job or rationale."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Availability is correct; link and confirmation conditions need explicit preservation."
+  },
+  {
+    "id": "C007",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Trial can be summarized with interview attribution and unconfirmed door explanation."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Second over-threshold reading is explicit."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Expansion size, quarter, and battery condition are quoted, but generic “approval or consideration status” fails to lock in approved status."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "USEFUL_WORK_WITHHELD",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C2",
+        "detail": "The source supports saying alerts do not shut down refrigeration or replace daily checks and staff still log corrective actions on paper. Those are useful answers to what staff do after an alert; an unstated immediate inspection protocol need not be invented."
+      },
+      {
+        "kind": "CERTAINTY_STRENGTHENING",
+        "jobIndex": 3,
+        "requirementId": "R3",
+        "constraintId": "C4",
+        "detail": "The expansion rationale allows “approval or consideration status” although this source says approved; the plan must require approved, conditional expansion."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "Existing checks and paper logging can be stated without a new response protocol."
+  },
+  {
+    "id": "C008",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Trial can be summarized with interview attribution and unconfirmed door explanation."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Second over-threshold reading is explicit."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Expansion size, quarter, and battery condition are quoted, but generic “approval or consideration status” permits an incorrect approval claim."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "USEFUL_WORK_WITHHELD",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C2",
+        "detail": "The source supports continuing the daily manual check and recording corrective actions in the paper log after alerts. The plan blocks this supported portion while seeking an unstated immediate response protocol."
+      },
+      {
+        "kind": "CERTAINTY_STRENGTHENING",
+        "jobIndex": 3,
+        "requirementId": "R3",
+        "constraintId": "C4",
+        "detail": "The expansion rationale permits approval status although the source says only considering expansion; retain consideration and the battery condition."
+      }
+    ],
+    "usefulWorkWithheld": true,
+    "note": "The considered status is material and must be fixed."
+  },
+  {
+    "id": "C009",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Daily-count API and context fields are supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Project time-zone boundary is explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Today’s provisional status and backfill exception are explicit."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Ninety-day maximum and multiple calls are covered, but the requested error-object behavior is not planned."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "Missing day is no recorded events, not request failure."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 3,
+        "requirementId": "R3",
+        "constraintId": null,
+        "detail": "The source specifies an error object for an invalid project identifier or an over-limit range. The request-limit job covers the maximum but omits this required error behavior."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Request-limit error behavior is missing."
+  },
+  {
+    "id": "C010",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Compact card format is supported by the stated space."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Short-press cycle is explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "On-state activation, two-second hold, thirty-minute shutoff, and retained setting are explicit."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Plugged-in use and possible high-brightness charging delay are explicit."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "Four segments are explicitly an estimate, not exact minutes."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Instructions keep the timer and battery qualifications."
+  },
+  {
+    "id": "C011",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Student FAQ can be condensed from the source."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Checked-out-only eligibility and class-set priority are explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Queue changes from damaged copies and class holds are explicit."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Email upon return and three school days excluding weekends and holidays are explicit."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "Imminent-assignment help and alternatives are explicit."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 2,
+        "requirementId": "R4",
+        "constraintId": "C6",
+        "detail": "No authorized job tells the FAQ that staff cannot promise a return date because borrowers may renew when nobody is waiting; queue and pickup timing could otherwise read as a return estimate."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 3,
+        "requirementId": "R2",
+        "constraintId": null,
+        "detail": "The supported handoff to the next person after an uncollected book is absent from the pickup-timing job."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Return-date uncertainty and missed-pickup handoff need coverage."
+  },
+  {
+    "id": "C012",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Numbered sequence is supported and preserves the pre-opening and post-closing order."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Power disconnection, possible retained water, and flow arrow are explicit."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Two-minute waste rinse, seam check, and accuracy caveat are explicit."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Drop or persistent low flow triggers calibration check; routine swaps normally do not."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Safety sequence and calibration exception are retained."
+  },
+  {
+    "id": "C013",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R5",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C7",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C8",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Cost comparison is evidenced, but the usable-index condition is not instructed."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Preview is requested, but exclusion of actual runtime remains only in evidence."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Statistics guidance omits most-collections qualification and incident exception."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "Usable index is a prerequisite to an index scan; the job says only why an indexed query may scan a table."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C6",
+        "detail": "Migration or large import as a reason to revisit the plan is absent from the plan."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R4",
+        "constraintId": "C3",
+        "detail": "Nightly refresh applies to most collections, and staleness is possible rather than certain; neither is in the job instruction."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C5",
+        "detail": "Preview must be described as estimated path/count without actual runtime."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 2,
+        "requirementId": "R5",
+        "constraintId": "C7",
+        "detail": "Routine check-before-index advice has an incident-response exception, absent from authorized jobs."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "All source facts are available, but the plan under-specifies several limits."
+  },
+  {
+    "id": "C014",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C7",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Scope is named generically; recipe-only and free-form-note boundaries are only quoted."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "List effect is requested without an explicit instruction to retain recipe display and quantities."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Duration is requested, but no-carryover is only source evidence."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 1,
+        "requirementId": "R1",
+        "constraintId": "C2",
+        "detail": "Keep marked ingredients visible with quantities in recipes while removing them only from that plan’s shopping list."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C6",
+        "detail": "Free-form shopping notes remain until manually removed; scope job does not state this exception."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "Per-household, per-plan scope and lack of next-week carryover need explicit preservation."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R3",
+        "constraintId": "C7",
+        "detail": "Announcement plan lacks a guard against promising automatic stock tracking or measured savings."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The feature is supported, but key consumer-facing boundaries are not operationalized."
+  },
+  {
+    "id": "C015",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Both attributed views and the call rule are quoted, but the job does not require attribution or preserve the second view as benefit plus concern."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Current use is broad; weekday-only coverage and noncomparative first-month count are not explicit."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Decision point is broad; no extension approved is only quoted."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "ATTRIBUTION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C2",
+        "detail": "Keep each supervisor’s view attributed and preserve the second supervisor’s positive view alongside the empty-box concern."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "State current use is weekday packaging-line handoffs, not weekend crews."
+      },
+      {
+        "kind": "CAUSAL_STRENGTHENING",
+        "jobIndex": 1,
+        "requirementId": "R4",
+        "constraintId": "C4",
+        "detail": "Four of twenty had an issue recorded; without an old-process comparison, no improvement claim follows."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C6",
+        "detail": "The manager will decide later; extension has not been approved."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C5",
+        "detail": "Urgent equipment problems still require a direct call even when documented."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Evidence citations alone do not preserve attribution or outcome limits."
+  },
+  {
+    "id": "C016",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Download path and draft exclusion are quoted, but completed-order eligibility is not in the instruction."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Refund distinction is requested, but the later-refund hedge is not explicit."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Older-invoice path does not instruct the writer to limit missing downloads to some orders or verify identity."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Company details are broad; pre-checkout entry and no post-completion change are only quoted."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "Only completed orders have invoices; a draft-order exclusion in evidence does not make eligibility explicit."
+      },
+      {
+        "kind": "CERTAINTY_STRENGTHENING",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C2",
+        "detail": "A later refund may not appear on the invoice; it is not stated as an invariant."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C5",
+        "detail": "Some pre-March downloads may be missing; this cannot be generalized to all older orders."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C6",
+        "detail": "Support can provide the original receipt after verifying order number and email; the fallback is conditional."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 3,
+        "requirementId": "R4",
+        "constraintId": "C4",
+        "detail": "Company name must be entered before checkout and cannot be added to a completed invoice."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The FAQ plan covers topics but leaves decisive customer instructions in quotes."
+  },
+  {
+    "id": "C017",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R5",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C7",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C8",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "File-format job mentions blank versus zero only as evidence and omits zero’s out-of-stock effect."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Validation instruction does not specify all-row pre-mutation check and line-number errors."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Update instruction does not explicitly retain absent products."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Report review instruction omits that syntactically valid content can still be unintended."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "Blank quantity is invalid, while zero is valid and lists the item out of stock."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C2",
+        "detail": "The importer validates all rows before changes and reports error line numbers; the job says only validation behavior."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 2,
+        "requirementId": "R4",
+        "constraintId": "C5",
+        "detail": "A valid import updates matching SKUs and creates new ones without deleting absent products."
+      },
+      {
+        "kind": "VALIDATION_FAILURE",
+        "jobIndex": 3,
+        "requirementId": "R5",
+        "constraintId": "C8",
+        "detail": "Report review must account for accepted files with unintended but syntactically valid price or description."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Core documentation sections are present, but operational invariants are under-specified."
+  },
+  {
+    "id": "C018",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Normal dimming is requested without explicitly preserving motion threshold or emergency-circuit separation."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Manual control is requested without specifying quiet-worker hedge or automatic reset at booking end."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Problem-report instruction does not state the wall-control attempt as its trigger."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R4",
+        "constraintId": "C2",
+        "detail": "The emergency lighting circuit is not switched off and should not be implied to dim with normal lighting."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": "C6",
+        "detail": "No building-wide change is scheduled; the plan lacks the requested planned-change limit."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C5",
+        "detail": "Report a room that remains dark after using the wall control, not ordinary sensor dimming."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "Quiet workers may need to wave or tap the control; the manual level resets at booking end."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Notice scope is appropriate, but required distinctions are left in evidence."
+  },
+  {
+    "id": "C019",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Indexing process is supported; PDF check is cited but not assigned as an explicit instruction."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Delay job leaves usually-one-day and correction pauses only in source evidence."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Scanned-document job omits the no-exact-page-proof limitation from instructions."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Date-filter job does not state meeting date versus upload date explicitly."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "One working day is usual, not guaranteed, and metadata corrections pause indexing."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "A poor-contrast scan can be incomplete; search results do not prove exact wording on every page, so consult the original PDF."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": "C6",
+        "detail": "Removed or replaced minutes can retain an old result until the six-hour index refresh; this is absent."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 3,
+        "requirementId": "R3",
+        "constraintId": "C5",
+        "detail": "The date filter is the meeting date, not PDF upload date."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The plan omits the stale-result behavior and leaves search reliability caveats implicit."
+  },
+  {
+    "id": "C020",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C6",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Screen meaning is supported, but usual/online latency and billing authority are only quoted."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Missing-confirmation steps are supported, but late display versus timely recorded return is only quoted."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Trial availability is supported, but outside-trial indicator remains only evidence."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C2",
+        "detail": "Five-second confirmation is usual only when the station is online."
+      },
+      {
+        "kind": "ATTRIBUTION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R4",
+        "constraintId": "C3",
+        "detail": "The screen is informational; the operator’s trip record determines billing."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R4",
+        "constraintId": "C4",
+        "detail": "Late confirmations at two unstable trial stations need not mean a late return."
+      },
+      {
+        "kind": "CERTAINTY_STRENGTHENING",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": "C5",
+        "detail": "No charge effect has been found, but logs are still under review; do not promise no billing impact."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Billing and latency safeguards are not expressed as plan instructions."
+  },
+  {
+    "id": "C021",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R5",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C7",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C8",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Current behavior omits the attributed early-tester need; three choices and account persistence are only quoted."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Limits are named, but PDF, comprehension, and conditional footnote details are only evidence."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Next steps lack explicit separation of prototype preview from committed Android fix."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "The product story should include the designer-attributed early tester request for more line spacing."
+      },
+      {
+        "kind": "CERTAINTY_STRENGTHENING",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C4",
+        "detail": "Eleven of eighteen choosing the widest option at least once does not establish comprehension improvement."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R3",
+        "constraintId": "C7",
+        "detail": "Footnote difficulty is a possibility in narrow windows, attributed to the designer."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R4",
+        "constraintId": "C5",
+        "detail": "The live preview remains a prototype desire, whereas the older-Android reset fix is committed and separate."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The jobs group the right topics but do not encode the different evidence and commitment levels."
+  },
+  {
+    "id": "C022",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Sign-up for a morning or evening slot is directly supported."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Completion after watering is directly supported."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Weather job cites soaked-rain and heat-wave conditions but does not instruct that the posted schedule is conditional."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Amounts job cites defaults and exceptions without an explicit instruction to retain most/only/unless."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C4",
+        "detail": "The posted schedule is a starting plan and does not require watering regardless of conditions."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R2",
+        "constraintId": "C1",
+        "detail": "Skipping watering is allowed if rain has soaked the beds, with Rain recorded in the shift note."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 3,
+        "requirementId": "R3",
+        "constraintId": "C6",
+        "detail": "One can applies to most raised beds; south seedlings default to half a can unless the coordinator posts a different amount."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The concise guide is feasible, but weather and amount bounds need explicit direction."
+  },
+  {
+    "id": "C023",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C7",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Freshness job cites mutable provider estimates but does not require uncertainty language."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Fallback job cites the fifteen-minute cutoff and stale label but leaves both as evidence only."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Schedule-label job has the provider-no-live-estimate condition only in evidence."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": null,
+        "detail": "The plan does not instruct the writer to avoid promising arrival at the displayed minute."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C7",
+        "detail": "Scheduled entries appear only when the provider sends no live estimate and carry a schedule label."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "Cached times must be marked older and removed after fifteen minutes, replaced by directions to station signs."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R1",
+        "constraintId": "C4",
+        "detail": "The cache is per station and route, preventing old-route data from appearing as current; this relevant freshness boundary is absent."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Freshness is the central promise, yet the plan leaves its boundaries implicit."
+  },
+  {
+    "id": "C024",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C5",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Form fields and staff review are quoted, but approval is not automatic is not instructed."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Timing target and festival exception remain only in evidence."
+      },
+      {
+        "index": 2,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Written guardian permission for identifiable children at public events is only quoted."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Removal path is supported, but post-publication status and submission number remain only evidence."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "Submission is reviewed for relevance and permission; approval is not automatic."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 2,
+        "requirementId": "R3",
+        "constraintId": "C2",
+        "detail": "Identifiable children require written guardian permission even at public events."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "Five working days is a review target; festival weeks may take longer."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 3,
+        "requirementId": "R4",
+        "constraintId": "C5",
+        "detail": "After publication, a submitter requests removal from the desk with the submission number."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C6",
+        "detail": "Watermarked promotional graphics are excluded from this submission form."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Permissions and timing are high-value caveats absent from job instructions."
+  },
+  {
+    "id": "D001",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "R4",
+        "status": "PARTIAL"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "PARTIAL"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Link placement is supported but phone-screen condition is only in evidence."
+      },
+      {
+        "index": 1,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Partner clinic route is supported, but direct-link restriction to own appointments is not instructed."
+      },
+      {
+        "index": 3,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Unconfirmed Save report is requested, but investigation status is not made explicit."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 1,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "The direct link for own-service bookings must not be offered for partner-clinic appointments."
+      },
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "Reschedule link location is stated for a phone screen; do not generalize to all layouts."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R3",
+        "constraintId": null,
+        "detail": "The URL is correctly blocked because the source provides no actual address."
+      },
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 3,
+        "requirementId": "R4",
+        "constraintId": "C4",
+        "detail": "Two callers reported Save unresponsiveness; it has not been reproduced and is under investigation."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Blocking the unknown URL is sound; the remaining reply plan still loses limits."
+  },
+  {
+    "id": "D002",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "R5",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "NOT_APPLICABLE"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Separates eight working devices from two needing batteries and two with screen damage."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Limited basic charging/keyboard check is the stated job."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "Thank-you is directly requested and supported."
+      },
+      {
+        "index": 4,
+        "support": "SUPPORTED",
+        "reason": "Signer confirmation is explicit in the authorized job."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R4",
+        "constraintId": null,
+        "detail": "Confirmed Friday pickup time cannot be supplied: no clock time or confirmation is in the source."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Unknown time is properly blocked; safe handoff content is authorized."
+  },
+  {
+    "id": "D003",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "OMITTED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "Approximate hour and optional later questions are requested and sourced."
+      },
+      {
+        "index": 1,
+        "support": "SUPPORTED",
+        "reason": "Brief tablet practice is explicitly bounded by safeguarding content."
+      },
+      {
+        "index": 3,
+        "support": "SUPPORTED",
+        "reason": "Phone-line-only volunteers are explicitly exempted from tablet practice."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": null,
+        "requirementId": "R3",
+        "constraintId": null,
+        "detail": "Building address cannot be supplied; the source identifies only the small meeting room."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "Address is correctly blocked while the supported reminder remains authorized."
+  },
+  {
+    "id": "D004",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Rental duration is missing; the preservation edit depends on that insertion."
+  },
+  {
+    "id": "D005",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "NOT_APPLICABLE"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The plan instruction and rationale keep the source-supported scope and relevant limits."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The plan instruction and rationale keep the source-supported scope and relevant limits."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The supported tightening and sample limitation can proceed; no follow-up date is given."
+  },
+  {
+    "id": "D006",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "SUPPORTED",
+        "reason": "The plan instruction and rationale keep the source-supported scope and relevant limits."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The plan instruction and rationale keep the source-supported scope and relevant limits."
+      }
+    ],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "A trial reply is supported; the exact October date is absent."
+  },
+  {
+    "id": "D007",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The statutory deadline is absent; the comparison edit depends on it."
+  },
+  {
+    "id": "D008",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "A response rate needs a denominator that the source does not provide."
+  },
+  {
+    "id": "D009",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The test and post-test note are grounded, but the plan only says “conditional next step”; it does not instruct that poor rear-seat volume triggers a new equipment review."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The source expressly says no full-fleet completion date was approved."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "CONDITION_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R2",
+        "constraintId": "C3",
+        "detail": "The quoted source contains both outcomes, but job 0 does not direct the update to retain the poor-result equipment review or make rear-seat reliability the decision condition."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The update omits an explicit instruction for the failed-test branch."
+  },
+  {
+    "id": "D010",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "No aerator savings figure is supplied; the measurement distinction is a coupled preservation task."
+  },
+  {
+    "id": "D011",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      },
+      {
+        "id": "C6",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The figures, six-site continuation, and conditional seventh-site proposal are supported; the plan gives no instruction to retain the two-week disruption caveat for one site."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The source explicitly says the bus-route coincidence cannot establish attribution."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "QUALIFIER_LOSS",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C3",
+        "detail": "Job 0 foregrounds the 71-to-84 trend but neither its instruction nor rationale preserves that one site lost two weeks of sessions, making its term averages less comparable."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The proposed family summary drops a material attendance caveat."
+  },
+  {
+    "id": "D012",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The one-ward trial is documented, but the ward is unnamed."
+  },
+  {
+    "id": "D013",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C5",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "The project time zone, ninety-day span, and provisional today are supported; the plan does not retain the forty-eight-hour normal finalization with possible later backfills."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The at-most-five-minute cache rule applies when the report includes today; longer caching is only allowed for historical reports."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C4",
+        "detail": "Reorganizing the API guidance without the backfill exception can make older counts appear permanently final after forty-eight hours; the exception appears nowhere in the job instruction or rationale."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The scan-oriented API plan loses the historical-count exception."
+  },
+  {
+    "id": "D014",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "No librarian email address is supplied."
+  },
+  {
+    "id": "D015",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "Preview behavior is described, but invocation syntax is absent."
+  },
+  {
+    "id": "D016",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "The decision date is missing; weekday scope and weekend feedback are coupled safeguards."
+  },
+  {
+    "id": "D017",
+    "verdict": "DEFECT",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      },
+      {
+        "id": "R3",
+        "status": "COVERED"
+      },
+      {
+        "id": "R4",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "PARTIAL"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      },
+      {
+        "id": "C4",
+        "status": "COVERED"
+      },
+      {
+        "id": "C5",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C6",
+        "status": "OMITTED"
+      },
+      {
+        "id": "C7",
+        "status": "COVERED"
+      },
+      {
+        "id": "C8",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [
+      {
+        "index": 0,
+        "support": "PARTIALLY_SUPPORTED",
+        "reason": "Zero quantity and all-row validation are grounded, but the preparation instruction does not preserve UTF-8/header/one-row-per-product requirements, and the plan omits valid-file update/create and no-delete behavior."
+      },
+      {
+        "index": 2,
+        "support": "SUPPORTED",
+        "reason": "The source explicitly requires report review before an announcement because accepted content can still be unintended."
+      }
+    ],
+    "issues": [
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C1",
+        "detail": "A preparation step needs UTF-8 encoding, a header row, and one product per row; the job cites only the required column names."
+      },
+      {
+        "kind": "OMITTED_REQUIREMENT",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C5",
+        "detail": "The validation/follow-up reorganization does not instruct that a valid file updates matching SKUs and creates new SKUs."
+      },
+      {
+        "kind": "NEGATION_EXCEPTION",
+        "jobIndex": 0,
+        "requirementId": "R1",
+        "constraintId": "C6",
+        "detail": "The reorganization does not preserve that products absent from the CSV are not deleted."
+      }
+    ],
+    "usefulWorkWithheld": false,
+    "note": "The broad documentation reorganization omits import preparation and result behavior."
+  },
+  {
+    "id": "D018",
+    "verdict": "SOUND",
+    "requiredCoverage": [
+      {
+        "id": "R1",
+        "status": "COVERED"
+      },
+      {
+        "id": "R2",
+        "status": "COVERED"
+      }
+    ],
+    "constraintCoverage": [
+      {
+        "id": "C1",
+        "status": "COVERED"
+      },
+      {
+        "id": "C2",
+        "status": "COVERED"
+      },
+      {
+        "id": "C3",
+        "status": "COVERED"
+      }
+    ],
+    "safeJobSupport": [],
+    "issues": [],
+    "usefulWorkWithheld": false,
+    "note": "No reporting channel is provided; the requested insertion cannot be grounded."
+  }
+]

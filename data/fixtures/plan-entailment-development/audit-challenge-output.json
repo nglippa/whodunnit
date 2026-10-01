@@ -1,0 +1,83 @@
+{
+  "cases": [
+    {
+      "id": "A001",
+      "verdict": "UPHOLD",
+      "reason": "The plan explicitly retains the approximate count, approval, weekend build limit, conditional June move, and modest close. The first SOUND verdict is justified.",
+      "additionalRisk": null
+    },
+    {
+      "id": "A013",
+      "verdict": "UPHOLD",
+      "reason": "The coverage job mentions safeguarding and tablet practice but does not direct the writer to protect safeguarding time or include the trainer's later-help guidance. Quoting the phone-line exception does not preserve the separate condition on adding the demonstration. A reminder could also overstate a suggested demonstration as settled.",
+      "additionalRisk": "The first audit's certainty concern is less decisive than its omission findings: the speaker agrees to the demonstration, conditional on keeping safeguarding intact."
+    },
+    {
+      "id": "A017",
+      "verdict": "UPHOLD",
+      "reason": "The test-result instruction gives outcomes and a six-person count but leaves out that all six were returning members. The proposed first-time check does not itself state that first-time members have not yet been tested. Those boundaries matter to an update about the result.",
+      "additionalRisk": "The Monday date is incidental to the objective; omission of the returning-member sample and its generalization limit is the substantive defect."
+    },
+    {
+      "id": "B010",
+      "verdict": "UPHOLD",
+      "reason": "The plan explicitly keeps both stages, the recorded inspection before release, the narrow overnight staffing exception with logging, and the pause-and-call action for unclear precautions. The SOUND verdict is justified.",
+      "additionalRisk": "The second check is not a laboratory test, but a brief staff procedure need not discuss that distinction unless it describes the check as proving organisms absent."
+    },
+    {
+      "id": "B022",
+      "verdict": "UPHOLD",
+      "reason": "The plan blocks the whole release-authority job even though it can state the sourced gate: a pharmacist reviews manufacturer guidance before release or disposal. It should leave final approval ownership unresolved. The first audit correctly identifies useful work withheld.",
+      "additionalRisk": "The first FULLY_SAFE gold is contestable if 'release authority unambiguous' requires naming who makes the final release decision; the source does not name that role. The audit's separate documentation objection is weaker because the general procedure job already cites indicator and arrival-time recording."
+    },
+    {
+      "id": "C005",
+      "verdict": "UPHOLD",
+      "reason": "The plan can safely produce customer-facing copy that plainly says this recovery flow is staff-only, then qualifies any description of its link limits and support route as pilot behavior. Blocking the FAQ job and withholding two individually SAFE jobs loses supported work. No current customer recovery route should be invented.",
+      "additionalRisk": "The first FULLY_SAFE gold is contestable if the FAQ must provide an actionable recovery route for customers today. The objective asks for availability to be clear, which permits an unavailable-to-customers answer, but a staff-pilot support instruction must not be presented as an available customer procedure."
+    },
+    {
+      "id": "C007",
+      "verdict": "UPHOLD",
+      "reason": "The plan blocks the entire after-alert job although the source supports saying that alerts do not shut down refrigeration, daily checks continue, and corrective actions go in the paper log. It can state those limits without inventing an immediate inspection protocol.",
+      "additionalRisk": "The first FULLY_SAFE gold is contestable if 'what staff do after an alert' demands a step-by-step immediate response; none is supplied. The audit's expansion-certainty objection is weaker because the job quotes approval and its battery condition, despite loose wording in its rationale."
+    },
+    {
+      "id": "C014",
+      "verdict": "UPHOLD",
+      "reason": "The plan quotes the recipe visibility and free-form-note exceptions but gives only generic rationales, so the quotes alone do not instruct the announcement to preserve those limits. More clearly, it has no guard against promising automatic stock tracking despite the source's explicit release-copy direction. The DEFECT verdict is justified.",
+      "additionalRisk": "The audit overstates the per-plan duration gap: the duration job expressly says the mark does not carry into next week's plan. Measured savings also need not be mentioned, though any savings claim must remain attributed to test participants."
+    },
+    {
+      "id": "D001",
+      "verdict": "UPHOLD",
+      "reason": "The missing URL is correctly blocked. The authorized reply jobs quote the phone-screen and partner-booking limits but do not explicitly direct preservation of either, and their generic rationales do not close that gap. The Save report likewise needs to stay a report from two callers that has not been reproduced.",
+      "additionalRisk": "The audit's missing-URL item describes a justified block, not a defect. The quoted evidence may guide a careful writer, so the risk here is omission or overgeneralization rather than an existing false claim."
+    },
+    {
+      "id": "D002",
+      "verdict": "UPHOLD",
+      "reason": "The plan authorizes the sourced handoff details and limited testing, preserves the sign-for-delivery condition, and blocks an unconfirmed Friday clock time. The SOUND verdict is justified.",
+      "additionalRisk": "The source describes possible Friday delivery, while the objective calls it a pickup time; the plan correctly avoids inventing a time, but a final handoff should not silently recast delivery as confirmed pickup."
+    },
+    {
+      "id": "D009",
+      "verdict": "UPHOLD",
+      "reason": "The source quotation includes both test outcomes, but the rider-update instruction does not explicitly retain that rear-seat reliability controls reuse of the setup or that a poor result leads to equipment review. Quoting the passage alone does not guarantee the conditional next step requested by the objective.",
+      "additionalRisk": "The unknown speaker-arrival date is correctly blocked; the two-week test window is not a delivery estimate."
+    },
+    {
+      "id": "D011",
+      "verdict": "UPHOLD",
+      "reason": "The plan foregrounds the attendance rise for families without directing the writer to preserve the two-week interruption at one site and the caution about comparing its term averages. That caveat materially limits interpretation of the reported change.",
+      "additionalRisk": "The plan correctly keeps the bus-route observation noncausal, the seventh-site proposal conditional, and the summary date unset."
+    },
+    {
+      "id": "D017",
+      "verdict": "UPHOLD",
+      "reason": "A preparation, validation, and follow-up rewrite needs the CSV format and header, product-per-row structure, and valid-import outcomes. The broad job cites only columns and selected validation facts, without instructions to retain update/create behavior or the no-delete limit. The first audit's DEFECT verdict is justified.",
+      "additionalRisk": "The 20,000-row cap is not a megabyte cap, so blocking the requested file-size number is sound."
+    }
+  ],
+  "crossCaseConclusion": "Both. Several plans omit material conditions, exceptions, or scope limits even when their sourceEvidence quotes those facts; a quote alone does not make preservation an instruction. Other cases block supported partial work by assuming the objective requires unavailable details, especially B022, C005, and C007. More explicit output fields or validation could catch omitted guards and unjustified blocking, but those checks also require sound interpretation of what the source actually supports. The first gold is contestable where it assumes a fully actionable answer despite missing release authority, customer availability, or an immediate alert protocol."
+}
