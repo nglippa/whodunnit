@@ -1,0 +1,142 @@
+[
+  {
+    "id": "ea01",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["repair clinic opening date: May 14 → May 21"],
+    "protectedFacts": ["The repair clinic is at the Eastside Library.", "Volunteers offer bicycle tune-ups from 10 a.m. to 2 p.m.", "The library's book sale remains scheduled for May 14 in the adjoining hall."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The objective supplies a replacement date for the clinic only; newsletter polish does not change the book sale."
+  },
+  {
+    "id": "ea02",
+    "executable": true,
+    "authorizedUpdate": false,
+    "authorizedDimensions": [],
+    "protectedFacts": ["The repair clinic opens on May 14 at the Eastside Library.", "Volunteers offer bicycle tune-ups from 10 a.m. to 2 p.m.", "The library's book sale remains scheduled for May 14 in the adjoining hall."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The requested warmth and readability are executable style changes; no factual change is authorized."
+  },
+  {
+    "id": "ea03",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["river survey coordinator: Maya Chen → Priya Nair", "volunteer sign-up contact: Maya Chen → Priya Nair"],
+    "protectedFacts": ["Luis Ortega manages the water-quality samples.", "The Parks Office supplies the sampling kits."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "Priya Nair is supplied for Maya Chen's two specified roles; the other responsibilities stay intact."
+  },
+  {
+    "id": "ea04",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["planned weekend meal-bag total: 240 → 300"],
+    "protectedFacts": ["The meal bags are for the spring distribution.", "Each bag contains two breakfasts and one shelf-stable dinner.", "60 separate hygiene kits are already assembled for pickup."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The new total applies only to planned meal bags, not the separate hygiene kits or bag contents."
+  },
+  {
+    "id": "ea05",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["courtyard mural facilities approval: awaiting final approval → approved"],
+    "protectedFacts": ["The artist's color study was approved last week.", "The scaffolding reservation is confirmed for June 3."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "Facilities approval is explicitly updated; the separate color study approval and reservation remain as stated."
+  },
+  {
+    "id": "ea06",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["compost pilot start date: July 8 → July 15", "collection bins at north entrance: four → six", "compost pilot lead: Rowan Ellis → Nadia Brooks"],
+    "protectedFacts": ["The compost pilot is public.", "The collection bins are at the north entrance.", "The garden team continues separate Saturday soil workshops through August."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The objective supplies all three pilot replacements and leaves the separate workshops unchanged."
+  },
+  {
+    "id": "ea07",
+    "executable": false,
+    "authorizedUpdate": false,
+    "authorizedDimensions": [],
+    "protectedFacts": ["The museum's oral-history recording day is listed for September 12 in Studio B.", "Volunteer orientation is on September 5 in the main gallery.", "Registration closes September 9."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": true,
+    "rationale": "A possible date shift supplies no replacement or confirmation; 'current' cannot establish a new date."
+  },
+  {
+    "id": "ea08",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["courtyard fountain proposal decision: scheduled Tuesday review with no decision recorded → council approved it at Tuesday's meeting"],
+    "protectedFacts": ["The library's seed exchange opens at nine.", "A contractor will repaint the south stairwell next month.", "The bicycle racks beside the hall hold twelve bikes."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The objective explicitly supplies the outcome of the fountain proposal review."
+  },
+  {
+    "id": "ea09",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["courtyard fountain proposal status: scheduled Tuesday review with no decision recorded → Tuesday meeting held, no decision made, revisit next month"],
+    "protectedFacts": ["The library's seed exchange opens at nine.", "A contractor will repaint the south stairwell next month.", "The bicycle racks beside the hall hold twelve bikes."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The council's continuing lack of decision and planned revisit are supplied; approval is not authorized."
+  },
+  {
+    "id": "ea10",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["November public telescope nights: planned to open → cancelled, with no sessions that month"],
+    "protectedFacts": ["The weather station sends readings every hour.", "The visitor center sells printed sky maps.", "A new footbridge crosses the marsh trail."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The November program is explicitly cancelled; no replacement program date is supplied."
+  },
+  {
+    "id": "ea11",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["November public telescope nights: planned to open → start postponed until a permit is issued, with no confirmed new date"],
+    "protectedFacts": ["The weather station sends readings every hour.", "The visitor center sells printed sky maps.", "A new footbridge crosses the marsh trail."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The objective supplies a conditional postponement, not a cancellation or a new date."
+  },
+  {
+    "id": "ea12",
+    "executable": true,
+    "authorizedUpdate": true,
+    "authorizedDimensions": ["ceramics workshop day: Saturday → Sunday", "workshop registration: open through Thursday → closed", "workshop aprons: not provided → provided"],
+    "protectedFacts": ["The workshop will provide clay.", "The garden club waters the planters on Mondays.", "The town clock was restored last spring.", "The café closes at six."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": false,
+    "rationale": "The three workshop changes are explicit; unrelated facts and clay provision remain fixed."
+  },
+  {
+    "id": "ea13",
+    "executable": true,
+    "authorizedUpdate": false,
+    "authorizedDimensions": [],
+    "protectedFacts": ["The museum's oral-history room is closed for repairs until Friday.", "The archive desk still accepts appointment requests by email.", "The sculpture garden opens at ten.", "The café serves lunch from noon to three."],
+    "alreadySatisfied": true,
+    "vagueMissingTarget": false,
+    "rationale": "The requested room status exactly matches the source; no factual revision is needed."
+  },
+  {
+    "id": "ea14",
+    "executable": false,
+    "authorizedUpdate": false,
+    "authorizedDimensions": [],
+    "protectedFacts": ["The ferry office posts tide notices each morning.", "The pier clock runs five minutes fast.", "The ticket window closes at seven.", "A volunteer group collects litter on the west beach."],
+    "alreadySatisfied": false,
+    "vagueMissingTarget": true,
+    "rationale": "'Make the status current' identifies neither a target fact nor a replacement."
+  }
+]

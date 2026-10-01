@@ -1,0 +1,105 @@
+[
+  {
+    "id": "ea02",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The edit improves sentence flow but does not make the announcement warmer, and “also scheduled” drops the source’s assurance that the book sale remains scheduled.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea05",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly authorizes changing facilities approval to approved; the other progress details and voice are preserved.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea06",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The new date, bin count, and lead are explicitly requested; the separate workshops remain unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea07",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate reads clearly but still presents the potentially shifted recording date without qualification. Qualify the listed date as tentative while retaining Studio B and the other dates.",
+      "issue": {
+        "span": {
+          "start": 40,
+          "end": 66,
+          "text": "is listed for September 12"
+        },
+        "constraint": "Qualify September 12 as tentative because the objective says the recording-day date may have shifted; keep the listed date and all other details."
+      }
+    }
+  },
+  {
+    "id": "ea08",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly updates the council decision to approval at Tuesday’s meeting; unrelated details remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea09",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly supplies the post-meeting status and next-month revisit; unrelated details remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea13",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source and makes no useful update to the notice; the requested closure wording was already present.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea14",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source, so it provides no current-status update.",
+      "issue": null
+    }
+  }
+]

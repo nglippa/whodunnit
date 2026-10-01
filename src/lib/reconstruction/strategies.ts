@@ -131,7 +131,16 @@ export const RECONSTRUCTION_V11 = define({
   description: "V10 candidate generation with narrow objective-authorized changes, structural formatting checks, independent review, and honest repair accounting. Explicit runner only.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11];
+/** Editor-contract experiment only; verification, repair, and fallback are identical to V11. */
+export const RECONSTRUCTION_V12 = define({
+  ...RECONSTRUCTION_V11,
+  version: 12,
+  name: "Reconstruction v12 (objective-aware editor)",
+  description: "Reconstruct.v8 editor with the pinned V11 verifier, repair, and fallback. Explicit runner only.",
+  prompt: { id: "reconstruct", version: 8 },
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

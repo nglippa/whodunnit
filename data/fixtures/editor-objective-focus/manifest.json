@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_BEFORE_GENERATION",
+  "created": "2026-10-01T09:40:35.691Z",
+  "caseCount": 14,
+  "creatorRoles": [
+    "creator-a",
+    "creator-b"
+  ],
+  "annotationRoles": [
+    "first",
+    "second"
+  ],
+  "files": {
+    "cases.json": "06d50584e15e378e2e72199fe13b49f8ced688cde41308e198ca8e74f9bf8da9",
+    "labels-first.json": "ef4457cfa2cba28386a786135797d561d42ebf73700a4c04892e83f64da95e2d",
+    "labels-second.json": "9a8939fbc5a17ce43afcec4380f4962af5994b159ea8d86fdb815122be0a45eb",
+    "pairs.json": "4fad33d01f4dd30efb41eadef210d39622dc9d69177c8ee2336db8573e2bbfff"
+  }
+}

@@ -1,0 +1,93 @@
+[
+  {
+    "id": "ea02",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate improves sentence flow but keeps a neutral tone; the community newsletter request also asks for warmth.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 68,
+          "text": "The neighborhood repair clinic opens May 14 at the Eastside Library."
+        },
+        "constraint": "Replace this sentence with “Join us at the Eastside Library on May 14 for the neighborhood repair clinic.” to make the notice welcoming while retaining its date, place, and event."
+      }
+    }
+  },
+  {
+    "id": "ea05",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly updates facilities approval to approved. The color study approval and June 3 scaffolding reservation remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea06",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective authorizes the July 15 start, six bins, and Nadia Brooks as lead. The separate Saturday workshops remain unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea07",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate repeats the source without refreshing the notice or resolving the potentially shifted recording-day date; no current date is supplied.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea08",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly supplies the council approval at Tuesday’s meeting. The seed exchange, repainting, and bicycle-rack facts remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea13",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The source and candidate already state the requested closure through Friday, and all other facts remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea14",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source, and the objective gives no updated status or basis for judging the existing status current.",
+      "issue": null
+    }
+  }
+]

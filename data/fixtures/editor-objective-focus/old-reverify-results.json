@@ -1,0 +1,109 @@
+[
+  {
+    "id": "ea01",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The repair clinic still opens on May 14; the objective changes that date to May 21. The book sale date remains May 14.",
+      "issue": {
+        "span": {
+          "start": 37,
+          "end": 43,
+          "text": "May 14"
+        },
+        "constraint": "Replace with May 21 for the repair clinic opening only."
+      }
+    }
+  },
+  {
+    "id": "ea02",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The warmer invitation and shorter sentences retain the clinic date, location, tune-up hours, and separate book sale details.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea04",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate still plans 240 meal bags, while the objective calls for 300. The 60 hygiene kits remain a separate quantity.",
+      "issue": {
+        "span": {
+          "start": 21,
+          "end": 24,
+          "text": "240"
+        },
+        "constraint": "Replace the planned meal-bag total with 300; keep the hygiene-kit count at 60."
+      }
+    }
+  },
+  {
+    "id": "ea09",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The opening sentence still describes a future Tuesday review and omits the post-meeting status and next-month revisit.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 115,
+          "text": "The neighborhood council will review the courtyard fountain proposal on Tuesday, and no decision has been recorded."
+        },
+        "constraint": "Replace with: After Tuesday’s meeting, the neighborhood council has not made a decision on the courtyard fountain proposal and will revisit it next month."
+      }
+    }
+  },
+  {
+    "id": "ea10",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate still says November telescope nights are planned, contrary to the requested cancellation and absence of sessions that month.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 78,
+          "text": "The coastal observatory plans to open its public telescope nights in November."
+        },
+        "constraint": "Replace with: The coastal observatory has cancelled its November public telescope nights and will not host any sessions that month."
+      }
+    }
+  },
+  {
+    "id": "ea11",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate retains the planned November start even though the objective postpones it until a permit is issued. Its no-new-date sentence is supported.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 78,
+          "text": "The coastal observatory plans to open its public telescope nights in November."
+        },
+        "constraint": "Replace with: The coastal observatory has postponed the November start of its public telescope nights until a permit is issued."
+      }
+    }
+  }
+]

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "ea01",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "objectiveSatisfied": false,
+      "reason": "The candidate polishes the notice but leaves the clinic opening on May 14 instead of the requested May 21. The separate book-sale date remains correct.",
+      "issue": {
+        "span": {
+          "start": 37,
+          "end": 43,
+          "text": "May 14"
+        },
+        "constraint": "Change only the repair clinic opening date to May 21; leave the book sale on May 14."
+      }
+    }
+  },
+  {
+    "id": "ea04",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "objectiveSatisfied": false,
+      "reason": "The candidate keeps the planned total at 240 rather than 300. The bag contents and separate hygiene-kit count remain grounded in the source.",
+      "issue": {
+        "span": {
+          "start": 21,
+          "end": 24,
+          "text": "240"
+        },
+        "constraint": "Change the planned weekend meal-bag total to 300; retain the separate 60 hygiene kits."
+      }
+    }
+  },
+  {
+    "id": "ea07",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "objectiveSatisfied": true,
+      "reason": "Tentatively listed conveys the stated uncertainty about the recording-day date without inventing a replacement date. The orientation and registration dates, location, and neutral notice voice are preserved.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ea10",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "objectiveSatisfied": false,
+      "reason": "The unchanged first sentence says the November program is planned, contradicting the requested cancellation. The other three observatory facts remain intact.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 78,
+          "text": "The coastal observatory plans to open its public telescope nights in November."
+        },
+        "constraint": "Replace this sentence with a statement that the observatory cancelled the November public telescope nights and will host no sessions that month."
+      }
+    }
+  },
+  {
+    "id": "ea11",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "objectiveSatisfied": false,
+      "reason": "The candidate adds that no new date is confirmed but still says the November start is planned, omitting the permit-dependent postponement. The unrelated observatory facts remain intact.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 78,
+          "text": "The coastal observatory plans to open its public telescope nights in November."
+        },
+        "constraint": "Replace this sentence with a statement that the November start is postponed until a permit is issued; keep the following no-new-date sentence."
+      }
+    }
+  }
+]

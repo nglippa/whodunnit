@@ -11,7 +11,7 @@ import { DEFAULT_STRATEGY, RECONSTRUCTION_V1, RECONSTRUCTION_V2, STRATEGIES, get
 describe("RewriteStrategy", () => {
   it("validates every published strategy and gives each a unique, versioned key", () => {
     for (const s of STRATEGIES) expect(rewriteStrategySchema.safeParse(s).success, strategyKey(s)).toBe(true);
-    expect(STRATEGIES.map(strategyKey)).toEqual(["reconstruction-v1", "reconstruction-v2", "reconstruction-v3", "reconstruction-v4", "reconstruction-v5", "reconstruction-v6", "reconstruction-v7", "reconstruction-v8", "reconstruction-v9", "reconstruction-v10", "reconstruction-v11"]);
+    expect(STRATEGIES.map(strategyKey)).toEqual(["reconstruction-v1", "reconstruction-v2", "reconstruction-v3", "reconstruction-v4", "reconstruction-v5", "reconstruction-v6", "reconstruction-v7", "reconstruction-v8", "reconstruction-v9", "reconstruction-v10", "reconstruction-v11", "reconstruction-v12"]);
     expect(new Set(STRATEGIES.map(strategyKey)).size).toBe(STRATEGIES.length);
   });
 
@@ -39,7 +39,7 @@ describe("RewriteStrategy", () => {
     expect(rewriteStrategySchema.safeParse({ ...RECONSTRUCTION_V1, prompt: { id: "verify", version: 1 } }).success).toBe(false);
     expect(rewriteStrategySchema.safeParse({ ...RECONSTRUCTION_V1, version: 0 }).success).toBe(false);
     expect(rewriteStrategySchema.safeParse({ ...RECONSTRUCTION_V1, hidden: true }).success).toBe(false);
-    expect(() => getStrategy("reconstruction-v12")).toThrow(/Known: reconstruction-v1/);
+    expect(() => getStrategy("reconstruction-v13")).toThrow(/Known: reconstruction-v1/);
   });
 });
 
@@ -55,6 +55,7 @@ const PINNED: Record<string, string> = {
   "reconstruct.v5": "1e272762b2fbe03e",
   "reconstruct.v6": "b985ec9548f03b24",
   "reconstruct.v7": "9e47ac3db498aaaa",
+  "reconstruct.v8": "25e020246563127b",
   "semantic-review.v1": "e065c8ecd9788d8e",
   "semantic-review.v2": "b0e252ec982bc82a",
   "semantic-review.v3": "bf3f9839ae66cdef",
