@@ -1,0 +1,726 @@
+[
+  {
+    "id": "ar01",
+    "source": "I finally repaired the small cedar bench on my balcony last weekend. The left leg had been wobbling since spring, so I replaced two screws and sanded the rough edge. It isn't perfect, but I can sit outside with coffee again without balancing on one side. I also planted mint in the blue pot beside it. The pot gets morning light, which should help. I want to remember that this was a satisfying little project, even though I put it off for months.",
+    "objective": "Turn this journal entry into a warm, concise paragraph while keeping the sequence of what I did and the small sense of accomplishment.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "personal-journal",
+    "objectiveCategory": "tone-and-concision",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "cedar bench",
+      "left leg",
+      "two screws",
+      "mint in the blue pot",
+      "morning light"
+    ]
+  },
+  {
+    "id": "ar02",
+    "source": "Hi team, the workshop room is available on Thursday from 2:00 to 3:30 p.m. I checked the projector this morning, and it works. Please bring your draft agenda by Wednesday noon so I can combine the topics before we meet. We will use the first half hour to review open questions and the remaining hour to plan next steps. Thanks, Mira",
+    "objective": "Polish this internal email for clarity and a friendly, professional tone. Keep the schedule, deadline, and meeting structure exact.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "workplace-email",
+    "objectiveCategory": "clarity-and-tone",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Thursday from 2:00 to 3:30 p.m.",
+      "Wednesday noon",
+      "first half hour",
+      "remaining hour"
+    ]
+  },
+  {
+    "id": "ar03",
+    "source": "The neighborhood book swap opens Saturday at 10 a.m. in the community hall. Bring a book you enjoyed and take one that catches your eye. All genres and reading levels are welcome, and you do not need to bring a book to participate. Volunteers will be there until 1 p.m. to help sort donations and answer questions.",
+    "objective": "Check whether this announcement needs any editing. If it already reads clearly, keep it as written.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "community-announcement",
+    "objectiveCategory": "review-or-preserve",
+    "alreadyGood": true,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Saturday at 10 a.m.",
+      "community hall",
+      "until 1 p.m.",
+      "do not need to bring a book"
+    ]
+  },
+  {
+    "id": "ar04",
+    "source": "Hello volunteers, our riverbank cleanup is set for Saturday, April 18, at 9 a.m. Meet at the east entrance of Willow Park. We will provide gloves and collection bags, but please bring a refillable water bottle. The city crew will pick up the filled bags at noon. If heavy rain is forecast, I will email everyone by 6 p.m. Friday. Thank you for helping keep this stretch of the river welcoming.",
+    "objective": "Update the cleanup date from Saturday, April 18, to Sunday, April 19, and make the email flow smoothly. Keep the 9 a.m. start, east entrance of Willow Park, noon bag pickup, and Friday 6 p.m. rain notice unchanged.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "volunteer-email",
+    "objectiveCategory": "explicit-factual-update",
+    "alreadyGood": false,
+    "explicitUpdate": true,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "9 a.m.",
+      "east entrance of Willow Park",
+      "noon",
+      "6 p.m. Friday",
+      "gloves and collection bags"
+    ]
+  },
+  {
+    "id": "ar05",
+    "source": "Our team began the archive project with an ordinary problem: useful records were spread across several folders, and the same question was being answered more than once. A coordinator might know where a document lived, but a new volunteer usually had to ask around. We set a narrow goal for the first phase. We would describe what we already had, give each item a stable name, and record where the original could be found. We did not set out to rewrite the records or decide which version of an event was correct.\n\nDuring the first month, four volunteers reviewed the folders in pairs. Each pair logged the title, date if one was visible, document type, and storage location. When a date was uncertain, they wrote that uncertainty in a note instead of guessing. They also marked duplicate scans, because a duplicate file could otherwise look like a second source. The pairs met every Friday to compare naming choices. Those meetings were slower than we expected, but they exposed several cases in which two labels meant the same thing.\n\nBy the end of the phase, we had an index of 186 items. It is searchable by title and document type, and every entry points back to the stored original. We have not digitized the paper folders, so the index cannot answer every question remotely. Still, volunteers can now identify which box to request before visiting the archive. The next phase will focus on a short guide for contributors, with examples of how to record uncertain dates and how to flag possible duplicates. We want the guide to preserve the same habit that made the first phase useful: describe what is there, state what is unknown, and leave a clear trail to the source.",
+    "objective": "Revise this project reflection into a crisp progress update for a community newsletter. Preserve the limits of the index and the distinction between recording uncertainty and guessing.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "project-report",
+    "objectiveCategory": "audience-adaptation",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "four volunteers",
+      "every Friday",
+      "186 items",
+      "searchable by title and document type",
+      "have not digitized the paper folders"
+    ]
+  },
+  {
+    "id": "ar06",
+    "source": "The prototype saves a draft locally after each completed section. A banner confirms the save, although the banner sometimes appears before the disk write finishes. If the tab closes during that gap, the newest section may be missing when the user returns. We found the behavior during a slow-storage test, not during ordinary use. The next release should show the confirmation only after the write resolves and should keep the editor open if saving fails.",
+    "objective": "Rewrite this as a clear issue description for the engineering backlog, retaining the observed conditions and proposed behavior without overstating how often it happens.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "technical-issue",
+    "objectiveCategory": "technical-clarity",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "after each completed section",
+      "before the disk write finishes",
+      "slow-storage test",
+      "only after the write resolves"
+    ]
+  },
+  {
+    "id": "ar07",
+    "source": "The public lecture is listed for May 12 at 7 p.m. in the library auditorium. Doors open at 6:30 p.m., and seating is first come, first served. The speaker will discuss how local maps changed as the town grew. The event is free, and a recording will be posted the following week.",
+    "objective": "The lecture date may have changed. Please update the announcement and make it ready to publish.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "event-announcement",
+    "objectiveCategory": "vague-factual-update",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": true,
+    "protectedAnchors": [
+      "May 12",
+      "7 p.m.",
+      "library auditorium",
+      "6:30 p.m.",
+      "free"
+    ]
+  },
+  {
+    "id": "ar08",
+    "source": "The survey included 48 students from two introductory design classes. Participants rated three poster layouts for readability, using a five-point scale. Layout B received the highest median rating, but the survey did not ask why students preferred it. Because the sample came from two classes at one school, these results should not be treated as evidence about all students. A follow-up interview could help explain which design choices mattered to participants.",
+    "objective": "Improve the flow of this methods-and-results paragraph for a class report. Keep the sample, measurement, result, and limitations precise.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "academic-report",
+    "objectiveCategory": "flow-and-precision",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "48 students",
+      "two introductory design classes",
+      "three poster layouts",
+      "five-point scale",
+      "Layout B",
+      "highest median rating"
+    ]
+  },
+  {
+    "id": "ar09",
+    "source": "Packing list for cabin trip: rain jacket, trail shoes, spare socks, headlamp, book, and the small red thermos. Pick up bread on the way. Check that the stove fuel is in the storage bin. Arrival is after 4 p.m. Friday, so no need to rush out before lunch. On Saturday, try the short lakeside path first and decide later whether to take the longer ridge trail.",
+    "objective": "Make these notes easier to scan as a practical trip checklist. Keep the conditional hiking plan and arrival time.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "personal-notes",
+    "objectiveCategory": "structure-and-scannability",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "small red thermos",
+      "bread",
+      "stove fuel",
+      "after 4 p.m. Friday",
+      "short lakeside path",
+      "longer ridge trail"
+    ]
+  },
+  {
+    "id": "ar10",
+    "source": "To reset the kitchen timer, press and hold the round button for three seconds. The display will clear and show 00:00. Turn the dial to choose a new duration, then press the round button once to start. If the display stays blank, replace the two AA batteries before trying again.",
+    "objective": "Review these instructions for clarity and correctness of wording. Leave them alone if they are already easy to follow.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "product-instructions",
+    "objectiveCategory": "review-or-preserve",
+    "alreadyGood": true,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "three seconds",
+      "00:00",
+      "round button once",
+      "two AA batteries"
+    ]
+  },
+  {
+    "id": "ar11",
+    "source": "For the Harbor Museum's autumn map exhibition, Mara Chen is the exhibit owner and will coordinate the final object list. Curator Priya Nair will review captions on October 9, while registrar Theo Bell will finish the loan inventory on October 16. Designer Luis Ortega is preparing the wall graphics for the November 4 installation. The opening remains scheduled for November 12, and the public lecture will be led by historian Ada Brooks.",
+    "objective": "Change the exhibit owner from Mara Chen to Elena Ruiz. Keep the other people's roles, dates, and event details as supplied.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "museum coordination note",
+    "objectiveCategory": "explicit owner replacement",
+    "alreadyGood": false,
+    "explicitUpdate": true,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Priya Nair",
+      "October 9",
+      "Theo Bell",
+      "October 16",
+      "Luis Ortega",
+      "November 4",
+      "November 12",
+      "Ada Brooks"
+    ]
+  },
+  {
+    "id": "ar12",
+    "source": "The first version of our walking guide followed the shortest path between the station and the museum. On a map, that route looked obvious: leave by the south exit, cross the square, and continue along Market Street. During a trial walk, however, two people missed the square because the station signs point toward the bus stand first. Another person reached the correct street but turned too early at a service lane. The route was accurate in the narrow sense that every instruction described a possible path, yet it did not match the choices people faced on the ground.\n\nWe walked the route again on a weekday morning and noted each decision point. We found that the clock tower is visible as soon as someone leaves the station, while the street sign for Market Street is partly hidden by a tree. We revised the guide to use the clock tower as the first landmark and to tell readers to pass the service lane before turning. We also added an estimated walking time of 14 minutes, based on three trial walks rather than a single fast walk. That number is meant as a guide, not a promise about anyone's pace.\n\nThe updated instructions were tried by five people who had not seen the earlier draft. All five reached the museum without asking for help. That small test gives us confidence that the revised landmarks are useful, but it does not establish that the guide will work for every visitor or in every season. Construction, a temporary closure, or a changed station exit could alter the route. We plan to check the path again before the autumn visitor season and put a revision date on the printed guide. A clear route should make the trip easier, and a visible date should help readers judge whether its details are still current.",
+    "objective": "Edit this field report for a plain-language operations memo. Keep the evidence, the limits of the small trial, and the difference between an estimate and a promise.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "field-report",
+    "objectiveCategory": "plain-language-edit",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "south exit",
+      "Market Street",
+      "clock tower",
+      "14 minutes",
+      "three trial walks",
+      "five people",
+      "autumn visitor season"
+    ]
+  },
+  {
+    "id": "ar13",
+    "source": "Dear selection committee, I am applying for the weekend gallery assistant position. I have spent the past year helping visitors at a local history center, where I answer practical questions, keep printed guides stocked, and note recurring questions for the staff. I enjoy making a space feel approachable without interrupting people who prefer to explore on their own. Your gallery's rotating exhibits appeal to me because they invite visitors to return and notice something new. I would welcome the chance to contribute that same attentive service on Saturdays and Sundays.",
+    "objective": "Make this cover-letter paragraph more direct and specific, without inventing achievements or changing the applicant's experience.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "cover-letter",
+    "objectiveCategory": "professional-polish",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "weekend gallery assistant",
+      "past year",
+      "local history center",
+      "Saturdays and Sundays"
+    ]
+  },
+  {
+    "id": "ar14",
+    "source": "The monthly sketch club meets on the first Tuesday at 6:30 p.m. in Room 204. Members should bring their own pencils and paper. The club provides a shared set of still-life objects, and newcomers are welcome to observe before joining an exercise. This month's theme is everyday tools.",
+    "objective": "I think the meeting room is out of date. Please fix the details and make this sound inviting.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "club-announcement",
+    "objectiveCategory": "vague-factual-update",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": true,
+    "protectedAnchors": [
+      "first Tuesday",
+      "6:30 p.m.",
+      "Room 204",
+      "own pencils and paper",
+      "everyday tools"
+    ]
+  },
+  {
+    "id": "ar15",
+    "source": "Release notes draft: The search page now remembers the last selected sort order for the current browser session. We also fixed a bug where pressing Enter in the filter field cleared the selected category. The export button still downloads the full filtered result set, not just the rows visible on the first page. There are no changes to saved searches in this release.",
+    "objective": "Rewrite these release notes for nontechnical users in two or three concise bullets. Make the session limit and export behavior easy to understand.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "release-notes",
+    "objectiveCategory": "audience-adaptation",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "current browser session",
+      "pressing Enter",
+      "selected category",
+      "full filtered result set",
+      "no changes to saved searches"
+    ]
+  },
+  {
+    "id": "ar16",
+    "source": "The museum tour begins at 3 p.m. on August 9 in the main lobby. It lasts about 45 minutes and includes the upstairs textile gallery. Visitors who prefer to avoid stairs can ask the guide for a ground-floor route. The group is limited to 18 people so everyone can hear the guide. Please arrive ten minutes early to check in at the front desk.",
+    "objective": "Update the tour capacity from 18 people to 12 people and smooth the wording. Keep the August 9 date, 3 p.m. start, 45-minute duration, upstairs textile gallery, and ground-floor option accurate.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "visitor-information",
+    "objectiveCategory": "explicit-factual-update",
+    "alreadyGood": false,
+    "explicitUpdate": true,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "August 9",
+      "3 p.m.",
+      "45 minutes",
+      "upstairs textile gallery",
+      "ground-floor route",
+      "ten minutes early"
+    ]
+  },
+  {
+    "id": "ar17",
+    "source": "I tried making the shelf labels larger, and the change helped from across the room. Up close, though, the bold headings compete with the item descriptions. Maybe use regular weight for the headings and keep the larger type, then test the signs from both the doorway and the shelf. The labels should be readable at a distance without making the details feel cramped.",
+    "objective": "Turn this design feedback into a constructive comment that makes the proposed next step clear while preserving the uncertainty in the suggestion.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "design-feedback",
+    "objectiveCategory": "constructive-feedback",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "larger",
+      "bold headings",
+      "regular weight",
+      "both the doorway and the shelf"
+    ]
+  },
+  {
+    "id": "ar18",
+    "source": "Thank you for offering to host the reading circle next month. We plan to meet on the second Wednesday at 7 p.m. and finish by 8:30 p.m. I will bring the discussion prompts and a few extra copies of the short story. Please let me know by Friday whether the room has enough chairs for twelve people. Best, Ellis",
+    "objective": "Check this message for clarity and tone. Keep it unchanged if it already communicates everything well.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "personal-email",
+    "objectiveCategory": "review-or-preserve",
+    "alreadyGood": true,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "second Wednesday",
+      "7 p.m.",
+      "8:30 p.m.",
+      "by Friday",
+      "twelve people"
+    ]
+  },
+  {
+    "id": "ar19",
+    "source": "When I started the neighborhood sound walk, I expected the loudest places to be the most interesting. I carried a small notebook and followed the same loop on three mornings: from the bakery to the footbridge, along the canal, and back through the square. The bus stop was always noisy, and I wrote down its regular pattern of engines, doors, and short conversations. But the quieter stretch beside the canal changed more from day to day. On one morning there was wind in the reeds; on another, the creak of a bicycle crossing the bridge was the clearest sound.\n\nThe notes were never meant to measure noise scientifically. I did not use a meter, record decibel levels, or control for weather. I wanted to pay closer attention to how ordinary places felt at different moments. That choice shaped what I noticed. I wrote long descriptions at the canal because I could stand still there, while my notes at the bus stop were quick and fragmented. The difference may say as much about how I observed as it does about either place.\n\nBy the third morning, I had begun to recognize a rhythm in the square. Delivery carts crossed it early, the fountain started later, and the first people sitting on the benches arrived after the bakery opened. I had walked past those details many times without naming them. The exercise did not reveal a hidden truth about the neighborhood, but it changed the way I moved through it. I found myself slowing down before the bridge and listening for small differences. If I repeat the walk in winter, the route will be the same, but the sounds and my attention may be different. That possibility is part of the reason I want to do it again.",
+    "objective": "Refine this reflective essay for a community arts booklet. Improve rhythm and remove repetition while keeping its first-person voice, observational limits, and tentative ending.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "reflective-essay",
+    "objectiveCategory": "literary-polish",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "three mornings",
+      "bakery",
+      "footbridge",
+      "canal",
+      "square",
+      "did not use a meter",
+      "winter"
+    ]
+  },
+  {
+    "id": "ar20",
+    "source": "The lending shelf has space for about 60 board games. Each box needs a title label and a card listing its pieces. Borrowers can take one game for up to two weeks and return it to the front desk. We should begin with donated games that have complete sets, then review demand after the first six weeks. If a box is missing pieces, staff can move it to the repair table until it is ready to lend again.",
+    "objective": "Edit this short proposal into a clear paragraph for the library planning notes. Keep the capacity, loan limit, initial selection rule, and review period.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "planning-proposal",
+    "objectiveCategory": "clarity-and-structure",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "about 60 board games",
+      "one game",
+      "up to two weeks",
+      "complete sets",
+      "first six weeks",
+      "repair table"
+    ]
+  },
+  {
+    "id": "ar21",
+    "source": "Hey team, the courtyard tables are back in place after Saturday's paint day. We still need to return the borrowed brushes to the library desk by Friday. If you took photos, please add them to the shared event folder so we can make a short thank-you post. Thanks for showing up even when the forecast looked grim!",
+    "objective": "Make this neighborhood volunteer note a little tighter and easier to skim while keeping its cheerful, informal voice.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "casual community message",
+    "objectiveCategory": "concise rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "courtyard tables",
+      "borrowed brushes",
+      "library desk by Friday",
+      "shared event folder"
+    ]
+  },
+  {
+    "id": "ar22",
+    "source": "To request a replacement access badge, submit the facilities form before 3 p.m. on a business day. Facilities will disable the old badge when the replacement is ready for pickup. Bring a photo ID to the front desk. The replacement fee is waived when the badge stopped working through normal use, but a lost badge carries a $10 fee.",
+    "objective": "Rewrite this as a clear, numbered procedure for staff, preserving the timing, pickup requirement, and fee distinction.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "workplace procedure",
+    "objectiveCategory": "structural rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "before 3 p.m. on a business day",
+      "disable the old badge when the replacement is ready",
+      "photo ID",
+      "$10 fee"
+    ]
+  },
+  {
+    "id": "ar23",
+    "source": "The workshop starts at 10 a.m. in Studio 2. Bring a notebook if you like, but all materials will be provided. We will take a short break halfway through and finish by noon.",
+    "objective": "Check this workshop reminder for clarity and polish. Keep the friendly tone and do not add details that are not here.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "event reminder",
+    "objectiveCategory": "light copyedit",
+    "alreadyGood": true,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "10 a.m.",
+      "Studio 2",
+      "all materials will be provided",
+      "finish by noon"
+    ]
+  },
+  {
+    "id": "ar24",
+    "source": "The community tool room is open to registered members from Tuesday through Saturday, 9 a.m. to 6 p.m. Members sign in at the front counter before using the space, even if they only plan to pick up a reserved item. The sign-in sheet helps staff account for people during a building evacuation and lets us contact the right borrower when equipment is overdue. Registration is free and can be completed at the counter; it does not guarantee that a specific tool will be available. Tools that leave the building are checked out for seven calendar days. A member may renew an item once if nobody else has reserved it. Renewals must be requested before the original due date, either in person or by phone. Staff cannot extend a loan after an item is overdue. Items marked for room use stay in the tool room, including during lunch breaks. Please return them to the labeled shelf when you finish, rather than handing them to another member. Safety glasses are required at the cutting bench, and closed-toe shoes are required throughout the room. Staff can show members how to use a tool, but members are responsible for deciding whether they can use it safely. Report damaged equipment to the front counter and leave it out of service; do not put it back on the shelf for the next person. The last checkout is at 5:30 p.m. so staff have time to finish the daily inventory before closing. On Saturdays, the room closes at 6 p.m. as usual. These practices are intended to keep shared equipment findable, available, and safe for everyone. Ask the counter staff if you are unsure whether an item may leave the building.",
+    "objective": "Turn this policy into a member-facing guide with scannable headings and a calm, helpful tone. Preserve the eligibility, hours, loan and renewal rules, safety requirements, and distinction between take-home and room-use items.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "community policy",
+    "objectiveCategory": "structural rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Tuesday through Saturday, 9 a.m. to 6 p.m.",
+      "seven calendar days",
+      "renew an item once",
+      "before the original due date",
+      "last checkout is at 5:30 p.m."
+    ]
+  },
+  {
+    "id": "ar25",
+    "source": "The North Quay bike shelter is proposed for the east side of the station forecourt. The plan includes 36 covered spaces and a repair stand beside the existing ticket kiosk. A survey of the pavement is booked for May 8, and the transport committee will receive the cost estimate on May 21. The adjacent taxi rank will keep its current entrance, and the two mature plane trees are outside the work area.",
+    "objective": "Change the shelter's status from proposed to funded. Preserve its location, capacity, scheduled dates, taxi access, and tree details.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "transport project update",
+    "objectiveCategory": "explicit status replacement",
+    "alreadyGood": false,
+    "explicitUpdate": true,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "east side of the station forecourt",
+      "36 covered spaces",
+      "repair stand",
+      "May 8",
+      "May 21",
+      "taxi rank",
+      "two mature plane trees"
+    ]
+  },
+  {
+    "id": "ar26",
+    "source": "Our first prototype kept the labels readable, but the fold hid the opening instructions once the packet was sealed. We moved those instructions to the outside panel for the second prototype. Four volunteers tried that version, and all four found the opening tab without help. We have not tested it with gloves yet.",
+    "objective": "Make this design update concise and suitable for a project log. Keep the limits of the small trial visible.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "product work update",
+    "objectiveCategory": "concise rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "second prototype",
+      "Four volunteers",
+      "all four",
+      "not tested it with gloves"
+    ]
+  },
+  {
+    "id": "ar27",
+    "source": "The reading circle meets on the second Wednesday of each month at 7 p.m. in Room B. The next selection is announced at the end of each meeting, and copies are placed at the front desk the following morning. New members can join at any meeting.",
+    "objective": "The schedule has changed. Please update this announcement.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "club announcement",
+    "objectiveCategory": "vague factual update",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": true,
+    "protectedAnchors": [
+      "second Wednesday of each month",
+      "7 p.m.",
+      "Room B",
+      "front desk the following morning"
+    ]
+  },
+  {
+    "id": "ar28",
+    "source": "Thank you for writing about the zipper on your canvas pouch. A replacement pull tab is available at no charge. If you send us a photo of the pouch laid flat, we can confirm which pull tab fits. You can reply to this message with the photo. Once we confirm the match, we will mail the part within two business days.",
+    "objective": "Make this customer support reply warmer and more direct without promising a replacement pouch or a faster mailing date.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "customer support",
+    "objectiveCategory": "tone adjustment",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "replacement pull tab",
+      "at no charge",
+      "photo of the pouch laid flat",
+      "within two business days"
+    ]
+  },
+  {
+    "id": "ar29",
+    "source": "The survey asked participants to rank three poster layouts after viewing each for 20 seconds. Forty-eight people completed all three rankings. Layout C received the most first-place rankings, but the sample came from one campus event. The results can guide the next round of design work; they do not show how the wider public would respond.",
+    "objective": "Edit this into a compact academic results paragraph with precise, measured language.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "academic results",
+    "objectiveCategory": "formalization",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "three poster layouts",
+      "20 seconds",
+      "Forty-eight people",
+      "Layout C",
+      "one campus event"
+    ]
+  },
+  {
+    "id": "ar30",
+    "source": "Hi everyone, I will be offline Friday afternoon for a personal appointment. I have finished the draft agenda and left it in the shared folder. If something needs my input before Monday, please tag me by noon Friday so I can respond before I log off. Thanks!",
+    "objective": "Review this status note for clarity while keeping its relaxed first-person voice.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "personal work note",
+    "objectiveCategory": "light copyedit",
+    "alreadyGood": true,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Friday afternoon",
+      "draft agenda",
+      "shared folder",
+      "by noon Friday",
+      "before Monday"
+    ]
+  },
+  {
+    "id": "ar31",
+    "source": "This week the signage team finished the first pass on the station map and sent it to the print vendor for a paper proof. The proof is expected on Tuesday, and we have reserved Wednesday morning for an in-person review. The map covers the north entrance, the ticket machines, the lift, and both platform routes. It does not yet cover the temporary bus stop because the stop position is still being confirmed. We have placed a plain-language note near the blank area so reviewers do not mistake it for an omitted route. Two colleagues checked the draft against the current floor plan. They found one arrow that pointed toward the service corridor instead of the public exit. That arrow has been corrected in the file sent to the vendor. The team also replaced three abbreviations with full words after a quick reading exercise showed that the short forms were easy to confuse. These are editorial changes; we have not changed the underlying route information. The remaining decision is the size of the platform labels. The larger option is easier to spot from a distance, but it leaves less space for the lift symbol. We will compare both options on the paper proof at actual size before choosing. If the proof arrives as expected, we can send final artwork on Thursday. That timing depends on getting the bus stop position by Wednesday afternoon. If the position is still unresolved, we will finalize the permanent routes and hold the temporary stop panel separately. I will post a brief decision note after the proof review so operations staff can see what was approved and what is still pending.",
+    "objective": "Turn this into a clear weekly work update with completed work, open decisions, and next steps. Keep the dependencies and uncertainty explicit, and retain the writer's practical, first-person voice.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "project status update",
+    "objectiveCategory": "structural rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "proof is expected on Tuesday",
+      "Wednesday morning",
+      "temporary bus stop",
+      "bus stop position by Wednesday afternoon",
+      "final artwork on Thursday"
+    ]
+  },
+  {
+    "id": "ar32",
+    "source": "The editorial board approved the field guide's cover concept at Tuesday's review. The selected illustration shows a sandpiper standing among dune grass, with the title set above the horizon line. Copy editor Samira Patel will return the index on June 6, and the printer expects the final image files by June 18. The guide still has 128 pages, uses recycled uncoated paper, and is intended for the coastal visitor centers in August.",
+    "objective": "Change the board's decision from approved to deferred. Keep the cover description, production dates, page count, paper, and distribution plan intact.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "publishing production note",
+    "objectiveCategory": "explicit decision replacement",
+    "alreadyGood": false,
+    "explicitUpdate": true,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "sandpiper",
+      "dune grass",
+      "Samira Patel",
+      "June 6",
+      "June 18",
+      "128 pages",
+      "recycled uncoated paper",
+      "coastal visitor centers"
+    ]
+  },
+  {
+    "id": "ar33",
+    "source": "I kept the little brass bell from my first market stall. It was too quiet to call anyone over, but I rang it every time I sold a print. Now it sits on the windowsill in my studio, and I still tap it when I finish a piece that took longer than I expected.",
+    "objective": "Smooth the prose for a short artist bio while keeping the modest, personal feel and the concrete bell detail.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "voice-sensitive personal writing",
+    "objectiveCategory": "style polish",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "little brass bell",
+      "first market stall",
+      "sold a print",
+      "windowsill in my studio"
+    ]
+  },
+  {
+    "id": "ar34",
+    "source": "Orders placed before 4 p.m. on weekdays are packed the same day. Orders placed later are packed the next business day. Pickup is available at the side counter after you receive a ready notice. We hold packed orders for seven days.",
+    "objective": "Our pickup process has changed. Update this help-center text to match.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "help center article",
+    "objectiveCategory": "vague factual update",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": true,
+    "protectedAnchors": [
+      "before 4 p.m. on weekdays",
+      "side counter",
+      "ready notice",
+      "seven days"
+    ]
+  },
+  {
+    "id": "ar35",
+    "source": "Before opening the exhibition, check that the labels match the display list. Then test the audio station at normal volume, wipe the touch screen with the approved cloth, and place the visitor cards beside the exit. Tell the floor lead if the audio station fails; a handwritten sign should not be used as a substitute for the report.",
+    "objective": "Convert this into a concise opening checklist that a gallery attendant can follow in order.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "operations checklist",
+    "objectiveCategory": "structural rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "labels match the display list",
+      "normal volume",
+      "approved cloth",
+      "visitor cards beside the exit",
+      "tell the floor lead"
+    ]
+  },
+  {
+    "id": "ar36",
+    "source": "We noticed that the folding guide confused people at the last pop-up. It says 'fold inward' on the second panel, but the diagram shows the flap going outward. The diagram matches the finished sample. We need to correct the sentence before the next print run; the print files go to the shop on Monday.",
+    "objective": "Rewrite this as a short issue report for the production team, making the mismatch and deadline easy to spot.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "production issue report",
+    "objectiveCategory": "clarity rewrite",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "second panel",
+      "diagram shows the flap going outward",
+      "diagram matches the finished sample",
+      "Monday"
+    ]
+  },
+  {
+    "id": "ar37",
+    "source": "This classroom study examined how students used a printed timeline while reading a short local-history article. Two classes completed the same reading task during regular lessons. One class received the article and a one-page timeline; the other received the article alone. The timeline listed six dated events drawn from the article and included no new facts. After reading, students answered five questions about the order of events and wrote a brief explanation of one connection between events. The teacher collected the responses at the end of the lesson. The class with the timeline answered more of the ordering questions correctly on average. The explanations, however, varied widely in both classes, and several students in each class connected events that the article did not link. The activity was designed as a small teaching trial, not as a test of long-term learning. The two classes were already established groups, and students were not assigned randomly. The teacher also knew which materials each class received. Those conditions limit what the difference in ordering answers can show. The responses suggest that a simple timeline may help students track sequence during a single reading session. They do not establish that the timeline improves historical reasoning or that the same result would appear with other articles. A useful next step would be to try the materials with more classes and to compare explanations using a shared scoring guide. It would also help to ask students how they used the timeline, since the collected answers do not reveal whether they consulted it while reading or only when answering the questions. The trial provides a practical reason to continue testing the format while keeping claims about its effect narrow.",
+    "objective": "Edit this for an academic teaching report: improve flow and remove repetition while preserving the study design, observed pattern, limitations, and cautious interpretation.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "academic discussion",
+    "objectiveCategory": "academic polish",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Two classes",
+      "six dated events",
+      "five questions",
+      "not assigned randomly",
+      "teacher also knew",
+      "single reading session"
+    ]
+  },
+  {
+    "id": "ar38",
+    "source": "The public lecture is scheduled for Wednesday in Hall C. Doors open at 6:15 p.m., and the talk begins at 7 p.m. There is no admission charge. A live caption feed will be shown on the side screen, and the venue has step-free access from the south entrance.",
+    "objective": "Update the door-opening time from 6:15 p.m. to 6:30 p.m. Keep the 7 p.m. talk time and all venue, price, and access information unchanged.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "public event notice",
+    "objectiveCategory": "explicit factual update",
+    "alreadyGood": false,
+    "explicitUpdate": true,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "Wednesday",
+      "Hall C",
+      "7 p.m.",
+      "no admission charge",
+      "live caption feed",
+      "step-free access from the south entrance"
+    ]
+  },
+  {
+    "id": "ar39",
+    "source": "To clean the reusable display stands, dust them with a dry cloth after each event. If a stand has a sticky mark, use a damp cloth and let it air-dry before storage. Do not soak the joints or stack the stands while they are wet.",
+    "objective": "Check this care instruction for plain language and consistency. Keep it brief and practical.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "equipment care instruction",
+    "objectiveCategory": "light copyedit",
+    "alreadyGood": true,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "dry cloth after each event",
+      "damp cloth",
+      "air-dry before storage",
+      "Do not soak the joints"
+    ]
+  },
+  {
+    "id": "ar40",
+    "source": "I know the draft sounds a bit stubborn, but I want the opening to feel like an invitation from a person who has actually been there: 'Come in from the rain. The kettle is on, the chairs are mismatched, and somebody has probably left a crossword half-finished.' The rest of the flyer gives the practical details: drop-in hours are Monday and Thursday, 3 to 5 p.m., at the old post office building. Tea is free. No booking is needed.",
+    "objective": "Polish this flyer opening and its practical details while keeping the lived-in, slightly wry voice. Do not turn it into formal promotional copy.",
+    "provenance": "independently-authored-synthetic",
+    "writingCategory": "voice-sensitive flyer",
+    "objectiveCategory": "style polish",
+    "alreadyGood": false,
+    "explicitUpdate": false,
+    "vagueUpdate": false,
+    "protectedAnchors": [
+      "kettle is on",
+      "chairs are mismatched",
+      "crossword half-finished",
+      "Monday and Thursday, 3 to 5 p.m.",
+      "old post office building",
+      "Tea is free",
+      "No booking is needed"
+    ]
+  }
+]

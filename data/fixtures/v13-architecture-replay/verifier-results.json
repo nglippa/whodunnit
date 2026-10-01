@@ -1,0 +1,395 @@
+[
+  {
+    "id": "ar01",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The rewrite drops the tentative claim that morning light should help the mint; restore that hedge in one span.",
+      "issue": {
+        "span": {
+          "start": 297,
+          "end": 324,
+          "text": "where it gets morning light"
+        },
+        "constraint": "Restore the source-grounded expectation that the morning light should help, without stating it as certain."
+      }
+    }
+  },
+  {
+    "id": "ar02",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The schedule, deadline, meeting structure, and sender remain exact; the contraction and email formatting fit the requested tone.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar03",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The clear announcement is unchanged, as the objective permits; all participation details and times remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar06",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The slow-storage condition, possible missing section, and proposed save behavior remain precise in backlog wording.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar07",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate leaves May 12 unchanged despite the request to update the possibly changed date; no verified replacement date is supplied.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar08",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The sample, five-point measure, median result, limits, and suggested follow-up retain their meaning with smoother flow.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar09",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The checklist retains every item, the Friday arrival constraint, and the conditional choice about the longer Saturday trail.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar10",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The instructions are already clear and remain unchanged, including the three-second hold and two-AA-battery condition.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar11",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only the exhibit owner changes to Elena Ruiz as expressly requested; all other roles, dates, and events remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar14",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Room 204 remains despite the request to fix an outdated room, with no replacement supplied; the rewrite also broadens the pencil instruction beyond members.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar16",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The requested 18-to-12 capacity change is exact, and the date, start, duration, galleries, and accessible route remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar17",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The last sentence weakens the stated design goal into a possible outcome; restore the source goal while keeping the proposed step tentative.",
+      "issue": {
+        "span": {
+          "start": 258,
+          "end": 342,
+          "text": "That may help people read them at a distance without making the details feel cramped"
+        },
+        "constraint": "Keep the source goal that labels should be readable at a distance without making details feel cramped."
+      }
+    }
+  },
+  {
+    "id": "ar19",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The ending turns one contributing reason for repeating the walk into the reason; restore the source’s tentative, partial attribution.",
+      "issue": {
+        "span": {
+          "start": 1564,
+          "end": 1609,
+          "text": "That possibility makes me want to do it again"
+        },
+        "constraint": "Preserve that this possibility is only part of the reason the writer wants to repeat the walk."
+      }
+    }
+  },
+  {
+    "id": "ar20",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The capacity, one-game two-week loan, complete-set starting rule, six-week review, and repair condition remain precise.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar21",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The note keeps the brush deadline, photo request and purpose, and cheerful volunteer voice while tightening the wording.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar22",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The numbered procedure retains the business-day cutoff, pickup and ID steps, and distinct normal-use and lost-badge fees.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar23",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The reminder is already clear and polished; the unchanged candidate preserves its friendly tone and every detail.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar24",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The headings and direct address make the policy scannable while preserving access, loan, renewal, safety, and room-use rules.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar25",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Funded is the precise status change requested; all location, capacity, schedule, taxi, and tree details remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar26",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The concise log retains the four-person trial result and the explicit limit that gloves have not been tested.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar27",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate leaves the schedule unchanged, so it does not perform the requested update; no replacement schedule was supplied.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar28",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The warmer reply still offers only a free pull tab, requests a flat photo for fit confirmation, and keeps the two-business-day mailing condition.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar30",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Contractions and direct address clarify the note while retaining its relaxed first-person voice, timing, and request.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar31",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The update groups completed work, the label decision, and next steps while retaining the proof and bus-stop dependencies and first-person voice.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar32",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The board's decision is changed to deferred as requested; the cover description, dates, page count, paper, and distribution plan remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar33",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The slight smoothing retains the bell, its rituals, and the modest personal voice without adding a claim.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar34",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate repeats the old pickup process unchanged, so it cannot match the requested change; the new process was not supplied.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar35",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The numbered checklist preserves the opening order, audio failure report, and prohibition on substituting a handwritten sign.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar36",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The issue report clearly states the sentence-diagram mismatch, identifies the diagram as matching the sample, and keeps Monday's print-file deadline.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar38",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only the requested door-opening time changes to 6:30 p.m.; the talk time, location, price, captions, and access details remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ar39",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The plain-language rewrite keeps the cleaning sequence, sticky-mark condition, drying requirement, and wet-stand precautions.",
+      "issue": null
+    }
+  }
+]

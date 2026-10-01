@@ -1,0 +1,198 @@
+{
+  "cases": [
+    {
+      "id": "ar01",
+      "findings": [
+        "Concise journal rewrite preserves sequence, modest satisfaction and voice; repair restores the omitted expectation that morning light should help the mint."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "EDITORIALLY_USEFUL_REPAIR",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar04",
+      "findings": [
+        "Raw changes only the authorized date to Sunday, April 19; deterministic verification blocks April 18→19 while allowing Saturday→Sunday. Repair fails and fallback reinstates the known wrong date. This is a good edit lost, not a raw safety defect."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": true,
+      "goodEditLost": true,
+      "repairClass": "FAILED_REPAIR",
+      "fallbackClass": "UNNECESSARY_GOOD_EDIT_LOSS"
+    },
+    {
+      "id": "ar07",
+      "findings": [
+        "No replacement date is supplied. Raw and final retain May 12 without guessing; possible staleness is unresolved, so the notice is not publish-ready. The unchanged candidate makes fallback redundant."
+      ],
+      "rawUnsafe": null,
+      "finalUnsafe": null,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "EDITOR_FAILURE_ALREADY_UNCHANGED"
+    },
+    {
+      "id": "ar11",
+      "findings": [
+        "The only factual change is the authorized owner substitution, Mara Chen→Elena Ruiz; other roles, dates and voice remain intact. Mechanical-capital and added-name warnings do not identify real defects."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar14",
+      "findings": [
+        "Raw changes “Members should bring” supplies to “Bring” supplies, extending the instruction to newcomers who may only observe. Both blind labels miss this narrow but real audience change; the trace reviewer flags it. The room remains unverified in both versions, and fallback also loses the safer, more inviting wording."
+      ],
+      "rawUnsafe": true,
+      "finalUnsafe": null,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "NECESSARY_SAFETY_FALLBACK"
+    },
+    {
+      "id": "ar16",
+      "findings": [
+        "Capacity 18→12 is explicitly authorized; date, time, duration, gallery, accessible route and check-in remain accurate."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar19",
+      "findings": [
+        "Reviewers materially disagree whether “part of the reason I want to do it again”→“makes me want to do it again” overstates motivation. The conditional winter possibility remains, but partial causation becomes stronger; final restores the original qualifier while retaining the useful edit. Do not count this as agreed raw harm."
+      ],
+      "rawUnsafe": null,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "DISPUTED",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar25",
+      "findings": [
+        "Proposed→funded is the exact authorized status update; location, capacity, dates, taxi entrance and trees are preserved."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar27",
+      "findings": [
+        "The objective says the schedule has changed, but gives no replacement. Raw and final repeat the obsolete schedule; no unsupported new schedule is invented. This is an unresolved update failure, and fallback adds nothing."
+      ],
+      "rawUnsafe": true,
+      "finalUnsafe": true,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "EDITOR_FAILURE_ALREADY_UNCHANGED"
+    },
+    {
+      "id": "ar32",
+      "findings": [
+        "Approved→deferred is authorized and production details remain. “Selected illustration” may sound awkward beside a deferred cover decision, but its selection is a retained source fact and no alternative selection status is supplied."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar34",
+      "findings": [
+        "The objective says pickup process has changed but supplies no new process. Raw and final repeat the old side-counter instructions, leaving known-stale customer guidance; fallback adds nothing."
+      ],
+      "rawUnsafe": true,
+      "finalUnsafe": true,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "EDITOR_FAILURE_ALREADY_UNCHANGED"
+    },
+    {
+      "id": "ar38",
+      "findings": [
+        "Door time 6:15→6:30 p.m. is the sole authorized change; talk time, venue, free admission, captions and access are retained."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar20",
+      "findings": [
+        "Clarity edits preserve the approximate 60-game capacity, one-game/two-week loan, complete donated sets, six-week review and repair handling."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar21",
+      "findings": [
+        "Tighter note preserves the brush deadline, photo request and cheerful voice. “We still need to return”→“Please return” shifts address slightly but does not materially alter the shared task."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar23",
+      "findings": [
+        "Already clear workshop reminder is left intact; this satisfies a clarity check without new claims or unnecessary edits."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar30",
+      "findings": [
+        "Reviewers disagree whether contractions and direct address are unnecessary on an already clear note. They are harmless and preserve relaxed first-person voice; no material safety or objective loss."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    },
+    {
+      "id": "ar39",
+      "findings": [
+        "Reviewers disagree whether the reorder is necessary. Cleaning sequence, sticky-mark condition, drying and wet-stand precautions remain intact; plain-language objective is satisfied."
+      ],
+      "rawUnsafe": false,
+      "finalUnsafe": false,
+      "goodEditLost": false,
+      "repairClass": "N/A",
+      "fallbackClass": "N/A"
+    }
+  ],
+  "overall": [
+    "Critical false rejection: ar04 treats an explicitly authorized day-and-date update as a blocking date change, then falls back to the wrong date. Authorization must cover the complete replacement value, not just the weekday token.",
+    "Potential missed raw meaning change: ar14 broadens a members-only supply instruction to everyone, including observers; both blind labels marked it safe. The fallback prevents that change but also discards an inviting tone edit.",
+    "Vague updates lack replacement facts. ar07 and ar14 remain factually uncertain; ar27 and ar34 repeat facts the objective says changed. None invents a replacement, but none is ready to publish as an updated notice.",
+    "ar19 has a material reviewer disagreement over strengthened motivation; preserve its disputed status. ar30 and ar39 have only nonmaterial disagreement about edit necessity.",
+    "Keep introduced semantic harm, known-stale output, unresolved factual uncertainty, objective completion and editorial usefulness separate in reporting. Do not count unchanged vague-update cases as successful updates or call a source fallback a useful repair."
+  ]
+}

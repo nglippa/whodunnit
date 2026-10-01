@@ -1,0 +1,1110 @@
+[
+  {
+    "id": "ar01",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions condense the journal entry and keep the repair, planting, and modest satisfaction. The final also keeps the expectation that morning light will help the mint.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar02",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions improve email layout and flow while preserving the deadline, schedule, meeting structure, and friendly tone.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar03",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "The announcement is already clear; both versions leave it unchanged.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar04",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [
+      "Retains Saturday, April 18 instead of the requested Sunday, April 19."
+    ],
+    "rationale": "The raw edit makes the requested date change and preserves the remaining logistics. The final reverts to the old date.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar05",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "PARTIAL",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [
+      "Retains the lengthy reflection rather than producing a crisp newsletter update."
+    ],
+    "rationale": "The raw version is a crisper newsletter update and keeps the index limits and treatment of uncertain dates. The final falls back to the longer reflection, preserving facts but missing the requested format and concision.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar06",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions clearly describe the slow-storage condition, possible lost section, and proposed save behavior without inflating frequency.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar07",
+    "raw": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [
+      "Requested date update is unresolved."
+    ],
+    "finalMaterialDefects": [
+      "Requested date update is unresolved."
+    ],
+    "rationale": "Neither version invents a replacement date, but neither can complete the requested update or make the announcement publication ready without that fact.",
+    "confidence": 0.94
+  },
+  {
+    "id": "ar08",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions smooth the methods and results wording while retaining the sample, rating method, finding, and limits.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar09",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions turn the notes into a scannable checklist and preserve the after-4-p.m. arrival and conditional longer hike.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar10",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "The instructions are already clear and sequential; both versions leave them unchanged.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar11",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions change only the exhibit owner to Elena Ruiz and preserve the other roles and dates.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar12",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "PARTIAL",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [
+      "Retains the discursive report instead of editing it into a plain-language operations memo."
+    ],
+    "rationale": "The raw edit makes the field report plainer while keeping the small trial, route evidence, and estimated time caveat. The final falls back to the more discursive source; it remains accurate but only partly meets the operations-memo objective.",
+    "confidence": 0.9
+  },
+  {
+    "id": "ar13",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions make the application more direct and specific without adding achievements; the final better preserves the applicant’s stated enjoyment of the work.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar14",
+    "raw": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "PARTIAL",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [
+      "Meeting room remains unverified and uncorrected."
+    ],
+    "finalMaterialDefects": [
+      "Meeting room remains unverified and uncorrected; inviting rewrite is absent."
+    ],
+    "rationale": "The raw edit is more inviting but cannot correct the room because no replacement is supplied. The final leaves both the room question and tone request unresolved.",
+    "confidence": 0.9
+  },
+  {
+    "id": "ar15",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions use three accessible bullets and accurately explain the browser-session limit, filter fix, full filtered export, and unchanged saved searches.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar16",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions set capacity to 12 and preserve all requested tour details with smoother wording.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar17",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions give a constructive next step as a question, retaining the tentative proposal and the two viewing distances.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar18",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "The message already communicates the schedule, request, and courteous tone; both versions leave it unchanged.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar19",
+    "raw": {
+      "usefulForObjective": "PARTIAL",
+      "objectiveSatisfied": "PARTIAL",
+      "unauthorizedMeaningChange": "YES",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [
+      "Ending changes “part of the reason” to a definitive cause for repeating the walk."
+    ],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions tighten rhythm and retain the first-person observations and limits. The raw ending makes the winter possibility a stronger reason to repeat the walk; the final restores the more tentative phrasing.",
+    "confidence": 0.86
+  },
+  {
+    "id": "ar20",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions clarify the proposal while preserving capacity, loan limit, initial selection rule, six-week review, and repair handling.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar21",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions tighten the requests and preserve the cheerful volunteer note; no material fact changes.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar22",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions give an ordered procedure and retain the deadline, ID requirement, and distinct fee rules.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar23",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "The original reminder is already clear and polished. Leaving it intact satisfies the review objective.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar24",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions organize the policy under useful headings while retaining membership, hours, sign-in, loan, renewal, room-use, and safety rules.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar25",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions make exactly the requested status change and retain the other stated details.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar26",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions shorten the log entry and retain the four-person trial and untested-gloves limit.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar27",
+    "raw": {
+      "usefulForObjective": "NO",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "NO",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [
+      "Requested schedule change absent; replacement schedule unspecified."
+    ],
+    "finalMaterialDefects": [
+      "Requested schedule change absent; replacement schedule unspecified."
+    ],
+    "rationale": "Neither version updates the schedule. The objective supplies no replacement time or day, so a specific update cannot be inferred.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar28",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions are warmer and more direct while keeping the photo condition, free pull tab, and two-business-day mailing promise.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar29",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions are compact and measured; the final wording preserves the source's narrower 'do not show' phrasing.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar30",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions retain the informal first-person note and its Friday and Monday timing; contractions and direct address make it slightly easier to read.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar31",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions group completed work, open decisions, and next steps while retaining the proof and bus-stop dependencies.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar32",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions defer the board's decision and preserve the supplied cover description and production details.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar33",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions lightly smooth the phrasing while retaining the personal bell detail and modest tone.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar34",
+    "raw": {
+      "usefulForObjective": "NO",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "final": {
+      "usefulForObjective": "NO",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [
+      "Requested pickup-process update absent; replacement process unspecified."
+    ],
+    "finalMaterialDefects": [
+      "Requested pickup-process update absent; replacement process unspecified."
+    ],
+    "rationale": "Neither version updates the pickup process. The objective gives no replacement process, so no specific new procedure is supported.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar35",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions convert the instructions into a usable ordered checklist, including the required failure report.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar36",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions highlight the direction mismatch, the matching sample, the corrective action, and Monday's deadline.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar37",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "NO",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [
+      "Returns to the unrevised source, leaving the requested flow and repetition edit undone."
+    ],
+    "rationale": "RAW improves flow and trims repetition while preserving design, results, and cautions. FINAL reproduces SOURCE, so the useful edit is lost.",
+    "confidence": 0.98
+  },
+  {
+    "id": "ar38",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions change only the door-opening time to 6:30 p.m. and retain the other event details.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar39",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [],
+    "rationale": "Both versions remain brief and practical; the reordered instruction and shorter sticky-mark phrase improve readability slightly.",
+    "confidence": 0.96
+  },
+  {
+    "id": "ar40",
+    "raw": {
+      "usefulForObjective": "YES",
+      "objectiveSatisfied": "YES",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "NO",
+      "unnecessaryChangeToAlreadyGood": "NO"
+    },
+    "final": {
+      "usefulForObjective": "NO",
+      "objectiveSatisfied": "NO",
+      "unauthorizedMeaningChange": "NO",
+      "unsupportedInformation": "NO",
+      "voicePreserved": "YES",
+      "overedited": "NO",
+      "underedited": "YES",
+      "unnecessaryChangeToAlreadyGood": "N/A"
+    },
+    "rawMaterialDefects": [],
+    "finalMaterialDefects": [
+      "Returns to the source's discussion of a draft rather than delivering a polished flyer opening and details."
+    ],
+    "rationale": "RAW extracts the actual flyer copy and retains its lived-in voice and practical facts. FINAL reproduces the source's meta commentary, losing that useful transformation.",
+    "confidence": 0.97
+  }
+]

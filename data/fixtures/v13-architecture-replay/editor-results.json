@@ -1,0 +1,352 @@
+[
+  {
+    "id": "ar01",
+    "data": {
+      "text": "Last weekend, I finally repaired the small cedar bench on my balcony. The left leg had wobbled since spring, so I replaced two screws and sanded the rough edge. It isn't perfect, but I can sit outside with coffee again without balancing on one side. I also planted mint in the blue pot beside it, where it gets morning light. It was a satisfying little project, even if I put it off for months.",
+      "changes": [
+        "Tightened the entry while keeping the sequence and quiet sense of accomplishment."
+      ]
+    }
+  },
+  {
+    "id": "ar02",
+    "data": {
+      "text": "Hi team,\n\nThe workshop room is available Thursday from 2:00 to 3:30 p.m. I checked the projector this morning, and it works. Please bring your draft agenda by Wednesday noon so I can combine the topics before we meet. We'll spend the first half hour reviewing open questions and the remaining hour planning next steps.\n\nThanks,\nMira",
+      "changes": [
+        "Improved email spacing and phrasing while keeping the schedule, deadline, and meeting structure."
+      ]
+    }
+  },
+  {
+    "id": "ar03",
+    "data": {
+      "text": "The neighborhood book swap opens Saturday at 10 a.m. in the community hall. Bring a book you enjoyed and take one that catches your eye. All genres and reading levels are welcome, and you do not need to bring a book to participate. Volunteers will be there until 1 p.m. to help sort donations and answer questions.",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar04",
+    "data": {
+      "text": "Hello volunteers, our riverbank cleanup is set for Sunday, April 19, at 9 a.m. Meet at the east entrance of Willow Park. We will provide gloves and collection bags, but please bring a refillable water bottle. The city crew will pick up the filled bags at noon. If heavy rain is forecast, I will email everyone by 6 p.m. Friday. Thank you for helping keep this stretch of the river welcoming.",
+      "changes": [
+        "Changed the cleanup date to Sunday, April 19."
+      ]
+    }
+  },
+  {
+    "id": "ar05",
+    "data": {
+      "text": "Our archive project began with useful records spread across several folders. Coordinators often knew where to find a document, but new volunteers had to ask around, and the same questions were answered more than once. For the first phase, we set a narrow goal: describe what we had, give each item a stable name, and record where the original could be found. We did not rewrite records or decide which version of an event was correct.\n\nDuring the first month, four volunteers reviewed folders in pairs. They logged each item's title, any visible date, document type, and storage location. When a date was uncertain, they noted the uncertainty instead of guessing. They also marked duplicate scans so one file would not appear to be a second source. The pairs met every Friday to compare naming choices. Those slower-than-expected meetings revealed several cases where two labels meant the same thing.\n\nBy the end of the phase, we had a searchable index of 186 items, organized by title and document type, with every entry pointing to the stored original. We have not digitized the paper folders, so the index cannot answer every question remotely. It does help volunteers identify which box to request before visiting. Next, we will make a short contributor guide with examples for recording uncertain dates and flagging possible duplicates. The guiding habit remains: describe what is there, state what is unknown, and leave a clear trail to the source.",
+      "changes": [
+        "Tightened the project update for a newsletter while preserving the index's limits and the treatment of uncertainty."
+      ]
+    }
+  },
+  {
+    "id": "ar06",
+    "data": {
+      "text": "The prototype saves a draft locally after each completed section. Its confirmation banner sometimes appears before the disk write finishes. If the tab closes during that gap, the newest section may be missing when the user returns. We observed this in a slow-storage test, not during ordinary use. In the next release, show the confirmation only after the write resolves and keep the editor open if saving fails.",
+      "changes": [
+        "Recast the observed behavior and proposed fix as a concise backlog issue."
+      ]
+    }
+  },
+  {
+    "id": "ar07",
+    "data": {
+      "text": "The public lecture is listed for May 12 at 7 p.m. in the library auditorium. Doors open at 6:30 p.m., and seating is first come, first served. The speaker will discuss how local maps changed as the town grew. The event is free, and a recording will be posted the following week.",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar08",
+    "data": {
+      "text": "The survey included 48 students from two introductory design classes. They rated the readability of three poster layouts on a five-point scale. Layout B received the highest median rating, but the survey did not ask why students preferred it. Because the sample came from two classes at one school, the results should not be treated as evidence about all students. A follow-up interview could help explain which design choices mattered to participants.",
+      "changes": [
+        "Smoothed the methods and results wording while preserving the sample, measure, finding, and limits."
+      ]
+    }
+  },
+  {
+    "id": "ar09",
+    "data": {
+      "text": "Cabin trip checklist\n\n- Pack: rain jacket, trail shoes, spare socks, headlamp, book, and the small red thermos.\n- Pick up bread on the way.\n- Check that the stove fuel is in the storage bin.\n- Friday: Arrival is after 4 p.m., so no need to rush out before lunch.\n- Saturday: Try the short lakeside path first, then decide whether to take the longer ridge trail.",
+      "changes": [
+        "Formatted the notes as a checklist while keeping the arrival time and conditional hiking plan."
+      ]
+    }
+  },
+  {
+    "id": "ar10",
+    "data": {
+      "text": "To reset the kitchen timer, press and hold the round button for three seconds. The display will clear and show 00:00. Turn the dial to choose a new duration, then press the round button once to start. If the display stays blank, replace the two AA batteries before trying again.",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar11",
+    "data": {
+      "text": "For the Harbor Museum's autumn map exhibition, Elena Ruiz is the exhibit owner and will coordinate the final object list. Curator Priya Nair will review captions on October 9, while registrar Theo Bell will finish the loan inventory on October 16. Designer Luis Ortega is preparing the wall graphics for the November 4 installation. The opening remains scheduled for November 12, and the public lecture will be led by historian Ada Brooks.",
+      "changes": [
+        "Changed the exhibit owner from Mara Chen to Elena Ruiz."
+      ]
+    }
+  },
+  {
+    "id": "ar12",
+    "data": {
+      "text": "The first version of our walking guide used the shortest path from the station to the museum: leave by the south exit, cross the square, and continue along Market Street. On a trial walk, two people missed the square because the station signs pointed first toward the bus stand. Another person found the right street but turned too early at a service lane. The directions described a possible route, but they did not reflect the choices people faced on the ground.\n\nOn a weekday morning, we walked the route again and noted each decision point. The clock tower is visible as soon as someone leaves the station; the Market Street sign is partly hidden by a tree. We changed the guide to use the clock tower as the first landmark and to tell readers to pass the service lane before turning. We added an estimated walking time of 14 minutes, based on three trial walks rather than one fast walk. It is a guide to the time needed, not a promise about anyone's pace.\n\nFive people who had not seen the earlier draft tried the updated instructions. All five reached the museum without asking for help. This small test suggests the revised landmarks are useful, but it does not show that the guide will work for every visitor or in every season. Construction, a temporary closure, or a changed station exit could alter the route. We plan to check it again before the autumn visitor season and put a revision date on the printed guide. Clear directions should make the trip easier, and the date should help readers decide whether the details are still current.",
+      "changes": [
+        "Simplified the route findings and varied sentence openings.",
+        "Kept the trial limits and clarified that 14 minutes is an estimate."
+      ]
+    }
+  },
+  {
+    "id": "ar13",
+    "data": {
+      "text": "Dear selection committee, I am applying for the weekend gallery assistant position. For the past year, I have helped visitors at a local history center by answering practical questions, restocking printed guides, and noting recurring questions for staff. I try to make the space approachable while giving people room to explore on their own. Your rotating exhibits appeal to me because they give visitors a reason to return and notice something new. I would welcome the chance to offer that same attentive service on Saturdays and Sundays.",
+      "changes": [
+        "Made the applicant's existing duties and approach more direct."
+      ]
+    }
+  },
+  {
+    "id": "ar14",
+    "data": {
+      "text": "The monthly sketch club meets on the first Tuesday at 6:30 p.m. in Room 204. Bring your own pencils and paper; the club provides still-life objects to share. Newcomers are welcome to watch before joining an exercise. This month's theme is everyday tools.",
+      "changes": [
+        "Made the invitation more welcoming while keeping the supplied room and meeting details."
+      ]
+    }
+  },
+  {
+    "id": "ar15",
+    "data": {
+      "text": "- The search page remembers your last selected sort order while your current browser session is open.\n- Pressing Enter in the filter field no longer clears your selected category. Export still downloads all results that match your filters, not just the rows on the first page.\n- Saved searches have not changed in this release.",
+      "changes": [
+        "Turned the notes into three plain-language bullets.",
+        "Clarified the browser-session limit and full filtered export."
+      ]
+    }
+  },
+  {
+    "id": "ar16",
+    "data": {
+      "text": "The museum tour starts at 3 p.m. on August 9 in the main lobby and lasts about 45 minutes. It includes the upstairs textile gallery; visitors who prefer to avoid stairs can ask the guide for a ground-floor route. The group is limited to 12 people so everyone can hear the guide. Please arrive ten minutes early to check in at the front desk.",
+      "changes": [
+        "Changed the tour capacity from 18 to 12 people and smoothed the opening wording."
+      ]
+    }
+  },
+  {
+    "id": "ar17",
+    "data": {
+      "text": "The larger shelf labels are easier to read from across the room, but up close the bold headings compete with the item descriptions. Could we try regular-weight headings while keeping the larger type, then check the signs from both the doorway and the shelf? That may help people read them at a distance without making the details feel cramped.",
+      "changes": [
+        "Made the suggested test explicit while keeping it tentative."
+      ]
+    }
+  },
+  {
+    "id": "ar18",
+    "data": {
+      "text": "Thank you for offering to host the reading circle next month. We plan to meet on the second Wednesday at 7 p.m. and finish by 8:30 p.m. I will bring the discussion prompts and a few extra copies of the short story. Please let me know by Friday whether the room has enough chairs for twelve people. Best, Ellis",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar19",
+    "data": {
+      "text": "When I started the neighborhood sound walk, I expected the loudest places to be the most interesting. With a small notebook, I followed the same loop on three mornings: from the bakery to the footbridge, along the canal, and back through the square. The bus stop was always noisy. I noted its regular pattern of engines, doors, and short conversations. But the quieter stretch beside the canal changed more from day to day. One morning brought wind in the reeds; on another, the creak of a bicycle crossing the bridge was the clearest sound.\n\nI never meant the notes to measure noise scientifically. I did not use a meter, record decibel levels, or control for weather. I wanted to pay closer attention to how ordinary places felt at different moments. That choice shaped what I noticed: I wrote long descriptions at the canal because I could stand still there, while my bus stop notes were quick and fragmented. The difference may say as much about how I observed as it does about either place.\n\nBy the third morning, I had begun to recognize a rhythm in the square. Delivery carts crossed it early, the fountain started later, and the first people sitting on the benches arrived after the bakery opened. I had passed those details many times without naming them. The exercise did not reveal a hidden truth about the neighborhood, but it changed how I moved through it. I found myself slowing down before the bridge and listening for small differences. If I repeat the walk in winter, the route will be the same, but the sounds and my attention may be different. That possibility makes me want to do it again.",
+      "changes": [
+        "Varied sentence rhythm and trimmed repeated phrasing.",
+        "Preserved the first-person observations, limits, and tentative ending."
+      ]
+    }
+  },
+  {
+    "id": "ar20",
+    "data": {
+      "text": "The lending shelf can hold about 60 board games. Each box needs a title label and a card listing its pieces. Borrowers can take one game for up to two weeks and return it to the front desk. We should start with donated games that have complete sets and review demand after the first six weeks. If a box is missing pieces, staff can move it to the repair table until it is ready to lend again.",
+      "changes": [
+        "Tightened the proposal while keeping the capacity, loan rules, selection rule, and review period."
+      ]
+    }
+  },
+  {
+    "id": "ar21",
+    "data": {
+      "text": "Hey team, the courtyard tables are back in place after Saturday's paint day. Please return the borrowed brushes to the library desk by Friday. If you took photos, add them to the shared event folder for a short thank-you post. Thanks for showing up even when the forecast looked grim!",
+      "changes": [
+        "Tightened the requests while keeping the cheerful, informal tone."
+      ]
+    }
+  },
+  {
+    "id": "ar22",
+    "data": {
+      "text": "1. Submit the facilities form before 3 p.m. on a business day to request a replacement access badge.\n2. When the replacement is ready for pickup, Facilities will disable the old badge. Bring a photo ID to the front desk.\n3. There is no replacement fee if the badge stopped working through normal use. A lost badge carries a $10 fee.",
+      "changes": [
+        "Organized the request, pickup, and fee rules into numbered steps."
+      ]
+    }
+  },
+  {
+    "id": "ar23",
+    "data": {
+      "text": "The workshop starts at 10 a.m. in Studio 2. Bring a notebook if you like, but all materials will be provided. We will take a short break halfway through and finish by noon.",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar24",
+    "data": {
+      "text": "Who can use the room\nThe community tool room is open to registered members Tuesday through Saturday, 9 a.m. to 6 p.m. Registration is free and can be completed at the counter, but it does not guarantee that a specific tool will be available. Sign in at the front counter before using the space, even if you only plan to pick up a reserved item. The sign-in sheet helps staff account for people during a building evacuation and contact the right borrower when equipment is overdue.\n\nTaking tools home\nTools that leave the building are checked out for seven calendar days. You may renew an item once if nobody else has reserved it. Request the renewal before the original due date, in person or by phone. Staff cannot extend a loan after an item is overdue. The last checkout is at 5:30 p.m. so staff have time to finish the daily inventory before closing. On Saturdays, the room closes at 6 p.m. as usual.\n\nUsing tools in the room\nItems marked for room use stay in the tool room, including during lunch breaks. Return them to the labeled shelf when you finish rather than handing them to another member. Ask the counter staff if you are unsure whether an item may leave the building.\n\nStaying safe\nWear safety glasses at the cutting bench and closed-toe shoes throughout the room. Staff can show you how to use a tool, but you are responsible for deciding whether you can use it safely. Report damaged equipment to the front counter and leave it out of service; do not put it back on the shelf for the next person. These practices help keep shared equipment findable, available, and safe for everyone.",
+      "changes": [
+        "Grouped eligibility, loans, room-use rules, and safety under scannable headings.",
+        "Addressed members directly while retaining the policy details."
+      ]
+    }
+  },
+  {
+    "id": "ar25",
+    "data": {
+      "text": "The North Quay bike shelter is funded for the east side of the station forecourt. The plan includes 36 covered spaces and a repair stand beside the existing ticket kiosk. A survey of the pavement is booked for May 8, and the transport committee will receive the cost estimate on May 21. The adjacent taxi rank will keep its current entrance, and the two mature plane trees are outside the work area.",
+      "changes": [
+        "Changed the shelter's status from proposed to funded."
+      ]
+    }
+  },
+  {
+    "id": "ar26",
+    "data": {
+      "text": "The first prototype kept the labels readable, but the fold hid the opening instructions once the packet was sealed. We moved the instructions to the outside panel for the second prototype. All four volunteers who tried it found the opening tab without help. We have not tested it with gloves yet.",
+      "changes": [
+        "Tightened the trial description while retaining its four-person scope and untested condition."
+      ]
+    }
+  },
+  {
+    "id": "ar27",
+    "data": {
+      "text": "The reading circle meets on the second Wednesday of each month at 7 p.m. in Room B. The next selection is announced at the end of each meeting, and copies are placed at the front desk the following morning. New members can join at any meeting.",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar28",
+    "data": {
+      "text": "Thanks for writing about the zipper on your canvas pouch. We can send you a replacement pull tab at no charge. Please reply to this message with a photo of the pouch laid flat so we can confirm which pull tab fits. Once we confirm the match, we'll mail the part within two business days.",
+      "changes": [
+        "Made the reply warmer and gave a direct request for the photo."
+      ]
+    }
+  },
+  {
+    "id": "ar29",
+    "data": {
+      "text": "Participants ranked three poster layouts after viewing each for 20 seconds. Forty-eight people completed all three rankings. Layout C received the most first-place rankings, but the sample was drawn from one campus event. These results can inform the next round of design work; they do not establish how the wider public would respond.",
+      "changes": [
+        "Condensed the results into a measured paragraph while retaining the sampling limitation."
+      ]
+    }
+  },
+  {
+    "id": "ar30",
+    "data": {
+      "text": "Hi everyone, I'll be offline Friday afternoon for a personal appointment. I've finished the draft agenda and left it in the shared folder. If you need my input before Monday, please tag me by noon Friday so I can respond before I log off. Thanks!",
+      "changes": [
+        "Smoothed the phrasing while keeping the relaxed first-person voice."
+      ]
+    }
+  },
+  {
+    "id": "ar31",
+    "data": {
+      "text": "This week, the signage team finished the first pass on the station map and sent it to the print vendor for a paper proof. Two colleagues checked the draft against the current floor plan and found an arrow pointing toward the service corridor instead of the public exit. We corrected it in the file sent to the vendor. We also replaced three abbreviations with full words after a quick reading exercise showed the short forms were easy to confuse. These are editorial changes; we have not changed the underlying route information.\n\nThe map covers the north entrance, the ticket machines, the lift, and both platform routes. It does not yet cover the temporary bus stop because its position is still being confirmed. We placed a plain-language note near the blank area so reviewers do not mistake it for an omitted route.\n\nThe proof is expected on Tuesday, and we have reserved Wednesday morning for an in-person review. We still need to choose the size of the platform labels: the larger option is easier to spot from a distance, but leaves less space for the lift symbol. We will compare both options on the paper proof at actual size before choosing. If the proof arrives as expected, we can send final artwork on Thursday, provided we get the bus stop position by Wednesday afternoon. If it remains unresolved, we will finalize the permanent routes and hold the temporary stop panel separately. I will post a brief decision note after the proof review so operations staff can see what was approved and what is still pending.",
+      "changes": [
+        "Grouped completed work, the open label decision, and next steps while retaining dependencies."
+      ]
+    }
+  },
+  {
+    "id": "ar32",
+    "data": {
+      "text": "The editorial board deferred its decision on the field guide's cover concept at Tuesday's review. The selected illustration shows a sandpiper standing among dune grass, with the title set above the horizon line. Copy editor Samira Patel will return the index on June 6, and the printer expects the final image files by June 18. The guide still has 128 pages, uses recycled uncoated paper, and is intended for the coastal visitor centers in August.",
+      "changes": [
+        "Changed the board's decision from approved to deferred."
+      ]
+    }
+  },
+  {
+    "id": "ar33",
+    "data": {
+      "text": "I kept the little brass bell from my first market stall. It was too quiet to call anyone over, but I rang it each time I sold a print. Now it sits on my studio windowsill, and I still tap it when I finish a piece that took longer than I expected.",
+      "changes": [
+        "Smoothed the phrasing while keeping the personal bell detail."
+      ]
+    }
+  },
+  {
+    "id": "ar34",
+    "data": {
+      "text": "Orders placed before 4 p.m. on weekdays are packed the same day. Orders placed later are packed the next business day. Pickup is available at the side counter after you receive a ready notice. We hold packed orders for seven days.",
+      "changes": []
+    }
+  },
+  {
+    "id": "ar35",
+    "data": {
+      "text": "Before opening the exhibition:\n1. Check that the labels match the display list.\n2. Test the audio station at normal volume. If it fails, tell the floor lead; do not use a handwritten sign instead of reporting it.\n3. Wipe the touch screen with the approved cloth.\n4. Place the visitor cards beside the exit.",
+      "changes": [
+        "Converted the opening instructions into an ordered checklist."
+      ]
+    }
+  },
+  {
+    "id": "ar36",
+    "data": {
+      "text": "Issue: The folding guide confused people at the last pop-up. The second panel says 'fold inward,' but the diagram shows the flap going outward. The diagram matches the finished sample.\n\nAction and deadline: Correct the sentence before the next print run. The print files go to the shop on Monday.",
+      "changes": [
+        "Made the wording mismatch and Monday deadline easy to spot."
+      ]
+    }
+  },
+  {
+    "id": "ar37",
+    "data": {
+      "text": "This classroom study examined how students used a printed timeline while reading a short local-history article. Two established classes completed the same task during regular lessons. One received the article with a one-page timeline listing six dated events from the article and no new facts; the other received the article alone. After reading, students answered five questions about the order of events and wrote a brief explanation of one connection between events. The teacher collected their responses at the end of the lesson.\n\nThe class with the timeline answered more ordering questions correctly on average. Explanations varied widely in both classes, however, and several students in each class connected events that the article did not link. This was a small teaching trial, not a test of long-term learning. Students were not assigned randomly, and the teacher knew which materials each class received. These conditions limit what the difference in ordering answers can show.\n\nThe responses suggest that a simple timeline may help students track sequence during a single reading session. They do not establish that it improves historical reasoning or that the same result would appear with other articles. A useful next step would be to try the materials with more classes and compare explanations using a shared scoring guide. Asking students how they used the timeline would also help: the collected answers do not show whether they consulted it while reading or only when answering the questions. The trial offers a practical reason to keep testing the format while keeping claims about its effect narrow.",
+      "changes": [
+        "Tightened the study design, results, limitations, and interpretation into a clearer sequence."
+      ]
+    }
+  },
+  {
+    "id": "ar38",
+    "data": {
+      "text": "The public lecture is scheduled for Wednesday in Hall C. Doors open at 6:30 p.m., and the talk begins at 7 p.m. There is no admission charge. A live caption feed will be shown on the side screen, and the venue has step-free access from the south entrance.",
+      "changes": [
+        "Updated the door-opening time to 6:30 p.m."
+      ]
+    }
+  },
+  {
+    "id": "ar39",
+    "data": {
+      "text": "After each event, dust the reusable display stands with a dry cloth. For sticky marks, use a damp cloth and let the stands air-dry before storage. Do not soak the joints or stack the stands while they are wet.",
+      "changes": [
+        "Made the care steps more direct and consistent."
+      ]
+    }
+  },
+  {
+    "id": "ar40",
+    "data": {
+      "text": "Come in from the rain. The kettle is on, the chairs are mismatched, and somebody has probably left a crossword half-finished.\n\nDrop-in hours are Monday and Thursday, 3 to 5 p.m., at the old post office building. Tea is free. No booking is needed.",
+      "changes": [
+        "Set the lived-in opening directly above the practical flyer details."
+      ]
+    }
+  }
+]

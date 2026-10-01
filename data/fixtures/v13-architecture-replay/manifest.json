@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_BEFORE_GENERATION",
+  "created": "2026-10-01T21:16:45.198Z",
+  "caseCount": 40,
+  "strategy": "reconstruction-v13",
+  "editorPrompt": "reconstruct.v8",
+  "route": "account-backed-no-metered-api",
+  "provenance": {
+    "creatorA": "independent account-backed creator, ar01-ar20",
+    "creatorB": "independent account-backed creator, ar21-ar40",
+    "replacements": "independent account-backed creator, ar11/ar25/ar32 before freeze",
+    "humanText": "none; privacy/licensing provenance not assured"
+  },
+  "files": {
+    "cases.json": "57d16a95007aa2644c9ce0cfd759ed8f41e4aacfcef7dd04fbd9b6cdb0bc98d0",
+    "review-rubric.json": "38021e9dff5cdd35fc67009fdfc704b209adcf41c2d76c4b9d3893b5bdd16ca5"
+  }
+}

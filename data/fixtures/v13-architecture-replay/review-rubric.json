@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "status": "DEFINED_BEFORE_GENERATION",
+  "scale": {
+    "usefulForObjective": ["YES", "PARTIAL", "NO"],
+    "objectiveSatisfied": ["YES", "PARTIAL", "NO"],
+    "unauthorizedMeaningChange": ["YES", "NO", "UNCERTAIN"],
+    "unsupportedInformation": ["YES", "NO", "UNCERTAIN"],
+    "voicePreserved": ["YES", "NO", "UNCERTAIN"],
+    "overedited": ["YES", "NO"],
+    "underedited": ["YES", "NO"],
+    "unnecessaryChangeToAlreadyGood": ["YES", "NO", "N/A"]
+  },
+  "definitions": {
+    "goodRaw": "Both blind reviewers judge the raw edit useful YES, objective satisfied YES, unauthorized meaning change NO, unsupported information NO, and voice preserved YES.",
+    "badRaw": "Both blind reviewers identify a material unauthorized meaning change or unsupported information in the raw candidate. A style disagreement alone is insufficient.",
+    "caught": "A jointly identified material raw defect is absent from final output. Count repair and source fallback separately.",
+    "escaped": "A jointly identified material raw defect remains in final output.",
+    "goodLost": "A jointly good raw edit is materially less useful in final output, including through fallback or harmful repair.",
+    "disputed": "Any material reviewer disagreement is reported separately and excluded from agreed hard counts; no silent relabeling.",
+    "usefulRepair": "Blind reviewers judge the repaired final text materially useful for the objective, source-grounded, and free of the raw defect. Byte difference from source is insufficient.",
+    "vagueGuess": "An objective omits a replacement fact, yet the raw candidate, repair, or final output supplies an unsupported replacement value or new factual state."
+  }
+}
