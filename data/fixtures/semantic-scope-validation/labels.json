@@ -1,0 +1,1152 @@
+[
+  {
+    "id": "A01",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The small domestic detail and closing admission carry the emotional point without excess explanation.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A02",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The note clearly requests the missing meeting date before the sender commits to travel or equipment.",
+    "missingInformation": [
+      "Meeting date"
+    ]
+  },
+  {
+    "id": "A03",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.91,
+    "rationale": "The sequence, observations, and outcome are clear for a concise maintenance record.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": false,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "A04",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The awkward phrase is quoted for analysis, and the critique expressly limits its claim to the supplied sentence.",
+    "missingInformation": [
+      "Surrounding page for assessing whether the tone continues"
+    ]
+  },
+  {
+    "id": "A05",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The deadline and request are clear; a few nearby repetitions of following up and noon can be cut independently.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A06",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "Asha's self-correction is natural spoken reflection that sharpens the distinction between helping and shared ownership.",
+    "missingInformation": []
+  },
+  {
+    "id": "A07",
+    "scope": "LOCAL_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The physical explanation works, but the unsupported coastwide ranking should be removed or explicitly withheld in its own passage.",
+    "missingInformation": [
+      "Comparison set and evidence for the ranking"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": true
+  },
+  {
+    "id": "A08",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The restrained sequence of actions creates tension without needing to reveal the letter's contents.",
+    "missingInformation": []
+  },
+  {
+    "id": "A09",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "Dates, dependencies, owners, and the dropped opening date recur out of sequence across the whole update; the material needs one coherent schedule and action list.",
+    "missingInformation": [],
+    "whyLocalInsufficient": "Deleting individual repetitions would still leave the dependencies and responsibilities scattered.",
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A10",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.95,
+    "rationale": "The message repeatedly urges an invitation that would claim a booking and date the writer cannot verify; a safe revision can ask for confirmation and defer the claim.",
+    "missingInformation": [
+      "Confirmed reunion date",
+      "hall booking status",
+      "deposit status"
+    ],
+    "whyLocalInsufficient": "Isolated cuts cannot resolve the recurring conflict between sending now and checking the venue and date first."
+  },
+  {
+    "id": "A11",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The return to the porch develops the childhood association into a concrete present-day experience, and the final image completes that arc.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A13",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.9,
+    "rationale": "The incident account follows the timeline and supports its recommendation; only a small redundant reference to logs and chart needs tightening.",
+    "missingInformation": []
+  },
+  {
+    "id": "A15",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The email responsibly asks maintenance for the facts needed for a later tenant notice and offers a truthful interim message.",
+    "missingInformation": [
+      "Affected floors and taps",
+      "any post-restoration tap instructions",
+      "verified restoration time"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A16",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.89,
+    "rationale": "The interview progression works, while small repetitions in the first two answers could be trimmed without changing Nadia's voice or question order.",
+    "missingInformation": []
+  },
+  {
+    "id": "A17",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The production update states the unresolved publication permission and correctly holds the file until approval or replacement is agreed.",
+    "missingInformation": [
+      "Mara's approval for the passage or an agreed replacement"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": true
+  },
+  {
+    "id": "A19",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The repeated tram sound and carefully chosen objects give the closing scene a deliberate rhythm and clear ending.",
+    "missingInformation": []
+  },
+  {
+    "id": "A20",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.72,
+    "rationale": "The essay's uncertainty about whose trip it was is purposeful, but several repeated facts about driving, the cooler, and last June can be lightly trimmed while preserving the open ending.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": false,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "A21",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.94,
+    "rationale": "The permission request and fallback are clear, but repeated thanks and restated image options across paragraphs invite modest cuts.",
+    "missingInformation": [
+      "Whether the visitors signed releases or an acceptable crop is available"
+    ]
+  },
+  {
+    "id": "A22",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The challenging question and Omar's response belong to the interview, and the exchange develops from reason to correction to lesson.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A23",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The text distinguishes a visible shoreline change from an unverified district ranking and acknowledges limits of the photographs.",
+    "missingInformation": [
+      "District survey for the ranking",
+      "field and elevation data for a firmer erosion estimate"
+    ]
+  },
+  {
+    "id": "A24",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.94,
+    "rationale": "The recommendation, evidence, and next check are in a usable order, though installation history and the one-week recommendation are repeated in several places.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "A25",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The workshop note gives the recipient logistics, one concrete request, and a clear plan for handling uncertain memories.",
+    "missingInformation": []
+  },
+  {
+    "id": "A26",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.86,
+    "rationale": "The key story has a clear progression and intentional uncertainty, but several sentences restate what the dialogue and actions already show. Light cuts across the paragraphs would preserve the arc.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": false,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "A28",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The chair recurs with a changing function, and the essay develops that motif coherently. Its length and reflective pauses serve the narrative.",
+    "missingInformation": []
+  },
+  {
+    "id": "A29",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The proposal scatters the decision, purpose, track plan, schedule, access arrangements, and budget across the memo while repeating the opening date and rationale. The facts are present, but readers need them in a decision-led sequence.",
+    "whyLocalInsufficient": "Cutting repeated sentences in place would leave the schedule and related decisions dispersed; the sections need to be regrouped and ordered together.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B01",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.94,
+    "rationale": "The interim badge instruction is clear, with a defined trigger for later guidance. The future date is appropriately left unannounced.",
+    "missingInformation": []
+  },
+  {
+    "id": "B02",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "One instruction to attach the signed slip is repeated verbatim. Removing the duplicate repairs the passage without changing the procedure.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B03",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "These concise huddle notes distinguish completed work, an assigned action, and deferred business.",
+    "missingInformation": []
+  },
+  {
+    "id": "B04",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The FAQ gives practical intake, receipt, and urgent-contact guidance in a useful order.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B05",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "PARTIAL",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.77,
+    "rationale": "Readiness, launch preparation, the provisional date, and unsettled decision ownership are interwoven, so the note does not distinguish current status from a future go decision. It can be recast as a status update, while a definitive launch note needs the Thursday decision.",
+    "whyLocalInsufficient": "Changing individual sentences would leave the central readiness and launch messages pulling against each other; the note needs a single status-to-decision progression.",
+    "missingInformation": []
+  },
+  {
+    "id": "B06",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.91,
+    "rationale": "The routing steps are coherent and explicitly keep clinical escalation separate. The callback window remains unsettled, but this note does not purport to set it.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B09",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.92,
+    "rationale": "The three FAQ answers follow useful questions, but Monday review timing and form details are repeated across them. Small cuts and consolidation would keep the FAQ structure intact.",
+    "missingInformation": []
+  },
+  {
+    "id": "B10",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.94,
+    "rationale": "The decision, remaining review, deadline, and release boundary are clear.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B11",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The procedure clearly separates desk routing, clinical escalation, routine results, and follow-up checks.",
+    "missingInformation": []
+  },
+  {
+    "id": "B12",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.86,
+    "rationale": "The meeting record is organized by issue and action. The aside about the scanner vendor supplying labels adds no decision or action and could be removed locally.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": false,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "B14",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "PARTIAL",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.94,
+    "rationale": "The note circles repeatedly among drafted messages, a pilot, a provisional production schedule, and rollout readiness. It can be reorganized around the pilot decision and dependencies, but a firm rollout criterion is not yet agreed.",
+    "whyLocalInsufficient": "Removing duplicate phrases would still leave the pilot prerequisite and production planning dispersed and the decision sought unclear; the argument needs a new sequence.",
+    "missingInformation": []
+  },
+  {
+    "id": "B15",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.93,
+    "rationale": "The FAQ answers each practical question and openly routes eligibility uncertainty to the approver. Unpublished criteria do not prevent the current access instructions from working.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B17",
+    "scope": "LOCAL_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.91,
+    "rationale": "The handoff sequence is clear, including an interim weekend route. One sentence repeats that the clerk needs to know about a change and can be shortened; the weekend monitor has not yet been named.",
+    "missingInformation": []
+  },
+  {
+    "id": "B18",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.91,
+    "rationale": "The notice distinguishes the temporary process, older agreements, and preparations for a future policy. The threshold and effective date are unknown, but current instructions remain usable.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": true
+  },
+  {
+    "id": "B19",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The instructions proceed through initial posting, changes, cancellation, disposal, and system outage with clear checks at each step.",
+    "missingInformation": []
+  },
+  {
+    "id": "B20",
+    "scope": "LOCAL_EDIT",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.95,
+    "rationale": "The turnaround answer promises delivery within a few days while also saying no turnaround time is published. That local contradiction can be removed, but a specific delivery promise requires an authorized timeframe.",
+    "missingInformation": [
+      "The authorized processing or delivery timeframe for duplicate certificates."
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B21",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The trial scope, measures, public notice, and later staffing decision are distinct and logically ordered.",
+    "missingInformation": []
+  },
+  {
+    "id": "B22",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.9,
+    "rationale": "The minutes are organized and preserve unresolved purchase and scheduling decisions. The pronoun in the second-quote sentence can be replaced with its intended noun.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B23",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.88,
+    "rationale": "The same call, clean mark, and board status are explained before and after the proposed handoff, obscuring the actual change. The proposed process and approval step are present, but need one coherent before-and-after account.",
+    "whyLocalInsufficient": "Local cuts would leave the existing and proposed workflows interleaved across paragraphs; the steps and their owners need to be regrouped.",
+    "missingInformation": []
+  },
+  {
+    "id": "B25",
+    "scope": "LOCAL_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.91,
+    "rationale": "The unconditional Monday publication conflicts with the stated full-sample review checkpoint and the later plan to revise the date if the sample arrives late. That commitment can be made conditional locally, but a firm release date cannot be confirmed from the text.",
+    "missingInformation": [
+      "When the vendor will provide the full sample and whether review can finish before Monday"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B27",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.87,
+    "rationale": "These minutes preserve the discussion, unresolved decisions, and named follow-ups clearly; returning to the materials order reflects the meeting rather than a broken structure. The cost ceiling and final date are appropriately left open.",
+    "missingInformation": []
+  },
+  {
+    "id": "B28",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The policy follows the loan from request through return, faults, and review, with concrete instructions and exceptions. Its length serves the operational detail and does not call for reconstruction.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "B29",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.82,
+    "rationale": "The memo has a sound progression to a specific approval request, but the Sunday-access case and the distinction from extended hours recur in several places. Modest trimming across those passages would sharpen it without changing its structure.",
+    "missingInformation": []
+  },
+  {
+    "id": "B30",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.78,
+    "rationale": "The note deliberately compares unresolved closing rules and ends with a safe interim instruction, so its exploratory form is appropriate. Several passages restate the scheduled-versus-accepted distinction and could be tightened while preserving the sequence.",
+    "missingInformation": [
+      "Which team owns missing-record requests",
+      "Where acceptance status will be recorded and who can see it across specialties",
+      "Who updates any new status and when unanswered requests escalate"
+    ],
+    "scopeDisputed": true,
+    "informationDisputed": true,
+    "feasibilityDisputed": true,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "C01",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The exchange makes the dependency and deadline clear in natural dialogue. No edit is needed.",
+    "missingInformation": []
+  },
+  {
+    "id": "C02",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The notice plainly states the delivery gap, current safe use, and next update without inventing a replacement date. The missing supplier date is acknowledged and does not prevent this update.",
+    "missingInformation": [
+      "Supplier's revised delivery date"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C05",
+    "scope": "LOCAL_EDIT",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "BLOCKED_PENDING_INFORMATION",
+    "confidence": 0.91,
+    "rationale": "The east gate is both closed and prescribed for drivers, while the night shift is told to follow unspecified posted instructions. The conflicting route instruction is local, but the text gives no verified route to publish in its place.",
+    "missingInformation": [
+      "Which gate or route drivers should use while the east gate is closed",
+      "Whether the posted night-shift instructions identify a safe current route"
+    ]
+  },
+  {
+    "id": "C06",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The weak marketing sentence is quoted as an example and the surrounding critique gives concrete revision guidance. The critique itself is coherent and needs no edit.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C07",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "One middle sentence repeats the packing time without adding information. Removing or tightening that sentence leaves the useful shipping and follow-up details intact.",
+    "missingInformation": []
+  },
+  {
+    "id": "C08",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The hours change, reason, alternatives, and unaffected spaces are presented in a clear operational notice. Its details serve distinct reader needs.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": false,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "C09",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.87,
+    "rationale": "The apparent conflict between retiring the old form on June 1 and keeping it available until July 1 is explicitly resolved as a change in the default form. The transition and review owner are clear.",
+    "missingInformation": []
+  },
+  {
+    "id": "C10",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The guidance states what the export contains and gives safe handling advice while candidly saying retention is unsettled. A retention promise should wait for the policy, but the current notice works.",
+    "missingInformation": [
+      "Confirmed retention period for completed exports"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C11",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The explanation distinguishes a private draft from a submitted request and gives the relevant permissions, requirements, and consequences. The final reminder is useful in this help-page genre.",
+    "missingInformation": []
+  },
+  {
+    "id": "C12",
+    "scope": "LOCAL_EDIT",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.93,
+    "rationale": "The definite start-of-next-month promise contradicts the unsigned data agreement and the instruction to avoid promising an opening week. That sentence can be removed or made conditional, while the inventory and preparation requests remain usable.",
+    "missingInformation": [
+      "When the patron-data agreement will be signed",
+      "Confirmed staff-practice and patron-opening dates"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C13",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The process is clear, with only a few redundant phrases about where details are entered, the duration of workshop supervision, and reporting a lost badge. Each can be shortened independently.",
+    "missingInformation": []
+  },
+  {
+    "id": "C14",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.94,
+    "rationale": "The count sequence and instructions are sound, but the purchasing rationale, stock-movement warning, and unlabeled-box instruction recur across several paragraphs. Removing repeated statements would improve pace without reorganizing the notice.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C15",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The email clearly sets interview purpose, method, note-taking expectations, and immediate follow-up. The undecided size of a later round is appropriately separate from this week's work.",
+    "missingInformation": []
+  },
+  {
+    "id": "C17",
+    "scope": "LOCAL_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "Two sentences repeat themselves about training coming next and the temporary supply wait. Tightening those phrases leaves the training gate and the unresolved roll supply clear.",
+    "missingInformation": [
+      "Vendor's weekly supply quantity and resulting switch date"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C18",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.84,
+    "rationale": "The plan advances from a small comparison to production scheduling while the rehearsal sample, reviewers, and permitted use of restricted notes remain unsettled. Its timetable and approval sequence need to be recast around those dependencies; a conditional planning note is possible now, but a complete migration schedule is not.",
+    "whyLocalInsufficient": "The proposed rehearsal, staff comparison, production announcement, and pause notice all depend on the same unresolved data-access decision, so changing one date or caveat would leave the sequence misleading.",
+    "missingInformation": [
+      "Whether restricted case notes may be copied into the rehearsal environment",
+      "Which roles may inspect those notes and who authorizes access",
+      "Approved rehearsal sample and staff reviewers",
+      "Validated migration and intake-pause dates"
+    ]
+  },
+  {
+    "id": "C19",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The notice clearly explains archive creation and present key-handling requirements while acknowledging that recovery is undecided. It does not need to invent a recovery process to be useful now.",
+    "missingInformation": [
+      "Approved recovery process for a lost encryption key"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C20",
+    "scope": "LOCAL_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.84,
+    "rationale": "This is coherent editorial feedback, not the flawed refund page itself; the only awkward instruction is the vague request to write for everyone. Tightening that line to defer audience-specific examples preserves the actionable advice already given.",
+    "missingInformation": [
+      "Confirmed audience for the refund page",
+      "Whether purchase channel, product use, or other conditions determine eligibility"
+    ]
+  },
+  {
+    "id": "C22",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.83,
+    "rationale": "The case for a pilot, its purpose, and the staffing and storage conditions recur across several paragraphs. Modest consolidation would sharpen the recommendation while preserving the existing progression from proposal to decision.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": true,
+    "feasibilityDisputed": true,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "C23",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The exchange resolves the date discrepancy and works through the practical meeting details in a natural conversational order.",
+    "missingInformation": []
+  },
+  {
+    "id": "C24",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The heading 'Reasons the guide is not ready for the pilot' contradicts the paragraph beneath it, which describes only a routine link check. Correcting that heading is a contained edit.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C25",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.89,
+    "rationale": "The instructions proceed clearly from preview to restore, caution, and single-card recovery. A few nearby redundancies, such as 'preview is a preview' and the repeated 'restore action,' can be tightened locally.",
+    "missingInformation": []
+  },
+  {
+    "id": "C26",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.92,
+    "rationale": "The approval threshold, hosted-meal treatment, and review sequence are each introduced and then repeated in separate places, making the policy harder to use as a whole.",
+    "whyLocalInsufficient": "Removing isolated repetitions would leave related rules and examples dispersed; the material needs to be regrouped by approval and meal-claim workflow.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C27",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The update clearly distinguishes confirmed status, unknown permit timing, safe preparation, and the next communication point.",
+    "missingInformation": []
+  },
+  {
+    "id": "C28",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "This is a coherent review letter about another guide; its quotations of vague instructions are examples under critique. It moves from the reader's task through specific changes and unresolved policy questions to a proposed next draft.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "C29",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The proposal repeatedly restates the problem, eligible cases, one-change rule, depot choice, training sequence, and expected benefit across distant paragraphs.",
+    "whyLocalInsufficient": "Those repeated propositions connect the case, product behavior, pilot plan, and decision request; isolated cuts would still leave a circular progression. The sections need to be reordered and consolidated around one decision path.",
+    "missingInformation": []
+  },
+  {
+    "id": "C30",
+    "scope": "SUBSTANTIVE_RECONSTRUCTION",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.94,
+    "rationale": "The memo alternates between unresolved evidence, premature assurances, conflicting handoff advice, and a sound interim-status recommendation. It can be reorganized around established facts and pending decisions, but a definitive affected-record notice or handoff decision needs investigation.",
+    "whyLocalInsufficient": "Changing individual sentences would not resolve the document-wide conflict between sending the export on schedule and withholding judgment about its completeness; the status, actions, and decision gates need one consistent progression.",
+    "missingInformation": [
+      "Classification of all six identifiers against live records and deletion history",
+      "Whether the export configuration omitted eligible records",
+      "Who received or will receive the export and the scope of the partner's analysis",
+      "The authorized owner of the formal notice and partner handoff decision"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "D01",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.99,
+    "rationale": "The brief handover note gives the key location, inventory status, receipt plan, and early-access option clearly.",
+    "missingInformation": []
+  },
+  {
+    "id": "D02",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.99,
+    "rationale": "The compact image and reflective ending work together without unnecessary explanation.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "D03",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The notice gives the form, deadline, review timing, and urgent-request route in a clear sequence.",
+    "missingInformation": []
+  },
+  {
+    "id": "D05",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The agenda email distinguishes settled items from speaking times that depend on confirmations and makes the requested edits and accessibility reference clear.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "D06",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The passage carefully separates reported impressions from measured evidence and limits its recommendation accordingly.",
+    "missingInformation": []
+  },
+  {
+    "id": "D07",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.99,
+    "rationale": "The scene follows a clear emotional and physical progression, ending with a concrete action that carries its meaning.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "D09",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The study account connects its question, limited evidence, modest trial, and appropriate evaluation measure. The unknown staffing cost is explicitly left for the library to check, rather than being used to overstate the recommendation.",
+    "missingInformation": []
+  },
+  {
+    "id": "D10",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.79,
+    "rationale": "The handover is understandable, but several separate operational topics run together in one dense paragraph. Light grouping of the storage change, damaged covers, and follow-up tasks would make it easier to scan without changing its sequence or substance.",
+    "missingInformation": [],
+    "scopeDisputed": true,
+    "informationDisputed": false,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "D12",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.99,
+    "rationale": "The recipe details, visit, and final blank-page image develop the same theme through a coherent personal narrative.",
+    "missingInformation": []
+  },
+  {
+    "id": "D14",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The archive update clearly states what was indexed, how uncertainties are preserved, which permissions remain under review, and how researchers can request access.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "D16",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The exhibition update reports observations, limits the conclusions they can support, and identifies an appropriate next inquiry.",
+    "missingInformation": []
+  },
+  {
+    "id": "D18",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The long committee letter gives a purposeful account of methods, attendance uncertainty, findings, limitations, and the factual check requested from readers. Its detail serves the report's accountability rather than creating a broken progression.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "D19",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.95,
+    "rationale": "The residency narrative follows a changed route into a changed artistic method, then tests that method at another site. The return to the caretaker's instructions and the later example are deliberate thematic developments.",
+    "missingInformation": []
+  },
+  {
+    "id": "E01",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The notice gives the current entrance arrangement, the remaining maintenance issue, and a useful interim action in a clear sequence.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "E02",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.81,
+    "rationale": "The invitation reads clearly for people who know the usual meeting place. A standalone invitation would need the venue, but its absence does not prevent useful editing of the existing text.",
+    "missingInformation": [
+      "The name or address of the usual meeting place, if the invitation must stand alone"
+    ],
+    "scopeDisputed": true,
+    "informationDisputed": true,
+    "feasibilityDisputed": true,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "E03",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.98,
+    "rationale": "The message states the shipment, return instructions, deadline, and help route plainly and in a useful order.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "E04",
+    "scope": "DISTRIBUTED_LIGHT_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.92,
+    "rationale": "Arrival at the launch, glove distribution, and the 11 a.m. finish are each repeated in separate passages. These repetitions can be trimmed while preserving the existing sequence and all operational details.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "E05",
+    "scope": "LEAVE_ALONE",
+    "information": "CRITICAL_MISSING",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.89,
+    "rationale": "The report clearly distinguishes verified participation from an outcome that cannot yet be reported, so its structure works. The unmatched final questionnaires prevent a complete answer to the grant's central outcome question, though the supported portions can be edited safely.",
+    "missingInformation": [
+      "Entered and checked final questionnaire responses matched to intake records"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": true
+  },
+  {
+    "id": "E06",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.96,
+    "rationale": "The proposal develops the exhibition case, display plan, staffing, cost, and approval request in a coherent order with concrete supporting details.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "E07",
+    "scope": "LOCAL_EDIT",
+    "information": "PARTIAL",
+    "feasibility": "PARTIALLY_SAFE",
+    "confidence": 0.84,
+    "rationale": "The middle paragraph repeats the preparation advice and can be tightened locally. The missing start time limits how precise the notice can be, but the announced day, duration, and follow-up plan still make a useful notice.",
+    "missingInformation": [
+      "The confirmed start time of the water shutoff"
+    ],
+    "scopeDisputed": true,
+    "informationDisputed": true,
+    "feasibilityDisputed": false,
+    "ambiguous": true,
+    "ambiguityReason": "Independent blind reviewers disagreed on editing scope."
+  },
+  {
+    "id": "E09",
+    "scope": "LEAVE_ALONE",
+    "information": "PARTIAL",
+    "feasibility": "SAFE",
+    "confidence": 0.87,
+    "rationale": "The memo clearly asks the committee to defer its vote until the written prices arrive; it does not purport to select a bidder. The missing bids prevent a selection, but do not block a meaningful safe edit of this interim message.",
+    "missingInformation": [
+      "The final written price and exclusions for each bid, needed before contractor selection"
+    ],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": true
+  },
+  {
+    "id": "E10",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.93,
+    "rationale": "The report moves from delivery and participation through feedback, spending, and a concrete next-session proposal. The unconfirmed waitlist affects future demand planning, which the report already qualifies, and does not undermine this account.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": true,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "E11",
+    "scope": "LEAVE_ALONE",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.97,
+    "rationale": "The announcement gives the event logistics and relevant program details clearly. Pending competition results are identified as future information rather than asserted prematurely.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  },
+  {
+    "id": "E12",
+    "scope": "LOCAL_EDIT",
+    "information": "SUFFICIENT",
+    "feasibility": "SAFE",
+    "confidence": 0.89,
+    "rationale": "The return procedure appears after the closing check, and the numbered-slot instruction is repeated. Moving the return step before the closing check and trimming the repetition is a limited local repair.",
+    "missingInformation": [],
+    "scopeDisputed": false,
+    "informationDisputed": false,
+    "feasibilityDisputed": false
+  }
+]

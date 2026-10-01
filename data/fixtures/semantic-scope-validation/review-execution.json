@@ -1,0 +1,28 @@
+{
+  "contract": "semantic-review.v3",
+  "strategy": "reconstruction-v7",
+  "mode": "all",
+  "transport": "account-backed agents; no metered API",
+  "reviewerFamily": "GPT account agents (exact runtime settings unavailable)",
+  "secondFamily": "not called; zero-cost route not positively verified",
+  "batchHashes": {
+    "1": "3af648ea4167360763d4958429e66c86bc32318c24e1c9c17ed3ae56d1385d27",
+    "2": "ad109fe3ff6563111b43c3fb2ce8503180c2ecfd0be8085e17a0f64d3f0c97c4",
+    "3": "5a78a4a117a47b37bb6872ccb934308de9c55d90b6acf037ae91a3e3d6995245",
+    "4": "be67fb95fe765a2235a47153f7b5c098f072fc522fcf5667aa5fc85489749aaf",
+    "5": "2b2b05058a3d2f26b5d2806a982803bafea16c124f4d120e410de036cc46cccb",
+    "6": "36adc156d9a4bba3bedcb30da52097f660ecd2eeefcb7fdbbc410b3d2cdfc248",
+    "7": "37d390f7940464aa076c7c0634aaca28fa0f203b1de4ca2a5b40fb2de3cb1143",
+    "8": "c762e548ff3c43b45e00d1db9c0fe5de23985e97e206077374910149b2f52c7a",
+    "9": "5c8047cbd13b648cd7e743352aed93360b9f5c89796c7e2cbeec66f41058b77a",
+    "10": "ec9883ba40a5b4f7b04b309440841ce59d7c91b8e27d1a6563d81be0d8f42cff"
+  },
+  "batch2Deviation": "Concurrent dispatch partially succeeded before a thread-limit error. A second batch-2 review overwrote the first completed file before cancellation; the retained replacement was selected by file state, not result quality. Batch 1 duplicate stopped before write.",
+  "goldVisibleToReviewers": false,
+  "inputManifestSha256": "3c632118fe83f93c66e7c7a0409abea3edc438817b8b30600befd39cd0357ac2",
+  "requestBundleSha256": "f334c07b37abb8b39aeb3508b68b14bd29ab473042fb3a31c9202ef9de479524",
+  "reviewerTransportSha256": "e4a8963594dbbf82b199625152d4bfe0c70341a636be76c1f9270b530827a194",
+  "reviewOutputSha256": "0284be705a04ef648409fca782b8a6cd9d1c13bac43d763bfe4ea2ca23cfda78",
+  "auditSha256": "91595af611a3c6c764027405e9bf97a5a02f6bdd70a054e9112bdf021edd6628",
+  "note": "The exact source texts are synthetic. The request bundle was generated after the input freeze; no gold labels or creator requests were included. Account-backed agent settings and true model latency/token use were unavailable."
+}

@@ -1,0 +1,3414 @@
+[
+  {
+    "id": "A01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 120,
+          "end": 181,
+          "text": "the milk is already back in the fridge by the time I sit down"
+        },
+        {
+          "start": 244,
+          "end": 253,
+          "text": "I do too."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_EXAMPLE"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 131,
+          "end": 169,
+          "text": "I cannot tell which Thursday you meant"
+        },
+        {
+          "start": 171,
+          "end": 248,
+          "text": "Once I have the date, I can confirm whether I will bring the folding display."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 105,
+          "end": 127,
+          "text": "The gasket was intact."
+        },
+        {
+          "start": 176,
+          "end": 220,
+          "text": "it had a thin ring of grit on the lower edge"
+        },
+        {
+          "start": 222,
+          "end": 284,
+          "text": "We flushed the line for three minutes and saw no further grit."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A04",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 56,
+          "end": 123,
+          "text": "is an awkward sentence, yet I would keep it in the workshop packet."
+        },
+        {
+          "start": 175,
+          "end": 236,
+          "text": "It gives the narrator a stiff, comic distance from the night."
+        },
+        {
+          "start": 237,
+          "end": 306,
+          "text": "Without the surrounding page I cannot say whether that distance lasts"
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A05",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 93,
+              "end": 131,
+              "text": "the print shop needs the files by noon"
+            },
+            {
+              "start": 137,
+              "end": 169,
+              "text": "noon is their deadline for files"
+            }
+          ],
+          "reason": "The second clause repeats the same noon deadline without adding a condition or action.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.84,
+          "evidence": [
+            {
+              "start": 240,
+              "end": 300,
+              "text": "thanks again for carrying the frames home, which was helpful"
+            }
+          ],
+          "reason": "The closing evaluation repeats what the thanks already conveys; it can be tightened without changing the request.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 171,
+          "end": 233,
+          "text": "If you can send the three portraits, the shop can start today."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 75,
+          "text": "Interviewer: When did the garden start feeling like a neighborhood project?"
+        },
+        {
+          "start": 393,
+          "end": 463,
+          "text": "No, actually, it changed when people started leaving notes on the gate"
+        },
+        {
+          "start": 507,
+          "end": 573,
+          "text": "The garden was still small, but people were treating it as theirs."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_EXAMPLE"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A07",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.84,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 371,
+          "end": 484,
+          "text": "The regional report describes the stations, but it does not identify the comparison set behind that last ranking."
+        },
+        {
+          "start": 485,
+          "end": 548,
+          "text": "The physical mechanism, however, does not depend on the ranking"
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A08",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 50,
+          "end": 97,
+          "text": "Every morning Celia moved it to dust beneath it"
+        },
+        {
+          "start": 275,
+          "end": 352,
+          "text": "She read the first line standing up. Then she sat down and finished the page."
+        },
+        {
+          "start": 513,
+          "end": 554,
+          "text": "Celia asked whether she had time to talk."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A09",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 31,
+              "text": "The exhibition opens on 18 May."
+            },
+            {
+              "start": 395,
+              "end": 457,
+              "text": "The opening is on 18 May, which gives us a week after hanging."
+            },
+            {
+              "start": 614,
+              "end": 659,
+              "text": "We should tell volunteers the date is 18 May."
+            }
+          ],
+          "reason": "The opening date recurs three times; the later scheduling and volunteer actions can retain their distinct purpose without restating it each time.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.94,
+          "evidence": [
+            {
+              "start": 32,
+              "end": 73,
+              "text": "We need the wall labels printed by 12 May"
+            },
+            {
+              "start": 680,
+              "end": 706,
+              "text": "Printing is due on 12 May."
+            }
+          ],
+          "reason": "The final printing sentence repeats the deadline already stated; the ownership and copy handoff add separate information.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.91,
+          "evidence": [
+            {
+              "start": 178,
+              "end": 224,
+              "text": "the gallery lights will be installed on 10 May"
+            },
+            {
+              "start": 337,
+              "end": 394,
+              "text": "After the lights are in, the works can be hung on 11 May."
+            },
+            {
+              "start": 547,
+              "end": 613,
+              "text": "So the electrician is coming on 10 May, then hanging is on 11 May."
+            }
+          ],
+          "reason": "The final sentence repeats the lighting and hanging sequence that the preceding schedule has already established.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 458,
+          "end": 546,
+          "text": "Last month we considered 14 May, but that date was dropped when the lighting work moved."
+        },
+        {
+          "start": 707,
+          "end": 766,
+          "text": "The volunteer note needs to go out by 6 May; Priya owns it."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A10",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.92,
+          "evidence": [
+            {
+              "start": 53,
+              "end": 89,
+              "text": "We should tell everyone it is booked"
+            },
+            {
+              "start": 130,
+              "end": 201,
+              "text": "I have not heard from the hall manager since I asked about availability"
+            },
+            {
+              "start": 417,
+              "end": 502,
+              "text": "Before that, perhaps someone could confirm the date and whether the deposit was paid."
+            },
+            {
+              "start": 503,
+              "end": 578,
+              "text": "I will draft a note saying the hall is confirmed, unless we decide to wait."
+            }
+          ],
+          "reason": "The message urges a confirmed booking notice while reporting unresolved availability, date, and payment; its proposed action needs a consistent condition before sending.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 579,
+          "end": 618,
+          "text": "If we wait, people may make other plans"
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "Confirmation of hall availability, event date, and deposit status is needed before a factual invitation can be sent."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A11",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A13",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A15",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A16",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A17",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A19",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A20",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.82,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MINOR",
+          "confidence": 0.82,
+          "evidence": [
+            {
+              "start": 234,
+              "end": 300,
+              "text": "Last June I drove. I thought of him each time I opened the cooler."
+            },
+            {
+              "start": 559,
+              "end": 636,
+              "text": "When I drove last June, I used the same route and stopped at the same bakery."
+            },
+            {
+              "start": 729,
+              "end": 829,
+              "text": "We played cards at the lake last June. My mother complained about the wind, and I opened the cooler."
+            }
+          ],
+          "reason": "The later paragraphs repeat the already established drive, card game, and cooler detail before advancing the narrator’s uncertainty. A light trim would keep the recurring memory and the new emotional turn.",
+          "counterevidence": [
+            {
+              "start": 892,
+              "end": 977,
+              "text": "People had asked why he was not there, and I did not have an answer I wanted to give."
+            },
+            {
+              "start": 1238,
+              "end": 1289,
+              "text": "Or perhaps driving it myself was what made it ours."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A21",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 118,
+              "end": 226,
+              "text": "You said the colors looked right, which is useful, and I appreciate you taking the time to check the colors."
+            }
+          ],
+          "reason": "The appreciation repeats the same color check within one sentence; one acknowledgment would carry the point.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 671,
+              "end": 769,
+              "text": "but we have a drawing ready if we need it. We can use the drawing if the release is not available."
+            }
+          ],
+          "reason": "The second sentence restates the drawing fallback already given in the first; it adds no condition or action.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MINOR",
+          "confidence": 0.92,
+          "evidence": [
+            {
+              "start": 173,
+              "end": 226,
+              "text": "I appreciate you taking the time to check the colors."
+            },
+            {
+              "start": 822,
+              "end": 852,
+              "text": "and thanks again for checking."
+            },
+            {
+              "start": 1095,
+              "end": 1137,
+              "text": "Thanks again for the quick look yesterday."
+            }
+          ],
+          "reason": "Three acknowledgments of the same review recur across the email. Keeping one would preserve the courteous tone while reducing repetition.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A22",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A23",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A24",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.87,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 61,
+              "text": "The lab should keep the new sensor in place for another week."
+            },
+            {
+              "start": 792,
+              "end": 850,
+              "text": "The old sensor was reading high; we replaced it on Monday."
+            },
+            {
+              "start": 1214,
+              "end": 1331,
+              "text": "The sensor should stay for another week; the operator can continue taking a paired handheld measurement each morning."
+            },
+            {
+              "start": 241,
+              "end": 340,
+              "text": "The sensor was installed on Monday at the north outlet, where the old sensor had been reading high."
+            }
+          ],
+          "reason": "The recommendation and old-sensor history are each stated twice across sections. Keep the measurements, wash-cycle pattern, and next-step conditions while removing the repeated propositions.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A25",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 874,
+          "end": 987,
+          "text": "If people disagree about an old shop name or a path, we can write both versions down and check the archive later."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A26",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1045,
+          "end": 1090,
+          "text": "She said the lock had been changed years ago."
+        },
+        {
+          "start": 1121,
+          "end": 1206,
+          "text": "The key could open nothing now, but he left it where she had placed it until morning."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A28",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 2600,
+          "end": 2719,
+          "text": "A shirt on my aunt's chair seemed careless; a shirt on the chair in her hallway would have seemed like life continuing."
+        },
+        {
+          "start": 4199,
+          "end": 4293,
+          "text": "I cannot make that ordinary possibility into a secret affection by looking harder at the wood."
+        },
+        {
+          "start": 4679,
+          "end": 4760,
+          "text": "Once, after a long day, I put a loaf of bread on it while I searched for my keys."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A29",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.86,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.88,
+          "evidence": [
+            {
+              "start": 79,
+              "end": 234,
+              "text": "Visitors have asked for more about how the looms worked, especially when the room is crowded and the volunteer at the doorway cannot answer every question."
+            },
+            {
+              "start": 3072,
+              "end": 3232,
+              "text": "The audio guide is intended to explain the loom when a volunteer is absent, and four short tracks should answer the questions visitors now bring to the doorway."
+            },
+            {
+              "start": 4679,
+              "end": 4796,
+              "text": "The main purpose of the audio guide is to make the loom demonstration understandable when a volunteer is not present."
+            }
+          ],
+          "reason": "The visitor need and purpose recur in the opening, decision section, and later track section. The repeats carry the same justification while the plan advances elsewhere.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "MECHANICAL_STRUCTURE",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.84,
+          "evidence": [
+            {
+              "start": 2697,
+              "end": 2789,
+              "text": "The immediate decision is to authorize the 240 dollar budget and let Maya begin the scripts."
+            },
+            {
+              "start": 3369,
+              "end": 3416,
+              "text": "Audio quality is the largest practical concern."
+            },
+            {
+              "start": 4679,
+              "end": 4796,
+              "text": "The main purpose of the audio guide is to make the loom demonstration understandable when a volunteer is not present."
+            },
+            {
+              "start": 6009,
+              "end": 6044,
+              "text": "The proposed budget is 240 dollars."
+            }
+          ],
+          "reason": "Decision, production, purpose and track contents, and the budget are separated and out of working order. Their dependencies and repeated rationale require a coordinated reordering across paragraphs, with the budget beside its authorization.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 277,
+          "end": 337,
+          "text": "This notice does not change emergency evacuation procedures."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B02",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 111,
+              "end": 226,
+              "text": "Attach the signed slip, then mark the request received. Attach the signed slip before marking the request received."
+            }
+          ],
+          "reason": "The adjacent instructions specify the same sequence twice. One can be removed without losing the prerequisite or changing the damaged-item exception.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 156,
+          "end": 233,
+          "text": "The group deferred the break-room shelf request until the next budget review."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B04",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 94,
+          "end": 156,
+          "text": "The desk can take forms but cannot review them while you wait."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B05",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.82,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.9,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 45,
+              "text": "The pilot is ready for the next conversation."
+            },
+            {
+              "start": 169,
+              "end": 234,
+              "text": "although the open items may determine whether the pilot is ready."
+            }
+          ],
+          "reason": "The first sentence uses ready for a discussion while the later clause uses ready for launch. Clarify the first reference to keep the two states distinct without resolving the open decision.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.84,
+          "evidence": [
+            {
+              "start": 46,
+              "end": 108,
+              "text": "We have a list of open items and an owner meeting on Thursday."
+            },
+            {
+              "start": 314,
+              "end": 373,
+              "text": "Ownership of the final decision will be discussed Thursday."
+            }
+          ],
+          "reason": "The Thursday meeting and the pending ownership discussion can be stated together; the later sentence adds only which issue is pending.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B09",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 48,
+              "end": 99,
+              "text": "Requests are reviewed by the route team on Mondays."
+            },
+            {
+              "start": 392,
+              "end": 425,
+              "text": "Requests are reviewed on Mondays."
+            },
+            {
+              "start": 533,
+              "end": 576,
+              "text": "The route team reviews requests on Mondays."
+            }
+          ],
+          "reason": "The same Monday review timing recurs across the three answers without adding a distinct condition; one statement can carry that shared timing.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MINOR",
+          "confidence": 0.87,
+          "evidence": [
+            {
+              "start": 156,
+              "end": 215,
+              "text": "Submit the address and cart number through the service form"
+            },
+            {
+              "start": 338,
+              "end": 391,
+              "text": "The service form asks for an address and cart number."
+            }
+          ],
+          "reason": "The second answer repeats the form fields already given in the first; retain the damage-specific requirement while removing the duplicate fields.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B11",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B14",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.85,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.92,
+          "evidence": [
+            {
+              "start": 210,
+              "end": 292,
+              "text": "Before production, however, the pilot will tell us which messages need adjustment."
+            },
+            {
+              "start": 1095,
+              "end": 1168,
+              "text": "The pilot is valuable because it can show which messages need adjustment."
+            },
+            {
+              "start": 1502,
+              "end": 1608,
+              "text": "Until then, teams can prepare for rollout while treating the pilot as the stage that determines readiness."
+            }
+          ],
+          "reason": "The pilot's role in adjusting messages is restated across the opening, third, and closing sections instead of advancing the decision; the repeated rationale is woven through the argument.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.85,
+          "evidence": [
+            {
+              "start": 157,
+              "end": 209,
+              "text": "We should therefore prepare the production schedule."
+            },
+            {
+              "start": 293,
+              "end": 372,
+              "text": "That is why the production schedule should be circulated now as a working plan."
+            },
+            {
+              "start": 1262,
+              "end": 1359,
+              "text": "The next meeting should decide whether to circulate the schedule and whether the pilot can begin."
+            }
+          ],
+          "reason": "The opening urges circulation now while the ending leaves circulation for the next meeting; the argument needs a coherent distinction between preparation and the pending decision.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "RESTATES",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B15",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B17",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 644,
+              "end": 770,
+              "text": "If a plan changes, the unit contact should tell the clerk as soon as the change is known, so the clerk knows about the change."
+            }
+          ],
+          "reason": "The final clause repeats the purpose already expressed by telling the clerk; removing it preserves the timing and action.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B18",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.83,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B19",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": false,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1102,
+          "end": 1207,
+          "text": "At the end of the day, the clerk collects all displayed lists and places them in the secure disposal bin."
+        },
+        {
+          "start": 87,
+          "end": 186,
+          "text": "The clerk compares the list with the room schedule and marks any case assigned to a different room."
+        }
+      ],
+      "brakeReason": "The first phrase specifies when disposal occurs. Repeating 'the clerk' keeps the responsible role explicit in a sequence where a second clerk and supervisor also act; these are useful procedural cues.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B20",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 325,
+              "end": 376,
+              "text": "The desk will guarantee delivery within a few days."
+            },
+            {
+              "start": 521,
+              "end": 639,
+              "text": "The training desk has not published a turnaround time, so requesters with a deadline should mention it in their email."
+            }
+          ],
+          "reason": "The delivery guarantee conflicts with the stated absence of a published turnaround time; clarify the timing claim without inventing a deadline.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B21",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B22",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.86,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.89,
+          "evidence": [
+            {
+              "start": 566,
+              "end": 714,
+              "text": "The caretaker has a quote for a standard reel and will obtain a second quote for a wall-mounted model. It should be sent to the treasurer by Friday."
+            }
+          ],
+          "reason": "The pronoun could refer to either quote; name the second quote as the item due Friday.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B23",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.82,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.84,
+          "evidence": [
+            {
+              "start": 422,
+              "end": 556,
+              "text": "Recovery would like a clearer response after calling. A clearer response would help nurses decide when to prepare the patient to move."
+            },
+            {
+              "start": 1126,
+              "end": 1236,
+              "text": "This would give recovery a response after calling and would give short-stay a way to show that it is checking."
+            }
+          ],
+          "reason": "The need for a response and the benefit of giving one are stated again after the handoff is specified; trim the repeated benefit while retaining the actual handoff and approval status.",
+          "counterevidence": [
+            {
+              "start": 806,
+              "end": 1059,
+              "text": "The team discussed a proposed handoff: recovery posts a ready-to-transfer time in the board and calls short-stay; short-stay replies with either a bed number or an expected time for the next check; environmental services continues to mark the bed clean."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B25",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 524,
+              "end": 656,
+              "text": "Production should begin only after the full sample is reviewed, because changes to narration levels or pauses may affect every stop."
+            },
+            {
+              "start": 658,
+              "end": 767,
+              "text": "The team will publish the final guide on Monday even though the full sample review is the release checkpoint."
+            },
+            {
+              "start": 1371,
+              "end": 1543,
+              "text": "If the vendor's full sample arrives too late for review before the holiday period, the coordinator will propose a revised date rather than use the sample as the final file."
+            }
+          ],
+          "reason": "An unconditional Monday publication conflicts with the stated full-sample release checkpoint and later contingency; make the date conditional using the existing facts.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B27",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.88,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B28",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B29",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.8,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MINOR",
+          "confidence": 0.83,
+          "evidence": [
+            {
+              "start": 79,
+              "end": 174,
+              "text": "The current return slot is inside the main doors and can be used only while the branch is open."
+            },
+            {
+              "start": 3371,
+              "end": 3504,
+              "text": "The current slot cannot be used on Sunday because it is behind the doors. The new slot would be outside, so it can be used on Sunday."
+            },
+            {
+              "start": 2106,
+              "end": 2213,
+              "text": "Facilities obtained a quoted installed price of $8,400, including the slot, interior bin, and weather seal."
+            },
+            {
+              "start": 3505,
+              "end": 3614,
+              "text": "Facilities can install it in one closed Monday, and the quoted amount is within the capital maintenance line."
+            }
+          ],
+          "reason": "The decision rationale repeats the Sunday access and installed-cost points already established; compress that recap while preserving the recommendation and scanning notice.",
+          "counterevidence": [
+            {
+              "start": 3774,
+              "end": 3811,
+              "text": "These points support adding the slot."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "SUMMARIZES",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B30",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.98,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C05",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 64,
+              "text": "The east gate will stay closed while the delivery route changes."
+            },
+            {
+              "start": 65,
+              "end": 130,
+              "text": "Drivers should use the east gate until the new route is approved."
+            }
+          ],
+          "reason": "The instructions conflict about whether drivers may use the east gate before route approval; the correct gate cannot be determined from this text.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [
+        "Which entrance drivers should use while the east gate is closed and the new route awaits approval."
+      ],
+      "safeToRewriteWithoutNewFacts": false,
+      "paragraphRoles": [
+        "UNCLEAR"
+      ],
+      "rewriteFeasibility": "NEEDS_INFORMATION"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C07",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 97,
+              "text": "We packed the twelve replacement hinges this morning and handed the cartons to our shipping desk."
+            },
+            {
+              "start": 173,
+              "end": 243,
+              "text": "We packed them this morning and got them ready this morning, as noted."
+            }
+          ],
+          "reason": "The later sentence repeats the packing and timing already stated and adds no distinct shipping update.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C08",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C09",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.93,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 50,
+              "text": "We agreed to retire the old intake form on June 1."
+            },
+            {
+              "start": 348,
+              "end": 444,
+              "text": "June 1 is the date for the new form to become the default, not the date the old form disappears."
+            }
+          ],
+          "reason": "Retire suggests the old form ends on June 1, while the later clarification says it remains available; the opening can state the default change directly.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C11",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_EXAMPLE"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C12",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 530,
+              "end": 669,
+              "text": "The tool will open to patrons on the first Monday after staff practice, and we will definitely welcome bookings at the start of next month."
+            },
+            {
+              "start": 670,
+              "end": 751,
+              "text": "That last promise should not go to branch teams before the agreement is complete."
+            }
+          ],
+          "reason": "The definite next-month opening promise conflicts with the stated dependency on an unsigned agreement and the immediate warning against sharing that promise; remove the unsupported certainty.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C13",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 114,
+              "end": 220,
+              "text": "The form is where the visit details are entered, and it is the place the desk will look for those details."
+            }
+          ],
+          "reason": "The sentence repeats that the form holds visit details without adding a procedural step.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.92,
+          "evidence": [
+            {
+              "start": 896,
+              "end": 955,
+              "text": "The host stays with the guest in the workshop at all times."
+            },
+            {
+              "start": 956,
+              "end": 1028,
+              "text": "This is a requirement that applies throughout the entire workshop visit."
+            }
+          ],
+          "reason": "The preceding sentence already requires the host to stay with the guest in the workshop at all times.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.94,
+          "evidence": [
+            {
+              "start": 1144,
+              "end": 1238,
+              "text": "Please let the desk know about a lost badge as soon as you become aware that it has been lost."
+            }
+          ],
+          "reason": "The final clause repeats the lost-badge condition and can be shortened without changing the reporting instruction.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C14",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.88,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.91,
+          "evidence": [
+            {
+              "start": 146,
+              "end": 271,
+              "text": "The count matters because the current numbers drive purchasing decisions, and those decisions need a reliable starting point."
+            },
+            {
+              "start": 507,
+              "end": 574,
+              "text": "The count is intended to give purchasing a reliable starting point."
+            },
+            {
+              "start": 999,
+              "end": 1095,
+              "text": "The numbers will be useful to purchasing only if the count gives them a reliable starting point."
+            }
+          ],
+          "reason": "Three paragraphs repeat the same purchasing rationale. Keep the opening explanation and trim later restatements while preserving the count instructions.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C15",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 548,
+          "end": 625,
+          "text": "Keep the order unless a participant naturally answers a later question early."
+        },
+        {
+          "start": 1023,
+          "end": 1125,
+          "text": "Record the participant's words for key moments, and put your own interpretation in a separate section."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C17",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 340,
+              "end": 413,
+              "text": "Training is the next thing that will happen next in the sequence of work."
+            }
+          ],
+          "reason": "The sentence repeats next and adds a redundant sequence phrase; the existing training plan can be stated directly.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 1027,
+              "end": 1116,
+              "text": "This arrangement is temporary for the period while the supply answer is being worked out."
+            }
+          ],
+          "reason": "The preceding sentences already define the temporary arrangement and its end condition; this sentence repeats that point.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C18",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.83,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.88,
+          "evidence": [
+            {
+              "start": 607,
+              "end": 716,
+              "text": "Because the comparison is small, we should schedule the production migration now so teams can plan around it."
+            },
+            {
+              "start": 774,
+              "end": 934,
+              "text": "We have not yet established whether those notes may be copied into the rehearsal environment, which roles can inspect them there, or who can authorize that use."
+            },
+            {
+              "start": 1331,
+              "end": 1455,
+              "text": "Once we know whether restricted notes can be used, we can decide which records to rehearse and which reviewers may see them."
+            }
+          ],
+          "reason": "The proposal to schedule production now is out of step with the unresolved rehearsal permissions and the later statement that the sample and reviewers depend on them. Clarify that the dates remain provisional.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C19",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 281,
+          "end": 428,
+          "text": "If that count looks wrong, cancel and contact support with the project identifier; do not repeat the operation until the discrepancy is understood."
+        },
+        {
+          "start": 1063,
+          "end": 1150,
+          "text": "The support team cannot currently promise to recover a package whose key has been lost."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C20",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.93,
+          "evidence": [
+            {
+              "start": 874,
+              "end": 938,
+              "text": "Write it more appropriately for everyone, whoever they might be."
+            }
+          ],
+          "reason": "This instruction is too vague to act on and repeats the uncertainty about the audience. The later advice to defer audience-specific examples and tone supplies a clearer direction.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING",
+        "ADDS_REASONING",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C22",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.84,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.88,
+          "evidence": [
+            {
+              "start": 354,
+              "end": 415,
+              "text": "The main decision is whether the library can handle the work."
+            },
+            {
+              "start": 578,
+              "end": 672,
+              "text": "A trial would show whether residents use the service and whether the lobby can hold the queue."
+            },
+            {
+              "start": 1389,
+              "end": 1466,
+              "text": "The purpose of the pilot is to find out if the library can handle the demand."
+            }
+          ],
+          "reason": "The last paragraph repeats the pilot purpose already established in the second paragraph. Trim that recap while retaining the recommendation, prerequisites, and committee action.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C23",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 997,
+          "end": 1124,
+          "text": "Eli: Added, and I corrected the checklist date. The gate contact asked us to use the west entrance and show our visitor passes."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C24",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "MECHANICAL_STRUCTURE",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 452,
+              "end": 496,
+              "text": "Reasons the guide is not ready for the pilot"
+            },
+            {
+              "start": 498,
+              "end": 698,
+              "text": "The only remaining work is to verify that the link to the holiday coverage schedule points to the current document. This is a routine link check, and it can be done before the guide is sent on Monday."
+            }
+          ],
+          "reason": "The heading says the guide is not ready, while the section describes a routine check before sending it. Change the heading to match the actual status.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C25",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 260,
+              "end": 289,
+              "text": "The preview is a preview only"
+            },
+            {
+              "start": 643,
+              "end": 733,
+              "text": "A restore action is recorded with your name and the time you performed the restore action."
+            },
+            {
+              "start": 1275,
+              "end": 1326,
+              "text": "which may be changes you do not want to bring back."
+            }
+          ],
+          "reason": "These phrases repeat their own terms without adding a distinct procedural detail. Tighten them while retaining the preview, audit record, and restore warnings.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C26",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.87,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.89,
+          "evidence": [
+            {
+              "start": 468,
+              "end": 569,
+              "text": "A hosted meal still counts toward the daily meal limit when the traveler claims other meals that day."
+            },
+            {
+              "start": 1005,
+              "end": 1073,
+              "text": "Travelers should list a hosted meal even if they did not pay for it."
+            },
+            {
+              "start": 1503,
+              "end": 1610,
+              "text": "Conference hosts sometimes pay for meals, so travelers should record them before calculating the daily cap."
+            }
+          ],
+          "reason": "The duty to record hosted meals and account for them in the daily cap is stated in three sections; the later explanation and $20 example can be kept while consolidating the repeated rule.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.84,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 111,
+              "text": "Managers can approve travel expenses up to $500 per trip. Expenses above that amount go to the department head."
+            },
+            {
+              "start": 621,
+              "end": 700,
+              "text": "The approval threshold applies to the total expense claim, not to each receipt."
+            },
+            {
+              "start": 1397,
+              "end": 1502,
+              "text": "Claims up to $500 end there. Claims over $500 move to the department head after the manager reviews them."
+            }
+          ],
+          "reason": "The $500 escalation rule recurs in the opening, claim example, and closing; one rule plus the total-claim clarification and example would carry the same information.",
+          "counterevidence": [
+            {
+              "start": 1345,
+              "end": 1396,
+              "text": "The first approval step for a claim is the manager."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 1611,
+          "end": 1672,
+          "text": "Claims should be submitted within fourteen days of returning."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C27",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1214,
+          "end": 1314,
+          "text": "A construction notice should follow only when the permit and contractor schedule are both confirmed."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C28",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 376,
+          "end": 494,
+          "text": "My comments below concern order, examples, and the distinction between an instruction and a reason for an instruction."
+        },
+        {
+          "start": 3258,
+          "end": 3328,
+          "text": "Please confirm which sequence is approved before we change either one."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C29",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.84,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.86,
+          "evidence": [
+            {
+              "start": 598,
+              "end": 668,
+              "text": "A window could be changed once, until 6 p.m. on the day before pickup."
+            },
+            {
+              "start": 2407,
+              "end": 2546,
+              "text": "A customer cannot change the window again online after using the control once, but the desk can still make an exception if capacity allows."
+            },
+            {
+              "start": 3760,
+              "end": 3904,
+              "text": "The service desk should receive a short script explaining that online changes are limited to one and must occur before 6 p.m. the preceding day."
+            },
+            {
+              "start": 4383,
+              "end": 4439,
+              "text": "The copy should state the one-change limit and deadline."
+            }
+          ],
+          "reason": "The same limit and deadline are restated across the feature description, confirmation behavior, training, and customer communication. Preserve the distinct audience actions while shortening repeated explanations.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MINOR",
+          "confidence": 0.8,
+          "evidence": [
+            {
+              "start": 1654,
+              "end": 1755,
+              "text": "Those depots use the capacity table reliably and together represent about a quarter of pickup orders."
+            },
+            {
+              "start": 3607,
+              "end": 3710,
+              "text": "The two depots are appropriate for a pilot because their teams already keep the capacity table current."
+            }
+          ],
+          "reason": "The second justification for choosing the pilot depots repeats the capacity-table rationale already given; the later training details can remain as separate actions.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 4559,
+          "end": 4795,
+          "text": "The go or no-go decision at the end of the pilot should use three measures: at least half of eligible changes completed online, no increase in missed pickups compared with the previous three weeks, and no unresolved audit discrepancies."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C30",
+    "review": {
+      "disposition": "SUBSTANTIVE_RECONSTRUCTION",
+      "confidence": 0.82,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.87,
+          "evidence": [
+            {
+              "start": 460,
+              "end": 575,
+              "text": "We should tell the branch managers that the discrepancy has been resolved enough for normal processing to continue."
+            },
+            {
+              "start": 3506,
+              "end": 3659,
+              "text": "It could state that the monthly export and access log have different identifier counts, that review is in progress, and that normal case entry continues."
+            },
+            {
+              "start": 4710,
+              "end": 4834,
+              "text": "Those tasks should be completed before a statement about affected records or a claim that the export is fit for the partner."
+            }
+          ],
+          "reason": "The proposed message starts with an unsupported resolution claim, then later calls for a pending-review notice and defers claims about affected records. The advice needs one consistent status and decision sequence across sections.",
+          "counterevidence": [
+            {
+              "start": 808,
+              "end": 935,
+              "text": "The status page alone cannot establish that the export contains every item, so any notice should be careful about what it says."
+            }
+          ]
+        },
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.83,
+          "evidence": [
+            {
+              "start": 2604,
+              "end": 2801,
+              "text": "Before sending anything, however, the records team needs to determine whether the current file is complete enough for that use and whether it contains any of the six records represented in the log."
+            },
+            {
+              "start": 3975,
+              "end": 4098,
+              "text": "For the Friday handoff, I suggest preparing the file now and sending it on schedule unless the engineer confirms a problem."
+            },
+            {
+              "start": 4261,
+              "end": 4346,
+              "text": "The handoff may need to wait for the classification, even if that delays the partner."
+            },
+            {
+              "start": 5094,
+              "end": 5183,
+              "text": "After that, we can decide what to tell managers and whether Friday's handoff can proceed."
+            }
+          ],
+          "reason": "The handoff advice alternates between verifying completeness before sending, defaulting to shipment unless a problem is confirmed, and waiting for classification. These competing recommendations should be reconciled into the stated review gate.",
+          "counterevidence": [
+            {
+              "start": 2802,
+              "end": 2885,
+              "text": "The memo should name a decision owner for the handoff, but none has been confirmed."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 2198,
+          "end": 2237,
+          "text": "We know only that the two lists differ."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_EXAMPLE"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D05",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D07",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": false,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 0,
+          "end": 136,
+          "text": "Our study group began with a practical question: could students who commute after evening classes use the campus library before closing?"
+        }
+      ],
+      "brakeReason": "The opening question states the practical issue clearly, and the subsequent sentences vary their length and function while moving from evidence to a bounded proposal. The cited rhythm is appropriate for this report.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D14",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D16",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D18",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.88,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D19",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_REASONING",
+        "ADDS_EXAMPLE"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.82,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E04",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.91,
+          "evidence": [
+            {
+              "start": 306,
+              "end": 352,
+              "text": "Gloves and bags will be at the check-in table."
+            },
+            {
+              "start": 398,
+              "end": 484,
+              "text": "At check-in, we will give everyone gloves and bags, and then divide into small groups."
+            }
+          ],
+          "reason": "The second sentence repeats the same supply and check-in instruction; it can keep the group-division step without restating the handout.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E05",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.88,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E07",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.87,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.86,
+          "evidence": [
+            {
+              "start": 136,
+              "end": 201,
+              "text": "Please fill any containers you may need before the shutoff begins"
+            },
+            {
+              "start": 547,
+              "end": 659,
+              "text": "We want everyone to have time to prepare, and filling containers in advance should make the interruption easier."
+            }
+          ],
+          "reason": "The later sentence repeats the preparation and container advice already given, without adding a new action or condition.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.85,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E11",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.87,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  }
+]

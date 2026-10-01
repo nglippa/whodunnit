@@ -1,0 +1,695 @@
+[
+  {
+    "id": "A01",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "A complete small observation; the recurrence of the kettle is purposeful."
+  },
+  {
+    "id": "A02",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "The meeting date is absent, but the email is an effective request rather than a flawed announcement."
+  },
+  {
+    "id": "A03",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "One ambiguous pronoun obscures which valve was checked; the rest gives a usable sequence."
+  },
+  {
+    "id": "A04",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "Quoted clumsy prose is the object of analysis, not the narrator’s own failure; the excerpt lacks context but the critique stands."
+  },
+  {
+    "id": "A05",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "Several small redundancies and a slightly tangled closing need modest edits; the request remains clear."
+  },
+  {
+    "id": "A06",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "The speaker’s qualification and correction are natural spoken rhythm, not an editorial defect."
+  },
+  {
+    "id": "A07",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "A single unsupported comparative claim needs qualification or a citation; the underlying explanation is coherent, and the specific study is not supplied."
+  },
+  {
+    "id": "A08",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "The story leaves the letter’s contents unknown by design; the action and emotional movement are legible."
+  },
+  {
+    "id": "A09",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "All needed dates and owners are present, but chronology repeatedly restarts and action items are buried across the memo."
+  },
+  {
+    "id": "A10",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "The message alternates between requesting and announcing a booking; the intended date and authorization are absent, so a safe full rewrite cannot settle the commitment."
+  },
+  {
+    "id": "A11",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Deliberate return to the porch marks a changed understanding; information is complete for the essay’s purpose."
+  },
+  {
+    "id": "A13",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Multiple minor repetitions and imprecise transitions invite line edits, while sequence and findings remain clear."
+  },
+  {
+    "id": "A15",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The writer clearly requests the missing incident detail and avoids announcing a resolution they cannot yet support."
+  },
+  {
+    "id": "A16",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Several answers circle and repeat, but the exchange has a clear arc; exact attendance counts are absent without blocking a modest edit."
+  },
+  {
+    "id": "A17",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "One decisive approval is unstated; the memo is otherwise well ordered, but publication cannot be safely directed without that approval."
+  },
+  {
+    "id": "A19",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The delayed mention of the emptied shop supplies a coherent reveal, while repeated sounds establish place."
+  },
+  {
+    "id": "A20",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The essay restarts its thesis and chronology across paragraphs; the reason for the brother’s absence is unknown but a reorganization can preserve that uncertainty."
+  },
+  {
+    "id": "A21",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The request is intelligible but padded with repeated thanks and hedges; the missing approval is explicit and should remain unresolved."
+  },
+  {
+    "id": "A22",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The interviewer asks one leading question that presumes motive; the rest is a coherent conversation with usable detail."
+  },
+  {
+    "id": "A23",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A missing regional comparison is acknowledged with appropriate limits; the core explanation stands on the described measurements."
+  },
+  {
+    "id": "A24",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The note has all operational facts but interleaves setup, results, and decisions in a way that obscures the recommendation."
+  },
+  {
+    "id": "A25",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A concise but fully specified coordination email; the spare logistical detail serves the recipient."
+  },
+  {
+    "id": "A26",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Several flat repeats and awkward transitions invite modest revision; the plot remains legible, while the origin of the key is intentionally withheld."
+  },
+  {
+    "id": "A28",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "A sustained reflection moves from a specific object through family memory to a modest present decision. The aunt’s private reasons remain unknown without impairing the essay."
+  },
+  {
+    "id": "A29",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "The proposal repeatedly restarts the same decision and spreads owners, dates, and dependencies across the document. Every operational fact needed to reorganize it is present, but isolated sentence edits would not fix the progression."
+  },
+  {
+    "id": "B01",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "The notice is clear as a holding policy; the effective date is intentionally absent and must be supplied before implementation."
+  },
+  {
+    "id": "B02",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "One duplicated instruction interrupts an otherwise usable sequence; all required facts are present."
+  },
+  {
+    "id": "B03",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "The clipped note style is conventional and the decisions and owner are clear."
+  },
+  {
+    "id": "B04",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "Several small wording ambiguities need editing; the missing office-hours end time is a separate factual gap."
+  },
+  {
+    "id": "B05",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "The memo circles among status, release, and ownership without an actionable progression; the release criterion and decision authority are absent."
+  },
+  {
+    "id": "B06",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "A concise handoff instruction is coherent; the receiving team's callback window remains unspecified."
+  },
+  {
+    "id": "B09",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "Each answer is grammatical, but the answers are organized by internal workflow rather than the questions, repeating prerequisites and burying the actual response; all facts needed to reorganize are present."
+  },
+  {
+    "id": "B10",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "A deliberate, narrow decision memo: purpose, choice, evidence, and next step align without unnecessary polishing."
+  },
+  {
+    "id": "B11",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The note distinguishes a workflow exception from a clinical decision and gives complete routing details; its formal tone is appropriate."
+  },
+  {
+    "id": "B12",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The notes have one misplaced paragraph about room access; the unresolved vendor date is a factual gap rather than a prose defect."
+  },
+  {
+    "id": "B14",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The memo alternates between a pilot plan and a production commitment, repeats the same readiness claim, and never establishes which decision is being sought; an acceptance threshold is missing."
+  },
+  {
+    "id": "B15",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The FAQ explicitly limits its answer to known rules; eligibility criteria are absent and must not be inferred."
+  },
+  {
+    "id": "B17",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A few recurring timing phrases and unclear references need modest edits; the handoff remains usable. Weekend coverage contact is unresolved."
+  },
+  {
+    "id": "B18",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The document states a temporary rule, a proposed permanent rule, and an exception in shifting order; a safe final policy cannot be assembled without the missing approval threshold and effective date."
+  },
+  {
+    "id": "B19",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A complete exception handling procedure with deliberate repetition of identifiers for operational clarity."
+  },
+  {
+    "id": "B20",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A single answer uses the word guaranteed where the process only supports an estimate; the underlying actual turnaround time is unknown."
+  },
+  {
+    "id": "B21",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The memo cleanly separates an approved trial from an unpriced expansion; the expansion cost remains unknown."
+  },
+  {
+    "id": "B22",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The minutes are ordered and usable but contain several small ambiguous referents; the unresolved budget figure prevents a firm procurement decision."
+  },
+  {
+    "id": "B23",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The operational facts are present, but the note restates the same handoff problem through three teams before specifying the route, so a structural rewrite is needed."
+  },
+  {
+    "id": "B25",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "One timeline sentence conflicts with the stated checkpoint; the vendor's final sample date is still pending."
+  },
+  {
+    "id": "B27",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Minutes mingle proposed actions, decisions, and background across topics; the missing cost ceiling blocks a safe final procurement recommendation."
+  },
+  {
+    "id": "B28",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "A long but coherent policy explains scope, ordinary route, exceptions, recordkeeping, and review. Repeated terms are purposeful in a compliance workflow."
+  },
+  {
+    "id": "B29",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "All facts for a practical decision are present, but the memo repeatedly returns to the same claims, delays the decision until late, and mixes evidence, action, and historical context. Isolated edits would preserve the failed progression."
+  },
+  {
+    "id": "B30",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "The note interleaves two incompatible handoff routes and repeatedly reopens the same decision. The identity of the accountable receiving team and the escalation interval are absent, so a safe full repair cannot choose a route or deadline."
+  },
+  {
+    "id": "C01",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "Compact coordination with clear owner, time, and dependency."
+  },
+  {
+    "id": "C02",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "The note is usable as a status notice, but no replacement date is known; a complete delivery plan cannot be written from it."
+  },
+  {
+    "id": "C05",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "VERY_SHORT",
+    "creatorRationale": "The sequence conflates approval, notice, and action; the missing decision owner and effective time prevent a safe definitive repair."
+  },
+  {
+    "id": "C06",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "Quoted weak prose is analyzed clearly; the source text itself is coherent."
+  },
+  {
+    "id": "C07",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "A single repeated clause mars an otherwise useful update; carrier acceptance time is not available."
+  },
+  {
+    "id": "C08",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "Multiple sentences are mildly wordy, while the order and facts are clear."
+  },
+  {
+    "id": "C09",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "All facts are present, but decisions and pending work are interleaved so the apparent conclusion reverses twice."
+  },
+  {
+    "id": "C10",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "SHORT",
+    "creatorRationale": "Clear conditional guidance; the future vendor retention period is unknown and honestly marked."
+  },
+  {
+    "id": "C11",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The distinction between drafts and submitted requests is complete and well sequenced."
+  },
+  {
+    "id": "C12",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "One paragraph wrongly implies a launch date is fixed; contract signature and therefore the date are unavailable."
+  },
+  {
+    "id": "C13",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Several wordy or repetitive phrasings need modest tightening; steps and conditions remain sound."
+  },
+  {
+    "id": "C14",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Individual sentences are clear, but the memo repeatedly restates the goal and splits a single operational procedure across sections."
+  },
+  {
+    "id": "C15",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The request is complete for the present stage while the future sample size is explicitly unresolved."
+  },
+  {
+    "id": "C17",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Several modestly awkward passages; vendor capacity is unknown, so a firm rollout schedule cannot safely be inserted."
+  },
+  {
+    "id": "C18",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The note jumps among dependent phases and treats an unresolved data authorization as if migration could be scheduled; the authorization scope and owner are absent."
+  },
+  {
+    "id": "C19",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Accurate interim guidance; the encryption-key recovery procedure is unknown, so it cannot be supplied."
+  },
+  {
+    "id": "C20",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The critique is sound except for one vague recommendation; the target audience is unavailable."
+  },
+  {
+    "id": "C22",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "The proposal cycles through benefits, cost, and pilot design without establishing a decision; missing staffing capacity limits a final recommendation."
+  },
+  {
+    "id": "C23",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Natural back-and-forth resolves a misunderstanding without harming the source quality."
+  },
+  {
+    "id": "C24",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A single heading misstates the verdict while the body gives consistent evidence."
+  },
+  {
+    "id": "C25",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Instructions are in sound order but several phrases are redundant or indirect."
+  },
+  {
+    "id": "C26",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "Facts and thresholds are provided, but exceptions are introduced before the base rule and then reintroduced as if new."
+  },
+  {
+    "id": "C27",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "MEDIUM",
+    "creatorRationale": "A clear account of current status and risk; missing regulator response is appropriately left unresolved."
+  },
+  {
+    "id": "C28",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "A coherent long-form critique that contains quoted weak prose without inheriting its defects; audience research remains pending."
+  },
+  {
+    "id": "C29",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "All decision facts are present, but the document repeatedly circles through rationale, schedule, and risks, delaying its decision and obscuring dependencies."
+  },
+  {
+    "id": "C30",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "LONG",
+    "creatorRationale": "The draft moves repeatedly between findings and commitments while treating an unverified exposure boundary as settled; the affected-record set and authorization for notice are absent."
+  },
+  {
+    "id": "D01",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "very short",
+    "creatorRationale": "A complete, restrained handoff with no substantive writing problem."
+  },
+  {
+    "id": "D02",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "very short",
+    "creatorRationale": "Figurative, slightly formal prose serves a clear reflective purpose."
+  },
+  {
+    "id": "D03",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "very short",
+    "creatorRationale": "The procedure reads cleanly; the exact review date is absent but the next action is still clear."
+  },
+  {
+    "id": "D05",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "short",
+    "creatorRationale": "Specific action, deadline, and intentional uncertainty about later speaking times are well organized."
+  },
+  {
+    "id": "D06",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "short",
+    "creatorRationale": "Calibrated claims and an unusual but legitimate distinction between perception and measured sound."
+  },
+  {
+    "id": "D07",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "short",
+    "creatorRationale": "Quiet personal account with a controlled shift from anticipation to a concrete action."
+  },
+  {
+    "id": "D09",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "medium",
+    "creatorRationale": "A clear qualified recommendation; staffing cost is still missing for adoption, independent of prose quality."
+  },
+  {
+    "id": "D10",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "medium",
+    "creatorRationale": "Several useful updates compete for attention; the main handover remains retrievable."
+  },
+  {
+    "id": "D12",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "medium",
+    "creatorRationale": "An atypical recipe framing develops through specific memories to a satisfying present action."
+  },
+  {
+    "id": "D14",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "medium",
+    "creatorRationale": "Formal and detailed status note distinguishes available access from undecided publication without treating future review as a defect."
+  },
+  {
+    "id": "D16",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "medium",
+    "creatorRationale": "Unusual but disciplined observational prose matches a current status purpose; future survey details are not needed."
+  },
+  {
+    "id": "D18",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "long",
+    "creatorRationale": "A complete and credible workshop account whose repeated explanation of the report structure and limitations slightly slows its central request."
+  },
+  {
+    "id": "D19",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "long",
+    "creatorRationale": "Extended reflective prose develops from a path closure to an earned practice of observation."
+  },
+  {
+    "id": "E01",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "under 100 words",
+    "creatorRationale": "A clear current-state update works without the unsettled date of a later visit."
+  },
+  {
+    "id": "E02",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "under 100 words",
+    "creatorRationale": "One missing location prevents the invitation from fulfilling its purpose; the surrounding copy is usable."
+  },
+  {
+    "id": "E03",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "under 100 words",
+    "creatorRationale": "A complete, concise reply with the needed dates and action."
+  },
+  {
+    "id": "E04",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "100–400 words",
+    "creatorRationale": "Repeated directions and loose ordering occur throughout, while an unknown later attendance total is not needed to send the current coordination message."
+  },
+  {
+    "id": "E05",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "over 400 words",
+    "creatorRationale": "The narrative repeatedly circles its activities but cannot make the requested outcome claim without the absent post-program measurements."
+  },
+  {
+    "id": "E06",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "over 400 words",
+    "creatorRationale": "The piece has ample concrete facts but buries its proposal in repeated background and scattered logistics; it can be reorganized and compressed without research."
+  },
+  {
+    "id": "E07",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "100–400 words",
+    "creatorRationale": "Several small repetitions can be tidied, but the notice cannot give residents the start time needed to plan water use on the shutoff day."
+  },
+  {
+    "id": "E09",
+    "requestedScope": "CLEAN",
+    "requestedInformation": "CRITICAL_INFORMATION_MISSING",
+    "requestedLengthBand": "100–400 words",
+    "creatorRationale": "The prose is clear, but a decision request about choosing a vendor lacks the price comparison needed for the committee to decide."
+  },
+  {
+    "id": "E10",
+    "requestedScope": "SUBSTANTIVE_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "over 400 words",
+    "creatorRationale": "The long update repeats program setup and hides current actions; existing facts support a full structural edit even though next season’s enrollment forecast is unknown."
+  },
+  {
+    "id": "E11",
+    "requestedScope": "LOCAL_PROBLEM",
+    "requestedInformation": "PARTIALLY_MISSING_INFORMATION",
+    "requestedLengthBand": "100–400 words",
+    "creatorRationale": "One sentence needs clarification of pronoun reference; an unknown later competition result is irrelevant to announcing the current exhibition."
+  },
+  {
+    "id": "E12",
+    "requestedScope": "DISTRIBUTED_LIGHT_PROBLEM",
+    "requestedInformation": "SUFFICIENT_INFORMATION",
+    "requestedLengthBand": "100–400 words",
+    "creatorRationale": "The steps are complete but mildly repetitive and out of sequence in several places; they can be tightened using the stated procedure."
+  }
+]

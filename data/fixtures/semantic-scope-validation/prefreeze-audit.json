@@ -1,0 +1,61 @@
+{
+  "creatorCount": 5,
+  "draftCount": 122,
+  "excludedBeforeFreeze": [
+    "A12",
+    "A14",
+    "A18",
+    "A27",
+    "A30",
+    "B07",
+    "B08",
+    "B13",
+    "B16",
+    "B24",
+    "B26",
+    "C03",
+    "C04",
+    "C16",
+    "C21",
+    "D04",
+    "D08",
+    "D11",
+    "D13",
+    "D15",
+    "D17",
+    "D20",
+    "E08"
+  ],
+  "exclusionReasons": {
+    "implausible_or_planted_expression": [
+      "A12",
+      "A18",
+      "A27",
+      "B07",
+      "B08",
+      "B13",
+      "B26",
+      "C03",
+      "C04",
+      "C21",
+      "D13",
+      "D17",
+      "D20"
+    ],
+    "internal_conflict_or_unreliable_setup": [
+      "A14",
+      "B16",
+      "C16",
+      "D04",
+      "D08",
+      "D15",
+      "E08"
+    ],
+    "overt_meta_or_genre_mismatch": [
+      "A30",
+      "B24",
+      "D11"
+    ]
+  },
+  "note": "Some requested creator labels are debatable; blind editorial annotations, not creator intentions, determine evaluation labels."
+}
