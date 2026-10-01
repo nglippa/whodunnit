@@ -140,7 +140,15 @@ export const RECONSTRUCTION_V12 = define({
   prompt: { id: "reconstruct", version: 8 },
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12];
+/** V12 editor with exact objective-delta verification; V11/V12 remain pinned. */
+export const RECONSTRUCTION_V13 = define({
+  ...RECONSTRUCTION_V12,
+  version: 13,
+  name: "Reconstruction v13 (exact objective deltas)",
+  description: "V12 editor with claim-local exact objective authorization before unchanged V11 semantic review, repair, and fallback.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12, RECONSTRUCTION_V13];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

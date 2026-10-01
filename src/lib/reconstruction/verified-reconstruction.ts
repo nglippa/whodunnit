@@ -13,7 +13,8 @@ import { wordingRetention } from "@/lib/evaluation/measures";
 import { buildRewritePlan } from "./rewrite-plan";
 import type { SemanticReviewV3 } from "./semantic-review";
 import { verifyObjectiveAware } from "./objective-aware-verification";
-import { RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12 } from "./strategies";
+import { verifyExactObjectiveDeltas } from "./exact-delta-verification";
+import { RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12, RECONSTRUCTION_V13 } from "./strategies";
 
 const spanSchema = z.object({ start: z.number().int().nonnegative(), end: z.number().int().positive(), text: z.string().min(1).max(300) }).strict();
 export const candidateReviewSchemaV10 = z.object({
@@ -88,6 +89,8 @@ export interface VerifiedTraceV11 extends Omit<VerifiedTraceV10, "strategy" | "f
 export interface VerifiedResultV11 extends Omit<VerifiedResultV10, "trace"> { trace: VerifiedTraceV11 }
 export interface VerifiedTraceV12 extends Omit<VerifiedTraceV11, "strategy"> { strategy: "reconstruction-v12" }
 export interface VerifiedResultV12 extends Omit<VerifiedResultV10, "trace"> { trace: VerifiedTraceV12 }
+export interface VerifiedTraceV13 extends Omit<VerifiedTraceV11, "strategy"> { strategy: "reconstruction-v13" }
+export interface VerifiedResultV13 extends Omit<VerifiedResultV10, "trace"> { trace: VerifiedTraceV13 }
 
 function assertFree(caller: StructuredCaller | undefined, confirmed: boolean): void {
   if (caller?.info.mode === "live" && !(confirmed && caller.info.provider === "account-backed"))
@@ -143,8 +146,13 @@ export async function runObjectiveAwareEditorReconstruction(requestRaw: Reconstr
   return runVerifiedCore(requestRaw, objectiveRaw, config, 12) as Promise<VerifiedResultV12>;
 }
 
+/** V13 uses the same editor and semantic verifier as V12; only exact-delta matching differs. */
+export async function runExactDeltaReconstruction(requestRaw: ReconstructionRequest, objectiveRaw: string, config: VerifiedEditorConfig): Promise<VerifiedResultV13> {
+  return runVerifiedCore(requestRaw, objectiveRaw, config, 13) as Promise<VerifiedResultV13>;
+}
+
 async function runVerifiedCore(requestRaw: ReconstructionRequest, objectiveRaw: string, config: VerifiedEditorConfig,
-  version: 10 | 11 | 12): Promise<VerifiedResultV10 | VerifiedResultV11 | VerifiedResultV12> {
+  version: 10 | 11 | 12 | 13): Promise<VerifiedResultV10 | VerifiedResultV11 | VerifiedResultV12 | VerifiedResultV13> {
   const request = reconstructionRequestSchema.parse(requestRaw);
   const objective = objectiveRaw.trim();
   if (!objective || objective.length > 500) throw new Error("An explicit editing objective of at most 500 characters is required.");
@@ -154,22 +162,22 @@ async function runVerifiedCore(requestRaw: ReconstructionRequest, objectiveRaw: 
   if (config.verifier && config.verifier === config.editor) throw new Error("V10 requires a separate verifier caller.");
   const started = Date.now();
   const source = request.source;
-  const strategy = version === 12 ? RECONSTRUCTION_V12 : version === 11 ? RECONSTRUCTION_V11 : RECONSTRUCTION_V10;
+  const strategy = version === 13 ? RECONSTRUCTION_V13 : version === 12 ? RECONSTRUCTION_V12 : version === 11 ? RECONSTRUCTION_V11 : RECONSTRUCTION_V10;
   const profile = request.refinement ? applyRefinement(request.profile, request.refinement.change) : request.profile;
   const plan = buildRewritePlan({ source, profile, current: request.refinement?.current, refinement: request.refinement?.change,
     voiceprint: request.voiceprint, protectedPhrases: request.protectedPhrases }, strategy);
   const verifyContext = { removableSpans: plan.removableSpans, licenses: plan.refinementDelta?.licenses, protectedPhrases: plan.protectedPhrases };
   const prompt = getPrompt(strategy.prompt).system;
-  const verify = (text: string) => version !== 10
-    ? verifyObjectiveAware(source, text, objective, profile, verifyContext)
-    : { verification: verifyDeterministic(source, text, profile, verifyContext), authorized: [] };
+  const verify = (text: string) => version === 13 ? verifyExactObjectiveDeltas(source, text, objective, profile, verifyContext)
+    : version !== 10 ? verifyObjectiveAware(source, text, objective, profile, verifyContext)
+      : { verification: verifyDeterministic(source, text, profile, verifyContext), authorized: [] };
   const timeoutMs = config.timeoutMs ?? 20_000;
   let candidate: string | null = null;
   let candidateVerification: VerificationResult | null = null;
   let review: CandidateReviewV10 | null = null;
   let editorMs = 0, verificationMs = 0, repairMs = 0;
   const metas: CallMeta[] = [];
-  const trace = { strategy: version === 12 ? "reconstruction-v12" : version === 11 ? "reconstruction-v11" : "reconstruction-v10", editor: config.editor.info.model ?? config.editor.info.provider,
+  const trace = { strategy: version === 13 ? "reconstruction-v13" : version === 12 ? "reconstruction-v12" : version === 11 ? "reconstruction-v11" : "reconstruction-v10", editor: config.editor.info.model ?? config.editor.info.provider,
     verifier: config.verifier ? config.verifier.info.model ?? config.verifier.info.provider : null,
     objectiveType: kindForObjective(objective), candidateGenerated: false, candidateUnchanged: false, deterministicVerdict: null,
     semanticVerificationRequested: false, semanticVerdict: null, repairRequested: false, repairAccepted: false,
@@ -178,9 +186,9 @@ async function runVerifiedCore(requestRaw: ReconstructionRequest, objectiveRaw: 
     wordEditDistance: { candidate: null, final: 0 },
     changeCount: 0, voiceVerdict: null, tokens: { input: null, output: null },
     latencyMs: { editor: 0, verification: 0, repair: 0, total: 0 }, estimatedCostUsd: null,
-    ...(version !== 10 ? { authorizedChangeCount: 0, repairClassification: null } : {}) } as VerifiedTraceV10 | VerifiedTraceV11 | VerifiedTraceV12;
+    ...(version !== 10 ? { authorizedChangeCount: 0, repairClassification: null } : {}) } as VerifiedTraceV10 | VerifiedTraceV11 | VerifiedTraceV12 | VerifiedTraceV13;
 
-  const finish = (text: string, outcome: Outcome, reason: FallbackReason | "verifier-malformed" | null): VerifiedResultV10 | VerifiedResultV11 | VerifiedResultV12 => {
+  const finish = (text: string, outcome: Outcome, reason: FallbackReason | "verifier-malformed" | null): VerifiedResultV10 | VerifiedResultV11 | VerifiedResultV12 | VerifiedResultV13 => {
     trace.outcome = outcome; trace.fallbackReason = reason; trace.finalChars = text.length; trace.finalWords = words(text).length;
     if (trace.strategy !== "reconstruction-v10" && trace.repairRequested)
       trace.repairClassification = outcome === "repaired" ? text === source ? "SAFE_REVERSION" : "USEFUL_REPAIR" : "FAILED_REPAIR";
@@ -191,7 +199,7 @@ async function runVerifiedCore(requestRaw: ReconstructionRequest, objectiveRaw: 
     const output = metas.map((meta) => meta.outputTokens);
     trace.tokens = { input: input.every((n) => n !== undefined) ? input.reduce<number>((n, x) => n + (x ?? 0), 0) : null,
       output: output.every((n) => n !== undefined) ? output.reduce<number>((n, x) => n + (x ?? 0), 0) : null };
-    return { source, candidate, text, candidateVerification, finalVerification: verify(text).verification, review, trace } as VerifiedResultV10 | VerifiedResultV11 | VerifiedResultV12;
+    return { source, candidate, text, candidateVerification, finalVerification: verify(text).verification, review, trace } as VerifiedResultV10 | VerifiedResultV11 | VerifiedResultV12 | VerifiedResultV13;
   };
 
   try {

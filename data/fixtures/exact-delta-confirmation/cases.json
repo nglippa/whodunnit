@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ed01",
+    "source": "The riverside kiosk is scheduled to open on June 12. Staff training is booked for June 19, and the menu boards are already at the printer.",
+    "objective": "Change only the kiosk opening date from June 12 to June 14.",
+    "candidate": "The riverside kiosk is scheduled to open on June 14. Staff training is booked for June 19, and the menu boards are already at the printer."
+  },
+  {
+    "id": "ed02",
+    "source": "The conservatory inspection is set for April 8, with the photo archive transfer planned for April 11. The east entrance will stay available throughout the week.",
+    "objective": "Change only the conservatory inspection date from April 8 to April 9.",
+    "candidate": "The conservatory inspection is set for April 9, with the photo archive transfer planned for April 12. The east entrance will stay available throughout the week."
+  },
+  {
+    "id": "ed03",
+    "source": "Helena will chair the morning briefing, while Jonas records the decisions. The briefing will take place in the map room.",
+    "objective": "Change only the person chairing the morning briefing from Helena to Priya.",
+    "candidate": "Priya will chair the morning briefing, while Jonas records the decisions. The briefing will take place in the map room."
+  },
+  {
+    "id": "ed04",
+    "source": "Mira is preparing the festival agenda, and Theo will present the budget summary. Both items are due before the committee meets.",
+    "objective": "Change only the person preparing the festival agenda from Mira to Leila.",
+    "candidate": "Leila is preparing the festival agenda, and Tomas will present the budget summary. Both items are due before the committee meets."
+  },
+  {
+    "id": "ed05",
+    "source": "The depot expects 18 crates of ceramic tiles on Tuesday. Six loading bays will be available, and the delivery crew has the gate code.",
+    "objective": "Change only the expected tile shipment from 18 crates to 20 crates.",
+    "candidate": "The depot expects 20 crates of ceramic tiles on Tuesday. Six loading bays will be available, and the delivery crew has the gate code."
+  },
+  {
+    "id": "ed06",
+    "source": "The workshop has room for 42 attendees, with 7 seats held for local apprentices. Registration closes when the room is full.",
+    "objective": "Change only the workshop capacity from 42 attendees to 44 attendees.",
+    "candidate": "The workshop has room for 44 attendees, with 8 seats held for local apprentices. Registration closes when the room is full."
+  },
+  {
+    "id": "ed07",
+    "source": "The exhibition mockup has been approved. Its wall caption is still awaiting review, and the lighting plan is filed with facilities.",
+    "objective": "Change only the exhibition mockup's status from approved to awaiting review.",
+    "candidate": "The exhibition mockup is awaiting review. Its wall caption is still awaiting review, and the lighting plan is filed with facilities."
+  },
+  {
+    "id": "ed08",
+    "source": "The gallery is expected to reopen in May. Volunteer orientation is confirmed for April, and the courtyard remains open to visitors.",
+    "objective": "Change only the gallery reopening certainty from expected to confirmed; keep the May timing.",
+    "candidate": "The gallery is confirmed to reopen in May. Volunteer orientation is tentatively set for April, and the courtyard remains open to visitors."
+  },
+  {
+    "id": "ed09",
+    "source": "Nadia has confirmed the sound check for July 3. Omar will bring two spare microphones, and the rehearsal remains open to the full cast.",
+    "objective": "Change only the confirmed sound-check date from July 3 to July 5.",
+    "candidate": "Nadia has confirmed the sound check for July 5. Omar will bring two spare microphones, and the rehearsal remains open to the full cast."
+  },
+  {
+    "id": "ed10",
+    "source": "Alma has tentative approval to order 24 stools for the reading room. Rui will check the fabric samples before the order is placed.",
+    "objective": "Change only the authorized order quantity from 24 stools to 26 stools; keep the approval tentative.",
+    "candidate": "Alma has final approval to order 26 stools for the reading room. Rui will check the fabric samples before the order is placed."
+  }
+]

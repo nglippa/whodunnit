@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ed01",
+    "verdict": "ACCEPT",
+    "authorizedDeltas": ["Kiosk opening date: June 12 → June 14."],
+    "unauthorizedDeltas": [],
+    "rationale": "The candidate changes only the specified opening date."
+  },
+  {
+    "id": "ed02",
+    "verdict": "REPAIRABLE",
+    "authorizedDeltas": ["Conservatory inspection date: April 8 → April 9."],
+    "unauthorizedDeltas": ["Photo archive transfer date: April 11 → April 12."],
+    "rationale": "The inspection date is correct; restoring the unrelated transfer date is a localized repair."
+  },
+  {
+    "id": "ed03",
+    "verdict": "ACCEPT",
+    "authorizedDeltas": ["Morning briefing chair: Helena → Priya."],
+    "unauthorizedDeltas": [],
+    "rationale": "The candidate changes only the specified chair."
+  },
+  {
+    "id": "ed04",
+    "verdict": "REPAIRABLE",
+    "authorizedDeltas": ["Festival agenda preparer: Mira → Leila."],
+    "unauthorizedDeltas": ["Budget summary presenter: Theo → Tomas."],
+    "rationale": "The agenda change is correct; restoring Theo as presenter is a localized repair."
+  },
+  {
+    "id": "ed05",
+    "verdict": "ACCEPT",
+    "authorizedDeltas": ["Expected ceramic tile shipment: 18 crates → 20 crates."],
+    "unauthorizedDeltas": [],
+    "rationale": "The candidate changes only the specified shipment quantity."
+  },
+  {
+    "id": "ed06",
+    "verdict": "REPAIRABLE",
+    "authorizedDeltas": ["Workshop capacity: 42 attendees → 44 attendees."],
+    "unauthorizedDeltas": ["Seats held for local apprentices: 7 → 8."],
+    "rationale": "The capacity change is correct; restoring the reserved seat count is a localized repair."
+  },
+  {
+    "id": "ed07",
+    "verdict": "ACCEPT",
+    "authorizedDeltas": ["Exhibition mockup status: approved → awaiting review."],
+    "unauthorizedDeltas": [],
+    "rationale": "Only the mockup's status changes; the wall caption remains awaiting review."
+  },
+  {
+    "id": "ed08",
+    "verdict": "REPAIRABLE",
+    "authorizedDeltas": ["Gallery reopening certainty: expected → confirmed, with May timing retained."],
+    "unauthorizedDeltas": ["Volunteer orientation status: confirmed for April → tentatively set for April."],
+    "rationale": "The reopening change is correct; restoring the orientation's confirmed status is a localized repair."
+  },
+  {
+    "id": "ed09",
+    "verdict": "ACCEPT",
+    "authorizedDeltas": ["Confirmed sound-check date: July 3 → July 5."],
+    "unauthorizedDeltas": [],
+    "rationale": "The candidate changes only the specified date and keeps the confirmation."
+  },
+  {
+    "id": "ed10",
+    "verdict": "REPAIRABLE",
+    "authorizedDeltas": ["Stool order quantity: 24 → 26."],
+    "unauthorizedDeltas": ["Order approval status: tentative → final."],
+    "rationale": "The quantity change is correct; restoring tentative approval is a localized repair."
+  }
+]
