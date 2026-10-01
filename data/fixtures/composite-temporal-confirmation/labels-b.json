@@ -1,0 +1,66 @@
+[
+  {
+    "id": "ct01",
+    "authorization": "AUTHORIZED",
+    "decision": "ACCEPT",
+    "authorizedChanges": ["Moved the seed swap opening from Monday, November 2, to Tuesday, November 3."],
+    "unauthorizedChanges": [],
+    "reason": "The requested opening date changed; the 10 a.m. time and Sunday volunteer arrival are preserved."
+  },
+  {
+    "id": "ct02",
+    "authorization": "AUTHORIZED",
+    "decision": "ACCEPT",
+    "authorizedChanges": ["Moved the workshop from Tuesday, October 6, 2026, to Thursday, October 7, 2027."],
+    "unauthorizedChanges": [],
+    "reason": "The candidate uses the requested date and preserves Room 5 and the noon registration deadline."
+  },
+  {
+    "id": "ct03",
+    "authorization": "AUTHORIZED",
+    "decision": "ACCEPT",
+    "authorizedChanges": ["Moved the permit review from Tuesday, October 6, to Wednesday, October 7."],
+    "unauthorizedChanges": [],
+    "reason": "The audit remains Friday, October 9, and both events still begin at 9 a.m."
+  },
+  {
+    "id": "ct04",
+    "authorization": "MIXED",
+    "decision": "REPAIRABLE",
+    "authorizedChanges": ["Moved the route inspection from Tuesday, October 6, to Wednesday, October 7."],
+    "unauthorizedChanges": ["Moved the bridge test from Friday, October 9, to Saturday, October 10."],
+    "reason": "The inspection move is requested, but the objective explicitly keeps the bridge test unchanged. Restore its original date."
+  },
+  {
+    "id": "ct05",
+    "authorization": "AUTHORIZED",
+    "decision": "ACCEPT",
+    "authorizedChanges": ["Moved the receipt deadline from November 2 to November 3."],
+    "unauthorizedChanges": [],
+    "reason": "The deadline matches the objective, and the front-desk envelope instruction is preserved."
+  },
+  {
+    "id": "ct06",
+    "authorization": "AUTHORIZED",
+    "decision": "ACCEPT",
+    "authorizedChanges": ["Moved the staff briefing from Monday to Tuesday."],
+    "unauthorizedChanges": [],
+    "reason": "The inventory count remains on Friday as requested."
+  },
+  {
+    "id": "ct07",
+    "authorization": "MIXED",
+    "decision": "REJECT",
+    "authorizedChanges": ["Changed the art pickup date, which the objective asks to update."],
+    "unauthorizedChanges": ["Selected Tuesday, November 3, 2026, as the replacement date without the objective specifying or confirming it."],
+    "reason": "The objective permits a date update but gives no target date. The specific replacement cannot be established from the source or objective; clarification is needed. The south door and 8 a.m. arrival are preserved."
+  },
+  {
+    "id": "ct08",
+    "authorization": "MIXED",
+    "decision": "REPAIRABLE",
+    "authorizedChanges": ["Shortened 'The sign-up closes' to 'Sign-up closes'."],
+    "unauthorizedChanges": ["Changed the sign-up closing date from Monday, November 2, to Tuesday, November 3."],
+    "reason": "The objective allows concise wording but requires the meaning to stay the same. Restore the original closing date; the waitlist instruction is preserved."
+  }
+]

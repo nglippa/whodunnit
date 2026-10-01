@@ -5,7 +5,7 @@ import { resolve } from "node:path";
 import { z } from "zod";
 import { PRESETS } from "@/domain/style";
 import type { StructuredCaller } from "@/lib/ai/provider";
-import { runExactDeltaReconstruction } from "@/lib/reconstruction/verified-reconstruction";
+import { runCompositeTemporalReconstruction, runExactDeltaReconstruction } from "@/lib/reconstruction/verified-reconstruction";
 
 const read = <T>(path: string): T => JSON.parse(readFileSync(resolve(path), "utf8")) as T;
 const map = (path: string) => new Map(read<{ id: string; data: unknown }[]>(path).map((row) => [row.id, row.data]));
@@ -13,6 +13,7 @@ const base = "data/fixtures";
 const out = ".evaluations/exact-delta";
 const cohort = process.argv[2];
 const captureRepairs = process.argv[3] === "capture-repairs";
+const composite = process.argv.includes("--v14");
 if (!["old", "new", "boundary", "fresh"].includes(cohort)) throw new Error("Use old|new|boundary|fresh");
 
 function integrity(dir: string) {
@@ -69,7 +70,7 @@ async function main() {
       if (response === undefined) throw new Error(`No saved repair response for ${firstKey}`);
       return response;
     });
-    const result = await runExactDeltaReconstruction({ source: item.source, profile: PRESETS.natural }, item.objective,
+    const result = await (composite ? runCompositeTemporalReconstruction : runExactDeltaReconstruction)({ source: item.source, profile: PRESETS.natural }, item.objective,
       { editor, verifier, repairer });
     rows.push({ id: item.id, source: item.source, objective: item.objective, candidate: item.candidate,
       final: result.text, trace: result.trace, candidateVerification: result.candidateVerification,
@@ -81,7 +82,7 @@ async function main() {
     process.stdout.write(JSON.stringify({ cohort, repairRequests: repairRequests.length }) + "\n");
     return;
   }
-  writeFileSync(resolve(out, `${cohort}-replay.json`), JSON.stringify({ strategy: "reconstruction-v13", rows }, null, 2));
+  writeFileSync(resolve(out, `${cohort}${composite ? "-v14" : ""}-replay.json`), JSON.stringify({ strategy: composite ? "reconstruction-v14" : "reconstruction-v13", rows }, null, 2));
   const counts = { cases: rows.length, accepted: rows.filter((row) => row.trace.outcome === "accepted").length,
     repaired: rows.filter((row) => row.trace.outcome === "repaired").length,
     fallbacks: rows.filter((row) => row.trace.outcome === "source-fallback").length,

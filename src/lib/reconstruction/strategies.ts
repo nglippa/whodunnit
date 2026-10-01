@@ -148,7 +148,15 @@ export const RECONSTRUCTION_V13 = define({
   description: "V12 editor with claim-local exact objective authorization before unchanged V11 semantic review, repair, and fallback.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12, RECONSTRUCTION_V13];
+/** V13 with an exact, expression-local composite temporal authorization correction. */
+export const RECONSTRUCTION_V14 = define({
+  ...RECONSTRUCTION_V13,
+  version: 14,
+  name: "Reconstruction v14 (composite temporal deltas)",
+  description: "V13 behavior with narrow authorization for one explicitly requested whole temporal expression replacement.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12, RECONSTRUCTION_V13, RECONSTRUCTION_V14];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

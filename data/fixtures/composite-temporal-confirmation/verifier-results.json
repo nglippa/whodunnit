@@ -1,0 +1,74 @@
+[
+  {
+    "id": "ar04",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The cleanup date changes exactly as requested; the start, location, pickup, rain notice, and email voice remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ct01",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only the seed swap opening changes to the requested Tuesday, November 3; the time and Sunday volunteer arrival remain unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ct02",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The workshop date matches the requested Thursday, October 7, 2027; Room 5, the noon deadline, and voice are preserved.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ct03",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only the permit review moves to Wednesday, October 7; the Friday audit and both 9 a.m. start times stay intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ct05",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The receipt deadline moves to November 3 as requested, while the front desk envelope instruction and voice remain unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "ct06",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The staff briefing moves to Tuesday as requested, and the inventory count remains on Friday with no other change.",
+      "issue": null
+    }
+  }
+]
