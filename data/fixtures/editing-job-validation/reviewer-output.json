@@ -1,0 +1,3364 @@
+[
+  {
+    "id": "A03",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.87,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.89,
+          "evidence": [
+            {
+              "start": 286,
+              "end": 441,
+              "text": "This update covers the preparation work, the small trial, the options considered for the main transfer, and the remaining work before the November cutover."
+            },
+            {
+              "start": 1909,
+              "end": 1967,
+              "text": "We compared two ways to move the remaining active folders."
+            },
+            {
+              "start": 4347,
+              "end": 4477,
+              "text": "the group approved the staged transfer, with nightly batches beginning 4 November and final shared-drive access ending 18 November"
+            },
+            {
+              "start": 4623,
+              "end": 4753,
+              "text": "The approved choice should be used in the next staff update so that people do not read the options comparison as an open decision."
+            }
+          ],
+          "reason": "The opening promises a comparison of options and the comparison proceeds as though the choice is open, while the approval appears only in the final note. Bring the approved choice into the main update before the options discussion so readers can interpret the tradeoffs as the basis for a settled decision.",
+          "counterevidence": [
+            {
+              "start": 1502,
+              "end": 1567,
+              "text": "The trial manifest and the destination count both show 600 files."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 1502,
+          "end": 1567,
+          "text": "The trial manifest and the destination count both show 600 files."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "SUMMARIZES",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A08",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1295,
+          "end": 1411,
+          "text": "The operations meeting on 9 September approved the form as the only booking route for all teams beginning 1 October."
+        },
+        {
+          "start": 1972,
+          "end": 2099,
+          "text": "If someone needs equipment for a same-day event, the front desk can check availability in person and submit the form with them."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 491,
+          "end": 567,
+          "text": "If both checks pass, the small meeting room can reopen the following Monday."
+        },
+        {
+          "start": 764,
+          "end": 847,
+          "text": "Finance has requested that breakdown before the board considers additional funding."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 327,
+          "end": 422,
+          "text": "The final record count matched the source manifest, and reconciliation found no duplicate keys."
+        },
+        {
+          "start": 1008,
+          "end": 1142,
+          "text": "The aggregate graph cannot distinguish database writes, another uneven batch, or external throttling as the cause of this later delay."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A18",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 276,
+          "end": 378,
+          "text": "Please hold the attendee email until the choice is recorded so the venue and arrival directions match."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 592,
+          "end": 695,
+          "text": "For an item ready at or after 1:45 p.m., call immediately and do not assume that the route can take it."
+        },
+        {
+          "start": 1442,
+          "end": 1538,
+          "text": "If a pickup is missed, the supervisor contacts laboratory operations for transport instructions."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B07",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.84,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1441,
+          "end": 1566,
+          "text": "Staff need the destination first, then the distinction between walk-ins and scheduled visits, then the reason for the change."
+        },
+        {
+          "start": 3251,
+          "end": 3414,
+          "text": "The revised briefing may cite the confusion and duplicate entries as the reason for using one location, but it should not promise a measurable service improvement."
+        },
+        {
+          "start": 2700,
+          "end": 2806,
+          "text": "The technician should call the name twice, then mark the entry for another attempt after the next patient."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 588,
+          "end": 712,
+          "text": "Until Pharmacy circulates the pickup hours and start date, staff should use the current window and current collection times."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B18",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.92,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 511,
+          "end": 643,
+          "text": "The desk has confirmed the requested pickup point but has not confirmed whether the job reached the driver or why the pickup failed."
+        },
+        {
+          "start": 726,
+          "end": 862,
+          "text": "Customer Relations will then send the patient a response describing the verified cause and any action approved by the transport manager."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "B19",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 281,
+          "end": 423,
+          "text": "The policy committee is reviewing the issue at its October meeting, including which orders would qualify and when any common rule would begin."
+        },
+        {
+          "start": 425,
+          "end": 491,
+          "text": "For now, continue using your site’s current check-in instructions."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 2692,
+          "end": 2788,
+          "text": "The canoe gave those moments a place to happen, but it was never the only place they could live."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_EXAMPLE",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 267,
+          "end": 328,
+          "text": "Last week three of us brought bread, but we ran out of bowls."
+        },
+        {
+          "start": 451,
+          "end": 554,
+          "text": "You can still come without bringing anything; the sheet is simply a way to see what is already covered."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C05",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.92,
+      "deterministicDecisionAgreement": false,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 159,
+          "end": 195,
+          "text": "I have decided to decline the offer."
+        },
+        {
+          "start": 429,
+          "end": 527,
+          "text": "I would still be glad to help at the October open house if an extra pair of hands would be useful."
+        }
+      ],
+      "brakeReason": "The first-person openings mark distinct commitments in a personal refusal: declining the role and offering limited help. Varying them would not improve clarity.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "C10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 739,
+          "end": 850,
+          "text": "Our visits documented the displays and the desk schedule; we did not count packets taken or interview visitors."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A11",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 867,
+          "end": 981,
+          "text": "The sample review has not happened yet, and we do not have comparable error counts from before and after training."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1605,
+          "end": 1726,
+          "text": "We cannot responsibly name a funding source or firm start date until Finance and Human Resources decide what can be used."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A16",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 673,
+          "end": 741,
+          "text": "Finance has not approved an exception or set any conditions for one."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "A17",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 746,
+          "end": 816,
+          "text": "We do not have a comparable measure from the current once-daily route."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.86,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D03",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D05",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D06",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.83,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "DISTRIBUTED",
+          "severity": "MINOR",
+          "confidence": 0.85,
+          "evidence": [
+            {
+              "start": 492,
+              "end": 603,
+              "text": "Engineering changed the export job to write to a temporary object name and rename it after the write completes."
+            },
+            {
+              "start": 1808,
+              "end": 1891,
+              "text": "The temporary-object change was applied to the export job after the third incident."
+            },
+            {
+              "start": 604,
+              "end": 709,
+              "text": "Since that change, eight scheduled runs have produced files with nonzero headers when the loader checked."
+            },
+            {
+              "start": 2161,
+              "end": 2245,
+              "text": "The eight runs since then have followed the expected sequence in the available logs."
+            }
+          ],
+          "reason": "The later section restates both the publication change and the eight-run result already reported in the earlier section. Those two repeated propositions can be tightened while keeping the later test and scheduling rationale.",
+          "counterevidence": [
+            {
+              "start": 1892,
+              "end": 2014,
+              "text": "In a test run, the object remained under the temporary name until writing finished, then appeared under the expected name."
+            },
+            {
+              "start": 2015,
+              "end": 2160,
+              "text": "Operations kept the loader schedule at 02:15 so the team could observe the next ordinary runs without changing two parts of the workflow at once."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 1495,
+          "end": 1630,
+          "text": "During the three incidents, the on-call operator checked both the loader log and the warehouse arrival record before clearing the page."
+        },
+        {
+          "start": 2247,
+          "end": 2319,
+          "text": "The next work item is to make the alert page show the final retry state."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D08",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D11",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D14",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "D18",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 434,
+          "end": 536,
+          "text": "We wrote their comments on cards so the archive volunteers can compare them with the original records."
+        },
+        {
+          "start": 1735,
+          "end": 1817,
+          "text": "Both need checking against the collection records before anyone changes a caption."
+        },
+        {
+          "start": 2552,
+          "end": 2674,
+          "text": "I will group them by photograph when I type the notes, so the archive team can see which comments refer to the same image."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E01",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 618,
+              "end": 750,
+              "text": "The temporary pass process was an important part of how the move was handled, and the move affected the way people requested access."
+            }
+          ],
+          "reason": "This sentence repeats the temporary-pass process and access impact already established by the preceding concrete details, without adding a distinct fact or decision.",
+          "counterevidence": [
+            {
+              "start": 348,
+              "end": 428,
+              "text": "The move placed three floors on a shared badge schedule for the first two weeks."
+            },
+            {
+              "start": 429,
+              "end": 499,
+              "text": "During that period, staff could request a temporary pass at reception."
+            }
+          ]
+        },
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 752,
+              "end": 817,
+              "text": "We are confident the new arrangement has eliminated entry delays."
+            },
+            {
+              "start": 818,
+              "end": 954,
+              "text": "The figures above show requests and replacements, but they do not show wait times at the doors or how often a temporary pass was needed."
+            }
+          ],
+          "reason": "The assertion that entry delays were eliminated exceeds the reported measures; the following sentence explicitly says the needed wait-time evidence is absent.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 510,
+          "end": 606,
+          "text": "The address is printed on the label as well, so the card repeats information already in the box."
+        },
+        {
+          "start": 607,
+          "end": 692,
+          "text": "Customers can use either the printed label or the same label from their account page."
+        },
+        {
+          "start": 817,
+          "end": 936,
+          "text": "Orders already in transit will still receive the label by email, and customers can download it from their account page."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E03",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 552,
+              "end": 645,
+              "text": "The workers were restarted, and the restart was effective in restoring movement to the queue."
+            },
+            {
+              "start": 646,
+              "end": 737,
+              "text": "The restart restored movement, which is why customers began seeing completed imports again."
+            }
+          ],
+          "reason": "Adjacent sentences repeat that restarting the workers restored queue movement; the second adds the customer effect, which can be retained without repeating the causal step.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 739,
+              "end": 868,
+              "text": "This incident proves the deployment introduced a lease handling defect and that the replacement worker pool permanently fixes it."
+            },
+            {
+              "start": 869,
+              "end": 975,
+              "text": "We have no comparison run on the previous build, and the replacement pool was enabled only after recovery."
+            }
+          ],
+          "reason": "The stated proof and permanent fix are not established by the available record; the next sentence identifies missing comparison and post-recovery timing.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E04",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 455,
+              "end": 549,
+              "text": "The option is shown before the download begins, and the chosen scope appears in the file name."
+            },
+            {
+              "start": 639,
+              "end": 734,
+              "text": "The export choice is now explicit, and making the choice explicit is the main change to export."
+            }
+          ],
+          "reason": "The final sentence restates the already described explicit export choice without adding a different behavior or consequence.",
+          "counterevidence": []
+        },
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 736,
+              "end": 795,
+              "text": "We expect these changes to cut approval cycle time in half."
+            },
+            {
+              "start": 796,
+              "end": 945,
+              "text": "The release report contains no before-and-after timing data, and the pilot covered only whether the controls appeared and exported the selected rows."
+            }
+          ],
+          "reason": "The quantified prediction has no timing basis in the reported evidence; the pilot tested control behavior rather than cycle time.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E05",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "LOCAL_WORDING",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 615,
+              "end": 778,
+              "text": "The indexes are useful because they show the file names reviewers will see, and they are useful for locating a record if a link in an interview note is incomplete."
+            }
+          ],
+          "reason": "Repeating “useful” within this sentence makes the two distinct index functions harder to read; both functions can be stated directly without new facts.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E06",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 813,
+              "end": 905,
+              "text": "Every affected package will arrive by Saturday, and no customer needs to change their plans."
+            },
+            {
+              "start": 906,
+              "end": 1032,
+              "text": "Carrier scans are still pending for some parcels, and the provider has not given us a delivery commitment for those shipments."
+            }
+          ],
+          "reason": "The blanket arrival guarantee and assurance about plans exceed the known carrier status; the following sentence says scans and a delivery commitment are still missing.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E07",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 414,
+              "end": 508,
+              "text": "The link was withheld because the validation job did not accept the manifest and folder count."
+            },
+            {
+              "start": 509,
+              "end": 582,
+              "text": "That count check prevented customers from receiving an incomplete export."
+            },
+            {
+              "start": 583,
+              "end": 667,
+              "text": "It is the main protection in this sequence and is also why the download was delayed."
+            }
+          ],
+          "reason": "These neighboring sentences repeat that the count mismatch withheld the link and delayed access; the protection and customer outcome can remain with less restatement.",
+          "counterevidence": [
+            {
+              "start": 128,
+              "end": 205,
+              "text": "A validation job caught the mismatch at 03:24 and withheld the download link."
+            }
+          ]
+        },
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 736,
+              "end": 839,
+              "text": "A storage throttle caused the copy to be skipped, and increasing the worker limit has removed the risk."
+            },
+            {
+              "start": 840,
+              "end": 911,
+              "text": "The copy logs record a timeout but do not identify the throttle source."
+            },
+            {
+              "start": 970,
+              "end": 1027,
+              "text": "no later full-size export has yet run under that setting."
+            }
+          ],
+          "reason": "The asserted cause and resolved risk exceed the logs and follow-up evidence; the source reports an unidentified timeout and no full-size validation run.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E08",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 2358,
+          "end": 2495,
+          "text": "A saved route and saved tiles are separate things: the route entry remains visible in the account, while its map may have no local tiles."
+        },
+        {
+          "start": 2496,
+          "end": 2586,
+          "text": "This distinction matters most to someone preparing for travel in an area without coverage."
+        }
+      ],
+      "brakeReason": "The flagged closing sentence gives a specific use case for the route-versus-tiles distinction immediately before it; it clarifies the user consequence rather than merely telling the reader to notice it.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 378,
+          "end": 515,
+          "text": "In email, the event title still points to the overall activity log, so someone following an older email may need to search for the event."
+        },
+        {
+          "start": 857,
+          "end": 955,
+          "text": "If the tab is closed, the next visit starts with the default range, as it did before this release."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E13",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 371,
+              "end": 431,
+              "text": "The sessions have solved the handoff problem between shifts."
+            },
+            {
+              "start": 542,
+              "end": 623,
+              "text": "It does not show whether real cases now move between shifts with fewer omissions."
+            }
+          ],
+          "reason": "The opening claim of the second paragraph presents the handoff problem as solved, while the same paragraph says the evidence does not establish improvement in actual handoffs. Qualify that claim using the stated limits.",
+          "counterevidence": [
+            {
+              "start": 432,
+              "end": 541,
+              "text": "The attendance record shows participation, and the exercise shows that attendees practiced the handoff steps."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E14",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 665,
+              "end": 786,
+              "text": "We know exactly which scheduling rule fired twice and have permanently removed the possibility of another duplicate send."
+            },
+            {
+              "start": 846,
+              "end": 957,
+              "text": "the reason both jobs entered the queue remains under investigation. No scheduling change has yet been deployed."
+            }
+          ],
+          "reason": "The asserted known cause and permanent prevention conflict with the stated investigation and absence of a deployed scheduling change. Remove or qualify the unsupported assurance; the incident facts and next step can stand.",
+          "counterevidence": [
+            {
+              "start": 958,
+              "end": 1040,
+              "text": "We will share the cause and any prevention work once the queue review is complete."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E15",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1470,
+          "end": 1678,
+          "text": "A courier manifest may identify a sealed case without describing the condition of every item inside it. In that situation, the receipt section records the first condition observation for the individual items."
+        },
+        {
+          "start": 2740,
+          "end": 2903,
+          "text": "The east depot will keep its current slip and receipt process during the first month, then adopt the shared sheet after its scanner is moved to the receiving desk."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E16",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 677,
+              "end": 735,
+              "text": "Bulk rename will save every team several hours each month."
+            },
+            {
+              "start": 736,
+              "end": 812,
+              "text": "The pilot does not support an estimate of monthly time savings across teams."
+            }
+          ],
+          "reason": "The savings claim quantifies a benefit for every team even though the pilot did not measure individual rename time or support a team-wide monthly estimate. Remove or narrow the unsupported forecast.",
+          "counterevidence": [
+            {
+              "start": 378,
+              "end": 459,
+              "text": "All six completed the preview and confirmation sequence without a reported error."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E17",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 753,
+              "end": 849,
+              "text": "A marketing campaign flooded the queue, so the campaign team has agreed to stagger future sends."
+            },
+            {
+              "start": 850,
+              "end": 1000,
+              "text": "The incident notes do not identify the messages ahead of the digest by sender or campaign. No decision about staggering appears in the operations log."
+            }
+          ],
+          "reason": "The final paragraph attributes the backlog to a campaign and announces an agreement, but its own supporting notes establish neither. Remove or qualify those two assertions while retaining the observed queue timing and planned labeling.",
+          "counterevidence": [
+            {
+              "start": 1001,
+              "end": 1080,
+              "text": "The team will add queue-source labels before assigning a cause to this backlog."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E18",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 581,
+          "end": 703,
+          "text": "The two entrances lead to the same reception desk, and the appointment time is the same whichever entrance a visitor uses."
+        },
+        {
+          "start": 705,
+          "end": 830,
+          "text": "If an appointment was booked before the page change, the confirmation email may still contain the older address-only wording."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "E19",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.95,
+          "evidence": [
+            {
+              "start": 373,
+              "end": 465,
+              "text": "The six internal reviews should close next week, and there is no risk to service continuity."
+            },
+            {
+              "start": 516,
+              "end": 633,
+              "text": "the review note does not say when the updated certificates will arrive or when legal will finish the remaining terms."
+            },
+            {
+              "start": 634,
+              "end": 734,
+              "text": "A few of the six contracts have services scheduled early next month, so the order of review matters."
+            }
+          ],
+          "reason": "The unqualified closure and continuity assurance exceeds the stated information about certificates, legal review, and near-term service dates. Qualify that prediction while preserving the meeting plan and open questions.",
+          "counterevidence": [
+            {
+              "start": 936,
+              "end": 1037,
+              "text": "The meeting will also confirm who contacts each supplier and when the status should be checked again."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F01",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 891,
+              "end": 974,
+              "text": "We therefore think the format improved the quality of discussion across the course."
+            },
+            {
+              "start": 1072,
+              "end": 1141,
+              "text": "neither tells us whether the quality of students’ reasoning improved."
+            },
+            {
+              "start": 1212,
+              "end": 1312,
+              "text": "The strongest immediate finding is that more students spoke during the observed small-group sessions"
+            }
+          ],
+          "reason": "The course-wide quality conclusion exceeds the attendance and contribution observations, and the paragraph itself acknowledges that reasoning quality was not measured. Narrow the conclusion to the observed participation finding.",
+          "counterevidence": [
+            {
+              "start": 1142,
+              "end": 1211,
+              "text": "The smaller conversations may simply have given more students a turn."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 279,
+          "end": 384,
+          "text": "During the first four Tuesdays, 21 of the 24 available appointments were booked and 19 patients attended."
+        },
+        {
+          "start": 825,
+          "end": 913,
+          "text": "Reception staff now mention the laboratory hours when confirming an evening appointment."
+        },
+        {
+          "start": 1177,
+          "end": 1314,
+          "text": "The clinic will continue recording bookings, attendance, and questions for another month before deciding whether to add a second evening."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F03",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 798,
+              "end": 904,
+              "text": "Sunday hours would solve the access problem for working residents and should become permanent immediately."
+            },
+            {
+              "start": 939,
+              "end": 985,
+              "text": "the demand is already clear from the comments."
+            }
+          ],
+          "reason": "The claim of a complete solution and immediate permanence exceeds the limited comments and conflicts with the proposed trial and unknown cost. Qualify these two assertions using the source’s stated uncertainty.",
+          "counterevidence": [
+            {
+              "start": 482,
+              "end": 582,
+              "text": "These numbers describe existing Saturday use; they cannot show how many people would come on Sunday."
+            },
+            {
+              "start": 1072,
+              "end": 1152,
+              "text": "It cannot yet name the staffing cost or decide which budget line would cover it."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F04",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.89,
+          "evidence": [
+            {
+              "start": 568,
+              "end": 628,
+              "text": "We expect these mornings to end disputes over garden access."
+            }
+          ],
+          "reason": "Ending disputes is a stronger outcome than the limited Saturday access can establish. Narrow the expectation to the approved opening without assuming the effect on disputes.",
+          "counterevidence": [
+            {
+              "start": 629,
+              "end": 734,
+              "text": "Some neighbors have asked for evening hours, but the organizing group has not discussed evening staffing."
+            },
+            {
+              "start": 735,
+              "end": 786,
+              "text": "Saturday morning is the only opening time approved."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F05",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.92,
+      "deterministicDecisionAgreement": false,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 12,
+          "end": 94,
+          "text": "I found the blue notebook you left in the back of my car after our visit in March."
+        },
+        {
+          "start": 247,
+          "end": 268,
+          "text": "I have not opened it."
+        },
+        {
+          "start": 371,
+          "end": 441,
+          "text": "I will be in your part of town on Thursday for my dentist appointment."
+        }
+      ],
+      "brakeReason": "The repeated first-person opening suits a personal letter: these sentences report distinct actions, respect the notebook’s privacy, and offer a concrete return plan. Changing the openings would add little.",
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F06",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 797,
+              "end": 893,
+              "text": "Taken together, the interviews prove that peer feedback raised final grades in every department."
+            }
+          ],
+          "reason": "The sentence claims a measured grade increase, while the stated evidence consists of interviews without grade or revision comparisons. Restrict this conclusion to reported experiences.",
+          "counterevidence": [
+            {
+              "start": 894,
+              "end": 1001,
+              "text": "We did not collect grades, compare drafts against final submissions, or ask instructors to score revisions."
+            },
+            {
+              "start": 1002,
+              "end": 1144,
+              "text": "What the interviews establish is that students encountered three different forms of response and reported different benefits and frustrations."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F07",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.92,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MODERATE",
+          "confidence": 0.92,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 74,
+              "text": "The surgical unit should replace its current handoff procedure next month."
+            },
+            {
+              "start": 374,
+              "end": 429,
+              "text": "A new procedure would be safer and would reduce delays."
+            },
+            {
+              "start": 1027,
+              "end": 1106,
+              "text": "The unit should proceed with the change next month because the need is obvious."
+            }
+          ],
+          "reason": "The opening, projected benefits, and closing repeat a firm decision across paragraphs even though the replacement, failure evidence, and implementation details remain unsettled. Align these claims with the stated plan to collect examples.",
+          "counterevidence": [
+            {
+              "start": 430,
+              "end": 480,
+              "text": "The unit has not selected a replacement procedure."
+            },
+            {
+              "start": 722,
+              "end": 800,
+              "text": "The unit has no agreed account of which failures the current procedure caused."
+            },
+            {
+              "start": 1107,
+              "end": 1219,
+              "text": "The charge nurse plans to collect examples from the evening shift, but the examples have not yet been collected."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F08",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.97,
+          "evidence": [
+            {
+              "start": 826,
+              "end": 906,
+              "text": "The program will pay for itself in its first year through reduced disposal fees."
+            }
+          ],
+          "reason": "The definite first-year savings claim is unsupported by the cost memo described immediately afterward. State the financial outcome as unresolved pending the council’s review.",
+          "counterevidence": [
+            {
+              "start": 907,
+              "end": 993,
+              "text": "The cost memo lists containers and truck time but gives no projected disposal savings."
+            },
+            {
+              "start": 994,
+              "end": 1081,
+              "text": "The council will review the cost memo at its August meeting before approving any trial."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 253,
+          "end": 335,
+          "text": "There is step-free access at that entrance, and the bus stop is across the street."
+        },
+        {
+          "start": 603,
+          "end": 675,
+          "text": "They cannot take items home or promise that every item will be repaired."
+        },
+        {
+          "start": 1352,
+          "end": 1460,
+          "text": "If several people bring the same kind of item, the volunteer at the table will keep a list in arrival order."
+        },
+        {
+          "start": 1942,
+          "end": 2022,
+          "text": "Please enter from Maple Avenue and check in with the volunteer at the hall door."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "SUMMARIZES"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F10",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "LOCAL",
+          "severity": "MAJOR",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 686,
+              "end": 770,
+              "text": "The visit shows that she is managing well on her own and does not need help at home."
+            },
+            {
+              "start": 890,
+              "end": 926,
+              "text": "Still, I think we can stop worrying."
+            }
+          ],
+          "reason": "The short visit and conversation cannot establish independent functioning or remove the stated concerns. Confine the assessment to what was observed and keep uncertainty explicit.",
+          "counterevidence": [
+            {
+              "start": 771,
+              "end": 889,
+              "text": "I did not see the upstairs rooms, and we did not talk about meals, bills, or the appointment she mentioned last month."
+            },
+            {
+              "start": 927,
+              "end": 1018,
+              "text": "What I can say is that she enjoyed telling the stories and asked when we would visit again."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F11",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 834,
+              "end": 905,
+              "text": "The map taught students to reason more accurately about river movement."
+            }
+          ],
+          "reason": "This conclusion claims improved reasoning accuracy, but the described measure counted feature mentions and did not assess correctness.",
+          "counterevidence": [
+            {
+              "start": 596,
+              "end": 718,
+              "text": "The rubric recorded whether students mentioned features; it did not assess whether their causal explanations were correct."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 1156,
+          "end": 1253,
+          "text": "The present pilot can motivate that comparison, but the accuracy claim needs a different measure."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 107,
+          "end": 198,
+          "text": "Visitors should name the collection they want to consult and give two possible visit dates."
+        },
+        {
+          "start": 397,
+          "end": 485,
+          "text": "They do not apply to the digitized newspaper collection, which remains available online."
+        },
+        {
+          "start": 603,
+          "end": 689,
+          "text": "Appointments will be offered Tuesday through Friday, subject to reading-room capacity."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F13",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 825,
+              "end": 924,
+              "text": "This change eliminates the risk of spoiled stock and guarantees that every excursion will be found."
+            }
+          ],
+          "reason": "The absolute safety claim exceeds what twice-daily readings and an untested assignment can establish.",
+          "counterevidence": [
+            {
+              "start": 925,
+              "end": 1062,
+              "text": "The log records readings at two moments, not continuously, and the team has not tested whether the new assignment will prevent omissions."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 752,
+          "end": 823,
+          "text": "The team lead will review the log every Monday for the first six weeks."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F14",
+    "review": {
+      "disposition": "DISTRIBUTED_LIGHT_EDIT",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "FORMULAIC_ARGUMENT",
+          "scope": "DISTRIBUTED",
+          "severity": "MAJOR",
+          "confidence": 0.94,
+          "evidence": [
+            {
+              "start": 0,
+              "end": 114,
+              "text": "The district should close the east bus route at the end of the school term and move its riders to the north route."
+            },
+            {
+              "start": 458,
+              "end": 536,
+              "text": "Combining the routes would save money and get every student to school earlier."
+            },
+            {
+              "start": 1024,
+              "end": 1116,
+              "text": "The district should adopt the closure because one route is always easier to manage than two."
+            }
+          ],
+          "reason": "The recommendation and promised benefits recur across sections despite acknowledged gaps in travel time, capacity, and stop information. The unsupported claims can be qualified individually.",
+          "counterevidence": [
+            {
+              "start": 537,
+              "end": 626,
+              "text": "The transport office has not calculated the distance or travel time for a combined route."
+            },
+            {
+              "start": 627,
+              "end": 686,
+              "text": "It also has not confirmed the north bus’s seating capacity."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 803,
+          "end": 839,
+          "text": "The board is due to vote next month."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [
+        "Arrival records, combined-route travel time and distance, north-bus capacity, and boarding locations are needed to support a closure decision."
+      ],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F19",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.97,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MODERATE",
+          "confidence": 0.98,
+          "evidence": [
+            {
+              "start": 711,
+              "end": 790,
+              "text": "The plan guarantees that every resident can reach a safe place during an alert."
+            }
+          ],
+          "reason": "The guarantee conflicts with the stated western travel gap and lack of evening provision; those limits preclude a universal access claim.",
+          "counterevidence": [
+            {
+              "start": 491,
+              "end": 550,
+              "text": "Residents in the western villages would have a longer trip."
+            },
+            {
+              "start": 631,
+              "end": 709,
+              "text": "The draft also has no arrangement for evening hours after the libraries close."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 791,
+          "end": 851,
+          "text": "The three sites provide a starting network of daytime spaces"
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "F21",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "OTHER",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.91,
+          "evidence": [
+            {
+              "start": 700,
+              "end": 760,
+              "text": "The leak is fixed, and there is nothing left to worry about."
+            }
+          ],
+          "reason": "The categorical assurance is contradicted immediately by the unknown water source and pending inspection; the self-correction still asks the reader to process a false status statement.",
+          "counterevidence": [
+            {
+              "start": 823,
+              "end": 922,
+              "text": "the plumber has not inspected the upstairs apartment, and the source of the water is still unknown."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [
+        {
+          "start": 923,
+          "end": 986,
+          "text": "I am keeping the bookshelf clear of the wall until I hear more."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G04",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 54,
+          "end": 149,
+          "text": "Family workshops begin there at 10 a.m., and volunteers will be on hand throughout the morning."
+        },
+        {
+          "start": 286,
+          "end": 430,
+          "text": "The stage starts later than it did last year because the riverside path remains closed to vehicles until 11:30 while flood barriers are removed."
+        },
+        {
+          "start": 602,
+          "end": 665,
+          "text": "Join us there first, then walk down to the river for the music."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.96,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 166,
+          "end": 256,
+          "text": "The purchase order and confirmation specify the valves but do not give us an arrival date."
+        },
+        {
+          "start": 372,
+          "end": 486,
+          "text": "Our visit next Wednesday is to measure the access panel. It is a measuring appointment, not the valve replacement."
+        },
+        {
+          "start": 854,
+          "end": 924,
+          "text": "I will pass on the supplier's delivery information when we receive it."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G07",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 143,
+          "end": 223,
+          "text": "Its original dial and a small scratch on the case appear in an older photograph."
+        },
+        {
+          "start": 283,
+          "end": 396,
+          "text": "The surviving exhibition leaflet and photograph do not say what caused it to stop or when it began running again."
+        },
+        {
+          "start": 397,
+          "end": 468,
+          "text": "This spring a conservator cleaned the movement and replaced a worn pin."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 521,
+          "end": 636,
+          "text": "The new beds stand on the level path. This spring the seated gardening group worked at the beds for the first time."
+        },
+        {
+          "start": 1026,
+          "end": 1102,
+          "text": "A hose connection is still to be arranged before the hottest part of summer."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 473,
+          "end": 601,
+          "text": "The company's order confirmation contains no delivery window, and its engineer has not estimated when the unit can be installed."
+        },
+        {
+          "start": 699,
+          "end": 785,
+          "text": "Please let the concierge know today if a delivery or visit needs help with the stairs."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G13",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 44,
+          "end": 195,
+          "text": "Average Thursday visits rose from 84 before the trial to 101 during the twelve Thursdays when the library remained open until 8 p.m. rather than 6 p.m."
+        },
+        {
+          "start": 731,
+          "end": 830,
+          "text": "Keeping the later hours next term would require one late shift and a different closing arrangement."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G15",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 783,
+          "end": 860,
+          "text": "The final month's figures are not among the records available for this story."
+        },
+        {
+          "start": 1174,
+          "end": 1288,
+          "text": "The proprietor has spoken warmly about the loaf's history and has yet to explain why the bakery stopped making it."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G17",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 71,
+          "end": 181,
+          "text": "Firing demonstrations will take place at 11 a.m. and 2 p.m. in the covered yard, with a short talk after each."
+        },
+        {
+          "start": 362,
+          "end": 459,
+          "text": "The kiln room's second exit is under repair and cannot be used by visitors during the open house."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "G23",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 362,
+          "end": 434,
+          "text": "I cannot yet confirm that the replacement will match the existing frame."
+        },
+        {
+          "start": 823,
+          "end": 932,
+          "text": "I will send the finish information as soon as the supplier confirms it so you can decide whether to go ahead."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H01",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 535,
+          "end": 678,
+          "text": "The lounge log records when patients arrived and left, but it does not record who accepted the ride requests or whether a vehicle was assigned."
+        },
+        {
+          "start": 1258,
+          "end": 1391,
+          "text": "The huddle should leave with one route for tracking the ride request and a way to tell the unit when a patient has actually departed."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H02",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 166,
+          "end": 245,
+          "text": "A matching accounts-table row count is a preliminary check, not a restore test."
+        },
+        {
+          "start": 831,
+          "end": 958,
+          "text": "If the restore fails, the rotation engineer opens an incident ticket before the release meeting and adds its number to the log."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H04",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.89,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 132,
+          "end": 235,
+          "text": "The carrier has not recorded an acceptance scan, so the tracking page still shows only the label event."
+        },
+        {
+          "start": 726,
+          "end": 846,
+          "text": "If it stops displaying readings, please use the backup monitor already held at the front desk and call our support line."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H05",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 199,
+          "end": 325,
+          "text": "Staff logged room use separately from walk-in visits, so the figures do not include tutoring groups that entered before 8 p.m."
+        },
+        {
+          "start": 1237,
+          "end": 1332,
+          "text": "A decision about a second term will need both the usage pattern and a confirmed funding source."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H06",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 655,
+          "end": 798,
+          "text": "The first two eligible households drawn will be offered the beds. The other eligible households will be placed on a waiting list in draw order."
+        },
+        {
+          "start": 950,
+          "end": 1029,
+          "text": "We mention this because last year's sheet was mistaken for the order of offers."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H07",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.96,
+          "evidence": [
+            {
+              "start": 475,
+              "end": 624,
+              "text": "The attendant checks the map count against the inventory sheet inside the cover, returns the folder to its numbered cabinet slot, and signs the slip."
+            },
+            {
+              "start": 735,
+              "end": 779,
+              "text": "The folder is checked before it is put back."
+            }
+          ],
+          "reason": "The later sentence repeats the check and its timing already stated in the preceding sentence; removing it would preserve the procedure.",
+          "counterevidence": []
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H08",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 418,
+          "end": 565,
+          "text": "The facilities ticket lists the repair crew and the work order number, but it does not name the person who approved taking the room out of service."
+        },
+        {
+          "start": 978,
+          "end": 1089,
+          "text": "I will add the approval name to the morning record after the charge nurse and facilities supervisor confirm it."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H09",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1145,
+          "end": 1289,
+          "text": "A nine-minute lag during the network-maintenance trial cleared without intervention; it is the only timed example and is not a production limit."
+        },
+        {
+          "start": 1489,
+          "end": 1524,
+          "text": "Pausing the feed is not a rollback."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H10",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 280,
+          "end": 379,
+          "text": "The blue finish you ordered is sold out, and the next production run is not scheduled until autumn."
+        },
+        {
+          "start": 761,
+          "end": 893,
+          "text": "If you prefer a cream replacement, reply before Friday; while the refund request is pending, we can stop it and arrange that option."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_CONTEXT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H12",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 401,
+          "end": 455,
+          "text": "The transportation office has not set an opening date."
+        },
+        {
+          "start": 807,
+          "end": 893,
+          "text": "Until then, the existing marked crossing one block south remains the designated route."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H13",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 321,
+          "end": 417,
+          "text": "The rice total in last week's sheet was off by twelve bags because the closet was counted twice."
+        },
+        {
+          "start": 2118,
+          "end": 2218,
+          "text": "The first clean count can use that receipt date and the three location columns already on the sheet."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_NEW_FACT",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_COUNTERPOINT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H14",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.91,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 478,
+          "end": 561,
+          "text": "The supervisor seals each valuable in an envelope and places it in the office safe."
+        },
+        {
+          "start": 854,
+          "end": 946,
+          "text": "At closing, the duty supervisor compares the day's cabinet items and envelopes with the log."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H15",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.88,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 756,
+          "end": 818,
+          "text": "The manager has asked the phone vendor for a corrected report."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H16",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.93,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 907,
+          "end": 968,
+          "text": "The value is not used here as evidence of a treatment effect."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H17",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1765,
+          "end": 1901,
+          "text": "The committee will also need to decide whether weekend coverage changes; the present Tuesday and Friday visits leave that question open."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_EXAMPLE",
+        "ADDS_REASONING",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H18",
+    "review": {
+      "disposition": "LOCAL_EDIT",
+      "confidence": 0.88,
+      "deterministicDecisionAgreement": false,
+      "findings": [
+        {
+          "phenomenon": "REDUNDANCY",
+          "scope": "LOCAL",
+          "severity": "MINOR",
+          "confidence": 0.89,
+          "evidence": [
+            {
+              "start": 624,
+              "end": 713,
+              "text": "Exports remain available for seven days after completion, then are deleted automatically."
+            },
+            {
+              "start": 1254,
+              "end": 1315,
+              "text": "The file is temporary, and the link expires after seven days."
+            }
+          ],
+          "reason": "The final sentence repeats the seven-day expiry already stated in the job guidance. Removing or tightening that sentence preserves the instructions and file details.",
+          "counterevidence": [
+            {
+              "start": 1171,
+              "end": 1253,
+              "text": "For a quarterly review, save the needed download before the seven-day window ends."
+            }
+          ]
+        }
+      ],
+      "counterevidence": [],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H19",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.95,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 893,
+          "end": 1033,
+          "text": "If the second charge is confirmed as a duplicate, we will reverse it to the original card and send a confirmation with the refund reference."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT",
+        "META_COMMENTARY"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H20",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.94,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 775,
+          "end": 855,
+          "text": "The chair will compare the paper ballots with the attendance notes on Wednesday."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H21",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.78,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 622,
+          "end": 700,
+          "text": "The station is rinsed after each session so residue does not stay in the tray."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_REASONING"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H22",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 799,
+          "end": 837,
+          "text": "The change takes effect on November 4."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "ADDS_CONTEXT",
+        "ADDS_NEW_FACT",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  },
+  {
+    "id": "H23",
+    "review": {
+      "disposition": "LEAVE_ALONE",
+      "confidence": 0.9,
+      "deterministicDecisionAgreement": true,
+      "findings": [],
+      "counterevidence": [
+        {
+          "start": 1118,
+          "end": 1205,
+          "text": "The director has not decided whether additional individual slots can be made available."
+        }
+      ],
+      "brakeReason": null,
+      "missingInformation": [],
+      "safeToRewriteWithoutNewFacts": true,
+      "paragraphRoles": [
+        "META_COMMENTARY",
+        "ADDS_CONTEXT",
+        "ADDS_REASONING",
+        "ADDS_NEW_FACT"
+      ],
+      "rewriteFeasibility": "SAFE_WITH_SOURCE"
+    },
+    "model": "account-backed-agent"
+  }
+]

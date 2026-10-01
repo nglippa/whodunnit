@@ -1,0 +1,722 @@
+[
+  {
+    "id": "A03",
+    "creator": "A",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "project update",
+    "rationale": "The material supports a shorter, better structured decision update. An approved option and the evidence for it are dispersed across the sections, including a late note."
+  },
+  {
+    "id": "A08",
+    "creator": "A",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "memo",
+    "rationale": "A detailed note contains a complete policy decision and rationale; it can be reorganized for staff without inventing content."
+  },
+  {
+    "id": "A09",
+    "creator": "A",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "project update",
+    "rationale": "Schedule and access details support a clearer update; the forecast does not explain the budget increase."
+  },
+  {
+    "id": "A10",
+    "creator": "A",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "technical operations",
+    "rationale": "The timeline, impact, and first queue increase are supported; the later slowdown has no retained traces."
+  },
+  {
+    "id": "A18",
+    "creator": "A",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "email",
+    "rationale": "The team can tighten the planning note, but an attendee venue announcement still depends on the site decision."
+  },
+  {
+    "id": "B03",
+    "creator": "B",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "procedure",
+    "rationale": "The procedure has a usable normal path and exception path. The late-item call now works for specimens that become ready after 1:45 p.m."
+  },
+  {
+    "id": "B07",
+    "creator": "B",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "healthcare operations briefing",
+    "rationale": "The source explicitly limits claims about wait times while supplying enough facts for a meaningful structural rewrite and concise sign."
+  },
+  {
+    "id": "B09",
+    "creator": "B",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "healthcare operations memo",
+    "rationale": "The counter and order check are clear; the memo cannot announce a start date or pickup hours before the coverage schedule is confirmed."
+  },
+  {
+    "id": "B18",
+    "creator": "B",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "service review note",
+    "rationale": "The incident and review path can be stated clearly; a cause or corrective action cannot be asserted before the records review."
+  },
+  {
+    "id": "B19",
+    "creator": "B",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "policy notice",
+    "rationale": "The interim instruction is usable; a network acceptance rule cannot be supplied before the policy committee decides it."
+  },
+  {
+    "id": "C02",
+    "creator": "C",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "personal writing",
+    "rationale": "A complete personal essay has several repeated reflections about memory and the object. It can be tightened and modestly reordered using only supplied events; the workbench ending is already grounded."
+  },
+  {
+    "id": "C03",
+    "creator": "C",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "personal writing",
+    "rationale": "The sign-up process and current logistics can be edited; a specific later start time still depends on the library booking."
+  },
+  {
+    "id": "C05",
+    "creator": "C",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "personal writing",
+    "rationale": "The decision and its practical reason are present. The letter can be shaped around a clear decline and a limited offer of help."
+  },
+  {
+    "id": "C10",
+    "creator": "C",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "academic discussion",
+    "rationale": "The observed access rules and displays support a stronger comparison; any effect on beginners or participation remains unmeasured."
+  },
+  {
+    "id": "A11",
+    "creator": "A-original",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "email",
+    "rationale": "The request and deadline can be made direct; the proposed claim that the new training improved accuracy needs results not yet reported."
+  },
+  {
+    "id": "A12",
+    "creator": "A-original",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "memo",
+    "rationale": "Existing evidence supports simplifying the options and constraints, but selecting a funding source requires a decision that has not been made."
+  },
+  {
+    "id": "A16",
+    "creator": "A-original",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "email",
+    "rationale": "The message can state current obligations plainly, but the requested approval of a new exception has not been granted."
+  },
+  {
+    "id": "A17",
+    "creator": "A-original",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "project update",
+    "rationale": "The preparation timeline and dependencies can be reorganized, but the promised benefit figure is missing a baseline measurement."
+  },
+  {
+    "id": "D01",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "project update",
+    "rationale": "Pickup method outcome is tempting but the document lacks a comparable before-and-after measure. Repetition around signage and informal observations can be tightened."
+  },
+  {
+    "id": "D02",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "policy memo",
+    "rationale": "The discussion and draft request do not establish adoption of a policy. Existing evidence supports a clearer problem and proposal."
+  },
+  {
+    "id": "D03",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "scientific discussion",
+    "rationale": "The measured difference is stated, while a singular biological mechanism is not established. One local causal phrase can be made appropriately bounded."
+  },
+  {
+    "id": "D05",
+    "creator": "D",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "meeting summary",
+    "rationale": "The purchase decision and installation owners are buried near the end, so they can be surfaced without invention. Repeated hose context can be shortened."
+  },
+  {
+    "id": "D06",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "technical report",
+    "rationale": "Eight successful observations support a narrower status update, not a guarantee of permanent reliability or a definitive root cause."
+  },
+  {
+    "id": "D08",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "grant progress narrative",
+    "rationale": "Scanning is documented; public access or community impact is not yet evidenced. The narrative can bring completed work and next steps into clearer order."
+  },
+  {
+    "id": "D09",
+    "creator": "D",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "operations update",
+    "rationale": "The measured completion outcome is buried in the final paragraph and can be surfaced. Comprehension remains outside the report's measure."
+  },
+  {
+    "id": "D11",
+    "creator": "D",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "meeting summary",
+    "rationale": "The decision and owner appear late but are explicit. The summary can lead with them and compress the option discussion."
+  },
+  {
+    "id": "D14",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "project update",
+    "rationale": "The update can separate completed audio work from unresolved device behavior. It cannot claim visitor usability or a launch date from staff testing."
+  },
+  {
+    "id": "D18",
+    "creator": "D",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "personal group note",
+    "rationale": "The note can foreground concrete follow-up and reduce repeated setup detail. Program use and an incomplete sign-in sheet do not yield an attendance figure."
+  },
+  {
+    "id": "E01",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "professional operations",
+    "rationale": "Can consolidate repeated move framing and foreground the temporary-pass procedure; elimination of entry delays lacks wait-time evidence."
+  },
+  {
+    "id": "E02",
+    "creator": "E",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "customer update",
+    "rationale": "Repeated label and address explanation can be compressed using the stated facts; all operational claims are supported."
+  },
+  {
+    "id": "E03",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "technical postmortem",
+    "rationale": "Timeline and repeated recovery sentence support a clearer account; asserted root cause and permanent fix exceed the available evidence."
+  },
+  {
+    "id": "E04",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "release report",
+    "rationale": "Can tighten duplicated export explanation and surface the pilot scope; the cycle-time prediction needs evidence."
+  },
+  {
+    "id": "E05",
+    "creator": "E",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "professional operations",
+    "rationale": "The two archives and cross-reference sheet can be ordered more clearly and the repeated index explanation reduced."
+  },
+  {
+    "id": "E06",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "customer update",
+    "rationale": "The status distinction and action path can be clarified; a universal Saturday promise is unsupported."
+  },
+  {
+    "id": "E07",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "technical postmortem",
+    "rationale": "Timeline and validation effect can be streamlined; throttle cause and risk removal cannot be established."
+  },
+  {
+    "id": "E08",
+    "creator": "E",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "release report",
+    "rationale": "The offline states can be reorganized into a crisp explanation with the known limitation; necessary facts are present."
+  },
+  {
+    "id": "E12",
+    "creator": "E",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "release report",
+    "rationale": "A local edit can reduce repeated explanation of the two links; behavior and limitation are specified."
+  },
+  {
+    "id": "E13",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "professional operations",
+    "rationale": "Can connect the session evidence to the planned sampling and trim framing; the claim that the problem is solved lacks outcome data."
+  },
+  {
+    "id": "E14",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "customer update",
+    "rationale": "The customer action and scope can be made prominent; exact cause and permanent prevention are unsubstantiated."
+  },
+  {
+    "id": "E15",
+    "creator": "E",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "professional operations",
+    "rationale": "The change, reason, and exception path can be reordered and tightened without inventing a result."
+  },
+  {
+    "id": "E16",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "release report",
+    "rationale": "The pilot scope and conflict safeguard can be made clearer; universal time savings lack measurement."
+  },
+  {
+    "id": "E17",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "technical postmortem",
+    "rationale": "The wait and customer access can be stated succinctly; campaign attribution and agreement have no evidence."
+  },
+  {
+    "id": "E18",
+    "creator": "E",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "customer update",
+    "rationale": "The buried fact about older emails can be surfaced and repetitive entrance detail reduced; the needed facts are all present."
+  },
+  {
+    "id": "E19",
+    "creator": "E",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "professional operations",
+    "rationale": "The status groups and urgency can be organized for action; next-week completion and no-risk claims require missing decisions and dates."
+  },
+  {
+    "id": "F01",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "academic discussion",
+    "rationale": "The observed participation and attendance facts can be organized clearly; course-wide improvement in reasoning lacks evidence."
+  },
+  {
+    "id": "F02",
+    "creator": "F",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "healthcare operations",
+    "rationale": "A complete operational update with a buried timing fact and repeated laboratory explanation; all clarification uses stated facts."
+  },
+  {
+    "id": "F03",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "policy",
+    "rationale": "Existing hours, feedback, and next meeting permit useful restructuring; permanent access and funding claims are unsupported."
+  },
+  {
+    "id": "F04",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "community announcement",
+    "rationale": "Opening details support concise announcement; the claim about ending disputes has no basis in the draft."
+  },
+  {
+    "id": "F05",
+    "creator": "F",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "personal letter",
+    "rationale": "A complete letter with the return options already established; local tightening is safe."
+  },
+  {
+    "id": "F06",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "academic discussion",
+    "rationale": "The cross-department comparison can be clarified; grade improvement cannot be inferred from interviews."
+  },
+  {
+    "id": "F07",
+    "creator": "F",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "healthcare operations",
+    "rationale": "The operative recommendation lacks a chosen procedure, problem evidence, owner, and measurement; a substantive repair needs new facts."
+  },
+  {
+    "id": "F08",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "policy",
+    "rationale": "Participation and route details can be sharpened; first-year savings lack projections."
+  },
+  {
+    "id": "F09",
+    "creator": "F",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "community announcement",
+    "rationale": "All logistics and reason for the move are present; substantial reordering can foreground access, scope, and entry instructions."
+  },
+  {
+    "id": "F10",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "personal letter",
+    "rationale": "The visit narrative and scan plan can be tightened; independence and care needs cannot be determined from the visit."
+  },
+  {
+    "id": "F11",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "academic discussion",
+    "rationale": "The count and limitations support a coherent pilot interpretation; causal and accuracy claims lack a separated measure."
+  },
+  {
+    "id": "F12",
+    "creator": "F",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "policy",
+    "rationale": "A clean policy notice with all conditions and purpose stated; leaving it alone is defensible."
+  },
+  {
+    "id": "F13",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "healthcare operations",
+    "rationale": "Duties and escalation can be clearer; elimination of risk and guaranteed detection are unsupported."
+  },
+  {
+    "id": "F14",
+    "creator": "F",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "policy",
+    "rationale": "Route closure rests on missing capacity, stops, timing, savings, and accessibility facts; meaningful recommendation cannot be repaired from text."
+  },
+  {
+    "id": "F19",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "policy",
+    "rationale": "Site facts and geographic limitation support a clearer plan; universal access cannot be claimed."
+  },
+  {
+    "id": "F21",
+    "creator": "F",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "personal letter",
+    "rationale": "The timeline and precautions can be clarified; repair status and source remain unknown."
+  },
+  {
+    "id": "G04",
+    "creator": "G",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "festival program introduction",
+    "rationale": "The apparent missing explanation is buried in the final safety note. The draft can be reorganized substantially using only stated facts."
+  },
+  {
+    "id": "G06",
+    "creator": "G",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "contractor client update email",
+    "rationale": "The requested arrival date is absent. The operating arrangement and distinction between survey and repair can be clarified without guessing the date."
+  },
+  {
+    "id": "G07",
+    "creator": "G",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "museum object label",
+    "rationale": "The historical cause is missing, while the draft offers safe material about provenance and current conservation that can be sharpened."
+  },
+  {
+    "id": "G09",
+    "creator": "G",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "grant impact report",
+    "rationale": "The apparent impact gap is answered late by the level-path detail. The report's order and overstatement can be revised using facts already present."
+  },
+  {
+    "id": "G10",
+    "creator": "G",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "residential building notice",
+    "rationale": "The stated purpose is a return date, which is wholly unavailable. The rest is concise and coherent, leaving little meaningful editing beyond that answer."
+  },
+  {
+    "id": "G13",
+    "creator": "G",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "library trustee update",
+    "rationale": "The attendance figures are buried near the end. A substantial reordering can answer the question using stated numbers while preserving the causal limit."
+  },
+  {
+    "id": "G15",
+    "creator": "G",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "food magazine feature",
+    "rationale": "The editorial hook depends on the proprietor's reason, which is missing. The existing history and sensory material allow meaningful structural editing."
+  },
+  {
+    "id": "G17",
+    "creator": "G",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "open house invitation",
+    "rationale": "The reason is present late in the checklist. The invitation has a safe, document-wide ordering problem and inflated language."
+  },
+  {
+    "id": "G23",
+    "creator": "G",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "customer window order email",
+    "rationale": "The specific finish code is absent, so a color-match assurance would be invented. The email has duplicated measurements and a clear verified process to edit."
+  },
+  {
+    "id": "H01",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "healthcare operations",
+    "rationale": "The discharge team needs the cause of a transport delay, which is absent; repeated timeline and handoff details can be consolidated."
+  },
+  {
+    "id": "H02",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "technical documentation",
+    "rationale": "The standalone procedure contains the owner and restore steps, with a small terminology inconsistency left for revision."
+  },
+  {
+    "id": "H04",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "support correspondence",
+    "rationale": "The only requested substance is an unrecorded delivery date; the short message has no genuine revision opportunity."
+  },
+  {
+    "id": "H05",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "public policy",
+    "rationale": "The council needs a funding decision absent from the note; existing eligibility and cost details can be organized."
+  },
+  {
+    "id": "H06",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "community groups",
+    "rationale": "The announcement contains the complete allocation process and logistics, with modest repetition around the list and drawing."
+  },
+  {
+    "id": "H07",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "procedural notes",
+    "rationale": "The procedure includes a limited trial result, leaving the effect of the slip unmeasured."
+  },
+  {
+    "id": "H08",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "healthcare operations",
+    "rationale": "The sole unresolved issue is who approved the isolation-room closure; the note is otherwise concise and specific."
+  },
+  {
+    "id": "H09",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "technical documentation",
+    "rationale": "The runbook gives the operational sequence but retains the missing production rollback criterion and some repetition."
+  },
+  {
+    "id": "H10",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "support correspondence",
+    "rationale": "The customer email states the available resolution and timing, with a small opening delay in the main decision."
+  },
+  {
+    "id": "H12",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "public policy",
+    "rationale": "A short notice hinges entirely on a pending opening date and has no separate useful rewrite."
+  },
+  {
+    "id": "H13",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "community groups",
+    "rationale": "The board needs a decision on storage access that is not in the minutes; inventory and volunteer roles can be reorganized."
+  },
+  {
+    "id": "H14",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "procedural notes",
+    "rationale": "The procedure gives the escalation path but retains a duplicated envelope check and inconsistent role naming."
+  },
+  {
+    "id": "H15",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "healthcare operations",
+    "rationale": "The note needs an unrecorded observed result of a callback pilot; its schedule description has a small duplicate."
+  },
+  {
+    "id": "H16",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "academic discussion",
+    "rationale": "The excerpt leaves the causal question unresolved while removing the impossible stored-vial rerun."
+  },
+  {
+    "id": "H17",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "public policy",
+    "rationale": "The plan consolidates the service details but leaves the budget owner and after-hours routing decision unresolved."
+  },
+  {
+    "id": "H18",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "technical documentation",
+    "rationale": "The guide includes the seven-day retention rule but repeats it and leaves status details in two places."
+  },
+  {
+    "id": "H19",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "support correspondence",
+    "rationale": "The customer’s requested cause of duplicate charges is unknown; transaction facts and next steps can be made clearer."
+  },
+  {
+    "id": "H20",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_BLOCKED",
+    "requestedScope": "LEAVE_ALONE",
+    "genre": "community groups",
+    "rationale": "The single unresolved fact is the vote outcome; the concise minutes contain no substantive safe work."
+  },
+  {
+    "id": "H21",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "SUBSTANTIVE",
+    "genre": "procedural notes",
+    "rationale": "The safety note describes handling and storage but retains an unresolved ventilation approval and some repeated cleanup detail."
+  },
+  {
+    "id": "H22",
+    "creator": "H",
+    "requestedFeasibility": "FULLY_SAFE",
+    "requestedScope": "LOCAL",
+    "genre": "public policy",
+    "rationale": "The effective date is buried in the final paragraph; a local clarification can surface it."
+  },
+  {
+    "id": "H23",
+    "creator": "H",
+    "requestedFeasibility": "PARTIALLY_SAFE",
+    "requestedScope": "DISTRIBUTED_LIGHT",
+    "genre": "healthcare operations",
+    "rationale": "The operational note leaves the backup reviewer and extra capacity unassigned while making the existing queue rules usable."
+  }
+]

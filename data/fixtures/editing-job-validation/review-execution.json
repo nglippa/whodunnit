@@ -1,0 +1,52 @@
+{
+  "contractVersion": "semantic-review.v3",
+  "strategy": "reconstruction-v7",
+  "mode": "review-all",
+  "transport": "account-backed-agents; no metered provider or local model",
+  "requestBundleSha256": "3c7a50d8457611895ccc8aab3099d58c089b6c9f8a01ed13a221c96e392d5c6e",
+  "savedOutputSha256": "5c788c15f3bf0ace7f946c36c4ed8869831a9ba759de01027ba461bf350cb9ed",
+  "batches": {
+    "1": {
+      "inputSha256": "470969f4f0e00ca81f73f2fb680e97f97cd02433caf3b7819ee012ffa79b0643",
+      "outputSha256": "404e444265980507cd1f5c37033f85ef6e6f076480a19929d106b562d8949aee"
+    },
+    "2": {
+      "inputSha256": "8db594f44bae42ce13d4abc801c2a6595d4e0f10ff7c53287fdc28fd7b633d56",
+      "outputSha256": "f7c4e5e7e4ada9fa442bdfc0c4d1c173e7085a3c705e728cadb8e409145ad6fd"
+    },
+    "3": {
+      "inputSha256": "fcc591d113abfb7aae909a4768aeb5786af60bac12551bb0578cc9976c981f44",
+      "outputSha256": "c8ac0d52287904c08c31d2b1e83943c1f3e04e8c9505ea78fb7209f0b9981f0a"
+    },
+    "4": {
+      "inputSha256": "1b1a392b3ddc955f7d328674019e3a15caf03236bb4b8afe193629023ab0b3be",
+      "outputSha256": "201e51b05384e9e540b3a2cf387368f9c574cfbf7b5c8ece736cbbe513487336"
+    },
+    "5": {
+      "inputSha256": "67caeba976b78688f56b6988d2637ccc554f0456480564b3d868ae93817c37cc",
+      "outputSha256": "9d1fc378dcbaca0571c90a4bfe943a10befa4cccfafe6115590397b57e044d80"
+    },
+    "6": {
+      "inputSha256": "f7aa39a842bdb92e8d55cc3a9316e7f934587d564da6a4e5c9e5affbdaf8086c",
+      "outputSha256": "1ab8d80fd1c25853f7c1830db9efd46ba163fb37e4516f97c8387c293c7dbcec"
+    },
+    "7": {
+      "inputSha256": "07d8d5bc3876f6589f82a795a28857e9acb194f35fff433e93e2f5ae75f71d63",
+      "outputSha256": "786d1084a45dd235b225fa7983ce6a4f9e3d999684f5286168915306904fec22"
+    },
+    "8": {
+      "inputSha256": "3b7af7335759c3a9f236b0a34026fd379358c01723544496b2d2a5f7812b0300",
+      "outputSha256": "c69888b7adf70448cce9f63ea8eb3d1708fe6ff24acf1712c9fbb87ced4d1441"
+    },
+    "9": {
+      "inputSha256": "dd0327a42c50a486461252d55ea5bb0fdb121fdd1c1b3fc7349d93b69ad0c50d",
+      "outputSha256": "0bd33603b46441a37ad06c433ec454227f6bb8d2779ed90e1014a96eacf53e0c"
+    },
+    "10": {
+      "inputSha256": "c7cf759aa77f8a9c5a1b0da098c13fa3ef5db798fe7e324132e0f38d4c21fc77",
+      "outputSha256": "9ca413c455bda408967ddc04128e6402d441cec9bf8906104967e56c1109d609"
+    }
+  },
+  "reviewCount": 90,
+  "oneRun": true
+}

@@ -1,0 +1,819 @@
+{
+  "method": "Independent post-run conservative mapping of each first-reviewer gold editing job to pinned v3 findings and missingInformation; subjective secondary analysis, not ground truth.",
+  "coders": [
+    "account-backed-coder-1",
+    "account-backed-coder-2"
+  ],
+  "records": [
+    {
+      "id": "A03",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding says to bring the approved staged decision forward; cited evidence includes the dates and buried approval."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding surfaces the decision but does not identify the trial-and-audience reorganization."
+        },
+        {
+          "jobId": "J3",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding does not call for compressing preparation history or preserving its specific details."
+        }
+      ]
+    },
+    {
+      "id": "B07",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J3",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "A11",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 leaves the case alone, names no equivalent missing proposition, and does not flag this editorial need or its infeasibility."
+        }
+      ]
+    },
+    {
+      "id": "A12",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 leaves the case alone, names no equivalent missing proposition, and does not flag this editorial need or its infeasibility."
+        }
+      ]
+    },
+    {
+      "id": "A16",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 leaves the case alone, names no equivalent missing proposition, and does not flag this editorial need or its infeasibility."
+        }
+      ]
+    },
+    {
+      "id": "A17",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 leaves the case alone, names no equivalent missing proposition, and does not flag this editorial need or its infeasibility."
+        }
+      ]
+    },
+    {
+      "id": "D02",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "D06",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding flags repeated change and run facts but does not call for one incident chronology."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding does not identify the retry and alert-page consolidation or display change."
+        }
+      ]
+    },
+    {
+      "id": "D09",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "D14",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J3",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "D18",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J3",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "E01",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the repeated temporary-pass explanation and calls for tightening it."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the unsupported eliminated-delays claim against absent wait-time evidence."
+        }
+      ]
+    },
+    {
+      "id": "E02",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "E03",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies adjacent repetition of the worker-restart result."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the unsupported deployment-defect and permanent-fix assertions."
+        }
+      ]
+    },
+    {
+      "id": "E04",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the tautological restatement of the export choice."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the unsupported halving prediction against the pilot scope."
+        }
+      ]
+    },
+    {
+      "id": "E05",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding only targets wording about the indexes, not directions, cross-reference scope, or citation."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding cites the repeated explanation of the two index functions and calls for a direct statement."
+        }
+      ]
+    },
+    {
+      "id": "E06",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for removing the Saturday guarantee and assurance using the pending-scan evidence."
+        }
+      ]
+    },
+    {
+      "id": "E07",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies repeated explanation of the count check withholding the export link."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the unproven throttle cause and resolved-risk claim."
+        }
+      ]
+    },
+    {
+      "id": "E08",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "V3 has no actionable finding for this editing job (LEAVE_ALONE)."
+        }
+      ]
+    },
+    {
+      "id": "E13",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for qualifying the solved-handoffs claim against the limited training evidence."
+        }
+      ]
+    },
+    {
+      "id": "E14",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for removing the known-cause and permanent-prevention assertions."
+        }
+      ]
+    },
+    {
+      "id": "E16",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for removing the universal savings claim unsupported by the pilot."
+        }
+      ]
+    },
+    {
+      "id": "E17",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding targets the campaign claim, not the earlier backlog-causation statement."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for removing the campaign attribution and claimed staggering agreement."
+        }
+      ]
+    },
+    {
+      "id": "E19",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for qualifying the closure and continuity assurance using pending reviews and service dates."
+        }
+      ]
+    },
+    {
+      "id": "F01",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding targets the course-wide quality claim, not attendance causation and its competing changes."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding calls for narrowing the course-wide quality conclusion to observed speaking."
+        }
+      ]
+    },
+    {
+      "id": "F03",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding targets the Sunday certainty and permanence claims, citing the trial and unknown demand/cost."
+        }
+      ]
+    },
+    {
+      "id": "F04",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding narrows the dispute-ending prediction to the approved Saturday opening."
+        }
+      ]
+    },
+    {
+      "id": "F06",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding rejects the grade-increase claim using the absent grade data and reported experiences."
+        }
+      ]
+    },
+    {
+      "id": "F07",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding qualifies repeated recommendation claims, but names no required missing propositions or committee-ready procedure and implementation job."
+        }
+      ]
+    },
+    {
+      "id": "F08",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding removes the unsupported first-year savings assertion pending cost review."
+        }
+      ]
+    },
+    {
+      "id": "F09",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no actionable finding groups the arrival details."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no actionable finding removes the repeated entrance/check-in instruction."
+        }
+      ]
+    },
+    {
+      "id": "F10",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding limits the unsupported independence assurance to observations from the visit."
+        }
+      ]
+    },
+    {
+      "id": "F11",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding targets the map-caused accuracy conclusion and cites the rubric that did not assess correctness."
+        }
+      ]
+    },
+    {
+      "id": "F13",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding targets the spoilage and excursion guarantee using the intermittent log and untested assignment."
+        }
+      ]
+    },
+    {
+      "id": "F14",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding identifies the repeated closure and benefit claims and directs individual qualification against route gaps."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": true,
+          "blockedJobRecognized": false,
+          "reason": "Missing information names combined-route travel time, capacity, and boarding locations; review does not identify the actionable family-notice job or its start date/accessibility contact."
+        }
+      ]
+    },
+    {
+      "id": "F19",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding narrows the universal access guarantee using western travel and evening-hour limits."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding mentions access gaps, but missingInformation is empty and no separate blocked information job is identified."
+        }
+      ]
+    },
+    {
+      "id": "F21",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Finding targets the false fixed-leak assurance using the unknown source and pending inspection."
+        }
+      ]
+    },
+    {
+      "id": "G07",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding limits the unsupported history-of-care inference."
+        }
+      ]
+    },
+    {
+      "id": "G15",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation does not name the bakery’s reason for ending the rye."
+        }
+      ]
+    },
+    {
+      "id": "H01",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding surfaces the duplicate-list and ride-status observations beside the delays."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation omits the ride-request acceptance and vehicle-assignment facts."
+        }
+      ]
+    },
+    {
+      "id": "H07",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Redundancy finding cites the repeated inventory check and calls for removing the later restatement."
+        }
+      ]
+    },
+    {
+      "id": "H09",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation omits the approved lag amount and duration for rollback."
+        }
+      ]
+    },
+    {
+      "id": "H13",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding brings the location count and intake timing together."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding or missingInformation identifies the rental decision and unapproved cost."
+        }
+      ]
+    },
+    {
+      "id": "H15",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding or missingInformation addresses the limited pilot evidence or corrected report."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding deduplicates the repeated desk-script instruction."
+        }
+      ]
+    },
+    {
+      "id": "H17",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation omits the assigned after-hours routing contact."
+        },
+        {
+          "jobId": "J2",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation omits approved stock funding and ownership."
+        }
+      ]
+    },
+    {
+      "id": "H18",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": true,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "Redundancy finding cites both seven-day expiry statements and calls for tightening the final one."
+        }
+      ]
+    },
+    {
+      "id": "H20",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation omits the verified vote tally and outcome."
+        }
+      ]
+    },
+    {
+      "id": "H21",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding deduplicates the rinse and cabinet-return steps."
+        }
+      ]
+    },
+    {
+      "id": "H22",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; no finding moves the effective date beside the form-version rule."
+        }
+      ]
+    },
+    {
+      "id": "H23",
+      "jobs": [
+        {
+          "jobId": "J1",
+          "recognizedSafe": false,
+          "missingPropositionNamed": false,
+          "blockedJobRecognized": false,
+          "reason": "LEAVE_ALONE; missingInformation omits the assigned backup reviewer and handover."
+        }
+      ]
+    }
+  ]
+}

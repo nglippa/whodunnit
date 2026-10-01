@@ -1,0 +1,590 @@
+{
+  "method": "Independent post-annotation conceptual matching of first and second blind editing jobs; one-to-one pairs; qualitative coding, not engine output.",
+  "records": [
+    {
+      "id": "A11",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1",
+        "J2"
+      ],
+      "secondaryUnmatched": [],
+      "note": "The second editor found no jobs."
+    },
+    {
+      "id": "A12",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1",
+        "J2"
+      ],
+      "secondaryUnmatched": [
+        "J1",
+        "J2"
+      ],
+      "note": "Primary J2 combines funding and start date; secondary J1 and J2 separate those outcomes. Neither alone is equivalent."
+    },
+    {
+      "id": "A16",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1",
+        "J2"
+      ],
+      "secondaryUnmatched": [],
+      "note": "The second editor found no jobs."
+    },
+    {
+      "id": "A17",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1",
+        "J2"
+      ],
+      "secondaryUnmatched": [],
+      "note": "The second editor found no jobs."
+    },
+    {
+      "id": "D01",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors found no jobs."
+    },
+    {
+      "id": "D02",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "D03",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors found no jobs."
+    },
+    {
+      "id": "D05",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors found no jobs."
+    },
+    {
+      "id": "D06",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "D08",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors found no jobs."
+    },
+    {
+      "id": "D09",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "D11",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors found no jobs."
+    },
+    {
+      "id": "D14",
+      "pairs": [
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [
+        "J1",
+        "J3"
+      ],
+      "secondaryUnmatched": [
+        "J1"
+      ],
+      "note": "Primary J2 and secondary J2 both group the menu and restart evidence. Secondary J1 spans several workstreams and is broader than primary J1 or J3."
+    },
+    {
+      "id": "D18",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J2"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J3"
+        }
+      ],
+      "primaryUnmatched": [
+        "J3"
+      ],
+      "secondaryUnmatched": [
+        "J1"
+      ],
+      "note": "Caption verification and event setup changes pair separately. Secondary J1 is a broader document reordering; primary J3 focuses on the closing reflection."
+    },
+    {
+      "id": "E01",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "E02",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [
+        "J2"
+      ],
+      "secondaryUnmatched": [
+        "J2"
+      ],
+      "note": "Card explanation pairs. Primary J2 concerns duplicate label options; secondary J2 concerns the return deadline."
+    },
+    {
+      "id": "E03",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "E04",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "E05",
+      "pairs": [
+        {
+          "primaryId": "J2",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [
+        "J1"
+      ],
+      "secondaryUnmatched": [],
+      "note": "Both J2 primary and J1 secondary condense the index explanation. Primary J1 covers the broader source-document workflow."
+    },
+    {
+      "id": "E06",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "E07",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "E08",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [
+        "J2"
+      ],
+      "secondaryUnmatched": [
+        "J2"
+      ],
+      "note": "Both J1 jobs consolidate saved-route versus downloaded-tile behavior. Primary J2 centers the rename fix; secondary J2 centers release-review state checks."
+    },
+    {
+      "id": "F12",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors found no jobs."
+    },
+    {
+      "id": "F13",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Paired jobs seek the same editorial result."
+    },
+    {
+      "id": "F14",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [
+        "J2"
+      ],
+      "secondaryUnmatched": [
+        "J2",
+        "J3"
+      ],
+      "note": "The safe proposal revision pairs. Primary J2 combines the board recommendation and family notice; secondary J2 and J3 split them."
+    },
+    {
+      "id": "F19",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [
+        "J2"
+      ],
+      "secondaryUnmatched": [],
+      "note": "The bounded-access revision pairs; the blocked countywide-access evidence job has no counterpart."
+    },
+    {
+      "id": "F21",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "G04",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "G06",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "G07",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1"
+      ],
+      "secondaryUnmatched": [],
+      "note": "Only the primary editor flags the unsupported history-of-care interpretation."
+    },
+    {
+      "id": "G09",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "G10",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "G13",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "G15",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1"
+      ],
+      "secondaryUnmatched": [],
+      "note": "Only the primary editor requests the unreported reason for discontinuing the rye."
+    },
+    {
+      "id": "G17",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "G23",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "H02",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [
+        "J1"
+      ],
+      "note": "Only the secondary editor flags repeated release-log instructions."
+    },
+    {
+      "id": "H06",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "H07",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H09",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [
+        "J1"
+      ],
+      "note": "The secondary CSV-availability deduplication has no primary counterpart; both editors seek the missing rollback condition."
+    },
+    {
+      "id": "H10",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "H13",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H14",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "H15",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J2"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H16",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "H17",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        },
+        {
+          "primaryId": "J2",
+          "secondaryId": "J2"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H18",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H19",
+      "pairs": [],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Both editors report no jobs."
+    },
+    {
+      "id": "H20",
+      "pairs": [],
+      "primaryUnmatched": [
+        "J1"
+      ],
+      "secondaryUnmatched": [],
+      "note": "Only the primary editor requests the verified vote outcome."
+    },
+    {
+      "id": "H21",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H22",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    },
+    {
+      "id": "H23",
+      "pairs": [
+        {
+          "primaryId": "J1",
+          "secondaryId": "J1"
+        }
+      ],
+      "primaryUnmatched": [],
+      "secondaryUnmatched": [],
+      "note": "Jobs seek the same editorial result."
+    }
+  ]
+}

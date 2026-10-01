@@ -1,0 +1,83 @@
+{
+  "created": "2026-10-01T03:06:16.516424+00:00",
+  "kind": "INITIAL_PINNED_V3_BASELINE",
+  "inputManifestSha256": "3c38cb21c4e0a4b2ddbcd7b9536b4c31c9b4be91a15b9fd24af31b1490050d8c",
+  "reviewOutputSha256": "5c788c15f3bf0ace7f946c36c4ed8869831a9ba759de01027ba461bf350cb9ed",
+  "contractVersion": "semantic-review.v3",
+  "strategy": "reconstruction-v7",
+  "mode": "review-all",
+  "records": 90,
+  "accepted": 90,
+  "scopeMatrix": {
+    "SUBSTANTIVE": {
+      "DISTRIBUTED_LIGHT_EDIT": 4,
+      "LEAVE_ALONE": 4
+    },
+    "LEAVE_ALONE": {
+      "LEAVE_ALONE": 40
+    },
+    "LOCAL": {
+      "LEAVE_ALONE": 14,
+      "LOCAL_EDIT": 15
+    },
+    "DISTRIBUTED_LIGHT": {
+      "LOCAL_EDIT": 8,
+      "LEAVE_ALONE": 5
+    }
+  },
+  "feasibilityMatrix": {
+    "SAFE": {
+      "SAFE_WITH_SOURCE": 24,
+      "NO_EDIT_NEEDED": 51
+    },
+    "PARTIALLY_SAFE": {
+      "NO_EDIT_NEEDED": 7,
+      "SAFE_WITH_SOURCE": 2
+    },
+    "BLOCKED": {
+      "SAFE_WITH_SOURCE": 1,
+      "NO_EDIT_NEEDED": 5
+    }
+  },
+  "executionMatrix": {
+    "SAFE": {
+      "EDIT": 21,
+      "UNCHANGED": 54
+    },
+    "PARTIALLY_SAFE": {
+      "UNCHANGED": 7,
+      "EDIT": 2
+    },
+    "BLOCKED": {
+      "EDIT": 1,
+      "UNCHANGED": 5
+    }
+  },
+  "goldScope": {
+    "SUBSTANTIVE": 8,
+    "LEAVE_ALONE": 40,
+    "LOCAL": 29,
+    "DISTRIBUTED_LIGHT": 13
+  },
+  "goldFeasibility": {
+    "SAFE": 75,
+    "PARTIALLY_SAFE": 9,
+    "BLOCKED": 6
+  },
+  "disputedFeasibility": 8,
+  "cleanDiagnosis": 40,
+  "cleanTotal": 40,
+  "cleanFinalUnchanged": 39,
+  "partialDiagnosed": 0,
+  "partialTotal": 9,
+  "blockedDiagnosed": 0,
+  "blockedTotal": 6,
+  "substantiveDiagnosed": 0,
+  "substantiveTotal": 8,
+  "limitations": [
+    "This is a development corpus, not a blind holdout.",
+    "Only 9 of 90 first-review labels are partially safe; 8 feasibility labels are disputed by a second review.",
+    "Account-backed agent execution is not a configured provider API replay; model settings/token counts are unavailable.",
+    "No final reconstruction was attempted."
+  ]
+}

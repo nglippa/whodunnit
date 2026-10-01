@@ -1,0 +1,1396 @@
+[
+  {
+    "reviewer": "D",
+    "annotations": [
+      {
+        "id": "D01",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.93,
+        "rationale": "The update already distinguishes observed shelf use, incomplete counts, informal comments, and October actions without overstating results.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "D02",
+        "scope": "SUBSTANTIVE",
+        "feasibility": "SAFE",
+        "confidence": 0.88,
+        "rationale": "The case for a shared form, its proposed fields and placement, the meeting decision, and supporting site details recur in separate sections. A coherent shorter proposal needs those strands regrouped and repeated justifications removed together.",
+        "coupling": "GLOBALLY_COUPLED",
+        "couplingRationale": "Moving the meeting decision and grouping the form requirements changes where each later explanation belongs; compression must follow the new progression.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "REORGANIZE",
+            "objective": "Present the observed sign-out mismatch, the request to draft a common form, and the proposed fields and storage location in one progression, then place pilot details and next steps after them.",
+            "scope": "DOCUMENT_WIDE",
+            "sourceEvidence": [
+              "A review of three sites found that the sheets use different labels for the same device",
+              "The operations group discussed a common form at its September meeting and asked the help desk to draft a version.",
+              "The review also turned up small differences in where forms are kept."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The decision and the evidence supporting the proposed workflow are separated across the draft."
+          },
+          {
+            "id": "J2",
+            "operation": "DEDUPLICATE",
+            "objective": "State the reasons for consistent labels, an accessible form location, and brief condition notes once each while retaining the distinct site observations and the fact that usage was not counted.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "That variation has made it slow to match a tablet to a shift",
+              "This makes the proposed location part of the procedure, not just a filing preference.",
+              "The common form is a small administrative change, but it touches a repeated task at every shift change."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The concluding paragraph repeats the form rationale already established by the review and discussion."
+          }
+        ]
+      },
+      {
+        "id": "D03",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The compact result states the measured contrast, the confounding setup differences, and the limits on causal interpretation.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "D05",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.88,
+        "rationale": "These meeting minutes follow the agenda, record the harvest-table trial, and finish with the hose-reel decision, owners, and next meeting date.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "D06",
+        "scope": "SUBSTANTIVE",
+        "feasibility": "SAFE",
+        "confidence": 0.92,
+        "rationale": "The incident, successful retries, publication change, subsequent runs, and alert limitation are each revisited. A clear incident note needs one timeline and a separate current-status section.",
+        "coupling": "GLOBALLY_COUPLED",
+        "couplingRationale": "Consolidating the timeline determines which repeated observations can be removed and where the unresolved alert work belongs.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "REORGANIZE",
+            "objective": "Give one chronological account of the three early incomplete files, their successful retries, the temporary-object publication change, its test, and the eight subsequent scheduled runs; then state the remaining alert-page work.",
+            "scope": "DOCUMENT_WIDE",
+            "sourceEvidence": [
+              "In the first week, three files arrived with a zero-byte header while their data blocks were still being written.",
+              "Engineering changed the export job to write to a temporary object name and rename it after the write completes.",
+              "The temporary-object change was applied to the export job after the third incident.",
+              "The next work item is to make the alert page show the final retry state."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The same sequence is spread across the opening, follow-up, and later retrospective paragraphs."
+          },
+          {
+            "id": "J2",
+            "operation": "DEDUPLICATE",
+            "objective": "Consolidate the repeated retry and alert explanation while preserving the distinction between a first-attempt rejection, confirmed warehouse arrival, and the still-pending display change.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "The retry succeeded each time, but the alert page displayed a failed import until someone cleared it manually.",
+              "That check found the data in the expected destination each time.",
+              "A later reviewer reading only the alert page would have seen a failure without the successful retry beside it."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The retry outcome and misleading persistent alert are explained more than once."
+          }
+        ]
+      },
+      {
+        "id": "D08",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The project update separates completed scans from the unopened catalog, explains the date-field choice, and names the next batch.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "D09",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.79,
+        "rationale": "The measured trial result is delayed until the last paragraph; surfacing it near the opening would orient a reader before the message-use and caller-question details.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The result can be moved or summarized at the opening without changing the later issue and next step.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "SURFACE_EXISTING_INFORMATION",
+            "objective": "Bring the trial's within-window callback counts and preceding-period comparison forward, while retaining the distinction between completion and caller understanding.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "312 callbacks completed within the promised window out of 340 requested during the trial",
+              "271 of 318 callbacks were completed within the promised window",
+              "The report counts completed callbacks, not whether a caller understood the message."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The existing outcome gives the opening trial description a concrete result without requiring a causal claim."
+          }
+        ]
+      },
+      {
+        "id": "D11",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.87,
+        "rationale": "The meeting record moves from support evidence through the two copy options to the chosen change and named follow-up.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "D14",
+        "scope": "SUBSTANTIVE",
+        "feasibility": "SAFE",
+        "confidence": 0.89,
+        "rationale": "Audio approval, loaner-device troubleshooting, and front-desk instructions are each introduced and revisited in later paragraphs. Grouping each workstream with its evidence and remaining check would make the launch status coherent.",
+        "coupling": "GLOBALLY_COUPLED",
+        "couplingRationale": "The status and next checks for each of the three workstreams are separated across the draft, so paragraph-level edits must follow a document-wide regrouping.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "REORGANIZE",
+            "objective": "Group audio and transcript status, loaner-device findings, and front-desk card testing into three coherent workstreams, followed by the conditions for installation.",
+            "scope": "DOCUMENT_WIDE",
+            "sourceEvidence": [
+              "The editor is cleaning those files and will send a second mix to the curator.",
+              "The developer has a device log from the walkthrough and is reviewing how the menu responds to the first tap.",
+              "The curator still needs to hear that mix in context.",
+              "The front desk card will be tested with staff who were not in the original walkthrough."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "Related status and next-step facts currently appear several paragraphs apart."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "Place the observed restart difference beside the menu problem and explicitly retain its untested status; keep curator approval and a resolved menu issue as pending launch conditions.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "The two devices that opened the second gallery with one tap had been restarted that morning; the three that required two taps had not.",
+              "it has not repeated the walkthrough under matched conditions",
+              "after the curator approves the audio and the menu issue is resolved"
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The grouped version must avoid turning a recorded device difference into a diagnosis or treating pending checks as complete."
+          }
+        ]
+      },
+      {
+        "id": "D18",
+        "scope": "SUBSTANTIVE",
+        "feasibility": "SAFE",
+        "confidence": 0.91,
+        "rationale": "The team note reaches its thanks and next steps, then resumes with substantial caption, room, and sound details and revisits the caption work again. A coherent note needs those findings integrated before a single action close.",
+        "coupling": "GLOBALLY_COUPLED",
+        "couplingRationale": "Caption verification, event logistics, and next-event actions are distributed on both sides of an apparent ending; their placement and compression depend on one revised progression.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "REORGANIZE",
+            "objective": "Present the event observations, caption-card follow-up, attendance-count caveat, and room and sound lessons before one consolidated next-event plan and closing thanks.",
+            "scope": "DOCUMENT_WIDE",
+            "sourceEvidence": [
+              "Thanks to everyone who carried chairs and stayed to fold them afterward.",
+              "A couple of visitors also asked whether their recollections could be added to the archive.",
+              "The room setup gave us a few practical lessons.",
+              "I keep thinking about the conversations after the screening."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "Three substantive paragraphs follow what reads like the email's close."
+          },
+          {
+            "id": "J2",
+            "operation": "DEDUPLICATE",
+            "objective": "State the caption-card checking process once, preserving that the visitors' recollections are leads requiring collection-record review and that adding oral histories follows a separate process.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "We wrote their comments on cards so the archive volunteers can compare them with the original records.",
+              "Both need checking against the collection records before anyone changes a caption.",
+              "the volunteers will need time to check what can enter the catalog"
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The same verification requirement recurs as setup, action, and reflection."
+          },
+          {
+            "id": "J3",
+            "operation": "CLARIFY",
+            "objective": "Group the specific next-event setup changes: place sign-in at the natural entrance, print more programs, leave a wider aisle, and check sound from the doorway.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "put the sign-in sheet where guests naturally enter and print more programs",
+              "We can leave a wider aisle next time.",
+              "ask someone to listen from there before guests arrive"
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The actionable event changes are split between the early plan and later room observations."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "reviewer": "E1",
+    "annotations": [
+      {
+        "id": "E01",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.91,
+        "rationale": "The account is clear, but one sentence repeats the move's access implications and the conclusion claims an outcome the reported figures cannot establish.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The repetitive explanation and the unsupported outcome claim can be edited separately.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "COMPRESS",
+            "objective": "Remove the second, general statement about the move and temporary passes while retaining the concrete schedule and reception details.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The temporary pass process was an important part of how the move was handled, and the move affected the way people requested access."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The preceding sentences already explain the temporary pass arrangement."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "State that eliminating entry delays has not been established by the request counts, while retaining the plan to track access changes separately.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "We are confident the new arrangement has eliminated entry delays.",
+              "they do not show wait times at the doors or how often a temporary pass was needed"
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [
+              {
+                "proposition": "Door wait times and temporary-pass use under the new arrangement show that entry delays were eliminated.",
+                "necessity": "WOULD_IMPROVE"
+              }
+            ],
+            "prohibitedInferences": [],
+            "rationale": "The draft itself identifies the measurements needed to support its stronger conclusion; a qualified statement is possible now."
+          }
+        ]
+      },
+      {
+        "id": "E02",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The shipping instructions and transition rule are useful; a few explanations repeat information already conveyed.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "Each repeated explanation can be tightened without changing the other instructions.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "COMPRESS",
+            "objective": "Keep the card's contents and purpose, but condense the repeated explanation that the return address also appears on the label.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The card is there to make the return address visible at the point when the customer packs the device.",
+              "The address is printed on the label as well, so the card repeats information already in the box."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The second sentence restates the address's availability rather than adding an instruction."
+          },
+          {
+            "id": "J2",
+            "operation": "DEDUPLICATE",
+            "objective": "State the unchanged 30-day return window once while retaining the in-transit exception and return options.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The return window remains 30 days from the day the replacement arrives.",
+              "Nothing changes about the 30-day window or the choice between a drop-off point and a carrier pickup."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The return deadline is repeated without a different rule."
+          }
+        ]
+      },
+      {
+        "id": "E03",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.93,
+        "rationale": "The timeline is sound, but the recovery description repeats itself and the final paragraph asserts a cause and permanent fix that the draft expressly says are unverified.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The recovery repetition and causal overstatement occur in separate passages.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "State once that the worker restart restored queue processing, preserving the recovery times already reported.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The workers were restarted, and the restart was effective in restoring movement to the queue.",
+              "The restart restored movement, which is why customers began seeing completed imports again."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "Two adjacent sentences convey the same recovery event."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "Replace the definitive deployment-defect and permanent-fix claims with the documented uncertainty and planned test.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "This incident proves the deployment introduced a lease handling defect and that the replacement worker pool permanently fixes it.",
+              "the available record does not establish why they stopped taking new jobs",
+              "We have no comparison run on the previous build, and the replacement pool was enabled only after recovery."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [
+              {
+                "proposition": "A comparison run or equivalent investigation establishes that the deployment caused a lease-handling defect and that the replacement pool prevents its recurrence.",
+                "necessity": "WOULD_IMPROVE"
+              }
+            ],
+            "prohibitedInferences": [],
+            "rationale": "The document supports the sequence and next investigation, but not the claimed mechanism or permanent resolution."
+          }
+        ]
+      },
+      {
+        "id": "E04",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.92,
+        "rationale": "The release description is useful, with one duplicated explanation and an unsupported numerical benefit claim.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The export wording and approval-timing claim concern separate release changes.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "COMPRESS",
+            "objective": "Explain the export scope choice once and retain that the selected scope appears in the file name.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "A user can now choose either the current view or all items before downloading a CSV.",
+              "The export choice is now explicit, and making the choice explicit is the main change to export."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The final export sentence restates what the option description establishes."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "Present the approval-cycle benefit as unmeasured until the scheduled timing review, without promising a 50 percent reduction.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "We expect these changes to cut approval cycle time in half.",
+              "The release report contains no before-and-after timing data, and the pilot covered only whether the controls appeared and exported the selected rows.",
+              "A timing review is scheduled after enough approvals have passed through the new view."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [
+              {
+                "proposition": "Comparable before-and-after approval-cycle measurements support a 50 percent reduction attributable to this release.",
+                "necessity": "WOULD_IMPROVE"
+              }
+            ],
+            "prohibitedInferences": [],
+            "rationale": "The release report cannot support the stated magnitude, but it can accurately say that timing remains to be measured."
+          }
+        ]
+      },
+      {
+        "id": "E05",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.91,
+        "rationale": "The detailed audit procedure progresses logically; only the explanation of the archive indexes is conspicuously repetitive.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The single material job is confined to the index explanation.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "COMPRESS",
+            "objective": "Explain each archive index's two stated uses in one concise sentence.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Each repository has its own index.",
+              "The indexes are useful because they show the file names reviewers will see, and they are useful for locating a record if a link in an interview note is incomplete."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "Repeated framing obscures the two concrete uses."
+          }
+        ]
+      },
+      {
+        "id": "E06",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The message-trigger explanation and tracking guidance are clear, but the Saturday guarantee conflicts with the stated lack of carrier commitments.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The unsupported delivery assurance can be corrected in its own paragraph.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "CLARIFY",
+            "objective": "Remove the guaranteed Saturday arrival and assurance that plans need not change; state the pending scans and promised update without predicting delivery.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Every affected package will arrive by Saturday, and no customer needs to change their plans.",
+              "Carrier scans are still pending for some parcels, and the provider has not given us a delivery commitment for those shipments.",
+              "We will send a separate update when those scans arrive."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [
+              {
+                "proposition": "The carrier has committed to Saturday delivery for every affected package, including parcels with pending scans.",
+                "necessity": "WOULD_IMPROVE"
+              }
+            ],
+            "prohibitedInferences": [],
+            "rationale": "The source provides a truthful uncertainty statement and next-update plan, but no basis for a universal arrival promise."
+          }
+        ]
+      },
+      {
+        "id": "E07",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The incident chronology is complete, while the count-check explanation repeats itself and the root-cause and risk-removal claims exceed the logs and test history.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The repeated validation explanation can be edited separately from the unsupported causal conclusion.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "COMPRESS",
+            "objective": "Describe the count check and its withholding of the download link once, preserving that customers could not download the incomplete folder through the export page.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "A validation job caught the mismatch at 03:24 and withheld the download link.",
+              "The link was withheld because the validation job did not accept the manifest and folder count.",
+              "That count check prevented customers from receiving an incomplete export."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The second paragraph re-explains the link withholding already established by the timeline."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "Report the timeout, worker-limit change, and pending next-run check without asserting a storage throttle or eliminated risk.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "A storage throttle caused the copy to be skipped, and increasing the worker limit has removed the risk.",
+              "The copy logs record a timeout but do not identify the throttle source.",
+              "no later full-size export has yet run under that setting."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [
+              {
+                "proposition": "Evidence identifies a storage throttle as the timeout cause and a successful full-size export under the raised worker limit demonstrates that the skipped-copy risk is resolved.",
+                "necessity": "WOULD_IMPROVE"
+              }
+            ],
+            "prohibitedInferences": [],
+            "rationale": "The draft documents a recovery and a configuration change, not a verified cause or proven preventive fix."
+          }
+        ]
+      },
+      {
+        "id": "E08",
+        "scope": "DISTRIBUTED_LIGHT",
+        "feasibility": "SAFE",
+        "confidence": 0.84,
+        "rationale": "The release explanation is coherent, but the distinction between saved routes and local tiles, plus the three visible states, is explained in several places. Tightening those repeats would reduce length without changing the progression from behavior to testing and help content.",
+        "coupling": "PARTIALLY_COUPLED",
+        "couplingRationale": "Compression across the behavior and help paragraphs should retain one clear account of route versus tile availability; the test paragraph can be tightened separately.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "State once in the user-facing behavior explanation that a route remains saved even when this device has no downloaded tiles, then retain only distinct help-content and timestamp details later.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "If the user has never downloaded tiles for that route, the map area displays an offline notice.",
+              "It does not imply that the route itself has been removed from the account.",
+              "A saved route and saved tiles are separate things: the route entry remains visible in the account, while its map may have no local tiles."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The same distinction is developed in the opening, notice, and help sections."
+          },
+          {
+            "id": "J2",
+            "operation": "COMPRESS",
+            "objective": "Summarize the release-review state checks and rename result once, while preserving that cross-device tile transfer was not tested.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The team tested the three visible states during release review: saved tiles with no connection, no saved tiles with no connection, and tiles loading after a connection returns.",
+              "The loading state displayed the indicator, and the no-tiles state displayed the notice.",
+              "The test used one device for the rename sequence and did not test transferring a route's tiles between devices."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The paragraph lists the tested states and then partially restates their results."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "reviewer": "F2",
+    "annotations": [
+      {
+        "id": "F12",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.95,
+        "rationale": "The announcement gives the request steps, access exceptions, schedule, and visit conditions in a coherent order. No material edit is warranted.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "There are no material editing jobs.",
+        "jobs": []
+      },
+      {
+        "id": "F13",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.98,
+        "rationale": "One absolute outcome claim conflicts with the stated limits of twice-daily checks and an untested assignment.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The outcome claim can be corrected without changing the procedure, ownership, or review schedule.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "CLARIFY",
+            "objective": "Replace the guarantee of no spoiled stock or missed excursions with a bounded description of what the new checks and log review can show.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "This change eliminates the risk of spoiled stock and guarantees that every excursion will be found.",
+              "The log records readings at two moments, not continuously, and the team has not tested whether the new assignment will prevent omissions."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The draft itself establishes why the guarantee is false and supplies a narrower account of the change."
+          }
+        ]
+      },
+      {
+        "id": "F14",
+        "scope": "SUBSTANTIVE",
+        "feasibility": "PARTIALLY_SAFE",
+        "confidence": 0.86,
+        "rationale": "The opening recommendation, promised benefits, and closing instruction all depend on an unassessed combined route. A truthful revision can present the closure as a proposal for evaluation, but a supported adoption recommendation and usable family notice need absent operational facts.",
+        "coupling": "GLOBALLY_COUPLED",
+        "couplingRationale": "The route decision controls the opening thesis, benefit claims, board framing, and any notice to families; revising one of these without the others would leave a contradictory document.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "REORGANIZE",
+            "objective": "Present route closure as a proposal under review and align the opening, asserted benefits, and closing vote language with the known uncertainties.",
+            "scope": "DOCUMENT_WIDE",
+            "sourceEvidence": [
+              "The district should close the east bus route at the end of the school term and move its riders to the north route.",
+              "Combining the routes would save money and get every student to school earlier.",
+              "The transport office has not calculated the distance or travel time for a combined route.",
+              "The district should adopt the closure because one route is always easier to manage than two."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The existing caveats permit a truthful proposal and removal of unsupported promises without adding facts."
+          },
+          {
+            "id": "J2",
+            "operation": "ADD_INFORMATION",
+            "objective": "Give the board a defensible recommendation to adopt a combined route, including whether it can carry riders and meet travel expectations.",
+            "scope": "DOCUMENT_WIDE",
+            "sourceEvidence": [
+              "the transport office has not released arrival records for either route.",
+              "The draft does not show where the additional riders would board.",
+              "It also has not confirmed the north bus’s seating capacity.",
+              "The drivers have said that the north route is already busy on rainy days, though no count accompanies that report."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "The combined route has specified boarding stops and enough seating capacity for its riders.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              },
+              {
+                "proposition": "Calculated combined-route travel times and arrival times support the proposed service and punctuality claims.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              },
+              {
+                "proposition": "A cost calculation shows that combining the routes saves money.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "The north bus has room for all east-route riders.",
+              "Every rider would arrive earlier.",
+              "Combining routes would save money.",
+              "A single route is always easier to manage."
+            ],
+            "rationale": "The draft identifies the operational unknowns that make its adoption case unsupportable."
+          },
+          {
+            "id": "J3",
+            "operation": "ADD_INFORMATION",
+            "objective": "Supply a family notice with actionable start date, boarding stops, and accessibility contact if closure is approved.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "A notice to families would need to give a start date, new stop locations, and a contact for accessibility arrangements.",
+              "Those details cannot be supplied from the current route sketch."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "The approved combined route's start date is known.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              },
+              {
+                "proposition": "The new boarding stop locations are known.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              },
+              {
+                "proposition": "The designated accessibility-arrangements contact is known.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "The route closure is approved.",
+              "The existing north-route stops will serve every transferred rider.",
+              "An unnamed office is the accessibility contact."
+            ],
+            "rationale": "The draft names each notice requirement but supplies none of its values."
+          }
+        ]
+      },
+      {
+        "id": "F19",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.96,
+        "rationale": "The universal access guarantee conflicts with the draft's known western travel and evening coverage gaps. A bounded description of the draft is available in the text.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The single guarantee can be corrected without changing the site list or review questions.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "CLARIFY",
+            "objective": "Replace the guarantee of access for every resident with a qualified account of the proposed daytime sites and unresolved coverage gaps.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The plan guarantees that every resident can reach a safe place during an alert.",
+              "Residents in the western villages would have a longer trip.",
+              "The draft also has no arrangement for evening hours after the libraries close.",
+              "The three sites provide a starting network of daytime spaces"
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The draft already distinguishes a starting network from countywide access."
+          }
+        ]
+      },
+      {
+        "id": "F21",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.98,
+        "rationale": "The claim that the leak is fixed conflicts with the still pending inspection and unknown source.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The certainty claim can be revised while keeping the personal update intact.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "CLARIFY",
+            "objective": "Replace the claim that the leak is fixed with the observed absence of further drops and the pending plumber visit.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The leak is fixed, and there is nothing left to worry about.",
+              "Since then, I have not seen another drop, though the mark is still there.",
+              "the plumber has not inspected the upstairs apartment, and the source of the water is still unknown."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The writer already acknowledges the more accurate level of certainty."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "reviewer": "G1",
+    "annotations": [
+      {
+        "id": "G10",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.96,
+        "rationale": "The notice states the fault, interim help, lack of a return estimate and how an update will be shared. The missing delivery window is a real uncertainty, but the draft handles it clearly.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs are warranted.",
+        "jobs": []
+      }
+    ]
+  },
+  {
+    "reviewer": "H2",
+    "annotations": [
+      {
+        "id": "H13",
+        "scope": "DISTRIBUTED_LIGHT",
+        "feasibility": "PARTIALLY_SAFE",
+        "confidence": 0.84,
+        "rationale": "The inventory instructions and storage decision are distinguishable; the former can be made actionable now, while a recommendation to rent needs the unresolved affordability fact.",
+        "coupling": "PARTIALLY_COUPLED",
+        "couplingRationale": "The inventory routine works under either storage decision, but a final storage recommendation depends on the financial review.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "REORGANIZE",
+            "objective": "Put the three-location count, receipt-date rule, and known counters together as one usable inventory routine.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "Jo has a list of the goods on the hall shelves, and Malik counted the closet contents on Tuesday.",
+              "The existing sheet has separate columns for each location, though people often put closet stock under the hall column.",
+              "The first clean count can use that receipt date and the three location columns already on the sheet."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The ingredients of the routine are scattered, and the existing sheet already supports a clearer count."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "Give the board a storage decision statement that accounts for the $90 monthly rent without presenting an unapproved expense as settled.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "At the next board meeting, the group needs a decision about whether to rent the small storage room across the courtyard.",
+              "The owner offered it for $90 a month and asked for a response by the end of October.",
+              "The treasurer has not said whether the monthly donations can cover that cost."
+            ],
+            "feasibility": "PARTIAL",
+            "missingInformation": [
+              {
+                "proposition": "Monthly donations can or cannot cover the proposed $90 monthly storage rent.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "The rent is affordable.",
+              "The board has approved the expense.",
+              "The pantry will rent the room."
+            ],
+            "rationale": "The decision deadline and terms can be surfaced now; a financially grounded recommendation cannot be completed from the draft."
+          }
+        ]
+      },
+      {
+        "id": "H15",
+        "scope": "LOCAL",
+        "feasibility": "PARTIALLY_SAFE",
+        "confidence": 0.88,
+        "rationale": "The script repetition can be removed, but an effectiveness conclusion needs corrected abandoned-call data.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "Script wording can be edited without the vendor report; assessing the pilot depends on that report.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "State the instruction to keep a phone nearby until 1 p.m. once in the desk script.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Patients who left a callback request were told to keep their phone nearby until 1 p.m.",
+              "That wording appears twice in the current desk script."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The repeated instruction adds no new action."
+          },
+          {
+            "id": "J2",
+            "operation": "CLARIFY",
+            "objective": "Present the pilot as inconclusive on abandoned calls and reserve any reduction claim until the corrected phone report is available.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The service manager asked whether the callback window reduced abandoned calls before extending it to the east clinic.",
+              "the abandoned-call field was blank for two of the five days.",
+              "it does not tie those attempts to calls abandoned in the main queue."
+            ],
+            "feasibility": "PARTIAL",
+            "missingInformation": [
+              {
+                "proposition": "The corrected number of abandoned calls for the two pilot days with blank fields, with a valid comparison for judging reduction.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "The callback window reduced abandoned calls.",
+              "The 35 completed callbacks were recovered abandoned calls.",
+              "The west-clinic pilot proves the east clinic should adopt the window."
+            ],
+            "rationale": "The uncertainty can be stated now; the requested effectiveness finding cannot."
+          }
+        ]
+      },
+      {
+        "id": "H19",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.95,
+        "rationale": "The customer reply distinguishes the two charges, acknowledges the unresolved cause and refund condition, explains the investigation, and promises follow-up without speculation.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "H20",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The note accurately leaves the meeting location unconfirmed, identifies the missing vote check, and gives the next action. The absent tally is an unresolved fact, not a writing defect.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editorial jobs are warranted.",
+        "jobs": []
+      },
+      {
+        "id": "H22",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.95,
+        "rationale": "The effective date and old-form transition rule already exist; their placement is the material problem.",
+        "coupling": "PARTIALLY_COUPLED",
+        "couplingRationale": "The date must appear with the transition rule so applicants and staff can apply it correctly.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "SURFACE_EXISTING_INFORMATION",
+            "objective": "Move the November 4 effective date beside the rule for choosing the old or new form, with the November 3 paper-form cutoff.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "The old version remains valid for applications received before the change takes effect, even if the review happens later.",
+              "An application submitted on the effective date or after it must use the new version.",
+              "The change takes effect on November 4.",
+              "staff should recycle unissued paper copies of the old form after closing on November 3."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The date is buried while the decision rule relies on it."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "reviewer": "A-original",
+    "annotations": [
+      {
+        "id": "A11",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.88,
+        "rationale": "The email clearly reports the checklist change, gives supervisors the action and review timing, and correctly defers the unsupported accuracy claim. No material edit is needed for this email.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs are identified.",
+        "jobs": []
+      },
+      {
+        "id": "A12",
+        "scope": "LOCAL",
+        "feasibility": "BLOCKED",
+        "confidence": 0.82,
+        "rationale": "The memo lays out the service gap, options, budget limit, and trial rationale clearly. Its explicit request for a funding recommendation and firm start date remains unmet; both require decisions absent from the draft. The needed additions are confined to the decision section.",
+        "coupling": "PARTIALLY_COUPLED",
+        "couplingRationale": "The funding recommendation and start date are separate additions, but a firm start date depends in part on funding approval, as well as authorization and vendor choice.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "ADD_INFORMATION",
+            "objective": "Name an approved funding source that can pay for the proposed shuttle trial.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Human Resources has said a staff travel allocation may be available, but has not given an amount or confirmed whether it can pay a contracted shuttle operator.",
+              "The operations director asked this memo to recommend a funding source and start date."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "Finance and Human Resources have determined which allocation may pay a contracted shuttle operator and approved an amount sufficient for the proposed trial.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "Do not treat the possible staff travel allocation as approved or sufficient; do not assume the $3,000 facilities balance funds a chosen trial."
+            ],
+            "rationale": "The director requested a funding recommendation, but the available source and authority to spend it are unresolved."
+          },
+          {
+            "id": "J2",
+            "operation": "ADD_INFORMATION",
+            "objective": "Give a firm start date for an authorized shuttle trial.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Both operators require four weeks of notice and would invoice monthly.",
+              "No vendor has been selected, and no trial has been authorized.",
+              "We cannot responsibly name a funding source or firm start date until Finance and Human Resources decide what can be used."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "The trial has been authorized and funded, a vendor has been selected, and a notice date has been agreed with that vendor.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "Do not present a trial as approved, select a vendor, or calculate a firm start date from the four-week notice period without an agreed notice date."
+            ],
+            "rationale": "A lead time alone does not establish a start date while authorization, funding, and vendor selection are open."
+          }
+        ]
+      },
+      {
+        "id": "A16",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.9,
+        "rationale": "The reminder states the current receipt rule, common attachment problem, coordinator action, and unresolved card-statement exception plainly. The pending exception is correctly withheld.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs are identified.",
+        "jobs": []
+      },
+      {
+        "id": "A17",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.86,
+        "rationale": "The pilot note clearly gives the route change, trial dates, measurement plan, staff task, and fallback. It explicitly defers the unsupported numerical improvement claim. No material edit is needed in this draft.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs are identified.",
+        "jobs": []
+      }
+    ]
+  },
+  {
+    "reviewer": "G-repaired",
+    "annotations": [
+      {
+        "id": "G04",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.96,
+        "rationale": "The festival invitation gives the sequence, locations, volunteer locations, and the stated reason for the later stage opening in a usable order.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G06",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The reply distinguishes the confirmed order and measuring visit from an unscheduled replacement, states the current operating arrangement, and promises delivery information when available. It does not imply a closure date.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G07",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.88,
+        "rationale": "The label connects visible features and recorded movements with the conservation event, while expressly leaving the reason for the 1987 stoppage unknown.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G09",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The donor report accounts for the grant's materials, describes use and an observed access change, and names the remaining water supply task without claiming it is done.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G13",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.91,
+        "rationale": "The trustee report presents the attendance comparison, later use, and staffing consequence in an order that supports consideration of a next-term decision without claiming one has been made.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G15",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.91,
+        "rationale": "The piece deliberately traces the loaf's history and closes on the still unanswered reason for its removal. It explicitly rejects the offered recipe, oven, and layout explanations as established causes.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G17",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.96,
+        "rationale": "The open-house invitation gives times, the changed visitor destination, the reason for that change, and signs to follow without requiring extra explanation.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      },
+      {
+        "id": "G23",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.95,
+        "rationale": "The customer reply identifies the unresolved frame finish, what the invoice and quote do establish, the comparison needed before ordering, and the promised follow-up. It does not claim a match or use the provisional installation date as a substitute.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing jobs identified.",
+        "jobs": []
+      }
+    ]
+  },
+  {
+    "reviewer": "H-repaired",
+    "annotations": [
+      {
+        "id": "H02",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.9,
+        "rationale": "The procedure is actionable; the recordkeeping instructions in the restore step can be consolidated.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The one local consolidation does not change the sequence or responsibilities.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "State once which restore details and result go in the release log.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Record its snapshot ID and the source and restored accounts-table counts.",
+              "Record the restore start and finish times, then check that the restored file can be read. The snapshot ID, counts, and times go in the release log. Record the restore result there too."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The same log destination is repeated across adjacent instructions, so a single checklist would read more cleanly."
+          }
+        ]
+      },
+      {
+        "id": "H06",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The notice gives the allocation rule, eligibility, draw and waitlist process, communication method, and relevant exceptions in a usable order.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing job is supported.",
+        "jobs": []
+      },
+      {
+        "id": "H07",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.87,
+        "rationale": "One return-step sentence repeats the inventory check just specified; the trial's uncertainty is already expressed accurately.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The return-step deletion is confined to one passage.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "State the pre-filing inventory check once in the return procedure.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The attendant checks the map count against the inventory sheet inside the cover, returns the folder to its numbered cabinet slot, and signs the slip.",
+              "The folder is checked before it is put back."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The second sentence adds no separate check or timing requirement."
+          }
+        ]
+      },
+      {
+        "id": "H09",
+        "scope": "DISTRIBUTED_LIGHT",
+        "feasibility": "PARTIALLY_SAFE",
+        "confidence": 0.78,
+        "rationale": "The recovery procedure is mostly clear and has one safe repetition to trim, but the cutover decision cannot become an executable rollback rule until a threshold is supplied.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The availability wording can be compressed independently of the missing rollback criterion.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "Consolidate the repeated statement that the old CSV export remains available for two weeks, preserving the warning that availability does not define when to roll back.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "The old export remains available for two weeks after cutover.",
+              "The old export remains available during the two-week period, although its availability alone does not settle when to use it."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The same availability fact occurs at the start and end of the guide."
+          },
+          {
+            "id": "J2",
+            "operation": "ADD_INFORMATION",
+            "objective": "Give the on-call engineer the authorized feed-lag condition for requesting or executing rollback at cutover.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The release manager has not yet recorded how much lag, for how long, requires rollback.",
+              "Until the criterion is recorded, the runbook cannot give the on-call engineer a threshold for that decision."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "The release manager's authorized rollback criterion specifies the feed-lag amount and duration that trigger rollback.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "Nine minutes of lag is an approved production rollback threshold.",
+              "A feed pause is a rollback or authorizes one.",
+              "The on-call engineer may choose a rollback threshold independently of the release manager."
+            ],
+            "rationale": "The only timed lag is explicitly a trial example, so it cannot fill the missing production rule."
+          }
+        ]
+      },
+      {
+        "id": "H10",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The customer reply clearly states the stock situation, approved refund, disposal instruction, expected timing, and optional replacement path.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing job is supported.",
+        "jobs": []
+      },
+      {
+        "id": "H14",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.88,
+        "rationale": "The intake, claim, closing, and escalation steps are distinct; the repeated envelope checks occur at different points and serve different purposes.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing job is supported.",
+        "jobs": []
+      },
+      {
+        "id": "H16",
+        "scope": "LEAVE_ALONE",
+        "feasibility": "SAFE",
+        "confidence": 0.95,
+        "rationale": "The result is qualified to the available measurements, marks the value for review, and avoids claiming a treatment effect or an unsupported explanation.",
+        "coupling": "NOT_APPLICABLE",
+        "couplingRationale": "No material editing job is supported.",
+        "jobs": []
+      },
+      {
+        "id": "H17",
+        "scope": "DISTRIBUTED_LIGHT",
+        "feasibility": "BLOCKED",
+        "confidence": 0.72,
+        "rationale": "The maintenance plan explains current work and documents open decisions, but its response and stock commitments cannot be made operational until the named routing and funding decisions exist.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "After-hours routing and parts stock are separate unresolved decisions; neither requires reorganizing the existing plan.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "ADD_INFORMATION",
+            "objective": "Specify who receives and routes after-hours fountain fault reports to parks or utilities.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Portal reports made after parks office hours still need routing to the appropriate team. The current service portal sends them to street maintenance first, so an after-hours routing contact remains to be assigned."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "An authorized after-hours contact or role has been assigned to route fountain reports to parks or utilities.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "Street maintenance is the approved after-hours fountain response owner.",
+              "Parks or utilities already monitors the portal after hours.",
+              "The Sunday routing delay proves when the drain blockage began."
+            ],
+            "rationale": "The documented misrouting leaves the response path incomplete, and the assigned contact is explicitly pending."
+          },
+          {
+            "id": "J2",
+            "operation": "ADD_INFORMATION",
+            "objective": "Make the proposed spare-parts stock actionable by identifying the approved funding decision and its lead owner.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The first three fountains and the three installed later have different valve models. Utilities' repair log lists both part numbers and the fountain numbers they serve; a spare of only one type will not cover the path.",
+              "Parks and utilities have each submitted a small estimate for spare parts. Neither request has been approved, and no lead budget holder has been agreed.",
+              "a parts stock cannot be promised for next summer until its budget and owner are settled."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "The spare-parts budget has been approved and a lead budget holder has been designated, including whether stock will cover both valve models.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "Either submitted estimate is approved.",
+              "One valve model's spare covers all six fountains.",
+              "Parks or utilities has already accepted lead budget ownership."
+            ],
+            "rationale": "An approved stock commitment would be false without the pending budget and ownership decisions."
+          }
+        ]
+      },
+      {
+        "id": "H18",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.94,
+        "rationale": "The export procedure is clear, but the final paragraph repeats the seven-day expiry in three forms.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "One local compression can retain the required download deadline without changing the workflow.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "State the seven-day availability and the quarterly-review download action once, retaining the need to rerun an expired export.",
+            "scope": "DISTRIBUTED",
+            "sourceEvidence": [
+              "Exports remain available for seven days after completion, then are deleted automatically. An expired link requires a new export.",
+              "For a quarterly review, save the needed download before the seven-day window ends. The file is temporary, and the link expires after seven days."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "The expiry rule and deadline recur without adding a new condition."
+          }
+        ]
+      },
+      {
+        "id": "H21",
+        "scope": "LOCAL",
+        "feasibility": "SAFE",
+        "confidence": 0.86,
+        "rationale": "The unresolved ventilation approval is stated responsibly; cleanup instructions contain minor material repetition.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The duplicate cleanup wording can be consolidated without altering the trial restriction.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "DEDUPLICATE",
+            "objective": "Give each storage and post-wash rinse instruction once in the handling paragraph.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "The bottle is stored on the lower shelf of the chemical cabinet, away from the heat gun and paper stock.",
+              "Staff using it wear gloves, switch on the wash-station extractor, and rinse the tray after washing. Return the bottle to the lower cabinet shelf after cleanup.",
+              "The station is rinsed after each session so residue does not stay in the tray."
+            ],
+            "feasibility": "SAFE",
+            "missingInformation": [],
+            "prohibitedInferences": [],
+            "rationale": "Storage and rinsing each appear twice in close succession; the safety conditions can remain explicit in one instruction."
+          }
+        ]
+      },
+      {
+        "id": "H23",
+        "scope": "LOCAL",
+        "feasibility": "BLOCKED",
+        "confidence": 0.75,
+        "rationale": "The scheduling rules and wait change are clearly reported, but the stated urgent-review escalation has no assigned backup when the clerk is absent.",
+        "coupling": "INDEPENDENT",
+        "couplingRationale": "The missing absence coverage is a single operational gap; the routine capacity decision can remain explicitly pending.",
+        "jobs": [
+          {
+            "id": "J1",
+            "operation": "ADD_INFORMATION",
+            "objective": "Name the authorized backup reviewer for daily urgent-request review during clerk absences.",
+            "scope": "LOCAL",
+            "sourceEvidence": [
+              "Urgent requests are reviewed daily. When the scheduling clerk is absent, the rota does not name a backup reviewer.",
+              "An educator covering the front desk has performed that review twice, but the arrangement has not been assigned.",
+              "Until then, an urgent request arriving during an absence may wait for someone to notice the queue."
+            ],
+            "feasibility": "BLOCKED",
+            "missingInformation": [
+              {
+                "proposition": "The service director has assigned a named person or role to review urgent requests daily when the scheduling clerk is absent.",
+                "necessity": "REQUIRED_FOR_TRUTH"
+              }
+            ],
+            "prohibitedInferences": [
+              "The educator who covered the front desk twice is the standing backup.",
+              "Urgent requests are reliably reviewed on clerk-absence days.",
+              "The increased routine wait was caused by the Thursday group session."
+            ],
+            "rationale": "Past informal coverage cannot be presented as an assigned escalation rule."
+          }
+        ]
+      }
+    ]
+  }
+]

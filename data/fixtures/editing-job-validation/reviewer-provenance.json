@@ -1,0 +1,28 @@
+{
+  "note": "The reviewer field in frozen blind-reviews.json names the source batch, not the reviewer. This post-freeze record identifies separate account-backed agent sessions without changing frozen input or labels.",
+  "creatorAgents": {
+    "A": "01a0f53f-933f-7ee0-9efd-46c0b3f6e37d",
+    "B": "01a0f53f-9395-7690-a095-24aa5f4cd9cb",
+    "C": "01a0f53f-941b-7750-a714-ce0e983fcb96",
+    "D": "01a0f549-8210-7232-ade1-a14c6178633a",
+    "E": "01a0f54c-3d6f-76f3-8255-96523074eef0",
+    "F": "01a0f54c-3da8-7b03-808a-8acd70d9853a",
+    "G": "01a0f554-73fb-7fb1-894b-084043b52fad",
+    "H": "01a0f554-a03e-70f3-a1c7-1157c542ae2b"
+  },
+  "sourceRepairAgents": {
+    "G-repaired": "01a0f560-bd6e-7950-9bad-ba620c844cbb",
+    "H-repaired": "01a0f560-bdae-7382-90a9-dc1866c7e8af"
+  },
+  "secondReviewAgentsByBatch": {
+    "D": "01a0f54f-789b-76f2-8183-d7b5e3592a70",
+    "E1": "01a0f553-a233-7843-a283-33e508e6c4e4",
+    "F2": "01a0f554-c2e5-7c93-b4fd-b551e203f243",
+    "G1": "01a0f55d-573b-7bc1-9b96-26bf9282e2c2",
+    "G2": "01a0f55d-ca81-71d3-98f0-89dfc3b1b9e9",
+    "H2": "01a0f55c-f18a-74a0-97e9-5a365d215d87",
+    "A-original": "01a0f561-06a1-79b2-8bd6-3b1fb65cfb61",
+    "G-repaired": "01a0f562-f173-70c2-9984-6d54925de280",
+    "H-repaired": "01a0f564-74a3-7e50-aaf2-27d3dcc7dad9"
+  }
+}

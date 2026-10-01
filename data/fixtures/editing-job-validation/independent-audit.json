@@ -1,0 +1,27 @@
+{
+  "reviewer": "independent account-backed post-run auditor",
+  "scope": "Method, aggregate baseline, and 15 sampled synthetic source/label/review triples; no engine modification",
+  "findings": [
+    {
+      "topic": "validity",
+      "finding": "90 accepted reviews establish schema and citation validity, not 90 correct editorial decisions. Clean diagnosis is 40/40; final unchanged is 39/40."
+    },
+    {
+      "topic": "missing facts",
+      "finding": "F07, F14, H17, and H23 contain genuine missing operational propositions, but their proposed deliverables may differ from a safe narrower edit to the current draft."
+    },
+    {
+      "topic": "gold uncertainty",
+      "finding": "A11, A12, H20, and G15 depend partly on a future deliverable or intentional open ending; H15 proposes a desk-script edit whose source text is absent."
+    },
+    {
+      "topic": "semantic safety",
+      "finding": "SAFE_WITH_SOURCE cannot certify a missing proposition is answerable; no final rewrite was attempted, so unsafe factual changes cannot be inferred."
+    },
+    {
+      "topic": "scope",
+      "finding": "D06 has distributed repetition, while D02's substantive label depends on the desired document outcome; number of jobs alone does not establish global coupling."
+    }
+  ],
+  "acceptedInterpretation": "Keep scope, feasibility, and execution separate; treat first-review labels as challenged editorial judgments; defer a new contract until an explicit requested deliverable is included in development inputs."
+}
