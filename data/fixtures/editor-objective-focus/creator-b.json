@@ -1,0 +1,44 @@
+[
+  {
+    "id": "ea08",
+    "source": "The neighborhood council will review the courtyard fountain proposal on Tuesday, and no decision has been recorded. The library's seed exchange opens at nine. A contractor will repaint the south stairwell next month. The bicycle racks beside the hall hold twelve bikes.",
+    "objective": "Update the fountain proposal's decision status: the council approved it at Tuesday's meeting.",
+    "editorialIntent": "Reflect the supplied approval as a decided outcome while preserving the separate seed exchange, stairwell, and bicycle-rack facts."
+  },
+  {
+    "id": "ea09",
+    "source": "The neighborhood council will review the courtyard fountain proposal on Tuesday, and no decision has been recorded. The library's seed exchange opens at nine. A contractor will repaint the south stairwell next month. The bicycle racks beside the hall hold twelve bikes.",
+    "objective": "Update the fountain proposal's decision status: after Tuesday's meeting, the council has not made a decision and will revisit it next month.",
+    "editorialIntent": "Reflect the supplied continued uncertainty and next review timing while preserving the separate seed exchange, stairwell, and bicycle-rack facts."
+  },
+  {
+    "id": "ea10",
+    "source": "The coastal observatory plans to open its public telescope nights in November. Its weather station sends readings every hour. The visitor center sells printed sky maps. A new footbridge crosses the marsh trail.",
+    "objective": "Update the public telescope nights: the observatory has cancelled the November program and will not host any sessions that month.",
+    "editorialIntent": "Apply the supplied cancellation and negation only to the public program; retain the weather station, sky maps, and footbridge facts."
+  },
+  {
+    "id": "ea11",
+    "source": "The coastal observatory plans to open its public telescope nights in November. Its weather station sends readings every hour. The visitor center sells printed sky maps. A new footbridge crosses the marsh trail.",
+    "objective": "Update the public telescope nights: the observatory has postponed the November start until a permit is issued, and no new date is confirmed.",
+    "editorialIntent": "Represent the supplied postponement and lack of a confirmed date without treating the program as cancelled; retain the unrelated local facts."
+  },
+  {
+    "id": "ea12",
+    "source": "The ceramics workshop is scheduled for Saturday, and registration remains open through Thursday. The workshop will provide clay but not aprons. The garden club waters the planters on Mondays. The town clock was restored last spring. The café closes at six.",
+    "objective": "Update the workshop notice: it is now on Sunday, registration is closed, and aprons will be provided.",
+    "editorialIntent": "Apply all three supplied changes to the workshop notice while preserving the garden club, clock, and café facts."
+  },
+  {
+    "id": "ea13",
+    "source": "The museum's oral-history room is closed for repairs until Friday. The archive desk still accepts appointment requests by email. The sculpture garden opens at ten. The café serves lunch from noon to three.",
+    "objective": "Update the oral-history room notice to say it is closed for repairs until Friday.",
+    "editorialIntent": "Recognize that the requested status and end day are already present; avoid changing them or the unrelated archive desk, garden, and café facts."
+  },
+  {
+    "id": "ea14",
+    "source": "The ferry office posts tide notices each morning. The pier clock runs five minutes fast. The ticket window closes at seven. A volunteer group collects litter on the west beach.",
+    "objective": "Make the status current.",
+    "editorialIntent": "The request supplies neither a target status nor a new value; do not infer a factual update from the surrounding details."
+  }
+]
