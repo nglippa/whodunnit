@@ -1,0 +1,76 @@
+{
+  "id": "vbS1",
+  "source": "The library's east entrance will be closed from Monday through Thursday because crews are replacing the automatic doors there. Visitors who need to enter the building should use the west entrance on Oak Street, which provides step-free access. The book return next to the east entrance will remain open during the work, and all scheduled programs will go ahead.",
+  "objective": "Rewrite this notice clearly and concisely in two short sentences if possible, preserving the closure dates, alternate accessible entrance, book return, and program status.",
+  "candidate": "The library's east entrance will close Monday through Thursday while crews replace its automatic doors. Visitors can use the step-free west entrance on Oak Street, and the east book return will stay open while scheduled programs continue.",
+  "final": "The library's east entrance will close Monday through Thursday while crews replace its automatic doors. Visitors can use the step-free west entrance on Oak Street, and the east book return will stay open while scheduled programs continue.",
+  "trace": {
+    "strategy": "reconstruction-v10",
+    "editor": "injected-candidate",
+    "verifier": "injected-candidate",
+    "objectiveType": "other",
+    "candidateGenerated": true,
+    "candidateUnchanged": false,
+    "deterministicVerdict": "NEEDS_REVIEW",
+    "semanticVerificationRequested": true,
+    "semanticVerdict": "PASS",
+    "repairRequested": false,
+    "repairAccepted": false,
+    "outcome": "accepted",
+    "fallbackReason": null,
+    "sourceChars": 361,
+    "candidateChars": 238,
+    "finalChars": 238,
+    "sourceWords": 59,
+    "candidateWords": 37,
+    "finalWords": 37,
+    "wordEditDistance": {
+      "candidate": 0.593,
+      "final": 0.593
+    },
+    "changeCount": 0,
+    "voiceVerdict": "PRESERVED",
+    "tokens": {
+      "input": null,
+      "output": null
+    },
+    "latencyMs": {
+      "editor": 1,
+      "verification": 78,
+      "repair": 0,
+      "total": 157
+    },
+    "estimatedCostUsd": null
+  },
+  "review": {
+    "verdict": "PASS",
+    "meaningPreserved": true,
+    "objectiveSatisfied": true,
+    "voicePreserved": true,
+    "unsupportedInformation": false,
+    "reason": "Two sentences retain the Monday-through-Thursday closure, door replacement, step-free west entrance on Oak Street, open east book return, and scheduled programs; the length warning does not require a longer notice.",
+    "issue": null
+  },
+  "candidateVerification": {
+    "status": "review",
+    "findings": [
+      {
+        "kind": "length_out_of_range",
+        "severity": "warning",
+        "origin": "deterministic",
+        "message": "The rewrite is 63% of your length; Natural aims for 75–115%."
+      }
+    ],
+    "checks": [
+      "protected_spans",
+      "negation",
+      "claims",
+      "quotations",
+      "phrases",
+      "mechanics",
+      "length",
+      "lexical_coverage"
+    ],
+    "lexicalCoverage": 0.61
+  }
+}

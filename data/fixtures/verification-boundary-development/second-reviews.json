@@ -1,0 +1,154 @@
+[
+  {
+    "id": "vb01",
+    "verdict": "REPAIRABLE",
+    "rationale": "The objective asks for polish while preserving uncertainty, but the candidate turns the pilot's possible reduction in delays into a certain one; the November review remains intact.",
+    "defect": "Replace candidate span 'will reduce' with 'may reduce'."
+  },
+  {
+    "id": "vb02",
+    "verdict": "REPAIRABLE",
+    "rationale": "The source makes extended Saturday hours conditional on receiving the county grant, while the candidate announces them unconditionally despite the objective to keep the plan unchanged.",
+    "defect": "Restore 'If the library receives the county grant, it will extend' in place of candidate span 'The library will extend'."
+  },
+  {
+    "id": "vb03",
+    "verdict": "REPAIRABLE",
+    "rationale": "The objective permits a neutral rewrite, but the candidate presents the tenant association's report of door failures as an unattributed fact; management's inspection statement remains attributed.",
+    "defect": "Prefix candidate span 'The lobby doors have failed to latch twice this month' with 'According to the tenant association, ' and lowercase 'The'."
+  },
+  {
+    "id": "vb04",
+    "verdict": "REJECT",
+    "rationale": "The objective asks to tighten a board update, but the candidate claims the vendor change caused shorter entry lines; the source reports only that lines were shorter afterward and explicitly says the reason is unknown. The smallest unauthorized change is the causal claim 'vendor change shortened'."
+  },
+  {
+    "id": "vb05",
+    "verdict": "REPAIRABLE",
+    "rationale": "The objective seeks clarity for drivers, but the candidate raises the bridge's stated load limit from 2.5 to 3 tonnes; the support condition and inspection schedule are preserved.",
+    "defect": "Replace candidate span '3 tonnes' with '2.5 tonnes'."
+  },
+  {
+    "id": "vb06",
+    "verdict": "REPAIRABLE",
+    "rationale": "The brief notice omits the source's specific exception that west entrance access pauses while the lift carries materials, leaving residents without the reason or condition for closure.",
+    "defect": "Restore 'except when the lift is carrying materials' immediately after candidate span 'during the roof repairs'."
+  },
+  {
+    "id": "vb07",
+    "verdict": "REPAIRABLE",
+    "rationale": "The objective forbids changing access policy, but the candidate reverses the source's statement that recordings will not be in the public catalog this year; reading room requests remain available.",
+    "defect": "Replace candidate span 'will be available through the public catalog this year' with 'will not be available through the public catalog this year'; remove 'also' from the following sentence."
+  },
+  {
+    "id": "vb08",
+    "verdict": "REPAIRABLE",
+    "rationale": "The newsletter edit assigns light replacement to the neighborhood group, although the source assigns that work to the parks department and only feedback collection to the group.",
+    "defect": "Replace candidate span 'The neighborhood group will replace the broken lights along the riverside path and collect feedback' with 'The parks department will replace the broken lights along the riverside path. The neighborhood group will collect feedback'."
+  },
+  {
+    "id": "vb09",
+    "verdict": "REPAIRABLE",
+    "rationale": "The patient notice invents reduced waiting times as the reason for moving the desk, while the source gives lift servicing as the reason and says the two-week duration is expected rather than fixed.",
+    "defect": "Replace candidate span 'To reduce waiting times,' with the source reason 'Because the upstairs lift is being serviced,' and change 'for two weeks' to 'for about two weeks' or 'The change is expected to last two weeks'."
+  },
+  {
+    "id": "vb10",
+    "verdict": "REPAIRABLE",
+    "rationale": "The source describes a proposal awaiting a funding decision, but the candidate turns the proposed racks into a commitment; the location and pending funding detail remain.",
+    "defect": "Replace candidate span 'has committed to adding' with 'has proposed adding'."
+  },
+  {
+    "id": "vb11",
+    "verdict": "REJECT",
+    "rationale": "The bulletin candidate replaces the panel's recommendation and the council's future decision with a completed council decision. The smallest unauthorized change is 'The council decided'; correcting it requires restoring both the recommender and pending decision."
+  },
+  {
+    "id": "vb12",
+    "verdict": "REPAIRABLE",
+    "rationale": "The objective explicitly preserves the quotation, but the candidate changes the director's possible June review into a promised June approval; the meeting and minutes details remain.",
+    "defect": "Replace candidate quotation 'We will approve the proposal in June.' with 'We can review the proposal in June.'"
+  },
+  {
+    "id": "vb13",
+    "verdict": "REPAIRABLE",
+    "rationale": "The website formatting objective does not authorize changing the road closure start date from 18 to 17 September; the end date and bus stop detail remain.",
+    "defect": "Replace candidate span '17 September' with '18 September'."
+  },
+  {
+    "id": "vb14",
+    "verdict": "REPAIRABLE",
+    "rationale": "The source credits the university facilities team with finding moisture and assigns the contractor only a future assessment, while the candidate credits the finding to the contractor.",
+    "defect": "Replace candidate span 'A contractor found moisture behind the auditorium wall during an inspection and will assess' with 'The university facilities team found moisture behind the auditorium wall during an inspection. A contractor will assess'."
+  },
+  {
+    "id": "vb15",
+    "verdict": "ACCEPT",
+    "rationale": "The objective explicitly authorizes stating that the pilot will reduce delays based on confirmed trial results, and the candidate makes that change while retaining the November review."
+  },
+  {
+    "id": "vb16",
+    "verdict": "ACCEPT",
+    "rationale": "The objective says the grant has been awarded and directs removal of its condition; the candidate states the January hours extension and retains the schedule notice."
+  },
+  {
+    "id": "vb17",
+    "verdict": "ACCEPT",
+    "rationale": "The candidate removes the empty opening sentence as requested and keeps both the north room's Tuesday morning closure and the south room's availability."
+  },
+  {
+    "id": "vb18",
+    "verdict": "ACCEPT",
+    "rationale": "The archive formatting preserves Mara Chen's sender address, volunteer recipient address, Saturday setup subject, date, meeting instructions, badge and locked-door details, and Mara's sign-off."
+  },
+  {
+    "id": "vb19",
+    "verdict": "ACCEPT",
+    "rationale": "The candidate removes repeated dusk wording while preserving the garden gate's dusk closure and the main entrance's 9 p.m. availability."
+  },
+  {
+    "id": "vb20",
+    "verdict": "ACCEPT",
+    "rationale": "The candidate places the first-survey qualification after the less-crowded claim, keeps its tentative force with 'appear,' and preserves the October second survey."
+  },
+  {
+    "id": "vb21",
+    "verdict": "ACCEPT",
+    "rationale": "The candidate combines both points under the fisheries office's attribution: more turning room for small boats and the marked fuel berth staying in its current location."
+  },
+  {
+    "id": "vb22",
+    "verdict": "ACCEPT",
+    "rationale": "The compressed instruction keeps covering before sunrise tied to an overnight temperature below freezing and keeps seedlings uncovered otherwise."
+  },
+  {
+    "id": "vb23",
+    "verdict": "ACCEPT",
+    "rationale": "The candidate turns the pencil, ruler, and notebook list into prose and retains the spare paper at the desk."
+  },
+  {
+    "id": "vb24",
+    "verdict": "ACCEPT",
+    "rationale": "The checklist preserves the kiosk opening sequence of checking the reader, counting the float, and signing the log, followed by leaving the key with the shift supervisor."
+  },
+  {
+    "id": "vb25",
+    "verdict": "ACCEPT",
+    "rationale": "The replacement title identifies Thursday's blood donation use, and the body preserves the east room reservation and availability of other rooms for bookings."
+  },
+  {
+    "id": "vb26",
+    "verdict": "ACCEPT",
+    "rationale": "The candidate leads with the rooftop viewing session, retains that it follows Saturday's public talk and depends on weather, and preserves free tickets with required online reservation."
+  },
+  {
+    "id": "vb27",
+    "verdict": "ACCEPT",
+    "rationale": "The objective explicitly updates the planned opening from Wednesdays to Thursdays and booking from phone to online; the candidate states both changes while retaining the June timing."
+  },
+  {
+    "id": "vb28",
+    "verdict": "ACCEPT",
+    "rationale": "The objective reports Monday's approval of four rather than six pear trees; the candidate states that decision, retains the south-fence location, and removes the pending vote."
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "vb04",
+    "first": "REPAIRABLE",
+    "second": "REJECT",
+    "hardLabel": "UNSAFE_REPAIRABILITY_DISPUTED",
+    "note": "Both reviewers found unauthorized causation; they disagree whether local repair can retain the rest."
+  },
+  {
+    "id": "vb22",
+    "first": "REPAIRABLE",
+    "second": "ACCEPT",
+    "hardLabel": "DISPUTED",
+    "note": "The candidate specifies the exactly-freezing outcome, which the source does not explicitly state; acceptability is disputed."
+  }
+]

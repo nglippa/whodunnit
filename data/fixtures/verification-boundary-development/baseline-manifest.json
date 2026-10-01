@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "status": "PINNED_V10_BASELINE",
+  "strategy": "reconstruction-v10",
+  "created": "2026-10-01T08:38:32.228Z",
+  "files": {
+    "manifest.json": "0de870df867bad7e0b6021d617e4287ff89014a02d54360cd12c917ce59bff5a",
+    "verifier-requests.json": "bd8542eccef8b4b6efad61672bdddfb962e01c32455af142932127952f17fe48",
+    "verifier-results.json": "ae31887f3aae4a3ed2af9dc8345bf087311c97fc0aeca228ebc10fd2ee51b70a",
+    "repair-requests.json": "a6fc02994d7c1b9caa60761a204704fe6db9d3f5a163ca2e920412cddfb483db",
+    "repair-results.json": "69a6513421447a260e5fc8b6d69fc85391290beb33eb42d8669cd66f0fb229b7",
+    "reverify-requests.json": "7035c02df6f428f0fd4b5e07f74e9588245fac2da1f014744dcca5f1e41a3f89",
+    "reverify-results.json": "c3878ea255ca6358808e32ffc9289ad21d5cabb6c8fbb5ee88a28a29361917b9",
+    "baseline-v10.json": "a5976008989d3d13f53d8bf3fb3e047f3f72d93d5462c398f56d7ec22949794d"
+  },
+  "note": "Before any V10 behavior change; replay harness repair-stage routing bug corrected before this artifact."
+}

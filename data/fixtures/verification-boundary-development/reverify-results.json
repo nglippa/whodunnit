@@ -1,0 +1,130 @@
+[
+  {
+    "id": "vb01",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The source is already clear and suitable for a public operations brief; keeping it preserves the tentative benefit and November review.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb02",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The two short sentences are already easy to scan and retain both the grant condition and schedule timing.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb03",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The existing wording is neutral and polished, with both the tenant association's report and management's response attributed.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb05",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The existing site notice clearly states the 2.5-tonne limit, its temporary-support condition, and the morning inspection schedule for drivers.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb06",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The notice is brief and courteous, and it preserves the lift exception and gate-sign instruction.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb07",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "'Also' suggests another way to access the recordings, although the source identifies only reading-room requests; removing it restores the access policy.",
+      "issue": {
+        "start": 100,
+        "end": 104,
+        "text": "also"
+      }
+    }
+  },
+  {
+    "id": "vb10",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "'Proposed to adding' is ungrammatical, while 'funding to be decided' turns an expected funding decision into a definite one; these require separate repairs.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb13",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The two-sentence advisory is already suitable for the town website and keeps both closure dates and the bus-stop condition clear.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb22",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Both temperature conditions and their outcomes remain intact in a shorter sentence.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb26",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The activity is first and the reservation requirement remains, but the protected phrase 'after the talk' is missing; the cited span can be rephrased to restore it.",
+      "issue": {
+        "start": 35,
+        "end": 82,
+        "text": "after Saturday's public talk at the observatory"
+      }
+    }
+  }
+]

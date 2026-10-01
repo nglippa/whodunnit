@@ -1,0 +1,279 @@
+[
+  {
+    "id": "vb01",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "“Will” asserts a reduction that the source only says may occur.",
+      "issue": {
+        "span": {
+          "start": 17,
+          "end": 28,
+          "text": "will reduce"
+        },
+        "constraint": "“Will” asserts a reduction that the source only says may occur."
+      }
+    }
+  },
+  {
+    "id": "vb02",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate promises extended hours without the county-grant condition.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 50,
+          "text": "The library will extend Saturday hours in January."
+        },
+        "constraint": "The candidate promises extended hours without the county-grant condition."
+      }
+    }
+  },
+  {
+    "id": "vb03",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The unlabeled claim drops attribution to the tenant association.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 54,
+          "text": "The lobby doors have failed to latch twice this month."
+        },
+        "constraint": "The unlabeled claim drops attribution to the tenant association."
+      }
+    }
+  },
+  {
+    "id": "vb04",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate invents a causal link to the vendor change and omits that the museum has not identified the reason.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb06",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The notice omits the exception while the lift carries materials.",
+      "issue": {
+        "span": {
+          "start": 0,
+          "end": 60,
+          "text": "Residents may use the west entrance during the roof repairs."
+        },
+        "constraint": "The notice omits the exception while the lift carries materials."
+      }
+    }
+  },
+  {
+    "id": "vb08",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate assigns light replacement to the neighborhood group, although the parks department will do it.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb09",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate invents a waiting-time motive, drops lift servicing, and makes an expected two-week duration definite.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb10",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "“Committed” turns a proposal awaiting a funding decision into a firm undertaking.",
+      "issue": {
+        "span": {
+          "start": 22,
+          "end": 31,
+          "text": "committed"
+        },
+        "constraint": "“Committed” turns a proposal awaiting a funding decision into a firm undertaking."
+      }
+    }
+  },
+  {
+    "id": "vb14",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate says the contractor found the moisture; the facilities team found it and the contractor will assess damage.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb15",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective explicitly authorizes stating the confirmed reduction; the November review remains intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb16",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The objective says the grant was awarded and authorizes removing the condition; the schedule notice remains.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb18",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The archive formatting preserves the sender, recipients, subject, date, instructions, and sign-off.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb19",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The rewrite removes the repeated dusk statement while retaining both access times.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb20",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "“Appear” and “according to the first survey” retain the original survey qualification and October follow-up.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb21",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Both statements remain attributed to the fisheries office, with turning room and fuel-berth location intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb22",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "“Only if” and “otherwise” assign an outcome at exactly freezing, which the source leaves unspecified.",
+      "issue": {
+        "span": {
+          "start": 57,
+          "end": 122,
+          "text": "only if the overnight temperature falls below freezing; otherwise"
+        },
+        "constraint": "“Only if” and “otherwise” assign an outcome at exactly freezing, which the source leaves unspecified."
+      }
+    }
+  },
+  {
+    "id": "vb23",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The prose preserves all three supplies and the availability of spare paper.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb25",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The new title identifies the Thursday blood-donation use; the east-room and other-room details remain intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "vb26",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "“Weather permitting” is broader than the source’s clear-skies condition for rooftop viewing.",
+      "issue": {
+        "span": {
+          "start": 84,
+          "end": 102,
+          "text": "weather permitting"
+        },
+        "constraint": "“Weather permitting” is broader than the source’s clear-skies condition for rooftop viewing."
+      }
+    }
+  }
+]

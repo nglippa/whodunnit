@@ -1,0 +1,62 @@
+{
+  "candidateVerification": {
+    "status": "review",
+    "findings": [
+      {
+        "kind": "length_out_of_range",
+        "severity": "warning",
+        "origin": "deterministic",
+        "message": "The rewrite is 63% of your length; Natural aims for 75–115%."
+      }
+    ],
+    "checks": [
+      "protected_spans",
+      "negation",
+      "claims",
+      "quotations",
+      "phrases",
+      "mechanics",
+      "length",
+      "lexical_coverage"
+    ],
+    "lexicalCoverage": 0.61
+  },
+  "trace": {
+    "strategy": "reconstruction-v10",
+    "editor": "injected-candidate",
+    "verifier": "injected-candidate",
+    "objectiveType": "other",
+    "candidateGenerated": true,
+    "candidateUnchanged": false,
+    "deterministicVerdict": "NEEDS_REVIEW",
+    "semanticVerificationRequested": true,
+    "semanticVerdict": "REJECT",
+    "repairRequested": false,
+    "repairAccepted": false,
+    "outcome": "source-fallback",
+    "fallbackReason": "verifier-rejected",
+    "sourceChars": 361,
+    "candidateChars": 238,
+    "finalChars": 361,
+    "sourceWords": 59,
+    "candidateWords": 37,
+    "finalWords": 59,
+    "wordEditDistance": {
+      "candidate": 0.593,
+      "final": 0
+    },
+    "changeCount": 0,
+    "voiceVerdict": "PRESERVED",
+    "tokens": {
+      "input": null,
+      "output": null
+    },
+    "latencyMs": {
+      "editor": 0,
+      "verification": 77,
+      "repair": 0,
+      "total": 158
+    },
+    "estimatedCostUsd": null
+  }
+}

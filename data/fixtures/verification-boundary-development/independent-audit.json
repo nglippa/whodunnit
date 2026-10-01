@@ -1,0 +1,40 @@
+{
+  "badEditEscapes": [],
+  "goodEditRejections": [
+    {"id":"vb17","reason":"Agreed ACCEPT: removing empty pool-update framing preserves both changing-room facts; deterministic missing_claim/length failure returned the source."},
+    {"id":"vb24","reason":"Agreed ACCEPT: 1/2/3 are checklist markers, not changed quantities; deterministic altered_number failure returned the source."},
+    {"id":"vb26","reason":"Agreed ACCEPT candidate fell back. The original 'weather permitting' is less precise than clear skies, but the repaired 'if skies are clear' preserves the condition, ordering, and reservation requirement; reverify demanded the equivalent literal 'after the talk'."},
+    {"id":"vb27","reason":"Agreed ACCEPT: the objective explicitly changes Wednesdays to Thursdays and phone to online; deterministic altered_date/altered_name failure returned obsolete source text."},
+    {"id":"vb28","reason":"Agreed ACCEPT: the objective supplies Monday's approval of four trees; deterministic altered_number/missing_claim failure returned the obsolete proposal and pending vote."}
+  ],
+  "repairAssessment": [
+    {"id":"vb01","reason":"Accepted repair restores 'may reduce'; final equals source. Safe fallback, no useful edit retained."},
+    {"id":"vb02","reason":"Accepted repair restores the grant condition; final equals source. Safe fallback, no concise edit retained."},
+    {"id":"vb03","reason":"Accepted repair restores tenant-association attribution; final equals source. Safe fallback, no polished edit retained."},
+    {"id":"vb05","reason":"Accepted repair restores the 2.5-tonne limit; final equals source. Safe fallback, no useful edit retained."},
+    {"id":"vb06","reason":"Accepted repair restores the lift exception; final equals source. Safe fallback, no useful edit retained."},
+    {"id":"vb07","reason":"Repair restored 'not' but left 'also'; malformed LOCAL_REPAIR reverify ended in safe source fallback."},
+    {"id":"vb10","reason":"Replacing only 'committed' with 'proposed' yielded 'proposed to adding'; reverify rejected this ungrammatical edit and the definite funding decision. Source fallback was safe."},
+    {"id":"vb13","reason":"Accepted repair restores 18 September; final equals source. Safe fallback, no useful formatting edit retained."},
+    {"id":"vb22","reason":"Successful repair: final keeps the compressed wording while stating below- and above-freezing outcomes separately; exactly freezing remains unspecified. Original candidate was disputed."},
+    {"id":"vb24","reason":"Repair request targeted checklist marker '1' and proposed 'First', but no repair was accepted; source fallback is safe and loses the requested checklist."},
+    {"id":"vb26","reason":"Replacing 'weather permitting' with 'if skies are clear' retained a useful, meaning-preserving reordered listing; reverify LOCAL_REPAIR overclaimed a missing 'after the talk' phrase, and fallback lost the edit."}
+  ],
+  "objectiveAuthorized": [
+    {"id":"vb15","reason":"Accepted: objective expressly authorizes changing possible delay reduction to confirmed reduction; November review remains."},
+    {"id":"vb16","reason":"Accepted: objective says the grant was awarded and removes its condition; schedule notice remains."},
+    {"id":"vb27","reason":"Incorrect fallback: objective expressly authorizes Thursday opening and online booking; final retains Wednesday and phone."},
+    {"id":"vb28","reason":"Incorrect fallback: objective expressly authorizes four approved trees after Monday's vote; final retains six proposed trees and pending vote."}
+  ],
+  "methodologyFindings": [
+    {"ids":["vb01","vb02","vb03","vb05","vb06","vb13"],"reason":"The 'repaired' outcome overstates retained editing value: each final is byte-for-byte the source. All are safe from unauthorized semantic changes."},
+    {"ids":["vb07","vb26"],"reason":"Saved reverify LOCAL_REPAIR issues use flat {start,end,text} instead of the required nested issue.span plus constraint; both rows end verifier-unavailable. The traces establish the malformed responses, not the internal cause of fallback."},
+    {"ids":["vb17","vb24","vb27","vb28"],"reason":"Deterministic hard failures block legitimate objective-directed edits: empty framing treated as a missing claim, checklist ordinals as quantities, and explicitly updated weekday/number as unauthorized changes."},
+    {"ids":["vb10"],"reason":"Single-token repair span was too narrow for grammatical restoration; reverify caught 'proposed to adding'. This is a repair-scope failure, not an escape."},
+    {"ids":["vb18","vb20"],"reason":"Saved mechanical warnings appear spurious for email line-break capitalization and 'a.m.,' punctuation; both candidates were accepted."},
+    {"ids":["vb22"],"reason":"Reviewers disputed the original candidate's exactly-freezing implication. The final explicit two-condition wording avoids that disputed addition."},
+    {"ids":["vb19","vb20","vb21","vb23"],"reason":"Seed 20261001 random sample of unchanged accepted candidates: source, objective, candidate, and final agree on material claims; no additional rejection or escape found."},
+    {"ids":["vb01","vb02","vb03","vb04","vb05","vb06","vb07","vb08","vb09","vb10","vb11","vb12","vb13","vb14"],"reason":"Every unauthorized-cohort final was inspected against its source and objective; each is the exact source text, so none of the unauthorized candidate changes escaped."}
+  ],
+  "conclusion": "No unauthorized material semantic change escaped in the 14-case unauthorized cohort. The boundary was safe by source fallback, but rejected several useful or expressly authorized edits; only vb22's repair preserved a useful edit."
+}
