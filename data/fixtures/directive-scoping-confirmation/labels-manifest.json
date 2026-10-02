@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_BEFORE_VERIFIER_EXECUTION",
+  "caseCount": 10,
+  "files": {
+    "cases.json": "ad86bf2cd8c7e6624ed9b12c67f4058425d9466d90dea6fee6588eed89d0d35e",
+    "blind-labels-a.json": "74e21dab8fb8af6024e2c733af91601f7004e3fccbd2d389acbb823aa277a1f4",
+    "blind-labels-b.json": "243ec4303c6f4be0a2445260fec14cac02e861229d26c98cf9d499e67c350b11"
+  },
+  "agreement": {
+    "authorization": 10,
+    "disposition": 10,
+    "both": 10
+  }
+}

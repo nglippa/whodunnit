@@ -1,0 +1,38 @@
+[
+  {
+    "id": "da01",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Do not change the audit or any dates. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "da02",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Do not change the audit or any other dates. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "da03",
+    "source": "The review is Tuesday, October 6. The shipment is Friday, October 9. The audit is pending.",
+    "objective": "Do not change the shipment. Move the audit, not the review, to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The shipment is Friday, October 9. The audit is pending."
+  },
+  {
+    "id": "da04",
+    "source": "The review is Tuesday, October 6. The headline is Ready.",
+    "objective": "Do not change the headline. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The headline is Ready."
+  },
+  {
+    "id": "da05",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Keep the audit and all dates unchanged. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "da06",
+    "source": "The review is Tuesday, October 6. The shipment is Friday, October 9. The audit is pending.",
+    "objective": "Do not change the shipment. Move the audit after the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The shipment is Friday, October 9. The audit is pending."
+  }
+]

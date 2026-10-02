@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ds01",
+    "authorization": "AUTHORIZED",
+    "expectedDisposition": "ACCEPT",
+    "rationale": "The requested review date changes to the specified date, and the protected audit date stays the same."
+  },
+  {
+    "id": "ds02",
+    "authorization": "UNAUTHORIZED",
+    "expectedDisposition": "REJECT",
+    "rationale": "The candidate also changes the audit date, which the objective explicitly protects."
+  },
+  {
+    "id": "ds03",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The objective simultaneously prohibits changing any dates and requires changing the review date."
+  },
+  {
+    "id": "ds04",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The objective simultaneously protects the review date and directs moving that same date."
+  },
+  {
+    "id": "ds05",
+    "authorization": "AUTHORIZED",
+    "expectedDisposition": "ACCEPT",
+    "rationale": "Only the review date changes to the specified date; everything else stays unchanged."
+  },
+  {
+    "id": "ds06",
+    "authorization": "UNAUTHORIZED",
+    "expectedDisposition": "REJECT",
+    "rationale": "The audit date also changes despite the instruction to keep everything else unchanged."
+  },
+  {
+    "id": "ds07",
+    "authorization": "INSUFFICIENT_INFORMATION",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The objective allows updating the review date but gives no replacement date, so the candidate's chosen date cannot be confirmed."
+  },
+  {
+    "id": "ds08",
+    "authorization": "UNAUTHORIZED",
+    "expectedDisposition": "REJECT",
+    "rationale": "A clarity edit does not authorize changing the factual review date."
+  },
+  {
+    "id": "ds09",
+    "authorization": "AUTHORIZED",
+    "expectedDisposition": "ACCEPT",
+    "rationale": "The audit moves to the specified date while the protected review date remains unchanged."
+  },
+  {
+    "id": "ds10",
+    "authorization": "AUTHORIZED",
+    "expectedDisposition": "ACCEPT",
+    "rationale": "Only the expected tile shipment count changes from 18 to 20; the loading bays and other facts remain unchanged."
+  }
+]

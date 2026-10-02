@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_AFTER_SIX_CASE_ADVERSARIAL_REPLAY_BEFORE_PUNCTUATION_REPLAY",
+  "caseCount": 3,
+  "provenance": "Independent audit controls for the V13 baseline path; separate from blind ten and earlier six adversarial cases.",
+  "files": {
+    "punctuation-adversarial-cases.json": "45a764cc1d0b5a95fde732850dceb740dd91554036ae85ac74f72739058108e1",
+    "punctuation-adversarial-labels.json": "9c423d53c9fba5fd55ef590f375280f80bf5149c77b94585d3f49dece7e7c4f9"
+  }
+}

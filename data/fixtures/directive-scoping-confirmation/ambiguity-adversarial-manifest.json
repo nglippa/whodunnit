@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_AFTER_SHARED_EXPRESSION_REPLAY_BEFORE_AMBIGUITY_REPLAY",
+  "caseCount": 2,
+  "provenance": "Independent audit controls for unclear protective target identity with one source event.",
+  "files": {
+    "ambiguity-adversarial-cases.json": "bd0a8bcbfe7fbc1dd3eb40a9009dd56ca7ec89af9fc5a1016b7f6c2bb172d3da",
+    "ambiguity-adversarial-labels.json": "927000f9f4b429aa8c684d0a5f3b3b2b56f3eeac73754ff6e359921ed24f63d4"
+  }
+}

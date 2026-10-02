@@ -1,0 +1,38 @@
+[
+  {
+    "id": "da01",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The coordinated directive prohibits changing any dates, including the review date."
+  },
+  {
+    "id": "da02",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "Do not change the audit or any other dates prohibits changing the review date."
+  },
+  {
+    "id": "da03",
+    "authorization": "UNAUTHORIZED",
+    "expectedDisposition": "REJECT",
+    "rationale": "The affirmative directive targets the audit and expressly excludes the review, but the candidate changes the review."
+  },
+  {
+    "id": "da04",
+    "authorization": "AUTHORIZED",
+    "expectedDisposition": "ACCEPT",
+    "rationale": "The review date moves exactly as requested while the protected, non-temporal headline stays unchanged."
+  },
+  {
+    "id": "da05",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The coordinated preservation instruction protects all dates and conflicts with the requested review move."
+  },
+  {
+    "id": "da06",
+    "authorization": "UNAUTHORIZED",
+    "expectedDisposition": "REJECT",
+    "rationale": "The affirmative directive targets the audit after the review, but the candidate changes the review."
+  }
+]

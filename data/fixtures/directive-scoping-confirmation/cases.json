@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ds01",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Do not change the audit. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "ds02",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Do not change the audit. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Saturday, October 10."
+  },
+  {
+    "id": "ds03",
+    "source": "The review is Tuesday, October 6.",
+    "objective": "Do not change any dates. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7."
+  },
+  {
+    "id": "ds04",
+    "source": "The review is Tuesday, October 6.",
+    "objective": "Do not change the review date. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7."
+  },
+  {
+    "id": "ds05",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Keep everything else unchanged. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "ds06",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Keep everything else unchanged. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7. The audit is Saturday, October 10."
+  },
+  {
+    "id": "ds07",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Do not change the audit. Update the review date.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "ds08",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Make this clearer, but don’t change the audit.",
+    "candidate": "The review is Wednesday, October 7. The audit is Friday, October 9."
+  },
+  {
+    "id": "ds09",
+    "source": "The review is Tuesday, October 6. The audit is Friday, October 9.",
+    "objective": "Do not change the review. Move the audit to Saturday, October 10.",
+    "candidate": "The review is Tuesday, October 6. The audit is Saturday, October 10."
+  },
+  {
+    "id": "ds10",
+    "source": "The depot expects 18 crates of ceramic tiles on Tuesday. Six loading bays will be available, and the delivery crew has the gate code.",
+    "objective": "Do not change the loading bays. Change only the expected tile shipment from 18 crates to 20 crates.",
+    "candidate": "The depot expects 20 crates of ceramic tiles on Tuesday. Six loading bays will be available, and the delivery crew has the gate code."
+  }
+]

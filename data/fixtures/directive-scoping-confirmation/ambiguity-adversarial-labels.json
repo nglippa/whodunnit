@@ -1,0 +1,14 @@
+[
+  {
+    "id": "du01",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "With only one source event, the protected appointment may be the review; the conflicting target is ambiguous."
+  },
+  {
+    "id": "du02",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "With only one source event, the protected event may be the review; the conflicting target is ambiguous."
+  }
+]

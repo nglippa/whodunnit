@@ -1,0 +1,62 @@
+[
+  {
+    "id": "ds01",
+    "authorization": "AUTHORIZED",
+    "disposition": "ACCEPT",
+    "rationale": "The review moves to the requested date and the protected audit stays unchanged."
+  },
+  {
+    "id": "ds02",
+    "authorization": "UNAUTHORIZED",
+    "disposition": "REJECT",
+    "rationale": "The candidate changes the audit despite the explicit instruction to preserve it."
+  },
+  {
+    "id": "ds03",
+    "authorization": "CONFLICTING",
+    "disposition": "FAIL_CLOSED",
+    "rationale": "Moving the review date directly conflicts with the instruction not to change any dates."
+  },
+  {
+    "id": "ds04",
+    "authorization": "CONFLICTING",
+    "disposition": "FAIL_CLOSED",
+    "rationale": "The objective both protects and requests a change to the review date."
+  },
+  {
+    "id": "ds05",
+    "authorization": "AUTHORIZED",
+    "disposition": "ACCEPT",
+    "rationale": "Only the requested review date changes; the audit stays unchanged."
+  },
+  {
+    "id": "ds06",
+    "authorization": "UNAUTHORIZED",
+    "disposition": "REJECT",
+    "rationale": "The audit changes even though the objective limits the edit to the review date."
+  },
+  {
+    "id": "ds07",
+    "authorization": "INSUFFICIENT_INFORMATION",
+    "disposition": "FAIL_CLOSED",
+    "rationale": "The objective permits updating the review date but gives no target date to validate the candidate's choice."
+  },
+  {
+    "id": "ds08",
+    "authorization": "UNAUTHORIZED",
+    "disposition": "REJECT",
+    "rationale": "A clarity edit does not authorize changing the review date."
+  },
+  {
+    "id": "ds09",
+    "authorization": "AUTHORIZED",
+    "disposition": "ACCEPT",
+    "rationale": "The audit moves to the requested date and the protected review stays unchanged."
+  },
+  {
+    "id": "ds10",
+    "authorization": "AUTHORIZED",
+    "disposition": "ACCEPT",
+    "rationale": "Only the requested shipment count changes; the loading bays and other facts stay unchanged."
+  }
+]

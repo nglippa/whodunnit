@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dp01",
+    "source": "The review is October 6. The audit remains open.",
+    "objective": "Do not change any dates. Move the review to October 7.",
+    "candidate": "The review is October 7! The audit remains open."
+  },
+  {
+    "id": "dp02",
+    "source": "Meet October 6.",
+    "objective": "Do not change the meeting date. Move it to October 7.",
+    "candidate": "Meet October 7!"
+  },
+  {
+    "id": "dp03",
+    "source": "The review is October 6. The audit is October 9.",
+    "objective": "Do not change the audit. Move the review to October 7.",
+    "candidate": "The review is October 6. The audit is October 7!"
+  }
+]

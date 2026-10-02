@@ -1,0 +1,14 @@
+[
+  {
+    "id": "de01",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The audit and review share one date; changing that expression changes the protected audit date."
+  },
+  {
+    "id": "de02",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The audit and review share one date; preserving the audit conflicts with changing their shared expression."
+  }
+]

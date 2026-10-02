@@ -1,0 +1,14 @@
+[
+  {
+    "id": "de01",
+    "source": "The review with the audit is Tuesday, October 6, in Room 5.",
+    "objective": "Do not change the audit in Room 5. Move the review to Wednesday, October 7.",
+    "candidate": "The review with the audit is Wednesday, October 7, in Room 5."
+  },
+  {
+    "id": "de02",
+    "source": "The review with the audit is Tuesday, October 6, in Room 5.",
+    "objective": "Keep the audit in Room 5 unchanged. Move the review to Wednesday, October 7.",
+    "candidate": "The review with the audit is Wednesday, October 7, in Room 5."
+  }
+]

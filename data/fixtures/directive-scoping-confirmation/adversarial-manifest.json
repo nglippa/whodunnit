@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_AFTER_INITIAL_REPLAY_BEFORE_ADVERSARIAL_REPLAY",
+  "caseCount": 6,
+  "provenance": "Independent audit controls; separate from the ten blind-labeled pre-execution cases.",
+  "files": {
+    "adversarial-cases.json": "e7d32ed20cff2a884b60ac829e27162108d66678e226dfea805706492c6918e1",
+    "adversarial-labels.json": "0b08354575f88df7ad6fadd94085e526d67852562ab4bf7047d7ac84eb292cd2"
+  }
+}

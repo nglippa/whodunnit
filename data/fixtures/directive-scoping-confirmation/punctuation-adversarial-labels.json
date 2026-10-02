@@ -1,0 +1,20 @@
+[
+  {
+    "id": "dp01",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The objective prohibits changing any dates while asking to move the review; punctuation does not resolve that conflict."
+  },
+  {
+    "id": "dp02",
+    "authorization": "CONFLICTING",
+    "expectedDisposition": "FAIL_CLOSED",
+    "rationale": "The objective both protects and asks to move the same meeting date; punctuation does not resolve that conflict."
+  },
+  {
+    "id": "dp03",
+    "authorization": "UNAUTHORIZED",
+    "expectedDisposition": "REJECT",
+    "rationale": "The candidate changes the protected audit date instead of the requested review date; punctuation cannot authorize the wrong claim."
+  }
+]

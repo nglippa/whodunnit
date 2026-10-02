@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_AFTER_PUNCTUATION_REPLAY_BEFORE_SHARED_EXPRESSION_REPLAY",
+  "caseCount": 2,
+  "provenance": "Independent audit controls for a temporal expression shared by an authorized and protected event.",
+  "files": {
+    "shared-expression-adversarial-cases.json": "5aacb83d70d6a1605071698a395ec58c5bf03e24424f33cfb34fe844d8fdbc1e",
+    "shared-expression-adversarial-labels.json": "c7fd4b372a5bc2089cf0191d5acaec57b7f5c62e2503339e82f21804539ca913"
+  }
+}

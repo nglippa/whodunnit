@@ -156,7 +156,15 @@ export const RECONSTRUCTION_V14 = define({
   description: "V13 behavior with narrow authorization for one explicitly requested whole temporal expression replacement.",
 });
 
-export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12, RECONSTRUCTION_V13, RECONSTRUCTION_V14];
+/** V14 with preservation constraints scoped to their uniquely identified directive target. */
+export const RECONSTRUCTION_V15 = define({
+  ...RECONSTRUCTION_V14,
+  version: 15,
+  name: "Reconstruction v15 (directive-scoped temporal deltas)",
+  description: "V14 behavior with unrelated local preservation directives kept separate from an exact affirmative temporal update.",
+});
+
+export const STRATEGIES: readonly RewriteStrategy[] = [RECONSTRUCTION_V1, RECONSTRUCTION_V2, RECONSTRUCTION_V3, RECONSTRUCTION_V4, RECONSTRUCTION_V5, RECONSTRUCTION_V6, RECONSTRUCTION_V7, RECONSTRUCTION_V8, RECONSTRUCTION_V9, RECONSTRUCTION_V10, RECONSTRUCTION_V11, RECONSTRUCTION_V12, RECONSTRUCTION_V13, RECONSTRUCTION_V14, RECONSTRUCTION_V15];
 export const DEFAULT_STRATEGY = RECONSTRUCTION_V1;
 
 export function getStrategy(key: string): RewriteStrategy {

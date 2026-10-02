@@ -1,0 +1,14 @@
+[
+  {
+    "id": "du01",
+    "source": "The review is Tuesday, October 6.",
+    "objective": "Do not change the appointment. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7."
+  },
+  {
+    "id": "du02",
+    "source": "The review is Tuesday, October 6.",
+    "objective": "Keep the event unchanged. Move the review to Wednesday, October 7.",
+    "candidate": "The review is Wednesday, October 7."
+  }
+]
