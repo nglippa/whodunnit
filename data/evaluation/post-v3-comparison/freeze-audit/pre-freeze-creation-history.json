@@ -1,0 +1,70 @@
+{
+  "recordType": "retrospective custodian orchestration record",
+  "status": "custodian attestation; not an independently hashed record of original drafts",
+  "scope": "pre-freeze creation, screening, and replacement history",
+  "initialAssignedCaseIds": "PVC-001 through PVC-040",
+  "formallyRetiredOrWholesaleReplacedDraftContexts": 4,
+  "replacementContexts": 4,
+  "finalCaseCount": 40,
+  "formalReplacements": [
+    {
+      "caseId": "PVC-004",
+      "creator": "CREATOR-03",
+      "retiredDraftContext": "Library repair workshop date update; screened as too close to CREATOR-01 PVC-002.",
+      "replacementContext": "Creator-produced replacement, without exposing another creator's text.",
+      "screeningBasis": "same-session pre-freeze wholesale replacement after quality screening"
+    },
+    {
+      "caseId": "PVC-011",
+      "creator": "CREATOR-03",
+      "retiredDraftContext": "Customer shelf context overlapped CREATOR-01 PVC-027.",
+      "replacementContext": "Creator-produced replacement, without exposing another creator's text.",
+      "screeningBasis": "same-session pre-freeze wholesale replacement after quality screening"
+    },
+    {
+      "caseId": "PVC-015",
+      "creator": "CREATOR-03",
+      "retiredDraftContext": "Club-fee vague update overlapped CREATOR-01 PVC-014.",
+      "replacementContext": "Creator-produced replacement, without exposing another creator's text.",
+      "screeningBasis": "same-session pre-freeze wholesale replacement after quality screening"
+    },
+    {
+      "caseId": "PVC-008",
+      "creator": "CREATOR-03",
+      "retiredDraftContext": "CSV technical instruction; retired before freeze due to an independently detected exact phrase overlap with V2.",
+      "replacementContext": "Property listing.",
+      "screeningBasis": "pre-freeze replacement following independent V2 phrase-overlap detection"
+    }
+  ],
+  "otherPreFreezeSourceExpansionOrQualityRevisions": {
+    "CREATOR-02": [
+      "PVC-007",
+      "PVC-019",
+      "PVC-022",
+      "PVC-028",
+      "PVC-033",
+      "PVC-016",
+      "PVC-034",
+      "PVC-039"
+    ],
+    "CREATOR-04": [
+      "PVC-010",
+      "PVC-021",
+      "PVC-026",
+      "PVC-030",
+      "PVC-037"
+    ],
+    "details": [
+      "CREATOR-04 PVC-037 shifted from a health leaflet to municipal community services.",
+      "PVC-034 received an objective correction.",
+      "PVC-037 received a metadata correction."
+    ]
+  },
+  "evidenceLimitations": [
+    "Original bytes and hashes do not survive for the three retired CREATOR-03 drafts PVC-004, PVC-011, and PVC-015 or for the listed early source expansions and quality revisions.",
+    "This record is a retrospective custodian attestation, not an independently hashed record of the original drafts.",
+    "No exact total of draft wordings is asserted."
+  ],
+  "frozenCorpusIntegrity": "The independently verified final corpus hashes remain intact; this retrospective record does not modify frozen artifacts.",
+  "postFreezeChanges": "None."
+}

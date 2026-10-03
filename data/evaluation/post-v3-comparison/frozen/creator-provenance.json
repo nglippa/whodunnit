@@ -1,0 +1,324 @@
+{
+  "creatorAssignments": [
+    {
+      "creatorId": "CREATOR-01",
+      "sessionOrder": 1,
+      "caseIds": [
+        "PVC-002",
+        "PVC-005",
+        "PVC-009",
+        "PVC-014",
+        "PVC-018",
+        "PVC-023",
+        "PVC-027",
+        "PVC-031",
+        "PVC-036",
+        "PVC-040"
+      ],
+      "assignments": [
+        {
+          "caseId": "PVC-002",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-005",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-009",
+          "primaryStratum": "vague_update_or_missing_required_replacement"
+        },
+        {
+          "caseId": "PVC-014",
+          "primaryStratum": "vague_update_or_missing_required_replacement"
+        },
+        {
+          "caseId": "PVC-018",
+          "primaryStratum": "substantial_reconstruction"
+        },
+        {
+          "caseId": "PVC-023",
+          "primaryStratum": "substantial_reconstruction"
+        },
+        {
+          "caseId": "PVC-027",
+          "primaryStratum": "ordinary_local_editing"
+        },
+        {
+          "caseId": "PVC-031",
+          "primaryStratum": "voice_sensitive_editing"
+        },
+        {
+          "caseId": "PVC-036",
+          "primaryStratum": "already_good_conditional_leave_alone"
+        },
+        {
+          "caseId": "PVC-040",
+          "primaryStratum": "collateral_change_danger"
+        }
+      ]
+    },
+    {
+      "creatorId": "CREATOR-02",
+      "sessionOrder": 2,
+      "caseIds": [
+        "PVC-001",
+        "PVC-007",
+        "PVC-012",
+        "PVC-016",
+        "PVC-019",
+        "PVC-022",
+        "PVC-028",
+        "PVC-033",
+        "PVC-034",
+        "PVC-039"
+      ],
+      "assignments": [
+        {
+          "caseId": "PVC-001",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-007",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-012",
+          "primaryStratum": "vague_update_or_missing_required_replacement"
+        },
+        {
+          "caseId": "PVC-016",
+          "primaryStratum": "substantial_reconstruction"
+        },
+        {
+          "caseId": "PVC-019",
+          "primaryStratum": "ordinary_local_editing"
+        },
+        {
+          "caseId": "PVC-022",
+          "primaryStratum": "ordinary_local_editing"
+        },
+        {
+          "caseId": "PVC-028",
+          "primaryStratum": "voice_sensitive_editing"
+        },
+        {
+          "caseId": "PVC-033",
+          "primaryStratum": "already_good_conditional_leave_alone"
+        },
+        {
+          "caseId": "PVC-034",
+          "primaryStratum": "collateral_change_danger"
+        },
+        {
+          "caseId": "PVC-039",
+          "primaryStratum": "ambiguity_or_contested_interpretation"
+        }
+      ]
+    },
+    {
+      "creatorId": "CREATOR-03",
+      "sessionOrder": 3,
+      "caseIds": [
+        "PVC-004",
+        "PVC-008",
+        "PVC-011",
+        "PVC-015",
+        "PVC-020",
+        "PVC-024",
+        "PVC-029",
+        "PVC-032",
+        "PVC-035",
+        "PVC-038"
+      ],
+      "assignments": [
+        {
+          "caseId": "PVC-004",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-008",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-011",
+          "primaryStratum": "vague_update_or_missing_required_replacement"
+        },
+        {
+          "caseId": "PVC-015",
+          "primaryStratum": "vague_update_or_missing_required_replacement"
+        },
+        {
+          "caseId": "PVC-020",
+          "primaryStratum": "substantial_reconstruction"
+        },
+        {
+          "caseId": "PVC-024",
+          "primaryStratum": "ordinary_local_editing"
+        },
+        {
+          "caseId": "PVC-029",
+          "primaryStratum": "voice_sensitive_editing"
+        },
+        {
+          "caseId": "PVC-032",
+          "primaryStratum": "already_good_conditional_leave_alone"
+        },
+        {
+          "caseId": "PVC-035",
+          "primaryStratum": "collateral_change_danger"
+        },
+        {
+          "caseId": "PVC-038",
+          "primaryStratum": "ambiguity_or_contested_interpretation"
+        }
+      ]
+    },
+    {
+      "creatorId": "CREATOR-04",
+      "sessionOrder": 4,
+      "caseIds": [
+        "PVC-003",
+        "PVC-006",
+        "PVC-010",
+        "PVC-013",
+        "PVC-017",
+        "PVC-021",
+        "PVC-025",
+        "PVC-026",
+        "PVC-030",
+        "PVC-037"
+      ],
+      "assignments": [
+        {
+          "caseId": "PVC-003",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-006",
+          "primaryStratum": "explicit_supplied_factual_update"
+        },
+        {
+          "caseId": "PVC-010",
+          "primaryStratum": "vague_update_or_missing_required_replacement"
+        },
+        {
+          "caseId": "PVC-013",
+          "primaryStratum": "substantial_reconstruction"
+        },
+        {
+          "caseId": "PVC-017",
+          "primaryStratum": "substantial_reconstruction"
+        },
+        {
+          "caseId": "PVC-021",
+          "primaryStratum": "ordinary_local_editing"
+        },
+        {
+          "caseId": "PVC-025",
+          "primaryStratum": "voice_sensitive_editing"
+        },
+        {
+          "caseId": "PVC-026",
+          "primaryStratum": "already_good_conditional_leave_alone"
+        },
+        {
+          "caseId": "PVC-030",
+          "primaryStratum": "collateral_change_danger"
+        },
+        {
+          "caseId": "PVC-037",
+          "primaryStratum": "ambiguity_or_contested_interpretation"
+        }
+      ]
+    }
+  ],
+  "creatorInputs": [
+    {
+      "path": "/private/tmp/post-v3-creator-01.json",
+      "sha256": "977836a2a3492b2b432906b966b233200d969dd9ca7295cb83ba99392abfbe9d",
+      "declaredProvenance": [
+        "synthetic original"
+      ]
+    },
+    {
+      "path": "/private/tmp/post-v3-creator-02.json",
+      "sha256": "409c8b684ead43566b64adce22ed11ab1b9fd1623c5bb6fdbdbe8cc88bba0cf3",
+      "declaredProvenance": [
+        "synthetic original"
+      ]
+    },
+    {
+      "path": "/private/tmp/post-v3-creator-03.json",
+      "sha256": "5e0490a7a0a15c78f4a98b2a7c626e3abc0069c14b5382246d92c05e82d58c69",
+      "declaredProvenance": [
+        "synthetic original"
+      ]
+    },
+    {
+      "path": "/private/tmp/post-v3-creator-04.json",
+      "sha256": "f23fef06dd2638e98f0a1294c8ee5667a85af36e288b1233b6d160ec6733a845",
+      "declaredProvenance": [
+        "synthetic original"
+      ]
+    }
+  ],
+  "preFreezeRevisionAndExclusionHistory": [
+    {
+      "caseId": "PVC-008",
+      "action": "original candidate draft retired and replaced before freeze",
+      "originalCandidate": {
+        "creatorId": "CREATOR-03",
+        "genre": "technical release note",
+        "lengthBand": "MEDIUM",
+        "sourceWordCount": 77,
+        "concern": "Substantive seven-word standard CSV requirement matched excluded Holdout V2 B011; no conclusion of intentional copying.",
+        "referencePath": "data/evaluation/holdout-v2/frozen/documents.json#B011",
+        "recordLocator": "initialAuditInputHashes /private/tmp/post-v3-creator-03.json"
+      },
+      "finalReplacement": {
+        "creatorId": "CREATOR-03",
+        "declaredProvenance": "synthetic original",
+        "genre": "property listing description",
+        "sourceWordCount": 88,
+        "primaryStratum": "explicit_supplied_factual_update",
+        "sourceObjectiveSha256": "416d0a9be0cf5b22627f1362f30e11c43cfbe9af5a807d23e1b687517a64af91",
+        "independenceEvidence": "Creator origin and wholesale unrelated property context; no prohibited historical wording supplied to creator by this auditor.",
+        "verdict": "eligible"
+      }
+    },
+    {
+      "caseId": "PVC-034",
+      "action": "pre-freeze objective correction",
+      "change": "Sentence-position pointer corrected to capacity sentence; unique requested substitution and source unchanged.",
+      "verdict": "eligible"
+    },
+    {
+      "caseId": "PVC-037",
+      "action": "pre-freeze metadata correction",
+      "change": "Genre corrected from health-service leaflet to municipal community services leaflet; source/objective unchanged.",
+      "verdict": "eligible"
+    }
+  ],
+  "freshnessAuditInputHashes": {
+    "/private/tmp/post-v3-creator-01.json": "977836a2a3492b2b432906b966b233200d969dd9ca7295cb83ba99392abfbe9d",
+    "/private/tmp/post-v3-creator-02.json": "409c8b684ead43566b64adce22ed11ab1b9fd1623c5bb6fdbdbe8cc88bba0cf3",
+    "/private/tmp/post-v3-creator-03.json": "5e0490a7a0a15c78f4a98b2a7c626e3abc0069c14b5382246d92c05e82d58c69",
+    "/private/tmp/post-v3-creator-04.json": "f23fef06dd2638e98f0a1294c8ee5667a85af36e288b1233b6d160ec6733a845"
+  },
+  "metadataCorrections": [
+    {
+      "artifact": "prelabels/reviewer-02.json",
+      "originalArtifact": "prelabels/reviewer-02-original-submission.json",
+      "field": "reviewerId",
+      "from": "PRELABEL-02",
+      "to": "PRELABELER-02",
+      "records": 40,
+      "reason": "Operational manifest requires PRELABELER-02; original submission metadata used PRELABEL-02. All other fields, judgments, timestamps, array order, and record order were preserved.",
+      "originalFileBytesSha256": "d72571f1b235192559eec1471778c672d62cb183adcf1b229cf7165236627852",
+      "correctedFileBytesSha256": "1db94e004d2d1f2b6fb6b9634bf65490a2653384274e91283f53dcd699fd63bb",
+      "substantiveFieldsPreserved": true
+    }
+  ],
+  "status": "FINAL_PRE_FREEZE_AUDIT_ALL_40_ELIGIBLE"
+}

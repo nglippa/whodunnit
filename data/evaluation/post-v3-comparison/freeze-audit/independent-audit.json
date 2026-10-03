@@ -1,0 +1,1138 @@
+{
+  "status": "FAIL",
+  "auditTimestamp": "2026-10-03T10:28:24.460814+00:00",
+  "auditRole": "independent post-freeze read-only audit",
+  "methods": [
+    "Independent Python hashlib exact SHA-256; recursive canonical serializer using Unicode JSON strings, lexical object-key sort and preserved array ordering; all observed keys ASCII and numbers integral, consistent with RFC8785 for these artifacts. No verifier output used as hash authority.",
+    "Compared all 40 source/objective UTF8 hashes and canonical metadata; reproduced label and reviewer-assignment hashes; independently checked creator input bytes.",
+    "Read all source/objective pairs, genre and length metadata, tags, pre-freeze audit and provenance; independently screened historical JSON six-token overlaps.",
+    "Git status, unstaged and staged path comparison; no editor, verifier, repair or architecture execution."
+  ],
+  "fileHashes": {
+    "corpus-manifest.sha256": {
+      "fileBytesSha256": "719edcec7293da20cc185cada3b1acc204e38d03ff232f13e95622964bea4826"
+    },
+    "corpus-manifest.json": {
+      "fileBytesSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "jcsSha256": "bb4667e6213bea6ffb121833d62f8af227ecb95962056406e2640cfc6ca59c9f"
+    },
+    "prelabel-packet.json": {
+      "fileBytesSha256": "7b56345f0e9d08d2a78420fea5dbc346906b3495d83634fc9610ecac9dd7bcc7",
+      "jcsSha256": "2f847462fa48a13be16bf48691e88c701e01f5823e6c806d2584bbbac037f832"
+    },
+    "creator-provenance.json": {
+      "fileBytesSha256": "61ba773e7e58ae0e620661051b01dbface6df7b517cb73371b4c1045ab117f05",
+      "jcsSha256": "b2c96169571c890309278a08467da4a6012d8cf049e5b246149e947cfc08b5d6"
+    },
+    "cases.json": {
+      "fileBytesSha256": "863fe43c0ea68b32d661023e6ca6b14e0dda55c1183562a393183063bc1e25f2",
+      "jcsSha256": "43ef20289c0fbecaea0beeb4af2135678f6cbf58000d8a1c5174893fcf171d91"
+    },
+    "freshness-audit.json": {
+      "fileBytesSha256": "b96c6404783ad1aa8ea62c2273542b8b8ef830a969661312383584e01deaee98",
+      "jcsSha256": "53c5f691dd44af4149af13a082b33a552384ac6a65e75d53bea98ecf15634389"
+    },
+    "prelabels/reviewer-01.json": {
+      "fileBytesSha256": "58a701708c34715c2c225d2b3d477cecd94d44d8ef8bf9f1674ce0f730ff7d96",
+      "jcsSha256": "e27b88656d21102680e455a4da77137236f1064ad9a15b05ba2901207d2d9255"
+    },
+    "prelabels/reviewer-02-original-submission.json": {
+      "fileBytesSha256": "d72571f1b235192559eec1471778c672d62cb183adcf1b229cf7165236627852",
+      "jcsSha256": "0ef577f695c3189d26fe9693234ade04792962e09beb3b734f17903fe4de23c7"
+    },
+    "prelabels/reviewer-02.json": {
+      "fileBytesSha256": "1db94e004d2d1f2b6fb6b9634bf65490a2653384274e91283f53dcd699fd63bb",
+      "jcsSha256": "b08becb044bd49a2a24127b38802664fdd8fbe72e301977b7c7d8a06c19d3138"
+    }
+  },
+  "caseHashes": [
+    {
+      "caseId": "PVC-001",
+      "sourceUtf8Sha256": "4d72ca9a8abdbd3bba15f031f97d741ab8eb8a048dca821bd74987b31c7fec69",
+      "objectiveUtf8Sha256": "61de4362901eff63d0afd8ecd9aa3279119e0a0246376b275b97bd822ea5a220",
+      "metadataJcsSha256": "e06a9f3795378f79fbaa811cebab47f9ec8fe553b1303b7a6316f5ceb365f316"
+    },
+    {
+      "caseId": "PVC-002",
+      "sourceUtf8Sha256": "450910b34786b96872cfcce28676cff35860529a99fe6a5879686acbaca25e3d",
+      "objectiveUtf8Sha256": "d51f00353a52dc477d1d3e86b41b130a7a6559b4537bcec4056c94f69fff37a9",
+      "metadataJcsSha256": "11fd4fa841a104ecf28d5859dea3adc6888a009ce1f819863cf3810006546796"
+    },
+    {
+      "caseId": "PVC-003",
+      "sourceUtf8Sha256": "c332c5328b9df7a532bf3eb527a49f16b5e6970bfd20c980da941fdc171ef569",
+      "objectiveUtf8Sha256": "552d778c825f381baf21de4af687b3cc7306e6af138bf8300902f9e3e2a773b8",
+      "metadataJcsSha256": "910e6ed88dafd5aa1f0685d6b5760412c360b8d69210e59cc4bb85d6a334c7b8"
+    },
+    {
+      "caseId": "PVC-004",
+      "sourceUtf8Sha256": "39310262d81815be0b74e23a05468a30bb236975129082eac86733ad38082cfe",
+      "objectiveUtf8Sha256": "552fb34ce44556148d732382e2a1d6db21901e3e0563917ced4b2e8bfcfd80fd",
+      "metadataJcsSha256": "ace7b1857a79bf180d5d9121541518b73c031a8baa010a2cee2e4394e247c17f"
+    },
+    {
+      "caseId": "PVC-005",
+      "sourceUtf8Sha256": "3c679806fe46ee097d0db5770ffcc722ae8ce25c76734594281353a1a0e6bec8",
+      "objectiveUtf8Sha256": "aeca1cb8ae652e8e48b9ba777fe5da0142bcd81fb1142ba23ddc85254bacb97e",
+      "metadataJcsSha256": "f5c8a2a5c49cc17d319e7bda4ac0ec9a08f8f81b18e822772336c723ba6104b6"
+    },
+    {
+      "caseId": "PVC-006",
+      "sourceUtf8Sha256": "951e54b09987d1defd45ad806542e410cff3d64d925dcecba0b63a4e9145c357",
+      "objectiveUtf8Sha256": "50f4b421f0b1c81c63e8791656631af847a5b18812269c508418e528b8e21f07",
+      "metadataJcsSha256": "8515ec52ad352702f5b6cda6e3a52fdbe66bef17efa9e5c0fe66def78bed3166"
+    },
+    {
+      "caseId": "PVC-007",
+      "sourceUtf8Sha256": "a1a2f587fa8c490dec9303a04276d1f2e993e7bc26af2ed949326858da9e7444",
+      "objectiveUtf8Sha256": "02dda1dde56046ac82962e32d3a30b2a26f3a133f140bb068b96e9a44f7f4c16",
+      "metadataJcsSha256": "1e5b459a9e8f0b73d769d9d166adc268511e5827b12571c33d781fdd0f25f22e"
+    },
+    {
+      "caseId": "PVC-008",
+      "sourceUtf8Sha256": "7ef6827105191bdca1bfd3b3d3e5d844a1ab5c898fcc69d7f23fa4c3d9c979af",
+      "objectiveUtf8Sha256": "4afed83c9ee41217c8469a30efd7121306c603958e18a33286ca772e98c0ae46",
+      "metadataJcsSha256": "dafbc02c44331dc13ff7d8712739145412227f1ac71d6bab032b6ba1ee2b66bb"
+    },
+    {
+      "caseId": "PVC-009",
+      "sourceUtf8Sha256": "34936da473601f22dfe4175aeca06d8f1cd45dd5f1a93acab612490b81dcb7f2",
+      "objectiveUtf8Sha256": "91e24f6ebe1fa52b4347a8bf97e099a0c3cfd1e78ee1624cce922f2bd83e197b",
+      "metadataJcsSha256": "759328612a6fbd472dd0fbbec8dbb1971dfed0c8190eb3cdc9c6eda0e7e31183"
+    },
+    {
+      "caseId": "PVC-010",
+      "sourceUtf8Sha256": "7c006b7b9bcc50b04ae62ceb3ad24d3aaa0c570173c895e9cf10e99efb413bf6",
+      "objectiveUtf8Sha256": "cc615793eb5bb7fc069fa3ea3dffe88d782f8842170ed96694bfa4ef416a1b2e",
+      "metadataJcsSha256": "4f07c52ed36c0eedc9ffbab908ef588fb4f2cd42525ede65424499b9fd5cc375"
+    },
+    {
+      "caseId": "PVC-011",
+      "sourceUtf8Sha256": "04da9db19adaf14fa3ee3b65fa34cf2840ddf5b2f0ee55a245ac0621f0c1e4ec",
+      "objectiveUtf8Sha256": "70995a89e4955a1e4ca94290a242823315ab9529c364e528f1737ded6bd1e179",
+      "metadataJcsSha256": "a533f33c59d5b5adb5b28c1ffa9ea027040e52421a267b369f5374a1cc8368f8"
+    },
+    {
+      "caseId": "PVC-012",
+      "sourceUtf8Sha256": "3bdff39a232bf87aa3de2331df2cb49f601197037667f0ce14490c3ffb0061ef",
+      "objectiveUtf8Sha256": "f2089bd49762957682990d30c835c440aa5a5e40eb5dacd4d9df2e7ee779b764",
+      "metadataJcsSha256": "fc43876fbb1d57f31bf322e3ae087bdecc22378aa85376720b148e23e0c5112c"
+    },
+    {
+      "caseId": "PVC-013",
+      "sourceUtf8Sha256": "3378b6152f7787d36a90f046bd32eb7eaf5ea2d80599b019752bbf240eb8f3b4",
+      "objectiveUtf8Sha256": "e0785e7891f7ee9ae34f3a8a3a3f6a8a319b5bcea6ebd7ff033265d2986aac76",
+      "metadataJcsSha256": "e8425abf7d8d94c925f170183297c4e78ce245920e48b690c8e0740858cb62f2"
+    },
+    {
+      "caseId": "PVC-014",
+      "sourceUtf8Sha256": "bb3a29ad050f7135e3e3c16121c40c4a3704d094c4767a84360f44f84d73109f",
+      "objectiveUtf8Sha256": "0f9d7b84ab6eb41f8c4dc4f6847962ed05b84616d5a43388307968080177743a",
+      "metadataJcsSha256": "2ab2c1d755de41d05ba3673c0e6b6b0b046f5df23a3553ef59fa0fd052cbfd93"
+    },
+    {
+      "caseId": "PVC-015",
+      "sourceUtf8Sha256": "eb8fed06c530238569d0c228359bb8ff39332d9afb2a046d480272bc75956de8",
+      "objectiveUtf8Sha256": "dc8e0236512dba6acb40ab6190f784f306b35c5cf98624ebb94f57127e538b5f",
+      "metadataJcsSha256": "d837b858ea7030fe083546d444c51e04e17300861beb97f1c7b70d3b35197296"
+    },
+    {
+      "caseId": "PVC-016",
+      "sourceUtf8Sha256": "c62b6233450153c6bf8999ab6f17fa5c491cfa96b6fbd2b50d1068b3c412e02e",
+      "objectiveUtf8Sha256": "882c10202d6894be33de6f3d6743a7c7d4d8aa6415ed0ba3ae1768d80f948290",
+      "metadataJcsSha256": "ccb838f6ed7cf6cfd6791cbd0a7ab6e7853b9979394fbc2c12903d0b00183fe9"
+    },
+    {
+      "caseId": "PVC-017",
+      "sourceUtf8Sha256": "8172ed97f6c4483da6de4a1e3377d1a3f6cbb801311abb3a0058c6d93f155afa",
+      "objectiveUtf8Sha256": "543edb80998d9c12877240428e36627b9516d9e2cc61da10a10ae751c33cb16c",
+      "metadataJcsSha256": "5ecd15d80d9d14cc048d020f34c5da5351e8f991350c7273cc70d94bb83c3265"
+    },
+    {
+      "caseId": "PVC-018",
+      "sourceUtf8Sha256": "7ad652c6377238e6d709d542a26b1da1647b64600e530c99256cda4c7947e935",
+      "objectiveUtf8Sha256": "0467a47ffa95e9d54d77d4cd9c9ef06fcdc5506a8098ea304ebb20451cccebf2",
+      "metadataJcsSha256": "bf0b952c97ca75a91214ab3ee76b48a85145d0caba66e3416d6f9c6d8027eb58"
+    },
+    {
+      "caseId": "PVC-019",
+      "sourceUtf8Sha256": "cab68d9607a447fc5619ba165e47a8e5d72f06519e4d02263d06b8c48610bf32",
+      "objectiveUtf8Sha256": "7051cb0f7b6968a149d61193b040aca5fa4cb9cfb0be6bcd84ff411fb5224a42",
+      "metadataJcsSha256": "90d7a87de3e9f19d78742258b721e79b3b57cf9d515fec51fdbeafe0a4dac20a"
+    },
+    {
+      "caseId": "PVC-020",
+      "sourceUtf8Sha256": "8b685ca373b3f7188b7609d3f183e3df33f03cf0e986e2acf0fd015c05ed506c",
+      "objectiveUtf8Sha256": "193cf7509027df4c15e95bf9ca32aed01a0abca84459e4c67fb9bb5307186f25",
+      "metadataJcsSha256": "96273baeb0d5d092dae5710443aa73179867951f93c9ba1cc47d3919c5ca657c"
+    },
+    {
+      "caseId": "PVC-021",
+      "sourceUtf8Sha256": "98c50966754e5cd7c444f786c7ebd9098392eadf000bc2afec2b51731e03927f",
+      "objectiveUtf8Sha256": "e7659836843e115080f13bd9dce32edea7b2d441dd00c19fd8f432345550d8bc",
+      "metadataJcsSha256": "51d6a1b8f5cddca2e824d5e8c5efbd14f304b41046de6a7617237a521363a9ac"
+    },
+    {
+      "caseId": "PVC-022",
+      "sourceUtf8Sha256": "0fc004ad010c4654a932b087b8e85a02720fd33f0def3f38949ea1534c248fd1",
+      "objectiveUtf8Sha256": "cbdd256f2b627495b3d4ae65e45c066d88533ff7805c3f2ba4e69b7e65b6b82a",
+      "metadataJcsSha256": "fb1ee65e2b4d69ada91ff6114c6f619fed3e28874d1b06a3f7881d75517fff9d"
+    },
+    {
+      "caseId": "PVC-023",
+      "sourceUtf8Sha256": "ca91afc77cbf253a4ccec15ad04af929f3f064e78a8cdf3961a1d3a09ea711b6",
+      "objectiveUtf8Sha256": "d7a388400f587db7c6a2e9f0854de15f863b9dc5c25b9e082d3217e08ab0460b",
+      "metadataJcsSha256": "899d060205fcc4ebe3c5a743d43074bedddfce88b9758b3895d0dd2b9aff5582"
+    },
+    {
+      "caseId": "PVC-024",
+      "sourceUtf8Sha256": "8d769905999029c781988d220d0f178c9062e3180e803d23a8d442f4f711ee01",
+      "objectiveUtf8Sha256": "31170e67ae3c5dd9f3b7acd60a68fb84fd18e1be13d360d846f1d596a2e212a0",
+      "metadataJcsSha256": "853e6a4f349c9f048acfc427186752e85d277310a143dd84c4cc32126625043f"
+    },
+    {
+      "caseId": "PVC-025",
+      "sourceUtf8Sha256": "41aaa58d05021c1b13896abc6fb104085d97b03255f1687f606076bfb207d3bc",
+      "objectiveUtf8Sha256": "f6b86b94352f86c57a6718b138e811f4feefb8ee594159c5747437324ef4afd0",
+      "metadataJcsSha256": "a76495ee607f9ffcb5dad1347f4514ae112d2efb5a4a3cc1511625379e5522e9"
+    },
+    {
+      "caseId": "PVC-026",
+      "sourceUtf8Sha256": "db0b041d6c2bef8053a33a7c49c3ad53484432012b9b55270dadc42cb8556be9",
+      "objectiveUtf8Sha256": "e0ec91a83cfb63fb565ebb90ec68e793ef48c64a66a620dc0037fe59301784e1",
+      "metadataJcsSha256": "2274f36966a8f8e2a2ef0ab1c93e3de02951a766ba9f650896cc592ccc69b51e"
+    },
+    {
+      "caseId": "PVC-027",
+      "sourceUtf8Sha256": "03496ee39e0e43723f3fe8b2b576654020b44f63dda2e794797b113a02e24028",
+      "objectiveUtf8Sha256": "5353c534707dbfa6ef502e32fa277064b83683ed26d5be7de9907d491de72c15",
+      "metadataJcsSha256": "2ef80f2f4d66920e8035f1c3d1f4e1f7f8ce8da760b9baed6ac8b41fcd970a6b"
+    },
+    {
+      "caseId": "PVC-028",
+      "sourceUtf8Sha256": "499bbc05f0876ae68cc44ee0ef490969bd409a40c57a9af025c4ac4d2abc2c4f",
+      "objectiveUtf8Sha256": "043d123b7c12e97ac4ad966c428f67a7261f7842cccae8a4d78e0df5d6df4768",
+      "metadataJcsSha256": "695bec4e52e950062e226049b4562cdc5a62675b3496f50bbbae7101f54f9ed8"
+    },
+    {
+      "caseId": "PVC-029",
+      "sourceUtf8Sha256": "fcd10df2a78f1d23ae6cb0ce759bb6af114146f9109c1dfce01db095463b0d08",
+      "objectiveUtf8Sha256": "2fe0c693a499723bec503845447565605a7a01d463f9d0d8880d39cd0f577bf1",
+      "metadataJcsSha256": "970e6d0ced5fb136a6238ac15430a6bea95b8690bf68268ec188168c822f20b7"
+    },
+    {
+      "caseId": "PVC-030",
+      "sourceUtf8Sha256": "da398369427342879c77a64fe6ee90300a970fb1cf0458d721d1bc964316fc8b",
+      "objectiveUtf8Sha256": "5804859006b5a4a79fdbb790d55b10eb3a1cf13d6979c6a81db9a02f8f2084a5",
+      "metadataJcsSha256": "95d1953f4f68b246f73b4795ea9db5f0f46eaf613f917961079bbe6945bd3a42"
+    },
+    {
+      "caseId": "PVC-031",
+      "sourceUtf8Sha256": "584ac2ec7f3ee1aad3b94938ad9faf2869e255d32c960248d6e64086d64c5d9b",
+      "objectiveUtf8Sha256": "e51fac7dc064ba0a4e5ca602a68ffaeb056182b1ae13fe0caa1c6114b4fee269",
+      "metadataJcsSha256": "b1afd2361fbea0e8059e686c838a698fc390184b7a8ec8885ba8cd5387362414"
+    },
+    {
+      "caseId": "PVC-032",
+      "sourceUtf8Sha256": "16e22fa62adf75ef868c97ac307e4405cbbb3b836427387e06b5e068d29b2e93",
+      "objectiveUtf8Sha256": "f70732ba81e10f32d2e1a62c83d0192ed116bc77c4f31095ec891f352adf1031",
+      "metadataJcsSha256": "30379e4c5f6fae80899896a5839418a115d3b6ac65ae7bed3113ef198b214652"
+    },
+    {
+      "caseId": "PVC-033",
+      "sourceUtf8Sha256": "c9fdd11841fbdc3e6225f53f843906b7e4c460c939750a9488cd304028182ff0",
+      "objectiveUtf8Sha256": "16c5389b5a216f94834c5a26a02fcab6912338fc16cf8f16a47720e3ca4adf74",
+      "metadataJcsSha256": "bc2621a4117100c66ed5bb099fbae02dc8967fa9a70758d7efdf0cd6f5895c5b"
+    },
+    {
+      "caseId": "PVC-034",
+      "sourceUtf8Sha256": "2ce826eaeceabdc9330b5f7a06bd1e7cd45196302bb7a8b5144e31923554d5ec",
+      "objectiveUtf8Sha256": "4bc5b386ad32b214979c2879cf43650c301e9c19e99fb173467272cd42109271",
+      "metadataJcsSha256": "6b6c58e529707c1e81ea14d07fd5aff96da77ac3e0c04fdca1a11d20da0fb537"
+    },
+    {
+      "caseId": "PVC-035",
+      "sourceUtf8Sha256": "d98b5c713c8e7fc8b9e2c6a91a2306489abdb59ab1d7dc8242677945a9899646",
+      "objectiveUtf8Sha256": "7ef2a20830dba7b6800b6a5afc3947bb60be15ca5190fc2c2166c71093f5d00a",
+      "metadataJcsSha256": "7e16447a75908909eb2ba3335731aa5a24848effba5ede40bca130096fe015df"
+    },
+    {
+      "caseId": "PVC-036",
+      "sourceUtf8Sha256": "59a6972eeebf0e62a77876926dbb2c6329bda5bfba255c4188ca51af5a40d6dd",
+      "objectiveUtf8Sha256": "6514e2e73b714550c87796abc28730593186efb4745cf46759d9133524f77b8a",
+      "metadataJcsSha256": "3378b1ff28bb0633089704736e497158914d7d9831051e1c062ec435af8febb3"
+    },
+    {
+      "caseId": "PVC-037",
+      "sourceUtf8Sha256": "6f705b3d7f3c3415f8fcc0b1278087d0004facea20f655b4df4469e3c7420c8f",
+      "objectiveUtf8Sha256": "624c4b7dc080a8f22e0698ebb1fbb00dd3c34a66c3ca0d8b717fcf4617be0360",
+      "metadataJcsSha256": "34222aa5972981b5bdc0fb1c243fa08165e8b84de79704eceb144ad3c2814847"
+    },
+    {
+      "caseId": "PVC-038",
+      "sourceUtf8Sha256": "4f5189df7d9ca7ede652ffb12133531c091be5f7cb2c6b148ee2554614b166d9",
+      "objectiveUtf8Sha256": "bd392b01f971a33c8871617c4c0654be1cba51c84f90de9637fe9e8f64592503",
+      "metadataJcsSha256": "bd940c488f8d5d9af9d645a6ed0137b8e0d006120249f2f03b40f48331592fb5"
+    },
+    {
+      "caseId": "PVC-039",
+      "sourceUtf8Sha256": "5aab312f6a4aeff4f089e4091d31ef813c1cc73de8d3ee86a1babe72186b0ac4",
+      "objectiveUtf8Sha256": "d5bf8bcbbd8fa153a0017eafe7143798e6eb2adce8200fe060eb15d03d920ca8",
+      "metadataJcsSha256": "149cf6076245c336db8a1c91d4e5f81481d0b5ff0c8f9bd981f44d427d83f06d"
+    },
+    {
+      "caseId": "PVC-040",
+      "sourceUtf8Sha256": "c36f342e4ea74daf04d5f3c51085b272704abf03f9f1b90826415f8720ae30b0",
+      "objectiveUtf8Sha256": "862a040be4a679e6ee995e0433a71a9cab6d79cb0ffa38edf061376aaad27956",
+      "metadataJcsSha256": "c01dd5e7a70115e4bd377e60244932f6e80bf3361cccbec5622757810c50ca38"
+    }
+  ],
+  "reviewerAssignmentJcsSha256": "7ee0f012a16e5015c1fa68ae51e384ccf731f1501bfdb0c9ba3483cc0822576b",
+  "caseCount": 40,
+  "reviewerCounts": [
+    40,
+    40
+  ],
+  "distributions": {
+    "primaryStratum": {
+      "explicit_supplied_factual_update": 8,
+      "vague_update_or_missing_required_replacement": 6,
+      "substantial_reconstruction": 6,
+      "ordinary_local_editing": 5,
+      "voice_sensitive_editing": 4,
+      "already_good_conditional_leave_alone": 4,
+      "collateral_change_danger": 4,
+      "ambiguity_or_contested_interpretation": 3
+    },
+    "creatorId": {
+      "CREATOR-02": 10,
+      "CREATOR-01": 10,
+      "CREATOR-04": 10,
+      "CREATOR-03": 10
+    },
+    "lengthBand": {
+      "SHORT": 8,
+      "MEDIUM": 20,
+      "LONGER": 12
+    },
+    "genre": {
+      "community announcement": 2,
+      "technical operations notice": 1,
+      "manufacturing quality bulletin": 1,
+      "project status email": 1,
+      "workplace report": 1,
+      "service information": 1,
+      "property listing description": 1,
+      "technical support article": 1,
+      "internal instructional guide": 1,
+      "restaurant menu description": 1,
+      "event announcement": 1,
+      "internal evaluation summary": 1,
+      "school club registration notice": 1,
+      "small business purchasing procedure": 1,
+      "volunteer coordination proposal": 1,
+      "public research update": 1,
+      "operations handover memo": 1,
+      "work email": 1,
+      "internal process proposal": 1,
+      "workplace process note": 1,
+      "internal instructions": 1,
+      "public pilot proposal": 1,
+      "handover note": 1,
+      "personal newsletter": 2,
+      "newsletter column": 1,
+      "customer service email": 1,
+      "personal essay": 1,
+      "public service information": 1,
+      "personal essay newsletter": 1,
+      "event reminder": 1,
+      "public notice": 1,
+      "internal program description": 1,
+      "research methods summary": 1,
+      "guest arrival instructions": 1,
+      "municipal community services leaflet": 1,
+      "residents meeting follow-up": 1,
+      "meeting record": 1,
+      "venue booking information sheet": 1
+    }
+  },
+  "secondaryTags": {
+    "conditions": 34,
+    "dates_times": 10,
+    "document_conversion": 17,
+    "quantities": 3,
+    "uncertainty": 13,
+    "paragraph_movement": 6,
+    "commitments": 2,
+    "voice": 6,
+    "ambiguity": 2
+  },
+  "sourceWordCounts": {
+    "PVC-001": 41,
+    "PVC-002": 55,
+    "PVC-003": 32,
+    "PVC-004": 89,
+    "PVC-005": 95,
+    "PVC-006": 32,
+    "PVC-007": 90,
+    "PVC-008": 88,
+    "PVC-009": 82,
+    "PVC-010": 102,
+    "PVC-011": 75,
+    "PVC-012": 38,
+    "PVC-013": 112,
+    "PVC-014": 86,
+    "PVC-015": 164,
+    "PVC-016": 228,
+    "PVC-017": 104,
+    "PVC-018": 294,
+    "PVC-019": 96,
+    "PVC-020": 216,
+    "PVC-021": 107,
+    "PVC-022": 87,
+    "PVC-023": 266,
+    "PVC-024": 50,
+    "PVC-025": 109,
+    "PVC-026": 168,
+    "PVC-027": 67,
+    "PVC-028": 117,
+    "PVC-029": 119,
+    "PVC-030": 141,
+    "PVC-031": 117,
+    "PVC-032": 50,
+    "PVC-033": 89,
+    "PVC-034": 165,
+    "PVC-035": 93,
+    "PVC-036": 87,
+    "PVC-037": 167,
+    "PVC-038": 184,
+    "PVC-039": 147,
+    "PVC-040": 217
+  },
+  "reviewDisagreementCaseCount": 40,
+  "reviewDisagreements": [
+    {
+      "caseId": "PVC-001",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-002",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-003",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-004",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-005",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-006",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-007",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-008",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-009",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-010",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-011",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-012",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-013",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-014",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-015",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-016",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-017",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-018",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-019",
+      "fields": [
+        "expectedEditingScope",
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-020",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-021",
+      "fields": [
+        "expectedEditingScope",
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-022",
+      "fields": [
+        "expectedEditingScope",
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-023",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-024",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-025",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-026",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-027",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts"
+      ]
+    },
+    {
+      "caseId": "PVC-028",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-029",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-030",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-031",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-032",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-033",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-034",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-035",
+      "fields": [
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-036",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    },
+    {
+      "caseId": "PVC-037",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation",
+        "expectedCompletionDisposition"
+      ]
+    },
+    {
+      "caseId": "PVC-038",
+      "fields": [
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation",
+        "expectedCompletionDisposition"
+      ]
+    },
+    {
+      "caseId": "PVC-039",
+      "fields": [
+        "expectedEditingScope",
+        "expectedSafeBehavior",
+        "preservedMaterialFacts",
+        "voiceConstraints",
+        "ambiguity",
+        "missingInformation"
+      ]
+    },
+    {
+      "caseId": "PVC-040",
+      "fields": [
+        "expectedEditingScope",
+        "expectedSafeBehavior",
+        "authorizedReplacements",
+        "preservedMaterialFacts",
+        "voiceConstraints"
+      ]
+    }
+  ],
+  "freshnessAuditEligibleCount": 40,
+  "independentHistoricalScreen": {
+    "jsonPaths": 359,
+    "stringRecords": 168882,
+    "sixTokenHits": [
+      {
+        "caseId": "PVC-001",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "at 6 30 p m in",
+            "paths": [
+              "data/fixtures/v13-architecture-replay/cases.json",
+              "data/fixtures/v13-architecture-replay/editor-results.json",
+              "data/fixtures/v13-architecture-replay/run-v13.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-002",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "10 a m to 1 p",
+            "paths": [
+              "data/fixtures/semantic-scope-validation/documents.json"
+            ]
+          },
+          {
+            "phrase": "a m to 1 p m",
+            "paths": [
+              "data/fixtures/semantic-scope-validation/documents.json"
+            ]
+          },
+          {
+            "phrase": "from 10 a m to 1",
+            "paths": [
+              "data/fixtures/semantic-scope-validation/documents.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-002",
+        "field": "objective",
+        "matches": [
+          {
+            "phrase": "a m to 2 p m",
+            "paths": [
+              "data/fixtures/discourse-development/discourse-pairs.json",
+              "data/fixtures/discourse-development/mid-pairs.json",
+              "data/fixtures/editor-objective-focus/blind-candidate-results.json",
+              "data/fixtures/editor-objective-focus/blind-candidates.json",
+              "data/fixtures/editor-objective-focus/cases.json",
+              "data/fixtures/editor-objective-focus/creator-a.json",
+              "data/fixtures/editor-objective-focus/labels-first.json",
+              "data/fixtures/editor-objective-focus/labels-second.json",
+              "data/fixtures/editor-objective-focus/new-editor-requests.json",
+              "data/fixtures/editor-objective-focus/new-editor-results.json",
+              "data/fixtures/editor-objective-focus/new-repair-requests.json",
+              "data/fixtures/editor-objective-focus/new-replay.json",
+              "data/fixtures/editor-objective-focus/new-reverify-requests.json",
+              "data/fixtures/editor-objective-focus/new-verifier-requests.json",
+              "data/fixtures/editor-objective-focus/old-editor-requests.json",
+              "data/fixtures/editor-objective-focus/old-editor-results.json",
+              "data/fixtures/editor-objective-focus/old-repair-requests.json",
+              "data/fixtures/editor-objective-focus/old-replay.json",
+              "data/fixtures/editor-objective-focus/old-reverify-requests.json",
+              "data/fixtures/editor-objective-focus/old-verifier-requests.json",
+              "data/fixtures/semantic-review-development/corpus.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-007",
+        "field": "objective",
+        "matches": [
+          {
+            "phrase": "a m to 2 p m",
+            "paths": [
+              "data/fixtures/discourse-development/discourse-pairs.json",
+              "data/fixtures/discourse-development/mid-pairs.json",
+              "data/fixtures/editor-objective-focus/blind-candidate-results.json",
+              "data/fixtures/editor-objective-focus/blind-candidates.json",
+              "data/fixtures/editor-objective-focus/cases.json",
+              "data/fixtures/editor-objective-focus/creator-a.json",
+              "data/fixtures/editor-objective-focus/labels-first.json",
+              "data/fixtures/editor-objective-focus/labels-second.json",
+              "data/fixtures/editor-objective-focus/new-editor-requests.json",
+              "data/fixtures/editor-objective-focus/new-editor-results.json",
+              "data/fixtures/editor-objective-focus/new-repair-requests.json",
+              "data/fixtures/editor-objective-focus/new-replay.json",
+              "data/fixtures/editor-objective-focus/new-reverify-requests.json",
+              "data/fixtures/editor-objective-focus/new-verifier-requests.json",
+              "data/fixtures/editor-objective-focus/old-editor-requests.json",
+              "data/fixtures/editor-objective-focus/old-editor-results.json",
+              "data/fixtures/editor-objective-focus/old-repair-requests.json",
+              "data/fixtures/editor-objective-focus/old-replay.json",
+              "data/fixtures/editor-objective-focus/old-reverify-requests.json",
+              "data/fixtures/editor-objective-focus/old-verifier-requests.json",
+              "data/fixtures/semantic-review-development/corpus.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-013",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "at the end of the pilot",
+            "paths": [
+              "data/fixtures/semantic-review-development/corpus.json",
+              "data/fixtures/semantic-scope-validation/documents.json",
+              "data/fixtures/semantic-scope-validation/reviewer-output.json"
+            ]
+          },
+          {
+            "phrase": "so we cannot say whether the",
+            "paths": [
+              "data/evaluation/holdout-v3/creation/creator-02.json",
+              "data/evaluation/holdout-v3/frozen/cases.json",
+              "data/evaluation/holdout-v3/pre-review/cases.json",
+              "data/evaluation/holdout-v3/pre-review/packet-R1A.json",
+              "data/evaluation/holdout-v3/pre-review/packet-R2A.json",
+              "data/evaluation/holdout-v3/run/audit-v1/packet-A3.json",
+              "data/evaluation/holdout-v3/run/blind-output-v1/primary/packet.json",
+              "data/evaluation/holdout-v3/run/blind-output-v1/review-shards-v1/reviewers/O1A/packet.json",
+              "data/evaluation/holdout-v3/run/blind-output-v1/review-shards-v1/reviewers/O2A/packet.json",
+              "data/evaluation/holdout-v3/run/blind-output-v1/second/packet.json",
+              "data/evaluation/holdout-v3/run/editor-requests.json",
+              "data/evaluation/holdout-v3/run/editor-results.json",
+              "data/evaluation/holdout-v3/run/post-review-v1/final-audit-v1/inputs/frozen/cases.json",
+              "data/evaluation/holdout-v3/run/post-review-v1/final-audit-v1/inputs/run/replay.json",
+              "data/evaluation/holdout-v3/run/replay.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-017",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "should not be treated as a",
+            "paths": [
+              "data/evaluation/holdout-v2/frozen/documents.json",
+              "data/fixtures/discourse-development/long-pairs.json",
+              "data/fixtures/semantic-review-development/corpus.json",
+              "data/fixtures/semantic-review-development/gpt-family-reviews.json"
+            ]
+          },
+          {
+            "phrase": "they should not be treated as",
+            "paths": [
+              "data/fixtures/semantic-review-development/corpus.json",
+              "data/fixtures/semantic-review-development/gpt-family-reviews.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-018",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "i have not checked whether the",
+            "paths": [
+              "data/fixtures/semantic-review-development/corpus.json",
+              "data/fixtures/semantic-review-development/gpt-family-reviews.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-020",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "at the end of the trial",
+            "paths": [
+              "data/fixtures/editing-job-validation/documents.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-023",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "at the end of the trial",
+            "paths": [
+              "data/fixtures/editing-job-validation/documents.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-027",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "do not need to return the",
+            "paths": [
+              "data/fixtures/editing-job-validation/documents.json",
+              "data/fixtures/objective-feasibility/sources.json"
+            ]
+          },
+          {
+            "phrase": "not need to return the damaged",
+            "paths": [
+              "data/fixtures/editing-job-validation/documents.json"
+            ]
+          },
+          {
+            "phrase": "you do not need to return",
+            "paths": [
+              "data/fixtures/editing-job-validation/documents.json",
+              "data/fixtures/objective-feasibility/sources.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-029",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "by the back door it has",
+            "paths": [
+              "data/evaluation/holdout-v2/frozen/documents.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-030",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "from 9 30 a m to",
+            "paths": [
+              "data/fixtures/editing-job-validation/documents.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-032",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "at 7 p m in the",
+            "paths": [
+              "data/fixtures/v13-architecture-replay/cases.json",
+              "data/fixtures/v13-architecture-replay/editor-results.json",
+              "data/fixtures/v13-architecture-replay/run-v13.json"
+            ]
+          }
+        ]
+      },
+      {
+        "caseId": "PVC-033",
+        "field": "source",
+        "matches": [
+          {
+            "phrase": "close at 4 p m on",
+            "paths": [
+              "data/evaluation/holdout/frozen/documents.json"
+            ]
+          },
+          {
+            "phrase": "will close at 4 p m",
+            "paths": [
+              "data/evaluation/holdout/frozen/documents.json"
+            ]
+          }
+        ]
+      }
+    ],
+    "interpretation": "Short generic operational/conditional wording requires semantic inspection; exact lexical overlap alone does not prove reuse.",
+    "semanticSpotChecks": [
+      {
+        "caseId": "PVC-013",
+        "reference": "V3-046",
+        "finding": "Generic noncausal evidence limitation phrase; source is six-week support-team handoff pilot, reference monthly supply-form report. Different entities/data/objective; no material case reuse established."
+      },
+      {
+        "caseId": "PVC-027",
+        "reference": "data/fixtures/editing-job-validation/documents.json#H10",
+        "finding": "Generic no-return damaged-item policy fragment; bracket/order-number punctuation task differs from lamp refund/stock narrative. No close task paraphrase established."
+      },
+      {
+        "caseId": "PVC-029",
+        "reference": "holdout-v2 A030",
+        "finding": "Six tokens cross ordinary back-door description and sentence boundary; bench repair personal newsletter differs from archival field-notebook interview. No material reuse established."
+      },
+      {
+        "caseId": "PVC-008",
+        "finding": "Final property replacement has no six-token match in independent historical JSON screen."
+      }
+    ],
+    "conclusion": "No confirmed historical case copy/paraphrase found; corroborates pre-freeze audit with stated screening limits."
+  },
+  "provenance": {
+    "creator": "Four distinct creator input hashes and allocations verified; independent sequential sanitized creator sessions attested by custodian orchestration transcript.",
+    "reviewers": "Separate source/objective-only packet and independent original labels preserved; reviewerId correction is metadata-only. Custodian attests distinct fork_turns:none reviewer sessions.",
+    "limitations": [
+      "Session separation is protocol evidenced/custodian attested; no OS access logs or cryptographic blindness proof.",
+      "Zero incremental spend is custodian attestation, no independent billing evidence.",
+      "Hashes establish no mutation relative to frozen manifest; absent committed freeze history they cannot prove absence of transient mutations.",
+      "Historical screening cannot prove absence of all semantic paraphrase."
+    ]
+  },
+  "gitStatus": " M .gitignore\n?? .ignore\n?? data/evaluation/post-v3-comparison/frozen/\n?? scripts/\n",
+  "gitUnstagedChangedPaths": [
+    ".gitignore"
+  ],
+  "gitStagedChangedPaths": [],
+  "postFreezeMutationEvidence": "No hash mismatch or substantive tracked change evident.",
+  "protocolDeviations": [
+    {
+      "artifact": "prelabels/reviewer-02.json",
+      "originalArtifact": "prelabels/reviewer-02-original-submission.json",
+      "field": "reviewerId",
+      "from": "PRELABEL-02",
+      "to": "PRELABELER-02",
+      "records": 40,
+      "reason": "Operational manifest requires PRELABELER-02; original submission metadata used PRELABEL-02. All other fields, judgments, timestamps, array order, and record order were preserved.",
+      "originalFileBytesSha256": "d72571f1b235192559eec1471778c672d62cb183adcf1b229cf7165236627852",
+      "correctedFileBytesSha256": "1db94e004d2d1f2b6fb6b9634bf65490a2653384274e91283f53dcd699fd63bb",
+      "substantiveFieldsPreserved": true
+    }
+  ],
+  "failures": [
+    "Frozen secondary metadata discrepancy: PVC-008 and PVC-009 include dates_times, but their source/objective establish no date or time. Preserve bytes and IDs; no frozen correction performed."
+  ],
+  "paidApiSpendUsd": 0,
+  "editorOrArchitectureExecuted": false,
+  "frozenArtifactsModified": false,
+  "integrityStatus": "PASS",
+  "metadataReview": {
+    "length": "Whitespace counts agree with audit: SHORT 32–67, MEDIUM 75–119, LONGER 141–294, no band overlap.",
+    "genre": "Functional genres match practical source/objective tasks; corrected PVC-037 municipal community services leaflet is accurate.",
+    "secondaryTags": "All 40 cases reviewed. Allowed vocabulary and frozen hashes pass. Obvious unsupported dates_times tags: PVC-008 property listing parking spaces and PVC-009 connection server address/port. Port 8443 is a quantity/identifier, not a date/time. Several document_conversion tags accompany local copyedits or conditional leave-alone tasks; definition is insufficiently precise to classify these as confirmed violations. Secondary annotations are not exhaustive, so missing plausible tags are not independently treated as violations.",
+    "primaryStrata": "All assigned strata fit tasks and operational allocation."
+  },
+  "forbiddenArtifacts": [],
+  "reviewDisagreementInterpretation": "All 40 cases have at least one exact field difference; this is syntactic disagreement, largely independently worded evidence. It does not imply 40 substantive disputes. Both judgments preserved; no forced consensus.",
+  "secondaryTagDiscrepancies": [
+    {
+      "caseId": "PVC-008",
+      "tag": "dates_times",
+      "evidence": "Parking count, rent charges, rooms and pet restrictions; no date/time.",
+      "materiality": "Affects dates_times secondary cohort interpretation only. Primary explicit replacement assignment and case eligibility remain valid."
+    },
+    {
+      "caseId": "PVC-009",
+      "tag": "dates_times",
+      "evidence": "Server address and port change with missing replacements; no date/time.",
+      "materiality": "Affects dates_times secondary cohort interpretation only. Primary missing-replacement assignment and case eligibility remain valid."
+    }
+  ],
+  "comparisonDisposition": "Core corpus bytes, review coverage, primary strata and freshness integrity PASS. Overall truthful secondary metadata audit FAIL for two unsupported annotations. Do not recategorize/remove cases or amend frozen tags. Preserve limitations and prevent dates_times-cohort conclusions from treating these two cases as truthful dates/times evidence; custodian must record protocol disposition before downstream comparison. No generation or implementation authorization inferred."
+}

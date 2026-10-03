@@ -1,0 +1,15 @@
+{
+  "timestamp": "2026-10-03T10:30:55.856991+00:00",
+  "question": "Does an unsupported frozen secondary tag without post-freeze mutation invalidate the 40-case primary comparison?",
+  "primaryCorpusValid": "YES",
+  "automaticEntireCorpusInvalidation": "NO",
+  "reasoning": "The committed invalidation table triggers whole-comparison invalidation when secondary tags change after freeze. An already-frozen unsupported annotation is a metadata defect, not the registered change-after-freeze event. Neither PVC-008 nor PVC-009 changes source/objective, allocation, primary count, label evidence, or freshness eligibility. Their primary comparisons remain valid on all original 40 IDs and preregistered denominators. Preserve the frozen tags and report their unsupported dates_times membership as a secondary-cohort limitation. Do not silently remove or recategorize these cases, recompute a replacement cohort as preregistered, or alter advancement thresholds. Integrity/advancement still requires explicit disclosure and appropriate assessment of this deviation; this opinion does not independently certify every future gate.",
+  "reference": "docs/POST-V3-ARCHITECTURE-PREREGISTRATION.md, Invalidation and failure rules, first row; secondary tags paragraph and exact primary-denominator provisions.",
+  "affectedIds": [
+    "PVC-008",
+    "PVC-009"
+  ],
+  "originalAuditOrFrozenArtifactsChanged": false,
+  "architectureExecuted": false,
+  "paidApiSpendUsd": 0
+}

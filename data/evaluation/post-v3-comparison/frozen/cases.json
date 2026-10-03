@@ -1,0 +1,767 @@
+[
+  {
+    "caseId": "PVC-001",
+    "source": "The volunteer orientation will be held on Thursday, May 14, at 6:30 p.m. in the community room at the Northside Library. Please bring a photo ID for the building desk. New volunteers should email Dana if they need an accessible entrance.",
+    "objective": "Update the orientation date to Tuesday, May 19, and the start time to 7:00 p.m. Keep the venue, ID reminder, and accessibility contact information unchanged.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-02",
+    "genre": "community announcement",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "dates_times"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "date update",
+      "time update",
+      "preserve nearby facts"
+    ]
+  },
+  {
+    "caseId": "PVC-002",
+    "source": "The repair café will meet at the Eastbank Library on Saturday, May 16, from 10 a.m. to 1 p.m. Bring one small household item and any parts you already have. Volunteers can help with lamps, clothing, and basic bicycle repairs, but we cannot accept microwaves. The event is free, and donations toward supplies are welcome.",
+    "objective": "Update this notice: the confirmed date is now Saturday, May 23, and the hours are 11 a.m. to 2 p.m. Keep the venue, item guidance, exclusions, and cost information as they are. Make it ready to post on the neighborhood board.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-01",
+    "genre": "community announcement",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "dates_times",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "dates",
+      "bounded factual update",
+      "public notice"
+    ]
+  },
+  {
+    "caseId": "PVC-003",
+    "source": "The maintenance window is scheduled for Tuesday, 14 May, from 20:00 to 22:00 UTC. During that period, the reporting dashboard may be unavailable. The data export service is expected to remain online.",
+    "objective": "The window has moved to Wednesday, 15 May, at the same times. Update the date only; keep the stated service impacts and time zone as written.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-04",
+    "genre": "technical operations notice",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "dates_times"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "date replacement",
+      "bounded edit"
+    ]
+  },
+  {
+    "caseId": "PVC-004",
+    "source": "For the small wooden display stands, the finished base should be 160 mm wide. Measure after sanding and before applying the clear finish. Bases outside the permitted tolerance of 2 mm should be set aside for review rather than packed with completed orders.\n\nThe upright remains 240 mm tall and is attached with two screws through the underside of the base. Use the same water-based finish as the current production run, and allow a full day of drying before packing. The felt pads go on after the final inspection.",
+    "objective": "Update this quality bulletin to reflect the approved base width of 175 mm. The 2 mm tolerance, upright height, assembly method, finish, drying time, and order of inspection and packing are unchanged. Keep the wording practical for the workshop team.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-03",
+    "genre": "manufacturing quality bulletin",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "dates_times"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "measurement_update",
+      "protected_process_requirements"
+    ]
+  },
+  {
+    "caseId": "PVC-005",
+    "source": "Hello team, the courtyard drainage survey is booked for June 8. We expect the survey report by June 19, which gives us time to discuss options at the July committee meeting. The consultant’s fee is $4,600, covered by the maintenance reserve.\n\nThe survey includes the paved courtyard and the two planting beds along the south wall. It does not include the roof drains; those will need a separate assessment if we decide to investigate them. We have not selected a contractor for any repair work, and the survey itself does not commit us to construction.",
+    "objective": "Revise this email with the consultant’s latest confirmed details: the survey is booked for June 11, the report is due June 24, and the fee is $4,950. Keep the July committee meeting, funding source, survey boundaries, and lack of a construction commitment accurate. Smooth the wording where useful.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-01",
+    "genre": "project status email",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "dates_times",
+      "quantities",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "budget",
+      "deadline",
+      "scope caveat"
+    ]
+  },
+  {
+    "caseId": "PVC-006",
+    "source": "Our first-quarter customer support summary covers 1,840 conversations, including 312 escalations. The median first response time was 4 hours and 18 minutes. These figures exclude conversations handled by the weekend pilot team.",
+    "objective": "Replace the conversation count with 1,925 and the escalation count with 287. Leave the response-time figure and the weekend-pilot exclusion unchanged, and do not infer any reason for the count changes.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-04",
+    "genre": "workplace report",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "multiple factual replacements",
+      "scope constraint"
+    ]
+  },
+  {
+    "caseId": "PVC-007",
+    "source": "Our repair desk is open Monday through Friday from 9 a.m. to 5 p.m. Customers can bring in laptops during those hours; appointments aren't required, although booking ahead may shorten the wait. The desk is busiest just after lunch, so drop-offs near opening are usually quicker.\n\nThe drop-off counter is on the second floor, beside the freight elevator. Standard laptop diagnostics take about three business days, though parts delays can extend that estimate. We contact the customer before starting any repair that would add a charge beyond the diagnostic fee.",
+    "objective": "The hours have changed: the desk is now open Monday through Thursday, 8:30 a.m. to 4:30 p.m., and Friday, 8:30 a.m. to 2 p.m. Revise the hours accurately while retaining the location and the qualified diagnostic estimate.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-02",
+    "genre": "service information",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "dates_times",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "schedule update",
+      "retain qualification",
+      "customer-facing"
+    ]
+  },
+  {
+    "caseId": "PVC-008",
+    "source": "This two-bedroom flat occupies the first floor of a converted house on Willow Lane. The kitchen opens onto a small dining area, and the sitting room has windows facing the street. There is one allocated parking space behind the building, reached through the shared side driveway.\n\nThe rent includes water charges but excludes electricity and internet. Residents share the rear garden, and the flat has no private outdoor space. The owner will consider one cat with prior written agreement; dogs are not permitted under the building's current rules.",
+    "objective": "The owner has confirmed that the flat now comes with two allocated parking spaces behind the building. Update the listing with that fact and keep it easy to read. Preserve the room details, driveway access, rent inclusions, garden arrangement, and pet restrictions.",
+    "primaryStratum": "explicit_supplied_factual_update",
+    "creatorId": "CREATOR-03",
+    "genre": "property listing description",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "dates_times"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "parking_update",
+      "protected_property_details"
+    ]
+  },
+  {
+    "caseId": "PVC-009",
+    "source": "For the current desktop client, open Settings, choose Connection, and enter sync.harbor-example.net in the Server field. Leave the port at 8443 unless your administrator has given you a different value. Select Test Connection before saving.\n\nA successful test confirms that the client can reach the service; it does not confirm that your account has permission to download every folder. If the test fails, copy the error code into a support request. Do not include your password or the contents of your folders.",
+    "objective": "Update this help article for the new desktop client. The connection service has moved and the port has changed, so replace the old server address and port with the new ones. Keep the distinction about what the connection test proves and the support guidance. I don’t have the new connection details in this draft yet.",
+    "primaryStratum": "vague_update_or_missing_required_replacement",
+    "creatorId": "CREATOR-01",
+    "genre": "technical support article",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "dates_times",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "missing configuration value",
+      "instructions",
+      "version update"
+    ]
+  },
+  {
+    "caseId": "PVC-010",
+    "source": "The facilities team is revising its room setup guide after staff reported that requests often arrive just before a meeting. The current guide asks organizers to submit setup requests at least three business days before an event.\n\nLate requests may still be accommodated when staff and equipment are available, but the team cannot guarantee the preferred layout. This is especially relevant for rooms that need movable tables or a hybrid meeting setup.\n\nFor urgent changes on the day of an event, organizers should contact the service desk. The guide does not yet say how much lead time the revised policy will require.",
+    "objective": "The lead-time rule has changed. Update this section so it reflects the new policy and reads cleanly.",
+    "primaryStratum": "vague_update_or_missing_required_replacement",
+    "creatorId": "CREATOR-04",
+    "genre": "internal instructional guide",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "missing replacement value",
+      "policy copy"
+    ]
+  },
+  {
+    "caseId": "PVC-011",
+    "source": "Our roasted squash bowl comes with pearl barley, wilted greens, and a lemon-tahini dressing. Toasted pumpkin seeds add a little crunch, and the squash is roasted with cumin and smoked paprika. The bowl is served warm.\n\nA smaller portion is available at lunch. Guests can ask for the dressing on the side, but the kitchen cannot omit the seasoning from the squash because it is prepared in batches. The bowl is made without dairy ingredients.",
+    "objective": "The chef has replaced the pearl barley with a different grain for the new menu. Update the description so it names the new grain and is ready for printing. Keep the serving options and preparation details accurate.",
+    "primaryStratum": "vague_update_or_missing_required_replacement",
+    "creatorId": "CREATOR-03",
+    "genre": "restaurant menu description",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "missing_ingredient_replacement",
+      "menu_accuracy"
+    ]
+  },
+  {
+    "caseId": "PVC-012",
+    "source": "The neighborhood association's spring cleanup is scheduled for April 11, with volunteers meeting at the west entrance of Alder Park at 9 a.m. Gloves and bags will be available while supplies last. Children may participate with an adult.",
+    "objective": "The date and meeting time have changed. Update the announcement so people have the new schedule, and make it clear what they should do next.",
+    "primaryStratum": "vague_update_or_missing_required_replacement",
+    "creatorId": "CREATOR-02",
+    "genre": "event announcement",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "missing replacement values",
+      "public information",
+      "disclose limitation"
+    ]
+  },
+  {
+    "caseId": "PVC-013",
+    "source": "The pilot was designed to see whether a weekly planning note would help the four support teams coordinate handoffs. Each team tried the note for six weeks, but two teams skipped several weeks during a staffing shortage.\n\nThe survey went to all participating staff at the end of the pilot; 19 of 31 people responded. Most respondents said the note made ownership clearer, while several said it duplicated information already in the ticket system.\n\nWe did not compare ticket resolution times before and after the pilot, so we cannot say whether the note made work faster. The operations group will decide whether to continue the pilot after reviewing feedback with team leads.",
+    "objective": "Rebuild this as a short, readable pilot summary for the operations review. Lead with what was tested and the main feedback, then explain participation and the next decision. Preserve the six-week duration, the staffing-related gaps, survey counts, mixed feedback, and the limitation that resolution speed was not measured. Do not imply the pilot improved outcomes or that a continuation decision has been made.",
+    "primaryStratum": "substantial_reconstruction",
+    "creatorId": "CREATOR-04",
+    "genre": "internal evaluation summary",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "paragraph_movement",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "restructuring",
+      "evidence caveat",
+      "mixed findings"
+    ]
+  },
+  {
+    "caseId": "PVC-014",
+    "source": "Registration for the after-school pottery club closes on September 12. The club meets on Wednesdays for six weeks, beginning October 1, and the materials fee is $35. Students should bring an old shirt or apron; clay and tools are provided.\n\nThere are twelve places in the group, allocated in the order completed forms arrive. A signed permission form is required even if a student attended last year. If the group fills, the office will keep a waiting list and contact families when a place becomes available.",
+    "objective": "Please prepare this notice for this year’s club. The registration deadline and materials fee are out of date and need replacing, but the office has not sent me their new figures. The Wednesday schedule, six-week duration, October 1 start, capacity, and registration process have all been confirmed. Make the notice clearer and update what you can.",
+    "primaryStratum": "vague_update_or_missing_required_replacement",
+    "creatorId": "CREATOR-01",
+    "genre": "school club registration notice",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "dates_times",
+      "document_conversion",
+      "quantities"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "missing deadline",
+      "missing fee",
+      "public instructions"
+    ]
+  },
+  {
+    "caseId": "PVC-015",
+    "source": "Staff can buy routine office supplies directly when the total cost is $150 or less. Check the supply cupboard first so we do not order items we already have. For this procedure, routine supplies include paper, pens, envelopes, and printer cartridges compatible with the office printers.\n\nPurchases above $150 need written approval from the office manager before the order is placed. Send a description of the items, the supplier, and the total cost including delivery. If the office manager is away, send the request to the operations lead.\n\nUse the company purchasing account when the supplier accepts it. If you pay personally, submit the receipt with a reimbursement form within ten working days. Keep any order confirmation until the goods arrive, and check the delivery against it.\n\nThis procedure does not cover computers, software subscriptions, or furniture. Those purchases go through the operations team regardless of cost. If a printer cartridge is needed urgently, check with the office manager before using a different supplier.",
+    "objective": "Finance has changed the amount staff can spend on routine supplies without prior approval. Revise the procedure with the new limit, including both places where the old amount appears, and make it clear enough for a new employee to follow. Keep the exclusions and reimbursement requirements.",
+    "primaryStratum": "vague_update_or_missing_required_replacement",
+    "creatorId": "CREATOR-03",
+    "genre": "small business purchasing procedure",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "missing_approval_limit",
+      "operational_policy"
+    ]
+  },
+  {
+    "caseId": "PVC-016",
+    "source": "I started keeping notes about the greenhouse because the watering was getting inconsistent. The plants haven't all been affected in the same way, so a general reminder to water more often hasn't helped. I want volunteers to be able to see what needs attention without adding another chore to the day.\n\nAt first I wrote things on the whiteboard, but people erased it when they needed the board for other work. We have a shared folder now, although not everyone checks it before coming in. A schedule kept in one predictable place might make it easier to see which days are already covered.\n\nThe east beds dry out more quickly than the others, especially after a sunny day, and the seedlings there were wilting last week. We shouldn't water everything more often just because of those beds; the tomatoes near the south wall were already damp. Bed-specific notes could help people distinguish those needs.\n\nA few people have offered to take turns, but nobody knows which days are covered, so sometimes two people water and then nobody comes the next day. A simple schedule and a short note about which beds need attention could reduce those gaps. I don't want this to turn into a complicated tracking system or a rule that people have to follow exactly; it should leave room for whoever is there to use judgment.",
+    "objective": "Rebuild this as a clear, practical note to greenhouse volunteers. Preserve the problems with the current whiteboard/shared-folder approach, the different watering needs by bed, the recent seedling issue, the already-damp tomatoes, and the concern about duplicate or missed shifts. Propose a lightweight shared schedule and bed-specific notes without turning the idea into a rigid policy or claiming it has already been adopted.",
+    "primaryStratum": "substantial_reconstruction",
+    "creatorId": "CREATOR-02",
+    "genre": "volunteer coordination proposal",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion",
+      "paragraph_movement",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "restructure",
+      "preserve caveats",
+      "proposal not decision",
+      "technical-adjacent"
+    ]
+  },
+  {
+    "caseId": "PVC-017",
+    "source": "The coastal survey team collected water samples at 12 sites between June and August. Sampling did not happen every week because storms and unsafe boat conditions led to cancellations.\n\nLab analysis found elevated nitrate at three sites after heavy rain, but the samples were too limited to establish where the nitrate came from. At two of those sites, readings returned closer to the earlier range by the next visit.\n\nThe team has not yet completed the autumn sampling round. The current results are being shared with the watershed partners as an interim update, and they should not be treated as a full seasonal assessment.",
+    "objective": "Turn this into a concise public-facing update with a clear headline sentence and a logical progression from observations to limitations and next steps. Retain the site count, June–August period, storm-related sampling gaps, three-site nitrate observation after heavy rain, later readings at two sites, and the incomplete autumn round. Keep the source uncertainty about nitrate origin and interim status; do not suggest pollution has been identified or resolved.",
+    "primaryStratum": "substantial_reconstruction",
+    "creatorId": "CREATOR-04",
+    "genre": "public research update",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "document_conversion",
+      "paragraph_movement",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "public communication",
+      "reorganization",
+      "uncertainty"
+    ]
+  },
+  {
+    "caseId": "PVC-018",
+    "source": "A few things about the market stall handover, because they are spread across several messages now. We still have the folding tables in the storage room behind the hall. Someone needs to collect them before Friday afternoon, since the hall caretaker locks that room at four and does not work weekends. There are four tables, but one has a loose leg and should stay in storage until it is repaired.\n\nThe card reader is with Mina. She said she could drop it off on Thursday, although she has not given a time. It was charged when we last used it, which was two weeks ago, so it would be sensible to charge it again. The paper price cards are in the blue folder in the same storage room as the tables. Two of them still show the old jam price. Jam is now $7 a jar; the other product prices have not changed.\n\nWe have permission to use the loading entrance between seven and eight on Saturday morning. After eight it needs to stay clear for deliveries. This is just for unloading, and we cannot leave cars there. Parking is available in the gravel lot, but the organizer said spaces sometimes run out. I have not checked whether the lot opens before seven.\n\nFor the end of the day, count the cash with two people present and put the total on the tally sheet. Last time the sheet went missing, so I have put a spare in the folder. The deposit pouch goes to the treasurer on Monday, not into the hall mailbox. Unsold jars can come back to storage, but the fresh bread needs to be collected by the bakery volunteer that evening. We still need someone to agree to do that pickup.",
+    "objective": "Turn these scattered handover notes into a practical memo for the Saturday volunteers. Organize it around preparation, arrival, and closing, with clear actions and open questions. Cut repetition and make it easy to scan, while retaining the quantities, timing restrictions, prices, handling instructions, and items that are still unconfirmed.",
+    "primaryStratum": "substantial_reconstruction",
+    "creatorId": "CREATOR-01",
+    "genre": "operations handover memo",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "paragraph_movement",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "restructure",
+      "dependencies",
+      "uncertainty",
+      "professional"
+    ]
+  },
+  {
+    "caseId": "PVC-019",
+    "source": "Hi Noor, I saw the draft agenda you sent over. The budget section is clear, and I added one question about the equipment line in the comments. I also noticed the room details are still marked as tentative, which is fine for now since facilities hasn't confirmed them.\n\nCould you send the revised version when you have a chance? We need it before the Thursday check-in so I can circulate it to the group. No need to resolve the room note before then; a quick update to the agenda and the equipment question are enough. Thanks!",
+    "objective": "Please smooth this note slightly so the request and timing are easy to follow. Keep it friendly and don't make it sound more urgent than it is.",
+    "primaryStratum": "ordinary_local_editing",
+    "creatorId": "CREATOR-02",
+    "genre": "work email",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "commitments",
+      "document_conversion",
+      "voice"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "light copyedit",
+      "friendly tone",
+      "bounded request"
+    ]
+  },
+  {
+    "caseId": "PVC-020",
+    "source": "We keep losing track of requests that come in through the shared mailbox. People generally answer the customer, but the rest of the team cannot always tell whether anyone is working on the request. On busy days, two people sometimes draft replies to the same message.\n\nI think we could try a simple shared list for four weeks. Whoever takes a request would add the customer reference, a short description, their name, and the next action. We would not put the customer's full message in the list. There is already a team spreadsheet we could use, although I have not checked whether its current permissions are suitable.\n\nThe morning shift could review open items at the start of the day. Anything waiting on a customer would stay on the list with that status. It would also help to record when a reply has been sent, because a sent email does not necessarily mean the underlying request is finished.\n\nI am not proposing that we stop using the mailbox. This would sit alongside it while we find out whether the extra step is worthwhile. At the end of the trial, we could compare duplicate replies and ask the team how much upkeep the list needed. If it creates more work than it saves, we could drop it.",
+    "objective": "Turn these notes into a coherent proposal for the team lead. Organize it around the current problem, the four-week trial, how the list would work, and how we would decide whether to keep it. Preserve the tentative nature of the idea and the unresolved permissions check. Do not add benefits or success targets that I have not established.",
+    "primaryStratum": "substantial_reconstruction",
+    "creatorId": "CREATOR-03",
+    "genre": "internal process proposal",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "document_conversion",
+      "paragraph_movement",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "reorganization",
+      "pilot_proposal",
+      "preserve_uncertainty"
+    ]
+  },
+  {
+    "caseId": "PVC-021",
+    "source": "The new intake form is available on the intranet under Operations > Requests. Please use it for requests opened from Monday onward; requests already in progress should stay in the existing tracker so their history remains in one place.\n\nIf a field does not apply, enter “not applicable” rather than leaving it blank. The form asks for a team contact and a requested completion date, but submitting it does not guarantee that date.\n\nThe process team will review the form after its first month of use and may make adjustments based on staff feedback. Until then, send questions about access or missing fields to the process mailbox.",
+    "objective": "Make the wording a little smoother and easier to scan for staff. Keep the distinction between new requests and those already in progress, the instruction for fields that do not apply, and the tentative nature of the one-month review.",
+    "primaryStratum": "ordinary_local_editing",
+    "creatorId": "CREATOR-04",
+    "genre": "workplace process note",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "copy edit",
+      "preserve workflow details"
+    ]
+  },
+  {
+    "caseId": "PVC-022",
+    "source": "Before you submit the reimbursement form, check that the receipt image is readable and that the project code matches the one on your approval email. Please include the full receipt, even if the itemized details continue onto a second page.\n\nIf a receipt covers both work and personal purchases, mark the work items on the copy you upload. You can leave the original unchanged. Forms without a manager's approval may be returned for correction, and the finance team will contact you if a required field is unclear.",
+    "objective": "Tighten the wording for a staff handbook. Keep the instructions and the possibility of a return for correction intact, and avoid making the process sound stricter than it is.",
+    "primaryStratum": "ordinary_local_editing",
+    "creatorId": "CREATOR-02",
+    "genre": "internal instructions",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "copyedit",
+      "procedural accuracy",
+      "retain modal language"
+    ]
+  },
+  {
+    "caseId": "PVC-023",
+    "source": "I am proposing that we try opening the reading room until eight on two evenings a week for a period of eight weeks. Several people have asked for somewhere quiet after work, and our present closing time of five makes that difficult. We do not have a reliable count of how many would actually attend. At the last open meeting, seven residents supported the idea, but that meeting was small.\n\nTuesday and Thursday seem like the most workable evenings because there are no regular bookings then. The room can seat eighteen people. A volunteer would need to be present throughout each evening, and we would need a second volunteer available as a backup. I have spoken with three people who are interested in helping, though none has committed to a rota.\n\nThere would be some extra heating and lighting costs. The facilities team thinks these may be modest in spring, but has not given an estimate. We would also need to confirm that the building’s insurance covers the proposed hours. I do not think we should announce a start date until those two matters and volunteer coverage are settled.\n\nAt the end of the trial we could compare attendance with the extra cost and ask users whether the hours were useful. A busy first night would be encouraging, but it would not tell us whether demand would last. My suggestion is to record attendance every evening and discuss the results before deciding on a longer arrangement. If coverage cannot be found for both nights, we could consider one evening instead; that would need a separate decision.",
+    "objective": "Rewrite this as a coherent proposal for the residents’ committee, with a concise opening recommendation, the case for trying it, practical requirements, and a way to assess the trial. It can be substantially reorganized and tightened. Keep the evidence modest, preserve the eight-week/two-evening proposal and the conditions before launch, and distinguish the one-evening fallback from the proposal being voted on.",
+    "primaryStratum": "substantial_reconstruction",
+    "creatorId": "CREATOR-01",
+    "genre": "public pilot proposal",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion",
+      "paragraph_movement",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "argument structure",
+      "evidence limits",
+      "proposal",
+      "conditions"
+    ]
+  },
+  {
+    "caseId": "PVC-024",
+    "source": "The spare keys is in the blue drawer behind the desk. I left the delivery slips beside them so you can check the boxes when they arrive. If one of the boxes is missing, please call the supplier before putting the delivery away. The afternoon driver usually arrives after lunch.",
+    "objective": "Fix the grammar and make the first sentence read naturally. Keep this as a brief handover note and preserve the practical instructions.",
+    "primaryStratum": "ordinary_local_editing",
+    "creatorId": "CREATOR-03",
+    "genre": "handover note",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "grammar",
+      "local_clarity"
+    ]
+  },
+  {
+    "caseId": "PVC-025",
+    "source": "I used to think repairing old radios was mostly about patience and a steady hand. It is, a little. But what keeps me coming back is the moment a station slips through the static, especially when I have no idea what language I am hearing.\n\nI am not an expert, and I still make mistakes I can hear the second I put the case back together. Last winter I spent three evenings chasing a loose connection that turned out to be a tired switch.\n\nThe radio works now. I keep the switch in a jar on my desk, mostly as a reminder not to get too pleased with myself.",
+    "objective": "Edit this personal newsletter passage for flow and a few clumsy phrases while keeping the writer’s modest, observant voice and dry humor. Preserve the uncertainty about what language comes through, the three evenings spent on the loose connection, the tired switch, and the closing detail. Avoid making the writer sound like a professional technician or turning the story into polished inspirational copy.",
+    "primaryStratum": "voice_sensitive_editing",
+    "creatorId": "CREATOR-04",
+    "genre": "personal newsletter",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "voice"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "personal voice",
+      "light editing",
+      "anecdote"
+    ]
+  },
+  {
+    "caseId": "PVC-026",
+    "source": "I planted the peas early because the forecast looked kind, and the forecast, for once, kept its promise. The first shoots appeared along the back fence a few days later, thin as green thread. I put in the strings on Saturday, though one leans enough that I may have to call it a design choice.\n\nThe tomatoes are still sulking in their pots, which may be my fault; I moved them outside before the nights warmed up. They have not given up, exactly, but they have made their opinion clear. I brought them back under the porch when the temperature dipped.\n\nA neighbor told me the basil would be less dramatic. So far it is simply sitting there, which I suppose counts as a point in its favor. The pot is still by the kitchen door, where I can remember to bring it in.\n\nNext weekend I will try again, with less confidence and more fleece. If the tomatoes recover, I will claim I planned the whole experiment.",
+    "objective": "A copy editor asked for a pass before this goes into a neighborhood gardening newsletter, but made no specific change request. Decide whether it needs editing. If it already reads well for that purpose, leave the passage as is rather than making changes for their own sake.",
+    "primaryStratum": "already_good_conditional_leave_alone",
+    "creatorId": "CREATOR-04",
+    "genre": "newsletter column",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "voice"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "conditional restraint",
+      "distinctive voice"
+    ]
+  },
+  {
+    "caseId": "PVC-027",
+    "source": "Thanks for sending the photos of the shelf. I can see that the left bracket is bent, and we can send a replacement bracket without charge. Please reply with the order number so I can check which size you need, this is printed on your receipt. You do not need to return the damaged bracket. Once I have the order number, I will confirm the dispatch date.",
+    "objective": "Fix the punctuation and any awkward wording in this reply. Keep it brief and friendly, and preserve the replacement offer and the steps the customer needs to take.",
+    "primaryStratum": "ordinary_local_editing",
+    "creatorId": "CREATOR-01",
+    "genre": "customer service email",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "grammar",
+      "clarity",
+      "local edit"
+    ]
+  },
+  {
+    "caseId": "PVC-028",
+    "source": "I know this is a small thing, but I keep thinking about the porch light at my old apartment. It was always a little crooked, and my dad would say he'd fix it on Saturday. I used to tease him that it gave the place character, though I did keep an eye out for a ladder whenever he made that promise.\n\nMost Saturdays he did fix it, or at least straighten it enough that the beam reached the front walk. I guess that's why I still leave a lamp on when I know someone is coming home late. It feels welcoming, even if nobody notices, and I like the quiet little pool of light in the window.",
+    "objective": "Edit for a personal newsletter, correcting only what needs attention and improving the flow gently. Keep the speaker's reflective, conversational voice and the understated feeling. Don't add a lesson or a stronger emotional conclusion.",
+    "primaryStratum": "voice_sensitive_editing",
+    "creatorId": "CREATOR-02",
+    "genre": "personal essay",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "voice"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "voice preservation",
+      "minimal intervention",
+      "personal writing"
+    ]
+  },
+  {
+    "caseId": "PVC-029",
+    "source": "I finally got round to fixing the little bench by the back door. It has been wobbling for months, and every time I sat down to take my boots off I thought, yes, I really should do something about that. On Sunday I did. One new screw, a bit of glue, and a surprisingly long search for the clamp I was certain I owned.\n\nIt still looks like a bench that has spent twelve years outside, which is fine by me. I gave it a quick sand where the wood was catching on sleeves, but I left the old paint alone. The cat has already claimed it again, so I reckon the repair has passed its most demanding inspection.",
+    "objective": "Give this a light edit for my monthly note to friends. Trim any repetition that gets in the way, but keep the slightly rambling, dry tone and my everyday phrasing. I do not want it to sound like a home-improvement article.",
+    "primaryStratum": "voice_sensitive_editing",
+    "creatorId": "CREATOR-03",
+    "genre": "personal newsletter",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "voice"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "informal_voice",
+      "light_edit"
+    ]
+  },
+  {
+    "caseId": "PVC-030",
+    "source": "The archive reading room welcomes researchers working with local newspapers, maps, and family records. It is open from 9:30 a.m. to 4:30 p.m., Tuesday through Friday, with staff available to help locate materials during those hours.\n\nVisitors need to reserve a seat at least one business day ahead. A reservation helps the archive prepare the reading room, but it does not request or hold specific collection items. Researchers looking for fragile or oversized materials should contact staff in advance.\n\nWalk-ins may be admitted if space allows, but staff cannot promise access to a particular collection without advance notice. Some materials are stored off site and may need additional time to retrieve.\n\nThe room is closed on public holidays. The archive website lists closure dates and the reservation form; visitors who need to change a booking can contact the reading room directly.",
+    "objective": "For the revised page, change the regular closing time to 5:00 p.m. Keep every other access detail, including opening time, days, reservation lead time, walk-in qualification, collection caveat, and holiday closure, accurate and intact. Do not add a reason for the longer hours.",
+    "primaryStratum": "collateral_change_danger",
+    "creatorId": "CREATOR-04",
+    "genre": "public service information",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "bounded factual change",
+      "protected details"
+    ]
+  },
+  {
+    "caseId": "PVC-031",
+    "source": "I bought a secondhand sewing machine because I wanted to mend my own clothes. A sensible ambition. Then I spent an entire Sunday making one trouser leg shorter than the other. The machine behaved perfectly; I would like to make that clear before anyone blames the machine.\n\nBy the next weekend I had learned to mark the hem before cutting, and to try the trousers on with both shoes. Small discoveries, apparently available to everyone except me. I still take difficult repairs to the tailor, but I can now fix a loose seam without turning it into a larger emergency. That feels like progress, even if my first attempt is living at the back of the wardrobe.",
+    "objective": "Give this a light edit for my personal newsletter. Keep the dry, slightly self-mocking voice and the short fragments where they work. Smooth anything that trips up the reading, but don’t turn it into an inspirational lesson or add new mishaps.",
+    "primaryStratum": "voice_sensitive_editing",
+    "creatorId": "CREATOR-01",
+    "genre": "personal essay newsletter",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "voice"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "intentional fragments",
+      "dry humor",
+      "first person"
+    ]
+  },
+  {
+    "caseId": "PVC-032",
+    "source": "Our reading group meets this Thursday at 7 p.m. in the community room. Please bring your copy of the book and one passage you would like to discuss. You are welcome to join even if you have not finished reading. Tea will be available, and we will finish by 8:30.",
+    "objective": "Check this reminder for confusing wording or unnecessary repetition. If it already reads clearly, leave it as it is.",
+    "primaryStratum": "already_good_conditional_leave_alone",
+    "creatorId": "CREATOR-03",
+    "genre": "event reminder",
+    "lengthBand": "SHORT",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "conditional_edit",
+      "clear_instructions"
+    ]
+  },
+  {
+    "caseId": "PVC-033",
+    "source": "The library will close at 4 p.m. on Friday for scheduled maintenance. Visitors who need to return books after closing can use the slot beside the main entrance; returned items will be checked in when staff are back. The reading rooms and service desks will close at the same time.\n\nRegular hours resume Saturday at 10 a.m. The notice will appear on the library door and website so visitors can plan around the early close. The maintenance is limited to Friday afternoon, and no other schedule changes are planned.",
+    "objective": "Could you make this announcement sound a little more polished? If it is already clear and ready to post, leave it as is and tell me that no edit was needed.",
+    "primaryStratum": "already_good_conditional_leave_alone",
+    "creatorId": "CREATOR-02",
+    "genre": "public notice",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "conditional editing",
+      "ready-to-use copy",
+      "leave alone"
+    ]
+  },
+  {
+    "caseId": "PVC-034",
+    "source": "The pilot workshop is open to staff from any department, and participation is optional. We are inviting people who work with the process in different ways, but there is no requirement to attend or to secure a place before taking part in other training.\n\nWe have room for 18 people in the first session. The room layout works best with that number, and we want to leave enough time for everyone to contribute. If the session fills, we will keep a waitlist so we can understand the level of interest.\n\nThe registration form asks about role and prior experience so we can balance the discussion; it does not determine eligibility. Those answers are for planning the conversation, not for ranking applicants, and staff may skip a question if it doesn't fit their work.\n\nIf interest is higher than capacity, we may offer another session later in the summer. That option depends on facilitator availability, so we haven't set a date or promised an additional workshop.",
+    "objective": "Make the capacity sentence less clunky by changing 'in the first session' to 'for the first session.' Leave everything else alone, especially the optional nature of participation, the capacity limit, the form's purpose, and the uncertain possibility of another session.",
+    "primaryStratum": "collateral_change_danger",
+    "creatorId": "CREATOR-02",
+    "genre": "internal program description",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "narrow edit",
+      "collateral fact risk",
+      "preserve uncertainty",
+      "eligibility distinction"
+    ]
+  },
+  {
+    "caseId": "PVC-035",
+    "source": "We interviewed 18 participants who had used the service at least once in the previous six months. Recruitment took place through two local community centers, and participation was voluntary. The interviews lasted between 25 and 40 minutes and followed the same discussion guide.\n\nSeven participants reported difficulty booking appointments online. This finding describes experiences within our interview sample and should not be treated as an estimate for all service users. We did not collect information about household income, and the interviews did not test whether the booking system caused people to miss appointments.",
+    "objective": "Replace 'participants' with 'interviewees' throughout this summary to match the terminology in the rest of my report. Make only that terminology change; preserve all the numbers, recruitment details, findings, and limitations.",
+    "primaryStratum": "collateral_change_danger",
+    "creatorId": "CREATOR-03",
+    "genre": "research methods summary",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "bounded_terminology_edit",
+      "protected_sample_facts"
+    ]
+  },
+  {
+    "caseId": "PVC-036",
+    "source": "Please use the side entrance when you arrive for the workshop. The front door will be locked because another group is using the main hall. The side entrance is beside the bicycle rack and has a small sign marked Studio.\n\nWe will open the studio at 9:15 a.m. for a 9:30 start. Tea and coffee will be available, and you are welcome to bring a packed lunch. If you need step-free access, let us know before the day so we can arrange entry through the courtyard gate.",
+    "objective": "Check these arrival instructions for a genuine clarity or grammar problem. If they already read well, leave the wording alone and say so. I’m happy with the tone and don’t need a shorter version.",
+    "primaryStratum": "already_good_conditional_leave_alone",
+    "creatorId": "CREATOR-01",
+    "genre": "guest arrival instructions",
+    "lengthBand": "MEDIUM",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "conditional edit",
+      "clear instructions",
+      "already polished"
+    ]
+  },
+  {
+    "caseId": "PVC-037",
+    "source": "The draft for the town’s fall services leaflet says the Maple Street community center will offer evening drop-in hours twice a week beginning in October. The leaflet is intended for residents looking for a place to ask about permits, recycling pickup, and neighborhood services.\n\nA margin note from the scheduling lead says, “Could be Tuesdays and Thursdays, if the room plan holds.” That note appears to be a suggestion; the room booking has not been confirmed, and no final weekly schedule is attached.\n\nThe next paragraph says residents “can stop by after work,” but it is unclear whether staff will be available for the full evening period or only during part of it. The communications team needs copy for a print deadline, while the service manager is still checking staffing coverage.\n\nThe first evening date has not been confirmed. The town’s regular daytime counter hours remain listed elsewhere in the leaflet, but the draft does not say whether residents need an appointment for the proposed evening service.",
+    "objective": "Prepare the leaflet wording using only details the draft establishes. The scheduling note may be a suggestion rather than an approved schedule, and the after-work claim could be read more broadly than intended. Make unresolved points visible in a brief editor’s query or keep them unasserted; do not silently choose days, promise universal availability, or invent a start date.",
+    "primaryStratum": "ambiguity_or_contested_interpretation",
+    "creatorId": "CREATOR-04",
+    "genre": "municipal community services leaflet",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "commitments",
+      "conditions",
+      "dates_times"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "contested schedule",
+      "scope of promise",
+      "editor query"
+    ]
+  },
+  {
+    "caseId": "PVC-038",
+    "source": "At Tuesday's residents meeting, we discussed moving bicycle storage from the entrance hall to the unused laundry room. Several people liked the idea because bikes currently make it difficult to reach the noticeboard. Others were concerned about carrying bikes down the short flight of steps.\n\nNear the end of the discussion, the chair said we should try the laundry room once the old cabinets were removed. I understood that as agreement to go ahead with a trial. After the meeting, two residents said they thought we had agreed only to look into it. The notes taken during the meeting say, 'Laundry room option to be explored.'\n\nThe building caretaker can check whether the cabinets are still needed, but no one was assigned to arrange their removal. We also have not discussed access for residents who cannot manage the steps. The current entrance-hall storage remains in use.\n\nI would like us to settle what was decided before anyone starts moving bikes or furniture. A short written follow-up would also give people who missed the meeting a chance to understand the proposal and raise practical concerns.",
+    "objective": "Turn this into a clear email to all residents explaining the meeting outcome and the next steps. Make the status of the bicycle-storage proposal easy to understand, using the information here. Keep the tone calm and avoid making the disagreement personal.",
+    "primaryStratum": "ambiguity_or_contested_interpretation",
+    "creatorId": "CREATOR-03",
+    "genre": "residents meeting follow-up",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "ambiguity",
+      "conditions",
+      "uncertainty"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "contested_decision",
+      "uncertain_agreement",
+      "meeting_record"
+    ]
+  },
+  {
+    "caseId": "PVC-039",
+    "source": "After the first review, Mira sent the revised chart to Leon, who had asked for a version without the projected costs. Her message said the labels had been updated, but it did not name the file version or restate whether projections were included.\n\nLeon forwarded it to the planning group with a note that the numbers were still provisional. The email thread included a link to the chart, though the group had also received an earlier chart with projected costs attached.\n\nThe group used the chart in its Monday discussion. Their notes mention the revised labels and provisional figures, but don't identify a filename or say which copy appeared on screen.\n\nNo one recorded whether they were looking at the version with or without projections. The meeting record can establish who sent the chart and what was said about the numbers, but the version used remains unconfirmed.",
+    "objective": "Clarify this account for the meeting notes, including which version the group discussed and who sent it to whom. Keep the sequence readable and make the notes useful to someone who wasn't there.",
+    "primaryStratum": "ambiguity_or_contested_interpretation",
+    "creatorId": "CREATOR-02",
+    "genre": "meeting record",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "ambiguity",
+      "conditions",
+      "document_conversion"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "ambiguous reference",
+      "unknown detail",
+      "avoid invented resolution",
+      "professional writing"
+    ]
+  },
+  {
+    "caseId": "PVC-040",
+    "source": "The community kitchen is available for private bookings on Saturdays from 10 a.m. to 4 p.m. The hire fee is $90 for that six-hour period. A refundable cleaning deposit of $60 is collected separately and returned after the caretaker checks the room. The booking is not confirmed until both payments have been received.\n\nBookings include use of the oven, refrigerator, worktables, and twelve dining chairs. The pantry cupboard is reserved for the weekly meal program and must remain closed. Guests need to bring their own ingredients, serving dishes, and dish towels. The dishwasher can be used, but its final cycle must finish before departure.\n\nGroups may have up to sixteen people in the kitchen at one time, including children and organizers. This limit comes from the room’s approved layout and is different from the number of dining chairs. Events involving food sales require the organizer to contact the local licensing office; kitchen hire does not itself grant permission to sell food.\n\nCancel at least seven days before the booking to receive a refund of the hire fee. Later cancellations forfeit the hire fee, but the cleaning deposit is returned if the room has not been used. The caretaker can answer equipment questions by email and normally replies within two working days. We cannot promise a same-day response.",
+    "objective": "The committee has approved one change: the Saturday hire fee is now $110 for the same six-hour period. Update that amount in this information sheet and give the text a light copyedit. Preserve the separate deposit, payment conditions, access rules, capacity, cancellation terms, and response-time caveat.",
+    "primaryStratum": "collateral_change_danger",
+    "creatorId": "CREATOR-01",
+    "genre": "venue booking information sheet",
+    "lengthBand": "LONGER",
+    "declaredProvenance": "synthetic original",
+    "secondaryTags": [
+      "conditions",
+      "quantities"
+    ],
+    "creatorSubmittedSecondaryTags": [
+      "bounded change",
+      "nearby numbers",
+      "exceptions",
+      "policy preservation"
+    ]
+  }
+]
