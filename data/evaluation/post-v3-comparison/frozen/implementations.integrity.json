@@ -1,0 +1,37 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifact": "post-v3-architecture-implementation-integrity",
+  "implementationManifest": {
+    "path": "data/evaluation/post-v3-comparison/frozen/implementations.json",
+    "exactByteSha256": "e6f3b8e0c38f3fb1bd65aba7a898ebc89f0454120aa96ef30d03ce24d18dadff",
+    "rfc8785JcsCanonicalSha256": "e89b5adc636ac178e01073fcfaba923ddf83404c6558ee9f4fb623940bf01b97",
+    "canonicalization": "RFC 8785 JSON Canonicalization Scheme (JCS); UTF-8 bytes, no trailing newline in canonical representation"
+  },
+  "predecessorHashes": {
+    "implementationCommit": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "v15AnchorCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+    "protocolDocumentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+    "protocolCommit": "f40a54caed05a295f540bd8f0876a6ce858008c9",
+    "operationalManifestSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+    "corpusManifestSha256ProvidedMetadata": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+    "candidateCodeAndTestSha256": {
+      "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd",
+      "src/lib/reconstruction/post-v3/objective-contract.ts": "ea91537bec3f51d82cb9ebeb01b0a9747915bca0eefc59f6382cb327046defb3",
+      "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+      "src/lib/reconstruction/post-v3/candidates.test.ts": "425e09576000be2cdf33aa4d1dbe10294750fdf91761b7cfbacb28982417f3cd"
+    },
+    "sharedV15DependencyHashes": {
+      "src/lib/reconstruction/strategies.ts": "6c6df7c4d27c0f4e5ae6718ad849ec25c74d36ae77a3f802c0b2bff9102e3ffb",
+      "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+      "src/lib/reconstruction/directive-scoped-temporal-verification.ts": "b2a10b23bda6b0227d7ff1f998571e9dcfff2d3c9c73b77db4437883245a0179",
+      "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88"
+    },
+    "promptTextSha256": {
+      "review": "5ccf342ef7173c81eba97cc860ae035e5d03d9c070003548302fce637aed23a5",
+      "repair": "a33a3d5b5a604f605867083279ae251c60e3feeeb057f1f3c07baa8e083fbdae"
+    },
+    "contractsSchemaSha256": "17704515db1b20b36923d0d3bc5ee34e9be13d7c3ea1b6b92f354656f4bd5450",
+    "independentCleanSignoffSha256": "1d94e39c15872ee30c2a2db287f8c893eab501235aac049da06c1fd9a12d2df5",
+    "finalGateEvidenceSha256": "46eda7b69f0e37fe8412eb10c0070baf97e35ce9d753ca6414a3a5839bca310a"
+  }
+}

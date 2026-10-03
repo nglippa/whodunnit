@@ -1,0 +1,283 @@
+{
+  "schemaVersion": "1.0.0",
+  "artifact": "post-v3-architecture-implementation-freeze",
+  "status": "FROZEN_WRITE_ONCE",
+  "createdUtc": "2026-10-03T11:51:03.794Z",
+  "implementationCommit": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+  "unchangedV15Anchor": {
+    "commit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+    "status": "experimental baseline dependency; not promoted or changed by this freeze"
+  },
+  "preregistration": {
+    "document": "docs/POST-V3-ARCHITECTURE-PREREGISTRATION.md",
+    "documentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+    "commit": "f40a54caed05a295f540bd8f0876a6ce858008c9"
+  },
+  "operationalManifest": {
+    "path": "data/evaluation/post-v3-comparison/operational-manifest.json",
+    "sha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e"
+  },
+  "corpusManifestMetadata": {
+    "sha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+    "provenance": "provided by the custodian; intentionally not recomputed or opened to maintain the blindness boundary"
+  },
+  "implementationFiles": {
+    "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd",
+    "src/lib/reconstruction/post-v3/objective-contract.ts": "ea91537bec3f51d82cb9ebeb01b0a9747915bca0eefc59f6382cb327046defb3",
+    "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+    "src/lib/reconstruction/post-v3/candidates.test.ts": "425e09576000be2cdf33aa4d1dbe10294750fdf91761b7cfbacb28982417f3cd"
+  },
+  "sharedV15DependencyHashes": {
+    "src/lib/reconstruction/strategies.ts": "6c6df7c4d27c0f4e5ae6718ad849ec25c74d36ae77a3f802c0b2bff9102e3ffb",
+    "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+    "src/lib/reconstruction/directive-scoped-temporal-verification.ts": "b2a10b23bda6b0227d7ff1f998571e9dcfff2d3c9c73b77db4437883245a0179",
+    "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88"
+  },
+  "promptTextSha256": {
+    "review": "5ccf342ef7173c81eba97cc860ae035e5d03d9c070003548302fce637aed23a5",
+    "repair": "a33a3d5b5a604f605867083279ae251c60e3feeeb057f1f3c07baa8e083fbdae"
+  },
+  "contractsSchemaSha256": "17704515db1b20b36923d0d3bc5ee34e9be13d7c3ea1b6b92f354656f4bd5450",
+  "configurationAndStageBudgets": {
+    "timeoutMsDefault": 20000,
+    "stageAttemptBudgets": {
+      "candidateReview": 1,
+      "localRepair": 1,
+      "wholeResultRecheck": 1,
+      "maximumReviewerInvocations": 2
+    },
+    "semanticReview": "strict postV3ReviewSchema; deterministic V15 rejection is a hard gate and cannot be overridden",
+    "repair": "strict postV3RepairSchema; exact local replacement, one bounded repair, one whole-result recheck",
+    "providerPolicy": "A live caller is accepted only for provider account-backed with confirmedNoIncrementalCost=true; no model/API call was made during freeze",
+    "strategyDependency": "RECONSTRUCTION_V15 is reused as an experimental planner/verifier dependency; these candidate wrappers are not production-selected"
+  },
+  "arms": [
+    {
+      "id": "A",
+      "hypothesisName": "Objective-conditioned meaning",
+      "preregisteredHypothesis": "Distinguishing supplied replacements, preserved meaning, unknown values, and uncertainty will retain more RAW-correct updates and materially good rewrites than V15, without spreading authorization to unrelated claims.",
+      "committedImplementationMapping": "Use objective-conditioned current source as the meaning baseline; pass the exact objective contract to semantic review and repair; abstain on ambiguous or missing update authority.",
+      "configuration": {
+        "timeoutMsDefault": 20000,
+        "stageAttemptBudgets": {
+          "candidateReview": 1,
+          "localRepair": 1,
+          "wholeResultRecheck": 1,
+          "maximumReviewerInvocations": 2
+        },
+        "semanticReview": "strict postV3ReviewSchema; deterministic V15 rejection is a hard gate and cannot be overridden",
+        "repair": "strict postV3RepairSchema; exact local replacement, one bounded repair, one whole-result recheck",
+        "providerPolicy": "A live caller is accepted only for provider account-backed with confirmedNoIncrementalCost=true; no model/API call was made during freeze",
+        "strategyDependency": "RECONSTRUCTION_V15 is reused as an experimental planner/verifier dependency; these candidate wrappers are not production-selected"
+      },
+      "promptTextHashes": {
+        "review": "5ccf342ef7173c81eba97cc860ae035e5d03d9c070003548302fce637aed23a5",
+        "repair": "a33a3d5b5a604f605867083279ae251c60e3feeeb057f1f3c07baa8e083fbdae"
+      },
+      "contractsSchemaSha256": "17704515db1b20b36923d0d3bc5ee34e9be13d7c3ea1b6b92f354656f4bd5450",
+      "sharedSourceHashes": {
+        "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd",
+        "src/lib/reconstruction/post-v3/objective-contract.ts": "ea91537bec3f51d82cb9ebeb01b0a9747915bca0eefc59f6382cb327046defb3",
+        "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+        "src/lib/reconstruction/post-v3/candidates.test.ts": "425e09576000be2cdf33aa4d1dbe10294750fdf91761b7cfbacb28982417f3cd"
+      },
+      "sharedV15DependencyHashes": {
+        "src/lib/reconstruction/strategies.ts": "6c6df7c4d27c0f4e5ae6718ad849ec25c74d36ae77a3f802c0b2bff9102e3ffb",
+        "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+        "src/lib/reconstruction/directive-scoped-temporal-verification.ts": "b2a10b23bda6b0227d7ff1f998571e9dcfff2d3c9c73b77db4437883245a0179",
+        "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88"
+      },
+      "preregistration": {
+        "documentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+        "commit": "f40a54caed05a295f540bd8f0876a6ce858008c9"
+      },
+      "operationalManifestSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+      "corpusManifestSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "artifactSha256": "387ef7bb2fda95eae5eb2cc94733130106701ab9c042e7cae633175a2575db5b"
+    },
+    {
+      "id": "B",
+      "hypothesisName": "Preserve authorized changes in final selection",
+      "preregisteredHypothesis": "Keeping supplied, validated updates valid through final selection will reduce stale completed results and increase correct-update retention relative to V15.",
+      "committedImplementationMapping": "Keep the original source as the baseline, preserve only exact deltas independently admitted by V15, and allow objective-only final selection after rejected RAW when authorized deltas are present.",
+      "configuration": {
+        "timeoutMsDefault": 20000,
+        "stageAttemptBudgets": {
+          "candidateReview": 1,
+          "localRepair": 1,
+          "wholeResultRecheck": 1,
+          "maximumReviewerInvocations": 2
+        },
+        "semanticReview": "strict postV3ReviewSchema; deterministic V15 rejection is a hard gate and cannot be overridden",
+        "repair": "strict postV3RepairSchema; exact local replacement, one bounded repair, one whole-result recheck",
+        "providerPolicy": "A live caller is accepted only for provider account-backed with confirmedNoIncrementalCost=true; no model/API call was made during freeze",
+        "strategyDependency": "RECONSTRUCTION_V15 is reused as an experimental planner/verifier dependency; these candidate wrappers are not production-selected"
+      },
+      "promptTextHashes": {
+        "review": "5ccf342ef7173c81eba97cc860ae035e5d03d9c070003548302fce637aed23a5",
+        "repair": "a33a3d5b5a604f605867083279ae251c60e3feeeb057f1f3c07baa8e083fbdae"
+      },
+      "contractsSchemaSha256": "17704515db1b20b36923d0d3bc5ee34e9be13d7c3ea1b6b92f354656f4bd5450",
+      "sharedSourceHashes": {
+        "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd",
+        "src/lib/reconstruction/post-v3/objective-contract.ts": "ea91537bec3f51d82cb9ebeb01b0a9747915bca0eefc59f6382cb327046defb3",
+        "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+        "src/lib/reconstruction/post-v3/candidates.test.ts": "425e09576000be2cdf33aa4d1dbe10294750fdf91761b7cfbacb28982417f3cd"
+      },
+      "sharedV15DependencyHashes": {
+        "src/lib/reconstruction/strategies.ts": "6c6df7c4d27c0f4e5ae6718ad849ec25c74d36ae77a3f802c0b2bff9102e3ffb",
+        "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+        "src/lib/reconstruction/directive-scoped-temporal-verification.ts": "b2a10b23bda6b0227d7ff1f998571e9dcfff2d3c9c73b77db4437883245a0179",
+        "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88"
+      },
+      "preregistration": {
+        "documentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+        "commit": "f40a54caed05a295f540bd8f0876a6ce858008c9"
+      },
+      "operationalManifestSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+      "corpusManifestSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "artifactSha256": "63279cbf1fc4e0a6bda2b5b492eaf07e47acea0bd666a1272497d9f4d7b0e2a8"
+    },
+    {
+      "id": "C",
+      "hypothesisName": "Retain independently safe partial edits",
+      "preregisteredHypothesis": "Retaining safe editorial contributions when another portion fails will improve GOOD_RAW retention and reduce unnecessary fallback without increasing escapes.",
+      "committedImplementationMapping": "Use objective-conditioned current source for verification; permit an independently reviewed useful partial as incomplete, with a whole-result safety review and bounded repair.",
+      "configuration": {
+        "timeoutMsDefault": 20000,
+        "stageAttemptBudgets": {
+          "candidateReview": 1,
+          "localRepair": 1,
+          "wholeResultRecheck": 1,
+          "maximumReviewerInvocations": 2
+        },
+        "semanticReview": "strict postV3ReviewSchema; deterministic V15 rejection is a hard gate and cannot be overridden",
+        "repair": "strict postV3RepairSchema; exact local replacement, one bounded repair, one whole-result recheck",
+        "providerPolicy": "A live caller is accepted only for provider account-backed with confirmedNoIncrementalCost=true; no model/API call was made during freeze",
+        "strategyDependency": "RECONSTRUCTION_V15 is reused as an experimental planner/verifier dependency; these candidate wrappers are not production-selected"
+      },
+      "promptTextHashes": {
+        "review": "5ccf342ef7173c81eba97cc860ae035e5d03d9c070003548302fce637aed23a5",
+        "repair": "a33a3d5b5a604f605867083279ae251c60e3feeeb057f1f3c07baa8e083fbdae"
+      },
+      "contractsSchemaSha256": "17704515db1b20b36923d0d3bc5ee34e9be13d7c3ea1b6b92f354656f4bd5450",
+      "sharedSourceHashes": {
+        "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd",
+        "src/lib/reconstruction/post-v3/objective-contract.ts": "ea91537bec3f51d82cb9ebeb01b0a9747915bca0eefc59f6382cb327046defb3",
+        "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+        "src/lib/reconstruction/post-v3/candidates.test.ts": "425e09576000be2cdf33aa4d1dbe10294750fdf91761b7cfbacb28982417f3cd"
+      },
+      "sharedV15DependencyHashes": {
+        "src/lib/reconstruction/strategies.ts": "6c6df7c4d27c0f4e5ae6718ad849ec25c74d36ae77a3f802c0b2bff9102e3ffb",
+        "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+        "src/lib/reconstruction/directive-scoped-temporal-verification.ts": "b2a10b23bda6b0227d7ff1f998571e9dcfff2d3c9c73b77db4437883245a0179",
+        "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88"
+      },
+      "preregistration": {
+        "documentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+        "commit": "f40a54caed05a295f540bd8f0876a6ce858008c9"
+      },
+      "operationalManifestSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+      "corpusManifestSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "artifactSha256": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19"
+    },
+    {
+      "id": "D",
+      "hypothesisName": "Separate safety and objective fulfillment with explicit abstention",
+      "preregisteredHypothesis": "Separating safety and completion judgments will prevent safe-but-incomplete output being labeled complete, preserve useful safe partial work, and improve objective satisfaction versus V15.",
+      "committedImplementationMapping": "Keep original-source verification, report completion separately from safety, allow only independently safe useful partial output as incomplete, and otherwise abstain to source.",
+      "configuration": {
+        "timeoutMsDefault": 20000,
+        "stageAttemptBudgets": {
+          "candidateReview": 1,
+          "localRepair": 1,
+          "wholeResultRecheck": 1,
+          "maximumReviewerInvocations": 2
+        },
+        "semanticReview": "strict postV3ReviewSchema; deterministic V15 rejection is a hard gate and cannot be overridden",
+        "repair": "strict postV3RepairSchema; exact local replacement, one bounded repair, one whole-result recheck",
+        "providerPolicy": "A live caller is accepted only for provider account-backed with confirmedNoIncrementalCost=true; no model/API call was made during freeze",
+        "strategyDependency": "RECONSTRUCTION_V15 is reused as an experimental planner/verifier dependency; these candidate wrappers are not production-selected"
+      },
+      "promptTextHashes": {
+        "review": "5ccf342ef7173c81eba97cc860ae035e5d03d9c070003548302fce637aed23a5",
+        "repair": "a33a3d5b5a604f605867083279ae251c60e3feeeb057f1f3c07baa8e083fbdae"
+      },
+      "contractsSchemaSha256": "17704515db1b20b36923d0d3bc5ee34e9be13d7c3ea1b6b92f354656f4bd5450",
+      "sharedSourceHashes": {
+        "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd",
+        "src/lib/reconstruction/post-v3/objective-contract.ts": "ea91537bec3f51d82cb9ebeb01b0a9747915bca0eefc59f6382cb327046defb3",
+        "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+        "src/lib/reconstruction/post-v3/candidates.test.ts": "425e09576000be2cdf33aa4d1dbe10294750fdf91761b7cfbacb28982417f3cd"
+      },
+      "sharedV15DependencyHashes": {
+        "src/lib/reconstruction/strategies.ts": "6c6df7c4d27c0f4e5ae6718ad849ec25c74d36ae77a3f802c0b2bff9102e3ffb",
+        "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+        "src/lib/reconstruction/directive-scoped-temporal-verification.ts": "b2a10b23bda6b0227d7ff1f998571e9dcfff2d3c9c73b77db4437883245a0179",
+        "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88"
+      },
+      "preregistration": {
+        "documentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+        "commit": "f40a54caed05a295f540bd8f0876a6ce858008c9"
+      },
+      "operationalManifestSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+      "corpusManifestSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "artifactSha256": "ad057ae3363896b38353794b0cad01f8160641bd4ead9f2c5ffb12a9884dabf1"
+    }
+  ],
+  "preregistrationNamingResolution": "Arm names, IDs, and hypotheses follow the committed preregistration: A objective-conditioned meaning; B preserve authorized changes in final selection; C retain independently safe partial edits; D separate safety and objective fulfillment with explicit abstention. This mapping resolves any earlier B/C prompt-label discrepancy. Shared v1 review/repair prompt texts are hash-pinned in contracts.ts and reused across arms.",
+  "independentSignoff": {
+    "path": "/private/tmp/post-v3-candidate-signoff.json",
+    "sha256": "1d94e39c15872ee30c2a2db287f8c893eab501235aac049da06c1fd9a12d2df5",
+    "verdict": "CLEAN",
+    "scope": "Bounded code signoff of the requested fixes and synthetic local controls; not a universal natural-language safety or model-performance certification.",
+    "findings": [],
+    "modelsCalled": false,
+    "apisCalled": false,
+    "paidSpendUsd": 0,
+    "limitations": [
+      "Bounded check only; semantic synonyms and implicit conditions still require structured semantic reviewer.",
+      "No execution-integrity/corpus hash/freeze chronology certification.",
+      "No real-model error rates or corpus performance inference."
+    ]
+  },
+  "finalGateEvidence": {
+    "path": "/private/tmp/post-v3-candidate-gates-signoff.json",
+    "sha256": "46eda7b69f0e37fe8412eb10c0070baf97e35ce9d753ca6414a3a5839bca310a",
+    "fullSuite": "708 tests passed across 65 files",
+    "focusedCandidateSuite": "46 tests passed",
+    "lint": "pass",
+    "typecheck": "pass",
+    "rules": "64 valid using node --import tsx fallback after pnpm tsx IPC EPERM",
+    "deterministicMeaningFixtures": "48/48 pass",
+    "deterministicVoiceFixtures": "13/13 pass",
+    "V14HistoricalReplay": "8 frozen integrity cases and 9 saved replay rows passed",
+    "V15Replay": "zero unsafe escapes for both V14 and V15; no historical regressions",
+    "originalUnsafeBoundaryReplay": "28 saved rows passed",
+    "webpackBuild": "pass; 7/7 static pages",
+    "modelCalls": false
+  },
+  "blindnessAndSpend": {
+    "frozenCasesOpened": false,
+    "prelabelsOpened": false,
+    "RAWOpened": false,
+    "modelOrApiCalls": false,
+    "paidSpendUsd": 0,
+    "frozenCaseFilesOpened": false,
+    "caseBearingFileContentsRead": false,
+    "frozenDirectoryFilenamesListed": true,
+    "directoryListingDeviationRecorded": true
+  },
+  "limitations": [
+    "This artifact pins implementation bytes and configuration; it does not make a winner decision or assert that any arm is universally safe.",
+    "The 40-case corpus manifest hash is recorded from custodian-supplied metadata and intentionally not recomputed.",
+    "The independent signoff is bounded and used only as implementation evidence.",
+    "All candidate arms remain experimental; production remains reconstruction-v1."
+  ],
+  "postFreezeRule": "After this metadata is committed, do not modify any implementation, test, prompt, schema, configuration, arm mapping, or hash in place. A necessary correction requires an additive invalidation/amendment that records the previous manifest and integrity hashes, reason, and new protocol authorization; do not tune against corpus, prelabels, RAW, outputs, or case-bearing audits.",
+  "processDeviation": {
+    "kind": "path-only-listing",
+    "description": "An earlier rg --files command intended to exclude the frozen directory emitted filenames under that directory because the glob did not exclude nested paths as intended. Only filenames were listed; no frozen case, prelabel, RAW, or case-bearing audit file contents were opened or read. This occurred after the implementation commit. No candidate code was revised afterward.",
+    "contaminationAssessment": "No case content or outputs were exposed to implementation work; implementation hashes remain those independently signed off."
+  }
+}
