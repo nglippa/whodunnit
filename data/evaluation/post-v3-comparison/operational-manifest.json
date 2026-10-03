@@ -1,0 +1,830 @@
+{
+  "manifestVersion": "1.0.0",
+  "experimentId": "post-v3-architecture-comparison-40",
+  "status": "OPERATIONAL_PROTOCOL_FROZEN_NO_CASES_CREATED_NO_EXTERNAL_MODEL_CALLS",
+  "protocol": {
+    "document": "docs/POST-V3-ARCHITECTURE-PREREGISTRATION.md",
+    "documentSha256": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+    "anchorCommitBeforeOperationalManifest": "f40a54caed05a295f540bd8f0876a6ce858008c9",
+    "v15ArchitectureCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+    "v3Commit": "6fb48ef",
+    "v3ManifestSha256": "e207982e7b05c3d99bad5930ee8b63ef9884ecef427e77ece5f03a9d6ea61ad2",
+    "productionStrategy": "reconstruction-v1",
+    "frozenExperimentalBaseline": "reconstruction-v15"
+  },
+  "corpusPlan": {
+    "targetCases": 40,
+    "caseIds": {
+      "format": "PVC-{NNN}",
+      "first": "PVC-001",
+      "last": "PVC-040",
+      "allocationIsImmutable": true
+    },
+    "creatorProtocol": "Four independent creator sessions run sequentially; each creator authors exactly 10 source/objective pairs. Independent subagents may author each session only if their session context contains just that creator's assigned IDs, per-ID primary strata, and sanitized brief; no session sees another creator's material. Creator or prelabel subagent sessions are permitted only with confirmed $0 incremental API spend. No external paid/editor/verifier/repair model call is authorized now. Custodian does not provide V3 artifacts or evidence mappings.",
+    "creators": [
+      {
+        "roleId": "CREATOR-01",
+        "sessionOrder": 1,
+        "caseIds": [
+          "PVC-002",
+          "PVC-005",
+          "PVC-009",
+          "PVC-014",
+          "PVC-018",
+          "PVC-023",
+          "PVC-027",
+          "PVC-031",
+          "PVC-036",
+          "PVC-040"
+        ],
+        "assignments": [
+          {
+            "caseId": "PVC-002",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-005",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-009",
+            "primaryStratum": "vague_update_or_missing_required_replacement"
+          },
+          {
+            "caseId": "PVC-014",
+            "primaryStratum": "vague_update_or_missing_required_replacement"
+          },
+          {
+            "caseId": "PVC-018",
+            "primaryStratum": "substantial_reconstruction"
+          },
+          {
+            "caseId": "PVC-023",
+            "primaryStratum": "substantial_reconstruction"
+          },
+          {
+            "caseId": "PVC-027",
+            "primaryStratum": "ordinary_local_editing"
+          },
+          {
+            "caseId": "PVC-031",
+            "primaryStratum": "voice_sensitive_editing"
+          },
+          {
+            "caseId": "PVC-036",
+            "primaryStratum": "already_good_conditional_leave_alone"
+          },
+          {
+            "caseId": "PVC-040",
+            "primaryStratum": "collateral_change_danger"
+          }
+        ]
+      },
+      {
+        "roleId": "CREATOR-02",
+        "sessionOrder": 2,
+        "caseIds": [
+          "PVC-001",
+          "PVC-007",
+          "PVC-012",
+          "PVC-016",
+          "PVC-019",
+          "PVC-022",
+          "PVC-028",
+          "PVC-033",
+          "PVC-034",
+          "PVC-039"
+        ],
+        "assignments": [
+          {
+            "caseId": "PVC-001",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-007",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-012",
+            "primaryStratum": "vague_update_or_missing_required_replacement"
+          },
+          {
+            "caseId": "PVC-016",
+            "primaryStratum": "substantial_reconstruction"
+          },
+          {
+            "caseId": "PVC-019",
+            "primaryStratum": "ordinary_local_editing"
+          },
+          {
+            "caseId": "PVC-022",
+            "primaryStratum": "ordinary_local_editing"
+          },
+          {
+            "caseId": "PVC-028",
+            "primaryStratum": "voice_sensitive_editing"
+          },
+          {
+            "caseId": "PVC-033",
+            "primaryStratum": "already_good_conditional_leave_alone"
+          },
+          {
+            "caseId": "PVC-034",
+            "primaryStratum": "collateral_change_danger"
+          },
+          {
+            "caseId": "PVC-039",
+            "primaryStratum": "ambiguity_or_contested_interpretation"
+          }
+        ]
+      },
+      {
+        "roleId": "CREATOR-03",
+        "sessionOrder": 3,
+        "caseIds": [
+          "PVC-004",
+          "PVC-008",
+          "PVC-011",
+          "PVC-015",
+          "PVC-020",
+          "PVC-024",
+          "PVC-029",
+          "PVC-032",
+          "PVC-035",
+          "PVC-038"
+        ],
+        "assignments": [
+          {
+            "caseId": "PVC-004",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-008",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-011",
+            "primaryStratum": "vague_update_or_missing_required_replacement"
+          },
+          {
+            "caseId": "PVC-015",
+            "primaryStratum": "vague_update_or_missing_required_replacement"
+          },
+          {
+            "caseId": "PVC-020",
+            "primaryStratum": "substantial_reconstruction"
+          },
+          {
+            "caseId": "PVC-024",
+            "primaryStratum": "ordinary_local_editing"
+          },
+          {
+            "caseId": "PVC-029",
+            "primaryStratum": "voice_sensitive_editing"
+          },
+          {
+            "caseId": "PVC-032",
+            "primaryStratum": "already_good_conditional_leave_alone"
+          },
+          {
+            "caseId": "PVC-035",
+            "primaryStratum": "collateral_change_danger"
+          },
+          {
+            "caseId": "PVC-038",
+            "primaryStratum": "ambiguity_or_contested_interpretation"
+          }
+        ]
+      },
+      {
+        "roleId": "CREATOR-04",
+        "sessionOrder": 4,
+        "caseIds": [
+          "PVC-003",
+          "PVC-006",
+          "PVC-010",
+          "PVC-013",
+          "PVC-017",
+          "PVC-021",
+          "PVC-025",
+          "PVC-026",
+          "PVC-030",
+          "PVC-037"
+        ],
+        "assignments": [
+          {
+            "caseId": "PVC-003",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-006",
+            "primaryStratum": "explicit_supplied_factual_update"
+          },
+          {
+            "caseId": "PVC-010",
+            "primaryStratum": "vague_update_or_missing_required_replacement"
+          },
+          {
+            "caseId": "PVC-013",
+            "primaryStratum": "substantial_reconstruction"
+          },
+          {
+            "caseId": "PVC-017",
+            "primaryStratum": "substantial_reconstruction"
+          },
+          {
+            "caseId": "PVC-021",
+            "primaryStratum": "ordinary_local_editing"
+          },
+          {
+            "caseId": "PVC-025",
+            "primaryStratum": "voice_sensitive_editing"
+          },
+          {
+            "caseId": "PVC-026",
+            "primaryStratum": "already_good_conditional_leave_alone"
+          },
+          {
+            "caseId": "PVC-030",
+            "primaryStratum": "collateral_change_danger"
+          },
+          {
+            "caseId": "PVC-037",
+            "primaryStratum": "ambiguity_or_contested_interpretation"
+          }
+        ]
+      }
+    ],
+    "primaryStrata": [
+      {
+        "id": "explicit_supplied_factual_update",
+        "count": 8,
+        "caseIds": [
+          "PVC-002",
+          "PVC-005",
+          "PVC-001",
+          "PVC-007",
+          "PVC-004",
+          "PVC-008",
+          "PVC-003",
+          "PVC-006"
+        ]
+      },
+      {
+        "id": "vague_update_or_missing_required_replacement",
+        "count": 6,
+        "caseIds": [
+          "PVC-009",
+          "PVC-014",
+          "PVC-012",
+          "PVC-011",
+          "PVC-015",
+          "PVC-010"
+        ]
+      },
+      {
+        "id": "substantial_reconstruction",
+        "count": 6,
+        "caseIds": [
+          "PVC-018",
+          "PVC-023",
+          "PVC-016",
+          "PVC-020",
+          "PVC-013",
+          "PVC-017"
+        ]
+      },
+      {
+        "id": "ordinary_local_editing",
+        "count": 5,
+        "caseIds": [
+          "PVC-027",
+          "PVC-019",
+          "PVC-022",
+          "PVC-024",
+          "PVC-021"
+        ]
+      },
+      {
+        "id": "voice_sensitive_editing",
+        "count": 4,
+        "caseIds": [
+          "PVC-031",
+          "PVC-028",
+          "PVC-029",
+          "PVC-025"
+        ]
+      },
+      {
+        "id": "already_good_conditional_leave_alone",
+        "count": 4,
+        "caseIds": [
+          "PVC-036",
+          "PVC-033",
+          "PVC-032",
+          "PVC-026"
+        ]
+      },
+      {
+        "id": "collateral_change_danger",
+        "count": 4,
+        "caseIds": [
+          "PVC-040",
+          "PVC-034",
+          "PVC-035",
+          "PVC-030"
+        ]
+      },
+      {
+        "id": "ambiguity_or_contested_interpretation",
+        "count": 3,
+        "caseIds": [
+          "PVC-039",
+          "PVC-038",
+          "PVC-037"
+        ]
+      }
+    ],
+    "secondaryTags": [
+      "conditions",
+      "uncertainty",
+      "dates_times",
+      "quantities",
+      "commitments",
+      "causation",
+      "ambiguity",
+      "voice",
+      "paragraph_movement",
+      "enumeration",
+      "document_conversion"
+    ],
+    "casePolicy": "Synthetic newly authored source/objective pairs only. No reuse, paraphrase, transformation, or exact phrase from V1/V2/V3 holdouts, V3 transformations, V14/V15 development fixtures, exact-delta/composite/directive confirmation cases, or original unsafe-boundary cases. Do not author expected rewrite text or exact model responses. Do not create, remove, replace, regenerate, or relabel cases after corpus freeze.",
+    "excludedMaterialCustodianOnly": true,
+    "caseIdRangeSemantics": "Creator assignments enumerate every allocated case ID and its primary stratum. Case IDs are assigned across creators in a shuffled allocation so an ID alone does not disclose creator/session. Stratum caseIds are explicit enumerations."
+  },
+  "sanitizedCreatorBrief": {
+    "disclosure": "This is the complete creator-facing brief. Do not add links, examples, prior case IDs, analysis, evidence mappings, expected text, or information from the full preregistration.",
+    "normativeContract": [
+      {
+        "id": "PR-01",
+        "text": "An output presented as completing the task must incorporate user-supplied, authorized replacement facts in their intended scope, distinguishing superseded information from information that remains valid. If this cannot be completed safely, identify the unresolved update."
+      },
+      {
+        "id": "PR-02",
+        "text": "Preserve source facts, caveats, names, dates, quantities, conditions, and uncertainty that the objective did not authorize changing."
+      },
+      {
+        "id": "PR-03",
+        "text": "If a candidate cannot be safely accepted, do not present a stale source fallback as successful fulfillment of a conflicting update; expose unresolved work or abstain clearly."
+      },
+      {
+        "id": "PR-04",
+        "text": "When required replacement information is absent, never invent it; explicitly identify the missing fact or say the objective remains incomplete, and do not present silent non-fulfillment as success."
+      },
+      {
+        "id": "PR-05",
+        "text": "Do not introduce material factual or semantic assertions unsupported by the source and user-supplied objective, including collateral causes, priorities, promises, completion claims, eligibility changes, or operational specifics."
+      },
+      {
+        "id": "PR-06",
+        "text": "Reject unsafe meaning changes and ensure unsupported claims do not reach FINAL."
+      },
+      {
+        "id": "PR-07",
+        "text": "Allow meaningful reconstruction, paraphrase, and structural editing when they preserve authorized meaning and satisfy the requested form."
+      },
+      {
+        "id": "PR-08",
+        "text": "Preserve material uncertainty and ambiguity unless the user supplies authority to resolve them. When completing the objective depends on an unresolved interpretation, disclose that limitation rather than assert one interpretation as established."
+      },
+      {
+        "id": "PR-09",
+        "text": "Use the voice and register requested by the objective; preserve meaningful source voice where the objective does not authorize changing it, while maintaining factual fidelity."
+      },
+      {
+        "id": "PR-10",
+        "text": "Respect already-good restraint: do not introduce unnecessary edits when the source already meets a conditional or leave-alone objective."
+      },
+      {
+        "id": "PR-11",
+        "text": "A delivered repaired output must resolve the confirmed defect without undoing authorized updates or introducing material unsupported or unauthorized meaning anywhere in the resulting output. Any remaining unmet objective must be disclosed."
+      },
+      {
+        "id": "PR-12A",
+        "text": "An output presented as complete must be materially safe and satisfy the user's objective, including authorized factual updates and required form."
+      },
+      {
+        "id": "PR-12B",
+        "text": "A safe result that does not complete the objective must identify the unmet work and must not be presented as complete."
+      }
+    ],
+    "generalInstructions": "Create natural synthetic practical writing tasks in the assigned genre and primary stratum. Follow only the normative contract above and assigned general stratum instruction. Use only the opaque case IDs supplied for your session. Use no real user documents, scraped text, real personal data, or expected-output prose. Create source and objective only.",
+    "stratumInstructions": {
+      "explicit_supplied_factual_update": "The objective supplies a clear, authorized replacement fact and its intended scope.",
+      "vague_update_or_missing_required_replacement": "The objective requests a change but leaves material replacement information vague or unavailable.",
+      "substantial_reconstruction": "The objective requires substantial restructuring or conversion while source meaning remains relevant.",
+      "ordinary_local_editing": "The objective requests ordinary bounded editing of supplied text.",
+      "voice_sensitive_editing": "The objective names a voice or register requirement that should guide editing.",
+      "already_good_conditional_leave_alone": "The source may already satisfy a conditional or leave-alone objective; assess the supplied objective faithfully.",
+      "collateral_change_danger": "The task has room for unrelated factual or semantic changes; the objective authorizes a bounded change.",
+      "ambiguity_or_contested_interpretation": "The source or objective permits materially different interpretations that must not be silently asserted as certain."
+    }
+  },
+  "roles": {
+    "custodian": {
+      "roleId": "CUSTODIAN-01",
+      "duties": [
+        "maintain sealed corpus and arm map",
+        "enforce excluded-material screening",
+        "freeze and hash artifacts",
+        "randomize blinded output IDs",
+        "hold mappings until labels lock",
+        "perform post-lock audit"
+      ]
+    },
+    "creators": [
+      "CREATOR-01",
+      "CREATOR-02",
+      "CREATOR-03",
+      "CREATOR-04"
+    ],
+    "prelabelers": [
+      "PRELABELER-01",
+      "PRELABELER-02"
+    ],
+    "blindReviewers": [
+      "BLIND-REVIEWER-01",
+      "BLIND-REVIEWER-02"
+    ],
+    "implementers": [
+      "IMPLEMENTER-A",
+      "IMPLEMENTER-B",
+      "IMPLEMENTER-C",
+      "IMPLEMENTER-D"
+    ],
+    "auditor": "AUDITOR-01",
+    "separation": "No person may serve as creator, implementer, prelabeler, blind reviewer, and auditor in a way that reveals protected information. Creators see only sanitized brief and assigned stratum. Implementers do not see cases, tags, prelabels, RAW, or outputs before all four implementations freeze. Prelabelers do not see one another's labels or generated outputs. Blind reviewers see only source, objective, and randomized output with its visible status; they do not see arm/model identity, trace, prelabels, V3 evidence, or the other reviewer's labels. Auditor joins evidence only after original blind labels are frozen and hashed."
+  },
+  "prelabels": {
+    "coverage": "Exactly two independent prelabel submissions per case: PRELABELER-01 and PRELABELER-02 each label all 40 cases once, before implementation freeze and RAW generation.",
+    "reviewerPacket": "Each prelabeler packet contains only opaque case ID, source text, and objective text. It excludes creator identity, creator session, primary stratum, secondary tags, other prelabels, generated outputs, arm hypothesis, and V3 material. The custodian retains case/stratum mapping separately and joins it only after both original prelabel sets are frozen.",
+    "fieldsPerCase": [
+      "caseId",
+      "expectedEditingScope",
+      "expectedSafeBehavior",
+      "authorizedReplacements[{sourceValue,replacementValue,scope,authorizationEvidenceInObjective}]",
+      "preservedMaterialFacts[{fact,sourceEvidence}]",
+      "voiceConstraints",
+      "ambiguity[{interpretations,materiality,completionDependency}]",
+      "missingInformation[{requiredFact,available,consequenceIfUnavailable}]",
+      "expectedCompletionDisposition[complete|incomplete|abstain]",
+      "rationaleWithSourceAndObjectiveCitations",
+      "reviewerId",
+      "timestamp"
+    ],
+    "expectedSafeBehaviorDefinition": "Describe acceptable scope, factual grounding, preservation, and completion/incomplete/abstention conditions. Never prescribe exact expected prose, phrasing, or output structure beyond what the objective requires.",
+    "disagreementPolicy": "Preserve both original sets and disagreement. Do not reconcile into generation instructions. Any separate adjudication is post-lock and additive; never overwrite originals.",
+    "freezePath": "data/evaluation/post-v3-comparison/frozen/prelabels/"
+  },
+  "callersAndBudgets": {
+    "authorization": "No external paid/editor/verifier/repair model calls are authorized now. Independent creator and prelabel subagent sessions are permitted only with confirmed $0 incremental API spend and the packet restrictions in this manifest. Any future external generation, verification, repair, or review calls require separately recorded explicit run authorization, confirmed account-backed access with $0 incremental paid spend, successful preflight, and all freezes. No paid API, demo fallback, alternate model, or unrecorded retry is allowed.",
+    "availablePriorEvidence": {
+      "cli": "Claude Code CLI",
+      "cliVersion": "2.1.288",
+      "modelAlias": "sonnet",
+      "resolvedModel": "claude-sonnet-5-5",
+      "source": "docs/HOLDOUT-V3.md; prior successful structured-output smoke only; does not prove present availability or settings",
+      "currentAvailabilityCheck": {
+        "command": "claude --version",
+        "result": "2.1.288 (Claude Code)",
+        "checkedReadOnly": true,
+        "modelInvoked": false,
+        "interpretation": "Installed CLI version matches historical CLI version. This does not confirm account-backed access, model resolution, or effective settings; all other hard stops remain."
+      }
+    },
+    "futureCallPreflight": {
+      "requiredCli": "Claude Code CLI 2.1.288",
+      "requiredAlias": "sonnet",
+      "requiredResolvedModel": "claude-sonnet-5-5",
+      "account": "account-backed plan access, confirmed for every role before each stage; incrementalPaidSpendUsd must equal 0",
+      "exactSamplingSettings": "Unavailable from committed evidence. Before any call, freeze and record the CLI's effective temperature, top-p/top-k if exposed, thinking/reasoning setting, max output tokens, structured-output mode, system prompt hash, request schema hash, permission/tool/network configuration, and any other exposed sampling or routing controls. If the exact effective settings cannot be observed and pinned, hard stop the affected run.",
+      "availability": "Read-only `claude --version` check on 2026-10-03 returned 2.1.288 (Claude Code), matching the historical version. Historical successful smoke resolved `sonnet` to `claude-sonnet-5-5`. Before any call, re-confirm exact CLI version, alias resolution, account-backed $0 access, and effective settings. If CLI version or resolved model differs or cannot be reported, account-backed $0 access cannot be confirmed, or effective settings cannot be pinned, hard stop. No substitution.",
+      "cliInvocation": "Use the existing isolated Claude Code CLI structured-output adapter pattern; no MCP, tools, repository access, inherited project instructions, or network access in model-call sessions except the CLI service connection. Exact command/request adapter hash must be frozen before calls."
+    },
+    "stages": [
+      {
+        "stage": "creator_sessions",
+        "sessions": 4,
+        "casesPerSession": 10,
+        "externalPaidEditorVerifierRepairCallsNow": 0,
+        "independentSubagentSessionsPermitted": true,
+        "condition": "creator sessions may use independent human/account subagents only with $0 incremental API spend; each receives only its assigned IDs/strata and sanitized brief"
+      },
+      {
+        "stage": "prelabels",
+        "callsPerCasePerRole": 1,
+        "roles": 2,
+        "maxCalls": 80,
+        "model": "same pinned caller/model/settings above, only if future call is explicitly authorized; otherwise two independent human labels; record actual method before work",
+        "inputs": "opaque case ID, source, objective only; exclude creator identity, primary stratum, secondary tags, other prelabels, outputs, V3 material",
+        "method": "Independent human or subagent session; if any model-backed session is used, pin exact caller/model/settings first and confirm $0 incremental API spend."
+      },
+      {
+        "stage": "raw_editor",
+        "callsPerCase": 1,
+        "maxCalls": 40,
+        "model": "sonnet resolved to claude-sonnet-5-5, subject to hard-stop preflight",
+        "inputs": "source and objective only",
+        "retryBudget": 0,
+        "replacementOrRegenerationBudget": 0,
+        "schemaOrPromptChangeDuringRun": false
+      },
+      {
+        "stage": "v15_and_each_arm_A_to_D_review",
+        "callsPerCasePerArm": 1,
+        "armCount": 5,
+        "maxCalls": 200,
+        "model": "one frozen shared downstream reviewer model/settings across all arms, pin exact resolved identity before any call",
+        "inputs": "same frozen source/objective/RAW; no prelabels or outcome labels",
+        "retryBudget": 0
+      },
+      {
+        "stage": "repair",
+        "callsPerCasePerArm": 1,
+        "armCount": 5,
+        "maxCalls": 200,
+        "condition": "only when registered review requests repair",
+        "model": "one frozen shared repair model/settings across all arms, pin exact resolved identity before any call",
+        "retryBudget": 0,
+        "repairScope": "bounded local repair only"
+      },
+      {
+        "stage": "whole_result_recheck",
+        "callsPerCasePerArm": 1,
+        "armCount": 5,
+        "maxCalls": 200,
+        "condition": "after accepted repair path as defined by frozen candidate; count within each arm's maximum stage budget",
+        "model": "same frozen downstream reviewer model/settings",
+        "retryBudget": 0
+      },
+      {
+        "stage": "blind_output_review",
+        "outputsPerCase": 6,
+        "reviewersPerOutput": 2,
+        "outputCount": 240,
+        "reviewsPerReviewer": 240,
+        "totalReviews": 480,
+        "model": "human reviewers preferred; if model-assisted, exact two independent role callers and settings must be frozen before outputs are revealed",
+        "inputs": "source/objective plus randomized RAW or FINAL and visible status only",
+        "retryBudget": 0
+      },
+      {
+        "stage": "post_lock_audit",
+        "caseCount": 40,
+        "armCount": 5,
+        "calls": 0,
+        "modelCallsAllowed": false,
+        "method": "AUDITOR-01 deterministic full-corpus audit over all cases/arms after labels lock"
+      }
+    ],
+    "failurePolicy": "Persist every started attempt, request hash, caller/version/resolved model, effective settings, timestamps, response hash or explicit no-response status, and spend. One attempt per budgeted request; no retry, replacement, regeneration, or silent fallback. A technical failure remains attached to its case and makes required evaluation inconclusive."
+  },
+  "frozenInputsAndPaths": {
+    "root": "data/evaluation/post-v3-comparison/",
+    "operationalManifest": "data/evaluation/post-v3-comparison/operational-manifest.json",
+    "frozenDirectory": "data/evaluation/post-v3-comparison/frozen/",
+    "futureArtifactPaths": {
+      "cases": "data/evaluation/post-v3-comparison/frozen/cases.json",
+      "prelabelsReviewer1": "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-01.json",
+      "prelabelsReviewer2": "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-02.json",
+      "creatorProvenance": "data/evaluation/post-v3-comparison/frozen/creator-provenance.json",
+      "implementationFreeze": "data/evaluation/post-v3-comparison/frozen/implementations.json",
+      "raw": "data/evaluation/post-v3-comparison/frozen/raw.json",
+      "blindAssignments": "data/evaluation/post-v3-comparison/frozen/blind-assignments.json",
+      "reviewer1": "data/evaluation/post-v3-comparison/frozen/reviews/reviewer-01.json",
+      "reviewer2": "data/evaluation/post-v3-comparison/frozen/reviews/reviewer-02.json",
+      "postLockAudit": "data/evaluation/post-v3-comparison/frozen/post-lock-audit.json"
+    },
+    "comparisonRuns": "data/evaluation/post-v3-comparison/run/",
+    "artifactPolicy": "All frozen artifacts are write-once. Never edit a frozen byte sequence in place. A correction or invalidation is additive, records prior hash and reason, and requires a new protocol and fresh evidence where specified. Never store case text, labels, or outputs in ignored .evaluations/ only; durable required evidence must be committed in the frozen artifact set after its respective stage. No corpus artifacts are created by this manifest commit.",
+    "hashing": {
+      "algorithm": "SHA-256",
+      "canonicalJson": "RFC 8785 JSON Canonicalization Scheme (JCS)",
+      "encoding": "UTF-8, no BOM",
+      "canonicalHashBytes": "JCS canonical bytes with no added trailing newline",
+      "rawAndRequestBytes": "SHA-256 exact stored bytes; no newline normalization",
+      "digest": "lowercase hexadecimal",
+      "eachArtifact": "record both canonical JSON hash and exact file-byte hash when JSON; reference predecessor hashes in each stage record"
+    },
+    "serialization": {
+      "format": "UTF-8 JSON",
+      "objectKeys": "JCS canonicalized for hashes",
+      "arrays": "ordered and never re-sorted after freeze",
+      "text": "preserve exact Unicode scalar sequence and line endings as stored; source/objective are separate strings",
+      "schema": "strict versioned schema; unknown fields rejected for frozen records; model responses parsed without widening schemas"
+    }
+  },
+  "baselineAndRawIdentity": {
+    "v15": {
+      "armId": "V15",
+      "strategy": "reconstruction-v15",
+      "architectureCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+      "mustRemainFrozen": true,
+      "presentation": "freeze exact visible text/status behavior before run; preserve existing visible disposition; no new disclosure policy"
+    },
+    "candidateArms": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "sharedRaw": "Exactly one immutable RAW per case is supplied identically to V15 and A-D. RAW includes response text and provenance; all arms consume identical stored source, objective, and RAW hashes. No arm may invoke an editor or substitute an engine.",
+    "rawFrozenBefore": "all downstream arms execute"
+  },
+  "randomization": {
+    "generator": "Node.js crypto deterministic seeded PRNG; algorithm pinned as SHA-256 counter mode with seed bytes decoded from lowercase hex; Fisher-Yates shuffle using uint32 rejection sampling",
+    "seedEncoding": "hex",
+    "seeds": {
+      "outputIdAssignment": "7a4c1d9e2b6f8053c1a7e4d9b2f60835",
+      "presentationOrder": "b6e2038a7d1c4f905a2e6b8d3c7f1049",
+      "reviewerCaseOrder": "3d91a6c8f20b457e8a1c6d3f9b20475e"
+    },
+    "outputPackagesPerCase": [
+      "RAW",
+      "V15_FINAL",
+      "A_FINAL",
+      "B_FINAL",
+      "C_FINAL",
+      "D_FINAL"
+    ],
+    "totalOutputPackages": 240,
+    "idPolicy": "Assign opaque randomized IDs only after all arm outputs are frozen. Store case/arm mapping in custodian-only sealed file. The random ID must not encode source case, arm, model, stage, or outcome.",
+    "reviewAssignment": "BLIND-REVIEWER-01 and BLIND-REVIEWER-02 independently review every one of the 240 packages in separately randomized order. Never share labels before both reviewers freeze and hash submissions."
+  },
+  "reviewRubric": {
+    "requiredFields": [
+      "safety",
+      "unauthorizedFactualChanges",
+      "unauthorizedSemanticChanges",
+      "objectiveSatisfaction[YES|PARTIAL|NO]",
+      "materialEditorialUsefulness",
+      "voicePreservation",
+      "overediting",
+      "alreadyGoodRestraint",
+      "missingInformationInvention",
+      "completionDisposition[complete|incomplete|abstain|not_applicable_for_raw]",
+      "citations[{sourceOrObjectiveOrOutput,exactSpanOrLocator,reason}]",
+      "reviewerId",
+      "outputOpaqueId"
+    ],
+    "reviewInstructions": "Judge only against the supplied source and objective. Treat displayed completion/incomplete/abstention status as part of the output. For RAW, judge editorial text and independently assess objective completion. Cite exact evidence. Keep safety, objective satisfaction, and editorial usefulness separate. Do not infer hidden trace or arm identity. Preserve uncertainty; do not force a disputed interpretation. Do not see the second reviewer's labels.",
+    "freeze": "Each original reviewer submission is immutable and hashed before custodian reveals arm mapping or audit joins trace/prelabels. Disagreements remain visible."
+  },
+  "measures": [
+    {
+      "id": "bad_raw_escapes",
+      "definition": "Confirmed BAD_RAW defects surviving into arm FINAL / confirmed BAD_RAW cases with evaluable FINAL; also report catches, unevaluable cases, and IDs."
+    },
+    {
+      "id": "good_raw_retention",
+      "definition": "Confirmed GOOD_RAW material contribution retained safely in FINAL / confirmed GOOD_RAW cases with evaluable FINAL; report paired retained/lost transitions versus V15."
+    },
+    {
+      "id": "correct_explicit_update_retention",
+      "definition": "RAW-correct authorized updates retained correctly and in scope / confirmed RAW-correct cases in the 8-case primary explicit stratum with evaluable FINAL; report completion/form separately."
+    },
+    {
+      "id": "stale_source_restoration",
+      "definition": "Separately count FINAL retaining/restoring superseded facts as current and those presented as complete / evaluable cases with supplied source-conflicting replacements; historical facts labeled historical excluded."
+    },
+    {
+      "id": "vague_update_guessing",
+      "definition": "Invented missing factual replacements / six primary vague or missing cases with evaluable FINAL; separately report all tagged cases and disclosure."
+    },
+    {
+      "id": "collateral_change_escapes",
+      "definition": "FINALs with confirmed unauthorized factual mutation beyond supplied update / evaluable FINALs; report explicit-update and collateral-danger strata separately; cases not fact instances."
+    },
+    {
+      "id": "unauthorized_meaning_change",
+      "definition": "FINALs with confirmed material unauthorized meaning change / evaluable FINALs; unresolved disputes remain separate."
+    },
+    {
+      "id": "harmful_repairs",
+      "definition": "Accepted repairs leaving or introducing confirmed material harm / accepted repairs; separately report attempts, rejected harmful attempts, safe corrections, and zero denominators."
+    },
+    {
+      "id": "unnecessary_fallbacks",
+      "definition": "Source fallbacks discarding confirmed GOOD_RAW benefit without confirmed safety necessity / confirmed GOOD_RAW cases with evaluable FINAL; also count / all source fallbacks."
+    },
+    {
+      "id": "objective_satisfaction",
+      "definition": "YES/PARTIAL/NO counts / evaluable FINALs; completed-but-unmet claims / completed claims; explicit incomplete/abstention counts / evaluable outputs."
+    },
+    {
+      "id": "voice_preservation",
+      "definition": "Confirmed material voice harm and preservation judgments / evaluable FINALs, with four primary voice cases separately; judge requested register and source voice, not token overlap."
+    },
+    {
+      "id": "already_good_restraint",
+      "definition": "Unnecessary changes and confirmed harmful edits / four primary already-good cases with evaluable FINAL; independently verify conditional objective satisfaction and report prelabel disagreement."
+    }
+  ],
+  "advancementGates": {
+    "comparison": "Each A-D candidate independently versus V15 on common evaluable paired case IDs. No composite score and no fifth exploratory arm.",
+    "safety": {
+      "tolerance": "ZERO",
+      "requirements": [
+        "zero confirmed failures in each of six ZERO acceptance classes",
+        "zero harmful accepted repairs",
+        "zero confirmed material voice harm",
+        "zero harmful already-good edit",
+        "zero unresolved material safety/authorization dispute"
+      ],
+      "anyConfirmedFailure": "FAIL"
+    },
+    "evaluability": {
+      "requiredDisposition": "all 40 cases auditable with all required labels",
+      "minimumCommonDenominators": {
+        "confirmedGoodRaw": 16,
+        "rawCorrectPrimaryExplicitUpdates": 6,
+        "confirmedBadRaw": 3
+      },
+      "failure": "insufficient, missing, unassessable, or unresolved required evidence is INCONCLUSIVE; do not add, regenerate, or relabel cases"
+    },
+    "goodRawRetention": {
+      "minimumAdditionalRetainedCasesVsV15": 4,
+      "minimumImprovementPercentagePoints": 20,
+      "v15RetainedGoodRawCasesCandidateMayLose": 0,
+      "pairedCaseIdsRequired": true
+    },
+    "explicitUpdateRetention": {
+      "minimumAdditionalRetainedCasesVsV15": 2,
+      "minimumRetentionRate": 0.75,
+      "minimumCount": "ceil(0.75 * common denominator)",
+      "v15RetainedGoodRawUpdatesCandidateMayLose": 0,
+      "insufficientV15Headroom": "candidate does not qualify; do not amend gate"
+    },
+    "fallback": {
+      "requirement": "reduce unnecessary GOOD_RAW source fallbacks versus V15 on paired denominator; reclassification as abstention/incomplete does not count without retaining material useful work"
+    },
+    "objective": {
+      "requirement": "increase objectiveSatisfied=YES versus V15; no increase in objectiveSatisfied=NO; no increase in falsely completed PARTIAL/NO results"
+    },
+    "integrity": {
+      "requirement": "all freeze, access, call-budget, blinding, audit, and hash requirements satisfied"
+    },
+    "overall": "Advance to a later separately preregistered independent holdout only if every gate passes. Otherwise FAIL for safety violation or INCONCLUSIVE for insufficient/unresolved evidence. No production promotion or statistical-superiority claim follows."
+  },
+  "invalidationRules": [
+    {
+      "event": "Any change after freeze to corpus/source/objective/primary strata/tags/prelabels/serialization/thresholds",
+      "action": "Invalidate comparison; retain original artifacts and record deviation; require new protocol and fresh evidence."
+    },
+    {
+      "event": "Implementer accesses corpus/prelabels/RAW/output before its implementation freeze or revises implementation after access",
+      "action": "Invalidate affected arm comparison."
+    },
+    {
+      "event": "Creator sees full preregistration, evidence mappings/analysis/links/prohibited cases or expected prose; case reuses/paraphrases excluded material",
+      "action": "Invalidate affected corpus comparison; preserve record and preregister fresh corpus."
+    },
+    {
+      "event": "Model/version/settings/prompt/schema/raw contract/stage budget changes during execution",
+      "action": "Stop and invalidate affected comparison; record every attempt; no substitution."
+    },
+    {
+      "event": "RAW regeneration, another editorial candidate, or budget exceeded",
+      "action": "Invalidate affected comparison; preserve all attempts."
+    },
+    {
+      "event": "Hash mismatch, missing attempt record, predecessor mismatch, or unreproducible arm mapping",
+      "action": "Stop, investigate; invalidate affected comparison if original integrity cannot be established."
+    },
+    {
+      "event": "Labels leak into generation/verification or reviewer sees arm identity/trace/other labels before lock",
+      "action": "Invalidate contaminated comparison/review tier; preserve original record."
+    },
+    {
+      "event": "Account-backed $0 access unconfirmed or stage could incur paid spend",
+      "action": "Stop affected run; no paid or demo fallback."
+    },
+    {
+      "event": "Invalid/missing candidate, unavailable verifier/repairer, malformed output, or timeout under single-attempt policy",
+      "action": "Preserve technical failure and fail-closed disposition; do not retry/exclude; required outcome unavailable means INCONCLUSIVE, while unsafe delivered output still fails safety."
+    },
+    {
+      "event": "Reviewer disagreement or ambiguous meaning",
+      "action": "Preserve both labels; audit separately after lock; unresolved safety issue is not a pass."
+    },
+    {
+      "event": "Confirmed safety failure, harmful accepted repair, material voice harm, or harmful already-good edit",
+      "action": "Candidate FAILS safety/advancement gate; do not invalidate or exclude outcome."
+    },
+    {
+      "event": "Insufficient GOOD_RAW, RAW-correct explicit, or BAD_RAW evidence",
+      "action": "INCONCLUSIVE; no replenishment or RAW regeneration."
+    }
+  ],
+  "executionBoundary": "This is operational registration only. It does not create cases, implement candidates, invoke any model, approve spend, promote a strategy, or alter V3/V15 artifacts."
+}
