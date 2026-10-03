@@ -10,6 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 # Whodunnit project notes
 
+- Orchestration: spawn at most two subworkers, one middle-analysis worker and one grunt worker; the root agent remains the expert/foreman.
 - Architecture and principles are in README.md. Keep the layers separate: `src/domain` (types + Zod), `src/lib/*` (analysis, verification, voiceprints, reconstruction, ai, prompts, persistence: no React), `src/features/*` (UI).
 - Route handlers stay thin: validate with a domain schema, call `runReconstruction` or a provider, respond. No business logic in `src/app/api`.
 - Model output is untrusted. Parse it with the schemas in `src/lib/ai/schemas.ts`. Never widen a schema to make a response pass.
