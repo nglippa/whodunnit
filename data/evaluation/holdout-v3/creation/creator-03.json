@@ -1,0 +1,342 @@
+[
+  {
+    "id": "V3-049",
+    "creatorId": "creator-03",
+    "source": "The import pauses while the file is checked. You can close this window; the check will continue.",
+    "objective": "Make this status message easier to scan without changing what happens if the window closes.",
+    "genre": "product status message",
+    "lengthBand": "VERY_SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "import",
+      "background-processing",
+      "user-interface"
+    ]
+  },
+  {
+    "id": "V3-050",
+    "creatorId": "creator-03",
+    "source": "If the code has expired, request another one. We can't reactivate the old code.",
+    "objective": "Polish this help text lightly. Keep the direct tone and the distinction between requesting a new code and reactivating the old one.",
+    "genre": "support FAQ",
+    "lengthBand": "VERY_SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "account-access",
+      "expiration",
+      "customer-support"
+    ]
+  },
+  {
+    "id": "V3-051",
+    "creatorId": "creator-03",
+    "source": "The preview is approximate. Exported colors may shift on older printers.",
+    "objective": "Keep this concise and matter-of-fact while making the limitation clear.",
+    "genre": "product note",
+    "lengthBand": "VERY_SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "printing",
+      "preview",
+      "limitations"
+    ]
+  },
+  {
+    "id": "V3-052",
+    "creatorId": "creator-03",
+    "source": "To share a board, open the board menu and choose Invite. People you invite can view comments right away, but they can't edit cards until you change their role.",
+    "objective": "Tighten this how-to note for a help center. Preserve the initial permission boundary.",
+    "genre": "how-to note",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "sharing",
+      "permissions",
+      "instructions"
+    ]
+  },
+  {
+    "id": "V3-053",
+    "creatorId": "creator-03",
+    "source": "Hey, I added the little legend below the chart. It should help folks read the dotted line, which is the estimate, not last month's actual total. Let me know if it still feels muddy.",
+    "objective": "Make this team message clearer while keeping its casual, slightly self-effacing voice.",
+    "genre": "team chat update",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "chart",
+      "estimate",
+      "collaboration"
+    ]
+  },
+  {
+    "id": "V3-054",
+    "creatorId": "creator-03",
+    "source": "The sensor records a reading every five minutes when the lid is closed. Opening the lid does not erase earlier readings, although the next reading may be delayed by up to one interval.",
+    "objective": "Make this product explanation easier for a first-time customer to understand. Keep the timing and the caveat exact.",
+    "genre": "product description",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "sensor",
+      "sampling",
+      "timing"
+    ]
+  },
+  {
+    "id": "V3-055",
+    "creatorId": "creator-03",
+    "source": "Starting Monday, the help desk will close at 6 p.m. instead of 5 p.m. on weekdays. Weekend hours are unchanged. Please use the new weekday time in the staff handbook notice.",
+    "objective": "Turn this into a clear staff handbook notice with the updated weekday closing time. Do not imply the weekend schedule changed.",
+    "genre": "internal notice request",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "operating-hours",
+      "schedule-update",
+      "staff-handbook"
+    ]
+  },
+  {
+    "id": "V3-056",
+    "creatorId": "creator-03",
+    "source": "Thanks for flagging the missing label. We found that it disappears only when a saved filter is reopened in the compact view. A fix is planned for the next maintenance release; meanwhile, the full view still shows the label.",
+    "objective": "Refine this support reply so the workaround and scope are easy to find. Keep the release timing tentative.",
+    "genre": "support reply",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "display-bug",
+      "workaround",
+      "release-timing"
+    ]
+  },
+  {
+    "id": "V3-057",
+    "creatorId": "creator-03",
+    "source": "The workshop recording and notes are now in the shared folder. If you couldn't attend, start with the five-minute demo at the beginning; the discussion after it assumes you've seen that flow.",
+    "objective": "Lightly polish this already-useful update for colleagues. Preserve its friendly guidance and avoid adding a formal announcement tone.",
+    "genre": "internal update",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "workshop",
+      "recording",
+      "team-guidance"
+    ]
+  },
+  {
+    "id": "V3-058",
+    "creatorId": "creator-03",
+    "source": "Can I undo a submitted request? Not from the portal. If the request is still awaiting review, the coordinator may be able to withdraw it for you; include the request number when you contact them.",
+    "objective": "Make this FAQ answer sound natural and helpful. Retain the conditional possibility of withdrawal and the request-number instruction.",
+    "genre": "support FAQ",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "request-management",
+      "withdrawal",
+      "conditional"
+    ]
+  },
+  {
+    "id": "V3-059",
+    "creatorId": "creator-03",
+    "source": "When a visitor follows a public collection, we send an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item. Additions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\n\nFollowing and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\n\nThe collection owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.",
+    "objective": "Rewrite this feature explanation for a help page so readers can see when an email is sent and the two exceptions. Keep the hour-long grouping rule.",
+    "genre": "feature explanation",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "email-notifications",
+      "collection-following",
+      "exceptions"
+    ]
+  },
+  {
+    "id": "V3-060",
+    "creatorId": "creator-03",
+    "source": "The nightly export writes one file per workspace. Each workspace's run begins at 2 a.m. in that workspace's time zone, so the files do not all appear at the same clock time for the team watching them. A large workspace can take more than an hour to finish. The start time is therefore not a promise that its file will be ready by 3 a.m.\n\nIf someone reports a missing file at 3 a.m., first identify the workspace and check its export status page. The page reports either completion or a specific error for each workspace. A run that has not yet produced a file should not be called a failure solely because it has passed the one-hour mark. This is especially relevant when comparing a small workspace with a much larger one.\n\nUse the status shown for the affected workspace when deciding whether to file an incident. Include the workspace and the reported error if there is one, so the person investigating can start with the actual run rather than the absence of a file.",
+    "objective": "Make this internal operations note more concise and ordered by action. Preserve the timing, the one-file rule, and the warning against assuming failure at 3 a.m.",
+    "genre": "internal runbook note",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "exports",
+      "operations",
+      "time-zones"
+    ]
+  },
+  {
+    "id": "V3-061",
+    "creatorId": "creator-03",
+    "source": "We built the small dial because the big dashboard was too much to glance at while mixing. Most of the time, you only want to know where the batch is now and where you asked it to stop. The dial shows the current temperature, and the pale mark shows that stopping point. It is a target you set, not a warning that the batch is in trouble.\n\nThe dial keeps those two pieces of information together without asking you to read a full chart while your hands are busy. It does not try to tell the whole story of the batch. If you want to see how the temperature changed over time, the dashboard still has the full temperature history.\n\nThat split is deliberate. The dial is for the quick look; the dashboard is for the longer look, if that's your thing. We want the mark to be useful at a glance, especially when it sits close to the current reading, without making it sound like an alarm.",
+    "objective": "Smooth this product copy while keeping its plainspoken, lightly playful voice. Make the target mark unambiguous without turning the paragraph into marketing copy.",
+    "genre": "product description",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "temperature-display",
+      "target-indicator",
+      "voice-sensitive"
+    ]
+  },
+  {
+    "id": "V3-062",
+    "creatorId": "creator-03",
+    "source": "A token can be used for one active session at a time. If a second session starts with the same token, the first session ends within a few seconds. This can look like an unexplained disconnect on the first device, especially if the person there did not know the token was being used somewhere else. The session change is worth checking before treating the disconnect as a device fault.\n\nWe do not currently warn the first device before it is disconnected. By the time its user sees the session end, the second session may already be active. When troubleshooting, check whether anyone else started a session with that token around the same time. That question is often more useful than repeatedly reconnecting the first device.\n\nIf two people need to work at once, each person should sign in with a separate account rather than share a token. Reusing one token will continue to replace the earlier active session, even if both people are working on different devices.",
+    "objective": "Clarify this technical FAQ for users who are troubleshooting a disconnect. Preserve the one-session constraint and the lack of advance warning.",
+    "genre": "technical FAQ",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "session-management",
+      "tokens",
+      "disconnection"
+    ]
+  },
+  {
+    "id": "V3-063",
+    "creatorId": "creator-03",
+    "source": "Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\n\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold should not be described as a retroactive change to an existing order. The standard delivery fee remains $6 for orders below the applicable threshold. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\n\nPlease use the new $50 threshold and the start date in the revised page text, and check that the example agrees with them. Keep the earlier-order explanation close enough to the new rule that a returning customer can find it. Do not imply that an order already placed will be recalculated.",
+    "objective": "Write the updated shipping-page explanation using the new $50 threshold and 15 June start date. Keep the treatment of earlier orders and the $6 fee accurate.",
+    "genre": "website content update request",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "shipping",
+      "pricing-update",
+      "effective-date"
+    ]
+  },
+  {
+    "id": "V3-064",
+    "creatorId": "creator-03",
+    "source": "Before replacing the filter, switch off the fan and wait until the blades have stopped. Do this before opening the front panel, even if you only plan to check which filter is inside. The panel lifts from its lower edge and is held in place by magnets. There are no screws to remove, so the panel should not need to be taken apart.\n\nOnce the panel is open, slide the used filter straight out. Put the new filter in with its arrow facing the fan. Check the arrow before you push the filter into place; it is easier to correct its direction while the filter is still in your hands. The guide should make that orientation easy to spot, because the two sides can look similar at a quick glance.\n\nClose the front panel before turning the fan back on. That is the last step, after the new filter is in place. Keeping the instructions in this order should help someone changing a filter for the first time without requiring them to guess which step comes next.",
+    "objective": "Polish these instructions for a printed quick-start guide. Keep every safety and orientation step in order.",
+    "genre": "how-to instructions",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "filter-replacement",
+      "device-maintenance",
+      "safety"
+    ]
+  },
+  {
+    "id": "V3-065",
+    "creatorId": "creator-03",
+    "source": "An empty timeline can make it look as though a project's tasks have disappeared. The timeline only shows work that has a date to place on it. If the project has no dated milestones, the timeline will be empty. Tasks without dates still appear in the list view; they have not been removed from the project. Start there if you need to confirm that the tasks are still present.\n\nTo put a task on the timeline, open the task and add a due date. Then return to the timeline to see whether it appears where you expect. This is the same task you saw in the list, not a new copy created for the timeline.\n\nIf milestones came from a spreadsheet, check their dates as well. A spreadsheet that used a different date format may have left dates needing correction after import. That is one possible cause of an empty timeline, not proof that the import failed or that every imported milestone is affected.",
+    "objective": "Make this support article clearer for someone who thinks their tasks vanished. Keep the difference between list view and timeline, and describe the import issue as a possibility.",
+    "genre": "troubleshooting article",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "timeline",
+      "dated-milestones",
+      "import"
+    ]
+  },
+  {
+    "id": "V3-066",
+    "creatorId": "creator-03",
+    "source": "We've been calling this a launch in conversation, though it is really a small trial. Three library branches volunteered to try the checkout form with their staff. They will use it for six weeks and tell us where it slows them down. That feedback is the reason for starting with a small group: we need to see how the form fits ordinary desk work before asking more branches to use it.\n\nAfter the trial, we will review what those staff report and decide what needs to change. We may find small wording issues, or we may find a step that takes longer than it should. At this point, we do not have those findings, so an announcement should not talk as if the form is ready everywhere.\n\nPlease describe the six-week period as a trial with the three volunteer branches. We can say that we will consider inviting more branches after reviewing feedback. I don't want to promise a citywide rollout yet, or make the volunteers sound like the first wave of a schedule we have already settled.",
+    "objective": "Rewrite this as a calm internal project update. Preserve the author's caution and the fact that wider rollout depends on feedback.",
+    "genre": "project update",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "pilot",
+      "libraries",
+      "rollout-caution"
+    ]
+  },
+  {
+    "id": "V3-067",
+    "creatorId": "creator-03",
+    "source": "For general requests that arrive by 4 p.m., we usually send an initial reply on the same business day. Requests that arrive after 4 p.m. are normally handled the next business day. Those are typical response times, not a guarantee that every issue can be investigated or resolved on that schedule. The time a request arrives matters, but so does what the request is about.\n\nAn initial reply means that we have received the request and can begin working out what it needs. It is an acknowledgement, not a promise that the underlying issue will be fixed that day. Please keep that distinction in the FAQ so people know what to expect when they see a quick response from us.\n\nIf the service is unavailable, use the outage form instead of the general request form. The outage form is the path the on-call team watches for service interruptions. Someone facing an outage should not have to read through the routine response-time details before finding that instruction.",
+    "objective": "Improve this service FAQ without making the response-time language more absolute. Make the outage path easy to spot.",
+    "genre": "service FAQ",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "support-hours",
+      "response-time",
+      "outage-reporting"
+    ]
+  },
+  {
+    "id": "V3-068",
+    "creatorId": "creator-03",
+    "source": "The archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one. This is intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\n\nAn archived page has a date below its title and cannot be edited. To find the current guide, use the blue Current version link at the top of the archived page. That link takes readers out of the archive and into the guide they should use now. The link is absent when a guide has been withdrawn without a replacement. In that situation, the archived page is a record of what was published, not an invitation to keep following those instructions. Staff answering a question should check whether a current version exists before sharing an archive link as advice.\n\nIf a current page is missing content, report the problem from that page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. An archived copy itself cannot be edited to repair the current guide, even if the missing content is visible in that older copy.\n\nSome staff have asked whether the archive is also a backup for drafts. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.",
+    "objective": "Turn this into a clear internal FAQ about archived guides. Keep the distinction among old links, current guides, withdrawn guides, and unpublished drafts. Retain the report-routing detail.",
+    "genre": "internal FAQ",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "documentation",
+      "archive",
+      "versioning",
+      "retention"
+    ]
+  },
+  {
+    "id": "V3-069",
+    "creatorId": "creator-03",
+    "source": "Your scanner may show a red light during its first minute after you connect it. During that first check, the light means it is checking the paper path; it does not, by itself, mean there is a jam. Leave the sheet out while the check runs, and wait for the light to turn white before loading paper. If the light stays red for more than two minutes, turn the scanner off, clear any paper from the slot, and start it again. Keep the first-minute light separate from a red light that appears while a sheet is moving.\n\nIf the light turns red only after a sheet enters, look at where the paper stopped. Remove the sheet by pulling it gently in the direction it was moving. Do not pull it backward through the rollers. After the sheet comes out, check for torn paper before trying another sheet. A scrap left in the path can make the next attempt look like the same problem, so take a moment to inspect the slot rather than feeding a new sheet immediately.\n\nIf the red light repeats after you have cleared the path and tried another sheet, a worn roller may be involved. Support can help confirm that possibility from a short video of the feed. The video is useful because it shows how the sheet moves just before the light changes; a still photo of the red light alone does not show that behavior. A repeated light is a reason to ask for help, not enough information on its own to say a roller definitely needs replacing.\n\nThere is no need to send a video of the documents you were trying to scan. A blank sheet is enough to show the feed behavior. Before recording, remove any paper with private information from the area in view. The goal is to show the scanner taking in a sheet and, if it happens again, the point where it stops. Keep private information out of the video you send to support.",
+    "objective": "Make this troubleshooting guide easier to follow under pressure. Keep the two red-light scenarios separate, preserve the thresholds and safety instructions, and keep the privacy guidance practical.",
+    "genre": "technical support guide",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "scanner",
+      "troubleshooting",
+      "paper-feed",
+      "privacy"
+    ]
+  },
+  {
+    "id": "V3-070",
+    "creatorId": "creator-03",
+    "source": "We added a quiet mode because the first version of the timer was, frankly, a bit chatty. The halfway reminder and spoken countdown were useful for some sessions, but they could feel like a lot when someone was working near other people. Quiet mode skips those two sounds. The timer still rings when the session ends, so you have a clear signal that it is done. The name describes a quieter timer, not a completely silent one.\n\nThe final ring uses the device's current alert volume. We cannot set that volume from inside the timer, and turning on quiet mode does not lower it. If the ring sounds louder than expected, check the device's alert setting. The setting changes which reminders you hear during a session. We want people to know about the remaining ring before they rely on quiet mode in a shared space.\n\nQuiet mode applies to a timer started after you switch it on. It will not change a timer that is already running, even if you turn the setting on halfway through. You can see whether it is on in the timer settings, and the switch remembers your choice on this device. If you use a second device, set it there too. The choice is local to each device, so switching it on at your desk does not also switch it on elsewhere.\n\nI think quiet mode helps when you're working near other people and still want the timer to tell you when to stop. If you need the app to make no sound at all, turn down the device's alert volume or use its silent setting, if it has one. That is a different choice from quiet mode, and it depends on the device rather than on the timer setting.",
+    "objective": "Edit this product explanation for clarity while keeping the candid, conversational voice. Do not imply quiet mode silences the final ring or syncs across devices.",
+    "genre": "product help article",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "timer",
+      "quiet-mode",
+      "device-settings",
+      "voice-sensitive"
+    ]
+  },
+  {
+    "id": "V3-071",
+    "creatorId": "creator-03",
+    "source": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The session start times are not changing. We need the attendee page to show that new check-in window clearly, because some people plan their arrival around when they can collect a badge. The page should state the change as an opening time relative to each session, not as a new session start time.\n\nThe current draft says everyone must visit the desk, but that was never true. Only attendees collecting a badge need to check in there. Someone who already has a badge should go straight to the room rather than queue at the desk. The instructions for those two groups should be easy to distinguish at a glance, especially for an attendee reading the page on the way into the venue. Avoid wording that suggests the desk needs to approve every attendee's entry.\n\nAttendees with a badge can enter when the room opens, 15 minutes before the session. That room-opening time is separate from the check-in desk opening. An attendee collecting a badge may choose to arrive earlier because the desk is available 45 minutes before the session, but the room itself will still open at the same 15-minute point. Keeping the two times together without blending them should prevent readers from assuming that earlier check-in also means earlier room access.\n\nStaff may sometimes open the desk a few minutes early if they are ready, but that is discretionary. Please do not put that possibility on the attendee page as a guaranteed time. The reliable information for the page is the 45-minute desk window from 1 September, the unchanged session starts, and the 15-minute room entry for people who already have a badge. An attendee should be able to use the published times without relying on an exception.",
+    "objective": "Write a revised attendee-page explanation using the 45-minute check-in window effective 1 September. Correct the badge instructions, keep room entry at 15 minutes before the session, and avoid promising an early desk opening.",
+    "genre": "attendee page update request",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "event-check-in",
+      "schedule-update",
+      "badge-access"
+    ]
+  },
+  {
+    "id": "V3-072",
+    "creatorId": "creator-03",
+    "source": "We're preparing a note for teams that borrow the portable display kit. Right now the note tells people to return it to the usual place by the end of the day. That sounds simple until a team uses the kit for an evening event. The storage room may close before the event is over, so a borrower could be following the event plan and still be unable to make that deadline. The note should describe a return window that people can actually use.\n\nThe proposed rule is to return the kit by the following business day, when the storage room is open. The exact closing time of the room is not in this brief, and hours may differ by site. Please direct borrowers to check their site's posted storage-room hours instead of supplying a single clock time. The note should also avoid implying that every site opens at the same time. A borrower finishing an evening event needs to know the next step without guessing whether an after-hours return is expected.\n\nBefore returning the kit, staff should pack the display, stand, and two cables in its case. Listing the pieces matters because they are used together and can be separated during setup or packing. A quick check while closing the case will make it easier to tell the desk whether a part is missing. The note does not need a lengthy inventory procedure; it just needs a clear reminder of what belongs in the case.\n\nIf a cable is missing, staff should still return the kit by the stated window and report the missing part to the desk. They should not hold the rest of the kit while looking for the cable. The desk needs the report so the next borrower can be warned before planning to use it. Keep those two actions together in the note: return what is available, and tell the desk what is absent.",
+    "objective": "Draft a practical borrower note that resolves the return-time confusion and lists the packing and missing-part steps. The storage-room hours are not supplied, so refer to posted local hours without guessing a closing time.",
+    "genre": "internal instruction request",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": [
+      "equipment-loans",
+      "return-policy",
+      "local-hours",
+      "missing-information"
+    ]
+  }
+]

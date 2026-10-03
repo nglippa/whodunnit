@@ -1,0 +1,639 @@
+{
+  "protocol": "v3-mandatory-trace-audit-queue-v1",
+  "rowCount": 85,
+  "queueSha256": "1d92ad1209dd357965f61fcdd3d9fd6e8fbf8a4aa1fd0a3bb559ca7a0e5f2f29",
+  "rows": [
+    {
+      "caseId": "V3-003",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-004",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-005",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-008",
+      "reasonCodes": [
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-009",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-010",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-012",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-013",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-014",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-015",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-016",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-017",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-018",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-019",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-020",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-021",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-022",
+      "reasonCodes": [
+        "FALLBACK"
+      ]
+    },
+    {
+      "caseId": "V3-023",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-024",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-026",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-027",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-028",
+      "reasonCodes": [
+        "FALLBACK",
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-029",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-030",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-031",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-032",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-033",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-035",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-036",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "FINAL_BAD_PROXY",
+        "FINAL_UNAUTHORIZED_CHANGE",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-038",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-039",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-040",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-041",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-043",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-045",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-046",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-049",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-050",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-051",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-052",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-053",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-054",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-055",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-056",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-057",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-059",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-060",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-061",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-063",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-066",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-067",
+      "reasonCodes": [
+        "FALLBACK"
+      ]
+    },
+    {
+      "caseId": "V3-068",
+      "reasonCodes": [
+        "PAIRWISE_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-071",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-072",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "REPAIR_ATTEMPT",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-073",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-074",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-075",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-076",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-077",
+      "reasonCodes": [
+        "FINAL_BAD_PROXY",
+        "FINAL_UNAUTHORIZED_CHANGE",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-079",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-080",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-081",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-082",
+      "reasonCodes": [
+        "FALLBACK",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-083",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-085",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-086",
+      "reasonCodes": [
+        "FALLBACK"
+      ]
+    },
+    {
+      "caseId": "V3-087",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-088",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-089",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "FINAL_BAD_PROXY",
+        "FINAL_UNAUTHORIZED_CHANGE",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-090",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-091",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-092",
+      "reasonCodes": [
+        "FALLBACK"
+      ]
+    },
+    {
+      "caseId": "V3-093",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-094",
+      "reasonCodes": [
+        "FINAL_BAD_PROXY",
+        "FINAL_UNAUTHORIZED_CHANGE",
+        "RAW_BAD_PROXY"
+      ]
+    },
+    {
+      "caseId": "V3-096",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-099",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    },
+    {
+      "caseId": "V3-106",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-108",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-109",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ]
+    },
+    {
+      "caseId": "V3-110",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-111",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-113",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "RAW_BAD_PROXY"
+      ]
+    },
+    {
+      "caseId": "V3-114",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT",
+        "VAGUE_UPDATE"
+      ]
+    },
+    {
+      "caseId": "V3-117",
+      "reasonCodes": [
+        "FALLBACK",
+        "REPAIR_ATTEMPT"
+      ]
+    },
+    {
+      "caseId": "V3-119",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ]
+    }
+  ]
+}

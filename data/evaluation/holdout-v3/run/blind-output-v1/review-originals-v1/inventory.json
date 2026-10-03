@@ -1,0 +1,59 @@
+{
+  "protocol": "v3-blind-review-originals-v1",
+  "sourceHashes": {
+    "primaryPacketSha256": "beb80708146b9e4811618959ce58091e601bd2268d9bbc24200bca382ca05261",
+    "secondPacketSha256": "f09c7a3ae36861ea51c6fd03b891c797b27d1e6b45ba83ee1bb65c1f4233142c",
+    "shardManifestFileSha256": "bb9364424c2a672b311b03afec8c8c9fa94541c5e1f119d5e6caf1b23810701c"
+  },
+  "reviewers": [
+    {
+      "reviewerId": "O1A",
+      "phase": "primary",
+      "rowCount": 30,
+      "originalSha256": "3ff44c8a2d7bd1852bf66addf48550bf9772c9c2c82b194ca443ee6cb4ce0a52",
+      "canonicalSha256": "3ff44c8a2d7bd1852bf66addf48550bf9772c9c2c82b194ca443ee6cb4ce0a52",
+      "parsedObjectsIdentical": true
+    },
+    {
+      "reviewerId": "O1B",
+      "phase": "primary",
+      "rowCount": 30,
+      "originalSha256": "98899959652a3e08406316d6aaf83f7abc5af87e411db5fd69a2a0539b914134",
+      "canonicalSha256": "7975ae2ce2e5fd5c72f282ca0e7558e571526ede552fcbf07ccc6c3546894adc",
+      "parsedObjectsIdentical": true
+    },
+    {
+      "reviewerId": "O1C",
+      "phase": "primary",
+      "rowCount": 30,
+      "originalSha256": "01aee393d3c19007383fe54be449bf826c32ea643036edafc9ed622d1793cda6",
+      "canonicalSha256": "01aee393d3c19007383fe54be449bf826c32ea643036edafc9ed622d1793cda6",
+      "parsedObjectsIdentical": true
+    },
+    {
+      "reviewerId": "O1D",
+      "phase": "primary",
+      "rowCount": 29,
+      "originalSha256": "3889d8e1df94f6ad0f76e5746172293c250179f37149ebed973f2ed5ecacad3b",
+      "canonicalSha256": "3889d8e1df94f6ad0f76e5746172293c250179f37149ebed973f2ed5ecacad3b",
+      "parsedObjectsIdentical": true
+    },
+    {
+      "reviewerId": "O2A",
+      "phase": "second",
+      "rowCount": 30,
+      "originalSha256": "f13486950564b19140101d5c174f0ddde1f254be5f73d56d7682ed7c7e238074",
+      "canonicalSha256": "bbf3e39281e7e4e73413b8b79a94cadd806d1201487d57e3894a022c54f2c972",
+      "parsedObjectsIdentical": true
+    },
+    {
+      "reviewerId": "O2B",
+      "phase": "second",
+      "rowCount": 30,
+      "originalSha256": "3597343e470063208c160f42b7524316b4e590d80a58c7649e452d88ecf91051",
+      "canonicalSha256": "9b1703573ad2fb4e3dee62c66dda19d70eb3e303c6cdfb6c18dc7f8eb4032d8a",
+      "parsedObjectsIdentical": true
+    }
+  ],
+  "inventorySha256": "08c3b69ac692fb84cd53f707f0e260b3606fae27d33f499b63bc3946f6ba571e"
+}

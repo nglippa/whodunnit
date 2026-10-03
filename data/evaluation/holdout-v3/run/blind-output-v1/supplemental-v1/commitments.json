@@ -1,0 +1,51 @@
+{
+  "protocol": "v3-supplemental-blind-review-commitments-v1",
+  "frozenManifestSha256": "e207982e7b05c3d99bad5930ee8b63ef9884ecef427e77ece5f03a9d6ea61ad2",
+  "primaryPacketSha256": "beb80708146b9e4811618959ce58091e601bd2268d9bbc24200bca382ca05261",
+  "mappingSha256": "83ff9146f2914868c56441ba16c394f30cc3637469a85a0613ceca84f320489b",
+  "selectionSha256": "ffd5f7305d944e55cb463939674c01461fd10289b2cb8d43c23ad4ec0aa86d06",
+  "auditQueueSha256": "4b02c80bb0065f896bc9d2fd740da72423abde9ff12d3e0e51d6026aba9b5992",
+  "auditCommitmentsSha256": "fc371e6cad2707f9cc7bb1f86a1b049d34ae52376dd4fbc09c60190773497993",
+  "auditResponses": [
+    {
+      "auditorId": "A1",
+      "packetSha256": "ae6fe049ce9d2705830d922052ed5da5b839257e6f5468822db10cc4485ea730",
+      "originalSha256": "11fb373513c89e3d79bebe5ed92549ae5c8b90dbbf788396cf74d2c9dab351eb",
+      "canonicalSha256": "04d3c7623f9548718ee397fe43598e7dd7d092144a4d0f6ca83599f71c80b8aa"
+    },
+    {
+      "auditorId": "A2",
+      "packetSha256": "36a5d635d1efcffb8eb1ab67ae5c1a3cc8df35f3f43a530870c674501a86c5a4",
+      "originalSha256": "82252a62c81f4903098ae9b599c12eab76b09c99ff56986c67478056d0efb7ef",
+      "canonicalSha256": "89bd779035a02097c5d91bfc90c9862739d58334d27dca89e40c4280053cbd56"
+    },
+    {
+      "auditorId": "A3",
+      "packetSha256": "968abb8aff2af918ce0e58159a6f4e59d7ab8540f1816717576cabcb92fa47a6",
+      "originalSha256": "757e52b19f08537ef2beff51399ad62f41478e3fb281ab610c908120a7a4810c",
+      "canonicalSha256": "1f5ec363d1704dfdb22b92de679f8b9ca6f4d64af6c7a79dfd8607389727e0c0"
+    },
+    {
+      "auditorId": "A4",
+      "packetSha256": "adaa19a9d1e0a2934854280da2dfb0181e7732b3561c96c568351fbf21acc239",
+      "originalSha256": "01b45c1a08d0b8cacacb4b7082e35ef9642fe7f95de5d73e3ef017f7ace97233",
+      "canonicalSha256": "835c21788fce8c23897bab340e3b5e99cf98394a2ee56a60ec97de76fe6b0662"
+    },
+    {
+      "auditorId": "A5",
+      "packetSha256": "55b561b49ba5296c8b053dacf3f376eec47ae52f59dccd8340fda57dc34220a6",
+      "originalSha256": "348a2c05363691029db55a4892aa7ca64c16956144df19079751dd8dbcd711fa",
+      "canonicalSha256": "65992998a55eeeee2c089e33c9abaeb473afcdd20d86895ba27bd6d874d1dae3"
+    }
+  ],
+  "selectedCount": 25,
+  "assignmentCounts": [
+    13,
+    12
+  ],
+  "packetSha256": [
+    "9483d692ac2e7c1b1e86b6d4e4bb1d3831a27467d51632de56e1a100b1684f2b",
+    "f85eaae93284f6151187ad766b57b37f95a508ee7297a067f9672f9f479af702"
+  ],
+  "custodianMappingSha256": "068e970e25096795482a9635d9a1f76efed037a45549b3607bd9f444db95fcf6"
+}

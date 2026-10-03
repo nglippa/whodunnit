@@ -1,0 +1,197 @@
+{
+  "protocol": "v3-initial-label-metrics-v1",
+  "primary": {
+    "reviewedCount": 119,
+    "raw": {
+      "STRICT_GOOD": 99,
+      "BAD_PROXY": 10,
+      "UNCERTAIN": 3,
+      "OTHER": 7
+    },
+    "final": {
+      "STRICT_GOOD": 76,
+      "BAD_PROXY": 1,
+      "UNCERTAIN": 1,
+      "OTHER": 41
+    },
+    "retained": 73,
+    "possibleLoss": 26
+  },
+  "second": {
+    "reviewedCount": 60,
+    "raw": {
+      "STRICT_GOOD": 49,
+      "BAD_PROXY": 4,
+      "UNCERTAIN": 0,
+      "OTHER": 7
+    },
+    "final": {
+      "STRICT_GOOD": 31,
+      "BAD_PROXY": 3,
+      "UNCERTAIN": 0,
+      "OTHER": 26
+    },
+    "retained": 30,
+    "possibleLoss": 19
+  },
+  "expected": {
+    "primary": {
+      "rawStrictGood": 99,
+      "rawBadProxy": 10,
+      "retained": 73,
+      "possibleLoss": 26
+    },
+    "second": {
+      "rawStrictGood": 49,
+      "rawBadProxy": 4,
+      "retained": 30,
+      "possibleLoss": 19
+    }
+  },
+  "checksPassed": true,
+  "byReviewer": {
+    "O1A": {
+      "reviewerId": "O1A",
+      "phase": "primary",
+      "reviewedCount": 30,
+      "raw": {
+        "STRICT_GOOD": 23,
+        "BAD_PROXY": 2,
+        "UNCERTAIN": 2,
+        "OTHER": 3
+      },
+      "final": {
+        "STRICT_GOOD": 15,
+        "BAD_PROXY": 0,
+        "UNCERTAIN": 1,
+        "OTHER": 14
+      },
+      "retained": 14,
+      "possibleLoss": 9
+    },
+    "O1B": {
+      "reviewerId": "O1B",
+      "phase": "primary",
+      "reviewedCount": 30,
+      "raw": {
+        "STRICT_GOOD": 24,
+        "BAD_PROXY": 3,
+        "UNCERTAIN": 0,
+        "OTHER": 3
+      },
+      "final": {
+        "STRICT_GOOD": 20,
+        "BAD_PROXY": 0,
+        "UNCERTAIN": 0,
+        "OTHER": 10
+      },
+      "retained": 20,
+      "possibleLoss": 4
+    },
+    "O1C": {
+      "reviewerId": "O1C",
+      "phase": "primary",
+      "reviewedCount": 30,
+      "raw": {
+        "STRICT_GOOD": 27,
+        "BAD_PROXY": 2,
+        "UNCERTAIN": 0,
+        "OTHER": 1
+      },
+      "final": {
+        "STRICT_GOOD": 20,
+        "BAD_PROXY": 0,
+        "UNCERTAIN": 0,
+        "OTHER": 10
+      },
+      "retained": 20,
+      "possibleLoss": 7
+    },
+    "O1D": {
+      "reviewerId": "O1D",
+      "phase": "primary",
+      "reviewedCount": 29,
+      "raw": {
+        "STRICT_GOOD": 25,
+        "BAD_PROXY": 3,
+        "UNCERTAIN": 1,
+        "OTHER": 0
+      },
+      "final": {
+        "STRICT_GOOD": 21,
+        "BAD_PROXY": 1,
+        "UNCERTAIN": 0,
+        "OTHER": 7
+      },
+      "retained": 19,
+      "possibleLoss": 6
+    },
+    "O2A": {
+      "reviewerId": "O2A",
+      "phase": "second",
+      "reviewedCount": 30,
+      "raw": {
+        "STRICT_GOOD": 22,
+        "BAD_PROXY": 1,
+        "UNCERTAIN": 0,
+        "OTHER": 7
+      },
+      "final": {
+        "STRICT_GOOD": 12,
+        "BAD_PROXY": 1,
+        "UNCERTAIN": 0,
+        "OTHER": 17
+      },
+      "retained": 12,
+      "possibleLoss": 10
+    },
+    "O2B": {
+      "reviewerId": "O2B",
+      "phase": "second",
+      "reviewedCount": 30,
+      "raw": {
+        "STRICT_GOOD": 27,
+        "BAD_PROXY": 3,
+        "UNCERTAIN": 0,
+        "OTHER": 0
+      },
+      "final": {
+        "STRICT_GOOD": 19,
+        "BAD_PROXY": 2,
+        "UNCERTAIN": 0,
+        "OTHER": 9
+      },
+      "retained": 18,
+      "possibleLoss": 9
+    }
+  },
+  "prelabelScopes": {
+    "R1A": {
+      "LEAVE_ALONE": 13,
+      "DISTRIBUTED_LIGHT_EDIT": 20,
+      "LOCAL_EDIT": 16,
+      "SUBSTANTIVE_RECONSTRUCTION": 9,
+      "INSUFFICIENT_INFORMATION": 2
+    },
+    "R1B": {
+      "LOCAL_EDIT": 32,
+      "DISTRIBUTED_LIGHT_EDIT": 16,
+      "SUBSTANTIVE_RECONSTRUCTION": 5,
+      "LEAVE_ALONE": 6
+    },
+    "R2A": {
+      "LEAVE_ALONE": 8,
+      "LOCAL_EDIT": 10,
+      "DISTRIBUTED_LIGHT_EDIT": 11,
+      "SUBSTANTIVE_RECONSTRUCTION": 6,
+      "INSUFFICIENT_INFORMATION": 1
+    },
+    "R2B": {
+      "LOCAL_EDIT": 15,
+      "LEAVE_ALONE": 5,
+      "DISTRIBUTED_LIGHT_EDIT": 12,
+      "SUBSTANTIVE_RECONSTRUCTION": 3,
+      "INSUFFICIENT_INFORMATION": 1
+    }
+  }
+}

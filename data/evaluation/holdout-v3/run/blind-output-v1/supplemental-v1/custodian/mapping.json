@@ -1,0 +1,276 @@
+[
+  {
+    "caseId": "V3-095",
+    "itemId": "blind-09c36c0d649fb8ee2b26e6f1ca6f74c1",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_UNCERTAIN",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_UNCERTAIN",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-110",
+    "itemId": "blind-13b5934a6561ebf565e7b0dc69b13641",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-045",
+    "itemId": "blind-13f6f5ad61a142bbcfb1d3db9104e197",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-030",
+    "itemId": "blind-1c2e6ab944f315ec44fd32007cd91113",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-012",
+    "itemId": "blind-1deea245b1f37f8f1ab3ede76c386bf4",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-038",
+    "itemId": "blind-247713d737752073539fc9824aa9d20a",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_UNCERTAIN",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-064",
+    "itemId": "blind-29b8b921028e60c730e022c6b2067b95",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-043",
+    "itemId": "blind-328ed7a0815e9877c52787b314f32a2e",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-067",
+    "itemId": "blind-36926974e8cb2c05930728a2efd53124",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-002",
+    "itemId": "blind-39f11ca85598a6a328d40d6f4ba9b44e",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-106",
+    "itemId": "blind-45a31f7763c09d590050f159557badd8",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "RAW_BAD_PROXY",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-040",
+    "itemId": "blind-46626ca3d81ad13192e43562ab7dcebd",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "RAW_BAD_PROXY",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-086",
+    "itemId": "blind-47656c536d9dee1b7a7a6ad340c09582",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "AUDITED_POSSIBLE_GOOD_EDIT_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-031",
+    "itemId": "blind-5135e9327265740c8a9ccc98d4f3460e",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_BAD_PROXY",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-028",
+    "itemId": "blind-60a466ff3bcc90144a2a32015db7abe6",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "AUDITED_POSSIBLE_GOOD_EDIT_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-007",
+    "itemId": "blind-70659856eb3a8661254ff80803ae4f59",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-063",
+    "itemId": "blind-7674eec744ee2b894d269828ae3a96db",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "RAW_BAD_PROXY",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-017",
+    "itemId": "blind-7ca28d988e9d600b9c121e9ac4de79ba",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-082",
+    "itemId": "blind-81fe043257b6eb6c90fba74bd6a680d6",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "CONFIRMED_VAGUE_MISSING_INFORMATION"
+    ]
+  },
+  {
+    "caseId": "V3-059",
+    "itemId": "blind-854ed4d79df8bc7a157cd3a3051912c3",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-080",
+    "itemId": "blind-8614d2b121595ad4c11417f133be8183",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-035",
+    "itemId": "blind-8e4bdba252fdc523775280efd857f753",
+    "outputA": "FINAL",
+    "outputB": "RAW",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "POSSIBLE_GOOD_LOSS"
+    ]
+  },
+  {
+    "caseId": "V3-072",
+    "itemId": "blind-a28f41439cd04b3fa706609f0b20c5b4",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-054",
+    "itemId": "blind-a29d2529825e9b8728e04b04b721a3f0",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_BAD_PROXY",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  },
+  {
+    "caseId": "V3-094",
+    "itemId": "blind-ca8202c3252742a277149621d199c281",
+    "outputA": "RAW",
+    "outputB": "FINAL",
+    "reasonCodes": [
+      "FINAL_BAD_PROXY",
+      "FINAL_OBJECTIVE_PARTIAL",
+      "FINAL_USEFULNESS_PARTIAL",
+      "RAW_BAD_PROXY",
+      "RAW_OBJECTIVE_PARTIAL",
+      "RAW_USEFULNESS_PARTIAL"
+    ]
+  }
+]

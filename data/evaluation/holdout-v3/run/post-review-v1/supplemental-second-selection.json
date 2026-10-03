@@ -1,0 +1,189 @@
+{
+  "protocol": "v3-supplemental-second-review-v1",
+  "audience": "CUSTODIAN_ONLY",
+  "rationale": "Supplement cases lacking fixed second review where sealed primary labels indicate a BAD proxy, possible good-output loss, uncertainty, or partial objective/usefulness.",
+  "reasonRule": "RAW_BAD_PROXY OR FINAL_BAD_PROXY OR (RAW_STRICT_GOOD AND FINAL_NOT_STRICT_GOOD) OR RAW/FINAL_UNCERTAIN OR RAW/FINAL objectiveSatisfied=PARTIAL OR editoriallyUseful=PARTIAL",
+  "selected": [
+    {
+      "caseId": "V3-002",
+      "reasonCodes": [
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-007",
+      "reasonCodes": [
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-012",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-017",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-030",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-031",
+      "reasonCodes": [
+        "RAW_BAD_PROXY",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-035",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-038",
+      "reasonCodes": [
+        "RAW_UNCERTAIN",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-040",
+      "reasonCodes": [
+        "RAW_BAD_PROXY",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-043",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-045",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-054",
+      "reasonCodes": [
+        "RAW_BAD_PROXY",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-059",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-063",
+      "reasonCodes": [
+        "RAW_BAD_PROXY",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-064",
+      "reasonCodes": [
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-067",
+      "reasonCodes": [
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-072",
+      "reasonCodes": [
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-080",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS"
+      ]
+    },
+    {
+      "caseId": "V3-094",
+      "reasonCodes": [
+        "RAW_BAD_PROXY",
+        "FINAL_BAD_PROXY",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-095",
+      "reasonCodes": [
+        "RAW_UNCERTAIN",
+        "FINAL_UNCERTAIN",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-106",
+      "reasonCodes": [
+        "RAW_BAD_PROXY",
+        "RAW_OBJECTIVE_PARTIAL",
+        "RAW_USEFULNESS_PARTIAL"
+      ]
+    },
+    {
+      "caseId": "V3-110",
+      "reasonCodes": [
+        "POSSIBLE_GOOD_LOSS",
+        "FINAL_OBJECTIVE_PARTIAL",
+        "FINAL_USEFULNESS_PARTIAL"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,905 @@
+{
+  "protocol": "v3-blind-review-submission-v1",
+  "reviewerId": "O1D",
+  "rows": [
+    {
+      "itemId": "blind-ace53373ecbd3c63092a9d498ec91ea3",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Headings distinguish routine access from urgent repairs; advance notice, supervision, exception and logging requirements remain intact.",
+        "outputB": "Headings distinguish routine access from urgent repairs; advance notice, supervision, exception and logging requirements remain intact.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-ad652214b061a8ebdb8513598a9f42ef",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "The colon clarifies what the dotted line represents while retaining the casual invitation for feedback.",
+        "outputB": "The colon clarifies what the dotted line represents while retaining the casual invitation for feedback.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-af1113dcb1def2b6ca5488c9f712e288",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Restrained thanks and punctuation polish preserve all dates, lamp feedback and conditional reopening information.",
+        "outputB": "Restrained thanks and punctuation polish preserve all dates, lamp feedback and conditional reopening information.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-b299c423e994055c1ffbd3f0a584653b",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Short sections and schedule bullets make the instructions easier to scan without losing optional attendance or allergy cautions.",
+        "outputB": "Short sections and schedule bullets preserve the optional attendance, quantities and allergy cautions; the final schedule conjunction is a minor stylistic difference.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-b39e4d76f67661a1913feb93ca4da3fc",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Shorter sentences clarify the two kinds of support and preserve the 16-student sampling limitation and research question.",
+        "outputB": "Shorter sentences clarify the two kinds of support; the causal conjunction accurately connects the sample to its limitation.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-b8c21257901d3ea3ec2c32c5a21ed9c5",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Two direct steps retain blue tape, contents and date, and the additional lid label only for jars containing nuts.",
+        "outputB": "Two direct steps retain blue tape, contents and date, and the additional lid label only for jars containing nuts.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-bc66f04c02c8c6778bdccbd0c63c793e",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "NO",
+        "editoriallyUseful": "NO",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_A_BETTER",
+      "evidence": {
+        "outputA": "Applies the authorized February, June and October meetings and three-week decision period, retaining the remaining guidance.",
+        "outputB": "Leaves the old twice-yearly April/October schedule and four-week period unchanged, failing both requested factual updates.",
+        "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+      }
+    },
+    {
+      "itemId": "blind-c31df6b0cf10dd9e9e0291adf5aa6b4b",
+      "outputA": {
+        "objectiveSatisfied": "PARTIAL",
+        "editoriallyUseful": "PARTIAL",
+        "meaningPreserved": "NO",
+        "unauthorizedSemanticChange": "YES",
+        "unsupportedInformation": "YES",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_B_BETTER",
+      "evidence": {
+        "outputA": "The announcement is welcoming, but changing volunteers can help to will help turns capability into a promise.",
+        "outputB": "Welcoming contractions retain volunteers can help, the repair limitation and the conditional date announcement.",
+        "pairwise": "B retains capability without A’s stronger promise of volunteer assistance."
+      }
+    },
+    {
+      "itemId": "blind-c7e55ac08d6f3d272d9ce72e9b16552d",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Leaving this already clear reflection intact preserves its modest self-awareness and natural rhythm.",
+        "outputB": "Leaving this already clear reflection intact preserves its modest self-awareness and natural rhythm.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-ca8202c3252742a277149621d199c281",
+      "outputA": {
+        "objectiveSatisfied": "PARTIAL",
+        "editoriallyUseful": "PARTIAL",
+        "meaningPreserved": "NO",
+        "unauthorizedSemanticChange": "YES",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "PARTIAL",
+        "editoriallyUseful": "PARTIAL",
+        "meaningPreserved": "NO",
+        "unauthorizedSemanticChange": "YES",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Concision retains the figures and causal caveat, but tutors found drops the explicit reported attribution for ease of use.",
+        "outputB": "Concision retains the figures and causal caveat, but tutors found drops the explicit reported attribution for ease of use.",
+        "pairwise": "Both make the same attribution loss and otherwise provide the same concision."
+      }
+    },
+    {
+      "itemId": "blind-cbfc22a3a5879609eca87866805fbef5",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "NO",
+        "editoriallyUseful": "NO",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_A_BETTER",
+      "evidence": {
+        "outputA": "Task, question and dependency sections expose the room, chair and equipment uncertainties and preserve the buying and printing restrictions.",
+        "outputB": "The original dense paragraphs are unchanged, so confirmed tasks, questions and dependencies are not made distinct as requested.",
+        "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+      }
+    },
+    {
+      "itemId": "blind-cca98b6b425d775b2c8ce7b887f2dcb8",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "NO",
+        "editoriallyUseful": "NO",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_A_BETTER",
+      "evidence": {
+        "outputA": "Changes the planned reopening to Wednesday June 18 and keeps classes returning that week rather than on that day, alongside the schedule uncertainty.",
+        "outputB": "Retains Monday June 16, failing the requested date correction, though closure, hallway work and schedule uncertainty remain intact.",
+        "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+      }
+    },
+    {
+      "itemId": "blind-cd73ff1b573d133436c19ad62653d9b9",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Open questions and next steps make the incomplete map status readable while retaining the Friday fallback and later revision option.",
+        "outputB": "Open questions and next steps make the incomplete map status readable while retaining the Friday fallback and later revision option.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-cf29b856f5f2c9edcda41054f5b84dc3",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "NO",
+        "editoriallyUseful": "NO",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_A_BETTER",
+      "evidence": {
+        "outputA": "Replaces ceremonial gratitude with conversational thanks while keeping the cardboard-bridge joke, Lee’s contribution and all practical details.",
+        "outputB": "Unchanged ceremonial language such as heartfelt appreciation and incredible journey does not become a message to friends.",
+        "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+      }
+    },
+    {
+      "itemId": "blind-cfc1542ea721bf31ba79a67ea10d9cf2",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Appropriately retains the clear plainspoken instructions and cautious humid-day exception without edits.",
+        "outputB": "Appropriately retains the clear plainspoken instructions and cautious humid-day exception without edits.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-d8c1824855def6034b09ce4e389293ec",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "The notice heading and removal of the drafting instruction produce a usable handbook notice with weekday and weekend hours intact.",
+        "outputB": "The notice heading and removal of the drafting instruction produce a usable handbook notice with weekday and weekend hours intact.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-d9e04cdad8bc9491bfd0dbdc27233477",
+      "outputA": {
+        "objectiveSatisfied": "NO",
+        "editoriallyUseful": "NO",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_B_BETTER",
+      "evidence": {
+        "outputA": "Unchanged opening retains abstract phrases such as delivery of a successful induction experience and initial period of involvement.",
+        "outputB": "Plain opening explains induction and scattered information naturally; guide contents and the coordinator conversation remain intact.",
+        "pairwise": "B materially replaces the abstract opening with plain language; A does not edit it."
+      }
+    },
+    {
+      "itemId": "blind-db57d56503a6bc2d7a1c88ff2f3971ab",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Friendly reminder retains Sunday at 9, conditional glove request and the few available spare pairs.",
+        "outputB": "Friendly reminder retains Sunday at 9, conditional glove request and the few available spare pairs.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-dde355494af6558501b701f03d49373d",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Direct troubleshooting instruction clarifies session replacement while preserving one active session, timing and no advance warning.",
+        "outputB": "Direct troubleshooting instruction clarifies session replacement while preserving one active session, timing and no advance warning.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-e40ae403ef7a63ff7b987cb96142f6b4",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Preserving the original keeps appreciation of the new place alongside gradual familiarity and undramatic nostalgia.",
+        "outputB": "Preserving the original keeps appreciation of the new place alongside gradual familiarity and undramatic nostalgia.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-e57dd13409f2a71c53b3d2524e86ff6b",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Natural neighborhood wording replaces promotional abstractions and preserves both projects, Thursday 6:30 and the rec room.",
+        "outputB": "Natural neighborhood wording replaces promotional abstractions and preserves both projects, Thursday 6:30 and the rec room.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-e648a117558c08a4c4a113b22eb1f06f",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Direct ordering prohibition preserves Facilities confirmation, the quantity-only use of the draft and the expected timing.",
+        "outputB": "Direct ordering prohibition preserves Facilities confirmation, the quantity-only use of the draft and the expected timing.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-e9721cf65726b085422c9854bbe7867c",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "outputB": {
+        "objectiveSatisfied": "PARTIAL",
+        "editoriallyUseful": "PARTIAL",
+        "meaningPreserved": "UNCERTAIN",
+        "unauthorizedSemanticChange": "UNCERTAIN",
+        "unsupportedInformation": "UNCERTAIN",
+        "voicePreserved": "YES",
+        "overedited": "YES",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "YES"
+      },
+      "pairwise": "OUTPUT_A_BETTER",
+      "evidence": {
+        "outputA": "The already concise original clearly distinguishes the approximate preview from possible printed color shifts.",
+        "outputB": "When exported on older printers makes export sound like an operation performed on a printer, obscuring the original limitation on exported colors.",
+        "pairwise": "A retains the clear limitation; B introduces ambiguity about exporting on printers."
+      }
+    },
+    {
+      "itemId": "blind-ea76c539a53c1aec368178e0328b5575",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "PARTIAL",
+        "editoriallyUseful": "PARTIAL",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "OUTPUT_A_BETTER",
+      "evidence": {
+        "outputA": "Numbered actions order workspace identification, status-based incident decisions and incident details while retaining timing and the one-file constraint.",
+        "outputB": "Unchanged paragraphs preserve all technical details but do not provide the requested action ordering or concision.",
+        "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+      }
+    },
+    {
+      "itemId": "blind-ef7b181bd1d10927d0c8848f80ed4710",
+      "outputA": {
+        "objectiveSatisfied": "PARTIAL",
+        "editoriallyUseful": "PARTIAL",
+        "meaningPreserved": "NO",
+        "unauthorizedSemanticChange": "YES",
+        "unsupportedInformation": "YES",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "NO",
+        "editoriallyUseful": "NO",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "YES",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "NEITHER",
+      "evidence": {
+        "outputA": "Missing-information flags are useful, but first phase is done asserts completion where activated only establishes initiation; now planning is also newly asserted.",
+        "outputB": "Leaves the vague corporate update untouched and flags none of the information needed to make it useful.",
+        "pairwise": "A invents a completed phase and planning status; B fails to replace the vague language. Neither is an adequate useful and faithful update."
+      }
+    },
+    {
+      "itemId": "blind-f6112c50d58297209f7f02cda39e832c",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Smoother coding description preserves eight sessions, consent, 81 percent agreement and the inability to isolate the guidance effect.",
+        "outputB": "Smoother coding description preserves eight sessions, consent, 81 percent agreement and the inability to isolate the guidance effect.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-f6c84806580b973a248c68782c23de2a",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Appropriate restraint keeps this clear supportive feedback and lack of urgency intact.",
+        "outputB": "The small change from look at to read clarifies reviewing comments while preserving support and no rush before Monday.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-f9304c017babffbbb00a36523d80aa25",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "NO"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "The original message is already smooth; apostrophe normalization preserves the teammate voice and earlier-return exception.",
+        "outputB": "The already smooth original preserves the teammate voice, return timing and earlier-return exception.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    },
+    {
+      "itemId": "blind-fc4a24c205c096b35c612be316f99ef6",
+      "outputA": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "outputB": {
+        "objectiveSatisfied": "YES",
+        "editoriallyUseful": "YES",
+        "meaningPreserved": "YES",
+        "unauthorizedSemanticChange": "NO",
+        "unsupportedInformation": "NO",
+        "voicePreserved": "YES",
+        "overedited": "NO",
+        "underedited": "NO",
+        "unnecessaryChangeToGoodSource": "N/A"
+      },
+      "pairwise": "EQUIVALENT",
+      "evidence": {
+        "outputA": "Explicit accountability and leading with the attached roster improve action clarity while retaining the cause, three changed rows and handoff repair.",
+        "outputB": "Explicit accountability and leading with the attached roster improve action clarity while retaining the cause, three changed rows and handoff repair.",
+        "pairwise": "Both provide the same material editorial value and preserve the same information."
+      }
+    }
+  ]
+}

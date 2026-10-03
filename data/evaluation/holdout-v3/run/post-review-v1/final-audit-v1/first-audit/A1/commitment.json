@@ -1,0 +1,10 @@
+{
+  "protocol": "v3-trace-audit-response-commitment-v1",
+  "packetId": "A1",
+  "rowCount": 17,
+  "packetSha256": "ae6fe049ce9d2705830d922052ed5da5b839257e6f5468822db10cc4485ea730",
+  "queueSha256": "1d92ad1209dd357965f61fcdd3d9fd6e8fbf8a4aa1fd0a3bb559ca7a0e5f2f29",
+  "replaySha256": "8e707a25181e6fa15e6eb1a1c97a10fb61d172fe82f35cfb04e880d3a284cc24",
+  "originalResponseSha256": "11fb373513c89e3d79bebe5ed92549ae5c8b90dbbf788396cf74d2c9dab351eb",
+  "canonicalResponseSha256": "04d3c7623f9548718ee397fe43598e7dd7d092144a4d0f6ca83599f71c80b8aa"
+}

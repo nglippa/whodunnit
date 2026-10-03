@@ -1,0 +1,27 @@
+{
+  "mode": "smoke-04",
+  "diagnosticsVersion": 4,
+  "diagnostics": {
+    "exitCode": 1,
+    "cliJsonReturned": false,
+    "stdoutBytes": 0,
+    "stderrBytes": 122,
+    "safeMarkers": [],
+    "stderrPresent": true,
+    "stderrSummary": "CLI exited unsuccessfully; unclassified stderr was omitted.",
+    "stderrDetail": "error: - - json - schema is not a json schema: no schema with or []",
+    "diagnosticCode": "UNCLASSIFIED_CLI_FAILURE",
+    "errorClass": "cli-failure",
+    "reportedFlags": [],
+    "spawnErrorCode": null,
+    "modelInvocation": "indeterminate"
+  },
+  "start": "2026-10-02T22:40:08.290Z",
+  "end": "2026-10-02T22:40:09.042Z",
+  "status": "technical-failure",
+  "requestSha256": "7698da63a86a36b58dd4461b0218134310ca002c3641c6a93b32b17056c2dc3f",
+  "model": "sonnet",
+  "cliVersion": "2.1.288 (Claude Code)",
+  "resultSha256": null,
+  "resolvedModels": []
+}

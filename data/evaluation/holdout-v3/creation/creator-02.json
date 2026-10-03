@@ -1,0 +1,242 @@
+[
+  {
+    "id": "V3-025",
+    "creatorId": "creator-02",
+    "source": "Thanks for the notes. I’ll send the revised agenda by noon tomorrow so everyone has time to review it before Thursday’s meeting.",
+    "objective": "Polish this brief reply only if it improves readability; keep the timing and calm tone intact.",
+    "genre": "workplace-email",
+    "lengthBand": "VERY_SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["agenda", "meeting-preparation", "deadline"]
+  },
+  {
+    "id": "V3-026",
+    "creatorId": "creator-02",
+    "source": "Hey, I grabbed the spare adapter from your desk. I’ll bring it back after the demo, unless you need it sooner.",
+    "objective": "Keep the friendly teammate voice while making the message a touch smoother.",
+    "genre": "team-chat",
+    "lengthBand": "VERY_SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["colleague-message", "borrowed-equipment", "conditional-offer"]
+  },
+  {
+    "id": "V3-027",
+    "creatorId": "creator-02",
+    "source": "The review is booked for Tuesday at 2 p.m. I’ll share the draft beforehand; please add comments in the document.",
+    "objective": "Update the meeting time to 3 p.m. on Tuesday and make the note easy to scan. Keep the other instructions.",
+    "genre": "calendar-note",
+    "lengthBand": "VERY_SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["meeting-time", "factual-update", "draft-review"]
+  },
+  {
+    "id": "V3-028",
+    "creatorId": "creator-02",
+    "source": "Hi Mara, just circling back on the slide deck for Friday. The finance chart is still using last month’s labels, and the speaker notes on slide six mention a section we cut. Could you fix those two things before you send the deck around? No need to revisit the rest.",
+    "objective": "Make this request concise and courteous without softening the two specific edits or expanding the scope.",
+    "genre": "workplace-email",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["presentation", "specific-request", "limited-scope"]
+  },
+  {
+    "id": "V3-029",
+    "creatorId": "creator-02",
+    "source": "I reviewed the draft and left three comments in the margin. The structure is clear, and the examples make the recommendation easier to follow. Once you’ve had a chance to look at the comments, I’m happy to talk through any of them. There’s no rush before Monday.",
+    "objective": "Check for minor clarity improvements while preserving the supportive tone and the lack of urgency.",
+    "genre": "workplace-email",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["document-feedback", "colleague-support", "timing"]
+  },
+  {
+    "id": "V3-030",
+    "creatorId": "creator-02",
+    "source": "We are pleased to announce that the storage room cleanout initiative has reached its successful conclusion. Through everyone’s collaborative effort, the shelves are now labeled and old equipment has been set aside for pickup. Please direct any remaining questions to me by Wednesday so that we can bring this effort to a close.",
+    "objective": "Make this ordinary team update sound direct and natural, while retaining what was done and the Wednesday question deadline.",
+    "genre": "team-announcement",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["team-update", "office-operations", "deadline"]
+  },
+  {
+    "id": "V3-031",
+    "creatorId": "creator-02",
+    "source": "The workshop had [attendance number] participants, and most stayed for the full hour. I have the sign-in sheet but haven’t counted it yet. I’d like to send the recap this afternoon. The group asked for more examples in the next session, especially a sample budget they can work through together.",
+    "objective": "Prepare a clear recap, but do not invent the attendance number. Leave an obvious place to fill it in after the sign-in sheet is counted.",
+    "genre": "workshop-recap",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["attendance", "missing-value", "follow-up"]
+  },
+  {
+    "id": "V3-032",
+    "creatorId": "creator-02",
+    "source": "Quick heads-up: I’m going to try the new checklist with the afternoon shift tomorrow. I think it’ll catch the handoff issue we saw last week, but I don’t want to claim that until we’ve used it a few times. If you spot a step that feels clunky, send it my way.",
+    "objective": "Tighten this teammate note without losing its informal voice or turning the tentative prediction into a promise.",
+    "genre": "team-chat",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["process-trial", "uncertainty", "feedback-request"]
+  },
+  {
+    "id": "V3-033",
+    "creatorId": "creator-02",
+    "source": "Please hold off on ordering the replacement signs until Facilities confirms the new room names. The draft floor plan is helpful for estimating quantities, but it is not the final naming list. I expect confirmation next week and will forward it as soon as it arrives.",
+    "objective": "Make the instruction clear and professional. Preserve the ordering restriction and the distinction between estimating quantities and confirming names.",
+    "genre": "workplace-email",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["procurement", "dependency", "negation"]
+  },
+  {
+    "id": "V3-034",
+    "creatorId": "creator-02",
+    "source": "The revised travel guide is ready for review. I incorporated the accessibility suggestions from last week and added a short section on booking rail tickets. The reimbursement policy itself hasn’t changed. If you find a confusing instruction, please leave a comment by Friday; I’ll collect the comments and make one final pass.",
+    "objective": "Edit lightly for flow, keeping the distinction between changes to the guide and the unchanged policy.",
+    "genre": "workplace-email",
+    "lengthBand": "SHORT",
+    "provenance": "synthetic-original",
+    "categoryTags": ["document-review", "policy-context", "deadline"]
+  },
+  {
+    "id": "V3-035",
+    "creatorId": "creator-02",
+    "source": "Monday status: 18 of the 24 room signs are installed. The six remaining signs are waiting on mounts, which the supplier says should arrive Wednesday. Their estimate is useful for planning, but we have not received a shipping notice yet.\n\nIf the mounts arrive by Thursday morning, we can finish the installation before the Friday walkthrough. If they arrive later, I’ll mark the six locations on the map and send a revised completion date. No other work is blocked by the signs.",
+    "objective": "Turn this into a crisp project status update. Keep the numbers, the supplier’s attribution, the conditional schedule, and the limited impact accurate.",
+    "genre": "status-update",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["facilities-project", "supplier-estimate", "conditional-timeline", "quantities"]
+  },
+  {
+    "id": "V3-036",
+    "creatorId": "creator-02",
+    "source": "Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Monday, June 16, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\n\nI’ll post the revised class schedule after instructors confirm which sessions can move online.",
+    "objective": "Update the planned reopening date to Wednesday, June 18. Keep the closure period, class schedule uncertainty, and hallway work clear; do not imply classes automatically return on the new reopening day.",
+    "genre": "team-announcement",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["facility-closure", "factual-update", "schedule-uncertainty"]
+  },
+  {
+    "id": "V3-037",
+    "creatorId": "creator-02",
+    "source": "Thanks for today’s discussion. As I understood it, Priya will compare the two survey formats by Thursday, and Omar will ask the front desk which questions visitors usually skip. We agreed to keep the current form in place for now.\n\nI raised the idea of shortening the introduction, but we did not decide on wording in the meeting. I’ll draft two options and share them on Friday. Please correct me if I missed a decision or assigned anything to the wrong person.",
+    "objective": "Write a clear meeting follow-up that separates assignments, the decision already made, and the wording still open. Preserve who owns each task.",
+    "genre": "meeting-follow-up",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["meeting-actions", "attribution", "open-decision"]
+  },
+  {
+    "id": "V3-038",
+    "creatorId": "creator-02",
+    "source": "In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey. This exercise surfaced an opportunity to enhance clarity around who resets the space at the end of an event. Moving forward, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\n\nThe new checklist is attached for your perusal. We welcome your valuable feedback by the end of next week, when we will determine whether any instructions need adjustment.",
+    "objective": "Make this practical guidance sound like a straightforward note to colleagues. Retain both cleanup instructions and the feedback window, without adding a new rule.",
+    "genre": "internal-memo",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["shared-space", "procedure", "feedback-window"]
+  },
+  {
+    "id": "V3-039",
+    "creatorId": "creator-02",
+    "source": "I took a first pass at the volunteer rota and put it in the shared folder. It’s a bit lopsided on Saturdays, so I’d love another pair of eyes before we call it done. I haven’t asked anyone to swap shifts yet.\n\nIf you see an easy fix, add a comment in the sheet rather than messaging the volunteers directly. I’m around after lunch if it’s easier to talk it through. Thanks for helping me untangle it.",
+    "objective": "Keep the writer’s friendly, slightly informal style. Make the request easy to follow and preserve that no volunteer has been contacted about swaps yet.",
+    "genre": "team-chat",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["volunteer-scheduling", "collaboration", "communication-boundary"]
+  },
+  {
+    "id": "V3-040",
+    "creatorId": "creator-02",
+    "source": "The repair vendor can visit next week, but I’m still waiting for the exact appointment window. For now, I’ve told the reception team to keep the west meeting room free on Thursday morning as a precaution. That hold may change once the vendor confirms.\n\nI want to send staff a practical note about the noisy work. The note should explain that the east corridor will remain open and that meetings in the west room might need to move. I don’t want people to plan around an appointment time we don’t have yet.",
+    "objective": "Draft a useful staff update with the appointment window clearly unresolved. Preserve the provisional Thursday hold and avoid inventing a date or time from the vendor.",
+    "genre": "staff-update",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["vendor-visit", "missing-value", "provisional-plan"]
+  },
+  {
+    "id": "V3-041",
+    "creatorId": "creator-02",
+    "source": "During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests. The largest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\n\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. These results suggest the process is helping, but they do not tell us how much of the change came from triage alone.",
+    "objective": "Make this report excerpt easier to read for managers while preserving the denominators, comparison caveat, and limited conclusion.",
+    "genre": "report-excerpt",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["pilot-results", "quantitative-comparison", "causal-caveat"]
+  },
+  {
+    "id": "V3-042",
+    "creatorId": "creator-02",
+    "source": "I read the interview summary this morning. The themes match what we heard at the open house, particularly the request for clearer signs at the north entrance. The summary also captures a concern we hadn’t heard before: several visitors found the printed map hard to read in low light.\n\nI would leave the quotes in the appendix as they are. For the main page, a short paragraph connecting each theme to the proposed changes should be enough. If you’d like, I can sketch that paragraph before our check-in tomorrow.",
+    "objective": "Make only worthwhile clarity edits. Keep the measured tone, the new concern, and the offer to help rather than assigning the work to someone else.",
+    "genre": "workplace-email",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["research-summary", "accessibility-observation", "collaborative-offer"]
+  },
+  {
+    "id": "V3-043",
+    "creatorId": "creator-02",
+    "source": "We can send the draft guide to the regional coordinators on Friday if Legal finishes its review by noon Thursday. I’ve already checked the links and image descriptions; both are ready. The remaining question is whether the paragraph about public submissions needs a shorter retention period.\n\nPlease don’t schedule the public posting yet. The coordinators can review a draft under the current plan, but the posting date depends on the final wording and a second accessibility check after any edits. I’ll update the schedule once those pieces are settled.",
+    "objective": "Clarify the two different release steps and their conditions. Preserve the distinction between sharing a draft for review and posting it publicly.",
+    "genre": "project-email",
+    "lengthBand": "MEDIUM",
+    "provenance": "synthetic-original",
+    "categoryTags": ["publication-workflow", "legal-review", "conditional-release"]
+  },
+  {
+    "id": "V3-044",
+    "creatorId": "creator-02",
+    "source": "Here is the Friday update on the reading room refresh. The new tables arrived on Wednesday, and the team assembled all eight yesterday. We also tested the adjustable lamps with three staff members who use the room regularly. Two asked for a warmer bulb, so we are trying a different option before placing the final lamp order.\n\nThe wall repair is still on track for next week. We have not set a reopening date because the paint needs to cure before the furniture can go back against that wall. The contractor expects to finish painting on Tuesday, but that timing depends on the repair drying as planned. I’ll confirm the date after the contractor’s inspection.\n\nThanks to everyone who worked around the closed room this week. If a visitor asks when it will reopen, please say that we will post the date once the wall work has passed inspection. I’ll send the next update on Wednesday even if the date is still pending.",
+    "objective": "Prepare a polished but restrained staff update. Keep the sequence, the feedback on the lamps, the contractor’s conditional estimate, and the reopening uncertainty intact.",
+    "genre": "status-update",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": ["facility-refresh", "stakeholder-feedback", "conditional-schedule", "public-message"]
+  },
+  {
+    "id": "V3-045",
+    "creatorId": "creator-02",
+    "source": "Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:30 a.m. and that the first tour will begin at 9:15. The printed map will be available at the entrance, and the same map will go into the reminder email.\n\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\n\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.",
+    "objective": "Update the welcome table opening time to 8:45 a.m. and the first tour start to 9:30 a.m. Keep the corrected three-greeter requirement, assignments, and route contingency clear.",
+    "genre": "meeting-follow-up",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": ["event-planning", "factual-update", "roles", "contingency"]
+  },
+  {
+    "id": "V3-046",
+    "creatorId": "creator-02",
+    "source": "In the spirit of continuous improvement, our team embarked on a comprehensive examination of the monthly supply request process. This work has allowed us to surface several valuable learnings and identify a promising pathway toward a more seamless future state. In practical terms, employees now spend less time looking for the right form because the request link is on the staff home page.\n\nDuring the first month, 62 requests came through the new link. Of those, 54 included the delivery location on the first submission. The other eight needed a follow-up question, usually because the requester named a building but not a room. We have not compared these results with the old process, so we cannot say whether the new link reduced the total time to fulfill requests.\n\nOur next step is to adjust the form label to ask for both building and room. We will review another month of submissions before deciding whether any further changes are needed. People can still ask the supply team for help if they are unsure which location to enter.",
+    "objective": "Turn this into a plain-language operations report. Remove the inflated opening while retaining the measured data, lack of baseline comparison, and concrete next step.",
+    "genre": "report-excerpt",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": ["process-report", "request-data", "baseline-caveat", "form-improvement"]
+  },
+  {
+    "id": "V3-047",
+    "creatorId": "creator-02",
+    "source": "I’m sorry the updated roster reached you after the morning briefing. I had the changes on Tuesday, but I waited for one shift to be confirmed and then forgot to send the final version. That left you working from the older sheet, and I understand why it caused confusion when two people arrived for the same desk.\n\nThe attached roster has the confirmed assignments for the rest of this week. I highlighted the three rows that changed since Tuesday. I’ve also added a check to my handoff list so the next update goes out as soon as the assignments are settled. I don’t expect you to reconcile the two versions; please use the attached one.\n\nThanks for sorting out the desk coverage this morning. If any of the assignments conflict with a leave request I missed, let me know and I’ll fix the roster today. I appreciate your patience with the mix-up.",
+    "objective": "Make the apology clear and accountable without flattening the writer’s personal voice. Keep the cause, what recipients should use now, and the specific repair step.",
+    "genre": "apology-email",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": ["scheduling-error", "accountability", "corrective-action"]
+  },
+  {
+    "id": "V3-048",
+    "creatorId": "creator-02",
+    "source": "The first round of neighborhood listening sessions is complete. We held three sessions in different parts of town and collected written comments from people who could not attend. The sessions were small, so the notes show what participants raised; they do not represent a survey of all residents.\n\nThe primary thematic throughline at this juncture is an emergent desire to optimize the community interface around scheduling visibility. In other words, people repeatedly asked where they could find an up-to-date schedule for shared rooms. Several said they had checked the printed notice board and found an older version.\n\nWe are testing a single online schedule and a dated printout at each entrance. The online page is ready for a staff review, but we have not chosen who will maintain the printouts. Once that owner is confirmed, we can try the approach for six weeks and ask visitors whether the information is easier to find. I’ll share a short proposal next Tuesday.",
+    "objective": "Rewrite the inflated opening of the second paragraph in ordinary language. Keep the other paragraphs close to the original and preserve the limits of the listening-session evidence and the unresolved printout owner.",
+    "genre": "community-report-update",
+    "lengthBand": "LONGER",
+    "provenance": "synthetic-original",
+    "categoryTags": ["community-feedback", "schedule-access", "limited-evidence", "pilot-plan"]
+  }
+]

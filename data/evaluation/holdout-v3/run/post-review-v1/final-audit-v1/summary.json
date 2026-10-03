@@ -1,0 +1,30 @@
+{
+  "caseCount": 119,
+  "mandatoryAuditCount": 85,
+  "additiveCorrectionCount": 12,
+  "additionalAuditCount": 34,
+  "rawClasses": {
+    "BAD_RAW": 13,
+    "DISPUTED": 3,
+    "GOOD_RAW": 68,
+    "OTHER": 35
+  },
+  "finalClasses": {
+    "DISPUTED": 1,
+    "GOOD_FINAL": 47,
+    "OTHER": 71
+  },
+  "materialGoodEditsLost": 25,
+  "disputedGoodLoss": [
+    "V3-091",
+    "V3-113"
+  ],
+  "unsafeFinal": [],
+  "limitations": [
+    "Post-unblind interpretations are not a replacement for blinded measurements.",
+    "Material usefulness and semantic safety remain judgment-based; disputed cases are unresolved.",
+    "Stale source fallback in V3-012 and V3-089 is objective failure; neither is an unsupported rewrite escape.",
+    "V3-105 O2A evidence is contaminated and excluded from substantive support; original labels remain immutable.",
+    "Original audit disagreement flags remain available in firstAuditJudgment and are not erased by aggregate classes."
+  ]
+}

@@ -1,0 +1,3801 @@
+{
+  "protocol": "v3-trace-audit-packet-v1",
+  "packetId": "A2",
+  "queueSha256": "1d92ad1209dd357965f61fcdd3d9fd6e8fbf8a4aa1fd0a3bb559ca7a0e5f2f29",
+  "rowCount": 17,
+  "rows": [
+    {
+      "caseId": "V3-023",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "We put the first issue of our tiny local history zine together on the library floor, surrounded by photo copies and two kinds of tape. It is now at the printer, which still feels unlikely. The issue has a piece about the old ferry landing, a recipe from the market's first cook, and drawings by the after-school art group. The drawings arrived in an envelope with a note telling us which way was up on each page. That note was useful. We managed to get them all facing the right way in the final layout.\n\nWe were hoping for 200 copies, but the current budget covers 120. I wish we could put one in every hand that asked for one, but I also think a modest first run is fine. We will leave copies at the library and the market and share any remaining ones at the open house. I am keeping a list of people who helped with the issue so we can make sure they receive a copy. If we have enough interest, we can look at a second print run later, though nothing is arranged yet.\n\nI am writing to share this exciting milestone and invite everyone to be part of the next chapter of our journey. More practically, we need a couple of people to help fold copies next Thursday evening. It should take about an hour if the printer delivers on Wednesday as promised. If delivery slips, I'll send a note rather than ask people to turn up for nothing. There will be a folding guide, and nobody needs experience. I only ask that we work at a table this time; the library floor has earned a rest.\n\nThank you to the library staff for letting us borrow the big table so many times, and to everyone who checked dates or hunted down photographs. The work shows in small ways throughout the issue. I am looking forward to seeing the pages as an actual little booklet instead of a stack that slides off my desk.",
+      "objective": "Turn this into a natural update for the contributors. The second paragraph sounds too promotional; keep the excitement, the budget limit, the delivery condition, and the folding request.",
+      "raw": "We put the first issue of our tiny local history zine together on the library floor, surrounded by photo copies and two kinds of tape. It is now at the printer, which still feels unlikely. The issue has a piece about the old ferry landing, a recipe from the market's first cook, and drawings by the after-school art group. The drawings arrived in an envelope with a note telling us which way was up on each page. That note was useful. We managed to get them all facing the right way in the final layout.\n\nWe were hoping for 200 copies, but the current budget covers 120. I wish we could put one in every hand that asked for one, but I also think a modest first run is fine. We will leave copies at the library and the market and share any remaining ones at the open house. I am keeping a list of people who helped with the issue so we can make sure they receive a copy. If we have enough interest, we can look at a second print run later, though nothing is arranged yet.\n\nI'm excited to share that the issue is done and on its way. More practically, we need a couple of people to help fold copies next Thursday evening. It should take about an hour if the printer delivers on Wednesday as promised. If delivery slips, I'll send a note rather than ask people to turn up for nothing. There will be a folding guide, and nobody needs experience. I only ask that we work at a table this time; the library floor has earned a rest.\n\nThank you to the library staff for letting us borrow the big table so many times, and to everyone who checked dates or hunted down photographs. The work shows in small ways throughout the issue. I am looking forward to seeing the pages as an actual little booklet instead of a stack that slides off my desk.",
+      "final": "We put the first issue of our tiny local history zine together on the library floor, surrounded by photo copies and two kinds of tape. It is now at the printer, which still feels unlikely. The issue has a piece about the old ferry landing, a recipe from the market's first cook, and drawings by the after-school art group. The drawings arrived in an envelope with a note telling us which way was up on each page. That note was useful. We managed to get them all facing the right way in the final layout.\n\nWe were hoping for 200 copies, but the current budget covers 120. I wish we could put one in every hand that asked for one, but I also think a modest first run is fine. We will leave copies at the library and the market and share any remaining ones at the open house. I am keeping a list of people who helped with the issue so we can make sure they receive a copy. If we have enough interest, we can look at a second print run later, though nothing is arranged yet.\n\nI am writing to share this exciting milestone and invite everyone to be part of the next chapter of our journey. More practically, we need a couple of people to help fold copies next Thursday evening. It should take about an hour if the printer delivers on Wednesday as promised. If delivery slips, I'll send a note rather than ask people to turn up for nothing. There will be a folding guide, and nobody needs experience. I only ask that we work at a table this time; the library floor has earned a rest.\n\nThank you to the library staff for letting us borrow the big table so many times, and to everyone who checked dates or hunted down photographs. The work shows in small ways throughout the issue. I am looking forward to seeing the pages as an actual little booklet instead of a stack that slides off my desk.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-9121b22df42e2fe62a373f4b643516e0",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Retains the promotional milestone/journey sentence unchanged, so the central natural-tone edit is missing.",
+              "outputB": "Replaces the promotional sentence with natural excitement while preserving copy budget, distribution, conditional delivery and folding help.",
+              "pairwise": "The preferred output materially addresses the requested clarity, structure or tone improvement that the unchanged alternative leaves undone."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-9121b22df42e2fe62a373f4b643516e0",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Leaves the promotional 'next chapter of our journey' sentence intact despite the explicit request to revise that paragraph. Other key details remain intact.",
+              "outputB": "Replaces the promotional sentence with a natural expression of excitement; preserves the 120-copy budget, conditional delivery, and folding request.",
+              "pairwise": "B addresses the expressly targeted promotional language while preserving the rest."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-023",
+          "reviewerId": "R1B",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Current budget covers 120 copies, not hoped-for 200; folding Thursday depends on delivery Wednesday as promised."
+          ],
+          "intentionalVoice": [
+            "Contributor-facing excitement; grounded and natural."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (33% of its content words survive).",
+              "source": "I am writing to share this exciting milestone and invite everyone to be part of the next chapter of our journey."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.96
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "We put the first issue of our tiny local history zine together on the library floor, surrounded by photo copies and two kinds of tape. It is now at the printer, which still feels unlikely. The issue has a piece about the old ferry landing, a recipe from the market's first cook, and drawings by the after-school art group. The drawings arrived in an envelope with a note telling us which way was up on each page. That note was useful. We managed to get them all facing the right way in the final layout.\n\nWe were hoping for 200 copies, but the current budget covers 120. I wish we could put one in every hand that asked for one, but I also think a modest first run is fine. We will leave copies at the library and the market and share any remaining ones at the open house. I am keeping a list of people who helped with the issue so we can make sure they receive a copy. If we have enough interest, we can look at a second print run later, though nothing is arranged yet.\n\nI'm excited to share that the issue is done and on its way. More practically, we need a couple of people to help fold copies next Thursday evening. It should take about an hour if the printer delivers on Wednesday as promised. If delivery slips, I'll send a note rather than ask people to turn up for nothing. There will be a folding guide, and nobody needs experience. I only ask that we work at a table this time; the library floor has earned a rest.\n\nThank you to the library staff for letting us borrow the big table so many times, and to everyone who checked dates or hunted down photographs. The work shows in small ways throughout the issue. I am looking forward to seeing the pages as an actual little booklet instead of a stack that slides off my desk.",
+              "changes": [
+                "Replaced the promotional 'exciting milestone... next chapter of our journey' line with a plain statement of excitement.",
+                "Left the budget, delivery condition, and folding request unchanged.",
+                "Noted: the promotional sentence was in the third paragraph, so the second was left as is."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (33% of its content words survive).",
+              "source": "I am writing to share this exciting milestone and invite everyone to be part of the next chapter of our journey."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-024",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "On the first Friday of each month, we set out a long table in the hall and ask anyone nearby to bring something they have been making. Last time there were knitted mittens, a nearly finished model boat, and a folder of family recipes. The owner of the boat was still deciding how to attach its little mast, and three people offered different ideas. Nobody solved it on the spot, but that was not the point. It was good to see people make room for a question that small and spend time thinking about it together.\n\nYou do not have to have a finished piece or know how to explain it. Some people bring the thing they are working on; others bring a photo because the real thing will not fit through the door. Sometimes people just want to see what others are doing. We have had quiet evenings and noisy ones, and both have been good. If you are curious but unsure whether your project counts, it probably does. We have never needed a rule about that.\n\nThe next table is this Friday from 5 to 7. Come for a few minutes if that is all you have. We will have tea and a spare corner for projects that need space. Children are welcome with an adult, and it is fine to arrive empty-handed. You can take a seat, look around, and leave whenever you need to. There is no presentation or sign-up sheet, only the table and the people who happen to be there that evening.\n\nA few regulars asked whether they should bring supplies for everyone. That is kind, but there is no need. If you have scraps you were going to throw away and think somebody could use, bring them; otherwise, bring yourself. I hope to see a few familiar faces and some new ones too. The hall can be hard to spot from the road, so follow the path beside the noticeboard and look for the open side door.",
+      "objective": "Check this invitation for clarity and trim only where useful. Keep its easygoing, open-door tone.",
+      "raw": "On the first Friday of each month, we set out a long table in the hall and ask anyone nearby to bring something they have been making. Last time there were knitted mittens, a nearly finished model boat, and a folder of family recipes. The owner of the boat was still deciding how to attach its little mast, and three people offered different ideas. Nobody solved it on the spot, but it was good to see people make room for a question that small and spend time thinking about it together.\n\nYou do not have to have a finished piece or know how to explain it. Some people bring the thing they are working on; others bring a photo because the real thing will not fit through the door. Sometimes people just want to see what others are doing. We have had quiet evenings and noisy ones, and both have been good. If you are curious but unsure whether your project counts, it probably does. We have never needed a rule about that.\n\nThe next table is this Friday from 5 to 7. Come for a few minutes if that is all you have. We will have tea and a spare corner for projects that need space. Children are welcome with an adult, and it is fine to arrive empty-handed. You can take a seat, look around, and leave whenever you need to. There is no presentation or sign-up sheet, only the table and the people who happen to be there that evening.\n\nA few regulars asked whether they should bring supplies for everyone. That is kind, but there is no need. If you have scraps you were going to throw away and think somebody could use, bring them; otherwise, bring yourself. I hope to see a few familiar faces and some new ones too. The hall can be hard to spot from the road, so follow the path beside the noticeboard and look for the open side door.",
+      "final": "On the first Friday of each month, we set out a long table in the hall and ask anyone nearby to bring something they have been making. Last time there were knitted mittens, a nearly finished model boat, and a folder of family recipes. The owner of the boat was still deciding how to attach its little mast, and three people offered different ideas. Nobody solved it on the spot, but it was good to see people make room for a question that small and spend time thinking about it together.\n\nYou do not have to have a finished piece or know how to explain it. Some people bring the thing they are working on; others bring a photo because the real thing will not fit through the door. Sometimes people just want to see what others are doing. We have had quiet evenings and noisy ones, and both have been good. If you are curious but unsure whether your project counts, it probably does. We have never needed a rule about that.\n\nThe next table is this Friday from 5 to 7. Come for a few minutes if that is all you have. We will have tea and a spare corner for projects that need space. Children are welcome with an adult, and it is fine to arrive empty-handed. You can take a seat, look around, and leave whenever you need to. There is no presentation or sign-up sheet, only the table and the people who happen to be there that evening.\n\nA few regulars asked whether they should bring supplies for everyone. That is kind, but there is no need. If you have scraps you were going to throw away and think somebody could use, bring them; otherwise, bring yourself. I hope to see a few familiar faces and some new ones too. The hall can be hard to spot from the road, so follow the path beside the noticeboard and look for the open side door.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-285a95fc101a95335c8b89bb23362811",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "The short trim around Nobody solved it preserves the value of thinking together; flexible attendance, children with adults and side-door directions retain the welcoming tone.",
+              "outputB": "The short trim around Nobody solved it preserves the value of thinking together; flexible attendance, children with adults and side-door directions retain the welcoming tone.",
+              "pairwise": "The outputs are identical and have the same editorial strengths and limitations."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-285a95fc101a95335c8b89bb23362811",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Mostly unchanged; trims “but that was not the point.”",
+              "outputB": "Already clear invitation remains unchanged.",
+              "pairwise": "No material difference; the original is already easygoing and clear."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-024",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Monthly table is first Friday; next meeting this Friday 5 to 7.",
+            "Unfinished projects, photos, observers and empty-handed visitors welcome; children with adult.",
+            "Tea available; no presentation or sign-up; no need to provide supplies.",
+            "Path beside noticeboard leads to open side door."
+          ],
+          "intentionalVoice": [
+            "Easygoing invitation that welcomes small questions and unpolished projects."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already coherent; trim only a few redundant invitations if useful."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.99
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.99
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The only change trims \"that was not the point\" to \"but it was good\". The meaning is still implied, no facts changed, and the easygoing tone and all protected phrases are intact.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The only change trims \"that was not the point\" to \"but it was good\". The meaning is still implied, no facts changed, and the easygoing tone and all protected phrases are intact.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "On the first Friday of each month, we set out a long table in the hall and ask anyone nearby to bring something they have been making. Last time there were knitted mittens, a nearly finished model boat, and a folder of family recipes. The owner of the boat was still deciding how to attach its little mast, and three people offered different ideas. Nobody solved it on the spot, but it was good to see people make room for a question that small and spend time thinking about it together.\n\nYou do not have to have a finished piece or know how to explain it. Some people bring the thing they are working on; others bring a photo because the real thing will not fit through the door. Sometimes people just want to see what others are doing. We have had quiet evenings and noisy ones, and both have been good. If you are curious but unsure whether your project counts, it probably does. We have never needed a rule about that.\n\nThe next table is this Friday from 5 to 7. Come for a few minutes if that is all you have. We will have tea and a spare corner for projects that need space. Children are welcome with an adult, and it is fine to arrive empty-handed. You can take a seat, look around, and leave whenever you need to. There is no presentation or sign-up sheet, only the table and the people who happen to be there that evening.\n\nA few regulars asked whether they should bring supplies for everyone. That is kind, but there is no need. If you have scraps you were going to throw away and think somebody could use, bring them; otherwise, bring yourself. I hope to see a few familiar faces and some new ones too. The hall can be hard to spot from the road, so follow the path beside the noticeboard and look for the open side door.",
+              "changes": [
+                "Removed the 'not the point / It was' contrast, stating the point directly: 'Nobody solved it on the spot, but it was good to see...'",
+                "Left the rest unchanged; it is already clear and the tone is easygoing"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The only change trims \"that was not the point\" to \"but it was good\". The meaning is still implied, no facts changed, and the easygoing tone and all protected phrases are intact.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-026",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "Hey, I grabbed the spare adapter from your desk. I’ll bring it back after the demo, unless you need it sooner.",
+      "objective": "Keep the friendly teammate voice while making the message a touch smoother.",
+      "raw": "Hey, I grabbed the spare adapter from your desk. I'll bring it back after the demo, unless you need it sooner.",
+      "final": "Hey, I grabbed the spare adapter from your desk. I’ll bring it back after the demo, unless you need it sooner.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-f9304c017babffbbb00a36523d80aa25",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "The original message is already smooth; apostrophe normalization preserves the teammate voice and earlier-return exception.",
+              "outputB": "The already smooth original preserves the teammate voice, return timing and earlier-return exception.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-f9304c017babffbbb00a36523d80aa25",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Only changes the curly apostrophe to a straight one; the already smooth friendly message gains nothing from the edit.",
+              "outputB": "Retains the already smooth friendly message as written.",
+              "pairwise": "The wording is otherwise identical; B simply avoids an unnecessary typographic change."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-026",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Spare adapter taken from recipient’s desk; return after demo unless needed sooner."
+          ],
+          "intentionalVoice": [
+            "Friendly teammate informality."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already smooth enough to satisfy the objective."
+        },
+        {
+          "id": "V3-026",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Spare adapter taken from recipient desk; return after demo unless needed sooner."
+          ],
+          "intentionalVoice": [
+            "Friendly teammate informality."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already smooth; any improvement would be very minor."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "REJECT",
+          "meaningPreserved": true,
+          "objectiveSatisfied": false,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The only change is a curly apostrophe becoming a straight one. The \"I'll\" warning is a false positive. The text is not any smoother, so the objective isn't met.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "REJECT",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The only change is a curly apostrophe becoming a straight one. The \"I'll\" warning is a false positive. The text is not any smoother, so the objective isn't met.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Hey, I grabbed the spare adapter from your desk. I'll bring it back after the demo, unless you need it sooner.",
+              "changes": [
+                "Kept the text essentially unchanged; it already reads smoothly in a friendly teammate voice."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "REJECT",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The only change is a curly apostrophe becoming a straight one. The \"I'll\" warning is a false positive. The text is not any smoother, so the objective isn't met.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "verifier-rejected"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-027",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "The review is booked for Tuesday at 2 p.m. I’ll share the draft beforehand; please add comments in the document.",
+      "objective": "Update the meeting time to 3 p.m. on Tuesday and make the note easy to scan. Keep the other instructions.",
+      "raw": "**Review:** Tuesday at 3 p.m.\n\n**Draft:** I'll share it beforehand.\n\n**What I need from you:** Add comments in the document.",
+      "final": "**Review:** Tuesday at 3 p.m.\n\n**Draft:** I'll share it beforehand.\n\n**What I need from you:** Add comments in the document.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-679ff1e4286fa4e7004f173bec60ce76",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Updates the time as authorized and makes the review, draft and comments easy to scan.",
+              "outputB": "Updates the time as authorized and makes the review, draft and comments easy to scan.",
+              "pairwise": "Identical complete update."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-027",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Review time is 3 p.m. Tuesday."
+          ],
+          "preservedFacts": [
+            "Draft will be shared beforehand; comments go in document."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-027",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Change Tuesday review time from 2 p.m. to 3 p.m."
+          ],
+          "preservedFacts": [
+            "Tuesday review; draft shared beforehand; comments in document."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Time replacement and light formatting suffice."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The figure 2 from your text is missing or changed.",
+              "source": "2"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 3, which is not in your text.",
+              "candidate": "3"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.8
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The figure 2 from your text is missing or changed.",
+              "source": "2"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 3, which is not in your text.",
+              "candidate": "3"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.8
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Time changed to 3 p.m. Tuesday as authorized. Note is split into scannable labeled lines. Draft-sharing and comment instructions are kept. The \"I'll\" flag is only an apostrophe style change.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Time changed to 3 p.m. Tuesday as authorized. Note is split into scannable labeled lines. Draft-sharing and comment instructions are kept. The \"I'll\" flag is only an apostrophe style change.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "**Review:** Tuesday at 3 p.m.\n\n**Draft:** I'll share it beforehand.\n\n**What I need from you:** Add comments in the document.",
+              "changes": [
+                "Changed meeting time from 2 p.m. to 3 p.m. on Tuesday",
+                "Reformatted into labeled lines for easy scanning",
+                "Kept instructions: share draft beforehand, add comments in the document"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Time changed to 3 p.m. Tuesday as authorized. Note is split into scannable labeled lines. Draft-sharing and comment instructions are kept. The \"I'll\" flag is only an apostrophe style change.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The figure 2 from your text is missing or changed.",
+              "source": "2"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 3, which is not in your text.",
+              "candidate": "3"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "final": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The figure 2 from your text is missing or changed.",
+              "source": "2"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 3, which is not in your text.",
+              "candidate": "3"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ]
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-028",
+      "reasonCodes": [
+        "FALLBACK",
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "Hi Mara, just circling back on the slide deck for Friday. The finance chart is still using last month’s labels, and the speaker notes on slide six mention a section we cut. Could you fix those two things before you send the deck around? No need to revisit the rest.",
+      "objective": "Make this request concise and courteous without softening the two specific edits or expanding the scope.",
+      "raw": "Hi Mara, circling back on the slide deck for Friday. Could you fix two things before you send it around? The finance chart is still using last month's labels, and the speaker notes on slide six mention a section we cut. The rest can stay as is. Thanks!",
+      "final": "Hi Mara, just circling back on the slide deck for Friday. The finance chart is still using last month’s labels, and the speaker notes on slide six mention a section we cut. Could you fix those two things before you send the deck around? No need to revisit the rest.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-60a466ff3bcc90144a2a32015db7abe6",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Reorders the two concrete edits into a courteous request and preserves the limited scope and timing.",
+              "outputB": "The original is already concise, courteous and specific about both edits and leaving the rest alone.",
+              "pairwise": "Both are suitable; the slight rearrangement is not a material improvement."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-028",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Friday deck needs last month’s finance-chart labels fixed and slide-six notes updated for removed section.",
+            "Fix before circulating deck; no review of rest requested."
+          ],
+          "intentionalVoice": [
+            "Courteous, direct request."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Tighten introductory phrasing without weakening the two requests."
+        },
+        {
+          "id": "V3-028",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Friday deck for Mara; finance chart uses last month labels; slide six notes reference cut section; fix both before circulation; no other revisions."
+          ],
+          "intentionalVoice": [
+            "Courteous teammate request."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Trim introductory wording without weakening scope."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (33% of its content words survive).",
+              "source": "No need to revisit the rest."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.93
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Hi Mara, circling back on the slide deck for Friday. Could you fix two things before you send it around? The finance chart is still using last month's labels, and the speaker notes on slide six mention a section we cut. The rest can stay as is. Thanks!",
+              "changes": [
+                "Condensed the opening and request into fewer sentences",
+                "Added a courteous 'Could you' and 'Thanks!'",
+                "Kept both edits (chart labels, slide six notes) and the 'rest stays' limit",
+                "Kept Friday and Mara"
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (33% of its content words survive).",
+              "source": "No need to revisit the rest."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-029",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "I reviewed the draft and left three comments in the margin. The structure is clear, and the examples make the recommendation easier to follow. Once you’ve had a chance to look at the comments, I’m happy to talk through any of them. There’s no rush before Monday.",
+      "objective": "Check for minor clarity improvements while preserving the supportive tone and the lack of urgency.",
+      "raw": "I reviewed the draft and left three comments in the margin. The structure is clear, and the examples make the recommendation easier to follow. Once you've had a chance to read the comments, I'm happy to talk through any of them. There's no rush before Monday.",
+      "final": "I reviewed the draft and left three comments in the margin. The structure is clear, and the examples make the recommendation easier to follow. Once you’ve had a chance to look at the comments, I’m happy to talk through any of them. There’s no rush before Monday.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-f6c84806580b973a248c68782c23de2a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Appropriate restraint keeps this clear supportive feedback and lack of urgency intact.",
+              "outputB": "The small change from look at to read clarifies reviewing comments while preserving support and no rush before Monday.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-f6c84806580b973a248c68782c23de2a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "The supportive source is already clear and unhurried; keeping it preserves the lack of urgency.",
+              "outputB": "Changing 'look at' to 'read' is harmless, but the original was clear and the substitution does not improve it.",
+              "pairwise": "Both preserve tone and timing; B makes a needless minor wording change."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-029",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [],
+          "intentionalVoice": [
+            "Supportive, unhurried tone."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already clear; only a minor adjustment if it materially helps."
+        },
+        {
+          "id": "V3-029",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Three comments are in the margin",
+            "Structure is clear and examples help explain recommendation",
+            "Offer to discuss comments",
+            "No rush before Monday"
+          ],
+          "intentionalVoice": [
+            "Supportive and unhurried"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already clear; only a genuinely minor improvement is warranted."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’m” no longer appears in the rewrite.",
+              "source": "I’m"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.91
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "I reviewed the draft and left three comments in the margin. The structure is clear, and the examples make the recommendation easier to follow. Once you've had a chance to read the comments, I'm happy to talk through any of them. There's no rush before Monday.",
+              "changes": [
+                "Replaced 'look at' with 'read' for a slightly clearer verb; everything else kept."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’m” no longer appears in the rewrite.",
+              "source": "I’m"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-030",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "We are pleased to announce that the storage room cleanout initiative has reached its successful conclusion. Through everyone’s collaborative effort, the shelves are now labeled and old equipment has been set aside for pickup. Please direct any remaining questions to me by Wednesday so that we can bring this effort to a close.",
+      "objective": "Make this ordinary team update sound direct and natural, while retaining what was done and the Wednesday question deadline.",
+      "raw": "The storage room cleanout is done. Thanks to everyone's work, the shelves are labeled and the old equipment is set aside for pickup. If you still have questions, send them to me by Wednesday so we can wrap this up.",
+      "final": "We are pleased to announce that the storage room cleanout initiative has reached its successful conclusion. Through everyone’s collaborative effort, the shelves are now labeled and old equipment has been set aside for pickup. Please direct any remaining questions to me by Wednesday so that we can bring this effort to a close.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-1c2e6ab944f315ec44fd32007cd91113",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Repeats successful conclusion and collaborative effort without making the team update direct.",
+              "outputB": "The cleanout is done and send them to me by Wednesday clearly convey completed labeling, equipment awaiting pickup and the deadline.",
+              "pairwise": "B removes the inflated wording while retaining the operational facts."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-030",
+          "reviewerId": "R1A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Cleanout finished; shelves labeled; old equipment set aside for pickup.",
+            "Remaining questions due to writer by Wednesday."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Corporate wording spans the message and can be simplified."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Through” no longer appears in the rewrite.",
+              "source": "Through"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (33% of its content words survive).",
+              "source": "We are pleased to announce that the storage room cleanout initiative has reached its successful conclusion."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (25% of its content words survive).",
+              "source": "Please direct any remaining questions to me by Wednesday so that we can bring this effort to a close."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "Thanks to everyone's work"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "An added “if” clause with content not in the source (still).",
+              "candidate": "If you still have questions"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.46
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The storage room cleanout is done. Thanks to everyone's work, the shelves are labeled and the old equipment is set aside for pickup. If you still have questions, send them to me by Wednesday so we can wrap this up.",
+              "changes": [
+                "Replaced announcement phrasing with a direct statement that the cleanout is done",
+                "Simplified thanks and kept shelves labeled and equipment set aside for pickup",
+                "Made the Wednesday question deadline a plain request"
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Through” no longer appears in the rewrite.",
+              "source": "Through"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (33% of its content words survive).",
+              "source": "We are pleased to announce that the storage room cleanout initiative has reached its successful conclusion."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (25% of its content words survive).",
+              "source": "Please direct any remaining questions to me by Wednesday so that we can bring this effort to a close."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "Thanks to everyone's work"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "An added “if” clause with content not in the source (still).",
+              "candidate": "If you still have questions"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-031",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "VAGUE_UPDATE"
+      ],
+      "source": "The workshop had [attendance number] participants, and most stayed for the full hour. I have the sign-in sheet but haven’t counted it yet. I’d like to send the recap this afternoon. The group asked for more examples in the next session, especially a sample budget they can work through together.",
+      "objective": "Prepare a clear recap, but do not invent the attendance number. Leave an obvious place to fill it in after the sign-in sheet is counted.",
+      "raw": "Subject: Workshop recap\n\nHi everyone,\n\nThanks for coming to the workshop. We had [ATTENDANCE NUMBER – fill in after counting the sign-in sheet] participants, and most of you stayed for the full hour.\n\nYou asked for more examples in the next session, especially a sample budget you can work through together. We'll plan for that.\n\nThanks again,\n[Your name]",
+      "final": "The workshop had [attendance number] participants, and most stayed for the full hour. I have the sign-in sheet but haven’t counted it yet. I’d like to send the recap this afternoon. The group asked for more examples in the next session, especially a sample budget they can work through together.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-5135e9327265740c8a9ccc98d4f3460e",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "NO",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "YES",
+              "voicePreserved": "YES",
+              "overedited": "YES",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "NEITHER",
+            "evidence": {
+              "outputA": "The placeholder avoids invented attendance but the internal planning notes remain rather than becoming a prepared recap.",
+              "outputB": "The conspicuous placeholder is helpful, but the new promise to plan requested examples is unsupported; the wish to send this afternoon is dropped.",
+              "pairwise": "Both are materially incomplete: A remains a planning note, and B adds a commitment and removes an expressed intention."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-031",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Attendance remains a placeholder pending sign-in count; most stayed full hour; request for more examples and a sample budget."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’d” no longer appears in the rewrite.",
+              "source": "I’d"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Subject Workshop” appears in the rewrite but not in your text.",
+              "candidate": "Subject Workshop"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We'll” appears in the rewrite but not in your text.",
+              "candidate": "We'll"
+            },
+            {
+              "kind": "negation_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The source is negative (“haven’t”); the rewrite has no negation.",
+              "source": "The workshop had [attendance number] participants, and most stayed for the full hour. I have the sign-in sheet but haven’t counted it yet.",
+              "candidate": "We had [ATTENDANCE NUMBER – fill in after counting the sign-in sheet] participants, and most of you stayed for the full hour."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (25% of its content words survive).",
+              "source": "I’d like to send the recap this afternoon."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "Thanks for coming to the workshop."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "We'll plan for that."
+            },
+            {
+              "kind": "mechanical_damage",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Unexpected capital after “,”: “e,\n\nThanks”.",
+              "candidate": "e,\n\nThanks"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.78
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": true,
+              "reason": "The recap and attendance placeholder work. But \"We'll plan for that.\" adds a commitment the source never made; the source only says the group asked.",
+              "issue": {
+                "span": {
+                  "start": 309,
+                  "end": 329,
+                  "text": "We'll plan for that."
+                },
+                "constraint": "Remove this sentence. The source says only that the group asked for more examples and a sample budget, and makes no commitment to provide them."
+              }
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Subject: Workshop recap\n\nHi everyone,\n\nThanks for coming to the workshop. We had [ATTENDANCE NUMBER – fill in after counting the sign-in sheet] participants, and most of you stayed for the full hour.\n\nYou asked for more examples in the next session, especially a sample budget you can work through together. We'll plan for that.\n\nThanks again,\n[Your name]",
+              "changes": [
+                "Turned the note into a recap email with a subject line and greeting.",
+                "Kept the attendance number as a clearly marked placeholder to fill in after the sign-in sheet is counted.",
+                "Kept that most participants stayed the full hour.",
+                "Kept the request for more examples, especially a sample budget to work through together.",
+                "Dropped the sign-in sheet and send-this-afternoon remarks, which were notes to self.",
+                "Added 'We'll plan for that,' which commits to the request; remove it if you haven't decided."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": true,
+              "reason": "The recap and attendance placeholder work. But \"We'll plan for that.\" adds a commitment the source never made; the source only says the group asked.",
+              "issue": {
+                "span": {
+                  "start": 309,
+                  "end": 329,
+                  "text": "We'll plan for that."
+                },
+                "constraint": "Remove this sentence. The source says only that the group asked for more examples and a sample budget, and makes no commitment to provide them."
+              }
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’d” no longer appears in the rewrite.",
+              "source": "I’d"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Subject Workshop” appears in the rewrite but not in your text.",
+              "candidate": "Subject Workshop"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We'll” appears in the rewrite but not in your text.",
+              "candidate": "We'll"
+            },
+            {
+              "kind": "negation_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The source is negative (“haven’t”); the rewrite has no negation.",
+              "source": "The workshop had [attendance number] participants, and most stayed for the full hour. I have the sign-in sheet but haven’t counted it yet.",
+              "candidate": "We had [ATTENDANCE NUMBER – fill in after counting the sign-in sheet] participants, and most of you stayed for the full hour."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (25% of its content words survive).",
+              "source": "I’d like to send the recap this afternoon."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "Thanks for coming to the workshop."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "We'll plan for that."
+            },
+            {
+              "kind": "mechanical_damage",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Unexpected capital after “,”: “e,\n\nThanks”.",
+              "candidate": "e,\n\nThanks"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "invalid-verifier"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-032",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "Quick heads-up: I’m going to try the new checklist with the afternoon shift tomorrow. I think it’ll catch the handoff issue we saw last week, but I don’t want to claim that until we’ve used it a few times. If you spot a step that feels clunky, send it my way.",
+      "objective": "Tighten this teammate note without losing its informal voice or turning the tentative prediction into a promise.",
+      "raw": "Quick heads-up: I’m trying the new checklist with the afternoon shift tomorrow. I think it’ll catch the handoff issue we saw last week, but I don’t want to claim that until we’ve used it a few times. If a step feels clunky, send it my way.",
+      "final": "Quick heads-up: I’m trying the new checklist with the afternoon shift tomorrow. I think it’ll catch the handoff issue we saw last week, but I don’t want to claim that until we’ve used it a few times. If a step feels clunky, send it my way.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-acc2166fd1970296ad6ba421e7c2ce0e",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Tightens future-plan and feedback wording while retaining informal voice, tomorrow timing and the explicitly tentative prediction.",
+              "outputB": "Tightens future-plan and feedback wording while retaining informal voice, tomorrow timing and the explicitly tentative prediction.",
+              "pairwise": "Both outputs are identical and provide the same editorial result."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-032",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Checklist trial is tomorrow with afternoon shift; predicted benefit is tentative pending repeated use."
+          ],
+          "intentionalVoice": [
+            "Informal teammate voice."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-032",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "New checklist will be tried with afternoon shift tomorrow",
+            "It may catch last week's handoff issue, but this is tentative until used a few times",
+            "Recipient may send clunky steps"
+          ],
+          "intentionalVoice": [
+            "Informal teammate note"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Tighten wording without making the tentative prediction a promise."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.93
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.93
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate trims \"going to try\" and \"you spot a step that\" while keeping the tentative hedge, the timing and the casual tone. It adds no new claims.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate trims \"going to try\" and \"you spot a step that\" while keeping the tentative hedge, the timing and the casual tone. It adds no new claims.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Quick heads-up: I’m trying the new checklist with the afternoon shift tomorrow. I think it’ll catch the handoff issue we saw last week, but I don’t want to claim that until we’ve used it a few times. If a step feels clunky, send it my way.",
+              "changes": [
+                "Changed \"I’m going to try\" to \"I’m trying\"",
+                "Changed \"If you spot a step that feels clunky\" to \"If a step feels clunky\"",
+                "Kept the tentative \"I think it’ll catch\" and the caveat unchanged"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate trims \"going to try\" and \"you spot a step that\" while keeping the tentative hedge, the timing and the casual tone. It adds no new claims.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-033",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "Please hold off on ordering the replacement signs until Facilities confirms the new room names. The draft floor plan is helpful for estimating quantities, but it is not the final naming list. I expect confirmation next week and will forward it as soon as it arrives.",
+      "objective": "Make the instruction clear and professional. Preserve the ordering restriction and the distinction between estimating quantities and confirming names.",
+      "raw": "Please don't order the replacement signs until Facilities confirms the new room names. The draft floor plan is useful for estimating quantities, but it is not the final naming list. I expect confirmation next week and will forward it as soon as it arrives.",
+      "final": "Please don't order the replacement signs until Facilities confirms the new room names. The draft floor plan is useful for estimating quantities, but it is not the final naming list. I expect confirmation next week and will forward it as soon as it arrives.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-e648a117558c08a4c4a113b22eb1f06f",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Direct ordering prohibition preserves Facilities confirmation, the quantity-only use of the draft and the expected timing.",
+              "outputB": "Direct ordering prohibition preserves Facilities confirmation, the quantity-only use of the draft and the expected timing.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-e648a117558c08a4c4a113b22eb1f06f",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Makes the ordering restriction direct and professional; distinguishes quantity estimates from the unconfirmed naming list.",
+              "outputB": "Same wording and merits as A.",
+              "pairwise": "The outputs are identical."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-033",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Do not order replacement signs until Facilities confirms new room names.",
+            "Draft floor plan can estimate quantities but is not final naming list.",
+            "Confirmation expected next week and forwarded when received."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "The distinctions are already explicit and professional."
+        },
+        {
+          "id": "V3-033",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Do not order replacement signs until Facilities confirms room names",
+            "Draft floor plan may help estimate quantities but is not final naming list",
+            "Confirmation expected next week and will be forwarded"
+          ],
+          "intentionalVoice": [
+            "Clear, professional instruction"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Retain the restriction and distinguish quantity estimates from confirmed names."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.92
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.92
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate keeps the ordering hold, the draft-plan versus final-list distinction, and the timing. It only swaps \"hold off on\" for \"don't\" and \"helpful\" for \"useful\".",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps the ordering hold, the draft-plan versus final-list distinction, and the timing. It only swaps \"hold off on\" for \"don't\" and \"helpful\" for \"useful\".",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Please don't order the replacement signs until Facilities confirms the new room names. The draft floor plan is useful for estimating quantities, but it is not the final naming list. I expect confirmation next week and will forward it as soon as it arrives.",
+              "changes": [
+                "Changed 'hold off on ordering' to the more direct 'don't order'.",
+                "Changed 'helpful' to 'useful'.",
+                "Kept the ordering restriction, the estimating-versus-naming distinction, and the timing."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps the ordering hold, the draft-plan versus final-list distinction, and the timing. It only swaps \"hold off on\" for \"don't\" and \"helpful\" for \"useful\".",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-035",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "Monday status: 18 of the 24 room signs are installed. The six remaining signs are waiting on mounts, which the supplier says should arrive Wednesday. Their estimate is useful for planning, but we have not received a shipping notice yet.\n\nIf the mounts arrive by Thursday morning, we can finish the installation before the Friday walkthrough. If they arrive later, I’ll mark the six locations on the map and send a revised completion date. No other work is blocked by the signs.",
+      "objective": "Turn this into a crisp project status update. Keep the numbers, the supplier’s attribution, the conditional schedule, and the limited impact accurate.",
+      "raw": "Monday status: 18 of the 24 room signs are installed. The remaining six are waiting on mounts. The supplier estimates they'll arrive Wednesday, which is useful for planning, but we haven't received a shipping notice yet.\n\nIf the mounts arrive by Thursday morning, we can finish installation before the Friday walkthrough. If they arrive later, I'll mark the six locations on the map and send a revised completion date. No other work is blocked by the signs.",
+      "final": "Monday status: 18 of the 24 room signs are installed. The six remaining signs are waiting on mounts, which the supplier says should arrive Wednesday. Their estimate is useful for planning, but we have not received a shipping notice yet.\n\nIf the mounts arrive by Thursday morning, we can finish the installation before the Friday walkthrough. If they arrive later, I’ll mark the six locations on the map and send a revised completion date. No other work is blocked by the signs.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-8e4bdba252fdc523775280efd857f753",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Preserves all facts but leaves the requested tightening undone.",
+              "outputB": "Shorter sentences clarify the supplier estimate while retaining missing shipping notice, Thursday condition and limited impact.",
+              "pairwise": "The preferred output materially addresses the requested clarity, structure or tone improvement that the unchanged alternative leaves undone."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-035",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "18 of 24 signs installed; mounts expected Wednesday per supplier without shipping notice; finish before Friday walk-through only if arrive by Thursday morning."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.97
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Monday status: 18 of the 24 room signs are installed. The remaining six are waiting on mounts. The supplier estimates they'll arrive Wednesday, which is useful for planning, but we haven't received a shipping notice yet.\n\nIf the mounts arrive by Thursday morning, we can finish installation before the Friday walkthrough. If they arrive later, I'll mark the six locations on the map and send a revised completion date. No other work is blocked by the signs.",
+              "changes": [
+                "Tightened the second sentence and merged the supplier's estimate with the missing shipping notice, keeping attribution.",
+                "Kept all numbers, days, the Thursday-morning condition, the fallback plan, and the limited-impact statement."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-036",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "FINAL_BAD_PROXY",
+        "FINAL_UNAUTHORIZED_CHANGE",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Monday, June 16, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\n\nI’ll post the revised class schedule after instructors confirm which sessions can move online.",
+      "objective": "Update the planned reopening date to Wednesday, June 18. Keep the closure period, class schedule uncertainty, and hallway work clear; do not imply classes automatically return on the new reopening day.",
+      "raw": "Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Wednesday, June 18, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\n\nI’ll post the revised class schedule after instructors confirm which sessions can move online.",
+      "final": "Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Monday, June 16, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\n\nI’ll post the revised class schedule after instructors confirm which sessions can move online.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-cca98b6b425d775b2c8ce7b887f2dcb8",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Changes the planned reopening to Wednesday June 18 and keeps classes returning that week rather than on that day, alongside the schedule uncertainty.",
+              "outputB": "Retains Monday June 16, failing the requested date correction, though closure, hallway work and schedule uncertainty remain intact.",
+              "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-cca98b6b425d775b2c8ce7b887f2dcb8",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "NO",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Correctly changes the planned reopening to Wednesday, June 18, while retaining the closure, uncertain class schedule, and hallway work.",
+              "outputB": "Retains the old Monday, June 16 date despite the explicit update request.",
+              "pairwise": "A applies the sole requested factual change; B does not."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-036",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Change planned reopening from Monday, June 16 to Wednesday, June 18."
+          ],
+          "preservedFacts": [
+            "Closure remains first two weeks of June.",
+            "Hallway painting continues; east entrance may be noisy.",
+            "Class schedule awaits instructor confirmation of online sessions."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Date correction is local; avoid attaching class return to the new reopening day."
+        },
+        {
+          "id": "V3-036",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Change planned reopening from Monday June 16 to Wednesday June 18."
+          ],
+          "preservedFacts": [
+            "Closure first two weeks of June for floor refinishing; hallway painting continues and east entrance may be noisy.",
+            "Revised class schedule awaits instructor confirmation of online sessions; class return must not be assumed on reopening day."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Update date and clarify that class scheduling remains pending."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date “June 16” is missing or changed.",
+              "source": "June 16"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds the date “June 18”.",
+              "candidate": "June 18"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date reference “monday” is missing or changed.",
+              "source": "monday"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds a date reference “wednesday”.",
+              "candidate": "wednesday"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The requested temporal replacement conflicts with a preservation directive.",
+              "source": "Monday, June 16",
+              "candidate": "Wednesday, June 18"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.97
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Wednesday, June 18, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\n\nI’ll post the revised class schedule after instructors confirm which sessions can move online.",
+              "changes": [
+                "Changed planned reopening from Monday, June 16 to Wednesday, June 18; left everything else as written."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Wednesday, June 18 (previously Monday, June 16)"
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date “June 16” is missing or changed.",
+              "source": "June 16"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds the date “June 18”.",
+              "candidate": "June 18"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date reference “monday” is missing or changed.",
+              "source": "monday"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds a date reference “wednesday”.",
+              "candidate": "wednesday"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The requested temporal replacement conflicts with a preservation directive.",
+              "source": "Monday, June 16",
+              "candidate": "Wednesday, June 18"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-038",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey. This exercise surfaced an opportunity to enhance clarity around who resets the space at the end of an event. Moving forward, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\n\nThe new checklist is attached for your perusal. We welcome your valuable feedback by the end of next week, when we will determine whether any instructions need adjustment.",
+      "objective": "Make this practical guidance sound like a straightforward note to colleagues. Retain both cleanup instructions and the feedback window, without adding a new rule.",
+      "raw": "We reviewed the kitchen booking process and found that it isn't clear who resets the space at the end of an event. From now on, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\n\nThe new checklist is attached. Please send us your feedback by the end of next week. We'll decide then whether any instructions need adjusting.",
+      "final": "We reviewed the kitchen booking process and found a chance to make it clearer who resets the space at the end of an event. From now on, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\n\nThe new checklist is attached. Please send us your feedback by the end of next week. We'll decide then whether any instructions need adjusting.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-247713d737752073539fc9824aa9d20a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "UNCERTAIN",
+              "unauthorizedSemanticChange": "UNCERTAIN",
+              "unsupportedInformation": "UNCERTAIN",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Reviewed and found a chance to make it clearer accurately simplify the review; tables, cabinet and end-of-next-week feedback remain.",
+              "outputB": "Found that it isn't clear turns an opportunity to enhance clarity into a definite finding of unclear responsibility; both cleanup instructions and deadline remain.",
+              "pairwise": "A avoids B's stronger claim about the review finding while providing equally plain guidance."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-038",
+          "reviewerId": "R1A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Leave tables as found and return borrowed supplies to labeled cabinet.",
+            "Checklist attached; feedback due end of next week, then instructions may be adjusted."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Simplify inflated framing while keeping practical guidance."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We'll” appears in the rewrite but not in your text.",
+              "candidate": "We'll"
+            },
+            {
+              "kind": "negation_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite adds a negation (“isn't”) the source does not have.",
+              "source": "This exercise surfaced an opportunity to enhance clarity around who resets the space at the end of an event.",
+              "candidate": "We reviewed the kitchen booking process and found that it isn't clear who resets the space at the end of an event."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (27% of its content words survive).",
+              "source": "In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.55
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We'll” appears in the rewrite but not in your text.",
+              "candidate": "We'll"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (27% of its content words survive).",
+              "source": "In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 3 of 4 content words are not in the source.",
+              "candidate": "and found a chance to make it clearer"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.55
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The rewrite keeps the review, both cleanup instructions, the attached checklist, and the end-of-next-week feedback window. It adds no new rule and reads as a plain note.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The rewrite keeps the review, both cleanup instructions, the attached checklist, and the end-of-next-week feedback window. It adds no new rule and reads as a plain note.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "We reviewed the kitchen booking process and found that it isn't clear who resets the space at the end of an event. From now on, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\n\nThe new checklist is attached. Please send us your feedback by the end of next week. We'll decide then whether any instructions need adjusting.",
+              "changes": [
+                "Removed corporate phrasing (shared commitment, operational excellence, comprehensive, valuable, perusal).",
+                "Kept both cleanup instructions unchanged.",
+                "Kept the end-of-next-week feedback window and the follow-up decision on adjusting instructions.",
+                "Added no new rules."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "We reviewed the kitchen booking process and found a chance to make it clearer who resets the space at the end of an event."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The rewrite keeps the review, both cleanup instructions, the attached checklist, and the end-of-next-week feedback window. It adds no new rule and reads as a plain note.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We'll” appears in the rewrite but not in your text.",
+              "candidate": "We'll"
+            },
+            {
+              "kind": "negation_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite adds a negation (“isn't”) the source does not have.",
+              "source": "This exercise surfaced an opportunity to enhance clarity around who resets the space at the end of an event.",
+              "candidate": "We reviewed the kitchen booking process and found that it isn't clear who resets the space at the end of an event."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (27% of its content words survive).",
+              "source": "In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey."
+            }
+          ],
+          "final": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We'll” appears in the rewrite but not in your text.",
+              "candidate": "We'll"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (27% of its content words survive).",
+              "source": "In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 3 of 4 content words are not in the source.",
+              "candidate": "and found a chance to make it clearer"
+            }
+          ]
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-039",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "I took a first pass at the volunteer rota and put it in the shared folder. It’s a bit lopsided on Saturdays, so I’d love another pair of eyes before we call it done. I haven’t asked anyone to swap shifts yet.\n\nIf you see an easy fix, add a comment in the sheet rather than messaging the volunteers directly. I’m around after lunch if it’s easier to talk it through. Thanks for helping me untangle it.",
+      "objective": "Keep the writer’s friendly, slightly informal style. Make the request easy to follow and preserve that no volunteer has been contacted about swaps yet.",
+      "raw": "I took a first pass at the volunteer rota and put it in the shared folder. It's a bit lopsided on Saturdays, so I'd love another pair of eyes before we call it done. I haven't asked anyone to swap shifts yet.\n\nIf you see an easy fix, add a comment in the sheet rather than messaging the volunteers directly. I'm around after lunch if it's easier to talk it through. Thanks for helping me untangle it.",
+      "final": "I took a first pass at the volunteer rota and put it in the shared folder. It’s a bit lopsided on Saturdays, so I’d love another pair of eyes before we call it done. I haven’t asked anyone to swap shifts yet.\n\nIf you see an easy fix, add a comment in the sheet rather than messaging the volunteers directly. I’m around after lunch if it’s easier to talk it through. Thanks for helping me untangle it.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-73386dc59f8b5c7948153836561a68f3",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Apostrophe normalization leaves the already clear friendly request, comment channel and no-swap-contact status intact.",
+              "outputB": "The original already gives a clear friendly request and preserves that nobody has been asked to swap.",
+              "pairwise": "Typography alone does not give either output a material advantage."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-73386dc59f8b5c7948153836561a68f3",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Only normalizes curly apostrophes; the request and friendly style remain unchanged.",
+              "outputB": "Same content and tone as A.",
+              "pairwise": "No meaningful difference between outputs."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-039",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "No volunteers have been asked to swap; comments go in sheet, not directly to volunteers."
+          ],
+          "intentionalVoice": [
+            "Friendly, slightly informal style."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’d” no longer appears in the rewrite.",
+              "source": "I’d"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’m” no longer appears in the rewrite.",
+              "source": "I’m"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.98
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "I took a first pass at the volunteer rota and put it in the shared folder. It's a bit lopsided on Saturdays, so I'd love another pair of eyes before we call it done. I haven't asked anyone to swap shifts yet.\n\nIf you see an easy fix, add a comment in the sheet rather than messaging the volunteers directly. I'm around after lunch if it's easier to talk it through. Thanks for helping me untangle it.",
+              "changes": [
+                "Left the text essentially unchanged; it already is friendly, clear, and states no swaps have been requested."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’d” no longer appears in the rewrite.",
+              "source": "I’d"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’m” no longer appears in the rewrite.",
+              "source": "I’m"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-040",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT",
+        "VAGUE_UPDATE"
+      ],
+      "source": "The repair vendor can visit next week, but I’m still waiting for the exact appointment window. For now, I’ve told the reception team to keep the west meeting room free on Thursday morning as a precaution. That hold may change once the vendor confirms.\n\nI want to send staff a practical note about the noisy work. The note should explain that the east corridor will remain open and that meetings in the west room might need to move. I don’t want people to plan around an appointment time we don’t have yet.",
+      "objective": "Draft a useful staff update with the appointment window clearly unresolved. Preserve the provisional Thursday hold and avoid inventing a date or time from the vendor.",
+      "raw": "Subject: Noisy repair work next week\n\nHi all,\n\nThe repair vendor can visit next week, but I'm still waiting for the exact appointment window. I don't have a date or time to give you yet, so please don't plan around one.\n\nAs a precaution, I've asked the reception team to keep the west meeting room free on Thursday morning. That hold may change once the vendor confirms.\n\nWhat to expect in the meantime:\n- The east corridor will remain open.\n- Meetings in the west room might need to move.\n\nI'll send another note as soon as the vendor confirms the appointment window.\n\nThanks,\n[Name]",
+      "final": "The repair vendor can visit next week, but I’m still waiting for the exact appointment window. For now, I’ve told the reception team to keep the west meeting room free on Thursday morning as a precaution. That hold may change once the vendor confirms.\n\nI want to send staff a practical note about the noisy work. The note should explain that the east corridor will remain open and that meetings in the west room might need to move. I don’t want people to plan around an appointment time we don’t have yet.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-46626ca3d81ad13192e43562ab7dcebd",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "NO",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "YES",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Staff-ready structure preserves unresolved appointment, provisional Thursday morning hold, open east corridor and possible meeting moves. I'll send another note as soon as the vendor confirms adds a commitment absent from the source.",
+              "outputB": "Repeats I want to send staff a practical note instead of drafting one, though it preserves the unresolved window and provisional hold.",
+              "pairwise": "A supplies a practical staff message with the key uncertainties intact; the added follow-up promise is a localized defect, whereas B does not draft the requested update."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-040",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Vendor can visit next week; exact window unresolved.",
+            "West meeting room held Thursday morning provisionally, subject to confirmation.",
+            "East corridor remains open; west-room meetings may need to move."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Source combines status with instructions to its writer; convert to staff-facing update."
+        },
+        {
+          "id": "V3-040",
+          "reviewerId": "R2B",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Vendor may visit next week; exact appointment window remains unknown",
+            "West meeting room provisionally held Thursday morning; hold may change after confirmation",
+            "East corridor remains open",
+            "Meetings in west room might need to move"
+          ],
+          "intentionalVoice": [
+            "Practical staff-facing update"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Turn the supplied context into a useful staff notice; do not invent a vendor time or date."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’m” no longer appears in the rewrite.",
+              "source": "I’m"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’ve” no longer appears in the rewrite.",
+              "source": "I’ve"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Subject Noisy” appears in the rewrite but not in your text.",
+              "candidate": "Subject Noisy"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Name” appears in the rewrite but not in your text.",
+              "candidate": "Name"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite adds “confirms”, a stronger evidence claim than the source makes.",
+              "source": "The repair vendor can visit next week, but I’m still waiting for the exact appointment window.",
+              "candidate": "Subject: Noisy repair work next week The repair vendor can visit next week, but I'm still waiting for the exact appointment window. I'll se…"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "I don’t want people to plan around an appointment time we don’t have yet.",
+              "candidate": "I don't have a date or time to give you yet, so please don't plan around one."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "What to expect in the meantime"
+            },
+            {
+              "kind": "mechanical_damage",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Unexpected capital after “,”: “l,\n\nThe”.",
+              "candidate": "l,\n\nThe"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "Unrequested actor replacement accompanies an authorized update.",
+              "source": "I’m",
+              "candidate": "Subject Noisy"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.84
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Subject: Noisy repair work next week\n\nHi all,\n\nThe repair vendor can visit next week, but I'm still waiting for the exact appointment window. I don't have a date or time to give you yet, so please don't plan around one.\n\nAs a precaution, I've asked the reception team to keep the west meeting room free on Thursday morning. That hold may change once the vendor confirms.\n\nWhat to expect in the meantime:\n- The east corridor will remain open.\n- Meetings in the west room might need to move.\n\nI'll send another note as soon as the vendor confirms the appointment window.\n\nThanks,\n[Name]",
+              "changes": [
+                "Drafted staff note with appointment window explicitly unresolved",
+                "Kept provisional Thursday morning hold for west meeting room, noting it may change",
+                "Included east corridor staying open and possible west room meeting moves",
+                "Added no vendor date or time; added only a promise to follow up once confirmed"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "I don't have a date or time to give you yet. Please don't plan around an appointment time."
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’m” no longer appears in the rewrite.",
+              "source": "I’m"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“I’ve” no longer appears in the rewrite.",
+              "source": "I’ve"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Subject Noisy” appears in the rewrite but not in your text.",
+              "candidate": "Subject Noisy"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Name” appears in the rewrite but not in your text.",
+              "candidate": "Name"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite adds “confirms”, a stronger evidence claim than the source makes.",
+              "source": "The repair vendor can visit next week, but I’m still waiting for the exact appointment window.",
+              "candidate": "Subject: Noisy repair work next week The repair vendor can visit next week, but I'm still waiting for the exact appointment window. I'll se…"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "I don’t want people to plan around an appointment time we don’t have yet.",
+              "candidate": "I don't have a date or time to give you yet, so please don't plan around one."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "What to expect in the meantime"
+            },
+            {
+              "kind": "mechanical_damage",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Unexpected capital after “,”: “l,\n\nThe”.",
+              "candidate": "l,\n\nThe"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "Unrequested actor replacement accompanies an authorized update.",
+              "source": "I’m",
+              "candidate": "Subject Noisy"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-041",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests. The largest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\n\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. These results suggest the process is helping, but they do not tell us how much of the change came from triage alone.",
+      "objective": "Make this report excerpt easier to read for managers while preserving the denominators, comparison caveat, and limited conclusion.",
+      "raw": "During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. In the previous four weeks, it resolved 36 of 50. The two periods had different mixes of requests, so the comparison isn't exact.\n\nThe biggest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\n\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. The results suggest the process is helping, but they don't tell us how much of the change came from triage alone.",
+      "final": "During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. In the previous four weeks, it resolved 36 of 50. The two periods had different mixes of requests.\n\nThe biggest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\n\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. The results suggest the process is helping, but they don't tell us how much of the change came from triage alone.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-abcbd200dc371fa7a9bfe9e1a4009d81",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Shorter paragraphs preserve both denominators, different request mixes, warehouse delay, recommendation and limited attribution.",
+              "outputB": "Shorter paragraphs preserve both denominators and limited attribution; comparison is not exact reasonably explains the supplied difference in request mixes.",
+              "pairwise": "Both make the report readable and retain the evidence limits; B's brief explanation of the comparison caveat creates no material advantage."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-041",
+          "reviewerId": "R1B",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "43/50 within two business days versus 36/50; request mixes differed; results do not isolate triage effect."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-041",
+          "reviewerId": "R2A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Four-week pilot: 43 of 50 resolved within two business days versus 36 of 50 previous four weeks; request mixes differ.",
+            "Largest delays equipment pickups awaiting warehouse handoff; recommend another month daily triage and separate pickup tracking; triage contribution unknown."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Clarify comparison and limited inference."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "negation_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite adds a negation (“isn't”) the source does not have.",
+              "source": "That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests.",
+              "candidate": "In the previous four weeks, it resolved 36 of 50. The two periods had different mixes of requests, so the comparison isn't exact."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests.",
+              "candidate": "The two periods had different mixes of requests, so the comparison isn't exact."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "so the comparison isn't exact."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.95
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.95
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate keeps both denominators (43 of 50, 36 of 50), the different-mix caveat, the pickup delay detail, the recommendation, and the limited conclusion. It splits sentences to read more easily and adds nothing unsupported.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps both denominators (43 of 50, 36 of 50), the different-mix caveat, the pickup delay detail, the recommendation, and the limited conclusion. It splits sentences to read more easily and adds nothing unsupported.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. In the previous four weeks, it resolved 36 of 50. The two periods had different mixes of requests, so the comparison isn't exact.\n\nThe biggest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\n\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. The results suggest the process is helping, but they don't tell us how much of the change came from triage alone.",
+              "changes": [
+                "Split the comparison into shorter sentences and kept 43 of 50 versus 36 of 50",
+                "Kept the caveat about different request mixes, stated more directly",
+                "Separated the pickup-delay finding into its own paragraph",
+                "Kept the recommendation and the limited conclusion about triage unchanged in meaning"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "The two periods had different mixes of requests."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps both denominators (43 of 50, 36 of 50), the different-mix caveat, the pickup delay detail, the recommendation, and the limited conclusion. It splits sentences to read more easily and adds nothing unsupported.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "negation_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite adds a negation (“isn't”) the source does not have.",
+              "source": "That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests.",
+              "candidate": "In the previous four weeks, it resolved 36 of 50. The two periods had different mixes of requests, so the comparison isn't exact."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests.",
+              "candidate": "The two periods had different mixes of requests, so the comparison isn't exact."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "so the comparison isn't exact."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-043",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "We can send the draft guide to the regional coordinators on Friday if Legal finishes its review by noon Thursday. I’ve already checked the links and image descriptions; both are ready. The remaining question is whether the paragraph about public submissions needs a shorter retention period.\n\nPlease don’t schedule the public posting yet. The coordinators can review a draft under the current plan, but the posting date depends on the final wording and a second accessibility check after any edits. I’ll update the schedule once those pieces are settled.",
+      "objective": "Clarify the two different release steps and their conditions. Preserve the distinction between sharing a draft for review and posting it publicly.",
+      "raw": "There are two separate steps here. The first is sending the draft guide to the regional coordinators for review. We can do that on Friday if Legal finishes its review by noon Thursday. I've already checked the links and image descriptions, and both are ready. The remaining question is whether the paragraph about public submissions needs a shorter retention period.\n\nThe second step is posting the guide publicly, and please don't schedule that yet. The coordinators can review a draft under the current plan, but the posting date depends on the final wording and a second accessibility check after any edits. I'll update the schedule once those pieces are settled.",
+      "final": "We can send the draft guide to the regional coordinators on Friday if Legal finishes its review by noon Thursday. I’ve already checked the links and image descriptions; both are ready. The remaining question is whether the paragraph about public submissions needs a shorter retention period.\n\nPlease don’t schedule the public posting yet. The coordinators can review a draft under the current plan, but the posting date depends on the final wording and a second accessibility check after any edits. I’ll update the schedule once those pieces are settled.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-328ed7a0815e9877c52787b314f32a2e",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Labels sending the draft as the first step and public posting as the second; noon Thursday legal review and post-edit accessibility conditions remain.",
+              "outputB": "Preserves both steps and conditions but repeats the source without further clarifying their relationship.",
+              "pairwise": "A explicitly distinguishes the two release steps and their separate prerequisites."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-043",
+          "reviewerId": "R1A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Draft may go to regional coordinators Friday if Legal finishes by noon Thursday.",
+            "Links and image descriptions checked; retention period for public submissions unresolved.",
+            "Public posting unscheduled, dependent on final wording and second accessibility check after edits."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Make conditional draft circulation and later public posting separately visible."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 2, which is not in your text.",
+              "candidate": "2"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ve” no longer appears in the rewrite.",
+              "source": "I’ve"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 3 of 3 content words are not in the source.",
+              "candidate": "There are two separate steps here."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "There are two separate steps here. The first is sending the draft guide to the regional coordinators for review. We can do that on Friday if Legal finishes its review by noon Thursday. I've already checked the links and image descriptions, and both are ready. The remaining question is whether the paragraph about public submissions needs a shorter retention period.\n\nThe second step is posting the guide publicly, and please don't schedule that yet. The coordinators can review a draft under the current plan, but the posting date depends on the final wording and a second accessibility check after any edits. I'll update the schedule once those pieces are settled.",
+              "changes": [
+                "Separated the two steps: sending the draft to coordinators for review versus posting publicly.",
+                "Kept each step's conditions with it: Legal's noon Thursday review for the Friday draft; final wording and a second accessibility check for the posting date.",
+                "Preserved the unrelated facts, including the retention question, the checked links and image descriptions, and the schedule update."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 2, which is not in your text.",
+              "candidate": "2"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ve” no longer appears in the rewrite.",
+              "source": "I’ve"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“I’ll” no longer appears in the rewrite.",
+              "source": "I’ll"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 3 of 3 content words are not in the source.",
+              "candidate": "There are two separate steps here."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    }
+  ]
+}

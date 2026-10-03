@@ -1,0 +1,30 @@
+{
+  "protocol": "v3-final-audit-commitments-v1",
+  "inputs": {
+    "independent-adjudication.original.json": "7f33f0fd14595ce61d924198a9b7be11ed6cd3eb257bf99a46a3caae5ca9753a",
+    "remaining-audit.original.json": "5fdd66a0adb81bec7703e708423468d74c5746fd3e2afc541b387d2f4089574f",
+    "inputs/frozen/cases.json": "0a5d4c71640c271c5fd8ec464ff95b00434368a7023e9f22c5200a4135b64478",
+    "inputs/frozen/labels.json": "23a162b24de7364bca04cca5010966dfce8027fb258c0ab75826492027a81e29",
+    "inputs/frozen/manifest.json": "e207982e7b05c3d99bad5930ee8b63ef9884ecef427e77ece5f03a9d6ea61ad2",
+    "inputs/run/audit-v1/queue.json": "4b02c80bb0065f896bc9d2fd740da72423abde9ff12d3e0e51d6026aba9b5992",
+    "inputs/run/replay.json": "8e707a25181e6fa15e6eb1a1c97a10fb61d172fe82f35cfb04e880d3a284cc24",
+    "inputs/run/post-review-v1/unblinded-labels.json": "6ac4c2b10473266e4856b9d2d320dfc408f3d6875b406849cd8fb81435eaeb2b",
+    "first-audit/A1/commitment.json": "7e3ebbce9f6cab038562487486fa7d0e2bd66cd88a648fa10b7ab86b412fc32c",
+    "first-audit/A1/original-response.json": "11fb373513c89e3d79bebe5ed92549ae5c8b90dbbf788396cf74d2c9dab351eb",
+    "first-audit/A1/response.json": "04d3c7623f9548718ee397fe43598e7dd7d092144a4d0f6ca83599f71c80b8aa",
+    "first-audit/A2/commitment.json": "8796e8636081c8681dfbeb7658db4ed511fe3dfb56b5cc8c152c82c25cf07b4a",
+    "first-audit/A2/original-response.json": "82252a62c81f4903098ae9b599c12eab76b09c99ff56986c67478056d0efb7ef",
+    "first-audit/A2/response.json": "89bd779035a02097c5d91bfc90c9862739d58334d27dca89e40c4280053cbd56",
+    "first-audit/A3/commitment.json": "144d251089cc41367290c517eaccffbdb00884862cf42815db16b165261dd8b0",
+    "first-audit/A3/original-response.json": "757e52b19f08537ef2beff51399ad62f41478e3fb281ab610c908120a7a4810c",
+    "first-audit/A3/response.json": "1f5ec363d1704dfdb22b92de679f8b9ca6f4d64af6c7a79dfd8607389727e0c0",
+    "first-audit/A4/commitment.json": "f34f236da38dc0d8f94d19b23c31bfe3866f1de5652c7518e3b25db0ace7c165",
+    "first-audit/A4/original-response.json": "01b45c1a08d0b8cacacb4b7082e35ef9642fe7f95de5d73e3ef017f7ace97233",
+    "first-audit/A4/response.json": "835c21788fce8c23897bab340e3b5e99cf98394a2ee56a60ec97de76fe6b0662",
+    "first-audit/A5/commitment.json": "cab9441b2d75cd2201b85fb29a13b8a08603ab2db8926ff09772971f7be5abb2",
+    "first-audit/A5/original-response.json": "348a2c05363691029db55a4892aa7ca64c16956144df19079751dd8dbcd711fa",
+    "first-audit/A5/response.json": "65992998a55eeeee2c089e33c9abaeb473afcdd20d86895ba27bd6d874d1dae3"
+  },
+  "interpretationSha256": "7283def737e1a101f2b4ff27497ceba18481b674804a9818567f1384e495b8a4",
+  "summarySha256": "4ff8a0aa44aed10a95e1ef590ea8a2b14427084d0d32d8215156cc1a201a5c10"
+}

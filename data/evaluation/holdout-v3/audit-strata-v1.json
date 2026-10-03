@@ -1,0 +1,34 @@
+{
+  "protocol": "v3-authorized-update-stratum-v1",
+  "provenance": {
+    "source": "Middle analyst full scan of all 119 frozen source/objective pairs, cross-checked against prereview authorized factual changes and missing-information fields.",
+    "sourceFields": [
+      "authorizedFactualChanges",
+      "preservedFacts",
+      "missingInformationPreventsFulfillment",
+      "notes",
+      "source",
+      "objective"
+    ],
+    "reviewer": "middle analyst; custodian-recorded reviewed stratum",
+    "priorProvisional": {
+      "count": 85,
+      "sha256": "704d16e0322a215e9d6dfaa547c658a746e3fb04121a2b1e38787425edefb21e",
+      "status": "SUPERSEDED_METADATA_ONLY"
+    }
+  },
+  "explicitUpdateCaseIds": [
+    "V3-003", "V3-012", "V3-021", "V3-027", "V3-036", "V3-045", "V3-055", "V3-063", "V3-071", "V3-072", "V3-075", "V3-080", "V3-089"
+  ],
+  "vagueMissingCaseIds": [
+    "V3-008", "V3-017", "V3-031", "V3-040", "V3-072", "V3-082", "V3-096", "V3-106", "V3-114"
+  ],
+  "subtypeNotes": {
+    "V3-030": "Ordinary style request, not an update candidate under the reviewed source/objective stratum.",
+    "V3-072": "A supplied policy rule is available despite missing site-specific hours.",
+    "V3-082": "Requested dates are unavailable in the source.",
+    "V3-096": "Requested dates are unavailable in the source.",
+    "V3-106": "Missing-detail update; preserve by simplifying rather than inventing detail.",
+    "V3-114": "Vague source update; a restrained edit or flag can satisfy it."
+  }
+}

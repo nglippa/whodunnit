@@ -1,0 +1,29 @@
+{
+  "mode": "smoke-05",
+  "diagnosticsVersion": 4,
+  "diagnostics": {
+    "exitCode": 0,
+    "cliJsonReturned": true,
+    "stdoutBytes": 1896,
+    "stderrBytes": 0,
+    "safeMarkers": [],
+    "stderrPresent": false,
+    "stderrSummary": "",
+    "stderrDetail": "",
+    "diagnosticCode": "OK",
+    "errorClass": "none",
+    "reportedFlags": [],
+    "spawnErrorCode": null,
+    "modelInvocation": "response-received"
+  },
+  "start": "2026-10-03T05:01:55.893Z",
+  "end": "2026-10-03T05:01:58.146Z",
+  "status": "success",
+  "requestSha256": "7698da63a86a36b58dd4461b0218134310ca002c3641c6a93b32b17056c2dc3f",
+  "model": "sonnet",
+  "cliVersion": "2.1.288 (Claude Code)",
+  "resultSha256": "eb8be1fc3ed1f575ee424bf14e390dd3309f2511dea8489d080837106bc97dd2",
+  "resolvedModels": [
+    "claude-sonnet-5-5"
+  ]
+}

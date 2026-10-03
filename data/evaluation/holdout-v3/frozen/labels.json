@@ -1,0 +1,2781 @@
+[
+  {
+    "id": "V3-001",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Blue mug found in writer’s car; writer can bring it after the market on Saturday."
+    ],
+    "intentionalVoice": [
+      "Warm, simple personal message."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear; the objective makes edits conditional on need."
+  },
+  {
+    "id": "V3-005",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "18 seed packets collected; cafe back table available.",
+      "Labels can be printed Friday unless the printer has problems.",
+      "Contributors should mark the seed year."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Scanning can improve through grouping or formatting without changing details."
+  },
+  {
+    "id": "V3-006",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Porch tomatoes available for passersby to take in a bag; some are small and yellow."
+    ],
+    "intentionalVoice": [
+      "Playful tomato takeover and unruly-tomato imagery."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "The note is already tidy and its jokes are deliberate."
+  },
+  {
+    "id": "V3-009",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Tuesday proposed for meeting; Wednesday morning before 11 is an alternative."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Unnecessary formality occurs throughout the short note."
+  },
+  {
+    "id": "V3-010",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Repair cafe returns next month.",
+      "Volunteers help diagnose items but cannot promise repairs.",
+      "Date will be shared after hall booking confirmation."
+    ],
+    "intentionalVoice": [
+      "Welcoming invitation using familiar repair examples."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already natural; modest tightening is sufficient."
+  },
+  {
+    "id": "V3-016",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Bring one soup container to share and one empty container; small portions welcome.",
+      "Ingredient labels especially identify nuts, dairy and wheat; blank cards and pens available near door.",
+      "Vegetarian table is not allergen-free; home kitchens vary.",
+      "Visitors can taste and talk without bringing soup.",
+      "Hall opens noon; swapping around 12:30; tables until 2; extra spoons limited."
+    ],
+    "intentionalVoice": [
+      "Friendly reassurance to first-time visitors."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Reorganizing practical steps can aid first-time readers; preserve allergy caveats."
+  },
+  {
+    "id": "V3-017",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Weekend work remains undecided while team talks with building manager.",
+      "Volunteers should hold supplies; news will be shared when more is known.",
+      "Some volunteers arranged childcare or changed plans; pass uncertainty to people outside group."
+    ],
+    "intentionalVoice": [
+      "Apologetic appreciation for volunteers’ arrangements."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Put unresolved status and immediate instruction prominently; no timeline supplied or required."
+  },
+  {
+    "id": "V3-022",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Labels remain wrapped on kitchen table.",
+      "Sister suggests giving labels a home and listing boxes by phone; existing list says lights.",
+      "Missing chess piece was blamed on now-deceased dog, found, then misplaced again.",
+      "Sunday attic visit depends on rain stopping and remains uncertain."
+    ],
+    "intentionalVoice": [
+      "Dry self-mockery about organization and avoiding the ladder.",
+      "Sister’s annoyingly correct comment and the dog apology.",
+      "Please do not ask on Monday."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Flow and punctuation edits should leave narrative and comic timing intact."
+  },
+  {
+    "id": "V3-024",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Monthly table is first Friday; next meeting this Friday 5 to 7.",
+      "Unfinished projects, photos, observers and empty-handed visitors welcome; children with adult.",
+      "Tea available; no presentation or sign-up; no need to provide supplies.",
+      "Path beside noticeboard leads to open side door."
+    ],
+    "intentionalVoice": [
+      "Easygoing invitation that welcomes small questions and unpolished projects."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already coherent; trim only a few redundant invitations if useful."
+  },
+  {
+    "id": "V3-026",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Spare adapter taken from recipient’s desk; return after demo unless needed sooner."
+    ],
+    "intentionalVoice": [
+      "Friendly teammate informality."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already smooth enough to satisfy the objective."
+  },
+  {
+    "id": "V3-028",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Friday deck needs last month’s finance-chart labels fixed and slide-six notes updated for removed section.",
+      "Fix before circulating deck; no review of rest requested."
+    ],
+    "intentionalVoice": [
+      "Courteous, direct request."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Tighten introductory phrasing without weakening the two requests."
+  },
+  {
+    "id": "V3-030",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Cleanout finished; shelves labeled; old equipment set aside for pickup.",
+      "Remaining questions due to writer by Wednesday."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Corporate wording spans the message and can be simplified."
+  },
+  {
+    "id": "V3-033",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Do not order replacement signs until Facilities confirms new room names.",
+      "Draft floor plan can estimate quantities but is not final naming list.",
+      "Confirmation expected next week and forwarded when received."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "The distinctions are already explicit and professional."
+  },
+  {
+    "id": "V3-034",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Guide ready for review; accessibility suggestions incorporated and rail-ticket section added.",
+      "Reimbursement policy unchanged.",
+      "Comments due Friday; writer will collect and make final pass."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clear existing flow warrants restraint."
+  },
+  {
+    "id": "V3-036",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Change planned reopening from Monday, June 16 to Wednesday, June 18."
+    ],
+    "preservedFacts": [
+      "Closure remains first two weeks of June.",
+      "Hallway painting continues; east entrance may be noisy.",
+      "Class schedule awaits instructor confirmation of online sessions."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Date correction is local; avoid attaching class return to the new reopening day."
+  },
+  {
+    "id": "V3-038",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Leave tables as found and return borrowed supplies to labeled cabinet.",
+      "Checklist attached; feedback due end of next week, then instructions may be adjusted."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Simplify inflated framing while keeping practical guidance."
+  },
+  {
+    "id": "V3-040",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Vendor can visit next week; exact window unresolved.",
+      "West meeting room held Thursday morning provisionally, subject to confirmation.",
+      "East corridor remains open; west-room meetings may need to move."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Source combines status with instructions to its writer; convert to staff-facing update."
+  },
+  {
+    "id": "V3-043",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Draft may go to regional coordinators Friday if Legal finishes by noon Thursday.",
+      "Links and image descriptions checked; retention period for public submissions unresolved.",
+      "Public posting unscheduled, dependent on final wording and second accessibility check after edits."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Make conditional draft circulation and later public posting separately visible."
+  },
+  {
+    "id": "V3-044",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Eight tables arrived Wednesday and assembled yesterday.",
+      "Three regular staff tested lamps; two requested warmer bulbs; alternative tried before final order.",
+      "Wall repair next week; Tuesday painting estimate depends on drying.",
+      "Reopening awaits wall work inspection and paint curing.",
+      "Next update Wednesday even if date still pending."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Polish lightly; the source already conveys causal sequence and uncertainty."
+  },
+  {
+    "id": "V3-045",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Change welcome table opening from 8:30 a.m. to 8:45 a.m.",
+      "Change first tour start from 9:15 to 9:30."
+    ],
+    "preservedFacts": [
+      "Three greeters required, correcting earlier two; use three in rota.",
+      "Printed map at entrance and reminder email.",
+      "Jordan checks microphone and reports Monday; Lee sends draft email Tuesday.",
+      "Writer and safety lead review route; courtyard stairs may be closed, requiring longer indoor route.",
+      "Do not contact visitors until route settled."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Two local time changes; keep other assignments and contingency."
+  },
+  {
+    "id": "V3-046",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Request link on staff home page reduces time finding form.",
+      "62 first-month requests; 54 included location; eight needed follow-up, usually missing room.",
+      "No old-process comparison; total fulfillment-time improvement cannot be claimed.",
+      "Label will ask building and room; review another month; supply team can help."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Opening needs strong simplification; remaining report needs light polishing."
+  },
+  {
+    "id": "V3-047",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Writer had changes Tuesday, awaited one shift, then forgot final send; old sheet caused double desk assignment.",
+      "Attached roster is authoritative; three changed rows highlighted.",
+      "Handoff check added to send settled assignments promptly; conflicts with missed leave requests fixed today."
+    ],
+    "intentionalVoice": [
+      "Personal accountability and appreciation for recipients’ patience."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Apology already owns the cause; only modest tightening is justified."
+  },
+  {
+    "id": "V3-048",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Three small sessions plus written comments do not survey all residents.",
+      "Participants repeatedly requested current shared-room schedules; printed board had older version.",
+      "Online schedule ready for staff review; printout owner unresolved.",
+      "Six-week trial after owner confirmed; proposal next Tuesday."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Objective targets inflated start of second paragraph; preserve others closely."
+  },
+  {
+    "id": "V3-049",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Import pauses for check; check continues after window closes."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already concise and clear; formatting alone may suffice."
+  },
+  {
+    "id": "V3-053",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Legend added below chart; dotted line is estimate rather than last month’s actual total."
+    ],
+    "intentionalVoice": [
+      "Casual folks and slightly self-effacing muddy wording."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Only local clarification, if useful."
+  },
+  {
+    "id": "V3-058",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Submitted requests cannot be undone in portal.",
+      "Coordinator may withdraw a request still awaiting review; include request number."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Keep withdrawal conditional rather than promised."
+  },
+  {
+    "id": "V3-059",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "New public-collection additions trigger follower summary email; same-hour additions grouped into one email even with multiple contributors.",
+      "Following can continue with emails off; then no collection emails sent, including for earlier follows.",
+      "Owner gets no separate copy; must follow with emails on."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Requested help-page presentation may restructure the explanation around rule and exceptions."
+  },
+  {
+    "id": "V3-063",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [
+      "Use $50 free-delivery threshold effective 15 June, replacing $40 consistently in rule and example."
+    ],
+    "preservedFacts": [
+      "Earlier orders retain threshold shown at checkout; no retroactive recalculation.",
+      "Delivery fee below applicable threshold remains $6."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Source is an editorial brief to convert into customer-facing shipping guidance."
+  },
+  {
+    "id": "V3-064",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Switch fan off and wait for stopped blades before opening panel, even for inspection.",
+      "Panel lifts from lower edge; magnets hold it; no screws or dismantling.",
+      "Slide old filter straight out; new arrow faces fan; check orientation before insertion.",
+      "Close panel before restarting fan."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Printed quick-start steps require removing editorial instructions while preserving order."
+  },
+  {
+    "id": "V3-066",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Three volunteer library branches trial checkout form six weeks.",
+      "Review staff feedback before changes or possible wider invitation; no findings yet.",
+      "No citywide rollout promised."
+    ],
+    "intentionalVoice": [
+      "Author’s caution about prematurely calling a trial a launch."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Convert planning brief into internal update with trial status explicit."
+  },
+  {
+    "id": "V3-068",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Old links point to preserved published versions; archived pages dated and uneditable.",
+      "Current version link leads to current guide; absent for withdrawn guides without replacement.",
+      "Check for current version before giving archive link as advice.",
+      "Report missing current content from current page; archive reports use different queue.",
+      "Archive cannot repair current guide or recover unpublished drafts; drafts separately stored and subject to deletion."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "FAQ conversion authorizes substantial organization, not factual change."
+  },
+  {
+    "id": "V3-069",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "First-minute red light checks paper path; leave paper out until white.",
+      "Red longer than two minutes: switch off, clear slot and restart.",
+      "Red after sheet enters: gently pull in forward direction, never backward; inspect torn paper before retry.",
+      "Repeated red may indicate worn roller; support can use short feed video, not red-light photo, to assess.",
+      "Blank sheet sufficient; remove private documents from view."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Scenario headings and ordered actions can improve use under pressure."
+  },
+  {
+    "id": "V3-071",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [
+      "Use 45-minute desk opening before each session from 1 September, replacing 30 minutes.",
+      "Correct draft requirement that everyone check in: only badge collectors need desk."
+    ],
+    "preservedFacts": [
+      "Session starts unchanged; room opens 15 minutes before session.",
+      "Only attendees collecting badges visit desk; existing badge holders go straight to room.",
+      "Occasional early desk opening is discretionary and not a guarantee."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Convert editorial brief into attendee guidance distinguishing desk and room times."
+  },
+  {
+    "id": "V3-072",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [
+      "Replace end-of-day return instruction with return by following business day during storage-room opening hours."
+    ],
+    "preservedFacts": [
+      "Check posted local storage-room hours; sites may differ.",
+      "Pack display, stand and two cables in case.",
+      "Return available kit on time and report missing cable to desk; do not retain kit while searching."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Local hours are unnecessary because objective expressly requests referring to posted hours."
+  },
+  {
+    "id": "V3-073",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "No recorded objection is not evidence of agreement."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already concise and unambiguous."
+  },
+  {
+    "id": "V3-074",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Leave sample labels attached; containers replaceable but unlabeled samples unreconstructable."
+    ],
+    "intentionalVoice": [
+      "Direct practical contrast with firm lab instruction."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "The two sentences already achieve the requested voice."
+  },
+  {
+    "id": "V3-076",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "38 participants from two evening classes; attendance improved over six-week trial.",
+      "No comparison group; no established reminder-system causation or generalizability to other classes."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Local plain-language clarification can help nonspecialists."
+  },
+  {
+    "id": "V3-077",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Writer recommends retaining quiet hour despite some opposition.",
+      "Quiet hour gives predictable access to people who find room exhausting."
+    ],
+    "intentionalVoice": [
+      "Personal conviction; a busier room is not automatically a better room."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear; avoid neutralizing the argument."
+  },
+  {
+    "id": "V3-078",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Staff should use shared equipment-booking form.",
+      "Form helps workshop team see upcoming needs and allocate resources."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Corporate phrasing spans both sentences."
+  },
+  {
+    "id": "V3-079",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Weekday opening 10 a.m.; up to four boxes at once.",
+      "Personal research photography allowed except marked folder restrictions.",
+      "Ask staff before removing document from sleeve."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Existing visitor guidance is clear and concise."
+  },
+  {
+    "id": "V3-080",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Change budget from three to four guest speakers.",
+      "Have a guest lead every session, including final session previously led by department members."
+    ],
+    "preservedFacts": [
+      "Seminar monthly September through December; sessions 90 minutes with short presentation then discussion."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Budget and final-session leader are local factual updates."
+  },
+  {
+    "id": "V3-081",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Rubric useful; middle-band descriptions sometimes hard to distinguish.",
+      "Two assessors spent more time on adjacent-score choice than work quality.",
+      "Writer recommends fixing before next use."
+    ],
+    "intentionalVoice": [
+      "Candid judgment that the issue warrants repair."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Formal report register requires light wording changes throughout."
+  },
+  {
+    "id": "V3-082",
+    "reviewerId": "R1A",
+    "expectedEditScope": "INSUFFICIENT_INFORMATION",
+    "authorizedFactualChanges": [
+      "Replace approval-dependent timing with new consultation dates and submission deadline once provided."
+    ],
+    "preservedFacts": [
+      "Responses via website or post; summary will explain issues and influence on final document."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": true,
+    "notes": "Neither new dates nor deadline is supplied; they cannot be inferred."
+  },
+  {
+    "id": "V3-084",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Normally request tool-store access at least two working days ahead for availability and supervision.",
+      "Unlocked room does not authorize unsupervised use.",
+      "Urgent repairs go to duty technician, not multiple forms.",
+      "Without technician repair waits unless facilities manager authorizes alternative; record authorization and authorizer in repair log."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Improve organization while retaining normally, authority and exception."
+  },
+  {
+    "id": "V3-086",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "412 responses, 287 online; paper at library and community centre.",
+      "Pavement maintenance and bus reliability most frequent priorities among respondents, not whole-town ranking.",
+      "Response rate uncertain due to wider link sharing; some residents had fewer paper opportunities.",
+      "Useful for next consultation; not representative vote."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already publication-ready in substance; modest local polish only."
+  },
+  {
+    "id": "V3-088",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Eight practice-session recordings with participant permission.",
+      "Two independent reviewers coded task/process/unrelated interruptions; 81 per cent category agreement before discussion.",
+      "Final two sessions fewer interruptions than first two.",
+      "Familiarity and midway guidance introduction cannot be separated causally."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Flow edits must preserve confounding explanation."
+  },
+  {
+    "id": "V3-091",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Local printer helps students test parts without main-building travel, especially evenings.",
+      "Booking sheet outdated and failed prints left without note.",
+      "Recommendation retain printer, assign evening person and log failed jobs."
+    ],
+    "intentionalVoice": [
+      "Author’s practical judgment that relocation sacrifices usefulness to solve management problems."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Report register can be adjusted while preserving first-person recommendation."
+  },
+  {
+    "id": "V3-092",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Three neighbourhood newsletters; six months before and after bridge closure; 47 items; unrelated letters and adverts excluded.",
+      "Different business, school and engineering emphases do not establish resident priorities; editorial selection and nonrandom contributors.",
+      "Multiple topics retained in coding to preserve change over time.",
+      "Analysis describes newsletter discussion, not full opinion or effects on readers."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already coherent academic prose; local polish enough."
+  },
+  {
+    "id": "V3-093",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Proposed equipment: folding tables, display boards and two battery speakers; specialist-training or costly-servicing items excluded.",
+      "Book through centre; collect staffed hours; speaker deposit only, returned after next-working-day check.",
+      "Nine-month pilot records bookings, late returns, repair costs and unmet requests; cannot measure wider social benefit.",
+      "Reception workload reviewed after six weeks; collection hours may shorten; adequate staff time required."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Tighten repeated explanations and emphasize existing reasoning without deleting caveats."
+  },
+  {
+    "id": "V3-095",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Leader confirms route, meeting point and return arrangements; written information to participants; explains changed route before proceeding.",
+      "Charged phone and printed emergency list; plan assistance for unreliable-signal sections; second adult knows information location.",
+      "Early departures require informing leader; under-18 departures follow prior consent; record departure time/travel and apply retention policy.",
+      "Final return/agreed-departure check required; unresolved absence reported immediately; earlier count insufficient."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Plain-language procedural organization is appropriate; retain distinction between must and should."
+  },
+  {
+    "id": "V3-096",
+    "reviewerId": "R1A",
+    "expectedEditScope": "INSUFFICIENT_INFORMATION",
+    "authorizedFactualChanges": [
+      "Add confirmed opening date, application deadline and residency dates once supplied."
+    ],
+    "preservedFacts": [
+      "Studio provides workbench, basic storage and weekly technical clinic; no materials allowance; residents arrange specialist equipment.",
+      "63 applications for six places; selection by proposal and studio suitability; exhibitions not required.",
+      "Guide’s worked example fictional and not selection guarantee.",
+      "Do not assume previous year’s dates for travel or accommodation."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": true,
+    "notes": "Requested confirmed dates are absent; autumn expectation is not a confirmed timetable."
+  },
+  {
+    "id": "V3-098",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Repair cafe Saturday; bike table busy until last half hour; sewing line after lunch.",
+      "Second sewing station next month only possible if machine found; borrowing request and setup unsettled."
+    ],
+    "intentionalVoice": [
+      "Warm community observation of people helping and making room for one another."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Objective explicitly calls for restraint; already flows well."
+  },
+  {
+    "id": "V3-099",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Sunday garden work party at 9; bring gloves if available because extra pairs limited."
+    ],
+    "intentionalVoice": [
+      "Friendly practical reminder."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already concise; no necessary change evident."
+  },
+  {
+    "id": "V3-102",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Jar contents and date on blue tape; jars containing nuts also need second lid label."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Steps and conditional second label are already clear."
+  },
+  {
+    "id": "V3-105",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Sheet on counter near sink; one row per person.",
+      "Select morning or afternoon, choosing preferred one if both work.",
+      "Count determines room unlock time."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clarify exactly one time choice; no need to expand procedure."
+  },
+  {
+    "id": "V3-108",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "First shuttle station departure 8:10 a.m.; every 40 minutes until noon; same schedule both event days.",
+      "Near noon check posted board for changed last departure.",
+      "Folding carts must fit under seat, cannot be in aisle.",
+      "No clinic stop; closest stop opposite pharmacy, about five-minute walk to clinic; slower walkers or loads need extra time."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Separate question blocks and compact answers to improve scanning."
+  },
+  {
+    "id": "V3-109",
+    "reviewerId": "R1A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Started with 12 tools and neighbour’s community-room shelf.",
+      "Current count about 70, uncertain and not recounted since spring.",
+      "Step ladder fastest reserved; sewing machine and popular hand truck.",
+      "Older tools need checks; inventory updates sometimes lag."
+    ],
+    "intentionalVoice": [
+      "Rae’s conversational about 70, I think uncertainty and anecdotal phrasing."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Small transcript tidying should preserve uncertainty and exchange format."
+  },
+  {
+    "id": "V3-114",
+    "reviewerId": "R1A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Pilot first phase began; source claims positive participant response without specifics."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": null,
+    "notes": "Concrete status can be salvaged and missing dates, activities, specific feedback and next steps flagged; unclear whether supplied detail suffices for the desired useful update. Do not invent evidence."
+  },
+  {
+    "id": "V3-119",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "1,284 July–September visits vs 1,106 April–June; excludes staff/event volunteers; Tuesday evenings 312, highest reported weekly slot.",
+      "Entry counter and desk tally checked against each other on two busy evenings, not every day.",
+      "436 borrowing transactions include renewals, not unique borrowers; repeat and first-time visitors cannot be reliably separated.",
+      "August plumbing closure two days Monday/Tuesday; no adjustments for closures/opening hours.",
+      "Same method planned; program attendance separate if added; counter placement reviewed because group entry can undercount."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Group figures and definitions for scanning while preserving measurement qualifications."
+  },
+  {
+    "id": "V3-120",
+    "reviewerId": "R1A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "On schedule as of Monday October 5; east wing open; third-floor meeting room estimated closed through October 16.",
+      "Contractor reports membrane installed; seam checks and roof-access clearance remain.",
+      "City inspection October 12; final sign-off pending; issues need contractor time/cost estimate before revised completion.",
+      "$18,400 spent of $22,000; balance reserved for inspection and closeout; next cost update includes approved change orders.",
+      "Inspection issue may shift reopening, update by 3 p.m. that day; otherwise confirm after barrier removal and facilities walkthrough.",
+      "Use first-floor meeting area until ready; report room conflicts to facilities desk."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Headings or grouped status points can improve scanning without promoting estimates to guarantees."
+  },
+  {
+    "id": "V3-002",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Casual, apologetic friend-to-friend tone."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-003",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Potluck time: 6:30 Thursday.",
+      "Location: library courtyard."
+    ],
+    "preservedFacts": [
+      "Thursday schedule and reminder context."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-004",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Low-pressure neighborhood invitation."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-007",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Humorous, affectionate caption."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-008",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "New place and time remain unconfirmed; full details will follow."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-011",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Blue doors and dent; memory of Saturday lessons with brother; parents were never late; hoped-for photo next weekend depends on weather."
+    ],
+    "intentionalVoice": [
+      "Quiet, restrained personal reflection."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-012",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Map has 14 stops.",
+      "Print target is December."
+    ],
+    "preservedFacts": [
+      "Crossing by bakery is difficult; Marta waited two light changes; possible marker adjustment; council approval is required before printing."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-013",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Requests to stand donated books upright and close the door firmly in rain; painting date depends on forecast."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-014",
+    "reviewerId": "R1B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Lee brought the folding table; two spare game pieces were found; friends stayed late and helped clean up."
+    ],
+    "intentionalVoice": [
+      "Informal, amused thanks to friends."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-015",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Conversational rhythm; slightly amused ending."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-018",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Tentative, constructive feedback."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-019",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Count of 63 items including four drills needing batteries is provisional; Nora may compare paper and online lists this week."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-020",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Tree has three new leaves, leans toward fence, and may have been overwatered; outcome remains uncertain."
+    ],
+    "intentionalVoice": [
+      "Plain, affectionate, slightly uncertain."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-021",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [
+      "Volunteers cleared 95 meters of brush.",
+      "Parks office will collect cuttings Monday."
+    ],
+    "preservedFacts": [
+      "Lower bend stays closed; contractor visit is inspection only, with repair plan not yet known."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-023",
+    "reviewerId": "R1B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Current budget covers 120 copies, not hoped-for 200; folding Thursday depends on delivery Wednesday as promised."
+    ],
+    "intentionalVoice": [
+      "Contributor-facing excitement; grounded and natural."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-025",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Calm, concise reply."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear; preserve timing and calm tone."
+  },
+  {
+    "id": "V3-027",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Review time is 3 p.m. Tuesday."
+    ],
+    "preservedFacts": [
+      "Draft will be shared beforehand; comments go in document."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-029",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Supportive, unhurried tone."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear; only a minor adjustment if it materially helps."
+  },
+  {
+    "id": "V3-031",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Attendance remains a placeholder pending sign-in count; most stayed full hour; request for more examples and a sample budget."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-032",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Checklist trial is tomorrow with afternoon shift; predicted benefit is tentative pending repeated use."
+    ],
+    "intentionalVoice": [
+      "Informal teammate voice."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-035",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "18 of 24 signs installed; mounts expected Wednesday per supplier without shipping notice; finish before Friday walk-through only if arrive by Thursday morning."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-037",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Priya compares formats by Thursday; Omar asks front desk; current form stays; writer drafts two wording options Friday."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-039",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "No volunteers have been asked to swap; comments go in sheet, not directly to volunteers."
+    ],
+    "intentionalVoice": [
+      "Friendly, slightly informal style."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-041",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "43/50 within two business days versus 36/50; request mixes differed; results do not isolate triage effect."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-042",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Concern about map readability in low light; quotes remain unchanged; writer offers to draft connecting paragraph."
+    ],
+    "intentionalVoice": [
+      "Measured tone."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-050",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Expired code requires requesting another; old code cannot be reactivated."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-051",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Direct, matter-of-fact tone."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already concise and clear."
+  },
+  {
+    "id": "V3-052",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Invitees can view comments immediately; card editing requires role change."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-054",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Reading interval is five minutes with lid closed; opening does not erase earlier readings; next reading can be delayed."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-055",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Weekday help desk closing time is 6 p.m. starting Monday."
+    ],
+    "preservedFacts": [],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-056",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Issue occurs when reopening saved filter in compact view; fix timing remains tentative."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-057",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Friendly colleague guidance."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already useful; restraint is appropriate."
+  },
+  {
+    "id": "V3-060",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "One file per workspace; runs begin at 2 a.m. in each workspace time zone; do not treat absence at 3 a.m. as failure."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-061",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Dial shows current batch position and target mark; retain plain, lightly playful voice."
+    ],
+    "intentionalVoice": [
+      "Plainspoken, lightly playful voice."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-062",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Token supports one active session; second session ends first within seconds; no advance warning."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-065",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Timeline only shows dated work; list view differs; import issue is only a possibility."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-067",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Usual same-business-day response for requests by 4 p.m.; later requests normally next business day; outage route."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-070",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Quiet mode does not silence final ring or sync across devices."
+    ],
+    "intentionalVoice": [
+      "Candid, conversational voice."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-075",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Registration closing date is 21 March."
+    ],
+    "preservedFacts": [],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-083",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Practical support differs from being noticed when attendance stops; sample is 16 service users and excludes those who never approached."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-085",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Conversational character and dry humor."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-087",
+    "reviewerId": "R1B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-089",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Panel meetings are in February, June, and October.",
+      "Decisions are sent within three weeks."
+    ],
+    "preservedFacts": [
+      "Assessment criteria and revision process remain; revision invitation is not funding offer."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-090",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Trial covers east path only; counters record journeys, not identities; counts alone do not establish perceived safety; construction may extend trial."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-094",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Median fell 18 to 12 days; assignments 164 to 121 and tutor hours differed; contribution not established."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-097",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "West entrance closed Tuesday morning for ramp repair; Pine Street library doors; signs before 8; reopening by noon subject to rain."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-100",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Survey gathers ideas before June meeting; city has not approved plan; no guarantee suggestions chosen; anonymous responses summarized."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-101",
+    "reviewerId": "R1B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Mural and bus stop projects; Thursday 6:30; rec room."
+    ],
+    "intentionalVoice": [
+      "Natural neighborhood invitation."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-103",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Switch projector off at wall; wait for fan before unplugging HDMI; cable top drawer; remote basket by door."
+    ],
+    "intentionalVoice": [
+      "Practical, lightly frustrated voice softened."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-104",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [],
+    "intentionalVoice": [
+      "Plainspoken, cautious voice."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Explicitly asks for no unnecessary edits."
+  },
+  {
+    "id": "V3-106",
+    "reviewerId": "R1B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Do not invent permitted item categories or location beyond entrance-adjacent receptacle."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-110",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "No registration; room capacity 30 and early arrival does not guarantee entry; activity table is not supervised childcare; adults remain responsible."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-111",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Café owner allowed noise if wrapped by four; courtyard dates must be checked; another session remains uncertain pending dates and supply-bin plan."
+    ],
+    "intentionalVoice": [
+      "Dev’s firsthand conversational tone."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-112",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "North half checked; three southern paths and bridge status remain unconfirmed; fallback publish by Friday marked unconfirmed if no reply."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-113",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Chair count about 18; room booking and equipment remain uncertain; confirm layout before printing handouts; no extra orders before room and equipment details settle."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-115",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "80 first-session copies and 20 held back; Jo sends Wednesday and checks page numbers/large-print; pause if quote exceeds $95; total budget $120."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-116",
+    "reviewerId": "R1B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "7 p.m. Maple Park south gate; paved mile loop; 15 loaners; severe weather gym decision by 4 p.m.; no outdoor walk during lightning/high winds; children stay with adult."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-117",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Reflection about allowing silence at archive discussions; preserve modest personal voice."
+    ],
+    "intentionalVoice": [
+      "Modest personal voice."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already personal and clear; only a small rhythm change could be justified."
+  },
+  {
+    "id": "V3-118",
+    "reviewerId": "R1B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "New place is good and convenient; speaker still misses familiar landmarks and footbridge."
+    ],
+    "intentionalVoice": [
+      "Quiet, nuanced reflection."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": ""
+  },
+  {
+    "id": "V3-004",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Sunday park weeding around new trees; ten minutes or an hour welcome; extra gloves available."
+    ],
+    "intentionalVoice": [
+      "Low-pressure, welcoming invitation."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear and friendly; restraint is appropriate."
+  },
+  {
+    "id": "V3-005",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "18 packets; cafe back table available; labels planned Friday subject to printer reliability; mark packet year."
+    ],
+    "intentionalVoice": [
+      "Informal practical update."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Light formatting can improve scanning."
+  },
+  {
+    "id": "V3-016",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Saturday exchange; bring sharing and empty containers; small portions welcome; ingredient labels especially nuts, dairy, wheat; cards and pens at door.",
+      "Vegetarian table is not allergen-free; home kitchens differ; attendance without soup welcome; small samples expected.",
+      "Hall noon; swapping around 12:30; tables until 2; extra spoons limited and personal spoons helpful."
+    ],
+    "intentionalVoice": [
+      "Friendly, accommodating instructions."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Organize logistics and allergy cautions clearly."
+  },
+  {
+    "id": "V3-025",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Revised agenda by noon tomorrow; review before Thursday meeting."
+    ],
+    "intentionalVoice": [
+      "Calm appreciative reply."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already concise and readable; objective explicitly permits no edit."
+  },
+  {
+    "id": "V3-026",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Spare adapter taken from recipient desk; return after demo unless needed sooner."
+    ],
+    "intentionalVoice": [
+      "Friendly teammate informality."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already smooth; any improvement would be very minor."
+  },
+  {
+    "id": "V3-027",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Change Tuesday review time from 2 p.m. to 3 p.m."
+    ],
+    "preservedFacts": [
+      "Tuesday review; draft shared beforehand; comments in document."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Time replacement and light formatting suffice."
+  },
+  {
+    "id": "V3-028",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Friday deck for Mara; finance chart uses last month labels; slide six notes reference cut section; fix both before circulation; no other revisions."
+    ],
+    "intentionalVoice": [
+      "Courteous teammate request."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Trim introductory wording without weakening scope."
+  },
+  {
+    "id": "V3-036",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Change planned reopening from Monday June 16 to Wednesday June 18."
+    ],
+    "preservedFacts": [
+      "Closure first two weeks of June for floor refinishing; hallway painting continues and east entrance may be noisy.",
+      "Revised class schedule awaits instructor confirmation of online sessions; class return must not be assumed on reopening day."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Update date and clarify that class scheduling remains pending."
+  },
+  {
+    "id": "V3-041",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Four-week pilot: 43 of 50 resolved within two business days versus 36 of 50 previous four weeks; request mixes differ.",
+      "Largest delays equipment pickups awaiting warehouse handoff; recommend another month daily triage and separate pickup tracking; triage contribution unknown."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clarify comparison and limited inference."
+  },
+  {
+    "id": "V3-046",
+    "reviewerId": "R2A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Request link on staff home page reduces searching for form.",
+      "First month 62 requests; 54 delivery locations on first submission; eight follow-ups, usually building without room; no old-process comparison or demonstrated fulfillment-time reduction.",
+      "Change label to request building and room; review another month; supply team help remains available."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Replace inflated framing and reorganize around operational evidence."
+  },
+  {
+    "id": "V3-055",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Starting Monday weekday help desk closing moves from 5 p.m. to 6 p.m.; weekend hours unchanged."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Convert message into handbook notice."
+  },
+  {
+    "id": "V3-063",
+    "reviewerId": "R2A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [
+      "Use $50 free-delivery threshold effective 15 June in page rule and example."
+    ],
+    "preservedFacts": [
+      "Earlier orders retain threshold shown at checkout when placed; no recalculation; standard fee $6 below applicable threshold."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Convert internal drafting instructions into customer-facing explanation."
+  },
+  {
+    "id": "V3-065",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Timeline needs dated work; no dated milestones yields empty timeline; undated tasks remain in list.",
+      "Add due date in task then return to timeline; same task, no new copy.",
+      "Spreadsheet date format may require corrections; possible cause, not proof import failed or all milestones affected."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clarify sequence and qualified diagnosis."
+  },
+  {
+    "id": "V3-069",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "First-minute red light can indicate paper-path check, not necessarily jam; keep sheet out until white; more than two minutes red requires power off, clearing slot and restart.",
+      "Red after sheet enters: pull gently in travel direction, never backward; inspect torn paper before retry.",
+      "Recurring red after clearing and another sheet may involve worn roller; support video can confirm possibility, not definite replacement.",
+      "Blank sheet sufficient for feed video; remove private papers from view; capture feed and stop behavior."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Use distinct scenarios and sequential actions."
+  },
+  {
+    "id": "V3-070",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Quiet mode skips halfway reminder and spoken countdown; final ring remains at device alert volume; app cannot set that volume.",
+      "Applies to newly started timers, not running timers; switch remembers choice locally on each device; no sync.",
+      "Silence requires device alert adjustment or silent setting if available."
+    ],
+    "intentionalVoice": [
+      "Candid first-person conversational explanation, including timer being chatty."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Reduce repetition while retaining conversational texture."
+  },
+  {
+    "id": "V3-071",
+    "reviewerId": "R2A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [
+      "Publish desk opening 45 minutes before sessions from 1 September instead of 30 minutes.",
+      "Correct universal check-in instruction: only badge collectors use desk; existing badge holders go to room."
+    ],
+    "preservedFacts": [
+      "Session starts unchanged; room opens 15 minutes before session; discretionary early desk opening not guaranteed."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Replace drafting commentary with attendee instructions."
+  },
+  {
+    "id": "V3-072",
+    "reviewerId": "R2A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [
+      "Replace end-of-day return requirement with following business day during storage-room hours."
+    ],
+    "preservedFacts": [
+      "Check posted site-specific hours; no uniform opening or closing time supplied.",
+      "Pack display, stand and two cables in case; return available kit on time and report missing cable to desk; do not delay return to search."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Local hours reference resolves missing clock time without preventing fulfillment."
+  },
+  {
+    "id": "V3-073",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "No recorded objection does not establish agreement."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "A small plain-language simplification is possible."
+  },
+  {
+    "id": "V3-074",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Keep sample labels attached; containers replaceable, unlabeled samples cannot be reconstructed."
+    ],
+    "intentionalVoice": [
+      "Direct practical warning with purposeful contrast."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear and forceful."
+  },
+  {
+    "id": "V3-077",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Recommend quiet hour despite mixed popularity; predictable visit time for people exhausted by room; busier does not necessarily mean better."
+    ],
+    "intentionalVoice": [
+      "Personal stance, candid concession and pointed final sentence."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already coherent; preserve restraint and voice."
+  },
+  {
+    "id": "V3-078",
+    "reviewerId": "R2A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Staff should use shared booking form for equipment requests; workshop team can see needs and allocate resources."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Rewrite corporate phrasing in ordinary professional language."
+  },
+  {
+    "id": "V3-081",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Rubric useful; middle-band descriptions sometimes hard to distinguish; two assessors reported more time on adjacent scores than work quality; fix before reuse."
+    ],
+    "intentionalVoice": [
+      "Candid assessment."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Adjust informal closing for report context."
+  },
+  {
+    "id": "V3-083",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "First-year support meanings differ: practical timetable/form help versus noticing nonattendance; appointment services may address first more readily.",
+      "No claim appointments ineffective; 16 interviewed students had contacted service and cannot represent those who never approached; further-study question concerns help before naming problem."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Lightly clarify academic argument and limitations."
+  },
+  {
+    "id": "V3-085",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Different editions, revisiting passages and late good conversations do not justify converting group to class.",
+      "Choose next text before departure and name discussion opener; no lecture/slides required; question, paragraph or irritation enough."
+    ],
+    "intentionalVoice": [
+      "Conversational first-person proposal and dry humour."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already readable and characterful; only incidental tidying warranted."
+  },
+  {
+    "id": "V3-086",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "412 responses; 287 online; paper at library/community centre; pavement maintenance and bus reliability most identified priorities.",
+      "Cannot infer whole-town ranking; shared link makes response rate difficult; paper access unequal; planning input not representative vote."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Publication-ready qualifications are already clear."
+  },
+  {
+    "id": "V3-090",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Trial east path only; west has working lamps and would complicate comparison; counters count journeys not identify people.",
+      "More journeys alone does not show felt safety; interviews start/end with paper option; at least eight weeks with possible extension for prolonged building work."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Tighten while retaining causal rationale and conditions."
+  },
+  {
+    "id": "V3-093",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Occasional community-group tool needs; folding tables, display boards, two battery speakers; exclude specialist-training or expensive-servicing items.",
+      "Book through centre, collect staffed hours; speaker-only deposit returned after next-working-day check; disclose inconvenience.",
+      "Nine-month pilot records bookings, late returns, repairs, unstocked requests to guide expansion, not wider social benefit.",
+      "Review reception workload after six weeks; shorten collection hours if needed; adequate staff support required for safe pilot."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Improve argument flow without deleting operational caveats."
+  },
+  {
+    "id": "V3-096",
+    "reviewerId": "R2A",
+    "expectedEditScope": "INSUFFICIENT_INFORMATION",
+    "authorizedFactualChanges": [
+      "Add confirmed opening date, application deadline and residency dates if supplied."
+    ],
+    "preservedFacts": [
+      "Limited studio residency includes workbench, storage, weekly technical clinic; no materials allowance; residents arrange specialist equipment.",
+      "63 applications for six places; project and studio suitability criteria; exhibition experience not required; weighting clarity requested.",
+      "Guide fictional worked example not selection guarantee; timetable awaits maintenance scheduling; avoid commitments based on prior dates."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": true,
+    "notes": "Requested confirmed dates are absent; cannot fulfill date addition from supplied information."
+  },
+  {
+    "id": "V3-105",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Sheet counter near sink; one row per person; select either morning or afternoon, preferred one if both possible; count determines room unlock time."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Emphasize selecting exactly one time."
+  },
+  {
+    "id": "V3-106",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Outgoing materials use designated receptacle adjacent entrance; prepare before placement; approved categories only, unspecified."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Ordinary wording is possible without inventing allowed items or location."
+  },
+  {
+    "id": "V3-108",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Station first shuttle 8:10 a.m.; every 40 minutes until noon; same both event days; near noon consult board for changed last departure.",
+      "Cart must fold under seat; no aisle storage; no clinic stop; closest across pharmacy about five-minute walk from clinic entrance; extra time for slower pace or carrying."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Separate each FAQ and shorten phrasing."
+  },
+  {
+    "id": "V3-110",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "No registration/reservation; capacity 30; entry may pause until departures; early arrival does not guarantee entry at capacity.",
+      "Colouring table with nearby adults is not supervised childcare; guardians responsible.",
+      "Advance form by Wednesday evening, brief question with topic; meeting questions allowed but may not all be addressed before closure."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Separate answers and foreground caveats."
+  },
+  {
+    "id": "V3-113",
+    "reviewerId": "R2A",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "About 18 chairs tentative; last time 16 plus two borrowed; ask desk before moving chairs; front room may be used.",
+      "Check cabinet cords function and long cord present; untested since April; report missing long cord before purchase due possible spare.",
+      "Ask Niko about speaker; fallback personal speaker must arrive before opening.",
+      "Room uncertain due inconsistent calendar; author will ask desk; layout must permit door route; confirm room/chairs before copies and extra supplies; update shared note before setup."
+    ],
+    "intentionalVoice": [
+      "Practical collaborative planning."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Restructure intertwined tasks, dependencies and unresolved questions."
+  },
+  {
+    "id": "V3-118",
+    "reviewerId": "R2A",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Speaker misses bridge and familiar bakery/bench details; new place good with easier bus and familiar market route; sense of home still developing through names and routines."
+    ],
+    "intentionalVoice": [
+      "Quiet reflective first-person voice and small concrete observations."
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Nuance already present; dramatic reframing would damage objective."
+  },
+  {
+    "id": "V3-119",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "July–September 1,284 visits versus April–June 1,106; excludes staff/event volunteers; Tuesday evenings 312, highest reported weekly slot.",
+      "Counter and paper tally checked on two busy evenings, not every day; group arrivals may undercount; placement to be reviewed.",
+      "436 item transactions includes staff-entered renewals, not unique borrowers; no reliable repeat/first-time separation.",
+      "Two August closure days Monday/Tuesday for plumbing; normally lower than weekends; totals include zero visits; comparison unadjusted for closures/hours; otherwise regular schedule and usual holidays.",
+      "Keep method next report; any programme attendance count separate; visits not distinct community people."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Organize measures and limitations; some explanatory repetition can be trimmed."
+  },
+  {
+    "id": "V3-120",
+    "reviewerId": "R2A",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "On schedule as of Monday October 5; east wing open; third-floor room unavailable through October 16 estimate, pending inspection/sign-off; contractor reports membrane installed, seams/material clearing remain.",
+      "Inspection booked October 12; sign-off pending; changes require contractor time/cost estimate before revised completion date.",
+      "$18,400 spent of $22,000; remainder reserved inspection/closeout; invoices checked, next update includes approved changes.",
+      "Inspection issue may shift reopening; update by 3 p.m. that day; passing still requires barriers removed and facilities walkthrough; use first-floor area and report conflicts."
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Headings or concise sections can expose status, costs and conditional next steps."
+  },
+  {
+    "id": "V3-003",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Start time: 6:30",
+      "Location: library courtyard"
+    ],
+    "preservedFacts": [
+      "Thursday potluck"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Brief reminder; replace only the time and location."
+  },
+  {
+    "id": "V3-007",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Birthday dinner",
+      "Six people were taught to fold dumplings",
+      "Flour on chairs",
+      "Thanks for coming over"
+    ],
+    "intentionalVoice": [
+      "Playful, affectionate humor; short fragment-like rhythm"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already flows naturally; restraint is appropriate."
+  },
+  {
+    "id": "V3-009",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Tuesday is preferred for a possible meeting",
+      "Wednesday morning is an alternative, before 11"
+    ],
+    "intentionalVoice": [
+      "Courteous team-facing tone"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Simplify the overformal phrasing without changing availability."
+  },
+  {
+    "id": "V3-011",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Blue doors and dent near handle; sign is gone",
+      "Memory of waiting after Saturday skating lessons with brother",
+      "Parents were never late",
+      "Van and splitting bag prevented a photo",
+      "May return next weekend if weather holds",
+      "Current building use is unknown",
+      "Wants a picture before the doors are painted"
+    ],
+    "intentionalVoice": [
+      "Quiet, reflective, understated ending"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Gentle clarity edits across the note; avoid heightening the emotion."
+  },
+  {
+    "id": "V3-012",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [
+      "Walking map now has 14 stops",
+      "Print target is December"
+    ],
+    "preservedFacts": [
+      "Map has short notes; comments belong on sheet beside draft at community center",
+      "Bakery crossing is difficult; Marta waited through two light changes",
+      "Crossing section will be redrawn; marker may move farther up the street",
+      "Printing depends on council approval of final map",
+      "Stories about old bridge informed what to highlight"
+    ],
+    "intentionalVoice": [
+      "Collaborative, appreciative community update"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Update only the stop count and target month; retain the crossing concern and approval condition."
+  },
+  {
+    "id": "V3-013",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Library is under awning and busy; picture books were donated",
+      "Children's books occupy lower shelf; adult books pile on top",
+      "Request 1: stand donated books upright; careful sorting is unnecessary",
+      "Request 2: close door firmly on rainy days",
+      "Painting afternoon planned later this month; date depends on forecast",
+      "Small brush loan welcome"
+    ],
+    "intentionalVoice": [
+      "Warm, neighborly, non-scolding tone"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Make the two practical requests conspicuous while retaining the other newsletter details."
+  },
+  {
+    "id": "V3-014",
+    "reviewerId": "R2B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Board game night with laughter, snacks, and friendly competition",
+      "They took rules seriously for an unfamiliar game and debated a cardboard bridge",
+      "Lee brought the folding table after the writer forgot to check space",
+      "Two spare pieces were found under sofa and will stay in box until next time",
+      "Guests stayed late and helped clean up"
+    ],
+    "intentionalVoice": [
+      "Personal, amused, affectionate text to friends"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Convert the formal long thank-you into a casual text while retaining specific thanks to Lee."
+  },
+  {
+    "id": "V3-021",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [
+      "Volunteers cleared 95 meters of brush",
+      "Parks office will collect cuttings Monday"
+    ],
+    "preservedFacts": [
+      "Work ran from upper gate toward picnic area",
+      "Brush clearing improves route visibility and drainage access",
+      "Six volunteers came in drizzle; June lent wheelbarrow",
+      "Lower bend remains closed because rail is loose",
+      "Contractor visit next week is inspection only, not repair; repair plan follows inspection",
+      "Narrow ground makes passing the rail unsafe",
+      "Upper path is temporary route; walkers should use it",
+      "Next update follows inspection; reopening requires sound rail"
+    ],
+    "intentionalVoice": [
+      "Practical, appreciative community notice"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Organize for skimming while preserving closure, safety rationale, and inspection-versus-repair distinction."
+  },
+  {
+    "id": "V3-029",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Three comments are in the margin",
+      "Structure is clear and examples help explain recommendation",
+      "Offer to discuss comments",
+      "No rush before Monday"
+    ],
+    "intentionalVoice": [
+      "Supportive and unhurried"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear; only a genuinely minor improvement is warranted."
+  },
+  {
+    "id": "V3-032",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "New checklist will be tried with afternoon shift tomorrow",
+      "It may catch last week's handoff issue, but this is tentative until used a few times",
+      "Recipient may send clunky steps"
+    ],
+    "intentionalVoice": [
+      "Informal teammate note"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Tighten wording without making the tentative prediction a promise."
+  },
+  {
+    "id": "V3-033",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Do not order replacement signs until Facilities confirms room names",
+      "Draft floor plan may help estimate quantities but is not final naming list",
+      "Confirmation expected next week and will be forwarded"
+    ],
+    "intentionalVoice": [
+      "Clear, professional instruction"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Retain the restriction and distinguish quantity estimates from confirmed names."
+  },
+  {
+    "id": "V3-034",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Guide incorporates accessibility suggestions and adds rail-ticket booking section",
+      "Reimbursement policy is unchanged",
+      "Comments requested by Friday; writer will collect and make one final pass"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Light flow edit; keep guide changes distinct from policy status."
+  },
+  {
+    "id": "V3-037",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Priya compares two survey formats by Thursday",
+      "Omar asks front desk which questions visitors usually skip",
+      "Current form remains in place",
+      "Shortening introduction was raised but wording was not decided",
+      "Writer drafts two options and shares Friday",
+      "Invite corrections to possible missed decision or mistaken assignment"
+    ],
+    "intentionalVoice": [
+      "Collaborative, open-to-correction tone"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Structure assignments, decision, and open wording distinctly without changing ownership."
+  },
+  {
+    "id": "V3-040",
+    "reviewerId": "R2B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Vendor may visit next week; exact appointment window remains unknown",
+      "West meeting room provisionally held Thursday morning; hold may change after confirmation",
+      "East corridor remains open",
+      "Meetings in west room might need to move"
+    ],
+    "intentionalVoice": [
+      "Practical staff-facing update"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Turn the supplied context into a useful staff notice; do not invent a vendor time or date."
+  },
+  {
+    "id": "V3-042",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Themes match open house, including request for clearer north entrance signs",
+      "Several visitors newly reported map hard to read in low light",
+      "Quotes should remain unchanged in appendix",
+      "Main page needs short paragraphs connecting themes to proposed changes",
+      "Writer offers to sketch paragraph before tomorrow's check-in"
+    ],
+    "intentionalVoice": [
+      "Measured tone; offer of help without assigning the task"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already clear; only worthwhile clarity edits should be made."
+  },
+  {
+    "id": "V3-047",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Delay cause: changes were available Tuesday, but writer waited for one shift confirmation and forgot to send final version",
+      "Older sheet caused two people to arrive for same desk",
+      "Attached roster has confirmed assignments for rest of week; three changed rows highlighted",
+      "Recipients should use attached roster, not reconcile versions",
+      "Handoff check added so next update goes out once assignments settle",
+      "Writer will fix roster today if it conflicts with missed leave request"
+    ],
+    "intentionalVoice": [
+      "Accountable apology with personal warmth"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clarify apology and repair while retaining cause and personal voice."
+  },
+  {
+    "id": "V3-048",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Three listening sessions in different town areas plus written comments from nonattendees",
+      "Small sessions describe participants' comments, not all residents",
+      "People asked where to find current shared-room schedule; printed notice board had old version",
+      "Testing online schedule and dated printout at each entrance",
+      "Online page ready for staff review; printout owner unresolved",
+      "Six-week trial and visitor feedback depend on confirming owner",
+      "Proposal due next Tuesday"
+    ],
+    "intentionalVoice": [
+      "Plain, measured explanation"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Rewrite only the inflated opening of paragraph two; keep the remaining paragraphs close to source."
+  },
+  {
+    "id": "V3-049",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Import pauses while file is checked",
+      "Closing window does not stop the check"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Improve scanability without changing behavior."
+  },
+  {
+    "id": "V3-050",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "If code expired, request another one",
+      "Old code cannot be reactivated"
+    ],
+    "intentionalVoice": [
+      "Direct help-text tone"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Light polish only."
+  },
+  {
+    "id": "V3-053",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Legend added below chart",
+      "Dotted line is estimate, not last month's actual total",
+      "Invites feedback if unclear"
+    ],
+    "intentionalVoice": [
+      "Casual, slightly self-effacing teammate voice"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clarify the distinction without losing casual tone."
+  },
+  {
+    "id": "V3-056",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Label disappears only when a saved filter is reopened in compact view",
+      "Fix planned for next maintenance release",
+      "Full view still shows label"
+    ],
+    "intentionalVoice": [
+      "Helpful support tone"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Make scope and workaround easy to locate; keep timing tentative."
+  },
+  {
+    "id": "V3-066",
+    "reviewerId": "R2B",
+    "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "This is a six-week trial, not a broad launch",
+      "Three volunteer library branches will try the checkout form with staff",
+      "Trial gathers feedback about fit with ordinary desk work and slow steps",
+      "Findings are not yet known",
+      "After review, team decides what to change and may consider inviting more branches",
+      "Citywide rollout is not promised; no settled expansion schedule"
+    ],
+    "intentionalVoice": [
+      "Calm, cautious internal project update"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Recast as a project update while preserving conditional wider rollout."
+  },
+  {
+    "id": "V3-075",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Registration closing date: 21 March"
+    ],
+    "preservedFacts": [
+      "Late applications reviewed only if places remain"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Change the date and retain the eligibility condition."
+  },
+  {
+    "id": "V3-076",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Pilot had 38 participants from two evening classes",
+      "Attendance improved during six-week trial",
+      "There was no comparison group",
+      "Evidence cannot establish causation or whether system would work in other classes"
+    ],
+    "intentionalVoice": [
+      "Accessible, cautious research-summary voice"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Simplify for non-specialists without strengthening the evidence."
+  },
+  {
+    "id": "V3-080",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [
+      "Budget is confirmed for four guest speakers",
+      "A guest will lead each of the four sessions"
+    ],
+    "preservedFacts": [
+      "Seminar meets monthly September through December",
+      "Each session lasts 90 minutes and has a short presentation followed by discussion"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Update speaker count and leadership arrangement; keep schedule and format."
+  },
+  {
+    "id": "V3-082",
+    "reviewerId": "R2B",
+    "expectedEditScope": "INSUFFICIENT_INFORMATION",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Consultation begins after draft approval",
+      "Responses may be submitted online or by post",
+      "A summary of issues and explanation of influence on final document will be published"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": true,
+    "notes": "The objective requests new dates and a deadline but supplies none; those facts cannot be inferred."
+  },
+  {
+    "id": "V3-088",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Eight practice-session recordings; all participants gave permission",
+      "Two reviewers independently counted and categorized interruptions as task, process, or unrelated",
+      "They agreed on category in 81 percent before discussing disagreements",
+      "Interruptions were less frequent in final two than first two sessions",
+      "Growing familiarity and revised guidance are possible explanations",
+      "Guidance was introduced halfway through same series, so evaluation cannot separate explanations"
+    ],
+    "intentionalVoice": [
+      "Cautious methods-and-findings register"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Improve flow across methods and findings without making a causal claim."
+  },
+  {
+    "id": "V3-091",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Printer lets students test small parts without travel to main building, especially evenings",
+      "Booking sheet is often outdated; failed prints sometimes lack notes",
+      "Author recommends keeping printer and improving management",
+      "Moving it back would reduce usefulness while addressing untidy tray",
+      "Suggested measures: named person each evening and simple failed-job record"
+    ],
+    "intentionalVoice": [
+      "Author's explicit, practical perspective"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Raise register for departmental report without changing argument or recommendation."
+  },
+  {
+    "id": "V3-092",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Study covers three neighborhood newsletters and six months before/after bridge closure; excludes ads and unrelated letters",
+      "Dataset contains 47 items",
+      "Newsletters differ in emphasis, but this does not establish distinct resident priorities; editors shape material and contributors are nonrandom",
+      "Some items shift emphasis; coding preserves both topics when present",
+      "Single-category coding would conceal development",
+      "Analysis describes discussion in newsletters, not full local opinion or effects on readers' views"
+    ],
+    "intentionalVoice": [
+      "Careful academic tone with explicit methodological limits"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Lightly polish while preserving sampling, coding choices, and limits."
+  },
+  {
+    "id": "V3-094",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "New process routes assignments to relevant tutor; coordinator monitors shared register",
+      "Median turnaround fell from 18 to 12 days in first term",
+      "Assignment volume fell from 164 to 121 and two tutors had fewer teaching hours",
+      "Process may have contributed, but figures do not isolate its effect",
+      "Initial guidance ambiguity caused premature completion records; revised note defines completion at feedback release",
+      "Recommendation: retain process one more term, compare at more usual volume, and check records against actual release dates"
+    ],
+    "intentionalVoice": [
+      "Measured evaluative tone"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Condense for senior staff while retaining numerical comparison, confounders, and uncertainty."
+  },
+  {
+    "id": "V3-097",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "West entrance closed Tuesday morning for ramp repair",
+      "Use library doors on Pine Street; signs up before 8",
+      "Reopening expected by noon, but rain may delay it"
+    ],
+    "intentionalVoice": [],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Format access details for scanning while retaining timing caveat."
+  },
+  {
+    "id": "V3-098",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Good turnout at Saturday repair café",
+      "Bike table busy until last half hour; sewing corner had line after lunch",
+      "Some spectators joined in helping others",
+      "Thanks to volunteers who brought tools and people who waited",
+      "Small bottlenecks, especially at sewing machine, were handled cooperatively",
+      "Possible second sewing station next month depends on finding another machine; setup is undecided"
+    ],
+    "intentionalVoice": [
+      "Warm, community-centered voice; understated observation"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Already warm and clear; make no edit unless a concrete flow improvement is evident."
+  },
+  {
+    "id": "V3-103",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LOCAL_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Switch projector off at wall, not remote",
+      "Wait for fan to stop before unplugging HDMI cable",
+      "Cable goes in top drawer",
+      "Remote goes in basket by door"
+    ],
+    "intentionalVoice": [
+      "Practical, mildly casual instruction"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Remove the frustrated aside while retaining the specific storage instructions."
+  },
+  {
+    "id": "V3-104",
+    "reviewerId": "R2B",
+    "expectedEditScope": "LEAVE_ALONE",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "If dough is dry, add water one teaspoon at a time",
+      "Dough should remain a little rough before covering; do not knead until smooth",
+      "Rest 20 minutes then check again",
+      "Humidity may mean no extra teaspoon is needed"
+    ],
+    "intentionalVoice": [
+      "Plainspoken, appropriately cautious instructional voice"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Explicitly requests no unnecessary edits; already clear."
+  },
+  {
+    "id": "V3-109",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Rae began after noticing neighbors had unused drills",
+      "Library began with 12 tools, mostly bought for one repair then unused",
+      "Neighbor offered community-room shelf; more people contributed",
+      "Current count is about 70, but no full count since spring",
+      "Step ladder reserves fastest; collection includes sewing machine and hand truck",
+      "Older tools need checking; list may not update in same week as an item arrives"
+    ],
+    "intentionalVoice": [
+      "Rae's conversational uncertainty about the approximate count"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Tidy dialogue lightly without making the count certain."
+  },
+  {
+    "id": "V3-115",
+    "reviewerId": "R2B",
+    "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+    "authorizedFactualChanges": [],
+    "preservedFacts": [
+      "Print 80 copies for first session and hold 20 for second; reserve is not a general extra run",
+      "First session is larger; its copies must be boxed separately and labeled before delivery",
+      "If packages are combined, request clear outside label rather than opening bundles at venue",
+      "Jo owns final file and plans to send it Wednesday morning",
+      "Before sending, Jo confirms page numbers and large-print version",
+      "Change wording only for factual error; flag before sending to avoid corrected-batch charge",
+      "Keep working file in shared project folder",
+      "If quote exceeds $95, pause and return to group; $95 triggers discussion, not authorization",
+      "Total budget is $120 including second run",
+      "After quote approval send receipt and record delivered quantity",
+      "Decision on held-back 20 follows first-session attendance",
+      "Second run uses same approved file unless group agrees to correction"
+    ],
+    "intentionalVoice": [
+      "Precise operational instructions"
+    ],
+    "missingInformationPreventsFulfillment": false,
+    "notes": "Clarify ownership, order, quantities, threshold, and total budget while preserving the exact conditional approval rule."
+  }
+]

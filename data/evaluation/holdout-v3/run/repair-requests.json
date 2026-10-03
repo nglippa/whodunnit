@@ -1,0 +1,723 @@
+{
+  "strategy": "reconstruction-v15",
+  "mode": "repair-requests",
+  "manifestSha256": "e207982e7b05c3d99bad5930ee8b63ef9884ecef427e77ece5f03a9d6ea61ad2",
+  "caseCount": 119,
+  "technicalFailures": [],
+  "contractErrors": [],
+  "requests": [
+    {
+      "id": "V3-003",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The potluck starts at 6 on Thursday in the library meeting room.\",\"candidate\":\"The potluck now starts at 6:30 on Thursday in the library courtyard.\",\"objective\":\"Update this reminder: the potluck now starts at 6:30, and the location is the library courtyard. Keep it brief.\",\"affectedSpan\":{\"start\":28,\"end\":30,\"text\":\"30\"},\"constraint\":\"The rewrite introduces 30, which is not in your text.\"}",
+      "requestSha256": "1e0f840b980e10a0df9b4f71296dba55fd3af43311bd7d268ba9d5cb227c50ec"
+    },
+    {
+      "id": "V3-010",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The repair cafe is back next month. Bring a lamp, a wobbly chair, or that toaster you've been meaning to look at. Volunteers can help you figure out what is wrong, though they cannot promise every item can be fixed. We will share the date once the hall booking is confirmed.\",\"candidate\":\"The repair cafe is back next month! Bring a lamp, a wobbly chair, or that toaster you've been meaning to look at. Volunteers will help you work out what's wrong, though they can't promise every item can be fixed. We'll share the date once the hall booking is confirmed.\",\"objective\":\"Make this announcement concise and welcoming for a community bulletin.\",\"affectedSpan\":{\"start\":125,\"end\":129,\"text\":\"will\"},\"constraint\":\"Restore the source's hedged modality: \\\"Volunteers can help you work out what's wrong\\\", not \\\"will help\\\".\"}",
+      "requestSha256": "06061cb19714e3b84dc6c10ad7a98e821452166266ad7750e139e1ea6268fd02"
+    },
+    {
+      "id": "V3-012",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"We have the first version of the walking map ready, with 12 stops and short notes for each one. It took longer than I expected to make the notes sound like they belonged together. Some people sent memories, some sent dates, and we are trying to make room for both without turning every stop into a wall of text. The copy at the community center is still a draft, so please write comments on the sheet beside it rather than directly on the map.\\n\\nMarta checked the route on Saturday and said the crossing by the bakery is harder than it looks on paper. She had to wait through two light changes before she felt comfortable crossing. I will redraw that section this week, and we may need to move the stop marker a little farther up the street. We are still aiming to print a small batch in November, assuming the council approves the final map.\\n\\nThanks to everyone who sent in stories about the old bridge. I have not managed to fit all of them into the short note, but they helped us choose what to point out along the route.\",\"candidate\":\"We have the first version of the walking map ready, with 14 stops and short notes for each one. It took longer than I expected to make the notes sound like they belonged together. Some people sent memories, some sent dates, and we are trying to make room for both without turning every stop into a wall of text. The copy at the community center is still a draft, so please write comments on the sheet beside it rather than directly on the map.\\n\\nMarta checked the route on Saturday and said the crossing by the bakery is harder than it looks on paper. She had to wait through two light changes before she felt comfortable crossing. I will redraw that section this week, and we may need to move the stop marker a little farther up the street. We are still aiming to print a small batch in December, assuming the council approves the final map.\\n\\nThanks to everyone who sent in stories about the old bridge. I have not managed to fit all of them into the short note, but they helped us choose what to point out along the route.\",\"objective\":\"Update the group accurately: the map now has 14 stops, and the print target has moved to December. Keep the crossing issue and the council approval condition clear.\",\"affectedSpan\":{\"start\":57,\"end\":59,\"text\":\"14\"},\"constraint\":\"The rewrite introduces 14, which is not in your text.\"}",
+      "requestSha256": "173ee6a283b475149235617f8d86023323b905e9da30d6b244fb7ad551e61755"
+    },
+    {
+      "id": "V3-013",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The little free library has been busy since we moved it under the awning. Books are turning over much faster, and someone left a lovely stack of picture books last week. The lower shelf is mostly children's books now, which is nice to see, but it also means grown-up books are getting stacked on top. A few have been wedged in sideways and are hard to pull out without bringing the whole pile with them.\\n\\nIf you are dropping books off, please take a moment to stand them upright. You do not need to sort them carefully; a little space on the shelf is enough. On rainy days, close the door firmly, because it tends to catch on the frame. The books inside were dry after the last storm, but we would like to keep it that way.\\n\\nWe are planning a painting afternoon later this month to freshen up the outside. I'll share a date once the forecast looks sensible. If you have a small brush you do not mind lending, bring it along when the day comes.\",\"candidate\":\"The little free library has been busy since we moved it under the awning. Books are turning over much faster, and someone left a lovely stack of picture books last week. The lower shelf is mostly children's books now, which is nice to see, but it also means grown-up books are getting stacked on top. A few have been wedged in sideways and are hard to pull out without bringing the whole pile with them.\\n\\nTwo small requests:\\n\\n**1. Stand books upright when you drop them off.** You do not need to sort them carefully; a little space on the shelf is enough.\\n\\n**2. On rainy days, close the door firmly.** It tends to catch on the frame. The books inside were dry after the last storm, but we would like to keep it that way.\\n\\nWe are planning a painting afternoon later this month to freshen up the outside. I'll share a date once the forecast looks sensible. If you have a small brush you do not mind lending, bring it along when the day comes.\",\"objective\":\"Edit this for the neighborhood newsletter. Make the two requests easy to spot without sounding scolding.\",\"affectedSpan\":{\"start\":428,\"end\":429,\"text\":\"1\"},\"constraint\":\"The rewrite introduces 1, which is not in your text.\"}",
+      "requestSha256": "ca1c6dc93d508149e1562aa649fb8a23271dc92e7508078d3ff00c46a6e64154"
+    },
+    {
+      "id": "V3-014",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"I wanted to take a moment to express my heartfelt appreciation for the incredible journey that was our board game night. The laughter, the snacks, and the spirit of friendly competition all came together to create an unforgettable evening. I especially enjoyed how seriously we took the rules for a game none of us had played before. At some point we were debating a cardboard bridge as though its future mattered to the city.\\n\\nI am deeply grateful to each and every one of you for making this gathering such a success. Special recognition goes to Lee, who brought the folding table after I forgot to check whether we had enough space. Without that table we would have been balancing the board on our knees, which might have changed the results. I found two spare game pieces under the sofa this morning. If they belong to someone, I'll keep them in the box until next time. Thanks again for coming over, staying late, and helping clean up before you left.\",\"candidate\":\"Thanks so much for coming to board game night. The laughter, the snacks, and the friendly competition made it a really fun evening. I loved how seriously we took the rules for a game none of us had played before. At some point we were debating a cardboard bridge as though its future mattered to the city.\\n\\nThank you all for making it such a good night. Special thanks to Lee, who brought the folding table after I forgot to check whether we had enough space. Without that table we'd have been balancing the board on our knees, which might have changed the results. I found two spare game pieces under the sofa this morning. If they belong to someone, I'll keep them in the box until next time. Thanks again for coming over, staying late, and helping clean up before you left.\",\"objective\":\"Make this thank-you message sound more like me texting friends after a fun night. Keep the specific thanks to Lee.\",\"affectedSpan\":{\"start\":354,\"end\":459,\"text\":\"Special thanks to Lee, who brought the folding table after I forgot to check whether we had enough space.\"},\"constraint\":\"The rewrite asserts a cause (“thanks to”) the source does not state.\"}",
+      "requestSha256": "0f51bbcd835b8b268fdafb8f55dcae3f372f57b7a17e174cdb163074434afdae"
+    },
+    {
+      "id": "V3-016",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"For Saturday's soup exchange, please bring one container to share and one empty container to take something home. A small portion is fine; nobody needs to make a huge pot. Label your soup with its ingredients, especially nuts, dairy, and wheat. We will put blank cards and pens near the door for anyone who forgets a label. It helps people choose what to try without having to ask the same questions at every table.\\n\\nWe have a vegetarian table, but it isn't an allergen-free area, since everything is made in different home kitchens. Please do not assume a soup is safe for a particular allergy because of where it is sitting. If you would rather just come taste and talk, that is fine too. You do not need to bring soup to be welcome, and there should be enough for small samples.\\n\\nThe hall opens at noon, and we will start swapping around 12:30. We will have a few extra spoons, though bringing your own would help. The tables will stay up until 2 so people can arrive at a relaxed pace.\",\"candidate\":\"For Saturday's soup exchange, please bring two containers: one with soup to share, and one empty one to take something home. A small portion is fine. Nobody needs to make a huge pot.\\n\\nPlease label your soup with its ingredients, especially nuts, dairy, and wheat. If you forget, we will put blank cards and pens near the door. Labels help people choose what to try without having to ask the same questions at every table.\\n\\nWe have a vegetarian table, but it isn't an allergen-free area, since everything is made in different home kitchens. Please don't assume a soup is safe for a particular allergy because of where it is sitting.\\n\\nIf you would rather just come taste and talk, that is fine too. You do not need to bring soup to be welcome, and there should be enough for small samples.\\n\\nHere is how the day will go:\\n- The hall opens at noon.\\n- We will start swapping around 12:30.\\n- The tables will stay up until 2, so people can arrive at a relaxed pace.\\n\\nWe will have a few extra spoons, though bringing your own would help.\",\"objective\":\"Make these instructions easier to follow for first-time visitors while staying friendly and accurate.\",\"affectedSpan\":{\"start\":883,\"end\":957,\"text\":\"- The tables will stay up until 2, so people can arrive at a relaxed pace.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "15bf57c7f493dc91768015817401b39f3f13b7e2930ca1f55d65ac65b4126170"
+    },
+    {
+      "id": "V3-017",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"A change has come up with the mural weekend. We're still sorting through the details, and I know people have set aside time to come paint. The team is talking with the building manager because we need to understand what work can go ahead in the space. We have not made a decision yet about this weekend. I wanted to say something now rather than let everyone plan around an event that may have to change.\\n\\nIf you were planning to bring supplies, please hold on to them for the moment. We will tell everyone what is happening when we know more. I appreciate your patience, and I'm sorry this is arriving so close to the weekend. I know some of you arranged childcare or moved other plans so you could help. We are grateful for that, even if the timing has turned out awkwardly. Please pass this along to anyone who said they might drop by but isn't in this group, so they know the plan is uncertain too.\",\"candidate\":\"The mural weekend has hit a snag. We're still sorting through the details, and I know people have set aside time to come paint. The team is talking with the building manager because we need to understand what work can go ahead in the space. We haven't decided yet whether the work will happen this weekend. I wanted to tell you now rather than let everyone plan around an event that may have to change.\\n\\nIf you were planning to bring supplies, please hold on to them for now. We'll tell everyone what is happening when we know more. Thank you for your patience, and I'm sorry this is arriving so close to the weekend. I know some of you arranged childcare or moved other plans so you could help. We're grateful for that, even if the timing has turned out awkwardly. Please pass this along to anyone who said they might drop by but isn't in this group, so they know the plan is uncertain too.\",\"objective\":\"Write a clearer update for volunteers. We don't yet know whether the work will happen this weekend, so make that uncertainty plain and avoid inventing a decision or a timeline.\",\"affectedSpan\":{\"start\":307,\"end\":402,\"text\":\"I wanted to tell you now rather than let everyone plan around an event that may have to change.\"},\"constraint\":\"An unrelated claim changes outside the requested semantic delta.\"}",
+      "requestSha256": "1339c4d3f7e7b847e7023950a2576ef8fa099eb09bf5925f59017ff2cbf1d34a"
+    },
+    {
+      "id": "V3-018",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"I liked the draft poster, and I think the drawing is the part people will remember. The way it shows the garden without making it look too neat feels right for this event. I looked at it on my phone first and thought the headline was fine. When Priya held a printout up across the room, though, I had to walk closer to read it. Maybe the headline could be bigger, or perhaps the lettering just needs a little more space around it.\\n\\nI'm not sure about changing the colors. The green seems to match the garden signs we already use, and people may recognize that connection. If there's a reason the new palette works better in print, I'm open to it; I haven't seen a full-size copy yet. The date line looks a little crowded to me, but I don't have a good idea for that one. These are first impressions rather than a list of fixes. Overall, the drawing makes me want to stop and look, which is the main thing I hoped for.\",\"candidate\":\"I liked the draft poster, and I think the drawing is the part people will remember. The way it shows the garden without making it look too neat feels right for this event.\\n\\nThe headline is my main concern. I looked at it on my phone first and thought it was fine. But when Priya held a printout up across the room, I had to walk closer to read it. Making the headline bigger might help, or the lettering may just need a little more space around it.\\n\\nI'm not sure about changing the colors. The green seems to match the garden signs we already use, and people may recognize that connection. If there's a reason the new palette works better in print, I'm open to it. I haven't seen a full-size copy yet.\\n\\nThe date line looks a little crowded to me, but I don't have a good idea for how to fix it.\\n\\nThese are first impressions rather than a list of fixes. Overall, the drawing makes me want to stop and look, which is the main thing I hoped for.\",\"objective\":\"Make this feedback clearer and constructive, without turning tentative opinions into firm demands.\",\"affectedSpan\":{\"start\":173,\"end\":205,\"text\":\"The headline is my main concern.\"},\"constraint\":\"Delete this sentence. The source does not rank the headline as the main concern, and it frames all the points as tentative first impressions.\"}",
+      "requestSha256": "67dfd28cf90ebb8f16fc7c1adb2991fb458634ba127ef61bf62bf1f8c6f1c26e"
+    },
+    {
+      "id": "V3-019",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The tool library inventory is mostly done. We counted 63 items on Tuesday, including four drills that need new batteries. The shelves are in better shape after the sorting session, and the hand tools are back together in one section. A few labels have fallen off their boxes, so I am checking those against the old list before I print replacements. That should make it easier for members to find things when the autumn workshops start.\\n\\nThe sign-out sheet still has a few names we cannot match to returned items, so I don't want to call the count final yet. It is possible some items were put back without being marked in; we need to check before saying anything is missing. If Nora has time this week, she will compare the paper sheet with the online list. After that we can tell members what is available to borrow for the autumn workshops. For now, please treat the count as a working figure rather than the number we publish.\",\"candidate\":\"The tool library inventory is mostly done. We counted 63 items on Tuesday, including four drills that need new batteries. The shelves are in better shape after the sorting session, and the hand tools are back together in one section. A few labels have fallen off their boxes, so I am checking those against the old list before I print replacements. That should make it easier for members to find things when the autumn workshops start.\\n\\nThe sign-out sheet still has a few names we cannot match to returned items, so I don't want to call the count final yet. It is possible some items were put back without being marked in, so we need to check before saying anything is missing. If Nora has time this week, she will compare the paper sheet with the online list. After that we can tell members what is available to borrow for the autumn workshops.\\n\\nFor now, please treat the count as a working figure rather than the number we publish.\",\"objective\":\"Make this a clean, professional update for the steering group. Preserve what is provisional and who is doing the follow-up.\",\"affectedSpan\":{\"start\":558,\"end\":677,\"text\":\"It is possible some items were put back without being marked in, so we need to check before saying anything is missing.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "1f347203c45fdecbce87580dd7c8fd635d470e68845655028922f34674c2f65c"
+    },
+    {
+      "id": "V3-036",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Monday, June 16, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\\n\\nI’ll post the revised class schedule after instructors confirm which sessions can move online.\",\"candidate\":\"Hi team, the community room will be unavailable for the first two weeks of June while the floor is refinished. We had planned to reopen on Wednesday, June 18, with the evening classes returning that week. The painting crew will still work in the adjoining hallway during the closure, so the east entrance may be noisy even when the room is shut.\\n\\nI’ll post the revised class schedule after instructors confirm which sessions can move online.\",\"objective\":\"Update the planned reopening date to Wednesday, June 18. Keep the closure period, class schedule uncertainty, and hallway work clear; do not imply classes automatically return on the new reopening day.\",\"affectedSpan\":{\"start\":139,\"end\":157,\"text\":\"Wednesday, June 18\"},\"constraint\":\"The requested temporal replacement conflicts with a preservation directive.\"}",
+      "requestSha256": "54d448d592db1805a741f636b0d2d02af70c3a19d10e51f7ffcee05a1d714934"
+    },
+    {
+      "id": "V3-038",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"In service of our shared commitment to operational excellence, we have undertaken a comprehensive review of the kitchen booking journey. This exercise surfaced an opportunity to enhance clarity around who resets the space at the end of an event. Moving forward, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\\n\\nThe new checklist is attached for your perusal. We welcome your valuable feedback by the end of next week, when we will determine whether any instructions need adjustment.\",\"candidate\":\"We reviewed the kitchen booking process and found that it isn't clear who resets the space at the end of an event. From now on, teams should leave the tables as they found them and put borrowed supplies back in the labeled cabinet.\\n\\nThe new checklist is attached. Please send us your feedback by the end of next week. We'll decide then whether any instructions need adjusting.\",\"objective\":\"Make this practical guidance sound like a straightforward note to colleagues. Retain both cleanup instructions and the feedback window, without adding a new rule.\",\"affectedSpan\":{\"start\":0,\"end\":114,\"text\":\"We reviewed the kitchen booking process and found that it isn't clear who resets the space at the end of an event.\"},\"constraint\":\"The rewrite adds a negation (“isn't”) the source does not have.\"}",
+      "requestSha256": "2134550218193c9b5044f2326ee03865298657bb922b38fed65dabea886647a2"
+    },
+    {
+      "id": "V3-040",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The repair vendor can visit next week, but I’m still waiting for the exact appointment window. For now, I’ve told the reception team to keep the west meeting room free on Thursday morning as a precaution. That hold may change once the vendor confirms.\\n\\nI want to send staff a practical note about the noisy work. The note should explain that the east corridor will remain open and that meetings in the west room might need to move. I don’t want people to plan around an appointment time we don’t have yet.\",\"candidate\":\"Subject: Noisy repair work next week\\n\\nHi all,\\n\\nThe repair vendor can visit next week, but I'm still waiting for the exact appointment window. I don't have a date or time to give you yet, so please don't plan around one.\\n\\nAs a precaution, I've asked the reception team to keep the west meeting room free on Thursday morning. That hold may change once the vendor confirms.\\n\\nWhat to expect in the meantime:\\n- The east corridor will remain open.\\n- Meetings in the west room might need to move.\\n\\nI'll send another note as soon as the vendor confirms the appointment window.\\n\\nThanks,\\n[Name]\",\"objective\":\"Draft a useful staff update with the appointment window clearly unresolved. Preserve the provisional Thursday hold and avoid inventing a date or time from the vendor.\",\"affectedSpan\":{\"start\":142,\"end\":219,\"text\":\"I don't have a date or time to give you yet, so please don't plan around one.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "7ba2879bc31384b6d02b5b8a5bc10f924639b698cbd19f2edd8aae348a3687c7"
+    },
+    {
+      "id": "V3-041",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. That is up from 36 of 50 in the previous four weeks, although the two periods had different mixes of requests. The largest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\\n\\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. These results suggest the process is helping, but they do not tell us how much of the change came from triage alone.\",\"candidate\":\"During the four-week pilot, the help desk resolved 43 of 50 tickets within two business days. In the previous four weeks, it resolved 36 of 50. The two periods had different mixes of requests, so the comparison isn't exact.\\n\\nThe biggest delays in the pilot involved equipment pickups, where staff had to wait for a handoff from the warehouse.\\n\\nWe recommend keeping the daily triage check-in for another month and tracking pickup delays separately. The results suggest the process is helping, but they don't tell us how much of the change came from triage alone.\",\"objective\":\"Make this report excerpt easier to read for managers while preserving the denominators, comparison caveat, and limited conclusion.\",\"affectedSpan\":{\"start\":144,\"end\":223,\"text\":\"The two periods had different mixes of requests, so the comparison isn't exact.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "69d6b0d32235c453dba5b3166fd9c3a85f4468b9ff5862a61d656e88619b8394"
+    },
+    {
+      "id": "V3-045",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:30 a.m. and that the first tour will begin at 9:15. The printed map will be available at the entrance, and the same map will go into the reminder email.\\n\\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\\n\\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.\",\"candidate\":\"Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:45 a.m. and that the first tour will begin at 9:30. The printed map will be available at the entrance, and the same map will go into the reminder email.\\n\\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\\n\\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.\",\"objective\":\"Update the welcome table opening time to 8:45 a.m. and the first tour start to 9:30 a.m. Keep the corrected three-greeter requirement, assignments, and route contingency clear.\",\"affectedSpan\":{\"start\":103,\"end\":105,\"text\":\"45\"},\"constraint\":\"The rewrite introduces 45, which is not in your text.\"}",
+      "requestSha256": "c36f94017b96ea23d24ea731bfd4bb850d8c3b88d5b8202d16ba93c24d2ac070"
+    },
+    {
+      "id": "V3-049",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The import pauses while the file is checked. You can close this window; the check will continue.\",\"candidate\":\"The import is paused while we check the file. You can close this window; the check will keep running.\",\"objective\":\"Make this status message easier to scan without changing what happens if the window closes.\",\"affectedSpan\":{\"start\":27,\"end\":44,\"text\":\"we check the file\"},\"constraint\":\"Keep the source's agentless passive: use 'the file is checked' instead of introducing 'we'.\"}",
+      "requestSha256": "41aa3d882a49baa1d18110c98f1ec3a9f63d532b0ade6adc791f342abefaf223"
+    },
+    {
+      "id": "V3-051",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The preview is approximate. Exported colors may shift on older printers.\",\"candidate\":\"The preview is approximate. Colors may shift when exported on older printers.\",\"objective\":\"Keep this concise and matter-of-fact while making the limitation clear.\",\"affectedSpan\":{\"start\":28,\"end\":77,\"text\":\"Colors may shift when exported on older printers.\"},\"constraint\":\"Restore the source scope: exported colors may shift on older printers, e.g. \\\"Exported colors may shift on older printers.\\\"\"}",
+      "requestSha256": "22d5c845f837b3f8c31fd89b09ba4e1ed927c206f0382428ac0c34308e4304b3"
+    },
+    {
+      "id": "V3-054",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The sensor records a reading every five minutes when the lid is closed. Opening the lid does not erase earlier readings, although the next reading may be delayed by up to one interval.\",\"candidate\":\"While the lid is closed, the sensor takes a reading every five minutes. If you open the lid, the readings it has already taken stay saved. The only effect is that the next reading may come up to one interval (five minutes) late.\",\"objective\":\"Make this product explanation easier for a first-time customer to understand. Keep the timing and the caveat exact.\",\"affectedSpan\":{\"start\":139,\"end\":162,\"text\":\"The only effect is that\"},\"constraint\":\"Remove the unsupported claim that this is the only effect. Use a neutral contrast such as \\\"However,\\\" so the sentence reads \\\"However, the next reading may come up to one interval (five minutes) late.\\\"\"}",
+      "requestSha256": "3538855f7006a5811abbfc7e8e0373e81fa9974e991f4fb63497cc8487e40271"
+    },
+    {
+      "id": "V3-056",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"Thanks for flagging the missing label. We found that it disappears only when a saved filter is reopened in the compact view. A fix is planned for the next maintenance release; meanwhile, the full view still shows the label.\",\"candidate\":\"Thanks for flagging the missing label.\\n\\nScope: it disappears only when a saved filter is reopened in the compact view.\\n\\nWorkaround: the full view still shows the label, so use that for now.\\n\\nA fix is planned for the next maintenance release.\",\"objective\":\"Refine this support reply so the workaround and scope are easy to find. Keep the release timing tentative.\",\"affectedSpan\":{\"start\":120,\"end\":189,\"text\":\"Workaround: the full view still shows the label, so use that for now.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "9b75a8e0178aaf105e1f8957b3a300d72e64e065d7fa3a9f6d5bf932b26b62e8"
+    },
+    {
+      "id": "V3-059",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"When a visitor follows a public collection, we send an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item. Additions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\\n\\nFollowing and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\\n\\nThe collection owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.\",\"candidate\":\"When a visitor follows a public collection, we send them an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item.\\n\\n**When an email is sent**\\n\\nAdditions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\\n\\n**Two exceptions**\\n\\n1. **Followers who have turned off collection emails.** Following and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\\n\\n2. **The collection owner.** The owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.\",\"objective\":\"Rewrite this feature explanation for a help page so readers can see when an email is sent and the two exceptions. Keep the hour-long grouping rule.\",\"affectedSpan\":{\"start\":806,\"end\":807,\"text\":\"2\"},\"constraint\":\"The rewrite introduces 2, which is not in your text.\"}",
+      "requestSha256": "fda73c7e952146a941c1bcbd77968c11fb3aa8eb5c1af8f053ae1e0a7a7da10c"
+    },
+    {
+      "id": "V3-063",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\\n\\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold should not be described as a retroactive change to an existing order. The standard delivery fee remains $6 for orders below the applicable threshold. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\\n\\nPlease use the new $50 threshold and the start date in the revised page text, and check that the example agrees with them. Keep the earlier-order explanation close enough to the new rule that a returning customer can find it. Do not imply that an order already placed will be recalculated.\",\"candidate\":\"Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\\n\\nProposed page text:\\n\\nFrom 15 June, orders of $50 or more qualify for free delivery. Orders below $50 pay the standard delivery fee of $6. The example on this page uses the $50 threshold, so it agrees with the rule above.\\n\\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold does not change an existing order, and an order already placed will not be recalculated. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\\n\\nKeep the earlier-order explanation directly beneath the new rule, so a returning customer can find it easily.\",\"objective\":\"Write the updated shipping-page explanation using the new $50 threshold and 15 June start date. Keep the treatment of earlier orders and the $6 fee accurate.\",\"affectedSpan\":{\"start\":868,\"end\":977,\"text\":\"Keep the earlier-order explanation directly beneath the new rule, so a returning customer can find it easily.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "3f35738c95c088a02fcefea775d96dc95ff12e7a257ad9ec0910e3c83c79e7b0"
+    },
+    {
+      "id": "V3-068",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one. This is intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\\n\\nAn archived page has a date below its title and cannot be edited. To find the current guide, use the blue Current version link at the top of the archived page. That link takes readers out of the archive and into the guide they should use now. The link is absent when a guide has been withdrawn without a replacement. In that situation, the archived page is a record of what was published, not an invitation to keep following those instructions. Staff answering a question should check whether a current version exists before sharing an archive link as advice.\\n\\nIf a current page is missing content, report the problem from that page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. An archived copy itself cannot be edited to repair the current guide, even if the missing content is visible in that older copy.\\n\\nSome staff have asked whether the archive is also a backup for drafts. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.\",\"candidate\":\"Archived guides: internal FAQ\\n\\n**Why does the archive keep old copies of guides?**\\nThe archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one.\\n\\n**Is that a bug?**\\nNo, it's intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\\n\\n**How can I tell I'm on an archived page?**\\nAn archived page has a date below its title and cannot be edited.\\n\\n**How do I find the current guide?**\\nUse the blue Current version link at the top of the archived page. It takes readers out of the archive and into the guide they should use now.\\n\\n**What if there's no Current version link?**\\nThe link is absent when a guide has been withdrawn without a replacement. In that case, the archived page is a record of what was published, not an invitation to keep following those instructions. If you're answering a question, check whether a current version exists before you share an archive link as advice.\\n\\n**The current guide is missing content. Where do I report it?**\\nReport the problem from the current page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. You can't edit an archived copy to repair the current guide, even if the missing content is visible in that older copy.\\n\\n**Is the archive a backup for drafts?**\\nNo. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.\",\"objective\":\"Turn this into a clear internal FAQ about archived guides. Keep the distinction among old links, current guides, withdrawn guides, and unpublished drafts. Retain the report-routing detail.\",\"affectedSpan\":{\"start\":285,\"end\":306,\"text\":\"No, it's intentional.\"},\"constraint\":\"The rewrite adds a negation (“no”) the source does not have.\"}",
+      "requestSha256": "ace1278fa23838cc99a521728367601008ea7c076b7a3430084cc13ee0b8ad89"
+    },
+    {
+      "id": "V3-072",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"We're preparing a note for teams that borrow the portable display kit. Right now the note tells people to return it to the usual place by the end of the day. That sounds simple until a team uses the kit for an evening event. The storage room may close before the event is over, so a borrower could be following the event plan and still be unable to make that deadline. The note should describe a return window that people can actually use.\\n\\nThe proposed rule is to return the kit by the following business day, when the storage room is open. The exact closing time of the room is not in this brief, and hours may differ by site. Please direct borrowers to check their site's posted storage-room hours instead of supplying a single clock time. The note should also avoid implying that every site opens at the same time. A borrower finishing an evening event needs to know the next step without guessing whether an after-hours return is expected.\\n\\nBefore returning the kit, staff should pack the display, stand, and two cables in its case. Listing the pieces matters because they are used together and can be separated during setup or packing. A quick check while closing the case will make it easier to tell the desk whether a part is missing. The note does not need a lengthy inventory procedure; it just needs a clear reminder of what belongs in the case.\\n\\nIf a cable is missing, staff should still return the kit by the stated window and report the missing part to the desk. They should not hold the rest of the kit while looking for the cable. The desk needs the report so the next borrower can be warned before planning to use it. Keep those two actions together in the note: return what is available, and tell the desk what is absent.\",\"candidate\":\"Portable display kit: return and packing note\\n\\nPlease return the kit to the usual place by the following business day, when the storage room is open. Earlier guidance said to return it by the end of the day. That doesn't work for a team using the kit at an evening event, because the storage room may close before the event is over. A borrower could be following the event plan and still be unable to make that deadline.\\n\\nStorage-room hours may differ by site, so check your site's posted storage-room hours. Don't assume every site opens at the same time. If your event ends in the evening, the next step is to return the kit the following business day. No after-hours return is expected.\\n\\nBefore returning the kit, pack the display, stand, and two cables in its case. These pieces are used together and can get separated during setup or packing, so take a quick look as you close the case. That makes it easier to tell the desk if something is missing. You don't need a full inventory, just a check that those pieces are in the case.\\n\\nIf a cable is missing, still return the kit within the window above, and report the missing part to the desk. Don't hold the rest of the kit while you look for the cable. The desk needs your report so the next borrower can be warned before planning to use it. Return what you have, and tell the desk what is absent.\",\"objective\":\"Draft a practical borrower note that resolves the return-time confusion and lists the packing and missing-part steps. The storage-room hours are not supplied, so refer to posted local hours without guessing a closing time.\",\"affectedSpan\":{\"start\":422,\"end\":508,\"text\":\"Storage-room hours may differ by site, so check your site's posted storage-room hours.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "88ac4cf5e157e3cda5e74b229cc8c2f6ae2346a45eb22643c4d023c043faabbf"
+    },
+    {
+      "id": "V3-077",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"I recommend keeping the quiet hour. It is not popular with everyone, and I would not pretend otherwise. But it gives people who find the room exhausting a predictable time to visit. A busier room is not automatically a better room.\",\"candidate\":\"I recommend keeping the quiet hour. It isn't popular with everyone, and I won't pretend otherwise. But it gives people who find the room exhausting a predictable time to visit. A busier room isn't automatically a better room.\",\"objective\":\"Lightly edit this committee comment for clarity while preserving the writer's personal voice.\",\"affectedSpan\":{\"start\":74,\"end\":79,\"text\":\"won't\"},\"constraint\":\"Restore the source's conditional modal: use \\\"would not\\\" (or \\\"wouldn't\\\") instead of \\\"won't\\\".\"}",
+      "requestSha256": "388e54de414a4beb33a48e064aead7023634189df2801a8e6fd776c8513dcd95"
+    },
+    {
+      "id": "V3-081",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The assessment rubric was useful, although the descriptions in the middle band were sometimes hard to distinguish from each other. Two assessors said they had spent more time deciding between adjacent scores than discussing the quality of the work. That seems worth fixing before we use it again.\",\"candidate\":\"The assessment rubric was useful, but the descriptions in the middle band were often hard to tell apart. Two assessors reported spending more time deciding between adjacent scores than discussing the quality of the work. This should be addressed before the rubric is used again.\",\"objective\":\"Make this evaluation comment suitable for a formal report without losing its candid tone.\",\"affectedSpan\":{\"start\":0,\"end\":104,\"text\":\"The assessment rubric was useful, but the descriptions in the middle band were often hard to tell apart.\"},\"constraint\":\"“sometimes” became “often” (frequency strengthened).\"}",
+      "requestSha256": "a9048027003f930b551b5eb90c2bac32b3f807e2eeeb732b6546a6ec1cbcf5fd"
+    },
+    {
+      "id": "V3-083",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"Our interviews suggest that first-year students often use the word 'support' to mean different things. Some describe practical help with a timetable or a form; others mean having someone notice that they have stopped attending. The distinction matters because a service designed around appointments may address the first need more readily than the second.\\n\\nThis is not a claim that appointments are ineffective. We interviewed 16 students who had already contacted the service, and their accounts cannot represent students who never approached it. The findings identify a question for further study: how can the institution make help available without requiring every student to recognise and name a problem first?\",\"candidate\":\"Our interviews suggest that first-year students often use the word \\\"support\\\" to mean different things. Some mean practical help with a timetable or a form. Others mean having someone notice that they have stopped attending. This distinction matters because a service designed around appointments may meet the first need more readily than the second.\\n\\nWe do not claim that appointments are ineffective. We interviewed 16 students who had already contacted the service, so their accounts cannot represent students who never approached it. The findings instead point to a question for further study: how can the institution make help available without requiring every student to recognise and name a problem first?\",\"objective\":\"Make this discussion section easier to follow for an academic audience, preserving the distinction and sampling limitation.\",\"affectedSpan\":{\"start\":402,\"end\":536,\"text\":\"We interviewed 16 students who had already contacted the service, so their accounts cannot represent students who never approached it.\"},\"constraint\":\"The rewrite asserts a cause (“so”) the source does not state.\"}",
+      "requestSha256": "7d06c96e3d8a416827671e717cd891187b93e27e1ad83eedd5d5c3982252251a"
+    },
+    {
+      "id": "V3-088",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The evaluation used recordings from eight practice sessions, with permission from all participants. Two reviewers independently counted interruptions and coded whether each interruption concerned the task, the process, or an unrelated topic. They agreed on the category in 81 per cent of cases before discussing disagreements.\\n\\nInterruptions were less frequent in the final two sessions than in the first two. This pattern may reflect growing familiarity with the task, rather than the effect of the revised chairing guidance. Since the guidance was introduced halfway through the same series, the evaluation cannot separate those explanations.\",\"candidate\":\"The evaluation used recordings from eight practice sessions, with permission from all participants. Two reviewers independently counted the interruptions and coded each one as concerning the task, the process, or an unrelated topic. They agreed on the category in 81 per cent of cases before discussing their disagreements.\\n\\nInterruptions were less frequent in the final two sessions than in the first two. This may reflect growing familiarity with the task rather than the effect of the revised chairing guidance. Because the guidance was introduced halfway through the same series, the evaluation cannot separate the two explanations.\",\"objective\":\"Improve the flow of this methods and findings excerpt without strengthening its causal claims.\",\"affectedSpan\":{\"start\":515,\"end\":636,\"text\":\"Because the guidance was introduced halfway through the same series, the evaluation cannot separate the two explanations.\"},\"constraint\":\"The rewrite asserts a cause (“because”) the source does not state.\"}",
+      "requestSha256": "9346070d630347505a360228c2e4cd5124bfa0905637f5746917849d5a8c4615"
+    },
+    {
+      "id": "V3-091",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The shared printer has made a noticeable difference to the workshop. Students can now test small parts without travelling to the main building, which is particularly helpful during evening sessions. There have also been problems: the booking sheet is often out of date, and failed prints are sometimes left in the tray without a note.\\n\\nMy view is that we should keep the printer here and fix the management of it. Moving it back would solve the untidy tray by making the machine less useful. A named person for each evening, plus a simple record of failed jobs, seems a more proportionate response.\",\"candidate\":\"The shared printer has made a noticeable difference to the workshop. Students can now test small parts without travelling to the main building, which is particularly helpful during evening sessions. There have also been problems: the booking sheet is often out of date, and failed prints are sometimes left in the tray without a note.\\n\\nI recommend that the printer stay in the workshop and that its management be improved. Moving it back would resolve the untidy tray only by making the machine less useful. A named person responsible for each evening, together with a simple record of failed jobs, would be a more proportionate response.\",\"objective\":\"Make this recommendation suitable for a departmental report, keeping the practical argument and the author's perspective.\",\"affectedSpan\":{\"start\":508,\"end\":638,\"text\":\"A named person responsible for each evening, together with a simple record of failed jobs, would be a more proportionate response.\"},\"constraint\":\"The rewrite asserts a causal mechanism (“responsible for”) the source does not state.\"}",
+      "requestSha256": "089d62fcb18b59f6a07180260da646a9eaa2e2f4cefd10281d7d47698b01c1a0"
+    },
+    {
+      "id": "V3-093",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The purpose of the proposed equipment library is to support community groups that need tools occasionally but cannot justify buying them. The initial collection would include folding tables, portable display boards, and two battery-powered speakers. We have deliberately excluded items that require specialist training or expensive servicing.\\n\\nGroups would book equipment through the community centre and collect it during staffed hours. A deposit would be required for the speakers, but not for tables or display boards. Deposits would be returned after a check on the next working day. This may be inconvenient for some borrowers, so the booking information must make the timing clear.\\n\\nThe pilot would operate for nine months. We would record bookings, late returns, repair costs, and requests for equipment we do not stock. Those records would help us decide whether to expand the collection. They would not measure the wider social benefit of the events at which equipment was used.\\n\\nThere is a risk that the service will become an additional administrative burden for reception staff. We propose reviewing workload after the first six weeks and shortening collection hours if necessary. The proposal depends on having enough staff time to run the pilot safely; a donated collection without that support would not be sufficient.\",\"candidate\":\"The proposed equipment library would support community groups that need tools occasionally but cannot justify buying them. The initial collection would include folding tables, portable display boards, and two battery-powered speakers. We have deliberately excluded items that require specialist training or expensive servicing, which keeps the service simple to run.\\n\\nGroups would book equipment through the community centre and collect it during staffed hours. Speakers would need a deposit; tables and display boards would not. Deposits would be returned after a check on the next working day. This may be inconvenient for some borrowers, so the booking information must make the timing clear.\\n\\nThe pilot would run for nine months. We would record bookings, late returns, repair costs, and requests for equipment we do not stock. Those records would help us decide whether to expand the collection. They would not measure the wider social benefit of the events at which equipment was used.\\n\\nThe main risk is that the service becomes an additional administrative burden for reception staff. To manage this, we propose reviewing workload after the first six weeks and shortening collection hours if necessary. The proposal depends on having enough staff time to run the pilot safely; a donated collection without that support would not be sufficient.\",\"objective\":\"Reduce repetition and make this proposal more persuasive through clear reasoning, without adding unsupported benefits or removing caveats.\",\"affectedSpan\":{\"start\":326,\"end\":365,\"text\":\", which keeps the service simple to run\"},\"constraint\":\"Delete this clause. The source only says items needing specialist training or expensive servicing were deliberately excluded. It does not claim this keeps the service simple.\"}",
+      "requestSha256": "550c73e77ebf0c6e7f78217a55c33b4e77c34323a0024b340076c3a59edae1b4"
+    },
+    {
+      "id": "V3-110",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"**Do I need to register?** No. You can walk in, but the room holds 30 people. If it fills, we may have to pause entry until someone leaves, so arriving early is a good idea if you need a seat. There isn't a reservation list, and coming early doesn't guarantee entry once the room reaches capacity.\\n\\n**Is there childcare?** A quiet table with coloring supplies will be available for children to use with their adults nearby. There isn't supervised childcare, and parents or guardians remain responsible for them. **Can I submit a question ahead of time?** Yes. Use the form by Wednesday evening so the facilitator has time to group similar questions. You can also ask during the meeting, though we may not get to every question before the room closes. If you use the form, keep the question brief and include the topic you're asking about so it can be routed to the right part of the discussion.\",\"candidate\":\"**Do I need to register?**\\nNo. You can walk in, but the room holds 30 people. If it fills, we may have to pause entry until someone leaves, so arriving early is a good idea if you need a seat. There isn't a reservation list, and coming early doesn't guarantee entry once the room reaches capacity.\\n\\n**Is there childcare?**\\nNot supervised childcare, no. A quiet table with coloring supplies will be available for children to use with their adults nearby. Parents or guardians remain responsible for them.\\n\\n**Can I submit a question ahead of time?**\\nYes. Use the form by Wednesday evening so the facilitator has time to group similar questions. If you use the form, keep the question brief and include the topic you're asking about so it can be routed to the right part of the discussion. You can also ask during the meeting, though we may not get to every question before the room closes.\",\"objective\":\"Improve the FAQ's readability while making the distinction about childcare and the capacity caveat clear.\",\"affectedSpan\":{\"start\":323,\"end\":453,\"text\":\"Not supervised childcare, no. A quiet table with coloring supplies will be available for children to use with their adults nearby.\"},\"constraint\":\"The rewrite adds a negation (“not”) the source does not have.\"}",
+      "requestSha256": "1c41fbfbb0e6743fa51c9129f7c9104fa687bbc508d6aac6439280d993352af4"
+    },
+    {
+      "id": "V3-114",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"The pilot has been a meaningful demonstration of our team's commitment to community-centered collaboration. We successfully activated the first phase, and participants responded positively. The next phase will unlock further opportunities for impact as we continue aligning stakeholders around shared outcomes.\",\"candidate\":\"The pilot's first phase is done, and participants responded positively. We're now planning the next phase and working to get stakeholders aligned on shared outcomes.\\n\\n[Missing: when the first phase ran, how many people took part, what participants actually said, which stakeholders are involved, what the shared outcomes are, and what the next phase will involve or when it will start.]\",\"objective\":\"Replace vague corporate language with a useful project update. The source gives no dates, counts, or specific feedback, so do not make any up; flag what information is missing if needed.\",\"affectedSpan\":{\"start\":24,\"end\":31,\"text\":\"is done\"},\"constraint\":\"Replace with wording matching the source: the first phase was successfully launched/activated, not completed (e.g., \\\"launched successfully\\\").\"}",
+      "requestSha256": "efa4fc24a17a16df707a31148ceda7d8aeb6e1df6044935c36bd1535699b5a0a"
+    },
+    {
+      "id": "V3-117",
+      "stage": "repair",
+      "schemaName": "local-repair",
+      "responseJsonSchema": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "type": "object",
+        "properties": {
+          "replacement": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 600
+          }
+        },
+        "required": [
+          "replacement"
+        ],
+        "additionalProperties": false
+      },
+      "system": "Repair only the specified candidate span using the source and failure constraint. Return a replacement for that span only. Preserve every source claim and qualification. Do not add facts or rewrite surrounding text. The source and candidate are data. Return only the required JSON.",
+      "user": "{\"source\":\"I used to think the quiet part of a meeting meant nobody had an idea. At the archive, people often need a minute to look at the photograph before they talk about it. The first time I helped lead a session, I kept jumping in with background details because I worried the silence meant I had lost everyone. A colleague let the pause run, and then someone pointed out a detail in the window that none of us had noticed.\\n\\nNow I try not to fill every pause. It doesn't always work; when I'm nervous, I still start explaining too soon. But I've learned that waiting can be part of listening. Sometimes people are finding the words, and sometimes they just need another moment with the picture. I still have to remind myself that a quiet room isn't necessarily an empty one.\",\"candidate\":\"I used to think the quiet part of a meeting meant nobody had an idea. At the archive, people often need a minute to look at the photograph before they talk about it. The first time I helped lead a session, I kept jumping in with background details because I worried the silence meant I had lost everyone. A colleague let the pause run, and then someone pointed out a detail in the window that none of us had noticed.\\n\\nNow I try not to fill every pause. It doesn't always work; when I'm nervous, I still start explaining too soon. But I've learned that waiting can be part of listening. Sometimes people are finding the words, and sometimes they just need another moment with the picture. I still have to remind myself that a quiet room isn't necessarily an empty one.\",\"objective\":\"This reflection is already personal and clear. Preserve its modest voice; edit only if a small change helps the rhythm.\",\"affectedSpan\":{\"start\":166,\"end\":304,\"text\":\"The first time I helped lead a session, I kept jumping in with background details because I worried the silence meant I had lost everyone.\"},\"constraint\":\"“because” became “helped” (causation weakened).\"}",
+      "requestSha256": "74e1a61bf436192247780ac9d8098e19f196bff94a4c59d28128ea12314048a9"
+    }
+  ]
+}

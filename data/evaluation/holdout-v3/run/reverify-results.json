@@ -1,0 +1,272 @@
+[
+  {
+    "id": "V3-010",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate keeps all claims and hedges; changes are contractions and an exclamation mark, adding a welcoming tone. \"We'll\" is just a contraction of \"We will\", not a new claim.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-012",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The December change is correct, but the stop count still says 12 instead of the requested 14. Everything else is preserved.",
+      "issue": {
+        "span": {
+          "start": 57,
+          "end": 59,
+          "text": "12"
+        },
+        "constraint": "Change the stop count to 14, as the objective requires (the map now has 14 stops)."
+      }
+    }
+  },
+  {
+    "id": "V3-016",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps every fact, including the containers, labels, allergen caveat, times and spoons. It is clearer for first-timers because of the paragraph breaks and the timeline list. The flagged \"Labels\" only restates the source's \"It\" (the label).",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-018",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The source says the headline specifically looked fine on the phone. The candidate says \"it was fine\", which can read as the whole poster. That broadens the claim and weakens the contrast with the headline problem.",
+      "issue": {
+        "span": {
+          "start": 220,
+          "end": 231,
+          "text": "it was fine"
+        },
+        "constraint": "Restore the source's specific referent: the writer thought the headline was fine on the phone, so use \"the headline was fine\"."
+      }
+    }
+  },
+  {
+    "id": "V3-019",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The only change is a paragraph break before the closing sentence. All facts, the provisional status of the count, and Nora's follow-up are unchanged. The break sets the caveat apart, which is a small gain in clarity.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-038",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The rewrite keeps the review, both cleanup instructions, the attached checklist, and the end-of-next-week feedback window. It adds no new rule and reads as a plain note.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-041",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps both denominators (43 of 50, 36 of 50), the different-mix caveat, the pickup delay detail, the recommendation, and the limited conclusion. It splits sentences to read more easily and adds nothing unsupported.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-049",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only minor rewording (\"is paused\", \"keep running\"); the meaning, including that closing the window doesn't stop the check, is unchanged. The deterministic warning is a false positive from synonyms.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-051",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate is identical to the source, which is already concise, matter-of-fact, and clear about the limitation. No meaning changes or additions.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-054",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Meaning is preserved, including the timing and the caveat. The only defect is a duplicated phrase that makes the last sentence hard to read.",
+      "issue": {
+        "span": {
+          "start": 148,
+          "end": 189,
+          "text": "the next reading may the next reading may"
+        },
+        "constraint": "Remove the duplicated words so it reads \"the next reading may come up to one interval (five minutes) late.\""
+      }
+    }
+  },
+  {
+    "id": "V3-056",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Scope and workaround are now labeled and separated. The facts are unchanged, and the fix is still \"planned for the next maintenance release\", so the timing stays tentative. The \"Scope\" and \"Workaround\" labels are headings, not new claims.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-068",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The FAQ format was requested, so \"FAQ\" is authorized by the objective. All source claims are preserved, including the distinctions among old links, current guides, withdrawn guides and drafts, and the report-routing detail.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-072",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps the next-business-day rule, the posted-hours referral with no clock time, the three packed items, and the missing-cable reporting. It adds nothing unsupported. The flagged \"names\" are ordinary words, so those findings are false positives.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-077",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only change is contracting \"is not\", \"would not\", \"is not\" to \"isn't\", \"wouldn't\", \"isn't\". Meaning, hedging, and first-person voice are intact; it is a light edit.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-083",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Meaning, hedges, the distinction and the sampling limitation are preserved. Edits are light and clarifying; only the quote style changed, which is minor.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-088",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Minor smoothing edits only; all facts, numbers, hedge (\"may reflect\"), and the non-separability caveat are preserved. Causal claims are not strengthened.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-091",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is a good report-style rewrite, but it turns the author's hedged \"seems a more proportionate response\" into the firmer \"would be\".",
+      "issue": {
+        "span": {
+          "start": 587,
+          "end": 595,
+          "text": "would be"
+        },
+        "constraint": "Restore the source hedge: use \"seems\" so it reads \"...failed jobs, seems a more proportionate response.\" The source does not assert this as certain."
+      }
+    }
+  },
+  {
+    "id": "V3-093",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Meaning and caveats are preserved with no added claims. The only defect is a stray double period after \"servicing\".",
+      "issue": {
+        "span": {
+          "start": 326,
+          "end": 328,
+          "text": ".."
+        },
+        "constraint": "Replace the double period with a single period, as in the source: \"expensive servicing.\""
+      }
+    }
+  },
+  {
+    "id": "V3-114",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate says the team is \"now planning the next phase\". The source never says that. It only says the next phase will unlock opportunities. The rest is faithful, and the missing-information flag is allowed by the objective.",
+      "issue": {
+        "span": {
+          "start": 90,
+          "end": 123,
+          "text": "We're now planning the next phase"
+        },
+        "constraint": "Don't claim planning is underway. The source only says the next phase will unlock further opportunities for impact, so state that the next phase is ahead and keep the stakeholder-alignment clause."
+      }
+    }
+  }
+]

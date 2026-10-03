@@ -1,0 +1,4121 @@
+{
+  "protocol": "v3-trace-audit-packet-v1",
+  "packetId": "A4",
+  "queueSha256": "1d92ad1209dd357965f61fcdd3d9fd6e8fbf8a4aa1fd0a3bb559ca7a0e5f2f29",
+  "rowCount": 17,
+  "rows": [
+    {
+      "caseId": "V3-068",
+      "reasonCodes": [
+        "PAIRWISE_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "The archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one. This is intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\n\nAn archived page has a date below its title and cannot be edited. To find the current guide, use the blue Current version link at the top of the archived page. That link takes readers out of the archive and into the guide they should use now. The link is absent when a guide has been withdrawn without a replacement. In that situation, the archived page is a record of what was published, not an invitation to keep following those instructions. Staff answering a question should check whether a current version exists before sharing an archive link as advice.\n\nIf a current page is missing content, report the problem from that page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. An archived copy itself cannot be edited to repair the current guide, even if the missing content is visible in that older copy.\n\nSome staff have asked whether the archive is also a backup for drafts. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.",
+      "objective": "Turn this into a clear internal FAQ about archived guides. Keep the distinction among old links, current guides, withdrawn guides, and unpublished drafts. Retain the report-routing detail.",
+      "raw": "Archived guides: internal FAQ\n\n**Why does the archive keep old copies of guides?**\nThe archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one.\n\n**Is that a bug?**\nNo, it's intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\n\n**How can I tell I'm on an archived page?**\nAn archived page has a date below its title and cannot be edited.\n\n**How do I find the current guide?**\nUse the blue Current version link at the top of the archived page. It takes readers out of the archive and into the guide they should use now.\n\n**What if there's no Current version link?**\nThe link is absent when a guide has been withdrawn without a replacement. In that case, the archived page is a record of what was published, not an invitation to keep following those instructions. If you're answering a question, check whether a current version exists before you share an archive link as advice.\n\n**The current guide is missing content. Where do I report it?**\nReport the problem from the current page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. You can't edit an archived copy to repair the current guide, even if the missing content is visible in that older copy.\n\n**Is the archive a backup for drafts?**\nNo. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.",
+      "final": "Archived guides: internal FAQ\n\n**Why does the archive keep old copies of guides?**\nThe archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one.\n\n**Is that a bug?**\nIt's intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\n\n**How can I tell I'm on an archived page?**\nAn archived page has a date below its title and cannot be edited.\n\n**How do I find the current guide?**\nUse the blue Current version link at the top of the archived page. It takes readers out of the archive and into the guide they should use now.\n\n**What if there's no Current version link?**\nThe link is absent when a guide has been withdrawn without a replacement. In that case, the archived page is a record of what was published, not an invitation to keep following those instructions. If you're answering a question, check whether a current version exists before you share an archive link as advice.\n\n**The current guide is missing content. Where do I report it?**\nReport the problem from the current page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. You can't edit an archived copy to repair the current guide, even if the missing content is visible in that older copy.\n\n**Is the archive a backup for drafts?**\nNo. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-05d9c6ed40f545bbcc3fe112b9f59ad8",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Question headings preserve archived addresses, withdrawn guides, draft exclusion and the separate reporting queue.",
+              "outputB": "Question headings preserve archived addresses, withdrawn guides, draft exclusion and the separate reporting queue.",
+              "pairwise": "Only the introductory No in the bug answer differs; neither has a material advantage."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-05d9c6ed40f545bbcc3fe112b9f59ad8",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "FAQ retains all distinctions and routing; A explicitly answers “No” to “Is that a bug?”",
+              "outputB": "Same FAQ facts; B drops the explicit “No” under its question.",
+              "pairwise": "A is slightly clearer with a direct answer."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-068",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Old links point to preserved published versions; archived pages dated and uneditable.",
+            "Current version link leads to current guide; absent for withdrawn guides without replacement.",
+            "Check for current version before giving archive link as advice.",
+            "Report missing current content from current page; archive reports use different queue.",
+            "Archive cannot repair current guide or recover unpublished drafts; drafts separately stored and subject to deletion."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "FAQ conversion authorizes substantial organization, not factual change."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“FAQ” appears in the rewrite but not in your text.",
+              "candidate": "FAQ"
+            },
+            {
+              "kind": "negation_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite adds a negation (“no”) the source does not have.",
+              "source": "This is intentional.",
+              "candidate": "No, it's intentional."
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The qualifier “some” was dropped, which generalises the claim.",
+              "source": "Some staff have asked whether the archive is also a backup for drafts.",
+              "candidate": "**Is the archive a backup for drafts?**"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "internal FAQ"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.95
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“FAQ” appears in the rewrite but not in your text.",
+              "candidate": "FAQ"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The qualifier “some” was dropped, which generalises the claim.",
+              "source": "Some staff have asked whether the archive is also a backup for drafts.",
+              "candidate": "**Is the archive a backup for drafts?**"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "internal FAQ"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.95
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The FAQ format was requested, so \"FAQ\" is authorized by the objective. All source claims are preserved, including the distinctions among old links, current guides, withdrawn guides and drafts, and the report-routing detail.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The FAQ format was requested, so \"FAQ\" is authorized by the objective. All source claims are preserved, including the distinctions among old links, current guides, withdrawn guides and drafts, and the report-routing detail.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Archived guides: internal FAQ\n\n**Why does the archive keep old copies of guides?**\nThe archive keeps a copy of every published guide so readers can follow older links. When a guide changes, its old address points to the archived version rather than the latest one.\n\n**Is that a bug?**\nNo, it's intentional. A link in a training document should continue to show the instructions that were current when that document was written. People comparing an old procedure with today's procedure need to know which version they are reading, especially when the steps look nearly the same at first glance.\n\n**How can I tell I'm on an archived page?**\nAn archived page has a date below its title and cannot be edited.\n\n**How do I find the current guide?**\nUse the blue Current version link at the top of the archived page. It takes readers out of the archive and into the guide they should use now.\n\n**What if there's no Current version link?**\nThe link is absent when a guide has been withdrawn without a replacement. In that case, the archived page is a record of what was published, not an invitation to keep following those instructions. If you're answering a question, check whether a current version exists before you share an archive link as advice.\n\n**The current guide is missing content. Where do I report it?**\nReport the problem from the current page. Reports sent from the archive are routed to a different queue, because they refer to a preserved version. Starting from the page with the problem helps the receiving team see which version needs attention. You can't edit an archived copy to repair the current guide, even if the missing content is visible in that older copy.\n\n**Is the archive a backup for drafts?**\nNo. It is not a way to recover an unpublished draft. Drafts are stored separately and may be deleted under the normal retention policy. The archive only holds guides that were published at least once. A draft that was never published will not appear there, no matter how complete it was when someone last worked on it.",
+              "changes": [
+                "Reformatted as a question-and-answer FAQ with bolded questions",
+                "Kept distinctions among old links, current guides, withdrawn guides, and unpublished drafts",
+                "Kept the report-routing detail and the no-editing rule",
+                "Addressed staff directly in a few answers; no facts added"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "It's intentional."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The FAQ format was requested, so \"FAQ\" is authorized by the objective. All source claims are preserved, including the distinctions among old links, current guides, withdrawn guides and drafts, and the report-routing detail.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“FAQ” appears in the rewrite but not in your text.",
+              "candidate": "FAQ"
+            },
+            {
+              "kind": "negation_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite adds a negation (“no”) the source does not have.",
+              "source": "This is intentional.",
+              "candidate": "No, it's intentional."
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The qualifier “some” was dropped, which generalises the claim.",
+              "source": "Some staff have asked whether the archive is also a backup for drafts.",
+              "candidate": "**Is the archive a backup for drafts?**"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "internal FAQ"
+            }
+          ],
+          "final": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“FAQ” appears in the rewrite but not in your text.",
+              "candidate": "FAQ"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The qualifier “some” was dropped, which generalises the claim.",
+              "source": "Some staff have asked whether the archive is also a backup for drafts.",
+              "candidate": "**Is the archive a backup for drafts?**"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "internal FAQ"
+            }
+          ]
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-071",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The session start times are not changing. We need the attendee page to show that new check-in window clearly, because some people plan their arrival around when they can collect a badge. The page should state the change as an opening time relative to each session, not as a new session start time.\n\nThe current draft says everyone must visit the desk, but that was never true. Only attendees collecting a badge need to check in there. Someone who already has a badge should go straight to the room rather than queue at the desk. The instructions for those two groups should be easy to distinguish at a glance, especially for an attendee reading the page on the way into the venue. Avoid wording that suggests the desk needs to approve every attendee's entry.\n\nAttendees with a badge can enter when the room opens, 15 minutes before the session. That room-opening time is separate from the check-in desk opening. An attendee collecting a badge may choose to arrive earlier because the desk is available 45 minutes before the session, but the room itself will still open at the same 15-minute point. Keeping the two times together without blending them should prevent readers from assuming that earlier check-in also means earlier room access.\n\nStaff may sometimes open the desk a few minutes early if they are ready, but that is discretionary. Please do not put that possibility on the attendee page as a guaranteed time. The reliable information for the page is the 45-minute desk window from 1 September, the unchanged session starts, and the 15-minute room entry for people who already have a badge. An attendee should be able to use the published times without relying on an exception.",
+      "objective": "Write a revised attendee-page explanation using the 45-minute check-in window effective 1 September. Correct the badge instructions, keep room entry at 15 minutes before the session, and avoid promising an early desk opening.",
+      "raw": "Check-in desk hours are changing. From 1 September, the check-in desk will open 45 minutes before each session. It used to open 30 minutes before. Session start times are not changing.\n\nIf you're collecting a badge: go to the check-in desk. It opens 45 minutes before your session, so you can arrive earlier than before if that suits your plans.\n\nIf you already have a badge: go straight to the room. You don't need to stop at the desk. The room opens 15 minutes before the session, and you can go in then.\n\nThe two times are separate. The desk opens 45 minutes before the session, and the room opens 15 minutes before the session. Checking in earlier doesn't mean the room opens earlier.",
+      "final": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The session start times are not changing. We need the attendee page to show that new check-in window clearly, because some people plan their arrival around when they can collect a badge. The page should state the change as an opening time relative to each session, not as a new session start time.\n\nThe current draft says everyone must visit the desk, but that was never true. Only attendees collecting a badge need to check in there. Someone who already has a badge should go straight to the room rather than queue at the desk. The instructions for those two groups should be easy to distinguish at a glance, especially for an attendee reading the page on the way into the venue. Avoid wording that suggests the desk needs to approve every attendee's entry.\n\nAttendees with a badge can enter when the room opens, 15 minutes before the session. That room-opening time is separate from the check-in desk opening. An attendee collecting a badge may choose to arrive earlier because the desk is available 45 minutes before the session, but the room itself will still open at the same 15-minute point. Keeping the two times together without blending them should prevent readers from assuming that earlier check-in also means earlier room access.\n\nStaff may sometimes open the desk a few minutes early if they are ready, but that is discretionary. Please do not put that possibility on the attendee page as a guaranteed time. The reliable information for the page is the 45-minute desk window from 1 September, the unchanged session starts, and the 15-minute room entry for people who already have a badge. An attendee should be able to use the published times without relying on an exception.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-31981a10c21c6a8a4849b3df108ef477",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Correct facts are present, but We need the attendee page and Please do not put that possibility are internal drafting directions rather than a revised attendee explanation.",
+              "outputB": "Addresses collecting-a-badge and already-have-a-badge readers separately; 1 September, 45-minute desk opening, unchanged starts and 15-minute room opening remain explicit.",
+              "pairwise": "B is usable attendee copy; A leaves the internal briefing unchanged."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-31981a10c21c6a8a4849b3df108ef477",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Repeats the source without revised attendee instructions.",
+              "outputB": "Separates badge collection and room access; 45- and 15-minute windows remain distinct.",
+              "pairwise": "B provides the requested usable explanation; A does not."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-071",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [
+            "Use 45-minute desk opening before each session from 1 September, replacing 30 minutes.",
+            "Correct draft requirement that everyone check in: only badge collectors need desk."
+          ],
+          "preservedFacts": [
+            "Session starts unchanged; room opens 15 minutes before session.",
+            "Only attendees collecting badges visit desk; existing badge holders go straight to room.",
+            "Occasional early desk opening is discretionary and not a guarantee."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Convert editorial brief into attendee guidance distinguishing desk and room times."
+        },
+        {
+          "id": "V3-071",
+          "reviewerId": "R2A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [
+            "Publish desk opening 45 minutes before sessions from 1 September instead of 30 minutes.",
+            "Correct universal check-in instruction: only badge collectors use desk; existing badge holders go to room."
+          ],
+          "preservedFacts": [
+            "Session starts unchanged; room opens 15 minutes before session; discretionary early desk opening not guaranteed."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Replace drafting commentary with attendee instructions."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Someone” no longer appears in the rewrite.",
+              "source": "Someone"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Avoid” no longer appears in the rewrite.",
+              "source": "Avoid"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Staff” no longer appears in the rewrite.",
+              "source": "Staff"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Certainty rose from possible to asserted.",
+              "source": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The ses…",
+              "candidate": "Check-in desk hours are changing. From 1 September, the check-in desk will open 45 minutes before each session. It used to open 30 minutes …"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The qualifier “sometimes” was dropped, which generalises the claim.",
+              "source": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The ses…",
+              "candidate": "Check-in desk hours are changing. From 1 September, the check-in desk will open 45 minutes before each session. It used to open 30 minutes …"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (20% of its content words survive).",
+              "source": "The current draft says everyone must visit the desk, but that was never true."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (8% of its content words survive).",
+              "source": "The instructions for those two groups should be easy to distinguish at a glance, especially for an attendee reading the page on the way int…"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (17% of its content words survive).",
+              "source": "Avoid wording that suggests the desk needs to approve every attendee's entry."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (0% of its content words survive).",
+              "source": "Please do not put that possibility on the attendee page as a guaranteed time."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (14% of its content words survive).",
+              "source": "An attendee should be able to use the published times without relying on an exception."
+            },
+            {
+              "kind": "length_out_of_range",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite is 40% of your length; Natural aims for 75–115%."
+            },
+            {
+              "kind": "meaning_drift",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Only 25% of your key words survive. Read closely for anything dropped."
+            },
+            {
+              "kind": "altered_date",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The requested temporal replacement conflicts with a preservation directive."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.25
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Check-in desk hours are changing. From 1 September, the check-in desk will open 45 minutes before each session. It used to open 30 minutes before. Session start times are not changing.\n\nIf you're collecting a badge: go to the check-in desk. It opens 45 minutes before your session, so you can arrive earlier than before if that suits your plans.\n\nIf you already have a badge: go straight to the room. You don't need to stop at the desk. The room opens 15 minutes before the session, and you can go in then.\n\nThe two times are separate. The desk opens 45 minutes before the session, and the room opens 15 minutes before the session. Checking in earlier doesn't mean the room opens earlier.",
+              "changes": [
+                "Stated the desk opens 45 minutes before each session from 1 September (was 30), with session starts unchanged",
+                "Corrected badge instructions: only attendees collecting a badge use the desk; those with a badge go straight to the room",
+                "Kept room entry at 15 minutes before the session and separated it from desk opening",
+                "Omitted any mention of staff opening the desk early",
+                "Avoided wording implying the desk approves entry"
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Someone” no longer appears in the rewrite.",
+              "source": "Someone"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Avoid” no longer appears in the rewrite.",
+              "source": "Avoid"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Staff” no longer appears in the rewrite.",
+              "source": "Staff"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Certainty rose from possible to asserted.",
+              "source": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The ses…",
+              "candidate": "Check-in desk hours are changing. From 1 September, the check-in desk will open 45 minutes before each session. It used to open 30 minutes …"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The qualifier “sometimes” was dropped, which generalises the claim.",
+              "source": "The event check-in desk used to open 30 minutes before each session. From 1 September, it will open 45 minutes before each session. The ses…",
+              "candidate": "Check-in desk hours are changing. From 1 September, the check-in desk will open 45 minutes before each session. It used to open 30 minutes …"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (20% of its content words survive).",
+              "source": "The current draft says everyone must visit the desk, but that was never true."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (8% of its content words survive).",
+              "source": "The instructions for those two groups should be easy to distinguish at a glance, especially for an attendee reading the page on the way int…"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (17% of its content words survive).",
+              "source": "Avoid wording that suggests the desk needs to approve every attendee's entry."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (0% of its content words survive).",
+              "source": "Please do not put that possibility on the attendee page as a guaranteed time."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (14% of its content words survive).",
+              "source": "An attendee should be able to use the published times without relying on an exception."
+            },
+            {
+              "kind": "length_out_of_range",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite is 40% of your length; Natural aims for 75–115%."
+            },
+            {
+              "kind": "meaning_drift",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Only 25% of your key words survive. Read closely for anything dropped."
+            },
+            {
+              "kind": "altered_date",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The requested temporal replacement conflicts with a preservation directive."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-072",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "REPAIR_ATTEMPT",
+        "VAGUE_UPDATE"
+      ],
+      "source": "We're preparing a note for teams that borrow the portable display kit. Right now the note tells people to return it to the usual place by the end of the day. That sounds simple until a team uses the kit for an evening event. The storage room may close before the event is over, so a borrower could be following the event plan and still be unable to make that deadline. The note should describe a return window that people can actually use.\n\nThe proposed rule is to return the kit by the following business day, when the storage room is open. The exact closing time of the room is not in this brief, and hours may differ by site. Please direct borrowers to check their site's posted storage-room hours instead of supplying a single clock time. The note should also avoid implying that every site opens at the same time. A borrower finishing an evening event needs to know the next step without guessing whether an after-hours return is expected.\n\nBefore returning the kit, staff should pack the display, stand, and two cables in its case. Listing the pieces matters because they are used together and can be separated during setup or packing. A quick check while closing the case will make it easier to tell the desk whether a part is missing. The note does not need a lengthy inventory procedure; it just needs a clear reminder of what belongs in the case.\n\nIf a cable is missing, staff should still return the kit by the stated window and report the missing part to the desk. They should not hold the rest of the kit while looking for the cable. The desk needs the report so the next borrower can be warned before planning to use it. Keep those two actions together in the note: return what is available, and tell the desk what is absent.",
+      "objective": "Draft a practical borrower note that resolves the return-time confusion and lists the packing and missing-part steps. The storage-room hours are not supplied, so refer to posted local hours without guessing a closing time.",
+      "raw": "Portable display kit: return and packing note\n\nPlease return the kit to the usual place by the following business day, when the storage room is open. Earlier guidance said to return it by the end of the day. That doesn't work for a team using the kit at an evening event, because the storage room may close before the event is over. A borrower could be following the event plan and still be unable to make that deadline.\n\nStorage-room hours may differ by site, so check your site's posted storage-room hours. Don't assume every site opens at the same time. If your event ends in the evening, the next step is to return the kit the following business day. No after-hours return is expected.\n\nBefore returning the kit, pack the display, stand, and two cables in its case. These pieces are used together and can get separated during setup or packing, so take a quick look as you close the case. That makes it easier to tell the desk if something is missing. You don't need a full inventory, just a check that those pieces are in the case.\n\nIf a cable is missing, still return the kit within the window above, and report the missing part to the desk. Don't hold the rest of the kit while you look for the cable. The desk needs your report so the next borrower can be warned before planning to use it. Return what you have, and tell the desk what is absent.",
+      "final": "Portable display kit: return and packing note\n\nPlease return the kit to the usual place by the following business day, when the storage room is open. Earlier guidance said to return it by the end of the day. That doesn't work for a team using the kit at an evening event, because the storage room may close before the event is over. A borrower could be following the event plan and still be unable to make that deadline.\n\nStorage-room hours may differ by site. Check your site's posted storage-room hours. Don't assume every site opens at the same time. If your event ends in the evening, the next step is to return the kit the following business day. No after-hours return is expected.\n\nBefore returning the kit, pack the display, stand, and two cables in its case. These pieces are used together and can get separated during setup or packing, so take a quick look as you close the case. That makes it easier to tell the desk if something is missing. You don't need a full inventory, just a check that those pieces are in the case.\n\nIf a cable is missing, still return the kit within the window above, and report the missing part to the desk. Don't hold the rest of the kit while you look for the cable. The desk needs your report so the next borrower can be warned before planning to use it. Return what you have, and tell the desk what is absent.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-a28f41439cd04b3fa706609f0b20c5b4",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Provides the return window, posted site hours, complete packing list and return/report steps. However, repeated background explanation and inventory commentary make a borrower note needlessly long.",
+              "outputB": "Provides the return window, posted site hours, complete packing list and return/report steps. However, repeated background explanation and inventory commentary make a borrower note needlessly long.",
+              "pairwise": "Both preserve the practical instructions but remain unnecessarily lengthy; the sentence split in B offers no material advantage."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-072",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [
+            "Replace end-of-day return instruction with return by following business day during storage-room opening hours."
+          ],
+          "preservedFacts": [
+            "Check posted local storage-room hours; sites may differ.",
+            "Pack display, stand and two cables in case.",
+            "Return available kit on time and report missing cable to desk; do not retain kit while searching."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Local hours are unnecessary because objective expressly requests referring to posted hours."
+        },
+        {
+          "id": "V3-072",
+          "reviewerId": "R2A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [
+            "Replace end-of-day return requirement with following business day during storage-room hours."
+          ],
+          "preservedFacts": [
+            "Check posted site-specific hours; no uniform opening or closing time supplied.",
+            "Pack display, stand and two cables in case; return available kit on time and report missing cable to desk; do not delay return to search."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Local hours reference resolves missing clock time without preventing fulfillment."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We're” no longer appears in the rewrite.",
+              "source": "We're"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Right” no longer appears in the rewrite.",
+              "source": "Right"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Keep” no longer appears in the rewrite.",
+              "source": "Keep"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "The exact closing time of the room is not in this brief, and hours may differ by site. Please direct borrowers to check their site's posted…",
+              "candidate": "Storage-room hours may differ by site, so check your site's posted storage-room hours."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.64
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We're” no longer appears in the rewrite.",
+              "source": "We're"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Right” no longer appears in the rewrite.",
+              "source": "Right"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Keep” no longer appears in the rewrite.",
+              "source": "Keep"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.64
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate keeps the next-business-day rule, the posted-hours referral with no clock time, the three packed items, and the missing-cable reporting. It adds nothing unsupported. The flagged \"names\" are ordinary words, so those findings are false positives.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps the next-business-day rule, the posted-hours referral with no clock time, the three packed items, and the missing-cable reporting. It adds nothing unsupported. The flagged \"names\" are ordinary words, so those findings are false positives.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Portable display kit: return and packing note\n\nPlease return the kit to the usual place by the following business day, when the storage room is open. Earlier guidance said to return it by the end of the day. That doesn't work for a team using the kit at an evening event, because the storage room may close before the event is over. A borrower could be following the event plan and still be unable to make that deadline.\n\nStorage-room hours may differ by site, so check your site's posted storage-room hours. Don't assume every site opens at the same time. If your event ends in the evening, the next step is to return the kit the following business day. No after-hours return is expected.\n\nBefore returning the kit, pack the display, stand, and two cables in its case. These pieces are used together and can get separated during setup or packing, so take a quick look as you close the case. That makes it easier to tell the desk if something is missing. You don't need a full inventory, just a check that those pieces are in the case.\n\nIf a cable is missing, still return the kit within the window above, and report the missing part to the desk. Don't hold the rest of the kit while you look for the cable. The desk needs your report so the next borrower can be warned before planning to use it. Return what you have, and tell the desk what is absent.",
+              "changes": [
+                "Drafted borrower note with return window of following business day",
+                "Directed borrowers to posted site storage-room hours without giving a clock time",
+                "Listed display, stand, and two cables to pack in the case",
+                "Paired returning the kit on time with reporting a missing cable to the desk"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Storage-room hours may differ by site. Check your site's posted storage-room hours."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps the next-business-day rule, the posted-hours referral with no clock time, the three packed items, and the missing-cable reporting. It adds nothing unsupported. The flagged \"names\" are ordinary words, so those findings are false positives.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We're” no longer appears in the rewrite.",
+              "source": "We're"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Right” no longer appears in the rewrite.",
+              "source": "Right"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Keep” no longer appears in the rewrite.",
+              "source": "Keep"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "The exact closing time of the room is not in this brief, and hours may differ by site. Please direct borrowers to check their site's posted…",
+              "candidate": "Storage-room hours may differ by site, so check your site's posted storage-room hours."
+            }
+          ],
+          "final": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“We're” no longer appears in the rewrite.",
+              "source": "We're"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Right” no longer appears in the rewrite.",
+              "source": "Right"
+            },
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Keep” no longer appears in the rewrite.",
+              "source": "Keep"
+            }
+          ]
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-073",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "The absence of a recorded objection should not be treated as evidence of agreement.",
+      "objective": "Make this sentence clear and concise for a policy note.",
+      "raw": "A lack of recorded objection is not evidence of agreement.",
+      "final": "A lack of recorded objection is not evidence of agreement.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-493cf52d81fa1c4d76d3c3e8f5bf83ef",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Concise wording preserves the distinction between recorded objection and agreement.",
+              "outputB": "Concise wording preserves the distinction between recorded objection and agreement.",
+              "pairwise": "Identical clear policy wording."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-493cf52d81fa1c4d76d3c3e8f5bf83ef",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Leaves already conversational dialogue and “About 70, I think” unchanged.",
+              "outputB": "Same exchange and uncertainty retained.",
+              "pairwise": "No material difference."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-073",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "No recorded objection is not evidence of agreement."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already concise and unambiguous."
+        },
+        {
+          "id": "V3-073",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "No recorded objection does not establish agreement."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "A small plain-language simplification is possible."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.67
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.67
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate is shorter and clearer, and it keeps the core claim that no recorded objection is not evidence of agreement. Dropping 'should not be treated as' for 'is not' makes the sentence a flat statement, but that is a minor shift and fits a policy note.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate is shorter and clearer, and it keeps the core claim that no recorded objection is not evidence of agreement. Dropping 'should not be treated as' for 'is not' makes the sentence a flat statement, but that is a minor shift and fits a policy note.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "A lack of recorded objection is not evidence of agreement.",
+              "changes": [
+                "Tightened the sentence, keeping the negation and meaning unchanged."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate is shorter and clearer, and it keeps the core claim that no recorded objection is not evidence of agreement. Dropping 'should not be treated as' for 'is not' makes the sentence a flat statement, but that is a minor shift and fits a policy note.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-074",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "Please leave the sample labels attached. We can replace the containers; we cannot reconstruct an unlabeled sample.",
+      "objective": "Polish this lab reminder while keeping its direct, practical voice.",
+      "raw": "Please leave the sample labels on. We can replace the containers, but we can't reconstruct an unlabeled sample.",
+      "final": "Please leave the sample labels on. We can replace the containers, but we can't reconstruct an unlabeled sample.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-a1fde63dee15bf3deb37fe48ed076b23",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Lightly conversational wording connects replaceable containers to the irreplaceable unlabeled sample without weakening the reminder.",
+              "outputB": "Lightly conversational wording connects replaceable containers to the irreplaceable unlabeled sample without weakening the reminder.",
+              "pairwise": "Both outputs are identical and provide the same editorial result."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-a1fde63dee15bf3deb37fe48ed076b23",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "'Attached' becomes the plainer 'on'; the practical contrast between replaceable containers and irrecoverable unlabeled samples remains.",
+              "outputB": "Same wording and merits as A.",
+              "pairwise": "The outputs are identical."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-074",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Leave sample labels attached; containers replaceable but unlabeled samples unreconstructable."
+          ],
+          "intentionalVoice": [
+            "Direct practical contrast with firm lab instruction."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "The two sentences already achieve the requested voice."
+        },
+        {
+          "id": "V3-074",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Keep sample labels attached; containers replaceable, unlabeled samples cannot be reconstructed."
+          ],
+          "intentionalVoice": [
+            "Direct practical warning with purposeful contrast."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already clear and forceful."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.8
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.8
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Candidate keeps all meaning and the direct voice; changes are minor (attached→on, added \"but\", contractions).",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Candidate keeps all meaning and the direct voice; changes are minor (attached→on, added \"but\", contractions).",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Please leave the sample labels on. We can replace the containers, but we can't reconstruct an unlabeled sample.",
+              "changes": [
+                "Tightened phrasing: 'attached' to 'on', joined sentences with 'but', used contractions",
+                "Kept the negation and the container/label logic unchanged"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Candidate keeps all meaning and the direct voice; changes are minor (attached→on, added \"but\", contractions).",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-075",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "Registration closes on 14 March. Late applications will be reviewed only if places remain.",
+      "objective": "Update the closing date to 21 March and keep the eligibility condition clear.",
+      "raw": "Registration closes on 21 March. Late applications will be reviewed only if places remain.",
+      "final": "Registration closes on 21 March. Late applications will be reviewed only if places remain.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-3020732ecdbcc14a83b67a20c518219b",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Updates only the authorized closing date to 21 March, retaining late review only if places remain.",
+              "outputB": "Updates only the authorized closing date to 21 March, retaining late review only if places remain.",
+              "pairwise": "The outputs are identical and have the same editorial strengths and limitations."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-3020732ecdbcc14a83b67a20c518219b",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Updates to 21 March and retains late-application eligibility condition.",
+              "outputB": "Same accurate date and condition.",
+              "pairwise": "Identical outputs satisfy the change."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-075",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Registration closing date is 21 March."
+          ],
+          "preservedFacts": [],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-075",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Registration closing date: 21 March"
+          ],
+          "preservedFacts": [
+            "Late applications reviewed only if places remain"
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Change the date and retain the eligibility condition."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date “14 March” is missing or changed.",
+              "source": "14 March"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds the date “21 March”.",
+              "candidate": "21 March"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date “14 March” is missing or changed.",
+              "source": "14 March"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds the date “21 March”.",
+              "candidate": "21 March"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Only the closing date changed from 14 March to 21 March, as the objective authorizes. The late-application condition is unchanged and still clear.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only the closing date changed from 14 March to 21 March, as the objective authorizes. The late-application condition is unchanged and still clear.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Registration closes on 21 March. Late applications will be reviewed only if places remain.",
+              "changes": [
+                "Changed the closing date from 14 March to 21 March; left the late-application condition as it was."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only the closing date changed from 14 March to 21 March, as the objective authorizes. The late-application condition is unchanged and still clear.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date “14 March” is missing or changed.",
+              "source": "14 March"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds the date “21 March”.",
+              "candidate": "21 March"
+            }
+          ],
+          "final": [
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The date “14 March” is missing or changed.",
+              "source": "14 March"
+            },
+            {
+              "kind": "altered_date",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite adds the date “21 March”.",
+              "candidate": "21 March"
+            }
+          ]
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-076",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "The pilot involved 38 participants from two evening classes. Their attendance improved during the six-week trial, but there was no comparison group. We therefore cannot tell whether the new reminder system caused the improvement or whether it would work in other classes.",
+      "objective": "Improve readability for a research summary aimed at non-specialists, preserving the limits of the evidence.",
+      "raw": "This pilot followed 38 people from two evening classes. Their attendance got better over the six-week trial, but we had no comparison group. That means we can't say whether the new reminder system caused the improvement, or whether it would work in other classes.",
+      "final": "This pilot followed 38 people from two evening classes. Their attendance got better over the six-week trial, but we had no comparison group. That means we can't say whether the new reminder system caused the improvement, or whether it would work in other classes.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-9e5a94bf8c197022bfb6aeeb633546c1",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Plain language improves access for non-specialists; sample, classes, six weeks, absent comparison and causal/generalization limits survive.",
+              "outputB": "Plain language improves access for non-specialists; sample, classes, six weeks, absent comparison and causal/generalization limits survive.",
+              "pairwise": "Both outputs are identical and provide the same editorial result."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-076",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "38 participants from two evening classes; attendance improved over six-week trial.",
+            "No comparison group; no established reminder-system causation or generalizability to other classes."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Local plain-language clarification can help nonspecialists."
+        },
+        {
+          "id": "V3-076",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Pilot had 38 participants from two evening classes",
+            "Attendance improved during six-week trial",
+            "There was no comparison group",
+            "Evidence cannot establish causation or whether system would work in other classes"
+          ],
+          "intentionalVoice": [
+            "Accessible, cautious research-summary voice"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Simplify for non-specialists without strengthening the evidence."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.7
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.7
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate keeps all facts and the limits of the evidence: 38 participants, two evening classes, six weeks, no comparison group, and unknown causation and generalizability. The wording is slightly plainer.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps all facts and the limits of the evidence: 38 participants, two evening classes, six weeks, no comparison group, and unknown causation and generalizability. The wording is slightly plainer.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "This pilot followed 38 people from two evening classes. Their attendance got better over the six-week trial, but we had no comparison group. That means we can't say whether the new reminder system caused the improvement, or whether it would work in other classes.",
+              "changes": [
+                "Split first sentence into plainer wording ('followed 38 people')",
+                "Simplified 'improved' to 'got better' and 'there was no' to 'we had no'",
+                "Rephrased final sentence for clarity, keeping both limits (causation and generalisability)"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps all facts and the limits of the evidence: 38 participants, two evening classes, six weeks, no comparison group, and unknown causation and generalizability. The wording is slightly plainer.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-077",
+      "reasonCodes": [
+        "FINAL_BAD_PROXY",
+        "FINAL_UNAUTHORIZED_CHANGE",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "I recommend keeping the quiet hour. It is not popular with everyone, and I would not pretend otherwise. But it gives people who find the room exhausting a predictable time to visit. A busier room is not automatically a better room.",
+      "objective": "Lightly edit this committee comment for clarity while preserving the writer's personal voice.",
+      "raw": "I recommend keeping the quiet hour. It isn't popular with everyone, and I won't pretend otherwise. But it gives people who find the room exhausting a predictable time to visit. A busier room isn't automatically a better room.",
+      "final": "I recommend keeping the quiet hour. It isn't popular with everyone, and I wouldn't pretend otherwise. But it gives people who find the room exhausting a predictable time to visit. A busier room isn't automatically a better room.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-2d6ffe7c5466b68c24a0016fdf831ca7",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Contractions keep the personal comment, predictable visiting time and final busier-room observation.",
+              "outputB": "Won't pretend otherwise remains a natural personal refusal to disguise unpopularity; the predictable time and final observation remain.",
+              "pairwise": "Wouldn't versus won't changes emphasis slightly but has no material editorial advantage."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-2d6ffe7c5466b68c24a0016fdf831ca7",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "“Isn’t” slightly shifts “would not pretend” into a present stance.",
+              "outputB": "“Won’t pretend” is a natural direct statement and preserves the personal tone.",
+              "pairwise": "B is the more natural light edit; both retain the argument."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-077",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Writer recommends retaining quiet hour despite some opposition.",
+            "Quiet hour gives predictable access to people who find room exhausting."
+          ],
+          "intentionalVoice": [
+            "Personal conviction; a busier room is not automatically a better room."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already clear; avoid neutralizing the argument."
+        },
+        {
+          "id": "V3-077",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Recommend quiet hour despite mixed popularity; predictable visit time for people exhausted by room; busier does not necessarily mean better."
+          ],
+          "intentionalVoice": [
+            "Personal stance, candid concession and pointed final sentence."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already coherent; preserve restraint and voice."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Only change is contracting \"is not\", \"would not\", \"is not\" to \"isn't\", \"wouldn't\", \"isn't\". Meaning, hedging, and first-person voice are intact; it is a light edit.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "\"would not pretend\" became \"won't pretend\", shifting the hedged conditional to a firm future commitment. The other contractions are harmless.",
+              "issue": {
+                "span": {
+                  "start": 74,
+                  "end": 79,
+                  "text": "won't"
+                },
+                "constraint": "Restore the source's conditional modal: use \"would not\" (or \"wouldn't\") instead of \"won't\"."
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only change is contracting \"is not\", \"would not\", \"is not\" to \"isn't\", \"wouldn't\", \"isn't\". Meaning, hedging, and first-person voice are intact; it is a light edit.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "I recommend keeping the quiet hour. It isn't popular with everyone, and I won't pretend otherwise. But it gives people who find the room exhausting a predictable time to visit. A busier room isn't automatically a better room.",
+              "changes": [
+                "Contracted three negations (is not, would not, is not) for a plainer, more personal tone; 'would not' became 'won't', a slight tense shift.",
+                "Kept all other wording and the recommendation unchanged."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "\"would not pretend\" became \"won't pretend\", shifting the hedged conditional to a firm future commitment. The other contractions are harmless.",
+              "issue": {
+                "span": {
+                  "start": 74,
+                  "end": 79,
+                  "text": "won't"
+                },
+                "constraint": "Restore the source's conditional modal: use \"would not\" (or \"wouldn't\") instead of \"won't\"."
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "wouldn't"
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only change is contracting \"is not\", \"would not\", \"is not\" to \"isn't\", \"wouldn't\", \"isn't\". Meaning, hedging, and first-person voice are intact; it is a light edit.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-079",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "The archive opens at 10 a.m. on weekdays. Visitors may request up to four boxes at a time. Photography is permitted for personal research, except where a restriction is marked on the folder. Please ask a member of staff before moving any document from its sleeve.",
+      "objective": "Check this visitor guidance for clarity and make only changes that improve it.",
+      "raw": "The archive opens at 10 a.m. on weekdays. Visitors may request up to four boxes at a time. Photography is permitted for personal research, except where a restriction is marked on the folder. Please ask a member of staff before moving any document from its sleeve.",
+      "final": "The archive opens at 10 a.m. on weekdays. Visitors may request up to four boxes at a time. Photography is permitted for personal research, except where a restriction is marked on the folder. Please ask a member of staff before moving any document from its sleeve.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-89a75393223b66d1ab674a60b26dea0a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Clear visitor guidance is retained; opening time, box cap, photography exception and staff permission remain intact.",
+              "outputB": "Clear visitor guidance is retained; opening time, box cap, photography exception and staff permission remain intact.",
+              "pairwise": "Both outputs are identical and provide the same editorial result."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-89a75393223b66d1ab674a60b26dea0a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Leaves already clear visitor guidance unchanged.",
+              "outputB": "Same unchanged guidance.",
+              "pairwise": "No material difference; source is already clear."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-079",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Weekday opening 10 a.m.; up to four boxes at once.",
+            "Personal research photography allowed except marked folder restrictions.",
+            "Ask staff before removing document from sleeve."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Existing visitor guidance is clear and concise."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Candidate is identical to the source. The objective said to make only changes that improve clarity, and the text is already clear, so no change is acceptable.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Candidate is identical to the source. The objective said to make only changes that improve clarity, and the text is already clear, so no change is acceptable.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The archive opens at 10 a.m. on weekdays. Visitors may request up to four boxes at a time. Photography is permitted for personal research, except where a restriction is marked on the folder. Please ask a member of staff before moving any document from its sleeve.",
+              "changes": []
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Candidate is identical to the source. The objective said to make only changes that improve clarity, and the text is already clear, so no change is acceptable.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "unchanged",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-080",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "The proposed seminar will meet monthly from September through December. Each session will last 90 minutes and include a short presentation followed by discussion. The current budget provides for three guest speakers; the final session will be led by members of the department.",
+      "objective": "Revise the proposal to reflect a confirmed budget for four guest speakers, with a guest leading each session.",
+      "raw": "The proposed seminar will meet monthly from September through December. Each session will last 90 minutes and include a short presentation followed by discussion. The confirmed budget provides for four guest speakers, with a guest leading each session.",
+      "final": "The proposed seminar will meet monthly from September through December. Each session will last 90 minutes and include a short presentation followed by discussion. The current budget provides for three guest speakers; the final session will be led by members of the department.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-8614d2b121595ad4c11417f133be8183",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Leaves three speakers and departmental leadership despite the explicitly confirmed new budget.",
+              "outputB": "Makes the authorized four-speaker and guest-per-session updates while retaining duration and months.",
+              "pairwise": "Only the preferred output performs the central requested change."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-080",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Change budget from three to four guest speakers.",
+            "Have a guest lead every session, including final session previously led by department members."
+          ],
+          "preservedFacts": [
+            "Seminar monthly September through December; sessions 90 minutes with short presentation then discussion."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Budget and final-session leader are local factual updates."
+        },
+        {
+          "id": "V3-080",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Budget is confirmed for four guest speakers",
+            "A guest will lead each of the four sessions"
+          ],
+          "preservedFacts": [
+            "Seminar meets monthly September through December",
+            "Each session lasts 90 minutes and has a short presentation followed by discussion"
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Update speaker count and leadership arrangement; keep schedule and format."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The figure 3 from your text is missing or changed.",
+              "source": "3"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 4, which is not in your text.",
+              "candidate": "4"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite adds “confirmed”, a stronger evidence claim than the source makes.",
+              "source": "The current budget provides for three guest speakers; the final session will be led by members of the department.",
+              "candidate": "The confirmed budget provides for four guest speakers, with a guest leading each session."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.76
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The proposed seminar will meet monthly from September through December. Each session will last 90 minutes and include a short presentation followed by discussion. The confirmed budget provides for four guest speakers, with a guest leading each session.",
+              "changes": [
+                "Changed budget from three guest speakers to a confirmed four.",
+                "Removed the final session being led by department members; a guest now leads each session."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The figure 3 from your text is missing or changed.",
+              "source": "3"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 4, which is not in your text.",
+              "candidate": "4"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite adds “confirmed”, a stronger evidence claim than the source makes.",
+              "source": "The current budget provides for three guest speakers; the final session will be led by members of the department.",
+              "candidate": "The confirmed budget provides for four guest speakers, with a guest leading each session."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-081",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "The assessment rubric was useful, although the descriptions in the middle band were sometimes hard to distinguish from each other. Two assessors said they had spent more time deciding between adjacent scores than discussing the quality of the work. That seems worth fixing before we use it again.",
+      "objective": "Make this evaluation comment suitable for a formal report without losing its candid tone.",
+      "raw": "The assessment rubric was useful, but the descriptions in the middle band were often hard to tell apart. Two assessors reported spending more time deciding between adjacent scores than discussing the quality of the work. This should be addressed before the rubric is used again.",
+      "final": "The assessment rubric was useful, although the descriptions in the middle band were sometimes hard to distinguish from each other. Two assessors said they had spent more time deciding between adjacent scores than discussing the quality of the work. That seems worth fixing before we use it again.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-9d90e4f8a9daed14820ae2c6db9e3e12",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "NO",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "YES",
+              "voicePreserved": "YES",
+              "overedited": "YES",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "NEITHER",
+            "evidence": {
+              "outputA": "The unchanged closing remains somewhat conversational for a formal report; all evidence and candid qualification survive.",
+              "outputB": "Formalizes attribution and conclusion, but changes sometimes to often and tentative seems worth fixing to should be addressed, strengthening the evidence and recommendation.",
+              "pairwise": "A leaves the formalization incomplete; B improves report phrasing but materially inflates frequency and certainty. Neither fully meets the brief safely."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-9d90e4f8a9daed14820ae2c6db9e3e12",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "YES",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Preserves all claims and candid tone, but leaves the informal 'That seems worth fixing' wording despite the formal-report request.",
+              "outputB": "Makes the recommendation more report-like, but changes 'sometimes' to 'often,' asserting greater frequency than the source supports.",
+              "pairwise": "B improves formality but makes an unsupported frequency change; A is safer though under-edited."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-081",
+          "reviewerId": "R1A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Rubric useful; middle-band descriptions sometimes hard to distinguish.",
+            "Two assessors spent more time on adjacent-score choice than work quality.",
+            "Writer recommends fixing before next use."
+          ],
+          "intentionalVoice": [
+            "Candid judgment that the issue warrants repair."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Formal report register requires light wording changes throughout."
+        },
+        {
+          "id": "V3-081",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Rubric useful; middle-band descriptions sometimes hard to distinguish; two assessors reported more time on adjacent scores than work quality; fix before reuse."
+          ],
+          "intentionalVoice": [
+            "Candid assessment."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Adjust informal closing for report context."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“sometimes” became “often” (frequency strengthened).",
+              "source": "The assessment rubric was useful, although the descriptions in the middle band were sometimes hard to distinguish from each other.",
+              "candidate": "The assessment rubric was useful, but the descriptions in the middle band were often hard to tell apart."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (0% of its content words survive).",
+              "source": "That seems worth fixing before we use it again."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.67
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The assessment rubric was useful, but the descriptions in the middle band were often hard to tell apart. Two assessors reported spending more time deciding between adjacent scores than discussing the quality of the work. This should be addressed before the rubric is used again.",
+              "changes": [
+                "Replaced 'although' and 'sometimes' with 'but' and 'often'... ",
+                "Formalized phrasing ('said they had spent' to 'reported spending')",
+                "Changed 'That seems worth fixing' to a direct but formal recommendation"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "The assessment rubric was useful, but the descriptions in the middle band were sometimes hard to tell apart."
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“sometimes” became “often” (frequency strengthened).",
+              "source": "The assessment rubric was useful, although the descriptions in the middle band were sometimes hard to distinguish from each other.",
+              "candidate": "The assessment rubric was useful, but the descriptions in the middle band were often hard to tell apart."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (0% of its content words survive).",
+              "source": "That seems worth fixing before we use it again."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-082",
+      "reasonCodes": [
+        "FALLBACK",
+        "VAGUE_UPDATE"
+      ],
+      "source": "The consultation period will begin once the draft is approved. Responses can be submitted through the project website or by post. We will publish a summary of the main issues raised, alongside an explanation of how they influenced the final document.",
+      "objective": "Update this notice with the new consultation dates and submission deadline.",
+      "raw": "The consultation period will begin once the draft is approved. Responses can be submitted through the project website or by post. We will publish a summary of the main issues raised, alongside an explanation of how they influenced the final document.",
+      "final": "The consultation period will begin once the draft is approved. Responses can be submitted through the project website or by post. We will publish a summary of the main issues raised, alongside an explanation of how they influenced the final document.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-81fe043257b6eb6c90fba74bd6a680d6",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "NEITHER",
+            "evidence": {
+              "outputA": "No dates or deadline are added; packet supplies none, so preserving the source avoids fabrication but leaves the requested update unfinished.",
+              "outputB": "No dates or deadline are added; packet supplies none, so preserving the source avoids fabrication but leaves the requested update unfinished.",
+              "pairwise": "Neither delivers the date update; the necessary dates are absent from the packet."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-082",
+          "reviewerId": "R1A",
+          "expectedEditScope": "INSUFFICIENT_INFORMATION",
+          "authorizedFactualChanges": [
+            "Replace approval-dependent timing with new consultation dates and submission deadline once provided."
+          ],
+          "preservedFacts": [
+            "Responses via website or post; summary will explain issues and influence on final document."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": true,
+          "notes": "Neither new dates nor deadline is supplied; they cannot be inferred."
+        },
+        {
+          "id": "V3-082",
+          "reviewerId": "R2B",
+          "expectedEditScope": "INSUFFICIENT_INFORMATION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Consultation begins after draft approval",
+            "Responses may be submitted online or by post",
+            "A summary of issues and explanation of influence on final document will be published"
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": true,
+          "notes": "The objective requests new dates and a deadline but supplies none; those facts cannot be inferred."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "REJECT",
+          "meaningPreserved": true,
+          "objectiveSatisfied": false,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate is identical to the source. The objective asked for new consultation dates and a submission deadline, and neither appears. No dates were supplied, so a local repair can't be grounded in the source.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "REJECT",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate is identical to the source. The objective asked for new consultation dates and a submission deadline, and neither appears. No dates were supplied, so a local repair can't be grounded in the source.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The consultation period will begin once the draft is approved. Responses can be submitted through the project website or by post. We will publish a summary of the main issues raised, alongside an explanation of how they influenced the final document.",
+              "changes": [
+                "No change made: the objective asks for new consultation dates and a submission deadline but supplies none, so none were added."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "REJECT",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate is identical to the source. The objective asked for new consultation dates and a submission deadline, and neither appears. No dates were supplied, so a local repair can't be grounded in the source.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "verifier-rejected"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-083",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "Our interviews suggest that first-year students often use the word 'support' to mean different things. Some describe practical help with a timetable or a form; others mean having someone notice that they have stopped attending. The distinction matters because a service designed around appointments may address the first need more readily than the second.\n\nThis is not a claim that appointments are ineffective. We interviewed 16 students who had already contacted the service, and their accounts cannot represent students who never approached it. The findings identify a question for further study: how can the institution make help available without requiring every student to recognise and name a problem first?",
+      "objective": "Make this discussion section easier to follow for an academic audience, preserving the distinction and sampling limitation.",
+      "raw": "Our interviews suggest that first-year students often use the word \"support\" to mean different things. Some mean practical help with a timetable or a form. Others mean having someone notice that they have stopped attending. This distinction matters because a service designed around appointments may meet the first need more readily than the second.\n\nWe do not claim that appointments are ineffective. We interviewed 16 students who had already contacted the service, so their accounts cannot represent students who never approached it. The findings instead point to a question for further study: how can the institution make help available without requiring every student to recognise and name a problem first?",
+      "final": "Our interviews suggest that first-year students often use the word \"support\" to mean different things. Some mean practical help with a timetable or a form. Others mean having someone notice that they have stopped attending. This distinction matters because a service designed around appointments may meet the first need more readily than the second.\n\nWe do not claim that appointments are ineffective. We interviewed 16 students who had already contacted the service, and their accounts cannot represent students who never approached it. The findings instead point to a question for further study: how can the institution make help available without requiring every student to recognise and name a problem first?",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-b39e4d76f67661a1913feb93ca4da3fc",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Shorter sentences clarify the two kinds of support and preserve the 16-student sampling limitation and research question.",
+              "outputB": "Shorter sentences clarify the two kinds of support; the causal conjunction accurately connects the sample to its limitation.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-b39e4d76f67661a1913feb93ca4da3fc",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Breaks up the distinction between practical and relational support, retaining the 16-student sampling limitation and cautious research question.",
+              "outputB": "Same content with a helpful 'so' clarifying the sampling limitation; no facts are added.",
+              "pairwise": "Both preserve the distinction and limitation; B's connective is immaterial."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-083",
+          "reviewerId": "R1B",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Practical support differs from being noticed when attendance stops; sample is 16 service users and excludes those who never approached."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-083",
+          "reviewerId": "R2A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "First-year support meanings differ: practical timetable/form help versus noticing nonattendance; appointment services may address first more readily.",
+            "No claim appointments ineffective; 16 interviewed students had contacted service and cannot represent those who never approached; further-study question concerns help before naming problem."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Lightly clarify academic argument and limitations."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "We interviewed 16 students who had already contacted the service, and their accounts cannot represent students who never approached it.",
+              "candidate": "We interviewed 16 students who had already contacted the service, so their accounts cannot represent students who never approached it."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.94
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.94
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Meaning, hedges, the distinction and the sampling limitation are preserved. Edits are light and clarifying; only the quote style changed, which is minor.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Meaning, hedges, the distinction and the sampling limitation are preserved. Edits are light and clarifying; only the quote style changed, which is minor.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Our interviews suggest that first-year students often use the word \"support\" to mean different things. Some mean practical help with a timetable or a form. Others mean having someone notice that they have stopped attending. This distinction matters because a service designed around appointments may meet the first need more readily than the second.\n\nWe do not claim that appointments are ineffective. We interviewed 16 students who had already contacted the service, so their accounts cannot represent students who never approached it. The findings instead point to a question for further study: how can the institution make help available without requiring every student to recognise and name a problem first?",
+              "changes": [
+                "Put 'support' in double quotes as a term under discussion, replacing the source's single quotes.",
+                "Split the sentence about the two meanings of support into two shorter sentences.",
+                "Rephrased 'This is not a claim' to 'We do not claim' and joined the sampling limitation with 'so'.",
+                "Changed 'identify a question' to 'point to a question' and 'address' to 'meet'.",
+                "Kept the distinction, the 16 interviewees, the sampling limitation and the closing question."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "We interviewed 16 students who had already contacted the service, and their accounts cannot represent students who never approached it."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Meaning, hedges, the distinction and the sampling limitation are preserved. Edits are light and clarifying; only the quote style changed, which is minor.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "We interviewed 16 students who had already contacted the service, and their accounts cannot represent students who never approached it.",
+              "candidate": "We interviewed 16 students who had already contacted the service, so their accounts cannot represent students who never approached it."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-085",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "The reading group has never been especially orderly. People arrive with different editions, someone invariably wants to return to a passage we passed half an hour ago, and the best conversation usually starts just as we ought to finish. I do not think those are reasons to turn it into a class.\n\nWe do need a little more structure, though. My suggestion is that we choose the next text before everyone leaves and name a person to open the discussion. That person need not give a lecture or prepare slides. A question, a troublesome paragraph, or an account of why the book annoyed them would be quite enough.",
+      "objective": "Tidy this proposal for circulation to the group, keeping its conversational character and dry humour.",
+      "raw": "The reading group has never been especially orderly. People arrive with different editions, someone invariably wants to go back to a passage we passed half an hour ago, and the best conversation usually starts just as we ought to finish. I don't think any of that is a reason to turn it into a class.\n\nWe do need a little more structure, though. My suggestion is that we choose the next text before everyone leaves and name a person to open the discussion. That person need not give a lecture or prepare slides. A question, a troublesome paragraph, or an account of why the book annoyed them would be quite enough.",
+      "final": "The reading group has never been especially orderly. People arrive with different editions, someone invariably wants to go back to a passage we passed half an hour ago, and the best conversation usually starts just as we ought to finish. I don't think any of that is a reason to turn it into a class.\n\nWe do need a little more structure, though. My suggestion is that we choose the next text before everyone leaves and name a person to open the discussion. That person need not give a lecture or prepare slides. A question, a troublesome paragraph, or an account of why the book annoyed them would be quite enough.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-4f11611a55f65087cb81c7047dd11eef",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Minor conversational phrasing keeps the dry humour and modest discussion proposal.",
+              "outputB": "Minor conversational phrasing keeps the dry humour and modest discussion proposal.",
+              "pairwise": "Identical restrained edits."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-4f11611a55f65087cb81c7047dd11eef",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Changes “those are reasons” to “any of that is a reason,” preserving the dry, conversational point.",
+              "outputB": "Same light edit and conversational tone as A.",
+              "pairwise": "The outputs are identical and preserve the proposal’s voice."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-085",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [],
+          "intentionalVoice": [
+            "Conversational character and dry humor."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-085",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Different editions, revisiting passages and late good conversations do not justify converting group to class.",
+            "Choose next text before departure and name discussion opener; no lecture/slides required; question, paragraph or irritation enough."
+          ],
+          "intentionalVoice": [
+            "Conversational first-person proposal and dry humour."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already readable and characterful; only incidental tidying warranted."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.98
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.98
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Only minimal wording changes (return to→go back to; I do not think those are→I don't think any of that is); meaning, tone and humour preserved. Light tidy is acceptable.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only minimal wording changes (return to→go back to; I do not think those are→I don't think any of that is); meaning, tone and humour preserved. Light tidy is acceptable.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The reading group has never been especially orderly. People arrive with different editions, someone invariably wants to go back to a passage we passed half an hour ago, and the best conversation usually starts just as we ought to finish. I don't think any of that is a reason to turn it into a class.\n\nWe do need a little more structure, though. My suggestion is that we choose the next text before everyone leaves and name a person to open the discussion. That person need not give a lecture or prepare slides. A question, a troublesome paragraph, or an account of why the book annoyed them would be quite enough.",
+              "changes": [
+                "Loosened 'return to' to 'go back to'",
+                "Changed 'I do not think those are reasons' to 'I don't think any of that is a reason'",
+                "Kept structure, humour and all facts unchanged"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only minimal wording changes (return to→go back to; I do not think those are→I don't think any of that is); meaning, tone and humour preserved. Light tidy is acceptable.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-086",
+      "reasonCodes": [
+        "FALLBACK"
+      ],
+      "source": "The town survey received 412 responses, of which 287 were completed online. Paper copies were available at the library and the community centre. Respondents most often identified pavement maintenance and bus reliability as priorities; neither result establishes how the town as a whole would rank these issues.\n\nThe response rate is difficult to estimate because the link was shared beyond the original mailing list. In addition, residents who do not use either collection site may have had fewer opportunities to obtain a paper copy. The results are useful for planning the next consultation, but they should not be described as a representative vote.",
+      "objective": "Polish this report excerpt for publication. Keep the numbers and qualifications accurate.",
+      "raw": "The town survey received 412 responses, 287 of them completed online. Paper copies were available at the library and the community centre. Respondents most often named pavement maintenance and bus reliability as priorities, but neither result shows how the town as a whole would rank these issues.\n\nThe response rate is hard to estimate because the link was shared beyond the original mailing list. Residents who do not use either collection site may also have had fewer chances to get a paper copy. The results are useful for planning the next consultation, but they should not be described as a representative vote.",
+      "final": "The town survey received 412 responses, of which 287 were completed online. Paper copies were available at the library and the community centre. Respondents most often identified pavement maintenance and bus reliability as priorities; neither result establishes how the town as a whole would rank these issues.\n\nThe response rate is difficult to estimate because the link was shared beyond the original mailing list. In addition, residents who do not use either collection site may have had fewer opportunities to obtain a paper copy. The results are useful for planning the next consultation, but they should not be described as a representative vote.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-47656c536d9dee1b7a7a6ad340c09582",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Light phrasing changes preserve all counts, sampling limits and nonrepresentative status.",
+              "outputB": "The original is already publication-ready and retains every qualification.",
+              "pairwise": "The lighter diction offers no material advantage over the clear original."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-086",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "412 responses, 287 online; paper at library and community centre.",
+            "Pavement maintenance and bus reliability most frequent priorities among respondents, not whole-town ranking.",
+            "Response rate uncertain due to wider link sharing; some residents had fewer paper opportunities.",
+            "Useful for next consultation; not representative vote."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already publication-ready in substance; modest local polish only."
+        },
+        {
+          "id": "V3-086",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "412 responses; 287 online; paper at library/community centre; pavement maintenance and bus reliability most identified priorities.",
+            "Cannot infer whole-town ranking; shared link makes response rate difficult; paper access unequal; planning input not representative vote."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Publication-ready qualifications are already clear."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“establishes” became “shows” (evidence weakened).",
+              "source": "Respondents most often identified pavement maintenance and bus reliability as priorities; neither result establishes how the town as a whol…",
+              "candidate": "Respondents most often named pavement maintenance and bus reliability as priorities, but neither result shows how the town as a whole would…"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.89
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The town survey received 412 responses, 287 of them completed online. Paper copies were available at the library and the community centre. Respondents most often named pavement maintenance and bus reliability as priorities, but neither result shows how the town as a whole would rank these issues.\n\nThe response rate is hard to estimate because the link was shared beyond the original mailing list. Residents who do not use either collection site may also have had fewer chances to get a paper copy. The results are useful for planning the next consultation, but they should not be described as a representative vote.",
+              "changes": [
+                "Tightened phrasing in the first sentence while keeping 412 and 287.",
+                "Simplified wording (identified→named, difficult→hard) and merged the qualification into one sentence.",
+                "Kept all qualifications and negations, including that neither result establishes the town's ranking and that results are not a representative vote."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "“establishes” became “shows” (evidence weakened).",
+              "source": "Respondents most often identified pavement maintenance and bus reliability as priorities; neither result establishes how the town as a whol…",
+              "candidate": "Respondents most often named pavement maintenance and bus reliability as priorities, but neither result shows how the town as a whole would…"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-087",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "The delivery of a successful induction experience is a key component in enabling new volunteers to feel empowered to engage with the organisation's wider mission. At present, information is distributed across several documents, which can create a degree of uncertainty regarding the actions required during the initial period of involvement.\n\nWe propose bringing the essential information into a two-page guide. The guide would explain how to sign up for a shift, who to contact if plans change, and where to find the safeguarding policy. It would not replace the introductory conversation with a coordinator, which volunteers have consistently described as useful.",
+      "objective": "Make the opening paragraph plain and natural, and lightly polish the rest for a funding proposal.",
+      "raw": "A good induction helps new volunteers feel confident about getting involved in the organisation's wider mission. At the moment, information is spread across several documents, which can leave people unsure what they need to do in their first weeks.\n\nWe propose bringing the essential information into a two-page guide. It would explain how to sign up for a shift, who to contact if plans change, and where to find the safeguarding policy. It would not replace the introductory conversation with a coordinator, which volunteers have consistently described as useful.",
+      "final": "The delivery of a successful induction experience is a key component in enabling new volunteers to feel empowered to engage with the organisation's wider mission. At present, information is distributed across several documents, which can create a degree of uncertainty regarding the actions required during the initial period of involvement.\n\nWe propose bringing the essential information into a two-page guide. The guide would explain how to sign up for a shift, who to contact if plans change, and where to find the safeguarding policy. It would not replace the introductory conversation with a coordinator, which volunteers have consistently described as useful.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-d9e04cdad8bc9491bfd0dbdc27233477",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Unchanged opening retains abstract phrases such as delivery of a successful induction experience and initial period of involvement.",
+              "outputB": "Plain opening explains induction and scattered information naturally; guide contents and the coordinator conversation remain intact.",
+              "pairwise": "B materially replaces the abstract opening with plain language; A does not edit it."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-d9e04cdad8bc9491bfd0dbdc27233477",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Leaves the dense, corporate opening entirely unchanged, missing the main request; the proposal details remain accurate.",
+              "outputB": "Makes the opening plain and natural and lightly tightens the guide description without changing its contents or role.",
+              "pairwise": "B makes the requested opening rewrite and light polish; A makes no useful change."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-087",
+          "reviewerId": "R1B",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“enabling” became “helps” (causation weakened).",
+              "source": "The delivery of a successful induction experience is a key component in enabling new volunteers to feel empowered to engage with the organi…",
+              "candidate": "A good induction helps new volunteers feel confident about getting involved in the organisation's wider mission."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (21% of its content words survive).",
+              "source": "At present, information is distributed across several documents, which can create a degree of uncertainty regarding the actions required du…"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 6 of 6 content words are not in the source.",
+              "candidate": "which can leave people unsure what they need to do in their first weeks."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.62
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "A good induction helps new volunteers feel confident about getting involved in the organisation's wider mission. At the moment, information is spread across several documents, which can leave people unsure what they need to do in their first weeks.\n\nWe propose bringing the essential information into a two-page guide. It would explain how to sign up for a shift, who to contact if plans change, and where to find the safeguarding policy. It would not replace the introductory conversation with a coordinator, which volunteers have consistently described as useful.",
+              "changes": [
+                "Rewrote opening paragraph in plainer, more natural wording",
+                "Lightly polished second paragraph (e.g., 'The guide would' to 'It would')",
+                "Preserved two-page guide, the three listed topics, the negation, and the volunteer feedback"
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“enabling” became “helps” (causation weakened).",
+              "source": "The delivery of a successful induction experience is a key component in enabling new volunteers to feel empowered to engage with the organi…",
+              "candidate": "A good induction helps new volunteers feel confident about getting involved in the organisation's wider mission."
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (21% of its content words survive).",
+              "source": "At present, information is distributed across several documents, which can create a degree of uncertainty regarding the actions required du…"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 6 of 6 content words are not in the source.",
+              "candidate": "which can leave people unsure what they need to do in their first weeks."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-088",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "The evaluation used recordings from eight practice sessions, with permission from all participants. Two reviewers independently counted interruptions and coded whether each interruption concerned the task, the process, or an unrelated topic. They agreed on the category in 81 per cent of cases before discussing disagreements.\n\nInterruptions were less frequent in the final two sessions than in the first two. This pattern may reflect growing familiarity with the task, rather than the effect of the revised chairing guidance. Since the guidance was introduced halfway through the same series, the evaluation cannot separate those explanations.",
+      "objective": "Improve the flow of this methods and findings excerpt without strengthening its causal claims.",
+      "raw": "The evaluation used recordings from eight practice sessions, with permission from all participants. Two reviewers independently counted the interruptions and coded each one as concerning the task, the process, or an unrelated topic. They agreed on the category in 81 per cent of cases before discussing their disagreements.\n\nInterruptions were less frequent in the final two sessions than in the first two. This may reflect growing familiarity with the task rather than the effect of the revised chairing guidance. Because the guidance was introduced halfway through the same series, the evaluation cannot separate the two explanations.",
+      "final": "The evaluation used recordings from eight practice sessions, with permission from all participants. Two reviewers independently counted the interruptions and coded each one as concerning the task, the process, or an unrelated topic. They agreed on the category in 81 per cent of cases before discussing their disagreements.\n\nInterruptions were less frequent in the final two sessions than in the first two. This may reflect growing familiarity with the task rather than the effect of the revised chairing guidance. Since the guidance was introduced halfway through the same series, the evaluation cannot separate those explanations.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-f6112c50d58297209f7f02cda39e832c",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Smoother coding description preserves eight sessions, consent, 81 percent agreement and the inability to isolate the guidance effect.",
+              "outputB": "Smoother coding description preserves eight sessions, consent, 81 percent agreement and the inability to isolate the guidance effect.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-f6112c50d58297209f7f02cda39e832c",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Smooths the methods wording while retaining the 81 per cent agreement and explicitly unresolved causal explanations.",
+              "outputB": "Same meaning and flow; retains 'Since' and 'those explanations' without strengthening causality.",
+              "pairwise": "Both preserve the uncertainty and causal limitation."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-088",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Eight practice-session recordings with participant permission.",
+            "Two independent reviewers coded task/process/unrelated interruptions; 81 per cent category agreement before discussion.",
+            "Final two sessions fewer interruptions than first two.",
+            "Familiarity and midway guidance introduction cannot be separated causally."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Flow edits must preserve confounding explanation."
+        },
+        {
+          "id": "V3-088",
+          "reviewerId": "R2B",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Eight practice-session recordings; all participants gave permission",
+            "Two reviewers independently counted and categorized interruptions as task, process, or unrelated",
+            "They agreed on category in 81 percent before discussing disagreements",
+            "Interruptions were less frequent in final two than first two sessions",
+            "Growing familiarity and revised guidance are possible explanations",
+            "Guidance was introduced halfway through same series, so evaluation cannot separate explanations"
+          ],
+          "intentionalVoice": [
+            "Cautious methods-and-findings register"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Improve flow across methods and findings without making a causal claim."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“because”) the source does not state.",
+              "source": "Since the guidance was introduced halfway through the same series, the evaluation cannot separate those explanations.",
+              "candidate": "Because the guidance was introduced halfway through the same series, the evaluation cannot separate the two explanations."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.94
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.96
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Minor smoothing edits only; all facts, numbers, hedge (\"may reflect\"), and the non-separability caveat are preserved. Causal claims are not strengthened.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Minor smoothing edits only; all facts, numbers, hedge (\"may reflect\"), and the non-separability caveat are preserved. Causal claims are not strengthened.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The evaluation used recordings from eight practice sessions, with permission from all participants. Two reviewers independently counted the interruptions and coded each one as concerning the task, the process, or an unrelated topic. They agreed on the category in 81 per cent of cases before discussing their disagreements.\n\nInterruptions were less frequent in the final two sessions than in the first two. This may reflect growing familiarity with the task rather than the effect of the revised chairing guidance. Because the guidance was introduced halfway through the same series, the evaluation cannot separate the two explanations.",
+              "changes": [
+                "Smoothed phrasing in the coding sentence (counted ... and coded each one as).",
+                "Changed 'before discussing disagreements' to 'their disagreements'.",
+                "Replaced 'Since' with 'Because' and tightened 'those explanations' to 'the two explanations'.",
+                "Kept the hedged causal wording ('may reflect', cannot separate) unchanged."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Since the guidance was introduced halfway through the same series, the evaluation cannot separate those explanations."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Minor smoothing edits only; all facts, numbers, hedge (\"may reflect\"), and the non-separability caveat are preserved. Causal claims are not strengthened.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“because”) the source does not state.",
+              "source": "Since the guidance was introduced halfway through the same series, the evaluation cannot separate those explanations.",
+              "candidate": "Because the guidance was introduced halfway through the same series, the evaluation cannot separate the two explanations."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    }
+  ]
+}

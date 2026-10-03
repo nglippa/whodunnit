@@ -1,0 +1,3728 @@
+{
+  "protocol": "v3-trace-audit-packet-v1",
+  "packetId": "A3",
+  "queueSha256": "1d92ad1209dd357965f61fcdd3d9fd6e8fbf8a4aa1fd0a3bb559ca7a0e5f2f29",
+  "rowCount": 17,
+  "rows": [
+    {
+      "caseId": "V3-045",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:30 a.m. and that the first tour will begin at 9:15. The printed map will be available at the entrance, and the same map will go into the reminder email.\n\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\n\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.",
+      "objective": "Update the welcome table opening time to 8:45 a.m. and the first tour start to 9:30 a.m. Keep the corrected three-greeter requirement, assignments, and route contingency clear.",
+      "raw": "Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:45 a.m. and that the first tour will begin at 9:30. The printed map will be available at the entrance, and the same map will go into the reminder email.\n\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\n\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.",
+      "final": "Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:30 a.m. and that the first tour will begin at 9:15. The printed map will be available at the entrance, and the same map will go into the reminder email.\n\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\n\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-13f6f5ad61a142bbcfb1d3db9104e197",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Still says 8:30 a.m. and 9:15, failing both requested time updates; other assignments and three greeters remain.",
+              "outputB": "Updates opening to 8:45 a.m. and tour to 9:30, retaining three greeters, Jordan and Lee assignments, and the stairs contingency.",
+              "pairwise": "B makes both authorized updates; A retains outdated times."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-045",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Change welcome table opening from 8:30 a.m. to 8:45 a.m.",
+            "Change first tour start from 9:15 to 9:30."
+          ],
+          "preservedFacts": [
+            "Three greeters required, correcting earlier two; use three in rota.",
+            "Printed map at entrance and reminder email.",
+            "Jordan checks microphone and reports Monday; Lee sends draft email Tuesday.",
+            "Writer and safety lead review route; courtyard stairs may be closed, requiring longer indoor route.",
+            "Do not contact visitors until route settled."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Two local time changes; keep other assignments and contingency."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The figure 15 from your text is missing or changed.",
+              "source": "15"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 45, which is not in your text.",
+              "candidate": "45"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Thank you for joining the orientation planning call. We agreed that the welcome table should open at 8:45 a.m. and that the first tour will begin at 9:30. The printed map will be available at the entrance, and the same map will go into the reminder email.\n\nJordan will check whether the portable microphone is available and report back by Monday. Lee will send the draft reminder email for comments on Tuesday. I’ll review the route with the safety lead, since the stairs by the courtyard may still be closed for maintenance. If those stairs are closed, the tour will use the longer indoor route; we will decide that after the walk-through.\n\nOne correction to the staffing plan: I said on the call that we needed two greeters, but the updated registration count means we need three. Please use three in the rota. Nothing else in the plan changed, and there is no need to contact visitors until we settle the route.",
+              "changes": [
+                "Welcome table opening changed from 8:30 to 8:45 a.m.",
+                "First tour start changed from 9:15 to 9:30",
+                "Left three-greeter correction, assignments, and route contingency unchanged"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "45"
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The figure 15 from your text is missing or changed.",
+              "source": "15"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 45, which is not in your text.",
+              "candidate": "45"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "repair-failed"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-046",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "In the spirit of continuous improvement, our team embarked on a comprehensive examination of the monthly supply request process. This work has allowed us to surface several valuable learnings and identify a promising pathway toward a more seamless future state. In practical terms, employees now spend less time looking for the right form because the request link is on the staff home page.\n\nDuring the first month, 62 requests came through the new link. Of those, 54 included the delivery location on the first submission. The other eight needed a follow-up question, usually because the requester named a building but not a room. We have not compared these results with the old process, so we cannot say whether the new link reduced the total time to fulfill requests.\n\nOur next step is to adjust the form label to ask for both building and room. We will review another month of submissions before deciding whether any further changes are needed. People can still ask the supply team for help if they are unsure which location to enter.",
+      "objective": "Turn this into a plain-language operations report. Remove the inflated opening while retaining the measured data, lack of baseline comparison, and concrete next step.",
+      "raw": "Our team reviewed the monthly supply request process. Employees now spend less time looking for the right form because the request link is on the staff home page.\n\nDuring the first month, 62 requests came through the new link. Of those, 54 included the delivery location on the first submission. The other eight needed a follow-up question, usually because the requester named a building but not a room. We have not compared these results with the old process, so we cannot say whether the new link reduced the total time to fulfill requests.\n\nOur next step is to adjust the form label to ask for both building and room. We will review another month of submissions before deciding whether any further changes are needed. People can still ask the supply team for help if they are unsure which location to enter.",
+      "final": "In the spirit of continuous improvement, our team embarked on a comprehensive examination of the monthly supply request process. This work has allowed us to surface several valuable learnings and identify a promising pathway toward a more seamless future state. In practical terms, employees now spend less time looking for the right form because the request link is on the staff home page.\n\nDuring the first month, 62 requests came through the new link. Of those, 54 included the delivery location on the first submission. The other eight needed a follow-up question, usually because the requester named a building but not a room. We have not compared these results with the old process, so we cannot say whether the new link reduced the total time to fulfill requests.\n\nOur next step is to adjust the form label to ask for both building and room. We will review another month of submissions before deciding whether any further changes are needed. People can still ask the supply team for help if they are unsure which location to enter.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-26a200c2a7a3388ca8700576daacfe52",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Plain opening retains 62 requests, 54 complete locations, eight follow-ups, no old-process comparison and building-and-room label adjustment.",
+              "outputB": "Repeats seamless future state and valuable learnings, leaving the inflated opening despite preserving the measured details.",
+              "pairwise": "A performs the requested plain-language conversion and retains the limitations on the data."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-26a200c2a7a3388ca8700576daacfe52",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Replaces inflated opening; keeps figures, no-baseline caveat, and next step.",
+              "outputB": "Leaves “valuable learnings” and “seamless future state” intact.",
+              "pairwise": "A performs the central requested edit."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-046",
+          "reviewerId": "R1A",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Request link on staff home page reduces time finding form.",
+            "62 first-month requests; 54 included location; eight needed follow-up, usually missing room.",
+            "No old-process comparison; total fulfillment-time improvement cannot be claimed.",
+            "Label will ask building and room; review another month; supply team can help."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Opening needs strong simplification; remaining report needs light polishing."
+        },
+        {
+          "id": "V3-046",
+          "reviewerId": "R2A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Request link on staff home page reduces searching for form.",
+            "First month 62 requests; 54 delivery locations on first submission; eight follow-ups, usually building without room; no old-process comparison or demonstrated fulfillment-time reduction.",
+            "Change label to request building and room; review another month; supply team help remains available."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Replace inflated framing and reorganize around operational evidence."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (0% of its content words survive).",
+              "source": "This work has allowed us to surface several valuable learnings and identify a promising pathway toward a more seamless future state."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.74
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Our team reviewed the monthly supply request process. Employees now spend less time looking for the right form because the request link is on the staff home page.\n\nDuring the first month, 62 requests came through the new link. Of those, 54 included the delivery location on the first submission. The other eight needed a follow-up question, usually because the requester named a building but not a room. We have not compared these results with the old process, so we cannot say whether the new link reduced the total time to fulfill requests.\n\nOur next step is to adjust the form label to ask for both building and room. We will review another month of submissions before deciding whether any further changes are needed. People can still ask the supply team for help if they are unsure which location to enter.",
+              "changes": [
+                "Removed the inflated opening about continuous improvement, learnings, and a seamless future state.",
+                "Replaced it with a plain sentence stating the team reviewed the process.",
+                "Dropped 'In practical terms' from the home-page link sentence.",
+                "Kept the data, missing baseline comparison, next step, and help note unchanged."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (0% of its content words survive).",
+              "source": "This work has allowed us to surface several valuable learnings and identify a promising pathway toward a more seamless future state."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-049",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "The import pauses while the file is checked. You can close this window; the check will continue.",
+      "objective": "Make this status message easier to scan without changing what happens if the window closes.",
+      "raw": "The import is paused while we check the file. You can close this window; the check will keep running.",
+      "final": "The import is paused while the file is checked. You can close this window; the check will keep running.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-13d3a3bba1d462c720ad6d3f9776e65d",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Paused and keep running clearly distinguish import status from the continuing file check.",
+              "outputB": "We check the file and keep running clearly distinguish import status from the continuing check.",
+              "pairwise": "The small passive-versus-active wording difference has no material effect on scanning or behavior."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-13d3a3bba1d462c720ad6d3f9776e65d",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Makes status easy to scan and preserves continued checking after close.",
+              "outputB": "Same, with “we check” adding no material meaning.",
+              "pairwise": "Both preserve what closing the window does."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-049",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Import pauses for check; check continues after window closes."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already concise and clear; formatting alone may suffice."
+        },
+        {
+          "id": "V3-049",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Import pauses while file is checked",
+            "Closing window does not stop the check"
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Improve scanability without changing behavior."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "the check will keep running."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.88
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "the check will keep running."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.88
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Only minor rewording (\"is paused\", \"keep running\"); the meaning, including that closing the window doesn't stop the check, is unchanged. The deterministic warning is a false positive from synonyms.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": false,
+              "unsupportedInformation": false,
+              "reason": "The close-window behavior is preserved. 'The check will keep running' matches 'will continue'. But 'we' adds a first-person actor the source never names, which changes the voice.",
+              "issue": {
+                "span": {
+                  "start": 27,
+                  "end": 44,
+                  "text": "we check the file"
+                },
+                "constraint": "Keep the source's agentless passive: use 'the file is checked' instead of introducing 'we'."
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only minor rewording (\"is paused\", \"keep running\"); the meaning, including that closing the window doesn't stop the check, is unchanged. The deterministic warning is a false positive from synonyms.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The import is paused while we check the file. You can close this window; the check will keep running.",
+              "changes": [
+                "Made the first sentence a plain status line",
+                "Kept the close-window behavior: the check continues"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": false,
+              "unsupportedInformation": false,
+              "reason": "The close-window behavior is preserved. 'The check will keep running' matches 'will continue'. But 'we' adds a first-person actor the source never names, which changes the voice.",
+              "issue": {
+                "span": {
+                  "start": 27,
+                  "end": 44,
+                  "text": "we check the file"
+                },
+                "constraint": "Keep the source's agentless passive: use 'the file is checked' instead of introducing 'we'."
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "the file is checked"
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only minor rewording (\"is paused\", \"keep running\"); the meaning, including that closing the window doesn't stop the check, is unchanged. The deterministic warning is a false positive from synonyms.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "the check will keep running."
+            }
+          ],
+          "final": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 3 content words are not in the source.",
+              "candidate": "the check will keep running."
+            }
+          ]
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-050",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT"
+      ],
+      "source": "If the code has expired, request another one. We can't reactivate the old code.",
+      "objective": "Polish this help text lightly. Keep the direct tone and the distinction between requesting a new code and reactivating the old one.",
+      "raw": "If the code has expired, request a new one. We can't reactivate the old code.",
+      "final": "If the code has expired, request a new one. We can't reactivate the old code.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-a0eb7825568d4937483d40b0dd7748dd",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "New one makes the replacement-code distinction slightly clearer while retaining direct tone and inability to reactivate.",
+              "outputB": "New one makes the replacement-code distinction slightly clearer while retaining direct tone and inability to reactivate.",
+              "pairwise": "Both outputs are identical and provide the same editorial result."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-a0eb7825568d4937483d40b0dd7748dd",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "'Another one' becomes 'a new one,' retaining the direct distinction from reactivating the expired code.",
+              "outputB": "Same wording and merits as A.",
+              "pairwise": "The outputs are identical."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-050",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Expired code requires requesting another; old code cannot be reactivated."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-050",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "If code expired, request another one",
+            "Old code cannot be reactivated"
+          ],
+          "intentionalVoice": [
+            "Direct help-text tone"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Light polish only."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.86
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.86
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Light polish (\"another one\" to \"a new one\") keeps meaning, direct tone, and the request-new vs. reactivate-old distinction.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Light polish (\"another one\" to \"a new one\") keeps meaning, direct tone, and the request-new vs. reactivate-old distinction.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "If the code has expired, request a new one. We can't reactivate the old code.",
+              "changes": [
+                "Changed \"another one\" to \"a new one\" for clarity; kept the contrast with reactivating the old code."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Light polish (\"another one\" to \"a new one\") keeps meaning, direct tone, and the request-new vs. reactivate-old distinction.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-051",
+      "reasonCodes": [
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "PAIRWISE_DISAGREEMENT",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "The preview is approximate. Exported colors may shift on older printers.",
+      "objective": "Keep this concise and matter-of-fact while making the limitation clear.",
+      "raw": "The preview is approximate. Colors may shift when exported on older printers.",
+      "final": "The preview is approximate. Exported colors may shift on older printers.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-e9721cf65726b085422c9854bbe7867c",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "UNCERTAIN",
+              "unauthorizedSemanticChange": "UNCERTAIN",
+              "unsupportedInformation": "UNCERTAIN",
+              "voicePreserved": "YES",
+              "overedited": "YES",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "The already concise original clearly distinguishes the approximate preview from possible printed color shifts.",
+              "outputB": "When exported on older printers makes export sound like an operation performed on a printer, obscuring the original limitation on exported colors.",
+              "pairwise": "A retains the clear limitation; B introduces ambiguity about exporting on printers."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-e9721cf65726b085422c9854bbe7867c",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "YES"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Already concise and matter-of-fact; the printer limitation is clear, so retaining it is appropriate.",
+              "outputB": "The limitation remains clear, but recasts exported colors as colors shifting 'when exported,' a mildly less direct phrasing with no benefit.",
+              "pairwise": "Both communicate the same limitation; A retains the already concise original wording."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-051",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [],
+          "intentionalVoice": [
+            "Direct, matter-of-fact tone."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already concise and clear."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Candidate is identical to the source, which is already concise, matter-of-fact, and clear about the limitation. No meaning changes or additions.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate moves \"exported\" so that the export happens on older printers. The source says exported colors may shift on older printers.",
+              "issue": {
+                "span": {
+                  "start": 28,
+                  "end": 77,
+                  "text": "Colors may shift when exported on older printers."
+                },
+                "constraint": "Restore the source scope: exported colors may shift on older printers, e.g. \"Exported colors may shift on older printers.\""
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Candidate is identical to the source, which is already concise, matter-of-fact, and clear about the limitation. No meaning changes or additions.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The preview is approximate. Colors may shift when exported on older printers.",
+              "changes": [
+                "Tightened wording and made the limitation direct: colors may shift on export to older printers."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate moves \"exported\" so that the export happens on older printers. The source says exported colors may shift on older printers.",
+              "issue": {
+                "span": {
+                  "start": 28,
+                  "end": 77,
+                  "text": "Colors may shift when exported on older printers."
+                },
+                "constraint": "Restore the source scope: exported colors may shift on older printers, e.g. \"Exported colors may shift on older printers.\""
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Exported colors may shift on older printers."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Candidate is identical to the source, which is already concise, matter-of-fact, and clear about the limitation. No meaning changes or additions.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "SAFE_REVERSION"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-052",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "To share a board, open the board menu and choose Invite. People you invite can view comments right away, but they can't edit cards until you change their role.",
+      "objective": "Tighten this how-to note for a help center. Preserve the initial permission boundary.",
+      "raw": "To share a board, open the board menu and choose Invite. People you invite can view comments right away but can't edit cards until you change their role.",
+      "final": "To share a board, open the board menu and choose Invite. People you invite can view comments right away but can't edit cards until you change their role.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-781df94530793a1d7783dc72b920441a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Removes a little punctuation and repetition while retaining immediate comment access and the editing restriction.",
+              "outputB": "Removes a little punctuation and repetition while retaining immediate comment access and the editing restriction.",
+              "pairwise": "Identical successful tightening."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-052",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Invitees can view comments immediately; card editing requires role change."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate removes only the comma and the repeated \"they\". All claims and the permission boundary are unchanged. The protected phrase \"open the board\" is intact.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate removes only the comma and the repeated \"they\". All claims and the permission boundary are unchanged. The protected phrase \"open the board\" is intact.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "To share a board, open the board menu and choose Invite. People you invite can view comments right away but can't edit cards until you change their role.",
+              "changes": [
+                "Removed the comma before 'but' to tighten the sentence; kept the permission boundary and all steps."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate removes only the comma and the repeated \"they\". All claims and the permission boundary are unchanged. The protected phrase \"open the board\" is intact.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-053",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "Hey, I added the little legend below the chart. It should help folks read the dotted line, which is the estimate, not last month's actual total. Let me know if it still feels muddy.",
+      "objective": "Make this team message clearer while keeping its casual, slightly self-effacing voice.",
+      "raw": "Hey, I added a little legend below the chart. It should help folks read the dotted line: that's the estimate, not last month's actual total. Let me know if it still feels muddy.",
+      "final": "Hey, I added a little legend below the chart. It should help folks read the dotted line: that's the estimate, not last month's actual total. Let me know if it still feels muddy.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-ad652214b061a8ebdb8513598a9f42ef",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "The colon clarifies what the dotted line represents while retaining the casual invitation for feedback.",
+              "outputB": "The colon clarifies what the dotted line represents while retaining the casual invitation for feedback.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-053",
+          "reviewerId": "R1A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Legend added below chart; dotted line is estimate rather than last month’s actual total."
+          ],
+          "intentionalVoice": [
+            "Casual folks and slightly self-effacing muddy wording."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Only local clarification, if useful."
+        },
+        {
+          "id": "V3-053",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Legend added below chart",
+            "Dotted line is estimate, not last month's actual total",
+            "Invites feedback if unclear"
+          ],
+          "intentionalVoice": [
+            "Casual, slightly self-effacing teammate voice"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Clarify the distinction without losing casual tone."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Minimal edits (\"the\"→\"a\", comma→colon) preserve all meaning and casual voice; the dotted-line clarification is slightly crisper.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Minimal edits (\"the\"→\"a\", comma→colon) preserve all meaning and casual voice; the dotted-line clarification is slightly crisper.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Hey, I added a little legend below the chart. It should help folks read the dotted line: that's the estimate, not last month's actual total. Let me know if it still feels muddy.",
+              "changes": [
+                "Split the dotted-line explanation with a colon so the estimate vs. actual point reads more directly",
+                "Changed \"the little legend\" to \"a little legend\" for a more natural flow",
+                "Kept the casual voice and the closing check-in unchanged"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Minimal edits (\"the\"→\"a\", comma→colon) preserve all meaning and casual voice; the dotted-line clarification is slightly crisper.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-054",
+      "reasonCodes": [
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "The sensor records a reading every five minutes when the lid is closed. Opening the lid does not erase earlier readings, although the next reading may be delayed by up to one interval.",
+      "objective": "Make this product explanation easier for a first-time customer to understand. Keep the timing and the caveat exact.",
+      "raw": "While the lid is closed, the sensor takes a reading every five minutes. If you open the lid, the readings it has already taken stay saved. The only effect is that the next reading may come up to one interval (five minutes) late.",
+      "final": "The sensor records a reading every five minutes when the lid is closed. Opening the lid does not erase earlier readings, although the next reading may be delayed by up to one interval.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-a29d2529825e9b8728e04b04b721a3f0",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "NO",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "YES",
+              "voicePreserved": "YES",
+              "overedited": "YES",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Explains the five-minute interval accessibly, but the only effect adds an unsupported guarantee that opening the lid has no other effects.",
+              "outputB": "Preserves the exact facts and caveat but leaves one interval unexplained for first-time customers.",
+              "pairwise": "B is less helpful for newcomers but avoids A's material unsupported claim that the delay is the only effect of opening the lid."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-054",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Reading interval is five minutes with lid closed; opening does not erase earlier readings; next reading can be delayed."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "negation_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The source is negative (“not”); the rewrite has no negation.",
+              "source": "The sensor records a reading every five minutes when the lid is closed. Opening the lid does not erase earlier readings, although the next …",
+              "candidate": "While the lid is closed, the sensor takes a reading every five minutes. The only effect is that the next reading may come up to one interva…"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 4 of 5 content words are not in the source.",
+              "candidate": "the readings it has already taken stay saved."
+            },
+            {
+              "kind": "length_out_of_range",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite is 130% of your length; Natural aims for 75–115%."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.69
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "LOCAL_REPAIR",
+          "meaningPreserved": false,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": true,
+          "reason": "Earlier readings staying saved matches the source. But \"The only effect\" adds an exclusivity claim the source never makes.",
+          "issue": {
+            "span": {
+              "start": 139,
+              "end": 162,
+              "text": "The only effect is that"
+            },
+            "constraint": "Remove the unsupported claim that this is the only effect. Use a neutral contrast such as \"However,\" so the sentence reads \"However, the next reading may come up to one interval (five minutes) late.\""
+          }
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": true,
+              "reason": "Earlier readings staying saved matches the source. But \"The only effect\" adds an exclusivity claim the source never makes.",
+              "issue": {
+                "span": {
+                  "start": 139,
+                  "end": 162,
+                  "text": "The only effect is that"
+                },
+                "constraint": "Remove the unsupported claim that this is the only effect. Use a neutral contrast such as \"However,\" so the sentence reads \"However, the next reading may come up to one interval (five minutes) late.\""
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Meaning is preserved, including the timing and the caveat. The only defect is a duplicated phrase that makes the last sentence hard to read.",
+              "issue": {
+                "span": {
+                  "start": 148,
+                  "end": 189,
+                  "text": "the next reading may the next reading may"
+                },
+                "constraint": "Remove the duplicated words so it reads \"the next reading may come up to one interval (five minutes) late.\""
+              }
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "While the lid is closed, the sensor takes a reading every five minutes. If you open the lid, the readings it has already taken stay saved. The only effect is that the next reading may come up to one interval (five minutes) late.",
+              "changes": [
+                "Rephrased in simpler, direct sentences",
+                "Clarified 'one interval' as five minutes, keeping the timing and delay caveat",
+                "Kept that opening the lid does not erase earlier readings"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": false,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": true,
+              "reason": "Earlier readings staying saved matches the source. But \"The only effect\" adds an exclusivity claim the source never makes.",
+              "issue": {
+                "span": {
+                  "start": 139,
+                  "end": 162,
+                  "text": "The only effect is that"
+                },
+                "constraint": "Remove the unsupported claim that this is the only effect. Use a neutral contrast such as \"However,\" so the sentence reads \"However, the next reading may come up to one interval (five minutes) late.\""
+              }
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "However, the next reading may"
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "LOCAL_REPAIR",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Meaning is preserved, including the timing and the caveat. The only defect is a duplicated phrase that makes the last sentence hard to read.",
+              "issue": {
+                "span": {
+                  "start": 148,
+                  "end": 189,
+                  "text": "the next reading may the next reading may"
+                },
+                "constraint": "Remove the duplicated words so it reads \"the next reading may come up to one interval (five minutes) late.\""
+              }
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "negation_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The source is negative (“not”); the rewrite has no negation.",
+              "source": "The sensor records a reading every five minutes when the lid is closed. Opening the lid does not erase earlier readings, although the next …",
+              "candidate": "While the lid is closed, the sensor takes a reading every five minutes. The only effect is that the next reading may come up to one interva…"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 4 of 5 content words are not in the source.",
+              "candidate": "the readings it has already taken stay saved."
+            },
+            {
+              "kind": "length_out_of_range",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "The rewrite is 130% of your length; Natural aims for 75–115%."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "repair-failed"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-055",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE"
+      ],
+      "source": "Starting Monday, the help desk will close at 6 p.m. instead of 5 p.m. on weekdays. Weekend hours are unchanged. Please use the new weekday time in the staff handbook notice.",
+      "objective": "Turn this into a clear staff handbook notice with the updated weekday closing time. Do not imply the weekend schedule changed.",
+      "raw": "Help Desk Hours Update\n\nStarting Monday, the help desk will close at 6 p.m. instead of 5 p.m. on weekdays. Weekend hours are unchanged.",
+      "final": "Help Desk Hours Update\n\nStarting Monday, the help desk will close at 6 p.m. instead of 5 p.m. on weekdays. Weekend hours are unchanged.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-d8c1824855def6034b09ce4e389293ec",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "The notice heading and removal of the drafting instruction produce a usable handbook notice with weekday and weekend hours intact.",
+              "outputB": "The notice heading and removal of the drafting instruction produce a usable handbook notice with weekday and weekend hours intact.",
+              "pairwise": "Both provide the same material editorial value and preserve the same information."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-d8c1824855def6034b09ce4e389293ec",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Adds a clear notice heading and preserves the new weekday close and unchanged weekend hours.",
+              "outputB": "Same wording and merits as A.",
+              "pairwise": "The outputs are identical."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-055",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [
+            "Weekday help desk closing time is 6 p.m. starting Monday."
+          ],
+          "preservedFacts": [],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-055",
+          "reviewerId": "R2A",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Starting Monday weekday help desk closing moves from 5 p.m. to 6 p.m.; weekend hours unchanged."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Convert message into handbook notice."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (13% of its content words survive).",
+              "source": "Please use the new weekday time in the staff handbook notice."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.59
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (13% of its content words survive).",
+              "source": "Please use the new weekday time in the staff handbook notice."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.59
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate keeps all the factual claims: Monday start, 6 p.m. instead of 5 p.m. on weekdays, and unchanged weekend hours. The dropped instruction was a directive to the editor, and the notice format fulfills it.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps all the factual claims: Monday start, 6 p.m. instead of 5 p.m. on weekdays, and unchanged weekend hours. The dropped instruction was a directive to the editor, and the notice format fulfills it.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Help Desk Hours Update\n\nStarting Monday, the help desk will close at 6 p.m. instead of 5 p.m. on weekdays. Weekend hours are unchanged.",
+              "changes": [
+                "Added a notice title and formatted the text as a handbook notice",
+                "Removed the instruction to use the new time and stated the 6 p.m. weekday closing directly",
+                "Kept the weekend hours sentence unchanged"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps all the factual claims: Monday start, 6 p.m. instead of 5 p.m. on weekdays, and unchanged weekend hours. The dropped instruction was a directive to the editor, and the notice format fulfills it.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (13% of its content words survive).",
+              "source": "Please use the new weekday time in the staff handbook notice."
+            }
+          ],
+          "final": [
+            {
+              "kind": "missing_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (13% of its content words survive).",
+              "source": "Please use the new weekday time in the staff handbook notice."
+            }
+          ]
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-056",
+      "reasonCodes": [
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "Thanks for flagging the missing label. We found that it disappears only when a saved filter is reopened in the compact view. A fix is planned for the next maintenance release; meanwhile, the full view still shows the label.",
+      "objective": "Refine this support reply so the workaround and scope are easy to find. Keep the release timing tentative.",
+      "raw": "Thanks for flagging the missing label.\n\nScope: it disappears only when a saved filter is reopened in the compact view.\n\nWorkaround: the full view still shows the label, so use that for now.\n\nA fix is planned for the next maintenance release.",
+      "final": "Thanks for flagging the missing label.\n\nScope: it disappears only when a saved filter is reopened in the compact view.\n\nWorkaround: the full view still shows the label.\n\nA fix is planned for the next maintenance release.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-5ec5362e989b6b0f5542ce9af104b079",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Labels identify scope and workaround; using full view follows directly from the source. Planned release timing stays tentative.",
+              "outputB": "Labels identify scope and workaround and keep planned release timing tentative.",
+              "pairwise": "The explicit recommendation in A is reasonable but has no material advantage over B’s labelled workaround."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-056",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Issue occurs when reopening saved filter in compact view; fix timing remains tentative."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        },
+        {
+          "id": "V3-056",
+          "reviewerId": "R2B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Label disappears only when a saved filter is reopened in compact view",
+            "Fix planned for next maintenance release",
+            "Full view still shows label"
+          ],
+          "intentionalVoice": [
+            "Helpful support tone"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Make scope and workaround easy to locate; keep timing tentative."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Scope” appears in the rewrite but not in your text.",
+              "candidate": "Scope"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Workaround” appears in the rewrite but not in your text.",
+              "candidate": "Workaround"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "A fix is planned for the next maintenance release; meanwhile, the full view still shows the label.",
+              "candidate": "Workaround: the full view still shows the label, so use that for now."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "so use that for now."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.9
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Scope” appears in the rewrite but not in your text.",
+              "candidate": "Scope"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Workaround” appears in the rewrite but not in your text.",
+              "candidate": "Workaround"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.9
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Scope and workaround are now labeled and separated. The facts are unchanged, and the fix is still \"planned for the next maintenance release\", so the timing stays tentative. The \"Scope\" and \"Workaround\" labels are headings, not new claims.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Scope and workaround are now labeled and separated. The facts are unchanged, and the fix is still \"planned for the next maintenance release\", so the timing stays tentative. The \"Scope\" and \"Workaround\" labels are headings, not new claims.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Thanks for flagging the missing label.\n\nScope: it disappears only when a saved filter is reopened in the compact view.\n\nWorkaround: the full view still shows the label, so use that for now.\n\nA fix is planned for the next maintenance release.",
+              "changes": [
+                "Split the reply into short labeled parts for scope and workaround",
+                "Made the full-view workaround an explicit instruction",
+                "Kept the fix timing tentative ('planned for the next maintenance release')"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Workaround: the full view still shows the label."
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "reverify",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Scope and workaround are now labeled and separated. The facts are unchanged, and the fix is still \"planned for the next maintenance release\", so the timing stays tentative. The \"Scope\" and \"Workaround\" labels are headings, not new claims.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Scope” appears in the rewrite but not in your text.",
+              "candidate": "Scope"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Workaround” appears in the rewrite but not in your text.",
+              "candidate": "Workaround"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "A fix is planned for the next maintenance release; meanwhile, the full view still shows the label.",
+              "candidate": "Workaround: the full view still shows the label, so use that for now."
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "so use that for now."
+            }
+          ],
+          "final": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Scope” appears in the rewrite but not in your text.",
+              "candidate": "Scope"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Workaround” appears in the rewrite but not in your text.",
+              "candidate": "Workaround"
+            }
+          ]
+        },
+        "repair": {
+          "requested": true,
+          "accepted": true,
+          "classification": "USEFUL_REPAIR"
+        },
+        "fallback": {
+          "outcome": "repaired",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-057",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "The workshop recording and notes are now in the shared folder. If you couldn't attend, start with the five-minute demo at the beginning; the discussion after it assumes you've seen that flow.",
+      "objective": "Lightly polish this already-useful update for colleagues. Preserve its friendly guidance and avoid adding a formal announcement tone.",
+      "raw": "The workshop recording and notes are now in the shared folder. If you couldn't attend, start with the five-minute demo at the beginning. The discussion after it assumes you've seen that flow.",
+      "final": "The workshop recording and notes are now in the shared folder. If you couldn't attend, start with the five-minute demo at the beginning. The discussion after it assumes you've seen that flow.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-4e586700117b6bee2ae0afe69f518a7a",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Splitting the semicolon modestly improves readability and keeps friendly guidance.",
+              "outputB": "Splitting the semicolon modestly improves readability and keeps friendly guidance.",
+              "pairwise": "Identical appropriate light edits."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-057",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LEAVE_ALONE",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [],
+          "intentionalVoice": [
+            "Friendly colleague guidance."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Already useful; restraint is appropriate."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Only change is splitting one sentence into two at the semicolon. All claims and the friendly tone are intact, and no content was added. The edit is a light polish.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only change is splitting one sentence into two at the semicolon. All claims and the friendly tone are intact, and no content was added. The edit is a light polish.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The workshop recording and notes are now in the shared folder. If you couldn't attend, start with the five-minute demo at the beginning. The discussion after it assumes you've seen that flow.",
+              "changes": [
+                "Split the semicolon sentence into two for easier reading."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Only change is splitting one sentence into two at the semicolon. All claims and the friendly tone are intact, and no content was added. The edit is a light polish.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-059",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "When a visitor follows a public collection, we send an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item. Additions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\n\nFollowing and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\n\nThe collection owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.",
+      "objective": "Rewrite this feature explanation for a help page so readers can see when an email is sent and the two exceptions. Keep the hour-long grouping rule.",
+      "raw": "When a visitor follows a public collection, we send them an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item.\n\n**When an email is sent**\n\nAdditions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\n\n**Two exceptions**\n\n1. **Followers who have turned off collection emails.** Following and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\n\n2. **The collection owner.** The owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.",
+      "final": "When a visitor follows a public collection, we send an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item. Additions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\n\nFollowing and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\n\nThe collection owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1C",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-854ed4d79df8bc7a157cd3a3051912c3",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Unchanged prose retains the rules but does not make the two exceptions easier to find.",
+              "outputB": "Headings and numbered exceptions expose the hour grouping and both exclusions without altering eligibility.",
+              "pairwise": "The preferred output materially addresses the requested clarity, structure or tone improvement that the unchanged alternative leaves undone."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-059",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "New public-collection additions trigger follower summary email; same-hour additions grouped into one email even with multiple contributors.",
+            "Following can continue with emails off; then no collection emails sent, including for earlier follows.",
+            "Owner gets no separate copy; must follow with emails on."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Requested help-page presentation may restructure the explanation around rule and exceptions."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 1, which is not in your text.",
+              "candidate": "1"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 2, which is not in your text.",
+              "candidate": "2"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "**Two exceptions**"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "When a visitor follows a public collection, we send them an email after new items are added. The email is meant to give followers a useful summary, rather than a separate alert for every item.\n\n**When an email is sent**\n\nAdditions made within the same hour are grouped into one email. If several people add items during that hour, the follower still receives just the one update for those additions.\n\n**Two exceptions**\n\n1. **Followers who have turned off collection emails.** Following and email preferences are separate. Someone can continue to follow a collection while turning off collection emails. In that case, new items remain available in the collection, but we do not send that person an email about them. The preference applies even if they followed the collection before switching emails off.\n\n2. **The collection owner.** The owner does not receive a separate owner copy of these updates. An owner who wants the same email as other followers needs to follow the collection and leave collection emails on. This often comes up when an owner sees that colleagues received an update and assumes theirs went missing.",
+              "changes": [
+                "Reorganized into a 'When an email is sent' section and a 'Two exceptions' list with headings.",
+                "Kept the one-hour grouping rule and all preference and owner details unchanged."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Second"
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 1, which is not in your text.",
+              "candidate": "1"
+            },
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite introduces 2, which is not in your text.",
+              "candidate": "2"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "**Two exceptions**"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-060",
+      "reasonCodes": [
+        "FALLBACK",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "The nightly export writes one file per workspace. Each workspace's run begins at 2 a.m. in that workspace's time zone, so the files do not all appear at the same clock time for the team watching them. A large workspace can take more than an hour to finish. The start time is therefore not a promise that its file will be ready by 3 a.m.\n\nIf someone reports a missing file at 3 a.m., first identify the workspace and check its export status page. The page reports either completion or a specific error for each workspace. A run that has not yet produced a file should not be called a failure solely because it has passed the one-hour mark. This is especially relevant when comparing a small workspace with a much larger one.\n\nUse the status shown for the affected workspace when deciding whether to file an incident. Include the workspace and the reported error if there is one, so the person investigating can start with the actual run rather than the absence of a file.",
+      "objective": "Make this internal operations note more concise and ordered by action. Preserve the timing, the one-file rule, and the warning against assuming failure at 3 a.m.",
+      "raw": "The nightly export writes one file per workspace. Each workspace's run begins at 2 a.m. in that workspace's time zone, so the files do not all appear at the same clock time for the team watching them. A large workspace can take more than an hour to finish, so the start time is not a promise that its file will be ready by 3 a.m.\n\nIf someone reports a missing file at 3 a.m.:\n\n1. Identify the workspace and check its export status page. The page reports either completion or a specific error for each workspace.\n2. Use the status shown for the affected workspace to decide whether to file an incident. A run that has not yet produced a file should not be called a failure solely because it has passed the one-hour mark. This is especially relevant when comparing a small workspace with a much larger one.\n3. If you file an incident, include the workspace and the reported error if there is one, so the person investigating can start with the actual run rather than the absence of a file.",
+      "final": "The nightly export writes one file per workspace. Each workspace's run begins at 2 a.m. in that workspace's time zone, so the files do not all appear at the same clock time for the team watching them. A large workspace can take more than an hour to finish. The start time is therefore not a promise that its file will be ready by 3 a.m.\n\nIf someone reports a missing file at 3 a.m., first identify the workspace and check its export status page. The page reports either completion or a specific error for each workspace. A run that has not yet produced a file should not be called a failure solely because it has passed the one-hour mark. This is especially relevant when comparing a small workspace with a much larger one.\n\nUse the status shown for the affected workspace when deciding whether to file an incident. Include the workspace and the reported error if there is one, so the person investigating can start with the actual run rather than the absence of a file.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1D",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-ea76c539a53c1aec368178e0328b5575",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Numbered actions order workspace identification, status-based incident decisions and incident details while retaining timing and the one-file constraint.",
+              "outputB": "Unchanged paragraphs preserve all technical details but do not provide the requested action ordering or concision.",
+              "pairwise": "A materially delivers the requested update or organization that B leaves undone."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2B",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-ea76c539a53c1aec368178e0328b5575",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Retains one file per workspace, local 2 a.m. starts, and the no-automatic-failure-at-one-hour warning; orders response steps and incident details by action.",
+              "outputB": "Preserves facts but mostly retains the original prose order and is less actionable than requested.",
+              "pairwise": "A makes the response sequence easier to follow while retaining the timing caveats."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-060",
+          "reviewerId": "R1B",
+          "expectedEditScope": "DISTRIBUTED_LIGHT_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "One file per workspace; runs begin at 2 a.m. in each workspace time zone; do not treat absence at 3 a.m. as failure."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 1, which is not in your text.",
+              "candidate": "1"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“therefore” became “decide” (causation strengthened).",
+              "source": "The nightly export writes one file per workspace. A large workspace can take more than an hour to finish. The start time is therefore not a…",
+              "candidate": "The nightly export writes one file per workspace. If you file an incident, include the workspace and the reported error if there is one, so…"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.95
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": {
+          "verdict": "REJECT",
+          "meaningPreserved": true,
+          "objectiveSatisfied": false,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "Meaning and the 3 a.m. warning are preserved and the steps are action-ordered, but the text is essentially the same length as the source, so the request for more concision is not met.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "REJECT",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Meaning and the 3 a.m. warning are preserved and the steps are action-ordered, but the text is essentially the same length as the source, so the request for more concision is not met.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "The nightly export writes one file per workspace. Each workspace's run begins at 2 a.m. in that workspace's time zone, so the files do not all appear at the same clock time for the team watching them. A large workspace can take more than an hour to finish, so the start time is not a promise that its file will be ready by 3 a.m.\n\nIf someone reports a missing file at 3 a.m.:\n\n1. Identify the workspace and check its export status page. The page reports either completion or a specific error for each workspace.\n2. Use the status shown for the affected workspace to decide whether to file an incident. A run that has not yet produced a file should not be called a failure solely because it has passed the one-hour mark. This is especially relevant when comparing a small workspace with a much larger one.\n3. If you file an incident, include the workspace and the reported error if there is one, so the person investigating can start with the actual run rather than the absence of a file.",
+              "changes": [
+                "Reordered the guidance into numbered steps: identify and check status, decide on an incident, then file with details.",
+                "Merged the start-time explanation into a single sentence and trimmed redundant wording.",
+                "Kept the 2 a.m. start, one file per workspace, 3 a.m. caveat, and the warning against assuming failure past one hour."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "REJECT",
+              "meaningPreserved": true,
+              "objectiveSatisfied": false,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "Meaning and the 3 a.m. warning are preserved and the steps are action-ordered, but the text is essentially the same length as the source, so the request for more concision is not met.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "AUTHORIZED_CHANGE: The rewrite introduces 1, which is not in your text.",
+              "candidate": "1"
+            },
+            {
+              "kind": "assertion_strength_changed",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“therefore” became “decide” (causation strengthened).",
+              "source": "The nightly export writes one file per workspace. A large workspace can take more than an hour to finish. The start time is therefore not a…",
+              "candidate": "The nightly export writes one file per workspace. If you file an incident, include the workspace and the reported error if there is one, so…"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "verifier-rejected"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-061",
+      "reasonCodes": [
+        "FALLBACK",
+        "OUTPUT_LABEL_DISAGREEMENT",
+        "POSSIBLE_GOOD_LOSS"
+      ],
+      "source": "We built the small dial because the big dashboard was too much to glance at while mixing. Most of the time, you only want to know where the batch is now and where you asked it to stop. The dial shows the current temperature, and the pale mark shows that stopping point. It is a target you set, not a warning that the batch is in trouble.\n\nThe dial keeps those two pieces of information together without asking you to read a full chart while your hands are busy. It does not try to tell the whole story of the batch. If you want to see how the temperature changed over time, the dashboard still has the full temperature history.\n\nThat split is deliberate. The dial is for the quick look; the dashboard is for the longer look, if that's your thing. We want the mark to be useful at a glance, especially when it sits close to the current reading, without making it sound like an alarm.",
+      "objective": "Smooth this product copy while keeping its plainspoken, lightly playful voice. Make the target mark unambiguous without turning the paragraph into marketing copy.",
+      "raw": "We built the small dial because the big dashboard was too much to glance at while mixing. Most of the time, you only want to know where the batch is now and where you asked it to stop. The dial shows the current temperature, and the pale mark shows that stopping point. That mark is a target you set, not a warning that the batch is in trouble.\n\nBoth pieces of information sit together, without asking you to read a full chart while your hands are busy. The dial doesn't try to tell the whole story of the batch. If you want to see how the temperature changed over time, the dashboard still has the full temperature history.\n\nThat split is deliberate. The dial is for the quick look; the dashboard is for the longer look, if that's your thing. We want the mark to be useful at a glance, especially when it sits close to the current reading, and we don't want it to sound like an alarm.",
+      "final": "We built the small dial because the big dashboard was too much to glance at while mixing. Most of the time, you only want to know where the batch is now and where you asked it to stop. The dial shows the current temperature, and the pale mark shows that stopping point. It is a target you set, not a warning that the batch is in trouble.\n\nThe dial keeps those two pieces of information together without asking you to read a full chart while your hands are busy. It does not try to tell the whole story of the batch. If you want to see how the temperature changed over time, the dashboard still has the full temperature history.\n\nThat split is deliberate. The dial is for the quick look; the dashboard is for the longer look, if that's your thing. We want the mark to be useful at a glance, especially when it sits close to the current reading, without making it sound like an alarm.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-63ba4d8a49a0ddabcd0eee0dba2361cd",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "NO"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "The original preserves the plainspoken tone and already distinguishes the mark from an alarm, but offers no smoothing or antecedent clarification.",
+              "outputB": "Explicitly names the mark as the target and lightly smooths the description without adding promotional claims.",
+              "pairwise": "B gives the requested modest smoothing and makes the target antecedent clearer."
+            }
+          }
+        },
+        {
+          "reviewerId": "O2A",
+          "phase": "second",
+          "rawFinalOrientation": {
+            "outputA": "FINAL",
+            "outputB": "RAW"
+          },
+          "labels": {
+            "itemId": "blind-63ba4d8a49a0ddabcd0eee0dba2361cd",
+            "outputA": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_B_BETTER",
+            "evidence": {
+              "outputA": "Leaves copy unchanged, including the target-mark wording the objective asks to clarify.",
+              "outputB": "Adds “That mark” to make clear the pale mark is the target and smooths transitions without marketing language.",
+              "pairwise": "B makes the target mark explicit."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-061",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Dial shows current batch position and target mark; retain plain, lightly playful voice."
+          ],
+          "intentionalVoice": [
+            "Plainspoken, lightly playful voice."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The figure 2 from your text is missing or changed.",
+              "source": "2"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.95
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "We built the small dial because the big dashboard was too much to glance at while mixing. Most of the time, you only want to know where the batch is now and where you asked it to stop. The dial shows the current temperature, and the pale mark shows that stopping point. That mark is a target you set, not a warning that the batch is in trouble.\n\nBoth pieces of information sit together, without asking you to read a full chart while your hands are busy. The dial doesn't try to tell the whole story of the batch. If you want to see how the temperature changed over time, the dashboard still has the full temperature history.\n\nThat split is deliberate. The dial is for the quick look; the dashboard is for the longer look, if that's your thing. We want the mark to be useful at a glance, especially when it sits close to the current reading, and we don't want it to sound like an alarm.",
+              "changes": [
+                "Made 'that mark is a target you set' explicit by naming the mark as the subject",
+                "Varied repeated 'The dial' sentence openings",
+                "Smoothed second paragraph's opening and negation wording",
+                "Reworked final sentence's ending to keep the not-an-alarm point in plainer words"
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_number",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The figure 2 from your text is missing or changed.",
+              "source": "2"
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-063",
+      "reasonCodes": [
+        "EXPLICIT_UPDATE",
+        "FALLBACK",
+        "RAW_BAD_PROXY",
+        "REPAIR_ATTEMPT"
+      ],
+      "source": "Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\n\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold should not be described as a retroactive change to an existing order. The standard delivery fee remains $6 for orders below the applicable threshold. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\n\nPlease use the new $50 threshold and the start date in the revised page text, and check that the example agrees with them. Keep the earlier-order explanation close enough to the new rule that a returning customer can find it. Do not imply that an order already placed will be recalculated.",
+      "objective": "Write the updated shipping-page explanation using the new $50 threshold and 15 June start date. Keep the treatment of earlier orders and the $6 fee accurate.",
+      "raw": "Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\n\nProposed page text:\n\nFrom 15 June, orders of $50 or more qualify for free delivery. Orders below $50 pay the standard delivery fee of $6. The example on this page uses the $50 threshold, so it agrees with the rule above.\n\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold does not change an existing order, and an order already placed will not be recalculated. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\n\nKeep the earlier-order explanation directly beneath the new rule, so a returning customer can find it easily.",
+      "final": "Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\n\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold should not be described as a retroactive change to an existing order. The standard delivery fee remains $6 for orders below the applicable threshold. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\n\nPlease use the new $50 threshold and the start date in the revised page text, and check that the example agrees with them. Keep the earlier-order explanation close enough to the new rule that a returning customer can find it. Do not imply that an order already placed will be recalculated.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-7674eec744ee2b894d269828ae3a96db",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "NO",
+              "unauthorizedSemanticChange": "YES",
+              "unsupportedInformation": "YES",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Provides the new rule and earlier-order protection, but retains drafting instructions and asserts that the page example uses $50 without supplying an example or evidence it was updated.",
+              "outputB": "Repeats the drafting note rather than writing the customer-facing explanation. Dates, thresholds and earlier-order treatment remain accurate.",
+              "pairwise": "A has a material advantage by supplying actual rule text, though its unsupported example assertion and draft framing still need work."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-063",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [
+            "Use $50 free-delivery threshold effective 15 June, replacing $40 consistently in rule and example."
+          ],
+          "preservedFacts": [
+            "Earlier orders retain threshold shown at checkout; no retroactive recalculation.",
+            "Delivery fee below applicable threshold remains $6."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Source is an editorial brief to convert into customer-facing shipping guidance."
+        },
+        {
+          "id": "V3-063",
+          "reviewerId": "R2A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [
+            "Use $50 free-delivery threshold effective 15 June in page rule and example."
+          ],
+          "preservedFacts": [
+            "Earlier orders retain threshold shown at checkout when placed; no recalculation; standard fee $6 below applicable threshold."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Convert internal drafting instructions into customer-facing explanation."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "Keep the earlier-order explanation close enough to the new rule that a returning customer can find it.",
+              "candidate": "Keep the earlier-order explanation directly beneath the new rule, so a returning customer can find it easily."
+            },
+            {
+              "kind": "altered_date",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The requested temporal replacement conflicts with a preservation directive."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.81
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Draft note for the shipping page: the free-delivery threshold is changing from $40 to $50 on 15 June. The current page still describes the $40 threshold and uses it in its example, so both places need updating together. A reader should be able to see which threshold applies without having to infer it from an example that says something different.\n\nProposed page text:\n\nFrom 15 June, orders of $50 or more qualify for free delivery. Orders below $50 pay the standard delivery fee of $6. The example on this page uses the $50 threshold, so it agrees with the rule above.\n\nOrders placed before 15 June keep the threshold shown at checkout when they were placed. The new threshold does not change an existing order, and an order already placed will not be recalculated. We are changing the amount that qualifies an order for free delivery, not the delivery fee itself.\n\nKeep the earlier-order explanation directly beneath the new rule, so a returning customer can find it easily.",
+              "changes": [
+                "Wrote proposed page text with the $50 threshold and 15 June start date.",
+                "Kept the $6 fee for orders below the applicable threshold, stated as unchanged.",
+                "Kept the earlier-order explanation next to the new rule, with no recalculation of placed orders.",
+                "Said the page example should use the $50 threshold, without adding a made-up order amount."
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "repair",
+            "schemaName": "local-repair",
+            "invoked": true,
+            "result": {
+              "replacement": "Keep the earlier-order explanation directly beneath the new rule, close enough that a returning customer can find it."
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The rewrite asserts a cause (“so”) the source does not state.",
+              "source": "Keep the earlier-order explanation close enough to the new rule that a returning customer can find it.",
+              "candidate": "Keep the earlier-order explanation directly beneath the new rule, so a returning customer can find it easily."
+            },
+            {
+              "kind": "altered_date",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "The requested temporal replacement conflicts with a preservation directive."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": true,
+          "accepted": false,
+          "classification": "FAILED_REPAIR"
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-066",
+      "reasonCodes": [
+        "FIXED_CLEAN_SAMPLE"
+      ],
+      "source": "We've been calling this a launch in conversation, though it is really a small trial. Three library branches volunteered to try the checkout form with their staff. They will use it for six weeks and tell us where it slows them down. That feedback is the reason for starting with a small group: we need to see how the form fits ordinary desk work before asking more branches to use it.\n\nAfter the trial, we will review what those staff report and decide what needs to change. We may find small wording issues, or we may find a step that takes longer than it should. At this point, we do not have those findings, so an announcement should not talk as if the form is ready everywhere.\n\nPlease describe the six-week period as a trial with the three volunteer branches. We can say that we will consider inviting more branches after reviewing feedback. I don't want to promise a citywide rollout yet, or make the volunteers sound like the first wave of a schedule we have already settled.",
+      "objective": "Rewrite this as a calm internal project update. Preserve the author's caution and the fact that wider rollout depends on feedback.",
+      "raw": "Project update: checkout form trial\n\nWe've been calling this a launch in conversation, but it is really a small trial. Three library branches volunteered to try the checkout form with their staff. They will use it for six weeks and tell us where it slows them down. That feedback is the reason for starting with a small group: we need to see how the form fits ordinary desk work before asking more branches to use it.\n\nAfter the trial, we will review what those staff report and decide what needs to change. We may find small wording issues, or we may find a step that takes longer than it should. We don't have those findings yet, so any announcement should not talk as if the form is ready everywhere.\n\nFor now, please describe the six-week period as a trial with the three volunteer branches. We can say that we will consider inviting more branches after reviewing feedback. We are not promising a citywide rollout yet, and the volunteers should not be described as the first wave of a schedule we have already settled.",
+      "final": "Project update: checkout form trial\n\nWe've been calling this a launch in conversation, but it is really a small trial. Three library branches volunteered to try the checkout form with their staff. They will use it for six weeks and tell us where it slows them down. That feedback is the reason for starting with a small group: we need to see how the form fits ordinary desk work before asking more branches to use it.\n\nAfter the trial, we will review what those staff report and decide what needs to change. We may find small wording issues, or we may find a step that takes longer than it should. We don't have those findings yet, so any announcement should not talk as if the form is ready everywhere.\n\nFor now, please describe the six-week period as a trial with the three volunteer branches. We can say that we will consider inviting more branches after reviewing feedback. We are not promising a citywide rollout yet, and the volunteers should not be described as the first wave of a schedule we have already settled.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1B",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-6ed3dbc844dcce1b07d630356a02b586",
+            "outputA": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "YES",
+              "editoriallyUseful": "YES",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "NO",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "EQUIVALENT",
+            "evidence": {
+              "outputA": "Calm internal framing retains three branches, six weeks, pending findings and the conditional wider invitation.",
+              "outputB": "Calm internal framing retains three branches, six weeks, pending findings and the conditional wider invitation.",
+              "pairwise": "Identical appropriate internal update."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-066",
+          "reviewerId": "R1A",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Three volunteer library branches trial checkout form six weeks.",
+            "Review staff feedback before changes or possible wider invitation; no findings yet.",
+            "No citywide rollout promised."
+          ],
+          "intentionalVoice": [
+            "Author’s caution about prematurely calling a trial a launch."
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Convert planning brief into internal update with trial status explicit."
+        },
+        {
+          "id": "V3-066",
+          "reviewerId": "R2B",
+          "expectedEditScope": "SUBSTANTIVE_RECONSTRUCTION",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "This is a six-week trial, not a broad launch",
+            "Three volunteer library branches will try the checkout form with staff",
+            "Trial gathers feedback about fit with ordinary desk work and slow steps",
+            "Findings are not yet known",
+            "After review, team decides what to change and may consider inviting more branches",
+            "Citywide rollout is not promised; no settled expansion schedule"
+          ],
+          "intentionalVoice": [
+            "Calm, cautious internal project update"
+          ],
+          "missingInformationPreventsFulfillment": false,
+          "notes": "Recast as a project update while preserving conditional wider rollout."
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Project” appears in the rewrite but not in your text.",
+              "candidate": "Project"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "Project update"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.9
+        },
+        "finalVerification": {
+          "status": "review",
+          "findings": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Project” appears in the rewrite but not in your text.",
+              "candidate": "Project"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "Project update"
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.9
+        },
+        "semanticReview": {
+          "verdict": "PASS",
+          "meaningPreserved": true,
+          "objectiveSatisfied": true,
+          "voicePreserved": true,
+          "unsupportedInformation": false,
+          "reason": "The candidate keeps every claim, the caution, and the dependence of wider rollout on feedback. The \"Project update\" heading only labels the requested format and adds no facts.",
+          "issue": null
+        },
+        "semanticCalls": [
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps every claim, the caution, and the dependence of wider rollout on feedback. The \"Project update\" heading only labels the requested format and adds no facts.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "Project update: checkout form trial\n\nWe've been calling this a launch in conversation, but it is really a small trial. Three library branches volunteered to try the checkout form with their staff. They will use it for six weeks and tell us where it slows them down. That feedback is the reason for starting with a small group: we need to see how the form fits ordinary desk work before asking more branches to use it.\n\nAfter the trial, we will review what those staff report and decide what needs to change. We may find small wording issues, or we may find a step that takes longer than it should. We don't have those findings yet, so any announcement should not talk as if the form is ready everywhere.\n\nFor now, please describe the six-week period as a trial with the three volunteer branches. We can say that we will consider inviting more branches after reviewing feedback. We are not promising a citywide rollout yet, and the volunteers should not be described as the first wave of a schedule we have already settled.",
+              "changes": [
+                "Added an internal project update title",
+                "Reframed the closing request as a project-update statement while keeping the caution",
+                "Kept trial scope, six weeks, three branches, and feedback-dependent rollout"
+              ]
+            },
+            "technicalFailure": null
+          },
+          {
+            "stage": "verifier",
+            "schemaName": "candidate-verifier",
+            "invoked": true,
+            "result": {
+              "verdict": "PASS",
+              "meaningPreserved": true,
+              "objectiveSatisfied": true,
+              "voicePreserved": true,
+              "unsupportedInformation": false,
+              "reason": "The candidate keeps every claim, the caution, and the dependence of wider rollout on feedback. The \"Project update\" heading only labels the requested format and adds no facts.",
+              "issue": null
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Project” appears in the rewrite but not in your text.",
+              "candidate": "Project"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "Project update"
+            }
+          ],
+          "final": [
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Project” appears in the rewrite but not in your text.",
+              "candidate": "Project"
+            },
+            {
+              "kind": "added_claim",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "Likely added content: 2 of 2 content words are not in the source.",
+              "candidate": "Project update"
+            }
+          ]
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "accepted",
+          "reason": null
+        },
+        "technicalFailures": []
+      }
+    },
+    {
+      "caseId": "V3-067",
+      "reasonCodes": [
+        "FALLBACK"
+      ],
+      "source": "For general requests that arrive by 4 p.m., we usually send an initial reply on the same business day. Requests that arrive after 4 p.m. are normally handled the next business day. Those are typical response times, not a guarantee that every issue can be investigated or resolved on that schedule. The time a request arrives matters, but so does what the request is about.\n\nAn initial reply means that we have received the request and can begin working out what it needs. It is an acknowledgement, not a promise that the underlying issue will be fixed that day. Please keep that distinction in the FAQ so people know what to expect when they see a quick response from us.\n\nIf the service is unavailable, use the outage form instead of the general request form. The outage form is the path the on-call team watches for service interruptions. Someone facing an outage should not have to read through the routine response-time details before finding that instruction.",
+      "objective": "Improve this service FAQ without making the response-time language more absolute. Make the outage path easy to spot.",
+      "raw": "If the service is unavailable, use the outage form instead of the general request form. The outage form is the path the on-call team watches for service interruptions.\n\nFor general requests that arrive by 4 p.m., we usually send an initial reply on the same business day. Requests that arrive after 4 p.m. are normally handled the next business day. Those are typical response times, not a guarantee that every issue can be investigated or resolved on that schedule. The time a request arrives matters, but so does what the request is about.\n\nAn initial reply means that we have received the request and can begin working out what it needs. It is an acknowledgement, not a promise that the underlying issue will be fixed that day. Please keep that distinction in the FAQ so people know what to expect when they see a quick response from us.",
+      "final": "For general requests that arrive by 4 p.m., we usually send an initial reply on the same business day. Requests that arrive after 4 p.m. are normally handled the next business day. Those are typical response times, not a guarantee that every issue can be investigated or resolved on that schedule. The time a request arrives matters, but so does what the request is about.\n\nAn initial reply means that we have received the request and can begin working out what it needs. It is an acknowledgement, not a promise that the underlying issue will be fixed that day. Please keep that distinction in the FAQ so people know what to expect when they see a quick response from us.\n\nIf the service is unavailable, use the outage form instead of the general request form. The outage form is the path the on-call team watches for service interruptions. Someone facing an outage should not have to read through the routine response-time details before finding that instruction.",
+      "primarySecondBlindLabels": [
+        {
+          "reviewerId": "O1A",
+          "phase": "primary",
+          "rawFinalOrientation": {
+            "outputA": "RAW",
+            "outputB": "FINAL"
+          },
+          "labels": {
+            "itemId": "blind-36926974e8cb2c05930728a2efd53124",
+            "outputA": {
+              "objectiveSatisfied": "PARTIAL",
+              "editoriallyUseful": "PARTIAL",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "outputB": {
+              "objectiveSatisfied": "NO",
+              "editoriallyUseful": "NO",
+              "meaningPreserved": "YES",
+              "unauthorizedSemanticChange": "NO",
+              "unsupportedInformation": "NO",
+              "voicePreserved": "YES",
+              "overedited": "NO",
+              "underedited": "YES",
+              "unnecessaryChangeToGoodSource": "N/A"
+            },
+            "pairwise": "OUTPUT_A_BETTER",
+            "evidence": {
+              "outputA": "Moves the outage-form instruction first and retains usually, normally and acknowledgement limits; still leaves Please keep that distinction in the FAQ as internal drafting language.",
+              "outputB": "Leaves outage instructions last, behind routine response times, and retains the editor-facing FAQ directions.",
+              "pairwise": "A makes the urgent outage path immediately visible while preserving response-time uncertainty, despite residual drafting prose."
+            }
+          }
+        }
+      ],
+      "prereviewLabels": [
+        {
+          "id": "V3-067",
+          "reviewerId": "R1B",
+          "expectedEditScope": "LOCAL_EDIT",
+          "authorizedFactualChanges": [],
+          "preservedFacts": [
+            "Usual same-business-day response for requests by 4 p.m.; later requests normally next business day; outage route."
+          ],
+          "intentionalVoice": [],
+          "missingInformationPreventsFulfillment": false,
+          "notes": ""
+        }
+      ],
+      "trace": {
+        "candidateVerification": {
+          "status": "rejected",
+          "findings": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Someone” no longer appears in the rewrite.",
+              "source": "Someone"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (20% of its content words survive).",
+              "source": "Someone facing an outage should not have to read through the routine response-time details before finding that instruction."
+            }
+          ],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 0.85
+        },
+        "finalVerification": {
+          "status": "preserved",
+          "findings": [],
+          "checks": [
+            "protected_spans",
+            "negation",
+            "claims",
+            "quotations",
+            "phrases",
+            "mechanics",
+            "length",
+            "lexical_coverage"
+          ],
+          "lexicalCoverage": 1
+        },
+        "semanticReview": null,
+        "semanticCalls": [],
+        "calls": [
+          {
+            "stage": "editor",
+            "schemaName": "frontier-editor",
+            "invoked": true,
+            "result": {
+              "text": "If the service is unavailable, use the outage form instead of the general request form. The outage form is the path the on-call team watches for service interruptions.\n\nFor general requests that arrive by 4 p.m., we usually send an initial reply on the same business day. Requests that arrive after 4 p.m. are normally handled the next business day. Those are typical response times, not a guarantee that every issue can be investigated or resolved on that schedule. The time a request arrives matters, but so does what the request is about.\n\nAn initial reply means that we have received the request and can begin working out what it needs. It is an acknowledgement, not a promise that the underlying issue will be fixed that day. Please keep that distinction in the FAQ so people know what to expect when they see a quick response from us.",
+              "changes": [
+                "Moved the outage instruction to the top so someone facing an outage sees it first.",
+                "Left the response-time wording and its qualifications unchanged.",
+                "Removed the sentence about not reading response-time details, since the new order makes it unnecessary."
+              ]
+            },
+            "technicalFailure": null
+          }
+        ],
+        "findings": {
+          "candidate": [
+            {
+              "kind": "altered_name",
+              "severity": "warning",
+              "origin": "deterministic",
+              "message": "“Someone” no longer appears in the rewrite.",
+              "source": "Someone"
+            },
+            {
+              "kind": "missing_claim",
+              "severity": "blocking",
+              "origin": "deterministic",
+              "message": "This claim no longer appears in the rewrite (20% of its content words survive).",
+              "source": "Someone facing an outage should not have to read through the routine response-time details before finding that instruction."
+            }
+          ],
+          "final": []
+        },
+        "repair": {
+          "requested": false,
+          "accepted": false,
+          "classification": null
+        },
+        "fallback": {
+          "outcome": "source-fallback",
+          "reason": "hard-meaning-failure"
+        },
+        "technicalFailures": []
+      }
+    }
+  ]
+}

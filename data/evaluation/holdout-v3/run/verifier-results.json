@@ -1,0 +1,960 @@
+[
+  {
+    "id": "V3-001",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate is identical to the source. The objective said to clarify only \"if needed\", and the text is already clear, warm and simple, so no change is acceptable.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-002",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate keeps the apology, the missed call yesterday, and the day getting away. \"It was one of those all-day things\" restates the source's \"all day\" idea, and the tone is casual.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-004",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only minor wording changes (\"useful\" to \"handy\", \"we will\" to \"we'll\"); all facts and the low-pressure tone are preserved, with no new information.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-005",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate turns the update into labeled bullets and keeps every detail: 18 packets, the back table, labels on Friday unless the printer acts up, and marking the year on the packet. The \"Location The\" warning is only a label followed by an existing sentence, not a new claim.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-006",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate is identical to the source. The note has no errors to fix and is already tidy, so leaving it unchanged keeps the meaning and playful voice, and adds nothing unsupported.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-007",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Light edit turns fragments into a flowing sentence; all facts (six people, flour on chairs, questionable shapes, zero regrets, thanks) preserved, tone intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-008",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The unconfirmed place and time come from the objective. The rest keeps the source's meaning: check updated details before going, and full info will be posted soon. The extra length comes from the requested addition.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-010",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "\"Volunteers can help\" became \"will help\", which turns a hedged offer into a firmer commitment. The \"We'll\" contraction is harmless. The added \"!\" makes the tone more welcoming.",
+      "issue": {
+        "span": {
+          "start": 125,
+          "end": 129,
+          "text": "will"
+        },
+        "constraint": "Restore the source's hedged modality: \"Volunteers can help you work out what's wrong\", not \"will help\"."
+      }
+    }
+  },
+  {
+    "id": "V3-011",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only minimal edits: added a comma, changed \"there was a delivery van parked\" to \"a delivery van was parked\", and \"what they use the building for\" to \"what the building is used for\". Meaning, tone, and quiet ending are intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-015",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only light smoothing: quotation marks around \"one more time\", \"stopped and waited\", and \"I've\". Facts, rhythm and the amused ending are intact, and protected phrases are kept.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-018",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate adds \"The headline is my main concern,\" which the source never says. It ranks the headline above the other points and makes a tentative impression sound firmer. The rest is faithful.",
+      "issue": {
+        "span": {
+          "start": 173,
+          "end": 205,
+          "text": "The headline is my main concern."
+        },
+        "constraint": "Delete this sentence. The source does not rank the headline as the main concern, and it frames all the points as tentative first impressions."
+      }
+    }
+  },
+  {
+    "id": "V3-020",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The only change is \"would appreciate that\" to \"would like to know that\". It is a light edit, and the facts, hedges and plain affectionate tone are unchanged.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-022",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate only changes single quotes to double quotes; the text is otherwise identical, so no flow or punctuation edit was made. The certainty warning is a false positive.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-024",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The only change trims \"that was not the point\" to \"but it was good\". The meaning is still implied, no facts changed, and the easygoing tone and all protected phrases are intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-025",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate is identical to the source. The objective allows polishing only if it improves readability, and the brief reply is already clear, so leaving it unchanged is acceptable.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-026",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The only change is a curly apostrophe becoming a straight one. The \"I'll\" warning is a false positive. The text is not any smoother, so the objective isn't met.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-027",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Time changed to 3 p.m. Tuesday as authorized. Note is split into scannable labeled lines. Draft-sharing and comment instructions are kept. The \"I'll\" flag is only an apostrophe style change.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-031",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The recap and attendance placeholder work. But \"We'll plan for that.\" adds a commitment the source never made; the source only says the group asked.",
+      "issue": {
+        "span": {
+          "start": 309,
+          "end": 329,
+          "text": "We'll plan for that."
+        },
+        "constraint": "Remove this sentence. The source says only that the group asked for more examples and a sample budget, and makes no commitment to provide them."
+      }
+    }
+  },
+  {
+    "id": "V3-032",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate trims \"going to try\" and \"you spot a step that\" while keeping the tentative hedge, the timing and the casual tone. It adds no new claims.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-033",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps the ordering hold, the draft-plan versus final-list distinction, and the timing. It only swaps \"hold off on\" for \"don't\" and \"helpful\" for \"useful\".",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-034",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Light edits only: \"the accessibility suggestions from last week\" became \"last week's accessibility suggestions\", and the semicolon became \", and\". The guide changes and the unchanged policy remain distinct, and the Friday deadline and final pass are intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-037",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Owners, deadlines, decision and open wording all preserved under clear headings. \"I'll\" is only an apostrophe change; the headings are the requested structure.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-042",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only change is \"captures\" to \"raises\"; the meaning, the new concern, the measured tone, and the offer to sketch the paragraph are all preserved.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-044",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only trivial edits: \"Thanks to\" became \"Thank you to\", and a comma was added before \"even if\". All facts, sequence, lamp feedback, conditional estimate, and uncertainty are intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-047",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Cause, the instruction to use the attached roster, and the handoff-check repair are all kept. \"That was my mistake\" and \"to keep this from happening again\" only restate the source's admission and the purpose of the check.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-048",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The inflated opening sentence became plain language with the same meaning. The other paragraphs are unchanged, and the evidence limits and the unresolved printout owner are kept.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-049",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": false,
+      "unsupportedInformation": false,
+      "reason": "The close-window behavior is preserved. 'The check will keep running' matches 'will continue'. But 'we' adds a first-person actor the source never names, which changes the voice.",
+      "issue": {
+        "span": {
+          "start": 27,
+          "end": 44,
+          "text": "we check the file"
+        },
+        "constraint": "Keep the source's agentless passive: use 'the file is checked' instead of introducing 'we'."
+      }
+    }
+  },
+  {
+    "id": "V3-050",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Light polish (\"another one\" to \"a new one\") keeps meaning, direct tone, and the request-new vs. reactivate-old distinction.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-051",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate moves \"exported\" so that the export happens on older printers. The source says exported colors may shift on older printers.",
+      "issue": {
+        "span": {
+          "start": 28,
+          "end": 77,
+          "text": "Colors may shift when exported on older printers."
+        },
+        "constraint": "Restore the source scope: exported colors may shift on older printers, e.g. \"Exported colors may shift on older printers.\""
+      }
+    }
+  },
+  {
+    "id": "V3-052",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate removes only the comma and the repeated \"they\". All claims and the permission boundary are unchanged. The protected phrase \"open the board\" is intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-053",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Minimal edits (\"the\"→\"a\", comma→colon) preserve all meaning and casual voice; the dotted-line clarification is slightly crisper.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-054",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "Earlier readings staying saved matches the source. But \"The only effect\" adds an exclusivity claim the source never makes.",
+      "issue": {
+        "span": {
+          "start": 139,
+          "end": 162,
+          "text": "The only effect is that"
+        },
+        "constraint": "Remove the unsupported claim that this is the only effect. Use a neutral contrast such as \"However,\" so the sentence reads \"However, the next reading may come up to one interval (five minutes) late.\""
+      }
+    }
+  },
+  {
+    "id": "V3-055",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps all the factual claims: Monday start, 6 p.m. instead of 5 p.m. on weekdays, and unchanged weekend hours. The dropped instruction was a directive to the editor, and the notice format fulfills it.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-057",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only change is splitting one sentence into two at the semicolon. All claims and the friendly tone are intact, and no content was added. The edit is a light polish.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-058",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "All claims, the conditional \"may be able to withdraw,\" and the request-number instruction are kept. The edit only adds \"though\" and splits the last sentence, which reads more naturally.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-060",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Meaning and the 3 a.m. warning are preserved and the steps are action-ordered, but the text is essentially the same length as the source, so the request for more concision is not met.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-062",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps the one-session constraint and the lack of advance warning. Its changes are light clarifications, such as \"only one\" and a direct instruction to check for a replaced session. It adds no unsupported claims.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-064",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate keeps all steps, order, safety and orientation details; only minor sentence restructuring for polish with no meaning change.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-065",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps all source claims, including the list vs. timeline distinction and the hedged import possibility. It adds only mild reassurance (\"They haven't\"), which the source already supports.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-066",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps every claim, the caution, and the dependence of wider rollout on feedback. The \"Project update\" heading only labels the requested format and adds no facts.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-069",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Headings, bullets and numbered steps separate the two red-light scenarios. All thresholds, the pull-direction safety instruction, the hedged roller claim and the privacy guidance are kept. The \"1\" is list numbering, and the \"because\" flag only reflects light rewording.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-070",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The \"because\" finding is a false positive, since the causal sentence is unchanged. The edits tighten the wording, and the final ring and per-device scope are still stated clearly. \"It does not sync\" follows from the source's \"local to each device.\"",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-073",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is shorter and clearer, and it keeps the core claim that no recorded objection is not evidence of agreement. Dropping 'should not be treated as' for 'is not' makes the sentence a flat statement, but that is a minor shift and fits a policy note.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-074",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate keeps all meaning and the direct voice; changes are minor (attached→on, added \"but\", contractions).",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-075",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only the closing date changed from 14 March to 21 March, as the objective authorizes. The late-application condition is unchanged and still clear.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-076",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps all facts and the limits of the evidence: 38 participants, two evening classes, six weeks, no comparison group, and unknown causation and generalizability. The wording is slightly plainer.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-077",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "\"would not pretend\" became \"won't pretend\", shifting the hedged conditional to a firm future commitment. The other contractions are harmless.",
+      "issue": {
+        "span": {
+          "start": 74,
+          "end": 79,
+          "text": "won't"
+        },
+        "constraint": "Restore the source's conditional modal: use \"would not\" (or \"wouldn't\") instead of \"won't\"."
+      }
+    }
+  },
+  {
+    "id": "V3-078",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate keeps the request, the workshop team's visibility and resource allocation. It is plainer and shorter, and still professional. The \"enable\" to \"helps\" shift is a minor softening and fits the less-corporate request.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-079",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate is identical to the source. The objective said to make only changes that improve clarity, and the text is already clear, so no change is acceptable.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-082",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source. The objective asked for new consultation dates and a submission deadline, and neither appears. No dates were supplied, so a local repair can't be grounded in the source.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-084",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Headings add structure; all requirements, conditions and exceptions are kept. \"Routine\" is only a heading label contrasting with urgent repairs, not a new claim.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-085",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only minimal wording changes (return to→go back to; I do not think those are→I don't think any of that is); meaning, tone and humour preserved. Light tidy is acceptable.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-090",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate changes only \"rather than\" to \"not\" and \"although\" to \"though\". Meaning, conditions and reasoning are intact. The edit is minimal and barely makes the text more concise.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-093",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "The candidate adds an unsupported benefit, that excluding items keeps the service simple to run. The objective forbids adding unsupported benefits. The rest preserves the source.",
+      "issue": {
+        "span": {
+          "start": 326,
+          "end": 365,
+          "text": ", which keeps the service simple to run"
+        },
+        "constraint": "Delete this clause. The source only says items needing specialist training or expensive servicing were deliberately excluded. It does not claim this keeps the service simple."
+      }
+    }
+  },
+  {
+    "id": "V3-094",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "All facts, figures, hedging and recommendations are preserved. The text is tighter through merged sentences and trimmed wording, and the protected phrases are intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-095",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "All obligations, conditions, and exceptions are preserved. The wording is plainer and more natural. \"Don't\" is only a contraction of the original caution, so it adds no claim.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-096",
+    "data": {
+      "verdict": "REJECT",
+      "meaningPreserved": true,
+      "objectiveSatisfied": false,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate only appends a placeholder note. It adds no dates and does not refresh the report for the next round, so the objective is not met. No dates were supplied, so the objective can't be satisfied from the source.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-097",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Split into shorter sentences and a separate paragraph; all facts, timing, and rain caveat preserved. \"instead\" is a harmless implied connective.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-098",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Only change is splitting a semicolon sentence into two; all claims and hedges are intact, and the voice stays warm and casual.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-099",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "All facts (Sunday at 9, bring gloves if you have them, only a few extra pairs) are preserved; the tone is friendlier and the text is slightly tighter.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-100",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The deadline now opens the text. The \"can / cannot influence\" sentence is reordered so the limit comes last. All facts, hedges and protected phrases are intact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-101",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The rewrite removes the promotional language, as the objective asks. It keeps the projects, time, place, snacks and conversation. The \"how things are going\" phrasing is a plain restatement of the source's progress and district theme, not a new claim.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-102",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps the contents, date, blue tape, each jar, and the second lid label for nuts. \"Write\" and \"a strip of\" are natural readings of labeling with tape. The extra length is acceptable.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-103",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The dropped clause \"where people keep not looking for it\" is the frustration the objective asked to remove. All practical instructions and the protected phrase are intact, and the tone stays plain.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-104",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate is identical to the source, which matches the objective of making no unnecessary edits while preserving voice and meaning.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-105",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate adds \"just one column\", which makes the single time choice explicit. It keeps the one-row instruction, the preference rule, and the reason for the count.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-112",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Candidate regroups open items and next steps with headings, keeping all claims, the Friday fallback, and the not-final status intact; no added facts.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-113",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "Structure and uncertainty are well kept, but the parenthetical \"(room and chair count)\" gives \"those two details\" a specific meaning the source never states.",
+      "issue": {
+        "span": {
+          "start": 1556,
+          "end": 1579,
+          "text": " (room and chair count)"
+        },
+        "constraint": "Delete the parenthetical. The source says only \"those two details\", which follows chair count and number of copies, and never names them as room and chair count."
+      }
+    }
+  },
+  {
+    "id": "V3-114",
+    "data": {
+      "verdict": "LOCAL_REPAIR",
+      "meaningPreserved": false,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": true,
+      "reason": "\"Is done\" claims completion, but the source only says the first phase was successfully activated (started). The missing-info flag is appropriate.",
+      "issue": {
+        "span": {
+          "start": 24,
+          "end": 31,
+          "text": "is done"
+        },
+        "constraint": "Replace with wording matching the source: the first phase was successfully launched/activated, not completed (e.g., \"launched successfully\")."
+      }
+    }
+  },
+  {
+    "id": "V3-115",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "All facts, quantities, Jo's role, Wednesday timing, $95 threshold and $120 budget are preserved. The $95 condition is unchanged. Added labels and light reordering make the items easier to tell apart.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-116",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "Source text is kept nearly verbatim and regrouped under headers with a welcoming opener. Route, 15 loaners, weather plan and child supervision are intact, and no new facts were added.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-118",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate is identical to the source, so all meaning, nuance, tone and voice are preserved, and nothing was made more dramatic or added.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-119",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "All figures, caveats, closure details and definitions are kept. Headings clarify the structure. The added sentence only restates the source's warnings against treating these counts as a headcount, so it adds no new fact.",
+      "issue": null
+    }
+  },
+  {
+    "id": "V3-120",
+    "data": {
+      "verdict": "PASS",
+      "meaningPreserved": true,
+      "objectiveSatisfied": true,
+      "voicePreserved": true,
+      "unsupportedInformation": false,
+      "reason": "The candidate keeps all dates, amounts, attributions, the pending inspection and the conditional reopening. It adds only scannable headings; \"Budget\" is a neutral label, not a new claim.",
+      "issue": null
+    }
+  }
+]
