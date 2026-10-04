@@ -1,0 +1,17 @@
+{
+  "files": {
+    "data/evaluation/post-v3-comparison/precall-acquisition/acquisition-state.incomplete.json": "d0b8b0490fab0fbf26f428f5e29bedf58e94aa6a499eb0af6587b23c446935b7",
+    "data/evaluation/post-v3-comparison/precall-acquisition/after.json": "4a5f4e0e74e89cd639414aae76a941e1c144fa0ae1a9a3a032a6307318f4b8b6",
+    "data/evaluation/post-v3-comparison/precall-acquisition/before.json": "4a5f4e0e74e89cd639414aae76a941e1c144fa0ae1a9a3a032a6307318f4b8b6",
+    "data/evaluation/post-v3-comparison/precall-acquisition/request-finish.json": "fe13d436f70098a14ed76e81b133e0ba86b9f8b648408922bae86f4b53033bf3",
+    "data/evaluation/post-v3-comparison/precall-acquisition/request-start.json": "d7c51b2320623cd86dc065b7166d4ba5b0dbeace4bcca57c88d5f9080dd12395",
+    "docs/POST-V3-PRECALL-ACQUISITION.md": "ed8f76a960355e7917da15b0955e96cf34a8796bc20347f6670f80c0b7192600",
+    "tools/eval/post-v3-bootstrap-acquire.py": "358d07f888454789f01f62f0b158cb3036d6d18fe966363a52f94292fb26497f",
+    "tools/eval/post-v3-bootstrap-acquire.test.py": "f708594f6224a6859740301c624bbe6b55c51415ac6f6714005da15285fc483e"
+  },
+  "ready": false,
+  "receivedRawBodyHashReproduction": "Raw response and full client_data receipt hashes are not reproducible from retained projection; saved files/profile/projection hashes reproduce",
+  "schemaVersion": 1,
+  "serialization": "SHA-256 of exact file bytes; sorted Python JSON hashes separately named, not RFC8785 JCS",
+  "status": "INCOMPLETE"
+}

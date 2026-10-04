@@ -1,0 +1,41 @@
+{
+  "attempts": 1,
+  "finishedAt": "2026-10-04T17:03:51.920967+00:00",
+  "httpStatus": 200,
+  "inferenceRequests": 0,
+  "requestProfileSortedPythonJsonSha256": "01fa15d3f0370d1834c81cdb9848ac5e3b2d5a019e73597d10e24c621cf0427b",
+  "response": {
+    "clientDataFieldNames": [
+      "cedar_basin",
+      "cedar_lagoon",
+      "heather_vale",
+      "per_turn_effort",
+      "silent_turn_reminder",
+      "tengu_luminous_whistle"
+    ],
+    "clientDataSortedPythonJsonSha256": "0f83f4b17a84133fc3a508247fb8938b8a27c57261add6d0943af79cce246bdc",
+    "note": "Sanitized contributing fields only; no auth/account identifiers retained",
+    "orgModelDefault": null,
+    "selectedClientData": {
+      "heather_vale": {
+        "claude-sonnet-5-5": 128000,
+        "claude-sonnet-5-5[1m]": 128000
+      },
+      "per_turn_effort": true
+    },
+    "topLevelFieldNames": [
+      "additional_model_costs",
+      "additional_model_options",
+      "auto_compact_windows",
+      "client_data",
+      "cwk_cfg_key",
+      "hold_notice",
+      "model_access",
+      "oauth_account",
+      "org_model_default"
+    ]
+  },
+  "responseBytes": 951,
+  "responseSha256": "11df45f96ce8145970199a32da08b177cdc12fe2f2dd1f530ba4266c9b37d5be",
+  "status": "CONFIGURATION_ACQUIRED"
+}

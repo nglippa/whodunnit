@@ -1,0 +1,48 @@
+{
+  "armsRun": 0,
+  "binarySha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+  "cacheSnapshotChanged": false,
+  "certificateComplete": false,
+  "decision": "B",
+  "effectiveEffort": null,
+  "effectiveMaximumOutput": null,
+  "effectiveTemperature": null,
+  "effectiveThinking": null,
+  "fullClientDataHashIndependentlyReproducible": false,
+  "fullClientDataRetention": "Unprojected values discarded; sorted-Python-JSON hash receipt only",
+  "generatedTokens": 0,
+  "httpStatus": 200,
+  "inferenceRequests": 0,
+  "inferenceResponses": 0,
+  "locallyResolvedModel": null,
+  "metadataRequests": 1,
+  "method": "One source-derived metadata transport replica; no genuine native client capture",
+  "networkProbes": {
+    "childSocketCreation": "Succeeded; inconclusive for network transmission",
+    "concreteReviewSequence": "Initial synthetic probes preceded concrete-plan review; no Claude/credential/model exposure",
+    "followupScript": "Never executed; removed",
+    "hostDirectLoopbackConnect": "EPERM under deny network*",
+    "hostUserDirectoryWrite": "EPERM under file-write deny",
+    "nestedSandboxApply": "Operation not permitted"
+  },
+  "observedBootstrapProjection": {
+    "heather_vale": {
+      "claude-sonnet-5-5": 128000,
+      "claude-sonnet-5-5[1m]": 128000
+    },
+    "per_turn_effort": true
+  },
+  "observedOrgModelDefault": null,
+  "payloadCaptured": false,
+  "payloadSha256": null,
+  "rawBodyHashIndependentlyReproducible": false,
+  "rawBodyRetention": "Discarded; secret/account minimization. Receipt-only hash.",
+  "ready": false,
+  "receivedRawBodySha256": "11df45f96ce8145970199a32da08b177cdc12fe2f2dd1f530ba4266c9b37d5be",
+  "remainingBlocker": "Earliest Part7 gate: exact future effort input and active precedence remain unproved; secondary native capture safety/fidelity boundary unreached",
+  "requestedAlias": "sonnet",
+  "safetyReview": "Metadata operation PASS; native capture gate NOT PASSED",
+  "schemaVersion": 1,
+  "stateReview": "Limited retained-evidence reproduction PASS; COMPLETE settings NOT ESTABLISHED",
+  "status": "INCOMPLETE"
+}

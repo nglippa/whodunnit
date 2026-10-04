@@ -1,0 +1,35 @@
+{
+  "requestProfile": {
+    "auth": "claude.ai OAuth Bearer in memory only",
+    "binarySha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+    "caseDataInRequest": false,
+    "fidelity": {
+      "Pft": "Empty: custom-header selectors absent; SDK entrypoint does not select desktop header",
+      "httpLibrary": "Python stdlib HTTPS replaces Axios; library-generated wire headers may differ",
+      "queryAndOAuthHeaders": "Source-derived rt/ot/fp/pn",
+      "responseParser": "Narrow type-validated projection, not full original Q schema"
+    },
+    "headersNonsecret": {
+      "Content-Type": "application/json",
+      "User-Agent": "claude-code/2.1.288",
+      "anthropic-beta": "oauth-2025-04-20"
+    },
+    "host": "api.anthropic.com",
+    "kind": "faithful rt/ot transport replica; not genuine whole-client capture",
+    "method": "GET",
+    "path": "/api/claude_cli/bootstrap?entrypoint=sdk-cli&model=claude-sonnet-5-5",
+    "redirects": 0,
+    "responseSizeCeilingBytes": 1048576,
+    "retries": 0,
+    "sourceAnchorHashes": {
+      "179188225": "4fa9000900fa982a31837e18b9eb01cbb3d2108c1cd2fb5fcf935f7405981ffc",
+      "181182522": "fae694be1e9fcbd729b164dd704278dabd5d482825b021fe1831dc13941c9434",
+      "185934221": "c2359d7049df8a87f1e203f9f2b99705f7ab15acdc5b6a3d521efbce4ee1fd11",
+      "194871409": "1ba6bd96f21de4cda077855dbceaaec56358b28376f1e6acdbae7f11a34c92bf",
+      "194872180": "4aa26fea11474a13f1d40e7baa8de1e8c374fc7af37627720c4fe862c3c3cb3c"
+    },
+    "timeoutSeconds": 5,
+    "toolSha256": "358d07f888454789f01f62f0b158cb3036d6d18fe966363a52f94292fb26497f"
+  },
+  "startedAt": "2026-10-04T17:03:51.622644+00:00"
+}

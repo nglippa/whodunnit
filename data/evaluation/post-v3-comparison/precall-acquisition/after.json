@@ -1,0 +1,236 @@
+{
+  "binary": {
+    "path": "/Users/nicholaslippa/.local/share/claude/versions/2.1.288",
+    "sha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+    "version": "2.1.288"
+  },
+  "executionPermitted": false,
+  "invocation": {
+    "argvTemplate": [
+      "--print",
+      "--model",
+      "sonnet",
+      "--effort",
+      "<proof.effort: unresolved>",
+      "--system-prompt",
+      "<stage system bytes>",
+      "--json-schema",
+      "<stage schema JSON>",
+      "--output-format",
+      "json",
+      "--no-session-persistence",
+      "--tools",
+      "",
+      "--safe-mode",
+      "--setting-sources",
+      "",
+      "--strict-mcp-config",
+      "--mcp-config",
+      "{\"mcpServers\":{}}",
+      "--disable-slash-commands"
+    ],
+    "cwdPolicy": "fresh empty mkdtemp(post-v3-review-) under host tmpdir",
+    "environmentPolicy": "inherit host environment then registered denylist scrub; not allowlist",
+    "removedEnvironmentKeyNames": [],
+    "retainedRelevantSelectors": {
+      "CLAUDE_CODE_MAX_RETRIES": {
+        "present": true,
+        "valueSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+      },
+      "HOME": {
+        "present": true,
+        "valueSha256": "1684b5738a523703f16ddb53a8b3d6741e87336f85fccd0cfb7058d378223dcd"
+      },
+      "MAX_STRUCTURED_OUTPUT_RETRIES": {
+        "present": true,
+        "valueSha256": "5feceb66ffc86f38d952786c6d696c79c2dbc239dd4e91b46729d73a27fb57e9"
+      }
+    },
+    "retries": 0,
+    "timeoutMs": 20000
+  },
+  "localState": {
+    "accountScopeCatalogMatch": true,
+    "applicableSdkClientDataSlotMatch": true,
+    "bootstrapWaitCachedFlag": true,
+    "bootstrapWaitCachedFlagPresent": true,
+    "catalogFetchedAt": 1791132784817,
+    "catalogSha256": "78217e1f3e944797bebac390b9e8f75c9f71c6717cb193b0054e13070afbe9f3",
+    "catalogStaleAt": 1791136249922,
+    "catalogSurface": "cc",
+    "catalogVersion": 2,
+    "configurationFiles": [
+      {
+        "note": "Presence/hash only; no credential or configuration values copied",
+        "path": "/Users/nicholaslippa/.claude/settings.json",
+        "present": true,
+        "sha256": "c7188a025c3a3c26fdc41ac8af4bbff31f45f2ded007deb9c2cce01f771ecf28"
+      },
+      {
+        "note": "Presence/hash only; no credential or configuration values copied",
+        "path": "/Users/nicholaslippa/.claude/settings.local.json",
+        "present": true,
+        "sha256": "8cfb293b076b47994e8ebd6c841e4cf4e963fbb828aa32937efa252cfc06f843"
+      },
+      {
+        "note": "Presence/hash only; no credential or configuration values copied",
+        "path": "/Library/Application Support/ClaudeCode/managed-settings.json",
+        "present": false,
+        "sha256": null
+      }
+    ],
+    "featureCacheTimestamp": 1791123756036,
+    "globalConfigPath": "/Users/nicholaslippa/.claude.json",
+    "globalConfigSha256": "9335d9be1f5c5331ba0c636bf4c9b032d502bd02a7411793f7e6a377935a818a",
+    "orgModelDefaultCache": null,
+    "sdkClientDataSha256": "0f83f4b17a84133fc3a508247fb8938b8a27c57261add6d0943af79cce246bdc",
+    "sdkClientDataSlotAt": 1791094846536,
+    "sdkPerTurnEffort": true,
+    "sdkSonnetOutputLimit": 128000,
+    "selectedCachedFeatures": {
+      "tengu_delegated_quail": {
+        "present": true,
+        "value": {
+          "mode": "shadow",
+          "served": "primary"
+        }
+      },
+      "tengu_witty_wand": {
+        "present": false,
+        "value": null
+      }
+    },
+    "sonnetRow": {
+      "capabilities": {
+        "compass": true,
+        "gsuite_tools": true,
+        "mm_images": true,
+        "mm_pdf": true,
+        "web_search": true
+      },
+      "description": "Most efficient for simpler tasks",
+      "id": "claude-sonnet-5-5",
+      "name": "Sonnet 5.5",
+      "quick_select": true,
+      "section": "main",
+      "short_name": "Sonnet",
+      "thinking": {
+        "description": "Higher effort means more thorough responses, but takes longer and uses your limits faster.",
+        "effort_options": [
+          {
+            "id": "low",
+            "name": "Low"
+          },
+          {
+            "badge": {
+              "message": "Recommended",
+              "variant": "neutral"
+            },
+            "id": "medium",
+            "name": "Medium"
+          },
+          {
+            "id": "high",
+            "name": "High"
+          },
+          {
+            "id": "xhigh",
+            "name": "Extra"
+          },
+          {
+            "id": "max",
+            "name": "Max",
+            "tooltip": {
+              "content": "May use excessive tokens resulting in long response times and may hit token limits. Use sparingly for the hardest tasks."
+            }
+          }
+        ],
+        "type": "effort"
+      }
+    },
+    "sonnetThinkingState": {
+      "id": "claude-sonnet-5-5",
+      "thinking": {
+        "effort": "medium",
+        "type": "effort"
+      }
+    },
+    "startupNapCachedFlag": null,
+    "startupNapCachedFlagPresent": false,
+    "startupPrefetchedAt": null
+  },
+  "method": "Static byte reads only; genuine CLI request construction not executed",
+  "proof": {
+    "effectiveEffort": null,
+    "inferenceNetworkCalls": 0,
+    "locallyResolvedModel": null,
+    "maximumOutputTokens": null,
+    "networkSafety": "No child processes, CLI imports, socket/fetch libraries or network operations",
+    "otherNetworkCalls": 0,
+    "payloadCaptured": false,
+    "payloadSha256": null,
+    "requestedAlias": "sonnet",
+    "temperature": null
+  },
+  "sourceAnchors": {
+    "account_effort_resolver": {
+      "binaryByteOffset": 182842613,
+      "following2048BytesSha256": "7c220bab04da75e7f503c41500f97019634c820e41efb9d3d8f86b6a63b3e955"
+    },
+    "active_catalog_lookup": {
+      "binaryByteOffset": 181735611,
+      "following2048BytesSha256": "59e3fba1c9efe1379072f2a7fddc8d29323d35e0a324c8bf69355c5911b0e13b"
+    },
+    "background_bootstrap_registration": {
+      "binaryByteOffset": 194842170,
+      "following2048BytesSha256": "d7bfffe92336c781a27a1a318663443932e60d662829a4a747188254f395ee8e"
+    },
+    "bootstrap_cache_update": {
+      "binaryByteOffset": 194874602,
+      "following2048BytesSha256": "9a9d584d4d4bc3697ecac97a66622a88413fd63d055599a60f52e3c410897b66"
+    },
+    "bootstrap_transport": {
+      "binaryByteOffset": 194872180,
+      "following2048BytesSha256": "4aa26fea11474a13f1d40e7baa8de1e8c374fc7af37627720c4fe862c3c3cb3c"
+    },
+    "effort_precedence": {
+      "binaryByteOffset": 182850321,
+      "following2048BytesSha256": "72702a05903afc46e4be6a4ed6d097d7034a4e7ab1445cb5e666babc1fc41fb1"
+    },
+    "feature_value_precedence": {
+      "binaryByteOffset": 181579458,
+      "following2048BytesSha256": "0c1a969370baed3906776641f5967010b247f55ae265e20c6b0a1a53f029aaab"
+    },
+    "maximum_output_resolver": {
+      "binaryByteOffset": 181799599,
+      "following2048BytesSha256": "d05e3c826de1bffa38d713ca46cc80e20dc0ac2a26f46662ea5917757bae9c2f"
+    },
+    "model_payload_resolver": {
+      "binaryByteOffset": 181793707,
+      "following2048BytesSha256": "042a6273c0b742da9036368b8241d58dd7de4e575558b7eb79b28a35184bf30b"
+    },
+    "served_catalog_cache_loader": {
+      "binaryByteOffset": 195406532,
+      "following2048BytesSha256": "705909f23a131c4fbe55156141498da6b64fc721fca6e33e8fd09a7bc5c8e245"
+    },
+    "served_catalog_initialization": {
+      "binaryByteOffset": 195739590,
+      "following2048BytesSha256": "67dbf2881128783e3ccf495af170c459e3059eb9548d9a61b48f47f0cdf83b66"
+    },
+    "warm_cache_growthbook_kick": {
+      "binaryByteOffset": 196216966,
+      "following2048BytesSha256": "4dc8053940bfbe5acc58a5dd7ae508f4bc212b480999b3c6e489ad9d6d631a9e"
+    }
+  },
+  "sourceHashes": {
+    "data/evaluation/post-v3-comparison/operational-manifest.json": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+    "tools/eval/post-v3-live-profiles.ts": "b4c22e32e54c1f78002499f99bb34b031819c2a2ec2576eab8a2fcc44be4c77c",
+    "tools/eval/post-v3-live-transport.ts": "4783f8f31d0944ac01a9bdf3786d0054afa29c09ddbfad5dce5e874b8ac18934"
+  },
+  "status": "INCOMPLETE",
+  "unresolved": [
+    "Concrete proof.effort input is absent from the future invocation profile",
+    "Cached branches are not an independently captured genuine active request payload",
+    "Normal startup launches asynchronous bootstrap metadata unless bare/nap gate excludes it; its remote client_data/org_model_default response may replace locally cached effective controls before request construction. No remote fetch or network-denied fallback was substituted."
+  ]
+}
