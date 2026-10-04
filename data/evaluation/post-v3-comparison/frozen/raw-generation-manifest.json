@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_PRE_GENERATION",
+  "preparedUtc": "2026-10-04T05:38:00Z",
+  "purpose": "Additive RAW editor transport freeze preparation. This manifest authorizes no model call or spend.",
+  "anchors": {
+    "preregistrationPath": "docs/POST-V3-ARCHITECTURE-PREREGISTRATION.md",
+    "operationalManifest": {
+      "path": "data/evaluation/post-v3-comparison/operational-manifest.json",
+      "exactFileBytesSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e"
+    },
+    "implementationFreeze": {
+      "path": "data/evaluation/post-v3-comparison/frozen/implementations.json",
+      "exactFileBytesSha256": "e6f3b8e0c38f3fb1bd65aba7a898ebc89f0454120aa96ef30d03ce24d18dadff"
+    },
+    "implementationIntegrity": {
+      "path": "data/evaluation/post-v3-comparison/frozen/implementations.integrity.json",
+      "exactFileBytesSha256": "43b46d8a3b9747c37db1a5757c78b3e647cb6142b70ee654977f92a7831e5849"
+    },
+    "corpusMetadata": {
+      "path": "data/evaluation/post-v3-comparison/frozen/corpus-manifest.json",
+      "exactFileBytesSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "inspectionBoundary": "Hash file bytes only. Do not open cases, objectives, prelabels, or case-bearing audits before implementation and RAW transport freeze."
+    }
+  },
+  "files": {
+    "docs/POST-V3-RAW-GENERATION-CONTRACT.md": "7eb89af356b0355840abe418c12e05b406a3b71898378f2b799eee37bf4c2dff",
+    "data/evaluation/post-v3-comparison/raw-editor-prompt-v1.txt": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+    "data/evaluation/post-v3-comparison/raw-response.schema.json": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+    "tools/eval/post-v3-raw-adapter.ts": "76729a56b1a1ff8bf0bdb95d1f3addf58d5e645bdeb7f2b593ef657668d07a86",
+    "tools/eval/post-v3-raw-adapter.test.ts": "507c41e67e819cb819ba4c83edbda39f21d87dd6fc805030b6405d4a97c13aea",
+    "tools/eval/post-v3-raw-vitest.config.ts": "57f30ddb0143829dbfd5609dd8938a9ac279e41825dc63b5e1a335c0108c2928",
+    "tools/eval/post-v3-raw-contract-verify.ts": "c7c50d2594f63f30b4b82e14b86cf47c6ad65ee577a86fd9b336b7ed1565ae2f"
+  },
+  "requestContract": {
+    "caseCount": 40,
+    "inputs": ["source", "objective"],
+    "payload": "UTF-8 JSON.stringify({source,objective}) with exactly these two string fields; no case ID, label, stratum, hypothesis, plan, or downstream findings",
+    "systemPrompt": "Exact UTF-8 LF bytes of raw-editor-prompt-v1.txt, including final newline",
+    "oneSharedRawPerCase": true
+  },
+  "responseContract": {
+    "schemaPath": "data/evaluation/post-v3-comparison/raw-response.schema.json",
+    "shape": "One strict JSON object with only nonempty text (maxLength 60000). No changes array or explanation.",
+    "parser": "Strict Zod runtime parse after Claude CLI structured-output envelope; no schema widening",
+    "downstreamShape": "Only after RAW freeze, adapt saved text to existing V15 candidate boundary as {text:raw,changes:[]}; never invoke another editor"
+  },
+  "callerAndSettings": {
+    "cli": "Claude Code CLI",
+    "cliVersion": "2.1.288",
+    "requestedModel": "claude-sonnet-5-5",
+    "effort": "medium",
+    "invocationFlags": [
+      "--print",
+      "--system-prompt", "<exact raw-editor-prompt-v1.txt bytes>",
+      "--json-schema", "<raw-response.schema.json without $schema, compact JSON>",
+      "--output-format", "json",
+      "--no-session-persistence",
+      "--tools", "",
+      "--model", "claude-sonnet-5-5",
+      "--effort", "medium",
+      "--safe-mode",
+      "--setting-sources", "",
+      "--strict-mcp-config",
+      "--mcp-config", "{\"mcpServers\":{}}",
+      "--disable-slash-commands"
+    ],
+    "structuredOutput": "--json-schema and --output-format json",
+    "tools": "--tools empty; --safe-mode; --strict-mcp-config with empty MCP servers; --disable-slash-commands",
+    "settingsSources": "--setting-sources empty",
+    "sessionPersistence": "--no-session-persistence",
+    "environment": "Strip API keys, alternate providers, auth token, fallback environment; MAX_STRUCTURED_OUTPUT_RETRIES=0; CLAUDE_CODE_MAX_RETRIES=0",
+    "environmentOverrides": {
+      "removeExact": ["ANTHROPIC_API_KEY", "ANTHROPIC_BASE_URL", "ANTHROPIC_AUTH_TOKEN", "CLAUDE_CODE_USE_BEDROCK", "CLAUDE_CODE_USE_VERTEX", "CLAUDE_CODE_USE_FOUNDRY"],
+      "removeRegex": "^(?:ANTHROPIC|CLAUDE)_.*FALLBACK",
+      "set": {"MAX_STRUCTURED_OUTPUT_RETRIES": "0", "CLAUDE_CODE_MAX_RETRIES": "0"}
+    },
+    "settingsClassification": {
+      "explicit": ["model=claude-sonnet-5-5", "effort=medium", "structured-output=json-schema", "output-format=json", "tools=empty", "settings-sources=empty", "safe-mode=on", "session-persistence=off", "MCP=empty strict", "slash-commands=off", "structured-output-retries=0", "CLI-retries=0"],
+      "cliExposedEffective": ["CLI version 2.1.288; recheck immediately before run"],
+      "providerCliDefaultNotObservable": ["temperature", "top-p", "top-k", "max-output-tokens", "other provider-controlled sampling defaults"],
+      "runtimeReported": ["resolved model", "modelUsage model IDs", "usage if available", "incremental spend evidence if available"]
+    },
+    "unexposedDefaults": "Record temperature, top-p, top-k, max output tokens and any other unexposed provider/CLI defaults as PROVIDER/CLI DEFAULT—NOT OBSERVABLE; reproducibility limitation, not pre-call hard stop under additive amendment",
+    "resolvedModelPolicy": "First actual corpus response must report exactly claude-sonnet-5-5 and no fallback; mismatch or absent identity is a recorded technical failure and hard stop without retry"
+  },
+  "attemptPolicy": {
+    "maximumCallsPerCase": 1,
+    "maximumCallsTotal": 40,
+    "timeoutMs": 120000,
+    "termination": "SIGTERM at timeout; SIGKILL after 2000 ms if needed",
+    "editorialRetries": 0,
+    "replacementCandidates": 0,
+    "regeneration": 0,
+    "requiredRecord": ["started", "requestSha256", "promptSha256", "schemaSha256", "callerVersion", "requestedModel", "resolvedModelOrNull", "settings", "startedUtc", "endedUtc", "responseSha256OrNull", "status", "usageAndIncrementalSpend"],
+    "failure": "Preserve attempt and technical failure. No substitute, silent fallback, exclusion, or second candidate."
+  },
+  "outputPaths": [
+    "data/evaluation/post-v3-comparison/frozen/raw.json",
+    "data/evaluation/post-v3-comparison/run/"
+  ],
+  "authorizationState": {
+    "generationAuthorized": false,
+    "observedAtFreeze": {
+      "normalSandbox": "loggedIn:false; authMethod:none",
+      "unsandboxedReadOnly": "loggedIn:true; authMethod:claude.ai"
+    },
+    "zeroIncrementalCostBasis": "User attestation that Usage credits are off and a plan-included call costs $0, plus adapter credential/provider/fallback environment scrub. CLI auth status does not verify billing.",
+    "accountBackedRunContextRequired": true,
+    "freshAuthAndSpendPolicyPreflightRequired": true,
+    "runAuthorization": "Required separately after successful preflight and all freezes; this manifest does not grant it",
+    "rawGenerated": false
+  },
+  "integrity": {
+    "hashAlgorithm": "sha256",
+    "fileHashes": "Exact file bytes. The final sidecar pins the exact finalized manifest bytes.",
+    "preflight": "Hash only corpus metadata file; verify implementationFiles and sharedV15DependencyHashes listed in frozen implementations.json; verify every files entry and sidecar before any call"
+  }
+}
