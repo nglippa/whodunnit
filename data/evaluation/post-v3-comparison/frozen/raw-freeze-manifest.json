@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "status": "FROZEN_RAW_COMPLETE",
+  "rawProtocol": "post-v3-raw-generation-v1",
+  "experimentId": "post-v3-architecture-comparison-40",
+  "generationManifestSha256": "f3a24c07e9a871a2e9ec69e4cfdf2e84a384ec39363c378b3a6372ec8e85808b",
+  "corpusManifestSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+  "casesArtifactSha256": "863fe43c0ea68b32d661023e6ca6b14e0dda55c1183562a393183063bc1e25f2",
+  "rawArtifactPath": "data/evaluation/post-v3-comparison/frozen/raw.json",
+  "rawArtifactSha256": "fadf3b99c0d73e1ff3bf1618fb7a4d9e5ea4e3ad10d05d2cb933705a4aabc104",
+  "attemptsPath": "data/evaluation/post-v3-comparison/raw-attempts/attempts.jsonl",
+  "attemptsSha256": "e82cac9f9bfa0a19fd9052ff3584833552e7f0f9dbaa8e4e3130b28c7393f7d1",
+  "rawSuccessesPath": "data/evaluation/post-v3-comparison/raw-attempts/raw-successes.jsonl",
+  "rawSuccessesSha256": "69c6a08d80a580b2344b4092ff0750517a3c7951d113f74bfe024d36081e4220",
+  "preCallAuthorizationPath": "data/evaluation/post-v3-comparison/raw-attempts/pre-call-authorization.json",
+  "preCallAuthorizationSha256": "236d4eb86d0349738f638eb8e956f65219b398ea27ce7fe0ffe99dc2637ef221",
+  "runnerSha256": "4bc5b3cad0d27a848703fde1c6abbcf5155251aab362b1e8cc6ac2e281c18a3b",
+  "verifierSha256": "b0b28642b7a05dcc6e7b0024f1d25f4706806ee79380b36ec0f8db82d262e8c8",
+  "adapterSha256": "76729a56b1a1ff8bf0bdb95d1f3addf58d5e645bdeb7f2b593ef657668d07a86",
+  "model": "claude-sonnet-5-5",
+  "effort": "medium",
+  "cliVersion": "2.1.288",
+  "authClass": "claude.ai",
+  "caseCount": 40,
+  "successful": 36,
+  "technicalFailures": 4,
+  "completedUtc": "2026-10-04T06:23:52.570Z",
+  "failedCaseIdsAndCategories": [
+    {
+      "caseId": "PVC-012",
+      "category": "cli-failure"
+    },
+    {
+      "caseId": "PVC-014",
+      "category": "cli-failure"
+    },
+    {
+      "caseId": "PVC-015",
+      "category": "cli-failure"
+    },
+    {
+      "caseId": "PVC-028",
+      "category": "cli-failure"
+    }
+  ],
+  "incrementalSpend": {
+    "reportedByCaller": "not available in CLI response",
+    "costClaim": "USD 0 based on the user-attested plan-included Usage configuration; not independently verified by CLI auth status"
+  }
+}

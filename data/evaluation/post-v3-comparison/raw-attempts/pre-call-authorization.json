@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "status": "AUTHORIZED_PRECALL",
+  "authorizedBy": "explicit --run-authorized switch after user authorization",
+  "createdUtc": "2026-10-04T06:20:45.855Z",
+  "manifestSha256": "f3a24c07e9a871a2e9ec69e4cfdf2e84a384ec39363c378b3a6372ec8e85808b",
+  "cliVersion": "2.1.288",
+  "cliVersionOutput": "2.1.288 (Claude Code)",
+  "authClass": "claude.ai",
+  "requestedModel": "claude-sonnet-5-5",
+  "effort": "medium",
+  "timeoutMs": 120000,
+  "adapterSha256": "76729a56b1a1ff8bf0bdb95d1f3addf58d5e645bdeb7f2b593ef657668d07a86",
+  "runnerSha256": "4bc5b3cad0d27a848703fde1c6abbcf5155251aab362b1e8cc6ac2e281c18a3b",
+  "verifierSha256": "b0b28642b7a05dcc6e7b0024f1d25f4706806ee79380b36ec0f8db82d262e8c8",
+  "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+  "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e"
+}

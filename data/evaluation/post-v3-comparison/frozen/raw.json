@@ -1,0 +1,1881 @@
+{
+  "protocol": "post-v3-raw-generation-v1",
+  "status": "complete-with-technical-failures",
+  "experimentId": "post-v3-architecture-comparison-40",
+  "manifestSha256": "f3a24c07e9a871a2e9ec69e4cfdf2e84a384ec39363c378b3a6372ec8e85808b",
+  "corpusManifestSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+  "casesArtifactSha256": "863fe43c0ea68b32d661023e6ca6b14e0dda55c1183562a393183063bc1e25f2",
+  "anchors": {
+    "preregistrationPath": "docs/POST-V3-ARCHITECTURE-PREREGISTRATION.md",
+    "operationalManifest": {
+      "path": "data/evaluation/post-v3-comparison/operational-manifest.json",
+      "exactFileBytesSha256": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e"
+    },
+    "implementationFreeze": {
+      "path": "data/evaluation/post-v3-comparison/frozen/implementations.json",
+      "exactFileBytesSha256": "e6f3b8e0c38f3fb1bd65aba7a898ebc89f0454120aa96ef30d03ce24d18dadff"
+    },
+    "implementationIntegrity": {
+      "path": "data/evaluation/post-v3-comparison/frozen/implementations.integrity.json",
+      "exactFileBytesSha256": "43b46d8a3b9747c37db1a5757c78b3e647cb6142b70ee654977f92a7831e5849"
+    },
+    "corpusMetadata": {
+      "path": "data/evaluation/post-v3-comparison/frozen/corpus-manifest.json",
+      "exactFileBytesSha256": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+      "inspectionBoundary": "Hash file bytes only. Do not open cases, objectives, prelabels, or case-bearing audits before implementation and RAW transport freeze."
+    }
+  },
+  "expectedCaseIds": [
+    "PVC-001",
+    "PVC-002",
+    "PVC-003",
+    "PVC-004",
+    "PVC-005",
+    "PVC-006",
+    "PVC-007",
+    "PVC-008",
+    "PVC-009",
+    "PVC-010",
+    "PVC-011",
+    "PVC-012",
+    "PVC-013",
+    "PVC-014",
+    "PVC-015",
+    "PVC-016",
+    "PVC-017",
+    "PVC-018",
+    "PVC-019",
+    "PVC-020",
+    "PVC-021",
+    "PVC-022",
+    "PVC-023",
+    "PVC-024",
+    "PVC-025",
+    "PVC-026",
+    "PVC-027",
+    "PVC-028",
+    "PVC-029",
+    "PVC-030",
+    "PVC-031",
+    "PVC-032",
+    "PVC-033",
+    "PVC-034",
+    "PVC-035",
+    "PVC-036",
+    "PVC-037",
+    "PVC-038",
+    "PVC-039",
+    "PVC-040"
+  ],
+  "commits": {
+    "rawGenerationContract": "7acb2bb5246400e8d792d13979e204f4cb9b765e",
+    "frozenCorpus": "0bace0834bf5f85b4bc9ae3d29311badcd2adacc",
+    "candidateImplementation": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "candidateManifest": "19ccd7569403058d6afd7086ad3bf8a0ce836b25"
+  },
+  "candidateArtifacts": {
+    "implementationCommit": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "arms": {
+      "A": "387ef7bb2fda95eae5eb2cc94733130106701ab9c042e7cae633175a2575db5b",
+      "B": "63279cbf1fc4e0a6bda2b5b492eaf07e47acea0bd666a1272497d9f4d7b0e2a8",
+      "C": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19",
+      "D": "ad057ae3363896b38353794b0cad01f8160641bd4ead9f2c5ffb12a9884dabf1"
+    }
+  },
+  "runnerSha256": "4bc5b3cad0d27a848703fde1c6abbcf5155251aab362b1e8cc6ac2e281c18a3b",
+  "verifierSha256": "b0b28642b7a05dcc6e7b0024f1d25f4706806ee79380b36ec0f8db82d262e8c8",
+  "adapterSha256": "76729a56b1a1ff8bf0bdb95d1f3addf58d5e645bdeb7f2b593ef657668d07a86",
+  "preCallAuthorization": {
+    "path": "data/evaluation/post-v3-comparison/raw-attempts/pre-call-authorization.json",
+    "sha256": "236d4eb86d0349738f638eb8e956f65219b398ea27ce7fe0ffe99dc2637ef221"
+  },
+  "generatedUtc": "2026-10-04T06:23:52.534Z",
+  "cliVersion": "2.1.288",
+  "authClass": "claude.ai",
+  "requestedModel": "claude-sonnet-5-5",
+  "effort": "medium",
+  "caseCount": 40,
+  "callCount": 40,
+  "attemptsPerCase": 1,
+  "retries": 0,
+  "successful": 36,
+  "technicalFailures": 4,
+  "failedCaseIdsAndCategories": [
+    {
+      "caseId": "PVC-012",
+      "category": "cli-failure"
+    },
+    {
+      "caseId": "PVC-014",
+      "category": "cli-failure"
+    },
+    {
+      "caseId": "PVC-015",
+      "category": "cli-failure"
+    },
+    {
+      "caseId": "PVC-028",
+      "category": "cli-failure"
+    }
+  ],
+  "rawTextSha256ByCase": {
+    "PVC-001": "522b12cfc84cada53f6b85845b9c08e3530c71b80d1ed0988c353894c71e408c",
+    "PVC-002": "e92acd0a491f221898adde07efccaed75302025065b18206ba513a67958fa5ef",
+    "PVC-003": "3db8ac99117dda3ef17ddb59c9a4ef3afef3a0004bd9fe691f309eff7910d50e",
+    "PVC-004": "8a90b3f7bb78cde83b4183ea9ff8e3937f6c9b8c65b353866f9e60f23e8f6ed6",
+    "PVC-005": "c3a03dcd36ef2fe6de223b26668e5293108f8a4aff17eb27f85915930a9e0614",
+    "PVC-006": "cf5f43f95435034df3f4339ce10bd1f2e82ddcfa01e216b2215aa7a3ecc96e26",
+    "PVC-007": "ea1f3abeb863dbd0b41cdd9eeb6b5d8dad646f50b9f0e29e9d8c04faf9c9dd6b",
+    "PVC-008": "18c8617ad1b3a2f434008675f7270f879be4eafc95aea9bed317a6dd260ad281",
+    "PVC-009": "34936da473601f22dfe4175aeca06d8f1cd45dd5f1a93acab612490b81dcb7f2",
+    "PVC-010": "43956d4f8c96084b3aa12b73a884ed28003c4347662ae46e624568aa5d5d4223",
+    "PVC-011": "04da9db19adaf14fa3ee3b65fa34cf2840ddf5b2f0ee55a245ac0621f0c1e4ec",
+    "PVC-012": null,
+    "PVC-013": "87a99d9aaf88f02d67b708ec75bf5b9a63b04947e9b960f1189988c9ff7e73ea",
+    "PVC-014": null,
+    "PVC-015": null,
+    "PVC-016": "84a6599fbc4024901f9168f798019bdd65b65c975d79b5594bcb118ae089c173",
+    "PVC-017": "b133e9db2931cba5d497e2d6ce5e54098dc9b35c99dc1d213ef98bd036e8de92",
+    "PVC-018": "887ef23a872c8513fd4b9cb90e8f5cfcae6877c6c34632a7a11c234dd62e0718",
+    "PVC-019": "50002e38475e126987fd6237fdf6198b5971b593f88f83fda17f1b549c1cdfa5",
+    "PVC-020": "817c842678c4987eb26ba5c0d0440b3f6c1c427607637d34d9a3649112e15f5b",
+    "PVC-021": "1f0527a5f47c7b966c78689658dec2928b87579f712e4235cf263084bae89eb2",
+    "PVC-022": "d2cbd9a87ac8a691a0ddf70024da31bcab9b3300af5b3d61e536d6b458738b1a",
+    "PVC-023": "668d312fe42b674ae7e91002b8032fd27c5543780c3c63ed8e007975eab5277b",
+    "PVC-024": "b9a00ed7ff98551a2de54bfda45ef0b24679ef0c7145a3e80c78190f73e8d29d",
+    "PVC-025": "9b27aca3bda0aea7aa636a931453961b26d96d36359566ecc7484bf35363235f",
+    "PVC-026": "db0b041d6c2bef8053a33a7c49c3ad53484432012b9b55270dadc42cb8556be9",
+    "PVC-027": "0e3f7df10b5fe08442a0ced62460304c180baa349eaa27f142bea66c0a98000e",
+    "PVC-028": null,
+    "PVC-029": "e73abd2140f8e2b211f2b37f5dfe0fb4b2175bc885a9e6ee97e2b6ca280afff1",
+    "PVC-030": "abaa80d43a37e4d57759636e49b1a5b2e7f918e5d9026dde1bfdfb80e50a0922",
+    "PVC-031": "584ac2ec7f3ee1aad3b94938ad9faf2869e255d32c960248d6e64086d64c5d9b",
+    "PVC-032": "16e22fa62adf75ef868c97ac307e4405cbbb3b836427387e06b5e068d29b2e93",
+    "PVC-033": "c9fdd11841fbdc3e6225f53f843906b7e4c460c939750a9488cd304028182ff0",
+    "PVC-034": "52aca249af91e003c44584b287a7da4b59ff21930b5f5ed16872b764bc3b7ea3",
+    "PVC-035": "6a082475e117c07f17f831709fa57b99c770ab02adb7f14e81addb1aa427636f",
+    "PVC-036": "59a6972eeebf0e62a77876926dbb2c6329bda5bfba255c4188ca51af5a40d6dd",
+    "PVC-037": "dff1d787f0dd53fb74c2ab952542d885ceb65e0a4593ae958b36463bff673a78",
+    "PVC-038": "65c016377f0fd07ead0439cbf1b417eaf05a08ad58491e888d8beef22c7c7524",
+    "PVC-039": "b66431f86f275b798cc026bec72047199d0a403356bee1cb17af72a5a708303b",
+    "PVC-040": "983ab8e2b5e62d41f34a001bbcf04205f4701e064718395b735c5a9e71758470"
+  },
+  "sourceSha256ByCase": {
+    "PVC-001": "4d72ca9a8abdbd3bba15f031f97d741ab8eb8a048dca821bd74987b31c7fec69",
+    "PVC-002": "450910b34786b96872cfcce28676cff35860529a99fe6a5879686acbaca25e3d",
+    "PVC-003": "c332c5328b9df7a532bf3eb527a49f16b5e6970bfd20c980da941fdc171ef569",
+    "PVC-004": "39310262d81815be0b74e23a05468a30bb236975129082eac86733ad38082cfe",
+    "PVC-005": "3c679806fe46ee097d0db5770ffcc722ae8ce25c76734594281353a1a0e6bec8",
+    "PVC-006": "951e54b09987d1defd45ad806542e410cff3d64d925dcecba0b63a4e9145c357",
+    "PVC-007": "a1a2f587fa8c490dec9303a04276d1f2e993e7bc26af2ed949326858da9e7444",
+    "PVC-008": "7ef6827105191bdca1bfd3b3d3e5d844a1ab5c898fcc69d7f23fa4c3d9c979af",
+    "PVC-009": "34936da473601f22dfe4175aeca06d8f1cd45dd5f1a93acab612490b81dcb7f2",
+    "PVC-010": "7c006b7b9bcc50b04ae62ceb3ad24d3aaa0c570173c895e9cf10e99efb413bf6",
+    "PVC-011": "04da9db19adaf14fa3ee3b65fa34cf2840ddf5b2f0ee55a245ac0621f0c1e4ec",
+    "PVC-012": "3bdff39a232bf87aa3de2331df2cb49f601197037667f0ce14490c3ffb0061ef",
+    "PVC-013": "3378b6152f7787d36a90f046bd32eb7eaf5ea2d80599b019752bbf240eb8f3b4",
+    "PVC-014": "bb3a29ad050f7135e3e3c16121c40c4a3704d094c4767a84360f44f84d73109f",
+    "PVC-015": "eb8fed06c530238569d0c228359bb8ff39332d9afb2a046d480272bc75956de8",
+    "PVC-016": "c62b6233450153c6bf8999ab6f17fa5c491cfa96b6fbd2b50d1068b3c412e02e",
+    "PVC-017": "8172ed97f6c4483da6de4a1e3377d1a3f6cbb801311abb3a0058c6d93f155afa",
+    "PVC-018": "7ad652c6377238e6d709d542a26b1da1647b64600e530c99256cda4c7947e935",
+    "PVC-019": "cab68d9607a447fc5619ba165e47a8e5d72f06519e4d02263d06b8c48610bf32",
+    "PVC-020": "8b685ca373b3f7188b7609d3f183e3df33f03cf0e986e2acf0fd015c05ed506c",
+    "PVC-021": "98c50966754e5cd7c444f786c7ebd9098392eadf000bc2afec2b51731e03927f",
+    "PVC-022": "0fc004ad010c4654a932b087b8e85a02720fd33f0def3f38949ea1534c248fd1",
+    "PVC-023": "ca91afc77cbf253a4ccec15ad04af929f3f064e78a8cdf3961a1d3a09ea711b6",
+    "PVC-024": "8d769905999029c781988d220d0f178c9062e3180e803d23a8d442f4f711ee01",
+    "PVC-025": "41aaa58d05021c1b13896abc6fb104085d97b03255f1687f606076bfb207d3bc",
+    "PVC-026": "db0b041d6c2bef8053a33a7c49c3ad53484432012b9b55270dadc42cb8556be9",
+    "PVC-027": "03496ee39e0e43723f3fe8b2b576654020b44f63dda2e794797b113a02e24028",
+    "PVC-028": "499bbc05f0876ae68cc44ee0ef490969bd409a40c57a9af025c4ac4d2abc2c4f",
+    "PVC-029": "fcd10df2a78f1d23ae6cb0ce759bb6af114146f9109c1dfce01db095463b0d08",
+    "PVC-030": "da398369427342879c77a64fe6ee90300a970fb1cf0458d721d1bc964316fc8b",
+    "PVC-031": "584ac2ec7f3ee1aad3b94938ad9faf2869e255d32c960248d6e64086d64c5d9b",
+    "PVC-032": "16e22fa62adf75ef868c97ac307e4405cbbb3b836427387e06b5e068d29b2e93",
+    "PVC-033": "c9fdd11841fbdc3e6225f53f843906b7e4c460c939750a9488cd304028182ff0",
+    "PVC-034": "2ce826eaeceabdc9330b5f7a06bd1e7cd45196302bb7a8b5144e31923554d5ec",
+    "PVC-035": "d98b5c713c8e7fc8b9e2c6a91a2306489abdb59ab1d7dc8242677945a9899646",
+    "PVC-036": "59a6972eeebf0e62a77876926dbb2c6329bda5bfba255c4188ca51af5a40d6dd",
+    "PVC-037": "6f705b3d7f3c3415f8fcc0b1278087d0004facea20f655b4df4469e3c7420c8f",
+    "PVC-038": "4f5189df7d9ca7ede652ffb12133531c091be5f7cb2c6b148ee2554614b166d9",
+    "PVC-039": "5aab312f6a4aeff4f089e4091d31ef813c1cc73de8d3ee86a1babe72186b0ac4",
+    "PVC-040": "c36f342e4ea74daf04d5f3c51085b272704abf03f9f1b90826415f8720ae30b0"
+  },
+  "objectiveSha256ByCase": {
+    "PVC-001": "61de4362901eff63d0afd8ecd9aa3279119e0a0246376b275b97bd822ea5a220",
+    "PVC-002": "d51f00353a52dc477d1d3e86b41b130a7a6559b4537bcec4056c94f69fff37a9",
+    "PVC-003": "552d778c825f381baf21de4af687b3cc7306e6af138bf8300902f9e3e2a773b8",
+    "PVC-004": "552fb34ce44556148d732382e2a1d6db21901e3e0563917ced4b2e8bfcfd80fd",
+    "PVC-005": "aeca1cb8ae652e8e48b9ba777fe5da0142bcd81fb1142ba23ddc85254bacb97e",
+    "PVC-006": "50f4b421f0b1c81c63e8791656631af847a5b18812269c508418e528b8e21f07",
+    "PVC-007": "02dda1dde56046ac82962e32d3a30b2a26f3a133f140bb068b96e9a44f7f4c16",
+    "PVC-008": "4afed83c9ee41217c8469a30efd7121306c603958e18a33286ca772e98c0ae46",
+    "PVC-009": "91e24f6ebe1fa52b4347a8bf97e099a0c3cfd1e78ee1624cce922f2bd83e197b",
+    "PVC-010": "cc615793eb5bb7fc069fa3ea3dffe88d782f8842170ed96694bfa4ef416a1b2e",
+    "PVC-011": "70995a89e4955a1e4ca94290a242823315ab9529c364e528f1737ded6bd1e179",
+    "PVC-012": "f2089bd49762957682990d30c835c440aa5a5e40eb5dacd4d9df2e7ee779b764",
+    "PVC-013": "e0785e7891f7ee9ae34f3a8a3a3f6a8a319b5bcea6ebd7ff033265d2986aac76",
+    "PVC-014": "0f9d7b84ab6eb41f8c4dc4f6847962ed05b84616d5a43388307968080177743a",
+    "PVC-015": "dc8e0236512dba6acb40ab6190f784f306b35c5cf98624ebb94f57127e538b5f",
+    "PVC-016": "882c10202d6894be33de6f3d6743a7c7d4d8aa6415ed0ba3ae1768d80f948290",
+    "PVC-017": "543edb80998d9c12877240428e36627b9516d9e2cc61da10a10ae751c33cb16c",
+    "PVC-018": "0467a47ffa95e9d54d77d4cd9c9ef06fcdc5506a8098ea304ebb20451cccebf2",
+    "PVC-019": "7051cb0f7b6968a149d61193b040aca5fa4cb9cfb0be6bcd84ff411fb5224a42",
+    "PVC-020": "193cf7509027df4c15e95bf9ca32aed01a0abca84459e4c67fb9bb5307186f25",
+    "PVC-021": "e7659836843e115080f13bd9dce32edea7b2d441dd00c19fd8f432345550d8bc",
+    "PVC-022": "cbdd256f2b627495b3d4ae65e45c066d88533ff7805c3f2ba4e69b7e65b6b82a",
+    "PVC-023": "d7a388400f587db7c6a2e9f0854de15f863b9dc5c25b9e082d3217e08ab0460b",
+    "PVC-024": "31170e67ae3c5dd9f3b7acd60a68fb84fd18e1be13d360d846f1d596a2e212a0",
+    "PVC-025": "f6b86b94352f86c57a6718b138e811f4feefb8ee594159c5747437324ef4afd0",
+    "PVC-026": "e0ec91a83cfb63fb565ebb90ec68e793ef48c64a66a620dc0037fe59301784e1",
+    "PVC-027": "5353c534707dbfa6ef502e32fa277064b83683ed26d5be7de9907d491de72c15",
+    "PVC-028": "043d123b7c12e97ac4ad966c428f67a7261f7842cccae8a4d78e0df5d6df4768",
+    "PVC-029": "2fe0c693a499723bec503845447565605a7a01d463f9d0d8880d39cd0f577bf1",
+    "PVC-030": "5804859006b5a4a79fdbb790d55b10eb3a1cf13d6979c6a81db9a02f8f2084a5",
+    "PVC-031": "e51fac7dc064ba0a4e5ca602a68ffaeb056182b1ae13fe0caa1c6114b4fee269",
+    "PVC-032": "f70732ba81e10f32d2e1a62c83d0192ed116bc77c4f31095ec891f352adf1031",
+    "PVC-033": "16c5389b5a216f94834c5a26a02fcab6912338fc16cf8f16a47720e3ca4adf74",
+    "PVC-034": "4bc5b386ad32b214979c2879cf43650c301e9c19e99fb173467272cd42109271",
+    "PVC-035": "7ef2a20830dba7b6800b6a5afc3947bb60be15ca5190fc2c2166c71093f5d00a",
+    "PVC-036": "6514e2e73b714550c87796abc28730593186efb4745cf46759d9133524f77b8a",
+    "PVC-037": "624c4b7dc080a8f22e0698ebb1fbb00dd3c34a66c3ca0d8b717fcf4617be0360",
+    "PVC-038": "bd392b01f971a33c8871617c4c0654be1cba51c84f90de9637fe9e8f64592503",
+    "PVC-039": "d5bf8bcbbd8fa153a0017eafe7143798e6eb2adce8200fe060eb15d03d920ca8",
+    "PVC-040": "862a040be4a679e6ee995e0433a71a9cab6d79cb0ffa38edf061376aaad27956"
+  },
+  "rows": [
+    {
+      "caseId": "PVC-001",
+      "sourceSha256": "4d72ca9a8abdbd3bba15f031f97d741ab8eb8a048dca821bd74987b31c7fec69",
+      "objectiveSha256": "61de4362901eff63d0afd8ecd9aa3279119e0a0246376b275b97bd822ea5a220",
+      "requestSha256": "2259123cc399259446aab9686ace903bb1097a53b58c56d421d844651b5fdcfd",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The volunteer orientation will be held on Tuesday, May 19, at 7:00 p.m. in the community room at the Northside Library. Please bring a photo ID for the building desk. New volunteers should email Dana if they need an accessible entrance.",
+      "textSha256": "522b12cfc84cada53f6b85845b9c08e3530c71b80d1ed0988c353894c71e408c",
+      "provenance": {
+        "requestSha256": "2259123cc399259446aab9686ace903bb1097a53b58c56d421d844651b5fdcfd",
+        "responseEnvelopeSha256": "9f6207ab03e8a6e97d00c3bbb4b0d4218ab01d26f0c357e142d31efd3f7e0408",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 130,
+            "cacheReadInputTokens": 0,
+            "cacheCreationInputTokens": 1562,
+            "webSearchRequests": 0,
+            "costUSD": 0.007552,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:20:45.870Z",
+        "durationMs": 2817
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-002",
+      "sourceSha256": "450910b34786b96872cfcce28676cff35860529a99fe6a5879686acbaca25e3d",
+      "objectiveSha256": "d51f00353a52dc477d1d3e86b41b130a7a6559b4537bcec4056c94f69fff37a9",
+      "requestSha256": "ec42a647468559688eed9b6a768915ca81bde83eca3d0d4b23a1581e0c58e416",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "REPAIR CAFÉ\n\nJoin us at the Eastbank Library on Saturday, May 23, from 11 a.m. to 2 p.m.\n\nBring one small household item and any parts you already have. Volunteers can help with lamps, clothing, and basic bicycle repairs, but we cannot accept microwaves.\n\nThe event is free, and donations toward supplies are welcome.",
+      "textSha256": "e92acd0a491f221898adde07efccaed75302025065b18206ba513a67958fa5ef",
+      "provenance": {
+        "requestSha256": "ec42a647468559688eed9b6a768915ca81bde83eca3d0d4b23a1581e0c58e416",
+        "responseEnvelopeSha256": "06522d259c29e9ef62505a2a6db3b29c1a1c68c79b2652906bb872648123d324",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 174,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 687,
+            "webSearchRequests": 0,
+            "costUSD": 0.0046792,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:20:48.708Z",
+        "durationMs": 2725
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-003",
+      "sourceSha256": "c332c5328b9df7a532bf3eb527a49f16b5e6970bfd20c980da941fdc171ef569",
+      "objectiveSha256": "552d778c825f381baf21de4af687b3cc7306e6af138bf8300902f9e3e2a773b8",
+      "requestSha256": "62a105e2fc576c59aaa08da65a1d64e4a78514e48596864b5a907ef6e11f69b0",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The maintenance window is scheduled for Wednesday, 15 May, from 20:00 to 22:00 UTC. During that period, the reporting dashboard may be unavailable. The data export service is expected to remain online.",
+      "textSha256": "3db8ac99117dda3ef17ddb59c9a4ef3afef3a0004bd9fe691f309eff7910d50e",
+      "provenance": {
+        "requestSha256": "62a105e2fc576c59aaa08da65a1d64e4a78514e48596864b5a907ef6e11f69b0",
+        "responseEnvelopeSha256": "99223ec95c2661dadb15c1a7f9c0302e894cc0f868dd782b390cbfa81978c2b5",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 120,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 602,
+            "webSearchRequests": 0,
+            "costUSD": 0.0037992,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:20:51.471Z",
+        "durationMs": 3306
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-004",
+      "sourceSha256": "39310262d81815be0b74e23a05468a30bb236975129082eac86733ad38082cfe",
+      "objectiveSha256": "552fb34ce44556148d732382e2a1d6db21901e3e0563917ced4b2e8bfcfd80fd",
+      "requestSha256": "8c99c9f17c0d7c343fbb0b749c06e1b01cbcf68c95648782a8b76a5acb4008f3",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "For the small wooden display stands, the finished base should be 175 mm wide. Measure after sanding and before applying the clear finish. Bases outside the permitted tolerance of 2 mm should be set aside for review rather than packed with completed orders.\n\nThe upright remains 240 mm tall and is attached with two screws through the underside of the base. Use the same water-based finish as the current production run, and allow a full day of drying before packing. The felt pads go on after the final inspection.",
+      "textSha256": "8a90b3f7bb78cde83b4183ea9ff8e3937f6c9b8c65b353866f9e60f23e8f6ed6",
+      "provenance": {
+        "requestSha256": "8c99c9f17c0d7c343fbb0b749c06e1b01cbcf68c95648782a8b76a5acb4008f3",
+        "responseEnvelopeSha256": "d3016d3b20fdda031fd7c92dc9b542d70114c5b4bac8778897006218826a44da",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 199,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 724,
+            "webSearchRequests": 0,
+            "costUSD": 0.0050772000000000005,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:20:54.914Z",
+        "durationMs": 2645
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-005",
+      "sourceSha256": "3c679806fe46ee097d0db5770ffcc722ae8ce25c76734594281353a1a0e6bec8",
+      "objectiveSha256": "aeca1cb8ae652e8e48b9ba777fe5da0142bcd81fb1142ba23ddc85254bacb97e",
+      "requestSha256": "21ac75a6e44ec8292036963343f3e825666fc7cf577d77fdddb88d72093791bc",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Hello team,\n\nThe courtyard drainage survey is now booked for June 11. We expect the survey report by June 24, which still gives us time to discuss options at the July committee meeting. The consultant's fee is $4,950, covered by the maintenance reserve.\n\nThe survey covers the paved courtyard and the two planting beds along the south wall. It does not include the roof drains; those would need a separate assessment if we decide to investigate them. We have not selected a contractor for any repair work, and the survey itself does not commit us to construction.",
+      "textSha256": "c3a03dcd36ef2fe6de223b26668e5293108f8a4aff17eb27f85915930a9e0614",
+      "provenance": {
+        "requestSha256": "21ac75a6e44ec8292036963343f3e825666fc7cf577d77fdddb88d72093791bc",
+        "responseEnvelopeSha256": "21639df6892c8564793a2d7c4319648be8a529b44d208e6600df8c886c38076c",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 217,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 753,
+            "webSearchRequests": 0,
+            "costUSD": 0.0053732,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:20:57.571Z",
+        "durationMs": 2941
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-006",
+      "sourceSha256": "951e54b09987d1defd45ad806542e410cff3d64d925dcecba0b63a4e9145c357",
+      "objectiveSha256": "50f4b421f0b1c81c63e8791656631af847a5b18812269c508418e528b8e21f07",
+      "requestSha256": "5acd54ca721fceb1b2ceda544e4d85482516cbd1d1fba14bf89b670657af64ae",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Our first-quarter customer support summary covers 1,925 conversations, including 287 escalations. The median first response time was 4 hours and 18 minutes. These figures exclude conversations handled by the weekend pilot team.",
+      "textSha256": "cf5f43f95435034df3f4339ce10bd1f2e82ddcfa01e216b2215aa7a3ecc96e26",
+      "provenance": {
+        "requestSha256": "5acd54ca721fceb1b2ceda544e4d85482516cbd1d1fba14bf89b670657af64ae",
+        "responseEnvelopeSha256": "fa6af146d1b395fa62acb1fd0705ec8b8e6c4ce2355215e66f383502447d5f1c",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 121,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 624,
+            "webSearchRequests": 0,
+            "costUSD": 0.0038972,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:00.527Z",
+        "durationMs": 2667
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-007",
+      "sourceSha256": "a1a2f587fa8c490dec9303a04276d1f2e993e7bc26af2ed949326858da9e7444",
+      "objectiveSha256": "02dda1dde56046ac82962e32d3a30b2a26f3a133f140bb068b96e9a44f7f4c16",
+      "requestSha256": "eb4edea1759820b898e8b1d2eeb9f0980b2cbd2015ad5c710b11d27d6354e090",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Our repair desk is open Monday through Thursday from 8:30 a.m. to 4:30 p.m., and Friday from 8:30 a.m. to 2 p.m. Customers can bring in laptops during those hours; appointments aren't required, although booking ahead may shorten the wait. The desk is busiest just after lunch, so drop-offs near opening are usually quicker.\n\nThe drop-off counter is on the second floor, beside the freight elevator. Standard laptop diagnostics take about three business days, though parts delays can extend that estimate. We contact the customer before starting any repair that would add a charge beyond the diagnostic fee.",
+      "textSha256": "ea1f3abeb863dbd0b41cdd9eeb6b5d8dad646f50b9f0e29e9d8c04faf9c9dd6b",
+      "provenance": {
+        "requestSha256": "eb4edea1759820b898e8b1d2eeb9f0980b2cbd2015ad5c710b11d27d6354e090",
+        "responseEnvelopeSha256": "5a4711bcafd16dda8f726d74f0ed2096a6a9db93ca4145dd70e3166d40a64b41",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 258,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 766,
+            "webSearchRequests": 0,
+            "costUSD": 0.0058352,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:03.227Z",
+        "durationMs": 3171
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-008",
+      "sourceSha256": "7ef6827105191bdca1bfd3b3d3e5d844a1ab5c898fcc69d7f23fa4c3d9c979af",
+      "objectiveSha256": "4afed83c9ee41217c8469a30efd7121306c603958e18a33286ca772e98c0ae46",
+      "requestSha256": "32cd91f94c99c37cf28c320038ecd555f91cb593a7703fa36ad015a9f2752da1",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "This two-bedroom flat occupies the first floor of a converted house on Willow Lane. The kitchen opens onto a small dining area, and the sitting room has windows facing the street. Two allocated parking spaces are located behind the building, reached through the shared side driveway.\n\nThe rent includes water charges but excludes electricity and internet. Residents share the rear garden, and the flat has no private outdoor space. The owner will consider one cat with prior written agreement; dogs are not permitted under the building's current rules.",
+      "textSha256": "18c8617ad1b3a2f434008675f7270f879be4eafc95aea9bed317a6dd260ad281",
+      "provenance": {
+        "requestSha256": "32cd91f94c99c37cf28c320038ecd555f91cb593a7703fa36ad015a9f2752da1",
+        "responseEnvelopeSha256": "09d5eef3172a8b9fb227741647be4f01c8448274d9f4915c7ed59ca5221e7289",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 212,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 733,
+            "webSearchRequests": 0,
+            "costUSD": 0.0052432,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:06.412Z",
+        "durationMs": 2843
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-009",
+      "sourceSha256": "34936da473601f22dfe4175aeca06d8f1cd45dd5f1a93acab612490b81dcb7f2",
+      "objectiveSha256": "91e24f6ebe1fa52b4347a8bf97e099a0c3cfd1e78ee1624cce922f2bd83e197b",
+      "requestSha256": "6cbb60ff16ce748f17d76fda9be39e2593e75f80c9caf7bc745f60fa8f0d68ac",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "For the current desktop client, open Settings, choose Connection, and enter sync.harbor-example.net in the Server field. Leave the port at 8443 unless your administrator has given you a different value. Select Test Connection before saving.\n\nA successful test confirms that the client can reach the service; it does not confirm that your account has permission to download every folder. If the test fails, copy the error code into a support request. Do not include your password or the contents of your folders.",
+      "textSha256": "34936da473601f22dfe4175aeca06d8f1cd45dd5f1a93acab612490b81dcb7f2",
+      "provenance": {
+        "requestSha256": "6cbb60ff16ce748f17d76fda9be39e2593e75f80c9caf7bc745f60fa8f0d68ac",
+        "responseEnvelopeSha256": "4ac00b3deb32b5a95e6f9b3f8217f60a23053abde7b4d04b71726b7af0081454",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 188,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 711,
+            "webSearchRequests": 0,
+            "costUSD": 0.0049152,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:09.270Z",
+        "durationMs": 2600
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-010",
+      "sourceSha256": "7c006b7b9bcc50b04ae62ceb3ad24d3aaa0c570173c895e9cf10e99efb413bf6",
+      "objectiveSha256": "cc615793eb5bb7fc069fa3ea3dffe88d782f8842170ed96694bfa4ef416a1b2e",
+      "requestSha256": "4f4411feecbce98116f504e0ee690402ca6e33967200ad50b32d0963fef2d480",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The facilities team is revising its room setup guide after staff reported that requests often arrive just before a meeting. The current guide asks organizers to submit setup requests at least three business days before an event. The revised policy will change this lead time, but the new requirement has not yet been specified.\n\nLate requests may still be accommodated when staff and equipment are available, but the team cannot guarantee the preferred layout. This is especially relevant for rooms that need movable tables or a hybrid meeting setup.\n\nFor urgent changes on the day of an event, organizers should contact the service desk.",
+      "textSha256": "43956d4f8c96084b3aa12b73a884ed28003c4347662ae46e624568aa5d5d4223",
+      "provenance": {
+        "requestSha256": "4f4411feecbce98116f504e0ee690402ca6e33967200ad50b32d0963fef2d480",
+        "responseEnvelopeSha256": "0a0a197759757db7077ad8d991beeaef2493e9273a966e8a9d0077db5ab829b8",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 326,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 700,
+            "webSearchRequests": 0,
+            "costUSD": 0.0062512,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 98,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:12.060Z",
+        "durationMs": 4454
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-011",
+      "sourceSha256": "04da9db19adaf14fa3ee3b65fa34cf2840ddf5b2f0ee55a245ac0621f0c1e4ec",
+      "objectiveSha256": "70995a89e4955a1e4ca94290a242823315ab9529c364e528f1737ded6bd1e179",
+      "requestSha256": "84191425c995d69db45565a97910977d4b933a1f488cf34a071ba7f251daf985",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Our roasted squash bowl comes with pearl barley, wilted greens, and a lemon-tahini dressing. Toasted pumpkin seeds add a little crunch, and the squash is roasted with cumin and smoked paprika. The bowl is served warm.\n\nA smaller portion is available at lunch. Guests can ask for the dressing on the side, but the kitchen cannot omit the seasoning from the squash because it is prepared in batches. The bowl is made without dairy ingredients.",
+      "textSha256": "04da9db19adaf14fa3ee3b65fa34cf2840ddf5b2f0ee55a245ac0621f0c1e4ec",
+      "provenance": {
+        "requestSha256": "84191425c995d69db45565a97910977d4b933a1f488cf34a071ba7f251daf985",
+        "responseEnvelopeSha256": "d996cb278f6057168c357412f9c516e7be2dc4a3c1f265a7861d4fc895c5069d",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 256,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 711,
+            "webSearchRequests": 0,
+            "costUSD": 0.0055952,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 45,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:16.532Z",
+        "durationMs": 3317
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-012",
+      "sourceSha256": "3bdff39a232bf87aa3de2331df2cb49f601197037667f0ce14490c3ffb0061ef",
+      "objectiveSha256": "f2089bd49762957682990d30c835c440aa5a5e40eb5dacd4d9df2e7ee779b764",
+      "requestSha256": "7e41eb18e32a94e1664387318ecad88770a8af097fce97d22cc73301ed7bfa45",
+      "attemptCount": 1,
+      "status": "technical-failure",
+      "text": null,
+      "textSha256": null,
+      "provenance": null,
+      "failure": {
+        "status": "technical-failure",
+        "category": "cli-failure",
+        "requestSha256": "7e41eb18e32a94e1664387318ecad88770a8af097fce97d22cc73301ed7bfa45",
+        "responseEnvelopeSha256": "ab3430f5f77c832384b73834f14331ebfecdb755de8ada5d047dc8c35de1a21f",
+        "reportedModel": null,
+        "startedAt": "2026-10-04T06:21:19.866Z",
+        "durationMs": 4433,
+        "resolvedModel": null
+      }
+    },
+    {
+      "caseId": "PVC-013",
+      "sourceSha256": "3378b6152f7787d36a90f046bd32eb7eaf5ea2d80599b019752bbf240eb8f3b4",
+      "objectiveSha256": "e0785e7891f7ee9ae34f3a8a3a3f6a8a319b5bcea6ebd7ff033265d2986aac76",
+      "requestSha256": "739fe4f9d23b6a6f9faf64538f5f5a0a2e0ca7b80b3ed3844953b852d827cfaf",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Pilot Summary: Weekly Planning Note for Support Handoffs\n\nWhat we tested\nThe pilot tested whether a weekly planning note would help the four support teams coordinate handoffs.\n\nMain feedback\nIn the end-of-pilot survey, most respondents said the note made ownership clearer. Several also said it duplicated information already in the ticket system.\n\nParticipation\n- Each team tried the note for six weeks.\n- Two teams skipped several weeks during a staffing shortage, so use was uneven.\n- The survey went to all participating staff, and 19 of 31 people responded.\n\nLimitation\nWe did not compare ticket resolution times before and after the pilot, so we cannot say whether the note made work faster.\n\nNext decision\nThe operations group will decide whether to continue the pilot after reviewing feedback with team leads. No decision has been made yet.",
+      "textSha256": "87a99d9aaf88f02d67b708ec75bf5b9a63b04947e9b960f1189988c9ff7e73ea",
+      "provenance": {
+        "requestSha256": "739fe4f9d23b6a6f9faf64538f5f5a0a2e0ca7b80b3ed3844953b852d827cfaf",
+        "responseEnvelopeSha256": "a030ef4900e40c396cea74046c8c4767a69dba51d104413f26b83522108e3a80",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 322,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 818,
+            "webSearchRequests": 0,
+            "costUSD": 0.0066832,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:24.312Z",
+        "durationMs": 3921
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-014",
+      "sourceSha256": "bb3a29ad050f7135e3e3c16121c40c4a3704d094c4767a84360f44f84d73109f",
+      "objectiveSha256": "0f9d7b84ab6eb41f8c4dc4f6847962ed05b84616d5a43388307968080177743a",
+      "requestSha256": "b1e1cf3a3db518cb5ef38c19b338def30626b4f95bbe755dfc3c6ccb0806bd54",
+      "attemptCount": 1,
+      "status": "technical-failure",
+      "text": null,
+      "textSha256": null,
+      "provenance": null,
+      "failure": {
+        "status": "technical-failure",
+        "category": "cli-failure",
+        "requestSha256": "b1e1cf3a3db518cb5ef38c19b338def30626b4f95bbe755dfc3c6ccb0806bd54",
+        "responseEnvelopeSha256": "cf07c231f62545f6e79e943c8d77cc2804cf519820eb35b71e8f75bef6d012f2",
+        "reportedModel": null,
+        "startedAt": "2026-10-04T06:21:28.262Z",
+        "durationMs": 9926,
+        "resolvedModel": null
+      }
+    },
+    {
+      "caseId": "PVC-015",
+      "sourceSha256": "eb8fed06c530238569d0c228359bb8ff39332d9afb2a046d480272bc75956de8",
+      "objectiveSha256": "dc8e0236512dba6acb40ab6190f784f306b35c5cf98624ebb94f57127e538b5f",
+      "requestSha256": "6b9354d87aa6af97f92eec7c88079399ea31c078077298dfd600434443a3bab1",
+      "attemptCount": 1,
+      "status": "technical-failure",
+      "text": null,
+      "textSha256": null,
+      "provenance": null,
+      "failure": {
+        "status": "technical-failure",
+        "category": "cli-failure",
+        "requestSha256": "6b9354d87aa6af97f92eec7c88079399ea31c078077298dfd600434443a3bab1",
+        "responseEnvelopeSha256": "44574a1e6079efff8e73e968c0d985aa8da5ee106f6902824a7d0edd45c85ef5",
+        "reportedModel": null,
+        "startedAt": "2026-10-04T06:21:38.212Z",
+        "durationMs": 5508,
+        "resolvedModel": null
+      }
+    },
+    {
+      "caseId": "PVC-016",
+      "sourceSha256": "c62b6233450153c6bf8999ab6f17fa5c491cfa96b6fbd2b50d1068b3c412e02e",
+      "objectiveSha256": "882c10202d6894be33de6f3d6743a7c7d4d8aa6415ed0ba3ae1768d80f948290",
+      "requestSha256": "dabc9d8f84d02962864a78d6c9582e4b4a7745e7bf442d258e28aca35e69863b",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Subject: A simple way to keep track of greenhouse watering\n\nHi everyone,\n\nWatering in the greenhouse has become inconsistent, and I'd like to propose a light fix. I'm suggesting this as an idea, not as something we've already adopted.\n\nWhat's not working now\n- I first wrote notes on the whiteboard, but people erased them when they needed the board for other work.\n- We now have a shared folder, but not everyone checks it before coming in.\n- Several of you have offered to take turns, but nobody can see which days are covered. Sometimes two people water on the same day and then nobody comes the next day.\n\nWhy \"water more often\" isn't the answer\nThe plants haven't all been affected in the same way, so a general reminder hasn't helped.\n- The east beds dry out faster than the others, especially after a sunny day. The seedlings there were wilting last week.\n- The tomatoes near the south wall were already damp, so watering everything more often because of the east beds would be a mistake.\n\nWhat I'm proposing\n1. A simple shared schedule, kept in one predictable place, so anyone can see which days are already covered. That would help us avoid doubled-up days and gaps.\n2. A short note for each bed, or for the beds that need attention, saying what it needs. For example, the east beds may need checking after sunny days, and the south-wall tomatoes may not need water if they're still damp.\n\nI'd like to keep this light. It shouldn't become a complicated tracking system or a set of rules to follow exactly. The aim is to help whoever is there see what needs attention without adding another chore, and to leave room for them to use their own judgment.\n\nIf you have thoughts on where the schedule should live, or on what the bed notes should say, please let me know.\n\nThanks,\n[Name]",
+      "textSha256": "84a6599fbc4024901f9168f798019bdd65b65c975d79b5594bcb118ae089c173",
+      "provenance": {
+        "requestSha256": "dabc9d8f84d02962864a78d6c9582e4b4a7745e7bf442d258e28aca35e69863b",
+        "responseEnvelopeSha256": "8a0fe46c64497331ae61e9f6269b9cf6a778268dc736cf443f9e01cc6338700a",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 611,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 1013,
+            "webSearchRequests": 0,
+            "costUSD": 0.0103532,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:43.730Z",
+        "durationMs": 9796
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-017",
+      "sourceSha256": "8172ed97f6c4483da6de4a1e3377d1a3f6cbb801311abb3a0058c6d93f155afa",
+      "objectiveSha256": "543edb80998d9c12877240428e36627b9516d9e2cc61da10a10ae751c33cb16c",
+      "requestSha256": "341f852c5be6bf8091dd3294e45c79b0e0e0c302befc9afaeae421937c36c6b9",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Interim update: Coastal water sampling found elevated nitrate at three sites after heavy rain, but the source remains unknown.\n\nBetween June and August, the coastal survey team collected water samples at 12 sites. Sampling did not take place every week, as storms and unsafe boat conditions led to cancellations.\n\nLab analysis showed elevated nitrate at three sites following heavy rain. At two of those sites, readings returned closer to the earlier range by the next visit.\n\nThe samples were too limited to establish where the nitrate came from, so these results should not be read as identifying or resolving any pollution issue.\n\nThe team has not yet completed the autumn sampling round. These findings are being shared with watershed partners as an interim update and should not be treated as a full seasonal assessment.",
+      "textSha256": "b133e9db2931cba5d497e2d6ce5e54098dc9b35c99dc1d213ef98bd036e8de92",
+      "provenance": {
+        "requestSha256": "341f852c5be6bf8091dd3294e45c79b0e0e0c302befc9afaeae421937c36c6b9",
+        "responseEnvelopeSha256": "0a45834528ab7f234a0aa0bd67069cb963858e6d69144ed7127e2808ebdbf779",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 295,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 811,
+            "webSearchRequests": 0,
+            "costUSD": 0.006385200000000001,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:53.576Z",
+        "durationMs": 4542
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-018",
+      "sourceSha256": "7ad652c6377238e6d709d542a26b1da1647b64600e530c99256cda4c7947e935",
+      "objectiveSha256": "0467a47ffa95e9d54d77d4cd9c9ef06fcdc5506a8098ea304ebb20451cccebf2",
+      "requestSha256": "cb27a228ef8e9c055084197ad3bda86b0067c5f292568fd23c0fbb959b83f9eb",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "MARKET STALL HANDOVER: SATURDAY VOLUNTEER MEMO\n\nPREPARATION (before Saturday)\n\nFolding tables\n- Collect the tables from the storage room behind the hall before Friday afternoon. The caretaker locks the room at 4:00 pm and does not work weekends.\n- There are 4 tables. One has a loose leg: leave it in storage until it is repaired. (Take the other 3.)\n\nPrice cards\n- The paper price cards are in the blue folder in the same storage room.\n- Two cards still show the old jam price. Jam is now $7 a jar. No other prices have changed.\n- A spare tally sheet is in the same folder (see Closing).\n\nCard reader\n- Mina has the card reader and can drop it off on Thursday. She has not given a time.\n- It was last charged two weeks ago, when we last used it. Charge it again before Saturday.\n\nARRIVAL (Saturday morning)\n\nLoading entrance\n- We may use it between 7:00 and 8:00 am only. After 8:00 it must stay clear for deliveries.\n- Unloading only. Do not leave cars there.\n\nParking\n- Use the gravel lot. The organizer says spaces sometimes run out.\n\nCLOSING (end of day and Monday)\n\n- Count the cash with two people present, and write the total on the tally sheet. The sheet went missing last time, so keep track of it.\n- Unsold jars can go back to storage.\n- Fresh bread must be collected by the bakery volunteer that evening.\n- The deposit pouch goes to the treasurer on Monday. Do not put it in the hall mailbox.\n\nOPEN QUESTIONS / STILL TO CONFIRM\n\n1. Who will collect the tables before Friday 4:00 pm?\n2. What time will Mina drop off the card reader on Thursday?\n3. Does the gravel lot open before 7:00 am? This has not been checked.\n4. Who will do the bakery pickup of the fresh bread on Saturday evening? No one has agreed yet.",
+      "textSha256": "887ef23a872c8513fd4b9cb90e8f5cfcae6877c6c34632a7a11c234dd62e0718",
+      "provenance": {
+        "requestSha256": "cb27a228ef8e9c055084197ad3bda86b0067c5f292568fd23c0fbb959b83f9eb",
+        "responseEnvelopeSha256": "cbc19ecdbeb8a9e90a94c5c4d56f74bfa5dd9860f889f4671fef5551300c9d98",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 717,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 1082,
+            "webSearchRequests": 0,
+            "costUSD": 0.0116892,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:21:58.127Z",
+        "durationMs": 5923
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-019",
+      "sourceSha256": "cab68d9607a447fc5619ba165e47a8e5d72f06519e4d02263d06b8c48610bf32",
+      "objectiveSha256": "7051cb0f7b6968a149d61193b040aca5fa4cb9cfb0be6bcd84ff411fb5224a42",
+      "requestSha256": "e30d2373cfea6f71323db9aaef63c5e360c388476b428afb9da26e2a9bc0fa51",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Hi Noor,\n\nI saw the draft agenda you sent over. The budget section is clear, and I added one question about the equipment line in the comments. The room details are still marked as tentative, which is fine for now since facilities hasn't confirmed them.\n\nWhen you have a chance, could you send me the revised version? I'd like to have it before the Thursday check-in so I can circulate it to the group. You don't need to resolve the room note before then. A quick update to the agenda and an answer to the equipment question are enough.\n\nThanks!",
+      "textSha256": "50002e38475e126987fd6237fdf6198b5971b593f88f83fda17f1b549c1cdfa5",
+      "provenance": {
+        "requestSha256": "e30d2373cfea6f71323db9aaef63c5e360c388476b428afb9da26e2a9bc0fa51",
+        "responseEnvelopeSha256": "946e18da86ee8d6d9eb62280fac8a21fd63c2b4db814dc0006e1844c2d76e0d6",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 215,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 693,
+            "webSearchRequests": 0,
+            "costUSD": 0.0051132,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:04.068Z",
+        "durationMs": 2858
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-020",
+      "sourceSha256": "8b685ca373b3f7188b7609d3f183e3df33f03cf0e986e2acf0fd015c05ed506c",
+      "objectiveSha256": "193cf7509027df4c15e95bf9ca32aed01a0abca84459e4c67fb9bb5307186f25",
+      "requestSha256": "77049d0eda1bb99aa983ac0bd0b1d7bb78d3cf046f476c0bf2e6ef0770a1248d",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Proposal: A four-week trial of a shared request list\n\nThe current problem\nWe keep losing track of requests that come in through the shared mailbox. People generally answer the customer, but the rest of the team cannot always tell whether anyone is working on a given request. On busy days, two people sometimes draft replies to the same message.\n\nThe proposal\nI think we could try a simple shared list for four weeks. It would sit alongside the mailbox, not replace it. The aim of the trial is to find out whether the extra step is worthwhile.\n\nHow the list would work\n- Whoever takes a request adds a line with the customer reference, a short description, their name, and the next action.\n- The customer's full message would not go in the list.\n- Anything waiting on a customer stays on the list with that status.\n- We would also record when a reply has been sent, because a sent email does not necessarily mean the underlying request is finished.\n- The morning shift reviews open items at the start of the day.\n- We could use the existing team spreadsheet. I have not yet checked whether its current permissions are suitable, so that needs to be confirmed before we start. If they are not suitable, we would need another option.\n\nHow we would decide whether to keep it\nAt the end of the four weeks, we would compare duplicate replies and ask the team how much upkeep the list needed. If it creates more work than it saves, we could drop it.\n\nDecision for you\nI would like your view on whether we should run this trial, and, if so, whether the team spreadsheet is an acceptable home for the list once its permissions have been checked.",
+      "textSha256": "817c842678c4987eb26ba5c0d0440b3f6c1c427607637d34d9a3649112e15f5b",
+      "provenance": {
+        "requestSha256": "77049d0eda1bb99aa983ac0bd0b1d7bb78d3cf046f476c0bf2e6ef0770a1248d",
+        "responseEnvelopeSha256": "36e33e736424cc9a28d177816c0f1773f0f4f80668ed6ac68b8e4f6ef07f8924",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 530,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 931,
+            "webSearchRequests": 0,
+            "costUSD": 0.0092152,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:06.944Z",
+        "durationMs": 5286
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-021",
+      "sourceSha256": "98c50966754e5cd7c444f786c7ebd9098392eadf000bc2afec2b51731e03927f",
+      "objectiveSha256": "e7659836843e115080f13bd9dce32edea7b2d441dd00c19fd8f432345550d8bc",
+      "requestSha256": "edb2860bf95fea997d48a6343ddf0514614ca5fc8a1be99cf9e8a233b2222fc5",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The new intake form is on the intranet under Operations > Requests.\n\nWhich tracker to use:\n- Requests opened from Monday onward: use the new form.\n- Requests already in progress: keep them in the existing tracker so their history stays in one place.\n\nCompleting the form:\n- If a field does not apply, enter \"not applicable\" rather than leaving it blank.\n- The form asks for a team contact and a requested completion date. Submitting the form does not guarantee that date.\n\nWhat happens next: the process team will review the form after its first month of use and may make adjustments based on staff feedback. Until then, send questions about access or missing fields to the process mailbox.",
+      "textSha256": "1f0527a5f47c7b966c78689658dec2928b87579f712e4235cf263084bae89eb2",
+      "provenance": {
+        "requestSha256": "edb2860bf95fea997d48a6343ddf0514614ca5fc8a1be99cf9e8a233b2222fc5",
+        "responseEnvelopeSha256": "5ac60c6d9d47c55a70925a3e232646323eeea00e6829a4e7f058bc232b7d93ec",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 252,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 732,
+            "webSearchRequests": 0,
+            "costUSD": 0.0056392000000000005,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:12.271Z",
+        "durationMs": 3227
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-022",
+      "sourceSha256": "0fc004ad010c4654a932b087b8e85a02720fd33f0def3f38949ea1534c248fd1",
+      "objectiveSha256": "cbdd256f2b627495b3d4ae65e45c066d88533ff7805c3f2ba4e69b7e65b6b82a",
+      "requestSha256": "308b450d710d565179ac9a5b2a981d690f247ca06a0c526eb176ec146fce4b4d",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Before submitting a reimbursement form, confirm that the receipt image is readable and that the project code matches the one in your approval email. Include the full receipt, even if the itemized details continue onto a second page.\n\nIf a receipt covers both work and personal purchases, mark the work items on the copy you upload. You don't need to change the original. Forms without a manager's approval may be returned for correction, and the finance team will contact you if a required field is unclear.",
+      "textSha256": "d2cbd9a87ac8a691a0ddf70024da31bcab9b3300af5b3d61e536d6b458738b1a",
+      "provenance": {
+        "requestSha256": "308b450d710d565179ac9a5b2a981d690f247ca06a0c526eb176ec146fce4b4d",
+        "responseEnvelopeSha256": "4c968c8dd505e27d73cd3547466b3717ae52764228bca2d34f6641e6a4b71cc9",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 188,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 684,
+            "webSearchRequests": 0,
+            "costUSD": 0.0048072,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:15.521Z",
+        "durationMs": 6466
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-023",
+      "sourceSha256": "ca91afc77cbf253a4ccec15ad04af929f3f064e78a8cdf3961a1d3a09ea711b6",
+      "objectiveSha256": "d7a388400f587db7c6a2e9f0854de15f863b9dc5c25b9e082d3217e08ab0460b",
+      "requestSha256": "80c201ed43fcf17626f2661e27817bd5082d34ec95561031e2132f527b1c4c95",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Proposal: Evening Opening of the Reading Room – Eight-Week Trial\n\nRecommendation\n\nI propose that the committee approve an eight-week trial in which the reading room stays open until eight on two evenings a week, Tuesday and Thursday. No start date should be announced until volunteer coverage, the cost estimate and insurance cover are settled (see \"Before launch\" below).\n\nWhy try it\n\nSeveral people have asked for somewhere quiet to go after work, and our present closing time of five makes that difficult. The evidence of demand is modest. Seven residents supported the idea at the last open meeting, but that meeting was small, and we have no reliable count of how many people would actually attend. That uncertainty is the reason for proposing a limited trial rather than a permanent change.\n\nTuesday and Thursday seem the most workable evenings because the room has no regular bookings then. It seats eighteen people.\n\nPractical requirements\n\n- Volunteers: One volunteer would need to be present throughout each evening, with a second available as backup. Three people have said they are interested in helping, but none has committed to a rota.\n- Costs: There would be some extra heating and lighting costs. The facilities team thinks they may be modest in spring, but it has not given an estimate.\n- Insurance: We need to confirm that the building's insurance covers the proposed hours.\n\nBefore launch\n\nVolunteer coverage, the cost estimate and insurance confirmation should all be settled before we announce a start date.\n\nAssessing the trial\n\nI suggest we record attendance at every session and ask users whether the hours were useful. At the end of the eight weeks, we can compare attendance with the extra cost. A busy first night would be encouraging, but it would not show whether demand lasts, so the full run of figures matters more. The committee can then discuss the results before deciding on any longer arrangement.\n\nFallback\n\nIf coverage cannot be found for both nights, we could consider opening on one evening instead. That is not part of this proposal and would need a separate decision.",
+      "textSha256": "668d312fe42b674ae7e91002b8032fd27c5543780c3c63ed8e007975eab5277b",
+      "provenance": {
+        "requestSha256": "80c201ed43fcf17626f2661e27817bd5082d34ec95561031e2132f527b1c4c95",
+        "responseEnvelopeSha256": "04632930a478d9a8a86217308865af82b08f87f6d045f99ba550fe919f4a2467",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 688,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 1062,
+            "webSearchRequests": 0,
+            "costUSD": 0.011319200000000001,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:22.007Z",
+        "durationMs": 5959
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-024",
+      "sourceSha256": "8d769905999029c781988d220d0f178c9062e3180e803d23a8d442f4f711ee01",
+      "objectiveSha256": "31170e67ae3c5dd9f3b7acd60a68fb84fd18e1be13d360d846f1d596a2e212a0",
+      "requestSha256": "c9e23953502cc4839a416f3ef3c0181de79294a95a97bca041c7932a96eec011",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The spare keys are in the blue drawer behind the desk. I left the delivery slips beside them so you can check the boxes off when they arrive. If a box is missing, please call the supplier before putting the delivery away. The afternoon driver usually arrives after lunch.",
+      "textSha256": "b9a00ed7ff98551a2de54bfda45ef0b24679ef0c7145a3e80c78190f73e8d29d",
+      "provenance": {
+        "requestSha256": "c9e23953502cc4839a416f3ef3c0181de79294a95a97bca041c7932a96eec011",
+        "responseEnvelopeSha256": "ff00a14e13d2add7cfbf66791450812a77d596facf76b4f4fa1c4eb36738849e",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 134,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 617,
+            "webSearchRequests": 0,
+            "costUSD": 0.0039992000000000005,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:27.998Z",
+        "durationMs": 2843
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-025",
+      "sourceSha256": "41aaa58d05021c1b13896abc6fb104085d97b03255f1687f606076bfb207d3bc",
+      "objectiveSha256": "f6b86b94352f86c57a6718b138e811f4feefb8ee594159c5747437324ef4afd0",
+      "requestSha256": "b5c6f7b0f110ba7cf148e961165a82019855c2d85457de2ab7d1919240524b1b",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "I used to think repairing old radios was mostly about patience and a steady hand. It is, a little. But what keeps me coming back is the moment a station slips through the static, especially when I have no idea what language I'm hearing.\n\nI'm not an expert, and I still make mistakes I can hear the second I put the case back together. Last winter I spent three evenings chasing a loose connection that turned out to be a tired switch.\n\nThe radio works now. I keep the switch in a jar on my desk, mostly as a reminder not to get too pleased with myself.",
+      "textSha256": "9b27aca3bda0aea7aa636a931453961b26d96d36359566ecc7484bf35363235f",
+      "provenance": {
+        "requestSha256": "b5c6f7b0f110ba7cf148e961165a82019855c2d85457de2ab7d1919240524b1b",
+        "responseEnvelopeSha256": "1585f8aec995933cc5d8fe5a5279d9358992f952d531207c17f227fe4052d880",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 220,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 785,
+            "webSearchRequests": 0,
+            "costUSD": 0.0055312,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:30.857Z",
+        "durationMs": 2990
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-026",
+      "sourceSha256": "db0b041d6c2bef8053a33a7c49c3ad53484432012b9b55270dadc42cb8556be9",
+      "objectiveSha256": "e0ec91a83cfb63fb565ebb90ec68e793ef48c64a66a620dc0037fe59301784e1",
+      "requestSha256": "74e51859c0b4893dbba1b722bec3f87984cf36abfd1c8e3c9dd10afdc2a91873",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "I planted the peas early because the forecast looked kind, and the forecast, for once, kept its promise. The first shoots appeared along the back fence a few days later, thin as green thread. I put in the strings on Saturday, though one leans enough that I may have to call it a design choice.\n\nThe tomatoes are still sulking in their pots, which may be my fault; I moved them outside before the nights warmed up. They have not given up, exactly, but they have made their opinion clear. I brought them back under the porch when the temperature dipped.\n\nA neighbor told me the basil would be less dramatic. So far it is simply sitting there, which I suppose counts as a point in its favor. The pot is still by the kitchen door, where I can remember to bring it in.\n\nNext weekend I will try again, with less confidence and more fleece. If the tomatoes recover, I will claim I planned the whole experiment.",
+      "textSha256": "db0b041d6c2bef8053a33a7c49c3ad53484432012b9b55270dadc42cb8556be9",
+      "provenance": {
+        "requestSha256": "74e51859c0b4893dbba1b722bec3f87984cf36abfd1c8e3c9dd10afdc2a91873",
+        "responseEnvelopeSha256": "93f43b9cedf354ba0cfb3dd0bb990468532b04116ae3f326a2b87a02277bcd6d",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 408,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 859,
+            "webSearchRequests": 0,
+            "costUSD": 0.0077072,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 77,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:33.867Z",
+        "durationMs": 3701
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-027",
+      "sourceSha256": "03496ee39e0e43723f3fe8b2b576654020b44f63dda2e794797b113a02e24028",
+      "objectiveSha256": "5353c534707dbfa6ef502e32fa277064b83683ed26d5be7de9907d491de72c15",
+      "requestSha256": "53e31e189434c783ef64c78d9aaba1af4a2e40366fd94d96c7d076230582b178",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Thanks for sending the photos of the shelf. I can see that the left bracket is bent, and we'll send you a replacement free of charge. Please reply with your order number, which is printed on your receipt, so I can check which size you need. You don't need to return the damaged bracket. Once I have the order number, I'll confirm the dispatch date.",
+      "textSha256": "0e3f7df10b5fe08442a0ced62460304c180baa349eaa27f142bea66c0a98000e",
+      "provenance": {
+        "requestSha256": "53e31e189434c783ef64c78d9aaba1af4a2e40366fd94d96c7d076230582b178",
+        "responseEnvelopeSha256": "dc6d1d6f1ea4f0c04f3be6e27722ea90037a5246626bb13c919f620f8f9aad7e",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 157,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 647,
+            "webSearchRequests": 0,
+            "costUSD": 0.0043492,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:37.595Z",
+        "durationMs": 2986
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-028",
+      "sourceSha256": "499bbc05f0876ae68cc44ee0ef490969bd409a40c57a9af025c4ac4d2abc2c4f",
+      "objectiveSha256": "043d123b7c12e97ac4ad966c428f67a7261f7842cccae8a4d78e0df5d6df4768",
+      "requestSha256": "7f5028785bf65a2b2bd17251f901f97bd5be5a5f95285952cff12517eb02c702",
+      "attemptCount": 1,
+      "status": "technical-failure",
+      "text": null,
+      "textSha256": null,
+      "provenance": null,
+      "failure": {
+        "status": "technical-failure",
+        "category": "cli-failure",
+        "requestSha256": "7f5028785bf65a2b2bd17251f901f97bd5be5a5f95285952cff12517eb02c702",
+        "responseEnvelopeSha256": "8d25852ea9335e93d55316a6bfda587eff54fb32a1d1d2dd8a1cfa23ab437015",
+        "reportedModel": null,
+        "startedAt": "2026-10-04T06:22:40.596Z",
+        "durationMs": 3852,
+        "resolvedModel": null
+      }
+    },
+    {
+      "caseId": "PVC-029",
+      "sourceSha256": "fcd10df2a78f1d23ae6cb0ce759bb6af114146f9109c1dfce01db095463b0d08",
+      "objectiveSha256": "2fe0c693a499723bec503845447565605a7a01d463f9d0d8880d39cd0f577bf1",
+      "requestSha256": "e14185397f70bc981313134e8d0c152e69b47a8b89b84bf442c5af1bf2b80163",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "I finally got round to fixing the little bench by the back door. It had been wobbling for months, and every time I sat down to take my boots off I thought, yes, I really should do something about that. On Sunday I did. One new screw, a bit of glue, and a surprisingly long search for the clamp I was certain I owned.\n\nIt still looks like a bench that has spent twelve years outside, which is fine by me. I gave it a quick sand where the wood was catching on sleeves, but I left the old paint alone. The cat has already claimed it again, so I reckon the repair has passed its most demanding inspection.",
+      "textSha256": "e73abd2140f8e2b211f2b37f5dfe0fb4b2175bc885a9e6ee97e2b6ca280afff1",
+      "provenance": {
+        "requestSha256": "e14185397f70bc981313134e8d0c152e69b47a8b89b84bf442c5af1bf2b80163",
+        "responseEnvelopeSha256": "8b754e70db875e15507fe6aefb0a1595caf22ed7e2b2660cee254cbeffe5fe51",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 238,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 755,
+            "webSearchRequests": 0,
+            "costUSD": 0.0055912,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:44.463Z",
+        "durationMs": 2923
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-030",
+      "sourceSha256": "da398369427342879c77a64fe6ee90300a970fb1cf0458d721d1bc964316fc8b",
+      "objectiveSha256": "5804859006b5a4a79fdbb790d55b10eb3a1cf13d6979c6a81db9a02f8f2084a5",
+      "requestSha256": "be83737792f72194c219974a3507704f8c46e351f2391ece6f1fc61dcc93662b",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The archive reading room welcomes researchers working with local newspapers, maps, and family records. It is open from 9:30 a.m. to 5:00 p.m., Tuesday through Friday, with staff available to help locate materials during those hours.\n\nVisitors need to reserve a seat at least one business day ahead. A reservation helps the archive prepare the reading room, but it does not request or hold specific collection items. Researchers looking for fragile or oversized materials should contact staff in advance.\n\nWalk-ins may be admitted if space allows, but staff cannot promise access to a particular collection without advance notice. Some materials are stored off site and may need additional time to retrieve.\n\nThe room is closed on public holidays. The archive website lists closure dates and the reservation form; visitors who need to change a booking can contact the reading room directly.",
+      "textSha256": "abaa80d43a37e4d57759636e49b1a5b2e7f918e5d9026dde1bfdfb80e50a0922",
+      "provenance": {
+        "requestSha256": "be83737792f72194c219974a3507704f8c46e351f2391ece6f1fc61dcc93662b",
+        "responseEnvelopeSha256": "f211f8cdd9a472e057db080c20fd07a348119c7a24f71178824611f5fd716399",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 312,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 848,
+            "webSearchRequests": 0,
+            "costUSD": 0.0067032,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:47.402Z",
+        "durationMs": 3664
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-031",
+      "sourceSha256": "584ac2ec7f3ee1aad3b94938ad9faf2869e255d32c960248d6e64086d64c5d9b",
+      "objectiveSha256": "e51fac7dc064ba0a4e5ca602a68ffaeb056182b1ae13fe0caa1c6114b4fee269",
+      "requestSha256": "0bd973b00a4e4a23aa9efbca18839def57cc88ec85972b6635f65f89dbed4563",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "I bought a secondhand sewing machine because I wanted to mend my own clothes. A sensible ambition. Then I spent an entire Sunday making one trouser leg shorter than the other. The machine behaved perfectly; I would like to make that clear before anyone blames the machine.\n\nBy the next weekend I had learned to mark the hem before cutting, and to try the trousers on with both shoes. Small discoveries, apparently available to everyone except me. I still take difficult repairs to the tailor, but I can now fix a loose seam without turning it into a larger emergency. That feels like progress, even if my first attempt is living at the back of the wardrobe.",
+      "textSha256": "584ac2ec7f3ee1aad3b94938ad9faf2869e255d32c960248d6e64086d64c5d9b",
+      "provenance": {
+        "requestSha256": "0bd973b00a4e4a23aa9efbca18839def57cc88ec85972b6635f65f89dbed4563",
+        "responseEnvelopeSha256": "4a6b153212afcd2ddf190063d1128165bc5b0fb8ee3545b1af0fff2d61588d86",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 259,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 783,
+            "webSearchRequests": 0,
+            "costUSD": 0.0059132,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:51.123Z",
+        "durationMs": 3769
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-032",
+      "sourceSha256": "16e22fa62adf75ef868c97ac307e4405cbbb3b836427387e06b5e068d29b2e93",
+      "objectiveSha256": "f70732ba81e10f32d2e1a62c83d0192ed116bc77c4f31095ec891f352adf1031",
+      "requestSha256": "1402dd4c49ee8d451cf5c01663195561a442a7cb07da2cf4b8a7011e496c30c6",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Our reading group meets this Thursday at 7 p.m. in the community room. Please bring your copy of the book and one passage you would like to discuss. You are welcome to join even if you have not finished reading. Tea will be available, and we will finish by 8:30.",
+      "textSha256": "16e22fa62adf75ef868c97ac307e4405cbbb3b836427387e06b5e068d29b2e93",
+      "provenance": {
+        "requestSha256": "1402dd4c49ee8d451cf5c01663195561a442a7cb07da2cf4b8a7011e496c30c6",
+        "responseEnvelopeSha256": "78e08f2cd7c165b4b3bb7d462cba1d74e554d17ea910ba2b6ffd49696c3d9a71",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 132,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 609,
+            "webSearchRequests": 0,
+            "costUSD": 0.0039472,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:54.913Z",
+        "durationMs": 2694
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-033",
+      "sourceSha256": "c9fdd11841fbdc3e6225f53f843906b7e4c460c939750a9488cd304028182ff0",
+      "objectiveSha256": "16c5389b5a216f94834c5a26a02fcab6912338fc16cf8f16a47720e3ca4adf74",
+      "requestSha256": "80f663f06d8d3cd137e521c753a4954b2834876cfae78b8f0a133d2f2a4a1edd",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The library will close at 4 p.m. on Friday for scheduled maintenance. Visitors who need to return books after closing can use the slot beside the main entrance; returned items will be checked in when staff are back. The reading rooms and service desks will close at the same time.\n\nRegular hours resume Saturday at 10 a.m. The notice will appear on the library door and website so visitors can plan around the early close. The maintenance is limited to Friday afternoon, and no other schedule changes are planned.",
+      "textSha256": "c9fdd11841fbdc3e6225f53f843906b7e4c460c939750a9488cd304028182ff0",
+      "provenance": {
+        "requestSha256": "80f663f06d8d3cd137e521c753a4954b2834876cfae78b8f0a133d2f2a4a1edd",
+        "responseEnvelopeSha256": "061ee52a98419d458b26d4e23c1be27f84dc490bd1176a0f6358bbb27ae8c382",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 302,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 692,
+            "webSearchRequests": 0,
+            "costUSD": 0.0059792000000000005,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 96,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:22:57.628Z",
+        "durationMs": 4388
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-034",
+      "sourceSha256": "2ce826eaeceabdc9330b5f7a06bd1e7cd45196302bb7a8b5144e31923554d5ec",
+      "objectiveSha256": "4bc5b386ad32b214979c2879cf43650c301e9c19e99fb173467272cd42109271",
+      "requestSha256": "3bba9f7d09d8262abcb0cdf9ae3b09ec055fe9246a715bb6c5b8b81fae415277",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The pilot workshop is open to staff from any department, and participation is optional. We are inviting people who work with the process in different ways, but there is no requirement to attend or to secure a place before taking part in other training.\n\nWe have room for 18 people for the first session. The room layout works best with that number, and we want to leave enough time for everyone to contribute. If the session fills, we will keep a waitlist so we can understand the level of interest.\n\nThe registration form asks about role and prior experience so we can balance the discussion; it does not determine eligibility. Those answers are for planning the conversation, not for ranking applicants, and staff may skip a question if it doesn't fit their work.\n\nIf interest is higher than capacity, we may offer another session later in the summer. That option depends on facilitator availability, so we haven't set a date or promised an additional workshop.",
+      "textSha256": "52aca249af91e003c44584b287a7da4b59ff21930b5f5ed16872b764bc3b7ea3",
+      "provenance": {
+        "requestSha256": "3bba9f7d09d8262abcb0cdf9ae3b09ec055fe9246a715bb6c5b8b81fae415277",
+        "responseEnvelopeSha256": "bd255830cc604b1504594052bbda1affd1ff99dda8e541b80ac4895e3ddd65a5",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 310,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 840,
+            "webSearchRequests": 0,
+            "costUSD": 0.0066512,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:02.087Z",
+        "durationMs": 3666
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-035",
+      "sourceSha256": "d98b5c713c8e7fc8b9e2c6a91a2306489abdb59ab1d7dc8242677945a9899646",
+      "objectiveSha256": "7ef2a20830dba7b6800b6a5afc3947bb60be15ca5190fc2c2166c71093f5d00a",
+      "requestSha256": "31c6685af481d49adf1c8169ff79eadd12bbbe40020a12fd7c1af88ab976c1b7",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "We interviewed 18 interviewees who had used the service at least once in the previous six months. Recruitment took place through two local community centers, and participation was voluntary. The interviews lasted between 25 and 40 minutes and followed the same discussion guide.\n\nSeven interviewees reported difficulty booking appointments online. This finding describes experiences within our interview sample and should not be treated as an estimate for all service users. We did not collect information about household income, and the interviews did not test whether the booking system caused people to miss appointments.",
+      "textSha256": "6a082475e117c07f17f831709fa57b99c770ab02adb7f14e81addb1aa427636f",
+      "provenance": {
+        "requestSha256": "31c6685af481d49adf1c8169ff79eadd12bbbe40020a12fd7c1af88ab976c1b7",
+        "responseEnvelopeSha256": "8ae3152a3042c2e1f01b982c01b1d09c5b56a1af4310b202e9f010abb4cc24f2",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 214,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 719,
+            "webSearchRequests": 0,
+            "costUSD": 0.0052072,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:05.772Z",
+        "durationMs": 2602
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-036",
+      "sourceSha256": "59a6972eeebf0e62a77876926dbb2c6329bda5bfba255c4188ca51af5a40d6dd",
+      "objectiveSha256": "6514e2e73b714550c87796abc28730593186efb4745cf46759d9133524f77b8a",
+      "requestSha256": "e2c27a14feec20f304297ab5cf1800d5fa31f99f731f7e94428d098a96160e7f",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Please use the side entrance when you arrive for the workshop. The front door will be locked because another group is using the main hall. The side entrance is beside the bicycle rack and has a small sign marked Studio.\n\nWe will open the studio at 9:15 a.m. for a 9:30 start. Tea and coffee will be available, and you are welcome to bring a packed lunch. If you need step-free access, let us know before the day so we can arrange entry through the courtyard gate.",
+      "textSha256": "59a6972eeebf0e62a77876926dbb2c6329bda5bfba255c4188ca51af5a40d6dd",
+      "provenance": {
+        "requestSha256": "e2c27a14feec20f304297ab5cf1800d5fa31f99f731f7e94428d098a96160e7f",
+        "responseEnvelopeSha256": "f575850860e9715cc7d5511068e953b7b7725a7c2bd65cd6493c64549a67ed38",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 197,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 701,
+            "webSearchRequests": 0,
+            "costUSD": 0.0049652,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:08.390Z",
+        "durationMs": 3282
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-037",
+      "sourceSha256": "6f705b3d7f3c3415f8fcc0b1278087d0004facea20f655b4df4469e3c7420c8f",
+      "objectiveSha256": "624c4b7dc080a8f22e0698ebb1fbb00dd3c34a66c3ca0d8b717fcf4617be0360",
+      "requestSha256": "f995340a3d4b307025d89612dc3988908e67bdcae062534c357cbe7917412379",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "**Evening Drop-In Hours at the Maple Street Community Center**\n\nBeginning in October, the Maple Street community center plans to offer evening drop-in hours twice a week. Stop by to ask about permits, recycling pickup, and neighborhood services.\n\nEvening hours are designed for residents who may not be able to visit during the day. The town's regular daytime counter hours are listed elsewhere in this leaflet.\n\n[Days, times, and first evening date to be confirmed.]\n\n---\n\n**Editor's queries (remove before print):**\n\n1. **Days:** The scheduling lead's margin note says \"Could be Tuesdays and Thursdays, if the room plan holds.\" The room booking is not confirmed and no final weekly schedule is attached, so days are left out. Please confirm before naming them.\n2. **Hours and staffing:** The draft says residents \"can stop by after work,\" but it is unclear whether staff will be there for the full evening or only part of it. The service manager is still checking coverage. Hours are left out, and the copy makes no promise of availability throughout the evening.\n3. **Start date:** The first evening date is not confirmed. \"Beginning in October\" is the only timing given.\n4. **Appointments:** The draft doesn't say whether the evening service needs an appointment. Please confirm whether to add \"no appointment needed\" or \"call ahead.\"\n5. **Print deadline:** If these points can't be resolved in time, the bracketed line could be replaced with \"Check the town's website or call for current evening hours.\" That would need a confirmed contact method, which the draft doesn't provide.",
+      "textSha256": "dff1d787f0dd53fb74c2ab952542d885ceb65e0a4593ae958b36463bff673a78",
+      "provenance": {
+        "requestSha256": "f995340a3d4b307025d89612dc3988908e67bdcae062534c357cbe7917412379",
+        "responseEnvelopeSha256": "f2e0427763c6889ab7cbaaf750e5540ae529f8a226db86be1758789f0c2b665c",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 560,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 915,
+            "webSearchRequests": 0,
+            "costUSD": 0.0094512,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:11.705Z",
+        "durationMs": 11957
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-038",
+      "sourceSha256": "4f5189df7d9ca7ede652ffb12133531c091be5f7cb2c6b148ee2554614b166d9",
+      "objectiveSha256": "bd392b01f971a33c8871617c4c0654be1cba51c84f90de9637fe9e8f64592503",
+      "requestSha256": "58f644e0a031ea4ed3285f2dc63d66f4bb3e364702c471b193ab50e0106632ee",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Subject: Bicycle storage proposal – where things stand after Tuesday's meeting\n\nDear residents,\n\nAt Tuesday's residents meeting, we discussed moving bicycle storage from the entrance hall to the unused laundry room. I'm writing to summarise where things stand, especially for those who couldn't attend, and to suggest how we move forward.\n\n**The proposal**\nMove bicycle storage from the entrance hall to the unused laundry room.\n\n**What was discussed**\n- Several people supported the idea because bikes in the entrance hall currently make it difficult to reach the noticeboard.\n- Others were concerned about carrying bikes down the short flight of steps to the laundry room.\n\n**What is unclear**\nNear the end of the discussion, the chair said we should try the laundry room once the old cabinets were removed. I understood this as agreement to go ahead with a trial, but two residents came away thinking we had agreed only to look into the option. The notes taken during the meeting say, \"Laundry room option to be explored.\" Since people understood the outcome differently, we should treat the proposal as not yet settled.\n\n**Current status**\n- The current entrance-hall storage remains in use.\n- Please don't move any bikes or furniture yet.\n- The building caretaker can check whether the old cabinets are still needed, but no one has been assigned to arrange their removal.\n- We have not yet discussed access for residents who cannot manage the steps.\n\n**Next steps**\n1. Confirm what was decided: a trial, or further exploration only.\n2. Decide who will arrange removal of the cabinets, if they are not needed.\n3. Discuss access for residents who cannot manage the steps.\n\n**Your input**\nIf you missed the meeting, I hope this gives you a clear picture of the proposal. Please reply with any practical concerns or suggestions, particularly about the steps or access, so we can consider them before anything changes.\n\nThank you,\n[Name]",
+      "textSha256": "65c016377f0fd07ead0439cbf1b417eaf05a08ad58491e888d8beef22c7c7524",
+      "provenance": {
+        "requestSha256": "58f644e0a031ea4ed3285f2dc63d66f4bb3e364702c471b193ab50e0106632ee",
+        "responseEnvelopeSha256": "7cfa9485bea7294679116a0137090858646d32393f1db5b4ca413e3f00578362",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 671,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 907,
+            "webSearchRequests": 0,
+            "costUSD": 0.0105292,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:23.732Z",
+        "durationMs": 7794
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-039",
+      "sourceSha256": "5aab312f6a4aeff4f089e4091d31ef813c1cc73de8d3ee86a1babe72186b0ac4",
+      "objectiveSha256": "d5bf8bcbbd8fa153a0017eafe7143798e6eb2adce8200fe060eb15d03d920ca8",
+      "requestSha256": "2042ba548f0e65993637484c2ce3a0e0a3686c4e3ec5d455dca7398dc0d5ecf0",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "Summary: The planning group discussed a revised chart on Monday, but the record does not confirm whether it was the version with projected costs or the version without them.\n\nSequence of events\n1. After the first review, Mira sent the revised chart to Leon. Leon had asked for a version without the projected costs. Her message said the labels had been updated. It did not name the file version or say whether projections were included.\n2. Leon forwarded the chart to the planning group. His note said the numbers were still provisional. The email thread included a link to the chart. The group had also received an earlier chart that included projected costs, attached to a previous message.\n3. On Monday, the group used the chart in its discussion. The notes mention the revised labels and the provisional figures. They do not give a filename or say which copy was shown on screen.\n\nWhat is established\n- Mira sent the revised chart to Leon.\n- Leon forwarded it to the planning group.\n- The group was told the numbers were provisional and that the labels had been updated.\n\nWhat is not confirmed\n- Which version the group looked at on Monday: the revised chart, which Leon requested without projections, or the earlier chart with projected costs.\n- Whether the revised chart actually excluded projections. Mira's message did not say.\n\nSuggested follow-up: Ask Mira to confirm the filename and whether the revised chart includes projections. Ask whoever presented on Monday which copy was on screen.",
+      "textSha256": "b66431f86f275b798cc026bec72047199d0a403356bee1cb17af72a5a708303b",
+      "provenance": {
+        "requestSha256": "2042ba548f0e65993637484c2ce3a0e0a3686c4e3ec5d455dca7398dc0d5ecf0",
+        "responseEnvelopeSha256": "f72bf2e98c1fe9b1c0b27710c6c6551da27275885e0a05babd015abd82501173",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 493,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 794,
+            "webSearchRequests": 0,
+            "costUSD": 0.0082972,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:31.547Z",
+        "durationMs": 8363
+      },
+      "failure": null
+    },
+    {
+      "caseId": "PVC-040",
+      "sourceSha256": "c36f342e4ea74daf04d5f3c51085b272704abf03f9f1b90826415f8720ae30b0",
+      "objectiveSha256": "862a040be4a679e6ee995e0433a71a9cab6d79cb0ffa38edf061376aaad27956",
+      "requestSha256": "456a6a9363a89603fad9711b30c3989d5cc7f4c627a67dd2cda78b3915203ffa",
+      "attemptCount": 1,
+      "status": "success",
+      "text": "The community kitchen is available for private bookings on Saturdays from 10 a.m. to 4 p.m. The hire fee is $110 for that six-hour period. A refundable cleaning deposit of $60 is collected separately and returned after the caretaker checks the room. The booking is not confirmed until both payments have been received.\n\nBookings include use of the oven, refrigerator, worktables, and twelve dining chairs. The pantry cupboard is reserved for the weekly meal program and must remain closed. Guests must bring their own ingredients, serving dishes, and dish towels. The dishwasher can be used, but its final cycle must finish before departure.\n\nGroups may have up to sixteen people in the kitchen at one time, including children and organizers. This limit comes from the room's approved layout and is different from the number of dining chairs. Events involving food sales require the organizer to contact the local licensing office; kitchen hire does not itself grant permission to sell food.\n\nCancel at least seven days before the booking to receive a refund of the hire fee. Later cancellations forfeit the hire fee, but the cleaning deposit is returned if the room has not been used. The caretaker can answer equipment questions by email and normally replies within two working days. We cannot promise a same-day response.",
+      "textSha256": "983ab8e2b5e62d41f34a001bbcf04205f4701e064718395b735c5a9e71758470",
+      "provenance": {
+        "requestSha256": "456a6a9363a89603fad9711b30c3989d5cc7f4c627a67dd2cda78b3915203ffa",
+        "responseEnvelopeSha256": "5a3c167493fae0170785b82a6737244cb2335b5ac6d8d0626c58cbe8a23a767d",
+        "promptSha256": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+        "schemaSha256": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+        "reportedModel": null,
+        "modelUsageModels": [
+          "claude-sonnet-5-5"
+        ],
+        "modelUsage": {
+          "claude-sonnet-5-5": {
+            "inputTokens": 2,
+            "outputTokens": 457,
+            "cacheReadInputTokens": 936,
+            "cacheCreationInputTokens": 999,
+            "webSearchRequests": 0,
+            "costUSD": 0.0087572,
+            "contextWindow": 1000000,
+            "maxOutputTokens": 128000,
+            "thinkingTokens": 0,
+            "canonicalModel": "claude-sonnet-5-5",
+            "provider": "firstParty",
+            "costBasis": "list"
+          }
+        },
+        "resolvedModel": "claude-sonnet-5-5",
+        "requestedModel": "claude-sonnet-5-5",
+        "effort": "medium",
+        "timeoutMs": 120000,
+        "startedAt": "2026-10-04T06:23:39.962Z",
+        "durationMs": 12535
+      },
+      "failure": null
+    }
+  ]
+}
