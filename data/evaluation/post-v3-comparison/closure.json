@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-comparison-closure",
+  "experimentId": "post-v3-architecture-comparison-40",
+  "status": "CLOSED — NOT EXECUTED",
+  "closureReasonCode": "MISSING_PROSPECTIVE_DOWNSTREAM_EFFORT",
+  "closureReason": "Required downstream effort was never prospectively specified; no frozen value or deterministic preexisting rule selected one.",
+  "failureClassification": "PROTOCOL_FAILURE_NOT_ARCHITECTURE_FAILURE",
+  "governingCommits": {
+    "architecturePreregistration": "f40a54caed05a295f540bd8f0876a6ce858008c9",
+    "operationalManifest": "85bd0ca9bfb14afd1e1d989acdecb5c319c73ca9",
+    "corpusAndPrelabelsFreeze": "0bace0834bf5f85b4bc9ae3d29311badcd2adacc",
+    "candidateImplementation": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "candidateFreeze": "19ccd7569403058d6afd7086ad3bf8a0ce836b25",
+    "rawGenerationContract": "7acb2bb5246400e8d792d13979e204f4cb9b765e",
+    "rawFreeze": "e3445408552e0bdaa208e17623df53d0e25a1e21",
+    "protocolAdjudication": "91219a65bb0101e609b3fa17e904298a2ae5b4cf",
+    "effortFinding": "3a77568614f8b51b33a4ea74b20e73263460b143",
+    "governanceDecision": "fb262796e645f3cdfc1890bc178c5b36c6752793",
+    "v15Baseline": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b"
+  },
+  "frozenArtifactExactByteSha256": {
+    "docs/POST-V3-ARCHITECTURE-PREREGISTRATION.md": "2611f1d7434728d6f46820dd1152fcdab8a498571a51b1a4d654f1c23e3699e2",
+    "data/evaluation/post-v3-comparison/operational-manifest.json": "db867a9d9d4f79dff48b3c1702cf24b67d0e1d6467c422eb1d14703e0409d21e",
+    "data/evaluation/post-v3-comparison/frozen/corpus-manifest.json": "25e8af5b82cdc5fe4954cf9166b8729f889e078fce129ce6ef0fb21913942cfe",
+    "data/evaluation/post-v3-comparison/frozen/cases.json": "863fe43c0ea68b32d661023e6ca6b14e0dda55c1183562a393183063bc1e25f2",
+    "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-01.json": "58a701708c34715c2c225d2b3d477cecd94d44d8ef8bf9f1674ce0f730ff7d96",
+    "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-02.json": "1db94e004d2d1f2b6fb6b9634bf65490a2653384274e91283f53dcd699fd63bb",
+    "data/evaluation/post-v3-comparison/frozen/implementations.json": "e6f3b8e0c38f3fb1bd65aba7a898ebc89f0454120aa96ef30d03ce24d18dadff",
+    "data/evaluation/post-v3-comparison/frozen/raw-generation-manifest.json": "f3a24c07e9a871a2e9ec69e4cfdf2e84a384ec39363c378b3a6372ec8e85808b",
+    "data/evaluation/post-v3-comparison/frozen/raw-freeze-manifest.json": "7e3f5479291888fdaf32f6a136b41cec4dd2f550a2420f4110081d8a67009f31",
+    "data/evaluation/post-v3-comparison/frozen/raw.json": "fadf3b99c0d73e1ff3bf1618fb7a4d9e5ea4e3ad10d05d2cb933705a4aabc104",
+    "data/evaluation/post-v3-comparison/raw-attempts/attempts.jsonl": "e82cac9f9bfa0a19fd9052ff3584833552e7f0f9dbaa8e4e3130b28c7393f7d1",
+    "data/evaluation/post-v3-comparison/raw-attempts/raw-successes.jsonl": "69c6a08d80a580b2344b4092ff0750517a3c7951d113f74bfe024d36081e4220"
+  },
+  "candidateArtifactSha256": {
+    "A": "387ef7bb2fda95eae5eb2cc94733130106701ab9c042e7cae633175a2575db5b",
+    "B": "63279cbf1fc4e0a6bda2b5b492eaf07e47acea0bd666a1272497d9f4d7b0e2a8",
+    "C": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19",
+    "D": "ad057ae3363896b38353794b0cad01f8160641bd4ead9f2c5ffb12a9884dabf1"
+  },
+  "rawGeneration": {
+    "attempts": 40,
+    "validRaw": 36,
+    "technicalFailures": 4,
+    "failedCaseIds": ["PVC-012", "PVC-014", "PVC-015", "PVC-028"],
+    "retries": 0,
+    "rawFreezeManifestSha256": "7e3f5479291888fdaf32f6a136b41cec4dd2f550a2420f4110081d8a67009f31"
+  },
+  "architectureExecutions": 0,
+  "comparisonOutputs": 0,
+  "blindOutputJudgments": 0,
+  "comparisonScoring": 0,
+  "advancementDecision": null,
+  "candidateWinner": null,
+  "closureCommit": null,
+  "successorRelationship": {
+    "proposedSuccessorExperimentId": "post-v3-successor-fresh-40",
+    "successorStatusAtClosure": "NOT_YET_REGISTERED",
+    "successorCommit": null
+  }
+}

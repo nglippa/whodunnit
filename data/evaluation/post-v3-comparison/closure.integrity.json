@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-comparison-closure-integrity",
+  "hashAlgorithm": "sha256",
+  "closureDocument": {
+    "path": "docs/POST-V3-CLOSURE.md",
+    "exactFileBytesSha256": "e8747f887c571c197c20ef83d3d798853bd9c287abf81030730256822a042ec0"
+  },
+  "closureRecord": {
+    "path": "data/evaluation/post-v3-comparison/closure.json",
+    "exactFileBytesSha256": "76b34f16ab199ee0d6eccb3ee5c01f5ce0fd75293f2613c97cf7fbbb1223d13a"
+  },
+  "governanceCommit": "fb262796e645f3cdfc1890bc178c5b36c6752793",
+  "selfHashPolicy": "This sidecar does not hash itself. Git records its exact bytes."
+}
