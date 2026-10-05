@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-successor-preregistration-integrity",
+  "experimentId": "post-v3-successor-fresh-40",
+  "hashAlgorithm": "sha256",
+  "files": {
+    "document": {
+      "path": "docs/POST-V3-SUCCESSOR-PREREGISTRATION.md",
+      "exactFileBytesSha256": "8ecc6def06542a08053d66c46eab0ec198553aef189d49ff3d2f613aa843a144"
+    },
+    "registration": {
+      "path": "data/evaluation/post-v3-successor/preregistration.json",
+      "exactFileBytesSha256": "9e027a0f3b56eaec3398c4db0bc7495e49c50bb1c137bf7a90799acfca4c75ac"
+    },
+    "reusePolicy": {
+      "path": "data/evaluation/post-v3-successor/reuse-policy.json",
+      "exactFileBytesSha256": "78aa206665a0e7ffd8a3d2dcb2c610a38f46bf0ac49f35a1e51a91d5a84b47c4"
+    },
+    "futureExecutionContractSchema": {
+      "path": "data/evaluation/post-v3-successor/execution-contract.schema.json",
+      "exactFileBytesSha256": "dc4385ad8f047243fc8a76b56859d3a36173384fb6a2c0fbffed01b1d17383ce"
+    }
+  },
+  "selfHashPolicy": "This sidecar does not hash itself. Git records its exact bytes."
+}

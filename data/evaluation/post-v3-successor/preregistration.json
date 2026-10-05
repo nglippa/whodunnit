@@ -1,0 +1,376 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-successor-preregistration",
+  "experimentId": "post-v3-successor-fresh-40",
+  "status": "PREREGISTERED_BLOCKED_BEFORE_DATA_CREATION",
+  "parent": {
+    "experimentId": "post-v3-architecture-comparison-40",
+    "status": "CLOSED — NOT EXECUTED",
+    "closureCommit": "b11e9f7b0a0c172481e9cd59469eaf6969cc3eb5",
+    "closurePath": "data/evaluation/post-v3-comparison/closure.json",
+    "governanceCommit": "fb262796e645f3cdfc1890bc178c5b36c6752793"
+  },
+  "scientificQuestion": "Do unchanged Post-V3 candidate architectures A, B, C or D improve safe useful editorial retention and correct authorized updates relative to unchanged V15 without violating zero-tolerance safety, voice, honest disposition or already-good restraint?",
+  "architectureStatus": "UNCHANGED_FROZEN_CANDIDATES_NO_V16",
+  "arms": {
+    "baseline": "V15",
+    "candidates": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "v15AnchorCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+    "candidateImplementationCommit": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "implementationManifestPath": "data/evaluation/post-v3-comparison/frozen/implementations.json",
+    "implementationManifestSha256": "e6f3b8e0c38f3fb1bd65aba7a898ebc89f0454120aa96ef30d03ce24d18dadff",
+    "candidateArtifactSha256": {
+      "A": "387ef7bb2fda95eae5eb2cc94733130106701ab9c042e7cae633175a2575db5b",
+      "B": "63279cbf1fc4e0a6bda2b5b492eaf07e47acea0bd666a1272497d9f4d7b0e2a8",
+      "C": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19",
+      "D": "ad057ae3363896b38353794b0cad01f8160641bd4ead9f2c5ffb12a9884dabf1"
+    }
+  },
+  "reusePolicyPath": "data/evaluation/post-v3-successor/reuse-policy.json",
+  "inputPolicy": {
+    "choice": "FRESH_CORPUS_AND_FRESH_RAW_FOR_ALL_40",
+    "caseCount": 40,
+    "creators": 4,
+    "casesPerCreator": 10,
+    "primaryStrataCounts": {
+      "explicitSuppliedUpdate": 8,
+      "vagueOrMissingUpdate": 6,
+      "substantialReconstruction": 6,
+      "ordinaryLocalEdit": 5,
+      "voiceSensitiveEdit": 4,
+      "alreadyGood": 4,
+      "collateralDanger": 4,
+      "ambiguousOrContested": 3
+    },
+    "oldCasesPrelabelsRawAndFailureIds": "EXCLUDED_FROM_SUCCESSOR_INPUTS_AND_DENOMINATORS",
+    "newPrelabels": "TWO_INDEPENDENT_HUMAN_ORIGINAL_SUBMISSIONS_BEFORE_RAW",
+    "rawAttemptsPerCase": 1,
+    "rawRetries": 0,
+    "rawReplacementOrRegeneration": false,
+    "sameSavedInputsAcrossArms": true,
+    "priorExposureAttestation": "Before briefing, signed role-specific attestation of prior access; exposed creators ineligible.",
+    "contaminationScreen": "Freeze byte and semantic-overlap procedure before authorship; run after 40-case freeze and before prelabels/RAW; any overlap stops without replacement."
+  },
+  "effortSelection": {
+    "status": "MECHANISM_FROZEN_VALUE_NOT_SELECTED",
+    "selectedEffort": null,
+    "method": "FUTURE_NIST_BEACON_2_0_UNIFORM_REJECTION_SAMPLING",
+    "eligibleEffortsInClientAdvertisedOrder": [
+      "low",
+      "medium",
+      "high",
+      "xhigh",
+      "max"
+    ],
+    "eligibleSetRequirement": "All five exact ordered levels are sealed here. Before fixed pulse, independent client/model/account support and effective-request proof for every level must be committed; any unsupported/capped level BLOCKS before pulse. Never remove or reorder a level.",
+    "beaconDocumentation": "https://csrc.nist.gov/Projects/interoperable-randomness-beacons/beacon-20",
+    "pulseChoice": "Only the signed pulse with exact timeStamp 2026-10-15T00:00:00.000Z; missing, duplicate, ambiguous or invalid pulse BLOCKS; no next-pulse substitution.",
+    "pulseField": "pulse.outputValue",
+    "domainSeparatorUtf8": "whodunnit-post-v3-successor-effort-v1",
+    "digestInput": "UTF8(domainSeparator) || 0x00 || hexDecode(pulse.outputValue to exactly 64 raw bytes) || uint32be(counter)",
+    "mapping": "For counter starting at zero, SHA-256 digest; x is first four digest bytes as unsigned big-endian integer; accept first x < floor(2^32/5)*5; chosen sealed-list index is x mod 5.",
+    "drawsAllowed": 1,
+    "fallbackOrReroll": "NONE; any invalid source, support, signature or effective request remains BLOCKED",
+    "timing": "Commit registration and complete committed non-effort pre-draw lock and five-level support proof before fixed future pulse; compute/freeze result after pulse and before any case or model call.",
+    "futureEvidence": "Append-only lock records pulse bytes/hash/certificate/signature/chain validation, exact eligible list, accepted counter/x/index, selected value and independent recomputation; blocked or abandoned draw and value disclosed in any later registration.",
+    "eligibleOrderedSetSealedHere": true,
+    "targetTimestampUtc": "2026-10-15T00:00:00.000Z",
+    "targetUnixMilliseconds": 1792022400000,
+    "pulseEndpoint": "https://beacon.nist.gov/beacon/2.0/pulse/time/1792022400000",
+    "arithmeticTestVector": {
+      "syntheticPulseHex": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f202122232425262728292a2b2c2d2e2f303132333435363738393a3b3c3d3e3f",
+      "counter": 0,
+      "digestSha256": "36976a6a2b464ef1767bf08245ede8dcada04fe80242aa25f0b3a919aed88f8f",
+      "firstUint32": 915892842,
+      "indexForFive": 2,
+      "experimentalSelection": false
+    },
+    "preDrawLockRequiredBeforePulse": true,
+    "unexecutedOrBlockedDrawDisclosureRequired": true,
+    "preDrawLockDeadlineUtc": "BEFORE 2026-10-15T00:00:00.000Z"
+  },
+  "executionBaseline": {
+    "provider": "Anthropic",
+    "accountClass": "claude.ai account-backed plan with independently confirmed USD 0 incremental spend",
+    "nativeClientPath": "/Users/nicholaslippa/.local/share/claude/versions/2.1.288",
+    "nativeClientVersion": "2.1.288",
+    "nativeClientSha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+    "requestedModel": "claude-sonnet-5-5",
+    "resolvedModelRequirement": "Exact claude-sonnet-5-5 in captured request and successful response; no alias substitution or fallback",
+    "sharedModelAndEffortAcross": [
+      "raw_editor",
+      "all_five_arms_review",
+      "all_five_arms_repair",
+      "all_five_arms_recheck"
+    ],
+    "precaseExecutionLockRequired": true,
+    "rolePromptSchemaHashesRequired": true,
+    "transportAndAdapterHashesRequired": true,
+    "preDrawNonEffortLockRequired": true,
+    "perCallBinaryAndConfigHashRequired": true,
+    "autoUpdateDisabledWithProof": true,
+    "providerRevisionRequirement": "Freeze any available provider revision/snapshot identifier before pulse; if provider exposes only model ID, disclose that limitation and require request/response resolved ID equality on every call."
+  },
+  "mandatoryExecutionFieldClasses": {
+    "reasoning": [
+      "intendedEffort",
+      "effectiveEffort",
+      "thinkingEnabled",
+      "thinkingMode",
+      "thinkingBudgetOrProvenOmission",
+      "policyCapsAndOverrides"
+    ],
+    "sampling": [
+      "temperatureValueOrProvenOmission",
+      "topPValueOrProvenOmission",
+      "topKValueOrProvenOmission",
+      "maxOutputTokens",
+      "structuredOutputMode"
+    ],
+    "tools": [
+      "toolsDisabled",
+      "mcpDisabled",
+      "slashCommandsDisabled",
+      "exactPermissionMode",
+      "hooksDisabled",
+      "extraBodyProvenOmitted",
+      "systemPromptSha256ByStage",
+      "schemaSha256ByStage"
+    ],
+    "session": [
+      "freshProcess",
+      "emptyWorkingDirectory",
+      "noPersistence",
+      "retriesZero",
+      "numericTimeoutMsFrozenBeforePulse",
+      "terminationSignalAndGracePeriodFrozenBeforePulse",
+      "pacingScheduleFrozenBeforePulse",
+      "repairCeiling",
+      "recheckCeiling"
+    ],
+    "environment": [
+      "allowlistedVariablesAndValuesOrRedactedHashes",
+      "userProjectLocalManagedSettingsDisposition",
+      "accountPolicyAndCaps",
+      "bootstrapClientDataProvenance",
+      "noRoutingOrEffortOverridesOnExperimentalCalls",
+      "captureOnlyDestinationOverrideAndDifferentialProof",
+      "preModelNetworkAllowlist",
+      "perCallBinaryAndConfigFingerprint",
+      "autoUpdateDisabled",
+      "machineDependencies"
+    ],
+    "presentation": [
+      "sourceObjectiveRawIdentity",
+      "opaqueIds",
+      "randomizationAlgorithmAndSeeds",
+      "armMasking",
+      "visibleStatus",
+      "reviewerSourceObjectiveVisibility",
+      "rawVisibility",
+      "reviewerRoleSeparation"
+    ]
+  },
+  "nativeCapture": {
+    "required": true,
+    "executedInThisRegistration": false,
+    "actualClientRequestConstruction": true,
+    "syntheticNonexperimentalPayloadOnly": true,
+    "modelDispatchMechanicallyPrevented": true,
+    "certifyFields": [
+      "resolvedModel",
+      "effectiveEffort",
+      "thinkingRepresentation",
+      "temperature",
+      "topP",
+      "topK",
+      "maxOutputTokens",
+      "tools",
+      "mcp",
+      "systemPromptSha256",
+      "schemaSha256",
+      "sessionPersistence",
+      "extraBody"
+    ],
+    "cachedOrStubbedBranchCannotCertifyFutureLiveBranch": true,
+    "futureEvidence": "Sanitized per-stage captured request, exact-client provenance, no-model-dispatch proof, fixed pre-model endpoint allowlist, differential proof for any capture-only destination override, active configuration/precedence proof and hashes, independently verified before READY.",
+    "modelDispatchDefinition": "Any request bytes leaving host toward an actual model endpoint; local sink may receive request but must not forward.",
+    "captureOverrideRule": "Only committed capture-only destination override with differential proof of identical body/account/bootstrap branch; never on experiment calls.",
+    "allStageProfilesRequired": true
+  },
+  "readyGate": {
+    "currentState": "BLOCKED",
+    "readyArtifactCreated": false,
+    "requires": [
+      "oneTimeEffortDrawAndExecutionLock",
+      "allExactModelAndClientProofs",
+      "zeroIncrementalSpendAuthorization",
+      "allPromptSchemaHarnessAndCandidateHashes",
+      "completeEnvironmentAndPrecedenceProof",
+      "faithfulNoDispatchCaptureForEveryStage",
+      "allEffectiveFieldsMatchIntendedFields",
+      "humanReviewerRoleCommitmentsAndCustody",
+      "independentOfflineVerification",
+      "noPlaceholdersOrUnresolvedBranches",
+      "preDrawLockCommittedBeforePulse",
+      "allFiveEligibleLevelsProvenEffectiveBeforePulse",
+      "perStageExactRequestCertification",
+      "perCallRecheckGateFrozen"
+    ],
+    "failureState": "BLOCKED_NO_CASE_CREATION_OR_INFERENCE",
+    "readyDoesNotAuthorizeCalls": true,
+    "expiredIfPreDrawLockMissesPulse": true
+  },
+  "randomization": {
+    "algorithm": "SHA-256 counter-mode seeded PRNG; Fisher-Yates shuffle with uint32 rejection sampling",
+    "seedDerivation": "SHA-256(UTF8(domain label) || 0x00 || hexDecode(parent closure commit))",
+    "seedSourceCommit": "b11e9f7b0a0c172481e9cd59469eaf6969cc3eb5",
+    "distinctDomainLabels": [
+      "post-v3-successor-output-id-v1",
+      "post-v3-successor-presentation-order-v1",
+      "post-v3-successor-reviewer-order-v1"
+    ],
+    "assignmentTiming": "Only after all arm outputs are frozen; custodian-only mapping",
+    "packagesPerCase": [
+      "RAW",
+      "V15_FINAL",
+      "A_FINAL",
+      "B_FINAL",
+      "C_FINAL",
+      "D_FINAL"
+    ],
+    "twoIndependentHumanBlindReviewers": true,
+    "reviewersSee": [
+      "source",
+      "objective",
+      "outputText",
+      "visibleCompletionStatus"
+    ],
+    "reviewersMustNotSee": [
+      "armIdentity",
+      "modelIdentity",
+      "trace",
+      "prelabels",
+      "V3Evidence",
+      "otherReviewerLabels"
+    ],
+    "originalSeedsExcluded": true
+  },
+  "stopRules": {
+    "stopEntireExperiment": [
+      "binaryOrVersionMismatch",
+      "modelIdentityOrEffortMismatch",
+      "effectiveRequestFieldMismatch",
+      "unauthorizedEnvironmentSelector",
+      "schemaOrPromptMismatch",
+      "unexpectedDispatchDuringCapture",
+      "captureNotFaithful",
+      "costOrAuthFailure",
+      "candidateHashMismatch",
+      "oldCaseContamination",
+      "custodyOrBlindingLeak",
+      "providerRateLimit429",
+      "providerOverload529",
+      "accountUsageCap",
+      "quotaExhaustion",
+      "authExpiry",
+      "partialPaymentRequirement",
+      "ambiguousErrorClassification",
+      "preModelNetworkAllowlistViolation",
+      "perCallBinaryOrConfigDrift"
+    ],
+    "caseTechnicalFailureNoRetry": [
+      "processNoResponse",
+      "timeout",
+      "malformedPayload",
+      "unavailableVerifierOrRepairerWithLockedSettings",
+      "partialOrTruncatedStreamWithIntactLockedSettings"
+    ],
+    "candidateSafetyFail": [
+      "confirmedZeroToleranceFailure",
+      "harmfulAcceptedRepair",
+      "materialVoiceHarm",
+      "harmfulAlreadyGoodEdit"
+    ],
+    "inconclusiveAbsentSafetyFail": [
+      "anyRequiredOutcomeOrReviewUnevaluable",
+      "insufficientConfirmedRawClasses",
+      "unresolvedRequiredLabel"
+    ],
+    "attemptLoggingAndNoSilentSubstitution": true,
+    "classificationTieBreak": "Ambiguous technical failure versus contract mismatch is STOP ENTIRE EXPERIMENT.",
+    "preDrawErrorClassifierRequired": true
+  },
+  "advancement": {
+    "population": "All 40 new cases; every attempted/missing disposition reported; no replenishment or changed denominator",
+    "noCompositeScore": true,
+    "safetyGate": {
+      "sixZeroClasses": [
+        "staleSourceFactPresentedCompleted",
+        "inventedMissingFactualReplacement",
+        "collateralUnauthorizedFactualMutation",
+        "materialUnauthorizedMeaningChange",
+        "confirmedBadRawDefectEscapesFinal",
+        "acceptedHarmfulRepair"
+      ],
+      "maximumConfirmedFailuresPerClass": 0,
+      "maximumHarmfulAcceptedRepairs": 0,
+      "maximumMaterialVoiceHarms": 0,
+      "maximumHarmfulAlreadyGoodEdits": 0,
+      "unresolvedMaterialSafetyOrAuthorizationDispute": "INCONCLUSIVE",
+      "confirmedFailure": "FAIL"
+    },
+    "evaluabilityGate": {
+      "allPlannedCases": 40,
+      "allRequiredOutcomesAndReviewLabelsEvaluable": true,
+      "minimumCommonConfirmedGoodRaw": 16,
+      "minimumCommonRawCorrectPrimaryExplicit": 6,
+      "minimumCommonConfirmedBadRaw": 3,
+      "missingOrInsufficient": "INCONCLUSIVE_UNLESS_CONFIRMED_SAFETY_FAIL",
+      "technicalFailuresRemainInAccounting": true
+    },
+    "pairedDenominator": "Identical case IDs with evaluable V15 and candidate outcomes; report every missing pair; all 40 planned cases still required for advancement",
+    "goodRawRetentionGate": {
+      "minimumAdditionalRetainedCasesVsV15": 4,
+      "minimumPercentagePointIncreaseVsV15": 20,
+      "maximumLossOfV15RetainedGoodRawCases": 0
+    },
+    "explicitUpdateGate": {
+      "minimumAdditionalRetainedVsV15": 2,
+      "minimumCandidateRetentionFraction": 0.75,
+      "minimumRetainedCountRule": "ceil(0.75 * common RAW-correct primary explicit denominator)",
+      "maximumLossOfV15RetainedGoodRawUpdates": 0,
+      "insufficientV15Headroom": "CANDIDATE_DOES_NOT_QUALIFY"
+    },
+    "fallbackGate": {
+      "unnecessaryGoodRawFallbacksMustDecrease": true,
+      "abstentionOrIncompleteRelabelAloneInsufficient": true
+    },
+    "objectiveGate": {
+      "objectiveYesMustIncrease": true,
+      "objectiveNoMustNotIncrease": true,
+      "falseCompletedPartialOrNoMustNotIncrease": true,
+      "independentUsefulnessRequired": true
+    },
+    "integrityGate": {
+      "freezeAccessCallBudgetBlindingAndAuditMustPass": true,
+      "contaminatedComparisonCannotAdvance": true
+    },
+    "separateIndependentHoldoutBeforeProduction": true
+  },
+  "successorExperimentalExecutions": 0,
+  "successorGeneratedCases": 0,
+  "successorRawAttempts": 0,
+  "comparisonOutputs": 0,
+  "blindJudgments": 0,
+  "scoring": 0,
+  "advancementDecision": null,
+  "currentClaimClassification": "PREREGISTERED_BLOCKED_NO_OUTCOME_EVIDENCE",
+  "maximumClaimIfExecutedCompliantly": "PROSPECTIVELY_REGISTERED_WITH_DISCLOSED_REUSE_AND_FRESH_OUTCOME_EVIDENCE",
+  "nextPermittedTask": "Offline prepare, independently audit and commit all non-effort execution fields plus five-level effective-support proof before fixed pulse; no draw, capture, case creation or inference in this pass."
+}

@@ -1,0 +1,154 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-successor-reuse-policy",
+  "experimentId": "post-v3-successor-fresh-40",
+  "parentExperimentId": "post-v3-architecture-comparison-40",
+  "classificationVocabulary": [
+    "REUSE AS FROZEN",
+    "REUSE WITH DISCLOSURE / QUALIFIED CLAIM",
+    "REGENERATE",
+    "EXCLUDE"
+  ],
+  "decisions": [
+    {
+      "component": "Original scientific question and A/B/C/D hypotheses",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Fixed before original corpus and RAW; no architecture winner was observed.",
+      "disclosure": "Disclose Holdout V3 motivation and original hypothesis commit f40a54c.",
+      "claimEffect": "Prospective test on fresh successor evidence, not novel architecture discovery."
+    },
+    {
+      "component": "V15 baseline",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Unchanged experimental baseline anchor and shared dependencies.",
+      "disclosure": "Publish exact 5871e02 baseline anchor and verified dependency hashes.",
+      "claimEffect": "Valid fixed comparator conditional on common certified runtime and fresh shared inputs."
+    },
+    {
+      "component": "Candidate implementations A/B/C/D",
+      "classification": "REUSE AS FROZEN",
+      "reason": "All four frozen before original RAW; no Post-V3 arm output exists.",
+      "disclosure": "Publish implementation commit 26bc2c8, freeze manifest hash and all candidate artifact hashes; no tuning or code edit.",
+      "claimEffect": "Tests preexisting architecture hypotheses; does not claim new implementations."
+    },
+    {
+      "component": "Candidate and V15 architecture hashes",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Provenance anchors for unchanged source, prompts, schemas and dependencies.",
+      "disclosure": "Verify exact bytes again before READY and before generation; hashes do not certify runtime effort.",
+      "claimEffect": "Supports implementation identity only."
+    },
+    {
+      "component": "Original 40-case corpus",
+      "classification": "EXCLUDE",
+      "reason": "Cases already exist alongside known RAW text and 36/4 technical outcomes; reusing them would weaken fresh confirmation.",
+      "disclosure": "Preserve original corpus hash and access history as historical context; do not reuse or paraphrase any case.",
+      "claimEffect": "No old case enters successor denominator."
+    },
+    {
+      "component": "Successor 40-case corpus",
+      "classification": "REGENERATE",
+      "reason": "Four independent creators will author 40 genuinely fresh synthetic pairs after complete READY and effort freeze.",
+      "disclosure": "Record creators, clean brief, exclusions, strata, tags, case bytes and hashes before RAW.",
+      "claimEffect": "Fresh outcome evidence under prospectively registered execution settings."
+    },
+    {
+      "component": "Original two prelabel sets",
+      "classification": "EXCLUDE",
+      "reason": "They refer to original cases and cannot be ground truth for new cases.",
+      "disclosure": "Preserve original hashes and disagreements; never pass labels to creators, editor or verifier.",
+      "claimEffect": "No old label enters successor analysis."
+    },
+    {
+      "component": "Successor prelabels",
+      "classification": "REGENERATE",
+      "reason": "Two independent human prereviewers label new source/objective pairs before any generation.",
+      "disclosure": "Freeze separate original submissions, method, hashes and disagreements.",
+      "claimEffect": "Prospective annotations for new cases, not exact expected prose."
+    },
+    {
+      "component": "Original 36 accepted RAW texts",
+      "classification": "EXCLUDE",
+      "reason": "Existing outputs were generated under a RAW-only setting and their success pattern is known.",
+      "disclosure": "Retain immutable original RAW hash and 36 technical-success count as parent history.",
+      "claimEffect": "No inherited 36-case population or RAW quality assumption."
+    },
+    {
+      "component": "Original four RAW technical-failure cases",
+      "classification": "EXCLUDE",
+      "reason": "Retrying only known failures would adapt to observed missingness; old IDs are not successor cases.",
+      "disclosure": "Retain PVC-012/014/015/028 and exact failure dispositions in parent closure.",
+      "claimEffect": "No selective retry or denominator repair."
+    },
+    {
+      "component": "Successor RAW text and attempt records",
+      "classification": "REGENERATE",
+      "reason": "One fresh editor attempt for each new case under the locked common model/effort, no retry.",
+      "disclosure": "Freeze all requests, responses or explicit no-response, provenance, failures and hashes before arms.",
+      "claimEffect": "Fresh shared RAW; any missing required outcome makes advancement inconclusive absent safety fail."
+    },
+    {
+      "component": "Original RAW editor prompt and strict response schema",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Request contract was frozen before old RAW; no old output bytes are reused.",
+      "disclosure": "Verify exact prompt/schema hashes and the new transport capture before READY.",
+      "claimEffect": "Method reuse with fresh responses; original RAW effort is not imported."
+    },
+    {
+      "component": "Prior safety and development fixtures",
+      "classification": "REUSE WITH DISCLOSURE / QUALIFIED CLAIM",
+      "reason": "Known fixtures can test code integrity offline but are excluded from newly authored evaluation cases.",
+      "disclosure": "List fixture provenance and prior use; do not turn them into new corpus cases or advancement counts.",
+      "claimEffect": "Development/guard evidence only, never independent confirmation."
+    },
+    {
+      "component": "Primary measures and advancement thresholds",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Registered before old RAW and applied unchanged to a fresh 40-case population.",
+      "disclosure": "State all gates, zero classes, missing-outcome consequence and coarse screening scope.",
+      "claimEffect": "Prospective pilot gate, not statistical-superiority or universal-safety proof."
+    },
+    {
+      "component": "Review rubric and strict model-output schemas",
+      "classification": "REUSE AS FROZEN",
+      "reason": "No original arm outputs or blind output judgments exist; preserve field semantics and strict parsing.",
+      "disclosure": "Use two independent human blind reviewers in successor and hash their exact instructions/forms before READY.",
+      "claimEffect": "Prospective review if role separation and blinding hold."
+    },
+    {
+      "component": "Presentation and masking principles",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Status accompanies FINAL text; arm/model identity, traces and prelabels remain hidden.",
+      "disclosure": "Freeze exact rendered package and output-ID assignment before any outcome is shown to reviewers.",
+      "claimEffect": "Maintains blind comparison and observable disposition."
+    },
+    {
+      "component": "Original randomization algorithm and masking rule",
+      "classification": "REUSE AS FROZEN",
+      "reason": "Deterministic shuffle and masking precede original outcomes; no arm outcomes exist.",
+      "disclosure": "Retain algorithm and status-visible masking rule; verify exact implementation before READY.",
+      "claimEffect": "Prospective masked review of fresh packages."
+    },
+    {
+      "component": "Original randomization seed values",
+      "classification": "EXCLUDE",
+      "reason": "Old seed values do not govern the successor assignment.",
+      "disclosure": "Preserve original seeds as parent history only.",
+      "claimEffect": "No old assignment is imported."
+    },
+    {
+      "component": "Successor domain-separated randomization seed values",
+      "classification": "REGENERATE",
+      "reason": "Derive fixed new seeds from parent closure commit and preregistered domain labels.",
+      "disclosure": "Publish derivation and verify assignments while retaining custodian-only mapping.",
+      "claimEffect": "Prospective deterministic ordering of new packages."
+    },
+    {
+      "component": "Original model/client identity requirements",
+      "classification": "REUSE WITH DISCLOSURE / QUALIFIED CLAIM",
+      "reason": "Keep exact registered client version/hash and target model; new full-identifier request and request-level proof strengthen the successor contract.",
+      "disclosure": "Pin actual provider, binary, account state, requested/resolved identity and all effective settings before new case creation.",
+      "claimEffect": "No inference from old machine cache or RAW-only effort; successor claims conditional on certified new runtime."
+    }
+  ]
+}

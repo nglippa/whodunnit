@@ -1,0 +1,789 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://whodunnit.invalid/schemas/post-v3-successor-ready-execution-contract-v1",
+  "title": "Post-V3 successor READY execution contract",
+  "description": "Schema for a future READY artifact, not an artifact created by registration. All non-effort fields must match a committed pre-draw lock whose commit predates the fixed pulse. A separate semantic verifier checks timing, exact hashes, equality across stages and capture fidelity; shape validation alone never grants READY.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "artifact",
+    "experimentId",
+    "state",
+    "selection",
+    "client",
+    "stageProfiles",
+    "session",
+    "environment",
+    "presentation",
+    "capture",
+    "authorization",
+    "preDrawLock"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "artifact": {
+      "const": "post-v3-successor-ready-execution-contract"
+    },
+    "experimentId": {
+      "const": "post-v3-successor-fresh-40"
+    },
+    "state": {
+      "const": "READY"
+    },
+    "selection": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selectedEffort",
+        "pulseExactBytesSha256",
+        "pulseTimestamp",
+        "pulseChainIndex",
+        "pulseIndex",
+        "pulseSignatureVerified",
+        "eligibleSetProofSha256",
+        "mappingProofSha256",
+        "independentRecomputationSha256",
+        "eligibleOrderedSet",
+        "eligibleCount",
+        "targetTimestampUtc",
+        "pulseOutputValueHex",
+        "domainTag",
+        "acceptedCounter",
+        "acceptedX",
+        "selectedIndex",
+        "supportForAllFiveBeforePulseProofSha256"
+      ],
+      "properties": {
+        "selectedEffort": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "pulseExactBytesSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "pulseTimestamp": {
+          "const": "2026-10-15T00:00:00.000Z"
+        },
+        "pulseChainIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pulseIndex": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "pulseSignatureVerified": {
+          "const": true
+        },
+        "eligibleSetProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "mappingProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "independentRecomputationSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "eligibleOrderedSet": {
+          "const": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "eligibleCount": {
+          "const": 5
+        },
+        "targetTimestampUtc": {
+          "const": "2026-10-15T00:00:00.000Z"
+        },
+        "pulseOutputValueHex": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{128}$"
+        },
+        "domainTag": {
+          "const": "whodunnit-post-v3-successor-effort-v1"
+        },
+        "acceptedCounter": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "acceptedX": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4294967294
+        },
+        "selectedIndex": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "supportForAllFiveBeforePulseProofSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "client": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "provider",
+        "accountClass",
+        "absolutePath",
+        "version",
+        "binarySha256",
+        "requestedModel",
+        "resolvedModel",
+        "accountAndZeroSpendProofSha256"
+      ],
+      "properties": {
+        "provider": {
+          "const": "Anthropic"
+        },
+        "accountClass": {
+          "const": "claude.ai"
+        },
+        "absolutePath": {
+          "const": "/Users/nicholaslippa/.local/share/claude/versions/2.1.288"
+        },
+        "version": {
+          "const": "2.1.288"
+        },
+        "binarySha256": {
+          "const": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750"
+        },
+        "requestedModel": {
+          "const": "claude-sonnet-5-5"
+        },
+        "resolvedModel": {
+          "const": "claude-sonnet-5-5"
+        },
+        "accountAndZeroSpendProofSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "stageProfiles": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "raw_editor",
+        "v15_review",
+        "v15_repair",
+        "v15_recheck",
+        "a_review",
+        "a_repair",
+        "a_recheck",
+        "b_review",
+        "b_repair",
+        "b_recheck",
+        "c_review",
+        "c_repair",
+        "c_recheck",
+        "d_review",
+        "d_repair",
+        "d_recheck"
+      ],
+      "properties": {
+        "raw_editor": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "v15_review": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "v15_repair": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "v15_recheck": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "a_review": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "a_repair": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "a_recheck": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "b_review": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "b_repair": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "b_recheck": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "c_review": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "c_repair": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "c_recheck": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "d_review": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "d_repair": {
+          "$ref": "#/$defs/stageProfile"
+        },
+        "d_recheck": {
+          "$ref": "#/$defs/stageProfile"
+        }
+      },
+      "description": "Every stage must be captured with synthetic input before READY even if its branch may not run for a later case. The semantic verifier checks selectedEffort == intendedEffort == effectiveEffort in all 16 profiles."
+    },
+    "session": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "freshProcess",
+        "emptyWorkingDirectory",
+        "persistence",
+        "modelRetries",
+        "structuredOutputRetries",
+        "timeoutMs",
+        "terminationPolicy",
+        "maximumReviewAttempts",
+        "maximumLocalRepairs",
+        "maximumWholeResultRechecks",
+        "terminationSignal",
+        "gracePeriodMs",
+        "pacingScheduleSha256"
+      ],
+      "properties": {
+        "freshProcess": {
+          "const": true
+        },
+        "emptyWorkingDirectory": {
+          "const": true
+        },
+        "persistence": {
+          "const": false
+        },
+        "modelRetries": {
+          "const": 0
+        },
+        "structuredOutputRetries": {
+          "const": 0
+        },
+        "timeoutMs": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "terminationPolicy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "maximumReviewAttempts": {
+          "const": 1
+        },
+        "maximumLocalRepairs": {
+          "const": 1
+        },
+        "maximumWholeResultRechecks": {
+          "const": 1
+        },
+        "terminationSignal": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gracePeriodMs": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "pacingScheduleSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "allowlistSha256",
+        "selectorAbsenceProofSha256",
+        "settingsSourcesProofSha256",
+        "managedPolicyProofSha256",
+        "accountBootstrapProofSha256",
+        "machineDependenciesSha256",
+        "futureCallEquivalenceProofSha256",
+        "preModelEndpointAllowlistSha256",
+        "captureOnlyDestinationOverrideProofSha256",
+        "autoUpdateDisabledProofSha256",
+        "perCallFingerprintRuleSha256"
+      ],
+      "properties": {
+        "allowlistSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "selectorAbsenceProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "settingsSourcesProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "managedPolicyProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "accountBootstrapProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "machineDependenciesSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "futureCallEquivalenceProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "preModelEndpointAllowlistSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "captureOnlyDestinationOverrideProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "autoUpdateDisabledProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "perCallFingerprintRuleSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "presentation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "inputIdentityProofSha256",
+        "randomizationRuleSha256",
+        "outputIdSeedSha256",
+        "presentationSeedSha256",
+        "reviewerOrderSeedSha256",
+        "visibleStatusIncluded",
+        "armIdentityMasked",
+        "reviewerInstructionsSha256",
+        "humanReviewerRoleCommitmentsSha256"
+      ],
+      "properties": {
+        "inputIdentityProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "randomizationRuleSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "outputIdSeedSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "presentationSeedSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "reviewerOrderSeedSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "visibleStatusIncluded": {
+          "const": true
+        },
+        "armIdentityMasked": {
+          "const": true
+        },
+        "reviewerInstructionsSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "humanReviewerRoleCommitmentsSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "capture": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "actualNativeConstruction",
+        "syntheticPayloadOnly",
+        "dispatchPrevented",
+        "unexpectedNetworkDispatch",
+        "allStageFieldsCertified",
+        "captureAuditSha256",
+        "independentVerifierSha256",
+        "noForwardingProofSha256",
+        "allSixteenStageCapturesPresent"
+      ],
+      "properties": {
+        "actualNativeConstruction": {
+          "const": true
+        },
+        "syntheticPayloadOnly": {
+          "const": true
+        },
+        "dispatchPrevented": {
+          "const": true
+        },
+        "unexpectedNetworkDispatch": {
+          "const": false
+        },
+        "allStageFieldsCertified": {
+          "const": true
+        },
+        "captureAuditSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "independentVerifierSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "noForwardingProofSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "allSixteenStageCapturesPresent": {
+          "const": true
+        }
+      }
+    },
+    "authorization": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "readyIsNotRunAuthorization",
+        "precaseFreezeVerified",
+        "separateRunAuthorizationRequired"
+      ],
+      "properties": {
+        "readyIsNotRunAuthorization": {
+          "const": true
+        },
+        "precaseFreezeVerified": {
+          "const": true
+        },
+        "separateRunAuthorizationRequired": {
+          "const": true
+        }
+      }
+    },
+    "preDrawLock": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "commit",
+        "committerTimestampUtc",
+        "exactBytesSha256",
+        "allNonEffortFieldsFrozen",
+        "allFiveLevelsEffective",
+        "captureMethodAndNetworkAllowlistFrozen",
+        "errorClassifierFrozen",
+        "independentAuditSha256"
+      ],
+      "properties": {
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "committerTimestampUtc": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "exactBytesSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "allNonEffortFieldsFrozen": {
+          "const": true
+        },
+        "allFiveLevelsEffective": {
+          "const": true
+        },
+        "captureMethodAndNetworkAllowlistFrozen": {
+          "const": true
+        },
+        "errorClassifierFrozen": {
+          "const": true
+        },
+        "independentAuditSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "optionalNumberField": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "value",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PRESENT"
+            },
+            "value": {
+              "type": "number"
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PROVEN_OMITTED"
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        }
+      ]
+    },
+    "optionalIntegerField": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "value",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PRESENT"
+            },
+            "value": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PROVEN_OMITTED"
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        }
+      ]
+    },
+    "optionalStringField": {
+      "oneOf": [
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "value",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PRESENT"
+            },
+            "value": {
+              "type": "string",
+              "minLength": 1
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PROVEN_OMITTED"
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        }
+      ]
+    },
+    "effectiveRequest": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "intendedEffort",
+        "effectiveEffort",
+        "thinkingEnabled",
+        "thinkingMode",
+        "thinkingBudget",
+        "temperature",
+        "topP",
+        "topK",
+        "maxOutputTokens",
+        "structuredOutputMode",
+        "toolsDisabled",
+        "mcpDisabled",
+        "slashCommandsDisabled",
+        "permissions",
+        "hooks",
+        "extraBody",
+        "sessionPersistence",
+        "precedenceProofSha256"
+      ],
+      "properties": {
+        "intendedEffort": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "effectiveEffort": {
+          "enum": [
+            "low",
+            "medium",
+            "high",
+            "xhigh",
+            "max"
+          ]
+        },
+        "thinkingEnabled": {
+          "type": "boolean"
+        },
+        "thinkingMode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "thinkingBudget": {
+          "$ref": "#/$defs/optionalIntegerField"
+        },
+        "temperature": {
+          "$ref": "#/$defs/optionalNumberField"
+        },
+        "topP": {
+          "$ref": "#/$defs/optionalNumberField"
+        },
+        "topK": {
+          "$ref": "#/$defs/optionalIntegerField"
+        },
+        "maxOutputTokens": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "structuredOutputMode": {
+          "type": "string",
+          "minLength": 1
+        },
+        "toolsDisabled": {
+          "const": true
+        },
+        "mcpDisabled": {
+          "const": true
+        },
+        "slashCommandsDisabled": {
+          "const": true
+        },
+        "permissions": {
+          "type": "string",
+          "minLength": 1
+        },
+        "hooks": {
+          "const": "DISABLED"
+        },
+        "extraBody": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "presence",
+            "proofSha256"
+          ],
+          "properties": {
+            "presence": {
+              "const": "PROVEN_OMITTED"
+            },
+            "proofSha256": {
+              "$ref": "#/$defs/sha256"
+            }
+          }
+        },
+        "sessionPersistence": {
+          "const": false
+        },
+        "precedenceProofSha256": {
+          "$ref": "#/$defs/sha256"
+        }
+      }
+    },
+    "stageProfile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "systemPromptSha256",
+        "schemaSha256",
+        "transportSha256",
+        "adapterSha256",
+        "sanitizedCaptureSha256",
+        "effectiveFieldsMatch",
+        "effectiveRequest"
+      ],
+      "properties": {
+        "systemPromptSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "schemaSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "transportSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "adapterSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "sanitizedCaptureSha256": {
+          "$ref": "#/$defs/sha256"
+        },
+        "effectiveFieldsMatch": {
+          "const": true
+        },
+        "effectiveRequest": {
+          "$ref": "#/$defs/effectiveRequest"
+        }
+      }
+    }
+  }
+}
