@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-successor-pre-draw-investigation",
+  "experimentId": "post-v3-successor-fresh-40",
+  "parentPreregistrationCommit": "8d9a4b6173e54020eaa44a36bb75fe07314ca456",
+  "parentPreregistrationSha256": "9e027a0f3b56eaec3398c4db0bc7495e49c50bb1c137bf7a90799acfca4c75ac",
+  "state": "BLOCKED_NO_PRE_DRAW_LOCK",
+  "decision": "D_CAPTURE_SAFETY_NOT_PROVEN",
+  "secondaryFinding": "B_NON_EFFORT_FIELDS_INCOMPLETE",
+  "client": {
+    "path": "/Users/nicholaslippa/.local/share/claude/versions/2.1.288",
+    "version": "2.1.288",
+    "sha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+    "hashMatched": true,
+    "executable": true,
+    "requestedModel": "claude-sonnet-5-5",
+    "acceptedResolvedModel": "claude-sonnet-5-5",
+    "resolvedModelProven": false,
+    "modelFallbackAllowed": false
+  },
+  "draw": {
+    "source": "NIST Randomness Beacon 2.0 signed pulse",
+    "targetTimestampUtc": "2026-10-15T00:00:00.000Z",
+    "targetUnixMilliseconds": 1792022400000,
+    "endpoint": "https://beacon.nist.gov/beacon/2.0/pulse/time/1792022400000",
+    "responseField": "pulse.outputValue",
+    "decoding": "exactly 64 bytes of case-insensitive hexadecimal",
+    "domainSeparatorUtf8": "whodunnit-post-v3-successor-effort-v1",
+    "digestInput": "UTF8(domain) || 0x00 || pulseBytes || uint32be(counter)",
+    "integerInterpretation": "first four SHA-256 digest bytes as unsigned big-endian uint32",
+    "acceptance": "first x < floor(2^32/5)*5",
+    "indexMapping": "x mod 5",
+    "orderedEffortSet": ["low", "medium", "high", "xhigh", "max"],
+    "invalidOrUnavailable": "BLOCKED; no replacement pulse or redraw",
+    "implementationPath": "tools/eval/post-v3-successor-draw.ts",
+    "syntheticArithmeticTestsPassed": true,
+    "targetPulseQueried": false,
+    "selectedEffort": null,
+    "drawExecuted": false
+  },
+  "effortProofs": [
+    {"level": "low", "parserAdvertised": true, "staticModelCatalogAdvertised": true, "effectiveRequestProven": false, "state": "UNRESOLVED"},
+    {"level": "medium", "parserAdvertised": true, "staticModelCatalogAdvertised": true, "effectiveRequestProven": false, "state": "UNRESOLVED"},
+    {"level": "high", "parserAdvertised": true, "staticModelCatalogAdvertised": true, "effectiveRequestProven": false, "state": "UNRESOLVED"},
+    {"level": "xhigh", "parserAdvertised": true, "staticModelCatalogAdvertised": true, "effectiveRequestProven": false, "state": "UNRESOLVED"},
+    {"level": "max", "parserAdvertised": true, "staticModelCatalogAdvertised": true, "effectiveRequestProven": false, "state": "UNRESOLVED"}
+  ],
+  "profileInventory": {
+    "source": "data/evaluation/post-v3-successor/execution-contract.schema.json",
+    "requiredCount": 16,
+    "ids": [
+      "raw_editor",
+      "v15_review", "v15_repair", "v15_recheck",
+      "a_review", "a_repair", "a_recheck",
+      "b_review", "b_repair", "b_recheck",
+      "c_review", "c_repair", "c_recheck",
+      "d_review", "d_repair", "d_recheck"
+    ],
+    "allNamed": true,
+    "allComplete": false,
+    "sharedEffortRule": "one future selected effort intended for every profile",
+    "sharedEffortEffectivenessProven": false
+  },
+  "materialUnresolvedClasses": [
+    "account entitlement, caps, provider revision and zero incremental spend proof",
+    "non-effort reasoning and thinking representation",
+    "effective temperature, top-p, top-k and maximum output",
+    "structured-output representation and all stage prompt/schema hashes",
+    "tools, MCP, slash commands, permission mode and hooks",
+    "explicit environment allowlist and config precedence including effort and extra body",
+    "successor transport, sixteen stage bindings and V15 saved-RAW injection",
+    "numeric timeouts, termination, pacing and exact error dispositions",
+    "bootstrap and pre-model endpoint allowlist",
+    "faithful pre-dispatch no-egress interception and differential equivalence",
+    "five distinct effective-request proofs"
+  ],
+  "capture": {
+    "harnessBuilt": false,
+    "authoritativeCaptureRun": false,
+    "interceptionBeforeDispatchProven": false,
+    "failClosedProven": false,
+    "normalBootstrapBranchPreservedProven": false,
+    "unixSocketBranchSkipsNormalBootstrap": true,
+    "localTcpProbe": "EPERM",
+    "localUnixListenerProbe": "EPERM",
+    "nestedNetworkDenyProbe": "sandbox_apply Operation not permitted",
+    "modelDispatches": 0
+  },
+  "audits": [
+    {"id": "A", "scope": "execution contract", "finding": "sixteen names known; material non-effort fields and successor transport incomplete"},
+    {"id": "B", "scope": "effort and draw", "finding": "sealed draw verified; all five effective request proofs unresolved"},
+    {"id": "C", "scope": "no-dispatch safety", "finding": "no positive faithful interception and egress-denial proof"}
+  ],
+  "experimentalActivity": {
+    "modelInferenceCalls": 0,
+    "beaconTargetCalls": 0,
+    "successorCasesGenerated": 0,
+    "successorRawGenerated": 0,
+    "prelabelsGenerated": 0,
+    "architectureArmExecutions": 0,
+    "blindOutputReviews": 0,
+    "scoringRuns": 0,
+    "candidateChanges": 0,
+    "v16": false,
+    "productionChanges": 0,
+    "experimentalSpendUsd": 0
+  },
+  "preDrawLockCreated": false,
+  "readyArtifactCreated": false,
+  "nextPermittedTask": "Before the fixed pulse, establish safe faithful native pre-dispatch capture, freeze all non-effort fields and all sixteen profiles, prove all five effective requests, independently audit and commit the complete pre-draw lock. Do not draw before it."
+}

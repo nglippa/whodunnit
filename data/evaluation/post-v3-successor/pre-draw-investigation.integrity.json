@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "artifact": "post-v3-successor-pre-draw-investigation-integrity",
+  "experimentId": "post-v3-successor-fresh-40",
+  "state": "BLOCKED_NO_PRE_DRAW_LOCK",
+  "hashAlgorithm": "sha256",
+  "exactFileBytesSha256": {
+    "docs/POST-V3-SUCCESSOR-PRE-DRAW-LOCK.md": "d0951aee6fe41d32dc1c033d4ce0872a75fb357dda651a33db3fd78f8294af4e",
+    "data/evaluation/post-v3-successor/pre-draw-investigation.json": "906adea131593cbf7ba0910a8790f56b6a42018c6dd36624d74cbd07919c4cdd",
+    "tools/eval/post-v3-successor-draw.ts": "7f7b0ee5c2f08781110dcd34f7bcdccc2cf034166329621306640052c606f1a7",
+    "tools/eval/post-v3-successor-draw.test.ts": "7b08e60e24384a4fa2e84fb38280bdc7dfb6c3da86139df4bccd15be17d29c81",
+    "docs/POST-V3-SUCCESSOR-PREREGISTRATION.md": "8ecc6def06542a08053d66c46eab0ec198553aef189d49ff3d2f613aa843a144",
+    "data/evaluation/post-v3-successor/preregistration.json": "9e027a0f3b56eaec3398c4db0bc7495e49c50bb1c137bf7a90799acfca4c75ac",
+    "data/evaluation/post-v3-successor/reuse-policy.json": "78aa206665a0e7ffd8a3d2dcb2c610a38f46bf0ac49f35a1e51a91d5a84b47c4",
+    "data/evaluation/post-v3-successor/execution-contract.schema.json": "dc4385ad8f047243fc8a76b56859d3a36173384fb6a2c0fbffed01b1d17383ce",
+    "data/evaluation/post-v3-comparison/frozen/implementations.json": "e6f3b8e0c38f3fb1bd65aba7a898ebc89f0454120aa96ef30d03ce24d18dadff",
+    "data/evaluation/post-v3-comparison/raw-editor-prompt-v1.txt": "0e05f84297407b68d8e642f3944a00fa8fb9369a5c2c0696bbde196db688994c",
+    "data/evaluation/post-v3-comparison/raw-response.schema.json": "7afa961279bb1732002ca0bb900ac7a5363702fe1a4a455c7f496fbfc2d7fd2e",
+    "src/lib/prompts/index.ts": "4c0e799847777e28b00125ddf7132264ffb897b87acf79fca508f4bbbaa03c88",
+    "src/lib/reconstruction/verified-reconstruction.ts": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+    "src/lib/reconstruction/post-v3/index.ts": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+    "src/lib/reconstruction/post-v3/contracts.ts": "9041aea44474555ef1c95312d390cbecbd42a72d755783ece76096428af481cd"
+  },
+  "registeredClientSha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+  "selfHashPolicy": "This investigation sidecar does not hash itself; its committed Git blob records exact bytes. It is not a pre-draw lock integrity artifact."
+}
