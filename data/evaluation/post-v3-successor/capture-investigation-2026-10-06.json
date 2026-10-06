@@ -1,0 +1,655 @@
+{
+  "artifact": "successor-native-capture-investigation-2026-10-06",
+  "schemaVersion": 1,
+  "status": "BLOCKED_NO_PRE_DRAW_LOCK",
+  "decision": "D_CAPTURE_SAFETY_NOT_PROVEN",
+  "secondaryFinding": "B_NON_EFFORT_FIELDS_INCOMPLETE",
+  "scientificProtocolChanged": false,
+  "baselineCommit": "87654bccd00195b6dee2636bbb38fd70d787e3c4",
+  "acceptedStartingHead": "fe0d3c2bb6ffd75aaa2d159fa1e87a9fd4664544",
+  "client": {
+    "path": "/Users/nicholaslippa/.local/share/claude/versions/2.1.288",
+    "sha256": "bbe93063f7a0879a1021b2891e5c9354e5b3b98433e32efe6750f7710afed750",
+    "requestedModel": "claude-sonnet-5-5",
+    "resolvedModelProven": false,
+    "nativeExecuted": false
+  },
+  "housekeeping": {
+    "gitignoreRestoredExactHead": true,
+    "preserved": [
+      {
+        "path": "/Users/nicholaslippa/whodunnit-quarantine/gitignore-runtime-20261006T060702Z",
+        "sha256": "2c031beae2e9a456cb87920d9cf3878533791d3740eef628a452c05aa76aadc5"
+      },
+      {
+        "path": "/Users/nicholaslippa/whodunnit-quarantine/ignore-runtime-20261006T060702Z",
+        "sha256": "5b345696ac9daf0b07ce5b9c56d5ec914815e395286f4c9f9ac3ec8ec83bf507"
+      }
+    ],
+    "allowedRuntimePaths": [
+      "?? graft/.cache/ask-index.json",
+      "?? graft/.cache/extract.c3679fb5d24a63a0.json",
+      "?? graft/.cache/fingerprint.c3679fb5d24a63a0.json",
+      "?? graft/.cache/session/01a10fab-e0df-7932-9b53-0b7141a69944.json",
+      "?? graft/.cache/stats.json",
+      "?? graft/.cache/telemetry-repo-id.json",
+      "?? graft/.graph/wiring.json",
+      "?? graft/INDEX.md",
+      "?? graft/eslint.config.md",
+      "?? graft/next.config.md",
+      "?? graft/postcss.config.md",
+      "?? graft/scripts/verify-post-v3-freeze.md",
+      "?? graft/src/app/api/reconstruct/route.md",
+      "?? graft/src/app/api/voiceprints/observe/route.md",
+      "?? graft/src/app/layout.md",
+      "?? graft/src/app/page.md",
+      "?? graft/src/app/voiceprints/page.md",
+      "?? graft/src/components/SiteHeader.md",
+      "?? graft/src/components/brand/Mark.md",
+      "?? graft/src/components/ui/Button.md",
+      "?? graft/src/domain/document.md",
+      "?? graft/src/domain/evaluation.md",
+      "?? graft/src/domain/judge.md",
+      "?? graft/src/domain/refinement.md",
+      "?? graft/src/domain/semantics.md",
+      "?? graft/src/domain/sources.md",
+      "?? graft/src/domain/strategy.md",
+      "?? graft/src/domain/style.md",
+      "?? graft/src/domain/style.test.md",
+      "?? graft/src/domain/verification.md",
+      "?? graft/src/domain/voiceprint.md",
+      "?? graft/src/domain/writing-rules.md",
+      "?? graft/src/domain/writing-rules.test.md",
+      "?? graft/src/features/comparison/ChangesView.md",
+      "?? graft/src/features/editor/ProseField.md",
+      "?? graft/src/features/editor/TargetPicker.md",
+      "?? graft/src/features/editor/Workspace.md",
+      "?? graft/src/features/editor/example.md",
+      "?? graft/src/features/reconstruction/Marginalia.md",
+      "?? graft/src/features/reconstruction/RefineBar.md",
+      "?? graft/src/features/reconstruction/ResultPane.md",
+      "?? graft/src/features/reconstruction/client.md",
+      "?? graft/src/features/reconstruction/useWorkspace.md",
+      "?? graft/src/features/voiceprints/VoiceprintDetail.md",
+      "?? graft/src/features/voiceprints/VoiceprintsView.md",
+      "?? graft/src/features/voiceprints/useVoiceprints.md",
+      "?? graft/src/lib/ai/ai.test.md",
+      "?? graft/src/lib/ai/anthropic-provider.md",
+      "?? graft/src/lib/ai/anthropic.md",
+      "?? graft/src/lib/ai/demo-rules.md",
+      "?? graft/src/lib/ai/demo.md",
+      "?? graft/src/lib/ai/gemini-provider.md",
+      "?? graft/src/lib/ai/gemini.md",
+      "?? graft/src/lib/ai/gemini.test.md",
+      "?? graft/src/lib/ai/groq.md",
+      "?? graft/src/lib/ai/groq.test.md",
+      "?? graft/src/lib/ai/index.md",
+      "?? graft/src/lib/ai/openai-compatible-provider.md",
+      "?? graft/src/lib/ai/openai-compatible.test.md",
+      "?? graft/src/lib/ai/provider.md",
+      "?? graft/src/lib/ai/schemas.md",
+      "?? graft/src/lib/ai/select.md",
+      "?? graft/src/lib/analysis/analysis.test.md",
+      "?? graft/src/lib/analysis/analyze.md",
+      "?? graft/src/lib/analysis/lexicon.md",
+      "?? graft/src/lib/analysis/patterns.md",
+      "?? graft/src/lib/analysis/stem.md",
+      "?? graft/src/lib/analysis/tokenize.md",
+      "?? graft/src/lib/discourse/analyze.md",
+      "?? graft/src/lib/discourse/analyze.test.md",
+      "?? graft/src/lib/discourse/development-eval.md",
+      "?? graft/src/lib/discourse/development-eval.test.md",
+      "?? graft/src/lib/discourse/structure.md",
+      "?? graft/src/lib/discourse/structure.test.md",
+      "?? graft/src/lib/evaluation/batch.md",
+      "?? graft/src/lib/evaluation/config.md",
+      "?? graft/src/lib/evaluation/corpus.md",
+      "?? graft/src/lib/evaluation/cost-guard.md",
+      "?? graft/src/lib/evaluation/cost-guard.test.md",
+      "?? graft/src/lib/evaluation/editing-job-schema.md",
+      "?? graft/src/lib/evaluation/editing-job-schema.test.md",
+      "?? graft/src/lib/evaluation/editing-job-validation.test.md",
+      "?? graft/src/lib/evaluation/evaluation.test.md",
+      "?? graft/src/lib/evaluation/hardening.test.md",
+      "?? graft/src/lib/evaluation/holdout-v2.md",
+      "?? graft/src/lib/evaluation/holdout-v2.test.md",
+      "?? graft/src/lib/evaluation/holdout.md",
+      "?? graft/src/lib/evaluation/holdout.test.md",
+      "?? graft/src/lib/evaluation/judge-cache.md",
+      "?? graft/src/lib/evaluation/judge.md",
+      "?? graft/src/lib/evaluation/judge.test.md",
+      "?? graft/src/lib/evaluation/measures.md",
+      "?? graft/src/lib/evaluation/measures.test.md",
+      "?? graft/src/lib/evaluation/objective-feasibility-schema.md",
+      "?? graft/src/lib/evaluation/objective-feasibility-validation.test.md",
+      "?? graft/src/lib/evaluation/objective-feasibility.md",
+      "?? graft/src/lib/evaluation/objective-feasibility.test.md",
+      "?? graft/src/lib/evaluation/plan-entailment-schema.md",
+      "?? graft/src/lib/evaluation/plan-entailment-schema.test.md",
+      "?? graft/src/lib/evaluation/plan-entailment-validation.test.md",
+      "?? graft/src/lib/evaluation/refinement-effect.md",
+      "?? graft/src/lib/evaluation/report.md",
+      "?? graft/src/lib/evaluation/runner.md",
+      "?? graft/src/lib/evaluation/semantic-fixtures.md",
+      "?? graft/src/lib/evaluation/semantic-scope-validation.test.md",
+      "?? graft/src/lib/evaluation/series.md",
+      "?? graft/src/lib/evaluation/store.md",
+      "?? graft/src/lib/evaluation/verification-boundary.test.md",
+      "?? graft/src/lib/evaluation/verified-reconstruction-development.test.md",
+      "?? graft/src/lib/evaluation/voice-fixtures.md",
+      "?? graft/src/lib/http/json.md",
+      "?? graft/src/lib/persistence/browser.md",
+      "?? graft/src/lib/persistence/kv.md",
+      "?? graft/src/lib/persistence/persistence.test.md",
+      "?? graft/src/lib/persistence/repositories.md",
+      "?? graft/src/lib/persistence/supabase.md",
+      "?? graft/src/lib/privacy/log.md",
+      "?? graft/src/lib/prompts/index.md",
+      "?? graft/src/lib/reconstruction/cloud-agent.md",
+      "?? graft/src/lib/reconstruction/composite-temporal-confirmation.test.md",
+      "?? graft/src/lib/reconstruction/composite-temporal-verification.md",
+      "?? graft/src/lib/reconstruction/composite-temporal-verification.test.md",
+      "?? graft/src/lib/reconstruction/directive-scoped-temporal-verification.md",
+      "?? graft/src/lib/reconstruction/directive-scoped-temporal-verification.test.md",
+      "?? graft/src/lib/reconstruction/editor-objective-focus.test.md",
+      "?? graft/src/lib/reconstruction/exact-delta-confirmation.test.md",
+      "?? graft/src/lib/reconstruction/exact-delta-verification.md",
+      "?? graft/src/lib/reconstruction/exact-delta-verification.test.md",
+      "?? graft/src/lib/reconstruction/objective-aware-development.test.md",
+      "?? graft/src/lib/reconstruction/objective-aware-editor.test.md",
+      "?? graft/src/lib/reconstruction/objective-aware-verification.md",
+      "?? graft/src/lib/reconstruction/objective-aware-verification.test.md",
+      "?? graft/src/lib/reconstruction/orchestrator.md",
+      "?? graft/src/lib/reconstruction/orchestrator.test.md",
+      "?? graft/src/lib/reconstruction/pipeline.md",
+      "?? graft/src/lib/reconstruction/pipeline.test.md",
+      "?? graft/src/lib/reconstruction/plan-budget.test.md",
+      "?? graft/src/lib/reconstruction/post-v3/candidates.test.md",
+      "?? graft/src/lib/reconstruction/post-v3/contracts.md",
+      "?? graft/src/lib/reconstruction/post-v3/index.md",
+      "?? graft/src/lib/reconstruction/post-v3/objective-contract.md",
+      "?? graft/src/lib/reconstruction/postcheck.md",
+      "?? graft/src/lib/reconstruction/refinement-delta.md",
+      "?? graft/src/lib/reconstruction/refinement.test.md",
+      "?? graft/src/lib/reconstruction/rewrite-plan.md",
+      "?? graft/src/lib/reconstruction/rewrite-plan.test.md",
+      "?? graft/src/lib/reconstruction/semantic-development-eval.md",
+      "?? graft/src/lib/reconstruction/semantic-development-eval.test.md",
+      "?? graft/src/lib/reconstruction/semantic-review-jobs-v5.md",
+      "?? graft/src/lib/reconstruction/semantic-review-jobs-v5.test.md",
+      "?? graft/src/lib/reconstruction/semantic-review-jobs.md",
+      "?? graft/src/lib/reconstruction/semantic-review-jobs.test.md",
+      "?? graft/src/lib/reconstruction/semantic-review.md",
+      "?? graft/src/lib/reconstruction/semantic-review.test.md",
+      "?? graft/src/lib/reconstruction/semantic-scope-development.test.md",
+      "?? graft/src/lib/reconstruction/strategies.md",
+      "?? graft/src/lib/reconstruction/strategy.test.md",
+      "?? graft/src/lib/reconstruction/v13-architecture-replay.test.md",
+      "?? graft/src/lib/reconstruction/verified-reconstruction-v11.test.md",
+      "?? graft/src/lib/reconstruction/verified-reconstruction.md",
+      "?? graft/src/lib/reconstruction/verified-reconstruction.test.md",
+      "?? graft/src/lib/reconstruction/wording-audit.md",
+      "?? graft/src/lib/reconstruction/wording-audit.test.md",
+      "?? graft/src/lib/reconstruction/writing-intelligence.test.md",
+      "?? graft/src/lib/rules/builtins.md",
+      "?? graft/src/lib/rules/constraints.md",
+      "?? graft/src/lib/rules/constraints.test.md",
+      "?? graft/src/lib/rules/corpus.test.md",
+      "?? graft/src/lib/rules/detectors.md",
+      "?? graft/src/lib/rules/detectors.test.md",
+      "?? graft/src/lib/rules/engine.md",
+      "?? graft/src/lib/rules/families.md",
+      "?? graft/src/lib/rules/metamorphic.test.md",
+      "?? graft/src/lib/rules/metrics.md",
+      "?? graft/src/lib/rules/metrics.test.md",
+      "?? graft/src/lib/rules/packs.md",
+      "?? graft/src/lib/rules/regex-safety.md",
+      "?? graft/src/lib/rules/registry.md",
+      "?? graft/src/lib/rules/registry.test.md",
+      "?? graft/src/lib/rules/style-transforms.md",
+      "?? graft/src/lib/rules/text-index.md",
+      "?? graft/src/lib/rules/transforms.md",
+      "?? graft/src/lib/rules/writing-intelligence-corpus.test.md",
+      "?? graft/src/lib/semantics/claims.md",
+      "?? graft/src/lib/semantics/compare.md",
+      "?? graft/src/lib/semantics/dates.md",
+      "?? graft/src/lib/semantics/integrity.md",
+      "?? graft/src/lib/semantics/lexicon.md",
+      "?? graft/src/lib/semantics/mechanics.md",
+      "?? graft/src/lib/semantics/phrases.md",
+      "?? graft/src/lib/semantics/properties.test.md",
+      "?? graft/src/lib/semantics/quantities.md",
+      "?? graft/src/lib/semantics/quotes.md",
+      "?? graft/src/lib/semantics/semantics.test.md",
+      "?? graft/src/lib/semantics/voice-devices.md",
+      "?? graft/src/lib/sources/activate.md",
+      "?? graft/src/lib/sources/anthropic-extractor.md",
+      "?? graft/src/lib/sources/compile.md",
+      "?? graft/src/lib/sources/library.md",
+      "?? graft/src/lib/sources/model-compile.md",
+      "?? graft/src/lib/sources/normalize.md",
+      "?? graft/src/lib/sources/sources.test.md",
+      "?? graft/src/lib/sources/validate.md",
+      "?? graft/src/lib/verification/protected.md",
+      "?? graft/src/lib/verification/verification.test.md",
+      "?? graft/src/lib/verification/verify.md",
+      "?? graft/src/lib/voiceprints/aggregate.md",
+      "?? graft/src/lib/voiceprints/to-profile.md",
+      "?? graft/src/lib/voiceprints/voiceprints.test.md",
+      "?? graft/tools/eval/cli.md",
+      "?? graft/tools/eval/composite-temporal-confirmation.md",
+      "?? graft/tools/eval/directive-scoping-confirmation.md",
+      "?? graft/tools/eval/discourse-development.md",
+      "?? graft/tools/eval/editing-job-validation.md",
+      "?? graft/tools/eval/editor-objective-focus.md",
+      "?? graft/tools/eval/exact-delta-replay.md",
+      "?? graft/tools/eval/holdout-v2.md",
+      "?? graft/tools/eval/holdout-v3-audit.md",
+      "?? graft/tools/eval/holdout-v3-audit.test.md",
+      "?? graft/tools/eval/holdout-v3-blind.md",
+      "?? graft/tools/eval/holdout-v3-blind.test.md",
+      "?? graft/tools/eval/holdout-v3-finalize-audit.md",
+      "?? graft/tools/eval/holdout-v3-finalize-audit.test.md",
+      "?? graft/tools/eval/holdout-v3-generate.md",
+      "?? graft/tools/eval/holdout-v3-generate.test.md",
+      "?? graft/tools/eval/holdout-v3-postreview.md",
+      "?? graft/tools/eval/holdout-v3-postreview.test.md",
+      "?? graft/tools/eval/holdout-v3-report.md",
+      "?? graft/tools/eval/holdout-v3-report.test.md",
+      "?? graft/tools/eval/holdout-v3-reviews.md",
+      "?? graft/tools/eval/holdout-v3-reviews.test.md",
+      "?? graft/tools/eval/holdout-v3-runner.md",
+      "?? graft/tools/eval/holdout-v3-runner.test.md",
+      "?? graft/tools/eval/holdout-v3-stages.md",
+      "?? graft/tools/eval/holdout-v3-stages.test.md",
+      "?? graft/tools/eval/holdout-v3-supplemental.md",
+      "?? graft/tools/eval/holdout-v3-supplemental.test.md",
+      "?? graft/tools/eval/holdout-v3.md",
+      "?? graft/tools/eval/holdout.md",
+      "?? graft/tools/eval/objective-aware-boundary.md",
+      "?? graft/tools/eval/objective-aware-development.md",
+      "?? graft/tools/eval/objective-feasibility-v4.md",
+      "?? graft/tools/eval/objective-feasibility-validation.md",
+      "?? graft/tools/eval/plan-entailment-v5.md",
+      "?? graft/tools/eval/plan-entailment.md",
+      "?? graft/tools/eval/post-v3-bootstrap-acquire.md",
+      "?? graft/tools/eval/post-v3-bootstrap-acquire.test.md",
+      "?? graft/tools/eval/post-v3-precall-inspect.md",
+      "?? graft/tools/eval/post-v3-raw-adapter.md",
+      "?? graft/tools/eval/post-v3-raw-adapter.test.md",
+      "?? graft/tools/eval/post-v3-raw-contract-verify.md",
+      "?? graft/tools/eval/post-v3-raw-freeze-verify.md",
+      "?? graft/tools/eval/post-v3-raw-runner-vitest.config.md",
+      "?? graft/tools/eval/post-v3-raw-runner.md",
+      "?? graft/tools/eval/post-v3-raw-runner.test.md",
+      "?? graft/tools/eval/post-v3-raw-vitest.config.md",
+      "?? graft/tools/eval/post-v3-successor-draw.md",
+      "?? graft/tools/eval/post-v3-successor-draw.test.md",
+      "?? graft/tools/eval/scope-validation.md",
+      "?? graft/tools/eval/semantic-development.md",
+      "?? graft/tools/eval/semantic-scope-trace.md",
+      "?? graft/tools/eval/substantive-controls.md",
+      "?? graft/tools/eval/substantive-requests.md",
+      "?? graft/tools/eval/v13-architecture-replay.md",
+      "?? graft/tools/eval/verification-boundary.md",
+      "?? graft/tools/eval/verified-reconstruction-development.md",
+      "?? graft/tools/eval/vitest.config.md",
+      "?? graft/tools/rules/cli.md",
+      "?? graft/tools/source-ingestion/scrape.md",
+      "?? graft/vitest.config.md"
+    ],
+    "pathManifestSha256": "ef0405b67430b5ffb8546f442dbbcd6026b45019c2fdefc91bcd09cf728e0564",
+    "runtimeContentsReadOrUsed": false,
+    "scientificIsolation": "UNPROVEN_FOR_ABSENT_SUCCESSOR_LAUNCHER"
+  },
+  "sourceAnchors": [
+    {
+      "id": "sdk_serialized_request",
+      "byteOffset": 185481171,
+      "length": 1000,
+      "sha256": "4e88d1c6d6a859f23c959c07f6f011a84a2d424826dc02053b37f15a6ca5e876"
+    },
+    {
+      "id": "sdk_final_fetch_and_middleware",
+      "byteOffset": 185478914,
+      "length": 1200,
+      "sha256": "66d2192204845071adb7172c102432da711510cac52db89ecbf1da12a07f654c"
+    },
+    {
+      "id": "account_effort_caps",
+      "byteOffset": 182842613,
+      "length": 900,
+      "sha256": "579bbd8f971726bd527bad43c15cecbe51d641c912b1cee92833cdfe911fb48c"
+    },
+    {
+      "id": "effort_precedence",
+      "byteOffset": 182850321,
+      "length": 300,
+      "sha256": "f96f103b30a184d2ed04b86d0b55fb93bcb7cf09e72442ff98069f77fff542a9"
+    },
+    {
+      "id": "bootstrap_branch",
+      "byteOffset": 194872180,
+      "length": 2400,
+      "sha256": "1ad661dca848dfa9b189a21a743fb225c7ab43b25c35c55a890e00881fee1bec"
+    },
+    {
+      "id": "served_catalog_live_refresh",
+      "byteOffset": 195739590,
+      "length": 3000,
+      "sha256": "86c81474c664acfad5c7cf873b80a0c10a97d7968b97ac143a9a1b005231eb5a"
+    },
+    {
+      "id": "internal_fetch_override",
+      "byteOffset": 185923988,
+      "length": 1200,
+      "sha256": "e90202d349c1d780f3871f089f1568d06fa463acb4afa7b2b7817456fb285469"
+    },
+    {
+      "id": "claude_internal_preload_command",
+      "byteOffset": 178877295,
+      "length": 500,
+      "sha256": "af704fd0193cca187d50221a9e29cc530f7cee5cd40f058344c287325c828062"
+    }
+  ],
+  "guardProbes": [
+    {
+      "execution": "inherited-sandbox",
+      "command": "sandbox-exec deny network* /usr/bin/true",
+      "exitCode": 71,
+      "error": "sandbox_apply: Operation not permitted"
+    },
+    {
+      "execution": "escalated",
+      "command": "sandbox-exec deny network* /usr/bin/true",
+      "exitCode": 0
+    },
+    {
+      "execution": "escalated-deny-network",
+      "operation": "Python inert loopback bind",
+      "exitCode": 0,
+      "result": "PermissionError",
+      "errno": 1
+    },
+    {
+      "execution": "escalated-no-added-guard",
+      "operation": "Python inert loopback bind",
+      "exitCode": 0,
+      "result": "ALLOW_CONTROL"
+    }
+  ],
+  "guardConclusion": {
+    "fact": "Independent OS deny-network primitive installed and denied inert loopback bind with positive control.",
+    "inference": "A process-scoped kernel guard is feasible outside inherited sandbox.",
+    "unproven": [
+      "native process and descendant coverage",
+      "alternate transports/proxy coverage",
+      "allowlisted normal bootstrap/catalog/auth semantics",
+      "faithful final serialized interception",
+      "eight failure-mode fault injection",
+      "outbound connect and child inheritance controls not run"
+    ]
+  },
+  "capture": {
+    "nativeConstruction": false,
+    "interceptionProven": false,
+    "failClosedProven": false,
+    "independentCompleteGuardProven": false,
+    "normalBootstrapPreserved": false
+  },
+  "effortProofs": [
+    {
+      "level": "low",
+      "effectiveRequestProven": false,
+      "state": "UNRESOLVED"
+    },
+    {
+      "level": "medium",
+      "effectiveRequestProven": false,
+      "state": "UNRESOLVED"
+    },
+    {
+      "level": "high",
+      "effectiveRequestProven": false,
+      "state": "UNRESOLVED"
+    },
+    {
+      "level": "xhigh",
+      "effectiveRequestProven": false,
+      "state": "UNRESOLVED"
+    },
+    {
+      "level": "max",
+      "effectiveRequestProven": false,
+      "state": "UNRESOLVED"
+    }
+  ],
+  "stageInventory": [
+    {
+      "id": "raw_editor",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "v15_review",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "v15_repair",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "v15_recheck",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "a_review",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "a_repair",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "a_recheck",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "b_review",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "b_repair",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "b_recheck",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "c_review",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "c_repair",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "c_recheck",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "d_review",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "d_repair",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    },
+    {
+      "id": "d_recheck",
+      "complete": false,
+      "sanitizedNativeCaptureSha256": null,
+      "effectiveFieldsProven": false
+    }
+  ],
+  "materialUnresolvedClasses": [
+    "account entitlement, caps, provider revision and zero incremental spend proof",
+    "non-effort reasoning and thinking representation",
+    "effective temperature, top-p, top-k and maximum output",
+    "structured-output representation and all stage prompt/schema hashes",
+    "tools, MCP, slash commands, permission mode and hooks",
+    "explicit environment allowlist and config precedence including effort and extra body",
+    "successor transport, sixteen stage bindings and V15 saved-RAW injection",
+    "numeric timeouts, termination, pacing and exact error dispositions",
+    "bootstrap and pre-model endpoint allowlist",
+    "faithful pre-dispatch no-egress interception and differential equivalence",
+    "five distinct effective-request proofs"
+  ],
+  "audits": [
+    {
+      "reviewer": "equivalence_audit",
+      "scope": "native capture equivalence",
+      "severity": "BLOCKING",
+      "facts": [
+        "No native capture harness or pinned successor launcher exists.",
+        "Unix socket skips bootstrap; served catalog and effort policies influence construction.",
+        "Existing static inspector references absent live transport/profile files."
+      ],
+      "inference": "Cached/replica paths cannot certify future native branch.",
+      "assumption": "No uncommitted runtime data used as implementation input."
+    },
+    {
+      "reviewer": "safety_audit",
+      "scope": "dispatch safety",
+      "severity": "BLOCKING",
+      "facts": [
+        "buildRequest precedes middleware/prepareRequest and final fetch.",
+        "Internal fetchOverride is not an established public CLI interception mechanism.",
+        "Existing adapter defaults to live spawning when executor omitted."
+      ],
+      "inference": "Inert guard probes do not certify native and descendant coverage or fail-closed capture.",
+      "assumption": "No client launched before complete guard review."
+    },
+    {
+      "reviewer": "completeness_audit",
+      "scope": "execution contract",
+      "severity": "BLOCKING",
+      "facts": [
+        "All16 stage names present; completed profiles absent.",
+        "Five effective effort proofs unresolved.",
+        "11 material field classes remain outstanding."
+      ],
+      "inference": "No complete non-effort pre-draw lock can be certified.",
+      "assumption": "Prior candidate hashes are not substitutes for native profile evidence."
+    }
+  ],
+  "draw": {
+    "targetTimestampUtc": "2026-10-15T00:00:00.000Z",
+    "targetQueried": false,
+    "selectedEffort": null,
+    "requiredState": "AWAITING_PREREGISTERED_NIST_PULSE"
+  },
+  "preDrawLockCreated": false,
+  "experimentalActivity": {
+    "inference": 0,
+    "modelEndpointDispatch": 0,
+    "targetBeaconQuery": 0,
+    "successorCases": 0,
+    "prelabels": 0,
+    "rawGeneration": 0,
+    "architectureArmExecution": 0,
+    "blindReview": 0,
+    "scoring": 0,
+    "candidateChanges": 0,
+    "v16": 0,
+    "productionChanges": 0,
+    "protocolAmendments": 0
+  },
+  "validation": {
+    "syntheticDrawTests": {
+      "passed": 3
+    },
+    "lint": "PASS",
+    "typecheck": "PASS after build generated types; initial concurrent check had missing generated types",
+    "unitTests": {
+      "files": 65,
+      "passed": 708
+    },
+    "build": {
+      "status": "FAIL",
+      "initialFailure": "Google Fonts fetch blocked by sandbox",
+      "escalatedFailure": "TurbopackInternalError: Failed to write app endpoint /page; creating new process; binding to a port; Operation not permitted (os error 1)"
+    },
+    "originalFreezeVerifier": {
+      "status": "FAIL",
+      "exitCode": 1,
+      "failure": "forbidden raw/implementation/arm/run output found: implementations.integrity.json, implementations.json, raw-freeze-manifest.integrity.json, raw-freeze-manifest.json, raw-generation-manifest.integrity.json, raw-generation-manifest.json, raw.json, raw.json.sha256",
+      "interpretation": "INFERENCE: historical pre-RAW verifier rejects later committed original artifacts. FACT: no hash-mismatch failure reported. No artifacts modified."
+    },
+    "webpackBuild": {
+      "command": "pnpm exec next build --webpack",
+      "status": "PASS",
+      "exitCode": 0,
+      "note": "Alternate compiler check; default pnpm build remains FAIL."
+    },
+    "preregistrationIntegrity": [
+      {
+        "path": "docs/POST-V3-SUCCESSOR-PREREGISTRATION.md",
+        "sha256": "8ecc6def06542a08053d66c46eab0ec198553aef189d49ff3d2f613aa843a144",
+        "match": true
+      },
+      {
+        "path": "data/evaluation/post-v3-successor/preregistration.json",
+        "sha256": "9e027a0f3b56eaec3398c4db0bc7495e49c50bb1c137bf7a90799acfca4c75ac",
+        "match": true
+      },
+      {
+        "path": "data/evaluation/post-v3-successor/reuse-policy.json",
+        "sha256": "78aa206665a0e7ffd8a3d2dcb2c610a38f46bf0ac49f35a1e51a91d5a84b47c4",
+        "match": true
+      },
+      {
+        "path": "data/evaluation/post-v3-successor/execution-contract.schema.json",
+        "sha256": "dc4385ad8f047243fc8a76b56859d3a36173384fb6a2c0fbffed01b1d17383ce",
+        "match": true
+      }
+    ]
+  },
+  "nextPermittedTask": "Implement and independently validate a supported native final-serialization interception plus independent native/descendant egress guard, preserving allowlisted normal account/bootstrap/catalog construction; then prove all five efforts and all16 profiles without dispatch before any lock. Resolve the original freeze verifier historical-scope failure without scientific protocol amendment; retain its present FAIL until separately verified.",
+  "registrationHashes": {
+    "preregistration.json": "9e027a0f3b56eaec3398c4db0bc7495e49c50bb1c137bf7a90799acfca4c75ac",
+    "execution-contract.schema.json": "dc4385ad8f047243fc8a76b56859d3a36173384fb6a2c0fbffed01b1d17383ce",
+    "reuse-policy.json": "78aa206665a0e7ffd8a3d2dcb2c610a38f46bf0ac49f35a1e51a91d5a84b47c4",
+    "pre-draw-investigation.json": "906adea131593cbf7ba0910a8790f56b6a42018c6dd36624d74cbd07919c4cdd"
+  }
+}
