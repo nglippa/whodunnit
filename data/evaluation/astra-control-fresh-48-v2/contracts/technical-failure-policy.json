@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "pre-case-technical-failure-policy",
+  "status": "CONTRACT_ONLY_NO_ATTEMPTS",
+  "general": {
+    "noAutomaticRetry": true,
+    "noReplacementOutcome": true,
+    "noReplacementCaseAfterCorpusLock": true,
+    "noSilentSourceFallbackByHarness": true,
+    "nativePublishedFallbackPreserved": true,
+    "frozenNativeRepairAttemptIsNotTransportRetry": true,
+    "allFailuresCountInFixed48": true,
+    "positiveAdvance": "Any missing required output, invalid RAW, unresolved material label, unauthorized retry, or custody/integrity failure prevents positive advancement; do not shrink denominator.",
+    "unexpectedHiddenSdkOrTransportRetry": "whole-experiment integrity invalidation",
+    "unhandledException": "record stage, error class, timestamp and nonsecret message in append-only technical record; no caller-level catch that manufactures an output"
+  },
+  "astra": {
+    "attemptsPerCase": 1,
+    "sdkMaxRetries": 0,
+    "timeoutMs": 180000,
+    "cases": {
+      "timeout": "record TIMEOUT; no parse, no edited_text, no retry, no substitute output",
+      "malformedOutput": "record MALFORMED_OUTPUT including strict-schema parse failure, empty edited_text, over 60000 characters, multiple/ambiguous outputs, refusal or incomplete response; no repair or retry",
+      "modelUnavailable": "record MODEL_UNAVAILABLE; stop new Astra calls pending integrity review; do not switch model alias or silently resume",
+      "apiOrServiceError": "record API_OR_SERVICE_ERROR and available request ID/status; no retry or replacement",
+      "schemaFailure": "record SCHEMA_FAILURE; no output; no permissive parser, coercion or text extraction fallback",
+      "infrastructureFailure": "record INFRASTRUCTURE_FAILURE; no model call if request contract or secure exact-payload recorder failed before dispatch; if failure after dispatch, preserve attempt count and do not call again"
+    },
+    "validOutput": "only strict object with exactly one string edited_text, nonempty and <=60000 characters; preserve exact parsed text without trim, normalization or repair",
+    "modelIdentityFailure": "If response exposes a model identity inconsistent with frozen requested alias/accepted serving contract, block output use and integrity-review; never reinterpret it after outcomes."
+  },
+  "v15": {
+    "authority": "src/lib/reconstruction/verified-reconstruction.ts:runDirectiveScopedTemporalReconstruction, frozen version 15",
+    "preflightThrows": "invalid request/objective, account-backed zero-incremental-cost guard, or same editor/verifier object throws before native result; record V15_PREFLIGHT_FAILURE; no fabricated FINAL",
+    "editorTimeoutOrCallerThrow": "frozen function catches and returns source-fallback with timeout or editor-unavailable reason; preserve that exact native result, but RAW is absent and Candidate C is not run",
+    "invalidEditorSchemaOrEmptyText": "frozen function returns source-fallback with invalid-candidate when safeParse/empty check fails; preserve; RAW invalid/absent for common-RAW benchmark and Candidate C not run",
+    "deterministicRejection": "frozen control rejects or attempts its one local repair under published logic; preserve resulting trace and FINAL",
+    "verifierMissingMalformedTimeoutOrCallerThrow": "frozen inspect path returns source-fallback or repair path result with its published verifier-unavailable, verifier-malformed, invalid-verifier or timeout reason; preserve exact result and trace, never treat missing verification as PASS",
+    "repairMissingMalformedTimeoutOrCallerThrow": "frozen path returns source-fallback with repair-unavailable, repair-failed or timeout as published; preserve exact result and attempt trace",
+    "recorderOrStoreFailure": "recorder failure can be caught by the frozen function as caller failure. The harness must retain an independent recorder-health failure marker and classify this as infrastructure integrity failure even if frozen function returns source fallback; no output is certified exact.",
+    "unhandledAfterNativeReturn": "record technical/integrity failure; no replacement result",
+    "transportRetries": 0
+  },
+  "candidateC": {
+    "authority": "src/lib/reconstruction/post-v3/index.ts:runPostV3Candidate('C', ...)",
+    "missingOrInvalidSharedRaw": "do not invoke C if V15 exact saved RAW is absent/invalid or equality assertion fails; record C_NO_VALID_SHARED_RAW, no fabricated C FINAL",
+    "preflightThrows": "invalid arm/request/objective, zero-incremental-cost guard, or invalid timeout throws; record C_PREFLIGHT_FAILURE; no fabricated FINAL",
+    "ambiguousObjective": "frozen code returns abstained source with ambiguous-objective-authority reason; preserve native status/disclosure/trace",
+    "invalidRawInsideNativePath": "frozen code marks invalid-raw and abstains; harness common-RAW gate normally prevents this invocation; preserve if observed and mark binding deviation",
+    "deterministicRejectionOrNoLocalRepair": "frozen code follows its own abstention/repair path; preserve native result",
+    "verifierMissingMalformedTimeoutOrCallerThrow": "frozen inspect records trace.technicalFailure and returns unsafe; C may abstain with the published disclosure; preserve result and technical marker",
+    "repairMissingMalformedTimeoutOrCallerThrow": "frozen path records trace.technicalFailure or repair-unavailable and abstains; preserve native result and attempt trace",
+    "recorderOrStoreFailure": "independent recorder-health marker makes this infrastructure integrity failure even if native C catches it and abstains; no exact-output certification",
+    "transportRetries": 0
+  },
+  "source": {
+    "failure": "If exact frozen source bytes cannot be copied and hashed to FINAL, record SOURCE_INTEGRITY_FAILURE; do not normalize, reconstruct or use a model."
+  },
+  "recordSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "caseId",
+      "arm",
+      "stage",
+      "kind",
+      "startedAtUtc",
+      "endedAtUtc",
+      "attemptCount",
+      "nativeResultReturned",
+      "rawAvailable",
+      "finalAvailable",
+      "nonsecretDetail"
+    ],
+    "properties": {
+      "caseId": {
+        "type": "string"
+      },
+      "arm": {
+        "enum": [
+          "SOURCE",
+          "V15",
+          "C_DOWNSTREAM",
+          "ASTRA_DIRECT"
+        ]
+      },
+      "stage": {
+        "type": "string",
+        "minLength": 1
+      },
+      "kind": {
+        "type": "string",
+        "minLength": 1
+      },
+      "startedAtUtc": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "endedAtUtc": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "attemptCount": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "nativeResultReturned": {
+        "type": "boolean"
+      },
+      "rawAvailable": {
+        "type": "boolean"
+      },
+      "finalAvailable": {
+        "type": "boolean"
+      },
+      "nonsecretDetail": {
+        "type": "string"
+      }
+    }
+  },
+  "deviationScope": {
+    "documentedSingleArmTechnicalAbsence": "affected pairs descriptive only; no positive advancement under 48/48",
+    "unresolvedJudgment": "affected comparison descriptive/inconclusive; no positive advancement",
+    "unauthorizedRetryLeakageChangedSettingStaleHashOrMissingCustody": "whole-experiment invalidation; no selected-case salvage"
+  },
+  "attemptAuthorizedByThisArtifact": false
+}

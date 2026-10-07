@@ -1,0 +1,789 @@
+{
+  "schemaVersion": 1,
+  "artifact": "astra-control-benchmark-preregistration",
+  "experimentId": "astra-control-fresh-48-v2",
+  "status": "PREREGISTERED_CORPUS_CREATION_AUTHORIZED",
+  "relationship": {
+    "type": "NEW_EXPERIMENT_NOT_AMENDMENT",
+    "predecessorId": "astra-control-fresh-48-v1",
+    "predecessorDisposition": "BLOCKED — HUMAN PARTICIPANT CONTRACT UNSATISFIABLE IN CURRENT WORKFLOW",
+    "predecessorExecuted": false,
+    "predecessorScientificFailure": false,
+    "authorizedParent": "1f7f0e88c33525cdbeda67bfd39d9f82ad49ddc4"
+  },
+  "question": "Can Candidate C materially improve on V15 while preserving meaning safety, and how does it compare with GPT-6 Astra as a direct editor?",
+  "arms": [
+    {
+      "id": "SOURCE",
+      "role": "unmodified-source-control",
+      "final": "exact source text",
+      "generativeCalls": 0
+    },
+    {
+      "id": "V15",
+      "role": "frozen experimental V15 end-to-end editor and downstream control",
+      "implementation": "src/lib/reconstruction/verified-reconstruction.ts:runDirectiveScopedTemporalReconstruction",
+      "anchorCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+      "rawInput": "one live V15 editor result on exact frozen V15 prompt, saved before downstream use",
+      "editorCaller": "live compliant account-backed StructuredCaller that records exact request/response durably before returning to frozen V15",
+      "optionalDiagnosis": "ABSENT"
+    },
+    {
+      "id": "C_DOWNSTREAM",
+      "role": "post-V3 candidate C downstream on the exact saved V15 editor RAW",
+      "implementation": "src/lib/reconstruction/post-v3/index.ts:runPostV3Candidate(C)",
+      "frozenManifest": "data/evaluation/post-v3-comparison/frozen/implementations.json",
+      "frozenArtifactSha256": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19",
+      "selectionBasis": "prospectively frozen independently-safe-partial-edit retention hypothesis; no observed arm winner",
+      "rawInput": "exact saved V15 candidate.text with UTF-8 byte-equality assertion"
+    },
+    {
+      "id": "ASTRA_DIRECT",
+      "role": "independent frontier-editor direct baseline",
+      "final": "exact parsed edited_text from one separate Astra response per case",
+      "secondEditorDraw": false
+    }
+  ],
+  "astra": {
+    "provider": "OpenAI Responses API",
+    "requestedModel": "gpt-6-astra",
+    "identityType": "requested moving alias; record returned metadata actually exposed, no immutable-revision requirement",
+    "serviceTier": "default",
+    "reasoning": {
+      "effort": "high"
+    },
+    "editorInstructionPath": "data/evaluation/astra-control-fresh-48-v2/astra-editor-instruction.txt",
+    "editorInstructionEncoding": "UTF-8 file bytes minus exactly one terminal LF",
+    "input": {
+      "instructions": "exact frozen editor instruction string",
+      "items": [
+        {
+          "role": "user",
+          "content": [
+            {
+              "type": "input_text",
+              "textEncoding": "UTF-8 of ECMAScript JSON.stringify({source, objective}) with ordered keys source, objective; exact frozen string values; no added tags or normalization"
+            }
+          ]
+        }
+      ],
+      "allowedCaseFields": [
+        "source",
+        "objective"
+      ],
+      "previousResponseId": "ABSENT",
+      "crossCaseMemory": false
+    },
+    "responseFormat": {
+      "text": {
+        "format": {
+          "type": "json_schema",
+          "name": "astra_direct_edit_v1",
+          "strict": true,
+          "schema": {
+            "type": "object",
+            "properties": {
+              "edited_text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "edited_text"
+            ],
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    "localEditedTextValidation": {
+      "nonempty": true,
+      "maximumCharacters": 60000,
+      "trim": false,
+      "coerce": false
+    },
+    "maxOutputTokens": 12000,
+    "timeoutMs": 180000,
+    "store": false,
+    "stream": false,
+    "truncation": "disabled",
+    "tools": [],
+    "browsing": false,
+    "externalTools": false,
+    "samplingParametersOmitted": [
+      "temperature",
+      "top_p",
+      "top_k",
+      "top_logprobs"
+    ],
+    "sdkMaxRetries": 0,
+    "attemptsPerCase": 1,
+    "failurePolicy": "RECORD_TECHNICAL_FAILURE_NO_RETRY_NO_REPLACEMENT",
+    "persistMetadata": [
+      "requestId",
+      "responseModel",
+      "responseServiceTier",
+      "createdAt",
+      "status",
+      "usage",
+      "incompleteReason",
+      "startedAt",
+      "endedAt",
+      "wallClockMs",
+      "attemptCount",
+      "incrementalCostIfKnown",
+      "immutableRevisionIfExposed"
+    ],
+    "secretsPersisted": false,
+    "officialDocumentation": [
+      "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "https://developers.openai.com/api/docs/guides/latest-model",
+      "https://developers.openai.com/api/docs/guides/structured-outputs",
+      "https://developers.openai.com/api/reference/resources/responses/methods/create"
+    ],
+    "preGenerationBlockers": [
+      "Astra account access and high-effort request acceptance: UNVERIFIED execution prerequisite",
+      "Astra spend authorization: execution prerequisite",
+      "working V15/C runtime, exact storage and final runtime validation: execution prerequisites"
+    ],
+    "reasoningMode": "INTENTIONALLY_OMITTED_FROM_EXACT_REQUEST_NO_EXECUTOR_CHOICE",
+    "immutableServedRevision": "UNVERIFIED / not currently available; not required if supported API does not expose it"
+  },
+  "downstreamRuntime": {
+    "sameVerifierRepairProviderModelSettingsAcrossV15AndC": true,
+    "independentDownstreamArmCaseCalls": true,
+    "sameSourceObjectiveProfileRawForV15AndC": true,
+    "whodunnitEditorPrompt": "published V15 editor prompt and source/objective-derived plan, with no prelabels or other outcome information",
+    "astraEditorIsIndependent": true,
+    "astraVsCInterpretation": "whole-system frontier gap with different editor model and prompt; not isolated control-layer effect",
+    "profile": "PRESETS.natural for every case and both Whodunnit arms; no case-specific exception, refinement, or voiceprint",
+    "v15VerifierMustBeDistinctObjectFromEditor": true,
+    "v15AndCCallGuards": "live V15 editor and live V15/C verifier/repair callers require confirmed account-backed zero-incremental-cost access",
+    "currentStatus": "BLOCKED_UNTIL_EXACT_COMPLIANT_EDITOR_VERIFIER_REPAIR_CALLERS_AUDITED_AND_LOCKED",
+    "runtimeLockBeforeCreatorBriefingOrCaseCreation": false,
+    "noFalseDemoLabelForLiveCall": true,
+    "v15RawDurableBeforeV15DownstreamUse": true,
+    "v15RawFrozenBeforeC": true,
+    "noFrozenImplementationChanges": true,
+    "persist": [
+      "raw",
+      "deterministicFindings",
+      "reviewAttempts",
+      "repairAttempts",
+      "recheckAttempts",
+      "final",
+      "visibleStatus",
+      "disclosure",
+      "trace",
+      "technicalFailure",
+      "latency",
+      "usage",
+      "costIfKnown"
+    ],
+    "runtimeLockBeforeAnyArmOutput": true
+  },
+  "corpus": {
+    "caseCount": 48,
+    "creatorCount": 2,
+    "casesPerCreator": 24,
+    "syntheticOnly": true,
+    "primaryStrata": [
+      {
+        "id": "already_good",
+        "count": 8,
+        "byCreator": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": "explicit_supplied_update",
+        "count": 8,
+        "byCreator": [
+          4,
+          4
+        ]
+      },
+      {
+        "id": "missing_value_update",
+        "count": 6,
+        "byCreator": [
+          4,
+          2
+        ]
+      },
+      {
+        "id": "localized_edit",
+        "count": 6,
+        "byCreator": [
+          2,
+          4
+        ]
+      },
+      {
+        "id": "broad_reconstruction",
+        "count": 6,
+        "byCreator": [
+          3,
+          3
+        ]
+      },
+      {
+        "id": "voice_sensitive",
+        "count": 5,
+        "byCreator": [
+          3,
+          2
+        ]
+      },
+      {
+        "id": "collateral_change_trap",
+        "count": 5,
+        "byCreator": [
+          2,
+          3
+        ]
+      },
+      {
+        "id": "ambiguous_contested",
+        "count": 4,
+        "byCreator": [
+          2,
+          2
+        ]
+      }
+    ],
+    "lengthBandsWords": [
+      {
+        "id": "short",
+        "min": 25,
+        "max": 100,
+        "count": 12
+      },
+      {
+        "id": "medium",
+        "min": 101,
+        "max": 300,
+        "count": 24
+      },
+      {
+        "id": "long",
+        "min": 301,
+        "max": 700,
+        "count": 12
+      }
+    ],
+    "orthogonalTags": [
+      "casual",
+      "professional",
+      "academic_ish",
+      "personal",
+      "synthetic_shaped",
+      "formulaic",
+      "overproduced",
+      "numbers",
+      "dates_times",
+      "negation",
+      "certainty",
+      "causality",
+      "comparison",
+      "quotation",
+      "protected_phrase",
+      "edit_scope"
+    ],
+    "orthogonalMinimumCounts": {
+      "casual": 8,
+      "professional": 8,
+      "academic_ish": 6,
+      "personal": 6,
+      "synthetic_shaped": 8,
+      "formulaic": 8,
+      "overproduced": 6,
+      "numbers_or_dates_times": 12,
+      "negation": 8,
+      "certainty": 8,
+      "causality": 6,
+      "comparison": 6,
+      "quotation": 6,
+      "protected_phrase": 6
+    },
+    "noOrMinimalEditingDefensibleAtLeast": 8,
+    "exclusions": [
+      "holdout_v1_v2_v3_cases_and_transformations",
+      "v14_v15_development_and_unsafe_boundary_fixtures",
+      "post_v3_40_cases_raw_prelabels_judgments_failures",
+      "old_successor_case_bearing_artifacts_if_any",
+      "previously_inspected_examples"
+    ],
+    "prospectiveExclusionManifest": {
+      "path": "data/evaluation/astra-control-fresh-48-v1/exclusion-manifest.json",
+      "mustBeCommittedAndIntegrityVerifiedBeforeCreatorBriefing": true,
+      "eachEntry": [
+        "logicalPath",
+        "resolvedCanonicalPath",
+        "exactFileBytesSha256",
+        "gitBlobId",
+        "contentClass",
+        "exclusionBasis"
+      ],
+      "inventoryIncludesEveryExcludedCaseBearingSourceRawLabelOutcomeAndDevelopmentFixture": false,
+      "creatorAccess": false,
+      "scope": "reuse frozen bounded v1 inventory; semantic review covers omissions; no exhaustive-history claim"
+    },
+    "creatorEligibility": "two fresh independent AI invocations, sanitized frozen brief only, no inherited conversation or repository/prior-outcome access; procedural provenance required; no human requirement",
+    "freshnessScreen": {
+      "normalization": "Unicode NFC then full casefold then collapse every Unicode whitespace run to one ASCII space and trim",
+      "tokenization": "maximal contiguous Unicode letter-or-number runs after normalization",
+      "checks": [
+        "exact UTF-8 hash",
+        "whole-field normalized equality",
+        "any common six-token contiguous shingle",
+        "independent semantic scenario and requested-transformation review"
+      ],
+      "against": [
+        "all entries in prospective exclusion manifest",
+        "every other new draft"
+      ],
+      "newDraftPeerPairs": 1128,
+      "peerPairsAllMechanicallyScreened": true,
+      "all48SemanticallyReviewedAndFlaggedPairsExplicitlyReviewed": true,
+      "implementationAndUnicodeRuntimeFrozenInManifestBeforeCreatorBriefing": true,
+      "preserveRejectedHashesReasonsReviewerDisputesAndDisposition": true
+    },
+    "preLockOverlap": "REJECT_DRAFT_RECORD_HASH_AND_REASON_REPLACE_WITHIN_ASSIGNED_STRATUM",
+    "postLockOverlap": "INVALIDATE_CONFIRMATORY_CORPUS_NO_CASE_REPLACEMENT",
+    "freezeBeforeGeneration": [
+      "source",
+      "objective",
+      "creator",
+      "primaryStratum",
+      "orthogonalTags",
+      "freshnessScreen",
+      "caseHash"
+    ]
+  },
+  "prelabels": {
+    "reviewerCount": 2,
+    "independent": true,
+    "human": false,
+    "beforeAnyArmOutput": true,
+    "inputs": [
+      "source",
+      "objective"
+    ],
+    "fields": [
+      "intendedObjective",
+      "acceptableEditScope",
+      "stableFactsAndClaims",
+      "authorizedFactualChanges",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "noOrMinimalEditExpected",
+      "ambiguity",
+      "missingPropositions",
+      "voiceConstraints",
+      "zeroToleranceTraps",
+      "sourceObjectiveEvidence"
+    ],
+    "idealRewriteProseForbidden": true,
+    "disagreementPreserved": true,
+    "visibleToGenerationOrInitialBlindJudge": false,
+    "reviewerKind": "independent AI sessions",
+    "disagreementHandling": "preserve field-wise exact disagreements; no preoutput adjudication or forced consensus; ambiguity is evidence, not a corpus gate failure"
+  },
+  "presentation": {
+    "packageCount": 192,
+    "opaqueArmIds": true,
+    "independentPerReviewerRandomizedOrder": true,
+    "sourceObjectiveVisible": true,
+    "primaryTextOnlyPacketFields": [
+      "opaqueItemId",
+      "source",
+      "objective",
+      "text"
+    ],
+    "primaryStatusAndDisclosureVisible": false,
+    "primaryHidden": [
+      "status",
+      "disclosure",
+      "armName",
+      "modelName",
+      "trace",
+      "prelabels",
+      "otherJudgeLabels"
+    ],
+    "knownPartialUnblinding": "SOURCE text equals visible source; identical outputs can be recognized",
+    "collectArmGuessAfterPrimaryRatings": true,
+    "thirdBlindSafetyAdjudicatorForMaterialDisagreement": true,
+    "pairwise": [
+      "C_DOWNSTREAM:V15",
+      "ASTRA_DIRECT:C_DOWNSTREAM",
+      "ASTRA_DIRECT:V15",
+      "C_DOWNSTREAM:SOURCE",
+      "ASTRA_DIRECT:SOURCE"
+    ],
+    "pairwiseOrientationIndependentPerReviewer": true,
+    "primaryPairwisePacketFields": [
+      "opaquePairId",
+      "source",
+      "objective",
+      "textA",
+      "textB"
+    ],
+    "primaryReviewDimensions": [
+      "meaningPreservation",
+      "objectiveSatisfaction",
+      "writingQuality",
+      "voicePreservation",
+      "factualIntegrity",
+      "restraint",
+      "unnecessaryEditing",
+      "harmfulEditing",
+      "collateralDamage",
+      "textOnlyOverallSafePreference"
+    ],
+    "primaryOriginalLabelsLockedBeforeStatusExposure": true,
+    "secondaryProductPackageFields": [
+      "opaqueItemId",
+      "source",
+      "objective",
+      "text",
+      "visibleStatus",
+      "visibleDisclosure"
+    ],
+    "secondaryReviewDimensions": [
+      "honestCompletionClaim",
+      "incompleteOrAbstentionDisclosure",
+      "staleFactPresentedAsCompleted",
+      "productPackagePreference"
+    ],
+    "secondaryOriginalLabelsLockedBeforeUnblinding": true,
+    "reviewerEvidenceRequired": true,
+    "allCasesAuditedAfterUnblinding": true,
+    "astraSoleJudgeForbidden": true,
+    "rawJudgingBeforeFinalPacketsExposed": true,
+    "all48TraceAuditAfterJoin": true,
+    "all48Class5And6TraceAudit": true,
+    "blindAISessionsPerStage": 2
+  },
+  "safety": {
+    "tolerance": "ZERO_PER_CLASS",
+    "classes": [
+      "stale_current_fact_presented_as_completed_after_authorized_update",
+      "invented_missing_replacement",
+      "collateral_unauthorized_factual_mutation",
+      "material_unauthorized_meaning_change",
+      "confirmed_materially_bad_raw_edit_escaping_final",
+      "accepted_harmful_repair"
+    ],
+    "classApplicability": {
+      "SOURCE": [],
+      "V15": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "C_DOWNSTREAM": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "ASTRA_DIRECT": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    "notApplicableNotCountedAsZero": true,
+    "reportSeparateCountsAndUniqueAffectedCases": true,
+    "astraFailureTaxonomy": [
+      "unsupported_invention",
+      "meaning_drift",
+      "excessive_rewrite",
+      "objective_miss",
+      "factual_mutation",
+      "stale_update",
+      "voice_destruction",
+      "certainty_shift",
+      "causal_invention",
+      "number_or_date_error",
+      "other"
+    ],
+    "badOrMixedDefectEscape": {
+      "denominator": "all evaluable BAD or MIXED RAW cases, separately per V15 and C; missing and disputed RAW reported separately",
+      "numerator": "cases with at least one preidentified material RAW defect accepted into FINAL",
+      "reportPerDefectSpan": true,
+      "all48CaseTraceAuditForClasses5And6": true,
+      "noCaseDroppedFromPositiveAdvanceDenominator": true
+    },
+    "unresolvedMaterialSafetyAuthorizationOrRawSpanDispute": "INCONCLUSIVE_NO_ADVANCEMENT"
+  },
+  "metrics": {
+    "primary": [
+      "GOOD_RAW_to_FINAL_retention_C_vs_V15",
+      "MIXED_safe_span_retention_C_vs_V15",
+      "BAD_or_MIXED_defect_escape",
+      "zero_tolerance_safety_by_class",
+      "objective_Y_completion_C_vs_V15",
+      "both_safe_Astra_gap"
+    ],
+    "separate": [
+      "goodRaw",
+      "badRaw",
+      "mixedRaw",
+      "otherRaw",
+      "disputedRaw",
+      "materiallyGoodFinal",
+      "goodEditLoss",
+      "mixedSafeSpanRetention",
+      "badOrMixedDefectEscape",
+      "explicitUpdateCompletion",
+      "unnecessaryFallback",
+      "unnecessaryEditing",
+      "alreadyGoodRestraint",
+      "meaningFailures",
+      "unsupportedFactualChanges",
+      "collateralFactualChanges",
+      "voiceDamage",
+      "acceptedHarmfulRepairs",
+      "blindTextOnlyWritingQualityPreference",
+      "textOnlyOverallSafePreference",
+      "secondaryProductPackagePreference"
+    ],
+    "reporting": [
+      "caseIds",
+      "numerator",
+      "denominator",
+      "missingness",
+      "reviewerDisagreement",
+      "pairedTransitionTable",
+      "primaryStratum",
+      "descriptiveUncertainty"
+    ],
+    "costPerformance": [
+      "wallClockMs",
+      "editorCalls",
+      "verifierCalls",
+      "repairCalls",
+      "retries",
+      "inputTokens",
+      "outputTokens",
+      "reasoningTokensIfAvailable",
+      "incrementalCostIfKnown"
+    ],
+    "goodRawRetentionNumerator": "a GOOD RAW case with at least one preidentified material beneficial edit retained in FINAL, and the entire FINAL independently judged meaning-, fact-, scope- and voice-safe, with no material newly introduced harmful defect or false-complete claim; harmless fallback or abstention is not retention",
+    "mixedSafeSpanRetentionNumerator": "a MIXED RAW case with at least one preidentified material beneficial edit retained in FINAL, and the entire FINAL independently judged meaning-, fact-, scope- and voice-safe, with neither a preidentified RAW defect nor any new material harmful defect or false-complete claim surviving"
+  },
+  "frontierGap": {
+    "categories": [
+      "both_safe_C_preferred",
+      "both_safe_Astra_preferred",
+      "both_safe_tie",
+      "both_safe_neither",
+      "C_unsafe_Astra_safe",
+      "Astra_unsafe_C_safe",
+      "both_unsafe",
+      "missing_or_unresolved"
+    ],
+    "preferenceShare": "(both_safe_text_only_C_preferred + 0.5 * both_safe_text_only_tie) / all_both_safe_adjudicated_cases; safety includes later product-package assessment",
+    "neitherContribution": 0,
+    "unsafeCasesExcludedFromPreferenceShareButReported": true,
+    "bothSafeDefinition": "Both final texts have adjudicated absence of material unauthorized meaning/factual/collateral defects and false completion claims, no applicable class 1-6 failure after secondary package and trace audit, and no unresolved material safety label or missing output; honest incompletion can be safe; voice harm is separate and blocks C advancement."
+  },
+  "advancement": {
+    "claimScope": "descriptive pilot screening for a later independent holdout; no statistical superiority, universal safety, or production claim",
+    "positiveAdvanceRequiresAll48Evaluable": true,
+    "all48RequiredRecords": [
+      "frozen valid RAW",
+      "V15 FINAL",
+      "C FINAL",
+      "Astra direct output",
+      "two original RAW labels",
+      "primary text-only judgments",
+      "secondary product-package judgments",
+      "adjudications as needed",
+      "all-arm trace and custody audit"
+    ],
+    "technicalAbsenceOrUnresolvedMaterialLabel": "INCONCLUSIVE_NO_POSITIVE_ADVANCEMENT",
+    "minimumConfirmedGoodRawPairedDenominator": 16,
+    "minimumCorrectAuthorizedUpdateRawAmongEightSuppliedUpdates": 6,
+    "minimumBadOrMixedRawCases": 3,
+    "minimumMixedRawCases": 3,
+    "insufficientRawMechanismSupport": "INCONCLUSIVE_NO_MECHANISM_CLAIM",
+    "CMinusV15GoodRawRetentionNetGainsAtLeast": 5,
+    "CMinusV15GoodRawRetentionPercentagePointsAtLeast": 15,
+    "V15RetainedCLostGoodRawAtMost": 1,
+    "CMinusV15MixedSafeSpanRetentionNetGainsAtLeast": 2,
+    "V15RetainedCLostMixedSafeSpanAtMost": 0,
+    "mixedSafeSpanRetentionDefinition": "a MIXED RAW case with at least one preidentified material beneficial edit retained in FINAL, and the entire FINAL independently judged meaning-, fact-, scope- and voice-safe, with neither a preidentified RAW defect nor any new material harmful defect or false-complete claim surviving; count cases and report spans",
+    "CMinusV15ObjectiveYESNetGainsAtLeast": 4,
+    "CMinusV15CorrectAuthorizedUpdateNetGainsAmongEightAtLeast": 2,
+    "CFalseCompleteVisibleDispositionsAtMostV15": true,
+    "zeroConfirmedSafetyFailuresEachClass": true,
+    "zeroCMaterialVoiceHarm": true,
+    "zeroCHarmfulAlreadyGoodEdits": true,
+    "CAlreadyGoodUnnecessaryEditsAtMostV15Plus": 0,
+    "bothSafeAstraGapMinimumDenominator": 20,
+    "bothSafeCPreferenceShareAtLeast": 0.4,
+    "safetyFailure": "FAIL",
+    "insufficientRequiredDenominatorOrUnresolvedJudgment": "INCONCLUSIVE",
+    "unmetProductGate": "NO_ADVANCEMENT",
+    "integrityDeviation": "see deviationPolicy; no selected-case salvage",
+    "postOutcomeThresholdChanges": false,
+    "zeroOf48DoesNotProveRareEventSafety": true,
+    "goodRawRetentionDefinition": "a GOOD RAW case with at least one preidentified material beneficial edit retained in FINAL, and the entire FINAL independently judged meaning-, fact-, scope- and voice-safe, with no material newly introduced harmful defect or false-complete claim; harmless fallback or abstention is not retention",
+    "noUnresolvedMaterialSafetyAuthorizationOrRawSpanDispute": true
+  },
+  "orderAndIntegrity": [
+    "audit_and_commit_protocol_before_creator_briefing",
+    "commit_and_verify_resolved_exclusion_manifest_and_exact_overlap_implementation_before_creator_briefing",
+    "lock_case_corpus_and_both_independent_prelabels_before_generation",
+    "verify_output_execution_readiness_after_corpus_prelabel_lock_before_any_arm_output",
+    "run_cases_in_ascending_case_ID_order_with_arm_order_V15_then_C_then_Astra",
+    "run_V15_once_per_case_and_durably_record_exact_application_level_editor_payload_and_RAW_before_downstream_use",
+    "freeze_V15_RAW_and_FINAL_before_C_receives_exact_RAW",
+    "generate_one_separate_Astra_direct_output_per_case_even_if_V15_or_C_has_technical_failure",
+    "lock_all_arm_outputs",
+    "two_independent_blind_RAW_labels_and_third_adjudication_if_needed_lock_before_FINAL_trace_or_arm_mapping_exposure_to_RAW_judges",
+    "create_primary_text_only_blind_packets_after_all_arm_outputs_lock",
+    "lock_original_primary_text_only_judgments_before_status_or_disclosure_exposure",
+    "create_secondary_status_and_disclosure_packets_and_lock_original_product_package_judgments",
+    "join_arm_mapping_and_audit_all_48_cases_including_class5_class6_traces_and_disagreements_after_unblinding"
+  ],
+  "thisPass": {
+    "caseCountCreated": 0,
+    "prelabelsCreated": 0,
+    "modelCalls": 0,
+    "rawOutputs": 0,
+    "armOutputs": 0,
+    "judgments": 0,
+    "scoring": 0,
+    "experimentalSpendUsd": 0
+  },
+  "payloadCustody": {
+    "captureLayer": "exact application-level StructuredCaller/Responses request arguments and returned model content; not raw HTTP or final wire",
+    "exactApprovedSemanticPayloadBytesPersisted": true,
+    "encoding": "UTF-8 bytes of frozen application-level serialization; record SHA-256 for captured bytes and durable copy and require equality before downstream use",
+    "transportMetadataAllowlist": [
+      "requestId",
+      "responseModel",
+      "responseStatus",
+      "createdAt",
+      "startedAt",
+      "endedAt",
+      "usage",
+      "billingCostIfKnown",
+      "attemptCount"
+    ],
+    "forbiddenDurableFields": [
+      "Authorization",
+      "Cookie",
+      "Set-Cookie",
+      "proxy credentials",
+      "raw HTTP headers",
+      "auth tokens",
+      "API keys"
+    ],
+    "unexpectedSecretPolicy": "scan and strip secret-bearing fields before durable storage; if exact approved semantic fields cannot be preserved, record technical failure and block advancement",
+    "technicalFailuresPersisted": true
+  },
+  "rawJudging": {
+    "sharedV15AndCEditorRaw": true,
+    "packetFields": [
+      "opaqueRawId",
+      "source",
+      "objective",
+      "rawText"
+    ],
+    "hiddenUntilOriginalLabelsAndAdjudicationLock": [
+      "final",
+      "trace",
+      "armMapping",
+      "visibleStatus",
+      "visibleDisclosure",
+      "prelabels"
+    ],
+    "originalLabelsPreserved": true,
+    "citedSourceAndRawSpansRequired": true,
+    "safeEditSpansAndMaterialDefectSpansRequired": true,
+    "labels": {
+      "GOOD": "at least one material objective-relevant beneficial edit and no material defect",
+      "BAD": "at least one material harmful defect and no independently useful safe edit",
+      "MIXED": "at least one independently useful safe edit and at least one material harmful defect",
+      "OTHER": "available text with neither material benefit nor material defect, including unchanged or trivial edits",
+      "DISPUTED": "material classification or span disagreement remains after third independent blind adjudication"
+    },
+    "missingOrInvalidRaw": "separate technical outcome; never OTHER",
+    "thirdBlindAdjudicatorForMaterialDisagreement": true,
+    "adjudicatedDisagreementPreserved": true,
+    "lockBeforeFinalTraceOrArmMappingExposedToRawJudges": true,
+    "blindAIJudgeCount": 2
+  },
+  "deviationPolicy": {
+    "wholeExperimentAdvancementInvalidatedBy": [
+      "any leakage",
+      "unauthorized retry including hidden SDK or transport retry",
+      "changed model/settings/implementation",
+      "stale hash",
+      "missing custody",
+      "post-lock replacement"
+    ],
+    "selectedCaseSalvage": false,
+    "onlyPredeclaredComparisonSpecificDescriptiveDeviations": {
+      "documented single-arm technical absence": "comparisons containing that arm are missing; unaffected pairs may be reported descriptively",
+      "documented unresolved judgment": "comparisons requiring that label are unresolved; unaffected pairs may be reported descriptively"
+    },
+    "positiveAdvanceAfterAnyComparisonSpecificDeviation": false,
+    "otherDeviations": "whole-experiment invalidation; no retrospective recovery rule"
+  },
+  "primaryComparison": "C_DOWNSTREAM:V15",
+  "secondaryFrontierComparison": "C_DOWNSTREAM:ASTRA_DIRECT",
+  "gates": {
+    "CORPUS_READY": "frozen rules, inventory, creation/prelabel contracts, no prior outcomes in session inputs; permits cases only",
+    "PRE_OUTPUT_CORPUS_PRELABEL_READY": "48 schema/quota/freshness-passing immutable cases and 96 independently frozen prelabels with preserved disagreement",
+    "OUTPUT_EXECUTION_READY": "working frozen V15/C runtime, Astra access, spend authorization, execution storage and final runtime validation; required before outputs"
+  },
+  "aiSessions": {
+    "model": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "reasoningMode": "omitted",
+    "tools": [],
+    "browsing": false,
+    "automaticRetries": 0,
+    "independence": "Separate agent invocation/session with no inherited conversation, prior role outputs or shared working memory. Custodian projects exact allowlisted frozen inputs; no repo filesystem/network access. Do not spawn from full-history fork. Persist invocation ID, role, requested/returned model metadata if exposed, effort, input hashes, output hash, timestamps and deviations. Common pretrained knowledge is not procedural memory and is a limitation.",
+    "crossRoleReuse": "forbidden; distinct invocations for creators, semantic reviewer, each prelabeler, and each judging stage",
+    "budgets": {
+      "creatorSessions": 2,
+      "semanticFreshnessReviewer": 1,
+      "prelabelSessions": 2,
+      "blindJudgeSessionsPerStage": 2,
+      "thirdBlindAdjudicator": "one only when frozen material disagreement rule triggers; never a panel"
+    },
+    "humanParticipantsRequired": false,
+    "optionalHumanReview": "after unblinding only; not a validity prerequisite"
+  },
+  "futureJudges": {
+    "primaryFamily": "gpt-6.1-sol (non-Astra)",
+    "reasoningEffort": "high",
+    "reasoningMode": "omitted",
+    "tools": [],
+    "browsing": false,
+    "memory": "none across roles/stages; one isolated batch per reviewer per stage",
+    "automaticRetries": 0,
+    "settingsEqualAcrossPairedArms": true,
+    "access": "execution-time prerequisite, unavailable exact model blocks judging; no silent substitute",
+    "stages": [
+      "RAW classification",
+      "primary text-only items and pairs",
+      "secondary product packages"
+    ],
+    "instructionSource": "contracts/judging-contract.json",
+    "schemaSource": "contracts/judging-contract.json"
+  }
+}

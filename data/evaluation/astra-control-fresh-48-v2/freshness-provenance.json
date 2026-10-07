@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "inheritedFrom": "astra-control-fresh-48-v1",
+  "manifestPath": "data/evaluation/astra-control-fresh-48-v1/exclusion-manifest.json",
+  "manifestSha256": "b0b60d971ff880f82ae6b270134a8cfc1e3afc35bc4c3aa612e0f4182da99abb",
+  "artifactVersions": 695,
+  "referenceOccurrences": 50915,
+  "methodPath": "scripts/freshness-astra-precase.py",
+  "methodSha256": "783e2dbd098ea09b4a63f3ca097aa43c722873041580fde2f0ffdcb89ef32121",
+  "scope": "exact frozen bounded v1 inventory; no regeneration/expansion; v1/v2 had no cases or outputs at registration",
+  "semanticAccess": "prior source/objective/scenario structures only; prior arm outcomes excluded from AI reviewer packets"
+}

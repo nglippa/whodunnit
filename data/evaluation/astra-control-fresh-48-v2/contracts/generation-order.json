@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "pre-case-sequence-and-leakage-controls",
+  "status": "SEQUENCE_ONLY_NO_CASE_OR_OUTPUT_EXECUTION",
+  "caseOrder": "AC48V2-001 through AC48V2-048 in ascending numeric order, never selected by expected outcome",
+  "stages": [
+    {
+      "n": 1,
+      "id": "pre_case_lock",
+      "gate": "CORPUS READY: freshness rules, exclusion inventory, case-generation and prelabel contracts frozen and committed; creators/prelabelers receive no prior outcomes. Execution access/spend/runtime are deferred to OUTPUT EXECUTION READY."
+    },
+    {
+      "n": 2,
+      "id": "create_corpus",
+      "gate": "two independent AI creators A/B each submit 24 synthetic drafts"
+    },
+    {
+      "n": 3,
+      "id": "freshness_screen",
+      "gate": "all drafts exact/normalized/shingle/semantic screened against exclusion inventory and all peers"
+    },
+    {
+      "n": 4,
+      "id": "pre_lock_replacement",
+      "gate": "replace only rejected drafts within assigned ID/stratum before corpus lock; preserve rejected hashes and reasons"
+    },
+    {
+      "n": 5,
+      "id": "corpus_lock",
+      "gate": "48 accepted exact source/objective byte strings, quotas, provenance, screen results and hashes frozen"
+    },
+    {
+      "n": 6,
+      "id": "independent_prelabels",
+      "gate": "P1 and P2 see only case ID/SOURCE/OBJECTIVE; original forms locked separately"
+    },
+    {
+      "n": 7,
+      "id": "prelabel_lock",
+      "gate": "lock P1/P2 originals and deterministic field-wise disagreement records without consensus adjudication"
+    },
+    {
+      "n": 8,
+      "id": "pre_output_integrity",
+      "gate": "OUTPUT EXECUTION READY: working V15/C runtime, Astra access, spend authorization, execution storage and final runtime validation; verify locked case/prelabel hashes and no leakage before any output."
+    },
+    {
+      "n": 9,
+      "id": "v15_editor_raw",
+      "gate": "one frozen V15 editor call; record exact application-level request and response and candidate.text RAW before V15 sees response"
+    },
+    {
+      "n": 10,
+      "id": "v15_control",
+      "gate": "frozen V15 downstream control with separate verifier/repair caller; lock native FINAL/trace/status/failure"
+    },
+    {
+      "n": 11,
+      "id": "candidate_c_control",
+      "gate": "assert exact V15 candidate and saved RAW UTF-8 byte equality; C uses saved RAW, no editor call; lock separate FINAL/trace/status/failure"
+    },
+    {
+      "n": 12,
+      "id": "astra_direct",
+      "gate": "one isolated frozen Astra request from SOURCE/OBJECTIVE only; lock response or technical failure; no retry"
+    },
+    {
+      "n": 13,
+      "id": "outputs_lock",
+      "gate": "all 48 cases and four-arm outputs or explicit absences, semantic payload hashes, traces, attempts and costs frozen"
+    },
+    {
+      "n": 14,
+      "id": "blind_packet_creation",
+      "gate": "opaque RAW, primary item and pairwise mapping/order from frozen seed; packet projection audited for text-only fields"
+    },
+    {
+      "n": 15,
+      "id": "blind_raw_classification",
+      "gate": "R1/R2 independent shared RAW classification before FINAL/status/trace exposure; originals and blind adjudication locked"
+    },
+    {
+      "n": 16,
+      "id": "primary_blind_judging",
+      "gate": "J1/J2 independent item and five pairwise text-only forms; original ratings locked; then collect guesses"
+    },
+    {
+      "n": 17,
+      "id": "secondary_blind_package_judging",
+      "gate": "after primary lock show actual visible status/disclosure under opaque IDs; original ratings and blind adjudication locked"
+    },
+    {
+      "n": 18,
+      "id": "unblinded_trace_audit",
+      "gate": "join private mapping/prelabels/traces; audit all 48 cases including class 5/6 and technical absences; preserve disputes"
+    },
+    {
+      "n": 19,
+      "id": "ratings_lock",
+      "gate": "all originals, blind adjudications, trace findings and unresolved flags fixed before analysis unblinding"
+    },
+    {
+      "n": 20,
+      "id": "unblind_metrics_advancement",
+      "gate": "calculate only preregistered denominators, separate safety classes, paired transitions and Astra gap; apply fixed advancement gates"
+    }
+  ],
+  "armInformationalInputs": {
+    "SOURCE": [
+      "source"
+    ],
+    "V15": [
+      "source",
+      "objective",
+      "frozen V15 prompt/plan derived only from source and objective"
+    ],
+    "C_DOWNSTREAM": [
+      "source",
+      "objective",
+      "exact saved V15 RAW"
+    ],
+    "ASTRA_DIRECT": [
+      "source",
+      "objective",
+      "frozen minimal Astra instruction"
+    ]
+  },
+  "neverPassToGeneration": [
+    "prelabels",
+    "safety traps",
+    "stratum/category labels",
+    "prior judgments",
+    "other arm outputs",
+    "blind ratings",
+    "creator provenance"
+  ],
+  "sessionIsolation": "fresh per-case Astra invocation without previous_response_id or conversation; no browsing/tools/repository access/cross-case memory; V15/C callers independent by arm and case; no accumulated transcript",
+  "noAdaptiveChanges": "No setting, prompt, threshold, order, repair budget or caller change based on observed arm output or technical failure. Preserve failure, stop if integrity guard is broken, and never replace an output or case after lock.",
+  "outputGenerationAuthorizedByThisArtifact": false
+}

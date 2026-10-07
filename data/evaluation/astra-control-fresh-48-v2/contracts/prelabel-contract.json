@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "pre-case-prelabel-contract",
+  "status": "FROZEN_BEFORE_CASE_CREATION",
+  "reviewersPerCase": 2,
+  "reviewerKind": "independent AI sessions",
+  "timing": "after accepted corpus and freshness lock, before any editor or arm output",
+  "inputPacketFieldsExactly": [
+    "caseId",
+    "source",
+    "objective"
+  ],
+  "instruction": "From SOURCE and OBJECTIVE alone, identify the authorized edit and all claims, facts, voice features, and boundaries an output must respect. Cite source or objective spans. Do not write an ideal rewrite. Do not infer a missing replacement value. Record genuine ambiguity rather than resolving it from imagined context.",
+  "forbiddenInputs": [
+    "primaryStratum",
+    "orthogonalTags",
+    "creator identity",
+    "peer prelabel",
+    "arm identity",
+    "RAW",
+    "FINAL",
+    "prior Whodunnit outcomes",
+    "judgments",
+    "exclusion material"
+  ],
+  "evidenceSpan": {
+    "offsetUnit": "zero-based UTF-8 byte offsets in the exact frozen source or objective field, half-open [startByte,endByte)",
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "field",
+        "startByte",
+        "endByte",
+        "quote"
+      ],
+      "properties": {
+        "field": {
+          "enum": [
+            "source",
+            "objective"
+          ]
+        },
+        "startByte": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "endByte": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "validation": "endByte > startByte and UTF-8 byte slice equals quote exactly"
+  },
+  "recordSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "caseId",
+      "reviewerId",
+      "submittedAtUtc",
+      "intendedObjective",
+      "acceptableEditScope",
+      "stableFactsAndClaims",
+      "authorizedFactualChanges",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "noOrMinimalEditExpected",
+      "ambiguity",
+      "missingPropositions",
+      "voiceConstraints",
+      "zeroToleranceTraps",
+      "sourceObjectiveEvidence"
+    ],
+    "properties": {
+      "caseId": {
+        "type": "string",
+        "pattern": "^AC48V2-(00[1-9]|0[1-3][0-9]|04[0-8])$"
+      },
+      "reviewerId": {
+        "type": "string",
+        "pattern": "^P[12]$"
+      },
+      "submittedAtUtc": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "intendedObjective": {
+        "type": "string",
+        "minLength": 1
+      },
+      "acceptableEditScope": {
+        "type": "string",
+        "minLength": 1
+      },
+      "stableFactsAndClaims": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "authorizedFactualChanges": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "requiredForm": {
+        "type": "string",
+        "minLength": 1
+      },
+      "noOrMinimalEditExpected": {
+        "type": "boolean"
+      },
+      "ambiguity": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "missingPropositions": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "voiceConstraints": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "zeroToleranceTraps": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "stale_current_fact_presented_as_completed_after_authorized_update",
+            "invented_missing_replacement",
+            "collateral_unauthorized_factual_mutation",
+            "material_unauthorized_meaning_change",
+            "confirmed_materially_bad_raw_edit_escaping_final",
+            "accepted_harmful_repair"
+          ]
+        }
+      },
+      "sourceObjectiveEvidence": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "supportsField",
+            "field",
+            "startByte",
+            "endByte",
+            "quote"
+          ],
+          "properties": {
+            "supportsField": {
+              "enum": [
+                "intendedObjective",
+                "acceptableEditScope",
+                "stableFactsAndClaims",
+                "authorizedFactualChanges",
+                "protectedNamesNumbersDatesQuotesPhrases",
+                "requiredForm",
+                "noOrMinimalEditExpected",
+                "ambiguity",
+                "missingPropositions",
+                "voiceConstraints",
+                "zeroToleranceTraps"
+              ]
+            },
+            "field": {
+              "enum": [
+                "source",
+                "objective"
+              ]
+            },
+            "startByte": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "endByte": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "quote": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "validation": [
+    "two original independent forms per case, one P1 and one P2, with separate private sessions",
+    "validate all cited UTF-8 slices exactly against frozen SOURCE or OBJECTIVE",
+    "reject ideal-rewrite prose, an invented missing value, case metadata, and any output-derived content",
+    "record exact form bytes and SHA-256 on exclusive write before either prelabeler sees peer work"
+  ],
+  "disagreementHandling": {
+    "comparisonAfterBothOriginalsLocked": true,
+    "materialFields": [
+      "intendedObjective",
+      "acceptableEditScope",
+      "stableFactsAndClaims",
+      "authorizedFactualChanges",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "noOrMinimalEditExpected",
+      "ambiguity",
+      "missingPropositions",
+      "voiceConstraints",
+      "zeroToleranceTraps"
+    ],
+    "representation": "One record per case: caseId, P1 record SHA256, P2 record SHA256, differingFields sorted lexicographically, valuesByField {field:{P1:originalValue,P2:originalValue}}. Compare field values with canonical JSON (sorted object keys, original array order, no string normalization). Exact inequality is recorded as disagreement, not presumed material.",
+    "preserveBothOriginalsAndAllDisagreements": true,
+    "preOutputAdjudication": "NONE",
+    "gate": "Disagreement does not block prelabel freeze; invalid schema/evidence, missing forms or leakage do. Never invent consensus. Later objective authorization disputes remain unresolved unless independently evidence-adjudicated; no output may retroactively replace originals."
+  },
+  "distribution": "private prelabel records and disagreement resolution never enter editor, verifier, repair, RAW-judge, or primary blind-judge packets",
+  "prelabelingAuthorizedByThisArtifact": "YES_AFTER_CORPUS_AND_FRESHNESS_LOCK_BEFORE_ANY_OUTPUT"
+}

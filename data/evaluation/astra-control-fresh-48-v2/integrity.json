@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "preregistration-integrity",
+  "hashAlgorithm": "sha256",
+  "selfHashExcluded": true,
+  "files": {
+    "data/evaluation/astra-control-fresh-48-v2/astra-editor-instruction.txt": "5dbcbccd92daf1f5438fbffaceb4e1334a1193e3a0edae8827e537974b20110f",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/case-custody.json": "58b729bb3c41443e444a695e67f8077456b46c4758fc27311212f574404d1688",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/execution-bindings.json": "ed7d7fae9da95920e915d46ccb249680ccd01a4386f819491603a840a8ad4e8e",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/freshness-screen.json": "076b9e716ee1307b8a166a4ac93416523b6c11385238d7612d6f5c249513e9e0",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/generation-order.json": "886f253523c02c9b9cf15ffc2d46d83c4605a3a82346848ccd4929986a845bcd",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/judging-contract.json": "f4c41c337689a4e86b9b70e55008d7bee09444d05a29de235e41febd810e9723",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/pairwise-randomization.json": "a3475d54ec38f4b8e9283490d9a0e12ea30d08cc02715a8519b0e3d30a4b231a",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/prelabel-contract.json": "b80f9e18eb72d681f20b2600c7b402b77d3aff6fb193e9ddd486788261ff662b",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/technical-failure-policy.json": "f602cc432d5b4fd92af3b564d7daa35fdbad9f30ed17d84a0a09a656fd874423",
+    "data/evaluation/astra-control-fresh-48-v2/contracts/trace-custody.json": "b7033d924ee418d6bfb16b4d0ba8dfb54749d90177e8ba5e40218230e74bc0fa",
+    "data/evaluation/astra-control-fresh-48-v2/freshness-provenance.json": "97cf1e528dff941d39f515c1367bbad2047292ec5febbe8e9ce6da66b7bb7907",
+    "data/evaluation/astra-control-fresh-48-v2/protocol.json": "2f51454452143ccd841f758deec93d70c8dc93a50278b090c34afdbe269ea66d",
+    "scripts/freshness-astra-v2.py": "155763d7cdf888177bfb97dba521d8f5c4dbc71a94a494fdfdc6a6e748a98af5",
+    "docs/ASTRA-CONTROL-BENCHMARK-V2-PREREGISTRATION.md": "9fb281b0148867c57df52c1f4915b1ae4115be45fced8f354d81970608892aa2",
+    "data/evaluation/astra-control-fresh-48-v2/protocol-review.json": "41296e2715c7195d0db77182f68be73bf30b0c3f1d4f15a5dea47911a0c58e52"
+  },
+  "externalDependencies": {
+    "data/evaluation/astra-control-fresh-48-v1/exclusion-manifest.json": "b0b60d971ff880f82ae6b270134a8cfc1e3afc35bc4c3aa612e0f4182da99abb",
+    "scripts/freshness-astra-precase.py": "783e2dbd098ea09b4a63f3ca097aa43c722873041580fde2f0ffdcb89ef32121",
+    "data/evaluation/astra-control-fresh-48-v1/pre-case/execution-bindings.json": "be4200f83e1b4ef2963eaad5e97aefd2a259e120233b17d2befa35d6ab8f3bc1"
+  }
+}

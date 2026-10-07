@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "frozen-execution-binding-contract",
+  "v1BindingEvidence": {
+    "path": "data/evaluation/astra-control-fresh-48-v1/pre-case/execution-bindings.json",
+    "sha256": "be4200f83e1b4ef2963eaad5e97aefd2a259e120233b17d2befa35d6ab8f3bc1",
+    "purpose": "reuse exact V15/C implementations, offline binding proof and SOURCE admission invariant; v1 authority/status not imported as v2 readiness"
+  },
+  "source": {
+    "binding": "sourceFinal(source) returns the original string object unchanged",
+    "callerPath": "scripts/astra-control-execution-bindings.ts",
+    "callerFileSha256": "01558ca23fca91ba55002570020c5d5a5e0756a6a0fa439d1332350db2528df3",
+    "modelCalls": 0,
+    "normalization": "NONE",
+    "caseAdmissionInvariant": "Reject any source or objective whose frozen V15/C parse or trim would alter its string; do not normalize the SOURCE arm."
+  },
+  "v15": {
+    "entrypoint": "src/lib/reconstruction/verified-reconstruction.ts:runDirectiveScopedTemporalReconstruction",
+    "implementationSha256": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+    "anchorCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+    "anchorFileHashVerified": true,
+    "request": "reconstructionRequestSchema.parse({source, profile: PRESETS.natural}); exact objective string, no refinement or voiceprint",
+    "editor": "one frontier-editor StructuredCaller invocation using frozen RECONSTRUCTION_V15 prompt, candidateSchema {text,changes}",
+    "rawCustody": "Caller wrapper persists exact semantic editor request, returned data plus allowlisted metadata, and candidate.text UTF-8 bytes with readback equality before returning to frozen V15.",
+    "verifier": "Frozen deterministic directive-scoped temporal verification then distinct candidate-verifier StructuredCaller; strict candidateReviewSchemaV10.",
+    "repair": "At most one local-repair StructuredCaller attempt and whole-result recheck when frozen V15 requests it.",
+    "fallback": "Frozen V15 returns source on invalid/unavailable editor, hard meaning failure, rejected/malformed/unavailable verifier, failed repair, or timeout; capture failure yields technical absence for the C pair.",
+    "finalCustody": "Persist separate V15 verifier/repair semantic request-response payloads and complete V15 result before Candidate C receives RAW.",
+    "liveCallerStatus": "BLOCKED_NO_AUDITED_ACCOUNT_BACKED_ZERO_INCREMENTAL_COST_EDITOR_VERIFIER_REPAIR_RUNTIME"
+  },
+  "candidateC": {
+    "entrypoint": "src/lib/reconstruction/post-v3/index.ts:runCandidateC",
+    "implementationSha256": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+    "anchorCommit": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "anchorFileHashVerified": true,
+    "frozenArmArtifactSha256": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19",
+    "input": "Exact readback UTF-8 bytes of V15 candidate.text, asserted byte-equal; same source, objective and PRESETS.natural profile.",
+    "independentEditorCalls": 0,
+    "verifier": "Separate post-v3-review and optional post-v3-recheck StructuredCaller invocations using strict postV3ReviewSchema.",
+    "repair": "At most one bounded post-v3-local-repair StructuredCaller invocation using strict postV3RepairSchema.",
+    "fallback": "Frozen C abstains to source on unsafe, unresolved or technical review/repair path; no substitute RAW if V15 RAW absent.",
+    "separateDownstreamCallers": true,
+    "traceCustody": "Persist C verifier/repair semantic request-response payloads separately from V15 and persist complete C result.",
+    "liveCallerStatus": "BLOCKED_NO_AUDITED_COMMON_ACCOUNT_BACKED_ZERO_INCREMENTAL_COST_VERIFIER_REPAIR_RUNTIME"
+  },
+  "sharedRawInvariant": "V15 candidate.text, durable saved RAW and C input must be UTF-8 byte-identical; C has no independent editor draw, no substitute RAW, no trim/normalization. Same source/objective/PRESETS.natural; identical frozen provider settings for separate downstream callers.",
+  "astraContract": "../protocol.json astra; access/spend/runtime gate only before outputs",
+  "outputExecutionReady": false
+}

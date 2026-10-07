@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "single-independent-protocol-review",
+  "reviewerInvocation": "v2_review",
+  "question": "Does v2 preserve enough independence, blindness, freshness, and arm fairness to support an internal product decision without requiring human participants?",
+  "verdict": "PASS",
+  "blockingSeverityThreshold": [
+    "HIGH",
+    "CRITICAL"
+  ],
+  "findings": [],
+  "scope": "final preregistration/contracts only; no cases, prelabels, outputs, execution or additional review",
+  "decision": "V2_PREREGISTERED_CORPUS_CREATION_AUTHORIZED"
+}

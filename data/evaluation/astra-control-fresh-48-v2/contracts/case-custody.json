@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "pre-case-case-creation-custody",
+  "authority": "data/evaluation/astra-control-fresh-48-v2/protocol.json",
+  "status": "FROZEN_BEFORE_CASE_CREATION",
+  "caseCount": 48,
+  "creatorSlots": [
+    "A",
+    "B"
+  ],
+  "casesPerCreator": 24,
+  "caseIdRule": {
+    "format": "AC48V2-001 through AC48V2-048, zero-padded decimal",
+    "assignment": "A owns 001-024; B owns 025-048",
+    "slotOrder": "Within each creator 24 IDs allocate strata in protocol corpus.primaryStrata order repeating byCreator count; replacement keeps assigned ID/stratum and original creator role.",
+    "generationOrder": "ascending case ID; no reorder after cases exist"
+  },
+  "creatorEligibility": {
+    "kind": "two independent AI sessions",
+    "humanRequired": false,
+    "rules": "protocol.json aiSessions; no prior outcome or exclusion access",
+    "caseCreatorCannotSelfCertifySemanticFreshness": true
+  },
+  "creatorBrief": {
+    "source": "frozen corpus-generation contract in protocol.json; custodian extracts only workload taxonomy, input schema, assigned stratum counts, length/orthogonal quotas, and synthetic-only requirement",
+    "allowedFields": [
+      "creatorSlot",
+      "assignedCaseIds",
+      "assignedPrimaryStrata",
+      "syntheticOnly",
+      "sourceObjectiveInputSchema",
+      "wordBands",
+      "orthogonalCoverageTargets",
+      "submissionMethod",
+      "freshnessConstraintsWithoutExcludedExamples"
+    ],
+    "forbidden": [
+      "exclusion manifest content",
+      "excluded examples",
+      "prior cases",
+      "prior RAW",
+      "prior prelabels",
+      "prior judgments",
+      "any arm output",
+      "Candidate C result",
+      "Astra result",
+      "expected rewrite",
+      "peer drafts"
+    ],
+    "briefBytesAndSha256LockedBeforeDelivery": true,
+    "deliveryPerCreatorIsolated": true
+  },
+  "draftSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "caseId",
+      "creatorSlot",
+      "draftAttempt",
+      "source",
+      "objective",
+      "primaryStratum",
+      "orthogonalTags"
+    ],
+    "properties": {
+      "caseId": {
+        "type": "string",
+        "pattern": "^AC48V2-(00[1-9]|0[1-3][0-9]|04[0-8])$"
+      },
+      "creatorSlot": {
+        "enum": [
+          "A",
+          "B"
+        ]
+      },
+      "draftAttempt": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "source": {
+        "type": "string",
+        "minLength": 1
+      },
+      "objective": {
+        "type": "string",
+        "minLength": 1
+      },
+      "primaryStratum": {
+        "enum": [
+          "already_good",
+          "explicit_supplied_update",
+          "missing_value_update",
+          "localized_edit",
+          "broad_reconstruction",
+          "voice_sensitive",
+          "collateral_change_trap",
+          "ambiguous_contested"
+        ]
+      },
+      "orthogonalTags": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "casual",
+            "professional",
+            "academic_ish",
+            "personal",
+            "synthetic_shaped",
+            "formulaic",
+            "overproduced",
+            "numbers",
+            "dates_times",
+            "negation",
+            "certainty",
+            "causality",
+            "comparison",
+            "quotation",
+            "protected_phrase",
+            "edit_scope"
+          ]
+        }
+      }
+    }
+  },
+  "custody": {
+    "creatorWorkspace": "one isolated creator workspace and conversation per creator; no repository outcome access or peer-draft access",
+    "creatorSubmission": "append-only private custodian intake; preserve exact UTF-8 source/objective bytes, draft hash, creator slot, attempt, submission timestamp and sanitized brief hash",
+    "screening": "independent custodian executes frozen lexical and semantic exclusion procedure; creators receive only REPLACE plus a generic reason category, never excluded text or another creator's draft",
+    "preCorpusLockReplacement": "reject hash and reason preserved; same creator slot, case ID and primary stratum; quotas rechecked; no post-lock replacement",
+    "caseLock": "after all 48 pass freshness and quotas, freeze exact source/objective bytes, provenance, tags, screen result, case hash and manifest hash; exclusive write and hash verification",
+    "postLockOverlap": "invalidate confirmatory corpus, no case replacement",
+    "privateFieldsNeverInEditorOrJudgePackets": [
+      "creatorSlot",
+      "primaryStratum",
+      "orthogonalTags",
+      "draftAttempt",
+      "attestation",
+      "freshnessScreen",
+      "caseHash",
+      "provenance"
+    ]
+  },
+  "accessMatrix": {
+    "creators": [
+      "own sanitized brief",
+      "own assigned drafts and generic replace dispositions"
+    ],
+    "freshnessCustodian": [
+      "all draft source/objective and private provenance",
+      "exclusion manifest",
+      "all screen records"
+    ],
+    "prelabelers": [
+      "accepted case ID",
+      "accepted source",
+      "accepted objective",
+      "prelabel instructions/schema"
+    ],
+    "executionOperators": [
+      "locked case ID",
+      "locked source",
+      "locked objective",
+      "frozen execution contracts after pre-output lock"
+    ],
+    "primaryBlindJudges": [
+      "opaque packet ID",
+      "source",
+      "objective",
+      "output text only"
+    ]
+  },
+  "caseCreationAuthorizedByThisArtifact": "YES_AFTER_V2_PROTOCOL_COMMIT",
+  "inputAdmission": "Before acceptance run assertCaseInputExact(source, objective) from scripts/astra-control-execution-bindings.ts; reject any schema/trim transformation instead of normalizing. Preserve exact submitted bytes.",
+  "coverageAllocation": {
+    "lengthBandsPerCreator": {
+      "short": 6,
+      "medium": 12,
+      "long": 6
+    },
+    "orthogonalMinimumsPerCreator": {
+      "casual": 4,
+      "professional": 4,
+      "academic_ish": 3,
+      "personal": 3,
+      "synthetic_shaped": 4,
+      "formulaic": 4,
+      "overproduced": 3,
+      "numbers_or_dates_times": 6,
+      "negation": 4,
+      "certainty": 4,
+      "causality": 3,
+      "comparison": 3,
+      "quotation": 3,
+      "protected_phrase": 3
+    },
+    "noOrMinimalEditingDefensiblePerCreatorAtLeast": 4,
+    "wordCount": "count maximal Unicode letter-or-number runs with frozen freshness tokens(source); apostrophes/hyphens separate tokens"
+  }
+}
