@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "artifact": "astra-control-data-phase-status",
+  "experimentId": "astra-control-fresh-48-v1",
+  "authorizedHead": "1c7571e06823de9c8aada9651ecbc6af6260b3b4",
+  "decision": "E",
+  "status": "MULTIPLE_BLOCKERS",
+  "preCaseGate": "CORPUS_READY_UNCHANGED",
+  "caseCount": 0,
+  "coverageStatus": "NOT_ASSESSED_NO_ELIGIBLE_CORPUS",
+  "deterministicFreshness": "NOT_RUN_NO_ELIGIBLE_CORPUS",
+  "semanticFreshness": "NOT_RUN_NO_ELIGIBLE_CORPUS",
+  "replacementCount": 0,
+  "corpusHash": null,
+  "prelabelCount": 0,
+  "prelabelDisagreements": "NOT_ASSESSED_NO_PRELABELS",
+  "blockers": [
+    {
+      "id": "CREATOR_ELIGIBILITY",
+      "contractPath": "data/evaluation/astra-control-fresh-48-v1/pre-case/case-custody.json",
+      "requirements": [
+        {
+          "jsonPointer": "/creatorEligibility/humanCreators",
+          "value": 4
+        },
+        {
+          "jsonPointer": "/creatorEligibility/priorAccessAttestationRequiredBeforeBriefing",
+          "value": true
+        },
+        {
+          "jsonPointer": "/custody/creatorWorkspace",
+          "value": "one isolated creator workspace and conversation per creator; no repository outcome access or peer-draft access"
+        }
+      ],
+      "unmet": "No eligible human creators, signed prior-access attestations or isolated human creator sessions supplied; one AI worker cannot represent four eligible humans."
+    },
+    {
+      "id": "PRELABEL_INDEPENDENCE",
+      "contractPath": "data/evaluation/astra-control-fresh-48-v1/pre-case/prelabel-contract.json",
+      "requirements": [
+        {
+          "jsonPointer": "/reviewerKind",
+          "value": "independent human"
+        },
+        {
+          "jsonPointer": "/validation/0",
+          "value": "two original independent forms per case, one P1 and one P2, with separate private sessions"
+        }
+      ],
+      "unmet": "No two independent human prelabelers or separate private human sessions supplied; one AI worker cannot supply both independent human submissions."
+    },
+    {
+      "id": "SEMANTIC_REVIEWER_ELIGIBILITY",
+      "contractPath": "data/evaluation/astra-control-fresh-48-v1/pre-case/freshness-screen.json",
+      "requirements": [
+        {
+          "jsonPointer": "/semanticReview/reviewer",
+          "value": "human independent from all case creators and blind output judges"
+        }
+      ],
+      "unmet": "An AI subagent does not satisfy the frozen independent human semantic-reviewer requirement."
+    }
+  ],
+  "ruleChanges": false,
+  "aiSubstitutionAuthorized": false,
+  "armOutputs": {
+    "SOURCE": 0,
+    "V15": 0,
+    "C_DOWNSTREAM": 0,
+    "ASTRA_DIRECT": 0
+  },
+  "experimentalModelCalls": 0,
+  "experimentalSpendUsd": 0,
+  "nextTask": "Supply four eligible independent human creators with frozen attestations and isolation, an eligible independent human semantic reviewer, and two independent human prelabelers in separate private sessions; alternatively explicitly authorize a new prospective protocol permitting AI participation before case creation."
+}
