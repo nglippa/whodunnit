@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "artifact": "astra-control-benchmark-preregistration-integrity",
+  "experimentId": "astra-control-fresh-48-v1",
+  "hashAlgorithm": "sha256",
+  "files": {
+    "document": {
+      "path": "docs/ASTRA-CONTROL-BENCHMARK-PREREGISTRATION.md",
+      "exactFileBytesSha256": "0db00e3eaf023cfa04c53db97d0e27912f273c0b619db4a5f6ab5dedd38cb56b"
+    },
+    "protocol": {
+      "path": "data/evaluation/astra-control-fresh-48-v1/protocol.json",
+      "exactFileBytesSha256": "4ecacae4fbe07ffd4ba22871388a11744865e6f456c19e42a6c3fe2fac5b6a06"
+    },
+    "astraInstruction": {
+      "path": "data/evaluation/astra-control-fresh-48-v1/astra-editor-instruction.txt",
+      "exactFileBytesSha256": "5dbcbccd92daf1f5438fbffaceb4e1334a1193e3a0edae8827e537974b20110f"
+    },
+    "auditReport": {
+      "path": "docs/ASTRA-CONTROL-BENCHMARK-AUDITS.md",
+      "exactFileBytesSha256": "e1b82ba498ed44168a466b6fc5c32bb6644923a84881d65a31783feba6a2e7f0"
+    }
+  },
+  "selfHashExcluded": true
+}
