@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v1",
+  "artifact": "pre-case-case-creation-custody",
+  "authority": "data/evaluation/astra-control-fresh-48-v1/protocol.json",
+  "status": "FROZEN_BEFORE_CASE_CREATION",
+  "caseCount": 48,
+  "creatorSlots": [
+    "C01",
+    "C02",
+    "C03",
+    "C04"
+  ],
+  "casesPerCreator": 12,
+  "caseIdRule": {
+    "format": "AC48-001 through AC48-048, zero-padded decimal",
+    "assignment": "C01 owns 001-012; C02 owns 013-024; C03 owns 025-036; C04 owns 037-048",
+    "slotOrder": "Within each creator's 12 consecutive IDs, allocate primary strata in protocol.json corpus.primaryStrata order, repeating each stratum according to its byCreator count. Replacement before corpus lock keeps its rejected draft's assigned ID and stratum; preserve attempt number and rejected hash in private custody records.",
+    "generationOrder": "ascending case ID; no reorder after cases exist"
+  },
+  "creatorEligibility": {
+    "humanCreators": 4,
+    "priorAccessAttestationRequiredBeforeBriefing": true,
+    "ineligibleIfPreviouslyExposedTo": [
+      "excluded case-bearing material or its outcome analyses",
+      "prior Whodunnit arm outputs or judgments relevant to assigned case creation"
+    ],
+    "attestationRecord": [
+      "creatorSlot",
+      "humanIdentityPrivateCustodianOnly",
+      "signedAtUtc",
+      "priorAccessAnswers",
+      "eligibilityDecision",
+      "custodianSignatureOrHash"
+    ],
+    "caseCreatorCannotSelfCertifySemanticFreshness": true
+  },
+  "creatorBrief": {
+    "source": "frozen corpus-generation contract in protocol.json; custodian extracts only workload taxonomy, input schema, assigned stratum counts, length/orthogonal quotas, and synthetic-only requirement",
+    "allowedFields": [
+      "creatorSlot",
+      "assignedCaseIds",
+      "assignedPrimaryStrata",
+      "syntheticOnly",
+      "sourceObjectiveInputSchema",
+      "wordBands",
+      "orthogonalCoverageTargets",
+      "submissionMethod"
+    ],
+    "forbidden": [
+      "exclusion manifest content",
+      "excluded examples",
+      "prior cases",
+      "prior RAW",
+      "prior prelabels",
+      "prior judgments",
+      "any arm output",
+      "Candidate C result",
+      "Astra result",
+      "expected rewrite",
+      "peer drafts"
+    ],
+    "briefBytesAndSha256LockedBeforeDelivery": true,
+    "deliveryPerCreatorIsolated": true
+  },
+  "draftSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "caseId",
+      "creatorSlot",
+      "draftAttempt",
+      "source",
+      "objective",
+      "primaryStratum",
+      "orthogonalTags"
+    ],
+    "properties": {
+      "caseId": {
+        "type": "string",
+        "pattern": "^AC48-(00[1-9]|0[1-3][0-9]|04[0-8])$"
+      },
+      "creatorSlot": {
+        "enum": [
+          "C01",
+          "C02",
+          "C03",
+          "C04"
+        ]
+      },
+      "draftAttempt": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "source": {
+        "type": "string",
+        "minLength": 1
+      },
+      "objective": {
+        "type": "string",
+        "minLength": 1
+      },
+      "primaryStratum": {
+        "enum": [
+          "already_good",
+          "explicit_supplied_update",
+          "missing_value_update",
+          "localized_edit",
+          "broad_reconstruction",
+          "voice_sensitive",
+          "collateral_change_trap",
+          "ambiguous_contested"
+        ]
+      },
+      "orthogonalTags": {
+        "type": "array",
+        "uniqueItems": true,
+        "items": {
+          "enum": [
+            "casual",
+            "professional",
+            "academic_ish",
+            "personal",
+            "synthetic_shaped",
+            "formulaic",
+            "overproduced",
+            "numbers",
+            "dates_times",
+            "negation",
+            "certainty",
+            "causality",
+            "comparison",
+            "quotation",
+            "protected_phrase",
+            "edit_scope"
+          ]
+        }
+      }
+    }
+  },
+  "custody": {
+    "creatorWorkspace": "one isolated creator workspace and conversation per creator; no repository outcome access or peer-draft access",
+    "creatorSubmission": "append-only private custodian intake; preserve exact UTF-8 source/objective bytes, draft hash, creator slot, attempt, submission timestamp and sanitized brief hash",
+    "screening": "independent custodian executes frozen lexical and semantic exclusion procedure; creators receive only REPLACE plus a generic reason category, never excluded text or another creator's draft",
+    "preCorpusLockReplacement": "reject hash and reason preserved; same creator slot, case ID and primary stratum; quotas rechecked; no post-lock replacement",
+    "caseLock": "after all 48 pass freshness and quotas, freeze exact source/objective bytes, provenance, tags, screen result, case hash and manifest hash; exclusive write and hash verification",
+    "postLockOverlap": "invalidate confirmatory corpus, no case replacement",
+    "privateFieldsNeverInEditorOrJudgePackets": [
+      "creatorSlot",
+      "primaryStratum",
+      "orthogonalTags",
+      "draftAttempt",
+      "attestation",
+      "freshnessScreen",
+      "caseHash",
+      "provenance"
+    ]
+  },
+  "accessMatrix": {
+    "creators": [
+      "own sanitized brief",
+      "own assigned drafts and generic replace dispositions"
+    ],
+    "freshnessCustodian": [
+      "all draft source/objective and private provenance",
+      "exclusion manifest",
+      "all screen records"
+    ],
+    "prelabelers": [
+      "accepted case ID",
+      "accepted source",
+      "accepted objective",
+      "prelabel instructions/schema"
+    ],
+    "executionOperators": [
+      "locked case ID",
+      "locked source",
+      "locked objective",
+      "frozen execution contracts after pre-output lock"
+    ],
+    "primaryBlindJudges": [
+      "opaque packet ID",
+      "source",
+      "objective",
+      "output text only"
+    ]
+  },
+  "caseCreationAuthorizedByThisArtifact": "YES_WHEN_CORPUS_READY_CERTIFICATE_IS_LOCKED",
+  "inputAdmission": "Before acceptance run assertCaseInputExact(source, objective) from scripts/astra-control-execution-bindings.ts; reject any schema/trim transformation instead of normalizing. Preserve exact submitted bytes."
+}

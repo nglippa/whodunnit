@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v1",
+  "artifact": "prospective-freshness-screen-contract",
+  "status": "FROZEN_BEFORE_CASE_CREATION",
+  "anchorCommit": "6fd5809efb4e33449c6c9268316aabb90b016920",
+  "exclusionManifestPath": "data/evaluation/astra-control-fresh-48-v1/exclusion-manifest.json",
+  "implementationPath": "scripts/freshness-astra-precase.py",
+  "implementationMode": "custodian-only local Python; no network or model call",
+  "input": {
+    "draftRecordFieldsExactly": [
+      "caseId",
+      "source",
+      "objective"
+    ],
+    "draftRecordCount": 48,
+    "caseIdUnique": true,
+    "sourceAndObjective": "nonempty original strings; no normalization before storage",
+    "custodianAccessOnly": true,
+    "creatorAccessToExcludedMaterial": false
+  },
+  "referenceUniverse": {
+    "basis": "all selected evaluation, report, development-fixture, test and prompt artifacts committed at anchorCommit plus distinct selected ancestor blobs",
+    "selectedPathRoots": [
+      "data/evaluation/",
+      "data/fixtures/",
+      "data/rules/packs/",
+      "docs/",
+      "src/",
+      "tools/eval/",
+      "tools/"
+    ],
+    "artifactBytesVerifiedAgainstManifestSha256": true,
+    "textPointers": "JSON and JSONL natural-language fields of at least six tokens; paragraph pointers for Markdown, tests and prompts",
+    "textNotEmbeddedInManifest": true,
+    "caseOrExampleIdAndPathRecorded": true,
+    "fileGitBlobIdAndExactSha256Recorded": true,
+    "scopeLimitations": [
+      "ignored files, external conversations and private memory are outside the committed ancestor inventory",
+      "strings shorter than six tokens are not lexical references but remain subject to semantic review",
+      "a lexical nonmatch does not establish semantic freshness"
+    ]
+  },
+  "normalization": {
+    "sequence": [
+      "Unicode NFC",
+      "Unicode full casefold",
+      "collapse each Unicode whitespace run to one ASCII space",
+      "trim leading and trailing whitespace"
+    ],
+    "tokenization": "maximal contiguous Unicode category L or N runs after normalization; all other characters separate tokens",
+    "runtimeMustEqualManifestPythonAndUnicodeVersions": true,
+    "scriptHashMustEqualManifest": true
+  },
+  "deterministicChecks": [
+    "exact UTF-8 SHA-256 equality on each complete source or objective field",
+    "normalized SHA-256 equality on each complete source or objective field",
+    "any common contiguous six-token shingle after frozen tokenization; shingle SHA-256 uses U+001F between tokens",
+    "all 48 draft source and objective fields against every excluded reference",
+    "all 1,128 unordered draft case pairs, cross-checking both fields against both fields"
+  ],
+  "semanticReview": {
+    "reviewer": "human independent from all case creators and blind output judges",
+    "reviewAll48": true,
+    "reviewAllDeterministicFlags": true,
+    "reviewAllFlaggedPeerPairs": true,
+    "access": "custodian-controlled old corpus, transformation, RAW, labels and reports; never disclose excluded examples to creators",
+    "dimensions": [
+      "same or paraphrased scenario",
+      "same requested transformation, especially when paired with a similar source",
+      "near-duplicate wording with substitutions",
+      "distinctive factual structure, names, dates, numbers, comparisons, quotes or causal pattern",
+      "disguised known adversarial fixture or editing trap",
+      "peer-draft conceptual duplication"
+    ],
+    "record": [
+      "caseId",
+      "referenceArtifactOrPeerId",
+      "referencePointer",
+      "flagOrConcern",
+      "sourceObjectiveSpecificRationale",
+      "decision",
+      "reviewerId",
+      "timestamp"
+    ],
+    "uncertainDecision": "REPLACE before corpus lock when semantic overlap is uncertain; one independent reviewer screens each replacement under the same frozen rules. Insufficient reference access remains ESCALATE and blocks lock."
+  },
+  "decisionRules": {
+    "PASS": "all 48 cases and all flagged pairs independently reviewed; no confirmed material overlap; every lexical flag has a specific benign explanation; no unresolved concern",
+    "REPLACE": "before corpus lock, any exact or normalized duplicate source, confirmed substantial near-duplicate source, semantic recreation of a prior or peer case, copied distinctive factual structure, or disguised prior fixture; preserve rejected candidate hash, reason and reviewer record, then replace within originally assigned creator and stratum and rerun the entire screen",
+    "ESCALATE": "insufficient reference access or implementation/runtime/hash mismatch; no corpus lock while open. Unresolved semantic resemblance requires REPLACE before lock, not an additional reviewer.",
+    "objectiveAlone": "a generic repeated objective with a substantively different source is not automatic overlap; similar source plus objective or distinctive transformation is reviewed and may require REPLACE",
+    "preOutcomeThresholdChanges": "forbidden after creator briefing; changes require a new prospective lock before any cases",
+    "postCorpusLockOverlap": "invalidate confirmatory corpus; no case replacement or selected-case salvage",
+    "postOutcomeOverlap": "invalidate confirmatory experiment; no replacement or threshold change"
+  },
+  "custody": {
+    "creatorSeesOnlySanitizedContract": true,
+    "screeningCustodianStoresRejectedHashesAndReasons": true,
+    "noExcludedTextInCreatorPacket": true,
+    "noModelCalls": true,
+    "screenOutputContainsNoSourceOrReferenceProse": true,
+    "all48And1128PeerPairsRequiredForPass": true
+  }
+}

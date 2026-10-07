@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "artifact": "astra-control-pre-case-certificate",
+  "experiment_id": "astra-control-fresh-48-v1",
+  "anchor_commit": "6fd5809efb4e33449c6c9268316aabb90b016920",
+  "status": "CORPUS_READY",
+  "decision": "CORPUS_READY_OUTPUT_EXECUTION_DEFERRED",
+  "artifact_paths": {
+    "protocol_hash": "data/evaluation/astra-control-fresh-48-v1/protocol.json",
+    "instruction_hash": "data/evaluation/astra-control-fresh-48-v1/astra-editor-instruction.txt",
+    "v15_implementation_hash": "src/lib/reconstruction/verified-reconstruction.ts",
+    "candidate_c_implementation_hash": "src/lib/reconstruction/post-v3/index.ts",
+    "source_caller_hash": "scripts/astra-control-execution-bindings.ts",
+    "execution_bindings_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/execution-bindings.json",
+    "exclusion_manifest_hash": "data/evaluation/astra-control-fresh-48-v1/exclusion-manifest.json",
+    "overlap_procedure_hash": "scripts/freshness-astra-precase.py",
+    "overlap_contract_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/freshness-screen.json",
+    "case_creation_contract_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/case-custody.json",
+    "prelabel_contract_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/prelabel-contract.json",
+    "judging_contract_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/judging-contract.json",
+    "pairwise_randomization_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/pairwise-randomization.json",
+    "trace_custody_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/trace-custody.json",
+    "technical_failure_policy_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/technical-failure-policy.json",
+    "generation_order_hash": "data/evaluation/astra-control-fresh-48-v1/pre-case/generation-order.json"
+  },
+  "protocol_hash": "4ecacae4fbe07ffd4ba22871388a11744865e6f456c19e42a6c3fe2fac5b6a06",
+  "instruction_hash": "5dbcbccd92daf1f5438fbffaceb4e1334a1193e3a0edae8827e537974b20110f",
+  "v15_implementation_hash": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+  "candidate_c_implementation_hash": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+  "source_caller_hash": "01558ca23fca91ba55002570020c5d5a5e0756a6a0fa439d1332350db2528df3",
+  "execution_bindings_hash": "be4200f83e1b4ef2963eaad5e97aefd2a259e120233b17d2befa35d6ab8f3bc1",
+  "exclusion_manifest_hash": "b0b60d971ff880f82ae6b270134a8cfc1e3afc35bc4c3aa612e0f4182da99abb",
+  "overlap_procedure_hash": "783e2dbd098ea09b4a63f3ca097aa43c722873041580fde2f0ffdcb89ef32121",
+  "overlap_contract_hash": "c24442c672d573828f9183ccf16010a9285bcfec2116757c9e1c3fd6d6e97369",
+  "case_creation_contract_hash": "fca952d660acddfa81e7c5e6971d8f949b93495d9452235e2de418ee9e05379d",
+  "prelabel_contract_hash": "ba7b33eb85c3522ccc8b344b642b15f92595d4761c7be689a44e995c63828fba",
+  "judging_contract_hash": "59709d45fa237853248a996c25cd28b7cdaf058bcf533401fcdbb076b6277513",
+  "pairwise_randomization_hash": "31b327edadfac589a8db6a3b42dea240ae49ea6065b1a5df53d8b58962cb0f3a",
+  "trace_custody_hash": "ea93f52c4a01a2557eaba7577ebd2cf27075bf9133e41103f76ca55628df2d4e",
+  "technical_failure_policy_hash": "43b220f299961653cb26d0902269071418ec297070535834d97645a204998425",
+  "generation_order_hash": "408857d96b60907257708544b1c1d8a64ad08bd17ed539b28d687f397e0773eb",
+  "astra_requested_model": "gpt-6-astra",
+  "astra_reasoning_contract": {
+    "effort": "high",
+    "mode": "INTENTIONALLY_OMITTED"
+  },
+  "astra_access_status": "UNVERIFIED — DEFERRED EXECUTION PREREQUISITE",
+  "astra_served_revision_status": "UNVERIFIED / not currently available; NOT EXPOSED accepted if API does not expose it",
+  "astra_runtime_evidence": "Official documentation supports alias and high effort; environment presence-only check found no OPENAI_API_KEY, OPENAI_BASE_URL or OPENAI_ORG_ID in worker process. This does not establish account entitlement or request acceptance.",
+  "experimental_spend_authorization_status": "NOT_AUTHORIZED_BY_COMMITTED_PREREGISTRATION_AND_NO_SEPARATE_AUTHORIZATION_FOUND",
+  "v15_c_live_caller_status": "UNBOUND_REAL_ACCOUNT_BACKED_ZERO_INCREMENTAL_COST_EDITOR_VERIFIER_REPAIR_CALLERS_AND_DURABLE_EXACT_STORE",
+  "audits": {
+    "independent_corpus_integrity_review": {
+      "status": "PASS",
+      "question": "Is there any concrete HIGH/CRITICAL flaw that would make creation of a fresh 48-case corpus scientifically invalid or leak prior outcome information?",
+      "scope": "Final pre-case artifacts only; excludes entitlement, transport, served revision, spending and future runtime details",
+      "reviewer": "root (independent from implementation worker finish_gate)",
+      "unresolved_high_or_critical": 0,
+      "finding": "No concrete HIGH/CRITICAL corpus-integrity flaw or prior outcome leakage in final pre-case artifacts."
+    }
+  },
+  "case_count_created": 0,
+  "prelabel_count": 0,
+  "output_count": 0,
+  "experimental_model_calls": 0,
+  "experimental_spend": 0,
+  "certificate_hash_location": "data/evaluation/astra-control-fresh-48-v1/pre-case/pre-case-certificate.sha256",
+  "readinessGates": {
+    "CORPUS_READY": {
+      "status": "READY",
+      "requirements": [
+        "freshness rules frozen",
+        "exclusion inventory frozen",
+        "case-generation contract frozen",
+        "prelabel contract frozen",
+        "no prior outcomes in creator or prelabeler packets"
+      ]
+    },
+    "OUTPUT_EXECUTION_READY": {
+      "status": "NOT_READY",
+      "requirements": [
+        "working V15/C runtime",
+        "Astra access",
+        "Astra spend authorization",
+        "execution storage",
+        "final runtime validation"
+      ],
+      "corpusCreationBlocked": false
+    }
+  },
+  "supersedes": "For readiness sequencing only, this certificate supersedes protocol.json orderAndIntegrity runtime lock before creator briefing/case creation and Astra preGenerationBlockers: these now apply before OUTPUT execution. All other scientific protocol provisions remain frozen.",
+  "unresolved_corpus_issues": [],
+  "deferred_output_execution_prerequisites": [
+    "Astra account access and high-effort acceptance are unverified without an authorized runtime check.",
+    "Experimental Astra spend has no recorded separate authorization; the committed preregistration authorizes no model call or spend.",
+    "Real compliant V15 editor and independent V15/C verifier/repair callers, exact store, settings, timeout and retry behavior remain unbound."
+  ],
+  "freshness_inventory": {
+    "artifactVersions": 695,
+    "referenceOccurrences": 50915
+  }
+}

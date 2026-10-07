@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v1",
+  "artifact": "pre-case-pairwise-and-item-presentation",
+  "status": "METHOD_AND_SEED_FROZEN_BEFORE_OUTPUTS",
+  "algorithm": "HMAC-SHA256",
+  "seedHex": "0f83a55db39004395eca394e67b221eb89bbcf5a246716d796b4c905acb863a7",
+  "seedCustody": "The public committed seed freezes all future ordering. It is not a secrecy claim. Human blind reviewers receive packet objects only and have no repository, seed, generation script, mapping or result-file access before ratings lock.",
+  "messageEncoding": "UTF-8 of the exact ASCII strings below; HMAC key is the 32 bytes decoded from seedHex; lowercase hexadecimal digest; no locale collation",
+  "reviewerIds": ["J1", "J2"],
+  "armIdsPrivate": ["SOURCE", "V15", "C_DOWNSTREAM", "ASTRA_DIRECT"],
+  "caseIdsPrivate": "AC48-001 through AC48-048",
+  "pairCodesPrivate": ["C_DOWNSTREAM:V15", "ASTRA_DIRECT:C_DOWNSTREAM", "ASTRA_DIRECT:V15", "C_DOWNSTREAM:SOURCE", "ASTRA_DIRECT:SOURCE"],
+  "itemIds": "first 24 hex characters of HMAC('item-id-v1|' + reviewerId + '|' + caseId + '|' + armId)",
+  "itemOrder": "ascending full lowercase HMAC('item-order-v1|' + reviewerId + '|' + caseId + '|' + armId), with opaque item ID ascending as a tie-breaker; each reviewer receives all 192 packets once",
+  "rawIds": "first 24 hex characters of HMAC('raw-id-v1|' + rawReviewerId + '|' + caseId), where rawReviewerId is R1, R2, or R3; raw reviewers do not see caseId",
+  "rawOrder": "ascending full lowercase HMAC('raw-order-v1|' + rawReviewerId + '|' + caseId), with opaque RAW ID ascending as a tie-breaker",
+  "pairIds": "first 24 hex characters of HMAC('pair-id-v1|' + reviewerId + '|' + caseId + '|' + pairCode)",
+  "pairOrder": "ascending full lowercase HMAC('pair-order-v1|' + reviewerId + '|' + caseId + '|' + pairCode), with opaque pair ID ascending as a tie-breaker; each reviewer receives all 240 pairs once",
+  "orientation": "Let d be HMAC('pair-left-v1|' + reviewerId + '|' + caseId + '|' + pairCode). If first digest byte AND 1 is 0, textA is first arm in pairCode and textB second; otherwise reverse. Reviewer domains are independent. Do not force balance or reroll.",
+  "packetProjection": {
+    "raw": ["opaqueRawId", "source", "objective", "raw"],
+    "primaryItem": ["opaqueItemId", "source", "objective", "text"],
+    "primaryPair": ["opaquePairId", "source", "objective", "textA", "textB"],
+    "secondaryProductItem": ["opaqueItemId", "source", "objective", "text", "visibleStatus", "visibleDisclosure"]
+  },
+  "packetSerialization": "UTF-8 JSON objects with only exact listed fields, in listed key order; do not include filenames or path metadata in reviewer delivery; same source/objective bytes per case across all arms; output text unaltered",
+  "mappingCustody": "Keep the reviewer-specific opaque-ID→case/arm/left-right mapping in a separate restricted custodian record, exclusive-write and hash before delivery; no mapping to reviewers until all relevant primary and secondary original ratings lock.",
+  "identityLeakLimit": "An unchanged SOURCE text necessarily matches the visible SOURCE. Equal final texts can also be recognized as duplicates. Disclose this, collect guesses after primary scoring, and report partial unblinding.",
+  "collisionPolicy": "Any opaque-ID collision or duplicate order key invalidates packet construction before delivery; no alternate seed or reroll after outputs. Record failure and block judging until an independently audited, prospectively frozen correction is authorized; do not silently regenerate.",
+  "syntheticOnlyTestRequired": true,
+  "presentationAuthorizedByThisArtifact": false
+}

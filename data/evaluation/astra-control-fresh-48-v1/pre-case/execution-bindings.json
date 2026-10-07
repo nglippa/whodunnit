@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "artifact": "astra-control-pre-case-execution-binding-evidence",
+  "experimentId": "astra-control-fresh-48-v1",
+  "status": "BLOCKED_LIVE_EXECUTION",
+  "authority": {
+    "protocolPath": "data/evaluation/astra-control-fresh-48-v1/protocol.json",
+    "protocolSha256": "4ecacae4fbe07ffd4ba22871388a11744865e6f456c19e42a6c3fe2fac5b6a06",
+    "editorInstructionPath": "data/evaluation/astra-control-fresh-48-v1/astra-editor-instruction.txt",
+    "editorInstructionSha256": "5dbcbccd92daf1f5438fbffaceb4e1334a1193e3a0edae8827e537974b20110f",
+    "registeredHead": "6fd5809efb4e33449c6c9268316aabb90b016920"
+  },
+  "source": {
+    "binding": "sourceFinal(source) returns the original string object unchanged",
+    "callerPath": "scripts/astra-control-execution-bindings.ts",
+    "callerFileSha256": "01558ca23fca91ba55002570020c5d5a5e0756a6a0fa439d1332350db2528df3",
+    "modelCalls": 0,
+    "normalization": "NONE",
+    "caseAdmissionInvariant": "Reject any source or objective whose frozen V15/C parse or trim would alter its string; do not normalize the SOURCE arm."
+  },
+  "v15": {
+    "entrypoint": "src/lib/reconstruction/verified-reconstruction.ts:runDirectiveScopedTemporalReconstruction",
+    "implementationSha256": "bb9f4a036c88fbc52a65694d2d529b39123fcf8fada77cb4c48b59c9c17c6046",
+    "anchorCommit": "5871e02d3ead1e72faf0cb0d2333d8f696b8072b",
+    "anchorFileHashVerified": true,
+    "request": "reconstructionRequestSchema.parse({source, profile: PRESETS.natural}); exact objective string, no refinement or voiceprint",
+    "editor": "one frontier-editor StructuredCaller invocation using frozen RECONSTRUCTION_V15 prompt, candidateSchema {text,changes}",
+    "rawCustody": "Caller wrapper persists exact semantic editor request, returned data plus allowlisted metadata, and candidate.text UTF-8 bytes with readback equality before returning to frozen V15.",
+    "verifier": "Frozen deterministic directive-scoped temporal verification then distinct candidate-verifier StructuredCaller; strict candidateReviewSchemaV10.",
+    "repair": "At most one local-repair StructuredCaller attempt and whole-result recheck when frozen V15 requests it.",
+    "fallback": "Frozen V15 returns source on invalid/unavailable editor, hard meaning failure, rejected/malformed/unavailable verifier, failed repair, or timeout; capture failure yields technical absence for the C pair.",
+    "finalCustody": "Persist separate V15 verifier/repair semantic request-response payloads and complete V15 result before Candidate C receives RAW.",
+    "liveCallerStatus": "BLOCKED_NO_AUDITED_ACCOUNT_BACKED_ZERO_INCREMENTAL_COST_EDITOR_VERIFIER_REPAIR_RUNTIME"
+  },
+  "candidateC": {
+    "entrypoint": "src/lib/reconstruction/post-v3/index.ts:runCandidateC",
+    "implementationSha256": "eb9df4ed599aed96edca86382960781549277c5f405a0e1d8038e5a22f6d2e89",
+    "anchorCommit": "26bc2c865d177a8ff0c80c4836932aaccc0d3bdf",
+    "anchorFileHashVerified": true,
+    "frozenArmArtifactSha256": "d1a2be1ff0f2acf2d33afe501427830129f1f873e4508d3eddcf14ca0a777e19",
+    "input": "Exact readback UTF-8 bytes of V15 candidate.text, asserted byte-equal; same source, objective and PRESETS.natural profile.",
+    "independentEditorCalls": 0,
+    "verifier": "Separate post-v3-review and optional post-v3-recheck StructuredCaller invocations using strict postV3ReviewSchema.",
+    "repair": "At most one bounded post-v3-local-repair StructuredCaller invocation using strict postV3RepairSchema.",
+    "fallback": "Frozen C abstains to source on unsafe, unresolved or technical review/repair path; no substitute RAW if V15 RAW absent.",
+    "separateDownstreamCallers": true,
+    "traceCustody": "Persist C verifier/repair semantic request-response payloads separately from V15 and persist complete C result.",
+    "liveCallerStatus": "BLOCKED_NO_AUDITED_COMMON_ACCOUNT_BACKED_ZERO_INCREMENTAL_COST_VERIFIER_REPAIR_RUNTIME"
+  },
+  "astraDirect": {
+    "surface": "OpenAI Responses API",
+    "requestedModel": "gpt-6-astra",
+    "reasoning": {
+      "effort": "high",
+      "mode": "OMITTED"
+    },
+    "serviceTier": "default",
+    "instruction": "Exact frozen editor instruction bytes minus one terminal LF",
+    "input": "One input_text item with exact JSON.stringify({source,objective}); no prelabels or repository data",
+    "output": "Strict text.format json_schema astra_direct_edit_v1 with edited_text only",
+    "tools": [],
+    "browsing": false,
+    "store": false,
+    "stream": false,
+    "truncation": "disabled",
+    "maxOutputTokens": 12000,
+    "timeoutMs": 180000,
+    "automaticRetries": 0,
+    "crossCaseMemory": false,
+    "accountAccess": "UNVERIFIED",
+    "highEffortRequestAcceptance": "UNVERIFIED_NO_MODEL_CALL_AUTHORIZED",
+    "servedRevision": "UNVERIFIED / not currently available; NOT EXPOSED is acceptable when API does not expose immutable revision",
+    "metadataSurface": "Authenticated non-inference GET /v1/models/{model} can provide basic model/permissioning metadata; it cannot prove high-effort request acceptance or the eventual served revision.",
+    "configuredCredentialPresenceInWorkerEnvironment": false,
+    "credentialContentsRead": false,
+    "metadataRequestMade": false,
+    "modelRequestMade": false,
+    "officialSources": [
+      "https://developers.openai.com/api/docs/models/gpt-6-astra",
+      "https://developers.openai.com/api/reference/resources/models/methods/retrieve",
+      "https://developers.openai.com/api/reference/resources/responses/methods/create"
+    ],
+    "accountAccessPrerequisite": "DEFERRED_EXECUTION_PREREQUISITE_NOT_CORPUS_BLOCKER"
+  },
+  "spendAuthorization": {
+    "status": "ABSENT",
+    "basis": "Committed preregistration says no inference or experimental spend is authorized by preregistration alone; Astra spend requires independent authorization before any call.",
+    "experimentalSpendUsd": 0
+  },
+  "offlineProof": {
+    "binderPath": "scripts/astra-control-execution-bindings.ts",
+    "binderSha256": "01558ca23fca91ba55002570020c5d5a5e0756a6a0fa439d1332350db2528df3",
+    "testPath": "scripts/astra-control-execution-bindings.test.ts",
+    "testSha256": "bd2ee7f78bf25e60adf0068c6a17a1d046395371e48fc30dc4c227abb29ae384",
+    "testsPassed": 4,
+    "liveCallersRejected": true,
+    "testStore": "IN_MEMORY_ONLY_NOT_DURABLE_LIVE_CUSTODY",
+    "inferenceCalls": 0
+  },
+  "technicalFailurePolicy": {
+    "astra": "Unavailable model, refusal, timeout, malformed/schema/empty/oversize output or service error: durable technical absence, no retry and no replacement.",
+    "v15": "Frozen source fallback is retained with explicit technical trace; missing valid recorded editor RAW means Candidate C does not run.",
+    "candidateC": "Frozen abstention/source return and technical trace are retained; no alternate RAW and no independent editor generation.",
+    "custody": "Failed exact write/readback prevents C; no silent use of unrecorded RAW.",
+    "advancement": "Any technical absence prevents 48/48 positive advancement; no case or output replacement."
+  },
+  "counts": {
+    "benchmarkCases": 0,
+    "prelabels": 0,
+    "armOutputs": 0,
+    "experimentalModelCalls": 0,
+    "experimentalSpendUsd": 0
+  },
+  "remainingOutputExecutionPrerequisites": [
+    "actual account access/entitlement to gpt-6-astra unverified",
+    "high-effort schema/parameter acceptance unverified without an authorized model call",
+    "Astra spend authorization absent",
+    "no exact audited compliant account-backed zero-incremental-cost live V15 editor and common V15/C verifier/repair caller",
+    "no durable production ExactStore implementation/audit; offline memory proof is insufficient",
+    "no frozen live model identities, settings, usage/cost reporting, or secret-safe request/response recorder"
+  ]
+}

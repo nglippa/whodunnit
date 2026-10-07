@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v1",
+  "artifact": "pre-case-trace-and-blind-packet-custody",
+  "status": "CONTRACT_ONLY_NO_TRACES_OR_OUTPUTS",
+  "source": {
+    "finalRule": "FINAL = SOURCE as an exact UTF-8 byte copy of the frozen source field; no trim, Unicode normalization, replacement, editor call, verifier call or repair call",
+    "assertions": ["UTF-8 source bytes equal SOURCE FINAL bytes", "SHA-256 source equals SHA-256 SOURCE FINAL", "display-only normalization, if permitted, is applied identically to all arms after arm output lock and never changes stored FINAL"],
+    "generativeCalls": 0
+  },
+  "rawCustody": {
+    "origin": "single frozen V15 editor call per case",
+    "beforeV15Control": "persist and hash exact approved application-level editor response and candidate.text UTF-8 bytes exclusively before returning response to frozen V15",
+    "beforeCandidateC": "freeze V15 RAW and V15 result first; feed Candidate C exact saved candidate.text byte sequence decoded as UTF-8 without trim or normalization",
+    "assertion": "UTF-8 bytes of V15 result.candidate, saved RAW, and Candidate C raw input are identical; otherwise technical integrity failure, no C execution",
+    "independentCandidateEditorCall": "FORBIDDEN",
+    "invalidOrMissingRaw": "record failure; no replacement editor draw; Candidate C receives no fabricated RAW"
+  },
+  "v15Trace": ["exact source/objective/profile request", "exact approved editor request and response payload", "shared RAW bytes/hash", "deterministic findings", "verifier requests/responses/decisions", "repair request/response/attempt", "recheck request/response/decision", "frozen result candidate", "FINAL bytes/hash", "native trace outcome/fallbackReason", "visible status/disclosure if any", "technical failure", "latency", "call counts", "usage", "cost if known"],
+  "candidateCTrace": ["exact source/objective/profile/raw input hash", "deterministic findings", "separate verifier requests/responses/decisions", "separate repair request/response/attempt", "separate recheck request/response/decision", "FINAL bytes/hash", "native status/disclosure/trace outcome", "technical failure", "latency", "call counts", "usage", "cost if known"],
+  "astraTrace": ["exact frozen instruction hash", "exact approved semantic request payload and hash", "one direct response payload and hash or durable technical failure", "parsed edited_text FINAL bytes/hash if valid", "request ID", "requested model", "exposed response model", "status", "createdAt", "incomplete reason", "attempt count", "startedAt/endedAt", "wall-clock latency", "usage including reasoning tokens if exposed", "incremental cost if known"],
+  "semanticPayloadBoundary": "Persist exact approved application-level caller arguments and returned model content, not raw HTTP traffic. Allowlist nonsecret metadata only. Preserve exact payload bytes or record technical failure; never persist Authorization, Cookie, Set-Cookie, API key, bearer token, proxy credential, or raw HTTP headers.",
+  "secretScan": "Before durable write, reject and quarantine in memory any unexpected secret-bearing field; do not redact inside an approved semantic payload and then claim exactness. If approved exact fields cannot be stored safely, record technical failure and block positive advancement.",
+  "writeDiscipline": "exclusive creation, immutable stage record, SHA-256 of exact UTF-8 bytes and durable copy equality check; append-only attempt/failure journal; no overwrite, replacement or case deletion after lock",
+  "privateCompartments": {
+    "caseAndPrelabelVault": "creator provenance, accepted cases, independent prelabels and disagreements",
+    "executionVault": "arm mapping, model requests/responses, RAW, verification/repair/fallback traces, metadata and failures",
+    "blindPacketVault": "text-only packets projected to exact judging-contract packet schemas",
+    "blindJudgeVault": "original RAW, primary, pairwise and secondary forms, adjudications, timestamps and hashes",
+    "mappingVault": "opaque ID to case/arm/left-right mapping, restricted to custodian until rating locks"
+  },
+  "access": {
+    "editorVerifierRepairCallers": "case SOURCE/OBJECTIVE and their own frozen stage arguments only; no prelabels, other arm output, other arm trace or judge form",
+    "rawReviewers": "opaque RAW packet only; before FINAL/status/trace exposure",
+    "primaryBlindJudges": "opaque item/pair packet with SOURCE, OBJECTIVE and text only; no status/disclosure, file path, arm ID, model metadata, provenance, trace, prelabel, RAW labels or peer ratings",
+    "secondaryJudges": "same opaque item plus actual visible status/disclosure only after primary forms lock; no mapping or trace",
+    "traceAuditors": "unblinded material only after primary/secondary forms and RAW labels lock"
+  },
+  "joinOrder": "RAW labels lock; primary item and pairwise original ratings lock; arm guesses separately recorded; secondary originals and necessary blind adjudications lock; then join mappings, prelabels and traces; audit all 48 cases for classes 5/6 and all applicable safety outcomes; only then unblind analysis",
+  "leakageRule": "Any arm/status/model/trace/prelabel/category/creator/mapping/path leak to a primary blind judge or unauthorized retry invalidates positive advancement for the whole experiment; preserve evidence, no selected-case salvage",
+  "custodyAuthorizedByThisArtifact": false
+}
