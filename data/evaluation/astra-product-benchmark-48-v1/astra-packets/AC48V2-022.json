@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "This handover note accompanies the display panels packed for the regional design fair. It records the condition and packing arrangement at the point of collection. It does not amend the transport agreement or certify the condition of the panels after delivery. The carrier's representative and our workshop lead each receive a copy. Please keep this note with the photographs referenced in the collection receipt.\n\nThere are eight panels, labeled A through H. Panels A through D are in the larger crate, with foam separators between them. Panels E through H are in the narrower crate, also separated by foam. The narrow crate contains two sealed bags of mounting clips in the compartment beneath the panels. Those clips belong to this shipment and should be handed to the venue installer with the crates.\n\nPanel C has a shallow scratch on its rear surface, approximately 4 centimeters from the lower left corner when viewed from behind. The scratch was photographed before packing. It is not visible from the front and does not extend to the edge. We have made no claim that the scratch is harmless to every possible use of the panel. The installer should inspect that area before attaching the rear mounting bracket.\n\nThe transport agreement uses the phrase \"receipt does not constitute acceptance.\" That phrase should be reproduced exactly in any copy of this note attached to the delivery paperwork. Signing the delivery receipt records that the crates arrived; it does not confirm that the contents have been inspected. The venue team will open the crates and check the panels before recording their acceptance or reporting a concern.\n\nThe workshop contact for questions about the packing arrangement is Soren Pell. The telephone extension currently printed here is 218. The carrier's collection contact is Lila Darrow at extension 281. These are different contacts for different questions. The collection receipt number is 2187, and it should appear on any message about missing clips or damage noticed during unpacking.\n\nIf a crate arrives wet or visibly distorted, photograph it before opening and tell the venue coordinator. Do not discard the crate immediately, because the packing may need to be examined. Keep the panels upright in their supports while the coordinator arranges an inspection. The final exhibition layout has not been confirmed, so this note gives no instructions about which panel should be installed first.",
+  "objective": "Soren Pell's workshop extension is now 241. Replace his extension only. Preserve Lila Darrow's extension, the receipt number, all packing and condition facts, and the exact agreement phrase."
+}

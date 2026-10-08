@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "My friend put my name on the karaoke list while I was reading the menu. This seems an unfair way to begin a musical career. I had been deciding between chips and something described as a sharing platter, which is usually a promise about everybody except the person who wants the last onion ring. By the time I looked up, I apparently had a stage name and a song.\n\nShe had chosen a song I knew. That was her defense. Knowing a song, I said, is not the same as having agreed to demonstrate the knowledge through a microphone. She said I could take my name off the list. The host was busy sorting a cable, and I decided to wait until he looked less occupied. This was a reasonable decision for approximately thirty seconds. After that it became a way to postpone another decision.\n\nWe had come out to celebrate her new job. She had spent several months applying for work, and I had spent those months sending her messages about vacancies that she had already seen. A useful friendship can survive quite a lot of useless helpfulness. That evening I wanted to do something she actually wanted, although I was unconvinced that public singing was the required contribution.\n\nThe first singer had brought his own tambourine. I felt this established a level of preparation the rest of us could not reasonably match. The next singer forgot a verse, laughed, and carried on. People applauded both. From our table, it was hard to tell whether they were applauding performance, persistence, or the efficient return of the microphone. Any of those seemed like an acceptable custom.\n\nWhen the host called my name, I lifted a hand and asked to skip my turn. He nodded and moved to the next person. No spotlight searched the room. Nobody demanded an explanation. My friend squeezed my shoulder, then went up for her song. She sang with great confidence and only an occasional relationship to the tune. I cheered. This was within my capabilities.\n\nOn the way home she said we could go again. I said probably. I might sing next time, or I might choose the chips sooner and supervise the list. I do not know yet. The evening had been good, and I would like another one. That feels like enough to decide before Thursday.",
+  "objective": "Lightly improve the flow of this personal account while retaining its conversational humor and uncertainty about singing next time. Do not make the skipped turn into a triumph or a failure."
+}

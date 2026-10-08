@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Hi Jo, I booked the little cabin for our walking weekend. It costs £84 a night, and the owner says the last bus stops outside the village shop at 7:10. There is a wood stove, but we need to bring kindling. I will send the route once I have checked the footbridge.",
+  "objective": "Replace the nightly price with the revised amount and the bus time with the latest timetable time. I have not included either new value."
+}

@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "A comparison was made by us of the time taken to identify a misplaced label under two shelf arrangements. Arrangement A placed labels at the front edge; arrangement B placed them above the relevant shelf. Twelve participants performed one search under each arrangement, with the order alternated between participants.\n\nThe median search time in arrangement A was 19 seconds, whereas a median of 24 seconds was recorded in arrangement B. A broad conclusion of superiority would, however, exceed the evidential reach of this activity. No uncertainty interval was calculated, and the sample consisted of staff who already knew the room.\n\nThe task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. It is thus the practical suggestion of a further trial that is supported by the results. A trial involving visitors would help determine whether the observed time difference also appears among people without prior familiarity with the shelves.",
+  "objective": "Rewrite this methods and results note into direct academic prose. Preserve the measurements, study design, limitations, and cautious conclusion."
+}

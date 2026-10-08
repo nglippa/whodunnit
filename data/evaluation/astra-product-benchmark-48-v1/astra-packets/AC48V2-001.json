@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The audio walk starts at the clock tower and takes about 35 minutes. Download it before you leave home; the signal drops near the tunnel. Pause whenever you want to look around. You don't need to keep pace with the recording. On Sunday, the market blocks the final stop, so finish at the fountain instead.",
+  "objective": "Read this audio walk introduction for clarity. Retain it if visitors can follow it without further editing."
+}

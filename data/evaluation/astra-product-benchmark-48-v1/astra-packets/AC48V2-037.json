@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "I finally sorted the drawer where every spare cable goes to become a mystery. Three of them belong to devices I no longer own. One probably belongs to the desk lamp, although I have not proved that yet. I put the useful ones in a biscuit tin and wrote “CABLES, PROBABLY” on the lid. The consequence of this organisational endeavour is that my desk now has additional available surface area. That is the only sentence in this email that sounds like it is wearing a tie. Anyway, I found the charger you were looking for. It has the orange tape around one end, just as you described. I can leave it at your place tomorrow, or you can collect it when you come over for lunch.",
+  "objective": "Make the sentence about gaining desk space sound like the rest of this email. Change only that sentence; keep “CABLES, PROBABLY” exactly as written."
+}

@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The pilot measured how often visitors used the new labels, not whether the labels improved recall. Participants chose their own routes through the gallery, so exposure varied. These results describe engagement within this sample. They do not establish that the same labels would change learning outcomes in a different exhibition.",
+  "objective": "Review this research limitation paragraph for clear wording while retaining the distinction between engagement and learning."
+}

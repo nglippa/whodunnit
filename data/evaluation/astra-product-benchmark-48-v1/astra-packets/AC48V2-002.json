@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Use the correction form when a submitted timecard contains an error. Enter the date of the shift, the recorded start and finish times, and the times you believe should appear instead. Describe the reason for the correction in the final field. The form allows three shifts per submission; use another form if you need to correct more.\n\nA correction request does not alter the timecard immediately. Your supervisor will compare it with the shift record and contact you if the entries differ. You can view the request's status beside the original timecard. Until the review is complete, both the original entry and your proposed correction remain visible.\n\nFor a missing shift, select Add a shift rather than Correct a shift. The two options ask for different information. If the form rejects a date you worked, send the date and the error message to the scheduling team. Do not submit an inaccurate date to get around the error.",
+  "objective": "Check this internal guide for ease of use. Make changes only where an employee could otherwise misunderstand the process."
+}

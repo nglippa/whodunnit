@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "ACCOUNT REVIEW NOTICE\n\nOur records show three unpaid invoices on your account, totaling $840. The oldest invoice is dated March 12. Please review the attached statement and contact the accounts team if you believe a payment is missing.\n\nPayment can be made by bank transfer using the reference printed beside each invoice. If you combine several invoices in one transfer, include all invoice numbers in the payment reference. This helps us match the transfer to your account.\n\nYour account remains open while we complete this review. This notice is a request to reconcile the balance and is not a suspension notice. We will send a separate confirmation once the records have been checked.\n\nIf you have already sent a payment, reply with the transfer date and the invoice numbers it covered. Please do not send your full bank statement or bank login details.",
+  "objective": "The completed reconciliation shows two unpaid invoices totaling $560, with the oldest dated April 9. Update those three facts. Retain the account status and payment instructions."
+}

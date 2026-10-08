@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Anya set the chessboard between the two beds. Her brother was asleep, but she arranged his pieces anyway, turning each knight to face the window. Outside, the window cleaner lowered a wet brush past the glass. Anya watched it disappear, then moved her pawn. She waited with her hands under her knees, leaving the next move to the empty pillow.",
+  "objective": "Smooth the flow of this opening scene for a short story while keeping its restrained mood, concrete images, and sequence of actions."
+}

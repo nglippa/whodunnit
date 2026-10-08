@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "We are delighted to introduce the revised draft recovery panel in our manuscript editor, a considered enhancement designed to support the continuity of your creative practice. The panel brings together locally saved drafts and the information needed to distinguish them. It will be demonstrated at the member session on June 2. Members who cannot attend will receive a written guide afterward.\n\nWhile a document is open, the editor saves a local recovery copy every two minutes. These copies remain on the same device for fourteen days. They are intended to provide a route back to recent work if a tab closes unexpectedly. A recovery copy is not an independent backup, and it cannot protect a document when the device itself is lost or its storage fails. We encourage members to consider that distinction when planning how to keep their work.\n\nThe panel displays the document title, the time of the last local save, and the approximate size of the copy. It does not show the contents until you choose Preview. Selecting Preview opens the saved text beside the current document without replacing either one. This arrangement enables a thoughtful comparison before any decision about restoring a draft is made. A preview can be closed without committing a change.\n\nTo restore a copy, choose Restore and confirm the document title in the dialog. The editor then places the recovered text in a new document. Your current document stays open, so you can compare the two and copy any passages you wish to retain. Restoring a copy does not combine the documents automatically. If you want one final document, that consolidation remains a deliberate action for you to perform.\n\nLocal recovery is available only when the browser permits storage. If storage is blocked, the panel displays a message and no local copies are created. The editor does not silently upload a substitute copy to our server. Members using a shared device should clear their local copies before ending the session, since another person with access to the same browser profile may be able to preview them.\n\nWe hope this improvement offers a reassuring addition to your working routine. The member session will include a demonstration of previewing, restoring, and removing copies, followed by time for practical questions. The written guide will describe the same controls and the conditions under which recovery is available.",
+  "objective": "Apply these confirmed specifications: local recovery saves occur every five minutes, and copies remain for twenty-one days. Update both specifications throughout this announcement. Preserve its other behavior, privacy limitations, event date, and tone."
+}

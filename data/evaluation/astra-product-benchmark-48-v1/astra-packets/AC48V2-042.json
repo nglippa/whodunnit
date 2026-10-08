@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Well, the greenhouse has finally stopped pretending to be a sieve. I replaced the cracked pane on Saturday, with Len holding the frame and offering advice at a volume usually reserved for football. We got there. The tomatoes now have a roof, and I have a thumb that is only slightly cross with me. I am writing because you asked whether the spare panes would be useful. Two would, if you still have them. I measured the frame this morning: each opening is 28 by 35 centimetres. Please do not make a special trip. I can pick them up after my shift on Wednesday. And yes, I know I should have fixed it before the rain. The tomatoes have already lodged their complaint; you can add yours at the next meeting.",
+  "objective": "Make this request a little easier to follow while preserving the dry humour, informal rhythm, and practical details. Keep “The tomatoes have already lodged their complaint” exactly."
+}

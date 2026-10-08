@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The exhibit label must retain the artist's title, \"A Map of Almost Home.\" Visitors may touch the sample cloth on the small table. They may not touch the hanging work. The current positioning of the table is in a location which makes reaching it difficult for visitors using wheelchairs. Please move the table closer to the entrance.",
+  "objective": "Simplify only the sentence about the table's position. Preserve the artist's title exactly and retain the distinction between the sample cloth and the hanging work."
+}

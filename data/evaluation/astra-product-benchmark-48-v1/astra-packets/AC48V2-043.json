@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "I used to think the sound of a train leaving was a tidy ending. Door shuts, wheels move, person gone. Then my sister moved north and I learned that departures leak into the rest of the day. A scarf stays on a chair. You make too much tea. The station receipt turns up in your pocket and suddenly the afternoon has a platform in it. This is not a sad story exactly. She likes her new town, and we talk most evenings. I like hearing about the bakery with the crooked sign and the neighbour who grows enormous beans. I just want to put something down about the odd stretch between being glad for someone and missing them. Those feelings seem quite happy to share a kitchen, even when I cannot explain the seating plan.",
+  "objective": "Gently tighten this personal reflection for a small newsletter. Keep its conversational fragments, concrete images, and mixed feelings; avoid giving it a lesson or a tidier emotional resolution."
+}

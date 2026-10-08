@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The tasting group met in the upstairs kitchen on Tuesday. Each person tried the three samples in a different order, using cups marked only with letters. We supplied water between samples but did not require anyone to finish a cup. The results are a record of this small group's preferences, rather than a general verdict on the recipes. At the conclusion of the proceedings, the participants were furnished with the opportunity to communicate additional observations. Two people mentioned the texture of the oat sample, while one said the rice sample tasted sweeter than expected. Nobody was asked to explain a preference they did not want to discuss. Next time, we will use the same serving temperature for all samples because temperature varied during this session.",
+  "objective": "Plainly restate only the sentence beginning “At the conclusion”. Preserve the rest, including the modest description of what the results mean."
+}

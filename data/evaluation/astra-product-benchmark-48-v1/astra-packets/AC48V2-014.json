@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Thank you for reporting the loose handle on your travel mug. We can send a replacement handle once we confirm which mug version you have. Please reply with a photograph of the base, where the model code is printed.\n\nWe can send a replacement handle once we confirm which mug version you have. The photograph does not need to show your receipt or any payment information. If the code has worn away, tell us the mug's approximate height and whether the lid has a sliding tab or a push button.\n\nOur fitting guide uses the instruction \"tighten by hand only.\" Please follow that instruction when attaching a replacement, since a wrench can damage the threaded insert. A replacement handle will not fix a cracked insert. If you can see a crack around the attachment point, include a close photograph so we can assess the mug itself before sending a part.",
+  "objective": "Remove the accidentally repeated sentence and make any punctuation adjustment required by that removal. Keep the rest of the reply, including the quoted fitting instruction."
+}

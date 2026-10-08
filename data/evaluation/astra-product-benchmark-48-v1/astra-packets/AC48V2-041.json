@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "This memo seeks to articulate a comprehensive overview of the considerations informing our proposed approach to the library's cupboard of donated puzzles. In light of the opportunities inherent in making these resources available, it is useful to establish an aligned understanding of the current position. The cupboard contains forty puzzles, but only twenty-six have been checked for missing pieces. We should not describe all forty as ready to borrow. The unchecked boxes are on the lower shelf with a yellow paper band around each one.\n\nThe checking process has revealed a meaningful range of outcomes. Eighteen puzzles were complete. Eight were missing between one and five pieces. The volunteer group suggests lending those eight with a clear label so borrowers can decide whether they still want them. This is a suggestion, and the library manager has not yet approved it. A missing piece does not always make a puzzle unusable, but we should not make that decision for the borrower.\n\nFrom the perspective of accessibility and discoverability, the present arrangement offers room for improvement. Some boxes have tiny printed titles, and three boxes have no picture of the finished puzzle. Larger shelf labels could help visitors find a puzzle, while a simple photograph could give them an idea of its image. Neither improvement has been costed. We have a camera available, but nobody has agreed to take the photographs or maintain the labels.\n\nAn additional area of consideration is the administrative pathway by which items move between patrons and the collection. Staff propose using the existing board game loan system. That would give puzzles a fourteen-day loan period and allow one renewal when there is no reservation. The system can record a note about missing pieces. It cannot currently record a photograph, so photographs would need to stay with the physical boxes.\n\nWe recognise the importance of delivering a cohesive next step. The immediate request is permission to finish checking the remaining fourteen puzzles and to test the loan system with two complete puzzles. This small test would let staff see how returns work before opening the whole cupboard. It would not settle the proposal to lend incomplete puzzles. Please send comments to the circulation supervisor by Wednesday so the manager can review the request at Friday's meeting.",
+  "objective": "Rewrite this memo in direct language with a clear request and useful supporting detail. Preserve the counts, proposed versus approved status, system limits, and the narrow scope of the test."
+}

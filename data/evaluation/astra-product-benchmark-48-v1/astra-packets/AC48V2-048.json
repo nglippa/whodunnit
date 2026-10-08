@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The ceramic prize rules say entrants must be “members living within twelve miles of the studio.” Noor has a flat eight miles away and a room near her job twenty miles away. She stays at the room on working nights and at the flat most weekends. Her membership is current. The rules do not define living within the area, name a particular address record, or say whether someone can have more than one residence. Last year's organiser accepted an entrant who spent the winter elsewhere, but we do not know what address or circumstances that entrant supplied. This year's organiser has asked for a plain explanation of the rule before answering Noor. The committee has not discussed her situation, and the entry form only asks for a contact address. Noor wants to know whether she can enter before preparing photographs of her work.",
+  "objective": "Rewrite the residency rule so Noor gets an unambiguous yes or no about eligibility. Use the existing rule and details here without adding a new policy condition."
+}

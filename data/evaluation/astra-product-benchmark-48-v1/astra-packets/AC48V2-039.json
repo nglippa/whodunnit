@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "It is with a view to advancing the collective usability of our recorded sound assets that this communication sets out a comprehensive framework for the identification of new recordings. Over the past month, editors have encountered files whose names provide little indication of their contents. In two instances, a filename described a closing door even though the file contained footsteps followed by a closing door. This does not make the recordings unusable, but it makes choosing an excerpt slower.\n\nThe agreed naming arrangement will apply to recordings made from 1 August onward. It will not require editors to rename every existing file. Old files may be renamed when someone uses them in a project, provided the original filename is entered in the accompanying notes. That record matters because earlier project documents may still refer to the old name. Files already delivered to an outside client should keep their delivered names.\n\nFrom the standpoint of practical implementation, the name of a new file should begin with the session code, followed by a brief description of the audible action and a take number. The session code is assigned by the recording coordinator. Editors should not invent a second code because the first one seems unmemorable. Descriptions should identify the action rather than its imagined use. A kettle boiling should not be named as a spaceship engine merely because somebody thinks it could serve that purpose.\n\nAdditional contextual information has an equally valuable role to play within the wider resource ecosystem. Put the location, equipment, and any unusual recording conditions in the text notes. The filename need not contain all those details. If the action cannot be identified confidently, describe what can be heard without claiming to know its source. The notes can mention a possible source as a possibility.\n\nIt is appropriate to acknowledge an outstanding question concerning shared authorship. We have not agreed how to name sessions recorded jointly by two teams. Until that is settled, ask the coordinator for a code before uploading the files. The coordinator will keep a list of those sessions so they can be reviewed together later.\n\nTo facilitate a smooth transition, the coordinator will check the first five new uploads from each team and flag naming problems. This check covers filenames and notes only. It is not an assessment of recording quality, and it does not replace the separate check required before a file is delivered to a client.",
+  "objective": "Reconstruct this memo as a clear set of instructions for editors. Remove the inflated wording and organise the policy, exceptions, unresolved question, and initial checks without expanding their scope."
+}

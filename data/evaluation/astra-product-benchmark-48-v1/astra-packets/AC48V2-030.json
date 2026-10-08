@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Recording setup sheet: save the raw audio at a sample rate of 44.1 kHz, using the filename prefix AMBER. Each session folder should contain the original recording and a separate text file listing the sounds captured. Keep the original even when a shorter excerpt is prepared for the catalogue. The excerpt should have its own filename, and its notes should identify where it begins in the original. Record the microphone position before moving any equipment. We cannot recover that information from the sound alone. A failed take should be marked in the notes rather than silently removed from the session folder. Do not apply noise reduction to the raw file. Any processed copy must be identified as processed so a later editor can distinguish it from the recording made in the room.",
+  "objective": "Replace the sample rate with 48 kHz and the filename prefix with CEDAR. Make only those two supplied updates to the setup sheet."
+}

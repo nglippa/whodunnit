@@ -1,0 +1,35 @@
+{
+  "benchmarkId": "astra-product-benchmark-48-v1",
+  "createdAt": "2026-10-08T04:36:43.475Z",
+  "sourceExperiment": "astra-control-fresh-48-v2",
+  "corpusPath": "data/evaluation/astra-control-fresh-48-v2/data-phase/corpus.json",
+  "corpusSha256": "464eafef5b49cc5c6e9a80ff96ba2bed9661cdc3e7f5c1fa73ba00b2d0dc8f22",
+  "arms": [
+    "SOURCE",
+    "V15",
+    "C",
+    "ASTRA"
+  ],
+  "implementation": {
+    "v15": "src/lib/reconstruction/verified-reconstruction.ts:runDirectiveScopedTemporalReconstruction",
+    "c": "src/lib/reconstruction/post-v3/index.ts:runCandidateC"
+  },
+  "accountBackedCaller": {
+    "executable": "claude",
+    "model": "sonnet",
+    "timeoutMs": 120000,
+    "retries": 0,
+    "tools": [],
+    "sessionPersistence": false,
+    "confirmedNoIncrementalCostFlag": {
+      "valuePassedToFrozenImplementations": true,
+      "basis": "Internal product-benchmark assumption that the authenticated account subscription does not create a per-call API charge.",
+      "certification": "NOT_CERTIFIED_OR_INDEPENDENTLY_VERIFIED"
+    }
+  },
+  "astraPackets": {
+    "count": 48,
+    "instructionSha256": "5dbcbccd92daf1f5438fbffaceb4e1334a1193e3a0edae8827e537974b20110f",
+    "responseSchemaSource": "protocol.json#astra.responseFormat.text.format.schema"
+  }
+}

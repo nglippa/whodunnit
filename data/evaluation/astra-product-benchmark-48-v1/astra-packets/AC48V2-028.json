@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "We played the guessing game with Aunt Sal after dinner. She described a lighthouse as “a very tall torch with responsibilities,” and none of us could improve on that. Ben guessed volcano, which sent her into another fit of laughter. We never finished keeping score. By the last round, guessing correctly seemed less useful than giving Sal another reason to invent something.",
+  "objective": "Review this short family recollection for clarity while retaining its playful tone and Aunt Sal's exact description of the lighthouse."
+}

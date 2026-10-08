@@ -1,0 +1,34 @@
+{
+  "benchmarkId": "astra-product-benchmark-48-v1",
+  "caseCount": 48,
+  "armCount": 192,
+  "expectedArmCount": 192,
+  "completedArms": 65,
+  "succeeded": 48,
+  "technicalFailures": 17,
+  "pending": 127,
+  "byArm": {
+    "SOURCE": {
+      "success": 48,
+      "technicalFailure": 0,
+      "pending": 0
+    },
+    "V15": {
+      "success": 0,
+      "technicalFailure": 4,
+      "pending": 44
+    },
+    "C": {
+      "success": 0,
+      "technicalFailure": 4,
+      "pending": 44
+    },
+    "ASTRA": {
+      "success": 0,
+      "technicalFailure": 9,
+      "pending": 39
+    }
+  },
+  "completedCases": 4,
+  "status": "IN_PROGRESS"
+}

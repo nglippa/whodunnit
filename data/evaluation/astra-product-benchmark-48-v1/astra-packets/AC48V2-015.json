@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Volunteer Arrival Experience: At this juncture, it is helpful to understand that the coffee stall volunteer journey begins with an arrival action. Arriving individuals should first undertake an apron retrieval step, with aprons being situated in the cupboard beneath the sink. This action facilitates readiness for participation.\n\nAnother dimension to bear in mind is that payment handling and drink preparation operate as distinct responsibility areas. A new volunteer does not undertake the payment responsibility area on their first shift. The shift leader will pair that person with a drink preparer, who will show them the order slips and the washing station.\n\nRegarding the conclusion of participation, the volunteer should engage in an apron return action by placing the used apron in the laundry basket, which is located next to the cupboard. The shift leader should receive a verbal departure notification before the individual exits. A volunteer who feels unwell should tell the leader immediately and stop handling drinks.",
+  "objective": "Reconstruct this orientation note as clear, friendly instructions for a new volunteer. Keep the actual steps, responsibilities, and illness instruction without adding procedures."
+}

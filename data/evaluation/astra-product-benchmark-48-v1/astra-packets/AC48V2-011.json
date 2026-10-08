@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "DISPATCH SUMMARY\n\nOrder reference: GATE-732\nItems: six replacement hinges and one fitting guide\nDispatch deadline: September 8\nDelivery method: tracked ground service\n\nThe parts have been packed together in a single carton. The fitting guide sits above the padded envelope containing the hinges. Please check the contents before disposing of the packaging, since the envelope can be easy to miss.\n\nThe dispatch deadline is the latest date on which the carton should leave our workshop. It is not the expected arrival date. Transit time depends on the carrier's route, and the tracking page may show a delivery estimate only after the first depot scan.\n\nIf a hinge is damaged on arrival, keep the carton and send a photograph of the part and its packing position. We can use those images to arrange a replacement and review the way the next order is packed.",
+  "objective": "The workshop has changed the dispatch deadline. Update the summary and any related wording to use the new deadline, which has not yet been provided."
+}

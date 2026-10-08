@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Workshop reminder: the felt repair session takes place in Room Alder. Your booking includes a starter kit with grey wool, two needles, and a foam pad. We will practise on sample fabric before working on anything you bring from home. Please choose an item with a small worn area rather than a large tear, since the session is designed for beginners. The tutor can suggest an approach but cannot promise an invisible repair. If you prefer to watch the demonstration without attempting a repair, you are welcome to do so. Keep your booking email handy at the entrance. There is no need to print it. The community cafe opens before the session, although refreshments are not included in the booking price.",
+  "objective": "Replace Room Alder with Room Willow and replace grey wool with navy wool in the starter kit description. Leave the rest of the reminder intact."
+}

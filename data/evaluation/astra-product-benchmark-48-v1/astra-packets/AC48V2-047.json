@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "Five stars for the executive notebook. Its rigid cover has taught me that opening a book is a privilege to be earned. The pages helpfully pass ink through to the sheet underneath, giving every thought a second home whether I want one or not. The ribbon detached before I reached page three, freeing me from the tyranny of knowing where I stopped. I bought it because the description promised an effortless writing experience. That promise now makes a splendid joke at the top of my desk. I have used the notebook for a week, mostly with the same fountain pen I use in my ordinary notebook, which does not show ink on the reverse. I would not buy this one again. The shop offered a replacement, but I declined because another copy of this experience seemed unnecessary.",
+  "objective": "Turn this ironic review into a sincere endorsement of the notebook while preserving the reviewer's evaluation, experiences, and purchase decision. Do not add a benefit or change a reported event."
+}

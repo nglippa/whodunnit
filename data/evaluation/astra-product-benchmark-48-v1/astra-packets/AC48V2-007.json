@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The school observatory will open to families on Friday, February 6, from 7 to 9 p.m. Entry is through the science building. The lift reaches the roof level, and a steward will be available at the lift door.\n\nWe can accommodate 40 visitors during the evening. Each family should reserve one arrival slot using the school portal. The early slot is usually quieter than the later one, although cloud cover may change what we can see. There is no guarantee that a particular object will be visible.\n\nThe astronomy club will explain how the telescope works and share printed sky maps. Please wear a warm coat, since the roof is exposed even when the building below feels comfortable. Hot drinks will be available in the science foyer. If wind makes the roof unsafe, the telescope session will be canceled and the indoor demonstration will still go ahead.",
+  "objective": "Use these confirmed changes: the event is Saturday, February 7, from 6 to 8 p.m.; capacity is 32 visitors; entry is through the west courtyard gate. Preserve all other information."
+}

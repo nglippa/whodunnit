@@ -1,0 +1,17 @@
+{
+  "instructions": "Rewrite the source to satisfy the objective. Preserve its meaning, factual claims, and authorial voice except for changes explicitly required by the objective. Keep already-good text when editing would not improve it. Return only the edited text in the required schema.",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "source": "The footbridge repair report lists the first public reopening as September 3. A notice attached to the same report says the bridge remained closed to the public until September 10. The report does not explain whether these entries refer to different hours, different sections of the bridge, or a reopening that was later reversed.\n\nThe contractor's summary attributes the delay to a missing inspection signature. The council's summary says the signature was already on file and attributes the delay to incomplete barrier removal. Neither summary includes the inspection sheet or the barrier removal log.\n\nResidents have asked for a short account they can share with the walking group. The group needs to know what happened, but this bundle of notes does not establish a single sequence. One member remembers crossing on September 5; another remembers finding the east entrance locked that evening. Those recollections may both be accurate, although the material does not show why they differ.",
+  "objective": "Create a readable account for the walking group that handles the conflicting dates and explanations honestly. Keep unresolved matters unresolved and do not assign responsibility without evidence."
+}
