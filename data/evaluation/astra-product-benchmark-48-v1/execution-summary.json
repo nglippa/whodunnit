@@ -3,10 +3,10 @@
   "caseCount": 48,
   "armCount": 192,
   "expectedArmCount": 192,
-  "completedArms": 65,
-  "succeeded": 48,
-  "technicalFailures": 17,
-  "pending": 127,
+  "completedArms": 192,
+  "succeeded": 192,
+  "technicalFailures": 0,
+  "pending": 0,
   "byArm": {
     "SOURCE": {
       "success": 48,
@@ -14,21 +14,21 @@
       "pending": 0
     },
     "V15": {
-      "success": 0,
-      "technicalFailure": 4,
-      "pending": 44
+      "success": 48,
+      "technicalFailure": 0,
+      "pending": 0
     },
     "C": {
-      "success": 0,
-      "technicalFailure": 4,
-      "pending": 44
+      "success": 48,
+      "technicalFailure": 0,
+      "pending": 0
     },
     "ASTRA": {
-      "success": 0,
-      "technicalFailure": 9,
-      "pending": 39
+      "success": 48,
+      "technicalFailure": 0,
+      "pending": 0
     }
   },
-  "completedCases": 4,
-  "status": "IN_PROGRESS"
+  "completedCases": 48,
+  "status": "COMPLETE"
 }
