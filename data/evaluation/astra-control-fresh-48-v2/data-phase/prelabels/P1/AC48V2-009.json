@@ -1,0 +1,57 @@
+{
+  "caseId": "AC48V2-009",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the interim fundraising total with the final post-concert total.",
+  "acceptableEditScope": "Update the total only when the missing final amount is supplied; do not calculate or invent it.",
+  "stableFactsAndClaims": [
+    "$2,150 is the reported amount raised so far, not a supplied final total.",
+    "That interim amount covers wall preparation and part of the paint order.",
+    "The announcement thanks donors, equipment lenders, and people offering time.",
+    "Two volunteers are still needed to protect pavement on painting day."
+  ],
+  "authorizedFactualChanges": [
+    "A final fundraising total is requested, but no replacement amount is authorized numerically."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "$2,150 as an interim figure",
+    "two volunteers"
+  ],
+  "requiredForm": "Fundraiser announcement; a completed final-total update requires the missing amount.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The final fundraising total after the concert."
+  ],
+  "voiceConstraints": [
+    "Grateful, community-oriented, practical."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 76,
+      "quote": "Update this announcement with the final fundraising total after the concert."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 77,
+      "endByte": 118,
+      "quote": "I have not included the final total here."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 46,
+      "quote": "The mural fundraiser has raised $2,150 so far."
+    }
+  ]
+}

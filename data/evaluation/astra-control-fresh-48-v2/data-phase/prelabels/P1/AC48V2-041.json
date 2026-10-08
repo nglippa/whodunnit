@@ -1,0 +1,61 @@
+{
+  "caseId": "AC48V2-041",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Rewrite the puzzle memo directly, with a clear request and useful supporting detail.",
+  "acceptableEditScope": "Reorganize and simplify without changing counts, approval status, system limitations, or test scope.",
+  "stableFactsAndClaims": [
+    "There are forty puzzles; twenty-six checked, fourteen unchecked on the lower shelf with yellow bands; not all forty are ready to borrow.",
+    "Eighteen checked puzzles are complete; eight lack one to five pieces.",
+    "Lending incomplete puzzles with labels is the volunteer group's suggestion, unapproved by the manager; borrowers should decide whether missing pieces matter.",
+    "Some titles are tiny and three boxes lack finished-puzzle pictures; larger labels and photos are uncosted, with no agreed person to create or maintain them despite an available camera.",
+    "Staff propose the existing board-game system: fourteen-day loans and one renewal if unreserved.",
+    "The system records missing-piece notes but not photographs, which must remain with physical boxes.",
+    "The immediate request is permission to finish checking fourteen puzzles and test loans with two complete puzzles to observe returns.",
+    "The small test does not settle incomplete-puzzle lending; comments go to the circulation supervisor by Wednesday for Friday manager review."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "forty",
+    "twenty-six",
+    "eighteen",
+    "eight",
+    "one and five pieces",
+    "fourteen",
+    "three boxes",
+    "two complete puzzles",
+    "fourteen-day",
+    "one renewal",
+    "Wednesday",
+    "Friday"
+  ],
+  "requiredForm": "Direct memo with a clear, narrowly scoped request.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "Incomplete-puzzle lending, labeling and photographs, and use of the loan system remain proposed rather than approved."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Direct, useful, precise about permissions and unresolved proposals."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 87,
+      "quote": "Rewrite this memo in direct language with a clear request and useful supporting detail."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 88,
+      "endByte": 190,
+      "quote": "Preserve the counts, proposed versus approved status, system limits, and the narrow scope of the test."
+    }
+  ]
+}

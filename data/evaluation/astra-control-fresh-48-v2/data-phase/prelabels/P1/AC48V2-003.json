@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-003",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Review clarity and the limits of literary interpretation while leaving effective sentences alone.",
+  "acceptableEditScope": "Minimal clarification that preserves the distinction between suggestive evidence and established fictional events.",
+  "stableFactsAndClaims": [
+    "In chapter 4 Len recalls the bell before the collapse; in chapter 11 the caretaker recalls the collapse before the bell.",
+    "Both are recollections without independent narrator confirmation.",
+    "Len interprets the bell as a warning; the caretaker interprets it as a consequence of falling masonry.",
+    "The text supports comparing explanations, not establishing the actual sequence.",
+    "The ending leaves timing unresolved; a loose bell rope may prompt reconsideration but does not prove the bell came first."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Len",
+    "chapter 4",
+    "chapter 11",
+    "caretaker",
+    "loose bell rope"
+  ],
+  "requiredForm": "Literary analysis with explicit interpretive limits.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The fictional sequence of bell and collapse is unresolved and must remain so."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Analytical, cautious, attentive to evidential distinctions."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 87,
+      "quote": "Review this literary analysis for clarity and appropriate limits on its interpretation."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 67,
+      "quote": "The novel gives the reader two accounts of the bell tower incident."
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "caseId": "AC48V2-014",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Remove the accidental duplicate sentence.",
+  "acceptableEditScope": "Delete one occurrence of the repeated sentence and make only punctuation changes required by deletion.",
+  "stableFactsAndClaims": [
+    "A replacement handle requires confirmation of mug version through a photograph of the base model code.",
+    "The photograph need not show receipts or payment information.",
+    "If the code is worn away, give approximate height and sliding-tab versus push-button lid details.",
+    "Hand tightening is required because a wrench can damage the threaded insert.",
+    "A replacement handle cannot fix a cracked insert; visible cracks require a close photograph for assessment before a part is sent."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "tighten by hand only."
+  ],
+  "requiredForm": "Customer reply retaining every other part of the text.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "Either duplicate occurrence may be removed if one remains and the rest is preserved."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Courteous, practical support reply."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 41,
+      "quote": "Remove the accidentally repeated sentence"
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 104,
+      "endByte": 173,
+      "quote": "Keep the rest of the reply, including the quoted fitting instruction."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 531,
+      "endByte": 554,
+      "quote": "\"tighten by hand only.\""
+    }
+  ]
+}

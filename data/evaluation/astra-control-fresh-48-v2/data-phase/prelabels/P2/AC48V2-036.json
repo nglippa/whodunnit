@@ -1,0 +1,48 @@
+{
+  "caseId": "AC48V2-036",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the cumbersome discussion-opportunity sentence.",
+  "acceptableEditScope": "Edit that sentence only, preserving the exercise's limited discussion purpose.",
+  "stableFactsAndClaims": [
+    "Groups compared fictional transcripts with bracketed pauses against spoken-words-only transcripts.",
+    "Students identified places needing context rather than scoring speaker confidence.",
+    "The exercise enabled discussion of transcription choices.",
+    "Groups noticed punctuation could overstate conclusions and removed repetition could change rhythm.",
+    "Observations were collected on paper, ungraded, and did not rank formats.",
+    "A later session concerns conventions for overlapping speech."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "fictional interview transcripts",
+    "not graded",
+    "overlapping speech"
+  ],
+  "requiredForm": "Existing exercise account with one sentence replaced.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Clear, ordinary wording; retain modest educational purpose."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 101,
+      "quote": "Replace the cumbersome sentence about the opportunity for discussion with a clear, ordinary sentence."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 102,
+      "endByte": 168,
+      "quote": "Edit that sentence only and retain the exercise's limited purpose."
+    }
+  ]
+}

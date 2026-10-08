@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "prelock-replacement-provenance",
+  "records": [
+    {
+      "caseId": "AC48V2-001",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "e392e5dbb0a66eb4c5129cc047f09d12b7fbd144ae1920f1f5c08126ef1cb2d0",
+      "rejectedSourceSha256": "f526334d5533b903815bc165a2ee4098573ae39c9760df51daaa7dffb9a09b22",
+      "rejectedObjectiveSha256": "1c907c02da793216a76b8e9a77c4f4aa97a3a48cb376064fed80d250f58932c5",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "51ded4c41927e7fdb0da2f54afcf32ab37fa4c9eda88b2272aab20b7b850e96c"
+    },
+    {
+      "caseId": "AC48V2-002",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "54a411fc97d1fe270bfe1cd0b11033fd7864b67c96d82a6f2f27ff31d4320c48",
+      "rejectedSourceSha256": "8019497a6ad1cd24ab05ce390a3720913e08b2deff804a0fa29997e94833dd81",
+      "rejectedObjectiveSha256": "7c03e3e490d302da84b0dd1512ebb2960738ad86c6d93d58066d6e640215753f",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "3163de3be68e42e108b35c4bf82cb4afb16845894b8caa65ec4809cb898953c3"
+    },
+    {
+      "caseId": "AC48V2-003",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "606fb525b95ce044f897042e041090f28081d4fd06431d156778e253402d87ba",
+      "rejectedSourceSha256": "0c667f27136362cdec79cc9971738a8991a46583f529bb2d51ee07e956664b88",
+      "rejectedObjectiveSha256": "64518d75f32790142b8e4b56e7f5298994e0b4ec409245a3633df0f7333dbea2",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "47658b4c061a6a5c3160bfbcd97b32c9a303c74f73e632f00019f58daff4b722"
+    },
+    {
+      "caseId": "AC48V2-004",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "7f3d3601f9b10150217a1ab6cccffccfbda63f0afe2cfda8ab0f49676861fc99",
+      "rejectedSourceSha256": "ed027617a3c6ad5bea055b9a0f0f1d53c1aa00054a1c968e90f12cb68b7ad473",
+      "rejectedObjectiveSha256": "d02ceabd1770e7390758f731890e48e1f4287b67c5c90e1c207f7da87a298ef9",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "60fd91e20110e11f6bfc24c5308fb2b69294ebd508f538bbe402777d44828182"
+    },
+    {
+      "caseId": "AC48V2-008",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "240a0b55d0d761fca2e375fdc9beed80609ab063e3bc3ff385d739429dc5d5a3",
+      "rejectedSourceSha256": "6dd64f8d66e96ea617cbb2d91dbb414d6c1728ee92102afa757b0ad80419c2e0",
+      "rejectedObjectiveSha256": "0b8cc8e48872c6357d5f98818005c9f4dddb80b06c8eda13764f5584e3f92f25",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "fbfd18a7bf4f99056543ab50831b9e96b78a1bdf04d1927ef8e2268d02fa475c"
+    },
+    {
+      "caseId": "AC48V2-019",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "c0ebfd7f47a4a6666601afae51c7304c9cae634fb7d13cbd2c063601fc12679e",
+      "rejectedSourceSha256": "97c36b058b659c55e45e7bf03b34753f8d06615b50547a6c2d2a297f651be705",
+      "rejectedObjectiveSha256": "373a4df5f0d63ed07e3134ac9a014bfe86150f7061f3b8c1a4f9ce8ba4375466",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "796705d60e676cb32bed9d9d6d81fd3b8e7defee495651a6d75f6141e81a5640"
+    },
+    {
+      "caseId": "AC48V2-020",
+      "creatorSlot": "A",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "a060f87ba3f5543d5e78ca771d86766b0e5b1f589943ca6823692be90489ee45",
+      "rejectedSourceSha256": "7345fa639b7400f4cfee0da54e96a9e6ba65b0e8da83a0796ea237c353ebcadb",
+      "rejectedObjectiveSha256": "c96dbcf0af7020ccf3cc8c6a89a2477c441acf6c9c9ef010ecf2b68d1fd67c03",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "85a760c0150f5e38003d7555f77e3a5289641a3dc08405c8db4207b9610e2f2c"
+    },
+    {
+      "caseId": "AC48V2-025",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "1a627f2548a87f1f79fac29ff82b2882c394751a051da7b7e73fdac23625f5d2",
+      "rejectedSourceSha256": "900d5e80075bdca95408f452fc61b9e0ba655321a07d843b384fb2ed8390b401",
+      "rejectedObjectiveSha256": "c01fbb1adf417ff02e88cba1674d77ca59dbae80f6484a3b4edae26e556e2f56",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "90ff1c4efcb73e58f16d0441095f092b3d52788448dde5b6bb558880c304764a"
+    },
+    {
+      "caseId": "AC48V2-026",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "754956c2be847b3bbd3e105dc89dc2889a797fd0eab039abde7df1732b506048",
+      "rejectedSourceSha256": "1d3e20769f42cc7a632ed23a02aa8fc427b99f824573847719fac207d6d27893",
+      "rejectedObjectiveSha256": "5d6c382840464a172b3c12b63edd14631f9cf029d153a876d03c6e5d54263ec5",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "4f2ef53ff8fce48cc32cde5ec28dddc24f1e77251a8b8590b71c06ca9f073a90"
+    },
+    {
+      "caseId": "AC48V2-028",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "7a032b39fdfbd2530aa92b340096f95030414a58b0db889cd16089141e190cce",
+      "rejectedSourceSha256": "f7076a249b1f3f1417a9e96499f5d86f7a24d02b0b5ea165062381ecc879007d",
+      "rejectedObjectiveSha256": "f7f111e5367258323193ceff8b00cefd5263608bcc61669303af560c05b86c79",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "16fa12e929b5bec6840a1859aeb9bad5978991f16e823a73309f78285be167b1"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "efdd4953992e87712914e4b65d96c517023d1baf75bf025c6839bf38a9b2833d",
+      "rejectedSourceSha256": "67979549730112bde3435e5bcaa2657b27527e5746316b580ae4b46a96d87610",
+      "rejectedObjectiveSha256": "af4f3cfd238ace22611235b8a3940ebebab6d73487f720434876304ffc13abd2",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "876df33ce41dcf23430fa7e11a93f71a3d1871ba10b26b471772c52c84cf413a"
+    },
+    {
+      "caseId": "AC48V2-030",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "de716aa682b4cd84fcbad4559d9f29cf081c5f18e59fab121728b8eabad3dad9",
+      "rejectedSourceSha256": "9691b023a40ace3ecf94cf9925905760ab6e3e21215edf2721ed23f22f8331a8",
+      "rejectedObjectiveSha256": "c08600b703ccaadcfebe4d991f2687e912b7cb684a73f3e5e4b977387c2adaa4",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "4cec3d4282a677369b1c2b91aab48810f7187ead057844c626f19cf8a5d93763"
+    },
+    {
+      "caseId": "AC48V2-033",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "19c4ed92dc40229e8d63d3254acb097f5c422ccdcbe1c682edd87641b3377610",
+      "rejectedSourceSha256": "da8a51cec687aae0e24c31de1dfcdbce6717ee6f200189fad95a19dda7f18b3b",
+      "rejectedObjectiveSha256": "8cfe6583c9dbcd2fd3c46e1b407a6c1b353eaff9f7015e6f3dc0c7040ebaead1",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "1f7e8eb69f25f1764dccca5b1e3a4220605aa1468fa3055ab466beac9cb0aa06"
+    },
+    {
+      "caseId": "AC48V2-035",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "b5132be19f9bfc7d64de4ee56709b241df03bb8b4e3af5571330210cce27bbb5",
+      "rejectedSourceSha256": "88729086f8cc00b9f0f7df8c182294e227fa3cade44acccb42d99597c625a3fc",
+      "rejectedObjectiveSha256": "9cd93b8351e8096cfe40142aaaac868f536fdcd976dc2c80e7b7358379e751a7",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "8cff15ecefb99eb99a579b58a7354ea1397900a4a450b9c67bf0d3589fd917aa"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "84c2858892b611c4ae69bbe5d4b58ff05b34c29bbe5154d09369bef0c9e0dfa9",
+      "rejectedSourceSha256": "3d355bb03085103e345bf44fdeb5e859f382759bc22110b0f7a4e66a11eb8db0",
+      "rejectedObjectiveSha256": "14745e7957727f25472bb5bee37c35bb1e9a1eb883a8c44145a997206d19f8fd",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "ccfbd2847bc313b2d269a86590cf5b6ff523d3833efda39fc13021545d5c1be1"
+    },
+    {
+      "caseId": "AC48V2-047",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "109be930bff81085dbf1ac6159cae89153086675e4f82272666dcde4a81e2b06",
+      "rejectedSourceSha256": "1f063d567547e297f3994236d1c6d1e0defd9753b8da92f9ff5245b19308c5cd",
+      "rejectedObjectiveSha256": "f46fcf89c15fc2fdb92ae4732d7571405d653c92061ed13ff8880f3dd3b22b16",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "ddba9ffc970b07020272efa476b4806f18f7047c71d554c955710155036e2645"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "creatorSlot": "B",
+      "rejectedAttempt": 1,
+      "replacementAttempt": 2,
+      "rejectedDraftSha256": "ee43aedf6fb582a4513ceb735346bcd6708611b49ba94c9fbcf170ba651d82fd",
+      "rejectedSourceSha256": "0b23a83f5fc3705070e46e94c4769b8af87c018e7369eb4a07e549939fe354cf",
+      "rejectedObjectiveSha256": "8941454b637660e6a56c1aaee56189bec5feca7372610f9f551bfbd5df9c04b1",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "b063d1bfce5b7313ae863952d65b0f9a04d31e02bce9119d25a8b3e9c0aca2f8"
+    },
+    {
+      "caseId": "AC48V2-025",
+      "creatorSlot": "B",
+      "rejectedAttempt": 2,
+      "replacementAttempt": 3,
+      "rejectedDraftSha256": "90ff1c4efcb73e58f16d0441095f092b3d52788448dde5b6bb558880c304764a",
+      "rejectedSourceSha256": "2eca4f853eab9cdc33e05a1009e59ebd1b1e8518762d91647bbd6d08972939a2",
+      "rejectedObjectiveSha256": "f6d136a2237e893b9556ad60434eb7e6c6d299f55a247c16a13a2ef27a94bbca",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "75773d7a451efc0eb6a23b3f2e632c71a7d5f17900dc36251def35247e7cd8ed"
+    },
+    {
+      "caseId": "AC48V2-047",
+      "creatorSlot": "B",
+      "rejectedAttempt": 2,
+      "replacementAttempt": 3,
+      "rejectedDraftSha256": "ddba9ffc970b07020272efa476b4806f18f7047c71d554c955710155036e2645",
+      "rejectedSourceSha256": "a8fbad600513c05ea659ff1ebd51a2eb295e041f7751fcef9364fa4ae35b5dd0",
+      "rejectedObjectiveSha256": "4273d38775b1a595d2d2282cb4da562ec5e1fca41792433ed739c36be5189d96",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "d7e3820fec956bb3cdf60b63bba8768a11bb14017d7e642ae742bb8fbffa3244"
+    },
+    {
+      "caseId": "AC48V2-025",
+      "creatorSlot": "B",
+      "rejectedAttempt": 3,
+      "replacementAttempt": 4,
+      "rejectedDraftSha256": "75773d7a451efc0eb6a23b3f2e632c71a7d5f17900dc36251def35247e7cd8ed",
+      "rejectedSourceSha256": "ce85ee94dad73f524420fbec5e6e1985b7b54e80d2301bdc6c687a27aaed8718",
+      "rejectedObjectiveSha256": "62466fa3540125435a4341ab1115e1792a0723704298c2616da7c7e2d0fcf82b",
+      "reasonCategory": "material_semantic_scenario_or_requested_transformation_overlap",
+      "replacementDraftSha256": "bcbccb4ff26908443dbe8451ed571eb717ee1456ea27f1633f71908685e0215c"
+    }
+  ]
+}

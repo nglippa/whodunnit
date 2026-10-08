@@ -1,0 +1,46 @@
+{
+  "caseId": "AC48V2-026",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Check punctuation and fluency while keeping the message's warmth.",
+  "acceptableEditScope": "Minimal punctuation or fluency changes preserving the specific comic scene and personal thanks.",
+  "stableFactsAndClaims": [
+    "The narrator watched the recommended silent film.",
+    "The thief trying to look innocent while carrying an entire door caused laughter.",
+    "Laughter caused missed title cards; the narrator will probably watch again.",
+    "The recipient understood the ridiculous evening the narrator needed after that week."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "an entire door",
+    "title cards",
+    "probably watch it again"
+  ],
+  "requiredForm": "Warm personal message.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Warm, conversational, amused, appreciative."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 55,
+      "quote": "Check this personal message for punctuation and fluency"
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 41,
+      "endByte": 141,
+      "quote": "The bit where the thief tries to look innocent while carrying an entire door made me laugh out loud."
+    }
+  ]
+}

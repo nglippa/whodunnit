@@ -1,0 +1,48 @@
+{
+  "caseId": "AC48V2-005",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the collection appointment and entrance using the supplied replacements.",
+  "acceptableEditScope": "Replace the appointment day, date, time, and entrance; retain all other instructions.",
+  "stableFactsAndClaims": [
+    "Show the attendant the booking email.",
+    "Pieces will be wrapped, but the collector should bring a box.",
+    "Forward the email first if another person collects."
+  ],
+  "authorizedFactualChanges": [
+    "Wednesday, November 4, at 3:30 p.m. becomes Thursday, November 5, at 11:15 a.m.",
+    "The front entrance on Alder Street becomes the side door on Pine Lane."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Thursday, November 5",
+    "11:15 a.m.",
+    "side door on Pine Lane"
+  ],
+  "requiredForm": "Pottery collection appointment message.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Direct, courteous instructions."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 128,
+      "quote": "Update the appointment to Thursday, November 5, at 11:15 a.m., and change the collection entrance to the side door on Pine Lane."
+    },
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 85,
+      "quote": "Your pottery collection appointment is booked for Wednesday, November 4, at 3:30 p.m."
+    }
+  ]
+}

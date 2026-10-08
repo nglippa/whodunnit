@@ -1,0 +1,56 @@
+{
+  "caseId": "AC48V2-018",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Lightly improve readability while preserving dry humor, rhythm, and uncertainty.",
+  "acceptableEditScope": "Small readability edits without converting speculation about the basil into a confirmed cause.",
+  "stableFactsAndClaims": [
+    "The narrator tried growing basil on the windowsill; the pot now holds pencils.",
+    "Mum says the basil was overwatered; the narrator allows that she may be right.",
+    "The narrator was encouraging and plans to try mint next spring."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Mum",
+    "Next spring",
+    "basil",
+    "mint"
+  ],
+  "requiredForm": "Conversational personal post.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "Why the basil died is uncertain."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Dry personification and self-deprecating humor.",
+    "Conversational rhythm; preserve qualified statements."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 102,
+      "quote": "Lightly edit this personal post for readability while keeping its dry humor and conversational rhythm."
+    },
+    {
+      "supportsField": "ambiguity",
+      "field": "objective",
+      "startByte": 103,
+      "endByte": 153,
+      "quote": "Preserve the uncertainty about why the basil died."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 40,
+      "quote": "I tried to grow basil on the windowsill."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "caseId": "AC48V2-015",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Reconstruct the orientation note as clear, friendly instructions.",
+  "acceptableEditScope": "Substantially simplify and organize wording while retaining every actual step and responsibility; add no procedures.",
+  "stableFactsAndClaims": [
+    "Retrieve an apron from the cupboard beneath the sink on arrival.",
+    "Payment handling and drink preparation are distinct; new volunteers do not handle payments on their first shift.",
+    "The shift leader pairs the newcomer with a drink preparer who shows order slips and the washing station.",
+    "Put the used apron in the laundry basket next to the cupboard and verbally notify the shift leader before leaving.",
+    "An unwell volunteer must immediately tell the leader and stop handling drinks."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "first shift",
+    "cupboard beneath the sink",
+    "laundry basket next to the cupboard"
+  ],
+  "requiredForm": "Clear instructions for a new coffee stall volunteer; organization may change.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Friendly, ordinary, direct instructions."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 86,
+      "quote": "Reconstruct this orientation note as clear, friendly instructions for a new volunteer."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 87,
+      "endByte": 178,
+      "quote": "Keep the actual steps, responsibilities, and illness instruction without adding procedures."
+    }
+  ]
+}

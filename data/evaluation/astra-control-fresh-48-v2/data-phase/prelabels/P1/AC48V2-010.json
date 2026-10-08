@@ -1,0 +1,66 @@
+{
+  "caseId": "AC48V2-010",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Add the new solo piece's title and update Mara's performance date.",
+  "acceptableEditScope": "Only the requested title addition and date update; both require supplied details and cannot be inferred.",
+  "stableFactsAndClaims": [
+    "Mara Venn is a stage performer based in Bellweather.",
+    "Recent work includes Nell in Lantern House's The Quiet Orchard and a touring storytelling show for primary schools.",
+    "She runs occasional voice workshops at the neighborhood arts center.",
+    "Her quoted approach, also in the introductory workshop title, is leave room for the listener; the workshop addresses pacing, breath, and clear versus loud speech.",
+    "The biography currently reports June 14 at the Old Pump Room and a new solo piece without title or description.",
+    "The venue sells tickets; the arts center handles neither reservations nor availability confirmation."
+  ],
+  "authorizedFactualChanges": [
+    "Add the new solo piece's title and replace the performance date once supplied; no actual replacement values are given."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Mara Venn",
+    "Bellweather",
+    "Nell",
+    "Lantern House",
+    "The Quiet Orchard",
+    "leave room for the listener.",
+    "Old Pump Room",
+    "June 14 as the existing date"
+  ],
+  "requiredForm": "Performer biography; requested completion depends on missing details.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The new solo piece's title.",
+    "The updated performance date."
+  ],
+  "voiceConstraints": [
+    "Informative biographical tone; retain reservation limitations."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 101,
+      "quote": "Revise this biography to include the title of Mara's new solo piece and the updated performance date."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 102,
+      "endByte": 180,
+      "quote": "Those details are not supplied; do not infer them from the existing biography."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 52,
+      "quote": "Mara Venn is a stage performer based in Bellweather."
+    }
+  ]
+}

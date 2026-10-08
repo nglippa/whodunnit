@@ -1,0 +1,485 @@
+{
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "freshness-lexical-screen",
+  "manifestSha256": "b0b60d971ff880f82ae6b270134a8cfc1e3afc35bc4c3aa612e0f4182da99abb",
+  "draftInputSha256": "3591f6129023c501819c127f3d34b3ef47b4df05b6627f5e3be3fc4dec6be0da",
+  "draftCases": 48,
+  "draftPeerPairs": 1128,
+  "status": "ESCALATE_PENDING_INDEPENDENT_SEMANTIC_REVIEW",
+  "findings": [
+    {
+      "caseId": "AC48V2-007",
+      "field": "objective",
+      "referencePath": "data/fixtures/objective-feasibility/labels.json",
+      "referenceGitBlobId": "88298318fe2ed86c6967b9055966199f778cb41b",
+      "referencePointer": "/5/jobs/1/sourceEvidence/0",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "90e086017bd02cc3acc324f64d42555b3c96d74f8e94ded327bfe89c4c292c59"
+    },
+    {
+      "caseId": "AC48V2-007",
+      "field": "objective",
+      "referencePath": "data/fixtures/objective-feasibility/sources.json",
+      "referenceGitBlobId": "259eb5bac16f9d999040471bf4784a7e5da2b1ad",
+      "referencePointer": "/2/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "90e086017bd02cc3acc324f64d42555b3c96d74f8e94ded327bfe89c4c292c59"
+    },
+    {
+      "caseId": "AC48V2-007",
+      "field": "objective",
+      "referencePath": "data/fixtures/objective-feasibility/v3-reviews.json",
+      "referenceGitBlobId": "bddd0422645016c145d22bcfbedbb2b9cc48d1ee",
+      "referencePointer": "/5/review/counterevidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "90e086017bd02cc3acc324f64d42555b3c96d74f8e94ded327bfe89c4c292c59"
+    },
+    {
+      "caseId": "AC48V2-018",
+      "field": "objective",
+      "referencePath": "data/fixtures/objective-feasibility/tasks.json",
+      "referenceGitBlobId": "8124b14467138acd9f599f61c6f13e39fe66b210",
+      "referencePointer": "/129/objective",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "837c6cded735f9071a06370d7d800a8170ea1052853abac7f9a6c5438245d68a"
+    },
+    {
+      "caseId": "AC48V2-027",
+      "field": "source",
+      "referencePath": "data/fixtures/semantic-review-development/corpus.json",
+      "referenceGitBlobId": "9e32d78061b38f0d915bcf165a8c9577bb743f0e",
+      "referencePointer": "/136/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "a6deb8db0c92ebe1ccbecbde24f2504ecb6d725191575858d469c7fd5b5b7e46"
+    },
+    {
+      "caseId": "AC48V2-027",
+      "field": "source",
+      "referencePath": "data/fixtures/v13-architecture-replay/cases.json",
+      "referenceGitBlobId": "a2999b1326b587324692d920e359c20797878c8b",
+      "referencePointer": "/36/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "a6deb8db0c92ebe1ccbecbde24f2504ecb6d725191575858d469c7fd5b5b7e46"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/cases.json",
+      "referenceGitBlobId": "04a929d616397ffc84f4ffd615499c86d95717dc",
+      "referencePointer": "/0/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "49662b67e154b4ebc7ac8a0fcfe53910280eab1a96b76fd1c9d6f9559ea44691"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/editor-requests.json",
+      "referenceGitBlobId": "41de5d10df8f69dd2063354613eaa85a412953d5",
+      "referencePointer": "/requests/0/user",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "49662b67e154b4ebc7ac8a0fcfe53910280eab1a96b76fd1c9d6f9559ea44691"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/verifier-requests.json",
+      "referenceGitBlobId": "da73ffb916f4116d8cecec23f3be5dcab1f5b77e",
+      "referencePointer": "/requests/0/user",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "49662b67e154b4ebc7ac8a0fcfe53910280eab1a96b76fd1c9d6f9559ea44691"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/cases.json",
+      "referenceGitBlobId": "04a929d616397ffc84f4ffd615499c86d95717dc",
+      "referencePointer": "/0/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "6ccc74099e1b36ed8e860e03d9b74083b37859202e6d2c306e3acae6d97ed654"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/editor-requests.json",
+      "referenceGitBlobId": "41de5d10df8f69dd2063354613eaa85a412953d5",
+      "referencePointer": "/requests/0/user",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "6ccc74099e1b36ed8e860e03d9b74083b37859202e6d2c306e3acae6d97ed654"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/verifier-requests.json",
+      "referenceGitBlobId": "da73ffb916f4116d8cecec23f3be5dcab1f5b77e",
+      "referencePointer": "/requests/0/user",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "6ccc74099e1b36ed8e860e03d9b74083b37859202e6d2c306e3acae6d97ed654"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/cases.json",
+      "referenceGitBlobId": "04a929d616397ffc84f4ffd615499c86d95717dc",
+      "referencePointer": "/0/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ea6385824f2345432811d88701c0f1c05763628608bafd8c8ef50183f7ef8c1e"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/editor-requests.json",
+      "referenceGitBlobId": "41de5d10df8f69dd2063354613eaa85a412953d5",
+      "referencePointer": "/requests/0/user",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ea6385824f2345432811d88701c0f1c05763628608bafd8c8ef50183f7ef8c1e"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "field": "source",
+      "referencePath": "data/fixtures/objective-aware-replay/verifier-requests.json",
+      "referenceGitBlobId": "da73ffb916f4116d8cecec23f3be5dcab1f5b77e",
+      "referencePointer": "/requests/0/user",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ea6385824f2345432811d88701c0f1c05763628608bafd8c8ef50183f7ef8c1e"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/discourse-development/mid-pairs.json",
+      "referenceGitBlobId": "bb6acba6610cbb9322855066b7183bb6c497500a",
+      "referencePointer": "/4/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "06caa676c3936f46458f227785fd08c19e1cbdac8c70726066124a8877a4c6f1"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/discourse-development/mid-pairs.json",
+      "referenceGitBlobId": "bb6acba6610cbb9322855066b7183bb6c497500a",
+      "referencePointer": "/5/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "06caa676c3936f46458f227785fd08c19e1cbdac8c70726066124a8877a4c6f1"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/discourse-development/mid-pairs.json",
+      "referenceGitBlobId": "bb6acba6610cbb9322855066b7183bb6c497500a",
+      "referencePointer": "/4/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "1b50d5ba89e9daf68cdce02e3bdb83d36556305ec501b64b75fbcb25244b3cad"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/discourse-development/mid-pairs.json",
+      "referenceGitBlobId": "bb6acba6610cbb9322855066b7183bb6c497500a",
+      "referencePointer": "/5/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "1b50d5ba89e9daf68cdce02e3bdb83d36556305ec501b64b75fbcb25244b3cad"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/baseline-v4.json",
+      "referenceGitBlobId": "750806fe71c87bcf82e7606feaea3fe1f27dfe68",
+      "referencePointer": "/rows/77/jobs/0/sourceEvidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "4babe124ca2089ef3bd37ccdd55797478efb01769e1e27298f878dde489a3a99"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/baseline-v4.json",
+      "referenceGitBlobId": "750806fe71c87bcf82e7606feaea3fe1f27dfe68",
+      "referencePointer": "/rows/77/jobs/1/sourceEvidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "4babe124ca2089ef3bd37ccdd55797478efb01769e1e27298f878dde489a3a99"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/tasks.json",
+      "referenceGitBlobId": "379deb6b472a57321c6f62d5f831576c107241a0",
+      "referencePointer": "/18/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "4babe124ca2089ef3bd37ccdd55797478efb01769e1e27298f878dde489a3a99"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/discourse-development/mid-pairs.json",
+      "referenceGitBlobId": "bb6acba6610cbb9322855066b7183bb6c497500a",
+      "referencePointer": "/4/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "7adfd4f7941803230313aa37ec21faeb429aebe82d31a17f2d802000cc1b7dff"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/discourse-development/mid-pairs.json",
+      "referenceGitBlobId": "bb6acba6610cbb9322855066b7183bb6c497500a",
+      "referencePointer": "/5/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "7adfd4f7941803230313aa37ec21faeb429aebe82d31a17f2d802000cc1b7dff"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/baseline-v4.json",
+      "referenceGitBlobId": "750806fe71c87bcf82e7606feaea3fe1f27dfe68",
+      "referencePointer": "/rows/77/jobs/0/sourceEvidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "b6681d625c5ee7cdb7a4707150d2e888a9188f28f48347e23d2dac91db96a93b"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/baseline-v4.json",
+      "referenceGitBlobId": "750806fe71c87bcf82e7606feaea3fe1f27dfe68",
+      "referencePointer": "/rows/77/jobs/1/sourceEvidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "b6681d625c5ee7cdb7a4707150d2e888a9188f28f48347e23d2dac91db96a93b"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/tasks.json",
+      "referenceGitBlobId": "379deb6b472a57321c6f62d5f831576c107241a0",
+      "referencePointer": "/18/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "b6681d625c5ee7cdb7a4707150d2e888a9188f28f48347e23d2dac91db96a93b"
+    },
+    {
+      "caseId": "AC48V2-041",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/baseline-v4.json",
+      "referenceGitBlobId": "750806fe71c87bcf82e7606feaea3fe1f27dfe68",
+      "referencePointer": "/rows/1/jobs/2/sourceEvidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "29e56d6181852c1df9445a172374eb2a11f47a60e6fae02999c8ab62689c05ac"
+    },
+    {
+      "caseId": "AC48V2-041",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/tasks.json",
+      "referenceGitBlobId": "379deb6b472a57321c6f62d5f831576c107241a0",
+      "referencePointer": "/1/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "29e56d6181852c1df9445a172374eb2a11f47a60e6fae02999c8ab62689c05ac"
+    },
+    {
+      "caseId": "AC48V2-041",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/baseline-v4.json",
+      "referenceGitBlobId": "750806fe71c87bcf82e7606feaea3fe1f27dfe68",
+      "referencePointer": "/rows/1/jobs/2/sourceEvidence/0/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "7111e6c85560c0e012ea92c87cbd10f7e6114cf433186894eb6cd2e6bed2efc0"
+    },
+    {
+      "caseId": "AC48V2-041",
+      "field": "source",
+      "referencePath": "data/fixtures/plan-entailment-development/tasks.json",
+      "referenceGitBlobId": "379deb6b472a57321c6f62d5f831576c107241a0",
+      "referencePointer": "/1/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "7111e6c85560c0e012ea92c87cbd10f7e6114cf433186894eb6cd2e6bed2efc0"
+    },
+    {
+      "caseId": "AC48V2-042",
+      "field": "objective",
+      "referencePath": "data/fixtures/v13-architecture-replay/labels-second.json",
+      "referenceGitBlobId": "e0b81bed9295b381797841b7e5660326d56d5297",
+      "referencePointer": "/30/rationale",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "f4d7c5626b940b24f5fe8f391bc2b0ed362817562a80ae92b0dacfab02ccb7a2"
+    },
+    {
+      "caseId": "AC48V2-046",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/frozen/cases.json",
+      "referenceGitBlobId": "d33f1a05cdbad54767af2280b0d65ffa3dfdce09",
+      "referencePointer": "/17/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "b3a286c7dd06dbb7c6247c1f8373dd1f735704651783efbf7fce8a4ca32effd2"
+    },
+    {
+      "caseId": "AC48V2-046",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-01.json",
+      "referenceGitBlobId": "d85243bcbd930128a4cdc7428465080bb1a1a68d",
+      "referencePointer": "/17/preservedMaterialFacts/2/fact",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "b3a286c7dd06dbb7c6247c1f8373dd1f735704651783efbf7fce8a4ca32effd2"
+    },
+    {
+      "caseId": "AC48V2-047",
+      "field": "objective",
+      "referencePath": "data/evaluation/holdout-v3/run/audit-v1/packet-A4.json",
+      "referenceGitBlobId": "3b00400d1133804e4d5d6a28f9d3394d088a86af",
+      "referencePointer": "/rows/6/trace/semanticReview/reason",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "b18c15d68fbfdc1778aa11c5a93558b293f977d4121bf18faf49c93895c7f58c"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/frozen/cases.json",
+      "referenceGitBlobId": "d33f1a05cdbad54767af2280b0d65ffa3dfdce09",
+      "referencePointer": "/19/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "242bf5c25b9fe608703aeec60fa0095c15055c577e91c66a83424c3799c12758"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-01.json",
+      "referenceGitBlobId": "d85243bcbd930128a4cdc7428465080bb1a1a68d",
+      "referencePointer": "/19/preservedMaterialFacts/1/fact",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "242bf5c25b9fe608703aeec60fa0095c15055c577e91c66a83424c3799c12758"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/freeze-audit/independent-audit.json",
+      "referenceGitBlobId": "ceb32a63556114518909da7137304e7f86505d59",
+      "referencePointer": "/independentHistoricalScreen/sixTokenHits/6/matches/0/phrase",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ce3893f6f004709d987aa682e396854b66f67381b41f56550a98f82eb4a65dba"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/frozen/cases.json",
+      "referenceGitBlobId": "d33f1a05cdbad54767af2280b0d65ffa3dfdce09",
+      "referencePointer": "/17/source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ce3893f6f004709d987aa682e396854b66f67381b41f56550a98f82eb4a65dba"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/evaluation/post-v3-comparison/frozen/prelabels/reviewer-01.json",
+      "referenceGitBlobId": "d85243bcbd930128a4cdc7428465080bb1a1a68d",
+      "referencePointer": "/17/preservedMaterialFacts/2/fact",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ce3893f6f004709d987aa682e396854b66f67381b41f56550a98f82eb4a65dba"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/fixtures/semantic-review-development/corpus.json",
+      "referenceGitBlobId": "9e32d78061b38f0d915bcf165a8c9577bb743f0e",
+      "referencePointer": "/95/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ce3893f6f004709d987aa682e396854b66f67381b41f56550a98f82eb4a65dba"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "field": "source",
+      "referencePath": "data/fixtures/semantic-review-development/gpt-family-reviews.json",
+      "referenceGitBlobId": "5301cb475f12d25b5d31ebc05d827bc187b81938",
+      "referencePointer": "/95/review/counterevidence/1/text",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "shingleSha256": "ce3893f6f004709d987aa682e396854b66f67381b41f56550a98f82eb4a65dba"
+    },
+    {
+      "caseId": "AC48V2-008",
+      "field": "source",
+      "peerCaseId": "AC48V2-031",
+      "peerField": "source",
+      "flags": [
+        "COMMON_SIX_TOKEN_SHINGLE"
+      ],
+      "commonShingleCount": 2
+    }
+  ],
+  "inheritedMethodExperimentId": "astra-control-fresh-48-v1",
+  "adapterSha256": "155763d7cdf888177bfb97dba521d8f5c4dbc71a94a494fdfdc6a6e748a98af5"
+}

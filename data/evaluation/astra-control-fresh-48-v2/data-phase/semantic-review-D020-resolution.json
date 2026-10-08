@@ -1,0 +1,9 @@
+{
+  "caseId": "AC48V2-002",
+  "decision": "REPLACE",
+  "sourceObjectiveSpecificRationale": "The complete D020 source confirms the same folding-table collection scenario: checking for damaged legs, reporting damage to the desk, photographs for damage assessment, and verifying folded-table dimensions against vehicle access and capacity. The candidate adds lock checks, collection-sheet reconciliation, and securing 18 tables, but these additions do not resolve the source-level overlap. This is substantive scenario reuse, not merely a repeated readability objective.",
+  "referencePath": "data/evaluation/holdout-v2/frozen/documents.json",
+  "referenceId": "D020",
+  "overall": "REPLACE",
+  "requestedReferences": []
+}

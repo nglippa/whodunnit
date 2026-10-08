@@ -1,0 +1,47 @@
+{
+  "caseId": "AC48V2-036",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the cumbersome discussion-opportunity sentence with ordinary clear language.",
+  "acceptableEditScope": "Edit that sentence alone and preserve the exercise's limited purpose.",
+  "stableFactsAndClaims": [
+    "Groups compared fictional interview transcripts with bracketed pauses against spoken-words-only transcripts.",
+    "Students identified where more context was wanted, rather than scoring speaker confidence.",
+    "The exercise provided discussion of transcription choices.",
+    "Groups noticed punctuation could imply unsupported conclusions and removal of repetition could alter rhythm.",
+    "Paper observations were collected at class end, ungraded; formats were not ranked.",
+    "A later session will cover overlapping-speech conventions."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "fictional interview transcripts",
+    "All wording outside the discussion-opportunity sentence"
+  ],
+  "requiredForm": "Existing exercise account with one sentence replaced.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Clear, ordinary language without expanding educational claims."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 168,
+      "quote": "Replace the cumbersome sentence about the opportunity for discussion with a clear, ordinary sentence. Edit that sentence only and retain the exercise's limited purpose."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 78,
+      "quote": "In this exercise, groups compared two sets of fictional interview transcripts."
+    }
+  ]
+}

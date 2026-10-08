@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-039",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Reconstruct the naming memo into clear editor instructions.",
+  "acceptableEditScope": "Remove inflated language and reorganize policy, exceptions, unresolved authorship, and initial checks without expanding them.",
+  "stableFactsAndClaims": [
+    "Uninformative filenames slow excerpt selection; two files named for closing doors also contained preceding footsteps, without becoming unusable.",
+    "The policy applies to recordings made from 1 August onward, not mandatory renaming of all old files.",
+    "Old files may be renamed when used if the original name is recorded in notes; outside-client deliveries keep delivered names.",
+    "New names use coordinator-assigned session code, audible-action description, and take number; editors must not invent alternate codes or name imagined uses.",
+    "Location, equipment, and unusual conditions belong in text notes.",
+    "Uncertain sounds should be described without asserting a source; possible sources may be identified as possibilities in notes.",
+    "Joint-team naming remains unresolved; obtain a coordinator code before uploading, and the coordinator keeps a review list.",
+    "The coordinator checks each team's first five uploads for filenames and notes only, not recording quality or the separate pre-client-delivery check."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "1 August",
+    "first five new uploads",
+    "session code",
+    "take number"
+  ],
+  "requiredForm": "Clear set of instructions for editors; structure may change.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "How to name sessions jointly recorded by two teams remains unsettled."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Direct, ordinary instructional language with explicit exceptions and limits."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 65,
+      "quote": "Reconstruct this memo as a clear set of instructions for editors."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 66,
+      "endByte": 201,
+      "quote": "Remove the inflated wording and organise the policy, exceptions, unresolved question, and initial checks without expanding their scope."
+    }
+  ]
+}

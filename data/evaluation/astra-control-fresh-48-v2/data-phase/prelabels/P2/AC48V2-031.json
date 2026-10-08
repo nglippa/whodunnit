@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-031",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the winter tool allowance and loan period.",
+  "acceptableEditScope": "Make the two factual replacements and only necessary grammar adjustments.",
+  "stableFactsAndClaims": [
+    "Renewal is available if no one else requested the item.",
+    "Return tools clean with supplied attachments; staff inspect electrical items before lending again.",
+    "Damaged items go directly to the desk, not the return cabinet.",
+    "Reporting damage does not automatically incur a charge; cause and normal use are checked.",
+    "Reservations use the catalogue or volunteer help during opening hours.",
+    "Membership cards remain valid until their printed expiry date."
+  ],
+  "authorizedFactualChanges": [
+    "Eight tools per household becomes six.",
+    "Fourteen days becomes twenty-one days."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "six tools per household",
+    "twenty-one days",
+    "Dear Members"
+  ],
+  "requiredForm": "Member borrowing notice with otherwise unchanged information.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Courteous, practical member communication."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 104,
+      "quote": "Update the winter borrowing allowance to six tools per household and the loan period to twenty-one days."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 105,
+      "endByte": 178,
+      "quote": "Make only those factual updates and any grammar adjustments they require."
+    }
+  ]
+}

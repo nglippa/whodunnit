@@ -1,0 +1,47 @@
+{
+  "caseId": "AC48V2-002",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Check usability and correct only wording that could cause employees to misunderstand the process.",
+  "acceptableEditScope": "Targeted clarification of genuine process misunderstandings; retain effective instructions.",
+  "stableFactsAndClaims": [
+    "Corrections require the shift date, recorded and proposed times, and reason; each submission allows three shifts.",
+    "A request does not immediately change the timecard; the supervisor checks the shift record and contacts the employee if entries differ.",
+    "Status appears beside the original timecard; original and proposed entries remain visible until review ends.",
+    "Missing shifts use Add a shift, not Correct a shift; these ask for different information.",
+    "Rejected worked dates must be sent with the error message to scheduling; employees must not substitute an inaccurate date."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "three shifts per submission",
+    "Add a shift",
+    "Correct a shift"
+  ],
+  "requiredForm": "Internal employee process guide.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Practical, clear, procedural."
+  ],
+  "zeroToleranceTraps": [
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 121,
+      "quote": "Check this internal guide for ease of use. Make changes only where an employee could otherwise misunderstand the process."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 68,
+      "quote": "Use the correction form when a submitted timecard contains an error."
+    }
+  ]
+}

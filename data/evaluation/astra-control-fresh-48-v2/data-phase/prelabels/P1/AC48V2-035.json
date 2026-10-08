@@ -1,0 +1,40 @@
+{
+  "caseId": "AC48V2-035",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Simplify only the inflated sentence about inspecting surface appearance.",
+  "acceptableEditScope": "One sentence only; keep inspection after cooling and every other batch instruction unchanged.",
+  "stableFactsAndClaims": [
+    "Record dusting flour separately from the listed mixed-dough weight.",
+    "Each tray holds eight rolls with expansion space; the baker checks the first tray before remaining dough division.",
+    "Visual surface inspection occurs once the rolls have cooled.",
+    "Record split crusts in comments; a split alone does not require disposal and the baker decides its relevance to intended use.",
+    "Keep tray numbers with observations and do not combine different trays in one entry."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "once the rolls have cooled",
+    "eight rolls",
+    "All source wording outside the designated sentence"
+  ],
+  "requiredForm": "Existing batch instructions with one sentence simplified.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain procedural wording within the targeted sentence."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 190,
+      "quote": "Simplify only the sentence beginning “With respect to the matter of surface appearance”. Retain the point at which the inspection happens and preserve the rest of the batch instructions."
+    }
+  ]
+}

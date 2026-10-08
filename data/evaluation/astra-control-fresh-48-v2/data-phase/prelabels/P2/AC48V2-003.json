@@ -1,0 +1,57 @@
+{
+  "caseId": "AC48V2-003",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Review clarity and the limits of the literary interpretation.",
+  "acceptableEditScope": "Clarify ineffective wording without changing effective sentences or strengthening the interpretation.",
+  "stableFactsAndClaims": [
+    "Chapter 4 gives Len's recollection of a bell before collapse; chapter 11 gives the caretaker's opposite sequence.",
+    "Neither recollection receives independent narrator confirmation.",
+    "Len interprets the bell as warning; the caretaker attributes it to falling masonry.",
+    "The final chapter leaves timing unresolved; the loose rope is suggestive but does not prove the bell came first."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Len",
+    "chapter 4",
+    "chapter 11",
+    "bell tower",
+    "loose bell rope"
+  ],
+  "requiredForm": "Literary analysis retaining interpretive qualifications.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The fictional sequence of bell and collapse remains unresolved."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Analytical, cautious, attentive to evidence versus suggestion."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 87,
+      "quote": "Review this literary analysis for clarity and appropriate limits on its interpretation."
+    },
+    {
+      "supportsField": "noOrMinimalEditExpected",
+      "field": "objective",
+      "startByte": 88,
+      "endByte": 120,
+      "quote": "Leave effective sentences alone."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 67,
+      "quote": "The novel gives the reader two accounts of the bell tower incident."
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "caseId": "AC48V2-048",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Request an unambiguous eligibility answer through rewriting the residency rule.",
+  "acceptableEditScope": "Explain or clarify only what the existing rule and facts establish; no new eligibility condition or unsupported yes/no decision is authorized.",
+  "stableFactsAndClaims": [
+    "Entrants must be members living within twelve miles of the studio.",
+    "Noor has a flat eight miles away and a work-related room twenty miles away, staying at the room on working nights and the flat most weekends.",
+    "Her membership is current.",
+    "The rule defines neither living within the area nor an address record and does not address multiple residences.",
+    "Last year's organiser accepted someone wintering elsewhere, but that entrant's supplied circumstances and address are unknown.",
+    "This year's organiser wants an explanation; the committee has not discussed Noor's situation and the form asks only for a contact address.",
+    "Noor wants eligibility resolved before preparing work photographs."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "members living within twelve miles of the studio.",
+    "Noor",
+    "eight miles",
+    "twenty miles",
+    "working nights",
+    "most weekends",
+    "membership is current"
+  ],
+  "requiredForm": "Plain residency-rule explanation; a definitive yes/no is not established by the supplied rule.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The meaning of living within the area for someone with two residences is undefined.",
+    "The prior acceptance does not establish a sufficiently specified precedent.",
+    "The requested unambiguous answer cannot be derived without resolving an unprovided policy interpretation."
+  ],
+  "missingPropositions": [
+    "An authoritative interpretation of residency under the existing rule for Noor's circumstances."
+  ],
+  "voiceConstraints": [
+    "Plain, neutral, precise about what the rule does and does not establish."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 83,
+      "quote": "Rewrite the residency rule so Noor gets an unambiguous yes or no about eligibility."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 84,
+      "endByte": 161,
+      "quote": "Use the existing rule and details here without adding a new policy condition."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 45,
+      "endByte": 100,
+      "quote": "“members living within twelve miles of the studio.”"
+    },
+    {
+      "supportsField": "ambiguity",
+      "field": "source",
+      "startByte": 275,
+      "endByte": 413,
+      "quote": "The rules do not define living within the area, name a particular address record, or say whether someone can have more than one residence."
+    }
+  ]
+}

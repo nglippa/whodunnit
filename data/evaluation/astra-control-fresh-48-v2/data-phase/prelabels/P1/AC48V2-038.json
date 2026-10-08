@@ -1,0 +1,50 @@
+{
+  "caseId": "AC48V2-038",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Plainly restate the single sentence beginning At the conclusion.",
+  "acceptableEditScope": "One-sentence simplification; preserve the rest, including the modest interpretation of results.",
+  "stableFactsAndClaims": [
+    "The tasting group met in the upstairs kitchen Tuesday.",
+    "Each person tried three letter-marked samples in a different order; water was supplied, and finishing cups was optional.",
+    "Results record this small group's preferences, not a general recipe verdict.",
+    "Participants could offer additional observations at the end.",
+    "Two mentioned oat texture; one found rice sweeter than expected; nobody had to explain an unwanted preference discussion.",
+    "Next time serving temperatures will be the same because they varied in this session."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Tuesday",
+    "three samples",
+    "Two people",
+    "one",
+    "All wording outside the designated sentence"
+  ],
+  "requiredForm": "Existing tasting account with one sentence restated.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain wording and modest claims."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 146,
+      "quote": "Plainly restate only the sentence beginning “At the conclusion”. Preserve the rest, including the modest description of what the results mean."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 57,
+      "quote": "The tasting group met in the upstairs kitchen on Tuesday."
+    }
+  ]
+}

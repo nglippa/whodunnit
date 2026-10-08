@@ -1,0 +1,50 @@
+{
+  "caseId": "AC48V2-033",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Correct the linocut edition size to the artist's revised figure.",
+  "acceptableEditScope": "Edition-size replacement only, contingent on the missing revised figure.",
+  "stableFactsAndClaims": [
+    "The catalogue currently states an edition of 180 prints.",
+    "Each print has an individual number and artist's initials beneath the image.",
+    "The paper is unframed; dimensions describe the image, not the sheet.",
+    "The photograph shows a proof; the buyer receives a print bearing its own edition number."
+  ],
+  "authorizedFactualChanges": [
+    "Replace 180 with the artist's revised edition size once supplied."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "180 prints as the existing edition size",
+    "individual edition number"
+  ],
+  "requiredForm": "Catalogue description; a completed correction requires the revised figure.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The artist's revised edition size."
+  ],
+  "voiceConstraints": [
+    "Precise catalogue description."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 106,
+      "quote": "Correct the stated edition size to the artist's revised figure. That revised figure has not been provided."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 65,
+      "quote": "The catalogue describes this linocut as an edition of 180 prints."
+    }
+  ]
+}

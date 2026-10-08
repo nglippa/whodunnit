@@ -1,0 +1,54 @@
+{
+  "caseId": "AC48V2-014",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Remove the accidental duplicate sentence and adjust punctuation only if necessary.",
+  "acceptableEditScope": "Delete one repeated occurrence; preserve all remaining reply content and the quoted fitting instruction.",
+  "stableFactsAndClaims": [
+    "A replacement handle can be sent after confirming the mug version.",
+    "Request a base photograph showing the model code, without receipt or payment information.",
+    "If the code is worn away, request approximate height and sliding-tab versus push-button lid.",
+    "Attach the replacement by hand only; a wrench can damage the threaded insert.",
+    "A handle does not fix a cracked insert; a crack photograph allows assessment before sending a part."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "tighten by hand only."
+  ],
+  "requiredForm": "Customer-service reply with the duplicate removed.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "Either duplicate occurrence could be removed if the remaining reply is coherent and otherwise preserved."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Courteous, practical, precise."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 103,
+      "quote": "Remove the accidentally repeated sentence and make any punctuation adjustment required by that removal."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 104,
+      "endByte": 173,
+      "quote": "Keep the rest of the reply, including the quoted fitting instruction."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 61,
+      "endByte": 137,
+      "quote": "We can send a replacement handle once we confirm which mug version you have."
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "caseId": "AC48V2-040",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Create an engaging first-person account in ordinary language.",
+  "acceptableEditScope": "Reconstruct flow and language while preserving events, practical lessons, and uncertainties.",
+  "stableFactsAndClaims": [
+    "The narrator borrowed an arts-cupboard recorder and read instructions the night before, expecting early rising to be the main challenge.",
+    "At 5:20 Sunday, an obsolete spare key failed after a lock replacement; waiting for Farah caused missed initial birdsong.",
+    "Farah came to water beans, admitted the narrator, and showed a dry equipment location.",
+    "A van, dragged bin, and jacket added sounds; headphones revealed jacket noise and a wooden crate helped only that problem.",
+    "Three clips of about four minutes were recorded; the middle includes a visually recognized blackbird, while other birds remain unidentified.",
+    "Traffic is part of the morning's sound; the result was a small record of the place waking, not pure birdsong.",
+    "Next weekend the narrator wants to check the key and use a tripod; an earlier start remains undecided because delivery schedules are unknown."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "5:20",
+    "Sunday",
+    "Farah",
+    "three clips",
+    "about four minutes",
+    "blackbird",
+    "Next weekend"
+  ],
+  "requiredForm": "First-person narrative with a natural event sequence.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "Other bird identities and delivery times are unknown.",
+    "An earlier start has not been decided."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Engaging, ordinary, reflective without overstating the practical outcome."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 94,
+      "quote": "Turn this into an engaging first-person account with a natural sequence and ordinary language."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 95,
+      "endByte": 194,
+      "quote": "Retain the events, practical lessons, and uncertainty about bird identification and delivery times."
+    }
+  ]
+}

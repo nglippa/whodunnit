@@ -1,0 +1,60 @@
+{
+  "caseId": "AC48V2-012",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the cabin key safe code.",
+  "acceptableEditScope": "Change only the code once supplied; preserve all other directions and precautions.",
+  "stableFactsAndClaims": [
+    "Drive slowly beyond the cattle grid; use the apple-tree passing place rather than the soft verge; park by the woodpile and leave the smaller gate clear.",
+    "The safe is beside the porch; close it and scramble digits after use. Lift the damp-weather front-door handle before turning the key; the kitchen spare opens only the back door.",
+    "The heater switch is outside the bathroom and needs about half an hour. Cloudiness should clear after standing; persistent cloudiness or unusual smell requires a call before use. Bottled water is in the pantry.",
+    "Use small firewood, keep the screen in place, and close the stove door before leaving the room. August chimney sweeping does not authorize unattended burning; keep the hall smoke alarm on.",
+    "On departure, strip beds into the basket without washing, empty the bin, close windows, switch off the heater, return the key, and message upon reaching the paved road."
+  ],
+  "authorizedFactualChanges": [
+    "Replace the existing code 6148 with a new code, but no replacement is supplied."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "August",
+    "about half an hour",
+    "all unrelated directions and precautions"
+  ],
+  "requiredForm": "Personal cabin arrival and departure notes.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The replacement key safe code."
+  ],
+  "voiceConstraints": [
+    "Friendly, detailed practical guidance with intact precautions."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 54,
+      "quote": "Update these arrival notes with the new key safe code."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 55,
+      "endByte": 105,
+      "quote": "The replacement code is missing from this request."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 106,
+      "endByte": 152,
+      "quote": "Keep all unrelated directions and precautions."
+    }
+  ]
+}

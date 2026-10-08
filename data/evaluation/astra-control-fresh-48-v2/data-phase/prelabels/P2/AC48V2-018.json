@@ -1,0 +1,55 @@
+{
+  "caseId": "AC48V2-018",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Lightly improve readability while preserving humor and uncertainty.",
+  "acceptableEditScope": "Small readability edits without explaining away the humor or settling the basil's cause of death.",
+  "stableFactsAndClaims": [
+    "The narrator tried growing basil on a windowsill; the pot now holds pencils.",
+    "Mum attributes the failure to overwatering, and the narrator allows she may be right.",
+    "The narrator was encouraging and plans to try mint next spring."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Mum",
+    "Next spring",
+    "basil",
+    "mint"
+  ],
+  "requiredForm": "Short first-person personal post.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "Overwatering is a possible explanation, not an established cause."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Dry humor, personification, conversational rhythm."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 47,
+      "quote": "Lightly edit this personal post for readability"
+    },
+    {
+      "supportsField": "ambiguity",
+      "field": "objective",
+      "startByte": 103,
+      "endByte": 153,
+      "quote": "Preserve the uncertainty about why the basil died."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 139,
+      "endByte": 182,
+      "quote": "Mum says I overwatered it. She may be right"
+    }
+  ]
+}

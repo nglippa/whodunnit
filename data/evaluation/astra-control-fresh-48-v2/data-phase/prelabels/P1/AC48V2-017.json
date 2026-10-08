@@ -1,0 +1,56 @@
+{
+  "caseId": "AC48V2-017",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Condense the meeting report into a usable account of proposals and next steps.",
+  "acceptableEditScope": "Reorganize and simplify while distinguishing proposals, tentative arrangements, agreed tasks, and absent commitments.",
+  "stableFactsAndClaims": [
+    "The May 21 meeting involved five archive volunteers and two town history group members; it generated proposals without spending decisions.",
+    "The photograph index is currently searchable only in the reading room; the history group proposed an online copy.",
+    "Donor personal contact details must be removed before index publication.",
+    "Opening is Tuesday afternoons and the first Saturday morning monthly; two volunteers offered Thursday coverage, but no rota was established and two people must be present.",
+    "The coordinator will ask remaining volunteers about regular Thursday availability.",
+    "Unlisted newspaper cutting boxes prompted a proposal to record dates and visible headlines without unfolding fragile pages; this does not replace conservation or authorize unrestricted use.",
+    "The coordinator will identify publishable fields, gather availability, and estimate listing time for June review.",
+    "There is no public launch date, purchase approval, or promised summer opening session."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "May 21",
+    "five archive volunteers",
+    "two members",
+    "Tuesday afternoons",
+    "first Saturday morning",
+    "Thursday afternoon",
+    "June meeting"
+  ],
+  "requiredForm": "Concise meeting report focused on proposals and next steps.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "Online publication, Thursday opening, and cutting listing remain proposals subject to further information."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain, concise, administratively precise about status."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 84,
+      "quote": "Turn this meeting report into a concise, usable account of proposals and next steps."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 85,
+      "endByte": 206,
+      "quote": "Preserve what was agreed, what remains tentative, the privacy concern, and the absence of spending or launch commitments."
+    }
+  ]
+}

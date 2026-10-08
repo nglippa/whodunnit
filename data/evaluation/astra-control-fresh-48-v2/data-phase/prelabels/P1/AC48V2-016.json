@@ -1,0 +1,50 @@
+{
+  "caseId": "AC48V2-016",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Rewrite the methods and results note in direct academic prose.",
+  "acceptableEditScope": "Substantial prose cleanup while preserving design, measurements, limitations, and cautious conclusions.",
+  "stableFactsAndClaims": [
+    "Arrangement A puts labels at the front edge; B puts them above the relevant shelf.",
+    "Twelve participants each performed one search under each arrangement; order alternated between participants.",
+    "Median times were 19 seconds for A and 24 seconds for B.",
+    "No uncertainty interval was calculated; participants were staff familiar with the room.",
+    "The task used one deliberately misplaced label, unlike ordinary searches that may involve multiple labels, unfamiliar categories, or interruptions.",
+    "The results support a further trial, not broad superiority; visitors would test whether the observed difference extends to unfamiliar users."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Arrangement A",
+    "arrangement B",
+    "Twelve participants",
+    "19 seconds",
+    "24 seconds"
+  ],
+  "requiredForm": "Academic methods and results note.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Direct academic prose with cautious evidential claims."
+  ],
+  "zeroToleranceTraps": [
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 65,
+      "quote": "Rewrite this methods and results note into direct academic prose."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 27,
+      "quote": "A comparison was made by us"
+    }
+  ]
+}

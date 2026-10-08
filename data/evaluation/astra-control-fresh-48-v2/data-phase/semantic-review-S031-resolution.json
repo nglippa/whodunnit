@@ -1,0 +1,21 @@
+{
+  "caseId": "AC48V2-039",
+  "decision": "PASS",
+  "sourceObjectiveSpecificRationale": "The complete S031 source concerns laboratory quality-control failure, repeat testing, clinical escalation, sample review, and instrument return to service. The candidate concerns recording filenames, naming exceptions, uncertain sound descriptions, joint-team codes, and limited naming checks. Their shared distinction between an immediate check and a separate investigation or check is generic scope language. The procedural-reorganization objectives do not establish overlap between these substantively different sources.",
+  "referencePath": "data/fixtures/objective-feasibility/sources.json",
+  "referencePointer": "/30/text",
+  "findingDispositions": [
+    {
+      "findingIndex": 6,
+      "disposition": "BENIGN",
+      "rationale": "The supplied source establishes a laboratory procedure distinct from the recording-naming memo. The shared separate-check limitation is conventional wording."
+    },
+    {
+      "findingIndex": 7,
+      "disposition": "BENIGN",
+      "rationale": "This repeats the same underlying source match. S031 and its supplied objectives resolve the concern without using withheld audit prose."
+    }
+  ],
+  "overall": "REPLACE",
+  "requestedReferences": []
+}

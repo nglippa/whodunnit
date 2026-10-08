@@ -1,0 +1,64 @@
+{
+  "caseId": "AC48V2-010",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Add the new solo piece title and update the performance date.",
+  "acceptableEditScope": "Only the requested title and date changes are authorized, but neither replacement is supplied.",
+  "stableFactsAndClaims": [
+    "Mara Venn is a stage performer based in Bellweather.",
+    "Recent work includes Nell in Lantern House's The Quiet Orchard and a primary-school storytelling tour.",
+    "She occasionally runs voice workshops at the neighborhood arts center.",
+    "Her quoted approach also appears in her introductory workshop title; the workshop concerns pacing, breath, and clear versus loud speech.",
+    "The venue is the Old Pump Room; the venue sells tickets, while the arts center handles neither reservations nor seat availability."
+  ],
+  "authorizedFactualChanges": [
+    "Add the solo piece's title and replace the existing June 14 date only when the missing details are supplied."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Mara Venn",
+    "Bellweather",
+    "Nell",
+    "Lantern House",
+    "The Quiet Orchard",
+    "leave room for the listener.",
+    "Old Pump Room"
+  ],
+  "requiredForm": "Performer biography without fabricated title or date.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The new solo piece's title.",
+    "The updated performance date."
+  ],
+  "voiceConstraints": [
+    "Informative third-person biography; preserve ticketing limitations."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 101,
+      "quote": "Revise this biography to include the title of Mara's new solo piece and the updated performance date."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 102,
+      "endByte": 180,
+      "quote": "Those details are not supplied; do not infer them from the existing biography."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 350,
+      "endByte": 380,
+      "quote": "\"leave room for the listener.\""
+    }
+  ]
+}

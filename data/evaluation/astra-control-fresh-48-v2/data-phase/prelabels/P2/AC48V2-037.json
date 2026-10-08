@@ -1,0 +1,57 @@
+{
+  "caseId": "AC48V2-037",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Make the desk-space sentence match the email's informal voice.",
+  "acceptableEditScope": "Change only the sentence about the organizational result and additional desk surface.",
+  "stableFactsAndClaims": [
+    "The narrator sorted a spare-cable drawer; three cables belong to devices no longer owned and one may belong to the desk lamp.",
+    "Useful cables went into a labeled biscuit tin, leaving more desk space.",
+    "The following tie joke remains part of the email.",
+    "The found charger has orange tape at one end.",
+    "The narrator offers delivery tomorrow or collection during lunch."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "CABLES, PROBABLY",
+    "Three",
+    "orange tape",
+    "tomorrow"
+  ],
+  "requiredForm": "Email with only the desk-space sentence changed.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The desk-lamp cable identification remains unproved."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Informal, dryly humorous; preserve surrounding jokes and uncertainty."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 77,
+      "quote": "Make the sentence about gaining desk space sound like the rest of this email."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 78,
+      "endByte": 152,
+      "quote": "Change only that sentence; keep “CABLES, PROBABLY” exactly as written."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "objective",
+      "startByte": 110,
+      "endByte": 132,
+      "quote": "“CABLES, PROBABLY”"
+    }
+  ]
+}

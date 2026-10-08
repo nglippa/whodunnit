@@ -1,0 +1,358 @@
+{
+  "reviewerId": "SEM1",
+  "attempt": 2,
+  "changedCaseIds": [
+    "AC48V2-001",
+    "AC48V2-002",
+    "AC48V2-003",
+    "AC48V2-004",
+    "AC48V2-008",
+    "AC48V2-019",
+    "AC48V2-020",
+    "AC48V2-025",
+    "AC48V2-026",
+    "AC48V2-028",
+    "AC48V2-029",
+    "AC48V2-030",
+    "AC48V2-033",
+    "AC48V2-035",
+    "AC48V2-039",
+    "AC48V2-047",
+    "AC48V2-048"
+  ],
+  "priorRejectionDispositionsPreserved": true,
+  "cases": [
+    {
+      "caseId": "AC48V2-001",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The replacement concerns a downloaded, self-paced audio walk with tunnel signal loss and a market-blocked final stop. Prior organized walks and walking-map projects do not reproduce these playback and route-contingency instructions. The new museum audio-guide peer is a visitor review rather than the same introduction or transformation.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-116"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-012"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-019"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-002",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The timecard guide distinguishes corrections from missing-shift additions, preserves original and proposed entries during supervisor review, and prohibits substituting an inaccurate date to bypass validation. This is substantively different from the rejected folding-table source and prior import, reimbursement, and request-status guidance.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "B011"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-022"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-058"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-003",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The literary analysis examines how two fictional recollections make a bell either a warning or a consequence, and how a final-chapter rope detail affects interpretation without settling chronology. Historical document variants and the unchanged bridge-report peer share uncertainty, but not this literary mechanism or character-explanation structure.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "M014"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-024"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-004",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The adult swimming account distinguishes breathing difficulty from needing reassurance that stopping remains possible, with incremental floating practice and a protected calendar heading. Prior novice sewing anecdotes share modest progress and humor but have different events and practical problems. The replacement no longer uses the rejected inherited-object grief architecture.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-031"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-020"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-008",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The replacement updates two specifications for browser-local manuscript recovery while preserving preview, restoration into a separate document, storage restrictions, and shared-profile privacy. Prior mobile drafts concern submission and retry recovery, not this recovery-copy workflow. Common local storage and retention concepts do not establish scenario duplication.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "D017"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-054"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-019",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The museum visitor reports listening to nine of sixteen stops, clock noise interfering with playback, useful transcripts, and a specific map-numbering suggestion. Prior tentative design feedback and the new outdoor audio-walk introduction do not reproduce this limited firsthand review or its clipped comic delivery.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-018"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "B022"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-001"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-020",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The karaoke account centers on unsolicited enrollment, postponing withdrawal, celebrating a friend's new job, skipping a turn without incident, and uncertainty about singing later. Prior humorous social gatherings and beginner-learning accounts do not reproduce that sequence. It no longer shares the rejected bereavement-and-keepsake scenario.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-007"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-014"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-004"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-025",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The replacement introduces substantive overlap with unchanged case 021: glaze samples on clay tiles, a comparative finding of fewer pinholes, kiln-firing details, and explicit limits on what the trial establishes. Changing the sample labels and adding color variation retains the same distinctive ceramics-trial source structure. The differing edit scopes do not resolve that peer duplication.",
+      "references": [
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-021"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C012"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-026",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The personal message thanks a friend for a silent-film recommendation, identifies a thief carrying a door as the comic highlight, and explains missed title cards and likely rewatching. The prior neighborhood cinema reopening account has different events, purpose, and emotional framing. This replacement removes the rejected blue-vessel return scenario.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A028"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-028",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The family guessing-game recollection preserves a distinctive lighthouse description and shifts attention from scoring to an aunt's inventions. Prior board-game thanks concern rules, cleanup, and a different social event. Shared playful family or game topics do not reproduce this recollection.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-014"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-020"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-029",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The rate-and-total update belongs to an indexing invoice with twelve hours, proof-check boundaries, pagination dependencies, a delivered alphabetical index, and a catalogue payment reference. Prior kitchen hire fees and the unchanged invoice reconciliation notice share billing vocabulary but not this work scope or arithmetic structure.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-040"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-006"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-030",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The setup sheet changes a supplied sample rate and filename prefix while preserving raw recordings, excerpt offsets, microphone-position notes, failed takes, and processed-copy identification. Prior export-package guidance and current audio peers do not reproduce those technical capture settings or the two-value update. Its overlap with case 039 is a recording domain, not the same policy.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "E004"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-039"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-040"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-033",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The missing revised edition size concerns numbered linocut prints, artist initials, image-versus-sheet dimensions, and a photographed proof. Prior unavailable grain, attendance, and event details involve substantively different sources. A missing replacement value alone does not establish overlap.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-011"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-031"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-035",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The isolated simplification concerns inspecting cooled rolls within a tray-traceable batch process, with separately recorded dusting flour and a baker deciding the significance of split crusts. Prior dimensional quality bulletins and ceramics defects have different materials, procedures, and requested transformations. The tasting peer measures preferences rather than production defects.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-004"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C012"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-038"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-039",
+      "decision": "ESCALATE",
+      "sourceObjectiveSpecificRationale": "The visible memo distinguishes new and existing recording names, audible actions from imagined uses, uncertain sound identification, joint-team codes, and limited initial checks. However, the new lexical match points to an unsupplied prior source at /30/text, without even the matching phrase. That source must be supplied before its scenario and transformation overlap can be resolved. The related audit prose is not needed.",
+      "references": [
+        {"path": "data/fixtures/objective-feasibility/sources.json", "pointer": "/30/text"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "B015"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-030"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-040"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-047",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The replacement retains the established unsupported-resolution trap identified in PVC-039: incomplete provenance, competing unverified explanations, and a request to state a definitive factual interpretation the record cannot establish. Here the requested authoritative meaning of map circles would suppress the explicitly unresolved alternatives. Changing the artifact from a chart version to map annotations does not resolve that source/objective structural resemblance.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-039"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C028"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-048",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The replacement raises an undefined residency criterion for a current member with two residences, incomplete precedent, and a contact-address field that supplies no policy definition. This is a normative eligibility-interpretation problem, distinct from contradictory vote counts or an unidentified document version. The generic demand for certainty does not alone duplicate those factual reconstruction sources.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-039"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C011"},
+        {"path": "PACKET_JSON.currentCases", "id": "AC48V2-047"}
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "findingIndex": 0,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the ordinary 6-to-8 evening range occurs in the supplied repair-night source, which differs from the unchanged observatory scenario. Withheld label prose was not used."
+    },
+    {
+      "findingIndex": 1,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the supplied repair-night source establishes a different event despite the shared evening time range."
+    },
+    {
+      "findingIndex": 2,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition for the repeated time-range match. The supplied underlying source suffices; withheld review prose was not used."
+    },
+    {
+      "findingIndex": 3,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: preserving dry humor is generic objective wording and supplies no source-specific link to the unchanged basil account."
+    },
+    {
+      "findingIndex": 4,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the supplied appointment-reminder study concerns causal timing comparisons, whereas case 027 distinguishes gallery engagement from learning."
+    },
+    {
+      "findingIndex": 5,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the supplied classroom timeline study measures task responses across classes, not self-selected gallery-label use. The disclaimer is conventional."
+    },
+    {
+      "findingIndex": 6,
+      "disposition": "REQUEST_REFERENCES",
+      "rationale": "The referenced /30/text source and matching phrase are absent. The hash alone cannot establish whether the recording-naming memo has a benign phrase match or substantive prior overlap."
+    },
+    {
+      "findingIndex": 7,
+      "disposition": "REQUEST_REFERENCES",
+      "rationale": "This shares the new /30/text match's hash. Request the underlying source, not the withheld audit prose, to resolve the concern without using evaluation outputs."
+    },
+    {
+      "findingIndex": 8,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the supplied underlying source concerns an unapproved outdoor seed box. Pending library-manager approval does not duplicate the puzzle memo."
+    },
+    {
+      "findingIndex": 9,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the complete seed-shelf source differs from puzzle inspection, incomplete-puzzle lending, and a loan-system test."
+    },
+    {
+      "findingIndex": 10,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: this is another window onto the generic manager-approval phrase, cleared by the supplied seed-box source."
+    },
+    {
+      "findingIndex": 11,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the seed-box proposal and puzzle-lending proposal have different items, dependencies, and requested actions."
+    },
+    {
+      "findingIndex": 12,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: easier to follow while preserving is generic editing language. The withheld rationale was not used."
+    },
+    {
+      "findingIndex": 13,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the supplied market-stall source concerns temporary loading-entrance permission, whereas case 046 restricts walkers to a field path."
+    },
+    {
+      "findingIndex": 14,
+      "disposition": "BENIGN",
+      "rationale": "Reuse the prior disposition: the supplied underlying market-stall source resolves the ordinary permission phrase. The withheld prelabel was not used."
+    }
+  ],
+  "affectedPeerPairs": [
+    {
+      "caseIds": ["AC48V2-001", "AC48V2-019"],
+      "disposition": "BENIGN",
+      "rationale": "Both involve audio tours, but outdoor download, pacing, and route instructions differ from a museum visitor's partial listening coverage, transcript experience, and map suggestion."
+    },
+    {
+      "caseIds": ["AC48V2-001", "AC48V2-030"],
+      "disposition": "BENIGN",
+      "rationale": "The former seed-swap peer concern is absent from the replacements. Visitor playback instructions and raw-audio capture specifications are different scenarios and transformations."
+    },
+    {
+      "caseIds": ["AC48V2-003", "AC48V2-024"],
+      "disposition": "BENIGN",
+      "rationale": "The literary analysis compares character explanations and an unresolved fictional ending. The bridge account reconciles civic access dates, administrative explanations, and eyewitness reports. Shared caution about chronology is insufficient duplication."
+    },
+    {
+      "caseIds": ["AC48V2-004", "AC48V2-020"],
+      "disposition": "BENIGN",
+      "rationale": "The prior inherited-object grief concern does not apply to these replacements. Repeated swimming instruction and a single karaoke evening have different events, relationships, and practical decisions."
+    },
+    {
+      "caseIds": ["AC48V2-008", "AC48V2-031"],
+      "disposition": "BENIGN",
+      "rationale": "The replacements no longer share the shed announcement's courtesy phrase. Software recovery-copy retention and household tool-loan duration are different rules despite both using twenty-one days."
+    },
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-021"],
+      "disposition": "REPLACE",
+      "rationale": "Both sources describe glaze appearance on clay tiles, fewer pinholes in one glaze or sample, firing facts, and limits on conclusions from that firing. Replace the newly introduced case 025; the unchanged case 021's prior PASS is retained."
+    },
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-016"],
+      "disposition": "BENIGN",
+      "rationale": "A glaze-firing production record and a counterbalanced label-search study share only generic comparison and limitation language. The concrete designs and requested edits differ."
+    },
+    {
+      "caseIds": ["AC48V2-028", "AC48V2-020"],
+      "disposition": "BENIGN",
+      "rationale": "A family guessing game centered on an aunt's comic description differs from unsolicited karaoke enrollment and opting out during a friend's job celebration."
+    },
+    {
+      "caseIds": ["AC48V2-029", "AC48V2-006"],
+      "disposition": "BENIGN",
+      "rationale": "An indexing invoice's hourly rate and resulting charge differ from reconciliation of unpaid invoice count, balance, and oldest date. Billing is a generic shared topic."
+    },
+    {
+      "caseIds": ["AC48V2-030", "AC48V2-039"],
+      "disposition": "BENIGN",
+      "rationale": "The setup sheet preserves raw-versus-processed provenance while changing sample rate and prefix. The memo governs descriptive naming, existing-file exceptions, joint-team codes, and initial naming checks. Their shared recording-file domain does not itself duplicate the task."
+    },
+    {
+      "caseIds": ["AC48V2-030", "AC48V2-040"],
+      "disposition": "BENIGN",
+      "rationale": "Technical capture and file-preservation instructions differ from a first-person dawn-recording account with access delay, clothing noise, and uncertain bird identification."
+    },
+    {
+      "caseIds": ["AC48V2-035", "AC48V2-038"],
+      "disposition": "BENIGN",
+      "rationale": "Cooled-roll inspection and tray traceability differ from optional comments in a small preference tasting. Single-sentence simplification is a generic shared objective."
+    },
+    {
+      "caseIds": ["AC48V2-039", "AC48V2-040"],
+      "disposition": "BENIGN",
+      "rationale": "Uncertain sound identification appears in both, but an organization-wide file-naming policy differs from an individual's recording events and lessons. Historical clearance of case 039 remains pending the requested reference."
+    },
+    {
+      "caseIds": ["AC48V2-047", "AC48V2-003"],
+      "disposition": "BENIGN",
+      "rationale": "The map caption requests a definitive meaning for unexplained annotations; the literary analysis explicitly preserves uncertainty while comparing narrative interpretations. They do not share the same source/objective mismatch."
+    },
+    {
+      "caseIds": ["AC48V2-047", "AC48V2-024"],
+      "disposition": "BENIGN",
+      "rationale": "Unexplained map marks and conflicting bridge-reopening records are different evidential problems. Case 024 requests an honest unresolved account, whereas case 047 requests a single authoritative interpretation."
+    },
+    {
+      "caseIds": ["AC48V2-047", "AC48V2-048"],
+      "disposition": "BENIGN",
+      "rationale": "Determining the factual meaning and provenance of annotations differs from interpreting an undefined residency rule for two residences. A demand for certainty alone does not establish conceptual duplication."
+    }
+  ],
+  "requestedReferences": [
+    {
+      "path": "data/fixtures/objective-feasibility/sources.json",
+      "pointer": "/30/text",
+      "referenceGitBlobId": "259eb5bac16f9d999040471bf4784a7e5da2b1ad",
+      "requestedMaterial": "Complete pinned underlying source text and its corresponding objective, if one exists. Exclude audit, review, label, and arm-output prose.",
+      "relatedCaseIds": ["AC48V2-039"],
+      "relatedFindingIndices": [6, 7],
+      "reason": "The new lexical match supplies only a hash and pointers. Its underlying scenario cannot be compared with the recording-naming memo from the available packet."
+    }
+  ],
+  "overall": "REQUEST_REFERENCES"
+}

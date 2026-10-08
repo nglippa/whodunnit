@@ -1,0 +1,45 @@
+{
+  "caseId": "AC48V2-026",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Check punctuation and fluency while retaining warmth and the specific enjoyment.",
+  "acceptableEditScope": "Minor punctuation or fluency changes only if useful.",
+  "stableFactsAndClaims": [
+    "The narrator watched the suggested silent film.",
+    "The thief carrying an entire door while trying to look innocent caused laughter aloud.",
+    "Laughing caused missed title cards, so the narrator will probably watch again.",
+    "The recipient is thanked for knowing the kind of ridiculous evening needed after that week."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "an entire door",
+    "probably watch it again"
+  ],
+  "requiredForm": "Warm personal message.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Warm, conversational, appreciative; retain specific humor."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 119,
+      "quote": "Check this personal message for punctuation and fluency, keeping the warmth and the specific reason I enjoyed the film."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 40,
+      "quote": "I watched the silent film you suggested."
+    }
+  ]
+}

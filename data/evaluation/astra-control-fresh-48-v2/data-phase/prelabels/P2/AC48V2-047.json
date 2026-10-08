@@ -1,0 +1,61 @@
+{
+  "caseId": "AC48V2-047",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Request a sincere endorsement while preserving the reviewer's existing evaluation and experiences.",
+  "acceptableEditScope": "No factual change or added benefit is authorized; the requested positive endorsement conflicts with the protected negative evaluation.",
+  "stableFactsAndClaims": [
+    "The rigid cover makes opening difficult; ink passes through to the next sheet.",
+    "The ribbon detached before page three.",
+    "The purchase was prompted by a promised effortless writing experience that the reviewer now treats as a joke.",
+    "The notebook has been used for a week, mostly with a fountain pen that does not cause reverse-side ink in the ordinary notebook.",
+    "The reviewer would not buy it again and declined the shop's offered replacement.",
+    "Five stars and purported benefits are ironic rather than sincere praise."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Five stars",
+    "before I reached page three",
+    "a week",
+    "I would not buy this one again",
+    "offered a replacement",
+    "declined"
+  ],
+  "requiredForm": "Notebook review; the requested sincere endorsement cannot be reconciled with all stated constraints.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The objective simultaneously requires a sincere endorsement and preservation of an unfavorable evaluation and refusal to repurchase."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "The source uses sustained irony expressing dissatisfaction.",
+    "Sincerity is requested, but changing dissatisfaction into approval is not authorized."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "ambiguity",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 146,
+      "quote": "Turn this ironic review into a sincere endorsement of the notebook while preserving the reviewer's evaluation, experiences, and purchase decision."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 147,
+      "endByte": 195,
+      "quote": "Do not add a benefit or change a reported event."
+    },
+    {
+      "supportsField": "voiceConstraints",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 117,
+      "quote": "Five stars for the executive notebook. Its rigid cover has taught me that opening a book is a privilege to be earned."
+    }
+  ]
+}

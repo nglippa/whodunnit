@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-007",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Apply confirmed changes to event scheduling, capacity, and entry.",
+  "acceptableEditScope": "Replace the stated event date, hours, visitor capacity, and entrance; preserve everything else.",
+  "stableFactsAndClaims": [
+    "The lift reaches roof level and a steward is available at its door.",
+    "Each family reserves one arrival slot through the school portal.",
+    "The earlier slot is usually quieter; cloud cover affects viewing and no particular object is guaranteed.",
+    "The astronomy club explains the telescope and supplies printed sky maps.",
+    "Wear a warm coat; hot drinks are in the science foyer.",
+    "Unsafe wind cancels the roof telescope session, while the indoor demonstration continues."
+  ],
+  "authorizedFactualChanges": [
+    "Friday, February 6, from 7 to 9 p.m. becomes Saturday, February 7, from 6 to 8 p.m.",
+    "40 visitors becomes 32 visitors.",
+    "Science building entry becomes entry through the west courtyard gate."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Saturday, February 7",
+    "6 to 8 p.m.",
+    "32 visitors",
+    "west courtyard gate"
+  ],
+  "requiredForm": "Family observatory event announcement.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Welcoming, practical, explicit about viewing and weather limits."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 148,
+      "quote": "Use these confirmed changes: the event is Saturday, February 7, from 6 to 8 p.m.; capacity is 32 visitors; entry is through the west courtyard gate."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 22,
+      "quote": "The school observatory"
+    }
+  ]
+}

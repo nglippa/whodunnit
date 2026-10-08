@@ -1,0 +1,56 @@
+{
+  "caseId": "AC48V2-040",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Create an engaging first-person account with natural sequencing and ordinary language.",
+  "acceptableEditScope": "Rewrite inflated prose while retaining events, practical lessons, and stated uncertainties.",
+  "stableFactsAndClaims": [
+    "The narrator borrowed a recorder from the neighbourhood arts cupboard, read its instructions the night before, and expected rising early to be the main challenge.",
+    "At 5:20 Sunday the spare key did not fit the new allotment lock, which replaced the previous one during the week.",
+    "Waiting for Farah caused missed early birdsong; she came to water beans, let the narrator in, and showed a dry equipment spot.",
+    "A van, dragged bin, and jacket rubbing the microphone added sound; headphones revealed the jacket noise.",
+    "A wooden crate helped jacket noise but did not remove van or bin sounds.",
+    "Three clips lasted about four minutes each; the middle included a visually recognized blackbird, but other birds were unidentified.",
+    "Traffic belonged to that morning's soundscape; the narrator should not describe the whole clip as named bird calls.",
+    "Next weekend the narrator wants to check the key and use a tripod; going earlier is undecided because delivery schedules are unknown."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "5:20",
+    "Sunday",
+    "Farah",
+    "three clips",
+    "about four minutes each",
+    "blackbird"
+  ],
+  "requiredForm": "Engaging first-person personal account.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "Other birds are unidentified.",
+    "Delivery times and whether the narrator will arrive earlier are unknown."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Natural, ordinary language; modest reflection grounded in events."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 94,
+      "quote": "Turn this into an engaging first-person account with a natural sequence and ordinary language."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 95,
+      "endByte": 194,
+      "quote": "Retain the events, practical lessons, and uncertainty about bird identification and delivery times."
+    }
+  ]
+}

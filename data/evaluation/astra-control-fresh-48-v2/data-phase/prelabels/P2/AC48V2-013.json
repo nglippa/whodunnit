@@ -1,0 +1,43 @@
+{
+  "caseId": "AC48V2-013",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Simplify the sentence describing the table's position.",
+  "acceptableEditScope": "Edit that sentence only; retain the title, touch permissions, access problem, and relocation instruction.",
+  "stableFactsAndClaims": [
+    "Visitors may touch the sample cloth on the small table but not the hanging work.",
+    "The current table position makes reaching it difficult for wheelchair users.",
+    "The table should move closer to the entrance."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "A Map of Almost Home."
+  ],
+  "requiredForm": "Existing text with only the table-position sentence simplified.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain, precise access-related wording."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 54,
+      "quote": "Simplify only the sentence about the table's position."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 73,
+      "quote": "The exhibit label must retain the artist's title, \"A Map of Almost Home.\""
+    }
+  ]
+}

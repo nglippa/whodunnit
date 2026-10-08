@@ -1,0 +1,41 @@
+{
+  "reviewerId": "SEM1",
+  "attempt": 4,
+  "caseId": "AC48V2-025",
+  "decision": "PASS",
+  "sourceObjectiveSpecificRationale": "The scene's distinctive sequence—placing a chessboard between beds, orienting a sleeping brother's knights toward the window, watching a cleaner's brush descend, moving a pawn, and waiting beside the empty pillow—is not reproduced in the supplied prior universe or current peers. Prior quiet domestic scenes and family-game accounts have different actions, relationships, and narrative structures. The restrained-flow objective is generic and does not establish overlap. No omitted reference is needed to resolve a specific resemblance.",
+  "references": [
+    {
+      "path": "data/evaluation/holdout-v2/frozen/documents.json",
+      "id": "A011"
+    },
+    {
+      "path": "data/evaluation/holdout/frozen/documents.json",
+      "id": "C021"
+    },
+    {
+      "path": "PACKET_JSON.currentCases",
+      "id": "AC48V2-043"
+    },
+    {
+      "path": "PACKET_JSON.currentCases",
+      "id": "AC48V2-028"
+    }
+  ],
+  "affectedPeerPairs": [
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-043"],
+      "disposition": "BENIGN",
+      "rationale": "The chess scene presents immediate third-person actions involving a sleeping brother. The reflection concerns a sister's relocation and continuing mixed feelings. Quiet domestic imagery does not duplicate their scenarios."
+    },
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-028"],
+      "disposition": "BENIGN",
+      "rationale": "Silent chess play beside a sleeping sibling differs from a comic family guessing-game recollection centered on an aunt's invented description."
+    }
+  ],
+  "newLexicalFindingsReviewed": 0,
+  "inheritedLexicalFindingsDispositioned": 15,
+  "requestedReferences": [],
+  "overall": "PASS"
+}

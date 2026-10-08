@@ -1,0 +1,56 @@
+{
+  "caseId": "AC48V2-034",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the cabin's nightly price and bus time with updated values.",
+  "acceptableEditScope": "Only the price and bus-time replacements; neither new value can be inferred.",
+  "stableFactsAndClaims": [
+    "The narrator booked the little cabin for a walking weekend with Jo.",
+    "The source price is £84 a night; the owner reports the last bus at the village shop at 7:10.",
+    "The cabin has a wood stove, but they must bring kindling.",
+    "The narrator will send the route after checking the footbridge."
+  ],
+  "authorizedFactualChanges": [
+    "Replace the nightly price with an unspecified revised amount.",
+    "Replace the bus time with an unspecified latest timetable time."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Jo",
+    "£84 as the existing price",
+    "7:10 as the existing time",
+    "village shop",
+    "kindling",
+    "footbridge"
+  ],
+  "requiredForm": "Informal personal message; replacements require missing values.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The revised nightly price.",
+    "The latest timetable bus time."
+  ],
+  "voiceConstraints": [
+    "Informal, friendly, practical."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 136,
+      "quote": "Replace the nightly price with the revised amount and the bus time with the latest timetable time. I have not included either new value."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 57,
+      "quote": "Hi Jo, I booked the little cabin for our walking weekend."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "caseId": "AC48V2-046",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace only the full route's stated distance.",
+  "acceptableEditScope": "Change 7 kilometres to 8 kilometres in the length sentence; preserve every other word.",
+  "stableFactsAndClaims": [
+    "The spring route starts at the old mill bridge and ends at the orchard gate.",
+    "The estimate is about three hours including stops but excluding lunch; bring food because the orchard cafe is closed for repairs.",
+    "The narrow timber bridge has only a downstream handrail; suitability for every mobility aid is not promised and no formal access survey exists.",
+    "Discuss access needs with the organiser; the surfaced shorter route misses the orchard and rejoins only at the finish.",
+    "Dogs stay on leads, sheep may be hidden, both gates must close, and permission covers only the marked field path.",
+    "The organiser checks the river notice at 8 a.m.; timber-bridge closure cancels the full route, while the shorter route depends on river-path conditions.",
+    "Absence of cancellation is not universal safety confirmation; check messages before departure.",
+    "Hall toilets open at 9 a.m.; the walk starts at 9:30; parking is limited, lift sharing optional and unarranged, and the bus stop is outside the hall.",
+    "Reply by Friday without reserving vehicle space or committing to the longer route; bring waterproofing and a drink."
+  ],
+  "authorizedFactualChanges": [
+    "7 kilometres becomes 8 kilometres."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "8 kilometres",
+    "about three hours",
+    "Leave room for the flock.",
+    "8 a.m.",
+    "9 a.m.",
+    "9:30",
+    "Friday",
+    "All other source wording"
+  ],
+  "requiredForm": "Existing walking-group route notice with one distance replacement.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the existing practical, qualified safety and accessibility wording."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 85,
+      "quote": "Replace only “7 kilometres” with “8 kilometres” in the route length sentence."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 86,
+      "endByte": 181,
+      "quote": "Preserve all other wording, including the duration estimate and “Leave room for the flock.”"
+    }
+  ]
+}

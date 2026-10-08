@@ -1,0 +1,57 @@
+{
+  "caseId": "AC48V2-033",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Correct the linocut edition size to the artist's revised figure.",
+  "acceptableEditScope": "Only edition size may change, but the required replacement is absent.",
+  "stableFactsAndClaims": [
+    "The source lists an edition of 180 prints.",
+    "Each print has its individual number and artist's initials beneath the image.",
+    "The paper is unframed; dimensions describe the image, not the sheet.",
+    "The photograph shows a proof; buyers receive individually numbered edition prints."
+  ],
+  "authorizedFactualChanges": [
+    "Replace 180 with the artist's revised edition size once supplied; no revised number is available."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "180 as the existing stated size",
+    "individual edition number"
+  ],
+  "requiredForm": "Catalogue description without an invented edition size.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The artist's revised edition size."
+  ],
+  "voiceConstraints": [
+    "Precise catalogue wording."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 63,
+      "quote": "Correct the stated edition size to the artist's revised figure."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 64,
+      "endByte": 106,
+      "quote": "That revised figure has not been provided."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 65,
+      "quote": "The catalogue describes this linocut as an edition of 180 prints."
+    }
+  ]
+}

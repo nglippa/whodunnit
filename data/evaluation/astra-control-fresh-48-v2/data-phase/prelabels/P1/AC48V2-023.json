@@ -1,0 +1,55 @@
+{
+  "caseId": "AC48V2-023",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Clarify the planning update, particularly the disputed school booking status.",
+  "acceptableEditScope": "Expose the conflicting attributed statements without deciding between them or supplying dates.",
+  "stableFactsAndClaims": [
+    "A grant decision is expected in early summer.",
+    "An award arriving before the lease ends would allow retaining the rehearsal room through August.",
+    "A later award would lead to using the school hall until another room is found.",
+    "The treasurer calls the school booking provisional; the director calls it confirmed.",
+    "Both asked for publication this week."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "early summer",
+    "through August",
+    "this week",
+    "provisional",
+    "confirmed"
+  ],
+  "requiredForm": "Member-facing planning update that clearly attributes the disagreement.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "The actual status of the school booking is unresolved.",
+    "Exact grant and lease dates are not supplied."
+  ],
+  "missingPropositions": [
+    "A verified school booking status needed to state one settled status."
+  ],
+  "voiceConstraints": [
+    "Clear, neutral, honest about uncertainty."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 155,
+      "quote": "Make this planning update clearer for members, especially the status of the school booking, without choosing whose statement is correct or inventing dates."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 45,
+      "quote": "We expect the grant decision in early summer."
+    }
+  ]
+}

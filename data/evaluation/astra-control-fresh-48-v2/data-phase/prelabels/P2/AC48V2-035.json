@@ -1,0 +1,48 @@
+{
+  "caseId": "AC48V2-035",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Simplify the specified surface-inspection sentence.",
+  "acceptableEditScope": "Edit only that sentence and retain inspection after cooling.",
+  "stableFactsAndClaims": [
+    "Batch flour weight excludes dusting flour, which must be recorded separately.",
+    "Trays hold eight rolls with expansion space; the baker checks the first tray before dividing remaining dough.",
+    "Visual inspection occurs after the rolls cool.",
+    "Split crusts go in comments and do not automatically require discard; the baker assesses intended use.",
+    "Keep tray numbers with observations and do not combine different trays in one entry."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "eight rolls",
+    "once the rolls have cooled",
+    "comments column",
+    "tray number"
+  ],
+  "requiredForm": "Batch instructions with one sentence simplified.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain procedural wording; preserve decision authority and timing."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 37,
+      "quote": "Simplify only the sentence beginning "
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 93,
+      "endByte": 190,
+      "quote": "Retain the point at which the inspection happens and preserve the rest of the batch instructions."
+    }
+  ]
+}

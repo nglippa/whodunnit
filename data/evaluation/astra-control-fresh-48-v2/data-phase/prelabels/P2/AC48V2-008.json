@@ -1,0 +1,62 @@
+{
+  "caseId": "AC48V2-008",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update recovery save frequency and retention throughout the announcement.",
+  "acceptableEditScope": "Apply the two supplied specifications consistently; preserve behavior, privacy limits, event date, and tone.",
+  "stableFactsAndClaims": [
+    "Recovery copies are local to the same device and are not independent backups against device loss or storage failure.",
+    "The panel shows title, last local save time, and approximate size; contents appear only through Preview.",
+    "Preview opens saved text alongside the current document without replacing either; closing it commits no change.",
+    "Restore requires title confirmation and creates a new document; the current document remains open and merging is manual.",
+    "Blocked browser storage produces a message and no copies; no substitute is silently uploaded.",
+    "Shared-device users should clear copies because others using the browser profile may preview them.",
+    "The June 2 session demonstrates previewing, restoring, and removing copies; absent members receive a written guide afterward."
+  ],
+  "authorizedFactualChanges": [
+    "Every two minutes becomes every five minutes.",
+    "Fourteen days becomes twenty-one days."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "five minutes",
+    "twenty-one days",
+    "June 2",
+    "Preview",
+    "Restore"
+  ],
+  "requiredForm": "Member announcement.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the considered, reassuring, formal tone."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 123,
+      "quote": "Apply these confirmed specifications: local recovery saves occur every five minutes, and copies remain for twenty-one days."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 181,
+      "endByte": 252,
+      "quote": "Preserve its other behavior, privacy limitations, event date, and tone."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 271,
+      "endByte": 327,
+      "quote": "It will be demonstrated at the member session on June 2."
+    }
+  ]
+}

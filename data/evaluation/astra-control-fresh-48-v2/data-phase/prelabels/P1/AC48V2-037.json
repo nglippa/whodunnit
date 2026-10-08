@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-037",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Make only the desk-space sentence match the email's informal voice.",
+  "acceptableEditScope": "Rewrite that sentence alone; retain the exact tin label and all surrounding wording.",
+  "stableFactsAndClaims": [
+    "The narrator sorted the spare-cable drawer.",
+    "Three cables belong to devices no longer owned; one probably belongs to the desk lamp but is unverified.",
+    "Useful cables are in a biscuit tin labeled CABLES, PROBABLY.",
+    "Sorting has freed desk surface area.",
+    "The found charger has orange tape at one end; it can be dropped off tomorrow or collected during lunch."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "CABLES, PROBABLY",
+    "Three",
+    "orange tape",
+    "tomorrow",
+    "All other email wording"
+  ],
+  "requiredForm": "Existing personal email with only the desk-space sentence changed.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The desk-lamp cable identification remains unverified."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Conversational, dryly humorous, informal; retain the surrounding joke about a sentence wearing a tie."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 152,
+      "quote": "Make the sentence about gaining desk space sound like the rest of this email. Change only that sentence; keep “CABLES, PROBABLY” exactly as written."
+    },
+    {
+      "supportsField": "voiceConstraints",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 77,
+      "quote": "I finally sorted the drawer where every spare cable goes to become a mystery."
+    }
+  ]
+}

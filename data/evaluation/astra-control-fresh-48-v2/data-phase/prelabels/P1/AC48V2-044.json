@@ -1,0 +1,57 @@
+{
+  "caseId": "AC48V2-044",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Change only the coordinator's summary timing to the supplied deadline.",
+  "acceptableEditScope": "Replace after the final reading in the specified sentence with 5 July; preserve all other wording and the exact noticeboard phrase.",
+  "stableFactsAndClaims": [
+    "The trial runs 3 May to 28 June, comparing two leaf-mulched beds near bicycle racks with two bare-soil beds.",
+    "Beds were selected randomly by numbered slips after planting; bean counts are equal but heights already vary.",
+    "All four beds use the same watering schedule, with rain decisions recorded for every bed; the trial does not test water savings from condition-specific watering.",
+    "Record soil temperature and wilted-plant counts Tuesday at noon using the drawer probe's depth mark.",
+    "Missing readings stay blank and are reported; no guessing or copied prior values.",
+    "Results are a local practical starting point, not proof across locations or crops; shade begins after 2 p.m. and drainage differs from hall plots.",
+    "The summary lists measurements and gaps; repetition may be considered, but mulch expansion is not agreed.",
+    "Visitors ask from the path and must not walk between beds during readings."
+  ],
+  "authorizedFactualChanges": [
+    "The coordinator's summary deadline changes from after the final reading to 5 July."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "5 July",
+    "3 May",
+    "28 June",
+    "Tuesday at noon",
+    "2 p.m.",
+    "small trial, useful questions.",
+    "All other source wording"
+  ],
+  "requiredForm": "Existing trial instructions with one timing replacement.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the existing modest, careful procedural voice exactly."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 110,
+      "quote": "Change the coordinator's summary deadline to 5 July, replacing “after the final reading” in that sentence."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 111,
+      "endByte": 191,
+      "quote": "Make only that update and preserve “small trial, useful questions.” exactly."
+    }
+  ]
+}

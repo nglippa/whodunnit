@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-030",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the sample rate and filename prefix.",
+  "acceptableEditScope": "Make exactly the two supplied setup-sheet updates.",
+  "stableFactsAndClaims": [
+    "Each folder contains the original recording and a separate sound-list text file.",
+    "Retain originals when excerpts are made; excerpts have separate filenames and notes locating their start in the original.",
+    "Record microphone position before moving equipment because sound alone cannot recover it.",
+    "Mark failed takes in notes rather than silently removing them.",
+    "Do not apply noise reduction to raw files; identify processed copies as processed."
+  ],
+  "authorizedFactualChanges": [
+    "44.1 kHz becomes 48 kHz.",
+    "AMBER becomes CEDAR."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "48 kHz",
+    "CEDAR",
+    "all wording beyond the two replacements"
+  ],
+  "requiredForm": "Recording setup sheet with only two substitutions.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve existing direct technical instructions."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 71,
+      "quote": "Replace the sample rate with 48 kHz and the filename prefix with CEDAR."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 72,
+      "endByte": 128,
+      "quote": "Make only those two supplied updates to the setup sheet."
+    }
+  ]
+}

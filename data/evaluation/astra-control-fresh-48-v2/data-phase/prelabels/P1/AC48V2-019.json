@@ -1,0 +1,49 @@
+{
+  "caseId": "AC48V2-019",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Prepare the visitor note for a neighborhood zine through light editing.",
+  "acceptableEditScope": "Small editorial adjustments retaining clipped delivery, limited firsthand coverage, observations, and suggestion.",
+  "stableFactsAndClaims": [
+    "The visitor used the new audio guide and initially took the long route accidentally near the tapestry room.",
+    "The guide has 16 stops; the visitor heard nine before lunch and makes no judgment about the other seven.",
+    "The wooden printing block explanation was especially good.",
+    "A transcript is available during playback; the largest clock's strike obscured a few recorded words.",
+    "Stop numbers are beside objects; the visitor suggests adding them to the room map after difficulty finding the pottery case."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "16 stops",
+    "nine before lunch",
+    "other seven",
+    "stop numbers on the room map"
+  ],
+  "requiredForm": "First-person visitor note for a neighborhood zine.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Clipped sentences and fragments.",
+    "Wry observations without inflating the scope of the review."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 71,
+      "quote": "Prepare this visitor's note for a neighborhood zine with light editing."
+    },
+    {
+      "supportsField": "voiceConstraints",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 35,
+      "quote": "Tried the museum's new audio guide."
+    }
+  ]
+}

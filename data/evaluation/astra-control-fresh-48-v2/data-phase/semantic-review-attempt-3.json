@@ -1,0 +1,72 @@
+{
+  "reviewerId": "SEM1",
+  "attempt": 3,
+  "cases": [
+    {
+      "caseId": "AC48V2-025",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "B017 already explains saved filters as stored selection conditions and explicitly states that renaming a filter does not alter its conditions. The replacement paraphrases both behaviors as a saved search remembering filters and retaining them when renamed. The additional distinction from a fixed collection does not resolve this substantive product-help scenario overlap. The visible prior excerpt establishes the concern without requiring its omitted middle.",
+      "references": [
+        {
+          "path": "data/evaluation/holdout-v2/frozen/documents.json",
+          "id": "B017"
+        }
+      ]
+    },
+    {
+      "caseId": "AC48V2-047",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The notebook review combines sarcastic praise with concrete cover, ink-bleed, and detached-ribbon complaints, a comparison using the same fountain pen, refusal to repurchase, and a declined replacement. Its requested conversion from irony to sincere endorsement while retaining the evaluation is distinct from prior unresolved factual reconstruction and current residency-rule interpretation. No supplied prior source or current peer reproduces this product-review structure and stance transformation. This freshness decision does not resolve the requested rewrite.",
+      "references": [
+        {
+          "path": "data/evaluation/post-v3-comparison/frozen/cases.json",
+          "id": "PVC-039"
+        },
+        {
+          "path": "data/evaluation/holdout/frozen/documents.json",
+          "id": "M007"
+        },
+        {
+          "path": "PACKET_JSON.currentCases",
+          "id": "AC48V2-048"
+        }
+      ]
+    }
+  ],
+  "affectedPeerPairs": [
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-021"],
+      "disposition": "BENIGN",
+      "rationale": "The replacement removes the previously rejected glaze-trial duplication. Saved-search behavior and a kiln-typo correction have different sources and transformations."
+    },
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-008"],
+      "disposition": "BENIGN",
+      "rationale": "Saved selection criteria versus fixed collection contents differs from local recovery copies, previewing, restoration, and retention. Shared software-help and preservation language does not establish peer duplication."
+    },
+    {
+      "caseIds": ["AC48V2-025", "AC48V2-039"],
+      "disposition": "BENIGN",
+      "rationale": "Renaming a saved search without changing filters differs from recording-file naming policy, original-name documentation, and delivered-file exceptions. Their naming references serve different operational purposes."
+    },
+    {
+      "caseIds": ["AC48V2-047", "AC48V2-026"],
+      "disposition": "BENIGN",
+      "rationale": "A sarcastic negative product review with an endorsement-conversion request differs from a warm film-recommendation thank-you requiring punctuation and fluency edits."
+    },
+    {
+      "caseIds": ["AC48V2-047", "AC48V2-042"],
+      "disposition": "BENIGN",
+      "rationale": "Comic complaints occur in both, but defective-notebook evaluation and purchase refusal differ from greenhouse repair, measured replacement panes, and pickup arrangements."
+    },
+    {
+      "caseIds": ["AC48V2-047", "AC48V2-048"],
+      "disposition": "BENIGN",
+      "rationale": "Changing the expression of an explicitly negative evaluation differs from interpreting an undefined residency criterion. A difficult preservation constraint alone does not establish conceptual duplication."
+    }
+  ],
+  "newLexicalFindingsReviewed": 0,
+  "inheritedLexicalFindingsDispositioned": 15,
+  "requestedReferences": [],
+  "overall": "REPLACE"
+}

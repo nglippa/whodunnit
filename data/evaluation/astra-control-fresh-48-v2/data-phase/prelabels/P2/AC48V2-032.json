@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-032",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the workshop room and starter-kit wool color.",
+  "acceptableEditScope": "Replace the two specified phrases and leave the rest intact.",
+  "stableFactsAndClaims": [
+    "The starter kit also contains two needles and a foam pad.",
+    "Participants practise on sample fabric before their own items.",
+    "Bring a small worn area rather than a large tear; the session is for beginners.",
+    "The tutor can suggest an approach but cannot promise an invisible repair.",
+    "Watching without attempting repair is welcome.",
+    "Booking email is needed at entry but need not be printed.",
+    "The community cafe opens beforehand; refreshments are excluded from the price."
+  ],
+  "authorizedFactualChanges": [
+    "Room Alder becomes Room Willow.",
+    "Grey wool becomes navy wool."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Room Willow",
+    "navy wool",
+    "two needles",
+    "foam pad"
+  ],
+  "requiredForm": "Workshop reminder with two substitutions.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve practical, welcoming wording and repair limitations."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 104,
+      "quote": "Replace Room Alder with Room Willow and replace grey wool with navy wool in the starter kit description."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 105,
+      "endByte": 143,
+      "quote": "Leave the rest of the reminder intact."
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "caseId": "AC48V2-028",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Review clarity while preserving playfulness and the exact lighthouse description.",
+  "acceptableEditScope": "Small clarity edits without altering the quotation or family events.",
+  "stableFactsAndClaims": [
+    "The family played a guessing game with Aunt Sal after dinner.",
+    "Sal's lighthouse description delighted the group.",
+    "Ben guessed volcano and prompted more laughter.",
+    "Scorekeeping was unfinished; later rounds valued inspiring Sal over correct guesses."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Aunt Sal",
+    "Ben",
+    "a very tall torch with responsibilities,"
+  ],
+  "requiredForm": "Short family recollection.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Playful, affectionate, conversational."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 49,
+      "quote": "Review this short family recollection for clarity"
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 86,
+      "endByte": 132,
+      "quote": "“a very tall torch with responsibilities,”"
+    }
+  ]
+}

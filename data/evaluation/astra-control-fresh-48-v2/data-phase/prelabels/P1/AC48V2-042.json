@@ -1,0 +1,52 @@
+{
+  "caseId": "AC48V2-042",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Make the spare-pane request somewhat easier to follow while preserving voice and details.",
+  "acceptableEditScope": "Light clarity and flow changes; preserve the designated phrase exactly.",
+  "stableFactsAndClaims": [
+    "The narrator replaced the cracked greenhouse pane Saturday with Len holding the frame and offering loud advice.",
+    "The tomatoes now have a roof; the narrator's thumb is slightly sore.",
+    "Two spare panes would be useful if still available.",
+    "Each opening measured this morning is 28 by 35 centimetres.",
+    "The recipient should not make a special trip; pickup can happen after the narrator's Wednesday shift."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Len",
+    "Saturday",
+    "Two",
+    "28 by 35 centimetres",
+    "Wednesday",
+    "The tomatoes have already lodged their complaint"
+  ],
+  "requiredForm": "Informal request retaining its surrounding personal remarks.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "Whether the recipient still has the spare panes is conditional."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Dry humour, informal rhythm, playful personification."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 116,
+      "quote": "Make this request a little easier to follow while preserving the dry humour, informal rhythm, and practical details."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "objective",
+      "startByte": 117,
+      "endByte": 185,
+      "quote": "Keep “The tomatoes have already lodged their complaint” exactly."
+    }
+  ]
+}

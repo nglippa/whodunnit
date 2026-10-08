@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "final-freshness-disposition",
+  "status": "PASS",
+  "caseCount": 48,
+  "peerPairsScreened": 1128,
+  "finalLexicalFindingCount": 15,
+  "finalFlaggedPeerPairCount": 0,
+  "finalScreenPath": "data/evaluation/astra-control-fresh-48-v2/data-phase/freshness-lexical-screen-attempt-4.json",
+  "finalScreenSha256": "65fb1c9cece285a5e8c6eaf7dea3cf9355b26dc54bc1111dd4d53ed01047fdc9",
+  "semanticReviewerId": "SEM1",
+  "semanticReviewerSessionId": "01a1161c-6abc-70f2-8cd2-07fe286fe807",
+  "semanticReviewRecords": [
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/semantic-review-attempt-1.json",
+      "sha256": "209270260028367acf845e294364cf33884032798b46c17dd356b824f541467d"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/semantic-review-D020-resolution.json",
+      "sha256": "2e2aa6e0f7c3440deef8b2e4f1d288cf3c95f66f32fd2532a73035d868c616e7"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/semantic-review-attempt-2.json",
+      "sha256": "06e884dbb5cce01b3cdb19b1e44b6445f18cc599f34ab2351654896d83f54b95"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/semantic-review-S031-resolution.json",
+      "sha256": "b85fd9adbf7458561ad674042633ba668cbc895f7864f3c8949413af5b2529f1"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/semantic-review-attempt-3.json",
+      "sha256": "21fd37eec0bdcb1b59c6885e190cef5f3ba3ad743f990158e25a7540ca90adb8"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/semantic-review-attempt-4.json",
+      "sha256": "8a14afe40f02f8669047c99998b6307aed637ced5d49b54d14ca6db4f826cd41"
+    }
+  ],
+  "dispositions": [
+    {
+      "caseId": "AC48V2-001",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-002",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-003",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-004",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-005",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-006",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-007",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-008",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-009",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-010",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-011",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-012",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-013",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-014",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-015",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-016",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-017",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-018",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-019",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-020",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-021",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-022",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-023",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-024",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-025",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-026",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-027",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-028",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-030",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-031",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-032",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-033",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-034",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-035",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-036",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-037",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-038",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-040",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-041",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-042",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-043",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-044",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-045",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-046",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-047",
+      "decision": "PASS"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "decision": "PASS"
+    }
+  ],
+  "replacementProvenancePath": "data/evaluation/astra-control-fresh-48-v2/data-phase/replacement-provenance.json",
+  "replacementProvenanceSha256": "852a0f896ca3143a28d4efdc38297c71afc04b1799e73bf9cf3b2b0eee29b763",
+  "rejectedDraftCount": 20,
+  "unresolvedReferences": 0,
+  "uncertaintyRule": "unresolved semantic resemblance replaced prelock; no post-lock replacement"
+}

@@ -1,0 +1,46 @@
+{
+  "caseId": "AC48V2-027",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Review clarity without conflating engagement and learning.",
+  "acceptableEditScope": "Clarify wording while retaining every research limitation.",
+  "stableFactsAndClaims": [
+    "The pilot measured label use, not improved recall.",
+    "Self-selected gallery routes produced varied exposure.",
+    "Results describe engagement within this sample.",
+    "They do not establish learning effects in a different exhibition."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "engagement",
+    "learning outcomes",
+    "within this sample"
+  ],
+  "requiredForm": "Research limitation paragraph.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Clear, cautious research language."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 124,
+      "quote": "Review this research limitation paragraph for clear wording while retaining the distinction between engagement and learning."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 98,
+      "quote": "The pilot measured how often visitors used the new labels, not whether the labels improved recall."
+    }
+  ]
+}

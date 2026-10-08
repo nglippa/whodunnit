@@ -1,0 +1,3294 @@
+[
+  {
+    "caseId": "AC48V2-001",
+    "P1RecordSha256": "fb28906dad76b07c3c3c1da23aa26a52cc109735b6f9d2ae3929448e41799510",
+    "P2RecordSha256": "0c6bfac4d9b2c8e581f5dde4746c5205a3fb33d29158199482782e59a0fac006",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only changes necessary for clarity; no revision is required if the instructions already work.",
+        "P2": "Retain clear wording; edit only an actual obstacle to following the walk."
+      },
+      "intendedObjective": {
+        "P1": "Assess whether visitors can follow the introduction; retain it if clear.",
+        "P2": "Assess whether the introduction is already clear enough for visitors."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "clock tower",
+          "about 35 minutes",
+          "Sunday",
+          "fountain"
+        ],
+        "P2": [
+          "35 minutes",
+          "clock tower",
+          "tunnel",
+          "Sunday",
+          "fountain"
+        ]
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The walk starts at the clock tower and takes about 35 minutes.",
+          "Download before leaving home because signal drops near the tunnel.",
+          "Visitors may pause and need not keep pace with the recording.",
+          "On Sunday the market blocks the final stop; finish at the fountain instead."
+        ],
+        "P2": [
+          "The walk starts at the clock tower and takes about 35 minutes.",
+          "Download before leaving home because signal drops near the tunnel.",
+          "Visitors may pause and need not keep pace with the recording.",
+          "On Sunday, finish at the fountain because the market blocks the final stop."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Clear, direct, reassuring visitor instructions."
+        ],
+        "P2": [
+          "Clear, practical, reassuring instructions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-002",
+    "P1RecordSha256": "102424d9b1da79c44fb864b938a5a41bd8fd6db55248380f6c10c45bfa39678e",
+    "P2RecordSha256": "83813ddbfb326c8bb924d9269d40f8c7c498143b75cb9ffdfa68650c5bc6d625",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Targeted clarification of genuine process misunderstandings; retain effective instructions.",
+        "P2": "Change only wording that could cause an employee to misunderstand the process."
+      },
+      "intendedObjective": {
+        "P1": "Check usability and correct only wording that could cause employees to misunderstand the process.",
+        "P2": "Check the guide for process misunderstandings."
+      },
+      "requiredForm": {
+        "P1": "Internal employee process guide.",
+        "P2": "Internal employee guide."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Corrections require the shift date, recorded and proposed times, and reason; each submission allows three shifts.",
+          "A request does not immediately change the timecard; the supervisor checks the shift record and contacts the employee if entries differ.",
+          "Status appears beside the original timecard; original and proposed entries remain visible until review ends.",
+          "Missing shifts use Add a shift, not Correct a shift; these ask for different information.",
+          "Rejected worked dates must be sent with the error message to scheduling; employees must not substitute an inaccurate date."
+        ],
+        "P2": [
+          "Corrections require shift date, recorded and proposed times, and a reason; each submission covers three shifts.",
+          "Requests do not immediately alter timecards; supervisors compare shift records and contact employees about differences.",
+          "Status appears beside the original timecard; original and proposed entries remain visible until review finishes.",
+          "Missing shifts use Add a shift, not Correct a shift.",
+          "Rejected worked dates and error messages go to scheduling; inaccurate substitute dates must not be submitted."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Practical, clear, procedural."
+        ],
+        "P2": [
+          "Direct procedural guidance with clear precautions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-003",
+    "P1RecordSha256": "426fc571f5fb2997e6742fce70065d32f48d1d3faf4a6279655b067fe625ead0",
+    "P2RecordSha256": "aead63fe10b6e3f8777f1ef304b70b4b6160e8a733682b5c52ed62853df8bbbf",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Minimal clarification that preserves the distinction between suggestive evidence and established fictional events.",
+        "P2": "Clarify ineffective wording without changing effective sentences or strengthening the interpretation."
+      },
+      "ambiguity": {
+        "P1": [
+          "The fictional sequence of bell and collapse is unresolved and must remain so."
+        ],
+        "P2": [
+          "The fictional sequence of bell and collapse remains unresolved."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Review clarity and the limits of literary interpretation while leaving effective sentences alone.",
+        "P2": "Review clarity and the limits of the literary interpretation."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Len",
+          "chapter 4",
+          "chapter 11",
+          "caretaker",
+          "loose bell rope"
+        ],
+        "P2": [
+          "Len",
+          "chapter 4",
+          "chapter 11",
+          "bell tower",
+          "loose bell rope"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Literary analysis with explicit interpretive limits.",
+        "P2": "Literary analysis retaining interpretive qualifications."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "In chapter 4 Len recalls the bell before the collapse; in chapter 11 the caretaker recalls the collapse before the bell.",
+          "Both are recollections without independent narrator confirmation.",
+          "Len interprets the bell as a warning; the caretaker interprets it as a consequence of falling masonry.",
+          "The text supports comparing explanations, not establishing the actual sequence.",
+          "The ending leaves timing unresolved; a loose bell rope may prompt reconsideration but does not prove the bell came first."
+        ],
+        "P2": [
+          "Chapter 4 gives Len's recollection of a bell before collapse; chapter 11 gives the caretaker's opposite sequence.",
+          "Neither recollection receives independent narrator confirmation.",
+          "Len interprets the bell as warning; the caretaker attributes it to falling masonry.",
+          "The final chapter leaves timing unresolved; the loose rope is suggestive but does not prove the bell came first."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Analytical, cautious, attentive to evidential distinctions."
+        ],
+        "P2": [
+          "Analytical, cautious, attentive to evidence versus suggestion."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-004",
+    "P1RecordSha256": "065458193c649d6b2761f333840d6f8c97468f946d28d295aa4817f877adfe8f",
+    "P2RecordSha256": "2c0f1d910a60d396691c5e1ba8aa4965a67b5f857d571ad143e8b680328ca73b",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only small clarity edits; preserve the exact calendar heading and the essay's modest account of progress.",
+        "P2": "Small clarity edits only; preserve the essay's events, qualifications, humor, and exact calendar heading."
+      },
+      "ambiguity": {
+        "P1": [
+          "The narrator has not chosen what to do after the last lesson."
+        ],
+        "P2": [
+          "The narrator's plans after the last lesson are undecided."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Identify distracting clarity problems in the personal essay with minimal intervention.",
+        "P2": "Address distracting clarity problems with minimal changes."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator wants to cross the pool without checking proximity to the edge; the instructor shows where the shallow lane ends.",
+          "Adults attend for different reasons; nobody demands explanations of childhood or fear.",
+          "The narrator paid for six lessons, struggles to relax while floating, and can put their face in and exhale steadily by the third lesson.",
+          "Crossing still involves stops for breathing or reassurance that stopping is possible; the instructor distinguishes these reasons.",
+          "Lessons occur in a municipal pool; another course or practice with a friend remains undecided.",
+          "The narrator can briefly look at blue tiles in mid-lane without needing the edge."
+        ],
+        "P2": [
+          "The narrator wanted to cross without checking proximity to the edge; the instructor showed where the shallow lane ended.",
+          "Adults attended for different reasons without being asked to justify fears; the narrator paid for six lessons.",
+          "Floating remained difficult; by lesson three the narrator could submerge their face and breathe out steadily.",
+          "Stopping for breath and stopping to retain the option were distinct problems handled calmly.",
+          "Lessons take place in a municipal pool; another course or practice with a friend remains undecided.",
+          "The narrator can briefly remain mid-lane without needing the edge."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Understated, concrete, gently humorous.",
+          "Preserve tentative progress and avoid a grand discovery about courage."
+        ],
+        "P2": [
+          "Restrained, conversational, self-aware humor.",
+          "Preserve modest progress without imposing a grand lesson about courage."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-005",
+    "P1RecordSha256": "b2ab9af9f933616b133a2dff05f398e09aee3d846b23c702817dcffe9966ddc1",
+    "P2RecordSha256": "84f112476bfd5c154d873bb59e5e0ddf3e42d534f4586f7c7be3a43ab72f435e",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Replace the appointment day, date, time, and entrance; retain all other instructions.",
+        "P2": "Replace the supplied appointment and entrance facts; keep all other instructions."
+      },
+      "intendedObjective": {
+        "P1": "Update the collection appointment and entrance using the supplied replacements.",
+        "P2": "Update the appointment date, time, and collection entrance."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Show the attendant the booking email.",
+          "Pieces will be wrapped, but the collector should bring a box.",
+          "Forward the email first if another person collects."
+        ],
+        "P2": [
+          "Show the attendant the booking email.",
+          "Pieces will be wrapped, but the collector should bring a box.",
+          "Forward the email beforehand if another person collects."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Direct, courteous instructions."
+        ],
+        "P2": [
+          "Courteous, practical appointment instructions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-006",
+    "P1RecordSha256": "8c76468f67067e07a049f333618562ae8d37637109dd6afdd73828218ab262f5",
+    "P2RecordSha256": "55cf3b9443009a5391fa16229eeb156d2f134d817de721e73dede9415e1d2152",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Change only those three facts; retain account status and payment instructions.",
+        "P2": "Change unpaid invoice count, total, and oldest date only; retain account status and instructions."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Three unpaid invoices becomes two.",
+          "$840 becomes $560.",
+          "March 12 becomes April 9."
+        ],
+        "P2": [
+          "Three unpaid invoices becomes two.",
+          "$840 becomes $560.",
+          "Oldest invoice date March 12 becomes April 9."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Update the invoice count, balance, and oldest invoice date from the completed reconciliation.",
+        "P2": "Update the three reconciliation facts."
+      },
+      "requiredForm": {
+        "P1": "Account review notice.",
+        "P2": "Account review notice retaining its status and payment guidance."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Review the attached statement and contact accounts if a payment appears missing.",
+          "Bank transfers use invoice references; combined transfers include every invoice number.",
+          "The account remains open; the notice requests reconciliation and is not a suspension notice.",
+          "A separate confirmation follows the records check.",
+          "Previously sent payments should be reported with transfer date and covered invoice numbers; do not send full bank statements or login details."
+        ],
+        "P2": [
+          "Review the attached statement and contact accounts about missing payments.",
+          "Bank transfers use invoice references; combined transfers include every invoice number.",
+          "The account remains open; this is reconciliation, not suspension, with separate confirmation after records are checked.",
+          "Previously sent payments should be reported with transfer date and covered invoice numbers.",
+          "Do not send full bank statements or bank login details."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Measured administrative tone; preserve the distinction from suspension."
+        ],
+        "P2": [
+          "Formal, neutral, non-suspension notice."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-007",
+    "P1RecordSha256": "9f12599dd89f00903e1022553ae206604c391d4692ebdbccc971d531499af7bb",
+    "P2RecordSha256": "5996948cc61d128bdae397059cd70cfcdae38907067223fb02e8cabc57e0ca60",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Replace the stated event date, hours, visitor capacity, and entrance; preserve everything else.",
+        "P2": "Update only those facts and preserve all remaining information."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Friday, February 6, from 7 to 9 p.m. becomes Saturday, February 7, from 6 to 8 p.m.",
+          "40 visitors becomes 32 visitors.",
+          "Science building entry becomes entry through the west courtyard gate."
+        ],
+        "P2": [
+          "Friday, February 6, 7 to 9 p.m. becomes Saturday, February 7, 6 to 8 p.m.",
+          "Capacity changes from 40 to 32 visitors.",
+          "Entry changes from the science building to the west courtyard gate."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Apply confirmed changes to event scheduling, capacity, and entry.",
+        "P2": "Apply the confirmed event schedule, capacity, and entrance changes."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The lift reaches roof level and a steward is available at its door.",
+          "Each family reserves one arrival slot through the school portal.",
+          "The earlier slot is usually quieter; cloud cover affects viewing and no particular object is guaranteed.",
+          "The astronomy club explains the telescope and supplies printed sky maps.",
+          "Wear a warm coat; hot drinks are in the science foyer.",
+          "Unsafe wind cancels the roof telescope session, while the indoor demonstration continues."
+        ],
+        "P2": [
+          "Lift access reaches the roof, with a steward at the lift door.",
+          "Families reserve one arrival slot through the school portal; the early slot is usually quieter.",
+          "Cloud cover affects visibility; no particular object is guaranteed.",
+          "The astronomy club explains the telescope and provides printed sky maps.",
+          "Wear a warm coat; hot drinks are in the science foyer.",
+          "Unsafe wind cancels the roof telescope session while the indoor demonstration continues."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Welcoming, practical, explicit about viewing and weather limits."
+        ],
+        "P2": [
+          "Welcoming and practical, with qualified visibility and safety claims."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-008",
+    "P1RecordSha256": "32f57580b531b72277f4a4c6fd1bba4034619f88df90ef55a6e1dd3cdc2049c3",
+    "P2RecordSha256": "387f20ccf5da149bebacdbdae65e0ad26a00160fe8d10f431c6f973e67c61ee8",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Change save frequency and retention period wherever stated; retain all other behavior, privacy limits, date, and tone.",
+        "P2": "Apply the two supplied specifications consistently; preserve behavior, privacy limits, event date, and tone."
+      },
+      "intendedObjective": {
+        "P1": "Update both local recovery specifications throughout the announcement.",
+        "P2": "Update recovery save frequency and retention throughout the announcement."
+      },
+      "requiredForm": {
+        "P1": "Member announcement retaining its existing tone.",
+        "P2": "Member announcement."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The panel gathers local drafts and identifying information; the member demonstration is June 2, with a written guide afterward for absentees.",
+          "Recovery copies stay on the same device and help after an unexpected tab closure; they are not independent backups and do not protect against device loss or storage failure.",
+          "The panel shows title, last local save time, and approximate size; contents appear only through Preview.",
+          "Preview opens saved text beside the current document, replaces neither, and can close without committing a change.",
+          "Restore requires title confirmation and creates a new document; the current document stays open and documents are not merged automatically.",
+          "Blocked browser storage means no local copies; no substitute is silently uploaded to the server.",
+          "Shared-device users should clear local copies because another person using the same browser profile may preview them.",
+          "The session and guide cover previewing, restoring, removing copies, and availability conditions."
+        ],
+        "P2": [
+          "Recovery copies are local to the same device and are not independent backups against device loss or storage failure.",
+          "The panel shows title, last local save time, and approximate size; contents appear only through Preview.",
+          "Preview opens saved text alongside the current document without replacing either; closing it commits no change.",
+          "Restore requires title confirmation and creates a new document; the current document remains open and merging is manual.",
+          "Blocked browser storage produces a message and no copies; no substitute is silently uploaded.",
+          "Shared-device users should clear copies because others using the browser profile may preview them.",
+          "The June 2 session demonstrates previewing, restoring, and removing copies; absent members receive a written guide afterward."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Considered, reassuring, courteous announcement tone."
+        ],
+        "P2": [
+          "Preserve the considered, reassuring, formal tone."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-009",
+    "P1RecordSha256": "6ceee27ba404ae09553e8a69857200e64268474b00830332e97b47d5b8357774",
+    "P2RecordSha256": "3e9fbdd25554a635e7809d287e1581a186354d446ba3816103b737d38458e2d8",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "missingPropositions",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Update the total only when the missing final amount is supplied; do not calculate or invent it.",
+        "P2": "A final-total update is requested but cannot be completed from the supplied information."
+      },
+      "ambiguity": {
+        "P1": [],
+        "P2": [
+          "The objective does not specify whether to remove the future-total sentence once a final figure is available."
+        ]
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "A final fundraising total is requested, but no replacement amount is authorized numerically."
+        ],
+        "P2": [
+          "Replace the interim total with the final concert-inclusive total once supplied; no replacement amount is authorized here."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Replace the interim fundraising total with the final post-concert total.",
+        "P2": "Replace the interim fundraising figure with the final post-concert total."
+      },
+      "missingPropositions": {
+        "P1": [
+          "The final fundraising total after the concert."
+        ],
+        "P2": [
+          "The final fundraising total after concert donations are counted."
+        ]
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "$2,150 as an interim figure",
+          "two volunteers"
+        ],
+        "P2": [
+          "$2,150 as the source's interim figure",
+          "two volunteers"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Fundraiser announcement; a completed final-total update requires the missing amount.",
+        "P2": "Fundraiser announcement; do not present an unavailable update as completed."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "$2,150 is the reported amount raised so far, not a supplied final total.",
+          "That interim amount covers wall preparation and part of the paint order.",
+          "The announcement thanks donors, equipment lenders, and people offering time.",
+          "Two volunteers are still needed to protect pavement on painting day."
+        ],
+        "P2": [
+          "The source reports $2,150 raised so far, covering wall preparation and part of the paint order.",
+          "A further total was to follow counting concert donations.",
+          "Thanks extend to donors, equipment lenders, and people offering time.",
+          "Two volunteers are still needed to protect the pavement on painting day."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Grateful, community-oriented, practical."
+        ],
+        "P2": [
+          "Informal, appreciative community announcement."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-010",
+    "P1RecordSha256": "61b2b6a38e2780b62ced07b3c44c128f0e00865ad1047bd085efe67e75e7979b",
+    "P2RecordSha256": "5e37b50a6b4c5fe470f792602f27dd2d0f7307105ed4149bcfd3cdaffd79ad50",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only the requested title addition and date update; both require supplied details and cannot be inferred.",
+        "P2": "Only the requested title and date changes are authorized, but neither replacement is supplied."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Add the new solo piece's title and replace the performance date once supplied; no actual replacement values are given."
+        ],
+        "P2": [
+          "Add the solo piece's title and replace the existing June 14 date only when the missing details are supplied."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Add the new solo piece's title and update Mara's performance date.",
+        "P2": "Add the new solo piece title and update the performance date."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Mara Venn",
+          "Bellweather",
+          "Nell",
+          "Lantern House",
+          "The Quiet Orchard",
+          "leave room for the listener.",
+          "Old Pump Room",
+          "June 14 as the existing date"
+        ],
+        "P2": [
+          "Mara Venn",
+          "Bellweather",
+          "Nell",
+          "Lantern House",
+          "The Quiet Orchard",
+          "leave room for the listener.",
+          "Old Pump Room"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Performer biography; requested completion depends on missing details.",
+        "P2": "Performer biography without fabricated title or date."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Mara Venn is a stage performer based in Bellweather.",
+          "Recent work includes Nell in Lantern House's The Quiet Orchard and a touring storytelling show for primary schools.",
+          "She runs occasional voice workshops at the neighborhood arts center.",
+          "Her quoted approach, also in the introductory workshop title, is leave room for the listener; the workshop addresses pacing, breath, and clear versus loud speech.",
+          "The biography currently reports June 14 at the Old Pump Room and a new solo piece without title or description.",
+          "The venue sells tickets; the arts center handles neither reservations nor availability confirmation."
+        ],
+        "P2": [
+          "Mara Venn is a stage performer based in Bellweather.",
+          "Recent work includes Nell in Lantern House's The Quiet Orchard and a primary-school storytelling tour.",
+          "She occasionally runs voice workshops at the neighborhood arts center.",
+          "Her quoted approach also appears in her introductory workshop title; the workshop concerns pacing, breath, and clear versus loud speech.",
+          "The venue is the Old Pump Room; the venue sells tickets, while the arts center handles neither reservations nor seat availability."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Informative biographical tone; retain reservation limitations."
+        ],
+        "P2": [
+          "Informative third-person biography; preserve ticketing limitations."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-011",
+    "P1RecordSha256": "2e7f60cff06a32b98ae1470ef48f4d40240456a833a7d22265d9a7516e2eeda4",
+    "P2RecordSha256": "3cc3de10ff99474a04c4c1c38038cade01b01a892b6675eb79488cdf0840a603",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints",
+      "zeroToleranceTraps"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Deadline replacement and directly related wording only; the new deadline must first be supplied.",
+        "P2": "Replace the deadline when provided; preserve unrelated shipment facts and the deadline-versus-arrival distinction."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Replace the dispatch deadline with a changed but unspecified deadline."
+        ],
+        "P2": [
+          "Replace September 8 with the workshop's new dispatch deadline, which is not supplied."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Update the dispatch deadline in the summary and related wording.",
+        "P2": "Update the changed dispatch deadline and related wording."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "GATE-732",
+          "six replacement hinges",
+          "one fitting guide",
+          "tracked ground service",
+          "September 8 as the existing deadline"
+        ],
+        "P2": [
+          "DISPATCH SUMMARY",
+          "GATE-732",
+          "six replacement hinges",
+          "one fitting guide",
+          "tracked ground service"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Dispatch summary with its practical guidance.",
+        "P2": "Dispatch summary retaining its labeled shipment details and explanatory guidance."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Order GATE-732 contains six replacement hinges and one fitting guide, sent by tracked ground service.",
+          "The existing dispatch deadline is September 8.",
+          "One carton holds the guide above a padded hinge envelope; check contents before discarding packaging.",
+          "A dispatch deadline is the latest workshop departure date, not arrival; transit depends on the carrier and an estimate may appear only after the first depot scan.",
+          "For damaged hinges, keep the carton and photograph the part and packing position for replacement and packing review."
+        ],
+        "P2": [
+          "Order GATE-732 contains six replacement hinges and one fitting guide, shipped by tracked ground service.",
+          "Parts share a single carton; the guide sits above the padded hinge envelope, which may be missed.",
+          "Dispatch deadline means latest workshop departure, not expected arrival.",
+          "Carrier route affects transit; delivery estimates may appear only after the first depot scan.",
+          "For damaged hinges, retain the carton and send photographs of the part and packing position."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Clear logistical instructions; distinguish dispatch from arrival."
+        ],
+        "P2": [
+          "Precise, practical shipment information."
+        ]
+      },
+      "zeroToleranceTraps": {
+        "P1": [
+          "invented_missing_replacement",
+          "stale_current_fact_presented_as_completed_after_authorized_update",
+          "collateral_unauthorized_factual_mutation"
+        ],
+        "P2": [
+          "invented_missing_replacement",
+          "stale_current_fact_presented_as_completed_after_authorized_update",
+          "material_unauthorized_meaning_change",
+          "collateral_unauthorized_factual_mutation"
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-012",
+    "P1RecordSha256": "b47cfbb392a9fb22857ef933265398ababb3df37093911f107672e1a94d5f87b",
+    "P2RecordSha256": "21877dbe6e67d50e277383897bf6f082fd521bdd8949fa39b2f779f8364554d7",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Replace only the code once the missing replacement is supplied.",
+        "P2": "Change only the code once supplied; preserve all other directions and precautions."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Replace the key safe code with a new code that is not provided."
+        ],
+        "P2": [
+          "Replace the existing code 6148 with a new code, but no replacement is supplied."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Update the cabin key safe code while keeping unrelated directions and precautions.",
+        "P2": "Update the cabin key safe code."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "6148 as the existing code",
+          "about half an hour",
+          "one minute",
+          "August"
+        ],
+        "P2": [
+          "August",
+          "about half an hour",
+          "all unrelated directions and precautions"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Cabin arrival and departure notes.",
+        "P2": "Personal cabin arrival and departure notes."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Drive slowly after the cattle grid; use the apple-tree passing place, avoid the soft verge, park by the woodpile, and keep the smaller gate clear.",
+          "The porch-post key safe currently uses 6148; slide the cover, align digits, pull the lever, then close and scramble it.",
+          "Lift the front-door handle before turning the key and do not force it; the kitchen spare opens only the back door.",
+          "The heater switch is outside the bathroom; allow about half an hour for hot water.",
+          "Water may initially be cloudy from air; let it stand a minute, and call before using persistently cloudy or unusually smelling water; bottled water is in the pantry.",
+          "Use small stove pieces, retain the screen, close the door before leaving the room, and do not leave it burning while everyone is out; the chimney was swept in August and the smoke alarm stays on.",
+          "At departure strip beds, basket sheets without washing, empty the bin, close windows, turn off the heater, return the key, and message after reaching the paved road."
+        ],
+        "P2": [
+          "Drive slowly beyond the cattle grid; use the apple-tree passing place rather than the soft verge; park by the woodpile and leave the smaller gate clear.",
+          "The safe is beside the porch; close it and scramble digits after use. Lift the damp-weather front-door handle before turning the key; the kitchen spare opens only the back door.",
+          "The heater switch is outside the bathroom and needs about half an hour. Cloudiness should clear after standing; persistent cloudiness or unusual smell requires a call before use. Bottled water is in the pantry.",
+          "Use small firewood, keep the screen in place, and close the stove door before leaving the room. August chimney sweeping does not authorize unattended burning; keep the hall smoke alarm on.",
+          "On departure, strip beds into the basket without washing, empty the bin, close windows, switch off the heater, return the key, and message upon reaching the paved road."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Personal, practical directions with intact precautions."
+        ],
+        "P2": [
+          "Friendly, detailed practical guidance with intact precautions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-013",
+    "P1RecordSha256": "0b9ffe217a305a5cfa74b592c48e15c228d43d5718a83555d4b527bc77d5ad7b",
+    "P2RecordSha256": "5cd971f81a57935d10923738004eb2c3869bdf526884e8fded4d3b381dca1cc1",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints",
+      "zeroToleranceTraps"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Edit only that sentence; preserve the exact artist's title and the touching distinction.",
+        "P2": "Edit that sentence only; retain the title, touch permissions, access problem, and relocation instruction."
+      },
+      "intendedObjective": {
+        "P1": "Simplify the single sentence describing the table's position.",
+        "P2": "Simplify the sentence describing the table's position."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "A Map of Almost Home.",
+          "sample cloth",
+          "hanging work"
+        ],
+        "P2": [
+          "A Map of Almost Home."
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing exhibit-related note with one sentence simplified.",
+        "P2": "Existing text with only the table-position sentence simplified."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Visitors may touch the sample cloth on the small table but may not touch the hanging work.",
+          "The table's current position makes access difficult for wheelchair users.",
+          "The table should be moved closer to the entrance."
+        ],
+        "P2": [
+          "Visitors may touch the sample cloth on the small table but not the hanging work.",
+          "The current table position makes reaching it difficult for wheelchair users.",
+          "The table should move closer to the entrance."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Plain, direct, accessibility-aware instructions."
+        ],
+        "P2": [
+          "Plain, precise access-related wording."
+        ]
+      },
+      "zeroToleranceTraps": {
+        "P1": [
+          "collateral_unauthorized_factual_mutation",
+          "material_unauthorized_meaning_change"
+        ],
+        "P2": [
+          "material_unauthorized_meaning_change",
+          "collateral_unauthorized_factual_mutation"
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-014",
+    "P1RecordSha256": "6ee345c0efb79bbca83445b428407a01fc3301ad0439d9fe6783c7f94a182905",
+    "P2RecordSha256": "65e36dbf16ac9b502e82783e08ece736c79b7762ffb6a371313b1a165ebb8324",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Delete one repeated occurrence; preserve all remaining reply content and the quoted fitting instruction.",
+        "P2": "Delete one occurrence of the repeated sentence and make only punctuation changes required by deletion."
+      },
+      "ambiguity": {
+        "P1": [
+          "Either duplicate occurrence could be removed if the remaining reply is coherent and otherwise preserved."
+        ],
+        "P2": [
+          "Either duplicate occurrence may be removed if one remains and the rest is preserved."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Remove the accidental duplicate sentence and adjust punctuation only if necessary.",
+        "P2": "Remove the accidental duplicate sentence."
+      },
+      "requiredForm": {
+        "P1": "Customer-service reply with the duplicate removed.",
+        "P2": "Customer reply retaining every other part of the text."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "A replacement handle can be sent after confirming the mug version.",
+          "Request a base photograph showing the model code, without receipt or payment information.",
+          "If the code is worn away, request approximate height and sliding-tab versus push-button lid.",
+          "Attach the replacement by hand only; a wrench can damage the threaded insert.",
+          "A handle does not fix a cracked insert; a crack photograph allows assessment before sending a part."
+        ],
+        "P2": [
+          "A replacement handle requires confirmation of mug version through a photograph of the base model code.",
+          "The photograph need not show receipts or payment information.",
+          "If the code is worn away, give approximate height and sliding-tab versus push-button lid details.",
+          "Hand tightening is required because a wrench can damage the threaded insert.",
+          "A replacement handle cannot fix a cracked insert; visible cracks require a close photograph for assessment before a part is sent."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Courteous, practical, precise."
+        ],
+        "P2": [
+          "Courteous, practical support reply."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-015",
+    "P1RecordSha256": "a7959f8b395ed0a5938b71a4bb910ef9b93be954ee67ecb704bdd0fa8a3b75f9",
+    "P2RecordSha256": "effacc442ceb3845ccd5b136a4c80c2026fcad0bdb9edf8d63cc15c2f1da48dc",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints",
+      "zeroToleranceTraps"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Rewrite and organize the wording while retaining actual steps and responsibilities; add no procedures.",
+        "P2": "Substantially simplify and organize wording while retaining every actual step and responsibility; add no procedures."
+      },
+      "intendedObjective": {
+        "P1": "Reconstruct the orientation note into clear, friendly instructions for a new volunteer.",
+        "P2": "Reconstruct the orientation note as clear, friendly instructions."
+      },
+      "requiredForm": {
+        "P1": "Usable volunteer orientation instructions.",
+        "P2": "Clear instructions for a new coffee stall volunteer; organization may change."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Get an apron from the cupboard beneath the sink on arrival.",
+          "Payment handling and drink preparation are distinct; new volunteers do not handle payments on their first shift.",
+          "The shift leader pairs the new volunteer with a drink preparer who shows order slips and the washing station.",
+          "Return the used apron to the laundry basket next to the cupboard and tell the leader verbally before leaving.",
+          "An unwell volunteer must tell the leader immediately and stop handling drinks."
+        ],
+        "P2": [
+          "Retrieve an apron from the cupboard beneath the sink on arrival.",
+          "Payment handling and drink preparation are distinct; new volunteers do not handle payments on their first shift.",
+          "The shift leader pairs the newcomer with a drink preparer who shows order slips and the washing station.",
+          "Put the used apron in the laundry basket next to the cupboard and verbally notify the shift leader before leaving.",
+          "An unwell volunteer must immediately tell the leader and stop handling drinks."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Clear, friendly, ordinary language addressed to a new volunteer."
+        ],
+        "P2": [
+          "Friendly, ordinary, direct instructions."
+        ]
+      },
+      "zeroToleranceTraps": {
+        "P1": [
+          "collateral_unauthorized_factual_mutation",
+          "material_unauthorized_meaning_change"
+        ],
+        "P2": [
+          "material_unauthorized_meaning_change",
+          "collateral_unauthorized_factual_mutation"
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-016",
+    "P1RecordSha256": "b19b073db0f86a68ad862409757eaeb6ddd850ca2553001e8a78c526c09f8b4d",
+    "P2RecordSha256": "62e39c6501e8941358264ebd4f49a6bbbe7dfceca7e82996dfd3c82bb7023d2b",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Substantial prose cleanup while preserving design, measurements, limitations, and cautious conclusions.",
+        "P2": "Recast sentence structure and wording without altering design, measurements, limitations, or conclusion."
+      },
+      "intendedObjective": {
+        "P1": "Rewrite the methods and results note in direct academic prose.",
+        "P2": "Rewrite the note in direct academic prose."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Arrangement A puts labels at the front edge; B puts them above the relevant shelf.",
+          "Twelve participants each performed one search under each arrangement; order alternated between participants.",
+          "Median times were 19 seconds for A and 24 seconds for B.",
+          "No uncertainty interval was calculated; participants were staff familiar with the room.",
+          "The task used one deliberately misplaced label, unlike ordinary searches that may involve multiple labels, unfamiliar categories, or interruptions.",
+          "The results support a further trial, not broad superiority; visitors would test whether the observed difference extends to unfamiliar users."
+        ],
+        "P2": [
+          "Arrangement A puts labels at the front edge; B puts them above the relevant shelf.",
+          "Twelve participants made one search per arrangement with order alternated between participants.",
+          "Median times were 19 seconds for A and 24 seconds for B.",
+          "No uncertainty interval was calculated; participants were staff already familiar with the room.",
+          "The task used one deliberately misplaced label; ordinary searches may involve multiple labels, unfamiliar categories, or interruptions.",
+          "Results support a further trial, particularly with visitors, rather than a broad superiority claim."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Direct academic prose with cautious evidential claims."
+        ],
+        "P2": [
+          "Direct academic prose with cautious evidential limits."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-017",
+    "P1RecordSha256": "ad096f0d384696b3e707e899db68cd5a88a4f5a1da7776ca220e9fbb5ef4adbe",
+    "P2RecordSha256": "91321f58f6eafcbd337f6d889e3f04f34d53e3126e20a2635a04689cb7f7776d",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Reorganize and simplify while distinguishing proposals, tentative arrangements, agreed tasks, and absent commitments.",
+        "P2": "Condense and reorganize the report without turning proposals or dependencies into commitments."
+      },
+      "ambiguity": {
+        "P1": [
+          "Online publication, Thursday opening, and cutting listing remain proposals subject to further information."
+        ],
+        "P2": [
+          "Publication, additional opening, and other commitments depend on further information and discussion."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Condense the meeting report into a usable account of proposals and next steps.",
+        "P2": "Produce a concise, usable meeting account of proposals and next steps."
+      },
+      "requiredForm": {
+        "P1": "Concise meeting report focused on proposals and next steps.",
+        "P2": "Concise meeting report with proposals, dependencies, and next steps clearly distinguishable."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The May 21 meeting involved five archive volunteers and two town history group members; it generated proposals without spending decisions.",
+          "The photograph index is currently searchable only in the reading room; the history group proposed an online copy.",
+          "Donor personal contact details must be removed before index publication.",
+          "Opening is Tuesday afternoons and the first Saturday morning monthly; two volunteers offered Thursday coverage, but no rota was established and two people must be present.",
+          "The coordinator will ask remaining volunteers about regular Thursday availability.",
+          "Unlisted newspaper cutting boxes prompted a proposal to record dates and visible headlines without unfolding fragile pages; this does not replace conservation or authorize unrestricted use.",
+          "The coordinator will identify publishable fields, gather availability, and estimate listing time for June review.",
+          "There is no public launch date, purchase approval, or promised summer opening session."
+        ],
+        "P2": [
+          "The May 21 meeting included five archive volunteers and two town history group members; no spending decisions were made.",
+          "The photograph index is currently searchable only in the reading room; an online copy was suggested, requiring removal of donors' personal contact details.",
+          "Current hours are Tuesday afternoons and the first Saturday morning monthly.",
+          "Two volunteers offered Thursday availability, but no rota was established; two people must be present and the coordinator will seek regular partners.",
+          "A preliminary cutting list would record dates and visible headlines without unfolding fragile pages; it would not replace conservation or permit unrestricted use.",
+          "The coordinator will list publishable index fields, gather Thursday availability, and estimate listing time for June review.",
+          "No public launch date, purchases, or summer start for extra opening were promised."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Plain, concise, administratively precise about status."
+        ],
+        "P2": [
+          "Plain, usable, accurate about tentative status."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-018",
+    "P1RecordSha256": "9ce8206d6ff6b608e8b51d5ed434c9f8672c4cd24a08ed361de1722af91ab36b",
+    "P2RecordSha256": "847411652815b7f6d9aef870356a17a53d0ffb9dbf2cacd6ba03e12fa56c741d",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Small readability edits without converting speculation about the basil into a confirmed cause.",
+        "P2": "Small readability edits without explaining away the humor or settling the basil's cause of death."
+      },
+      "ambiguity": {
+        "P1": [
+          "Why the basil died is uncertain."
+        ],
+        "P2": [
+          "Overwatering is a possible explanation, not an established cause."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Lightly improve readability while preserving dry humor, rhythm, and uncertainty.",
+        "P2": "Lightly improve readability while preserving humor and uncertainty."
+      },
+      "requiredForm": {
+        "P1": "Conversational personal post.",
+        "P2": "Short first-person personal post."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator tried growing basil on the windowsill; the pot now holds pencils.",
+          "Mum says the basil was overwatered; the narrator allows that she may be right.",
+          "The narrator was encouraging and plans to try mint next spring."
+        ],
+        "P2": [
+          "The narrator tried growing basil on a windowsill; the pot now holds pencils.",
+          "Mum attributes the failure to overwatering, and the narrator allows she may be right.",
+          "The narrator was encouraging and plans to try mint next spring."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Dry personification and self-deprecating humor.",
+          "Conversational rhythm; preserve qualified statements."
+        ],
+        "P2": [
+          "Dry humor, personification, conversational rhythm."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-019",
+    "P1RecordSha256": "a83905ec06e06a0e7cc214e8d7ce1a359fc2b2c003f73b8b87198ac0276df191",
+    "P2RecordSha256": "9e60c40ffe65593bb97e0a3f0d825ae0717813e9099295d820d9fc7c999a2d4d",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Small editorial adjustments retaining clipped delivery, limited firsthand coverage, observations, and suggestion.",
+        "P2": "Small editorial changes preserving clipped delivery, firsthand limits, observations, and the specific map suggestion."
+      },
+      "intendedObjective": {
+        "P1": "Prepare the visitor note for a neighborhood zine through light editing.",
+        "P2": "Lightly edit the visitor note for a neighborhood zine."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "16 stops",
+          "nine before lunch",
+          "other seven",
+          "stop numbers on the room map"
+        ],
+        "P2": [
+          "16 stops",
+          "nine",
+          "other seven",
+          "put the stop numbers on the room map"
+        ]
+      },
+      "requiredForm": {
+        "P1": "First-person visitor note for a neighborhood zine.",
+        "P2": "Visitor's note for a neighborhood zine."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The visitor used the new audio guide and initially took the long route accidentally near the tapestry room.",
+          "The guide has 16 stops; the visitor heard nine before lunch and makes no judgment about the other seven.",
+          "The wooden printing block explanation was especially good.",
+          "A transcript is available during playback; the largest clock's strike obscured a few recorded words.",
+          "Stop numbers are beside objects; the visitor suggests adding them to the room map after difficulty finding the pottery case."
+        ],
+        "P2": [
+          "The visitor initially took the long route accidentally; an arrow and sunlight confused direction in the tapestry room.",
+          "The guide has 16 stops; the visitor heard nine before lunch and does not judge the other seven.",
+          "The wooden printing blocks explanation was especially good.",
+          "A transcript is available during playback; the largest clock caused a few missed words.",
+          "Stop numbers are already beside objects; the suggestion is to add them to the room map.",
+          "The visitor eventually found the pottery case after another circuit of the tapestries."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Clipped sentences and fragments.",
+          "Wry observations without inflating the scope of the review."
+        ],
+        "P2": [
+          "Clipped sentences, wry observations, limited personal evaluation."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-020",
+    "P1RecordSha256": "bbf39a76102b00eed7b51fcd5c0fa57cf7454bedb9a0c7d19dd8c1877a352ef9",
+    "P2RecordSha256": "a32139317a8222f8ba8017ed75d719449b3b978b1277f45911bc984c785dec21",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Small flow edits; do not recast declining the turn as triumph or failure.",
+        "P2": "Light changes to transitions or wording; no reframing of skipping the turn as triumph or failure."
+      },
+      "ambiguity": {
+        "P1": [
+          "The narrator may sing next time or may supervise the list; no decision is made."
+        ],
+        "P2": [
+          "The narrator has not decided whether to sing next time."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Lightly improve flow while retaining humor, uncertain future singing, and a neutral skipped turn.",
+        "P2": "Lightly improve flow while retaining humor and the unresolved possibility of singing later."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The friend added the narrator to the karaoke list while the narrator read the menu and chose a familiar song.",
+          "The friend offered removal; the narrator delayed approaching the busy host.",
+          "The outing celebrated the friend's new job after months of applications and the narrator's often redundant vacancy messages.",
+          "One singer had a tambourine; another forgot a verse and continued; both received applause.",
+          "The narrator asked to skip when called; the host simply moved on, the friend squeezed their shoulder, then sang, and the narrator cheered.",
+          "The evening was good; another outing is welcome, but singing next time remains undecided."
+        ],
+        "P2": [
+          "The friend added the narrator to karaoke while the narrator read the menu and chose a familiar song without prior agreement.",
+          "The narrator delayed asking removal while the host handled a cable.",
+          "The outing celebrated the friend's new job after months of applications.",
+          "One singer brought a tambourine; another forgot a verse and continued; both received applause.",
+          "The narrator asked to skip, the host calmly moved on, and nobody demanded an explanation.",
+          "The friend sang confidently with imperfect tuning; the narrator cheered.",
+          "The evening was good; returning and singing next time remain qualified possibilities."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Conversational humor, restrained social observations.",
+          "Preserve uncertainty and avoid a success-or-failure narrative."
+        ],
+        "P2": [
+          "Conversational humor, self-awareness, understated social observations.",
+          "Avoid an imposed success or failure narrative."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-021",
+    "P1RecordSha256": "d1337d30b6dc102f51d5d65d1592718da645a7202a89fadfc3bc99b9acc70172",
+    "P2RecordSha256": "bfeb31ad3a858c75342eb767e91178783e3f2860799ef5456a64765b6bd19770",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "One exact spelling replacement; every other word, number, and title stays unchanged.",
+        "P2": "Replace killn with kiln only; every other word and number must remain exact."
+      },
+      "intendedObjective": {
+        "P1": "Correct the single spelling error killn to kiln.",
+        "P2": "Correct the single spelling error."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "980 degrees",
+          "20 minutes",
+          "Surface / first firing.",
+          "All source wording except killn"
+        ],
+        "P2": [
+          "980 degrees",
+          "20 minutes",
+          "Surface / first firing.",
+          "all words and numbers except killn"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing note preserved verbatim except for the typo.",
+        "P2": "Source text exactly preserved except the specified spelling correction."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The kiln was held at 980 degrees for 20 minutes before cooling.",
+          "The trial concerns glaze appearance on sample tiles, not vessel strength or food safety.",
+          "Cream glaze had fewer visible pinholes than gray in this batch.",
+          "The worksheet title matches distributed sheets and must also be used with photographs.",
+          "The note reports no later cooling-schedule trial."
+        ],
+        "P2": [
+          "The kiln was held at 980 degrees for 20 minutes before cooling.",
+          "The trial examined glaze appearance on sample tiles, not vessel strength or food safety.",
+          "Cream glaze had fewer visible pinholes than gray glaze in this batch.",
+          "The worksheet title matches distributed sheets and must also be used for photographs.",
+          "The note reports closed-kiln cooling, not a later alternative cooling schedule."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Preserve the existing wording and voice exactly."
+        ],
+        "P2": [
+          "Preserve the supplied wording and trial limitations."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-022",
+    "P1RecordSha256": "f264417a6cca1f0d33c3bfcafb87a1a741ff62d8cb1a7ddad89e0d5667626f21",
+    "P2RecordSha256": "9eba8d913c2e2dd69ee4d39b06d88a0e5ad6011b9cce458ae625a4c12c11edee",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Change his extension from 218 to 241; leave other numbers, packing details, condition claims, and agreement wording intact.",
+        "P2": "Replace Soren's 218 with 241 without changing other numbers, contacts, wording, or facts."
+      },
+      "intendedObjective": {
+        "P1": "Replace only Soren Pell's workshop telephone extension.",
+        "P2": "Update Soren Pell's workshop extension only."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Soren Pell",
+          "241",
+          "Lila Darrow",
+          "281",
+          "2187",
+          "receipt does not constitute acceptance.",
+          "eight panels",
+          "Panel C",
+          "approximately 4 centimeters"
+        ],
+        "P2": [
+          "Soren Pell",
+          "241",
+          "Lila Darrow",
+          "281",
+          "2187",
+          "receipt does not constitute acceptance.",
+          "eight panels",
+          "A through H",
+          "Panel C",
+          "4 centimeters"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing handover note with a single contact-number update.",
+        "P2": "Existing handover note with one contact extension replaced."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The note records collection condition and packing, does not amend transport terms or certify post-delivery condition, and accompanies receipt photographs.",
+          "Eight panels A–H are divided between larger and narrower crates with foam; two sealed mounting-clip bags are beneath the narrow crate's panels and go to the installer.",
+          "Panel C has a photographed shallow rear scratch about 4 centimeters from the lower left corner viewed from behind; it is invisible from the front and does not reach the edge.",
+          "No universal harmlessness claim is made; inspect the scratch before fitting the rear bracket.",
+          "Receipt signature records arrival, not inspected acceptance; the venue checks contents before accepting or reporting concerns.",
+          "Lila Darrow is the carrier collection contact at extension 281; the receipt number is 2187.",
+          "Wet or distorted crates should be photographed before opening, reported, and retained; keep panels upright pending inspection.",
+          "The exhibition layout is unconfirmed and no installation order is prescribed."
+        ],
+        "P2": [
+          "The note records collection condition and packing, not amended transport terms or certified delivery condition; carrier and workshop representatives receive copies kept with receipt photographs.",
+          "Eight panels A–H are split A–D in the larger crate and E–H in the narrower crate, separated by foam; two sealed clip bags are beneath the narrow-crate panels for the installer.",
+          "Panel C has a photographed rear scratch about 4 centimeters from the lower left viewed from behind; it is not visible from the front or extended to the edge, and universal harmlessness is not claimed.",
+          "The installer should inspect the scratch area before attaching the rear bracket.",
+          "Receipt records arrival rather than inspected acceptance; the venue inspects before accepting or reporting concerns.",
+          "Lila Darrow's collection extension is 281; receipt 2187 belongs on missing-clip or unpacking-damage messages.",
+          "Wet or distorted crates require photographs before opening and coordinator notification; retain packing and keep panels upright for inspection.",
+          "No final layout or first-installation instruction is established."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Precise operational and contractual distinctions."
+        ],
+        "P2": [
+          "Preserve careful condition, acceptance, and responsibility qualifications."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-023",
+    "P1RecordSha256": "a6224cef44d3e3c69feed33c671d8b282b03daadd36ae77081ec763ed9ca2a0b",
+    "P2RecordSha256": "886f07228736b2ca7a0d4a3b257797b86499e481d7554ee542ae8ba02684b44a",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "missingPropositions",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Expose the conflicting attributed statements without deciding between them or supplying dates.",
+        "P2": "Reword for members while retaining attribution, conditional plans, and unresolved disagreement."
+      },
+      "ambiguity": {
+        "P1": [
+          "The actual status of the school booking is unresolved.",
+          "Exact grant and lease dates are not supplied."
+        ],
+        "P2": [
+          "The school booking's actual status is unresolved.",
+          "Exact grant and lease dates are not supplied."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Clarify the planning update, particularly the disputed school booking status.",
+        "P2": "Clarify the plan and honestly communicate the disputed school booking status."
+      },
+      "missingPropositions": {
+        "P1": [
+          "A verified school booking status needed to state one settled status."
+        ],
+        "P2": [
+          "Information establishing whether the school booking is provisional or confirmed."
+        ]
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "early summer",
+          "through August",
+          "this week",
+          "provisional",
+          "confirmed"
+        ],
+        "P2": [
+          "early summer",
+          "August",
+          "this week",
+          "provisional",
+          "confirmed"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Member-facing planning update that clearly attributes the disagreement.",
+        "P2": "Member planning update with attributed conflicting statements."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "A grant decision is expected in early summer.",
+          "An award arriving before the lease ends would allow retaining the rehearsal room through August.",
+          "A later award would lead to using the school hall until another room is found.",
+          "The treasurer calls the school booking provisional; the director calls it confirmed.",
+          "Both asked for publication this week."
+        ],
+        "P2": [
+          "The grant decision is expected in early summer.",
+          "An award before lease expiry permits retaining the rehearsal room through August.",
+          "A later award leads to using the school hall until another room is found.",
+          "The treasurer calls the school booking provisional; the director calls it confirmed.",
+          "Both requested publication this week."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Clear, neutral, honest about uncertainty."
+        ],
+        "P2": [
+          "Clear, neutral, transparent about uncertainty."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-024",
+    "P1RecordSha256": "fbdd2e4d1b19dcb62e2d0e08acf59d76236032725bfc60c39d9a14d73d34b4c3",
+    "P2RecordSha256": "98c9d423907db8ba78fbcd87c59b183fa1019d529ad2e9ea3bb59cd33a44a3d6",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "missingPropositions",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Organize and clarify the evidence while retaining unresolved differences and withholding unsupported responsibility assignments.",
+        "P2": "Organize and clarify the supplied accounts without settling dates, causal explanations, or responsibility."
+      },
+      "ambiguity": {
+        "P1": [
+          "Actual reopening sequence and reason for delay remain unresolved.",
+          "The reason the two resident recollections differ is unknown."
+        ],
+        "P2": [
+          "The reopening sequence, reasons for delay, and explanation of residents' different experiences remain unresolved."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Create a readable walking-group account that honestly presents conflicting dates and explanations.",
+        "P2": "Create a readable walking-group account that preserves conflicting evidence."
+      },
+      "missingPropositions": {
+        "P1": [
+          "Evidence establishing a single sequence or responsibility is absent."
+        ],
+        "P2": [
+          "Evidence establishing a single sequence or responsibility, including the absent inspection and barrier records."
+        ]
+      },
+      "requiredForm": {
+        "P1": "Readable short account for the walking group.",
+        "P2": "Shareable account for the walking group, with conflicting claims attributed."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The report lists September 3 as the first public reopening; an attached notice says closure lasted until September 10.",
+          "The report does not explain whether dates concern different hours, sections, or a reversed reopening.",
+          "The contractor attributes delay to a missing inspection signature; the council says the signature was filed and attributes delay to incomplete barrier removal.",
+          "Neither summary includes the inspection sheet or barrier removal log.",
+          "One member recalls crossing September 5; another recalls the east entrance locked that evening.",
+          "The bundle does not establish a single sequence; both recollections may be accurate."
+        ],
+        "P2": [
+          "The report lists first public reopening as September 3; an attached notice says public closure lasted until September 10.",
+          "The bundle does not explain whether hours, bridge sections, or a reversed reopening account for the difference.",
+          "The contractor attributes delay to a missing inspection signature; the council says the signature was filed and barrier removal was incomplete.",
+          "Neither summary supplies the inspection sheet or barrier removal log.",
+          "One member recalls crossing September 5; another recalls the east entrance locked that evening.",
+          "The recollections may both be accurate, but their difference is unexplained."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Neutral attribution, accessible wording, explicit uncertainty."
+        ],
+        "P2": [
+          "Readable, neutral, honest about evidential limits."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-025",
+    "P1RecordSha256": "da5f83a019fd8ed584f2bdbacf1e3d39acb4770d8a58813ca8f53e9925a7fc20",
+    "P2RecordSha256": "0d577fb3716f472d9e9b23cf65e38bb7130bdecdcd7923f674527a2aa99af66b",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Flow adjustments without adding motives, events, or explanations.",
+        "P2": "Small prose adjustments preserving restraint, concrete images, and action order."
+      },
+      "ambiguity": {
+        "P1": [
+          "The scene does not explain Anya's motives or the significance of the empty pillow."
+        ],
+        "P2": [
+          "The scene does not explicitly explain Anya's emotions or the significance of the empty pillow."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Smooth the story opening while retaining mood, images, and action order.",
+        "P2": "Smooth the opening scene's flow."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Anya",
+          "wet brush",
+          "hands under her knees",
+          "empty pillow"
+        ],
+        "P2": [
+          "Anya",
+          "two beds",
+          "each knight",
+          "wet brush",
+          "empty pillow"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Short-story opening scene.",
+        "P2": "Opening scene for a short story."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Anya sets the chessboard between two beds.",
+          "Her brother is asleep; she arranges his pieces and turns each knight toward the window.",
+          "A window cleaner lowers a wet brush outside; Anya watches it disappear before moving her pawn.",
+          "She waits with hands under her knees, leaving the next move to the empty pillow."
+        ],
+        "P2": [
+          "Anya places the chessboard between two beds while her brother sleeps.",
+          "She arranges his pieces with each knight facing the window.",
+          "A window cleaner lowers a wet brush; Anya watches it disappear and then moves her pawn.",
+          "She waits with hands under her knees, leaving the next move to the empty pillow."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Restrained mood, concrete images, implied rather than explained emotion."
+        ],
+        "P2": [
+          "Restrained mood, concrete imagery, no added explanatory backstory."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-026",
+    "P1RecordSha256": "0ad313a6eb6ee70d148956a8c23b7ea82070f92172554547f916f3e8137cec04",
+    "P2RecordSha256": "85ccefa82ad8a4639bb0509ad603daae9d495b68104fad65d82ec21747da976b",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Minor punctuation or fluency changes only if useful.",
+        "P2": "Minimal punctuation or fluency changes preserving the specific comic scene and personal thanks."
+      },
+      "intendedObjective": {
+        "P1": "Check punctuation and fluency while retaining warmth and the specific enjoyment.",
+        "P2": "Check punctuation and fluency while keeping the message's warmth."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "an entire door",
+          "probably watch it again"
+        ],
+        "P2": [
+          "an entire door",
+          "title cards",
+          "probably watch it again"
+        ]
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator watched the suggested silent film.",
+          "The thief carrying an entire door while trying to look innocent caused laughter aloud.",
+          "Laughing caused missed title cards, so the narrator will probably watch again.",
+          "The recipient is thanked for knowing the kind of ridiculous evening needed after that week."
+        ],
+        "P2": [
+          "The narrator watched the recommended silent film.",
+          "The thief trying to look innocent while carrying an entire door caused laughter.",
+          "Laughter caused missed title cards; the narrator will probably watch again.",
+          "The recipient understood the ridiculous evening the narrator needed after that week."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Warm, conversational, appreciative; retain specific humor."
+        ],
+        "P2": [
+          "Warm, conversational, amused, appreciative."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-027",
+    "P1RecordSha256": "12a52f60a0aa2136e562f0a082fe382ed1f43e56990368e52672821c784a1328",
+    "P2RecordSha256": "38a06c3d4254ba4b31f41e23ba8236ee0fc13aaa4a0f3b3b1e4c747842750ef5",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only wording clarification; retain the paragraph's research limitations.",
+        "P2": "Clarify wording while retaining every research limitation."
+      },
+      "intendedObjective": {
+        "P1": "Review clarity while preserving the distinction between engagement and learning.",
+        "P2": "Review clarity without conflating engagement and learning."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "engagement within this sample",
+          "learning outcomes in a different exhibition"
+        ],
+        "P2": [
+          "engagement",
+          "learning outcomes",
+          "within this sample"
+        ]
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The pilot measured frequency of new-label use, not improved recall.",
+          "Participants chose gallery routes, causing varied exposure.",
+          "Results describe engagement in this sample.",
+          "They do not establish effects on learning outcomes in another exhibition."
+        ],
+        "P2": [
+          "The pilot measured label use, not improved recall.",
+          "Self-selected gallery routes produced varied exposure.",
+          "Results describe engagement within this sample.",
+          "They do not establish learning effects in a different exhibition."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Precise, cautious research prose."
+        ],
+        "P2": [
+          "Clear, cautious research language."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-028",
+    "P1RecordSha256": "43a7fe6c0eb99b4a711f2d62016b943a638c995b0312fba951ecf73da5ba7b7f",
+    "P2RecordSha256": "4c976bf9a39e980f7db4073847df27ee9478e6e80ef72c47d73129fd73722b76",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "stableFactsAndClaims"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Minimal clarity edits; do not alter Aunt Sal's quoted description.",
+        "P2": "Small clarity edits without altering the quotation or family events."
+      },
+      "intendedObjective": {
+        "P1": "Review clarity while keeping the playful tone and exact lighthouse description.",
+        "P2": "Review clarity while preserving playfulness and the exact lighthouse description."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Aunt Sal",
+          "Ben",
+          "“a very tall torch with responsibilities,”"
+        ],
+        "P2": [
+          "Aunt Sal",
+          "Ben",
+          "a very tall torch with responsibilities,"
+        ]
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The family played a guessing game with Aunt Sal after dinner.",
+          "Sal described a lighthouse using the protected phrase; Ben guessed volcano, prompting laughter.",
+          "They did not finish keeping score.",
+          "By the last round, giving Sal reasons to invent mattered more than correct guessing."
+        ],
+        "P2": [
+          "The family played a guessing game with Aunt Sal after dinner.",
+          "Sal's lighthouse description delighted the group.",
+          "Ben guessed volcano and prompted more laughter.",
+          "Scorekeeping was unfinished; later rounds valued inspiring Sal over correct guesses."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-029",
+    "P1RecordSha256": "b4bae8951cc460849ca8775317dc4a9fe6607be1b14175b331744df11d90b5be",
+    "P2RecordSha256": "97265175e9b8789ae4d18331b523dbda517a7676ac138e06706a39a53558e1b6",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Replace £45 with £48 and £540 with £576; preserve hours, scope, reference, and terms.",
+        "P2": "Replace only the supplied financial amounts; preserve hours, scope, reference, and terms."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Hourly rate £45 becomes £48.",
+          "Total charge £540 becomes £576."
+        ],
+        "P2": [
+          "Hourly rate £45 becomes £48.",
+          "Total £540 becomes £576."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Update the hourly rate and total indexing charge.",
+        "P2": "Update the hourly rate and total charge."
+      },
+      "requiredForm": {
+        "P1": "Invoice note with two monetary updates.",
+        "P2": "Existing invoice note with two amount updates."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The charge covers twelve hours of illustrated catalogue indexing.",
+          "Scope includes agreed entries and one final-proof check, excluding material added after supplied proofs.",
+          "The delivered index uses the requested format with names and subjects in one alphabetical sequence; retain it with production records.",
+          "Pagination changes should be reported so another check can be assessed.",
+          "Payment is due within thirty days of receipt using reference IC42.",
+          "Illustration captions helped identify useful entries."
+        ],
+        "P2": [
+          "The indexing charge covers twelve hours, agreed entries, and one check against final page proofs.",
+          "Material added after those proofs is excluded.",
+          "The delivered file uses the requested format with names and subjects in one alphabetical sequence and should be kept with production records.",
+          "Pagination changes should be reported for assessment of another check.",
+          "Payment is due within thirty days of receipt using catalogue reference IC42.",
+          "Illustration captions helped identify useful entries."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Professional, practical, courteous."
+        ],
+        "P2": [
+          "Professional, precise, courteous."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-030",
+    "P1RecordSha256": "4a799cebfbfe3e5ccb0662c84e42f72c69bbf9022fdf2fe314f23b2f3bdcc081",
+    "P2RecordSha256": "288c8e895d41e383419ac004c8eaff29a06f7f84c57b737df839f87930f03754",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only two replacements: 44.1 kHz to 48 kHz and AMBER to CEDAR.",
+        "P2": "Make exactly the two supplied setup-sheet updates."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "44.1 kHz becomes 48 kHz.",
+          "Filename prefix AMBER becomes CEDAR."
+        ],
+        "P2": [
+          "44.1 kHz becomes 48 kHz.",
+          "AMBER becomes CEDAR."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Replace the recording sample rate and filename prefix with the supplied values.",
+        "P2": "Replace the sample rate and filename prefix."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "48 kHz",
+          "CEDAR",
+          "All other setup-sheet wording"
+        ],
+        "P2": [
+          "48 kHz",
+          "CEDAR",
+          "all wording beyond the two replacements"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing recording setup sheet with exactly two updates.",
+        "P2": "Recording setup sheet with only two substitutions."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Each session folder contains the original recording and a separate captured-sounds text file.",
+          "Retain originals when preparing catalogue excerpts; excerpts have separate filenames and notes locating their start in the original.",
+          "Record microphone position before moving equipment because sound alone cannot recover it.",
+          "Mark failed takes in notes instead of silently removing them.",
+          "Do not apply noise reduction to raw files; label processed copies as processed."
+        ],
+        "P2": [
+          "Each folder contains the original recording and a separate sound-list text file.",
+          "Retain originals when excerpts are made; excerpts have separate filenames and notes locating their start in the original.",
+          "Record microphone position before moving equipment because sound alone cannot recover it.",
+          "Mark failed takes in notes rather than silently removing them.",
+          "Do not apply noise reduction to raw files; identify processed copies as processed."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Preserve the existing direct technical instructions."
+        ],
+        "P2": [
+          "Preserve existing direct technical instructions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-031",
+    "P1RecordSha256": "65f0b017d0886a3080ccb8f0b9a7c7f8af4ee2ed9a9b07da83b679def0dd4896",
+    "P2RecordSha256": "9edf0e855f9db5682d568c46f466708df7294be640e6e824fe0ad800ccc4fb19",
+    "differingFields": [
+      "acceptableEditScope",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only the two factual replacements and grammar they require.",
+        "P2": "Make the two factual replacements and only necessary grammar adjustments."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "six tools per household",
+          "twenty-one days",
+          "printed expiry date"
+        ],
+        "P2": [
+          "six tools per household",
+          "twenty-one days",
+          "Dear Members"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing member borrowing notice.",
+        "P2": "Member borrowing notice with otherwise unchanged information."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Renewals are available if nobody has requested the item.",
+          "Return tools clean with attachments; staff inspect electrical items before relending.",
+          "Damaged items go directly to the desk, not the return cabinet.",
+          "Damage reports do not automatically produce charges; circumstances and normal use are checked first.",
+          "Reserve through the catalogue or ask a volunteer during opening hours.",
+          "Membership cards remain valid until their printed expiry dates."
+        ],
+        "P2": [
+          "Renewal is available if no one else requested the item.",
+          "Return tools clean with supplied attachments; staff inspect electrical items before lending again.",
+          "Damaged items go directly to the desk, not the return cabinet.",
+          "Reporting damage does not automatically incur a charge; cause and normal use are checked.",
+          "Reservations use the catalogue or volunteer help during opening hours.",
+          "Membership cards remain valid until their printed expiry date."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-032",
+    "P1RecordSha256": "3af83357bc7e6ade6220b971b684c472316269d2c3ff910491beabef82ee1196",
+    "P2RecordSha256": "8daf1ac463de545aadd42aad33d319837d06cececee54fc51ff92f56a570421e",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only Room Alder to Room Willow and grey wool to navy wool; retain the rest intact.",
+        "P2": "Replace the two specified phrases and leave the rest intact."
+      },
+      "intendedObjective": {
+        "P1": "Replace the workshop room and starter-kit wool color.",
+        "P2": "Update the workshop room and starter-kit wool color."
+      },
+      "requiredForm": {
+        "P1": "Existing workshop reminder with two substitutions.",
+        "P2": "Workshop reminder with two substitutions."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The kit also contains two needles and a foam pad.",
+          "Practice on sample fabric precedes work on brought items.",
+          "Choose a small worn area, not a large tear; the session is for beginners.",
+          "The tutor can suggest an approach but cannot promise an invisible repair.",
+          "Watching without attempting a repair is welcome.",
+          "Have the booking email at entry; printing is unnecessary.",
+          "The cafe opens beforehand, but refreshments are not included in the booking price."
+        ],
+        "P2": [
+          "The starter kit also contains two needles and a foam pad.",
+          "Participants practise on sample fabric before their own items.",
+          "Bring a small worn area rather than a large tear; the session is for beginners.",
+          "The tutor can suggest an approach but cannot promise an invisible repair.",
+          "Watching without attempting repair is welcome.",
+          "Booking email is needed at entry but need not be printed.",
+          "The community cafe opens beforehand; refreshments are excluded from the price."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Welcoming, practical; preserve existing spelling conventions."
+        ],
+        "P2": [
+          "Preserve practical, welcoming wording and repair limitations."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-033",
+    "P1RecordSha256": "b070d9dbe3bf9a8083819c1acd4e2097a696259cc0a108bd13a7bbed35acd5e4",
+    "P2RecordSha256": "d422431bd95d229459eb69dfff5f0040d7024e854e7865b7d6b132621d93319c",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Edition-size replacement only, contingent on the missing revised figure.",
+        "P2": "Only edition size may change, but the required replacement is absent."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Replace 180 with the artist's revised edition size once supplied."
+        ],
+        "P2": [
+          "Replace 180 with the artist's revised edition size once supplied; no revised number is available."
+        ]
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "180 prints as the existing edition size",
+          "individual edition number"
+        ],
+        "P2": [
+          "180 as the existing stated size",
+          "individual edition number"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Catalogue description; a completed correction requires the revised figure.",
+        "P2": "Catalogue description without an invented edition size."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The catalogue currently states an edition of 180 prints.",
+          "Each print has an individual number and artist's initials beneath the image.",
+          "The paper is unframed; dimensions describe the image, not the sheet.",
+          "The photograph shows a proof; the buyer receives a print bearing its own edition number."
+        ],
+        "P2": [
+          "The source lists an edition of 180 prints.",
+          "Each print has its individual number and artist's initials beneath the image.",
+          "The paper is unframed; dimensions describe the image, not the sheet.",
+          "The photograph shows a proof; buyers receive individually numbered edition prints."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Precise catalogue description."
+        ],
+        "P2": [
+          "Precise catalogue wording."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-034",
+    "P1RecordSha256": "10fe55ac3bfc3130f7010c56a546fadeb99ae74e4f2c19befe9777d185d53e78",
+    "P2RecordSha256": "951f8b8ee9ac2bb7f294214ddaa75c5b598b96d2e450ad5f3aa7735d8a3bd256",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Only the price and bus-time replacements; neither new value can be inferred.",
+        "P2": "Only the two requested values may change; neither replacement can be inferred."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "Replace the nightly price with an unspecified revised amount.",
+          "Replace the bus time with an unspecified latest timetable time."
+        ],
+        "P2": [
+          "Replace £84 with the revised nightly amount when supplied.",
+          "Replace 7:10 with the latest timetable time when supplied."
+        ]
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Jo",
+          "£84 as the existing price",
+          "7:10 as the existing time",
+          "village shop",
+          "kindling",
+          "footbridge"
+        ],
+        "P2": [
+          "Jo",
+          "village shop",
+          "kindling",
+          "footbridge"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Informal personal message; replacements require missing values.",
+        "P2": "Informal personal message without fabricated replacements."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator booked the little cabin for a walking weekend with Jo.",
+          "The source price is £84 a night; the owner reports the last bus at the village shop at 7:10.",
+          "The cabin has a wood stove, but they must bring kindling.",
+          "The narrator will send the route after checking the footbridge."
+        ],
+        "P2": [
+          "The narrator booked a little cabin for a walking weekend with Jo.",
+          "The source gives £84 a night and attributes the 7:10 last-bus time to the owner.",
+          "The last bus stops outside the village shop.",
+          "There is a wood stove, but kindling must be brought.",
+          "The narrator will send the route after checking the footbridge."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Informal, friendly, practical."
+        ],
+        "P2": [
+          "Friendly, informal, practical."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-035",
+    "P1RecordSha256": "ef49487111aca37db7e9e512a0883f81ce7a8e7df5f58e2746eba9e82bb3d0d7",
+    "P2RecordSha256": "e5e3803d7ce4348ee966fb3e4d22d7f7bbfaae9ed00558613c1d873faebc8eeb",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "One sentence only; keep inspection after cooling and every other batch instruction unchanged.",
+        "P2": "Edit only that sentence and retain inspection after cooling."
+      },
+      "intendedObjective": {
+        "P1": "Simplify only the inflated sentence about inspecting surface appearance.",
+        "P2": "Simplify the specified surface-inspection sentence."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "once the rolls have cooled",
+          "eight rolls",
+          "All source wording outside the designated sentence"
+        ],
+        "P2": [
+          "eight rolls",
+          "once the rolls have cooled",
+          "comments column",
+          "tray number"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing batch instructions with one sentence simplified.",
+        "P2": "Batch instructions with one sentence simplified."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Record dusting flour separately from the listed mixed-dough weight.",
+          "Each tray holds eight rolls with expansion space; the baker checks the first tray before remaining dough division.",
+          "Visual surface inspection occurs once the rolls have cooled.",
+          "Record split crusts in comments; a split alone does not require disposal and the baker decides its relevance to intended use.",
+          "Keep tray numbers with observations and do not combine different trays in one entry."
+        ],
+        "P2": [
+          "Batch flour weight excludes dusting flour, which must be recorded separately.",
+          "Trays hold eight rolls with expansion space; the baker checks the first tray before dividing remaining dough.",
+          "Visual inspection occurs after the rolls cool.",
+          "Split crusts go in comments and do not automatically require discard; the baker assesses intended use.",
+          "Keep tray numbers with observations and do not combine different trays in one entry."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Plain procedural wording within the targeted sentence."
+        ],
+        "P2": [
+          "Plain procedural wording; preserve decision authority and timing."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-036",
+    "P1RecordSha256": "5acd4665558ecde35eff6cffb0552cf4e9092647487cdebf633ca4fe4e77f990",
+    "P2RecordSha256": "4ac5242776fc50b29b1e1fa01ee0fd8c09a94b48f45258a98612dde90f4cc1a4",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Edit that sentence alone and preserve the exercise's limited purpose.",
+        "P2": "Edit that sentence only, preserving the exercise's limited discussion purpose."
+      },
+      "intendedObjective": {
+        "P1": "Replace the cumbersome discussion-opportunity sentence with ordinary clear language.",
+        "P2": "Replace the cumbersome discussion-opportunity sentence."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "fictional interview transcripts",
+          "All wording outside the discussion-opportunity sentence"
+        ],
+        "P2": [
+          "fictional interview transcripts",
+          "not graded",
+          "overlapping speech"
+        ]
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Groups compared fictional interview transcripts with bracketed pauses against spoken-words-only transcripts.",
+          "Students identified where more context was wanted, rather than scoring speaker confidence.",
+          "The exercise provided discussion of transcription choices.",
+          "Groups noticed punctuation could imply unsupported conclusions and removal of repetition could alter rhythm.",
+          "Paper observations were collected at class end, ungraded; formats were not ranked.",
+          "A later session will cover overlapping-speech conventions."
+        ],
+        "P2": [
+          "Groups compared fictional transcripts with bracketed pauses against spoken-words-only transcripts.",
+          "Students identified places needing context rather than scoring speaker confidence.",
+          "The exercise enabled discussion of transcription choices.",
+          "Groups noticed punctuation could overstate conclusions and removed repetition could change rhythm.",
+          "Observations were collected on paper, ungraded, and did not rank formats.",
+          "A later session concerns conventions for overlapping speech."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Clear, ordinary language without expanding educational claims."
+        ],
+        "P2": [
+          "Clear, ordinary wording; retain modest educational purpose."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-037",
+    "P1RecordSha256": "c48a76b03b44bdbc125445e676c0af02b711260edcea82ed57871ed4c4044730",
+    "P2RecordSha256": "44785ab24e53349e61484c68578a35ccd17db27659075e7274a3e171ab89b1c7",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Rewrite that sentence alone; retain the exact tin label and all surrounding wording.",
+        "P2": "Change only the sentence about the organizational result and additional desk surface."
+      },
+      "ambiguity": {
+        "P1": [
+          "The desk-lamp cable identification remains unverified."
+        ],
+        "P2": [
+          "The desk-lamp cable identification remains unproved."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Make only the desk-space sentence match the email's informal voice.",
+        "P2": "Make the desk-space sentence match the email's informal voice."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "CABLES, PROBABLY",
+          "Three",
+          "orange tape",
+          "tomorrow",
+          "All other email wording"
+        ],
+        "P2": [
+          "CABLES, PROBABLY",
+          "Three",
+          "orange tape",
+          "tomorrow"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing personal email with only the desk-space sentence changed.",
+        "P2": "Email with only the desk-space sentence changed."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator sorted the spare-cable drawer.",
+          "Three cables belong to devices no longer owned; one probably belongs to the desk lamp but is unverified.",
+          "Useful cables are in a biscuit tin labeled CABLES, PROBABLY.",
+          "Sorting has freed desk surface area.",
+          "The found charger has orange tape at one end; it can be dropped off tomorrow or collected during lunch."
+        ],
+        "P2": [
+          "The narrator sorted a spare-cable drawer; three cables belong to devices no longer owned and one may belong to the desk lamp.",
+          "Useful cables went into a labeled biscuit tin, leaving more desk space.",
+          "The following tie joke remains part of the email.",
+          "The found charger has orange tape at one end.",
+          "The narrator offers delivery tomorrow or collection during lunch."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Conversational, dryly humorous, informal; retain the surrounding joke about a sentence wearing a tie."
+        ],
+        "P2": [
+          "Informal, dryly humorous; preserve surrounding jokes and uncertainty."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-038",
+    "P1RecordSha256": "93f4266b621fc291468adf92107cc8f88407fa8deed447d6b34a1a7acaf9308a",
+    "P2RecordSha256": "729ccfb16cad9d506e8aa671a186f4832c5972d554f7d65054ad5c64da63de88",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "One-sentence simplification; preserve the rest, including the modest interpretation of results.",
+        "P2": "Edit only the sentence beginning At the conclusion; retain the opportunity to offer additional observations."
+      },
+      "intendedObjective": {
+        "P1": "Plainly restate the single sentence beginning At the conclusion.",
+        "P2": "Plainly restate the specified concluding-observations sentence."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Tuesday",
+          "three samples",
+          "Two people",
+          "one",
+          "All wording outside the designated sentence"
+        ],
+        "P2": [
+          "Tuesday",
+          "three samples",
+          "Two people",
+          "one",
+          "small group's preferences"
+        ]
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The tasting group met in the upstairs kitchen Tuesday.",
+          "Each person tried three letter-marked samples in a different order; water was supplied, and finishing cups was optional.",
+          "Results record this small group's preferences, not a general recipe verdict.",
+          "Participants could offer additional observations at the end.",
+          "Two mentioned oat texture; one found rice sweeter than expected; nobody had to explain an unwanted preference discussion.",
+          "Next time serving temperatures will be the same because they varied in this session."
+        ],
+        "P2": [
+          "The group met upstairs on Tuesday and tried three letter-marked samples in different orders.",
+          "Water was supplied; finishing cups was optional.",
+          "Results record this small group's preferences, not a general recipe verdict.",
+          "Two people mentioned oat texture; one found rice sweeter than expected.",
+          "Nobody had to explain an unwanted preference discussion.",
+          "Serving temperatures varied; next time all samples will use the same temperature."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Plain wording and modest claims."
+        ],
+        "P2": [
+          "Plain wording and modest claims about the results."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-039",
+    "P1RecordSha256": "7423ffc5f51544f625830b67418ea03ca0483baf252b1aa04ecaf69be796b9d9",
+    "P2RecordSha256": "ec993f2031fc05f650eb017bf45b4244981b73e3790a31a107c400050ca250e2",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Remove inflated language and organize policy, exceptions, unresolved matters, and initial checks without expanding them.",
+        "P2": "Remove inflated language and reorganize policy, exceptions, unresolved authorship, and initial checks without expanding them."
+      },
+      "ambiguity": {
+        "P1": [
+          "Naming sessions jointly recorded by two teams remains unsettled."
+        ],
+        "P2": [
+          "How to name sessions jointly recorded by two teams remains unsettled."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Reconstruct the recording memo into clear editor instructions.",
+        "P2": "Reconstruct the naming memo into clear editor instructions."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "1 August onward",
+          "first five new uploads from each team",
+          "session code",
+          "take number"
+        ],
+        "P2": [
+          "1 August",
+          "first five new uploads",
+          "session code",
+          "take number"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Clear, organized instructions for editors.",
+        "P2": "Clear set of instructions for editors; structure may change."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Over the past month unclear filenames slowed excerpt selection; two door-labeled files contained footsteps followed by a closing door, without becoming unusable.",
+          "The naming policy applies to recordings made from 1 August onward and does not require renaming all existing files.",
+          "Old files may be renamed when used in projects if their original names are recorded in notes; delivered client files keep delivered names.",
+          "New names begin with the coordinator-assigned session code, followed by audible-action description and take number; editors must not invent replacement codes.",
+          "Descriptions identify audible action, not imagined use.",
+          "Location, equipment, and unusual conditions belong in text notes; uncertain sources must not be asserted as known, though notes may identify possibilities.",
+          "Joint-team session naming is unresolved; ask for a code before uploading and the coordinator keeps a list for later review.",
+          "The coordinator checks each team's first five new uploads for filenames and notes only; this neither assesses recording quality nor replaces the pre-client-delivery check."
+        ],
+        "P2": [
+          "Uninformative filenames slow excerpt selection; two files named for closing doors also contained preceding footsteps, without becoming unusable.",
+          "The policy applies to recordings made from 1 August onward, not mandatory renaming of all old files.",
+          "Old files may be renamed when used if the original name is recorded in notes; outside-client deliveries keep delivered names.",
+          "New names use coordinator-assigned session code, audible-action description, and take number; editors must not invent alternate codes or name imagined uses.",
+          "Location, equipment, and unusual conditions belong in text notes.",
+          "Uncertain sounds should be described without asserting a source; possible sources may be identified as possibilities in notes.",
+          "Joint-team naming remains unresolved; obtain a coordinator code before uploading, and the coordinator keeps a review list.",
+          "The coordinator checks each team's first five uploads for filenames and notes only, not recording quality or the separate pre-client-delivery check."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Direct, practical policy language; distinguish mandatory rules, permissions, and unresolved questions."
+        ],
+        "P2": [
+          "Direct, ordinary instructional language with explicit exceptions and limits."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-040",
+    "P1RecordSha256": "72098e0b4b1fd97cc9e73cdbbb03db931db1afeaf8401b5579d2dca6b89b2494",
+    "P2RecordSha256": "6803ac4288959b620d2bd03929f5da1ce3a544915f14ed86785aa5cd48d24a1f",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Rewrite inflated prose while retaining events, practical lessons, and stated uncertainties.",
+        "P2": "Reconstruct flow and language while preserving events, practical lessons, and uncertainties."
+      },
+      "ambiguity": {
+        "P1": [
+          "Other birds are unidentified.",
+          "Delivery times and whether the narrator will arrive earlier are unknown."
+        ],
+        "P2": [
+          "Other bird identities and delivery times are unknown.",
+          "An earlier start has not been decided."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Create an engaging first-person account with natural sequencing and ordinary language.",
+        "P2": "Create an engaging first-person account in ordinary language."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "5:20",
+          "Sunday",
+          "Farah",
+          "three clips",
+          "about four minutes each",
+          "blackbird"
+        ],
+        "P2": [
+          "5:20",
+          "Sunday",
+          "Farah",
+          "three clips",
+          "about four minutes",
+          "blackbird",
+          "Next weekend"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Engaging first-person personal account.",
+        "P2": "First-person narrative with a natural event sequence."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator borrowed a recorder from the neighbourhood arts cupboard, read its instructions the night before, and expected rising early to be the main challenge.",
+          "At 5:20 Sunday the spare key did not fit the new allotment lock, which replaced the previous one during the week.",
+          "Waiting for Farah caused missed early birdsong; she came to water beans, let the narrator in, and showed a dry equipment spot.",
+          "A van, dragged bin, and jacket rubbing the microphone added sound; headphones revealed the jacket noise.",
+          "A wooden crate helped jacket noise but did not remove van or bin sounds.",
+          "Three clips lasted about four minutes each; the middle included a visually recognized blackbird, but other birds were unidentified.",
+          "Traffic belonged to that morning's soundscape; the narrator should not describe the whole clip as named bird calls.",
+          "Next weekend the narrator wants to check the key and use a tripod; going earlier is undecided because delivery schedules are unknown."
+        ],
+        "P2": [
+          "The narrator borrowed an arts-cupboard recorder and read instructions the night before, expecting early rising to be the main challenge.",
+          "At 5:20 Sunday, an obsolete spare key failed after a lock replacement; waiting for Farah caused missed initial birdsong.",
+          "Farah came to water beans, admitted the narrator, and showed a dry equipment location.",
+          "A van, dragged bin, and jacket added sounds; headphones revealed jacket noise and a wooden crate helped only that problem.",
+          "Three clips of about four minutes were recorded; the middle includes a visually recognized blackbird, while other birds remain unidentified.",
+          "Traffic is part of the morning's sound; the result was a small record of the place waking, not pure birdsong.",
+          "Next weekend the narrator wants to check the key and use a tripod; an earlier start remains undecided because delivery schedules are unknown."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Natural, ordinary language; modest reflection grounded in events."
+        ],
+        "P2": [
+          "Engaging, ordinary, reflective without overstating the practical outcome."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-041",
+    "P1RecordSha256": "3b6e1c8643e33d5cec5a8e0e444541d0deb07a2ebc1dd418ab920cac56d88a07",
+    "P2RecordSha256": "d8ce71e59912433ebf1f87e01efdc71bfa4d857a9e6c504cb0417b9d7d039982",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Reorganize and simplify without changing counts, approval status, system limitations, or test scope.",
+        "P2": "Simplify and reorganize while preserving counts, proposal status, system limits, and test scope."
+      },
+      "ambiguity": {
+        "P1": [
+          "Incomplete-puzzle lending, labeling and photographs, and use of the loan system remain proposed rather than approved."
+        ],
+        "P2": [
+          "Incomplete-puzzle lending, costs, and responsibility for labels and photographs remain undecided."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Rewrite the puzzle memo directly, with a clear request and useful supporting detail.",
+        "P2": "Rewrite the puzzle memo directly with a clear, narrowly scoped request."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "forty",
+          "twenty-six",
+          "eighteen",
+          "eight",
+          "one and five pieces",
+          "fourteen",
+          "three boxes",
+          "two complete puzzles",
+          "fourteen-day",
+          "one renewal",
+          "Wednesday",
+          "Friday"
+        ],
+        "P2": [
+          "forty",
+          "twenty-six",
+          "Eighteen",
+          "Eight",
+          "one and five pieces",
+          "three boxes",
+          "fourteen-day",
+          "one renewal",
+          "remaining fourteen",
+          "two complete puzzles",
+          "Wednesday",
+          "Friday"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Direct memo with a clear, narrowly scoped request.",
+        "P2": "Direct memo with a clear request and supporting detail."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "There are forty puzzles; twenty-six checked, fourteen unchecked on the lower shelf with yellow bands; not all forty are ready to borrow.",
+          "Eighteen checked puzzles are complete; eight lack one to five pieces.",
+          "Lending incomplete puzzles with labels is the volunteer group's suggestion, unapproved by the manager; borrowers should decide whether missing pieces matter.",
+          "Some titles are tiny and three boxes lack finished-puzzle pictures; larger labels and photos are uncosted, with no agreed person to create or maintain them despite an available camera.",
+          "Staff propose the existing board-game system: fourteen-day loans and one renewal if unreserved.",
+          "The system records missing-piece notes but not photographs, which must remain with physical boxes.",
+          "The immediate request is permission to finish checking fourteen puzzles and test loans with two complete puzzles to observe returns.",
+          "The small test does not settle incomplete-puzzle lending; comments go to the circulation supervisor by Wednesday for Friday manager review."
+        ],
+        "P2": [
+          "The cupboard has forty puzzles; twenty-six are checked, leaving fourteen unchecked on the lower shelf with yellow bands.",
+          "Eighteen checked puzzles are complete; eight lack one to five pieces.",
+          "Lending incomplete puzzles with clear labels is a volunteer suggestion not approved by the manager; borrowers should make the usability decision.",
+          "Some titles are tiny and three boxes lack finished-image pictures; larger labels and photographs are uncosted, with a camera available but no assigned photographer or label maintainer.",
+          "Staff propose the existing board-game system, providing fourteen-day loans and one renewal without reservations.",
+          "The system records missing-piece notes but not photographs, which would stay with boxes.",
+          "Permission is requested to finish checking fourteen puzzles and test returns with two complete puzzles; this does not settle lending incomplete puzzles.",
+          "Comments go to the circulation supervisor by Wednesday for the manager's Friday review."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Direct, useful, precise about permissions and unresolved proposals."
+        ],
+        "P2": [
+          "Direct, practical, careful about proposed versus approved actions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-042",
+    "P1RecordSha256": "c7b8d0b0c317e9ed928818e707054f54692594975f4dd45d41af2d8eafcb1b7b",
+    "P2RecordSha256": "ae9409174a778a3211f412851635003396d6e09452440bf1d22249cc2ab09680",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Light clarity and flow changes; preserve the designated phrase exactly.",
+        "P2": "Light clarity edits preserving informal humor, details, and the specified exact phrase."
+      },
+      "ambiguity": {
+        "P1": [
+          "Whether the recipient still has the spare panes is conditional."
+        ],
+        "P2": [
+          "Availability of the recipient's spare panes is conditional."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Make the spare-pane request somewhat easier to follow while preserving voice and details.",
+        "P2": "Make the spare-pane request slightly easier to follow."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Len",
+          "Saturday",
+          "Two",
+          "28 by 35 centimetres",
+          "Wednesday",
+          "The tomatoes have already lodged their complaint"
+        ],
+        "P2": [
+          "The tomatoes have already lodged their complaint",
+          "Len",
+          "Saturday",
+          "Two",
+          "28 by 35 centimetres",
+          "Wednesday"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Informal request retaining its surrounding personal remarks.",
+        "P2": "Informal personal request."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator replaced the cracked greenhouse pane Saturday with Len holding the frame and offering loud advice.",
+          "The tomatoes now have a roof; the narrator's thumb is slightly sore.",
+          "Two spare panes would be useful if still available.",
+          "Each opening measured this morning is 28 by 35 centimetres.",
+          "The recipient should not make a special trip; pickup can happen after the narrator's Wednesday shift."
+        ],
+        "P2": [
+          "The narrator replaced a cracked greenhouse pane Saturday with Len holding the frame and giving loud advice.",
+          "The tomatoes now have a roof; the narrator's thumb is slightly hurt.",
+          "Two spare panes would be useful if still available.",
+          "Each opening measured this morning is 28 by 35 centimetres.",
+          "No special trip is requested; the narrator can collect after Wednesday's shift.",
+          "The narrator acknowledges the repair should have preceded rain."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-043",
+    "P1RecordSha256": "f5cb0dc7fcf626c217d62e584142caec49c84705f47ba909d8727e73ef6c2329",
+    "P2RecordSha256": "d58336b981bc3e810a5397ab0e6c0f4a2a7ea5e2a8e4bb525692d89987b001bb",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Small tightening that preserves fragments, concrete images, and unresolved mixed feelings; add no lesson.",
+        "P2": "Light tightening without eliminating fragments, images, mixed feelings, or emotional openness."
+      },
+      "ambiguity": {
+        "P1": [
+          "The narrator's mixed feelings are intentionally not resolved."
+        ],
+        "P2": [
+          "The emotional coexistence remains open rather than resolved."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Gently tighten the personal reflection for a small newsletter.",
+        "P2": "Gently tighten the reflection for a small newsletter."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "north",
+          "most evenings",
+          "scarf",
+          "station receipt",
+          "bakery with the crooked sign",
+          "enormous beans"
+        ],
+        "P2": [
+          "Door shuts, wheels move, person gone.",
+          "most evenings",
+          "bakery with the crooked sign",
+          "enormous beans"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Conversational personal reflection for a small newsletter.",
+        "P2": "First-person personal reflection for a small newsletter."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The narrator once saw train departures as tidy endings, but the sister's move north changed that perception.",
+          "Concrete traces include a scarf, excess tea, and a station receipt.",
+          "The sister likes her new town and they talk most evenings.",
+          "The narrator enjoys accounts of a crooked-sign bakery and a neighbour's enormous beans.",
+          "Being glad for the sister and missing her coexist without a settled explanation."
+        ],
+        "P2": [
+          "The narrator once saw train departures as tidy endings, then experienced lingering absence after a sister moved north.",
+          "Images include a scarf on a chair, excess tea, and a station receipt bringing the platform into the afternoon.",
+          "The sister likes her new town; they talk most evenings.",
+          "The narrator enjoys hearing about a crooked-sign bakery and a neighbor's enormous beans.",
+          "Gladness for the sister and missing her coexist without a settled explanation."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Conversational fragments, concrete imagery, gentle humor.",
+          "No moral lesson or tidier emotional resolution."
+        ],
+        "P2": [
+          "Conversational fragments, concrete images, mixed feelings.",
+          "No imposed lesson or tidier emotional resolution."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-044",
+    "P1RecordSha256": "7d2068af80fe82b6f3140aae96983eb0184e58ed1f6dfa2fc8b7a56eee36529a",
+    "P2RecordSha256": "d13c82bd877f16b8bbd76657fa8806857246f0bf47be2f8e2f2db280c6d6dc29",
+    "differingFields": [
+      "acceptableEditScope",
+      "authorizedFactualChanges",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Replace after the final reading in the specified sentence with 5 July; preserve all other wording and the exact noticeboard phrase.",
+        "P2": "Replace after the final reading in that sentence only; preserve all other wording and the noticeboard phrase."
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "The coordinator's summary deadline changes from after the final reading to 5 July."
+        ],
+        "P2": [
+          "The summary timing after the final reading becomes 5 July."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Change only the coordinator's summary timing to the supplied deadline.",
+        "P2": "Replace the coordinator's summary timing with a 5 July deadline."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "5 July",
+          "3 May",
+          "28 June",
+          "Tuesday at noon",
+          "2 p.m.",
+          "small trial, useful questions.",
+          "All other source wording"
+        ],
+        "P2": [
+          "5 July",
+          "small trial, useful questions.",
+          "3 May",
+          "28 June",
+          "every Tuesday at noon",
+          "2 p.m."
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing trial instructions with one timing replacement.",
+        "P2": "Existing trial instructions with only the summary timing updated."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The trial runs 3 May to 28 June, comparing two leaf-mulched beds near bicycle racks with two bare-soil beds.",
+          "Beds were selected randomly by numbered slips after planting; bean counts are equal but heights already vary.",
+          "All four beds use the same watering schedule, with rain decisions recorded for every bed; the trial does not test water savings from condition-specific watering.",
+          "Record soil temperature and wilted-plant counts Tuesday at noon using the drawer probe's depth mark.",
+          "Missing readings stay blank and are reported; no guessing or copied prior values.",
+          "Results are a local practical starting point, not proof across locations or crops; shade begins after 2 p.m. and drainage differs from hall plots.",
+          "The summary lists measurements and gaps; repetition may be considered, but mulch expansion is not agreed.",
+          "Visitors ask from the path and must not walk between beds during readings."
+        ],
+        "P2": [
+          "The trial runs 3 May–28 June: two bicycle-rack beds use shredded-leaf mulch and two retain bare soil, assigned by drawn slips after planting.",
+          "Beds contain equal bean-plant counts but plants vary in height.",
+          "All beds follow the same watering schedule with rain decisions recorded for every bed; the trial does not measure savings from condition-responsive watering.",
+          "Record soil temperature and wilted-plant count Tuesdays at noon using the marked probe; missed readings stay blank and are reported, never guessed or copied.",
+          "Results inform discussion, not universal crop/location claims; afternoon shade and drainage differ from other plots.",
+          "The summary lists measurements and gaps; repetition is possible, but mulch expansion is not agreed.",
+          "Visitors hear the exact activity phrase and may ask from the path without entering between beds during readings."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Preserve the existing modest, careful procedural voice exactly."
+        ],
+        "P2": [
+          "Preserve careful, modest experimental claims and direct instructions."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-045",
+    "P1RecordSha256": "6f1075c2c1202c71569170dd0adb0380c239793ab8b6d5720e74602104e33360",
+    "P2RecordSha256": "2020011b4d87bc68e4f0414c60d7ffb183f50cdd29d13e3f8f78fc48b16ad8f4",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "authorizedFactualChanges",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Replace top drawer with middle drawer in the glove paragraph; everything else stays exactly as supplied.",
+        "P2": "Replace top drawer with middle drawer in the glove paragraph; preserve every other part exactly."
+      },
+      "ambiguity": {
+        "P1": [
+          "The narrator's Monday-afternoon return remains uncertain."
+        ],
+        "P2": [
+          "The narrator's arrival depends on an uncertain train connection."
+        ]
+      },
+      "authorizedFactualChanges": {
+        "P1": [
+          "The gloves' location changes from top drawer to middle drawer."
+        ],
+        "P2": [
+          "Gloves are in the middle drawer rather than the top drawer."
+        ]
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "middle drawer",
+          "KEEP THE PATCH",
+          "Amira",
+          "Tomas",
+          "six pairs",
+          "Four pairs",
+          "two",
+          "Monday afternoon",
+          "All other source wording"
+        ],
+        "P2": [
+          "middle drawer",
+          "KEEP THE PATCH",
+          "Amira",
+          "Tomas",
+          "six pairs",
+          "Four pairs",
+          "two",
+          "Monday afternoon"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing personal handover note with one location correction.",
+        "P2": "Handover note exactly retained apart from the specified drawer correction."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Amira receives the handover; the reception-envelope key opens only the cupboard, and closed reception requires contacting the duty caretaker.",
+          "Green-rail costumes are approved, blue-rail items await fittings, and they remain separate; the brown coat's visible repair stays.",
+          "Six glove pairs include four ready and two awaiting seam inspection in a paper bag; no injury has been reported; Tomas may inspect if available, otherwise they wait.",
+          "The sewing machine was serviced last month, uses a rubber mat for its sliding pedal, and the unserviced overlocker remains out of use.",
+          "Both machine covers must be replaced; the overlocker cover has a red square.",
+          "Every loan and return must be recorded in the shared paper book; photographs do not replace return entries.",
+          "Damp returns hang away from approved costumes and are reported when the narrator returns.",
+          "Monday-afternoon return is uncertain due to the train connection; continue arrangements until arrival confirmation; biscuits require no entry."
+        ],
+        "P2": [
+          "Amira's cupboard key is in a reception envelope, opens only the cupboard, and closed reception requires contacting the caretaker.",
+          "Green-rail approved costumes stay separate from blue-rail fitting items; the brown coat's visible patch must remain.",
+          "Six glove pairs comprise four ready and two unchecked in a paper bag; no injury is reported, but loose seams require inspection before use. Tomas may inspect if available; otherwise they wait.",
+          "The sewing machine was serviced last month and needs its pedal mat; the unserviced overlocker remains out of use. Replace both covers, with a red square marking the overlocker cover.",
+          "Every loan and return must be recorded in the shared paper book; page photographs are not replacements.",
+          "Damp returns hang away from approved costumes; the narrator should be told upon return.",
+          "Monday-afternoon return is uncertain; retain arrangements until arrival confirmation. Biscuits need no entry."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Preserve the entire existing warm, practical voice."
+        ],
+        "P2": [
+          "Preserve the personal, practical tone and biscuit joke exactly."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-046",
+    "P1RecordSha256": "18b7a80c6503582d6ce1a196f96a380b5a450433fa979d15b908a45f3e7bb190",
+    "P2RecordSha256": "b6f95e9f78d8b86570bcff01c3ec2715279a6541e6292626143522a5f522024b",
+    "differingFields": [
+      "acceptableEditScope",
+      "intendedObjective",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Change 7 kilometres to 8 kilometres in the length sentence; preserve every other word.",
+        "P2": "Replace only the specified route-length phrase; preserve all remaining wording, including duration."
+      },
+      "intendedObjective": {
+        "P1": "Replace only the full route's stated distance.",
+        "P2": "Replace the full route length with 8 kilometres."
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "8 kilometres",
+          "about three hours",
+          "Leave room for the flock.",
+          "8 a.m.",
+          "9 a.m.",
+          "9:30",
+          "Friday",
+          "All other source wording"
+        ],
+        "P2": [
+          "8 kilometres",
+          "about three hours",
+          "Leave room for the flock.",
+          "8 a.m.",
+          "9 a.m.",
+          "9:30",
+          "Friday"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Existing walking-group route notice with one distance replacement.",
+        "P2": "Existing walking-group information with one exact phrase replaced."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The spring route starts at the old mill bridge and ends at the orchard gate.",
+          "The estimate is about three hours including stops but excluding lunch; bring food because the orchard cafe is closed for repairs.",
+          "The narrow timber bridge has only a downstream handrail; suitability for every mobility aid is not promised and no formal access survey exists.",
+          "Discuss access needs with the organiser; the surfaced shorter route misses the orchard and rejoins only at the finish.",
+          "Dogs stay on leads, sheep may be hidden, both gates must close, and permission covers only the marked field path.",
+          "The organiser checks the river notice at 8 a.m.; timber-bridge closure cancels the full route, while the shorter route depends on river-path conditions.",
+          "Absence of cancellation is not universal safety confirmation; check messages before departure.",
+          "Hall toilets open at 9 a.m.; the walk starts at 9:30; parking is limited, lift sharing optional and unarranged, and the bus stop is outside the hall.",
+          "Reply by Friday without reserving vehicle space or committing to the longer route; bring waterproofing and a drink."
+        ],
+        "P2": [
+          "The route starts at the old mill bridge and ends at the orchard gate; the roughly three-hour estimate includes stops but excludes lunch. Bring lunch because the cafe is closed.",
+          "The timber bridge has only a downstream handrail; suitability for every mobility aid is not promised and no formal access survey was done.",
+          "Contact the organiser about access; the surfaced shorter option misses the orchard and rejoins only at the finish.",
+          "Dogs need leads, sheep may be unseen, both field gates must close, and permission covers only the marked path.",
+          "The organiser checks the river notice at 8 a.m.; bridge closure cancels the full route. The shorter option depends on river-path conditions, and absence of cancellation is not a safety guarantee.",
+          "Check group messages before leaving. Hall toilets open at 9 a.m.; the walk starts at 9:30. Parking is limited, lifts optional and unarranged, and the bus stop is outside the hall.",
+          "Reply by Friday; replying reserves neither transport nor a long-route commitment. Bring a waterproof layer and drink."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Preserve the existing practical, qualified safety and accessibility wording."
+        ],
+        "P2": [
+          "Preserve all supplied wording and access/safety qualifications."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-047",
+    "P1RecordSha256": "eb921f2fbeaf2f7846f79b9ffaafb3cd9cc88cd36fb98d63553395d6bc375605",
+    "P2RecordSha256": "9c3d1ad6ff94a66923ca8654a4176f73cee6ad710720d5c3dff05884164a5ead",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "missingPropositions",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Tone changes cannot alter the criticism, invent benefits, or change events; a sincere endorsement is incompatible with these protected constraints.",
+        "P2": "No factual change or added benefit is authorized; the requested positive endorsement conflicts with the protected negative evaluation."
+      },
+      "ambiguity": {
+        "P1": [
+          "The objective requires both endorsement and preservation of an explicitly negative evaluation; no compatible priority is supplied."
+        ],
+        "P2": [
+          "The objective simultaneously requires a sincere endorsement and preservation of an unfavorable evaluation and refusal to repurchase."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Request a sincere endorsement while preserving the reviewer's negative evaluation, experiences, and purchase decision.",
+        "P2": "Request a sincere endorsement while preserving the reviewer's existing evaluation and experiences."
+      },
+      "missingPropositions": {
+        "P1": [
+          "A supported favorable evaluation or benefit that could ground a sincere endorsement is not supplied."
+        ],
+        "P2": []
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "page three",
+          "a week",
+          "would not buy this one again",
+          "declined the offered replacement"
+        ],
+        "P2": [
+          "Five stars",
+          "before I reached page three",
+          "a week",
+          "I would not buy this one again",
+          "offered a replacement",
+          "declined"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Product review; the requested sincere endorsement cannot be supplied while preserving all stated constraints.",
+        "P2": "Notebook review; the requested sincere endorsement cannot be reconciled with all stated constraints."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "The opening five-star statement is ironic rather than a sincere positive rating.",
+          "The rigid cover makes opening difficult, ink passes to the next sheet, and the ribbon detached before page three.",
+          "The advertised effortless writing experience is treated as a joke.",
+          "The reviewer used it for a week, mostly with the same fountain pen used in an ordinary notebook that does not show ink on the reverse.",
+          "The reviewer would not buy it again and declined the shop's offered replacement because another copy seemed unnecessary."
+        ],
+        "P2": [
+          "The rigid cover makes opening difficult; ink passes through to the next sheet.",
+          "The ribbon detached before page three.",
+          "The purchase was prompted by a promised effortless writing experience that the reviewer now treats as a joke.",
+          "The notebook has been used for a week, mostly with a fountain pen that does not cause reverse-side ink in the ordinary notebook.",
+          "The reviewer would not buy it again and declined the shop's offered replacement.",
+          "Five stars and purported benefits are ironic rather than sincere praise."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "The source uses sustained irony; any authorized tone change must preserve its underlying negative judgment."
+        ],
+        "P2": [
+          "The source uses sustained irony expressing dissatisfaction.",
+          "Sincerity is requested, but changing dissatisfaction into approval is not authorized."
+        ]
+      }
+    }
+  },
+  {
+    "caseId": "AC48V2-048",
+    "P1RecordSha256": "3261c3cd6a4118ffa499ffcc45e6fb4630152196cc05662c030eb2418afd03e1",
+    "P2RecordSha256": "33fcbf04f22a58ef89eeb338aa0f3d390d8535fa85771a8833add5abf245f8da",
+    "differingFields": [
+      "acceptableEditScope",
+      "ambiguity",
+      "intendedObjective",
+      "missingPropositions",
+      "protectedNamesNumbersDatesQuotesPhrases",
+      "requiredForm",
+      "stableFactsAndClaims",
+      "voiceConstraints"
+    ],
+    "valuesByField": {
+      "acceptableEditScope": {
+        "P1": "Clarify existing wording only; the supplied rule and facts do not authorize a definitive yes or no or a new residency criterion.",
+        "P2": "Explain or clarify only what the existing rule and facts establish; no new eligibility condition or unsupported yes/no decision is authorized."
+      },
+      "ambiguity": {
+        "P1": [
+          "Living within the area is undefined for someone with two residences.",
+          "The earlier acceptance does not establish an applicable interpretation.",
+          "The requested unambiguous answer conflicts with the prohibition on adding a policy condition."
+        ],
+        "P2": [
+          "The meaning of living within the area for someone with two residences is undefined.",
+          "The prior acceptance does not establish a sufficiently specified precedent.",
+          "The requested unambiguous answer cannot be derived without resolving an unprovided policy interpretation."
+        ]
+      },
+      "intendedObjective": {
+        "P1": "Seek an unambiguous eligibility answer for Noor by rewriting the existing residency rule without adding policy.",
+        "P2": "Request an unambiguous eligibility answer through rewriting the residency rule."
+      },
+      "missingPropositions": {
+        "P1": [
+          "An authorized interpretation of residence that determines how Noor's two locations affect eligibility."
+        ],
+        "P2": [
+          "An authoritative interpretation of residency under the existing rule for Noor's circumstances."
+        ]
+      },
+      "protectedNamesNumbersDatesQuotesPhrases": {
+        "P1": [
+          "Noor",
+          "members living within twelve miles of the studio.",
+          "eight miles",
+          "twenty miles",
+          "working nights",
+          "most weekends"
+        ],
+        "P2": [
+          "members living within twelve miles of the studio.",
+          "Noor",
+          "eight miles",
+          "twenty miles",
+          "working nights",
+          "most weekends",
+          "membership is current"
+        ]
+      },
+      "requiredForm": {
+        "P1": "Plain explanation of the residency rule; definitive eligibility requires an interpretation not established here.",
+        "P2": "Plain residency-rule explanation; a definitive yes/no is not established by the supplied rule."
+      },
+      "stableFactsAndClaims": {
+        "P1": [
+          "Entrants must be members living within twelve miles of the studio.",
+          "Noor's membership is current; her flat is eight miles away and her job-adjacent room twenty miles away.",
+          "She stays in the room on working nights and at the flat most weekends.",
+          "The rule does not define living within the area, designate an address record, or address multiple residences.",
+          "Last year's organiser accepted someone who wintered elsewhere, but that entrant's supplied address and circumstances are unknown.",
+          "This year's organiser requests a plain explanation before answering; the committee has not discussed Noor and the form asks only for a contact address.",
+          "Noor wants eligibility determined before preparing work photographs."
+        ],
+        "P2": [
+          "Entrants must be members living within twelve miles of the studio.",
+          "Noor has a flat eight miles away and a work-related room twenty miles away, staying at the room on working nights and the flat most weekends.",
+          "Her membership is current.",
+          "The rule defines neither living within the area nor an address record and does not address multiple residences.",
+          "Last year's organiser accepted someone wintering elsewhere, but that entrant's supplied circumstances and address are unknown.",
+          "This year's organiser wants an explanation; the committee has not discussed Noor's situation and the form asks only for a contact address.",
+          "Noor wants eligibility resolved before preparing work photographs."
+        ]
+      },
+      "voiceConstraints": {
+        "P1": [
+          "Plain, neutral language; retain uncertainty rather than supplying an eligibility judgment."
+        ],
+        "P2": [
+          "Plain, neutral, precise about what the rule does and does not establish."
+        ]
+      }
+    }
+  }
+]

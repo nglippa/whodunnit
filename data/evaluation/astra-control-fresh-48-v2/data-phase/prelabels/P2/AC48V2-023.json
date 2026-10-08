@@ -1,0 +1,62 @@
+{
+  "caseId": "AC48V2-023",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Clarify the plan and honestly communicate the disputed school booking status.",
+  "acceptableEditScope": "Reword for members while retaining attribution, conditional plans, and unresolved disagreement.",
+  "stableFactsAndClaims": [
+    "The grant decision is expected in early summer.",
+    "An award before lease expiry permits retaining the rehearsal room through August.",
+    "A later award leads to using the school hall until another room is found.",
+    "The treasurer calls the school booking provisional; the director calls it confirmed.",
+    "Both requested publication this week."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "early summer",
+    "August",
+    "this week",
+    "provisional",
+    "confirmed"
+  ],
+  "requiredForm": "Member planning update with attributed conflicting statements.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "The school booking's actual status is unresolved.",
+    "Exact grant and lease dates are not supplied."
+  ],
+  "missingPropositions": [
+    "Information establishing whether the school booking is provisional or confirmed."
+  ],
+  "voiceConstraints": [
+    "Clear, neutral, transparent about uncertainty."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 45,
+      "quote": "Make this planning update clearer for members"
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 92,
+      "endByte": 155,
+      "quote": "without choosing whose statement is correct or inventing dates."
+    },
+    {
+      "supportsField": "ambiguity",
+      "field": "source",
+      "startByte": 214,
+      "endByte": 302,
+      "quote": "The treasurer says the school booking is provisional; the director says it is confirmed."
+    }
+  ]
+}

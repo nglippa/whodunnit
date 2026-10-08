@@ -1,0 +1,61 @@
+{
+  "caseId": "AC48V2-011",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the dispatch deadline in the summary and related wording.",
+  "acceptableEditScope": "Deadline replacement and directly related wording only; the new deadline must first be supplied.",
+  "stableFactsAndClaims": [
+    "Order GATE-732 contains six replacement hinges and one fitting guide, sent by tracked ground service.",
+    "The existing dispatch deadline is September 8.",
+    "One carton holds the guide above a padded hinge envelope; check contents before discarding packaging.",
+    "A dispatch deadline is the latest workshop departure date, not arrival; transit depends on the carrier and an estimate may appear only after the first depot scan.",
+    "For damaged hinges, keep the carton and photograph the part and packing position for replacement and packing review."
+  ],
+  "authorizedFactualChanges": [
+    "Replace the dispatch deadline with a changed but unspecified deadline."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "GATE-732",
+    "six replacement hinges",
+    "one fitting guide",
+    "tracked ground service",
+    "September 8 as the existing deadline"
+  ],
+  "requiredForm": "Dispatch summary with its practical guidance.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The new dispatch deadline."
+  ],
+  "voiceConstraints": [
+    "Clear logistical instructions; distinguish dispatch from arrival."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 47,
+      "quote": "The workshop has changed the dispatch deadline."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 48,
+      "endByte": 148,
+      "quote": "Update the summary and any related wording to use the new deadline, which has not yet been provided."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 43,
+      "quote": "DISPATCH SUMMARY\n\nOrder reference: GATE-732"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "caseId": "AC48V2-006",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the invoice count, balance, and oldest invoice date from the completed reconciliation.",
+  "acceptableEditScope": "Change only those three facts; retain account status and payment instructions.",
+  "stableFactsAndClaims": [
+    "Review the attached statement and contact accounts if a payment appears missing.",
+    "Bank transfers use invoice references; combined transfers include every invoice number.",
+    "The account remains open; the notice requests reconciliation and is not a suspension notice.",
+    "A separate confirmation follows the records check.",
+    "Previously sent payments should be reported with transfer date and covered invoice numbers; do not send full bank statements or login details."
+  ],
+  "authorizedFactualChanges": [
+    "Three unpaid invoices becomes two.",
+    "$840 becomes $560.",
+    "March 12 becomes April 9."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "ACCOUNT REVIEW NOTICE",
+    "two unpaid invoices",
+    "$560",
+    "April 9",
+    "account remains open"
+  ],
+  "requiredForm": "Account review notice.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Measured administrative tone; preserve the distinction from suspension."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 100,
+      "quote": "The completed reconciliation shows two unpaid invoices totaling $560, with the oldest dated April 9."
+    },
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "source",
+      "startByte": 23,
+      "endByte": 93,
+      "quote": "Our records show three unpaid invoices on your account, totaling $840."
+    }
+  ]
+}

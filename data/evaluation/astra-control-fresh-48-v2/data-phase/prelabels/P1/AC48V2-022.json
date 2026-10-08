@@ -1,0 +1,66 @@
+{
+  "caseId": "AC48V2-022",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace only Soren Pell's workshop telephone extension.",
+  "acceptableEditScope": "Change his extension from 218 to 241; leave other numbers, packing details, condition claims, and agreement wording intact.",
+  "stableFactsAndClaims": [
+    "The note records collection condition and packing, does not amend transport terms or certify post-delivery condition, and accompanies receipt photographs.",
+    "Eight panels A–H are divided between larger and narrower crates with foam; two sealed mounting-clip bags are beneath the narrow crate's panels and go to the installer.",
+    "Panel C has a photographed shallow rear scratch about 4 centimeters from the lower left corner viewed from behind; it is invisible from the front and does not reach the edge.",
+    "No universal harmlessness claim is made; inspect the scratch before fitting the rear bracket.",
+    "Receipt signature records arrival, not inspected acceptance; the venue checks contents before accepting or reporting concerns.",
+    "Lila Darrow is the carrier collection contact at extension 281; the receipt number is 2187.",
+    "Wet or distorted crates should be photographed before opening, reported, and retained; keep panels upright pending inspection.",
+    "The exhibition layout is unconfirmed and no installation order is prescribed."
+  ],
+  "authorizedFactualChanges": [
+    "Soren Pell's workshop extension changes from 218 to 241."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Soren Pell",
+    "241",
+    "Lila Darrow",
+    "281",
+    "2187",
+    "receipt does not constitute acceptance.",
+    "eight panels",
+    "Panel C",
+    "approximately 4 centimeters"
+  ],
+  "requiredForm": "Existing handover note with a single contact-number update.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Precise operational and contractual distinctions."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 43,
+      "quote": "Soren Pell's workshop extension is now 241."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 44,
+      "endByte": 190,
+      "quote": "Replace his extension only. Preserve Lila Darrow's extension, the receipt number, all packing and condition facts, and the exact agreement phrase."
+    },
+    {
+      "supportsField": "requiredForm",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 86,
+      "quote": "This handover note accompanies the display panels packed for the regional design fair."
+    }
+  ]
+}

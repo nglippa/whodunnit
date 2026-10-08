@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-028",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Review clarity while keeping the playful tone and exact lighthouse description.",
+  "acceptableEditScope": "Minimal clarity edits; do not alter Aunt Sal's quoted description.",
+  "stableFactsAndClaims": [
+    "The family played a guessing game with Aunt Sal after dinner.",
+    "Sal described a lighthouse using the protected phrase; Ben guessed volcano, prompting laughter.",
+    "They did not finish keeping score.",
+    "By the last round, giving Sal reasons to invent mattered more than correct guessing."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Aunt Sal",
+    "Ben",
+    "“a very tall torch with responsibilities,”"
+  ],
+  "requiredForm": "Short family recollection.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Playful, affectionate, conversational."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 134,
+      "quote": "Review this short family recollection for clarity while retaining its playful tone and Aunt Sal's exact description of the lighthouse."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 86,
+      "endByte": 132,
+      "quote": "“a very tall torch with responsibilities,”"
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 55,
+      "quote": "We played the guessing game with Aunt Sal after dinner."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-043",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Gently tighten the personal reflection for a small newsletter.",
+  "acceptableEditScope": "Small tightening that preserves fragments, concrete images, and unresolved mixed feelings; add no lesson.",
+  "stableFactsAndClaims": [
+    "The narrator once saw train departures as tidy endings, but the sister's move north changed that perception.",
+    "Concrete traces include a scarf, excess tea, and a station receipt.",
+    "The sister likes her new town and they talk most evenings.",
+    "The narrator enjoys accounts of a crooked-sign bakery and a neighbour's enormous beans.",
+    "Being glad for the sister and missing her coexist without a settled explanation."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "north",
+    "most evenings",
+    "scarf",
+    "station receipt",
+    "bakery with the crooked sign",
+    "enormous beans"
+  ],
+  "requiredForm": "Conversational personal reflection for a small newsletter.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The narrator's mixed feelings are intentionally not resolved."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Conversational fragments, concrete imagery, gentle humor.",
+    "No moral lesson or tidier emotional resolution."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 63,
+      "quote": "Gently tighten this personal reflection for a small newsletter."
+    },
+    {
+      "supportsField": "voiceConstraints",
+      "field": "objective",
+      "startByte": 64,
+      "endByte": 194,
+      "quote": "Keep its conversational fragments, concrete images, and mixed feelings; avoid giving it a lesson or a tidier emotional resolution."
+    }
+  ]
+}

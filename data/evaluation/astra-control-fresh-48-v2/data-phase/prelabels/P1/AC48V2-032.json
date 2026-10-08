@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-032",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the workshop room and starter-kit wool color.",
+  "acceptableEditScope": "Only Room Alder to Room Willow and grey wool to navy wool; retain the rest intact.",
+  "stableFactsAndClaims": [
+    "The kit also contains two needles and a foam pad.",
+    "Practice on sample fabric precedes work on brought items.",
+    "Choose a small worn area, not a large tear; the session is for beginners.",
+    "The tutor can suggest an approach but cannot promise an invisible repair.",
+    "Watching without attempting a repair is welcome.",
+    "Have the booking email at entry; printing is unnecessary.",
+    "The cafe opens beforehand, but refreshments are not included in the booking price."
+  ],
+  "authorizedFactualChanges": [
+    "Room Alder becomes Room Willow.",
+    "Grey wool becomes navy wool."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Room Willow",
+    "navy wool",
+    "two needles",
+    "foam pad"
+  ],
+  "requiredForm": "Existing workshop reminder with two substitutions.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Welcoming, practical; preserve existing spelling conventions."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 104,
+      "quote": "Replace Room Alder with Room Willow and replace grey wool with navy wool in the starter kit description."
+    },
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 69,
+      "quote": "Workshop reminder: the felt repair session takes place in Room Alder."
+    }
+  ]
+}

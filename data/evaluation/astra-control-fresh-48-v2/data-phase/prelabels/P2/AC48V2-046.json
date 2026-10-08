@@ -1,0 +1,63 @@
+{
+  "caseId": "AC48V2-046",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the full route length with 8 kilometres.",
+  "acceptableEditScope": "Replace only the specified route-length phrase; preserve all remaining wording, including duration.",
+  "stableFactsAndClaims": [
+    "The route starts at the old mill bridge and ends at the orchard gate; the roughly three-hour estimate includes stops but excludes lunch. Bring lunch because the cafe is closed.",
+    "The timber bridge has only a downstream handrail; suitability for every mobility aid is not promised and no formal access survey was done.",
+    "Contact the organiser about access; the surfaced shorter option misses the orchard and rejoins only at the finish.",
+    "Dogs need leads, sheep may be unseen, both field gates must close, and permission covers only the marked path.",
+    "The organiser checks the river notice at 8 a.m.; bridge closure cancels the full route. The shorter option depends on river-path conditions, and absence of cancellation is not a safety guarantee.",
+    "Check group messages before leaving. Hall toilets open at 9 a.m.; the walk starts at 9:30. Parking is limited, lifts optional and unarranged, and the bus stop is outside the hall.",
+    "Reply by Friday; replying reserves neither transport nor a long-route commitment. Bring a waterproof layer and drink."
+  ],
+  "authorizedFactualChanges": [
+    "7 kilometres becomes 8 kilometres."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "8 kilometres",
+    "about three hours",
+    "Leave room for the flock.",
+    "8 a.m.",
+    "9 a.m.",
+    "9:30",
+    "Friday"
+  ],
+  "requiredForm": "Existing walking-group information with one exact phrase replaced.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve all supplied wording and access/safety qualifications."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 85,
+      "quote": "Replace only “7 kilometres” with “8 kilometres” in the route length sentence."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 86,
+      "endByte": 181,
+      "quote": "Preserve all other wording, including the duration estimate and “Leave room for the flock.”"
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "objective",
+      "startByte": 150,
+      "endByte": 181,
+      "quote": "“Leave room for the flock.”"
+    }
+  ]
+}

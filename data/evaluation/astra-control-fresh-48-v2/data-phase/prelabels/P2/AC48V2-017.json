@@ -1,0 +1,55 @@
+{
+  "caseId": "AC48V2-017",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Produce a concise, usable meeting account of proposals and next steps.",
+  "acceptableEditScope": "Condense and reorganize the report without turning proposals or dependencies into commitments.",
+  "stableFactsAndClaims": [
+    "The May 21 meeting included five archive volunteers and two town history group members; no spending decisions were made.",
+    "The photograph index is currently searchable only in the reading room; an online copy was suggested, requiring removal of donors' personal contact details.",
+    "Current hours are Tuesday afternoons and the first Saturday morning monthly.",
+    "Two volunteers offered Thursday availability, but no rota was established; two people must be present and the coordinator will seek regular partners.",
+    "A preliminary cutting list would record dates and visible headlines without unfolding fragile pages; it would not replace conservation or permit unrestricted use.",
+    "The coordinator will list publishable index fields, gather Thursday availability, and estimate listing time for June review.",
+    "No public launch date, purchases, or summer start for extra opening were promised."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "May 21",
+    "five archive volunteers",
+    "two members",
+    "Tuesday afternoons",
+    "first Saturday morning",
+    "Thursday afternoon",
+    "June meeting"
+  ],
+  "requiredForm": "Concise meeting report with proposals, dependencies, and next steps clearly distinguishable.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "Publication, additional opening, and other commitments depend on further information and discussion."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain, usable, accurate about tentative status."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 84,
+      "quote": "Turn this meeting report into a concise, usable account of proposals and next steps."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 85,
+      "endByte": 206,
+      "quote": "Preserve what was agreed, what remains tentative, the privacy concern, and the absence of spending or launch commitments."
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-007",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Apply the confirmed event schedule, capacity, and entrance changes.",
+  "acceptableEditScope": "Update only those facts and preserve all remaining information.",
+  "stableFactsAndClaims": [
+    "Lift access reaches the roof, with a steward at the lift door.",
+    "Families reserve one arrival slot through the school portal; the early slot is usually quieter.",
+    "Cloud cover affects visibility; no particular object is guaranteed.",
+    "The astronomy club explains the telescope and provides printed sky maps.",
+    "Wear a warm coat; hot drinks are in the science foyer.",
+    "Unsafe wind cancels the roof telescope session while the indoor demonstration continues."
+  ],
+  "authorizedFactualChanges": [
+    "Friday, February 6, 7 to 9 p.m. becomes Saturday, February 7, 6 to 8 p.m.",
+    "Capacity changes from 40 to 32 visitors.",
+    "Entry changes from the science building to the west courtyard gate."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Saturday, February 7",
+    "6 to 8 p.m.",
+    "32 visitors",
+    "west courtyard gate"
+  ],
+  "requiredForm": "Family observatory event announcement.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Welcoming and practical, with qualified visibility and safety claims."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 148,
+      "quote": "Use these confirmed changes: the event is Saturday, February 7, from 6 to 8 p.m.; capacity is 32 visitors; entry is through the west courtyard gate."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 149,
+      "endByte": 180,
+      "quote": "Preserve all other information."
+    }
+  ]
+}

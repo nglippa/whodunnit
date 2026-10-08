@@ -1,0 +1,62 @@
+{
+  "caseId": "AC48V2-034",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the cabin's nightly price and bus time with updated values.",
+  "acceptableEditScope": "Only the two requested values may change; neither replacement can be inferred.",
+  "stableFactsAndClaims": [
+    "The narrator booked a little cabin for a walking weekend with Jo.",
+    "The source gives £84 a night and attributes the 7:10 last-bus time to the owner.",
+    "The last bus stops outside the village shop.",
+    "There is a wood stove, but kindling must be brought.",
+    "The narrator will send the route after checking the footbridge."
+  ],
+  "authorizedFactualChanges": [
+    "Replace £84 with the revised nightly amount when supplied.",
+    "Replace 7:10 with the latest timetable time when supplied."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Jo",
+    "village shop",
+    "kindling",
+    "footbridge"
+  ],
+  "requiredForm": "Informal personal message without fabricated replacements.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The revised nightly price.",
+    "The latest timetable bus time."
+  ],
+  "voiceConstraints": [
+    "Friendly, informal, practical."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 98,
+      "quote": "Replace the nightly price with the revised amount and the bus time with the latest timetable time."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 99,
+      "endByte": 136,
+      "quote": "I have not included either new value."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 58,
+      "endByte": 152,
+      "quote": "It costs £84 a night, and the owner says the last bus stops outside the village shop at 7:10."
+    }
+  ]
+}

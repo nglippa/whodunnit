@@ -1,0 +1,62 @@
+{
+  "caseId": "AC48V2-011",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the changed dispatch deadline and related wording.",
+  "acceptableEditScope": "Replace the deadline when provided; preserve unrelated shipment facts and the deadline-versus-arrival distinction.",
+  "stableFactsAndClaims": [
+    "Order GATE-732 contains six replacement hinges and one fitting guide, shipped by tracked ground service.",
+    "Parts share a single carton; the guide sits above the padded hinge envelope, which may be missed.",
+    "Dispatch deadline means latest workshop departure, not expected arrival.",
+    "Carrier route affects transit; delivery estimates may appear only after the first depot scan.",
+    "For damaged hinges, retain the carton and send photographs of the part and packing position."
+  ],
+  "authorizedFactualChanges": [
+    "Replace September 8 with the workshop's new dispatch deadline, which is not supplied."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "DISPATCH SUMMARY",
+    "GATE-732",
+    "six replacement hinges",
+    "one fitting guide",
+    "tracked ground service"
+  ],
+  "requiredForm": "Dispatch summary retaining its labeled shipment details and explanatory guidance.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [
+    "The new dispatch deadline."
+  ],
+  "voiceConstraints": [
+    "Precise, practical shipment information."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 47,
+      "quote": "The workshop has changed the dispatch deadline."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 48,
+      "endByte": 148,
+      "quote": "Update the summary and any related wording to use the new deadline, which has not yet been provided."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 166,
+      "quote": "DISPATCH SUMMARY\n\nOrder reference: GATE-732\nItems: six replacement hinges and one fitting guide\nDispatch deadline: September 8\nDelivery method: tracked ground service"
+    }
+  ]
+}

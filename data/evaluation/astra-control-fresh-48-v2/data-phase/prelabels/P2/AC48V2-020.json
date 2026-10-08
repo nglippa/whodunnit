@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-020",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Lightly improve flow while retaining humor and the unresolved possibility of singing later.",
+  "acceptableEditScope": "Light changes to transitions or wording; no reframing of skipping the turn as triumph or failure.",
+  "stableFactsAndClaims": [
+    "The friend added the narrator to karaoke while the narrator read the menu and chose a familiar song without prior agreement.",
+    "The narrator delayed asking removal while the host handled a cable.",
+    "The outing celebrated the friend's new job after months of applications.",
+    "One singer brought a tambourine; another forgot a verse and continued; both received applause.",
+    "The narrator asked to skip, the host calmly moved on, and nobody demanded an explanation.",
+    "The friend sang confidently with imperfect tuning; the narrator cheered.",
+    "The evening was good; returning and singing next time remain qualified possibilities."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "approximately thirty seconds",
+    "Thursday"
+  ],
+  "requiredForm": "First-person personal account.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The narrator has not decided whether to sing next time."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Conversational humor, self-awareness, understated social observations.",
+    "Avoid an imposed success or failure narrative."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 131,
+      "quote": "Lightly improve the flow of this personal account while retaining its conversational humor and uncertainty about singing next time."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 132,
+      "endByte": 189,
+      "quote": "Do not make the skipped turn into a triumph or a failure."
+    }
+  ]
+}

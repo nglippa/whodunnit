@@ -1,0 +1,974 @@
+[
+  {
+    "caseId": "AC48V2-001",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Assess whether visitors can follow the introduction; retain it if clear.",
+    "acceptableEditScope": "Only changes necessary for clarity; no revision is required if the instructions already work.",
+    "stableFactsAndClaims": ["The walk starts at the clock tower and takes about 35 minutes.", "Download before leaving home because signal drops near the tunnel.", "Visitors may pause and need not keep pace with the recording.", "On Sunday the market blocks the final stop; finish at the fountain instead."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["clock tower", "about 35 minutes", "Sunday", "fountain"],
+    "requiredForm": "Visitor-facing audio walk introduction.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Clear, direct, reassuring visitor instructions."],
+    "zeroToleranceTraps": ["collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 46, "quote": "Read this audio walk introduction for clarity."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 68, "quote": "The audio walk starts at the clock tower and takes about 35 minutes."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-002",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Check usability and correct only wording that could cause employees to misunderstand the process.",
+    "acceptableEditScope": "Targeted clarification of genuine process misunderstandings; retain effective instructions.",
+    "stableFactsAndClaims": ["Corrections require the shift date, recorded and proposed times, and reason; each submission allows three shifts.", "A request does not immediately change the timecard; the supervisor checks the shift record and contacts the employee if entries differ.", "Status appears beside the original timecard; original and proposed entries remain visible until review ends.", "Missing shifts use Add a shift, not Correct a shift; these ask for different information.", "Rejected worked dates must be sent with the error message to scheduling; employees must not substitute an inaccurate date."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["three shifts per submission", "Add a shift", "Correct a shift"],
+    "requiredForm": "Internal employee process guide.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Practical, clear, procedural."],
+    "zeroToleranceTraps": ["collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 121, "quote": "Check this internal guide for ease of use. Make changes only where an employee could otherwise misunderstand the process."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 68, "quote": "Use the correction form when a submitted timecard contains an error."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-003",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Review clarity and the limits of literary interpretation while leaving effective sentences alone.",
+    "acceptableEditScope": "Minimal clarification that preserves the distinction between suggestive evidence and established fictional events.",
+    "stableFactsAndClaims": ["In chapter 4 Len recalls the bell before the collapse; in chapter 11 the caretaker recalls the collapse before the bell.", "Both are recollections without independent narrator confirmation.", "Len interprets the bell as a warning; the caretaker interprets it as a consequence of falling masonry.", "The text supports comparing explanations, not establishing the actual sequence.", "The ending leaves timing unresolved; a loose bell rope may prompt reconsideration but does not prove the bell came first."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Len", "chapter 4", "chapter 11", "caretaker", "loose bell rope"],
+    "requiredForm": "Literary analysis with explicit interpretive limits.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The fictional sequence of bell and collapse is unresolved and must remain so."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Analytical, cautious, attentive to evidential distinctions."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 87, "quote": "Review this literary analysis for clarity and appropriate limits on its interpretation."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 67, "quote": "The novel gives the reader two accounts of the bell tower incident."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-004",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Identify distracting clarity problems in the personal essay with minimal intervention.",
+    "acceptableEditScope": "Only small clarity edits; preserve the exact calendar heading and the essay's modest account of progress.",
+    "stableFactsAndClaims": ["The narrator wants to cross the pool without checking proximity to the edge; the instructor shows where the shallow lane ends.", "Adults attend for different reasons; nobody demands explanations of childhood or fear.", "The narrator paid for six lessons, struggles to relax while floating, and can put their face in and exhale steadily by the third lesson.", "Crossing still involves stops for breathing or reassurance that stopping is possible; the instructor distinguishes these reasons.", "Lessons occur in a municipal pool; another course or practice with a friend remains undecided.", "The narrator can briefly look at blue tiles in mid-lane without needing the edge."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["one lane at a time.", "six lessons", "third lesson"],
+    "requiredForm": "First-person personal essay.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The narrator has not chosen what to do after the last lesson."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Understated, concrete, gently humorous.", "Preserve tentative progress and avoid a grand discovery about courage."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 149, "quote": "Read this personal essay for distracting clarity problems. Keep any changes minimal, and preserve the calendar heading \"one lane at a time.\" exactly."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 73, "quote": "At my first swimming lesson, the instructor asked what I wanted to learn."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-005",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update the collection appointment and entrance using the supplied replacements.",
+    "acceptableEditScope": "Replace the appointment day, date, time, and entrance; retain all other instructions.",
+    "stableFactsAndClaims": ["Show the attendant the booking email.", "Pieces will be wrapped, but the collector should bring a box.", "Forward the email first if another person collects."],
+    "authorizedFactualChanges": ["Wednesday, November 4, at 3:30 p.m. becomes Thursday, November 5, at 11:15 a.m.", "The front entrance on Alder Street becomes the side door on Pine Lane."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Thursday, November 5", "11:15 a.m.", "side door on Pine Lane"],
+    "requiredForm": "Pottery collection appointment message.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Direct, courteous instructions."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 128, "quote": "Update the appointment to Thursday, November 5, at 11:15 a.m., and change the collection entrance to the side door on Pine Lane."},
+      {"supportsField": "authorizedFactualChanges", "field": "source", "startByte": 0, "endByte": 85, "quote": "Your pottery collection appointment is booked for Wednesday, November 4, at 3:30 p.m."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-006",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update the invoice count, balance, and oldest invoice date from the completed reconciliation.",
+    "acceptableEditScope": "Change only those three facts; retain account status and payment instructions.",
+    "stableFactsAndClaims": ["Review the attached statement and contact accounts if a payment appears missing.", "Bank transfers use invoice references; combined transfers include every invoice number.", "The account remains open; the notice requests reconciliation and is not a suspension notice.", "A separate confirmation follows the records check.", "Previously sent payments should be reported with transfer date and covered invoice numbers; do not send full bank statements or login details."],
+    "authorizedFactualChanges": ["Three unpaid invoices becomes two.", "$840 becomes $560.", "March 12 becomes April 9."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["ACCOUNT REVIEW NOTICE", "two unpaid invoices", "$560", "April 9", "account remains open"],
+    "requiredForm": "Account review notice.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Measured administrative tone; preserve the distinction from suspension."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 100, "quote": "The completed reconciliation shows two unpaid invoices totaling $560, with the oldest dated April 9."},
+      {"supportsField": "authorizedFactualChanges", "field": "source", "startByte": 23, "endByte": 93, "quote": "Our records show three unpaid invoices on your account, totaling $840."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-007",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Apply confirmed changes to event scheduling, capacity, and entry.",
+    "acceptableEditScope": "Replace the stated event date, hours, visitor capacity, and entrance; preserve everything else.",
+    "stableFactsAndClaims": ["The lift reaches roof level and a steward is available at its door.", "Each family reserves one arrival slot through the school portal.", "The earlier slot is usually quieter; cloud cover affects viewing and no particular object is guaranteed.", "The astronomy club explains the telescope and supplies printed sky maps.", "Wear a warm coat; hot drinks are in the science foyer.", "Unsafe wind cancels the roof telescope session, while the indoor demonstration continues."],
+    "authorizedFactualChanges": ["Friday, February 6, from 7 to 9 p.m. becomes Saturday, February 7, from 6 to 8 p.m.", "40 visitors becomes 32 visitors.", "Science building entry becomes entry through the west courtyard gate."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Saturday, February 7", "6 to 8 p.m.", "32 visitors", "west courtyard gate"],
+    "requiredForm": "Family observatory event announcement.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Welcoming, practical, explicit about viewing and weather limits."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 148, "quote": "Use these confirmed changes: the event is Saturday, February 7, from 6 to 8 p.m.; capacity is 32 visitors; entry is through the west courtyard gate."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 22, "quote": "The school observatory"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-008",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update both local recovery specifications throughout the announcement.",
+    "acceptableEditScope": "Change save frequency and retention period wherever stated; retain all other behavior, privacy limits, date, and tone.",
+    "stableFactsAndClaims": ["The panel gathers local drafts and identifying information; the member demonstration is June 2, with a written guide afterward for absentees.", "Recovery copies stay on the same device and help after an unexpected tab closure; they are not independent backups and do not protect against device loss or storage failure.", "The panel shows title, last local save time, and approximate size; contents appear only through Preview.", "Preview opens saved text beside the current document, replaces neither, and can close without committing a change.", "Restore requires title confirmation and creates a new document; the current document stays open and documents are not merged automatically.", "Blocked browser storage means no local copies; no substitute is silently uploaded to the server.", "Shared-device users should clear local copies because another person using the same browser profile may preview them.", "The session and guide cover previewing, restoring, removing copies, and availability conditions."],
+    "authorizedFactualChanges": ["Every two minutes becomes every five minutes.", "Fourteen days becomes twenty-one days."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["five minutes", "twenty-one days", "June 2", "Preview", "Restore"],
+    "requiredForm": "Member announcement retaining its existing tone.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Considered, reassuring, courteous announcement tone."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 123, "quote": "Apply these confirmed specifications: local recovery saves occur every five minutes, and copies remain for twenty-one days."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 181, "endByte": 252, "quote": "Preserve its other behavior, privacy limitations, event date, and tone."},
+      {"supportsField": "voiceConstraints", "field": "source", "startByte": 0, "endByte": 62, "quote": "We are delighted to introduce the revised draft recovery panel"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-009",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace the interim fundraising total with the final post-concert total.",
+    "acceptableEditScope": "Update the total only when the missing final amount is supplied; do not calculate or invent it.",
+    "stableFactsAndClaims": ["$2,150 is the reported amount raised so far, not a supplied final total.", "That interim amount covers wall preparation and part of the paint order.", "The announcement thanks donors, equipment lenders, and people offering time.", "Two volunteers are still needed to protect pavement on painting day."],
+    "authorizedFactualChanges": ["A final fundraising total is requested, but no replacement amount is authorized numerically."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["$2,150 as an interim figure", "two volunteers"],
+    "requiredForm": "Fundraiser announcement; a completed final-total update requires the missing amount.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": ["The final fundraising total after the concert."],
+    "voiceConstraints": ["Grateful, community-oriented, practical."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 76, "quote": "Update this announcement with the final fundraising total after the concert."},
+      {"supportsField": "missingPropositions", "field": "objective", "startByte": 77, "endByte": 118, "quote": "I have not included the final total here."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 46, "quote": "The mural fundraiser has raised $2,150 so far."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-010",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Add the new solo piece's title and update Mara's performance date.",
+    "acceptableEditScope": "Only the requested title addition and date update; both require supplied details and cannot be inferred.",
+    "stableFactsAndClaims": ["Mara Venn is a stage performer based in Bellweather.", "Recent work includes Nell in Lantern House's The Quiet Orchard and a touring storytelling show for primary schools.", "She runs occasional voice workshops at the neighborhood arts center.", "Her quoted approach, also in the introductory workshop title, is leave room for the listener; the workshop addresses pacing, breath, and clear versus loud speech.", "The biography currently reports June 14 at the Old Pump Room and a new solo piece without title or description.", "The venue sells tickets; the arts center handles neither reservations nor availability confirmation."],
+    "authorizedFactualChanges": ["Add the new solo piece's title and replace the performance date once supplied; no actual replacement values are given."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Mara Venn", "Bellweather", "Nell", "Lantern House", "The Quiet Orchard", "leave room for the listener.", "Old Pump Room", "June 14 as the existing date"],
+    "requiredForm": "Performer biography; requested completion depends on missing details.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": ["The new solo piece's title.", "The updated performance date."],
+    "voiceConstraints": ["Informative biographical tone; retain reservation limitations."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 101, "quote": "Revise this biography to include the title of Mara's new solo piece and the updated performance date."},
+      {"supportsField": "missingPropositions", "field": "objective", "startByte": 102, "endByte": 180, "quote": "Those details are not supplied; do not infer them from the existing biography."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 52, "quote": "Mara Venn is a stage performer based in Bellweather."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-011",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update the dispatch deadline in the summary and related wording.",
+    "acceptableEditScope": "Deadline replacement and directly related wording only; the new deadline must first be supplied.",
+    "stableFactsAndClaims": ["Order GATE-732 contains six replacement hinges and one fitting guide, sent by tracked ground service.", "The existing dispatch deadline is September 8.", "One carton holds the guide above a padded hinge envelope; check contents before discarding packaging.", "A dispatch deadline is the latest workshop departure date, not arrival; transit depends on the carrier and an estimate may appear only after the first depot scan.", "For damaged hinges, keep the carton and photograph the part and packing position for replacement and packing review."],
+    "authorizedFactualChanges": ["Replace the dispatch deadline with a changed but unspecified deadline."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["GATE-732", "six replacement hinges", "one fitting guide", "tracked ground service", "September 8 as the existing deadline"],
+    "requiredForm": "Dispatch summary with its practical guidance.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": ["The new dispatch deadline."],
+    "voiceConstraints": ["Clear logistical instructions; distinguish dispatch from arrival."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 47, "quote": "The workshop has changed the dispatch deadline."},
+      {"supportsField": "missingPropositions", "field": "objective", "startByte": 48, "endByte": 148, "quote": "Update the summary and any related wording to use the new deadline, which has not yet been provided."},
+      {"supportsField": "protectedNamesNumbersDatesQuotesPhrases", "field": "source", "startByte": 0, "endByte": 43, "quote": "DISPATCH SUMMARY\n\nOrder reference: GATE-732"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-012",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update the cabin key safe code while keeping unrelated directions and precautions.",
+    "acceptableEditScope": "Replace only the code once the missing replacement is supplied.",
+    "stableFactsAndClaims": ["Drive slowly after the cattle grid; use the apple-tree passing place, avoid the soft verge, park by the woodpile, and keep the smaller gate clear.", "The porch-post key safe currently uses 6148; slide the cover, align digits, pull the lever, then close and scramble it.", "Lift the front-door handle before turning the key and do not force it; the kitchen spare opens only the back door.", "The heater switch is outside the bathroom; allow about half an hour for hot water.", "Water may initially be cloudy from air; let it stand a minute, and call before using persistently cloudy or unusually smelling water; bottled water is in the pantry.", "Use small stove pieces, retain the screen, close the door before leaving the room, and do not leave it burning while everyone is out; the chimney was swept in August and the smoke alarm stays on.", "At departure strip beds, basket sheets without washing, empty the bin, close windows, turn off the heater, return the key, and message after reaching the paved road."],
+    "authorizedFactualChanges": ["Replace the key safe code with a new code that is not provided."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["6148 as the existing code", "about half an hour", "one minute", "August"],
+    "requiredForm": "Cabin arrival and departure notes.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": ["The replacement key safe code."],
+    "voiceConstraints": ["Personal, practical directions with intact precautions."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 54, "quote": "Update these arrival notes with the new key safe code."},
+      {"supportsField": "missingPropositions", "field": "objective", "startByte": 55, "endByte": 105, "quote": "The replacement code is missing from this request."},
+      {"supportsField": "requiredForm", "field": "source", "startByte": 0, "endByte": 63, "quote": "Here are the notes for arriving at the cabin while we are away."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-013",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Simplify the single sentence describing the table's position.",
+    "acceptableEditScope": "Edit only that sentence; preserve the exact artist's title and the touching distinction.",
+    "stableFactsAndClaims": ["Visitors may touch the sample cloth on the small table but may not touch the hanging work.", "The table's current position makes access difficult for wheelchair users.", "The table should be moved closer to the entrance."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["A Map of Almost Home.", "sample cloth", "hanging work"],
+    "requiredForm": "Existing exhibit-related note with one sentence simplified.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Plain, direct, accessibility-aware instructions."],
+    "zeroToleranceTraps": ["collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 54, "quote": "Simplify only the sentence about the table's position."},
+      {"supportsField": "protectedNamesNumbersDatesQuotesPhrases", "field": "source", "startByte": 0, "endByte": 73, "quote": "The exhibit label must retain the artist's title, \"A Map of Almost Home.\""}
+    ]
+  },
+  {
+    "caseId": "AC48V2-014",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Remove the accidental duplicate sentence and adjust punctuation only if necessary.",
+    "acceptableEditScope": "Delete one repeated occurrence; preserve all remaining reply content and the quoted fitting instruction.",
+    "stableFactsAndClaims": ["A replacement handle can be sent after confirming the mug version.", "Request a base photograph showing the model code, without receipt or payment information.", "If the code is worn away, request approximate height and sliding-tab versus push-button lid.", "Attach the replacement by hand only; a wrench can damage the threaded insert.", "A handle does not fix a cracked insert; a crack photograph allows assessment before sending a part."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["tighten by hand only."],
+    "requiredForm": "Customer-service reply with the duplicate removed.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["Either duplicate occurrence could be removed if the remaining reply is coherent and otherwise preserved."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Courteous, practical, precise."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 103, "quote": "Remove the accidentally repeated sentence and make any punctuation adjustment required by that removal."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 104, "endByte": 173, "quote": "Keep the rest of the reply, including the quoted fitting instruction."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 61, "endByte": 137, "quote": "We can send a replacement handle once we confirm which mug version you have."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-015",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Reconstruct the orientation note into clear, friendly instructions for a new volunteer.",
+    "acceptableEditScope": "Rewrite and organize the wording while retaining actual steps and responsibilities; add no procedures.",
+    "stableFactsAndClaims": ["Get an apron from the cupboard beneath the sink on arrival.", "Payment handling and drink preparation are distinct; new volunteers do not handle payments on their first shift.", "The shift leader pairs the new volunteer with a drink preparer who shows order slips and the washing station.", "Return the used apron to the laundry basket next to the cupboard and tell the leader verbally before leaving.", "An unwell volunteer must tell the leader immediately and stop handling drinks."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["first shift", "cupboard beneath the sink", "laundry basket next to the cupboard"],
+    "requiredForm": "Usable volunteer orientation instructions.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Clear, friendly, ordinary language addressed to a new volunteer."],
+    "zeroToleranceTraps": ["collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 86, "quote": "Reconstruct this orientation note as clear, friendly instructions for a new volunteer."},
+      {"supportsField": "requiredForm", "field": "source", "startByte": 0, "endByte": 29, "quote": "Volunteer Arrival Experience:"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-016",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Rewrite the methods and results note in direct academic prose.",
+    "acceptableEditScope": "Substantial prose cleanup while preserving design, measurements, limitations, and cautious conclusions.",
+    "stableFactsAndClaims": ["Arrangement A puts labels at the front edge; B puts them above the relevant shelf.", "Twelve participants each performed one search under each arrangement; order alternated between participants.", "Median times were 19 seconds for A and 24 seconds for B.", "No uncertainty interval was calculated; participants were staff familiar with the room.", "The task used one deliberately misplaced label, unlike ordinary searches that may involve multiple labels, unfamiliar categories, or interruptions.", "The results support a further trial, not broad superiority; visitors would test whether the observed difference extends to unfamiliar users."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Arrangement A", "arrangement B", "Twelve participants", "19 seconds", "24 seconds"],
+    "requiredForm": "Academic methods and results note.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Direct academic prose with cautious evidential claims."],
+    "zeroToleranceTraps": ["collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 65, "quote": "Rewrite this methods and results note into direct academic prose."},
+      {"supportsField": "acceptableEditScope", "field": "source", "startByte": 0, "endByte": 27, "quote": "A comparison was made by us"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-017",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Condense the meeting report into a usable account of proposals and next steps.",
+    "acceptableEditScope": "Reorganize and simplify while distinguishing proposals, tentative arrangements, agreed tasks, and absent commitments.",
+    "stableFactsAndClaims": ["The May 21 meeting involved five archive volunteers and two town history group members; it generated proposals without spending decisions.", "The photograph index is currently searchable only in the reading room; the history group proposed an online copy.", "Donor personal contact details must be removed before index publication.", "Opening is Tuesday afternoons and the first Saturday morning monthly; two volunteers offered Thursday coverage, but no rota was established and two people must be present.", "The coordinator will ask remaining volunteers about regular Thursday availability.", "Unlisted newspaper cutting boxes prompted a proposal to record dates and visible headlines without unfolding fragile pages; this does not replace conservation or authorize unrestricted use.", "The coordinator will identify publishable fields, gather availability, and estimate listing time for June review.", "There is no public launch date, purchase approval, or promised summer opening session."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["May 21", "five archive volunteers", "two members", "Tuesday afternoons", "first Saturday morning", "Thursday afternoon", "June meeting"],
+    "requiredForm": "Concise meeting report focused on proposals and next steps.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": ["Online publication, Thursday opening, and cutting listing remain proposals subject to further information."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Plain, concise, administratively precise about status."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 84, "quote": "Turn this meeting report into a concise, usable account of proposals and next steps."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 85, "endByte": 206, "quote": "Preserve what was agreed, what remains tentative, the privacy concern, and the absence of spending or launch commitments."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-018",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Lightly improve readability while preserving dry humor, rhythm, and uncertainty.",
+    "acceptableEditScope": "Small readability edits without converting speculation about the basil into a confirmed cause.",
+    "stableFactsAndClaims": ["The narrator tried growing basil on the windowsill; the pot now holds pencils.", "Mum says the basil was overwatered; the narrator allows that she may be right.", "The narrator was encouraging and plans to try mint next spring."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Mum", "Next spring", "basil", "mint"],
+    "requiredForm": "Conversational personal post.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["Why the basil died is uncertain."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Dry personification and self-deprecating humor.", "Conversational rhythm; preserve qualified statements."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 102, "quote": "Lightly edit this personal post for readability while keeping its dry humor and conversational rhythm."},
+      {"supportsField": "ambiguity", "field": "objective", "startByte": 103, "endByte": 153, "quote": "Preserve the uncertainty about why the basil died."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 40, "quote": "I tried to grow basil on the windowsill."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-019",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Prepare the visitor note for a neighborhood zine through light editing.",
+    "acceptableEditScope": "Small editorial adjustments retaining clipped delivery, limited firsthand coverage, observations, and suggestion.",
+    "stableFactsAndClaims": ["The visitor used the new audio guide and initially took the long route accidentally near the tapestry room.", "The guide has 16 stops; the visitor heard nine before lunch and makes no judgment about the other seven.", "The wooden printing block explanation was especially good.", "A transcript is available during playback; the largest clock's strike obscured a few recorded words.", "Stop numbers are beside objects; the visitor suggests adding them to the room map after difficulty finding the pottery case."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["16 stops", "nine before lunch", "other seven", "stop numbers on the room map"],
+    "requiredForm": "First-person visitor note for a neighborhood zine.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Clipped sentences and fragments.", "Wry observations without inflating the scope of the review."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 71, "quote": "Prepare this visitor's note for a neighborhood zine with light editing."},
+      {"supportsField": "voiceConstraints", "field": "source", "startByte": 0, "endByte": 35, "quote": "Tried the museum's new audio guide."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-020",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Lightly improve flow while retaining humor, uncertain future singing, and a neutral skipped turn.",
+    "acceptableEditScope": "Small flow edits; do not recast declining the turn as triumph or failure.",
+    "stableFactsAndClaims": ["The friend added the narrator to the karaoke list while the narrator read the menu and chose a familiar song.", "The friend offered removal; the narrator delayed approaching the busy host.", "The outing celebrated the friend's new job after months of applications and the narrator's often redundant vacancy messages.", "One singer had a tambourine; another forgot a verse and continued; both received applause.", "The narrator asked to skip when called; the host simply moved on, the friend squeezed their shoulder, then sang, and the narrator cheered.", "The evening was good; another outing is welcome, but singing next time remains undecided."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["approximately thirty seconds", "Thursday"],
+    "requiredForm": "First-person personal account.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The narrator may sing next time or may supervise the list; no decision is made."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Conversational humor, restrained social observations.", "Preserve uncertainty and avoid a success-or-failure narrative."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 131, "quote": "Lightly improve the flow of this personal account while retaining its conversational humor and uncertainty about singing next time."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 132, "endByte": 189, "quote": "Do not make the skipped turn into a triumph or a failure."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 71, "quote": "My friend put my name on the karaoke list while I was reading the menu."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-021",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Correct the single spelling error killn to kiln.",
+    "acceptableEditScope": "One exact spelling replacement; every other word, number, and title stays unchanged.",
+    "stableFactsAndClaims": ["The kiln was held at 980 degrees for 20 minutes before cooling.", "The trial concerns glaze appearance on sample tiles, not vessel strength or food safety.", "Cream glaze had fewer visible pinholes than gray in this batch.", "The worksheet title matches distributed sheets and must also be used with photographs.", "The note reports no later cooling-schedule trial."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["980 degrees", "20 minutes", "Surface / first firing.", "All source wording except killn"],
+    "requiredForm": "Existing note preserved verbatim except for the typo.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Preserve the existing wording and voice exactly."],
+    "zeroToleranceTraps": ["collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 107, "quote": "Correct \"killn\" to \"kiln\" only. Keep every other word, number, and the worksheet title exactly as supplied."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 93, "quote": "For the ceramics trial, the kiln was held at 980 degrees for 20 minutes before cooling began."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-022",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace only Soren Pell's workshop telephone extension.",
+    "acceptableEditScope": "Change his extension from 218 to 241; leave other numbers, packing details, condition claims, and agreement wording intact.",
+    "stableFactsAndClaims": ["The note records collection condition and packing, does not amend transport terms or certify post-delivery condition, and accompanies receipt photographs.", "Eight panels A–H are divided between larger and narrower crates with foam; two sealed mounting-clip bags are beneath the narrow crate's panels and go to the installer.", "Panel C has a photographed shallow rear scratch about 4 centimeters from the lower left corner viewed from behind; it is invisible from the front and does not reach the edge.", "No universal harmlessness claim is made; inspect the scratch before fitting the rear bracket.", "Receipt signature records arrival, not inspected acceptance; the venue checks contents before accepting or reporting concerns.", "Lila Darrow is the carrier collection contact at extension 281; the receipt number is 2187.", "Wet or distorted crates should be photographed before opening, reported, and retained; keep panels upright pending inspection.", "The exhibition layout is unconfirmed and no installation order is prescribed."],
+    "authorizedFactualChanges": ["Soren Pell's workshop extension changes from 218 to 241."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Soren Pell", "241", "Lila Darrow", "281", "2187", "receipt does not constitute acceptance.", "eight panels", "Panel C", "approximately 4 centimeters"],
+    "requiredForm": "Existing handover note with a single contact-number update.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Precise operational and contractual distinctions."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 43, "quote": "Soren Pell's workshop extension is now 241."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 44, "endByte": 190, "quote": "Replace his extension only. Preserve Lila Darrow's extension, the receipt number, all packing and condition facts, and the exact agreement phrase."},
+      {"supportsField": "requiredForm", "field": "source", "startByte": 0, "endByte": 86, "quote": "This handover note accompanies the display panels packed for the regional design fair."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-023",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Clarify the planning update, particularly the disputed school booking status.",
+    "acceptableEditScope": "Expose the conflicting attributed statements without deciding between them or supplying dates.",
+    "stableFactsAndClaims": ["A grant decision is expected in early summer.", "An award arriving before the lease ends would allow retaining the rehearsal room through August.", "A later award would lead to using the school hall until another room is found.", "The treasurer calls the school booking provisional; the director calls it confirmed.", "Both asked for publication this week."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["early summer", "through August", "this week", "provisional", "confirmed"],
+    "requiredForm": "Member-facing planning update that clearly attributes the disagreement.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": ["The actual status of the school booking is unresolved.", "Exact grant and lease dates are not supplied."],
+    "missingPropositions": ["A verified school booking status needed to state one settled status."],
+    "voiceConstraints": ["Clear, neutral, honest about uncertainty."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 155, "quote": "Make this planning update clearer for members, especially the status of the school booking, without choosing whose statement is correct or inventing dates."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 45, "quote": "We expect the grant decision in early summer."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-024",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Create a readable walking-group account that honestly presents conflicting dates and explanations.",
+    "acceptableEditScope": "Organize and clarify the evidence while retaining unresolved differences and withholding unsupported responsibility assignments.",
+    "stableFactsAndClaims": ["The report lists September 3 as the first public reopening; an attached notice says closure lasted until September 10.", "The report does not explain whether dates concern different hours, sections, or a reversed reopening.", "The contractor attributes delay to a missing inspection signature; the council says the signature was filed and attributes delay to incomplete barrier removal.", "Neither summary includes the inspection sheet or barrier removal log.", "One member recalls crossing September 5; another recalls the east entrance locked that evening.", "The bundle does not establish a single sequence; both recollections may be accurate."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["September 3", "September 10", "September 5", "east entrance"],
+    "requiredForm": "Readable short account for the walking group.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": ["Actual reopening sequence and reason for delay remain unresolved.", "The reason the two resident recollections differ is unknown."],
+    "missingPropositions": ["Evidence establishing a single sequence or responsibility is absent."],
+    "voiceConstraints": ["Neutral attribution, accessible wording, explicit uncertainty."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 109, "quote": "Create a readable account for the walking group that handles the conflicting dates and explanations honestly."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 110, "endByte": 195, "quote": "Keep unresolved matters unresolved and do not assign responsibility without evidence."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 77, "quote": "The footbridge repair report lists the first public reopening as September 3."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-025",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Smooth the story opening while retaining mood, images, and action order.",
+    "acceptableEditScope": "Flow adjustments without adding motives, events, or explanations.",
+    "stableFactsAndClaims": ["Anya sets the chessboard between two beds.", "Her brother is asleep; she arranges his pieces and turns each knight toward the window.", "A window cleaner lowers a wet brush outside; Anya watches it disappear before moving her pawn.", "She waits with hands under her knees, leaving the next move to the empty pillow."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Anya", "wet brush", "hands under her knees", "empty pillow"],
+    "requiredForm": "Short-story opening scene.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The scene does not explain Anya's motives or the significance of the empty pillow."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Restrained mood, concrete images, implied rather than explained emotion."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 132, "quote": "Smooth the flow of this opening scene for a short story while keeping its restrained mood, concrete images, and sequence of actions."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 45, "quote": "Anya set the chessboard between the two beds."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-026",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Check punctuation and fluency while retaining warmth and the specific enjoyment.",
+    "acceptableEditScope": "Minor punctuation or fluency changes only if useful.",
+    "stableFactsAndClaims": ["The narrator watched the suggested silent film.", "The thief carrying an entire door while trying to look innocent caused laughter aloud.", "Laughing caused missed title cards, so the narrator will probably watch again.", "The recipient is thanked for knowing the kind of ridiculous evening needed after that week."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["an entire door", "probably watch it again"],
+    "requiredForm": "Warm personal message.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Warm, conversational, appreciative; retain specific humor."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 119, "quote": "Check this personal message for punctuation and fluency, keeping the warmth and the specific reason I enjoyed the film."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 40, "quote": "I watched the silent film you suggested."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-027",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Review clarity while preserving the distinction between engagement and learning.",
+    "acceptableEditScope": "Only wording clarification; retain the paragraph's research limitations.",
+    "stableFactsAndClaims": ["The pilot measured frequency of new-label use, not improved recall.", "Participants chose gallery routes, causing varied exposure.", "Results describe engagement in this sample.", "They do not establish effects on learning outcomes in another exhibition."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["engagement within this sample", "learning outcomes in a different exhibition"],
+    "requiredForm": "Research limitation paragraph.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Precise, cautious research prose."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 124, "quote": "Review this research limitation paragraph for clear wording while retaining the distinction between engagement and learning."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 98, "quote": "The pilot measured how often visitors used the new labels, not whether the labels improved recall."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-028",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Review clarity while keeping the playful tone and exact lighthouse description.",
+    "acceptableEditScope": "Minimal clarity edits; do not alter Aunt Sal's quoted description.",
+    "stableFactsAndClaims": ["The family played a guessing game with Aunt Sal after dinner.", "Sal described a lighthouse using the protected phrase; Ben guessed volcano, prompting laughter.", "They did not finish keeping score.", "By the last round, giving Sal reasons to invent mattered more than correct guessing."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Aunt Sal", "Ben", "“a very tall torch with responsibilities,”"],
+    "requiredForm": "Short family recollection.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Playful, affectionate, conversational."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 134, "quote": "Review this short family recollection for clarity while retaining its playful tone and Aunt Sal's exact description of the lighthouse."},
+      {"supportsField": "protectedNamesNumbersDatesQuotesPhrases", "field": "source", "startByte": 86, "endByte": 132, "quote": "“a very tall torch with responsibilities,”"},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 55, "quote": "We played the guessing game with Aunt Sal after dinner."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-029",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update the hourly rate and total indexing charge.",
+    "acceptableEditScope": "Replace £45 with £48 and £540 with £576; preserve hours, scope, reference, and terms.",
+    "stableFactsAndClaims": ["The charge covers twelve hours of illustrated catalogue indexing.", "Scope includes agreed entries and one final-proof check, excluding material added after supplied proofs.", "The delivered index uses the requested format with names and subjects in one alphabetical sequence; retain it with production records.", "Pagination changes should be reported so another check can be assessed.", "Payment is due within thirty days of receipt using reference IC42.", "Illustration captions helped identify useful entries."],
+    "authorizedFactualChanges": ["Hourly rate £45 becomes £48.", "Total charge £540 becomes £576."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["twelve hours", "£48", "£576", "IC42", "thirty days of receipt"],
+    "requiredForm": "Invoice note with two monetary updates.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Professional, practical, courteous."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 61, "quote": "Update the hourly rate to £48 and the total charge to £576."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 62, "endByte": 151, "quote": "Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-030",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace the recording sample rate and filename prefix with the supplied values.",
+    "acceptableEditScope": "Only two replacements: 44.1 kHz to 48 kHz and AMBER to CEDAR.",
+    "stableFactsAndClaims": ["Each session folder contains the original recording and a separate captured-sounds text file.", "Retain originals when preparing catalogue excerpts; excerpts have separate filenames and notes locating their start in the original.", "Record microphone position before moving equipment because sound alone cannot recover it.", "Mark failed takes in notes instead of silently removing them.", "Do not apply noise reduction to raw files; label processed copies as processed."],
+    "authorizedFactualChanges": ["44.1 kHz becomes 48 kHz.", "Filename prefix AMBER becomes CEDAR."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["48 kHz", "CEDAR", "All other setup-sheet wording"],
+    "requiredForm": "Existing recording setup sheet with exactly two updates.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Preserve the existing direct technical instructions."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 128, "quote": "Replace the sample rate with 48 kHz and the filename prefix with CEDAR. Make only those two supplied updates to the setup sheet."},
+      {"supportsField": "requiredForm", "field": "source", "startByte": 0, "endByte": 22, "quote": "Recording setup sheet:"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-031",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Update the winter tool allowance and loan period.",
+    "acceptableEditScope": "Only the two factual replacements and grammar they require.",
+    "stableFactsAndClaims": ["Renewals are available if nobody has requested the item.", "Return tools clean with attachments; staff inspect electrical items before relending.", "Damaged items go directly to the desk, not the return cabinet.", "Damage reports do not automatically produce charges; circumstances and normal use are checked first.", "Reserve through the catalogue or ask a volunteer during opening hours.", "Membership cards remain valid until their printed expiry dates."],
+    "authorizedFactualChanges": ["Eight tools per household becomes six.", "Fourteen days becomes twenty-one days."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["six tools per household", "twenty-one days", "printed expiry date"],
+    "requiredForm": "Existing member borrowing notice.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Courteous, practical member communication."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 104, "quote": "Update the winter borrowing allowance to six tools per household and the loan period to twenty-one days."},
+      {"supportsField": "authorizedFactualChanges", "field": "source", "startByte": 0, "endByte": 74, "quote": "Dear Members, our winter borrowing allowance is eight tools per household."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-032",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace the workshop room and starter-kit wool color.",
+    "acceptableEditScope": "Only Room Alder to Room Willow and grey wool to navy wool; retain the rest intact.",
+    "stableFactsAndClaims": ["The kit also contains two needles and a foam pad.", "Practice on sample fabric precedes work on brought items.", "Choose a small worn area, not a large tear; the session is for beginners.", "The tutor can suggest an approach but cannot promise an invisible repair.", "Watching without attempting a repair is welcome.", "Have the booking email at entry; printing is unnecessary.", "The cafe opens beforehand, but refreshments are not included in the booking price."],
+    "authorizedFactualChanges": ["Room Alder becomes Room Willow.", "Grey wool becomes navy wool."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Room Willow", "navy wool", "two needles", "foam pad"],
+    "requiredForm": "Existing workshop reminder with two substitutions.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Welcoming, practical; preserve existing spelling conventions."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 104, "quote": "Replace Room Alder with Room Willow and replace grey wool with navy wool in the starter kit description."},
+      {"supportsField": "authorizedFactualChanges", "field": "source", "startByte": 0, "endByte": 69, "quote": "Workshop reminder: the felt repair session takes place in Room Alder."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-033",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Correct the linocut edition size to the artist's revised figure.",
+    "acceptableEditScope": "Edition-size replacement only, contingent on the missing revised figure.",
+    "stableFactsAndClaims": ["The catalogue currently states an edition of 180 prints.", "Each print has an individual number and artist's initials beneath the image.", "The paper is unframed; dimensions describe the image, not the sheet.", "The photograph shows a proof; the buyer receives a print bearing its own edition number."],
+    "authorizedFactualChanges": ["Replace 180 with the artist's revised edition size once supplied."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["180 prints as the existing edition size", "individual edition number"],
+    "requiredForm": "Catalogue description; a completed correction requires the revised figure.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": ["The artist's revised edition size."],
+    "voiceConstraints": ["Precise catalogue description."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "missingPropositions", "field": "objective", "startByte": 0, "endByte": 106, "quote": "Correct the stated edition size to the artist's revised figure. That revised figure has not been provided."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 65, "quote": "The catalogue describes this linocut as an edition of 180 prints."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-034",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace the cabin's nightly price and bus time with updated values.",
+    "acceptableEditScope": "Only the price and bus-time replacements; neither new value can be inferred.",
+    "stableFactsAndClaims": ["The narrator booked the little cabin for a walking weekend with Jo.", "The source price is £84 a night; the owner reports the last bus at the village shop at 7:10.", "The cabin has a wood stove, but they must bring kindling.", "The narrator will send the route after checking the footbridge."],
+    "authorizedFactualChanges": ["Replace the nightly price with an unspecified revised amount.", "Replace the bus time with an unspecified latest timetable time."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Jo", "£84 as the existing price", "7:10 as the existing time", "village shop", "kindling", "footbridge"],
+    "requiredForm": "Informal personal message; replacements require missing values.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": ["The revised nightly price.", "The latest timetable bus time."],
+    "voiceConstraints": ["Informal, friendly, practical."],
+    "zeroToleranceTraps": ["invented_missing_replacement", "stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "missingPropositions", "field": "objective", "startByte": 0, "endByte": 136, "quote": "Replace the nightly price with the revised amount and the bus time with the latest timetable time. I have not included either new value."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 57, "quote": "Hi Jo, I booked the little cabin for our walking weekend."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-035",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Simplify only the inflated sentence about inspecting surface appearance.",
+    "acceptableEditScope": "One sentence only; keep inspection after cooling and every other batch instruction unchanged.",
+    "stableFactsAndClaims": ["Record dusting flour separately from the listed mixed-dough weight.", "Each tray holds eight rolls with expansion space; the baker checks the first tray before remaining dough division.", "Visual surface inspection occurs once the rolls have cooled.", "Record split crusts in comments; a split alone does not require disposal and the baker decides its relevance to intended use.", "Keep tray numbers with observations and do not combine different trays in one entry."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["once the rolls have cooled", "eight rolls", "All source wording outside the designated sentence"],
+    "requiredForm": "Existing batch instructions with one sentence simplified.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Plain procedural wording within the targeted sentence."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 190, "quote": "Simplify only the sentence beginning “With respect to the matter of surface appearance”. Retain the point at which the inspection happens and preserve the rest of the batch instructions."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-036",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace the cumbersome discussion-opportunity sentence with ordinary clear language.",
+    "acceptableEditScope": "Edit that sentence alone and preserve the exercise's limited purpose.",
+    "stableFactsAndClaims": ["Groups compared fictional interview transcripts with bracketed pauses against spoken-words-only transcripts.", "Students identified where more context was wanted, rather than scoring speaker confidence.", "The exercise provided discussion of transcription choices.", "Groups noticed punctuation could imply unsupported conclusions and removal of repetition could alter rhythm.", "Paper observations were collected at class end, ungraded; formats were not ranked.", "A later session will cover overlapping-speech conventions."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["fictional interview transcripts", "All wording outside the discussion-opportunity sentence"],
+    "requiredForm": "Existing exercise account with one sentence replaced.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Clear, ordinary language without expanding educational claims."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 168, "quote": "Replace the cumbersome sentence about the opportunity for discussion with a clear, ordinary sentence. Edit that sentence only and retain the exercise's limited purpose."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 78, "quote": "In this exercise, groups compared two sets of fictional interview transcripts."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-037",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Make only the desk-space sentence match the email's informal voice.",
+    "acceptableEditScope": "Rewrite that sentence alone; retain the exact tin label and all surrounding wording.",
+    "stableFactsAndClaims": ["The narrator sorted the spare-cable drawer.", "Three cables belong to devices no longer owned; one probably belongs to the desk lamp but is unverified.", "Useful cables are in a biscuit tin labeled CABLES, PROBABLY.", "Sorting has freed desk surface area.", "The found charger has orange tape at one end; it can be dropped off tomorrow or collected during lunch."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["CABLES, PROBABLY", "Three", "orange tape", "tomorrow", "All other email wording"],
+    "requiredForm": "Existing personal email with only the desk-space sentence changed.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The desk-lamp cable identification remains unverified."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Conversational, dryly humorous, informal; retain the surrounding joke about a sentence wearing a tie."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 152, "quote": "Make the sentence about gaining desk space sound like the rest of this email. Change only that sentence; keep “CABLES, PROBABLY” exactly as written."},
+      {"supportsField": "voiceConstraints", "field": "source", "startByte": 0, "endByte": 77, "quote": "I finally sorted the drawer where every spare cable goes to become a mystery."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-038",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Plainly restate the single sentence beginning At the conclusion.",
+    "acceptableEditScope": "One-sentence simplification; preserve the rest, including the modest interpretation of results.",
+    "stableFactsAndClaims": ["The tasting group met in the upstairs kitchen Tuesday.", "Each person tried three letter-marked samples in a different order; water was supplied, and finishing cups was optional.", "Results record this small group's preferences, not a general recipe verdict.", "Participants could offer additional observations at the end.", "Two mentioned oat texture; one found rice sweeter than expected; nobody had to explain an unwanted preference discussion.", "Next time serving temperatures will be the same because they varied in this session."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Tuesday", "three samples", "Two people", "one", "All wording outside the designated sentence"],
+    "requiredForm": "Existing tasting account with one sentence restated.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Plain wording and modest claims."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 0, "endByte": 146, "quote": "Plainly restate only the sentence beginning “At the conclusion”. Preserve the rest, including the modest description of what the results mean."},
+      {"supportsField": "stableFactsAndClaims", "field": "source", "startByte": 0, "endByte": 57, "quote": "The tasting group met in the upstairs kitchen on Tuesday."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-039",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Reconstruct the recording memo into clear editor instructions.",
+    "acceptableEditScope": "Remove inflated language and organize policy, exceptions, unresolved matters, and initial checks without expanding them.",
+    "stableFactsAndClaims": ["Over the past month unclear filenames slowed excerpt selection; two door-labeled files contained footsteps followed by a closing door, without becoming unusable.", "The naming policy applies to recordings made from 1 August onward and does not require renaming all existing files.", "Old files may be renamed when used in projects if their original names are recorded in notes; delivered client files keep delivered names.", "New names begin with the coordinator-assigned session code, followed by audible-action description and take number; editors must not invent replacement codes.", "Descriptions identify audible action, not imagined use.", "Location, equipment, and unusual conditions belong in text notes; uncertain sources must not be asserted as known, though notes may identify possibilities.", "Joint-team session naming is unresolved; ask for a code before uploading and the coordinator keeps a list for later review.", "The coordinator checks each team's first five new uploads for filenames and notes only; this neither assesses recording quality nor replaces the pre-client-delivery check."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["1 August onward", "first five new uploads from each team", "session code", "take number"],
+    "requiredForm": "Clear, organized instructions for editors.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": ["Naming sessions jointly recorded by two teams remains unsettled."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Direct, practical policy language; distinguish mandatory rules, permissions, and unresolved questions."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 65, "quote": "Reconstruct this memo as a clear set of instructions for editors."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 66, "endByte": 201, "quote": "Remove the inflated wording and organise the policy, exceptions, unresolved question, and initial checks without expanding their scope."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-040",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Create an engaging first-person account with natural sequencing and ordinary language.",
+    "acceptableEditScope": "Rewrite inflated prose while retaining events, practical lessons, and stated uncertainties.",
+    "stableFactsAndClaims": ["The narrator borrowed a recorder from the neighbourhood arts cupboard, read its instructions the night before, and expected rising early to be the main challenge.", "At 5:20 Sunday the spare key did not fit the new allotment lock, which replaced the previous one during the week.", "Waiting for Farah caused missed early birdsong; she came to water beans, let the narrator in, and showed a dry equipment spot.", "A van, dragged bin, and jacket rubbing the microphone added sound; headphones revealed the jacket noise.", "A wooden crate helped jacket noise but did not remove van or bin sounds.", "Three clips lasted about four minutes each; the middle included a visually recognized blackbird, but other birds were unidentified.", "Traffic belonged to that morning's soundscape; the narrator should not describe the whole clip as named bird calls.", "Next weekend the narrator wants to check the key and use a tripod; going earlier is undecided because delivery schedules are unknown."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["5:20", "Sunday", "Farah", "three clips", "about four minutes each", "blackbird"],
+    "requiredForm": "Engaging first-person personal account.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": ["Other birds are unidentified.", "Delivery times and whether the narrator will arrive earlier are unknown."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Natural, ordinary language; modest reflection grounded in events."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 94, "quote": "Turn this into an engaging first-person account with a natural sequence and ordinary language."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 95, "endByte": 194, "quote": "Retain the events, practical lessons, and uncertainty about bird identification and delivery times."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-041",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Rewrite the puzzle memo directly, with a clear request and useful supporting detail.",
+    "acceptableEditScope": "Reorganize and simplify without changing counts, approval status, system limitations, or test scope.",
+    "stableFactsAndClaims": ["There are forty puzzles; twenty-six checked, fourteen unchecked on the lower shelf with yellow bands; not all forty are ready to borrow.", "Eighteen checked puzzles are complete; eight lack one to five pieces.", "Lending incomplete puzzles with labels is the volunteer group's suggestion, unapproved by the manager; borrowers should decide whether missing pieces matter.", "Some titles are tiny and three boxes lack finished-puzzle pictures; larger labels and photos are uncosted, with no agreed person to create or maintain them despite an available camera.", "Staff propose the existing board-game system: fourteen-day loans and one renewal if unreserved.", "The system records missing-piece notes but not photographs, which must remain with physical boxes.", "The immediate request is permission to finish checking fourteen puzzles and test loans with two complete puzzles to observe returns.", "The small test does not settle incomplete-puzzle lending; comments go to the circulation supervisor by Wednesday for Friday manager review."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["forty", "twenty-six", "eighteen", "eight", "one and five pieces", "fourteen", "three boxes", "two complete puzzles", "fourteen-day", "one renewal", "Wednesday", "Friday"],
+    "requiredForm": "Direct memo with a clear, narrowly scoped request.",
+    "noOrMinimalEditExpected": false,
+    "ambiguity": ["Incomplete-puzzle lending, labeling and photographs, and use of the loan system remain proposed rather than approved."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Direct, useful, precise about permissions and unresolved proposals."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 87, "quote": "Rewrite this memo in direct language with a clear request and useful supporting detail."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 88, "endByte": 190, "quote": "Preserve the counts, proposed versus approved status, system limits, and the narrow scope of the test."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-042",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Make the spare-pane request somewhat easier to follow while preserving voice and details.",
+    "acceptableEditScope": "Light clarity and flow changes; preserve the designated phrase exactly.",
+    "stableFactsAndClaims": ["The narrator replaced the cracked greenhouse pane Saturday with Len holding the frame and offering loud advice.", "The tomatoes now have a roof; the narrator's thumb is slightly sore.", "Two spare panes would be useful if still available.", "Each opening measured this morning is 28 by 35 centimetres.", "The recipient should not make a special trip; pickup can happen after the narrator's Wednesday shift."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Len", "Saturday", "Two", "28 by 35 centimetres", "Wednesday", "The tomatoes have already lodged their complaint"],
+    "requiredForm": "Informal request retaining its surrounding personal remarks.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["Whether the recipient still has the spare panes is conditional."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Dry humour, informal rhythm, playful personification."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 116, "quote": "Make this request a little easier to follow while preserving the dry humour, informal rhythm, and practical details."},
+      {"supportsField": "protectedNamesNumbersDatesQuotesPhrases", "field": "objective", "startByte": 117, "endByte": 185, "quote": "Keep “The tomatoes have already lodged their complaint” exactly."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-043",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Gently tighten the personal reflection for a small newsletter.",
+    "acceptableEditScope": "Small tightening that preserves fragments, concrete images, and unresolved mixed feelings; add no lesson.",
+    "stableFactsAndClaims": ["The narrator once saw train departures as tidy endings, but the sister's move north changed that perception.", "Concrete traces include a scarf, excess tea, and a station receipt.", "The sister likes her new town and they talk most evenings.", "The narrator enjoys accounts of a crooked-sign bakery and a neighbour's enormous beans.", "Being glad for the sister and missing her coexist without a settled explanation."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["north", "most evenings", "scarf", "station receipt", "bakery with the crooked sign", "enormous beans"],
+    "requiredForm": "Conversational personal reflection for a small newsletter.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The narrator's mixed feelings are intentionally not resolved."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Conversational fragments, concrete imagery, gentle humor.", "No moral lesson or tidier emotional resolution."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 63, "quote": "Gently tighten this personal reflection for a small newsletter."},
+      {"supportsField": "voiceConstraints", "field": "objective", "startByte": 64, "endByte": 194, "quote": "Keep its conversational fragments, concrete images, and mixed feelings; avoid giving it a lesson or a tidier emotional resolution."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-044",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Change only the coordinator's summary timing to the supplied deadline.",
+    "acceptableEditScope": "Replace after the final reading in the specified sentence with 5 July; preserve all other wording and the exact noticeboard phrase.",
+    "stableFactsAndClaims": ["The trial runs 3 May to 28 June, comparing two leaf-mulched beds near bicycle racks with two bare-soil beds.", "Beds were selected randomly by numbered slips after planting; bean counts are equal but heights already vary.", "All four beds use the same watering schedule, with rain decisions recorded for every bed; the trial does not test water savings from condition-specific watering.", "Record soil temperature and wilted-plant counts Tuesday at noon using the drawer probe's depth mark.", "Missing readings stay blank and are reported; no guessing or copied prior values.", "Results are a local practical starting point, not proof across locations or crops; shade begins after 2 p.m. and drainage differs from hall plots.", "The summary lists measurements and gaps; repetition may be considered, but mulch expansion is not agreed.", "Visitors ask from the path and must not walk between beds during readings."],
+    "authorizedFactualChanges": ["The coordinator's summary deadline changes from after the final reading to 5 July."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["5 July", "3 May", "28 June", "Tuesday at noon", "2 p.m.", "small trial, useful questions.", "All other source wording"],
+    "requiredForm": "Existing trial instructions with one timing replacement.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Preserve the existing modest, careful procedural voice exactly."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 110, "quote": "Change the coordinator's summary deadline to 5 July, replacing “after the final reading” in that sentence."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 111, "endByte": 191, "quote": "Make only that update and preserve “small trial, useful questions.” exactly."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-045",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Correct the glove drawer location.",
+    "acceptableEditScope": "Replace top drawer with middle drawer in the glove paragraph; everything else stays exactly as supplied.",
+    "stableFactsAndClaims": ["Amira receives the handover; the reception-envelope key opens only the cupboard, and closed reception requires contacting the duty caretaker.", "Green-rail costumes are approved, blue-rail items await fittings, and they remain separate; the brown coat's visible repair stays.", "Six glove pairs include four ready and two awaiting seam inspection in a paper bag; no injury has been reported; Tomas may inspect if available, otherwise they wait.", "The sewing machine was serviced last month, uses a rubber mat for its sliding pedal, and the unserviced overlocker remains out of use.", "Both machine covers must be replaced; the overlocker cover has a red square.", "Every loan and return must be recorded in the shared paper book; photographs do not replace return entries.", "Damp returns hang away from approved costumes and are reported when the narrator returns.", "Monday-afternoon return is uncertain due to the train connection; continue arrangements until arrival confirmation; biscuits require no entry."],
+    "authorizedFactualChanges": ["The gloves' location changes from top drawer to middle drawer."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["middle drawer", "KEEP THE PATCH", "Amira", "Tomas", "six pairs", "Four pairs", "two", "Monday afternoon", "All other source wording"],
+    "requiredForm": "Existing personal handover note with one location correction.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The narrator's Monday-afternoon return remains uncertain."],
+    "missingPropositions": [],
+    "voiceConstraints": ["Preserve the entire existing warm, practical voice."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 71, "quote": "Correct “top drawer” to “middle drawer” in the glove paragraph."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 72, "endByte": 148, "quote": "Keep the rest of this handover note exactly, including “KEEP THE PATCH”."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-046",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Replace only the full route's stated distance.",
+    "acceptableEditScope": "Change 7 kilometres to 8 kilometres in the length sentence; preserve every other word.",
+    "stableFactsAndClaims": ["The spring route starts at the old mill bridge and ends at the orchard gate.", "The estimate is about three hours including stops but excluding lunch; bring food because the orchard cafe is closed for repairs.", "The narrow timber bridge has only a downstream handrail; suitability for every mobility aid is not promised and no formal access survey exists.", "Discuss access needs with the organiser; the surfaced shorter route misses the orchard and rejoins only at the finish.", "Dogs stay on leads, sheep may be hidden, both gates must close, and permission covers only the marked field path.", "The organiser checks the river notice at 8 a.m.; timber-bridge closure cancels the full route, while the shorter route depends on river-path conditions.", "Absence of cancellation is not universal safety confirmation; check messages before departure.", "Hall toilets open at 9 a.m.; the walk starts at 9:30; parking is limited, lift sharing optional and unarranged, and the bus stop is outside the hall.", "Reply by Friday without reserving vehicle space or committing to the longer route; bring waterproofing and a drink."],
+    "authorizedFactualChanges": ["7 kilometres becomes 8 kilometres."],
+    "protectedNamesNumbersDatesQuotesPhrases": ["8 kilometres", "about three hours", "Leave room for the flock.", "8 a.m.", "9 a.m.", "9:30", "Friday", "All other source wording"],
+    "requiredForm": "Existing walking-group route notice with one distance replacement.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": [],
+    "missingPropositions": [],
+    "voiceConstraints": ["Preserve the existing practical, qualified safety and accessibility wording."],
+    "zeroToleranceTraps": ["stale_current_fact_presented_as_completed_after_authorized_update", "collateral_unauthorized_factual_mutation", "material_unauthorized_meaning_change"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "authorizedFactualChanges", "field": "objective", "startByte": 0, "endByte": 85, "quote": "Replace only “7 kilometres” with “8 kilometres” in the route length sentence."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 86, "endByte": 181, "quote": "Preserve all other wording, including the duration estimate and “Leave room for the flock.”"}
+    ]
+  },
+  {
+    "caseId": "AC48V2-047",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Request a sincere endorsement while preserving the reviewer's negative evaluation, experiences, and purchase decision.",
+    "acceptableEditScope": "Tone changes cannot alter the criticism, invent benefits, or change events; a sincere endorsement is incompatible with these protected constraints.",
+    "stableFactsAndClaims": ["The opening five-star statement is ironic rather than a sincere positive rating.", "The rigid cover makes opening difficult, ink passes to the next sheet, and the ribbon detached before page three.", "The advertised effortless writing experience is treated as a joke.", "The reviewer used it for a week, mostly with the same fountain pen used in an ordinary notebook that does not show ink on the reverse.", "The reviewer would not buy it again and declined the shop's offered replacement because another copy seemed unnecessary."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["page three", "a week", "would not buy this one again", "declined the offered replacement"],
+    "requiredForm": "Product review; the requested sincere endorsement cannot be supplied while preserving all stated constraints.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["The objective requires both endorsement and preservation of an explicitly negative evaluation; no compatible priority is supplied."],
+    "missingPropositions": ["A supported favorable evaluation or benefit that could ground a sincere endorsement is not supplied."],
+    "voiceConstraints": ["The source uses sustained irony; any authorized tone change must preserve its underlying negative judgment."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "ambiguity", "field": "objective", "startByte": 0, "endByte": 146, "quote": "Turn this ironic review into a sincere endorsement of the notebook while preserving the reviewer's evaluation, experiences, and purchase decision."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 147, "endByte": 195, "quote": "Do not add a benefit or change a reported event."},
+      {"supportsField": "voiceConstraints", "field": "source", "startByte": 0, "endByte": 38, "quote": "Five stars for the executive notebook."}
+    ]
+  },
+  {
+    "caseId": "AC48V2-048",
+    "reviewerId": "P1",
+    "submittedAtUtc": "2026-10-07T23:50:03Z",
+    "intendedObjective": "Seek an unambiguous eligibility answer for Noor by rewriting the existing residency rule without adding policy.",
+    "acceptableEditScope": "Clarify existing wording only; the supplied rule and facts do not authorize a definitive yes or no or a new residency criterion.",
+    "stableFactsAndClaims": ["Entrants must be members living within twelve miles of the studio.", "Noor's membership is current; her flat is eight miles away and her job-adjacent room twenty miles away.", "She stays in the room on working nights and at the flat most weekends.", "The rule does not define living within the area, designate an address record, or address multiple residences.", "Last year's organiser accepted someone who wintered elsewhere, but that entrant's supplied address and circumstances are unknown.", "This year's organiser requests a plain explanation before answering; the committee has not discussed Noor and the form asks only for a contact address.", "Noor wants eligibility determined before preparing work photographs."],
+    "authorizedFactualChanges": [],
+    "protectedNamesNumbersDatesQuotesPhrases": ["Noor", "members living within twelve miles of the studio.", "eight miles", "twenty miles", "working nights", "most weekends"],
+    "requiredForm": "Plain explanation of the residency rule; definitive eligibility requires an interpretation not established here.",
+    "noOrMinimalEditExpected": true,
+    "ambiguity": ["Living within the area is undefined for someone with two residences.", "The earlier acceptance does not establish an applicable interpretation.", "The requested unambiguous answer conflicts with the prohibition on adding a policy condition."],
+    "missingPropositions": ["An authorized interpretation of residence that determines how Noor's two locations affect eligibility."],
+    "voiceConstraints": ["Plain, neutral language; retain uncertainty rather than supplying an eligibility judgment."],
+    "zeroToleranceTraps": ["material_unauthorized_meaning_change", "collateral_unauthorized_factual_mutation"],
+    "sourceObjectiveEvidence": [
+      {"supportsField": "intendedObjective", "field": "objective", "startByte": 0, "endByte": 83, "quote": "Rewrite the residency rule so Noor gets an unambiguous yes or no about eligibility."},
+      {"supportsField": "acceptableEditScope", "field": "objective", "startByte": 84, "endByte": 161, "quote": "Use the existing rule and details here without adding a new policy condition."},
+      {"supportsField": "protectedNamesNumbersDatesQuotesPhrases", "field": "source", "startByte": 0, "endByte": 100, "quote": "The ceramic prize rules say entrants must be “members living within twelve miles of the studio.”"}
+    ]
+  }
+]

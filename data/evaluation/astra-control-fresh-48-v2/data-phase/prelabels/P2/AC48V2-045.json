@@ -1,0 +1,66 @@
+{
+  "caseId": "AC48V2-045",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Correct the glove drawer location.",
+  "acceptableEditScope": "Replace top drawer with middle drawer in the glove paragraph; preserve every other part exactly.",
+  "stableFactsAndClaims": [
+    "Amira's cupboard key is in a reception envelope, opens only the cupboard, and closed reception requires contacting the caretaker.",
+    "Green-rail approved costumes stay separate from blue-rail fitting items; the brown coat's visible patch must remain.",
+    "Six glove pairs comprise four ready and two unchecked in a paper bag; no injury is reported, but loose seams require inspection before use. Tomas may inspect if available; otherwise they wait.",
+    "The sewing machine was serviced last month and needs its pedal mat; the unserviced overlocker remains out of use. Replace both covers, with a red square marking the overlocker cover.",
+    "Every loan and return must be recorded in the shared paper book; page photographs are not replacements.",
+    "Damp returns hang away from approved costumes; the narrator should be told upon return.",
+    "Monday-afternoon return is uncertain; retain arrangements until arrival confirmation. Biscuits need no entry."
+  ],
+  "authorizedFactualChanges": [
+    "Gloves are in the middle drawer rather than the top drawer."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "middle drawer",
+    "KEEP THE PATCH",
+    "Amira",
+    "Tomas",
+    "six pairs",
+    "Four pairs",
+    "two",
+    "Monday afternoon"
+  ],
+  "requiredForm": "Handover note exactly retained apart from the specified drawer correction.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The narrator's arrival depends on an uncertain train connection."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the personal, practical tone and biscuit joke exactly."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 71,
+      "quote": "Correct “top drawer” to “middle drawer” in the glove paragraph."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 72,
+      "endByte": 148,
+      "quote": "Keep the rest of this handover note exactly, including “KEEP THE PATCH”."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "objective",
+      "startByte": 127,
+      "endByte": 147,
+      "quote": "“KEEP THE PATCH”"
+    }
+  ]
+}

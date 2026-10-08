@@ -1,0 +1,50 @@
+{
+  "caseId": "AC48V2-038",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Plainly restate the specified concluding-observations sentence.",
+  "acceptableEditScope": "Edit only the sentence beginning At the conclusion; retain the opportunity to offer additional observations.",
+  "stableFactsAndClaims": [
+    "The group met upstairs on Tuesday and tried three letter-marked samples in different orders.",
+    "Water was supplied; finishing cups was optional.",
+    "Results record this small group's preferences, not a general recipe verdict.",
+    "Two people mentioned oat texture; one found rice sweeter than expected.",
+    "Nobody had to explain an unwanted preference discussion.",
+    "Serving temperatures varied; next time all samples will use the same temperature."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Tuesday",
+    "three samples",
+    "Two people",
+    "one",
+    "small group's preferences"
+  ],
+  "requiredForm": "Existing tasting account with one sentence restated.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Plain wording and modest claims about the results."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 43,
+      "quote": "Plainly restate only the sentence beginning"
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 69,
+      "endByte": 146,
+      "quote": "Preserve the rest, including the modest description of what the results mean."
+    }
+  ]
+}

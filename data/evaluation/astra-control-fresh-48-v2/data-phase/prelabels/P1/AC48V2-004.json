@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-004",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Identify distracting clarity problems in the personal essay with minimal intervention.",
+  "acceptableEditScope": "Only small clarity edits; preserve the exact calendar heading and the essay's modest account of progress.",
+  "stableFactsAndClaims": [
+    "The narrator wants to cross the pool without checking proximity to the edge; the instructor shows where the shallow lane ends.",
+    "Adults attend for different reasons; nobody demands explanations of childhood or fear.",
+    "The narrator paid for six lessons, struggles to relax while floating, and can put their face in and exhale steadily by the third lesson.",
+    "Crossing still involves stops for breathing or reassurance that stopping is possible; the instructor distinguishes these reasons.",
+    "Lessons occur in a municipal pool; another course or practice with a friend remains undecided.",
+    "The narrator can briefly look at blue tiles in mid-lane without needing the edge."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "one lane at a time.",
+    "six lessons",
+    "third lesson"
+  ],
+  "requiredForm": "First-person personal essay.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The narrator has not chosen what to do after the last lesson."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Understated, concrete, gently humorous.",
+    "Preserve tentative progress and avoid a grand discovery about courage."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 149,
+      "quote": "Read this personal essay for distracting clarity problems. Keep any changes minimal, and preserve the calendar heading \"one lane at a time.\" exactly."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 73,
+      "quote": "At my first swimming lesson, the instructor asked what I wanted to learn."
+    }
+  ]
+}

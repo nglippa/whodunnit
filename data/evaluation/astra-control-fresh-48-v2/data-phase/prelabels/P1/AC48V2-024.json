@@ -1,0 +1,61 @@
+{
+  "caseId": "AC48V2-024",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Create a readable walking-group account that honestly presents conflicting dates and explanations.",
+  "acceptableEditScope": "Organize and clarify the evidence while retaining unresolved differences and withholding unsupported responsibility assignments.",
+  "stableFactsAndClaims": [
+    "The report lists September 3 as the first public reopening; an attached notice says closure lasted until September 10.",
+    "The report does not explain whether dates concern different hours, sections, or a reversed reopening.",
+    "The contractor attributes delay to a missing inspection signature; the council says the signature was filed and attributes delay to incomplete barrier removal.",
+    "Neither summary includes the inspection sheet or barrier removal log.",
+    "One member recalls crossing September 5; another recalls the east entrance locked that evening.",
+    "The bundle does not establish a single sequence; both recollections may be accurate."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "September 3",
+    "September 10",
+    "September 5",
+    "east entrance"
+  ],
+  "requiredForm": "Readable short account for the walking group.",
+  "noOrMinimalEditExpected": false,
+  "ambiguity": [
+    "Actual reopening sequence and reason for delay remain unresolved.",
+    "The reason the two resident recollections differ is unknown."
+  ],
+  "missingPropositions": [
+    "Evidence establishing a single sequence or responsibility is absent."
+  ],
+  "voiceConstraints": [
+    "Neutral attribution, accessible wording, explicit uncertainty."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 109,
+      "quote": "Create a readable account for the walking group that handles the conflicting dates and explanations honestly."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 110,
+      "endByte": 195,
+      "quote": "Keep unresolved matters unresolved and do not assign responsibility without evidence."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 77,
+      "quote": "The footbridge repair report lists the first public reopening as September 3."
+    }
+  ]
+}

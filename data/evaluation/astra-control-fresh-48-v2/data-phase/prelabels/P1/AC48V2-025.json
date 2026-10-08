@@ -1,0 +1,49 @@
+{
+  "caseId": "AC48V2-025",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Smooth the story opening while retaining mood, images, and action order.",
+  "acceptableEditScope": "Flow adjustments without adding motives, events, or explanations.",
+  "stableFactsAndClaims": [
+    "Anya sets the chessboard between two beds.",
+    "Her brother is asleep; she arranges his pieces and turns each knight toward the window.",
+    "A window cleaner lowers a wet brush outside; Anya watches it disappear before moving her pawn.",
+    "She waits with hands under her knees, leaving the next move to the empty pillow."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Anya",
+    "wet brush",
+    "hands under her knees",
+    "empty pillow"
+  ],
+  "requiredForm": "Short-story opening scene.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The scene does not explain Anya's motives or the significance of the empty pillow."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Restrained mood, concrete images, implied rather than explained emotion."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 132,
+      "quote": "Smooth the flow of this opening scene for a short story while keeping its restrained mood, concrete images, and sequence of actions."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 45,
+      "quote": "Anya set the chessboard between the two beds."
+    }
+  ]
+}

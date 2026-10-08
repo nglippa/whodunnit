@@ -1,0 +1,53 @@
+{
+  "caseId": "AC48V2-029",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the hourly rate and total indexing charge.",
+  "acceptableEditScope": "Replace £45 with £48 and £540 with £576; preserve hours, scope, reference, and terms.",
+  "stableFactsAndClaims": [
+    "The charge covers twelve hours of illustrated catalogue indexing.",
+    "Scope includes agreed entries and one final-proof check, excluding material added after supplied proofs.",
+    "The delivered index uses the requested format with names and subjects in one alphabetical sequence; retain it with production records.",
+    "Pagination changes should be reported so another check can be assessed.",
+    "Payment is due within thirty days of receipt using reference IC42.",
+    "Illustration captions helped identify useful entries."
+  ],
+  "authorizedFactualChanges": [
+    "Hourly rate £45 becomes £48.",
+    "Total charge £540 becomes £576."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "twelve hours",
+    "£48",
+    "£576",
+    "IC42",
+    "thirty days of receipt"
+  ],
+  "requiredForm": "Invoice note with two monetary updates.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Professional, practical, courteous."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 61,
+      "quote": "Update the hourly rate to £48 and the total charge to £576."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 62,
+      "endByte": 151,
+      "quote": "Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged."
+    }
+  ]
+}

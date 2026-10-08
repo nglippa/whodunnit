@@ -1,0 +1,57 @@
+{
+  "caseId": "AC48V2-020",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Lightly improve flow while retaining humor, uncertain future singing, and a neutral skipped turn.",
+  "acceptableEditScope": "Small flow edits; do not recast declining the turn as triumph or failure.",
+  "stableFactsAndClaims": [
+    "The friend added the narrator to the karaoke list while the narrator read the menu and chose a familiar song.",
+    "The friend offered removal; the narrator delayed approaching the busy host.",
+    "The outing celebrated the friend's new job after months of applications and the narrator's often redundant vacancy messages.",
+    "One singer had a tambourine; another forgot a verse and continued; both received applause.",
+    "The narrator asked to skip when called; the host simply moved on, the friend squeezed their shoulder, then sang, and the narrator cheered.",
+    "The evening was good; another outing is welcome, but singing next time remains undecided."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "approximately thirty seconds",
+    "Thursday"
+  ],
+  "requiredForm": "First-person personal account.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The narrator may sing next time or may supervise the list; no decision is made."
+  ],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Conversational humor, restrained social observations.",
+    "Preserve uncertainty and avoid a success-or-failure narrative."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 131,
+      "quote": "Lightly improve the flow of this personal account while retaining its conversational humor and uncertainty about singing next time."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 132,
+      "endByte": 189,
+      "quote": "Do not make the skipped turn into a triumph or a failure."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 71,
+      "quote": "My friend put my name on the karaoke list while I was reading the menu."
+    }
+  ]
+}

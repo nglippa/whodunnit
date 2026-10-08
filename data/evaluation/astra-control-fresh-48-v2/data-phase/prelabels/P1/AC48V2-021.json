@@ -1,0 +1,48 @@
+{
+  "caseId": "AC48V2-021",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Correct the single spelling error killn to kiln.",
+  "acceptableEditScope": "One exact spelling replacement; every other word, number, and title stays unchanged.",
+  "stableFactsAndClaims": [
+    "The kiln was held at 980 degrees for 20 minutes before cooling.",
+    "The trial concerns glaze appearance on sample tiles, not vessel strength or food safety.",
+    "Cream glaze had fewer visible pinholes than gray in this batch.",
+    "The worksheet title matches distributed sheets and must also be used with photographs.",
+    "The note reports no later cooling-schedule trial."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "980 degrees",
+    "20 minutes",
+    "Surface / first firing.",
+    "All source wording except killn"
+  ],
+  "requiredForm": "Existing note preserved verbatim except for the typo.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the existing wording and voice exactly."
+  ],
+  "zeroToleranceTraps": [
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 107,
+      "quote": "Correct \"killn\" to \"kiln\" only. Keep every other word, number, and the worksheet title exactly as supplied."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 93,
+      "quote": "For the ceramics trial, the kiln was held at 980 degrees for 20 minutes before cooling began."
+    }
+  ]
+}

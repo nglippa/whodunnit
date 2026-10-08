@@ -1,0 +1,51 @@
+{
+  "caseId": "AC48V2-030",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the recording sample rate and filename prefix with the supplied values.",
+  "acceptableEditScope": "Only two replacements: 44.1 kHz to 48 kHz and AMBER to CEDAR.",
+  "stableFactsAndClaims": [
+    "Each session folder contains the original recording and a separate captured-sounds text file.",
+    "Retain originals when preparing catalogue excerpts; excerpts have separate filenames and notes locating their start in the original.",
+    "Record microphone position before moving equipment because sound alone cannot recover it.",
+    "Mark failed takes in notes instead of silently removing them.",
+    "Do not apply noise reduction to raw files; label processed copies as processed."
+  ],
+  "authorizedFactualChanges": [
+    "44.1 kHz becomes 48 kHz.",
+    "Filename prefix AMBER becomes CEDAR."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "48 kHz",
+    "CEDAR",
+    "All other setup-sheet wording"
+  ],
+  "requiredForm": "Existing recording setup sheet with exactly two updates.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the existing direct technical instructions."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 128,
+      "quote": "Replace the sample rate with 48 kHz and the filename prefix with CEDAR. Make only those two supplied updates to the setup sheet."
+    },
+    {
+      "supportsField": "requiredForm",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 22,
+      "quote": "Recording setup sheet:"
+    }
+  ]
+}

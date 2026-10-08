@@ -1,0 +1,55 @@
+{
+  "caseId": "AC48V2-021",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Correct the single spelling error.",
+  "acceptableEditScope": "Replace killn with kiln only; every other word and number must remain exact.",
+  "stableFactsAndClaims": [
+    "The kiln was held at 980 degrees for 20 minutes before cooling.",
+    "The trial examined glaze appearance on sample tiles, not vessel strength or food safety.",
+    "Cream glaze had fewer visible pinholes than gray glaze in this batch.",
+    "The worksheet title matches distributed sheets and must also be used for photographs.",
+    "The note reports closed-kiln cooling, not a later alternative cooling schedule."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "980 degrees",
+    "20 minutes",
+    "Surface / first firing.",
+    "all words and numbers except killn"
+  ],
+  "requiredForm": "Source text exactly preserved except the specified spelling correction.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Preserve the supplied wording and trial limitations."
+  ],
+  "zeroToleranceTraps": [
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 31,
+      "quote": "Correct \"killn\" to \"kiln\" only."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 32,
+      "endByte": 107,
+      "quote": "Keep every other word, number, and the worksheet title exactly as supplied."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 349,
+      "endByte": 374,
+      "quote": "\"Surface / first firing.\""
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "caseId": "AC48V2-009",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Replace the interim fundraising figure with the final post-concert total.",
+  "acceptableEditScope": "A final-total update is requested but cannot be completed from the supplied information.",
+  "stableFactsAndClaims": [
+    "The source reports $2,150 raised so far, covering wall preparation and part of the paint order.",
+    "A further total was to follow counting concert donations.",
+    "Thanks extend to donors, equipment lenders, and people offering time.",
+    "Two volunteers are still needed to protect the pavement on painting day."
+  ],
+  "authorizedFactualChanges": [
+    "Replace the interim total with the final concert-inclusive total once supplied; no replacement amount is authorized here."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "$2,150 as the source's interim figure",
+    "two volunteers"
+  ],
+  "requiredForm": "Fundraiser announcement; do not present an unavailable update as completed.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "The objective does not specify whether to remove the future-total sentence once a final figure is available."
+  ],
+  "missingPropositions": [
+    "The final fundraising total after concert donations are counted."
+  ],
+  "voiceConstraints": [
+    "Informal, appreciative community announcement."
+  ],
+  "zeroToleranceTraps": [
+    "invented_missing_replacement",
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 76,
+      "quote": "Update this announcement with the final fundraising total after the concert."
+    },
+    {
+      "supportsField": "missingPropositions",
+      "field": "objective",
+      "startByte": 77,
+      "endByte": 118,
+      "quote": "I have not included the final total here."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 46,
+      "quote": "The mural fundraiser has raised $2,150 so far."
+    }
+  ]
+}

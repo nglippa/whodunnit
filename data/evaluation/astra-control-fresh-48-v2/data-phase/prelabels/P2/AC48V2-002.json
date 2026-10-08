@@ -1,0 +1,54 @@
+{
+  "caseId": "AC48V2-002",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Check the guide for process misunderstandings.",
+  "acceptableEditScope": "Change only wording that could cause an employee to misunderstand the process.",
+  "stableFactsAndClaims": [
+    "Corrections require shift date, recorded and proposed times, and a reason; each submission covers three shifts.",
+    "Requests do not immediately alter timecards; supervisors compare shift records and contact employees about differences.",
+    "Status appears beside the original timecard; original and proposed entries remain visible until review finishes.",
+    "Missing shifts use Add a shift, not Correct a shift.",
+    "Rejected worked dates and error messages go to scheduling; inaccurate substitute dates must not be submitted."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "three shifts per submission",
+    "Add a shift",
+    "Correct a shift"
+  ],
+  "requiredForm": "Internal employee guide.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Direct procedural guidance with clear precautions."
+  ],
+  "zeroToleranceTraps": [
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 42,
+      "quote": "Check this internal guide for ease of use."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 43,
+      "endByte": 121,
+      "quote": "Make changes only where an employee could otherwise misunderstand the process."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 68,
+      "quote": "Use the correction form when a submitted timecard contains an error."
+    }
+  ]
+}

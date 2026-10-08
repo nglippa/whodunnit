@@ -1,0 +1,65 @@
+{
+  "caseId": "AC48V2-048",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Seek an unambiguous eligibility answer for Noor by rewriting the existing residency rule without adding policy.",
+  "acceptableEditScope": "Clarify existing wording only; the supplied rule and facts do not authorize a definitive yes or no or a new residency criterion.",
+  "stableFactsAndClaims": [
+    "Entrants must be members living within twelve miles of the studio.",
+    "Noor's membership is current; her flat is eight miles away and her job-adjacent room twenty miles away.",
+    "She stays in the room on working nights and at the flat most weekends.",
+    "The rule does not define living within the area, designate an address record, or address multiple residences.",
+    "Last year's organiser accepted someone who wintered elsewhere, but that entrant's supplied address and circumstances are unknown.",
+    "This year's organiser requests a plain explanation before answering; the committee has not discussed Noor and the form asks only for a contact address.",
+    "Noor wants eligibility determined before preparing work photographs."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "Noor",
+    "members living within twelve miles of the studio.",
+    "eight miles",
+    "twenty miles",
+    "working nights",
+    "most weekends"
+  ],
+  "requiredForm": "Plain explanation of the residency rule; definitive eligibility requires an interpretation not established here.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [
+    "Living within the area is undefined for someone with two residences.",
+    "The earlier acceptance does not establish an applicable interpretation.",
+    "The requested unambiguous answer conflicts with the prohibition on adding a policy condition."
+  ],
+  "missingPropositions": [
+    "An authorized interpretation of residence that determines how Noor's two locations affect eligibility."
+  ],
+  "voiceConstraints": [
+    "Plain, neutral language; retain uncertainty rather than supplying an eligibility judgment."
+  ],
+  "zeroToleranceTraps": [
+    "material_unauthorized_meaning_change",
+    "collateral_unauthorized_factual_mutation"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 83,
+      "quote": "Rewrite the residency rule so Noor gets an unambiguous yes or no about eligibility."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 84,
+      "endByte": 161,
+      "quote": "Use the existing rule and details here without adding a new policy condition."
+    },
+    {
+      "supportsField": "protectedNamesNumbersDatesQuotesPhrases",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 100,
+      "quote": "The ceramic prize rules say entrants must be “members living within twelve miles of the studio.”"
+    }
+  ]
+}

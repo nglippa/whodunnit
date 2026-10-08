@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "corpus-freeze-manifest",
+  "status": "FROZEN",
+  "frozenAtUtc": "2026-10-07T16:14:23.082651+00:00",
+  "corpusPath": "data/evaluation/astra-control-fresh-48-v2/data-phase/corpus.json",
+  "corpusSha256": "464eafef5b49cc5c6e9a80ff96ba2bed9661cdc3e7f5c1fa73ba00b2d0dc8f22",
+  "caseCount": 48,
+  "creatorSplit": {
+    "A": 24,
+    "B": 24
+  },
+  "primaryStrata": {
+    "already_good": 8,
+    "explicit_supplied_update": 8,
+    "missing_value_update": 6,
+    "localized_edit": 6,
+    "broad_reconstruction": 6,
+    "voice_sensitive": 5,
+    "collateral_change_trap": 5,
+    "ambiguous_contested": 4
+  },
+  "lengthBands": {
+    "short": 12,
+    "medium": 24,
+    "long": 12
+  },
+  "orthogonalTags": {
+    "casual": 14,
+    "dates_times": 19,
+    "negation": 40,
+    "edit_scope": 38,
+    "professional": 22,
+    "numbers": 33,
+    "comparison": 22,
+    "academic_ish": 8,
+    "certainty": 30,
+    "causality": 16,
+    "personal": 14,
+    "quotation": 14,
+    "protected_phrase": 11,
+    "formulaic": 11,
+    "synthetic_shaped": 9,
+    "overproduced": 6
+  },
+  "alreadyGoodDeclaredCount": 8,
+  "freshnessDispositionPath": "data/evaluation/astra-control-fresh-48-v2/data-phase/freshness-final.json",
+  "freshnessDispositionSha256": "f1e499737ffde83cea57d80ab574ade5d64e6be3bff07df24de5839d6a3f8c8d",
+  "replacements": 20,
+  "caseHashDefinition": "UTF-8 JSON, two-space indentation, trailing LF; caseHash is SHA-256 of sorted-key compact UTF-8 JSON of seven core fields"
+}

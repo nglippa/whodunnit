@@ -1,0 +1,54 @@
+{
+  "caseId": "AC48V2-006",
+  "reviewerId": "P2",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Update the three reconciliation facts.",
+  "acceptableEditScope": "Change unpaid invoice count, total, and oldest date only; retain account status and instructions.",
+  "stableFactsAndClaims": [
+    "Review the attached statement and contact accounts about missing payments.",
+    "Bank transfers use invoice references; combined transfers include every invoice number.",
+    "The account remains open; this is reconciliation, not suspension, with separate confirmation after records are checked.",
+    "Previously sent payments should be reported with transfer date and covered invoice numbers.",
+    "Do not send full bank statements or bank login details."
+  ],
+  "authorizedFactualChanges": [
+    "Three unpaid invoices becomes two.",
+    "$840 becomes $560.",
+    "Oldest invoice date March 12 becomes April 9."
+  ],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "ACCOUNT REVIEW NOTICE",
+    "two unpaid invoices",
+    "$560",
+    "April 9",
+    "account remains open"
+  ],
+  "requiredForm": "Account review notice retaining its status and payment guidance.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Formal, neutral, non-suspension notice."
+  ],
+  "zeroToleranceTraps": [
+    "stale_current_fact_presented_as_completed_after_authorized_update",
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "authorizedFactualChanges",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 100,
+      "quote": "The completed reconciliation shows two unpaid invoices totaling $560, with the oldest dated April 9."
+    },
+    {
+      "supportsField": "acceptableEditScope",
+      "field": "objective",
+      "startByte": 127,
+      "endByte": 178,
+      "quote": "Retain the account status and payment instructions."
+    }
+  ]
+}

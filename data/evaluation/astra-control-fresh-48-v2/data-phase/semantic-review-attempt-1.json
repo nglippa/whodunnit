@@ -1,0 +1,697 @@
+{
+  "reviewerId": "SEM1",
+  "reviewedAll48": true,
+  "reviewedAll43Findings": true,
+  "reviewedFlaggedPeerPair": true,
+  "findingIndexConvention": "Zero-based position in PACKET_JSON.lexicalFindings; indices 0–42.",
+  "cases": [
+    {
+      "caseId": "AC48V2-001",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The prior C023 announcement already describes a neighborhood seed swap on Saturday from 10 to noon, attendance without seeds, seed labeling, and supplied envelopes and writing materials. Changing the venue, adding an explicit date, and adjusting contingencies does not make this clarity-review pair semantically fresh.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C023"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-005"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-002",
+      "decision": "ESCALATE",
+      "sourceObjectiveSpecificRationale": "D020 already concerns collecting rented folding tables and how many fit in a vehicle. Its omitted middle could contain the candidate's central folded-loading, capacity, or inspection structure. The excerpt is insufficient to settle that specific resemblance; the complete prior source is required.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "D020"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-018"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A005"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-003",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "PVC-017 already combines water sampling after heavy rain, differences across sampling locations, inability to establish the material's origin, incomplete evidence, and further sampling. Turbidity instead of nitrate and a channel instead of coastal sites preserve the distinctive observational-and-causal structure under a closely related cautious-prose transformation.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-017"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-004",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The essay recombines established bereavement-and-keepsake material: a deceased relative's ordinary possessions, a biscuit tin, a bicycle-related receipt, retained handwriting, and understated emotional significance through everyday use. The cluster overlaps n-dashes and A001 beyond a generic personal-essay objective.",
+      "references": [
+        {"path": "data/evaluation/cases/n-dashes.md", "id": "document"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A001"},
+        {"path": "PACKET_JSON.candidateCases", "id": "AC48V2-020"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-005",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "This pair updates a pottery collection appointment and its collection entrance while retaining packaging and proxy-collection instructions. Prior event rescheduling and clinic entrance material do not reproduce this collection scenario or its factual structure.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-001"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C029"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-006",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "Updating reconciled invoice count, balance, and oldest invoice date is distinct from prior support-summary count changes and automated ledger reconciliation. The customer notice's open-account status, transfer references, and payment-evidence boundaries supply a different source-specific task.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-006"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "D032"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-007",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The observatory's roof access, visibility uncertainty, arrival slots, wind cancellation, and continuing indoor demonstration distinguish this source from prior repair-night and room-capacity notices. The shared evening time range is ordinary scheduling language.",
+      "references": [
+        {"path": "data/fixtures/objective-feasibility/sources.json", "pointer": "/2/text"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C020"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-008",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "A025 already presents an inflated community-garden storage-shed reopening announcement with shared tools and access arrangements. The candidate extends that same scenario and places a date-only update inside it; the narrow objective does not eliminate the source overlap.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A025"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-009",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The missing final concert fundraising total belongs to a mural budget update with wall preparation, paint, and volunteer needs. Prior missing attendance counts and uncertain mural work schedules concern different facts and scenarios.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-031"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-017"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-010",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The performer biography requires an unavailable solo-piece title and replacement performance date. Its credits, voice-workshop quotation, and separate venue ticket responsibility do not reproduce prior scheduling or missing-value sources. Shared first names are not a distinctive match.",
+      "references": []
+    },
+    {
+      "caseId": "AC48V2-011",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "A missing replacement dispatch deadline in a packed hinge-order summary differs from missing procedural lead times and replacement-part compatibility inquiries. The explicit dispatch-versus-arrival distinction and carton contents make the source substantively different.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-010"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "D005"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-012",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The missing key-safe code is embedded in cabin access, water, stove, and departure instructions. A sticking-door detail and an unavailable replacement value do not reproduce the prior building inspection notes or desktop connection instructions.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A004"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-009"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-013",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The targeted simplification concerns wheelchair access to a touchable sample table while distinguishing it from untouchable hanging artwork. Prior textile exhibitions and entrance-access concerns do not share this sentence-level problem or factual arrangement.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A031"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C017"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-014",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "Replacement-part support is a recurring broad setting, but this task specifically removes an accidentally duplicated sentence in a mug-handle reply. The model-code fallback, hand-tightening quotation, and cracked-insert boundary differ from the prior clip and bracket replies.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C020"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-027"},
+        {"path": "data/evaluation/cases/j-repetition.md", "id": "document"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-015",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The source contains concrete coffee-stall onboarding steps: apron retrieval and return, first-shift separation from payments, pairing with a drink preparer, departure notification, and stopping drink handling when ill. Prior generic volunteer-orientation prose and kitchen scheduling do not reproduce these procedures.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "D033"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-087"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C029"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-016",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The counterbalanced shelf-label search comparison, medians of 19 and 24 seconds, familiar staff sample, and deliberately misplaced single label form a distinct study. Shared small-trial caution and twelve participants do not reproduce the removable-filter prototype test.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C017"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-088"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-017",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The report links three specific archive proposals: publishing a donor-redacted index, staffing a two-person Thursday rota, and listing fragile newspaper cuttings without unfolding them. Prior archive reflections, caption-release proposals, and meeting follow-ups do not reproduce that combination.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A007"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "M020"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-037"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-018",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "A failed basil plant becomes a pencil holder, with disputed overwatering and a comic plan to try mint. Prior windowsill seed trays and an affectionately tended pear tree have different events and relationships. The matched voice-preservation objective is generic.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "D010"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-020"},
+        {"path": "data/fixtures/objective-feasibility/tasks.json", "pointer": "/129/objective"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-019",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "r-messy already centers on a vehicle rattle attributed to the wrong component, a mechanic's inexpensive repair, and a subsequent drive to see whether the noise returns. The candidate changes the components and expands diagnostic and billing boundaries while retaining that distinctive scenario and conversational editing task.",
+      "references": [
+        {"path": "data/evaluation/cases/r-messy.md", "id": "document"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-020",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "A deceased aunt's handwritten food instructions, remembered voice, kitchen clearing, and ordinary cooking as an understated continuing connection overlap M013, A001, and C011. The inherited bowl also duplicates the candidate 004 structure of an inherited everyday object carrying grief through modest use and an unresolved ending.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "M013"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A001"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C011"},
+        {"path": "PACKET_JSON.candidateCases", "id": "AC48V2-004"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-021",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The literal killn-to-kiln correction is embedded in a glaze-appearance trial with a protected worksheet title. Prior ceramics material discusses cracks and conditional production changes, not this appearance comparison or typo-only transformation.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C012"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-022",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The task changes one named workshop contact's extension while protecting another extension, a receipt number, a contractual quotation, and detailed panel packing. Prior display-panel borrowing guidance concerns placement and returns rather than this shipping handover and selective identifier update.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C032"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-023",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The source combines grant-versus-lease timing with explicitly contradictory statements about a school-hall booking. Prior uncertain meeting proposals and supplier schedules do not reproduce this conditional accommodation plan or the named-role disagreement. Preserving unresolved status alone is a generic transformation.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-038"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-035"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-024",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The reopening account contains incompatible public-access dates, competing signature-versus-barrier explanations, and potentially compatible eyewitness recollections. Prior bridge cost reporting, newsletter analysis, and documentary bounds on path widening do not reproduce these disputes or their causal alternatives.",
+      "references": [
+        {"path": "data/evaluation/cases/i-anchors.md", "id": "document"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A026"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-092"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-025",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "C014 and V3-097 already use the same building-notice structure: one entrance closes for repairs, visitors use an alternate entrance, unaffected access continues, and an estimated reopening receives a contingency. Substituting entrance names, repair type, and time does not distinguish the clarity-review task.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "C014"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-097"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-026",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "V3-001 is already a warm, lightly edited message about a blue household vessel left with the writer and an offer to bring it back after a routine outing. Bowl for mug, Sunday for Saturday, and an added soup-and-umbrella joke preserve the same source/objective scenario.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-001"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-027",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The gallery-label pilot measures use rather than recall and has self-selected visitor routes with varying exposure. The supplied timeline classroom study instead compares learning-task responses between established classes. The appointment-reminder study concerns causation, not engagement versus learning. Their common evidential disclaimer is not sufficient overlap.",
+      "references": [
+        {"path": "data/fixtures/semantic-review-development/corpus.json", "pointer": "/136/text"},
+        {"path": "data/fixtures/v13-architecture-replay/cases.json", "pointer": "/36/source"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-090"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-028",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "PVC-025 already combines an old radio restored after a loose connection, dry humor about the repair, and a retained physical detail beside the now-working radio. Addressing Dad and preserving a sticker instead of retaining a switch changes the presentation but leaves a close repair-and-keepsake scenario under a similar light-edit objective.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-025"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "M003"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-029",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "PVC-001 already asks for date and start-time changes to a volunteer orientation while retaining venue and attendee instructions. The ferry briefing adds training details and an optional walk, but keeps the same event scenario and transformation. The early-arrival shingles are separately ordinary language.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-001"},
+        {"path": "data/fixtures/objective-aware-replay/cases.json", "pointer": "/0/source"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-030",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The seed-exchange source returns to the established seed-swap scenario, including packets labeled with plant name and collection year, shared tables, and event participation instructions. A reservation viewpoint and chair/table updates do not resolve its source-level overlap with C023 and V3-005.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C023"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-005"},
+        {"path": "PACKET_JSON.candidateCases", "id": "AC48V2-001"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-031",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "This household tool-lending notice changes an allowance and loan period while retaining renewals, damage handling, inspection, and membership expiry. Prior tool-library inventory accounts do not share that rule-update task. Its courtesy phrase shared with 008 does not duplicate shed-opening content.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-019"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-109"},
+        {"path": "PACKET_JSON.candidateCases", "id": "AC48V2-008"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-032",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The felt-repair workshop requires room-name and kit-color substitutions while retaining beginner suitability, optional observation, and limits on invisible repairs. Prior mending reflections and sewing-machine anecdotes do not reproduce this reminder or its requested changes.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C036"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-031"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-033",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "V3-008 already concerns an event whose replacement place and time are unavailable, with the transformation constrained against inventing them. The rehearsal notice substitutes a closely related attendee-event setting and supplies more existing instructions, but retains the same missing schedule-and-location task.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-008"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-012"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-034",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The absent replacements are a cabin's nightly price and a village bus time in a personal walking-weekend message. Prior missing technical connection values and club registration figures involve different sources and factual dependencies. Sharing a two-value missing-information objective is insufficient.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-009"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-014"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-035",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "V3-079 already gives archive visitor guidance with a four-box request limit and staff-mediated material access. A008 and PVC-030 add the same reading-room registration and staff-help setting. Expanding the notice and isolating one cumbersome staff-assistance sentence leaves a substantially reused scenario and factual structure.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-079"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A008"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-030"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-036",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "A classroom exercise comparing fictional transcripts with and without marked pauses is distinct from prior interruption coding and historical correspondence variants. The one-sentence simplification preserves a specific ungraded discussion purpose rather than reproducing their methods or conclusions.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-088"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "M014"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-037",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The cable-sorting email targets one explicitly incongruous formal sentence and retains a comic uncertainty label. Prior obsolete-key keeping and attic sorting share household clutter but differ in events and transformation. Biscuit tins and orange tape recur elsewhere, but their storage and charger-identification roles here do not reproduce the inherited-bicycle narrative.",
+      "references": [
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "E007"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-022"},
+        {"path": "PACKET_JSON.candidateCases", "id": "AC48V2-004"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-038",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The source records a small tasting group's preferences, varying sample order and temperature, and optional comments. The single inflated closing-procedure sentence is a different source-specific task from prior research comparisons and food narratives.",
+      "references": []
+    },
+    {
+      "caseId": "AC48V2-039",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The source reuses the established community repair-cafe operational package: Saturday sessions, one household item, volunteer triage, no repair guarantee, microwave exclusion, and donations for supplies. The supplied monthly repair-clinic references further share recurring hours and safety restrictions. Removing inflated framing does not make that scenario fresh.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-002"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-010"},
+        {"path": "data/fixtures/discourse-development/mid-pairs.json", "pointer": "/4/text"},
+        {"path": "data/fixtures/discourse-development/mid-pairs.json", "pointer": "/5/text"},
+        {"path": "data/fixtures/plan-entailment-development/tasks.json", "pointer": "/18/source"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-040",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The dawn-recording account has a specific sequence of an obsolete gate key, delayed entry, microphone clothing noise, three clips, and limited bird identification. Prior early bird observations and generic personal-growth prose do not reproduce that sequence or the practical recording lessons.",
+      "references": [
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C002"},
+        {"path": "data/evaluation/holdout-v2/frozen/documents.json", "id": "A010"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-041",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The puzzle memo distinguishes checked, complete, incomplete, and unchecked stock; proposes labeling and photography; and requests a two-puzzle loan-system test. The seed-shelf reference shares only an unapproved library-manager proposal. Tool inventories and wider-rollout cautions do not duplicate the puzzle-specific counts or system constraints.",
+      "references": [
+        {"path": "data/fixtures/plan-entailment-development/tasks.json", "pointer": "/1/source"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-019"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-066"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-042",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The request for two greenhouse panes of measured dimensions and a Wednesday pickup differs from tomato-sharing jokes and personal bench repairs. Plant personification and the matched generic readability instruction do not duplicate the source's practical request.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-006"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-029"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-043",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The speaker remains at home after a sister moves north, encountering her absence through tea, a scarf, and a station receipt. V3-118 concerns the speaker's own relocation and lost familiarity with a former place. Mixed feelings and an untidy emotional ending recur, but the scenario and concrete image sequence are substantively different.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-118"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C021"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-044",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The randomized four-bed mulch trial, fixed watering procedure, blank missing readings, and unapproved expansion differ from prior tomato placement and greenhouse scheduling. The requested change is confined to a summary deadline and protects a distinctive noticeboard phrase.",
+      "references": [
+        {"path": "data/evaluation/cases/l-already-good.md", "id": "document"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-016"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-045",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "The glove-location correction belongs to a costume-cupboard handover with production rails, retained visible patch, separate machine status, paper loans, and uncertain return travel. Prior drawer instructions and mending narratives do not reproduce this source or the single-location update.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-103"},
+        {"path": "data/evaluation/holdout/frozen/documents.json", "id": "C036"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-046",
+      "decision": "PASS",
+      "sourceObjectiveSpecificRationale": "This route-length-only update protects a duration estimate, limited bridge accessibility, sheep-field permission, and conditional river-path alternatives. Prior lantern-walk notices and the market-stall loading permission reference do not reproduce that structure. The permission phrase is ordinary restrictive wording.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-116"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-018", "pointer": "/17/source"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-047",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "V3-041 already evaluates an apparent improvement in service speed across two periods, identifies a differing workload mix, and recommends continuing while keeping attribution limited. The queue report substitutes an untimed observation, crowd size, and desk staffing, but retains that distinctive before/after service-speed causal pattern and committee-report transformation.",
+      "references": [
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-041"},
+        {"path": "data/evaluation/holdout-v3/frozen/cases.json", "id": "V3-094"}
+      ]
+    },
+    {
+      "caseId": "AC48V2-048",
+      "decision": "REPLACE",
+      "sourceObjectiveSpecificRationale": "The pair presents incompatible records and asks the editor to supply a definitive result that those records cannot establish. PVC-039 already uses that source/objective mismatch: competing document versions remain unconfirmed while the requested account asks which version was used. The book vote disguises the established unsupported-resolution editing trap.",
+      "references": [
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-039"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-020", "pointer": "/19/source"},
+        {"path": "data/evaluation/post-v3-comparison/frozen/cases.json", "id": "PVC-018", "pointer": "/17/source"},
+        {"path": "data/fixtures/semantic-review-development/corpus.json", "pointer": "/95/text"}
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "findingIndex": 0,
+      "disposition": "BENIGN",
+      "rationale": "The matched evening time range is ordinary scheduling wording. The supplied underlying source concerns a repair night, not observatory access or telescope contingencies; withheld label prose was not used."
+    },
+    {
+      "findingIndex": 1,
+      "disposition": "BENIGN",
+      "rationale": "The complete supplied repair-night source establishes that the shared 6-to-8 time range occurs in a substantively different event."
+    },
+    {
+      "findingIndex": 2,
+      "disposition": "BENIGN",
+      "rationale": "This repeats the ordinary time-range match. The underlying source was supplied; withheld review prose was not needed or used."
+    },
+    {
+      "findingIndex": 3,
+      "disposition": "BENIGN",
+      "rationale": "Keeping dry humor is a generic editing instruction. The phrase provides no source-specific link to the basil death, pencil holder, and proposed mint."
+    },
+    {
+      "findingIndex": 4,
+      "disposition": "BENIGN",
+      "rationale": "The supplied appointment-reminder study concerns causal attribution between timing groups. Its evidential disclaimer does not duplicate gallery-label use versus learning."
+    },
+    {
+      "findingIndex": 5,
+      "disposition": "BENIGN",
+      "rationale": "The supplied classroom timeline study measures ordering answers and reasoning across classes. The candidate measures gallery engagement with varying exposure; the shared disclaimer is conventional."
+    },
+    {
+      "findingIndex": 6,
+      "disposition": "BENIGN",
+      "rationale": "The supplied two-sentence workshop source uses an ordinary ten-minute early-arrival instruction. That phrase alone does not establish overlap with the expanded ferry briefing."
+    },
+    {
+      "findingIndex": 7,
+      "disposition": "BENIGN",
+      "rationale": "The editor-request occurrence repeats the early-arrival wording from the supplied workshop source; no withheld request content was used."
+    },
+    {
+      "findingIndex": 8,
+      "disposition": "BENIGN",
+      "rationale": "The verifier-request occurrence repeats the same ordinary arrival instruction; no withheld verifier content was used."
+    },
+    {
+      "findingIndex": 9,
+      "disposition": "BENIGN",
+      "rationale": "Adding please to the early-arrival shingle does not make it distinctive. The supplied workshop source contains no ferry training or optional pier walk."
+    },
+    {
+      "findingIndex": 10,
+      "disposition": "BENIGN",
+      "rationale": "This is another window onto the same supplied early-arrival instruction, rather than independent evidence of semantic duplication."
+    },
+    {
+      "findingIndex": 11,
+      "disposition": "BENIGN",
+      "rationale": "This verifier-request match duplicates the conventional early-arrival phrase; withheld content was not used."
+    },
+    {
+      "findingIndex": 12,
+      "disposition": "BENIGN",
+      "rationale": "The ten-minutes-early wording is a common event instruction. Case 029's replacement decision rests separately on PVC-001's volunteer-orientation date/time task."
+    },
+    {
+      "findingIndex": 13,
+      "disposition": "BENIGN",
+      "rationale": "The editor-request match repeats the same ordinary instruction already visible in the supplied source."
+    },
+    {
+      "findingIndex": 14,
+      "disposition": "BENIGN",
+      "rationale": "The verifier-request match repeats the same instruction and adds no independent source-specific overlap."
+    },
+    {
+      "findingIndex": 15,
+      "disposition": "OVERLAP",
+      "rationale": "Beyond the scheduling shingle, the supplied reference describes a recurring neighborhood repair clinic with volunteer assessment, safety restrictions, and limits on repair assurances, matching the candidate's operational scenario."
+    },
+    {
+      "findingIndex": 16,
+      "disposition": "OVERLAP",
+      "rationale": "The supplied /5/text variant retains the same monthly repair-clinic scenario and limitations. Its added framing does not distinguish that shared content."
+    },
+    {
+      "findingIndex": 17,
+      "disposition": "OVERLAP",
+      "rationale": "The time phrase is generic in isolation, but its full supplied context is the same recurring community repair-service scenario."
+    },
+    {
+      "findingIndex": 18,
+      "disposition": "OVERLAP",
+      "rationale": "The /5/text reference repeats the repair-clinic operational package; this shingle is another occurrence within that substantive overlap."
+    },
+    {
+      "findingIndex": 19,
+      "disposition": "OVERLAP",
+      "rationale": "The supplied underlying /18/source concerns establishing first-Saturday monthly repair-cafe sessions with volunteer availability and qualified public commitments. The candidate revisits that scenario; withheld baseline prose was not used."
+    },
+    {
+      "findingIndex": 20,
+      "disposition": "OVERLAP",
+      "rationale": "This is a second baseline occurrence linked to the supplied monthly repair-cafe source, not separate evidence. The broader repair-service scenario overlaps."
+    },
+    {
+      "findingIndex": 21,
+      "disposition": "OVERLAP",
+      "rationale": "The full supplied source proposes first-Saturday repair-cafe sessions and constrains what may be announced. The candidate's standing sessions and undecided appointment proposal reuse that operational setting."
+    },
+    {
+      "findingIndex": 22,
+      "disposition": "OVERLAP",
+      "rationale": "The supplied /4/text is a monthly neighborhood repair-clinic note. Shared recurrence, volunteer triage, and safety limitations establish overlap beyond this ordinary schedule phrase."
+    },
+    {
+      "findingIndex": 23,
+      "disposition": "OVERLAP",
+      "rationale": "The supplied /5/text variant contains the same recurring repair-clinic content; this match adds no distinct concern beyond that overlap."
+    },
+    {
+      "findingIndex": 24,
+      "disposition": "OVERLAP",
+      "rationale": "The shingle itself is ordinary, but the supplied underlying source is a proposed monthly repair cafe. The disposition relies on that source context, not withheld baseline material."
+    },
+    {
+      "findingIndex": 25,
+      "disposition": "OVERLAP",
+      "rationale": "This repeats the same first-Saturday repair-cafe source association. It is not an additional independent scenario."
+    },
+    {
+      "findingIndex": 26,
+      "disposition": "OVERLAP",
+      "rationale": "The supplied repair-cafe proposal and candidate both organize recurring community repair sessions around volunteer and announcement limits, supporting the case-level overlap."
+    },
+    {
+      "findingIndex": 27,
+      "disposition": "BENIGN",
+      "rationale": "The supplied underlying source concerns an unapproved outdoor seed box. A library manager's pending approval is generic and does not duplicate puzzle inspection or the loan-system test."
+    },
+    {
+      "findingIndex": 28,
+      "disposition": "BENIGN",
+      "rationale": "The full seed-shelf source has different items, work, dependencies, and proposed action from the puzzle memo."
+    },
+    {
+      "findingIndex": 29,
+      "disposition": "BENIGN",
+      "rationale": "This is another window onto the same generic approval-status phrase. The supplied seed-box context clears the source-specific concern."
+    },
+    {
+      "findingIndex": 30,
+      "disposition": "BENIGN",
+      "rationale": "Pending manager approval is shared wording, but the underlying seed-box proposal differs substantively from lending incomplete puzzles."
+    },
+    {
+      "findingIndex": 31,
+      "disposition": "BENIGN",
+      "rationale": "Easier to follow while preserving is generic editing language. The withheld rationale was not used to infer a source, outcome, or task identity."
+    },
+    {
+      "findingIndex": 32,
+      "disposition": "BENIGN",
+      "rationale": "The supplied reference permits temporary loading-entrance use for a market stall. The candidate restricts walkers to a field path; the common permission phrase has different practical content."
+    },
+    {
+      "findingIndex": 33,
+      "disposition": "BENIGN",
+      "rationale": "The supplied underlying market-stall source resolves the phrase's context. The withheld prelabel was neither needed nor used."
+    },
+    {
+      "findingIndex": 34,
+      "disposition": "BENIGN",
+      "rationale": "Limits of the evidence is a generic qualification. Case 047's replacement rests on the supplied V3-041 source/objective comparison, not withheld audit reasoning."
+    },
+    {
+      "findingIndex": 35,
+      "disposition": "BENIGN",
+      "rationale": "The supplied reference leaves spreadsheet permissions unchecked in a shared-mailbox proposal. The candidate leaves members' willingness to revote unchecked; these are different unresolved facts."
+    },
+    {
+      "findingIndex": 36,
+      "disposition": "BENIGN",
+      "rationale": "This matches the same generic uncertainty phrase in derivative prelabel material. Only the supplied underlying mailbox source was considered."
+    },
+    {
+      "findingIndex": 37,
+      "disposition": "BENIGN",
+      "rationale": "The audit pointer records a common phrase rather than a supplied scenario. I have not checked whether the is ordinary uncertainty wording and adds no source-specific overlap."
+    },
+    {
+      "findingIndex": 38,
+      "disposition": "BENIGN",
+      "rationale": "The full market-stall source leaves parking-lot opening hours unchecked. That uncertainty differs from the candidate's potential repeat vote."
+    },
+    {
+      "findingIndex": 39,
+      "disposition": "BENIGN",
+      "rationale": "The corresponding prelabel match adds no independent concern; the supplied market-stall source establishes a different unresolved practical detail."
+    },
+    {
+      "findingIndex": 40,
+      "disposition": "BENIGN",
+      "rationale": "The supplied facilities email leaves projector return unchecked. Its setup and delivery scenario does not duplicate conflicting book-vote records."
+    },
+    {
+      "findingIndex": 41,
+      "disposition": "BENIGN",
+      "rationale": "This review occurrence repeats the same uncertainty wording associated with the supplied facilities email. Withheld review prose was not used."
+    },
+    {
+      "findingIndex": 42,
+      "disposition": "BENIGN",
+      "rationale": "The two peer shingles form one conventional thank-you phrase. A garden shed opening-date correction and household tool allowance/loan-period updates have different operational content and requested changes."
+    }
+  ],
+  "peerPairs": [
+    {
+      "caseIds": ["AC48V2-008", "AC48V2-031"],
+      "flagged": true,
+      "disposition": "BENIGN",
+      "rationale": "The shared courtesy wording does not establish conceptual duplication. Shed storage and access arrangements differ from household borrowing allowances and loan periods. Case 008 independently overlaps prior A025."
+    },
+    {
+      "caseIds": ["AC48V2-004", "AC48V2-020"],
+      "flagged": false,
+      "disposition": "REPLACE",
+      "rationale": "Both essays follow bereavement through an inherited everyday object, remembered family habits, hesitation about using it, and a small ordinary act without emotional resolution. Both request light editing with protected wording. Their shared narrative architecture is more specific than a generic personal-essay objective."
+    },
+    {
+      "caseIds": ["AC48V2-001", "AC48V2-030"],
+      "flagged": false,
+      "disposition": "REPLACE",
+      "rationale": "Both revisit seed-swap participation and packet labeling. Their objectives differ, but the common event scenario also overlaps the prior seed-swap universe; the reservation framing does not establish source freshness."
+    }
+  ],
+  "requestedReferences": [
+    {
+      "path": "data/evaluation/holdout-v2/frozen/documents.json",
+      "id": "D020",
+      "sourceSha256": "98906369cee5dda07e070c010bb1731414546ae7f4c378d4c38aef3a63435295",
+      "requestedMaterial": "Complete pinned source text only.",
+      "relatedCaseIds": ["AC48V2-002"],
+      "reason": "The excerpt omits the folding-table vehicle-capacity answer and surrounding collection guidance, which are central to determining overlap with the candidate's inspection, folded loading, and one-trip capacity instructions."
+    }
+  ],
+  "overall": "REQUEST_REFERENCES"
+}

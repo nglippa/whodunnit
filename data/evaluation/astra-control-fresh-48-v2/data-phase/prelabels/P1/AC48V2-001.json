@@ -1,0 +1,47 @@
+{
+  "caseId": "AC48V2-001",
+  "reviewerId": "P1",
+  "submittedAtUtc": "2026-10-07T23:50:03Z",
+  "intendedObjective": "Assess whether visitors can follow the introduction; retain it if clear.",
+  "acceptableEditScope": "Only changes necessary for clarity; no revision is required if the instructions already work.",
+  "stableFactsAndClaims": [
+    "The walk starts at the clock tower and takes about 35 minutes.",
+    "Download before leaving home because signal drops near the tunnel.",
+    "Visitors may pause and need not keep pace with the recording.",
+    "On Sunday the market blocks the final stop; finish at the fountain instead."
+  ],
+  "authorizedFactualChanges": [],
+  "protectedNamesNumbersDatesQuotesPhrases": [
+    "clock tower",
+    "about 35 minutes",
+    "Sunday",
+    "fountain"
+  ],
+  "requiredForm": "Visitor-facing audio walk introduction.",
+  "noOrMinimalEditExpected": true,
+  "ambiguity": [],
+  "missingPropositions": [],
+  "voiceConstraints": [
+    "Clear, direct, reassuring visitor instructions."
+  ],
+  "zeroToleranceTraps": [
+    "collateral_unauthorized_factual_mutation",
+    "material_unauthorized_meaning_change"
+  ],
+  "sourceObjectiveEvidence": [
+    {
+      "supportsField": "intendedObjective",
+      "field": "objective",
+      "startByte": 0,
+      "endByte": 46,
+      "quote": "Read this audio walk introduction for clarity."
+    },
+    {
+      "supportsField": "stableFactsAndClaims",
+      "field": "source",
+      "startByte": 0,
+      "endByte": 68,
+      "quote": "The audio walk starts at the clock tower and takes about 35 minutes."
+    }
+  ]
+}
