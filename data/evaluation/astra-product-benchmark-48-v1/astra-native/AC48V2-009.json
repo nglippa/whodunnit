@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-009",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "At our last update, the mural fundraiser had raised $2,150, covering the wall preparation and part of the paint order. The final total after the benefit concert has not been provided, so we cannot publish an updated figure yet. Thanks to everyone who has chipped in, lent equipment, or offered time. We still need two volunteers to help protect the pavement on painting day."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "59fc79d75d0f9329a42b031d6584278acba64907cbcf6b41e3304c1f03a30ed4",
+  "editedTextSha256": "7418bee973ab3c2f32c17c4d98b3f03c82f864b63aaf9433514986dd1da6b968",
+  "persistedAtUtc": "2026-10-08T14:09:10.932416+00:00"
+}

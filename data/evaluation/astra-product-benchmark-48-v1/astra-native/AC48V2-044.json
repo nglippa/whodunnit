@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-044",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The courtyard garden trial will run from 3 May to 28 June. During that period, the two raised beds nearest the bicycle racks will use mulch made from shredded leaves. The other two beds will continue with the current bare-soil arrangement. We chose the beds by drawing numbered slips from a jar after planting, so the mulch beds were not selected for having stronger seedlings. Each bed contains the same number of bean plants, although the individual plants already vary in height.\n\nVolunteers will water all four beds using the same schedule. If rain makes a scheduled watering unnecessary, the coordinator will record that decision for every bed. We are not adjusting water separately according to how dry each bed looks. That choice keeps the procedure consistent, but it also means the trial will not show how much water could be saved by responding to each bed's condition.\n\nPlease record the soil temperature and the number of wilted plants every Tuesday at noon. Use the probe kept in the labelled drawer and follow the depth mark on its stem. If you miss a reading, leave that entry blank and tell the coordinator. Do not fill it with a guess or copy the previous week's number. A blank entry is easier to interpret than a value whose origin is unclear.\n\nThe observations are designed to give the gardening group a practical starting point for discussing next season. They will not establish that leaf mulch works equally well in all locations or with all crops. The courtyard gets shade after 2 p.m., and the beds drain differently from the plots behind the hall. Those differences matter when comparing this trial with experiences elsewhere.\n\nAt present, the coordinator will prepare a short summary by 5 July. It will list the recorded measurements and describe gaps in the record. The group may then decide to repeat the trial. No decision has been made about expanding mulch use, and the summary should not describe expansion as an agreed next step.\n\nThe phrase on the volunteer noticeboard is “small trial, useful questions.” Please use that wording when introducing the activity to visitors. We want people to understand why the trial is modest and why it is still worth recording carefully. Visitors can ask questions from the path, but they should not walk between the beds during a reading."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "2430036c1ce79a95ca59071c37198a792cf9d42b48236e74f383516a3b86e2ca",
+  "editedTextSha256": "bd8ad4143dc93759431147b9593e945b35f85161852edafbbc4a2ec88adab915",
+  "persistedAtUtc": "2026-10-08T19:46:26.131487+00:00"
+}

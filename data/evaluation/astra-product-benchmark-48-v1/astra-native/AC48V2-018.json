@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-018",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "I tried to grow basil on the windowsill. The basil considered the arrangement and declined. Now the pot holds pencils, which seem happier. Mum says I overwatered it. She may be right, but I would like the record to show that I was very encouraging. Next spring I'll try mint. Apparently mint doesn't wait for encouragement."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "d07456a714e125e6f9e9d52520610d333f4afdb61454805c940f4114c8a75d5d",
+  "editedTextSha256": "feb0699e546d1ea3c5b6ed0fb2df38d0b4c7fb6534425ea8c96c834875ccd52e",
+  "persistedAtUtc": "2026-10-08T14:12:32.833497+00:00"
+}

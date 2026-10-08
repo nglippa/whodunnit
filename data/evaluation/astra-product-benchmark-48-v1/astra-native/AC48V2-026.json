@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-026",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "I watched the silent film you suggested. The bit where the thief tries to look innocent while carrying an entire door made me laugh out loud. I missed some of the title cards because I was still laughing, so I will probably watch it again. Thanks for knowing exactly what sort of ridiculous evening I needed after that week."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "630c80bf728e1f5ac20af80d6379be2c521421649be8cdaf90c5c1ff57d12d73",
+  "editedTextSha256": "892e6be033b71d8e70db696409491902dacfe04c934ddc4b99d3c5638c93b17a",
+  "persistedAtUtc": "2026-10-08T14:13:18.844284+00:00"
+}

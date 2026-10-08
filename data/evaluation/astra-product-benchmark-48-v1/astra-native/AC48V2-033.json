@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-033",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The artist has revised the edition size for this linocut, but the revised figure has not been provided for the catalogue. Each print carries its own number beneath the image, together with the artist's initials. The paper is unframed, and the dimensions refer to the image rather than the sheet. A proof is shown in the photograph; the print sent to a buyer will have its individual edition number."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "65ff6bd4853b327b2847bcdddaa842f3d959054fb04c27f0eb48e7713e7a45ca",
+  "editedTextSha256": "f9cdf3aa5489e830c984e0757f5db5a0351e3ccda4e26ae746eb740d5e26a7e9",
+  "persistedAtUtc": "2026-10-08T19:44:54.859820+00:00"
+}

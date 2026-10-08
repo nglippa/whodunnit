@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-031",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Dear Members, our winter borrowing allowance is six tools per household. Tools may be kept for twenty-one days, and renewals are available if nobody else has requested the item. Please return each tool clean and with any supplied attachments. Staff will inspect electrical items before lending them again. A damaged item should be handed directly to the desk rather than placed in the return cabinet. Reporting damage does not automatically result in a charge; we first check what happened and whether the issue arose through normal use. You can reserve tools through the catalogue or ask a volunteer to help during opening hours. Membership cards remain valid until their printed expiry date. Thank you for helping us keep the collection useful and safe for everyone."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "21f226a5d8cc839a37dbf23663a071c52f370d6f3de2ed4f1d5e2f5aaf51d5a0",
+  "editedTextSha256": "30b7c63cb119b58cc7335dcffc6cdb2db25fc392e523fd10488bedd133c3fc5e",
+  "persistedAtUtc": "2026-10-08T14:13:52.298456+00:00"
+}

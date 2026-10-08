@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-013",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The exhibit label must retain the artist's title, \"A Map of Almost Home.\" Visitors may touch the sample cloth on the small table. They may not touch the hanging work. The table is hard for visitors using wheelchairs to reach. Please move the table closer to the entrance."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "bfa4a70b185208d2da1f1f99f8b808818fede1b93f2f6a93769fb0bb2bde1f21",
+  "editedTextSha256": "5c1e462c776136c5e89565ca52ae59add012e5008a8b8c6a58d9549b96e8226f",
+  "persistedAtUtc": "2026-10-08T14:10:08.294117+00:00"
+}

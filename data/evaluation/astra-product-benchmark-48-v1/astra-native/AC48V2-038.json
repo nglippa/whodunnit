@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-038",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The tasting group met in the upstairs kitchen on Tuesday. Each person tried the three samples in a different order, using cups marked only with letters. We supplied water between samples but did not require anyone to finish a cup. The results are a record of this small group's preferences, rather than a general verdict on the recipes. At the end, participants could share any further observations. Two people mentioned the texture of the oat sample, while one said the rice sample tasted sweeter than expected. Nobody was asked to explain a preference they did not want to discuss. Next time, we will use the same serving temperature for all samples because temperature varied during this session."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "2ca4758a034dabdb753bca427d0cea0bc2eacc5c5e747ed50dbdcb0dbe7f17bf",
+  "editedTextSha256": "235b480d81a90b68d748af9584de85856a155cb1d4afad5f5f834924871b4481",
+  "persistedAtUtc": "2026-10-08T19:45:27.269243+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-035",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The batch sheet lists the flour weight before any extra flour is used for dusting. Record that extra flour separately if you add it, since it is not part of the mixed dough. Each tray should hold eight rolls with enough space for them to expand. The baker will check the first tray before the remaining dough is divided. Inspect the surface of the rolls once they have cooled. Note any split crusts in the comments column. A split does not by itself mean that a roll must be discarded; the baker will decide whether it affects the intended use. Keep the tray number beside each observation so the comments can be traced to the correct part of the batch. Do not combine observations from different trays into one entry."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "e7cd4911892cca6e303646dfb9a22364fb7210ffcea25aed36cbe9ff451d0b6e",
+  "editedTextSha256": "3fe1fa7db908c19c216086d48cb38cdb10661ec8be0141c30bdc459d9110d461",
+  "persistedAtUtc": "2026-10-08T19:45:06.260256+00:00"
+}

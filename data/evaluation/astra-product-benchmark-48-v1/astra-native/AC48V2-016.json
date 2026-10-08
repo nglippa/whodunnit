@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-016",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "We compared the time taken to identify a misplaced label under two shelf arrangements. Arrangement A placed labels at the front edge; arrangement B placed them above the relevant shelf. Twelve participants performed one search under each arrangement, with the order alternated between participants.\n\nThe median search time was 19 seconds in arrangement A and 24 seconds in arrangement B. These results do not establish that arrangement A is superior. We calculated no uncertainty interval, and the sample consisted of staff who already knew the room.\n\nThe task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results support conducting a further trial. A trial involving visitors would help determine whether the observed time difference also appears among people unfamiliar with the shelves."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "9838f1f80cd39e0971938e35cf10ce1eca69500b2d022ed0f2d988f236ce8a3e",
+  "editedTextSha256": "0905711df75bafe28e7dd9f7752819ea04e88b2d55a44a82f1dd3d422c83ff9b",
+  "persistedAtUtc": "2026-10-08T14:12:01.326010+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-004",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "At my first swimming lesson, the instructor asked what I wanted to learn. I said I wanted to cross the pool without checking how close I was to the edge. She did not write down a stroke or a distance. She nodded and showed me where the shallow lane ended. It was a practical answer to a question I had expected to find embarrassing.\n\nThe other adults had come for different reasons. One wanted to swim with her children on holiday. Another could swim well but became uncomfortable whenever his face went under. Nobody asked anyone to explain a childhood or defend a fear. We began by standing in water and breathing. I had paid for six lessons, and at first this seemed an expensive way to do something I managed regularly on land.\n\nThen we practiced floating. The instructor told us to let the water take our weight. I understood the words, but my shoulders continued to negotiate. Each time I relaxed my legs, I tightened something else. Beside me, a woman floated with her eyes closed and looked briefly like the only person in the building who had received the correct instructions.\n\nBy the third lesson, I could put my face in and breathe out steadily. Crossing the pool still involved stopping. Sometimes I stopped because I needed to breathe; sometimes I stopped because I needed to know that stopping remained possible. The instructor treated both reasons calmly. She said we could work on them, but she did not pretend they were the same problem. That distinction helped more than a general instruction to be confident.\n\nI keep my lesson times on the kitchen calendar under the heading \"one lane at a time.\" It makes the task seem appropriately sized. I am learning in a municipal pool, under fluorescent lights, beside a rack of foam floats. There is no need to turn the experience into a grand discovery about courage.\n\nAfter the last lesson, I may sign up for another course. I may practice with a friend first. For now, I can spend a few seconds in the middle of the lane looking at the blue tiles below me. I know where the edge is. For those few seconds, I do not need it."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "852e4b44d1a51e39020bf382d34d6cdb6250a3adbe1e85b30c89bb54424c1760",
+  "editedTextSha256": "6e852f1721625ec8a1fcc81877db3b611a3891544fea9d7ee58d8cff977d7a49",
+  "persistedAtUtc": "2026-10-08T14:07:47.259014+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-003",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The novel gives the reader two accounts of the bell tower incident. In chapter 4, Len describes hearing a bell before the roof collapsed. In chapter 11, the caretaker recalls the collapse first and the bell afterward. Both accounts are presented as recollections, and neither is confirmed by an independent narrator.\n\nThe disagreement changes how each speaker explains the event. Len treats the bell as a warning; the caretaker treats it as a consequence of falling masonry. The text therefore supports a comparison of their explanations, but it does not establish which sequence occurred within the fictional world.\n\nThe final chapter returns to the tower without resolving the timing. Its description of a loose bell rope may encourage readers to reconsider Len's account, yet the rope alone cannot demonstrate that the bell preceded the collapse. An interpretation of the ending should preserve that distinction between a suggestive detail and a settled sequence."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "b94391e93a338fdbbaa6219eddbd5a0a22675dfc2b3359014a4d9b2002fd2909",
+  "editedTextSha256": "24f4bdddb2a2d2896adbc32a144db391bfac69e3bf8f2fd4b254c7977229ab5e",
+  "persistedAtUtc": "2026-10-08T14:07:39.702211+00:00"
+}

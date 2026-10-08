@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-006",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "ACCOUNT REVIEW NOTICE\n\nOur records show two unpaid invoices on your account, totaling $560. The oldest invoice is dated April 9. Please review the attached statement and contact the accounts team if you believe a payment is missing.\n\nPayment can be made by bank transfer using the reference printed beside each invoice. If you combine several invoices in one transfer, include all invoice numbers in the payment reference. This helps us match the transfer to your account.\n\nYour account remains open while we complete this review. This notice is a request to reconcile the balance and is not a suspension notice. We will send a separate confirmation once the records have been checked.\n\nIf you have already sent a payment, reply with the transfer date and the invoice numbers it covered. Please do not send your full bank statement or bank login details."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "e575acdf46cc07ebd3e6301d0b273eaa2ab9a527fa13e2c7b99a8268f877bf8a",
+  "editedTextSha256": "7b1a290472711d5d9afa6be47750c79b2b4c0e956cd7b241140c917e9c26d472",
+  "persistedAtUtc": "2026-10-08T14:08:12.008882+00:00"
+}

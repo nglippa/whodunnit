@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-001",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The audio walk starts at the clock tower and takes about 35 minutes. Download it before you leave home; the signal drops near the tunnel. Pause whenever you want to look around. You don't need to keep pace with the recording. On Sunday, the market blocks the final stop, so finish at the fountain instead."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "c96b541001b5f1262947cbfcfba2c702cbae0169e071adcb58b494c9563a9e5e",
+  "editedTextSha256": "2da3e474adf218a7cb274ceb01d9cbc37a97041146245c49a2eb88e8d17eef55",
+  "persistedAtUtc": "2026-10-08T14:07:25.763482+00:00"
+}

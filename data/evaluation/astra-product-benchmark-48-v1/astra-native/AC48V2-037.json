@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-037",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "I finally sorted the drawer where every spare cable goes to become a mystery. Three of them belong to devices I no longer own. One probably belongs to the desk lamp, although I have not proved that yet. I put the useful ones in a biscuit tin and wrote “CABLES, PROBABLY” on the lid. So now I have a bit more room on my desk. That is the only sentence in this email that sounds like it is wearing a tie. Anyway, I found the charger you were looking for. It has the orange tape around one end, just as you described. I can leave it at your place tomorrow, or you can collect it when you come over for lunch."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "daa46a5dada37f360e3b6d5e34bbaed2019d66e149a1cc37d588dd550db2610f",
+  "editedTextSha256": "be5fe48307d3ecb452064888e892f7a5a18014a066699af44bb7e169c89b6dec",
+  "persistedAtUtc": "2026-10-08T19:45:19.273584+00:00"
+}

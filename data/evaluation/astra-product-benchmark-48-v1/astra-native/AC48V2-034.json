@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-034",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Hi Jo, I booked the little cabin for our walking weekend. The nightly price has been revised, but I haven't included the new amount here. I also haven't included the latest timetable time for the last bus at the village shop. There is a wood stove, but we need to bring kindling. I will send the route once I have checked the footbridge."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "54493015d6e8ffa4d8048b3daab946746ef34776a0f667f9f070f90432ea69d4",
+  "editedTextSha256": "15e1832d3a64535c6470f3e2c83efa4641e5905ea85696c18618080309abbab4",
+  "persistedAtUtc": "2026-10-08T19:45:00.797035+00:00"
+}

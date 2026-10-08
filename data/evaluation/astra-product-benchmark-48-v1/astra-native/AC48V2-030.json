@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-030",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Recording setup sheet: save the raw audio at a sample rate of 48 kHz, using the filename prefix CEDAR. Each session folder should contain the original recording and a separate text file listing the sounds captured. Keep the original even when a shorter excerpt is prepared for the catalogue. The excerpt should have its own filename, and its notes should identify where it begins in the original. Record the microphone position before moving any equipment. We cannot recover that information from the sound alone. A failed take should be marked in the notes rather than silently removed from the session folder. Do not apply noise reduction to the raw file. Any processed copy must be identified as processed so a later editor can distinguish it from the recording made in the room."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "5f268dfcae6f0cf39e6f8755ad2a6852aefb013f34abb1161b9b5f074065d983",
+  "editedTextSha256": "dd5a16ea214aabd7e47e10146962c652a40454d8e5a933b8c42a672ab57bc37d",
+  "persistedAtUtc": "2026-10-08T14:13:45.098005+00:00"
+}

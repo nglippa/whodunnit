@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-040",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "I thought getting up early would be the hardest part of recording the dawn sounds in the allotment. I had borrowed a recorder from the neighbourhood arts cupboard and read the instruction sheet the night before.\n\nAt 5:20 on Sunday morning, I reached the gate and found that the spare key didn't fit. The lock had been replaced during the week; my key belonged to the old one. I waited outside until Farah arrived with her own key, missing the first stretch of birdsong I had hoped to record. She had come to water her beans, not to help me, but she let me in and showed me a dry place for the equipment.\n\nThen came the sounds I hadn't planned for. A delivery van stopped nearby, somebody dragged a bin across the pavement, and my jacket rubbed against the microphone. I only noticed the jacket noise when I listened through the headphones. Putting the recorder on a wooden crate helped with that. It did nothing about the van or the bin.\n\nI recorded three clips of about four minutes each. The middle one includes a blackbird I recognised by sight, but I can't identify the other birds. I shouldn't present the whole clip as a collection of named bird calls. There is traffic in the recordings too. That was part of how the allotment sounded that morning.\n\nBack home, I realised I had expected too much. I had imagined a clean recording made entirely of birdsong. What I brought back was a small record of a place waking up. Next weekend, I want to check the key in advance and use a tripod. I haven't decided whether to go earlier. Arriving before the deliveries might help, but I don't yet know their schedule."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "372a6cf5630a24e8f05d9d043862139487eff91cc5494ed5677c80a1de9415c1",
+  "editedTextSha256": "90ebdddfbaa5b10b4deb18d40790d55fa60ad7778459578f4563564379ddea8a",
+  "persistedAtUtc": "2026-10-08T19:45:53.483435+00:00"
+}

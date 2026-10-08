@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-029",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Invoice note: the charge for indexing the illustrated catalogue is twelve hours at £48 per hour, for a total of £576. This covers the agreed index entries and one check against the final page proofs. It does not include indexing material added after those proofs were supplied. The index file has been delivered in the requested format, with names and subjects in a single alphabetical sequence. Please retain the file with the catalogue production records. If pagination changes before printing, tell us which pages have moved so we can assess whether another check is needed. Payment is due within thirty days of receipt. Quote catalogue reference IC42 when paying, so the payment can be matched to this job. Thank you for sending the illustration captions alongside the main text; they helped us identify several useful entries."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "b1ea75df91e079f9d866b66c0b8e8439b9ad01ddbf35cbd9e14f0b4407a3cb99",
+  "editedTextSha256": "04420b4c34896caf0152114708e5c478b3bf45fd91021e574d2202205b5b91bd",
+  "persistedAtUtc": "2026-10-08T14:13:36.118873+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-010",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Mara Venn is a stage performer based in Bellweather. Her recent work includes the role of Nell in Lantern House's production of The Quiet Orchard and a touring storytelling show for primary schools. She also runs occasional voice workshops at the neighborhood arts center.\n\nIn an interview for the center's newsletter, Mara described her approach as \"leave room for the listener.\" That phrase also appears in the title of her introductory workshop. The workshop focuses on pacing, breath, and the difference between speaking clearly and speaking loudly.\n\nMara's next performance is at the Old Pump Room, but the updated date has not been supplied for this biography. The program lists a new solo piece; its title has not been supplied either, and a description is not yet included. Tickets will be sold by the venue. The arts center is not handling reservations and cannot confirm whether seats remain available."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "4ac3d7427935cc28d250c6b80022e103d63d8be80cf83064274ad7edc7df3a02",
+  "editedTextSha256": "73453b8cb25f07fb4d795d481ebfba5139c12532e38e70a480dc4ba480a6b00a",
+  "persistedAtUtc": "2026-10-08T14:09:37.775055+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-042",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Well, the greenhouse has finally stopped pretending to be a sieve. I replaced the cracked pane on Saturday, with Len holding the frame and offering advice at a volume usually reserved for football. We got there. The tomatoes now have a roof, and I have a thumb that is only slightly cross with me.\n\nYou asked whether the spare panes would be useful. Two would, if you still have them. I measured the frame this morning: each opening is 28 by 35 centimetres. Please do not make a special trip. I can pick them up after my shift on Wednesday.\n\nAnd yes, I know I should have fixed it before the rain. The tomatoes have already lodged their complaint; you can add yours at the next meeting."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "8d810c7f17102fcd7bacf98ca952201be7dde3c422abf45405d0ee4f4eec26e8",
+  "editedTextSha256": "91c8d867dd38c7c87b3874aeaf3212b4cfb593f90281f0f013f24a3bb9dc9460",
+  "persistedAtUtc": "2026-10-08T19:46:13.292159+00:00"
+}

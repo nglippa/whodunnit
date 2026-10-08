@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-023",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "We expect the grant decision in early summer. If the award arrives before the lease ends, we can keep the rehearsal room through August. If it arrives later, the plan is to use the school hall until we find another room. However, the school booking's status is unresolved: the treasurer says it is provisional, while the director says it is confirmed. Both asked us to publish the plan this week."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "ace7c02fd004bcddb5d392cc55cc277145a8298f059f96e246fe4b38930e38c1",
+  "editedTextSha256": "e2dc3adda0183795df18f2f73852b663f1ca31c68a108b432bf91b380abd8782",
+  "persistedAtUtc": "2026-10-08T14:12:59.477446+00:00"
+}

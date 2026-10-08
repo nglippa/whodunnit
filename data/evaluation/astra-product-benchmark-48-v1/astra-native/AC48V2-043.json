@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-043",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "I used to think the sound of a train leaving was a tidy ending. Door shuts, wheels move, person gone. Then my sister moved north and I learned that departures leak into the rest of the day. A scarf stays on a chair. You make too much tea. The station receipt turns up in your pocket and suddenly the afternoon has a platform in it.\n\nThis is not a sad story exactly. She likes her new town, and we talk most evenings. I like hearing about the bakery with the crooked sign and the neighbour who grows enormous beans. I just want to describe the odd stretch between being glad for someone and missing them. Those feelings seem quite happy to share a kitchen, even when I cannot explain the seating plan."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "cd8ef63d1552f246518587b5ea3a673f354dd2a19ae9a72e0c449cd0b3418dfd",
+  "editedTextSha256": "a9f8d7f96584824c0cb8bb69bfd7cf12d23bb4df1b7c8325ddc0a0606222c024",
+  "persistedAtUtc": "2026-10-08T19:46:20.730658+00:00"
+}

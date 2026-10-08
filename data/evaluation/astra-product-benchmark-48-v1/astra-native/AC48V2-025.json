@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-025",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Anya set the chessboard between the two beds. Her brother was asleep, but she arranged his pieces anyway, turning each knight to face the window. Outside, the window cleaner lowered a wet brush past the glass. Anya watched it disappear, then moved her pawn. She waited with her hands under her knees, leaving the next move to the empty pillow."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "b58267e45af3be13471111dea8c9bc1be157c9e335695b9d04b6c11ce1c5d7a8",
+  "editedTextSha256": "e53e1e3fa91560f6592156ed736ee4f9305e491fbfbc18f1dd13e70a89c9dcd1",
+  "persistedAtUtc": "2026-10-08T14:13:14.938964+00:00"
+}

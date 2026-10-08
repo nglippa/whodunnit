@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-007",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The school observatory will open to families on Saturday, February 7, from 6 to 8 p.m. Entry is through the west courtyard gate. The lift reaches the roof level, and a steward will be available at the lift door.\n\nWe can accommodate 32 visitors during the evening. Each family should reserve one arrival slot using the school portal. The early slot is usually quieter than the later one, although cloud cover may change what we can see. There is no guarantee that a particular object will be visible.\n\nThe astronomy club will explain how the telescope works and share printed sky maps. Please wear a warm coat, since the roof is exposed even when the building below feels comfortable. Hot drinks will be available in the science foyer. If wind makes the roof unsafe, the telescope session will be canceled and the indoor demonstration will still go ahead."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "95eff3cf5da1f7436105aa786b3d3817f1ecc1b213b081909dd6bdb85f726fb1",
+  "editedTextSha256": "b57dfe5b3f947dd8bd379215e481ce4de16c2747141f1a9f3aa8e08eb76cec3a",
+  "persistedAtUtc": "2026-10-08T14:08:26.640407+00:00"
+}

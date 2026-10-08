@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-021",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "For the ceramics trial, the kiln was held at 980 degrees for 20 minutes before cooling began. This was a test of glaze appearance on sample tiles, not a test of the strength or food safety of finished vessels. The cream glaze showed fewer visible pinholes than the gray glaze in this batch.\n\nPlease enter observations in the worksheet column titled \"Surface / first firing.\" That title matches the printed sheets already distributed to the studio. Use the same wording when sending photographs so the technician can sort them without opening every file.\n\nThe paragraph below the worksheet currently says the samples were cooled in a closed kiln. That spelling error is the only change requested for the printed correction slip. The firing temperature, hold time, comparison, worksheet title, and limits of the trial have already been reviewed. A later trial may examine a different cooling schedule, but this note does not report one."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "7c897fec5f8c1ea6a7aabdd123db06c14839ec43f8fd0373af2f17b2775170e5",
+  "editedTextSha256": "4a503b378997acf2379e7916f2caf3a9ec7f731ba1d9641a2508da00e7d77bec",
+  "persistedAtUtc": "2026-10-08T14:12:47.857947+00:00"
+}

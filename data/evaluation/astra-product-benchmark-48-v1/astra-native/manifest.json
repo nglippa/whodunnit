@@ -1,0 +1,327 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "arm": "Astra",
+  "status": "COMPLETE",
+  "validOutputs": 48,
+  "lastCompletedCase": "AC48V2-048",
+  "nextPendingCase": null,
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "observedModel": "gpt-6-astra",
+  "observedReasoning": "high",
+  "identityEvidence": "Native session turn_context model and effort fields, recorded in each output",
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session; cases processed sequentially; shared session context",
+  "priorDelegatedSolAttempts": "EXCLUDED; preserved separately; none imported into this directory",
+  "responseSchema": {
+    "type": "object",
+    "properties": {
+      "edited_text": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "edited_text"
+    ],
+    "additionalProperties": false
+  },
+  "validation": {
+    "caseIdsExactlyOnce": true,
+    "responseSchemasValid": true,
+    "packetHashesVerified": true,
+    "editedTextHashesVerified": true,
+    "allRecordsNativeAstraHigh": true,
+    "preexistingFilesVerifiedUnchanged": 243,
+    "otherArmOrJudgingFilesModified": false
+  },
+  "outputs": [
+    {
+      "caseId": "AC48V2-001",
+      "path": "AC48V2-001.json",
+      "sha256": "158073bd6f0803223288852bb47be68164578ac930e17f8c9eff61817ad01cc1",
+      "packetSha256": "c96b541001b5f1262947cbfcfba2c702cbae0169e071adcb58b494c9563a9e5e"
+    },
+    {
+      "caseId": "AC48V2-002",
+      "path": "AC48V2-002.json",
+      "sha256": "31abd756d5667d88a7882e1e0728528d0ef309d6f85ae257e30d17306cf0cdad",
+      "packetSha256": "e96756480f730ce645c04e14c8de0adc68ac81e9383b119e82a66b6d2652d89f"
+    },
+    {
+      "caseId": "AC48V2-003",
+      "path": "AC48V2-003.json",
+      "sha256": "2e2b8acba94bab843f18494a622ca9d84e43e8203098cc4f5b7b7633d2cd04ba",
+      "packetSha256": "b94391e93a338fdbbaa6219eddbd5a0a22675dfc2b3359014a4d9b2002fd2909"
+    },
+    {
+      "caseId": "AC48V2-004",
+      "path": "AC48V2-004.json",
+      "sha256": "3708b51f160cbb550cfd8c06efb571a20795d5df822cc5ef5096a79a7e73ec87",
+      "packetSha256": "852e4b44d1a51e39020bf382d34d6cdb6250a3adbe1e85b30c89bb54424c1760"
+    },
+    {
+      "caseId": "AC48V2-005",
+      "path": "AC48V2-005.json",
+      "sha256": "7c622e99c9ad2b57cfd08142f0af5200cc338519c9515ce956f7fc1ba58e6beb",
+      "packetSha256": "f10631b0483b2bcbedd45d29fa41f9a88698731451f3ace2e9f05b1bd7ea1b0c"
+    },
+    {
+      "caseId": "AC48V2-006",
+      "path": "AC48V2-006.json",
+      "sha256": "f2f5900851e229865aa64b6bfa15460455ccc381f5a2585f928324d8cf372b2f",
+      "packetSha256": "e575acdf46cc07ebd3e6301d0b273eaa2ab9a527fa13e2c7b99a8268f877bf8a"
+    },
+    {
+      "caseId": "AC48V2-007",
+      "path": "AC48V2-007.json",
+      "sha256": "402a34e47b90ff847095971e24d6952c25ea159455f9494cf62d70cef2b5d6b6",
+      "packetSha256": "95eff3cf5da1f7436105aa786b3d3817f1ecc1b213b081909dd6bdb85f726fb1"
+    },
+    {
+      "caseId": "AC48V2-008",
+      "path": "AC48V2-008.json",
+      "sha256": "0c833af29c4d722b311c413ad8c536cac61f6ac2cc4b4bae19e8e2514e688adf",
+      "packetSha256": "c5f94360acaa9a16d5b1f1dbf7c31be6028c70adc0dbe2768598435efdb98073"
+    },
+    {
+      "caseId": "AC48V2-009",
+      "path": "AC48V2-009.json",
+      "sha256": "2ae264af4464a4d91130f490d561233f8f1426de3cf16bdb63161844cc3df177",
+      "packetSha256": "59fc79d75d0f9329a42b031d6584278acba64907cbcf6b41e3304c1f03a30ed4"
+    },
+    {
+      "caseId": "AC48V2-010",
+      "path": "AC48V2-010.json",
+      "sha256": "c0d5132852e2a18febacc7e41d6d0977c564b8df424c3185a992923e31854a3e",
+      "packetSha256": "4ac3d7427935cc28d250c6b80022e103d63d8be80cf83064274ad7edc7df3a02"
+    },
+    {
+      "caseId": "AC48V2-011",
+      "path": "AC48V2-011.json",
+      "sha256": "b9f9310ba5e7ba6c1cb28be5b7f2ecae54b3dbdceaedd783ca1597a03f2384bd",
+      "packetSha256": "d76bd1e391788cf9ae830631b2ed832d3e63cc49b2fc72ab71ee739e55289259"
+    },
+    {
+      "caseId": "AC48V2-012",
+      "path": "AC48V2-012.json",
+      "sha256": "08ea204ff119c5e65f9b3532352d8fe55dc6969e0ed36e855b5be20e0f3ea21f",
+      "packetSha256": "094ed21e332585145936b661912c04470ca16dbf4d11dbdaa72b1a6f0c45b376"
+    },
+    {
+      "caseId": "AC48V2-013",
+      "path": "AC48V2-013.json",
+      "sha256": "0ee9e159bccd01cffe41c05b4eab1dcc1c23330a5ba8dd29aa5f1b825fea5da6",
+      "packetSha256": "bfa4a70b185208d2da1f1f99f8b808818fede1b93f2f6a93769fb0bb2bde1f21"
+    },
+    {
+      "caseId": "AC48V2-014",
+      "path": "AC48V2-014.json",
+      "sha256": "2531a85cdbada8f0ecfccd4a81241c6d4659283dae518e68aaba62ac640c7495",
+      "packetSha256": "6d6a92c54d9d7cb1625d52fc94863a86527e9308055c5de0b6ddc3a742defd97"
+    },
+    {
+      "caseId": "AC48V2-015",
+      "path": "AC48V2-015.json",
+      "sha256": "ad30a6c73d47e6b7b928af948695a1ff8732abd9cf204f933ed247119196ce83",
+      "packetSha256": "437b4fafa80bfaa62026eee4078b447821ca2730168c31d029ba033c00dafab8"
+    },
+    {
+      "caseId": "AC48V2-016",
+      "path": "AC48V2-016.json",
+      "sha256": "33fbdeb6dd0dc0389e439090eb2e31e3711d4751dfe4f815b1139752b054e825",
+      "packetSha256": "9838f1f80cd39e0971938e35cf10ce1eca69500b2d022ed0f2d988f236ce8a3e"
+    },
+    {
+      "caseId": "AC48V2-017",
+      "path": "AC48V2-017.json",
+      "sha256": "f92d65337fda6279d9a7a42086871f6dd3cce70717071f60ea95e8045e65dbbb",
+      "packetSha256": "c7aca2f4356242568c3f51842d88161dd2e48b1e338c13e4f6b117838ef6d5c7"
+    },
+    {
+      "caseId": "AC48V2-018",
+      "path": "AC48V2-018.json",
+      "sha256": "161060d786df8d02faa17f69f989bce08b07c1c469cb6eb1bfe74769cb2e1e5e",
+      "packetSha256": "d07456a714e125e6f9e9d52520610d333f4afdb61454805c940f4114c8a75d5d"
+    },
+    {
+      "caseId": "AC48V2-019",
+      "path": "AC48V2-019.json",
+      "sha256": "420d42cdadd5cd97890463bf296385914cd3fb12002bc33a5cc256b220a2a69b",
+      "packetSha256": "70ee193ab58ef4c31e3a97752694a563f193eafca41a19cf7d4fe3efa258f1b9"
+    },
+    {
+      "caseId": "AC48V2-020",
+      "path": "AC48V2-020.json",
+      "sha256": "6b66410b7eab7b0e8ef3341820547f3f614d48b15a124f5b6939e38c010e613a",
+      "packetSha256": "11fa5e46a7695ec2f86b1338b7377401788c63934e92626546295f5de039443c"
+    },
+    {
+      "caseId": "AC48V2-021",
+      "path": "AC48V2-021.json",
+      "sha256": "c10f14f64b072068924bda2f9f2bcc9a8906be1347afbc7c810b76b0cfa90354",
+      "packetSha256": "7c897fec5f8c1ea6a7aabdd123db06c14839ec43f8fd0373af2f17b2775170e5"
+    },
+    {
+      "caseId": "AC48V2-022",
+      "path": "AC48V2-022.json",
+      "sha256": "57cb6f7f0e511c296786725e5b6c7d9b0c9a565f58dfbcbd48b9c12be9159ca6",
+      "packetSha256": "6f619c4c716854e0dcbf2fc87a150c81b886dc40ffa81b718f1eda117bcc5b04"
+    },
+    {
+      "caseId": "AC48V2-023",
+      "path": "AC48V2-023.json",
+      "sha256": "916cc2f6ff9379f6924a1cdcb63f6d85de98ca6c9770563cb027aae03471d3be",
+      "packetSha256": "ace7c02fd004bcddb5d392cc55cc277145a8298f059f96e246fe4b38930e38c1"
+    },
+    {
+      "caseId": "AC48V2-024",
+      "path": "AC48V2-024.json",
+      "sha256": "c76236abda522419a02e885104ed1a79a941cc2cc5211fb4c7294d68f57f06e8",
+      "packetSha256": "23438dbd5f4665c6360ad4319bbb9fae0f4d33dd0d9f785df3a733260f55515f"
+    },
+    {
+      "caseId": "AC48V2-025",
+      "path": "AC48V2-025.json",
+      "sha256": "15f3a5893b3851465931cd565055f912a5f6fc11302db073c6a20ba6c9e1fb21",
+      "packetSha256": "b58267e45af3be13471111dea8c9bc1be157c9e335695b9d04b6c11ce1c5d7a8"
+    },
+    {
+      "caseId": "AC48V2-026",
+      "path": "AC48V2-026.json",
+      "sha256": "8f53c23ca06a8fd1f5d297db7cf1bd58db8dd4ac337992aea2e62c33680dfcea",
+      "packetSha256": "630c80bf728e1f5ac20af80d6379be2c521421649be8cdaf90c5c1ff57d12d73"
+    },
+    {
+      "caseId": "AC48V2-027",
+      "path": "AC48V2-027.json",
+      "sha256": "e87795e15d079288f2070e4f5c80f268d8e9b20c2e18685b53a1da92ee645079",
+      "packetSha256": "c6371df405e3e769c41799f26a67e4432c1750116b4bb52a12e88adb69d387b8"
+    },
+    {
+      "caseId": "AC48V2-028",
+      "path": "AC48V2-028.json",
+      "sha256": "2cf086a94295e89d24ae978a0318c0c3b41c00190ba397c8c029dfeff02e2bba",
+      "packetSha256": "8a7844424d41067b712b472fa75e6e8915e139eb13b78742ee37161fb44af263"
+    },
+    {
+      "caseId": "AC48V2-029",
+      "path": "AC48V2-029.json",
+      "sha256": "3113314b4bc53ea58097321ade2dd2464ffb11ff8d20082493660d5280a052b9",
+      "packetSha256": "b1ea75df91e079f9d866b66c0b8e8439b9ad01ddbf35cbd9e14f0b4407a3cb99"
+    },
+    {
+      "caseId": "AC48V2-030",
+      "path": "AC48V2-030.json",
+      "sha256": "5585defac09dda7e72b3eba5b8087ad481ac64e25d8e57e5813dd60e42e33a02",
+      "packetSha256": "5f268dfcae6f0cf39e6f8755ad2a6852aefb013f34abb1161b9b5f074065d983"
+    },
+    {
+      "caseId": "AC48V2-031",
+      "path": "AC48V2-031.json",
+      "sha256": "f52a3ef9aaff18f5e65e9aa8704e5761cb7ed3df7cb330efc6d8c5fbce516426",
+      "packetSha256": "21f226a5d8cc839a37dbf23663a071c52f370d6f3de2ed4f1d5e2f5aaf51d5a0"
+    },
+    {
+      "caseId": "AC48V2-032",
+      "path": "AC48V2-032.json",
+      "sha256": "7ee3ee554690c9e5a94cbaa4d499d2b9c526d62944875c8392dc2944e717483b",
+      "packetSha256": "129543fcc4446b5cde1d7771c99c18bf33052717c3354f5de250aaebe5ee6013"
+    },
+    {
+      "caseId": "AC48V2-033",
+      "path": "AC48V2-033.json",
+      "sha256": "22aec6428e23cd628030153b26460cd20d24aa0f718e5218e3cade6739b0073b",
+      "packetSha256": "65ff6bd4853b327b2847bcdddaa842f3d959054fb04c27f0eb48e7713e7a45ca"
+    },
+    {
+      "caseId": "AC48V2-034",
+      "path": "AC48V2-034.json",
+      "sha256": "89485199b7800204cb38d0bac67c4dd6ba34f10dc87681d0ed3b7582da5dad11",
+      "packetSha256": "54493015d6e8ffa4d8048b3daab946746ef34776a0f667f9f070f90432ea69d4"
+    },
+    {
+      "caseId": "AC48V2-035",
+      "path": "AC48V2-035.json",
+      "sha256": "402e6d9798fb574fc70bbf44d3adf8896aeba9b42116569bd20421836b4874b8",
+      "packetSha256": "e7cd4911892cca6e303646dfb9a22364fb7210ffcea25aed36cbe9ff451d0b6e"
+    },
+    {
+      "caseId": "AC48V2-036",
+      "path": "AC48V2-036.json",
+      "sha256": "e23e12453541e0d69baa9ef4a5534e18e2f572a2520b1c3e0bac1a611c2c1099",
+      "packetSha256": "bda73b68b8668fbac72b53add1f1276e8b2328c957b7ded42a6f93ad57d702ef"
+    },
+    {
+      "caseId": "AC48V2-037",
+      "path": "AC48V2-037.json",
+      "sha256": "71095531fda0b945bf79f3f8bfdaac3bd6bbad9ca23d55424fa2112ebc2c3e17",
+      "packetSha256": "daa46a5dada37f360e3b6d5e34bbaed2019d66e149a1cc37d588dd550db2610f"
+    },
+    {
+      "caseId": "AC48V2-038",
+      "path": "AC48V2-038.json",
+      "sha256": "6a166f8f6312a6b4dd8c421429bca41d1d544e7f511a1e6d6d62e007825cdead",
+      "packetSha256": "2ca4758a034dabdb753bca427d0cea0bc2eacc5c5e747ed50dbdcb0dbe7f17bf"
+    },
+    {
+      "caseId": "AC48V2-039",
+      "path": "AC48V2-039.json",
+      "sha256": "0cf5c901ea7eee980bb854623f751f0d691c6dbf6818ea6573352083e03a6075",
+      "packetSha256": "d73b770e58f1a72cbad099b856bb7771d78733483e1011c508aa1093b9b91895"
+    },
+    {
+      "caseId": "AC48V2-040",
+      "path": "AC48V2-040.json",
+      "sha256": "08a673859ed6f2f99e2c836edb171078e47793706ec37424aed7842644cec56a",
+      "packetSha256": "372a6cf5630a24e8f05d9d043862139487eff91cc5494ed5677c80a1de9415c1"
+    },
+    {
+      "caseId": "AC48V2-041",
+      "path": "AC48V2-041.json",
+      "sha256": "a30992d08c49564f1c550c656c1cebe68cf7140bff01066c25eb10bdcbb97b5a",
+      "packetSha256": "891575ac944f8fa1612288677f311b0cf3774370ffe114f56bf91b5e4bbb21ad"
+    },
+    {
+      "caseId": "AC48V2-042",
+      "path": "AC48V2-042.json",
+      "sha256": "c1e3f4bfb593a25e17aae85ef7fdcb2e83c13acd37be35678f8de4e360331cf7",
+      "packetSha256": "8d810c7f17102fcd7bacf98ca952201be7dde3c422abf45405d0ee4f4eec26e8"
+    },
+    {
+      "caseId": "AC48V2-043",
+      "path": "AC48V2-043.json",
+      "sha256": "f8e4a9a89360859d1b00d0695612c6708b552d5f1213ba60d75776bfd9d5d530",
+      "packetSha256": "cd8ef63d1552f246518587b5ea3a673f354dd2a19ae9a72e0c449cd0b3418dfd"
+    },
+    {
+      "caseId": "AC48V2-044",
+      "path": "AC48V2-044.json",
+      "sha256": "35e1e7acd26862b2a2380de46d8afdca8b29900f9a630140d666fb118fda986a",
+      "packetSha256": "2430036c1ce79a95ca59071c37198a792cf9d42b48236e74f383516a3b86e2ca"
+    },
+    {
+      "caseId": "AC48V2-045",
+      "path": "AC48V2-045.json",
+      "sha256": "089644fa2b1de20906a37f2f7d1088d96b80e31a3d67888aadf522716697846f",
+      "packetSha256": "37ddf881a25680afbc191556f859c266e91003d35c58d7cadfb0a401855e8f41"
+    },
+    {
+      "caseId": "AC48V2-046",
+      "path": "AC48V2-046.json",
+      "sha256": "63db0fb287d9729b9f887a5358bf72da9db5d61ae23250374bfcd05576d5df42",
+      "packetSha256": "78db0b68b700c8ce4ab55dc22046a8fce8c9f5e741b7a875f513481370048d4b"
+    },
+    {
+      "caseId": "AC48V2-047",
+      "path": "AC48V2-047.json",
+      "sha256": "b20a674f7220758c19a29517824d882467fecb58187e2d1102034fe89a425e91",
+      "packetSha256": "ff62f7682eb7bf6f7062f3037e21fbb66036616e096def40b1620577d4680b97"
+    },
+    {
+      "caseId": "AC48V2-048",
+      "path": "AC48V2-048.json",
+      "sha256": "9120bcc69b2920590fc6ba12d93e2299d5b3b3abb93d468bb5dfd367c1a29827",
+      "packetSha256": "d68d857da0895555b184813523e1cc1ede15f3be90cb188f6650f2765834698e"
+    }
+  ]
+}

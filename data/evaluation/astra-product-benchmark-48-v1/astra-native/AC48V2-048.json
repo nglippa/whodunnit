@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-048",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "The ceramic prize is open to “members living within twelve miles of the studio.” Noor's membership is current. She has a flat eight miles away, where she stays most weekends, and a room near her job twenty miles away, where she stays on working nights.\n\nThe existing rule does not give an unambiguous yes or no about her eligibility. It does not define what counts as living within the area, specify an address record, or say how multiple residences are treated. The entry form asks only for a contact address.\n\nLast year's organiser accepted an entrant who spent the winter elsewhere, but we do not know the address or circumstances that entrant supplied, so that example does not resolve Noor's case. The committee has not discussed her situation. This year's organiser has requested a plain explanation before answering her, but deciding her eligibility requires a clarification of the rule that the supplied information does not provide. Noor is waiting for an answer before preparing photographs of her work."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "d68d857da0895555b184813523e1cc1ede15f3be90cb188f6650f2765834698e",
+  "editedTextSha256": "fd6c894dc696b1911601c8f4c8cd7f70b350c90e5bb1bbe3a627426ec24fdd52",
+  "persistedAtUtc": "2026-10-08T19:46:56.006187+00:00"
+}

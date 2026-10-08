@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-017",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Five archive volunteers and two town history group members met on May 21 to discuss public access, preservation, and volunteer staffing. They proposed several changes but made no spending decisions.\n\nPhotograph index: The history group suggested publishing a copy online so visitors could check for relevant photographs before travelling to the archive. The index is currently searchable only on the reading-room computer. Some entries contain donors' personal contact details, which must be removed before publication.\n\nOpening hours: The archive opens on Tuesday afternoons and the first Saturday morning of each month. Two volunteers offered to cover an additional Thursday afternoon, but no rota was established. Two people must be present whenever the reading room is open. The coordinator will ask the remaining volunteers whether anyone can regularly join a Thursday shift.\n\nNewspaper cuttings: The group proposed a preliminary list of several unlisted boxes, recording dates and visible headlines without unfolding fragile pages. This would help users find material and reduce unnecessary handling. It would not replace conservation work or make the cuttings suitable for unrestricted use.\n\nNext steps: The coordinator will identify index fields suitable for publication, gather Thursday availability, and estimate the time needed to list the cuttings. These tasks will be reviewed at the June meeting. No public launch date was set, no purchases were approved, and no summer start was promised for the additional opening session. Decisions remain dependent on the information gathered."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "c7aca2f4356242568c3f51842d88161dd2e48b1e338c13e4f6b117838ef6d5c7",
+  "editedTextSha256": "64898727cf3c0cc850435ddf0e6733433c3e86aef809ef819101330a4df5bdb8",
+  "persistedAtUtc": "2026-10-08T14:12:14.978767+00:00"
+}

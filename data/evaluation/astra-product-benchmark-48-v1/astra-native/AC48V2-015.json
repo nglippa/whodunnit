@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-015",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Welcome to the coffee stall! When you arrive, take an apron from the cupboard beneath the sink.\n\nOn your first shift, you won't handle payments. The shift leader will pair you with a drink preparer, who will show you the order slips and the washing station.\n\nWhen you finish, put your used apron in the laundry basket next to the cupboard. Tell the shift leader you're leaving before you go.\n\nIf you feel unwell, tell the leader immediately and stop handling drinks."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "437b4fafa80bfaa62026eee4078b447821ca2730168c31d029ba033c00dafab8",
+  "editedTextSha256": "14acf8ea5769a8ac6375b8c6a906b2c050fd2070aec4e99e2e169104b1ac6191",
+  "persistedAtUtc": "2026-10-08T14:11:51.477329+00:00"
+}

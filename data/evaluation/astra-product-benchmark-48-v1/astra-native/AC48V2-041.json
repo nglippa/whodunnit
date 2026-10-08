@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-041",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "We request permission to finish checking the library's donated puzzles and test the existing board game loan system with two complete puzzles. Please send comments to the circulation supervisor by Wednesday so the manager can review the request at Friday's meeting.\n\nWhat we have\n\nThe cupboard contains forty puzzles. Of the twenty-six checked so far, eighteen are complete and eight are missing between one and five pieces. The remaining fourteen are unchecked and sit on the lower shelf with yellow paper bands around the boxes. We should not describe all forty as ready to borrow.\n\nThe volunteer group suggests lending the eight incomplete puzzles with clear labels so borrowers can decide whether they want them. The library manager has not approved this proposal. Missing pieces do not always make a puzzle unusable, but that decision should be left to the borrower.\n\nHelping visitors choose\n\nSome boxes have tiny printed titles, and three have no picture of the finished puzzle. Larger shelf labels could make puzzles easier to find, and photographs could show their images. Neither improvement has been costed. A camera is available, but no one has agreed to take the photographs or maintain the labels.\n\nProposed loan arrangements\n\nStaff propose using the existing board game loan system, which would give puzzles a fourteen-day loan period and allow one renewal when there is no reservation. The system can record missing-piece notes but cannot currently store photographs. Photographs would need to stay with the physical boxes.\n\nScope of the test\n\nTesting the system with two complete puzzles would let staff check how returns work before opening the whole cupboard. The request is limited to this test and checking the remaining fourteen puzzles. It would not settle whether incomplete puzzles should be lent."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "891575ac944f8fa1612288677f311b0cf3774370ffe114f56bf91b5e4bbb21ad",
+  "editedTextSha256": "df5bfcfec1da700c3162999b5189a3ee4402fff29ddb9439d0ef57c58dc7df41",
+  "persistedAtUtc": "2026-10-08T19:46:06.992394+00:00"
+}

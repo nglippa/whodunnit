@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-039",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Naming sound recordings\n\nOver the past month, editors have found files whose names give little indication of their contents. In two cases, files named for a closing door contained footsteps followed by a closing door. The recordings are usable, but unclear names make choosing excerpts slower.\n\nWhen the policy applies\n\nUse the agreed naming arrangement for recordings made from 1 August onward. You do not need to rename all existing files. You may rename an old file when using it in a project, but record its original filename in the accompanying notes: earlier project documents may still use that name. Files already delivered to an outside client must keep their delivered names.\n\nNaming new files\n\nBegin each filename with the session code, followed by a brief description of the audible action and a take number. Use the code assigned by the recording coordinator; do not invent another because it seems easier to remember.\n\nDescribe the action, not an imagined use. A recording of a kettle boiling should not be named as a spaceship engine because someone thinks it could serve that purpose. If you cannot confidently identify the action, describe what you hear without claiming to know its source. You may note a possible source in the text notes, clearly identifying it as a possibility.\n\nWhat belongs in the notes\n\nPut the location, equipment, and unusual recording conditions in the text notes. The filename does not need to include all these details.\n\nJoint sessions\n\nWe have not agreed how to name sessions recorded jointly by two teams. Until we do, ask the coordinator for a code before uploading. The coordinator will list these sessions for review together later.\n\nInitial checks\n\nThe coordinator will check each team's first five new uploads and flag naming problems. This check covers filenames and notes only. It does not assess recording quality or replace the separate check required before delivery to a client."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11d0b-cce2-7423-bffa-92ce48b3712f",
+    "timestamp": "2026-10-08T19:44:35.327Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "d73b770e58f1a72cbad099b856bb7771d78733483e1011c508aa1093b9b91895",
+  "editedTextSha256": "3b89bafda438db83dac9c1fb54384c525f2f1d2b860b0139d1dbbbd287115dad",
+  "persistedAtUtc": "2026-10-08T19:45:40.992194+00:00"
+}

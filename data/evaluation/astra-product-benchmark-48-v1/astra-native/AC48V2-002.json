@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-002",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Use the correction form when a submitted timecard contains an error. Enter the date of the shift, the recorded start and finish times, and the times you believe should appear instead. Describe the reason for the correction in the final field. The form allows three shifts per submission; use another form if you need to correct more.\n\nA correction request does not alter the timecard immediately. Your supervisor will compare it with the shift record and contact you if the entries differ. You can view the request's status beside the original timecard. Until the review is complete, both the original entry and your proposed correction remain visible.\n\nFor a missing shift, select Add a shift rather than Correct a shift. The two options ask for different information. If the form rejects a date you worked, send the date and the error message to the scheduling team. Do not submit an inaccurate date to get around the error."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "e96756480f730ce645c04e14c8de0adc68ac81e9383b119e82a66b6d2652d89f",
+  "editedTextSha256": "ed93d87198552e165b02383da37289ab90a11b86c6a7158322c25fc027b4b437",
+  "persistedAtUtc": "2026-10-08T14:07:34.145574+00:00"
+}

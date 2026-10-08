@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-019",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "Tried the museum's new audio guide. Took the long route. Accidentally, at first. The floor arrows are good until you reach the tapestry room, where an arrow and a patch of sunlight had a small disagreement about which way I should go.\n\nThe guide has 16 stops. I listened to nine before lunch. That is a report of my patience, not a verdict on the other seven. The explanation of the wooden printing blocks was especially good. Short, specific, and no demand that I imagine myself at a turning point in civilization.\n\nYou can read a transcript while the audio plays. Useful in the clock gallery, which contains clocks doing what clocks do. I could hear most of the recording, but missed a few words when the largest clock struck.\n\nOne suggestion: put the stop numbers on the room map. They are beside the objects already. I found the pottery case eventually, but the map could have saved me another respectful circuit of the tapestries."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:11:34.754Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "70ee193ab58ef4c31e3a97752694a563f193eafca41a19cf7d4fe3efa258f1b9",
+  "editedTextSha256": "5e7631be98c467e710522bf75781e6f15e67a90fccf72f484ffc71a61cbc302a",
+  "persistedAtUtc": "2026-10-08T14:12:38.243123+00:00"
+}

@@ -1,0 +1,22 @@
+{
+  "experimentId": "astra-product-benchmark-48-v1",
+  "caseId": "AC48V2-011",
+  "arm": "Astra",
+  "requestedModel": "gpt-6-astra",
+  "requestedReasoning": "high",
+  "response": {
+    "edited_text": "DISPATCH SUMMARY\n\nOrder reference: GATE-732\nItems: six replacement hinges and one fitting guide\nDispatch deadline: Changed; new date not yet provided\nDelivery method: tracked ground service\n\nThe parts have been packed together in a single carton. The fitting guide sits above the padded envelope containing the hinges. Please check the contents before disposing of the packaging, since the envelope can be easy to miss.\n\nThe dispatch deadline is the latest date on which the carton should leave our workshop. It is not the expected arrival date. Transit time depends on the carrier's route, and the tracking page may show a delivery estimate only after the first depot scan.\n\nIf a hinge is damaged on arrival, keep the carton and send a photograph of the part and its packing position. We can use those images to arrange a replacement and review the way the next order is packed."
+  },
+  "runtimeModelMetadata": {
+    "model": "gpt-6-astra",
+    "effort": "high",
+    "turnId": "01a11bd4-e342-7713-a035-38315428dd98",
+    "timestamp": "2026-10-08T14:04:59.195Z"
+  },
+  "nativeThreadId": "01a10a90-bc85-79b2-b2c0-35efbc408d7d",
+  "generationRoute": "top-level authenticated native session",
+  "validity": "valid",
+  "packetSha256": "d76bd1e391788cf9ae830631b2ed832d3e63cc49b2fc72ab71ee739e55289259",
+  "editedTextSha256": "f7dbb74fca3b9d3b83d6d7b5892f3f098d7938856831bb62436c70dc9410742c",
+  "persistedAtUtc": "2026-10-08T14:09:47.992046+00:00"
+}
