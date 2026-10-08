@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "experimentId": "astra-control-fresh-48-v2",
+  "artifact": "output-execution-readiness-blocked",
+  "recordedAtUtc": "2026-10-08T04:20:32Z",
+  "basisCommit": "6226b985a2f384f5dacea58d90965c3f34ffba3a",
+  "decision": "BLOCKED",
+  "decisionCode": "E_MULTIPLE_BLOCKERS",
+  "counts": {
+    "cases": 48,
+    "prelabels": 96,
+    "armOutputs": 0,
+    "armRecords": 0,
+    "modelCalls": 0,
+    "readinessCalls": 0
+  },
+  "corpus": {
+    "sha256": "464eafef5b49cc5c6e9a80ff96ba2bed9661cdc3e7f5c1fa73ba00b2d0dc8f22",
+    "sourceObjectiveMutationObserved": false
+  },
+  "blockers": [
+    {
+      "code": "E_ASTRA_CREDENTIAL_ABSENT",
+      "scope": "ASTRA_DIRECT",
+      "fact": "No supported OpenAI API credential name was present in the inspected process environment or project env files.",
+      "limits": "This is a bounded local configuration finding and does not assert that Astra access is impossible elsewhere. No credential value was read into this artifact."
+    },
+    {
+      "code": "E_ASTRA_ENTITLEMENT_UNVERIFIED",
+      "scope": "ASTRA_DIRECT",
+      "fact": "Account entitlement to the frozen gpt-6-astra Responses request remains unverified.",
+      "limits": "No authenticated metadata request or model request was attempted."
+    },
+    {
+      "code": "E_V15_C_RUNTIME_ABSENT",
+      "scope": "V15_AND_C_DOWNSTREAM",
+      "fact": "No audited exact live V15/C caller runtime and durable execution store are present for this experiment."
+    },
+    {
+      "code": "E_V15_C_ZERO_INCREMENTAL_COST_UNCONFIRMED",
+      "scope": "V15_AND_C_DOWNSTREAM",
+      "fact": "The required run-specific confirmation of account-backed zero incremental cost is absent."
+    }
+  ],
+  "frozenAuthorities": [
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/protocol.json",
+      "sha256": "2f51454452143ccd841f758deec93d70c8dc93a50278b090c34afdbe269ea66d"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/contracts/execution-bindings.json",
+      "sha256": "ed7d7fae9da95920e915d46ccb249680ccd01a4386f819491603a840a8ad4e8e"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/contracts/generation-order.json",
+      "sha256": "886f253523c02c9b9cf15ffc2d46d83c4605a3a82346848ccd4929986a845bcd"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/contracts/technical-failure-policy.json",
+      "sha256": "f602cc432d5b4fd92af3b564d7daa35fdbad9f30ed17d84a0a09a656fd874423"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/contracts/trace-custody.json",
+      "sha256": "b7033d924ee418d6bfb16b4d0ba8dfb54749d90177e8ba5e40218230e74bc0fa"
+    },
+    {
+      "path": "data/evaluation/astra-control-fresh-48-v2/data-phase/data-phase-certificate.json",
+      "sha256": "d37416c491649a5fade8de322894976c38f04b298588c2b9002842b60f000345"
+    }
+  ],
+  "frozenAuthoritiesModified": false,
+  "outputExecutionAttempted": false
+}
