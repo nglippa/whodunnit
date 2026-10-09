@@ -1,0 +1,47 @@
+{
+  "blindAdjudicationCaseId": "5f931d6c3f619f5e2e91eb72",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "c5fe71239bd8d2e8ad146cf4",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Lightly improve the flow of this personal account while retaining its conversational humor and uncertainty about singing next time. Do not make the skipped turn into a triumph or a failure.",
+          "reason": "The requested improvement is an affirmative part of the objective."
+        },
+        {
+          "field": "text",
+          "quote": "Knowing a song, I said, is not the same as having agreed to demonstrate the knowledge through a microphone.",
+          "reason": "The text is identical to the source, including this sentence; preservation constraints are met, but no flow improvement is made."
+        }
+      ],
+      "notes": "An unchanged source preserves the humor, uncertainty and neutral skipped turn, but only partially fulfills the request to improve flow."
+    },
+    {
+      "opaqueTargetId": "64a9d00b17a5241ea4ff0170",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Lightly improve the flow of this personal account while retaining its conversational humor and uncertainty about singing next time. Do not make the skipped turn into a triumph or a failure.",
+          "reason": "The requested improvement is an affirmative part of the objective."
+        },
+        {
+          "field": "text",
+          "quote": "Knowing a song, I said, is not the same as having agreed to demonstrate the knowledge through a microphone.",
+          "reason": "The text is identical to the source, including this sentence; preservation constraints are met, but no flow improvement is made."
+        }
+      ],
+      "notes": "An unchanged source preserves the humor, uncertainty and neutral skipped turn, but only partially fulfills the request to improve flow."
+    }
+  ],
+  "pairs": []
+}

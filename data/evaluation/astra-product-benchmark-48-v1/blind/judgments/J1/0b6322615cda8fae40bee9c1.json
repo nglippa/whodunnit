@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "0b6322615cda8fae40bee9c1",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "c694e98be01b55125fb5b43d",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        }
+      ],
+      "notes": "A targeted clarification of the otherwise ambiguous entries."
+    },
+    {
+      "opaqueItemId": "ab86906e20f552fc2ccbf416",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        }
+      ],
+      "notes": "Otherwise usable and unchanged; the narrow ambiguity remains."
+    },
+    {
+      "opaqueItemId": "924a3a2f2f802dd1d662523a",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        }
+      ],
+      "notes": "Otherwise usable and unchanged; the narrow ambiguity remains."
+    },
+    {
+      "opaqueItemId": "370b580958478f1cbd7f6338",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        }
+      ],
+      "notes": "A targeted clarification of the otherwise ambiguous entries."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "0bcd0013020ec2c361c679cd",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        },
+        {
+          "field": "textB",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "7a599af309c058ea5f132eb0",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        },
+        {
+          "field": "textB",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "42c037d1f43aee4629545dd5",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        },
+        {
+          "field": "textB",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "1d7d9688f9b97ad3b0730073",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        },
+        {
+          "field": "textB",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "d6b5566d8b43bacf6a7e4eb9",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "contact you if the entries differ",
+          "reason": "Leaves the comparison referent ambiguous."
+        },
+        {
+          "field": "textB",
+          "quote": "if your proposed entries differ from the record",
+          "reason": "Makes the comparison explicit without changing the process."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

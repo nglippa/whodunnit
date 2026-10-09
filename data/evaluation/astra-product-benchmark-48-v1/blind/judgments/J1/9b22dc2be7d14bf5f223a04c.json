@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "9b22dc2be7d14bf5f223a04c",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "cb93f95e40f59c63e387562e",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "At the conclusion of the proceedings",
+          "reason": "Formal target sentence remains unchanged."
+        }
+      ],
+      "notes": "Safe unchanged passage; simplification absent."
+    },
+    {
+      "opaqueItemId": "b67ca78133b27ec81bddaeb3",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        }
+      ],
+      "notes": "Other text exactly retained."
+    },
+    {
+      "opaqueItemId": "1c0d0c0b6ce56e83807131db",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        }
+      ],
+      "notes": "Other text exactly retained."
+    },
+    {
+      "opaqueItemId": "5899510419c1a47411f44a6c",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "At the end, participants could share any further observations.",
+          "reason": "Equivalent clear restatement of the target sentence."
+        }
+      ],
+      "notes": "No meaningful preference over the other simplified version."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "2c435f2b842d9a3e9eabf933",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        },
+        {
+          "field": "textB",
+          "quote": "At the end, participants could share any further observations.",
+          "reason": "Equivalent clear restatement of the target sentence."
+        }
+      ],
+      "notes": "Comparable safety and objective fit."
+    },
+    {
+      "opaquePairId": "1d93147f6315e19243ea3a00",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "At the end, participants could share any further observations.",
+          "reason": "Equivalent clear restatement of the target sentence."
+        },
+        {
+          "field": "textB",
+          "quote": "At the conclusion of the proceedings",
+          "reason": "Formal target sentence remains unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "ef3292adb59201e5a666ff57",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        },
+        {
+          "field": "textB",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "807f773b05fce0eb5c62b0a5",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "At the conclusion of the proceedings",
+          "reason": "Formal target sentence remains unchanged."
+        },
+        {
+          "field": "textB",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "c641b2b89c5c70dd491a7917",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "At the end, participants could share additional observations.",
+          "reason": "Plainly restates only the target sentence while preserving opportunity and timing."
+        },
+        {
+          "field": "textB",
+          "quote": "At the end, participants could share any further observations.",
+          "reason": "Equivalent clear restatement of the target sentence."
+        }
+      ],
+      "notes": "Comparable safety and objective fit."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "99726dfbefccaa70d4941fc6",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "ecb734022bf3890eaccfeb50",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "aacd278ff90c5df143accb34",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "b0f7bb1dc482fbf93f20ebaa",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "ddb8a068353f50ccc637e496",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "695a4096a6a454847538d92b",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "5bb70749f4a21fba464fd036",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "21cfd8b54453b775a5e0ae54",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "700467f5cb70661aeb912958",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        },
+        {
+          "field": "textB",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "87f3c4ea47c41ab6d50d1cd6",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        },
+        {
+          "field": "textB",
+          "quote": "three unpaid invoices on your account, totaling $840",
+          "reason": "Retains the outdated count, total, and oldest date despite supplied reconciled facts."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    }
+  ]
+}

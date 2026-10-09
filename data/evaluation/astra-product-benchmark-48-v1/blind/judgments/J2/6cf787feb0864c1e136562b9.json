@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "6cf787feb0864c1e136562b9",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "00fa126e54ffe1d7a2ff3126",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "18bba1cd561c5ce4a0bcb987",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "dd157f8d2c373a7ee7c3c763",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "df27e5775133c71c94c39918",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "4dc6aee74e9446054066df2d",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "48a8a6f2416508e73915f6b1",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "3259eeb2092a668e1c72b9bd",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "96a1bd5621a7aaef46371500",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        },
+        {
+          "field": "textB",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "bbcf8498858538a9f9acb4fa",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        },
+        {
+          "field": "textB",
+          "quote": "every two minutes",
+          "reason": "Retains the old save interval and fourteen-day retention as current specifications."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    }
+  ]
+}

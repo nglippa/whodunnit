@@ -1,0 +1,95 @@
+{
+  "meta": {
+    "experimentId": "astra-product-benchmark-48-v1",
+    "outputCommit": "d9d98302bd1e8a89a65bc76ec1eccda26df79cb6",
+    "blindJudgmentsFreezeSha256": "916d27d70dc5ddfb3a18462046b98de89e2bed6db8028eba1be876e2f221d43b",
+    "adjudicationsFreezeSha256": "c996acd6113b0c0eb1c1a5b03dc73e131f9f20028f89717b1183aa1730b3e9fd",
+    "caseCount": 48,
+    "outputArmCount": 192
+  },
+  "comparisons": {
+    "C_vs_V15": {
+      "jointlySafePreference": {
+        "TIE": 31,
+        "V15": 1
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "ASTRA_vs_C": {
+      "jointlySafePreference": {
+        "TIE": 11,
+        "C": 3,
+        "ASTRA": 18
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "ASTRA_vs_V15": {
+      "jointlySafePreference": {
+        "TIE": 15,
+        "V15": 3,
+        "ASTRA": 17
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "C_vs_SOURCE": {
+      "jointlySafePreference": {
+        "TIE": 19,
+        "C": 10,
+        "SOURCE": 2
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "ASTRA_vs_SOURCE": {
+      "jointlySafePreference": {
+        "TIE": 11,
+        "ASTRA": 20
+      },
+      "pairItemSafetyConflicts": 0
+    }
+  },
+  "originalJudgeAgreement": {
+    "itemFieldExact": {
+      "meaning": 190,
+      "objective": 183,
+      "voice": 191,
+      "factual": 190,
+      "collateral": 189,
+      "harmfulEditing": 149,
+      "safetyClass1": 186,
+      "safetyClass2": 192,
+      "safetyClass3": 192,
+      "safetyClass4": 190,
+      "writing": 185,
+      "restraint": 183,
+      "overallVsSource": 180,
+      "unnecessaryEditing": 188
+    },
+    "pairExact": {
+      "preference": 190,
+      "safety": 226
+    },
+    "itemMaterialDisagreementTargets": 62,
+    "pairDisagreementTargets": 53,
+    "eightRequiredItemDimensionsExact": 159
+  },
+  "adjudication": {
+    "cases": 29,
+    "itemTargets": 62,
+    "pairTargets": 53
+  },
+  "unresolved": {
+    "itemsByArm": {
+      "SOURCE": 1,
+      "V15": 1,
+      "C": 1,
+      "ASTRA": 0
+    },
+    "jointlySafePairPreferences": {
+      "C_vs_V15": 0,
+      "ASTRA_vs_C": 0,
+      "ASTRA_vs_V15": 0,
+      "C_vs_SOURCE": 0,
+      "ASTRA_vs_SOURCE": 0
+    }
+  }
+}

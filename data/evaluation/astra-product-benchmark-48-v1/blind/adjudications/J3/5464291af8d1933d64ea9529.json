@@ -1,0 +1,67 @@
+{
+  "blindAdjudicationCaseId": "5464291af8d1933d64ea9529",
+  "judge": "J3",
+  "items": [],
+  "pairs": [
+    {
+      "opaqueTargetId": "cf5170f23424de3059ed9bd4",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "a clear set of instructions for editors",
+          "reason": "The objective favors immediately usable instructions."
+        },
+        {
+          "field": "textA",
+          "quote": "1. Begin with the session code.",
+          "reason": "The numbered sequence makes the filename construction easier to follow."
+        },
+        {
+          "field": "textA",
+          "quote": "Unresolved: sessions recorded jointly by two teams",
+          "reason": "The unresolved policy is clearly labeled and retains the interim instruction."
+        },
+        {
+          "field": "textB",
+          "quote": "It does not assess recording quality or replace the separate check required before delivery to a client.",
+          "reason": "B also preserves the scope limitations and is safe; preference for A is modest."
+        }
+      ],
+      "notes": "Both accurately remove inflated wording and preserve exceptions. A has a small advantage for the requested instructional format."
+    },
+    {
+      "opaqueTargetId": "0612fbcaca8743683094472c",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "a clear set of instructions for editors",
+          "reason": "The objective favors immediately usable instructions."
+        },
+        {
+          "field": "textA",
+          "quote": "1. Begin with the session code.",
+          "reason": "The numbered sequence makes the filename construction easier to follow."
+        },
+        {
+          "field": "textA",
+          "quote": "Unresolved: sessions recorded jointly by two teams",
+          "reason": "The unresolved policy is clearly labeled and retains the interim instruction."
+        },
+        {
+          "field": "textB",
+          "quote": "It does not assess recording quality or replace the separate check required before delivery to a client.",
+          "reason": "B also preserves the scope limitations and is safe; preference for A is modest."
+        }
+      ],
+      "notes": "Both accurately remove inflated wording and preserve exceptions. A has a small advantage for the requested instructional format."
+    }
+  ]
+}

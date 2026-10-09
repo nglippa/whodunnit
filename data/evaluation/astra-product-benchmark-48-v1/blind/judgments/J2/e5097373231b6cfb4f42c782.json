@@ -1,0 +1,133 @@
+{
+  "blindCaseId": "e5097373231b6cfb4f42c782",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "7b8c6fe35a4e76173ff37371",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "c7b2e9e67155b97a4e44ba5b",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "3943e20c05814ed5393b5de2",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "4c05289dcdc31ce91dedc4e8",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "30ddc5e4920d47327885c415",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "c7f4ccc9ebcc1c9506a62692",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "baa5a7edbd0a9358f707dd4b",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "aa158122a419a0615259d82b",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "c4c27f4114da51f1262365bf",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    }
+  ]
+}

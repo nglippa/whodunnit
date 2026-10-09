@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "cbda315d277687f4d1aef7c6",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "816c7187e7ae7fd20302a6ff",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "All protected wording retained, but requested update absent."
+    },
+    {
+      "opaqueItemId": "5ffca9ad3efbaae63cd6a8fc",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "All protected wording retained, but requested update absent."
+    },
+    {
+      "opaqueItemId": "7d074fc17464c5d5781f5c65",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "All protected wording retained, but requested update absent."
+    },
+    {
+      "opaqueItemId": "013b7cf74b2af39aec42d63e",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The full route is 8 kilometres.",
+          "reason": "Only the exact supplied length replacement is made."
+        }
+      ],
+      "notes": "Duration estimate and exact sign phrase intact."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "d45cfa4f57eb2f702aac5879",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 8 kilometres.",
+          "reason": "Only the exact supplied length replacement is made."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "1bf69f8150342b753fd9e68d",
+      "preferred": "TIE",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "81387d566c591fb2e5709abd",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The full route is 8 kilometres.",
+          "reason": "Only the exact supplied length replacement is made."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "f9269a6cc23a95a443e57bee",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The full route is 8 kilometres.",
+          "reason": "Only the exact supplied length replacement is made."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "74b8d1359e2d7c00ad4c8c76",
+      "preferred": "TIE",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "The sole superseded length remains unqualified."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    }
+  ]
+}

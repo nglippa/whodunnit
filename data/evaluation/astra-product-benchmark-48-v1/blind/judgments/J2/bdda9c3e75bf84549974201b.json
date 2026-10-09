@@ -1,0 +1,151 @@
+{
+  "blindCaseId": "bdda9c3e75bf84549974201b",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "9cd55b64a7da374b78775d72",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "d5106ffbfe2371a0a66781b1",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "c669e860baaa8e6845d85796",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "We can send a replacement handle once we confirm which mug version you have.",
+          "reason": "The repeated sentence remains twice in the reply."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "59c2bdf7e03dd6e3ce574919",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "cdfabd3b31169d0f39bd6c30",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "5d7566e6210205f337240612",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "43982dcddbc81195e7ed1a2f",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "We can send a replacement handle once we confirm which mug version you have.",
+          "reason": "The repeated sentence remains twice in the reply."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "122b98bfc64100f2c39c86a2",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "430974508017e6edf4ce8807",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "We can send a replacement handle once we confirm which mug version you have.",
+          "reason": "The repeated sentence remains twice in the reply."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    }
+  ]
+}

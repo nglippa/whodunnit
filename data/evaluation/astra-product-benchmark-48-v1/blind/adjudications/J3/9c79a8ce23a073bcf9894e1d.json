@@ -1,0 +1,98 @@
+{
+  "blindAdjudicationCaseId": "9c79a8ce23a073bcf9894e1d",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "94c3fa58f0f88baa9fef5694",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Outside, the window cleaner lowered a wet brush past the glass. She watched it disappear, then moved her pawn. She waited with her hands under her knees, leaving the next move to the empty pillow.",
+          "reason": "The single pronoun substitution preserves the mood, images and sequence but repeats She at consecutive sentence starts and weakens the explicit return to Anya after the window cleaner. It provides no clear flow improvement."
+        }
+      ],
+      "notes": "Preservation is successful; the requested smoothing is at best slight and not clearly achieved."
+    },
+    {
+      "opaqueTargetId": "96e2814f79c60918e57afd1c",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Outside, the window cleaner lowered a wet brush past the glass. She watched it disappear, then moved her pawn. She waited with her hands under her knees, leaving the next move to the empty pillow.",
+          "reason": "The single pronoun substitution preserves the mood, images and sequence but repeats She at consecutive sentence starts and weakens the explicit return to Anya after the window cleaner. It provides no clear flow improvement."
+        }
+      ],
+      "notes": "Preservation is successful; the requested smoothing is at best slight and not clearly achieved."
+    }
+  ],
+  "pairs": [
+    {
+      "opaqueTargetId": "4a213d3e10445e5fd3f84000",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "She watched it disappear, then moved her pawn. She waited with her hands under her knees",
+          "reason": "Repeats the same pronoun opening and removes the explicit return to Anya after introducing the window cleaner."
+        },
+        {
+          "field": "textB",
+          "quote": "Anya watched it disappear, then moved her pawn.",
+          "reason": "The source clearly names the actor and retains rhythmic variety."
+        }
+      ],
+      "notes": "Both are safe and preserve the scene. The source has a modest flow and reference-clarity advantage."
+    },
+    {
+      "opaqueTargetId": "3e1801a5f5451aaccea81cff",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "She watched it disappear, then moved her pawn. She waited with her hands under her knees",
+          "reason": "Repeats the same pronoun opening and removes the explicit return to Anya after introducing the window cleaner."
+        },
+        {
+          "field": "textB",
+          "quote": "Anya watched it disappear, then moved her pawn.",
+          "reason": "The source clearly names the actor and retains rhythmic variety."
+        }
+      ],
+      "notes": "Both are safe and preserve the scene. The source has a modest flow and reference-clarity advantage."
+    },
+    {
+      "opaqueTargetId": "3783dfe0a1163ebb61d3b249",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "She watched it disappear, then moved her pawn. She waited with her hands under her knees",
+          "reason": "Repeats the same pronoun opening and removes the explicit return to Anya after introducing the window cleaner."
+        },
+        {
+          "field": "textB",
+          "quote": "Anya watched it disappear, then moved her pawn.",
+          "reason": "The source clearly names the actor and retains rhythmic variety."
+        }
+      ],
+      "notes": "Both are safe and preserve the scene. The source has a modest flow and reference-clarity advantage."
+    }
+  ]
+}

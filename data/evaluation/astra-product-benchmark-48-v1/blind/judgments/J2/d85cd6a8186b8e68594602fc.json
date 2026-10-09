@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "d85cd6a8186b8e68594602fc",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "15b6fd76a42352c2eaf10f8b",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "95f2ce589fb648aceccef92f",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "6de6557582c8182c044ad084",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "8ae5ee3b1934e48c3325ac20",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "MUCH_BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "8e331144d7117456c33f1b94",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "4fa6ff895cb5737f40f38efa",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "a73a41e59c033c72b3b5e1a1",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "13943d6f57ad1bd41ee75175",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        },
+        {
+          "field": "textB",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "9d6c6701eaeb58a52bc2ce2c",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        },
+        {
+          "field": "textB",
+          "quote": "a multifaceted exchange of perspectives",
+          "reason": "Retains the verbose report instead of producing the requested concise account."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    }
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "28341a6cc29d97f18f225b40",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "f84bc97c56c9e217646fad1c",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "7f27360e59117913524f999c",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "4ae18a5123a9bb595c8e4486",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "27c3e33a7a95512d2ad855cd",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "217ff33b028e15de3c895d30",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "5f8ead95cd8549bbcd987f54",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        },
+        {
+          "field": "textB",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "13bb08398b42bb735cb56000",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "850d2d2b9f816da151e5bd93",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        },
+        {
+          "field": "textB",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "dbb9bd3b4c0d373bd1b34775",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "we will use the school hall",
+          "reason": "Retains a definite plan alongside conflicting booking statuses without clarifying the unresolved dependency."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    }
+  ]
+}

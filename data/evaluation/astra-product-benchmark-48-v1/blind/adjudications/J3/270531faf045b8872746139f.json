@@ -1,0 +1,118 @@
+{
+  "blindAdjudicationCaseId": "270531faf045b8872746139f",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "0764b60f753d65f4f35afb24",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Replace only \u201c7 kilometres\u201d with \u201c8 kilometres\u201d in the route length sentence. Preserve all other wording, including the duration estimate and \u201cLeave room for the flock.\u201d",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+        }
+      ],
+      "notes": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+    },
+    {
+      "opaqueTargetId": "1c13cd9e59c0d77c24fa610c",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Replace only \u201c7 kilometres\u201d with \u201c8 kilometres\u201d in the route length sentence. Preserve all other wording, including the duration estimate and \u201cLeave room for the flock.\u201d",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+        }
+      ],
+      "notes": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+    },
+    {
+      "opaqueTargetId": "607462f5d57bdb5030a19c4a",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Replace only \u201c7 kilometres\u201d with \u201c8 kilometres\u201d in the route length sentence. Preserve all other wording, including the duration estimate and \u201cLeave room for the flock.\u201d",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+        }
+      ],
+      "notes": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+    }
+  ],
+  "pairs": [
+    {
+      "opaqueTargetId": "67225c0037580548f8d8152f",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Replace only \u201c7 kilometres\u201d with \u201c8 kilometres\u201d in the route length sentence. Preserve all other wording, including the duration estimate and \u201cLeave room for the flock.\u201d",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Retains superseded facts."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Retains superseded facts."
+        }
+      ],
+      "notes": "Both identical outputs retain explicit superseded facts and are unsuitable as completed updated instructions."
+    },
+    {
+      "opaqueTargetId": "7056782d485deb7a048b36e1",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Replace only \u201c7 kilometres\u201d with \u201c8 kilometres\u201d in the route length sentence. Preserve all other wording, including the duration estimate and \u201cLeave room for the flock.\u201d",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Retains superseded facts."
+        },
+        {
+          "field": "textB",
+          "quote": "The full route is 7 kilometres.",
+          "reason": "Retains superseded facts."
+        }
+      ],
+      "notes": "Both identical outputs retain explicit superseded facts and are unsuitable as completed updated instructions."
+    }
+  ]
+}

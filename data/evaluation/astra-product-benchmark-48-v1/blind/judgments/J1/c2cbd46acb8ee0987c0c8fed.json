@@ -1,0 +1,247 @@
+{
+  "blindCaseId": "c2cbd46acb8ee0987c0c8fed",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "22fe224680bc5b8982f446f2",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "SOURCE_OVER_OUTPUT",
+      "unnecessaryEditing": "YES",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "text",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        }
+      ],
+      "notes": "Very small safe edits preserve voice and the exact heading, but the original reads more naturally. No material scope expansion or harmful editing."
+    },
+    {
+      "opaqueItemId": "f62e720c928897121b406d77",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        }
+      ],
+      "notes": "Restraint meets the review objective; heading and narrative intact."
+    },
+    {
+      "opaqueItemId": "f3056b6ce4c8fe657f792f84",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "SOURCE_OVER_OUTPUT",
+      "unnecessaryEditing": "YES",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "text",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        }
+      ],
+      "notes": "Very small safe edits preserve voice and the exact heading, but the original reads more naturally. No material scope expansion or harmful editing."
+    },
+    {
+      "opaqueItemId": "6791099f947a8b52acfc94ea",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        }
+      ],
+      "notes": "Restraint meets the review objective; heading and narrative intact."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "15c405564087b9b2ff3604d5",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "textA",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        },
+        {
+          "field": "textB",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "a2837b0d825a0d2da0acb37a",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        },
+        {
+          "field": "textB",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "765c97046272f629b93c731c",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        },
+        {
+          "field": "textB",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "textB",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "e2f44597b83b2f76751f447b",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "textA",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        },
+        {
+          "field": "textB",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "textB",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "2f146edd5fc55aba1db2a825",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "at first starting there seemed an expensive way",
+          "reason": "Adds a referent to an already clear joke without a distracting ambiguity to fix."
+        },
+        {
+          "field": "textA",
+          "quote": "The heading makes the task seem appropriately sized.",
+          "reason": "Explicit repetition replaces an unambiguous pronoun; no material clarity gain."
+        },
+        {
+          "field": "textB",
+          "quote": "It makes the task seem appropriately sized.",
+          "reason": "The heading is the clear referent; no distracting clarity problem requires an edit."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

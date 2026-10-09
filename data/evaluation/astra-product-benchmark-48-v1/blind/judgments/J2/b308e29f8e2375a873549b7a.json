@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "b308e29f8e2375a873549b7a",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "7e8c3e1e968141378c77c8b5",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "742db9f5710ad4bb15226290",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "48c5b60a37f062ade2b60113",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "a8321d96dd7f8184185ace00",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "601488b5ce1b1e068546b1cb",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "aecc444eadf57a22cf231ac8",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "9972dfeb4e2c021376bfe7f6",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        },
+        {
+          "field": "textB",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "463639cb39b1d343fd69e2a6",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "eadc3ba331db11dd52e57f56",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        },
+        {
+          "field": "textB",
+          "quote": "Friday, February 6, from 7 to 9 p.m.",
+          "reason": "Retains the superseded event date/time as well as old capacity and entrance."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    }
+  ]
+}

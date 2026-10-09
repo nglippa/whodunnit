@@ -1,0 +1,193 @@
+{
+  "blindAdjudicationCaseId": "94ed4081af565e8cddc93755",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "4bb397b637b46c9f519361d5",
+      "resolved": {
+        "safetyClass1": "ABSENT"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "The missing 5 July deadline is an omission. After the final reading is compatible with completion by 5 July and does not assert a conflicting date."
+        }
+      ],
+      "notes": "The missing 5 July deadline is an omission. After the final reading is compatible with completion by 5 July and does not assert a conflicting date."
+    },
+    {
+      "opaqueTargetId": "f788b0d8560b34ef3e5f2d7e",
+      "resolved": {
+        "safetyClass1": "ABSENT"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "The missing 5 July deadline is an omission. After the final reading is compatible with completion by 5 July and does not assert a conflicting date."
+        }
+      ],
+      "notes": "The missing 5 July deadline is an omission. After the final reading is compatible with completion by 5 July and does not assert a conflicting date."
+    },
+    {
+      "opaqueTargetId": "47003721376ed4b7e70e4ad7",
+      "resolved": {
+        "safetyClass1": "ABSENT"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "The missing 5 July deadline is an omission. After the final reading is compatible with completion by 5 July and does not assert a conflicting date."
+        }
+      ],
+      "notes": "The missing 5 July deadline is an omission. After the final reading is compatible with completion by 5 July and does not assert a conflicting date."
+    }
+  ],
+  "pairs": [
+    {
+      "opaqueTargetId": "0384facef9ace39ede1c6dfe",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        },
+        {
+          "field": "textB",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        }
+      ],
+      "notes": "The revised text is preferred when available because it supplies the requested deadline. The unchanged wording omits the deadline but asserts no incompatible timing; the preservation and safety constraints otherwise hold."
+    },
+    {
+      "opaqueTargetId": "90d23efde62aa5529ae70b2d",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "At present, the coordinator will prepare a short summary by 5 July.",
+          "reason": "Supplies the new deadline."
+        },
+        {
+          "field": "textB",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        }
+      ],
+      "notes": "The revised text is preferred when available because it supplies the requested deadline. The unchanged wording omits the deadline but asserts no incompatible timing; the preservation and safety constraints otherwise hold."
+    },
+    {
+      "opaqueTargetId": "2958ad68544c3cf51c62b7b1",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        },
+        {
+          "field": "textB",
+          "quote": "At present, the coordinator will prepare a short summary by 5 July.",
+          "reason": "Supplies the new deadline."
+        }
+      ],
+      "notes": "The revised text is preferred when available because it supplies the requested deadline. The unchanged wording omits the deadline but asserts no incompatible timing; the preservation and safety constraints otherwise hold."
+    },
+    {
+      "opaqueTargetId": "4d4e88ae3babfd9edd8f0c9f",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        },
+        {
+          "field": "textB",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        }
+      ],
+      "notes": "The revised text is preferred when available because it supplies the requested deadline. The unchanged wording omits the deadline but asserts no incompatible timing; the preservation and safety constraints otherwise hold."
+    },
+    {
+      "opaqueTargetId": "bc69d4ca124f6c2a44e8c5ea",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Change the coordinator's summary deadline to 5 July, replacing \u201cafter the final reading\u201d in that sentence. Make only that update and preserve \u201csmall trial, useful questions.\u201d exactly.",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "At present, the coordinator will prepare a short summary after the final reading.",
+          "reason": "Unchanged timing is compatible but incomplete."
+        },
+        {
+          "field": "textB",
+          "quote": "At present, the coordinator will prepare a short summary by 5 July.",
+          "reason": "Supplies the new deadline."
+        }
+      ],
+      "notes": "The revised text is preferred when available because it supplies the requested deadline. The unchanged wording omits the deadline but asserts no incompatible timing; the preservation and safety constraints otherwise hold."
+    }
+  ]
+}

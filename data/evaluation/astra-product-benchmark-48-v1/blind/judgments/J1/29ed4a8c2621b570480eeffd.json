@@ -1,0 +1,247 @@
+{
+  "blindCaseId": "29ed4a8c2621b570480eeffd",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "be50427c52b940bfeaa95d23",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "text",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        }
+      ],
+      "notes": "Light flow edits retain the dry humor."
+    },
+    {
+      "opaqueItemId": "a1cbaf57b53f772537a4a6ee",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        }
+      ],
+      "notes": "The source is already strong and safe, but the requested light revision is absent."
+    },
+    {
+      "opaqueItemId": "4a951fc46be661438e036bc0",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "text",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        }
+      ],
+      "notes": "Light flow edits retain the dry humor."
+    },
+    {
+      "opaqueItemId": "a19a7623cbc9141ac3c3ef7a",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        }
+      ],
+      "notes": "The source is already strong and safe, but the requested light revision is absent."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "119f661f6802d970c30e5521",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        },
+        {
+          "field": "textB",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "6efc1e5100cf23af085377c9",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        },
+        {
+          "field": "textB",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "textB",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "d8464c06b2297bc8c253688f",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        },
+        {
+          "field": "textB",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "textB",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "6aca07ee55bf2e0e65cf7581",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "having agreed to demonstrate the knowledge",
+          "reason": "Original phrasing remains; no flow improvement is made."
+        },
+        {
+          "field": "textB",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "textB",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "414713e6fd4ca0416714e7cd",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "textA",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        },
+        {
+          "field": "textB",
+          "quote": "is not the same as agreeing to demonstrate the knowledge",
+          "reason": "Trims phrasing while preserving the conversational joke."
+        },
+        {
+          "field": "textB",
+          "quote": "I might sing next time",
+          "reason": "The future remains uncertain and the skipped turn neutral."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    }
+  ]
+}

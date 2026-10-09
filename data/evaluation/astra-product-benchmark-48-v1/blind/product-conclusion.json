@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "experimentId": "astra-product-benchmark-48-v1",
+    "outputCommit": "d9d98302bd1e8a89a65bc76ec1eccda26df79cb6",
+    "blindJudgmentsFreezeSha256": "916d27d70dc5ddfb3a18462046b98de89e2bed6db8028eba1be876e2f221d43b",
+    "adjudicationsFreezeSha256": "c996acd6113b0c0eb1c1a5b03dc73e131f9f20028f89717b1183aa1730b3e9fd",
+    "caseCount": 48,
+    "outputArmCount": 192
+  },
+  "decision": "D — NEITHER ARCHITECTURE IS GOOD ENOUGH",
+  "advanceCandidateC": false,
+  "retainV15AsApprovedSuccessor": false,
+  "interpretation": "Candidate C is worse than V15 on supplied updates, objective completion, fallback rate and paired text safety, with no jointly-safe preference gain. V15 also has 12 confirmed stale-current-fact text outcomes and misses six of eight supplied updates; neither passes a zero-tolerance product safety bar. Astra is materially stronger on this corpus.",
+  "qualification": "Internal descriptive product benchmark. Two independent original gpt-6.1-sol/high judge sessions were requested; runtime model/effort metadata was not exposed. One fresh adjudicator handled only frozen material/preference disagreements. The blind judgments are text-only and do not establish how a separate product status/disclosure UI would affect perceived completion claims. One case retains unresolved class-1 status for SOURCE/V15/C."
+}

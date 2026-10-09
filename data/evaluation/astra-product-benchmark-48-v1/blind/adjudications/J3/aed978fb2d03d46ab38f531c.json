@@ -1,0 +1,57 @@
+{
+  "blindAdjudicationCaseId": "aed978fb2d03d46ab38f531c",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "756c6fd8c6982d39c72ef433",
+      "resolved": {
+        "objective": "YES"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Make changes only where an employee could otherwise misunderstand the process.",
+          "reason": "This conditional objective permits returning an already clear guide unchanged."
+        },
+        {
+          "field": "text",
+          "quote": "A correction request does not alter the timecard immediately.",
+          "reason": "The guide clearly distinguishes request from correction and explains review, status and visibility."
+        },
+        {
+          "field": "text",
+          "quote": "For a missing shift, select Add a shift rather than Correct a shift.",
+          "reason": "The main procedural distinction is explicit."
+        }
+      ],
+      "notes": "No distracting process ambiguity is apparent; retaining this clear guide meets the conditional objective."
+    },
+    {
+      "opaqueTargetId": "aa7ba9a26cf886dbe73c8ead",
+      "resolved": {
+        "objective": "YES"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Make changes only where an employee could otherwise misunderstand the process.",
+          "reason": "This conditional objective permits returning an already clear guide unchanged."
+        },
+        {
+          "field": "text",
+          "quote": "A correction request does not alter the timecard immediately.",
+          "reason": "The guide clearly distinguishes request from correction and explains review, status and visibility."
+        },
+        {
+          "field": "text",
+          "quote": "For a missing shift, select Add a shift rather than Correct a shift.",
+          "reason": "The main procedural distinction is explicit."
+        }
+      ],
+      "notes": "No distracting process ambiguity is apparent; retaining this clear guide meets the conditional objective."
+    }
+  ],
+  "pairs": []
+}

@@ -1,0 +1,22 @@
+{
+  "blindAdjudicationCaseId": "9e07d7153434f7f3c638069a",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "7dfd74fcf5424961ee5b3610",
+      "resolved": {
+        "collateral": "PRESENT"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "So now I have a bit more room on my desk. That is the only sentence in this email that sounds like it is wearing a tie.",
+          "reason": "The authorized simplification removes the formal register that makes the retained next-sentence joke work, creating a contextual inconsistency outside the edited sentence."
+        }
+      ],
+      "notes": "The narrow literal edit is authorized, but it has an adverse collateral effect on the adjacent joke."
+    }
+  ],
+  "pairs": []
+}

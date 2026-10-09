@@ -1,0 +1,73 @@
+{
+  "blindAdjudicationCaseId": "1ea118a0e351625f67f51914",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "84f29ff783e849a585206779",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Soren Pell's workshop extension is now 241. Replace his extension only. Preserve Lila Darrow's extension, the receipt number, all packing and condition facts, and the exact agreement phrase.",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+        }
+      ],
+      "notes": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+    },
+    {
+      "opaqueTargetId": "6ff5a3e56b51d4c0398a247e",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Soren Pell's workshop extension is now 241. Replace his extension only. Preserve Lila Darrow's extension, the receipt number, all packing and condition facts, and the exact agreement phrase.",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+        }
+      ],
+      "notes": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+    }
+  ],
+  "pairs": [
+    {
+      "opaqueTargetId": "f3954c799dc64f7ee8d2d7bb",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Soren Pell's workshop extension is now 241. Replace his extension only. Preserve Lila Darrow's extension, the receipt number, all packing and condition facts, and the exact agreement phrase.",
+          "reason": "Provides the replacement fact."
+        },
+        {
+          "field": "textA",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Retains superseded facts."
+        },
+        {
+          "field": "textB",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Retains superseded facts."
+        }
+      ],
+      "notes": "Both identical outputs retain explicit superseded facts and are unsuitable as completed updated instructions."
+    }
+  ]
+}

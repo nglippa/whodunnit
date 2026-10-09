@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "65cc4f2c7b8c67a87d128490",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "5141d6c640bc36e314685e30",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": "The requested sentence now fits the informal register. Keeping the following tie joke as instructed makes its reference less coherent, but this follows the single-sentence scope."
+    },
+    {
+      "opaqueItemId": "bc937ba664df6b4104cdfab5",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "1a0ea35e4ade4edbe33848e4",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "37d69b9ec50f533975ef04d6",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "490341b50b36c5b3c568aac4",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "8b848ccb6afc26bc0d91bf2b",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "976790dc73d65a034235db7b",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        },
+        {
+          "field": "textB",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "675583e1e2145704e4fe6442",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "04dafe4e70a375c31b038820",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        },
+        {
+          "field": "textB",
+          "quote": "The consequence of this organisational endeavour",
+          "reason": "Leaves the sole requested register mismatch unchanged."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "blindAdjudicationCaseId": "0b1aa39fcebfa0c00ff66a99",
+  "judge": "J3",
+  "items": [],
+  "pairs": [
+    {
+      "opaqueTargetId": "69f90a06e11bb4b94b2ca732",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Read this personal essay for distracting clarity problems. Keep any changes minimal",
+          "reason": "Changes are warranted only for distracting clarity problems."
+        },
+        {
+          "field": "textA",
+          "quote": "I had paid for six lessons, and at first this seemed an expensive way to do something I managed regularly on land.",
+          "reason": "The original reference to standing in water and breathing is clear and its humor natural."
+        },
+        {
+          "field": "textB",
+          "quote": "at first starting there seemed an expensive way to do something I managed regularly on land.",
+          "reason": "This replacement is less natural and resolves no distracting ambiguity."
+        }
+      ],
+      "notes": "Both preserve meaning and the exact calendar heading. The source has a modest advantage under the minimal-edit objective because the changes are unnecessary."
+    },
+    {
+      "opaqueTargetId": "42dbe46923f92c91cd20e0a5",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Read this personal essay for distracting clarity problems. Keep any changes minimal",
+          "reason": "Changes are warranted only for distracting clarity problems."
+        },
+        {
+          "field": "textB",
+          "quote": "I had paid for six lessons, and at first this seemed an expensive way to do something I managed regularly on land.",
+          "reason": "The original reference to standing in water and breathing is clear and its humor natural."
+        },
+        {
+          "field": "textA",
+          "quote": "at first starting there seemed an expensive way to do something I managed regularly on land.",
+          "reason": "This replacement is less natural and resolves no distracting ambiguity."
+        }
+      ],
+      "notes": "Both preserve meaning and the exact calendar heading. The source has a modest advantage under the minimal-edit objective because the changes are unnecessary."
+    },
+    {
+      "opaqueTargetId": "afb177cd9f58b8004126b425",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Read this personal essay for distracting clarity problems. Keep any changes minimal",
+          "reason": "Changes are warranted only for distracting clarity problems."
+        },
+        {
+          "field": "textB",
+          "quote": "I had paid for six lessons, and at first this seemed an expensive way to do something I managed regularly on land.",
+          "reason": "The original reference to standing in water and breathing is clear and its humor natural."
+        },
+        {
+          "field": "textA",
+          "quote": "at first starting there seemed an expensive way to do something I managed regularly on land.",
+          "reason": "This replacement is less natural and resolves no distracting ambiguity."
+        }
+      ],
+      "notes": "Both preserve meaning and the exact calendar heading. The source has a modest advantage under the minimal-edit objective because the changes are unnecessary."
+    }
+  ]
+}

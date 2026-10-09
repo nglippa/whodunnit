@@ -1,0 +1,191 @@
+{
+  "blindCaseId": "dc0126781fd5ac4cafdbfe07",
+  "judge": "J2",
+  "items": [
+    {
+      "opaqueItemId": "dc25c02f7c28c6c9636dc347",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "86369acb9ad5947db4f72ea4",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "MUCH_BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "6f2af5af6ee0a943ef3b4eda",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "opaqueItemId": "f54b196c100dca6f70211bd2",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": ""
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "2676f654773493c797c86240",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        },
+        {
+          "field": "textB",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "6c2ebc7a1e9259f24e4b1f9c",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "233298eacc63d737a333d979",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    },
+    {
+      "opaquePairId": "4ce5224d8e8f1819aa4a7d19",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        },
+        {
+          "field": "textB",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": "Identical texts receive equal judgments."
+    },
+    {
+      "opaquePairId": "a8c4da4dde01cf23996ba363",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textB",
+          "quote": "the multifaceted experience I encountered",
+          "reason": "Retains the inflated framing instead of delivering ordinary first-person language."
+        }
+      ],
+      "notes": "Preference considers the stated objective, preservation, and writing quality."
+    }
+  ]
+}

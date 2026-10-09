@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "bca8427825da056f12db224b",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "c6bf1c6da80eb4e7ba4f4971",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        }
+      ],
+      "notes": "Other protected facts preserved, but the sole replacement is absent."
+    },
+    {
+      "opaqueItemId": "d42e998b7d1bf7faa08977d9",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        }
+      ],
+      "notes": "Exact authorized update."
+    },
+    {
+      "opaqueItemId": "3f79288f5c736817ee64e78f",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        }
+      ],
+      "notes": "Other protected facts preserved, but the sole replacement is absent."
+    },
+    {
+      "opaqueItemId": "a8aca916736f3c4ecce5252b",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        }
+      ],
+      "notes": "Exact authorized update."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "1657e4f2dca363db7fd9c0c0",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        },
+        {
+          "field": "textB",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "4db26f0bd46d8bf99e4751f1",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        },
+        {
+          "field": "textB",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "b7040df33d00ce6ff401579e",
+      "preferred": "TIE",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        },
+        {
+          "field": "textB",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "3f5f9a25756d67e8ae69f65b",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The telephone extension currently printed here is 218.",
+          "reason": "Superseded workshop extension remains in the current contact instructions."
+        },
+        {
+          "field": "textB",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "46276ab0336e79e98810b876",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        },
+        {
+          "field": "textB",
+          "quote": "The telephone extension currently printed here is 241.",
+          "reason": "Only Soren's extension is corrected; Lila, receipt number and exact phrase preserved."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    }
+  ]
+}

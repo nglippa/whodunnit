@@ -1,0 +1,67 @@
+{
+  "blindAdjudicationCaseId": "15c4be5c79ac0ef8844d2652",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "b5b71550ca902e5e2e95d077",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Gently tighten this personal reflection for a small newsletter.",
+          "reason": "Tightening is explicitly requested."
+        },
+        {
+          "field": "text",
+          "quote": "I just want to put something down about the odd stretch between being glad for someone and missing them.",
+          "reason": "The full text is unchanged, so there is no tightening."
+        }
+      ],
+      "notes": "All preservation constraints are met, but the requested revision is absent."
+    },
+    {
+      "opaqueTargetId": "511672ad24c65da0af8843ca",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Gently tighten this personal reflection for a small newsletter.",
+          "reason": "Tightening is explicitly requested."
+        },
+        {
+          "field": "text",
+          "quote": "I just want to put something down about the odd stretch between being glad for someone and missing them.",
+          "reason": "The full text is unchanged, so there is no tightening."
+        }
+      ],
+      "notes": "All preservation constraints are met, but the requested revision is absent."
+    },
+    {
+      "opaqueTargetId": "7da35f8df4e3b19795f20670",
+      "resolved": {
+        "objective": "PARTIAL"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Gently tighten this personal reflection for a small newsletter.",
+          "reason": "Tightening is explicitly requested."
+        },
+        {
+          "field": "text",
+          "quote": "I just want to put something down about the odd stretch between being glad for someone and missing them.",
+          "reason": "The full text is unchanged, so there is no tightening."
+        }
+      ],
+      "notes": "All preservation constraints are met, but the requested revision is absent."
+    }
+  ],
+  "pairs": []
+}

@@ -1,0 +1,262 @@
+{
+  "blindCaseId": "4ad7f1b113ea048335c3a803",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "b7c8cba736f3f6454e531daa",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "text",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        }
+      ],
+      "notes": "Unqualified stale appointment and location."
+    },
+    {
+      "opaqueItemId": "4b1e2577a5a83814dce1832d",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "text",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        }
+      ],
+      "notes": "Unqualified stale appointment and location."
+    },
+    {
+      "opaqueItemId": "c909b3cbbd7d767d1e2527a9",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "text",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        }
+      ],
+      "notes": "Unqualified stale appointment and location."
+    },
+    {
+      "opaqueItemId": "207e906331d71e9066d2955a",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Thursday, November 5, at 11:15 a.m.",
+          "reason": "Supplied appointment and entrance are updated; other instructions preserved."
+        }
+      ],
+      "notes": "Exact supplied corrections."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "75832ad6d93cea7be41926f0",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textA",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        },
+        {
+          "field": "textB",
+          "quote": "Thursday, November 5, at 11:15 a.m.",
+          "reason": "Supplied appointment and entrance are updated; other instructions preserved."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "e946ec46779dde8b53fc1868",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textA",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        },
+        {
+          "field": "textB",
+          "quote": "Thursday, November 5, at 11:15 a.m.",
+          "reason": "Supplied appointment and entrance are updated; other instructions preserved."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "d889198067a1af0d16b897d6",
+      "preferred": "TIE",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textA",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        },
+        {
+          "field": "textB",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textB",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "3a5d09d223cc0a3dce95ca59",
+      "preferred": "TIE",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textA",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        },
+        {
+          "field": "textB",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textB",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "c6e5a932e108f6a863af8dca",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Wednesday, November 4, at 3:30 p.m.",
+          "reason": "Superseded appointment remains asserted."
+        },
+        {
+          "field": "textA",
+          "quote": "front entrance on Alder Street",
+          "reason": "Superseded entrance remains."
+        },
+        {
+          "field": "textB",
+          "quote": "Thursday, November 5, at 11:15 a.m.",
+          "reason": "Supplied appointment and entrance are updated; other instructions preserved."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

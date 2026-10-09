@@ -1,0 +1,232 @@
+{
+  "blindCaseId": "c497150451451ca24a0171bc",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "93541266f6fdf80b8d805e6d",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The median search time was 19 seconds in arrangement A and 24 seconds in arrangement B.",
+          "reason": "Directly states unchanged results."
+        },
+        {
+          "field": "text",
+          "quote": "would help determine whether",
+          "reason": "Retains the cautious value of a visitor trial."
+        }
+      ],
+      "notes": "Design, limitations and cautious conclusion preserved in direct academic prose."
+    },
+    {
+      "opaqueItemId": "4826e1efd6d334454ca94657",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "A comparison was made by us",
+          "reason": "Indirect academic wording remains unchanged."
+        }
+      ],
+      "notes": "Safe original evidence, but requested prose reconstruction absent."
+    },
+    {
+      "opaqueItemId": "4359aa88949a85e93830248f",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "PRESENT",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        }
+      ],
+      "notes": "Measurements and design remain intact. The final wording mildly overpromises informativeness, but does not establish a new result or materially change the study's conclusion. Prefer the alternative retaining help determine."
+    },
+    {
+      "opaqueItemId": "783d9b4126d0b2f14cdcb22d",
+      "meaning": "PRESERVED",
+      "objective": "PARTIAL",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "PRESENT",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        }
+      ],
+      "notes": "Measurements and design remain intact. The final wording mildly overpromises informativeness, but does not establish a new result or materially change the study's conclusion. Prefer the alternative retaining help determine."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "5543858fdb0fea647b62d33c",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        },
+        {
+          "field": "textB",
+          "quote": "A comparison was made by us",
+          "reason": "Indirect academic wording remains unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "774d2bb3e0b102f8376d56e8",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The median search time was 19 seconds in arrangement A and 24 seconds in arrangement B.",
+          "reason": "Directly states unchanged results."
+        },
+        {
+          "field": "textA",
+          "quote": "would help determine whether",
+          "reason": "Retains the cautious value of a visitor trial."
+        },
+        {
+          "field": "textB",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "d0a7de7b5d0144f048c56af2",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The median search time was 19 seconds in arrangement A and 24 seconds in arrangement B.",
+          "reason": "Directly states unchanged results."
+        },
+        {
+          "field": "textA",
+          "quote": "would help determine whether",
+          "reason": "Retains the cautious value of a visitor trial."
+        },
+        {
+          "field": "textB",
+          "quote": "A comparison was made by us",
+          "reason": "Indirect academic wording remains unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "7ada97ea723050d98f3c7738",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        },
+        {
+          "field": "textB",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "c0c4bbe5bdb4874775699da8",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "A trial with visitors would show whether",
+          "reason": "Slightly stronger prediction than would help determine; reduces the requested cautiousness."
+        },
+        {
+          "field": "textB",
+          "quote": "The median search time was 19 seconds in arrangement A and 24 seconds in arrangement B.",
+          "reason": "Directly states unchanged results."
+        },
+        {
+          "field": "textB",
+          "quote": "would help determine whether",
+          "reason": "Retains the cautious value of a visitor trial."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

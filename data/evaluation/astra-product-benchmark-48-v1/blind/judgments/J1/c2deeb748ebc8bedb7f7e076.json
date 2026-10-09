@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "c2deeb748ebc8bedb7f7e076",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "c79250dcbd7f368b7283216c",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        }
+      ],
+      "notes": "No distracting wording needs revision."
+    },
+    {
+      "opaqueItemId": "406e36bd7442564dfbc9a85c",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        }
+      ],
+      "notes": "Safe slight emphasis without a meaningful improvement or material overediting."
+    },
+    {
+      "opaqueItemId": "deca9a2749f928082dab9875",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        }
+      ],
+      "notes": "No distracting wording needs revision."
+    },
+    {
+      "opaqueItemId": "5c8e2b80e33f4c2b43e9296b",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        }
+      ],
+      "notes": "Safe slight emphasis without a meaningful improvement or material overediting."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "18fc9e4fc43c422ead691690",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        },
+        {
+          "field": "textB",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        }
+      ],
+      "notes": "Comparable safety and objective fit."
+    },
+    {
+      "opaquePairId": "2139b2d333906bec48b5b9e8",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        },
+        {
+          "field": "textB",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        }
+      ],
+      "notes": "Comparable safety and objective fit."
+    },
+    {
+      "opaquePairId": "f725f36086f9aa0b6ebe1a4e",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        },
+        {
+          "field": "textB",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "a0478291028c65429c755017",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        },
+        {
+          "field": "textB",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "84054167261d96e6862b309a",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "These results describe engagement within this sample.",
+          "reason": "Clear scope and engagement-versus-learning distinction already present."
+        },
+        {
+          "field": "textB",
+          "quote": "These results describe engagement within this sample only.",
+          "reason": "Only is redundant but harmless; it reiterates the existing limit."
+        }
+      ],
+      "notes": "Comparable safety and objective fit."
+    }
+  ]
+}

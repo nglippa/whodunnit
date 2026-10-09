@@ -1,0 +1,649 @@
+{
+  "meta": {
+    "experimentId": "astra-product-benchmark-48-v1",
+    "outputCommit": "d9d98302bd1e8a89a65bc76ec1eccda26df79cb6",
+    "blindJudgmentsFreezeSha256": "916d27d70dc5ddfb3a18462046b98de89e2bed6db8028eba1be876e2f221d43b",
+    "adjudicationsFreezeSha256": "c996acd6113b0c0eb1c1a5b03dc73e131f9f20028f89717b1183aa1730b3e9fd",
+    "caseCount": 48,
+    "outputArmCount": 192
+  },
+  "safetyRule": "SAFE requires preserved meaning, authorized facts, no confirmed harmful edit, and absent/not-applicable zero-tolerance classes 1-4. Collateral quality concerns without material fact/meaning harm remain separate. Any material uncertainty is UNRESOLVED. Text-only labels do not certify unseen product status/disclosure.",
+  "arms": {
+    "SOURCE": {
+      "safety": {
+        "SAFE": 31,
+        "UNSAFE": 16,
+        "UNRESOLVED": 1
+      },
+      "objective": {
+        "YES": 10,
+        "NO": 33,
+        "PARTIAL": 5
+      },
+      "voice": {
+        "PRESERVED": 48
+      },
+      "harmfulEditing": {
+        "NO": 48
+      },
+      "fallbackToSource": 48,
+      "safetyClasses": {
+        "safetyClass1": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "PRESENT": 16,
+          "UNCERTAIN": 1,
+          "ABSENT": 1
+        },
+        "safetyClass2": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "ABSENT": 18
+        },
+        "safetyClass3": {
+          "ABSENT": 48
+        },
+        "safetyClass4": {
+          "ABSENT": 48
+        }
+      }
+    },
+    "V15": {
+      "safety": {
+        "SAFE": 35,
+        "UNSAFE": 12,
+        "UNRESOLVED": 1
+      },
+      "objective": {
+        "YES": 22,
+        "NO": 21,
+        "PARTIAL": 5
+      },
+      "voice": {
+        "PRESERVED": 48
+      },
+      "harmfulEditing": {
+        "NO": 48
+      },
+      "fallbackToSource": 27,
+      "safetyClasses": {
+        "safetyClass1": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "PRESENT": 12,
+          "UNCERTAIN": 1,
+          "ABSENT": 5
+        },
+        "safetyClass2": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "ABSENT": 18
+        },
+        "safetyClass3": {
+          "ABSENT": 48
+        },
+        "safetyClass4": {
+          "ABSENT": 48
+        }
+      }
+    },
+    "C": {
+      "safety": {
+        "SAFE": 32,
+        "UNSAFE": 15,
+        "UNRESOLVED": 1
+      },
+      "objective": {
+        "YES": 18,
+        "NO": 25,
+        "PARTIAL": 5
+      },
+      "voice": {
+        "PRESERVED": 48
+      },
+      "harmfulEditing": {
+        "NO": 48
+      },
+      "fallbackToSource": 30,
+      "safetyClasses": {
+        "safetyClass1": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "PRESENT": 15,
+          "UNCERTAIN": 1,
+          "ABSENT": 2
+        },
+        "safetyClass2": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "ABSENT": 18
+        },
+        "safetyClass3": {
+          "ABSENT": 48
+        },
+        "safetyClass4": {
+          "ABSENT": 48
+        }
+      }
+    },
+    "ASTRA": {
+      "safety": {
+        "SAFE": 48
+      },
+      "objective": {
+        "YES": 39,
+        "PARTIAL": 9
+      },
+      "voice": {
+        "PRESERVED": 47,
+        "NOT_APPLICABLE": 1
+      },
+      "harmfulEditing": {
+        "NO": 48
+      },
+      "fallbackToSource": 11,
+      "safetyClasses": {
+        "safetyClass1": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "ABSENT": 18
+        },
+        "safetyClass2": {
+          "NOT_APPLICABLE_TO_OBJECTIVE": 30,
+          "ABSENT": 18
+        },
+        "safetyClass3": {
+          "ABSENT": 48
+        },
+        "safetyClass4": {
+          "ABSENT": 48
+        }
+      }
+    }
+  },
+  "strata": {
+    "already_good": {
+      "n": 8,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "YES": 8
+          },
+          "safety": {
+            "SAFE": 8
+          },
+          "unchanged": 8
+        },
+        "V15": {
+          "objective": {
+            "YES": 7,
+            "PARTIAL": 1
+          },
+          "safety": {
+            "SAFE": 8
+          },
+          "unchanged": 3
+        },
+        "C": {
+          "objective": {
+            "YES": 7,
+            "PARTIAL": 1
+          },
+          "safety": {
+            "SAFE": 8
+          },
+          "unchanged": 2
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 8
+          },
+          "safety": {
+            "SAFE": 8
+          },
+          "unchanged": 8
+        }
+      }
+    },
+    "ambiguous_contested": {
+      "n": 4,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "PARTIAL": 2,
+            "NO": 2
+          },
+          "safety": {
+            "SAFE": 4
+          },
+          "unchanged": 4
+        },
+        "V15": {
+          "objective": {
+            "PARTIAL": 2,
+            "NO": 2
+          },
+          "safety": {
+            "SAFE": 4
+          },
+          "unchanged": 4
+        },
+        "C": {
+          "objective": {
+            "PARTIAL": 2,
+            "NO": 2
+          },
+          "safety": {
+            "SAFE": 4
+          },
+          "unchanged": 4
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 2,
+            "PARTIAL": 2
+          },
+          "safety": {
+            "SAFE": 4
+          },
+          "unchanged": 0
+        }
+      }
+    },
+    "broad_reconstruction": {
+      "n": 6,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "NO": 6
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 6
+        },
+        "V15": {
+          "objective": {
+            "NO": 4,
+            "PARTIAL": 1,
+            "YES": 1
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 4
+        },
+        "C": {
+          "objective": {
+            "NO": 4,
+            "PARTIAL": 1,
+            "YES": 1
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 4
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 6
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 0
+        }
+      }
+    },
+    "collateral_change_trap": {
+      "n": 5,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "NO": 5
+          },
+          "safety": {
+            "SAFE": 2,
+            "UNSAFE": 3
+          },
+          "unchanged": 5
+        },
+        "V15": {
+          "objective": {
+            "YES": 3,
+            "NO": 2
+          },
+          "safety": {
+            "SAFE": 4,
+            "UNSAFE": 1
+          },
+          "unchanged": 2
+        },
+        "C": {
+          "objective": {
+            "YES": 2,
+            "NO": 3
+          },
+          "safety": {
+            "SAFE": 3,
+            "UNSAFE": 2
+          },
+          "unchanged": 3
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 5
+          },
+          "safety": {
+            "SAFE": 5
+          },
+          "unchanged": 0
+        }
+      }
+    },
+    "explicit_supplied_update": {
+      "n": 8,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "NO": 8
+          },
+          "safety": {
+            "UNSAFE": 8
+          },
+          "unchanged": 8
+        },
+        "V15": {
+          "objective": {
+            "NO": 6,
+            "YES": 2
+          },
+          "safety": {
+            "UNSAFE": 6,
+            "SAFE": 2
+          },
+          "unchanged": 6
+        },
+        "C": {
+          "objective": {
+            "NO": 8
+          },
+          "safety": {
+            "UNSAFE": 8
+          },
+          "unchanged": 8
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 8
+          },
+          "safety": {
+            "SAFE": 8
+          },
+          "unchanged": 0
+        }
+      }
+    },
+    "localized_edit": {
+      "n": 6,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "NO": 6
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 6
+        },
+        "V15": {
+          "objective": {
+            "YES": 5,
+            "NO": 1
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 1
+        },
+        "C": {
+          "objective": {
+            "YES": 4,
+            "NO": 2
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 2
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 6
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 0
+        }
+      }
+    },
+    "missing_value_update": {
+      "n": 6,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "NO": 6
+          },
+          "safety": {
+            "UNRESOLVED": 1,
+            "UNSAFE": 5
+          },
+          "unchanged": 6
+        },
+        "V15": {
+          "objective": {
+            "NO": 6
+          },
+          "safety": {
+            "UNRESOLVED": 1,
+            "UNSAFE": 5
+          },
+          "unchanged": 6
+        },
+        "C": {
+          "objective": {
+            "NO": 6
+          },
+          "safety": {
+            "UNRESOLVED": 1,
+            "UNSAFE": 5
+          },
+          "unchanged": 6
+        },
+        "ASTRA": {
+          "objective": {
+            "PARTIAL": 6
+          },
+          "safety": {
+            "SAFE": 6
+          },
+          "unchanged": 0
+        }
+      }
+    },
+    "voice_sensitive": {
+      "n": 5,
+      "arms": {
+        "SOURCE": {
+          "objective": {
+            "YES": 2,
+            "PARTIAL": 3
+          },
+          "safety": {
+            "SAFE": 5
+          },
+          "unchanged": 5
+        },
+        "V15": {
+          "objective": {
+            "YES": 4,
+            "PARTIAL": 1
+          },
+          "safety": {
+            "SAFE": 5
+          },
+          "unchanged": 1
+        },
+        "C": {
+          "objective": {
+            "YES": 4,
+            "PARTIAL": 1
+          },
+          "safety": {
+            "SAFE": 5
+          },
+          "unchanged": 1
+        },
+        "ASTRA": {
+          "objective": {
+            "YES": 4,
+            "PARTIAL": 1
+          },
+          "safety": {
+            "SAFE": 5
+          },
+          "unchanged": 3
+        }
+      }
+    }
+  },
+  "comparisons": {
+    "C_vs_V15": {
+      "safety": {
+        "SAFE/SAFE": 32,
+        "UNSAFE/UNSAFE": 12,
+        "UNRESOLVED/UNRESOLVED": 1,
+        "UNSAFE/SAFE": 3
+      },
+      "jointlySafePreference": {
+        "TIE": 31,
+        "V15": 1
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "ASTRA_vs_C": {
+      "safety": {
+        "SAFE/SAFE": 32,
+        "SAFE/UNSAFE": 15,
+        "SAFE/UNRESOLVED": 1
+      },
+      "jointlySafePreference": {
+        "TIE": 11,
+        "C": 3,
+        "ASTRA": 18
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "ASTRA_vs_V15": {
+      "safety": {
+        "SAFE/SAFE": 35,
+        "SAFE/UNSAFE": 12,
+        "SAFE/UNRESOLVED": 1
+      },
+      "jointlySafePreference": {
+        "TIE": 15,
+        "V15": 3,
+        "ASTRA": 17
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "C_vs_SOURCE": {
+      "safety": {
+        "SAFE/SAFE": 31,
+        "UNSAFE/UNSAFE": 15,
+        "UNRESOLVED/UNRESOLVED": 1,
+        "SAFE/UNSAFE": 1
+      },
+      "jointlySafePreference": {
+        "TIE": 19,
+        "C": 10,
+        "SOURCE": 2
+      },
+      "pairItemSafetyConflicts": 0
+    },
+    "ASTRA_vs_SOURCE": {
+      "safety": {
+        "SAFE/SAFE": 31,
+        "SAFE/UNSAFE": 16,
+        "SAFE/UNRESOLVED": 1
+      },
+      "jointlySafePreference": {
+        "TIE": 11,
+        "ASTRA": 20
+      },
+      "pairItemSafetyConflicts": 0
+    }
+  },
+  "raw": {
+    "changedSource": 41,
+    "v15FinalEqualsRaw": 27,
+    "cFinalEqualsRaw": 23,
+    "cSafeObjectiveYesRawVerbatimWhereV15Source": 0,
+    "v15RepairAccepted": 2,
+    "cRepairAccepted": 2,
+    "v15ChangedSafeObjectiveCompleteRawVerbatim": 18,
+    "cChangedSafeObjectiveCompleteRawVerbatim": 14,
+    "v15SourceTraceOutcomes": 24,
+    "cSourceTraceOutcomes": 28
+  },
+  "agreement": {
+    "itemFieldExact": {
+      "meaning": 190,
+      "objective": 183,
+      "voice": 191,
+      "factual": 190,
+      "collateral": 189,
+      "harmfulEditing": 149,
+      "safetyClass1": 186,
+      "safetyClass2": 192,
+      "safetyClass3": 192,
+      "safetyClass4": 190,
+      "writing": 185,
+      "restraint": 183,
+      "overallVsSource": 180,
+      "unnecessaryEditing": 188
+    },
+    "pairExact": {
+      "preference": 190,
+      "safety": 226
+    },
+    "itemMaterialDisagreementTargets": 62,
+    "pairDisagreementTargets": 53,
+    "eightRequiredItemDimensionsExact": 159
+  },
+  "unresolved": {
+    "itemsByArm": {
+      "SOURCE": 1,
+      "V15": 1,
+      "C": 1,
+      "ASTRA": 0
+    },
+    "jointlySafePairPreferences": {
+      "C_vs_V15": 0,
+      "ASTRA_vs_C": 0,
+      "ASTRA_vs_V15": 0,
+      "C_vs_SOURCE": 0,
+      "ASTRA_vs_SOURCE": 0
+    }
+  },
+  "sourceFallbackDespiteAnotherSafeCompleteEdit": {
+    "V15": 16,
+    "C": 20,
+    "ASTRA": 1
+  },
+  "alreadyGoodUnchanged": {
+    "SOURCE": 8,
+    "V15": 3,
+    "C": 2,
+    "ASTRA": 8
+  },
+  "explicitSuppliedUpdateYes": {
+    "SOURCE": 0,
+    "V15": 2,
+    "C": 0,
+    "ASTRA": 8
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "7fa64c0686912fa4eaec51a0",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "f342aa04f24f8e526f9e819f",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "With respect to the matter of surface appearance",
+          "reason": "The target sentence is unchanged."
+        }
+      ],
+      "notes": "Safe but requested simplification absent."
+    },
+    {
+      "opaqueItemId": "dd6e5f39deb0ad5152b2974a",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        }
+      ],
+      "notes": "Exact scope, remainder preserved."
+    },
+    {
+      "opaqueItemId": "89cb513ae539cdaf1bd5c0c5",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Inspect the surface of the rolls once they have cooled.",
+          "reason": "Direct and concrete inspection instruction, with timing preserved."
+        }
+      ],
+      "notes": "Slightly more natural than surface appearance; otherwise equivalent."
+    },
+    {
+      "opaqueItemId": "d6d928f024380d3fe2c657ba",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        }
+      ],
+      "notes": "Exact scope, remainder preserved."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "22d48822239207940be46700",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Inspect the surface of the rolls once they have cooled.",
+          "reason": "Direct and concrete inspection instruction, with timing preserved."
+        },
+        {
+          "field": "textB",
+          "quote": "With respect to the matter of surface appearance",
+          "reason": "The target sentence is unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "31511e2f9fb8479f757fc4a3",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        },
+        {
+          "field": "textB",
+          "quote": "With respect to the matter of surface appearance",
+          "reason": "The target sentence is unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "c6dd49faef8bab76087de8ec",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        },
+        {
+          "field": "textB",
+          "quote": "Inspect the surface of the rolls once they have cooled.",
+          "reason": "Direct and concrete inspection instruction, with timing preserved."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "b3d0b98b9892f43b7bc672ae",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        },
+        {
+          "field": "textB",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "6c3699062ec8635ac4d49108",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Inspect the surface of the rolls once they have cooled.",
+          "reason": "Direct and concrete inspection instruction, with timing preserved."
+        },
+        {
+          "field": "textB",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Simplifies the one sentence while retaining inspection timing."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

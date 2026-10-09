@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "c62f1da5ca33691cd42855eb",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "88a2f46417decf5196d6eb7b",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The exercise gave them a chance to discuss transcription choices.",
+          "reason": "Clear ordinary sentence, with only the target sentence changed."
+        }
+      ],
+      "notes": "Limited purpose and non-ranking preserved."
+    },
+    {
+      "opaqueItemId": "29e12771504bcd152d082c0a",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        }
+      ],
+      "notes": "Safe unchanged text; requested edit absent."
+    },
+    {
+      "opaqueItemId": "a687340fbc299d49da3bb52a",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        }
+      ],
+      "notes": "Safe unchanged text; requested edit absent."
+    },
+    {
+      "opaqueItemId": "efe3a0c47631c61de8e89b00",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The exercise gave students a chance to discuss transcription choices.",
+          "reason": "Equally clear ordinary restatement of the target sentence."
+        }
+      ],
+      "notes": "No material quality difference from the version using them."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "24c52e70de2758e7c29db24d",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        },
+        {
+          "field": "textB",
+          "quote": "The exercise gave students a chance to discuss transcription choices.",
+          "reason": "Equally clear ordinary restatement of the target sentence."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "fb21044102f096feaec2feb2",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        },
+        {
+          "field": "textB",
+          "quote": "The exercise gave them a chance to discuss transcription choices.",
+          "reason": "Clear ordinary sentence, with only the target sentence changed."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "ae3b48fcbd912b84c8304fe0",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The exercise gave them a chance to discuss transcription choices.",
+          "reason": "Clear ordinary sentence, with only the target sentence changed."
+        },
+        {
+          "field": "textB",
+          "quote": "The exercise gave students a chance to discuss transcription choices.",
+          "reason": "Equally clear ordinary restatement of the target sentence."
+        }
+      ],
+      "notes": "Comparable safety and objective fit."
+    },
+    {
+      "opaquePairId": "34cf5aa289d9d0b741523824",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        },
+        {
+          "field": "textB",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "2cd7148d493c5dff3f78895e",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The exercise gave students a chance to discuss transcription choices.",
+          "reason": "Equally clear ordinary restatement of the target sentence."
+        },
+        {
+          "field": "textB",
+          "quote": "engage in the undertaking of a discussion",
+          "reason": "Cumbersome target phrase remains."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

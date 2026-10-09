@@ -1,0 +1,118 @@
+{
+  "blindAdjudicationCaseId": "e2526d1d0719e412dd551058",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "2edf8723fdebeb59ac965bf4",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Update the hourly rate to \u00a348 and the total charge to \u00a3576. Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged.",
+          "reason": "Supplies the required correction or identifies missing replacement data."
+        },
+        {
+          "field": "text",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "The output is unchanged; superseded facts or unacknowledged missing replacement facts make the task incomplete, but no harm is introduced by editing."
+        }
+      ],
+      "notes": "The output is unchanged; superseded facts or unacknowledged missing replacement facts make the task incomplete, but no harm is introduced by editing."
+    },
+    {
+      "opaqueTargetId": "59443c67b649770ac08a5a8d",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Update the hourly rate to \u00a348 and the total charge to \u00a3576. Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged.",
+          "reason": "Supplies the required correction or identifies missing replacement data."
+        },
+        {
+          "field": "text",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "The output is unchanged; superseded facts or unacknowledged missing replacement facts make the task incomplete, but no harm is introduced by editing."
+        }
+      ],
+      "notes": "The output is unchanged; superseded facts or unacknowledged missing replacement facts make the task incomplete, but no harm is introduced by editing."
+    },
+    {
+      "opaqueTargetId": "191b6490ccbbc76a8dbe6d02",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Update the hourly rate to \u00a348 and the total charge to \u00a3576. Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged.",
+          "reason": "Supplies the required correction or identifies missing replacement data."
+        },
+        {
+          "field": "text",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "The output is unchanged; superseded facts or unacknowledged missing replacement facts make the task incomplete, but no harm is introduced by editing."
+        }
+      ],
+      "notes": "The output is unchanged; superseded facts or unacknowledged missing replacement facts make the task incomplete, but no harm is introduced by editing."
+    }
+  ],
+  "pairs": [
+    {
+      "opaqueTargetId": "50562f495d3f13ab5b8f6244",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Update the hourly rate to \u00a348 and the total charge to \u00a3576. Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged.",
+          "reason": "Establishes which facts need correction and whether replacements are available."
+        },
+        {
+          "field": "textA",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "Retains the old value as current."
+        },
+        {
+          "field": "textB",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "Retains the same superseded value."
+        }
+      ],
+      "notes": "Neither unchanged text is suitable as the requested corrected notice; it retains superseded facts without implementing or qualifying the update."
+    },
+    {
+      "opaqueTargetId": "4d2ba587bf7d916e12bdd4a4",
+      "preferred": "NEITHER",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Update the hourly rate to \u00a348 and the total charge to \u00a3576. Keep twelve hours, the scope of the work, the reference, and the payment terms unchanged.",
+          "reason": "Establishes which facts need correction and whether replacements are available."
+        },
+        {
+          "field": "textA",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "Retains the old value as current."
+        },
+        {
+          "field": "textB",
+          "quote": "twelve hours at \u00a345 per hour, for a total of \u00a3540.",
+          "reason": "Retains the same superseded value."
+        }
+      ],
+      "notes": "Neither unchanged text is suitable as the requested corrected notice; it retains superseded facts without implementing or qualifying the update."
+    }
+  ]
+}

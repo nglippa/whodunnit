@@ -1,0 +1,27 @@
+{
+  "blindAdjudicationCaseId": "e3407ecf03b5d671efb70f3c",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "cc82cf81a0648a9c4b0cbe34",
+      "resolved": {
+        "harmfulEditing": "NO"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Correct \u201ctop drawer\u201d to \u201cmiddle drawer\u201d in the glove paragraph. Keep the rest of this handover note exactly, including \u201cKEEP THE PATCH\u201d.",
+          "reason": "Specifies the required update."
+        },
+        {
+          "field": "text",
+          "quote": "There are six pairs of gloves in the top drawer.",
+          "reason": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+        }
+      ],
+      "notes": "Text is identical to the source. Required updates are missed, but no harmful editing is introduced."
+    }
+  ],
+  "pairs": []
+}

@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "e5939de8df9d1b2ca4d20b7f",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "07fe946b4041d3f38ca9833c",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        }
+      ],
+      "notes": "Exact authorized typo correction."
+    },
+    {
+      "opaqueItemId": "da7bf20d3084d813839e430e",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "cooled in a closed killn",
+          "reason": "The requested spelling error remains."
+        }
+      ],
+      "notes": "Safe unchanged facts; correction absent."
+    },
+    {
+      "opaqueItemId": "3a05e83e1c21ee57be67ab8f",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        }
+      ],
+      "notes": "Exact authorized typo correction."
+    },
+    {
+      "opaqueItemId": "96ed88e33f9109c8a7469dbb",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        }
+      ],
+      "notes": "Exact authorized typo correction."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "8bec23423fa73bd6b90cbd7e",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        },
+        {
+          "field": "textB",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "be9e3227886c0bffadbb6a0b",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        },
+        {
+          "field": "textB",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "29f33803da1ef359a7321143",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        },
+        {
+          "field": "textB",
+          "quote": "cooled in a closed killn",
+          "reason": "The requested spelling error remains."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "45edf16aa0ca618d4e627771",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        },
+        {
+          "field": "textB",
+          "quote": "cooled in a closed killn",
+          "reason": "The requested spelling error remains."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "acc0db585c9e2d5e221a28fe",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        },
+        {
+          "field": "textB",
+          "quote": "cooled in a closed kiln",
+          "reason": "Corrects the sole spelling error and preserves everything else."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    }
+  ]
+}

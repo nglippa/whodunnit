@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "7b28bf3fdc113ee97a965e4b",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "e5b310e0686f527f7f6d838c",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        }
+      ],
+      "notes": "Preserves title and touch distinction."
+    },
+    {
+      "opaqueItemId": "35963e37c4da1c0967897d85",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The current positioning of the table is in a location",
+          "reason": "Target sentence remains needlessly cumbersome."
+        }
+      ],
+      "notes": "Safe unchanged passage, no requested simplification."
+    },
+    {
+      "opaqueItemId": "ea4ed4b5a0d00c5485089ca6",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        }
+      ],
+      "notes": "Preserves title and touch distinction."
+    },
+    {
+      "opaqueItemId": "5c8adcd79cb41111e0eece55",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "The table is hard for visitors using wheelchairs to reach.",
+          "reason": "Clearer concise version of the target sentence; title and other restrictions intact."
+        }
+      ],
+      "notes": "Slightly cleaner than the version retaining current position; nearby move instruction supplies the location context."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "78cb65b4bfbef9aa3913fc05",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        },
+        {
+          "field": "textB",
+          "quote": "The table is hard for visitors using wheelchairs to reach.",
+          "reason": "Clearer concise version of the target sentence; title and other restrictions intact."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "f1f6946d3f7890b8876c46b8",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        },
+        {
+          "field": "textB",
+          "quote": "The table is hard for visitors using wheelchairs to reach.",
+          "reason": "Clearer concise version of the target sentence; title and other restrictions intact."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "0a4a5b49eb4313fe1a9ba452",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        },
+        {
+          "field": "textB",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "e54a23cba5165524c9efd71d",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The current positioning of the table is in a location",
+          "reason": "Target sentence remains needlessly cumbersome."
+        },
+        {
+          "field": "textB",
+          "quote": "The table's current position makes it hard",
+          "reason": "Simplifies only the target sentence and retains its meaning."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "778f215e530bdbcf09df3e50",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The current positioning of the table is in a location",
+          "reason": "Target sentence remains needlessly cumbersome."
+        },
+        {
+          "field": "textB",
+          "quote": "The table is hard for visitors using wheelchairs to reach.",
+          "reason": "Clearer concise version of the target sentence; title and other restrictions intact."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

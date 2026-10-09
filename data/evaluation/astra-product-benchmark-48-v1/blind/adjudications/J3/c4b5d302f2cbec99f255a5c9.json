@@ -1,0 +1,134 @@
+{
+  "blindAdjudicationCaseId": "c4b5d302f2cbec99f255a5c9",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "c55b7c36d68748477f0ce954",
+      "resolved": {
+        "meaning": "PRESERVED",
+        "factual": "PRESERVED_OR_AUTHORIZED",
+        "collateral": "PRESENT",
+        "safetyClass4": "ABSENT"
+      },
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "source",
+          "quote": "A trial involving visitors would help determine whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "The source predicts that another trial will contribute evidence."
+        },
+        {
+          "field": "text",
+          "quote": "A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "This is slightly more definite about informativeness. It does not assert a measured outcome, general superiority or a certainty that the difference will recur."
+        }
+      ],
+      "notes": "The small loss of epistemic caution is a collateral change, but measurements, limitations and cautious recommendation remain intact; no material unsupported finding is introduced."
+    },
+    {
+      "opaqueTargetId": "8906568e10305e0a14067bed",
+      "resolved": {
+        "meaning": "PRESERVED",
+        "factual": "PRESERVED_OR_AUTHORIZED",
+        "collateral": "PRESENT",
+        "safetyClass4": "ABSENT"
+      },
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "source",
+          "quote": "A trial involving visitors would help determine whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "The source predicts that another trial will contribute evidence."
+        },
+        {
+          "field": "text",
+          "quote": "A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "This is slightly more definite about informativeness. It does not assert a measured outcome, general superiority or a certainty that the difference will recur."
+        }
+      ],
+      "notes": "The small loss of epistemic caution is a collateral change, but measurements, limitations and cautious recommendation remain intact; no material unsupported finding is introduced."
+    }
+  ],
+  "pairs": [
+    {
+      "opaqueTargetId": "d065fce18d7f71abc2a1b7c0",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results therefore support only a further trial. A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "Retains the limited single-label task and need for another trial."
+        },
+        {
+          "field": "textB",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results therefore support only a further trial. A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "Retains the limitations and cautious trial recommendation."
+        }
+      ],
+      "notes": "Identical rewrites tie. Among rewrites, retaining help determine better preserves caution. The more definite rewrite remains safe and improves directness compared with the source."
+    },
+    {
+      "opaqueTargetId": "9e0fc31ddc92210a59c0d1b0",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results therefore support only a further trial. A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "Retains the limited single-label task and need for another trial."
+        },
+        {
+          "field": "textB",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results support conducting a further trial. A trial involving visitors would help determine whether the observed time difference also appears among people unfamiliar with the shelves.",
+          "reason": "Retains the limitations and cautious trial recommendation."
+        }
+      ],
+      "notes": "Identical rewrites tie. Among rewrites, retaining help determine better preserves caution. The more definite rewrite remains safe and improves directness compared with the source."
+    },
+    {
+      "opaqueTargetId": "c6882163b6ac7b1322f1a2ef",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results support conducting a further trial. A trial involving visitors would help determine whether the observed time difference also appears among people unfamiliar with the shelves.",
+          "reason": "Retains the limited single-label task and need for another trial."
+        },
+        {
+          "field": "textB",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results therefore support only a further trial. A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "Retains the limitations and cautious trial recommendation."
+        }
+      ],
+      "notes": "Identical rewrites tie. Among rewrites, retaining help determine better preserves caution. The more definite rewrite remains safe and improves directness compared with the source."
+    },
+    {
+      "opaqueTargetId": "98872ec0e6a14be96ba7f504",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. The results therefore support only a further trial. A trial with visitors would show whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "Retains the limited single-label task and need for another trial."
+        },
+        {
+          "field": "textB",
+          "quote": "The task involved a single deliberately misplaced label. Ordinary searching may involve several labels, unfamiliar categories, or interruptions. It is thus the practical suggestion of a further trial that is supported by the results. A trial involving visitors would help determine whether the observed time difference also appears among people without prior familiarity with the shelves.",
+          "reason": "Retains the limitations and cautious trial recommendation."
+        }
+      ],
+      "notes": "Identical rewrites tie. Among rewrites, retaining help determine better preserves caution. The more definite rewrite remains safe and improves directness compared with the source."
+    }
+  ]
+}

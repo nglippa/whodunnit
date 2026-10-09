@@ -1,0 +1,57 @@
+{
+  "blindAdjudicationCaseId": "048d5453c974b22bab0cffc2",
+  "judge": "J3",
+  "items": [],
+  "pairs": [
+    {
+      "opaqueTargetId": "30f9fe951792aa8d7fc93fe8",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The table's current position makes it hard for visitors using wheelchairs to reach.",
+          "reason": "Accurate simplification, with a little redundant phrasing."
+        },
+        {
+          "field": "textB",
+          "quote": "The table is hard for visitors using wheelchairs to reach.",
+          "reason": "The shorter sentence conveys the access problem clearly; the retained request to move it preserves the positional context."
+        },
+        {
+          "field": "textB",
+          "quote": "They may not touch the hanging work.",
+          "reason": "The touch restriction is preserved, as is the exact artist title."
+        }
+      ],
+      "notes": "Both satisfy the narrow edit safely. B has a modest clarity and economy advantage."
+    },
+    {
+      "opaqueTargetId": "13134715ef37db29e85e028b",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "The table's current position makes it hard for visitors using wheelchairs to reach.",
+          "reason": "Accurate simplification, with a little redundant phrasing."
+        },
+        {
+          "field": "textB",
+          "quote": "The table is hard for visitors using wheelchairs to reach.",
+          "reason": "The shorter sentence conveys the access problem clearly; the retained request to move it preserves the positional context."
+        },
+        {
+          "field": "textB",
+          "quote": "They may not touch the hanging work.",
+          "reason": "The touch restriction is preserved, as is the exact artist title."
+        }
+      ],
+      "notes": "Both satisfy the narrow edit safely. B has a modest clarity and economy advantage."
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "blindAdjudicationCaseId": "bb13ed55e85b1bbd3a9b8057",
+  "judge": "J3",
+  "items": [],
+  "pairs": [
+    {
+      "opaqueTargetId": "0b61b5158317aba1ea7c2a0f",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Preserves cooling before inspection."
+        },
+        {
+          "field": "textB",
+          "quote": "Inspect the surface of the rolls once they have cooled.",
+          "reason": "Preserves cooling before inspection."
+        }
+      ],
+      "notes": "Both safely change only the requested sentence. Inspect the surface of the rolls is a little more concrete and natural than check the surface appearance."
+    },
+    {
+      "opaqueTargetId": "c2306abe19d04e3361ef5335",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "MEDIUM",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "Inspect the surface of the rolls once they have cooled.",
+          "reason": "Preserves cooling before inspection."
+        },
+        {
+          "field": "textB",
+          "quote": "Check the surface appearance once the rolls have cooled.",
+          "reason": "Preserves cooling before inspection."
+        }
+      ],
+      "notes": "Both safely change only the requested sentence. Inspect the surface of the rolls is a little more concrete and natural than check the surface appearance."
+    }
+  ]
+}

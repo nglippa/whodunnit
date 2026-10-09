@@ -1,0 +1,212 @@
+{
+  "blindCaseId": "21d0f9d00684e582964d7de9",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "f037619ae6dfa9e6a8b668af",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        }
+      ],
+      "notes": "Exact scoped update."
+    },
+    {
+      "opaqueItemId": "2b427b515dfcb56a76ba5004",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        }
+      ],
+      "notes": "No factual mutation from source, but the returned current setup remains stale."
+    },
+    {
+      "opaqueItemId": "51a7b082518d537ef79a1e9a",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "ABSENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        }
+      ],
+      "notes": "Exact scoped update."
+    },
+    {
+      "opaqueItemId": "bfc06130ff8cbf22ccd916ec",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "UNSAFE_OR_UNRESOLVED",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "YES",
+      "safetyClass1": "PRESENT",
+      "safetyClass2": "ABSENT",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        }
+      ],
+      "notes": "No factual mutation from source, but the returned current setup remains stale."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "8a242093f44dbdf9346ffff1",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        },
+        {
+          "field": "textB",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "dffd6d69251e925e9fb54ab8",
+      "preferred": "TIE",
+      "textASafe": "NO",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        },
+        {
+          "field": "textB",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "01ae650442df3de085cbd736",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        },
+        {
+          "field": "textB",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "8c3b872519abb9cf7e20150f",
+      "preferred": "B",
+      "textASafe": "NO",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        },
+        {
+          "field": "textB",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "eb9375e6c4ce35f14b770868",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "NO",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "48 kHz, using the filename prefix CEDAR",
+          "reason": "Both and only the supplied replacements are made."
+        },
+        {
+          "field": "textB",
+          "quote": "44.1 kHz, using the filename prefix AMBER",
+          "reason": "Retains both superseded setup values without an incompletion qualification."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    }
+  ]
+}

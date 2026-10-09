@@ -1,0 +1,232 @@
+{
+  "blindCaseId": "ff248e7c0c22ea306e19a22a",
+  "judge": "J1",
+  "items": [
+    {
+      "opaqueItemId": "efdee9d769e6749a364cc470",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Safe counts and proposal status, but requested direct reconstruction absent."
+    },
+    {
+      "opaqueItemId": "03381d8a595d9d2d755aced3",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Safe counts and proposal status, but requested direct reconstruction absent."
+    },
+    {
+      "opaqueItemId": "291aa979e04afbf60cd5ccdb",
+      "meaning": "PRESERVED",
+      "objective": "YES",
+      "writing": "MUCH_BETTER",
+      "voice": "PRESERVED",
+      "restraint": "APPROPRIATE",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "OUTPUT_OVER_SOURCE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "We request permission to finish checking the library's donated puzzles",
+          "reason": "Leads with the concrete request."
+        },
+        {
+          "field": "text",
+          "quote": "The request is limited to this test and checking the remaining fourteen puzzles.",
+          "reason": "Preserves narrow scope and unapproved incomplete-puzzle proposal."
+        }
+      ],
+      "notes": "Counts, system limits, timings and tentative status retained in usable direct language."
+    },
+    {
+      "opaqueItemId": "7efed577ec67a2981c4b640d",
+      "meaning": "PRESERVED",
+      "objective": "NO",
+      "writing": "ABOUT_SAME",
+      "voice": "PRESERVED",
+      "restraint": "MISSED_NEEDED_EDIT",
+      "factual": "PRESERVED_OR_AUTHORIZED",
+      "collateral": "NONE",
+      "overallVsSource": "TIE",
+      "unnecessaryEditing": "NO",
+      "harmfulEditing": "NO",
+      "safetyClass1": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass2": "NOT_APPLICABLE_TO_OBJECTIVE",
+      "safetyClass3": "ABSENT",
+      "safetyClass4": "ABSENT",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "text",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Safe counts and proposal status, but requested direct reconstruction absent."
+    }
+  ],
+  "pairs": [
+    {
+      "opaquePairId": "faa6715c0ed0173c5f884f74",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "We request permission to finish checking the library's donated puzzles",
+          "reason": "Leads with the concrete request."
+        },
+        {
+          "field": "textA",
+          "quote": "The request is limited to this test and checking the remaining fourteen puzzles.",
+          "reason": "Preserves narrow scope and unapproved incomplete-puzzle proposal."
+        },
+        {
+          "field": "textB",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "fb07f27f066d6344af7f4bab",
+      "preferred": "A",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "We request permission to finish checking the library's donated puzzles",
+          "reason": "Leads with the concrete request."
+        },
+        {
+          "field": "textA",
+          "quote": "The request is limited to this test and checking the remaining fourteen puzzles.",
+          "reason": "Preserves narrow scope and unapproved incomplete-puzzle proposal."
+        },
+        {
+          "field": "textB",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Preferred A has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "a2202e0a40e7b59248ff5c2d",
+      "preferred": "B",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        },
+        {
+          "field": "textB",
+          "quote": "We request permission to finish checking the library's donated puzzles",
+          "reason": "Leads with the concrete request."
+        },
+        {
+          "field": "textB",
+          "quote": "The request is limited to this test and checking the remaining fourteen puzzles.",
+          "reason": "Preserves narrow scope and unapproved incomplete-puzzle proposal."
+        }
+      ],
+      "notes": "Preferred B has the stronger safe combination of objective fit, preservation and writing quality."
+    },
+    {
+      "opaquePairId": "bdf12c55abbdbc4cd9007ce1",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        },
+        {
+          "field": "textB",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    },
+    {
+      "opaquePairId": "58adfa2f6ac0c6d59788c895",
+      "preferred": "TIE",
+      "textASafe": "YES",
+      "textBSafe": "YES",
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "textA",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        },
+        {
+          "field": "textB",
+          "quote": "This memo seeks to articulate a comprehensive overview",
+          "reason": "Inflated wording and buried request remain unchanged."
+        }
+      ],
+      "notes": "Identical texts receive identical judgments."
+    }
+  ]
+}

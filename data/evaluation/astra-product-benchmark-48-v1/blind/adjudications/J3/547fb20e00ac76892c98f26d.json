@@ -1,0 +1,27 @@
+{
+  "blindAdjudicationCaseId": "547fb20e00ac76892c98f26d",
+  "judge": "J3",
+  "items": [
+    {
+      "opaqueTargetId": "1a53c70c5f21dabe9faadc54",
+      "resolved": {
+        "voice": "NOT_APPLICABLE"
+      },
+      "confidence": "HIGH",
+      "evidence": [
+        {
+          "field": "objective",
+          "quote": "Turn this ironic review into a sincere endorsement of the notebook",
+          "reason": "The objective explicitly asks to change the ironic stance and register, so preserving the original ironic voice is not a requirement."
+        },
+        {
+          "field": "text",
+          "quote": "I would not recommend this executive notebook.",
+          "reason": "The literal negative evaluation is preserved while the ironic presentation changes."
+        }
+      ],
+      "notes": "The requested endorsement conflicts with preserving the negative evaluation and purchase decision. This field concerns applicability of voice preservation, not whether endorsement was achieved."
+    }
+  ],
+  "pairs": []
+}
