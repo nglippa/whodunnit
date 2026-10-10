@@ -1,0 +1,66 @@
+{
+  "version": "editorial-intelligence-holdout-v1",
+  "authorship": "Newly authored for this experiment before any model generation; not drawn from Candidate D development cases.",
+  "cases": [
+    {
+      "id": "EI-001", "stratum": "already_good",
+      "source": "The spare key is in the blue mug beside the kettle. If the back door sticks, lift the handle before turning it. I'll be home around six, but don't wait for me to eat.",
+      "objective": "Make this note sound natural if it needs help. Keep the instructions and the relaxed tone. Leave it unchanged if it already works."
+    },
+    {
+      "id": "EI-002", "stratum": "already_good",
+      "source": "We found the fault in the cable, not the sensor. The replacement cable passed our bench check this morning. We still need to test it on the installed unit before closing the ticket.",
+      "objective": "Keep this service update clear and natural. Preserve the distinction between the completed bench check and the pending installed-unit test. Editing is optional."
+    },
+    {
+      "id": "EI-003", "stratum": "synthetic",
+      "source": "The purpose of this communication is to provide an overview of the umbrella borrowing process. Individuals wishing to participate in umbrella borrowing should undertake the selection of an umbrella from the stand situated adjacent to the reception desk. Upon completion of use, a return action should be carried out by placing the umbrella in the tray marked WET. This arrangement enables the facilitation of drying before subsequent borrowing. No payment is required. The umbrellas should remain within the building grounds.",
+      "objective": "Turn this into natural, useful instructions. Reconstruct substantially if that helps, but retain every instruction, the WET label, the free borrowing policy and the restriction on where umbrellas may be used."
+    },
+    {
+      "id": "EI-004", "stratum": "synthetic",
+      "source": "Within the context of the rehearsal process, it is important to recognize the value of listening as a shared activity. We carried out a first run with the drums removed. This created an opportunity for the singers to identify the places where their entries did not align. We then undertook a second run with the drums restored. The second run felt steadier to us, although we did not make a recording. Moving forward, the intention is to repeat this exercise at the next rehearsal rather than to treat it as evidence that the arrangement has been finalized.",
+      "objective": "Rewrite this rehearsal note so it sounds like a band member wrote it. Preserve what happened, the lack of a recording and the tentative plan. Do not turn the group's impression into a measured result."
+    },
+    {
+      "id": "EI-005", "stratum": "mixed_quality",
+      "source": "Bring a towel. A proper one, not the tiny gym thing. The changing-room floor gets wet, and the hooks are usually full by seven. In terms of the locker access procedure, visitors are required to engage in the acquisition of a token from the counter prior to commencing their swim. You get the token back when you open the locker. I keep mine in my shoe so I don't spend ten minutes patting every pocket.",
+      "objective": "Make the awkward locker sentence fit the rest of this advice. Keep the practical facts and the dry, chatty voice. Do not smooth away the fragments or rewrite the whole paragraph just to make it uniform."
+    },
+    {
+      "id": "EI-006", "stratum": "mixed_quality",
+      "source": "The lift will be unavailable while the doors are repaired. We expect the work to take two mornings, but that depends on the replacement hinge arriving. There is a possibility that a revised scheduling arrangement may need to be implemented in the event of a delivery delay. The stairs will remain open. If you need step-free access, call reception before you travel; we cannot promise an alternative entrance yet.",
+      "objective": "Make this notice direct and natural, especially the scheduling sentence. Preserve uncertainty about delivery and the absence of a promised accessible alternative."
+    },
+    {
+      "id": "EI-007", "stratum": "supplied_update",
+      "source": "The pottery class starts at 10:15 a.m. in Studio Cedar. Please bring an apron and a small towel. The materials fee is £18, payable at the desk. The children's session in Studio Birch still starts at 10:15 a.m. Refunds are available until the day before your class.",
+      "objective": "The pottery class now starts at 11:00 a.m. and its materials fee is £22. Update those two facts only. Keep the children's session, location, packing advice and refund terms unchanged."
+    },
+    {
+      "id": "EI-008", "stratum": "supplied_update",
+      "source": "Send applications to grants@juniper.example with LOCAL- in the subject line. The maximum request is $1,200. The equipment fund uses grants@juniper.example too, but its subject prefix is EQUIP- and its maximum is $3,000. Neither fund reimburses purchases made before approval.",
+      "objective": "For the local fund only, replace LOCAL- with NEIGHBOR- and change the maximum request to $1,450. Do not change either email address, the equipment-fund details or the reimbursement restriction."
+    },
+    {
+      "id": "EI-009", "stratum": "voice_sensitive",
+      "source": "I kept the chipped bowl. Of course I did. The sensible bowls stack neatly and go in the dishwasher, but this one sits crooked on the shelf, looking pleased with itself. Dad used it for peanuts. That's all; I'm not claiming it holds some grand secret of our family. Still, when I reach for it, I take a little more care.",
+      "objective": "Help this reflection read naturally without losing its understated affection or odd little jokes. Avoid making it more sentimental. Leave the fragments and the bowl's personification alone if they work."
+    },
+    {
+      "id": "EI-010", "stratum": "voice_sensitive",
+      "source": "I wasn't brave about the appointment. I arrived early because being late would have given me an excuse to leave. The waiting room had a fern with three brown leaves; I counted them twice. When they called my name, I went in. I'm glad I went, though I can't say I felt better on the way home.",
+      "objective": "Lightly improve the flow while preserving the plain, uneasy voice. Do not add a lesson, a diagnosis or a recovery narrative. Keep the uncertainty about feeling better."
+    },
+    {
+      "id": "EI-011", "stratum": "professional",
+      "source": "Our review found three duplicate entries in the April register. Removing them would reduce the reported total from 86 to 83. We have not changed the register because two department leads have not confirmed which entries should remain. The figures in the published quarterly report therefore still reflect the original register. Please treat 83 as a proposed correction, not an approved total.",
+      "objective": "Make this internal note concise and readable. Preserve the counts, the pending confirmations and the distinction between a proposed correction and the published total."
+    },
+    {
+      "id": "EI-012", "stratum": "professional",
+      "source": "The pilot used borrowed tablets for one afternoon. Four volunteers tried the booking form; two stopped at the payment screen because they had no test card. We did not collect completion times. The comments suggest that the room picker is confusing, but this small session cannot tell us how often that problem occurs. We recommend another test with payment enabled before deciding whether to change the form.",
+      "objective": "Rewrite this pilot summary for a busy project lead. Substantial reordering is fine if useful. Preserve the limits of the evidence and the recommendation; do not invent performance measurements or an approval decision."
+    }
+  ]
+}

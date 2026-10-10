@@ -1,0 +1,38 @@
+{
+  "checkpoint": "250459c",
+  "status": "BLOCKED_BEFORE_GENERATION",
+  "actualEditorModel": null,
+  "actualDiagnosisModel": null,
+  "actualJudgeModel": null,
+  "requestedEditorModel": "gpt-6-astra",
+  "requestedJudgeModel": "gpt-6.1-sol",
+  "referenceModels": {
+    "GPT-6 Astra": { "catalogVisible": true, "liveInvocationVerified": false, "outputIncluded": false },
+    "Claude Opus 5.5": { "liveInvocationVerified": false, "outputIncluded": false }
+  },
+  "checks": {
+    "openaiApiCredentialConfigured": false,
+    "anthropicApiCredentialConfigured": false,
+    "codexAccountAuthenticated": true,
+    "claudeMcpAuthenticated": true,
+    "claudeMcpReady": true,
+    "claudeMcpCatalogAuthority": "advisory static; does not establish Opus 5.5 entitlement",
+    "claudeMcpContract": "critique envelope, not an audited neutral editor transport",
+    "codexExecHelp": "blocked by PreToolUse: Stack delegation guard: use the two native worker slots; do not launch additional CLI model sessions"
+  },
+  "blockers": [
+    "No configured OpenAI/Anthropic API credential or permitted audited account-backed editor transport for exact model receipts.",
+    "Catalog visibility and authenticated login do not prove live model entitlement or returned runtime identity.",
+    "No verified independent blind judge transport with exact identity and usage receipts.",
+    "Existing manual Astra output imports lack runtime model identity and are unsuitable for this experiment."
+  ],
+  "editorCalls": 0,
+  "diagnosisCalls": 0,
+  "judgeCalls": 0,
+  "referenceCalls": 0,
+  "modelSubstitutions": 0,
+  "pricingVerified": false,
+  "inferenceCostUsd": null,
+  "latencyMs": null,
+  "notes": "Free readiness/catalog checks only. No paid inference was attempted. Null cost/latency means unmeasured, not zero-cost inference. No capacity or permission guard was bypassed."
+}

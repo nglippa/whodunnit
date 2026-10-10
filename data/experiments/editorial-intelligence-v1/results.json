@@ -1,0 +1,61 @@
+{
+  "decision": "C — EXPERIMENT INCOMPLETE",
+  "status": "PREPARED_BLOCKED",
+  "checkpoint": "250459c",
+  "protocol": {
+    "version": "editorial-intelligence-v1",
+    "editorModel": "gpt-6-astra",
+    "judgeModel": "gpt-6.1-sol",
+    "reasoningEffort": "high",
+    "blindSeed": "editorial-intelligence-v1:250459c:before-generation",
+    "outputTokenCaps": {
+      "direct": 6144,
+      "diagnosis": 2048,
+      "reconstruction": 4096,
+      "judge": 4096
+    },
+    "attemptsPerStage": 1,
+    "tools": false,
+    "sessionMemory": false,
+    "meaningfulAdvantage": {
+      "minimumNetWinsFraction": 0.25,
+      "twoSidedSignTestAlpha": 0.05
+    },
+    "references": {
+      "astra": "identical to arm A if exact model identity verified",
+      "opus55": "omitted unless independently verified available"
+    }
+  },
+  "caseCount": 12,
+  "sourceAuthorship": "Newly authored for this experiment before any model generation; not drawn from Candidate D development cases.",
+  "holdoutSha256": "5a941581195cb1352b34ff0dc3b7d679458071bbd547a2fa36baa672bb11f74c",
+  "availabilitySha256": "d652ebe3c77aa8bb8758014cb978554ffc1951b23bdde3c8ab3342c02a1d26e2",
+  "priorEvaluationInventory": {
+    "files": 735,
+    "sourceFields": 2774,
+    "sha256": "58638fd605f1be901aacdfbcbe1961bc3eee77f1d38646671711fa1dd0becfa9",
+    "collisionCheck": "normalized whitespace SOURCE equality; no semantic novelty claim"
+  },
+  "blindSeedSha256": "5705d9c46e5466f89b65166f58eb6973a2d17ad3a47e636acfd36b1cccfe4f73",
+  "promptsSha256": {
+    "directAndReconstruction": "b8a09b706f49ebc83e92e839cc7100b91fd34e5c4dcea3cf832490e44a072c0d",
+    "diagnosis": "1807c650802378e1f625ef4201975f8567b06979786490b90178b7a0a7b8a9f7",
+    "judge": "2401380abf44b34485db61c2d22007bc4a52cec1fbca5ff26c5a9d6228a76cca"
+  },
+  "schemasSha256": {
+    "diagnosis": "eea6cf923d12dd102027366ec2f12cf6ff0a15248f62723c1cf12d7207ff9522",
+    "final": "d71a1e245f5324284abfb84ba1a10c7130a5891c7942ad2b7a4bbe2b94f84242",
+    "judgment": "b88b321ddb57e532a40b2887829e1a70497fdfe71731ef0f0031755b2123d215"
+  },
+  "implementationSha256": {
+    "tools/editorial-intelligence/experiment.ts": "24ede22dcdbecae72cabb51108f53b4627c70c7341d473aba1815771a7175a35",
+    "tools/editorial-intelligence/experiment.test.ts": "81cb7c4e2890424fb728ce6833157514eba0dbcd92413e715f9a627bb0e89e90",
+    "tools/editorial-intelligence/validate.ts": "832614ceef213c278da4e91730e58be45cdfa16441dd186510d1408175953364",
+    "tools/editorial-intelligence/vitest.config.ts": "f2bc93b5af685cc7f7dec4ed046b314749c4c3958ea4b70035dedf9e6001488b"
+  },
+  "outputsGenerated": 0,
+  "casesJudged": 0,
+  "results": null,
+  "costLatencyComparison": null,
+  "recommendation": "Do not accept or reject specialization from this preparation. Run once exact editor and independent judge transports are available; otherwise keep C."
+}
