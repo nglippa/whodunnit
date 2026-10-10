@@ -1,0 +1,16 @@
+[
+  {
+    "caseId": "EI-003",
+    "source": "The purpose of this communication is to provide an overview of the umbrella borrowing process. Individuals wishing to participate in umbrella borrowing should undertake the selection of an umbrella from the stand situated adjacent to the reception desk. Upon completion of use, a return action should be carried out by placing the umbrella in the tray marked WET. This arrangement enables the facilitation of drying before subsequent borrowing. No payment is required. The umbrellas should remain within the building grounds.",
+    "objective": "Turn this into natural, useful instructions. Reconstruct substantially if that helps, but retain every instruction, the WET label, the free borrowing policy and the restriction on where umbrellas may be used.",
+    "X": "To borrow an umbrella, choose one from the stand next to the reception desk. No payment is required. The umbrellas should remain within the building grounds.\n\nWhen you\u2019re finished, return the umbrella to the tray marked WET so it can dry before someone borrows it again.",
+    "Y": "Umbrellas are free to borrow. Choose one from the stand next to the reception desk, and keep it within the building grounds. When you're finished, place it in the tray marked WET so it can dry before someone else borrows it."
+  },
+  {
+    "caseId": "EI-001",
+    "source": "The spare key is in the blue mug beside the kettle. If the back door sticks, lift the handle before turning it. I'll be home around six, but don't wait for me to eat.",
+    "objective": "Make this note sound natural if it needs help. Keep the instructions and the relaxed tone. Leave it unchanged if it already works.",
+    "X": "The spare key is in the blue mug beside the kettle. If the back door sticks, lift the handle before turning it. I'll be home around six, but don't wait for me to eat.",
+    "Y": "The spare key is in the blue mug beside the kettle. If the back door sticks, lift the handle before turning it. I'll be home around six, but don't wait for me to eat."
+  }
+]

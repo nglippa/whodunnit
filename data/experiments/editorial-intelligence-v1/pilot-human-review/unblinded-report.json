@@ -1,0 +1,58 @@
+{
+  "classification": "TWO_CASE_EXPLORATORY",
+  "decision": "B — DIRECT EDITING WINS EXPLORATORY PILOT",
+  "preferenceCounts": {
+    "direct": 1,
+    "specialized": 0,
+    "ties": 1
+  },
+  "caseResults": [
+    {
+      "caseId": "EI-003",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindedPreference": "Y",
+      "confidence": "MEDIUM",
+      "winner": "direct",
+      "bothMeaningSafe": true,
+      "bothObjectivesComplete": true,
+      "materialDefects": {
+        "direct": [],
+        "specialized": []
+      },
+      "bothUnchangedFromSource": false,
+      "diagnosisBenefitEstablished": false,
+      "unnecessaryRewritingEstablished": false
+    },
+    {
+      "caseId": "EI-001",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindedPreference": "TIE",
+      "confidence": "HIGH",
+      "winner": "TIE",
+      "bothMeaningSafe": true,
+      "bothObjectivesComplete": true,
+      "materialDefects": {
+        "direct": [],
+        "specialized": []
+      },
+      "bothUnchangedFromSource": true,
+      "diagnosisBenefitEstablished": false,
+      "unnecessaryRewritingEstablished": false
+    }
+  ],
+  "judgmentSha256": "76ab71696d62b08fd70134ec0da94a5190b17065ab37f01eb15e2680ad92adf0",
+  "packetSha256": "a29471ef9f18641f6b2f190f8f6b53efd443371acc1c16db8571abd0d62fd211",
+  "mappingSha256": "d39be2cdc8487085cdbcaed42c35b499012fb139a482a6b322cbf4976cd27295",
+  "unblindedAt": "2026-10-10T19:41:14.368821+00:00",
+  "statisticalSignificanceClaim": false,
+  "limits": [
+    "Only two selected cases; no general superiority conclusion.",
+    "All dimension ratings tied at 5/5; EI-003 preference favors direct with medium confidence.",
+    "No preference rationale supplied; do not infer a stylistic or causal explanation.",
+    "Mixed account provenance; responding identities and inference controls not independently verified.",
+    "No material defects or objective failures reported; no evidence of unnecessary rewriting."
+  ],
+  "newModelCallsThisPass": 0
+}
