@@ -1,5 +1,7 @@
 # Candidate D safe-edit coverage replay
 
+Current final mechanical pass: [V3 report](CANDIDATE-D-MECHANICAL-REPLAY.md) — **22 completed / 8 KEEP / 18 abstained**, recovering 036 only relative to this preserved V2 baseline. Semantic verification is the next architecture boundary.
+
 **Decision: B — PARTIAL COVERAGE RECOVERED.** Starting checkpoint: `9e0052c`.
 
 The isolated `candidate-d-safe-edit-v2` route recovers **10/23** previously withheld SAFE V15 finals. It delivers **21 COMPLETED, 8 KEEP, 19 ABSTAINED**, versus V1’s 11/8/29. Only ten ordinary EDIT cases change; every recovered output is exactly the frozen V15 RAW and FINAL.

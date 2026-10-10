@@ -36,7 +36,11 @@ const rootCause = (id: string, state: string) => {
   return "MISSING_UNCERTAIN_OR_CONFLICTING_REQUIREMENT";
 };
 
-export async function replayCandidateDSafeEdit() {
+type ReplayAdapter = (input: Parameters<typeof runCandidateDSafeEditV2>[0],
+  editor: Parameters<typeof runCandidateDSafeEditV2>[1], reviews: readonly FrozenEditReview[]) =>
+  Promise<Omit<Awaited<ReturnType<typeof runCandidateDSafeEditV2>>, "version" | "verificationRoute"> & { verificationRoute: string }>;
+
+export async function replayCandidateDSafeEdit(runAdapter: ReplayAdapter = runCandidateDSafeEditV2) {
   // V1 validates all frozen input fingerprints/inventories and retains the
   // original selection code. Recompute its comparison instead of trusting labels.
   const previous = await replayCandidateD();
@@ -54,7 +58,7 @@ export async function replayCandidateDSafeEdit() {
     const reviews = reviewsFromFrozenV15(row, v15);
     const request = assertCaseInputExact(row.source, row.objective);
     let rawReads = 0;
-    const result = await runCandidateDSafeEditV2({ request, objective: row.objective, quality: prior.qualityAssessment }, async () => {
+    const result = await runAdapter({ request, objective: row.objective, quality: prior.qualityAssessment }, async () => {
       rawReads++;
       return v15.raw;
     }, reviews);
@@ -63,9 +67,9 @@ export async function replayCandidateDSafeEdit() {
     // Read judging only after selection, for comparisons, never to grant a return.
     const matchingArms = text === null ? [] : outputs.filter(item => item.caseId === row.caseId && item.text === text).map(item => item.arm);
     const inheritedSafety = matchingArms.map(arm => judgment.arms[arm].safety);
-    const staleProbe = await runCandidateDSafeEditV2({ request, objective: row.objective, quality: prior.qualityAssessment }, async () => row.source, reviews);
+    const staleProbe = await runAdapter({ request, objective: row.objective, quality: prior.qualityAssessment }, async () => row.source, reviews);
     const unsafeFinalProbe = judgment.arms.V15.safety === "UNSAFE"
-      ? await runCandidateDSafeEditV2({ request, objective: row.objective, quality: prior.qualityAssessment }, async () => v15.text, reviews) : null;
+      ? await runAdapter({ request, objective: row.objective, quality: prior.qualityAssessment }, async () => v15.text, reviews) : null;
     const diff = text === null ? null : diffWordsWithSpace(v15.text, text).filter(part => part.added || part.removed)
       .map(part => ({ operation: part.added ? "ADD" : "REMOVE", text: part.value }));
     const entry = {

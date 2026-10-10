@@ -128,3 +128,7 @@ Use frozen cases as fixtures without changing them, plus small negative controls
 - The 48-case internal benchmark does not estimate rare-event safety. Text-only judgments cannot establish what a separate UI disclosure would communicate.
 
 **Flow:** SOURCE + OBJECTIVE → classify SOURCE validity and required/optional changes → KEEP if already sufficient → otherwise bind only authorized deltas → editor or verified minimal update → objective-aware deterministic and semantic verification → scoped repair only when justified → full recheck → completed valid final, valid SOURCE fallback, or explicit abstention/reference.
+
+## Final isolated mechanical slice
+
+The [V3 mechanical replay](CANDIDATE-D-MECHANICAL-REPLAY.md) adds explicit caller-supplied sentence-edit intent without changing the objective-state classifier. It requires one unique source sentence, identical outside bytes, unchanged V15 verification with an exact-bound captured PASS, a preserved deterministic verdict and zero authorized factual changes. The original classification remains visible. KEEP and required-update gates remain unchanged; unverifiable candidates abstain. This offline annotation is not an automatic classifier or production integration. Only 036 recovers; 022 lacks D binding authority and stays abstained. Semantic verification is the next architecture boundary; this is the final deterministic recovery slice.

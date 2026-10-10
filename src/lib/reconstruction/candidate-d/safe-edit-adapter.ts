@@ -16,6 +16,31 @@ export type CandidateDSafeEditResult = Omit<CandidateDResult, "version"> & {
   rawFallbackReason: string | null;
 };
 
+/** Reexecute unchanged V15 verification using only exact-bound frozen evidence. */
+export async function verifyFrozenV15Candidate(request: ReconstructionRequest, objective: string,
+  candidate: string, reviews: readonly FrozenEditReview[]) {
+  const info = { mode: "demo" as const, provider: "frozen-candidate-d", model: null };
+  const generationReport = () => ({ applied: [], unsupported: [], declared: [] });
+  const verifier: StructuredCaller = {
+    info, generationReport,
+    async callStructured(schema, name, _system, user) {
+      const payload = JSON.parse(user) as { source: string; objective: string; candidate: string };
+      const bound = reviews.filter(item => item.source === payload.source && item.objective === payload.objective && item.candidate === payload.candidate);
+      if (name !== "candidate-verifier" || bound.length !== 1) throw new Error("No unique exact-text frozen review");
+      return { data: schema.parse(bound[0].review), meta: {} };
+    },
+  };
+
+  const savedEditor: StructuredCaller = {
+    info, generationReport,
+    async callStructured(schema, name) {
+      if (name !== "frontier-editor") throw new Error("Unexpected frozen stage");
+      return { data: schema.parse({ text: candidate, changes: [] }), meta: {} };
+    },
+  };
+  return runDirectiveScopedTemporalReconstruction(request, objective, { editor: savedEditor, verifier });
+}
+
 /** Offline thin route. The editor and required-update gate are unchanged.
  * V15 rechecks ordinary RAW deterministically, schema-validates its saved
  * semantic review, and checks voice/objective completion. No saved FINAL or
@@ -39,27 +64,7 @@ export async function runCandidateDSafeEditV2(input: {
   } catch {
     return finish({ status: "ABSTAINED", text: null, reason: "EDITOR_UNAVAILABLE" }, "ABSTAINED", null);
   }
-  const info = { mode: "demo" as const, provider: "frozen-candidate-d", model: null };
-  const generationReport = () => ({ applied: [], unsupported: [], declared: [] });
-  const verifier: StructuredCaller = {
-    info, generationReport,
-    async callStructured(schema, name, _system, user) {
-      const payload = JSON.parse(user) as { source: string; objective: string; candidate: string };
-      const bound = reviews.filter(item => item.source === payload.source && item.objective === payload.objective && item.candidate === payload.candidate);
-      if (name !== "candidate-verifier" || bound.length !== 1) throw new Error("No unique exact-text frozen review");
-      return { data: schema.parse(bound[0].review), meta: {} };
-    },
-  };
-  const verify = async (candidate: string) => {
-    const savedEditor: StructuredCaller = {
-      info, generationReport,
-      async callStructured(schema, name) {
-        if (name !== "frontier-editor") throw new Error("Unexpected frozen stage");
-        return { data: schema.parse({ text: candidate, changes: [] }), meta: {} };
-      },
-    };
-    return runDirectiveScopedTemporalReconstruction(request, objective, { editor: savedEditor, verifier });
-  };
+  const verify = (candidate: string) => verifyFrozenV15Candidate(request, objective, candidate, reviews);
   const checked = await verify(raw);
   // V15 SOURCE fallback is intentionally not counted as a verified result.
   if ((checked.trace.outcome === "accepted" || checked.trace.outcome === "unchanged") && checked.text === raw)
