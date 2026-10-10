@@ -1,0 +1,45 @@
+{
+  "version": "editorial-transport-discovery-v1",
+  "checkpoint": "3f622ea",
+  "catalogs": [
+    {
+      "provider": "gemini",
+      "endpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+      "credentialConfigured": true,
+      "startedAt": "2026-10-10T04:30:23.146Z",
+      "latencyMs": 25.18912499999999,
+      "requests": 1,
+      "httpStatuses": [],
+      "authenticated": false,
+      "complete": false,
+      "modelIds": [],
+      "requestedEditorListed": false,
+      "requestedJudgeListed": false,
+      "safeProjectionSha256": null,
+      "failure": "NETWORK"
+    },
+    {
+      "provider": "groq",
+      "endpoint": "https://api.groq.com/openai/v1/models",
+      "credentialConfigured": true,
+      "startedAt": "2026-10-10T04:30:23.171Z",
+      "latencyMs": 1.2553340000000048,
+      "requests": 1,
+      "httpStatuses": [],
+      "authenticated": false,
+      "complete": false,
+      "modelIds": [],
+      "requestedEditorListed": false,
+      "requestedJudgeListed": false,
+      "safeProjectionSha256": null,
+      "failure": "NETWORK"
+    }
+  ],
+  "metadataHttpRequests": 2,
+  "editorCalls": 0,
+  "diagnosisCalls": 0,
+  "judgeCalls": 0,
+  "actualModelIdentities": [],
+  "smokeTest": "NOT_EXECUTED",
+  "caveat": "Authenticated catalog results verify metadata access only. No model availability, inference identity or free quota is inferred from login/subscription."
+}
