@@ -7,7 +7,7 @@ describe("read-only model transport discovery", () => {
   it("validates the saved authenticated evidence and separate sandbox failures", () => {
     const root = "data/experiments/editorial-intelligence-v1";
     const reports = ["transport-discovery.json", "transport-discovery-sandbox.json"]
-      .map(name => JSON.parse(readFileSync(`${root}/${name}`, "utf8")));
+      .map(name => JSON.parse(readFileSync(`${root}/${name}`, "utf8")) as Awaited<ReturnType<typeof discoverConfiguredCatalogs>>);
     for (const report of reports) {
       expect(report).toMatchObject({ checkpoint: "3f622ea", metadataHttpRequests: 2,
         editorCalls: 0, diagnosisCalls: 0, judgeCalls: 0, actualModelIdentities: [], smokeTest: "NOT_EXECUTED" });

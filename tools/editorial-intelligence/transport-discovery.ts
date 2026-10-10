@@ -39,7 +39,7 @@ export async function discoverCatalog(provider: Provider, env: Environment, fetc
   };
   if (!key) { report.failure = "NO_CREDENTIAL"; return finish(); }
   const secretValues = Object.entries(env).filter(([name, value]) => /KEY|TOKEN|SECRET|PASSWORD/i.test(name) && value).map(([, value]) => value!);
-  const headers = provider === "gemini" ? { "x-goog-api-key": key } : { Authorization: `Bearer ${key}` };
+  const headers: Record<string, string> = provider === "gemini" ? { "x-goog-api-key": key } : { Authorization: `Bearer ${key}` };
   let pageToken: string | undefined;
   for (let page = 0; page < 10; page++) {
     const url = new URL(settings.endpoint);

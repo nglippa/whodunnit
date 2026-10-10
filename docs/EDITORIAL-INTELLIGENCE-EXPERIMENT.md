@@ -2,6 +2,8 @@
 
 **C — EXPERIMENT INCOMPLETE.** Starting checkpoint: `250459c`. The isolated implementation and fresh holdout are prepared and validated; live generation and independent judging are blocked. There is no evidence yet for accepting or rejecting the specialization hypothesis.
 
+Follow-up: a [manual export/import workflow](EDITORIAL-MANUAL-WORKFLOW.md) now prepares this same Astra experiment for user-operated authenticated sessions, preserves response bytes and available provenance, and exports blinded comparisons. The historical results below remain unchanged; exporting prompts is not model execution.
+
 ## Actual execution and model identity
 
 | Role | Planned exact model | Actual model / outputs |
