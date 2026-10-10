@@ -1,98 +1,160 @@
-# Candidate D frozen 48-case replay
+# Candidate D safe-edit coverage replay
 
-**Decision: B — ADAPTER WORKS, REPLAY EXPOSES FAILURES.**
+**Decision: B — PARTIAL COVERAGE RECOVERED.** Starting checkpoint: `9e0052c`.
 
-The isolated `candidate-d-control-v1` adapter classifies SOURCE + OBJECTIVE before editor access and passes frozen V15 RAW through the existing exact authorized-update gate. Published V15/C, the older post-V3 D arm, prompts, corpus, and Astra artifacts are unchanged. No live model calls were made.
+The isolated `candidate-d-safe-edit-v2` route recovers **10/23** previously withheld SAFE V15 finals. It delivers **21 COMPLETED, 8 KEEP, 19 ABSTAINED**, versus V1’s 11/8/29. Only ten ordinary EDIT cases change; every recovered output is exactly the frozen V15 RAW and FINAL.
 
-## Required outcomes
+## Routing correction and safety boundary
+
+- KEEP, REQUIRED_UPDATE and CANNOT_SAFELY_COMPLETE delegate to the unchanged V1 controller/adapter. Supplied-update binding, exact unrelated-byte protection, and non-success for unsupported/missing authority are unchanged.
+- EDIT uses the unchanged V15 runner with a saved RAW callback. It recomputes full deterministic and voice checks, then schema-validates the captured semantic review bound to exact SOURCE, OBJECTIVE and reviewed text. Neither V15 FINAL nor a frozen judging label participates in selection.
+- A V15 fallback to SOURCE is not a completion. SOURCE must independently pass the same checks with its own bound objective-satisfying review. No such saved SOURCE review exists for the rejected ordinary drafts here, so no SOURCE fallback is delivered.
+- No editor implementation, V15/C implementation, prompt, benchmark artifact, or classifier regex changes. No live editor, verifier, repairer or judge calls. This is an offline evidence route, not a production promotion.
+
+## Required results
 
 | Measure | Actual |
 |---|---:|
 | Supplied updates completed | 8/8 |
 | Already-good KEEP | 8/8 |
-| Editor callback calls on KEEP | 0 |
-| Stale SOURCE accepted as completed update | 0 |
 | Correct supplied-update V15 RAW retained | 8/8 |
+| Editor calls on KEEP | 0 |
+| Stale SOURCE successes | 0 |
+| Verified RAW returns | 21 (11 strict updates + 10 ordinary edits) |
+| SOURCE returns | 8 (all KEEP); 0 verified fallbacks |
+| Explicit abstentions | 19 |
+| Previously SAFE V15 finals recovered | 10/23 |
+| Previously UNSAFE V15 finals rejected as terminal candidates | 12/12 |
+| Apparent unauthorized factual changes accepted | 0 |
+| New apparent safety concerns | 0 |
 
-The already-good assessment is an explicit fixture oracle, matching the prior control tests; this does not establish a production quality classifier. The stale-SOURCE probe replaces RAW with SOURCE through the adapter for every case: no non-KEEP branch publishes it as COMPLETED.
+The 12 unsafe-final probes explicitly supply each frozen unsafe V15 FINAL to D; all abstain. Seven of those cases receive a valid authorized RAW update in the real replay instead; five remain withheld. Delivered-text safety and unauthorized-change counts use frozen labels only after selection and only across exact final-text matches. All 29 delivered texts match frozen SAFE finals. This is not independent rejudging or a universal safety guarantee.
 
-## Full replay
+**Objective disagreement remains visible:** 016 has V15 internal `objectiveSatisfied=true` but the independent frozen V15 label is **SAFE/PARTIAL**. The recovery tally is nine SAFE/YES finals plus one SAFE/PARTIAL final. It is not ten independently established objective completions. The fixture quality stub for the eight already-good cases also remains explicit.
 
-48 cases: **11 COMPLETED, 8 KEEP, 29 ABSTAINED**. Classification: 11 REQUIRED_UPDATE, 8 KEEP, 12 CANNOT_SAFELY_COMPLETE, 17 EDIT. There were 28 frozen RAW callback reads (11 update + 17 EDIT), zero live editor/verifier/repairer/judge calls. The EDIT callback is exercised for replay integration but its result is never claimed to prove objective completion.
+## Phase 1: all 29 original abstentions
 
-Against V15 FINAL: **7 byte-identical, 12 changed, 29 withheld**. The 12 changed outputs are seven localized RAW retentions (005–008, 029, 031, 046) and five KEEP reversions (002, 004, 025–027). The complete word/whitespace additions and removals for each deliverable final are in the replay JSON; withheld finals have null diffs rather than being treated as empty-string rewrites.
+Primary cause counts: **17 unconnected EDIT routes; 3 prose objectives misclassified as factual updates; 2 unsupported factual bindings; 7 missing, uncertain or conflicting requirements**. These primary causes explain the V1 control disposition; they do not imply every blocked RAW was safe.
 
-The additional completion outside supplied-update cases is 021 (`killn` → `kiln`); 045 and 046 are localized updates. All 19 delivered outputs equal frozen Astra finals. Their frozen matching final-arm labels are SAFE. This is inherited byte-equality evidence, **not a new independent safety judgment of Candidate D or RAW**. No apparent unsafe/unresolved delivered-text regression was found. No general safety certification follows from this replay.
+The three prose misclassifications are 023 (noun “planning update”), 036 (“replace” a sentence), and 037 (“change” a sentence). The two unsupported factual bindings are 022 (name-scoped extension) and 044 (phrase-to-date replacement). The seven missing/conflicting requirements are 009–012, 033–034 and 047. Case 009 remains UNRESOLVED; 047 demands sincere endorsement while preserving a negative evaluation. Case 048 is counted under the missing EDIT route, but its requested yes/no answer is independently underdetermined.
 
-**Coverage failures remain:** 23 abstentions withhold previously SAFE V15 finals: 013, 014, 015, 016, 017, 018, 019, 020, 022, 023, 024, 035, 036, 037, 038, 039, 040, 041, 042, 043, 044, 047, 048. These are availability/coverage regressions, not unsafe delivered text. In particular, 022 and 044 remain unbound despite their correct frozen RAW. All 17 general EDIT objectives abstain because this control version has no positive objective-completion verifier. Eleven abstentions report ambiguous binding; one reports missing/unbound replacement. Case 009 remains unresolved in frozen judgments; abstention does not relabel it as confirmed stale.
+V15 had **12 accepted RAW finals** and **17 SOURCE fallbacks** among the 29 abstentions. Ten accepted RAWs were EDIT and are recovered; accepted 022 and 036 remain blocked by unchanged classification. V15’s deterministic RAW statuses were 13 preserved, 5 review, 11 rejected. Frozen FINAL labels were 23 SAFE, 5 UNSAFE, 1 UNRESOLVED.
 
-The required narrow transition hypothesis passes, but full end-to-end editing does not. These results support further isolated work rather than promoting Candidate D or declaring its architecture invalid.
+SOURCE is independently judged objective-satisfied in only **2/29** cases (018, 019), partially satisfied in **5/29**, and not satisfied in **22/29**. SOURCE being text-safe or an objective being feasible from SOURCE does not establish that unchanged SOURCE completes the objective. The two objective-valid SOURCE cases now deliver their verified RAW; the other safe fallback texts are not blindly recovered.
 
-| Case | Classification | Disposition / abstention reason | Versus V15 FINAL |
+Legend: RAW reports deterministic status / semantic verdict; FINAL reports V15 outcome / safety. “SOURCE objective” reports the frozen completion label; PARTIAL is not a completed fallback. “V15 usable” means existing captured evidence supports its selected RAW, before D’s state gate; no means there is no acceptable captured candidate review. All original reasons remain in the artifact. `AMBIGUOUS_REPLACEMENT` also covers several missing-value cases imprecisely; this pass does not change that classification.
+
+| Case | V1 objective state / reason | RAW verification / review | V15 FINAL / safety | SOURCE objective | V15 usable | V2 disposition |
+|---|---|---|---|---|---|---|
+| AC48V2-009 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | preserved / REJECT | source-fallback / UNRESOLVED | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-010 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | rejected / none | source-fallback / UNSAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-011 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | preserved / REJECT | source-fallback / UNSAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-012 | CANNOT_SAFELY_COMPLETE / MISSING_OR_UNBOUND_REPLACEMENT | preserved / REJECT | source-fallback / UNSAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-013 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / PASS | accepted / SAFE | NOT_SATISFIED | yes | COMPLETED |
+| AC48V2-014 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / PASS | accepted / SAFE | NOT_SATISFIED | yes | COMPLETED |
+| AC48V2-015 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-016 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | review / PASS | accepted / SAFE | NOT_SATISFIED | yes | COMPLETED |
+| AC48V2-017 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-018 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / PASS | accepted / SAFE | SATISFIED | yes | COMPLETED |
+| AC48V2-019 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | review / PASS | accepted / SAFE | SATISFIED | yes | COMPLETED |
+| AC48V2-020 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / PASS | accepted / SAFE | PARTIAL_NOT_COMPLETED | yes | COMPLETED |
+| AC48V2-022 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | review / PASS | accepted / SAFE | NOT_SATISFIED | yes | ABSTAINED |
+| AC48V2-023 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | rejected / none | source-fallback / SAFE | PARTIAL_NOT_COMPLETED | no | ABSTAINED |
+| AC48V2-024 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | rejected / none | source-fallback / SAFE | PARTIAL_NOT_COMPLETED | no | ABSTAINED |
+| AC48V2-033 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | preserved / REJECT | source-fallback / UNSAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-034 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | preserved / REJECT | source-fallback / UNSAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-035 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / PASS | accepted / SAFE | NOT_SATISFIED | yes | COMPLETED |
+| AC48V2-036 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | preserved / PASS | accepted / SAFE | NOT_SATISFIED | yes | ABSTAINED |
+| AC48V2-037 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-038 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | review / PASS | accepted / SAFE | NOT_SATISFIED | yes | COMPLETED |
+| AC48V2-039 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | review / PASS | accepted / SAFE | NOT_SATISFIED | yes | COMPLETED |
+| AC48V2-040 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-041 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-042 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / PASS | accepted / SAFE | PARTIAL_NOT_COMPLETED | yes | COMPLETED |
+| AC48V2-043 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | preserved / REJECT | source-fallback / SAFE | PARTIAL_NOT_COMPLETED | no | ABSTAINED |
+| AC48V2-044 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-047 | CANNOT_SAFELY_COMPLETE / AMBIGUOUS_REPLACEMENT | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+| AC48V2-048 | EDIT / EDIT_VERIFICATION_UNSUPPORTED | rejected / none | source-fallback / SAFE | NOT_SATISFIED | no | ABSTAINED |
+
+## Remaining coverage loss
+
+Thirteen previously SAFE finals are still withheld. Twelve CANNOT states remain non-success: six missing/uncertain-value cases, three prose false positives, two unsupported factual bindings, and the contradictory 047 objective. Seven EDIT states still lack a deliverable result: 015, 017, 024, 040, 041 and 048 have V15 deterministic rejection; 043 has semantic rejection. None has an independent objective-satisfying SOURCE review.
+
+This pass leaves 022 and 036’s accepted V15 RAWs blocked by classification. It does not use post hoc PASS/SAFE evidence to override CANNOT, infer a factual binding, bypass an unrelated-claim failure, or recover a rejected RAW such as 044 using Astra’s label. Resolving those cases needs positive typed authority/intent evidence rather than another generalized regex or a safety waiver.
+
+The frozen 048 request cannot produce unambiguous eligibility without a missing rule determination; it remains an explicit non-success. A general EDIT classification is not itself proof of completion.
+
+Exploratory negative tests confirmed an inherited V15 limitation: deterministic checks can miss some unrelated semantic substitutions if a fabricated reviewer PASS is supplied. The offline route never manufactures that review; a changed candidate has no matching captured review and abstains. This demonstrates why the saved evidence bindings, schema checks, and frozen-file fingerprint checks matter. It does not establish safety for arbitrary future reviewer outputs.
+
+## Case-by-case V1 comparison
+
+Against V15 FINAL: **17 identical, 12 changed, 19 withheld**. Against V1: only cases 013, 014, 016, 018, 019, 020, 035, 038, 039 and 042 move from ABSTAINED to COMPLETED; all other dispositions and delivered bytes are unchanged.
+
+| Case | V1 → V2 | Route | Versus V15 FINAL |
 |---|---|---|---|
-| AC48V2-001 | KEEP | KEEP | IDENTICAL |
-| AC48V2-002 | KEEP | KEEP | CHANGED |
-| AC48V2-003 | KEEP | KEEP | IDENTICAL |
-| AC48V2-004 | KEEP | KEEP | CHANGED |
-| AC48V2-005 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-006 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-007 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-008 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-009 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-010 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-011 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-012 | CANNOT_SAFELY_COMPLETE | ABSTAINED — MISSING_OR_UNBOUND_REPLACEMENT | WITHHELD |
-| AC48V2-013 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-014 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-015 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-016 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-017 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-018 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-019 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-020 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-021 | REQUIRED_UPDATE | COMPLETED | IDENTICAL |
-| AC48V2-022 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-023 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-024 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-025 | KEEP | KEEP | CHANGED |
-| AC48V2-026 | KEEP | KEEP | CHANGED |
-| AC48V2-027 | KEEP | KEEP | CHANGED |
-| AC48V2-028 | KEEP | KEEP | IDENTICAL |
-| AC48V2-029 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-030 | REQUIRED_UPDATE | COMPLETED | IDENTICAL |
-| AC48V2-031 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-032 | REQUIRED_UPDATE | COMPLETED | IDENTICAL |
-| AC48V2-033 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-034 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-035 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-036 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-037 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-038 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-039 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-040 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-041 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-042 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-043 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
-| AC48V2-044 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-045 | REQUIRED_UPDATE | COMPLETED | IDENTICAL |
-| AC48V2-046 | REQUIRED_UPDATE | COMPLETED | CHANGED |
-| AC48V2-047 | CANNOT_SAFELY_COMPLETE | ABSTAINED — AMBIGUOUS_REPLACEMENT | WITHHELD |
-| AC48V2-048 | EDIT | ABSTAINED — EDIT_VERIFICATION_UNSUPPORTED | WITHHELD |
+| AC48V2-001 | KEEP → KEEP | CONTROL_V1 | IDENTICAL |
+| AC48V2-002 | KEEP → KEEP | CONTROL_V1 | CHANGED |
+| AC48V2-003 | KEEP → KEEP | CONTROL_V1 | IDENTICAL |
+| AC48V2-004 | KEEP → KEEP | CONTROL_V1 | CHANGED |
+| AC48V2-005 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-006 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-007 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-008 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-009 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-010 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-011 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-012 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-013 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-014 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-015 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
+| AC48V2-016 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-017 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
+| AC48V2-018 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-019 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-020 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-021 | COMPLETED → COMPLETED | CONTROL_V1 | IDENTICAL |
+| AC48V2-022 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-023 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-024 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
+| AC48V2-025 | KEEP → KEEP | CONTROL_V1 | CHANGED |
+| AC48V2-026 | KEEP → KEEP | CONTROL_V1 | CHANGED |
+| AC48V2-027 | KEEP → KEEP | CONTROL_V1 | CHANGED |
+| AC48V2-028 | KEEP → KEEP | CONTROL_V1 | IDENTICAL |
+| AC48V2-029 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-030 | COMPLETED → COMPLETED | CONTROL_V1 | IDENTICAL |
+| AC48V2-031 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-032 | COMPLETED → COMPLETED | CONTROL_V1 | IDENTICAL |
+| AC48V2-033 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-034 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-035 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-036 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-037 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-038 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-039 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-040 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
+| AC48V2-041 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
+| AC48V2-042 | ABSTAINED → COMPLETED | V15_RAW | IDENTICAL |
+| AC48V2-043 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
+| AC48V2-044 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-045 | COMPLETED → COMPLETED | CONTROL_V1 | IDENTICAL |
+| AC48V2-046 | COMPLETED → COMPLETED | CONTROL_V1 | CHANGED |
+| AC48V2-047 | ABSTAINED → ABSTAINED | CONTROL_V1 | WITHHELD |
+| AC48V2-048 | ABSTAINED → ABSTAINED | ABSTAINED | WITHHELD |
 
-## Reproduction and validation
+## Validation and custody
 
 ```sh
-node_modules/.bin/vitest run src/lib/reconstruction/candidate-d/control.test.ts src/lib/reconstruction/candidate-d/adapter.test.ts
-node --import tsx tools/eval/candidate-d-frozen-replay.ts
+node_modules/.bin/vitest run src/lib/reconstruction/candidate-d
+node --import tsx tools/eval/candidate-d-safe-edit-replay.ts
+node --import tsx tools/eval/candidate-d-safe-edit-replay.ts --validate
 node --import tsx tools/eval/candidate-d-frozen-replay.ts --validate
+node_modules/.bin/eslint src/lib/reconstruction/candidate-d/safe-edit-adapter.ts src/lib/reconstruction/candidate-d/safe-edit-adapter.test.ts tools/eval/candidate-d-safe-edit-replay.ts
 ```
 
-Targeted tests: **15/15 passed** (9 existing control tests, 6 adapter/replay tests). Replay validation independently recomputes all 48 cases and compares the saved artifact exactly. No full-suite, lint, typecheck or build rerun was needed; no browser check applies to this offline adapter/replay.
+**25/25 Candidate D targeted tests passed**; both frozen replays validate; targeted lint passed. Existing shared interfaces were not changed, so no full typecheck, application suite or build rerun was needed. No browser verification applies to this offline runner.
 
-Artifact: `.evaluations/candidate-d-frozen-48-v1/replay.json` (gitignored, regenerated by the command above). It contains input fingerprints, fixture assessment evidence, dispositions, editor counts, stale probes, final text/hash, mechanical diffs, and inherited-label evidence. This document persists the disposition audit; evaluation output remains in `.evaluations/`.
+New artifact: `.evaluations/candidate-d-frozen-48-v2/replay.json`. It contains all 29 audit rows, all 48 V1/V2 comparisons, terminal diffs, verification routes, objective-label disagreement, unsafe-final probes and source probes, frozen input hashes, and implementation hashes. Evaluation output remains gitignored.
 
-Frozen SHA-256 fingerprints (replay rejects mismatches):
+Previous artifact remains untouched: `.evaluations/candidate-d-frozen-48-v1/replay.json`; its SHA-256 is `efc21377ff5edad212f7b1689c67af9409e55421e265d63a8635ec0ec6c0c356`. The V1 runner and tests remain unchanged and reconstruct the baseline when needed. The previous committed report is preserved in [CANDIDATE-D-FROZEN-REPLAY-V1.md](CANDIDATE-D-FROZEN-REPLAY-V1.md). Run the V1 generation command once before V2 if recreating artifacts in a fresh checkout.
 
-- `data/evaluation/astra-control-fresh-48-v2/data-phase/corpus.json`: `464eafef5b49cc5c6e9a80ff96ba2bed9661cdc3e7f5c1fa73ba00b2d0dc8f22`
-- `data/evaluation/astra-product-benchmark-48-v1/outputs.jsonl`: `08deccc8263f956fa0b69c7a6a768f50464565fbfce51af705fd698d2605e152`
-- `data/evaluation/astra-product-benchmark-48-v1/blind/decoded-case-results.json`: `092863cc9946722af3951e814e7094ae3603f2c70aea8ca12865ac61a0979d13`
+The corpus, output matrix and decoded judgment fingerprints are the same as V1. Replays reject changed frozen inputs; V2 independently recomputes and verifies the saved V1 artifact before comparison.
