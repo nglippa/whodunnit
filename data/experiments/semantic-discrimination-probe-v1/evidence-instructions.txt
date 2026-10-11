@@ -1,0 +1,10 @@
+
+EVIDENCE RESPONSE REQUIREMENTS
+Keep the existing verdict semantics and required top-level response schema unchanged. The `reason` value itself must be a compact JSON object encoded as a string, with exactly these fields: `proposition`, `sourceQuote`, `candidateQuote`, and `uncertainty`.
+
+- `proposition`: a nonempty string naming the material proposition you assessed.
+- `sourceQuote`: a short, representative, nonempty exact substring from the source that supports your assessment.
+- `candidateQuote`: a short, representative exact substring from the candidate, or null only when the assessed proposition is absent from the candidate.
+- `uncertainty`: a nonempty string stating your uncertainty when you are uncertain, otherwise null. If equivalence cannot be established, say so explicitly in uncertainty rather than claiming certainty. Do not invent uncertainty.
+
+Assess the entire source and candidate, not only the quoted excerpts. Keep the encoded `reason` at most 300 characters. Add no top-level fields and return only the required response JSON. These requirements change only the evidence format, not what earns PASS, LOCAL_REPAIR, or REJECT.

@@ -58,3 +58,7 @@ data/evaluation/holdout/drafts/
 
 # graft's local graph cache — regenerable, not committed (run `graft build`).
 /graft/
+
+# Local Whodunnit research journal, references, captures and process state
+/.research/
+/tools/research/__pycache__/

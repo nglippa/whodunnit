@@ -1,0 +1,160 @@
+{
+  "version": "semantic-discrimination-probe-v1",
+  "purpose": "Three frozen paraphrases and nine minimally edited negative controls; no new holdout or model-generated outputs.",
+  "expectedOutcomesAre": "Authored experimental expectations, not semantic-verifier receipts or authorizations.",
+  "cases": [
+    {
+      "caseId": "EI-003",
+      "source": "The purpose of this communication is to provide an overview of the umbrella borrowing process. Individuals wishing to participate in umbrella borrowing should undertake the selection of an umbrella from the stand situated adjacent to the reception desk. Upon completion of use, a return action should be carried out by placing the umbrella in the tray marked WET. This arrangement enables the facilitation of drying before subsequent borrowing. No payment is required. The umbrellas should remain within the building grounds.",
+      "objective": "Turn this into natural, useful instructions. Reconstruct substantially if that helps, but retain every instruction, the WET label, the free borrowing policy and the restriction on where umbrellas may be used.",
+      "capturedResponsePath": ".evaluations/editorial-intelligence-manual-v1/astra-manual-12-v1/attempts/EI-003/direct/response.raw",
+      "capturedRawSha256": "8e6b87a6a249d51a710213f3e9ce873784f4768f7d59b5804ec13e730db7fdf4",
+      "originalTextSha256": "433e30d834bbe7680b49c8c0225407186b5e3d18ed1b07dba11d1616d8f89c73",
+      "candidates": [
+        {
+          "kind": "ORIGINAL",
+          "candidate": "Umbrellas are free to borrow. Choose one from the stand next to the reception desk, and keep it within the building grounds. When you're finished, place it in the tray marked WET so it can dry before someone else borrows it.",
+          "expectedOriginalAcceptance": true,
+          "targetProposition": null,
+          "sourceEvidence": null,
+          "mutation": null
+        },
+        {
+          "kind": "CHANGE",
+          "candidate": "There is a small fee to borrow an umbrella. Choose one from the stand next to the reception desk, and keep it within the building grounds. When you're finished, place it in the tray marked WET so it can dry before someone else borrows it.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "Free borrowing is changed into paid borrowing.",
+          "sourceEvidence": "No payment is required.",
+          "mutation": {
+            "old": "Umbrellas are free to borrow.",
+            "new": "There is a small fee to borrow an umbrella."
+          }
+        },
+        {
+          "kind": "DELETE",
+          "candidate": "Choose one from the stand next to the reception desk, and keep it within the building grounds. When you're finished, place it in the tray marked WET so it can dry before someone else borrows it.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "The free-borrowing policy is omitted.",
+          "sourceEvidence": "No payment is required.",
+          "mutation": {
+            "old": "Umbrellas are free to borrow. ",
+            "new": ""
+          }
+        },
+        {
+          "kind": "SCOPE",
+          "candidate": "Umbrellas are free to borrow. Choose one from the stand next to the reception desk, and feel free to take it beyond the building grounds. When you're finished, place it in the tray marked WET so it can dry before someone else borrows it.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "The grounds-only restriction is replaced with permission to go outside the grounds.",
+          "sourceEvidence": "The umbrellas should remain within the building grounds.",
+          "mutation": {
+            "old": "keep it within the building grounds",
+            "new": "feel free to take it beyond the building grounds"
+          }
+        }
+      ]
+    },
+    {
+      "caseId": "EI-004",
+      "source": "Within the context of the rehearsal process, it is important to recognize the value of listening as a shared activity. We carried out a first run with the drums removed. This created an opportunity for the singers to identify the places where their entries did not align. We then undertook a second run with the drums restored. The second run felt steadier to us, although we did not make a recording. Moving forward, the intention is to repeat this exercise at the next rehearsal rather than to treat it as evidence that the arrangement has been finalized.",
+      "objective": "Rewrite this rehearsal note so it sounds like a band member wrote it. Preserve what happened, the lack of a recording and the tentative plan. Do not turn the group's impression into a measured result.",
+      "capturedResponsePath": ".evaluations/editorial-intelligence-manual-v1/astra-manual-12-v1/attempts/EI-004/direct/response.raw",
+      "capturedRawSha256": "3b976ef87b98c831d1984f316f55ff6bff86f1b00da557cab6a270010ae56fc9",
+      "originalTextSha256": "37d2856d4dd12c797f506ea5d8aaeb09366b7421af8a6bd3dfebf73a2a32d441",
+      "candidates": [
+        {
+          "kind": "ORIGINAL",
+          "candidate": "Listening to each other matters in rehearsal. We ran through it once without the drums so the singers could hear where their entries weren't lining up. Then we did a second run with the drums back in. It felt steadier to us, though we didn't record it. The plan is to try this again at the next rehearsal—we're not taking it as proof that the arrangement is finished.",
+          "expectedOriginalAcceptance": true,
+          "targetProposition": null,
+          "sourceEvidence": null,
+          "mutation": null
+        },
+        {
+          "kind": "CHANGE",
+          "candidate": "Listening to each other matters in rehearsal. We ran through it once without the drums so the singers could hear where their entries weren't lining up. Then we did a second run with the drums back in. It felt steadier to us, and we recorded it. The plan is to try this again at the next rehearsal—we're not taking it as proof that the arrangement is finished.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "An unrecorded second run becomes recorded.",
+          "sourceEvidence": "The second run felt steadier to us, although we did not make a recording.",
+          "mutation": {
+            "old": "though we didn't record it",
+            "new": "and we recorded it"
+          }
+        },
+        {
+          "kind": "DELETE",
+          "candidate": "Listening to each other matters in rehearsal. We ran through it once without the drums so the singers could hear where their entries weren't lining up. Then we did a second run with the drums back in. It felt steadier to us. The plan is to try this again at the next rehearsal—we're not taking it as proof that the arrangement is finished.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "The explicit lack of a recording is omitted.",
+          "sourceEvidence": "The second run felt steadier to us, although we did not make a recording.",
+          "mutation": {
+            "old": ", though we didn't record it",
+            "new": ""
+          }
+        },
+        {
+          "kind": "ATTRIBUTION",
+          "candidate": "Listening to each other matters in rehearsal. We ran through it once without the drums so the singers could hear where their entries weren't lining up. Then we did a second run with the drums back in. The first run felt steadier to us. We didn't record the second run. The plan is to try this again at the next rehearsal—we're not taking it as proof that the arrangement is finished.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "The steadier impression is attributed to the first run instead of the second.",
+          "sourceEvidence": "The second run felt steadier to us, although we did not make a recording.",
+          "mutation": {
+            "old": "It felt steadier to us, though we didn't record it.",
+            "new": "The first run felt steadier to us. We didn't record the second run."
+          }
+        }
+      ]
+    },
+    {
+      "caseId": "EI-005",
+      "source": "Bring a towel. A proper one, not the tiny gym thing. The changing-room floor gets wet, and the hooks are usually full by seven. In terms of the locker access procedure, visitors are required to engage in the acquisition of a token from the counter prior to commencing their swim. You get the token back when you open the locker. I keep mine in my shoe so I don't spend ten minutes patting every pocket.",
+      "objective": "Make the awkward locker sentence fit the rest of this advice. Keep the practical facts and the dry, chatty voice. Do not smooth away the fragments or rewrite the whole paragraph just to make it uniform.",
+      "capturedResponsePath": ".evaluations/editorial-intelligence-manual-v1/astra-manual-12-v1/attempts/EI-005/direct/response.raw",
+      "capturedRawSha256": "ae57d235feca573e042b52f5ccd8cf01406774db21d1c4c4cf28c6a6b7cfaa97",
+      "originalTextSha256": "5694bf4bcad7fb6b3a53a05a1a8b37acba6093088a315b18ea8bc25b8db85c51",
+      "candidates": [
+        {
+          "kind": "ORIGINAL",
+          "candidate": "Bring a towel. A proper one, not the tiny gym thing. The changing-room floor gets wet, and the hooks are usually full by seven. If you're visiting, you'll need to get a locker token from the counter before you swim. You get the token back when you open the locker. I keep mine in my shoe so I don't spend ten minutes patting every pocket.",
+          "expectedOriginalAcceptance": true,
+          "targetProposition": null,
+          "sourceEvidence": null,
+          "mutation": null
+        },
+        {
+          "kind": "CHANGE",
+          "candidate": "Bring a towel. A proper one, not the tiny gym thing. The changing-room floor gets wet, and the hooks are usually full by seven. If you're visiting, you'll need to get a locker token from the counter before you swim. You don't get the token back when you open the locker. I keep mine in my shoe so I don't spend ten minutes patting every pocket.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "Token return on opening is changed into non-return.",
+          "sourceEvidence": "You get the token back when you open the locker.",
+          "mutation": {
+            "old": "You get the token back when you open the locker.",
+            "new": "You don't get the token back when you open the locker."
+          }
+        },
+        {
+          "kind": "DELETE",
+          "candidate": "Bring a towel. A proper one, not the tiny gym thing. The changing-room floor gets wet. If you're visiting, you'll need to get a locker token from the counter before you swim. You get the token back when you open the locker. I keep mine in my shoe so I don't spend ten minutes patting every pocket.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "The hooks being usually full by seven is omitted.",
+          "sourceEvidence": "The changing-room floor gets wet, and the hooks are usually full by seven.",
+          "mutation": {
+            "old": ", and the hooks are usually full by seven",
+            "new": ""
+          }
+        },
+        {
+          "kind": "TIMING",
+          "candidate": "Bring a towel. A proper one, not the tiny gym thing. The changing-room floor gets wet, and the hooks are usually full by seven. If you're visiting, you'll need to get a locker token from the counter after you swim. You get the token back when you open the locker. I keep mine in my shoe so I don't spend ten minutes patting every pocket.",
+          "expectedOriginalAcceptance": false,
+          "targetProposition": "The visitor token requirement is moved from before swimming to after swimming.",
+          "sourceEvidence": "In terms of the locker access procedure, visitors are required to engage in the acquisition of a token from the counter prior to commencing their swim.",
+          "mutation": {
+            "old": "from the counter before you swim",
+            "new": "from the counter after you swim"
+          }
+        }
+      ]
+    }
+  ]
+}

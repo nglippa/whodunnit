@@ -1,0 +1,26 @@
+{
+  "skills": [
+    "/Users/nicholaslippa/.codex-account-2/skills/book-to-skill/SKILL.md",
+    "/Users/nicholaslippa/.codex-account-2/skills/book-to-skill/SECURITY.md",
+    "/Users/nicholaslippa/.codex-account-2/skills/no-ai-slop/SKILL.md",
+    "/Users/nicholaslippa/.codex-account-2/skills/no-ai-slop/eval.md"
+  ],
+  "history": [
+    "README.md", "docs/ARCHITECTURE.md", "docs/EVALUATION.md",
+    "docs/CANDIDATE-D-MECHANICAL-REPLAY.md",
+    "docs/CANDIDATE-D-DIRECT-EDITOR-REPLAY.md",
+    "docs/EDITORIAL-FULL-AI-EVALUATION.md",
+    "docs/SEMANTIC-DISCRIMINATION-REPORT.md"
+  ],
+  "topics": {
+    "meaning-correspondence": ["src/lib/semantics/claims.ts", "src/lib/semantics/compare.ts", "src/lib/reconstruction/verified-reconstruction.ts"],
+    "voice-and-restraint": ["src/lib/reconstruction/rewrite-plan.ts", "src/lib/reconstruction/semantic-review.ts", "src/lib/semantics/voice-devices.ts"],
+    "objective-and-fallback": ["src/lib/reconstruction/candidate-d/control.ts", "src/lib/reconstruction/candidate-d/safe-edit-adapter.ts", "src/lib/reconstruction/candidate-d/mechanical-adapter.ts"],
+    "composition-and-clarity": ["src/lib/analysis/analyze.ts", "src/lib/reconstruction/wording-audit.ts", "src/lib/prompts/index.ts"],
+    "measurement-and-evidence": ["src/lib/verification/verify.ts", "src/lib/reconstruction/postcheck.ts", "src/lib/reconstruction/strategies.ts"]
+  },
+  "references": [
+    {"file": "strunk-1918.txt", "url": "https://www.gutenberg.org/cache/epub/37134/pg37134.txt", "title": "The Elements of Style — William Strunk (1918/1919 original)", "rights": "Public domain in the United States; retain Project Gutenberg license. Not the later White revision."},
+    {"file": "quiller-couch-writing.txt", "url": "https://www.gutenberg.org/cache/epub/17470/pg17470.txt", "title": "On the Art of Writing — Arthur Quiller-Couch (1916)", "rights": "Public domain in the United States; retain Project Gutenberg license."}
+  ]
+}
