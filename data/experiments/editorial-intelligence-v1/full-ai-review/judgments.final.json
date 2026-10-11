@@ -1,0 +1,532 @@
+{
+  "classification": "TWELVE_CASE_EXPLORATORY_SUPPLIED_AI_EVALUATION_WITH_PRESERVED_PILOT",
+  "status": "FINALIZED_BEFORE_FULL_UNBLINDING",
+  "packetSha256": "1f12a48508eb67008b8a08ebbed89ae5f6170ccb24def7b7f716a631ad1fd73a",
+  "reviewerLabel": "ChatGPT GPT-6",
+  "reviewerType": "AI editorial evaluator",
+  "reviewDate": "2026-10-10",
+  "completedAt": null,
+  "judgments": [
+    {
+      "caseId": "EI-001",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": null,
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-002",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Identical unchanged outputs; both preserve completed bench check versus pending installed-unit test.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-003",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "Y",
+      "confidence": "MEDIUM",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": null,
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-004",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 4,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "Y",
+      "confidence": "MEDIUM",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Y preserves the original shared-listening theme and sounds slightly more conversational. X is also safe and complete.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-005",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "Y",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Y retains the visitor-specific locker-token requirement. X omits that qualification, a scope-fidelity weakness, but no confirmed material safety failure.",
+      "uncertainty": "X omits that qualification, a scope-fidelity weakness, but no confirmed material safety failure.",
+      "finalized": true
+    },
+    {
+      "caseId": "EI-006",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Identical outputs; both simplify the conditional scheduling sentence without promising an accessible alternative.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-007",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Identical outputs; both correctly update the pottery time to 11:00 a.m. and fee to £22 while preserving children’s session details.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-008",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Identical outputs; both update the local fund to NEIGHBOR- and $1,450 while preserving equipment-fund details.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-009",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Identical unchanged outputs; both preserve the reflection’s humor and restrained affection.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-010",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Identical unchanged outputs; both preserve the uneasy voice and uncertainty about feeling better.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-011",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 4,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "Y",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "Y improves concision and clarifies that 86 remains the published total while 83 is only proposed.",
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-012",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 4,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "X",
+      "confidence": "MEDIUM",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": "X puts the recommendation first for a busy project lead while preserving evidence limitations.",
+      "uncertainty": null,
+      "finalized": true
+    }
+  ],
+  "recordedAt": "2026-10-11T00:58:57.703299+00:00",
+  "provenance": {
+    "tenCaseReviewer": {
+      "source": "User correction supplies authoritative finalized ChatGPT GPT-6 results; no new evaluation performed.",
+      "reviewer": "ChatGPT GPT-6",
+      "reviewerType": "AI editorial evaluator",
+      "reviewDate": "2026-10-10",
+      "armIdentities": "not consulted during evaluation (user attestation)",
+      "independenceFromGeneration": "no participation in generating these ten outputs; generation provenance not independently verified",
+      "allTwentyCandidates": {
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "materialDefects": "none confirmed"
+      },
+      "ratingColumns": [
+        "X naturalness",
+        "Y naturalness",
+        "X voice",
+        "Y voice",
+        "X restraint",
+        "Y restraint"
+      ],
+      "cases": [
+        {
+          "caseId": "EI-002",
+          "preference": "TIE",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Identical unchanged outputs; both preserve completed bench check versus pending installed-unit test."
+        },
+        {
+          "caseId": "EI-004",
+          "preference": "Y",
+          "confidence": "MEDIUM",
+          "ratings": [
+            5,
+            5,
+            4,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Y preserves the original shared-listening theme and sounds slightly more conversational. X is also safe and complete."
+        },
+        {
+          "caseId": "EI-005",
+          "preference": "Y",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Y retains the visitor-specific locker-token requirement. X omits that qualification, a scope-fidelity weakness, but no confirmed material safety failure."
+        },
+        {
+          "caseId": "EI-006",
+          "preference": "TIE",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Identical outputs; both simplify the conditional scheduling sentence without promising an accessible alternative."
+        },
+        {
+          "caseId": "EI-007",
+          "preference": "TIE",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Identical outputs; both correctly update the pottery time to 11:00 a.m. and fee to £22 while preserving children’s session details."
+        },
+        {
+          "caseId": "EI-008",
+          "preference": "TIE",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Identical outputs; both update the local fund to NEIGHBOR- and $1,450 while preserving equipment-fund details."
+        },
+        {
+          "caseId": "EI-009",
+          "preference": "TIE",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Identical unchanged outputs; both preserve the reflection’s humor and restrained affection."
+        },
+        {
+          "caseId": "EI-010",
+          "preference": "TIE",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            5
+          ],
+          "evidenceAndNotes": "Identical unchanged outputs; both preserve the uneasy voice and uncertainty about feeling better."
+        },
+        {
+          "caseId": "EI-011",
+          "preference": "Y",
+          "confidence": "HIGH",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            4,
+            5
+          ],
+          "evidenceAndNotes": "Y improves concision and clarifies that 86 remains the published total while 83 is only proposed."
+        },
+        {
+          "caseId": "EI-012",
+          "preference": "X",
+          "confidence": "MEDIUM",
+          "ratings": [
+            5,
+            5,
+            5,
+            5,
+            5,
+            4
+          ],
+          "evidenceAndNotes": "X puts the recommendation first for a busy project lead while preserving evidence limitations."
+        }
+      ]
+    },
+    "pilotJudgments": "Preserved verbatim; their original provenance applies, not retroactively attributed to GPT-6. See pilot-judgments.original.json.",
+    "exactQuotedEvidence": "User supplied prose evidence notes, not structured exact quotations. Notes retained verbatim in reason; evidence arrays stay empty. No model-receipt judge import is fabricated.",
+    "schema": "Existing human-evaluation-form field structure, relabeled as supplied AI evaluation. Not the stricter live-model judgmentSchema or verified GPT-6.1 Sol evaluation.",
+    "authoritativeResultsSha256": "6eef15ae1cd9001af755adaad778bf2e7dd23e40c8b95e4a2cfae311b6637772",
+    "pilotJudgmentSha256": "76ab71696d62b08fd70134ec0da94a5190b17065ab37f01eb15e2680ad92adf0",
+    "originalBlindRequestFingerprints": {
+      "blind/requests/EI-001.json": "396b4b72c90372cb38ecb90dc5f47cbf07986bdb9fed0692861698de3d5423cc",
+      "blind/requests/EI-002.json": "7784786e9bbd584a47a6b77f6b1e0eca33067baf20c689ac516e01980f6db7e2",
+      "blind/requests/EI-003.json": "65d2203f631a0dbf4ca34de7b1c10a0d32357b3ed21d618adde8c368bd11aa4b",
+      "blind/requests/EI-004.json": "cf4d647e5222ba57acdf38f2548a01bd78f5f1ec03eb749fe7dec41f89d3b94d",
+      "blind/requests/EI-005.json": "eed37193746ee842c98ee85f04a9cc8c7238fa30e57486005e6abd7fa1c46245",
+      "blind/requests/EI-006.json": "0121aeb70e3c6dd6c3e1853c36cfb30668cf67fe566e4e03ab5ce2765b3d2cf6",
+      "blind/requests/EI-007.json": "c4285d010b56063e50dbeddfc8eae2bd9488d030ade42c6d6dc290924f8d2cb0",
+      "blind/requests/EI-008.json": "3ee42fe3ec2f594937248bee7a20528052f1e8bd996c031810822a6913cfa7ce",
+      "blind/requests/EI-009.json": "497980feeb72664a35385c24dfff3e3d5c201c3a440ecfe7c7f785ffe4d5bdab",
+      "blind/requests/EI-010.json": "6d1614634f8ddcd29c67dcb930f9f6894af5201d3e8b4ac1e52ac1cd8a44f89c",
+      "blind/requests/EI-011.json": "da526073d0d4d3895e7db4d90817fb57adf4b478595ebd14f8b1fb9efa74a2aa",
+      "blind/requests/EI-012.json": "b61331fdc6c9de42dc6e7e9a26b219fa3045d25f2a9abaaa57d99d7f7b659187"
+    }
+  }
+}

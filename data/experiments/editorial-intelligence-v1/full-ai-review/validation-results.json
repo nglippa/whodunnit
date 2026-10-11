@@ -1,0 +1,25 @@
+{
+  "frozenJudgments": 12,
+  "exactNewRatingFields": 60,
+  "pilotJudgmentsUnchanged": 2,
+  "acceptedImportsVerified": 36,
+  "blindPacketBindings": 12,
+  "mappingFinalBindings": 24,
+  "caseTypesVerified": 6,
+  "preferences": {
+    "direct": 5,
+    "specialized": 0,
+    "ties": 7
+  },
+  "freezeBeforeFullUnblinding": true,
+  "safety": "12/12 each",
+  "objectiveCompletion": "12/12 each",
+  "newModelInvocations": 0,
+  "originalImportSchemaValidation": {
+    "accepted": 36,
+    "responseAndMetadataSchemas": 36,
+    "manifestHoldoutProtocolPromptSchemaContractsValid": true,
+    "failures": 0,
+    "method": "Read-only validation using the existing experiment/manual import schemas and contracts; no inference or application tests."
+  }
+}

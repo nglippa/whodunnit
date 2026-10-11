@@ -1,0 +1,163 @@
+{
+  "source": "User correction supplies authoritative finalized ChatGPT GPT-6 results; no new evaluation performed.",
+  "reviewer": "ChatGPT GPT-6",
+  "reviewerType": "AI editorial evaluator",
+  "reviewDate": "2026-10-10",
+  "armIdentities": "not consulted during evaluation (user attestation)",
+  "independenceFromGeneration": "no participation in generating these ten outputs; generation provenance not independently verified",
+  "allTwentyCandidates": {
+    "meaningIntegrity": "SAFE",
+    "objectiveCompletion": "YES",
+    "materialDefects": "none confirmed"
+  },
+  "ratingColumns": [
+    "X naturalness",
+    "Y naturalness",
+    "X voice",
+    "Y voice",
+    "X restraint",
+    "Y restraint"
+  ],
+  "cases": [
+    {
+      "caseId": "EI-002",
+      "preference": "TIE",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Identical unchanged outputs; both preserve completed bench check versus pending installed-unit test."
+    },
+    {
+      "caseId": "EI-004",
+      "preference": "Y",
+      "confidence": "MEDIUM",
+      "ratings": [
+        5,
+        5,
+        4,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Y preserves the original shared-listening theme and sounds slightly more conversational. X is also safe and complete."
+    },
+    {
+      "caseId": "EI-005",
+      "preference": "Y",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Y retains the visitor-specific locker-token requirement. X omits that qualification, a scope-fidelity weakness, but no confirmed material safety failure."
+    },
+    {
+      "caseId": "EI-006",
+      "preference": "TIE",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Identical outputs; both simplify the conditional scheduling sentence without promising an accessible alternative."
+    },
+    {
+      "caseId": "EI-007",
+      "preference": "TIE",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Identical outputs; both correctly update the pottery time to 11:00 a.m. and fee to £22 while preserving children’s session details."
+    },
+    {
+      "caseId": "EI-008",
+      "preference": "TIE",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Identical outputs; both update the local fund to NEIGHBOR- and $1,450 while preserving equipment-fund details."
+    },
+    {
+      "caseId": "EI-009",
+      "preference": "TIE",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Identical unchanged outputs; both preserve the reflection’s humor and restrained affection."
+    },
+    {
+      "caseId": "EI-010",
+      "preference": "TIE",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "evidenceAndNotes": "Identical unchanged outputs; both preserve the uneasy voice and uncertainty about feeling better."
+    },
+    {
+      "caseId": "EI-011",
+      "preference": "Y",
+      "confidence": "HIGH",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        4,
+        5
+      ],
+      "evidenceAndNotes": "Y improves concision and clarifies that 86 remains the published total while 83 is only proposed."
+    },
+    {
+      "caseId": "EI-012",
+      "preference": "X",
+      "confidence": "MEDIUM",
+      "ratings": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "evidenceAndNotes": "X puts the recommendation first for a busy project lead while preserving evidence limitations."
+    }
+  ]
+}

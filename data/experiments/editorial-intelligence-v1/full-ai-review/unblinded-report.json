@@ -1,0 +1,477 @@
+{
+  "classification": "TWELVE_CASE_EXPLORATORY_SUPPLIED_AI_JUDGMENTS",
+  "decision": "B — DIRECT EDITING IS BETTER OR EQUIVALENT",
+  "counts": {
+    "direct": 5,
+    "specialized": 0,
+    "ties": 7
+  },
+  "cases": [
+    {
+      "caseId": "EI-001",
+      "caseType": "already_good",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": null,
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-002",
+      "caseType": "already_good",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Identical unchanged outputs; both preserve completed bench check versus pending installed-unit test.",
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-003",
+      "caseType": "synthetic",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindPreference": "Y",
+      "confidence": "MEDIUM",
+      "result": "direct",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": null,
+      "uncertainty": null,
+      "identicalFinals": false
+    },
+    {
+      "caseId": "EI-004",
+      "caseType": "synthetic",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindPreference": "Y",
+      "confidence": "MEDIUM",
+      "result": "direct",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 4,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Y preserves the original shared-listening theme and sounds slightly more conversational. X is also safe and complete.",
+      "uncertainty": null,
+      "identicalFinals": false
+    },
+    {
+      "caseId": "EI-005",
+      "caseType": "mixed_quality",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindPreference": "Y",
+      "confidence": "HIGH",
+      "result": "direct",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Y retains the visitor-specific locker-token requirement. X omits that qualification, a scope-fidelity weakness, but no confirmed material safety failure.",
+      "uncertainty": "X omits that qualification, a scope-fidelity weakness, but no confirmed material safety failure.",
+      "identicalFinals": false
+    },
+    {
+      "caseId": "EI-006",
+      "caseType": "mixed_quality",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Identical outputs; both simplify the conditional scheduling sentence without promising an accessible alternative.",
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-007",
+      "caseType": "supplied_update",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Identical outputs; both correctly update the pottery time to 11:00 a.m. and fee to £22 while preserving children’s session details.",
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-008",
+      "caseType": "supplied_update",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Identical outputs; both update the local fund to NEIGHBOR- and $1,450 while preserving equipment-fund details.",
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-009",
+      "caseType": "voice_sensitive",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Identical unchanged outputs; both preserve the reflection’s humor and restrained affection.",
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-010",
+      "caseType": "voice_sensitive",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindPreference": "TIE",
+      "confidence": "HIGH",
+      "result": "TIE",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Identical unchanged outputs; both preserve the uneasy voice and uncertainty about feeling better.",
+      "uncertainty": null,
+      "identicalFinals": true
+    },
+    {
+      "caseId": "EI-011",
+      "caseType": "professional",
+      "XArm": "specialized",
+      "YArm": "direct",
+      "blindPreference": "Y",
+      "confidence": "HIGH",
+      "result": "direct",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 4,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "Y improves concision and clarifies that 86 remains the published total while 83 is only proposed.",
+      "uncertainty": null,
+      "identicalFinals": false
+    },
+    {
+      "caseId": "EI-012",
+      "caseType": "professional",
+      "XArm": "direct",
+      "YArm": "specialized",
+      "blindPreference": "X",
+      "confidence": "MEDIUM",
+      "result": "direct",
+      "directAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "specializedAssessment": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 4,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "reason": "X puts the recommendation first for a busy project lead while preserving evidence limitations.",
+      "uncertainty": null,
+      "identicalFinals": false
+    }
+  ],
+  "caseTypes": {
+    "voice_sensitive": {
+      "cases": 2,
+      "directWins": 0,
+      "specializedWins": 0,
+      "ties": 2,
+      "directSafe": 2,
+      "specializedSafe": 2,
+      "directComplete": 2,
+      "specializedComplete": 2
+    },
+    "synthetic": {
+      "cases": 2,
+      "directWins": 2,
+      "specializedWins": 0,
+      "ties": 0,
+      "directSafe": 2,
+      "specializedSafe": 2,
+      "directComplete": 2,
+      "specializedComplete": 2
+    },
+    "already_good": {
+      "cases": 2,
+      "directWins": 0,
+      "specializedWins": 0,
+      "ties": 2,
+      "directSafe": 2,
+      "specializedSafe": 2,
+      "directComplete": 2,
+      "specializedComplete": 2
+    },
+    "mixed_quality": {
+      "cases": 2,
+      "directWins": 1,
+      "specializedWins": 0,
+      "ties": 1,
+      "directSafe": 2,
+      "specializedSafe": 2,
+      "directComplete": 2,
+      "specializedComplete": 2
+    },
+    "supplied_update": {
+      "cases": 2,
+      "directWins": 0,
+      "specializedWins": 0,
+      "ties": 2,
+      "directSafe": 2,
+      "specializedSafe": 2,
+      "directComplete": 2,
+      "specializedComplete": 2
+    },
+    "professional": {
+      "cases": 2,
+      "directWins": 2,
+      "specializedWins": 0,
+      "ties": 0,
+      "directSafe": 2,
+      "specializedSafe": 2,
+      "directComplete": 2,
+      "specializedComplete": 2
+    }
+  },
+  "safety": {
+    "direct": {
+      "safe": 12,
+      "total": 12,
+      "unsafe": 0,
+      "uncertain": 0,
+      "rate": 1.0
+    },
+    "specialized": {
+      "safe": 12,
+      "total": 12,
+      "unsafe": 0,
+      "uncertain": 0,
+      "rate": 1.0
+    }
+  },
+  "objectiveCompletion": {
+    "direct": {
+      "yes": 12,
+      "total": 12,
+      "partial": 0,
+      "no": 0,
+      "uncertain": 0,
+      "rate": 1.0
+    },
+    "specialized": {
+      "yes": 12,
+      "total": 12,
+      "partial": 0,
+      "no": 0,
+      "uncertain": 0,
+      "rate": 1.0
+    }
+  },
+  "confirmedMaterialDefects": 0,
+  "judgmentSha256": "0d2483cceea15c08b3af8627b7ea6c6290a710ad685dd9c51154c77449b1ee44",
+  "packetSha256": "1f12a48508eb67008b8a08ebbed89ae5f6170ccb24def7b7f716a631ad1fd73a",
+  "freezeSha256": "0d4c4b2f689a81dbea24a8669e2f298e6087fcfd973e293c8dd3eaad8372180a",
+  "mappingSha256": "302d4d05bd5ee8cc5f1215f1f86f0230881c87ca43b1a5088a3ec1a209a8cd11",
+  "unblindedAt": "2026-10-11T00:59:20.275349+00:00",
+  "newModelInvocations": 0,
+  "statisticalSignificanceClaim": false,
+  "independentlyVerifiedRuntimeIdentity": false,
+  "recommendation": "Keep direct editing as the default. No evidence justifies integrating this specialization. The smallest next experiment is a second blinded assessment of the same twelve pairs by an evaluator independent of generation and the original AI reviewer, using the same rubric and freezing judgments before unblinding. No new model outputs or editorial architecture are needed."
+}

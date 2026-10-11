@@ -1,0 +1,21 @@
+{
+  "judgmentArtifact": "judgments.final.json",
+  "judgmentSha256": "0d2483cceea15c08b3af8627b7ea6c6290a710ad685dd9c51154c77449b1ee44",
+  "packetSha256": "1f12a48508eb67008b8a08ebbed89ae5f6170ccb24def7b7f716a631ad1fd73a",
+  "authoritativeResultsSha256": "6eef15ae1cd9001af755adaad778bf2e7dd23e40c8b95e4a2cfae311b6637772",
+  "pilotJudgmentSha256": "76ab71696d62b08fd70134ec0da94a5190b17065ab37f01eb15e2680ad92adf0",
+  "frozenAt": "2026-10-11T00:58:57.703545+00:00",
+  "judgmentCount": 12,
+  "candidateRatings": 24,
+  "frozenBeforeAgentOpenedFullPrivateMapping": true,
+  "tenCaseFinalizedBlind": "user attestation; no new evaluation",
+  "pilotJudgmentsPreviouslyFrozenAndUnblinded": true,
+  "validation": {
+    "exactSuppliedRatingsAndPreferences": true,
+    "pilotJudgmentsPreservedVerbatim": true,
+    "pilotPacketBindingsValid": 2,
+    "caseIdsValid": 12,
+    "preferredCandidatesSafeAndComplete": true,
+    "unprovidedFieldsLeftNullOrEmpty": true
+  }
+}

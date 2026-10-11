@@ -1,0 +1,13 @@
+case_id,case_type,X_arm,Y_arm,blind_preference,confidence,unblinded_result,direct_integrity,specialized_integrity,direct_completion,specialized_completion,identical_finals
+EI-001,already_good,direct,specialized,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-002,already_good,direct,specialized,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-003,synthetic,specialized,direct,Y,MEDIUM,direct,SAFE,SAFE,YES,YES,False
+EI-004,synthetic,specialized,direct,Y,MEDIUM,direct,SAFE,SAFE,YES,YES,False
+EI-005,mixed_quality,specialized,direct,Y,HIGH,direct,SAFE,SAFE,YES,YES,False
+EI-006,mixed_quality,specialized,direct,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-007,supplied_update,direct,specialized,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-008,supplied_update,direct,specialized,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-009,voice_sensitive,direct,specialized,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-010,voice_sensitive,specialized,direct,TIE,HIGH,TIE,SAFE,SAFE,YES,YES,True
+EI-011,professional,specialized,direct,Y,HIGH,direct,SAFE,SAFE,YES,YES,False
+EI-012,professional,direct,specialized,X,MEDIUM,direct,SAFE,SAFE,YES,YES,False

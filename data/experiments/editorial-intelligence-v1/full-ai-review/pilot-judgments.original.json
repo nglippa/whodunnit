@@ -1,0 +1,73 @@
+{
+  "classification": "TWO_CASE_EXPLORATORY_HUMAN_REVIEW",
+  "status": "FINALIZED_BEFORE_UNBLINDING",
+  "packetSha256": "a29471ef9f18641f6b2f190f8f6b53efd443371acc1c16db8571abd0d62fd211",
+  "reviewerLabel": "user-supplied finalized blind judgments",
+  "independentOfGeneration": null,
+  "completedAt": null,
+  "judgments": [
+    {
+      "caseId": "EI-003",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "Y",
+      "confidence": "MEDIUM",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": null,
+      "uncertainty": null,
+      "finalized": true
+    },
+    {
+      "caseId": "EI-001",
+      "X": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "Y": {
+        "naturalness": 5,
+        "voiceFidelity": 5,
+        "meaningIntegrity": "SAFE",
+        "objectiveCompletion": "YES",
+        "restraint": 5,
+        "materialDefects": [],
+        "evidence": []
+      },
+      "overallPreference": "TIE",
+      "confidence": "HIGH",
+      "genuineImprovements": null,
+      "superficialPolish": null,
+      "reason": null,
+      "uncertainty": null,
+      "finalized": true
+    }
+  ],
+  "recordedAt": "2026-10-10T19:40:17.776485+00:00",
+  "provenance": {
+    "source": "User message supplied finalized X/Y judgments for EI-003 and EI-001",
+    "finalizedBeforeUnblinding": "explicitly attested by user",
+    "underlyingReviewerIdentity": "not separately provided",
+    "rationaleAndEvidenceQuotes": "not supplied; not inferred"
+  }
+}
