@@ -25,7 +25,7 @@ Whodunnit improves naturalness and authorship consistency. It makes no promises 
 
 ```bash
 pnpm install
-pnpm dev              # http://localhost:3000
+pnpm dev              # http://localhost:3005
 ```
 
 With no environment variables the app runs in **demo mode**: reconstruction applies only the deterministic rule transforms (announcement and stock-opener removal, wordy-phrase mapping, connective-chain collapsing) plus register edits gated on what the analysis found. The UI says so. Add `ANTHROPIC_API_KEY` for full reconstruction.
